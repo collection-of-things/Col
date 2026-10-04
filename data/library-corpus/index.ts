@@ -3,7 +3,7 @@ import type { LibraryCorpusEntry } from "./types";
 /**
  * The deep-coverage documentation corpus, one entry per library.
  *
- * Ingestion rules (enforced by `tests/corpus.test.mjs`):
+ * Ingestion rules (enforced by `lib/corpus.test.mjs`):
  * - `permission` must be recorded before any snapshot is added. A missing or
  *   `unknown` permission means the entry holds no snapshots at all.
  * - Every snapshot carries its fetch date and source revision so evidence can

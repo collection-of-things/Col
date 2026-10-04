@@ -5,7 +5,7 @@ import type { ComponentIndex, LibraryComponent } from "../data/components";
 import type { LibraryDetails } from "../data/library-details/types";
 import type { DocSnapshot, LibraryCorpusEntry } from "../data/library-corpus/types";
 import type { CompatibilityFact, LibraryCompatibility } from "../data/compatibility";
-import { createDirectorySearch, type SearchResult } from "./directory.ts";
+import { componentRank, createDirectorySearch, type SearchResult } from "./directory.ts";
 import { admissibleSnapshots } from "./corpus.ts";
 import { compatibilityReport, type CompatibilityReport } from "./compatibility.ts";
 import { libraryPath, siteUrl } from "./site.ts";
@@ -127,9 +127,9 @@ export interface ToolDefinition {
   name: string;
   title: string;
   description: string;
-  /** JSON Schema for tool arguments, generated from the same zod schema `invoke` validates with. */
-  inputSchema: Record<string, unknown>;
-  annotations: { readOnlyHint: true; destructiveHint: false; idempotentHint: true; openWorldHint: true };
+  /** The zod schema `invoke` validates with; published to clients as JSON Schema. */
+  args: z.ZodType<unknown>;
+  annotations: { readOnlyHint: true; destructiveHint: false; idempotentHint: true; openWorldHint: false };
 }
 
 /** The four tool calls, as one request-to-result interface. */
@@ -153,12 +153,34 @@ const COVERAGE_NOTE =
 
 const NO_CREDENTIALS_NOTE = "This server is read-only and never requests or stores credentials.";
 
+const COVERAGE_GAP = "Component coverage is partial; a missing component is not evidence of absence.";
+
+function compatibilityGap(facts: readonly CompatibilityFact[]): string {
+  return facts.length > 0
+    ? "Only the recorded compatibility facts above are verified; anything not listed is unknown."
+    : "No compatibility constraints have been verified for this library yet; treat every version constraint as unknown.";
+}
+
+/**
+ * Component ids are the one identifier outside the catalogue's slugs, so they
+ * get a single format/parse pair rather than ad-hoc splitting at each use.
+ */
+function componentId(slug: string, name: string): string {
+  return `${slug}/${name}`;
+}
+
+function parseComponentId(id: string): { slug: string; name: string } | null {
+  const separator = id.indexOf("/");
+  if (separator < 1 || separator === id.length - 1) return null;
+  return { slug: id.slice(0, separator), name: id.slice(separator + 1) };
+}
+
 const PAGE_ARGS = {
   limit: z.number().int().min(1).max(MAX_LIMIT).optional(),
   offset: z.number().int().min(0).optional(),
 };
 
-export const searchLibrariesArgs = z.object({
+const searchLibrariesArgs = z.object({
   query: z.string().optional().describe("What to find, e.g. 'accessible command menu'. Keywords match library names, descriptions, tags, and verified component names and aliases."),
   category: z.enum(CATEGORIES).nullish().describe("Exact category filter."),
   stacks: z.array(z.enum(STACKS)).optional().describe("Every listed stack must apply (AND). At most one framework."),
@@ -166,17 +188,17 @@ export const searchLibrariesArgs = z.object({
   ...PAGE_ARGS,
 });
 
-export const searchComponentsArgs = z.object({
+const searchComponentsArgs = z.object({
   query: z.string().min(1).describe("Component name or alias, e.g. 'command palette' or 'datepicker'."),
   library: z.string().min(1).optional().describe("Restrict to one library slug."),
   ...PAGE_ARGS,
 });
 
-export const getLibraryArgs = z.object({
+const getLibraryArgs = z.object({
   slug: z.string().min(1).describe("Library slug from search_libraries, e.g. 'shadcn-ui'."),
 });
 
-export const getComponentArgs = z.object({
+const getComponentArgs = z.object({
   id: z.string().min(1).describe("Component id from search_components, e.g. 'shadcn-ui/Command'."),
 });
 
@@ -204,8 +226,8 @@ function keywordTokens(query: string): string[] {
  * set. When every token is unknown to the catalogue, they are kept: that query
  * genuinely matches nothing and must answer empty, not the whole catalogue.
  */
-function liveTokens(tokens: readonly string[], matches: (token: string) => boolean): string[] {
-  const live = tokens.filter(matches);
+function liveTokens(tokens: readonly string[], inCatalogue: (token: string) => boolean): string[] {
+  const live = tokens.filter(inCatalogue);
   return live.length > 0 ? live : [...tokens];
 }
 
@@ -226,7 +248,7 @@ function parseArgs<T>(name: string, schema: z.ZodType<T>, args: unknown): T {
 
 function componentHit(library: Library, component: LibraryComponent): ComponentHit {
   return {
-    id: `${library.slug}/${component.name}`,
+    id: componentId(library.slug, component.name),
     name: component.name,
     aliases: component.aliases ?? [],
     url: component.url,
@@ -253,7 +275,7 @@ function libraryHit(result: SearchResult): LibraryHit {
     evidence: {
       verification: "partial",
       gaps: [
-        "Component coverage is partial; a missing component is not evidence of absence.",
+        COVERAGE_GAP,
         "Stack and use-case metadata is curated, not exhaustive: check the library's official docs for full compatibility.",
       ],
     },
@@ -319,6 +341,9 @@ export function createCatalogueTools(data: CatalogueData): CatalogueTools {
         if (keywords.some((token) => haystack.includes(token))) matches.push(componentHit(entry, component));
       }
     }
+    // Same exact-name-first rule the directory uses, so an exact official name
+    // or recorded alias outranks a substring touch on any other component.
+    matches.sort((a, b) => componentRank(a, keywords, args.query.toLowerCase()) - componentRank(b, keywords, args.query.toLowerCase()));
     return {
       results: matches.slice(offset, offset + limit),
       total: matches.length,
@@ -361,10 +386,8 @@ export function createCatalogueTools(data: CatalogueData): CatalogueTools {
       evidence: {
         verification: details ? "partial" : "unverified",
         gaps: [
-          "Component coverage is partial; a missing component is not evidence of absence.",
-          facts.length > 0
-            ? "Only the recorded compatibility facts above are verified; anything not listed is unknown."
-            : "No compatibility constraints have been verified for this library yet; treat every version constraint as unknown.",
+          COVERAGE_GAP,
+          compatibilityGap(facts),
           verificationFor(entry) === "unverified"
             ? "No deep documentation snapshots are ingested for this library; verify installation and API against the linked official docs."
             : "Documentation snapshots cover only the pages listed; verify current APIs against the linked official docs.",
@@ -375,15 +398,13 @@ export function createCatalogueTools(data: CatalogueData): CatalogueTools {
 
   function getComponent(raw: unknown): ComponentDetailsResult {
     const args = parseArgs("get_component", getComponentArgs, raw);
-    const separator = args.id.indexOf("/");
-    if (separator < 1) {
+    const parsedId = parseComponentId(args.id);
+    if (!parsedId) {
       throw new ArgumentError(`id must be '<library-slug>/<component name>', as returned by search_components`);
     }
-    const slug = args.id.slice(0, separator);
-    const name = args.id.slice(separator + 1);
 
-    const library = data.libraries.find((entry) => entry.slug === slug);
-    const component = library && (data.componentIndex[slug] ?? []).find((entry) => entry.name === name);
+    const library = data.libraries.find((entry) => entry.slug === parsedId.slug);
+    const component = library && (data.componentIndex[parsedId.slug] ?? []).find((entry) => entry.name === parsedId.name);
     if (!library || !component) {
       throw new ArgumentError(`unknown component id "${args.id}"; use search_components to find valid ids`);
     }
@@ -400,10 +421,8 @@ export function createCatalogueTools(data: CatalogueData): CatalogueTools {
         verification: "partial",
         gaps: [
           "The component page is verified on the library's own documentation; installation and API details come from the library's setup docs and may cover more than this component.",
-          facts.length > 0
-            ? "Only the recorded compatibility facts above are verified; anything not listed is unknown."
-            : "No compatibility constraints have been verified for this library yet; treat every version constraint as unknown.",
-          "Component coverage is partial; a missing component is not evidence of absence.",
+          compatibilityGap(facts),
+          COVERAGE_GAP,
         ],
       },
     };
@@ -439,35 +458,36 @@ function errorResult(message: string): ToolResult {
   return { content: [{ type: "text", text: message }], isError: true };
 }
 
-const annotation = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: true } as const;
+/** Read-only, local dataset: no world interaction and nothing destructive. */
+const annotation = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } as const;
 
 const TOOL_DEFINITIONS: ToolDefinition[] = [
   {
     name: "search_libraries",
     title: "Search Col's UI library catalogue",
     description: `Find UI libraries that fit a project's framework, styling approach, and use case. Returns stable library slugs, official source links, the components that explain each match, and explicit gaps. ${COVERAGE_NOTE} ${NO_CREDENTIALS_NOTE}`,
-    inputSchema: z.toJSONSchema(searchLibrariesArgs) as Record<string, unknown>,
+    args: searchLibrariesArgs,
     annotations: annotation,
   },
   {
     name: "search_components",
     title: "Search Col's verified component index",
     description: `Find components by their official name or a real alias, optionally scoped to one library. Every hit links to the component's own documentation page on the library's domain. ${COVERAGE_NOTE} ${NO_CREDENTIALS_NOTE}`,
-    inputSchema: z.toJSONSchema(searchComponentsArgs) as Record<string, unknown>,
+    args: searchComponentsArgs,
     annotations: annotation,
   },
   {
     name: "get_library",
     title: "Inspect one library in Col",
     description: `Everything Col records about one library: description, stacks, install commands, registry setup, pricing, verified compatibility facts (explicit "unknown" where nothing is verified), and any ingested documentation snapshots. ${COVERAGE_NOTE} ${NO_CREDENTIALS_NOTE}`,
-    inputSchema: z.toJSONSchema(getLibraryArgs) as Record<string, unknown>,
+    args: getLibraryArgs,
     annotations: annotation,
   },
   {
     name: "get_component",
     title: "Inspect one component in Col",
     description: `One component's canonical documentation link plus its library's install commands, registry setup, and verified compatibility facts (explicit "unknown" where nothing is verified). Ids come from search_components as '<library-slug>/<component name>'. ${COVERAGE_NOTE} ${NO_CREDENTIALS_NOTE}`,
-    inputSchema: z.toJSONSchema(getComponentArgs) as Record<string, unknown>,
+    args: getComponentArgs,
     annotations: annotation,
   },
 ];
