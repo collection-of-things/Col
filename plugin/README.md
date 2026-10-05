@@ -13,6 +13,13 @@ The package is shared by both hosts:
 ## Claude Code
 
 ```sh
+claude plugin marketplace add screen-gd/Col
+claude plugin install col@col
+```
+
+Or load it straight from a checkout (no GitHub involved):
+
+```sh
 claude --plugin-dir /path/to/Col/plugin
 ```
 
