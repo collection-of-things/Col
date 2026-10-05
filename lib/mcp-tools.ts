@@ -343,7 +343,8 @@ export function createCatalogueTools(data: CatalogueData): CatalogueTools {
     }
     // Same exact-name-first rule the directory uses, so an exact official name
     // or recorded alias outranks a substring touch on any other component.
-    matches.sort((a, b) => componentRank(a, keywords, args.query.toLowerCase()) - componentRank(b, keywords, args.query.toLowerCase()));
+    const normalizedQuery = keywords.join(" ");
+    matches.sort((a, b) => componentRank(a, keywords, normalizedQuery) - componentRank(b, keywords, normalizedQuery));
     return {
       results: matches.slice(offset, offset + limit),
       total: matches.length,
