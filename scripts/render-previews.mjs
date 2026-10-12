@@ -118,14 +118,14 @@ async function verifyWidget(page, root) {
     window.__messages = [];
     window.addEventListener("message", (event) => window.__messages.push(event.data));
   });
-  await page.route("https://collection-of-libs.vercel.app/preview/**", (route) =>
+  await page.route("https://usecol.com/preview/**", (route) =>
     route.fulfill({ status: 200, contentType: "text/html", body: "<html><body data-widget-proof>preview</body></html>" }),
   );
   const widgetFile = path.join(mkdtempSync(path.join(tmpdir(), "col-widget-")), "widget.html");
   writeFileSync(widgetFile, previewWidgetHtml());
   await page.goto(pathToFileURL(widgetFile).href);
 
-  const previewUrl = "https://collection-of-libs.vercel.app/preview/shadcn-ui/button/landing-pages";
+  const previewUrl = "https://usecol.com/preview/shadcn-ui/button/landing-pages";
   await page.evaluate((url) => {
     window.postMessage(
       { jsonrpc: "2.0", id: 999, method: "ui/notifications/tool-result", params: { structuredContent: { preview: { url } } } },

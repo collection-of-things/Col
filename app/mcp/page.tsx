@@ -48,7 +48,7 @@ export default function McpPage() {
   "url": "https://mantine.dev/x/spotlight/",
   "matchedOn": ["name:spotlight"],
   "preview": {
-    "url": "https://collection-of-libs.vercel.app/preview/mantine/spotlight/rapid-prototyping",
+    "url": "${siteUrl}/preview/mantine/spotlight/rapid-prototyping",
     "scene": "Rapid Prototyping",
     "renderedFrom": "story",
     "theme": "library default",

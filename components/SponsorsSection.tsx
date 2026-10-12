@@ -1,7 +1,6 @@
 import type { CSSProperties } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { repo } from "@/lib/repo";
-import { Icons } from "./MaskIcon";
 
 const inquiryUrl = repo.newIssue;
 const reveal = (index: number) => ({ "--i": index }) as CSSProperties;
@@ -27,10 +26,12 @@ export function SponsorsSection() {
         </a>
       </header>
 
-      <section className="pg-empty pg-empty-center ld-reveal" style={reveal(1)} aria-labelledby="sponsors-empty">
-        <span className="pg-empty-icon" aria-hidden><Icons.sponsors className="pg-empty-mask" /></span>
-        <p id="sponsors-empty" className="pg-empty-title">No sponsors yet</p>
-        <p>Col is built and maintained by volunteers. If it saves your team time, sponsoring is the most direct way to keep it going.</p>
+      <section className="pg-section ld-reveal" style={reveal(1)} aria-labelledby="sponsors-current">
+        <h2 id="sponsors-current">Our sponsors</h2>
+        <a href="https://reactbits.dev" target="_blank" rel="noopener noreferrer">
+          <img src="/sponsors/react-bits.jpg" width={1200} height={630} alt="React Bits, sponsor of Col. Free creative React components." style={{ width: "100%", maxWidth: 480, height: "auto" }} />
+        </a>
+        <p className="pg-lead">Thank you to React Bits for supporting Col.</p>
       </section>
 
       <section className="pg-section ld-reveal" style={reveal(2)} aria-labelledby="sponsors-supports">
