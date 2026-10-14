@@ -4,8 +4,8 @@ Thanks for helping make UI libraries easier to discover.
 
 ## Before you start
 
-- Col is maintained on [git.cafe](https://git.cafe/screen/col). Open issues and pull requests there; the GitHub repository is only a deploy mirror.
-- Search existing [issues](https://git.cafe/screen/col/issues) and [pull requests](https://git.cafe/screen/col/pulls).
+- Col is maintained on [GitHub](https://github.com/Zns-Nexus/col). Open issues and pull requests there. Vercel deploys from this repository.
+- Search existing [issues](https://github.com/Zns-Nexus/col/issues) and [pull requests](https://github.com/Zns-Nexus/col/pulls).
 - For a library request, feature request, or bug report, include the details the [README](README.md#request-something) lists.
 - Keep each issue and pull request focused on one outcome.
 - For a major feature, redesign, or new dependency, open an issue and get Screen's agreement before implementation.
@@ -13,7 +13,7 @@ Thanks for helping make UI libraries easier to discover.
 ## Local setup
 
 ```bash
-git clone https://git.cafe/screen/col.git Col
+git clone https://github.com/Zns-Nexus/col.git Col
 cd Col
 npm install
 npm run dev
@@ -111,30 +111,10 @@ In the description, explain what changed, why it changed, and how it was verifie
 
 Screen is the only person who merges pull requests for now. Contributors submit changes for review and leave merging to Screen.
 
-### Version history
-
-The sidebar's `/version-history` page lists merged git.cafe pull requests targeting `main`, ordered by PR number. It refreshes on visits using a five-minute cache, so each merged PR appears without a manual changelog edit. Use a clear PR title describing the shipped change. This is a change history, not a list of numbered releases.
-
 Agents must read `AGENTS.md` and this guide before changing the repository, and complete the applicable PR template checks before submitting work.
 
-## Deploys and the GitHub mirror
+## Deploys from GitHub
 
-### Merge and sync to Zns-Nexus/col
-
-After reviewing a PR, run `npm run repo:sync -- 63` (replace `63` with its number). The command checks git.cafe merge readiness, merges the PR, fetches `main`, rebases the current local branch, installs locked dependencies, runs typechecking and tests, and pushes the fetched git.cafe commit to `Zns-Nexus/col` on GitHub. Run `npm run repo:sync` to sync without merging a PR. GitHub authentication comes from Git's credential helper; git.cafe PR operations use your `cafe` login (`cafe auth login` if needed).
-
-The command stashes and restores uncommitted work, including untracked files, and retains the backup stash. It never commits local edits, publishes unpublished local commits, or force-pushes. On conflicts, it stops and prints how to restore the stash after resolving the Git operation. A failed local check stops the GitHub push; an already completed git.cafe merge stays merged. Readiness checks enforce configured server rules, not a human code review. Review the PR before running the merge command.
-
-Agent prompt: **“Review and merge git.cafe PR #63, then sync to Zns-Nexus/col.”** Agents must inspect the diff and issue links before running the command, and verify resolved issues are closed afterward.
-
-Vercel deploys from the GitHub mirror (`https://github.com/screen-gd/Col`) until Vercel and Cloudflare can deploy from git.cafe. Maintainers push every branch to both remotes so the two stay identical:
-
-```bash
-git remote add github https://github.com/screen-gd/Col
-git remote set-url --add --push origin https://git.cafe/screen/col.git
-git remote set-url --add --push origin https://github.com/screen-gd/Col
-```
-
-After this, `git push origin <branch>` updates git.cafe first, then GitHub. Merge pull requests on git.cafe and push `main` so the mirror deploys.
+Vercel deploys from `Zns-Nexus/col` on GitHub. Submit changes through a pull request; only Screen merges into `main`. Do not push directly to `main` or force-push without Screen's approval.
 
 Reviewers may request metadata corrections, a smaller scope, accessibility fixes, or links to official sources before merging.

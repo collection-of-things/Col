@@ -7,7 +7,7 @@ import { Header } from "./Header";
 import { BrandLink, RepoStars, SiteSearch, useRepoStars } from "./SiteChrome";
 import { SIDEBAR_SLOT_ID } from "./SidebarSlot";
 import { ThemeToggle } from "./ThemeToggle";
-import { isPreviewPath } from "@/lib/preview-stories";
+import packageJson from "../package.json";
 
 type SidebarMode = "narrow" | "wide";
 
@@ -57,9 +57,6 @@ export function AppFrame({ children }: { children: ReactNode }) {
     return () => window.removeEventListener("keydown", handleShortcut);
   }, []);
 
-  // Preview pages render bare so widgets and screenshots show only the story.
-  if (isPreviewPath(pathname)) return <>{children}</>;
-
   return (
     <div className="app-frame library-page-shell" data-sidebar={mode}>
       <Header />
@@ -69,8 +66,11 @@ export function AppFrame({ children }: { children: ReactNode }) {
         <div className="app-frame-nav"><AppSidebar /></div>
         <div id={SIDEBAR_SLOT_ID} className="app-frame-slot" />
         <div className="app-frame-footer">
-          <RepoStars stars={stars} />
-          <ThemeToggle />
+          <div className="app-frame-footer-controls">
+            <RepoStars stars={stars} />
+            <ThemeToggle />
+          </div>
+          <span className="app-frame-version">v{packageJson.version}</span>
         </div>
       </aside>
       <main ref={panelRef} className="app-frame-panel">

@@ -7,17 +7,7 @@ import type { LibraryDetails } from "../data/library-details/types";
 import type { DocSnapshot, LibraryCorpusEntry } from "../data/library-corpus/types";
 import type { CompatibilityFact, LibraryCompatibility } from "../data/compatibility";
 import { componentHaystack, componentRank, createDirectorySearch, normalizeWords, tokenMatches, wordTokens, type SearchResult } from "./directory.ts";
-import {
-  findPreviewEntry,
-  findPreviewStory,
-  previewPath,
-  PREVIEW_SCENES,
-  type PreviewStoriesEntry,
-} from "./preview-stories.ts";
-import { serializeSample } from "./preview-sample.ts";
-import { serializeThemeTokens } from "./preview-theme.ts";
-import { readPreviewScreenshot } from "./preview-assets.ts";
-import { PREVIEW_WIDGET_URI } from "./preview-widget.ts";
+import { FRAGMENT_PAGE_PREFIX, PREVIEW_WIDGET_URI, previewFragmentHtml } from "./preview-widget.ts";
 import { admissibleSnapshots } from "./corpus.ts";
 import { compatibilityReport, trackedSubjects, type CompatibilityReport } from "./compatibility.ts";
 import { libraryPath, siteUrl } from "./site.ts";
@@ -36,9 +26,11 @@ import { libraryOutbound } from "./library-outbound.ts";
  * SDK, which publishes them to clients as JSON Schema. What a client shows can
  * never drift from what the server enforces.
  *
- * Every result carries the same envelope: canonical source links, a
- * verification marker, and explicit gaps. Col's honesty rules live in the tool
- * descriptions because host agents read those, not the website.
+ * Every catalogue result carries the same envelope: canonical source links, a
+ * verification marker, and explicit gaps. `render_component` only validates the
+ * agent's module and states its gaps; the chat widget does the rendering.
+ * Col's honesty rules live in the tool descriptions because host agents read
+ * those, not the website.
  */
 
 /** How well Col has verified what a result claims. */
@@ -155,21 +147,6 @@ export interface LibraryDetailsResult {
   evidence: Evidence;
 }
 
-/** How one component looks in a use-case scene, rendered by Col's preview page. */
-export interface PreviewDetails {
-  /** The shared preview page, themed when the caller supplied tokens. */
-  url: string;
-  scene: UseCase;
-  /** Col rendered a recorded story; this is not a screenshot of the user's project. */
-  renderedFrom: "story";
-  theme: "library default" | "project tokens";
-  verification: Verification;
-  /** What the preview does not show. Never empty. */
-  gaps: string[];
-  /** The shipped screenshot's metadata; the tool result's image block carries the bytes. */
-  screenshot: { mimeType: "image/png"; alt: string } | null;
-}
-
 export type ComponentDetailsResult = Omit<ComponentHit, "library"> & {
   library: { slug: string; name: string; url: string; docsUrl: string | null; stacks: Stack[] };
   /** npm packages this component installs, as its registry records them. */
@@ -177,14 +154,12 @@ export type ComponentDetailsResult = Omit<ComponentHit, "library"> & {
   /** Registry components this one pulls in, by registry name. */
   registryDependencies: string[];
   compatibility: CompatibilityReport;
-  /** How the component looks in a use-case scene, when Col recorded a story for it. */
-  preview: PreviewDetails | null;
   evidence: Evidence;
 };
 
 /** A JSON-RPC tool result: either a payload or a typed error. */
 export type ToolResult = {
-  content: ({ type: "text"; text: string } | { type: "image"; data: string; mimeType: string })[];
+  content: { type: "text"; text: string }[];
   structuredContent?: Record<string, unknown>;
   isError?: boolean;
 };
@@ -200,7 +175,7 @@ export interface ToolDefinition {
   meta?: Record<string, unknown>;
 }
 
-/** The four tool calls, as one request-to-result interface. */
+/** The tool calls, as one request-to-result interface. */
 export interface CatalogueTools {
   invoke(name: string, args: unknown): ToolResult;
   list(): ToolDefinition[];
@@ -212,7 +187,6 @@ export interface CatalogueData {
   details: Record<string, LibraryDetails>;
   corpus: readonly LibraryCorpusEntry[];
   compatibility: readonly LibraryCompatibility[];
-  previewStories: readonly PreviewStoriesEntry[];
 }
 
 const MAX_LIMIT = 25;
@@ -270,21 +244,41 @@ const getLibraryArgs = z.object({
 
 const getComponentArgs = z.object({
   id: z.string().min(1).describe("Component id from search_components, e.g. 'shadcn-ui/Command'."),
-  tokens: z
-    .record(z.string(), z.string())
+});
+
+/** Large enough for a component plus inlined shadcn-style sources, small enough to bound a tool call. */
+const MAX_RENDER_CODE = 50_000;
+
+const renderComponentArgs = z.object({
+  code: z
+    .string()
+    .min(1)
+    .max(MAX_RENDER_CODE)
+    .describe(
+      "One self-contained TSX module whose default export is a React component showing the chosen component in the user's own use case. Import packages by npm name, optionally pinned ('@mantine/core@9.7.1'); they load from esm.sh with React 19 shared. Import package CSS directly ('@mantine/core/styles.css'). Tailwind utility classes work. Relative and '@/' imports fail: inline local files such as shadcn's components/ui sources. Use synthetic sample data only.",
+    ),
+  format: z
+    .enum(["widget", "html"])
     .optional()
     .describe(
-      "Optional project theme to render the preview in the project's look: semantic colour names ('primary', 'border', 'background', …) mapped to CSS colour values, plus 'radius' (a length like '12px') and 'font' (a font stack). Unknown names and unsafe values are ignored.",
+      `'widget' (default) renders through MCP Apps. 'html' also returns the same render as a self-contained HTML fragment, for hosts that cannot show MCP Apps, such as Claude Code: pass it to an inline HTML widget tool (e.g. show_widget), or save it as an .html file that starts with '${FRAGMENT_PAGE_PREFIX}' and open it in the browser.`,
     ),
-  scene: z
-    .enum(PREVIEW_SCENES)
-    .optional()
-    .describe("Optional use-case scene to render the preview in; defaults to the scene recorded with the story."),
-  sample: z
-    .record(z.string(), z.string())
-    .optional()
-    .describe("Optional short display strings the story replaces in its render (labels, values, questions). Synthetic data only; never send real user data."),
 });
+
+/** What render_component answers: the render itself happens in the user's chat or browser, never on Col's server. */
+export type RenderComponentResult =
+  | { status: "sent-to-chat"; gaps: string[] }
+  | { status: "html"; html: string; gaps: string[] };
+
+const RENDER_GAPS = [
+  "The component renders inside the chat only on hosts that support MCP Apps (such as Claude, ChatGPT, VS Code, and Codex). Claude Code does not show MCP Apps: call render_component again with format 'html' and show that instead. Never claim a render you did not see happen.",
+  "If the module fails to compile or render, the chat shows the error and reports it back to you as model context; fix the code and call render_component again.",
+];
+
+const HTML_GAPS = [
+  `Pass 'html' unchanged to an inline HTML widget tool if this host has one (e.g. show_widget). Otherwise write '${FRAGMENT_PAGE_PREFIX}' followed by 'html' to a temporary .html file and open it in the user's browser.`,
+  "Errors show inside the render only; they are not reported back to you, so ask the user what they see.",
+];
 
 /**
  * Words that carry no retrieval signal: English filler plus the catalogue's
@@ -609,7 +603,7 @@ export function createCatalogueTools(data: CatalogueData): CatalogueTools {
     };
   }
 
-  function getComponent(raw: unknown): ToolOutput {
+  function getComponent(raw: unknown): ComponentDetailsResult {
     const args = parseArgs("get_component", getComponentArgs, raw);
     const parsedId = parseComponentId(args.id);
     if (!parsedId) {
@@ -624,89 +618,41 @@ export function createCatalogueTools(data: CatalogueData): CatalogueTools {
     const details = data.details[library.slug];
     const facts = compatibilityFor(data, library.slug);
 
-    const gaps = [
-      "The component page is verified on the library's own documentation. Col publishes no install commands, so read the library's setup docs for installation and API details, which may cover more than this component.",
-      compatibilityGap(facts),
-      COVERAGE_GAP,
-    ];
-
-    const storyMatch = findPreviewStory(data.previewStories, args.id);
-    let preview: PreviewDetails | null = null;
-    let images: ToolOutput["images"];
-    if (storyMatch) {
-      const { entry, story } = storyMatch;
-      const scene = args.scene ?? story.scene;
-      const query = [serializeThemeTokens(args.tokens ?? {}), serializeSample(args.sample ?? {})]
-        .filter((part) => part !== "")
-        .join("&");
-      const themed = args.tokens !== undefined && serializeThemeTokens(args.tokens) !== "";
-      const sampled = args.sample !== undefined && serializeSample(args.sample) !== "";
-      const screenshot = readPreviewScreenshot(entry.slug, story.component);
-      const previewGaps = [
-        "The preview renders one recorded story in a use-case scene, not the library's full variant set; the project render will differ once the component is adapted to its conventions.",
-        "A preview shows fit, not proof: only the compatibility facts above are verified evidence.",
-      ];
-      if (themed) {
-        previewGaps.push(
-          "The supplied theme tokens apply to the linked preview page; an attached screenshot still shows the library-default theme.",
-        );
-      }
-      if (sampled) {
-        previewGaps.push("The supplied sample data replaces the story's recorded content; the shape of the render is unchanged.");
-      }
-      preview = {
-        url: absolute(previewPath(entry.slug, story, scene) + (query ? `?${query}` : "")),
-        scene,
-        renderedFrom: "story",
-        theme: themed ? "project tokens" : "library default",
-        verification: "partial",
-        gaps: previewGaps,
-        screenshot: screenshot
-          ? { mimeType: "image/png", alt: `${library.name} ${story.component} rendered in a ${story.scene} scene` }
-          : null,
-      };
-      images = screenshot ? [screenshot] : undefined;
-    } else {
-      const entry = findPreviewEntry(data.previewStories, parsedId.slug);
-      if (entry && entry.permission.status !== "granted") {
-        gaps.push(
-          "Preview stories for this library are withheld because no granted reuse permission is recorded; the documentation link above is the source of truth.",
-        );
-      } else {
-        gaps.push(
-          library.stacks.includes("React")
-            ? "No preview story is recorded for this component; a missing preview is not evidence the component cannot be previewed."
-            : "Preview is unavailable: Col's story runtime renders React components only, so this component is preview-unavailable for now. Its documentation link above is the source of truth.",
-        );
-      }
-    }
-
-    const payload: ComponentDetailsResult = {
+    return {
       ...componentHit(library, component, componentVerification(facts, corpusFor(data, library.slug))),
       library: { slug: library.slug, name: library.name, url: library.url, docsUrl: details?.docsUrl ?? null, stacks: library.stacks },
       dependencies: library.outboundOnly ? [] : component.dependencies ?? [],
       registryDependencies: library.outboundOnly ? [] : component.registryDependencies ?? [],
       compatibility: compatibilityReport(facts, trackedSubjects(library.stacks, facts)),
-      preview,
       evidence: {
         verification: componentVerification(facts, corpusFor(data, library.slug)),
-        gaps,
+        gaps: [
+          "The component page is verified on the library's own documentation. Col publishes no install commands, so read the library's setup docs for installation and API details, which may cover more than this component.",
+          compatibilityGap(facts),
+          COVERAGE_GAP,
+        ],
       },
     };
-    return { payload, images };
   }
 
-  /** Handlers answer a payload plus, where a shipped screenshot exists, image blocks for the tool result. */
-  interface ToolOutput {
-    payload: object;
-    images?: { data: string; mimeType: string }[];
+  /**
+   * Validates the module and hands it to the renderer: the MCP Apps widget by
+   * default, or an HTML fragment with the code embedded for hosts without MCP
+   * Apps. Col's server never runs the code.
+   */
+  function renderComponent(raw: unknown): RenderComponentResult {
+    const args = parseArgs("render_component", renderComponentArgs, raw);
+    return args.format === "html"
+      ? { status: "html", html: previewFragmentHtml(args.code), gaps: HTML_GAPS }
+      : { status: "sent-to-chat", gaps: RENDER_GAPS };
   }
 
-  const handlers: Record<string, (args: unknown) => ToolOutput> = {
-    search_libraries: (args) => ({ payload: searchLibraries(args) }),
-    search_components: (args) => ({ payload: searchComponents(args) }),
-    get_library: (args) => ({ payload: getLibrary(args) }),
+  const handlers: Record<string, (args: unknown) => unknown> = {
+    search_libraries: searchLibraries,
+    search_components: searchComponents,
+    get_library: getLibrary,
     get_component: getComponent,
+    render_component: renderComponent,
   };
 
   function invoke(name: string, args: unknown): ToolResult {
@@ -715,13 +661,11 @@ export function createCatalogueTools(data: CatalogueData): CatalogueTools {
       return errorResult(`unknown tool "${name}"; available tools: ${Object.keys(handlers).join(", ")}`);
     }
     try {
-      const output = handler(args);
-      const payload = output.payload as Record<string, unknown>;
-      const content: ToolResult["content"] = [{ type: "text", text: JSON.stringify(payload) }];
-      for (const image of output.images ?? []) {
-        content.push({ type: "image", data: image.data, mimeType: image.mimeType });
-      }
-      return { content, structuredContent: payload };
+      const payload = handler(args) as Record<string, unknown>;
+      return {
+        content: [{ type: "text", text: JSON.stringify(payload) }],
+        structuredContent: payload,
+      };
     } catch (error) {
       return errorResult(error instanceof ArgumentError ? error.message : `${name} failed: ${String(error)}`);
     }
@@ -762,8 +706,15 @@ const TOOL_DEFINITIONS: ToolDefinition[] = [
   {
     name: "get_component",
     title: "Inspect one component in Col",
-    description: `One component's canonical documentation link, the npm dependencies and registry components the library records for it, and verified compatibility facts (explicit "unknown" where nothing is verified). Col publishes no install commands: read the library's setup docs for those. When Col has recorded a story for the component, also returns how it looks in a use-case scene: a preview URL (themed with \`tokens\` when supplied), honest preview markers, and a rendered screenshot. A missing preview is an explicit gap, never evidence about the library. Ids come from search_components as '<library-slug>/<component name>'. ${COVERAGE_NOTE} ${NO_CREDENTIALS_NOTE}`,
+    description: `One component's canonical documentation link, the npm dependencies and registry components the library records for it, and verified compatibility facts (explicit "unknown" where nothing is verified). Col publishes no install commands: read the library's setup docs for those. Ids come from search_components as '<library-slug>/<component name>'. ${COVERAGE_NOTE} ${NO_CREDENTIALS_NOTE}`,
     args: getComponentArgs,
+    annotations: annotation,
+  },
+  {
+    name: "render_component",
+    title: "Render a component in the chat",
+    description: `Show the user a live, interactive render of a component inside the chat, after choosing it with search_components and get_component. Write the module for the user's real use case (their labels, layout, and theme), not a generic demo. Packages load from esm.sh at render time; Col bundles none. In Claude Code, which does not show MCP Apps, pass format 'html' and show the returned fragment with an inline HTML widget tool, or open it in the browser. ${NO_CREDENTIALS_NOTE}`,
+    args: renderComponentArgs,
     annotations: annotation,
     meta: { ui: { resourceUri: PREVIEW_WIDGET_URI } },
   },
