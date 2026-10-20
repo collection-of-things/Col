@@ -1700,4 +1700,16 @@ export const componentIndex: ComponentIndex = {
     { name: "Sidebar", kind: "full-pattern", summary: "An app sidebar that collapses to icons or off canvas and becomes a swipeable drawer on phones.", verifiedAt: "2026-10-15", url: "https://hextaui.com/docs/sidebar", dependencies: ["@base-ui/react", "@tabler/icons-react", "class-variance-authority", "cn"] },
     { name: "Toast", kind: "full-pattern", summary: "Brief messages that stack, expand on hover, swipe away, and turn a loading state into success or error.", verifiedAt: "2026-10-15", url: "https://hextaui.com/docs/toast", dependencies: ["@base-ui/react", "@tabler/icons-react", "cn"] },
   ],
+  "chakra-ui": [
+    { name: "Button", kind: "full-pattern", summary: "Triggers an action or event, in variants, sizes and color palettes, with loading and disabled states.", verifiedAt: "2026-10-20", url: "https://chakra-ui.com/docs/components/button" },
+    { name: "Dialog", kind: "full-pattern", summary: "A modal window for focused tasks, with a backdrop, header, body, footer and close trigger.", concept: "dialog", verifiedAt: "2026-10-20", url: "https://chakra-ui.com/docs/components/dialog" },
+    { name: "Menu", kind: "full-pattern", summary: "An accessible dropdown menu with grouped items, checkbox and radio items, separators and submenus.", verifiedAt: "2026-10-20", url: "https://chakra-ui.com/docs/components/menu" },
+    { name: "Combobox", kind: "full-pattern", summary: "A text input paired with a listbox, so people filter the options and pick one or several.", aliases: ["autocomplete"], verifiedAt: "2026-10-20", url: "https://chakra-ui.com/docs/components/combobox" },
+    { name: "Select", kind: "full-pattern", summary: "Picks one or more values from a collection of options, rendered in a listbox.", verifiedAt: "2026-10-20", url: "https://chakra-ui.com/docs/components/select" },
+    { name: "Table", kind: "full-pattern", summary: "Displays data in rows and columns, with header and footer sections, column groups, sticky headers and a scroll area.", verifiedAt: "2026-10-20", url: "https://chakra-ui.com/docs/components/table" },
+    { name: "Tabs", kind: "full-pattern", summary: "Switches between related panels, keeping one tab selected and its content visible.", verifiedAt: "2026-10-20", url: "https://chakra-ui.com/docs/components/tabs" },
+    { name: "Date Picker", kind: "full-pattern", summary: "Selects a single date or a date range from a calendar in a popover.", verifiedAt: "2026-10-20", url: "https://chakra-ui.com/docs/components/date-picker" },
+    { name: "Slider", kind: "full-pattern", summary: "Selects a value or a range by dragging a thumb or using the keyboard, horizontally or vertically.", verifiedAt: "2026-10-20", url: "https://chakra-ui.com/docs/components/slider" },
+    { name: "Toast", kind: "full-pattern", summary: "Temporary messages raised from a toaster, which stack, can be updated in place and show a loading state.", verifiedAt: "2026-10-20", url: "https://chakra-ui.com/docs/components/toast" },
+  ],
 };
