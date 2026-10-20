@@ -1712,4 +1712,18 @@ export const componentIndex: ComponentIndex = {
     { name: "Slider", kind: "full-pattern", summary: "Selects a value or a range by dragging a thumb or using the keyboard, horizontally or vertically.", verifiedAt: "2026-10-20", url: "https://chakra-ui.com/docs/components/slider" },
     { name: "Toast", kind: "full-pattern", summary: "Temporary messages raised from a toaster, which stack, can be updated in place and show a loading state.", verifiedAt: "2026-10-20", url: "https://chakra-ui.com/docs/components/toast" },
   ],
+  "gradients-sh": [
+    { name: "Mesh Gradient", kind: "visual-effect", summary: "Soft colour blobs drifting into each other, as a live background.", aliases: ["animated background"], verifiedAt: "2026-10-20", url: "https://gradients.sh/docs/components/mesh-gradient" },
+    { name: "Grain Gradient", kind: "visual-effect", summary: "A grainy, out-of-focus blend of saturated colour.", aliases: ["noise gradient"], verifiedAt: "2026-10-20", url: "https://gradients.sh/docs/components/grain-gradient" },
+    { name: "Aurora", kind: "visual-effect", summary: "Vertical light curtains folding over a night sky.", verifiedAt: "2026-10-20", url: "https://gradients.sh/docs/components/aurora" },
+    { name: "Waves", kind: "visual-effect", summary: "Layered bands of colour rolling past each other.", verifiedAt: "2026-10-20", url: "https://gradients.sh/docs/components/waves" },
+    { name: "Radial Glow", kind: "visual-effect", summary: "A warm glow rising from the bottom edge.", verifiedAt: "2026-10-20", url: "https://gradients.sh/docs/components/radial-glow" },
+    { name: "Linear Flow", kind: "visual-effect", summary: "A linear blend whose angle and colour stops drift slowly.", aliases: ["animated linear gradient"], verifiedAt: "2026-10-20", url: "https://gradients.sh/docs/components/linear-flow" },
+    { name: "Gradient Text", kind: "visual-effect", summary: "Real, selectable text filled with a live gradient.", verifiedAt: "2026-10-20", url: "https://gradients.sh/docs/components/gradient-text" },
+    { name: "Gradient Border", kind: "visual-effect", summary: "An animated gradient border around any content; the inside stays transparent.", aliases: ["animated border"], verifiedAt: "2026-10-20", url: "https://gradients.sh/docs/components/gradient-border" },
+    { name: "Gradient Button", kind: "full-pattern", summary: "A button with a live gradient fill and hover, press, focus, and disabled states.", verifiedAt: "2026-10-20", url: "https://gradients.sh/docs/components/gradient-button" },
+    { name: "Hero Background", kind: "visual-effect", summary: "A full-bleed hero section on a live gradient that fades into the page.", verifiedAt: "2026-10-20", url: "https://gradients.sh/docs/components/hero-background" },
+    { name: "Section Fade", kind: "visual-effect", summary: "A section whose live gradient fades out at its edges.", verifiedAt: "2026-10-20", url: "https://gradients.sh/docs/components/section-fade" },
+    { name: "Gradient Card", kind: "full-pattern", summary: "A card on a live gradient with a scrim that keeps white text legible.", verifiedAt: "2026-10-20", url: "https://gradients.sh/docs/components/gradient-card" },
+  ],
 };

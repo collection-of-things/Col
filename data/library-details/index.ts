@@ -94,6 +94,7 @@ import svelte_bits from "./svelte-bits.ts";
 import canvas_ui from "./canvas-ui.ts";
 import loading_dev from "./loading-dev.ts";
 import hextaui from "./hextaui.ts";
+import gradients_sh from "./gradients-sh.ts";
 
 export type { LibraryDetails };
 
@@ -200,4 +201,5 @@ export const libraryDetails: Record<string, LibraryDetails> = {
   "canvas-ui": canvas_ui,
   "loading-dev": loading_dev,
   "hextaui": hextaui,
+  "gradients-sh": gradients_sh,
 };
