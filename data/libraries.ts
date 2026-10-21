@@ -1101,6 +1101,18 @@ export const libraries: Library[] = [
     useCases: ["Dashboards", "Accessibility-first", "Rapid Prototyping"],
     tags: ["base ui", "shadcn registry", "copy paste", "ai chat", "hooks"],
   },
+  {
+    name: "gradients.sh",
+    slug: "gradients-sh",
+    addedAt: "2026-10-20T14:34:32-04:00",
+    description:
+      "Live, animated gradient backgrounds and surfaces for React, rendered with WebGPU or WebGL2 and installed as editable source through the shadcn CLI.",
+    url: "https://gradients.sh",
+    category: "Animation & Motion",
+    stacks: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    useCases: ["Landing Pages", "Marketing Sites", "Micro-interactions", "Creative & Experimental"],
+    tags: ["animated gradients", "webgl", "webgpu", "backgrounds", "shadcn registry"],
+  },
 ];
 
 /** Looks up a library by slug, throwing so a stale hard-coded slug fails the build instead of rendering a broken link. */
