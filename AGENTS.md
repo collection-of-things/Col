@@ -94,8 +94,8 @@ Never force-push without Screen's approval.
 
 ## Git and hosting
 
-- GitHub (`https://github.com/Zns-Nexus/col`) is the source of truth for code, stars, issues, the roadmap, and pull requests. Open issues and pull requests there; `gh` supports this repository.
-- Vercel deploys from this GitHub repository. Submit changes through pull requests and leave merging to Screen. Use the remote that points to `Zns-Nexus/col` (`nexus` in this checkout).
+- git.cafe (`https://git.cafe/screen/col`) is the source of truth for code and pull requests. Push branches and open pull requests there with the `cafe` CLI. Use the remote that points to `git.cafe/screen/col` (`origin` in this checkout).
+- Vercel deploys from the GitHub mirror `screen-gd/Col`. Its `Sync from git.cafe` workflow copies git.cafe branches and tags every few minutes. Do not push to or open pull requests on the mirror. Submit changes through git.cafe pull requests and leave merging to Screen.
 - Site code reads repository URLs from `lib/repo.ts` and its API through `lib/git-cafe.ts`. Do not hard-code repository URLs.
 
 

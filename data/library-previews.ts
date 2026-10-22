@@ -32,7 +32,7 @@ export const libraryPreviews: Record<string, LibraryPreview> = {
   "uselayouts": { src: "https://uselayouts.com/og.jpg", width: 1200, height: 630 },
   "nexvyn-ui": { src: "https://ui.nexvyn.dev/opengraph-image.png", width: 1200, height: 630 },
   "spell-ui": { src: "https://spell.sh/og", width: 1200, height: 628 },
-  "bencho": { src: "https://bencho.dev/share-cover-hex.png", width: 1200, height: 630 },
+  "bencho": { src: "https://bencho.dev/share-cover-ring.png", width: 2400, height: 1260 },
   "obsidian-ui": { src: "https://cdn-new.obsidianui.dev/og-image.png?v=3", width: 1917, height: 1078 },
   "ark-ui": { src: "https://ark-ui.com/og-image.png", width: 2400, height: 1260 },
   "park-ui": { src: "https://park-ui.com/opengraph-image.png?opengraph-image.95355333.png", width: 2400, height: 1260 },
@@ -74,4 +74,6 @@ export const libraryPreviews: Record<string, LibraryPreview> = {
   "lucide-animated": { src: "https://lucide-animated.com/og.png", width: 1200, height: 630 },
   "useanimations": { src: "https://useanimations.com/images/OGuseAnimationsImage.jpg", width: 1280, height: 720 },
   "all-svg-icons": { src: "https://allsvgicons.com/og.png", width: 1200, height: 630 },
+  "hugeicons": { src: "https://hugeicons.com/og_preview.png", width: 1200, height: 628 },
+  "rune-icons": { src: "https://www.runeicons.com/og-image.png", width: 4800, height: 2520 },
 };

@@ -1,0 +1,42 @@
+# Mirrors git.cafe (the canonical repository) into screen-gd/Col, which Vercel deploys.
+# Pushes every git.cafe branch and tag without force. A ref that GitHub has diverged on
+# is rejected and fails the run instead of being overwritten.
+#
+# Needs the GIT_CAFE_SYNC_DEPLOY_KEY secret: the private half of a write deploy key on
+# screen-gd/Col. The main ruleset lets deploy keys bypass its pull-request rule.
+name: Sync from git.cafe
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: sync-git-cafe
+  cancel-in-progress: false
+
+permissions: {}
+
+jobs:
+  sync:
+    if: github.repository == 'screen-gd/Col'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Push git.cafe refs to GitHub
+        env:
+          DEPLOY_KEY: ${{ secrets.GIT_CAFE_SYNC_DEPLOY_KEY }}
+          SOURCE: https://git.cafe/screen/col
+          TARGET: git@github.com:screen-gd/Col.git
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+          printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          # GitHub's published ed25519 host key.
+          echo 'github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl' >> ~/.ssh/known_hosts
+
+          git init -q --bare mirror.git
+          cd mirror.git
+          git fetch -q "$SOURCE" '+refs/heads/*:refs/heads/*' '+refs/tags/*:refs/tags/*'
+          git push "$TARGET" 'refs/heads/*:refs/heads/*' 'refs/tags/*:refs/tags/*'
