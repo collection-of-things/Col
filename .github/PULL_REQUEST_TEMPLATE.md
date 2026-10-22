@@ -1,4 +1,4 @@
-<!-- Col reviews pull requests on GitHub: https://github.com/Zns-Nexus/col/pulls. -->
+<!-- Col reviews pull requests on git.cafe: https://git.cafe/screen/col/pulls. -->
 
 ## What changed
 
