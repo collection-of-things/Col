@@ -78,11 +78,11 @@ Col exposes five tools:
 | `search_components` | Find indexed components by name or alias. |
 | `get_library` | Read a library's details, official links, and available documentation. |
 | `get_component` | Inspect a component's sources and verification gaps. |
-| `render_component` | Render a TSX component module live in chat in clients that support MCP Apps. |
+| `render_component` | Preview an actual library implementation by ID, with its package version and explicit reproduction limits. |
 
 Search queries are keyword-based and limited to 4,096 Unicode code points. Stack filters use AND, including multiple frameworks; use-case filters use OR. Use structured filters and check requirements in official docs rather than treating prose or negation as hard constraints.
 
-Previews support static and string-literal dynamic npm imports, package CSS, and in-module default-export aliases. Inline local files; computed imports and server-only or async components are unsupported. The HTML fallback runs in a sandboxed iframe separated from its embedding document. Preserve that sandbox when embedding the returned fragment.
+Call `get_component` and check `preview.available`, then call `render_component` with its `id`, optional user `styles` (CSS), and `theme` (`light` or `dark`). Col supplies the pinned real library export, required CSS and provider; implementation code and arbitrary imports are rejected. Both MCP Apps and the sandboxed HTML fallback display provenance and reproduction limits. Components without a verified adapter return `unavailable`, including copy-in sources not yet verified; there is no generated fallback. This is a breaking change from the former `code` argument. See the [rendering contract](docs/mcp-component-previews.md) for coverage and limitations.
 
 See the [client setup guide](https://usecol.com/mcp) for all supported clients and the [agent guide](https://usecol.com/mcp/agents) for tool arguments and workflows. The [Col agent plugin](plugin/README.md) bundles the connection with a component discovery skill. Use the plugin or a direct connection to avoid configuring Col twice.
 

@@ -7,11 +7,12 @@ import type { LibraryDetails } from "../data/library-details/types";
 import type { DocSnapshot, LibraryCorpusEntry } from "../data/library-corpus/types";
 import type { CompatibilityFact, LibraryCompatibility } from "../data/compatibility";
 import { componentHaystack, componentRank, createDirectorySearch, matchesLibraryIdentity, normalizeWords, termMatches, tokenMatches, wordTokens, type SearchResult } from "./directory.ts";
-import { FRAGMENT_PAGE_PREFIX, PREVIEW_WIDGET_URI, previewFragmentHtml } from "./preview-widget.ts";
+import { FRAGMENT_PAGE_PREFIX, PREVIEW_WIDGET_URI, verifiedPreviewFragmentHtml } from "./preview-widget.ts";
 import { admissibleSnapshots } from "./corpus.ts";
 import { compatibilityReport, trackedSubjects, type CompatibilityReport } from "./compatibility.ts";
 import { libraryPath, siteUrl } from "./site.ts";
 import { libraryOutbound } from "./library-outbound.ts";
+import { componentPreviewArgs, componentPreviewSupport, componentPreviewRequestKey, createComponentPreview, type ComponentPreview } from "./component-preview.ts";
 
 /**
  * The MCP tool layer — the one seam the MCP endpoint serves.
@@ -27,8 +28,8 @@ import { libraryOutbound } from "./library-outbound.ts";
  * never drift from what the server enforces.
  *
  * Every catalogue result carries the same envelope: canonical source links, a
- * verification marker, and explicit gaps. `render_component` only validates the
- * agent's module and states its gaps; the chat widget does the rendering.
+ * verification marker, and explicit gaps. `render_component` selects the
+ * verified implementation by id; the chat widget renders the server result.
  * Col's honesty rules live in the tool descriptions because host agents read
  * those, not the website.
  */
@@ -154,6 +155,7 @@ export type ComponentDetailsResult = Omit<ComponentHit, "library"> & {
   /** Registry components this one pulls in, by registry name. */
   registryDependencies: string[];
   compatibility: CompatibilityReport;
+  preview: ReturnType<typeof componentPreviewSupport>;
   evidence: Evidence;
 };
 
@@ -252,33 +254,18 @@ const getComponentArgs = z.object({
   id: z.string().min(1).describe("Component id from search_components, e.g. 'shadcn-ui/Command'."),
 });
 
-/** Large enough for a component plus inlined shadcn-style sources, small enough to bound a tool call. */
-const MAX_RENDER_CODE = 50_000;
+const renderComponentArgs = componentPreviewArgs;
 
-const renderComponentArgs = z.object({
-  code: z
-    .string()
-    .min(1)
-    .max(MAX_RENDER_CODE)
-    .describe(
-      "One self-contained TSX module whose default export is a client React component, including an in-module alias exported as default. Static and string-literal dynamic npm imports are supported, optionally pinned ('@mantine/core@9.7.1'); they load from esm.sh with React 19 shared. Computed import specifiers and server-only modules are unsupported. Import package CSS directly ('@mantine/core/styles.css'). Tailwind utility classes work. Relative and '@/' imports fail: inline local files such as shadcn's components/ui sources. Use the user's labels, layout and theme with synthetic sample data only.",
-    ),
-  format: z
-    .enum(["widget", "html"])
-    .optional()
-    .describe(
-      `'widget' (default) renders through MCP Apps. 'html' returns a self-contained HTML fragment with a sandboxed preview iframe that cannot access the embedding document, for hosts that cannot show MCP Apps, such as Claude Code: pass it unchanged to an inline HTML widget tool (e.g. show_widget), or save it as an .html file that starts with '${FRAGMENT_PAGE_PREFIX}' and open it in the browser.`,
-    ),
-});
-
-/** What render_component answers: the render itself happens in the user's chat or browser, never on Col's server. */
-export type RenderComponentResult =
-  | { status: "sent-to-chat"; gaps: string[] }
-  | { status: "html"; html: string; gaps: string[] };
-
+/** The server selects the implementation; clients display the resulting preview. */
+export type RenderComponentResult = {
+  status: "sent-to-chat" | "html" | "unavailable";
+  preview: ComponentPreview;
+  html?: string;
+  gaps: string[];
+};
 const RENDER_GAPS = [
   "The component renders inside the chat only on hosts that support MCP Apps (such as Claude, ChatGPT, VS Code, and Codex). Claude Code does not show MCP Apps: call render_component again with format 'html' and show that instead. Never claim a render you did not see happen.",
-  "If the module fails to compile or render, the chat shows the error and reports it back to you as model context; fix the code and call render_component again.",
+  "If package, stylesheet or rendering fails, the chat shows the error and reports it as model context. Report the failure; never replace the component with generated code.",
 ];
 
 const HTML_GAPS = [
@@ -629,6 +616,7 @@ export function createCatalogueTools(data: CatalogueData): CatalogueTools {
     return {
       ...componentHit(library, component, componentVerification(facts, corpusFor(data, library.slug))),
       library: { slug: library.slug, name: library.name, url: library.url, docsUrl: details?.docsUrl ?? null, stacks: library.stacks },
+      preview: library.outboundOnly ? { available: false, gaps: ["This library permits outbound documentation links only; no preview is served."] } : componentPreviewSupport(args.id),
       dependencies: library.outboundOnly ? [] : component.dependencies ?? [],
       registryDependencies: library.outboundOnly ? [] : component.registryDependencies ?? [],
       compatibility: compatibilityReport(facts, trackedSubjects(library.stacks, facts)),
@@ -643,16 +631,21 @@ export function createCatalogueTools(data: CatalogueData): CatalogueTools {
     };
   }
 
-  /**
-   * Validates the module and hands it to the renderer: the MCP Apps widget by
-   * default, or an HTML fragment with the code embedded for hosts without MCP
-   * Apps. Col's server never runs the code.
-   */
+  /** Selects a reviewed library composition or explicitly reports unavailable. Both formats use the same pinned source; the server never executes it. */
   function renderComponent(raw: unknown): RenderComponentResult {
     const args = parseArgs("render_component", renderComponentArgs, raw);
+    const component = getComponent({ id: args.id });
+    const preview = createComponentPreview(args, component.url);
+    const library = data.libraries.find((entry) => entry.slug === component.library.slug);
+    if (library?.outboundOnly) {
+      const blocked = { id: args.id, docsUrl: component.url, requestKey: preview.requestKey, available: false as const, gaps: ["This library permits outbound documentation links only; no preview is served."] };
+      return { status: "unavailable", preview: blocked, gaps: blocked.gaps, ...(args.format === "html" ? { html: verifiedPreviewFragmentHtml(blocked) } : {}) };
+    }
+    const gaps = [...preview.gaps, ...(args.format === "html" ? HTML_GAPS : RENDER_GAPS)];
+    if (!preview.available) return { status: "unavailable", preview, gaps, ...(args.format === "html" ? { html: verifiedPreviewFragmentHtml(preview) } : {}) };
     return args.format === "html"
-      ? { status: "html", html: previewFragmentHtml(args.code), gaps: HTML_GAPS }
-      : { status: "sent-to-chat", gaps: RENDER_GAPS };
+      ? { status: "html", preview, html: verifiedPreviewFragmentHtml(preview), gaps }
+      : { status: "sent-to-chat", preview, gaps };
   }
 
   const handlers: Record<string, (args: unknown) => unknown> = {
@@ -675,7 +668,12 @@ export function createCatalogueTools(data: CatalogueData): CatalogueTools {
         structuredContent: payload,
       };
     } catch (error) {
-      return errorResult(error instanceof ArgumentError ? error.message : `${name} failed: ${String(error)}`);
+      const result = errorResult(error instanceof ArgumentError ? error.message : `${name} failed: ${String(error)}`);
+      if (name === "render_component") {
+        const input = args && typeof args === "object" ? args : {};
+        result.structuredContent = { requestKey: componentPreviewRequestKey(input), error: result.content[0].text };
+      }
+      return result;
     }
   }
 
@@ -721,7 +719,7 @@ const TOOL_DEFINITIONS: ToolDefinition[] = [
   {
     name: "render_component",
     title: "Render a component in the chat",
-    description: `Show the user a live, interactive render of a component inside the chat, after choosing it with search_components and get_component. Write the client module for the user's labels, layout, and theme. Aliased default exports and literal dynamic npm imports are supported; computed import specifiers and server-only modules are not. Packages load from esm.sh at render time; Col bundles none. In Claude Code, which does not show MCP Apps, pass format 'html' and show the returned sandboxed fragment unchanged with an inline HTML widget tool, or open it in the browser. ${NO_CREDENTIALS_NOTE}`,
+    description: `Render the actual library implementation by component id. First inspect get_component.preview for availability, package version and reproduction limits. Col selects the pinned export, CSS and provider; caller implementation code is rejected. Only user CSS and light/dark theme can change. Unsupported components return unavailable, never an approximation. Keep the visible provenance and limitations. In clients without MCP Apps use format 'html' and show the complete returned fragment unchanged. ${NO_CREDENTIALS_NOTE}`,
     args: renderComponentArgs,
     annotations: annotation,
     meta: { ui: { resourceUri: PREVIEW_WIDGET_URI } },

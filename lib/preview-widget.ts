@@ -1,12 +1,12 @@
 /**
- * The renderer behind `render_component`: turns the TSX module the agent wrote
+ * The renderer behind `render_component`: turns the server-selected library composition
  * into a live React render inside the user's chat. It ships in two shells that
  * share one runtime (`runtimeScript`):
  *
  * - `previewWidgetHtml()`: the MCP Apps view. The tool's `_meta.ui.resourceUri`
  *   points here; MCP Apps hosts load it in a sandboxed iframe and pass it the
- *   tool arguments through the official ext-apps `App` bridge.
- * - `previewFragmentHtml(code)`: a self-contained HTML fragment with the code
+ *   tool result through the official ext-apps `App` bridge.
+ * - `verifiedPreviewFragmentHtml(preview)`: an HTML fragment with provenance and code
  *   embedded, returned by `render_component({ format: "html" })` for hosts that
  *   cannot show MCP Apps, such as Claude Code. It isolates the render in an
  *   `<iframe srcdoc>` so the host's CSS cannot restyle it. The agent passes it
@@ -18,6 +18,8 @@
  * package share one React without an import map.
  */
 import type { parse as parseTsx } from "@babel/parser";
+import type { ComponentPreview } from "./component-preview";
+import { componentPreviewRequestKey } from "./component-preview.ts";
 
 export const PREVIEW_WIDGET_URI = "ui://col/render-component.html";
 
@@ -155,6 +157,7 @@ async function colRuntime(report) {
   };
   window.addEventListener("error", (event) => fail(event.error || event.message));
   window.addEventListener("unhandledrejection", (event) => fail(event.reason));
+  window.addEventListener("securitypolicyviolation", (event) => fail("Preview resource blocked by CSP: " + event.effectiveDirective));
 
   async function render(code) {
     const current = ++generation;
@@ -177,6 +180,7 @@ async function colRuntime(report) {
       resolveImport(entry.specifier, ${JSON.stringify(REACT_VERSION)});
     }
     const [imports] = parse(js);
+    const stylesheets = [];
     let out = "";
     let last = 0;
     for (const entry of imports) {
@@ -190,7 +194,11 @@ async function colRuntime(report) {
         const link = document.createElement("link");
         link.rel = "stylesheet";
         link.href = url;
-        link.addEventListener("error", () => fail("Stylesheet failed to load: " + entry.specifier, current));
+        stylesheets.push(new Promise((resolve, reject) => {
+          const timer = setTimeout(() => reject(new Error("Stylesheet timed out: " + entry.specifier)), 15000);
+          link.addEventListener("load", () => { clearTimeout(timer); resolve(); }, { once: true });
+          link.addEventListener("error", () => { clearTimeout(timer); reject(new Error("Stylesheet failed to load: " + entry.specifier)); }, { once: true });
+        }));
         resources.push(link);
         document.head.append(link);
         out += js.slice(last, entry.importStart);
@@ -200,6 +208,8 @@ async function colRuntime(report) {
         last = entry.end;
       }
     }
+    await Promise.all(stylesheets);
+    if (current !== generation) return;
     const script = document.createElement("script");
     script.type = "module";
     const resolved = out + js.slice(last);
@@ -219,7 +229,7 @@ async function colRuntime(report) {
  * The document every render runs in: Tailwind, a status line for failures, and
  * the mount point. `script` boots the runtime for the shell that uses it.
  */
-function previewPage(script: string): string {
+function previewPage(script: string, tailwind = true): string {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -227,7 +237,7 @@ function previewPage(script: string): string {
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="color-scheme" content="light dark" />
 <title>Component preview</title>
-<script src="${RUNTIME.tailwind}"></script>
+${tailwind ? `<script src="${RUNTIME.tailwind}"></script>` : ""}
 <style>
   body { margin: 0; padding: 16px; background: transparent; color: light-dark(#000, #fff); font: 14px/1.5 system-ui, sans-serif; }
   html { min-height: 360px; }
@@ -243,11 +253,11 @@ ${script}
 `;
 }
 
-/** The Apps bridge replaces the complete execution document on each input. Old
+/** The Apps bridge clears on input and renders only its matching server result. Old
  * modules, promises and event handlers cannot affect a corrected preview. */
 export function previewWidgetHtml(): string {
   const marker = "COL_CODE_PLACEHOLDER";
-  const [before, after] = previewCodePage(marker).split(marker);
+  const [before, after] = previewCodePage(marker, true).split(marker);
   const literal = (value: string) => JSON.stringify(value).replace(/</g, "\\u003c");
   return previewPage(`<script type="module">
   import { config } from "${RUNTIME.appsZod}";
@@ -260,31 +270,43 @@ export function previewWidgetHtml(): string {
     .then(() => app.updateModelContext({ content: [{ type: "text", text: "render_component failed in the chat: " + message }] }))
     .catch(() => {});
   let frame;
-  let theme;
+  let requestKey;
   function setTheme(value) {
-    theme = value;
     applyDocumentTheme(value);
-    frame?.contentWindow?.postMessage({ colTheme: value }, "*");
   }
   app.ontoolinput = (params) => {
-    const code = params.arguments && params.arguments.code;
+    const args = params.arguments ?? {};
+    requestKey = (${componentPreviewRequestKey.toString()})(args);
     const status = document.getElementById("col-status");
     frame?.remove();
     frame = undefined;
-    if (typeof code !== "string") {
+    document.getElementById("col-root").replaceChildren();
+    status.hidden = false;
+    status.textContent = "Preview unavailable until a verified library result is received.";
+  };
+  app.ontoolresult = (result) => {
+    const status = document.getElementById("col-status");
+    if (result.isError) {
+      // SDK-level errors may have no request identity. The host displays those;
+      // they must not overwrite a newer preview with an unrelated failure.
+      if (result.structuredContent?.requestKey !== requestKey) return;
       status.hidden = false;
-      status.textContent = "render_component was called without code";
-      report(status.textContent);
+      status.textContent = "Preview unavailable: " + String(result.structuredContent.error).slice(0, 256);
       return;
     }
+    const preview = result.structuredContent?.preview;
+    if (!preview || preview.requestKey !== requestKey) return;
     status.hidden = true;
+    frame?.remove();
+    frame = undefined;
+    document.getElementById("col-root").innerHTML = (${previewDisclosure.toString()})(preview);
+    if (!preview.available) return;
     frame = document.createElement("iframe");
     frame.title = "Component preview";
     frame.setAttribute("sandbox", "allow-scripts allow-forms");
     frame.style.cssText = "display:block;width:100%;height:360px;border:0";
-    frame.srcdoc = ${literal(before)} + JSON.stringify(code).replace(/</g, "\\u003c") + ${literal(after)};
-    frame.addEventListener("load", () => { if (theme) setTheme(theme); });
-    document.getElementById("col-root").replaceChildren(frame);
+    frame.srcdoc = ${literal(before)} + JSON.stringify(preview.code).replace(/</g, "\\u003c") + ${literal(after)};
+    document.getElementById("col-root").append(frame);
   };
   addEventListener("message", (event) => {
     if (!frame || event.source !== frame.contentWindow) return;
@@ -296,12 +318,12 @@ export function previewWidgetHtml(): string {
   await app.connect();
   const context = app.getHostContext();
   if (context?.theme) setTheme(context.theme);
-</script>`);
+</script>`, false);
 }
 
 /** One execution document, shared by both shells. The argument is already a
  * safely embedded JSON expression, never executable component source. */
-function previewCodePage(embedded: string): string {
+function previewCodePage(embedded: string, trusted = false): string {
   return previewPage(`<script>
 ${runtimeScript()}
 colRuntime((message) => parent.postMessage({ colError: message }, "*"))
@@ -339,7 +361,7 @@ const observer = new ResizeObserver(() => {
 });
 observer.observe(document.body);
 addEventListener("pagehide", () => observer.disconnect(), { once: true });
-</script>`);
+</script>`, !trusted);
 }
 
 /**
@@ -352,9 +374,9 @@ addEventListener("pagehide", () => observer.disconnect(), { once: true });
  * The code rides a JSON string with `<` escaped, so it cannot close its script
  * element early.
  */
-export function previewFragmentHtml(code: string): string {
+export function previewFragmentHtml(code: string, trusted = false): string {
   const embedded = JSON.stringify(code).replace(/</g, "\\u003c");
-  const page = previewCodePage(embedded);
+  const page = previewCodePage(embedded, trusted);
   const srcdoc = page.replace(/&/g, "&amp;").replace(/"/g, "&quot;");
   return `<iframe data-col-preview title="Component preview" sandbox="allow-scripts allow-forms" srcdoc="${srcdoc}" style="display:block;width:100%;height:360px;border:0"></iframe>
 <script>
@@ -375,4 +397,19 @@ export function previewFragmentHtml(code: string): string {
 })();
 </script>
 `;
+}
+
+/** Kept outside the execution frame so user CSS cannot hide provenance or gaps.
+ * Self-contained because the widget embeds this function into its bridge. */
+function previewDisclosure(preview: ComponentPreview): string {
+  const escape = (value: string) => value.replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]!);
+  const identity = preview.available
+    ? `Library implementation: ${escape(preview.id)} — ${escape(preview.package)}@${escape(preview.version)}, export ${escape(preview.exportName)}.`
+    : `Preview unavailable: ${escape(preview.id)}.`;
+  return `<section data-col-provenance aria-label="Preview source and limitations"><p>${identity} <a href="${escape(preview.docsUrl)}" target="_blank" rel="noreferrer">Official documentation</a></p><p>Reproduction limits</p><ul>${preview.gaps.map((gap) => `<li>${escape(gap)}</li>`).join("")}</ul></section>`;
+}
+
+/** The fallback consumes exactly the same server-selected implementation. */
+export function verifiedPreviewFragmentHtml(preview: ComponentPreview): string {
+  return previewDisclosure(preview) + (preview.available ? previewFragmentHtml(preview.code, true) : "");
 }

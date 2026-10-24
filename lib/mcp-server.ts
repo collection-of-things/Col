@@ -8,7 +8,7 @@ import { PREVIEW_WIDGET_CSP, PREVIEW_WIDGET_MIME, PREVIEW_WIDGET_URI, previewWid
  * validation it receives can never drift; this module only wires them together.
  *
  * It also registers the MCP Apps view that `render_component` links to through
- * `_meta.ui.resourceUri`, so hosts with the extension render the agent's
+ * `_meta.ui.resourceUri`, so hosts with the extension render the library's
  * component inline in the chat.
  */
 export function createColMcpServer(data: CatalogueData): McpServer {
@@ -35,7 +35,7 @@ export function createColMcpServer(data: CatalogueData): McpServer {
     PREVIEW_WIDGET_URI,
     {
       title: "Component preview",
-      description: "Renders the component module an agent passes to render_component, live in the chat.",
+      description: "Renders the server-selected library implementation with visible provenance and reproduction limits.",
       mimeType: PREVIEW_WIDGET_MIME,
       _meta: widgetMeta,
     },
