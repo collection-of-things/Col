@@ -36,7 +36,7 @@ The positive and negative controls establish the requested JSX behavior without 
 
 ## Remaining limits and observed warning
 
-MCPJam's Strict CSP reported one blocked `eval` warning from the existing MCP Apps SDK bundle, `https://esm.sh/@modelcontextprotocol/ext-apps@2.0.3/es2022/app-with-deps.mjs:2:14327`. It was not attributed to the new parser. The checks above, including host error-context delivery, continued to work. CSP was not weakened. The exact reason for that SDK eval attempt was not established; the warning remains a compatibility observation for follow-up.
+MCPJam's Strict CSP reported one blocked `eval` warning from the existing MCP Apps SDK bundle, `https://esm.sh/@modelcontextprotocol/ext-apps@2.0.3/es2022/app-with-deps.mjs:2:14327`. It was not attributed to the new parser. The checks above, including host error-context delivery, continued to work. The [25 October follow-up](mcp-apps-csp-2026-10-25.md) traced this to Zod's import-time capability probe and resolved it, with a direct original/fixed comparison and unchanged CSP.
 
 Actual Claude, ChatGPT, Cursor, and Codex MCP Apps hosts were not tested. MCPJam profile emulation is not evidence of those products. This run does not establish every package, browser, syntax proposal, client policy, or future CDN response. Computed/local/server-only imports remain outside the existing contract. Nothing was deployed or merged.
 

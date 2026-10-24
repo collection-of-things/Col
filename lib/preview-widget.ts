@@ -36,6 +36,7 @@ export const PREVIEW_WIDGET_MIME = "text/html;profile=mcp-app";
 export const PREVIEW_WIDGET_CSP = { resourceDomains: ["https://esm.sh", "https://cdn.jsdelivr.net"] };
 
 const REACT_VERSION = "19.3.0";
+const APPS_ZOD_VERSION = "4.6.5";
 
 /** Pinned runtime modules. Each version is at least two weeks old at the time it was pinned. */
 const RUNTIME = {
@@ -45,7 +46,8 @@ const RUNTIME = {
   syntax: "https://esm.sh/@babel/parser@7.28.5",
   lexer: "https://esm.sh/es-module-lexer@3.0.2/js",
   tailwind: "https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.3",
-  apps: "https://esm.sh/@modelcontextprotocol/ext-apps@2.0.3/app-with-deps",
+  appsZod: `https://esm.sh/zod@${APPS_ZOD_VERSION}/v4`,
+  apps: `https://esm.sh/@modelcontextprotocol/ext-apps@2.0.3?deps=@modelcontextprotocol/client@2.0.0,@modelcontextprotocol/core@2.0.0,zod@${APPS_ZOD_VERSION}`,
 } as const;
 
 /** Reject malformed TSX before compilation or execution. Sucrase deliberately
@@ -248,7 +250,11 @@ export function previewWidgetHtml(): string {
   const [before, after] = previewCodePage(marker).split(marker);
   const literal = (value: string) => JSON.stringify(value).replace(/</g, "\\u003c");
   return previewPage(`<script type="module">
-  import { App, applyDocumentTheme } from "${RUNTIME.apps}";
+  import { config } from "${RUNTIME.appsZod}";
+  // SDK schemas are created during import, before App's own jitless default.
+  // Use the shared Zod instance; app-with-deps hides its own unconfigurable copy.
+  config({ jitless: true });
+  const { App, applyDocumentTheme } = await import("${RUNTIME.apps}");
   const app = new App({ name: "Col component preview", version: "1.0.0" });
   const report = (message) => Promise.resolve()
     .then(() => app.updateModelContext({ content: [{ type: "text", text: "render_component failed in the chat: " + message }] }))

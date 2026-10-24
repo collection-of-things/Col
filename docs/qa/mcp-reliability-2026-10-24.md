@@ -6,7 +6,7 @@ Implementation of [issue #35](https://github.com/screen-devs/col/issues/35), fol
 
 The catalog, query limits, Origin policy, shared renderer, and public guidance have been updated. The HTTP sweep passed **1,805 requests and 5,218 assertions**, including every currently advertised library and component. Real browser interaction verified the HTML fallback and a local MCP Apps protocol harness.
 
-**Follow-up completed:** the [JSX validation and MCPJam report](jsx-validation-mcpjam-2026-10-24.md) records strict TSX parsing and verification in the released MCPJam client, including host error reporting, correction, interaction, and desktop/phone dialog bounds. The original run below used a harness; it does not establish other hosts' compatibility. The follow-up documents a nonfatal SDK CSP warning and explicitly leaves untested clients unverified.
+**Follow-up completed:** the [JSX validation and MCPJam report](jsx-validation-mcpjam-2026-10-24.md) records strict TSX parsing and verification in the released MCPJam client, including host error reporting, correction, interaction, and desktop/phone dialog bounds. The [25 October CSP follow-up](mcp-apps-csp-2026-10-25.md) resolves the nonfatal SDK warning without relaxing policy. The original run below used a harness; it does not establish other hosts' compatibility. Untested clients remain unverified.
 
 ## Changes and tradeoffs
 
