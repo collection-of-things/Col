@@ -13,6 +13,7 @@ export default function AgentsPage() {
       <DocsHeader section="Get started" title="Agents and LLMs" lead="Give your agent Col’s catalog, then verify the shortlist against each library’s official docs." />
 
       <DocsSection title="Connect Col MCP">
+        <DocsText>Use short keywords and structured filters for catalog searches; queries are limited to 4,096 Unicode code points. The MCP agent guide covers exact-name ranking, multi-framework AND filters, supported preview imports, and the sandboxed HTML fallback.</DocsText>
         <DocsText>Connect your coding agent to Col to search libraries and verified components, then inspect their setup and source links. <code>render_component</code> then shows the chosen component live in the chat, rendered from code your agent writes for your use case. The server is read-only and needs no credentials.</DocsText>
         <DocsLinks items={[
           { href: "/mcp", title: "Set up Col MCP", text: "Client commands, configuration, plugins, and troubleshooting." },

@@ -56,6 +56,9 @@ const RUNTIME = {
  * self-contained arrow function with no outside references.
  */
 export const resolveImport = (specifier: string, reactVersion: string): string => {
+  if (specifier === "server-only" || /^(node:|file:|data:|javascript:|http:)/.test(specifier)) {
+    throw new Error("This preview supports browser modules and HTTPS imports; server-only modules and other URL schemes are unsupported");
+  }
   const react = specifier.match(/^react(\/.*)?$/);
   if (react) return `https://esm.sh/react@${reactVersion}${react[1] ?? ""}`;
   const reactDom = specifier.match(/^react-dom(\/.*)?$/);
@@ -70,18 +73,21 @@ export const resolveImport = (specifier: string, reactVersion: string): string =
 
 /**
  * Turns the compiled module into one that mounts itself: its default export
- * becomes a local and is handed to the runtime's `__colMount`. Inline module
- * scripts cannot export to the page, and host CSPs forbid blob: imports.
- *
- * ponytail: embedded via `toString()` like `resolveImport`. The regex takes the
- * first `export default`; `export { X as default }` asks for the plain form.
+ * is handed to the runtime's `__colMount`. The module parser supplies the real
+ * declaration, so comments and strings cannot masquerade as an export.
+ * Embedded via `toString()` like `resolveImport`; keep it self-contained.
  */
-export const mountable = (js: string): string => {
-  const marker = /\bexport\s+default\s+/;
-  if (!marker.test(js)) {
+export const mountable = (js: string, declaration?: { type: string; name: string; localName?: string; exportStart: number; end: number }, generation = 0): string => {
+  if (!declaration || declaration.type !== "direct" || declaration.name !== "default") {
     throw new Error("The module needs `export default` of a React component");
   }
-  return `${js.replace(marker, "const __ColComponent = ")}\nwindow.__colMount(__ColComponent);\n`;
+  let local = declaration.localName;
+  if (!local) {
+    local = "__ColComponent";
+    while (js.includes(local)) local += "_";
+    js = js.slice(0, declaration.exportStart) + `const ${local} = ` + js.slice(declaration.end);
+  }
+  return `${js}\nwindow.__colMount(${local}, ${generation});\n`;
 };
 
 /**
@@ -102,47 +108,83 @@ async function colRuntime(report) {
     import(${JSON.stringify(RUNTIME.lexer)}),
   ]);
   const status = document.getElementById("col-status");
-  function fail(error) {
-    const message = String((error && error.message) || error);
+  let generation = 0;
+  let failedGeneration = -1;
+  let resources = [];
+  function fail(error, current = generation) {
+    if (current !== generation) return;
+    failedGeneration = current;
+    const message = String((error && error.message) || error).slice(0, 256);
     status.textContent = message;
     status.hidden = false;
     if (report) report(message);
   }
   const root = createRoot(document.getElementById("col-root"), { onUncaughtError: (error) => fail(error) });
-  window.__colMount = (Component) => {
-    status.hidden = true;
+  window.__colMount = (Component, current) => {
+    if (current !== generation) return;
+    const wrappedComponent = Component && [Symbol.for("react.memo"), Symbol.for("react.forward_ref"), Symbol.for("react.lazy")].includes(Component.$$typeof);
+    if (!Component || Component.constructor?.name === "AsyncFunction" || typeof Component.then === "function" || (typeof Component !== "function" && !wrappedComponent)) {
+      fail("Export a synchronous browser React component; async/server components are unsupported", current);
+      return;
+    }
+    status.hidden = failedGeneration !== current;
     root.render(createElement(Component));
   };
   window.addEventListener("error", (event) => fail(event.error || event.message));
   window.addEventListener("unhandledrejection", (event) => fail(event.reason));
 
   async function render(code) {
-    const js = transform(code, { transforms: ["typescript", "jsx"], jsxRuntime: "automatic", production: true }).code;
+    const current = ++generation;
+    resources.forEach((resource) => resource.remove());
+    resources = [];
+    status.textContent = "Rendering…";
+    status.hidden = false;
+    try {
+    const options = { transforms: ["typescript", "jsx"], jsxRuntime: "automatic", production: true };
+    const js = transform(code, options).code;
     await init();
+    if (current !== generation) return;
+    // Validate written imports, but execute normal TS output so implicit type
+    // imports (e.g. ReactNode) do not become nonexistent browser exports.
+    const writtenImports = parse(transform(code, { ...options, keepUnusedImports: true }).code)[0];
+    for (const entry of writtenImports) {
+      if (entry.type === "import-meta") continue;
+      if (!entry.specifier || entry.glob || entry.phase) throw new Error("Use literal browser imports; computed and source/defer imports are unsupported");
+      resolveImport(entry.specifier, ${JSON.stringify(REACT_VERSION)});
+    }
     const [imports] = parse(js);
     let out = "";
     let last = 0;
     for (const entry of imports) {
-      if (entry.type !== "static" && entry.type !== "reexport-star") continue;
+      if (entry.type === "import-meta") continue;
+      if (!entry.specifier || entry.glob || entry.phase) throw new Error("Use literal browser imports; computed and source/defer imports are unsupported");
       const url = resolveImport(entry.specifier, ${JSON.stringify(REACT_VERSION)});
       if (entry.specifier.endsWith(".css")) {
+        const prefix = js.slice(entry.importStart, entry.start - 1).replace(/\\/\\*[\\s\\S]*?\\*\\/|\\/\\/[^\\r\\n]*/g, "").trim();
+        if (entry.type !== "static" || prefix !== "import") throw new Error("Import CSS as a side-effect stylesheet: import 'package/styles.css'");
         // Browsers cannot import CSS as a module: load it as a stylesheet and drop the statement.
         const link = document.createElement("link");
         link.rel = "stylesheet";
         link.href = url;
+        link.addEventListener("error", () => fail("Stylesheet failed to load: " + entry.specifier, current));
+        resources.push(link);
         document.head.append(link);
         out += js.slice(last, entry.importStart);
         last = entry.importEnd;
       } else {
-        out += js.slice(last, entry.start) + url;
+        out += js.slice(last, entry.start) + (entry.type === "dynamic" ? JSON.stringify(url) : url);
         last = entry.end;
       }
     }
     const script = document.createElement("script");
     script.type = "module";
-    script.textContent = mountable(out + js.slice(last));
-    script.addEventListener("error", () => fail("A package failed to load from esm.sh"));
+    const resolved = out + js.slice(last);
+    const [, exports] = parse(resolved);
+    script.textContent = mountable(resolved, exports.find((entry) => entry.name === "default"), current);
+    script.addEventListener("error", () => fail("A browser module failed to load; check its HTTPS URL and browser support", current));
+    resources.push(script);
     document.body.append(script);
+    } catch (error) { fail(error, current); }
   }
   return { render, fail };
 }
@@ -164,6 +206,7 @@ function previewPage(script: string): string {
 <script src="${RUNTIME.tailwind}"></script>
 <style>
   body { margin: 0; padding: 16px; background: transparent; color: light-dark(#000, #fff); font: 14px/1.5 system-ui, sans-serif; }
+  html { min-height: 360px; }
   #col-status { margin: 0; white-space: pre-wrap; }
 </style>
 </head>
@@ -176,37 +219,98 @@ ${script}
 `;
 }
 
-/** The MCP Apps view: reads the agent's code from the tool input and reports failures back to the agent. */
+/** The Apps bridge replaces the complete execution document on each input. Old
+ * modules, promises and event handlers cannot affect a corrected preview. */
 export function previewWidgetHtml(): string {
+  const marker = "COL_CODE_PLACEHOLDER";
+  const [before, after] = previewCodePage(marker).split(marker);
+  const literal = (value: string) => JSON.stringify(value).replace(/</g, "\\u003c");
   return previewPage(`<script type="module">
   import { App, applyDocumentTheme } from "${RUNTIME.apps}";
-${runtimeScript()}
   const app = new App({ name: "Col component preview", version: "1.0.0" });
-  // A failed render is shown to the user and reported to the agent, so it can fix the code and call again.
-  // Hosts may not support model-context updates; the on-screen message still stands.
-  const report = (message) =>
-    Promise.resolve()
-      .then(() => app.updateModelContext({ content: [{ type: "text", text: "render_component failed in the chat: " + message }] }))
-      .catch(() => {});
-  const runtime = colRuntime(report);
-
+  const report = (message) => Promise.resolve()
+    .then(() => app.updateModelContext({ content: [{ type: "text", text: "render_component failed in the chat: " + message }] }))
+    .catch(() => {});
+  let frame;
+  let theme;
+  function setTheme(value) {
+    theme = value;
+    applyDocumentTheme(value);
+    frame?.contentWindow?.postMessage({ colTheme: value }, "*");
+  }
   app.ontoolinput = (params) => {
     const code = params.arguments && params.arguments.code;
-    runtime
-      .then(({ render, fail }) => (typeof code === "string" ? render(code).catch(fail) : fail("render_component was called without code")))
-      .catch((error) => {
-        const message = String((error && error.message) || error);
-        document.getElementById("col-status").textContent = message;
-        report(message);
-      });
+    const status = document.getElementById("col-status");
+    frame?.remove();
+    frame = undefined;
+    if (typeof code !== "string") {
+      status.hidden = false;
+      status.textContent = "render_component was called without code";
+      report(status.textContent);
+      return;
+    }
+    status.hidden = true;
+    frame = document.createElement("iframe");
+    frame.title = "Component preview";
+    frame.setAttribute("sandbox", "allow-scripts allow-forms");
+    frame.style.cssText = "display:block;width:100%;height:360px;border:0";
+    frame.srcdoc = ${literal(before)} + JSON.stringify(code).replace(/</g, "\\u003c") + ${literal(after)};
+    frame.addEventListener("load", () => { if (theme) setTheme(theme); });
+    document.getElementById("col-root").replaceChildren(frame);
   };
-  app.onhostcontextchanged = (context) => {
-    if (context.theme) applyDocumentTheme(context.theme);
-  };
-
+  addEventListener("message", (event) => {
+    if (!frame || event.source !== frame.contentWindow) return;
+    if (typeof event.data?.colError === "string") report(event.data.colError.slice(0, 256));
+    const height = event.data?.colHeight;
+    if (Number.isFinite(height) && height > 0 && height <= 900) frame.style.height = Math.max(360, Math.ceil(height)) + "px";
+  });
+  app.onhostcontextchanged = (context) => { if (context.theme) setTheme(context.theme); };
   await app.connect();
   const context = app.getHostContext();
-  if (context && context.theme) applyDocumentTheme(context.theme);
+  if (context?.theme) setTheme(context.theme);
+</script>`);
+}
+
+/** One execution document, shared by both shells. The argument is already a
+ * safely embedded JSON expression, never executable component source. */
+function previewCodePage(embedded: string): string {
+  return previewPage(`<script>
+${runtimeScript()}
+colRuntime((message) => parent.postMessage({ colError: message }, "*"))
+  .then(({ render, fail }) => render(${embedded}).catch(fail))
+  .catch((error) => {
+    const message = String((error && error.message) || error).slice(0, 256);
+    document.getElementById("col-status").textContent = message;
+    parent.postMessage({ colError: message }, "*");
+  });
+addEventListener("message", (event) => {
+  if (event.source !== parent || !["light", "dark"].includes(event.data?.colTheme)) return;
+  document.documentElement.style.colorScheme = event.data.colTheme;
+  document.documentElement.classList.toggle("dark", event.data.colTheme === "dark");
+});
+let lastHeight = 0;
+let viewportHeight = innerHeight;
+let viewportWidth = innerWidth;
+let viewportDrivenHeight;
+addEventListener("resize", () => {
+  const heightOnlyResize = innerHeight !== viewportHeight && innerWidth === viewportWidth;
+  viewportHeight = innerHeight;
+  viewportWidth = innerWidth;
+  viewportDrivenHeight = heightOnlyResize ? document.body.getBoundingClientRect().height : undefined;
+});
+const observer = new ResizeObserver(() => {
+  const bodyHeight = document.body.getBoundingClientRect().height;
+  // A parent height update must not feed viewport units back into another update.
+  if (bodyHeight === viewportDrivenHeight) { viewportDrivenHeight = undefined; return; }
+  viewportDrivenHeight = undefined;
+  const height = Math.max(360, Math.min(900, Math.ceil(bodyHeight)));
+  if (height !== lastHeight) {
+    lastHeight = height;
+    parent.postMessage({ colHeight: height }, "*");
+  }
+});
+observer.observe(document.body);
+addEventListener("pagehide", () => observer.disconnect(), { once: true });
 </script>`);
 }
 
@@ -222,22 +326,25 @@ ${runtimeScript()}
  */
 export function previewFragmentHtml(code: string): string {
   const embedded = JSON.stringify(code).replace(/</g, "\\u003c");
-  const page = previewPage(`<script>
-${runtimeScript()}
-colRuntime()
-  .then(({ render, fail }) => render(${embedded}).catch(fail))
-  .catch((error) => {
-    document.getElementById("col-status").textContent = String((error && error.message) || error);
-  });
-new ResizeObserver(() => parent.postMessage({ colHeight: Math.ceil(document.body.getBoundingClientRect().height) }, "*")).observe(document.body);
-</script>`);
+  const page = previewCodePage(embedded);
   const srcdoc = page.replace(/&/g, "&amp;").replace(/"/g, "&quot;");
-  return `<iframe data-col-preview title="Component preview" srcdoc="${srcdoc}" style="display:block;width:100%;height:160px;border:0"></iframe>
+  return `<iframe data-col-preview title="Component preview" sandbox="allow-scripts allow-forms" srcdoc="${srcdoc}" style="display:block;width:100%;height:360px;border:0"></iframe>
 <script>
-addEventListener("message", (event) => {
-  const frame = document.querySelector("iframe[data-col-preview]");
-  if (frame && event.source === frame.contentWindow && typeof event.data?.colHeight === "number") frame.style.height = event.data.colHeight + "px";
-});
+(() => {
+  const frame = document.currentScript.previousElementSibling;
+  function resize(event) {
+    if (!frame.isConnected) { removeEventListener("message", resize); return; }
+    const height = event.data?.colHeight;
+    if (event.source === frame.contentWindow && Number.isFinite(height) && height > 0 && height <= 900) {
+      frame.style.height = Math.max(360, Math.ceil(height)) + "px";
+    }
+  }
+  addEventListener("message", resize);
+  const cleanup = new MutationObserver(() => {
+    if (!frame.isConnected) { removeEventListener("message", resize); cleanup.disconnect(); }
+  });
+  cleanup.observe(document.documentElement, { childList: true, subtree: true });
+})();
 </script>
 `;
 }

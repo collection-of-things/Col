@@ -80,7 +80,13 @@ Col exposes five tools:
 | `get_component` | Inspect a component's sources and verification gaps. |
 | `render_component` | Render a TSX component module live in chat in clients that support MCP Apps. |
 
+Search queries are keyword-based and limited to 4,096 Unicode code points. Stack filters use AND, including multiple frameworks; use-case filters use OR. Use structured filters and check requirements in official docs rather than treating prose or negation as hard constraints.
+
+Previews support static and string-literal dynamic npm imports, package CSS, and in-module default-export aliases. Inline local files; computed imports and server-only or async components are unsupported. The HTML fallback runs in a sandboxed iframe separated from its embedding document. Preserve that sandbox when embedding the returned fragment.
+
 See the [client setup guide](https://usecol.com/mcp) for all supported clients and the [agent guide](https://usecol.com/mcp/agents) for tool arguments and workflows. The [Col agent plugin](plugin/README.md) bundles the connection with a component discovery skill. Use the plugin or a direct connection to avoid configuring Col twice.
+
+MCP requests without `Origin` remain supported. A supplied origin must match `https://usecol.com` or an explicit server-side `COL_MCP_ALLOWED_ORIGINS` entry. For self-hosting, set a comma-separated list of exact HTTP(S) origins in the deployment environment or `.env.local`, then restart/redeploy; for example, `COL_MCP_ALLOWED_ORIGINS="http://localhost:3000,https://client.example"`. Paths, trailing slashes, credentials, wildcards, opaque `null`, and multiple origins are rejected. Invalid entries grant no access. Host and forwarded-host headers never add trust. This policy does not enable CORS or add authentication; verify each browser client's origin before rollout.
 
 ## Run it locally
 

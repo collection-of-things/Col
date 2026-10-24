@@ -107,11 +107,19 @@ export default function McpPage() {
           "Connection failed: select HTTP, not a local command or SSE. Check your client’s server logs and network access to the endpoint.",
           "A browser visit returns a method error: the endpoint expects MCP POST requests. Confirm the connection through your client instead.",
           "An empty search result: shorten the query or adjust filters, then check the library’s official docs. Coverage is partial.",
+          "HTTP 403: the supplied Origin is malformed or is not trusted by the server. Browser integrations need an explicitly allowed origin; non-browser clients normally omit this header.",
         ]} />
         <DocsLinks items={[
           { href: "/mcp/agents", title: "Agent guide", text: "Tool arguments, setup prompt, and the component workflow." },
           { href: "/integrations", title: "Other MCP servers", text: "Connect to individual UI libraries and design tools." },
         ]} />
+      </DocsSection>
+
+      <DocsSection title="Browser origins and self-hosting">
+        <DocsText>Requests without an <code>Origin</code> header remain supported. A supplied header must be a single exact HTTP or HTTPS origin. The canonical origin, <code>{siteUrl}</code>, is allowed; malformed values, <code>null</code>, and other origins receive HTTP 403 before the MCP message is processed.</DocsText>
+        <DocsText>Operators can add trusted client, development, or preview origins with the server-only <code>COL_MCP_ALLOWED_ORIGINS</code> environment variable. Set it in the deployment environment or <code>.env.local</code>, then restart or redeploy:</DocsText>
+        <DocsCode code={'COL_MCP_ALLOWED_ORIGINS="http://localhost:3000,https://client.example"'} label="Server environment example" />
+        <DocsText>Use comma-separated serialized origins with exact schemes and ports, no trailing slash, paths, credentials, or wildcards. Invalid entries grant no access. Verify each browser client’s actual origin before adding it. Request host and forwarded-host headers never add trust. This allowlist validates origins; it does not enable browser CORS access or add authentication.</DocsText>
       </DocsSection>
     </article>
   );
