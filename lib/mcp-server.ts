@@ -25,7 +25,21 @@ export function createColMcpServer(data: CatalogueData): McpServer {
         annotations: definition.annotations,
         _meta: definition.meta,
       },
-      (args) => tools.invoke(definition.name, args),
+      (args) => {
+        const result = tools.invoke(definition.name, args);
+        if (definition.name !== "render_component" || result.structuredContent?.status !== "sent-to-chat") return result;
+        const preview = result.structuredContent.preview;
+        if (!preview || typeof preview !== "object" || !("code" in preview) || !("requestKey" in preview)) return result;
+        const { code, ...identity } = preview;
+        const payload = { ...result.structuredContent, preview: identity };
+        // Source bundles belong to the view, not the model's text context.
+        return {
+          ...result,
+          content: [{ type: "text" as const, text: JSON.stringify(payload) }],
+          structuredContent: payload,
+          _meta: { "col/preview": { requestKey: identity.requestKey, code } },
+        };
+      },
     );
   }
 

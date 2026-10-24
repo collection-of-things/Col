@@ -4,44 +4,58 @@
 
 ```json
 {
-  "id": "mantine/Button",
+  "id": "shadcn-ui/Button",
   "theme": "dark",
-  "styles": ".mantine-Button-root { border-radius: 0; }"
+  "styles": "[data-slot=button] { border-radius: 0; }"
 }
 ```
 
-Call `get_component` first. Its `preview` field states whether an implementation adapter is available and, if so, the package, version, export, and limitations. The component ID remains case-sensitive.
+Call `get_component` first. Its `preview` field states whether an adapter is available, its package/version or source revision, and reproduction limits. IDs are case-sensitive. Availability describes a source-backed adapter, not a guarantee that every browser, network dependency, or app configuration has been tested.
 
 ## What runs
 
-The server chooses a reviewed example composition that imports the actual published component export from a pinned package through esm.sh. Mantine compositions include its matching stylesheet and MantineProvider. Radix compositions use the library primitives directly. Col does not rewrite their implementation or replace their behavior. User CSS is data inside the execution frame; it cannot restyle the source/limitations disclosure outside it. Required stylesheets must finish loading before mounting. Load failures and CSP violations remain visible; there is no imitation fallback.
+Package adapters compose the actual exports from pinned npm releases. Source adapters compile the original upstream component and demo files at immutable revisions. Required library CSS and providers accompany the implementation. Some npm dependencies are bundled during development from an integrity-checked lockfile; others load from esm.sh with the same pinned React runtime. Col never generates a replacement component after a failure.
 
-The MCP Apps view renders the server's tool result, not code from tool input. Each input clears the previous execution frame, and only a result matching all supplied request fields may render. The HTML format uses the same selection and includes the same disclosure. Preserve the entire returned fragment and its sandbox when embedding it.
+Shadcn uses actual CLI-installed base-nova source (CLI 4.22.1, neutral palette, Lucide icons) and official demos pinned to commit `617134d5810bba521803b3ed787190bacbb80b35`. Its real stylesheet, Tailwind utilities and animations are compiled ahead of time. Chart and Sonner retain their available official New York source, disclosed per preview. Typeset uses the official HTML fixture and stylesheet. These choices are explicit; they do not imply that another shadcn style or an edited copy in the user's repository is identical.
 
-## Verified adapter coverage
+User CSS is appended after library CSS inside the execution frame. It cannot hide the source and limitations outside that frame. Both the MCP Apps view and `format: "html"` use the same implementation and disclosure. Preserve the complete HTML fragment and its sandbox when embedding it.
 
-| Library package | Components | Included setup |
-| --- | --- | --- |
-| `@mantine/core@9.7.1` | Button, Badge, Checkbox, Switch, TextInput, Textarea, Alert, Card | Matching package CSS, MantineProvider, requested color scheme |
-| `radix-ui@1.6.7` | Checkbox, Switch, Dialog | Actual primitive composition; user styling required |
+Widget source travels in request-keyed MCP Apps result metadata; model-facing results contain identity and limitations without the bundle. A client that drops that metadata receives a visible missing-source error. HTML fallback retains the complete fragment for text-only clients. Genuine bundles and CSS can make individual previews several megabytes; only the selected implementation is sent, but transport and browser compilation still have that cost.
 
-The registry is `lib/component-preview.ts`. These are eleven supported previews, not a claim that the entire catalog can render. Every other ID returns `status: "unavailable"` and an explanation until its exact implementation, dependencies, styles, and required providers have a verified adapter. This includes copy-in components such as shadcn: documentation links or the name of an underlying primitive are not verified component source. An unknown catalog ID remains a tool error.
+## Coverage
 
-Sources for the compositions are the catalog's official component documentation, including [Mantine Button](https://mantine.dev/core/button/), [MantineProvider](https://mantine.dev/theming/mantine-provider/), [Radix Checkbox](https://www.radix-ui.com/primitives/docs/components/checkbox), and [Radix Dialog](https://www.radix-ui.com/primitives/docs/components/dialog). The JSX composes those exports; it does not implement the components itself. Package versions are deliberately explicit rather than following latest releases.
+The expanded registry includes package adapters for Mantine, Radix, Base UI, React Aria, Ark UI, Headless UI, Material UI, Chakra UI, HeroUI, cmdk and Web Awesome. Original-source adapters cover shadcn, Magic UI, Cult UI, Kibo UI, Intent UI, ReUI, ElevenLabs UI, Tween UI, Hexta UI, Be UI and Loading.so.
+
+Shadcn has source adapters for 62 of its 65 indexed IDs. Navigation Menu, Aspect Ratio and Direction remain unavailable because their selected official examples depend on Next routing, Next image handling or documentation translation context that this isolated preview cannot reproduce faithfully.
+
+This does not mean that every component in every catalog library can render. Each unsupported indexed component returns an explicit reason: missing browser-compatible source, framework runtime, application/server integration, or redistribution permission. Libraries without indexed component IDs remain discoverable as libraries. There is no substitution with a similarly named primitive. See the [client verification report](qa/mcp-preview-expansion-2026-10-25.md) for measured coverage and actual browser outcomes, including partial asset failures.
 
 ## Reproduction limits
 
-The preview always displays package/version, official documentation, and limitations outside the styled frame:
+Every preview shows its identity, official documentation and limits outside the styled frame. Source previews also link the pinned source and display its integrity hash.
 
-- The component implementation is real, but the composition and sample content are fixed. App data, routing, callbacks, and surrounding layout are not connected.
-- React is pinned to 19.3.0. Col does not inspect the user's installed package versions or promise parity with different versions.
-- `theme` selects light or dark. `styles` accepts up to 10,000 characters of browser CSS, including custom properties. Native app theme objects, extra providers, global styles, fonts, and assets are not automatically copied. No Tailwind processor or preflight is injected into these previews.
-- Radix Primitives are intentionally unstyled. Their documentation demos' appearance is not part of the implementation package. Supply the user's CSS for `CheckboxRoot`, `CheckboxIndicator`, `SwitchRoot`, `SwitchThumb`, `DialogTrigger`, `DialogOverlay`, and `DialogContent` as applicable.
-- External resources remain subject to the existing CSP. A missing package, stylesheet, or blocked resource is an error, not evidence of a successful reproduction.
-- `sent-to-chat` means the server supplied a preview. Only inspecting the actual client can establish that it rendered. HTML fallback errors stay in the preview; MCP Apps errors are also sent as model context.
+- Implementations are real; example props, sample content and layout are fixed. App data, callbacks, routing and surrounding layout are not connected.
+- React 19.3.0 and recorded dependency versions are pinned. Col does not inspect the user's installed versions or local modifications.
+- `theme` selects light or dark; `styles` accepts up to 10,000 characters of CSS, including custom properties. App-specific theme objects, fonts, assets and extra providers are not imported automatically.
+- Headless libraries remain headless. Documentation-site styling is not part of those packages. Shadow DOM components expose their own styling boundaries.
+- Original demo images, fonts, media or network requests may be unavailable under the existing CSP. Failures remain visible, including when a component's own fallback renders. CSP is not relaxed to make a demo appear complete.
+- `sent-to-chat` means the server supplied a preview. Only inspecting the client establishes that it mounted. MCP Apps failures are also reported to model context.
+
+## Maintaining verified source
+
+The generated manifests live in `data/component-previews/`; recipes are in `lib/component-preview-packages.ts` and `lib/component-preview.ts`. Source metadata retains revision, source URLs and hashes, dependency pins, CSS inputs and licenses. Committed vendor snapshots/lockfiles make the selected input versions reviewable.
+
+```sh
+node scripts/build-shadcn-previews.mjs
+node scripts/build-component-previews.mjs
+node scripts/build-preview-package-css.mjs
+node scripts/build-preview-package-bundles.mjs
+```
+
+These are development-time builds, not network calls on each tool request. They require the root development dependencies and network access for any uncached pinned dependencies. Extra source rebuilds compare downloaded/cached bytes with committed source pins; an intentional reviewed source change requires `--refresh-source-pins`. Package rebuilds restore dependencies with `npm ci` from their committed lockfile. Review generated source, license and dependency changes before committing.
+
+The source builders use esbuild; library styles use PostCSS and the library's Tailwind pipeline. Tests use the same pinned module lexer and Sucrase compiler as the browser runtime. Adding an adapter requires the real export/source, full required browser setup, explicit gaps and browser verification. Source identity checks and a successful compile alone do not establish visual or interaction parity.
 
 ## Migration
 
-This intentionally replaces the former `{ "code": "..." }` API. Old code requests, extra implementation fields, and arbitrary props now fail validation. Use the exact ID from discovery and pass only presentation options. Use `format: "html"` for clients without MCP Apps. Unsupported components must be inspected in their official docs or the user's app, never recreated and labeled as the original.
-
-Adding another adapter requires a matching catalog ID, verified published export or unmodified source at an immutable revision, its complete style/provider/dependency setup, and explicit remaining gaps. Validate actual browser behavior before marking that adapter available.
+The former `{ "code": "..." }` API is intentionally rejected, including code supplied alongside a valid ID. Use discovery's exact ID and presentation options only. Unsupported components should be inspected in their official docs or the user's app, never recreated and labeled as the original.

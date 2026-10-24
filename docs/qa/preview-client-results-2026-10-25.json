@@ -1,0 +1,1224 @@
+{
+  "client": "MCPJam Inspector 3.16.2",
+  "csp": "Strict",
+  "summary": {
+    "attempts": 117,
+    "distinctComponents": 86,
+    "libraries": [
+      "ark-ui",
+      "base-ui",
+      "beui",
+      "chakra-ui",
+      "cmdk",
+      "cult-ui",
+      "elevenlabs-ui",
+      "headless-ui",
+      "heroui",
+      "hextaui",
+      "intent-ui",
+      "kibo-ui",
+      "loading-dev",
+      "magic-ui",
+      "mantine",
+      "mui",
+      "radix-ui",
+      "react-aria",
+      "reui",
+      "shadcn-ui",
+      "tween-ui",
+      "web-awesome"
+    ],
+    "cleanMounts": 77,
+    "partialAssets": [
+      "shadcn-ui/Sidebar",
+      "shadcn-ui/Avatar",
+      "shadcn-ui/Attachment",
+      "shadcn-ui/Message",
+      "kibo-ui/Avatar Stack"
+    ],
+    "dependencyFailures": [
+      {
+        "id": "intent-ui/Button",
+        "error": "Could not load tailwind-variants@3.2.2: Failed to fetch dynamically imported module: https://esm.sh/tailwind-variants@3.2.2?deps=react@19.3.0,react-dom@19.3.0"
+      },
+      {
+        "id": "reui/File Upload",
+        "error": "Could not load lucide-react@1.17.0: Failed to fetch dynamically imported module: https://esm.sh/lucide-react@1.17.0?deps=react@19.3.0,react-dom@19.3.0"
+      },
+      {
+        "id": "elevenlabs-ui/Orb",
+        "error": "Could not load @react-three/drei@10.7.6: Failed to fetch dynamically imported module: https://esm.sh/@react-three/drei@10.7.6?deps=react@19.3.0,react-dom@19.3.0"
+      },
+      {
+        "id": "reui/Data Grid",
+        "error": "Could not load @base-ui/react@1.5.0/button: Failed to fetch dynamically imported module: https://esm.sh/@base-ui/react@1.5.0/button?deps=react@19.3.0,react-dom@19.3.0"
+      }
+    ],
+    "shadcn": {
+      "attempted": 62,
+      "cleanMounts": 58
+    }
+  },
+  "notes": [
+    "Cases retain intermediate failures and retests; summary uses each ID last recorded result.",
+    "A hidden Rendering status with rendered nodes means mounting succeeded; it does not prove every visual or interaction state.",
+    "Unavailable controls and HTML fallback are recorded separately in the companion report."
+  ],
+  "cases": [
+    {
+      "id": "base-ui/Dialog",
+      "result": "pass",
+      "interaction": "open and close dialog"
+    },
+    {
+      "id": "heroui/Button",
+      "result": "pass",
+      "text": "Button"
+    },
+    {
+      "id": "chakra-ui/Button",
+      "args": {
+        "id": "chakra-ui/Button"
+      },
+      "statusVisible": true,
+      "status": "A browser module failed to load; check its HTTPS URL and browser support",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "mui/Button",
+      "result": "pass",
+      "text": "BUTTON"
+    },
+    {
+      "id": "ark-ui/Accordion",
+      "result": "pass",
+      "text": "First question / Second question"
+    },
+    {
+      "id": "headless-ui/Checkbox",
+      "args": {
+        "id": "headless-ui/Checkbox"
+      },
+      "statusVisible": true,
+      "status": "A browser module failed to load; check its HTTPS URL and browser support",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "react-aria/NumberField",
+      "args": {
+        "id": "react-aria/NumberField"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Quantity\n−+",
+      "elements": 6
+    },
+    {
+      "id": "web-awesome/Button",
+      "args": {
+        "id": "web-awesome/Button"
+      },
+      "statusVisible": true,
+      "status": "A browser module failed to load; check its HTTPS URL and browser support",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "cmdk/Command",
+      "args": {
+        "id": "cmdk/Command"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Command menu\nActions\nCopy\nPaste\nPrint",
+      "elements": 11
+    },
+    {
+      "id": "shadcn-ui/Dialog",
+      "args": {
+        "id": "shadcn-ui/Dialog"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Open Dialog",
+      "elements": 2
+    },
+    {
+      "id": "shadcn-ui/Field",
+      "args": {
+        "id": "shadcn-ui/Field"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Payment Method\n\nAll transactions are secure and encrypted\n\nName on Card\nCard Number\n\nEnter your 16-digit card number\n\nMonth\nMM\nYear\nYYYY\nCVV\nBilling Address\n\nThe billing address associated with your payment method\n\nSame as shipping address\nComments\nSubmit\nCancel",
+      "elements": 53
+    },
+    {
+      "id": "shadcn-ui/Button",
+      "args": {
+        "id": "shadcn-ui/Button"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Button",
+      "elements": 6
+    },
+    {
+      "id": "shadcn-ui/Button Group",
+      "args": {
+        "id": "shadcn-ui/Button Group"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Archive\nReport\nSnooze",
+      "elements": 16
+    },
+    {
+      "id": "shadcn-ui/Input",
+      "args": {
+        "id": "shadcn-ui/Input"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "API Key\n\nYour API key is encrypted and stored securely.",
+      "elements": 4
+    },
+    {
+      "id": "shadcn-ui/Input Group",
+      "args": {
+        "id": "shadcn-ui/Input Group"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "12 results",
+      "elements": 7
+    },
+    {
+      "id": "shadcn-ui/Input OTP",
+      "args": {
+        "id": "shadcn-ui/Input OTP"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "1\n2\n3\n4\n5\n6",
+      "elements": 11
+    },
+    {
+      "id": "shadcn-ui/Textarea",
+      "args": {
+        "id": "shadcn-ui/Textarea"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "",
+      "elements": 1
+    },
+    {
+      "id": "shadcn-ui/Checkbox",
+      "args": {
+        "id": "shadcn-ui/Checkbox"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Accept terms and conditions\nAccept terms and conditions\n\nBy clicking this checkbox, you agree to the terms.\n\nEnable notifications\nEnable notifications\n\nYou can enable or disable notifications at any time.",
+      "elements": 25
+    },
+    {
+      "id": "shadcn-ui/Radio Group",
+      "args": {
+        "id": "shadcn-ui/Radio Group"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Default\nComfortable\nCompact",
+      "elements": 15
+    },
+    {
+      "id": "shadcn-ui/Select",
+      "args": {
+        "id": "shadcn-ui/Select"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Select a fruit",
+      "elements": 5
+    },
+    {
+      "id": "shadcn-ui/Native Select",
+      "args": {
+        "id": "shadcn-ui/Native Select"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Select status\nTodo\nIn Progress\nDone\nCancelled",
+      "elements": 9
+    },
+    {
+      "id": "shadcn-ui/Switch",
+      "args": {
+        "id": "shadcn-ui/Switch"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Airplane Mode",
+      "elements": 5
+    },
+    {
+      "id": "shadcn-ui/Slider",
+      "args": {
+        "id": "shadcn-ui/Slider"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "",
+      "elements": 6
+    },
+    {
+      "id": "shadcn-ui/Calendar",
+      "args": {
+        "id": "shadcn-ui/Calendar"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec\nOct\n1926\n1927\n1928\n1929\n1930\n1931\n1932\n1933\n1934\n1935\n1936\n1937\n1938\n1939\n1940\n1941\n1942\n1943\n1944\n1945\n1946\n1947\n1948\n1949\n1950\n1951\n1952\n1953\n1954\n1955\n1956\n1957\n1958\n1959\n1960\n1961\n1962\n1963\n1964\n1965\n1966\n1967\n1968\n1969\n1970\n1971\n1972\n1973\n1974\n1975\n1976\n1977\n1978\n1979\n1980\n1981\n1982\n1983\n1984\n198",
+      "elements": 222
+    },
+    {
+      "id": "shadcn-ui/Date Picker",
+      "args": {
+        "id": "shadcn-ui/Date Picker"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Pick a date",
+      "elements": 4
+    },
+    {
+      "id": "shadcn-ui/Combobox",
+      "args": {
+        "id": "shadcn-ui/Combobox"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "",
+      "elements": 7
+    },
+    {
+      "id": "shadcn-ui/Label",
+      "args": {
+        "id": "shadcn-ui/Label"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Accept terms and conditions",
+      "elements": 4
+    },
+    {
+      "id": "shadcn-ui/Accordion",
+      "args": {
+        "id": "shadcn-ui/Accordion"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "What are your shipping options?\nWe offer standard (5-7 days), express (2-3 days), and overnight shipping. Free shipping on international orders.\nWhat is your return policy?\nHow can I contact customer support?",
+      "elements": 24
+    },
+    {
+      "id": "shadcn-ui/Breadcrumb",
+      "args": {
+        "id": "shadcn-ui/Breadcrumb"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Home\nMore\nToggle menu\nComponents\nBreadcrumb",
+      "elements": 26
+    },
+    {
+      "id": "shadcn-ui/Sidebar",
+      "args": {
+        "id": "shadcn-ui/Sidebar"
+      },
+      "statusVisible": true,
+      "status": "Preview resource blocked by CSP: img-src",
+      "text": "Toggle Sidebar",
+      "elements": 9
+    },
+    {
+      "id": "shadcn-ui/Tabs",
+      "args": {
+        "id": "shadcn-ui/Tabs"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Overview\nAnalytics\nReports\nSettings\nOverview\nView your key metrics and recent project activity. Track progress across all your active projects.\nYou have 12 active projects and 3 pending tasks.",
+      "elements": 12
+    },
+    {
+      "id": "shadcn-ui/Separator",
+      "args": {
+        "id": "shadcn-ui/Separator"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "shadcn/ui\nThe Foundation for your Design System\nA set of beautifully designed components that you can customize, extend, and build on.",
+      "elements": 6
+    },
+    {
+      "id": "shadcn-ui/Scroll Area",
+      "args": {
+        "id": "shadcn-ui/Scroll Area"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Tags\nv1.2.0-beta.50\nv1.2.0-beta.49\nv1.2.0-beta.48\nv1.2.0-beta.47\nv1.2.0-beta.46\nv1.2.0-beta.45\nv1.2.0-beta.44\nv1.2.0-beta.43\nv1.2.0-beta.42\nv1.2.0-beta.41\nv1.2.0-beta.40\nv1.2.0-beta.39\nv1.2.0-beta.38\nv1.2.0-beta.37\nv1.2.0-beta.36\nv1.2.0-beta.35\nv1.2.0-beta.34\nv1.2.0-beta.33\nv1.2.0-beta.32\nv1.2.0-beta.31\nv1.2.0-beta.30\nv1.2.0-beta.29\nv1.2.0-beta.28\n",
+      "elements": 106
+    },
+    {
+      "id": "shadcn-ui/Resizable",
+      "args": {
+        "id": "shadcn-ui/Resizable"
+      },
+      "statusVisible": true,
+      "status": "Failed to fetch dynamically imported module: https://esm.sh/react-resizable-panels@4.14.8?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "shadcn-ui/Dialog",
+      "args": {
+        "id": "shadcn-ui/Dialog"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Open Dialog",
+      "elements": 2
+    },
+    {
+      "id": "shadcn-ui/Alert Dialog",
+      "args": {
+        "id": "shadcn-ui/Alert Dialog"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Show Dialog",
+      "elements": 1
+    },
+    {
+      "id": "shadcn-ui/Sheet",
+      "args": {
+        "id": "shadcn-ui/Sheet"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Open",
+      "elements": 1
+    },
+    {
+      "id": "shadcn-ui/Drawer",
+      "args": {
+        "id": "shadcn-ui/Drawer"
+      },
+      "statusVisible": true,
+      "status": "Failed to fetch dynamically imported module: https://esm.sh/sonner@2.0.0?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "shadcn-ui/Popover",
+      "args": {
+        "id": "shadcn-ui/Popover"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Open popover",
+      "elements": 1
+    },
+    {
+      "id": "shadcn-ui/Tooltip",
+      "args": {
+        "id": "shadcn-ui/Tooltip"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Hover",
+      "elements": 1
+    },
+    {
+      "id": "shadcn-ui/Hover Card",
+      "args": {
+        "id": "shadcn-ui/Hover Card"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Hover Here",
+      "elements": 1
+    },
+    {
+      "id": "shadcn-ui/Context Menu",
+      "args": {
+        "id": "shadcn-ui/Context Menu"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Right click here",
+      "elements": 3
+    },
+    {
+      "id": "shadcn-ui/Dropdown Menu",
+      "args": {
+        "id": "shadcn-ui/Dropdown Menu"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Open",
+      "elements": 1
+    },
+    {
+      "id": "shadcn-ui/Menubar",
+      "args": {
+        "id": "shadcn-ui/Menubar"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "File\nEdit\nView\nProfiles",
+      "elements": 5
+    },
+    {
+      "id": "shadcn-ui/Command",
+      "args": {
+        "id": "shadcn-ui/Command"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Suggestions\nCalendar\nSearch Emoji\nCalculator\nSettings\nProfile\n⌘P\nBilling\n⌘B\nSettings\n⌘S",
+      "elements": 76
+    },
+    {
+      "id": "shadcn-ui/Alert",
+      "args": {
+        "id": "shadcn-ui/Alert"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Payment successful\nYour payment of $29.99 has been processed. A receipt has been sent to your email address.\nNew feature available\nWe've added dark mode support. You can enable it in your account settings.",
+      "elements": 14
+    },
+    {
+      "id": "shadcn-ui/Toast",
+      "args": {
+        "id": "shadcn-ui/Toast"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Show Toast",
+      "elements": 1
+    },
+    {
+      "id": "shadcn-ui/Sonner",
+      "args": {
+        "id": "shadcn-ui/Sonner"
+      },
+      "statusVisible": true,
+      "status": "Failed to fetch dynamically imported module: https://esm.sh/sonner@2.0.0?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "shadcn-ui/Progress",
+      "args": {
+        "id": "shadcn-ui/Progress"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "x",
+      "elements": 4
+    },
+    {
+      "id": "shadcn-ui/Spinner",
+      "args": {
+        "id": "shadcn-ui/Spinner"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Processing payment...\n$100.00",
+      "elements": 9
+    },
+    {
+      "id": "shadcn-ui/Skeleton",
+      "args": {
+        "id": "shadcn-ui/Skeleton"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "",
+      "elements": 5
+    },
+    {
+      "id": "shadcn-ui/Badge",
+      "args": {
+        "id": "shadcn-ui/Badge"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Badge\nSecondary\nDestructive\nOutline",
+      "elements": 5
+    },
+    {
+      "id": "shadcn-ui/Empty",
+      "args": {
+        "id": "shadcn-ui/Empty"
+      },
+      "statusVisible": true,
+      "status": "Failed to fetch dynamically imported module: https://esm.sh/@tabler/icons-react@3.31.0?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "shadcn-ui/Avatar",
+      "args": {
+        "id": "shadcn-ui/Avatar"
+      },
+      "statusVisible": true,
+      "status": "Preview resource blocked by CSP: img-src",
+      "text": "CN\nER\nCN\nLR\nER\n+3",
+      "elements": 14
+    },
+    {
+      "id": "shadcn-ui/Card",
+      "args": {
+        "id": "shadcn-ui/Card"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Login to your account\nEnter your email below to login to your account\nSign Up\nEmail\nPassword\nForgot your password?\nLogin\nLogin with Google",
+      "elements": 20
+    },
+    {
+      "id": "shadcn-ui/Table",
+      "args": {
+        "id": "shadcn-ui/Table"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "A list of your recent invoices.\nInvoice\tStatus\tMethod\tAmount\nINV001\tPaid\tCredit Card\t$250.00\nINV002\tPending\tPayPal\t$150.00\nINV003\tUnpaid\tBank Transfer\t$350.00\nINV004\tPaid\tCredit Card\t$450.00\nINV005\tPaid\tPayPal\t$550.00\nINV006\tPending\tBank Transfer\t$200.00\nINV007\tUnpaid\tCredit Card\t$300.00\nTotal\t$2,500.00",
+      "elements": 49
+    },
+    {
+      "id": "shadcn-ui/Data Table",
+      "args": {
+        "id": "shadcn-ui/Data Table"
+      },
+      "statusVisible": true,
+      "status": "Failed to fetch dynamically imported module: https://esm.sh/@tanstack/react-table@9.0.0?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "shadcn-ui/Chart",
+      "args": {
+        "id": "shadcn-ui/Chart"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Bar Chart - Interactive\nShowing total visitors for the last 3 months\nDesktop\n7,324\nMobile\n7,250\nApr 5\nApr 10\nApr 15\nApr 20\nApr 25\nApr 30",
+      "elements": 165
+    },
+    {
+      "id": "shadcn-ui/Carousel",
+      "args": {
+        "id": "shadcn-ui/Carousel"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "1\n2\n3\n4\n5\nPrevious slide\nNext slide",
+      "elements": 36
+    },
+    {
+      "id": "shadcn-ui/Typeset",
+      "args": {
+        "id": "shadcn-ui/Typeset"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Streaming markdown to a million sessions\n\nSix months ago we rewrote how assistant messages render, and this is the retrospective we wish we could have read first. The short version: the parser was never the problem, the typography was, and the fixes that mattered were boring, measurable, and CSS-shaped. We estimated two weeks spent six, and the dif",
+      "elements": 119
+    },
+    {
+      "id": "shadcn-ui/Item",
+      "args": {
+        "id": "shadcn-ui/Item"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Basic Item\n\nA simple item with title and description.\n\nAction\nYour profile has been verified.",
+      "elements": 17
+    },
+    {
+      "id": "shadcn-ui/Kbd",
+      "args": {
+        "id": "shadcn-ui/Kbd"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "⌘\n⇧\n⌥\n⌃\nCtrl\n+\nB",
+      "elements": 10
+    },
+    {
+      "id": "shadcn-ui/Collapsible",
+      "args": {
+        "id": "shadcn-ui/Collapsible"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Order #4189\nToggle details\nStatus\nShipped",
+      "elements": 11
+    },
+    {
+      "id": "shadcn-ui/Toggle",
+      "args": {
+        "id": "shadcn-ui/Toggle"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Bookmark",
+      "elements": 3
+    },
+    {
+      "id": "shadcn-ui/Toggle Group",
+      "args": {
+        "id": "shadcn-ui/Toggle Group"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "",
+      "elements": 13
+    },
+    {
+      "id": "shadcn-ui/Pagination",
+      "args": {
+        "id": "shadcn-ui/Pagination"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "1\n2\n3\nMore pages",
+      "elements": 25
+    },
+    {
+      "id": "shadcn-ui/Attachment",
+      "args": {
+        "id": "shadcn-ui/Attachment"
+      },
+      "statusVisible": true,
+      "status": "An upstream image or media asset could not load. This preview cannot fully reproduce it.",
+      "text": "workspace.png\nPNG · 820 KB\ndesk-reference.jpg\nJPG · 1.1 MB\noffice-reference.jpg\nJPG · 940 KB\nsales-dashboard.pdf\nUploading · 64%\nmessage-renderer.tsx\nTypeScript · 12 KB",
+      "elements": 47
+    },
+    {
+      "id": "shadcn-ui/Bubble",
+      "args": {
+        "id": "shadcn-ui/Bubble"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Hey there! what's up?\nHey! Want to see chat bubbles?\nI can group messages, switch sides, and keep the whole thread easy to scan.\n👍\nSure. Hit me with your best demo.\nYes. You are reading a demo that is demoing itself. Very meta. Very on-brand.\n👍\n🔥\n👀\n+2",
+      "elements": 19
+    },
+    {
+      "id": "shadcn-ui/Marker",
+      "args": {
+        "id": "shadcn-ui/Marker"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Switched to a new branch\nThinking...\nConversation compacted\nExplored 4 files",
+      "elements": 21
+    },
+    {
+      "id": "shadcn-ui/Message",
+      "args": {
+        "id": "shadcn-ui/Message"
+      },
+      "statusVisible": true,
+      "status": "Preview resource blocked by CSP: img-src",
+      "text": "ME\nDeploying to prod real quick.\nR\nIt's 4:55 PM. On a Friday.\nME\nIt's a one-line change.\nDelivered\nR\nIt's always a one-line change 😭.\nAlright, let me take a look.\n👍\nOliver is typing...",
+      "elements": 38
+    },
+    {
+      "id": "shadcn-ui/Message Scroller",
+      "args": {
+        "id": "shadcn-ui/Message Scroller"
+      },
+      "statusVisible": true,
+      "status": "Could not load @shadcn/react@0.3.1/message-scroller: Failed to fetch dynamically imported module: https://esm.sh/@shadcn/react@0.3.1/message-scroller?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "shadcn-ui/Questionnaire",
+      "args": {
+        "id": "shadcn-ui/Questionnaire"
+      },
+      "statusVisible": true,
+      "status": "Could not load @shadcn/react@0.3.1/questionnaire: Failed to fetch dynamically imported module: https://esm.sh/@shadcn/react@0.3.1/questionnaire?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "headless-ui/Checkbox",
+      "args": {
+        "id": "headless-ui/Checkbox"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "✓Accept terms",
+      "elements": 4
+    },
+    {
+      "id": "chakra-ui/Button",
+      "args": {
+        "id": "chakra-ui/Button"
+      },
+      "statusVisible": true,
+      "status": "return_nullishCoalesce is not defined",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "web-awesome/Button",
+      "args": {
+        "id": "web-awesome/Button"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Button",
+      "elements": 5
+    },
+    {
+      "id": "magic-ui/Android",
+      "args": {
+        "id": "magic-ui/Android"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "",
+      "elements": 14
+    },
+    {
+      "id": "cult-ui/Agent Suggest Card Stack",
+      "args": {
+        "id": "cult-ui/Agent Suggest Card Stack"
+      },
+      "statusVisible": true,
+      "status": "Could not load tailwind-merge@3.5.0: Failed to fetch dynamically imported module: https://esm.sh/tailwind-merge@3.5.0?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "intent-ui/Button",
+      "args": {
+        "id": "intent-ui/Button"
+      },
+      "statusVisible": true,
+      "status": "Could not load react-aria-components@1.22.0/composeRenderProps: Failed to fetch dynamically imported module: https://esm.sh/react-aria-components@1.22.0/composeRenderProps?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "reui/File Upload",
+      "args": {
+        "id": "reui/File Upload"
+      },
+      "statusVisible": true,
+      "status": "Could not load @hugeicons/react@1.1.7: Failed to fetch dynamically imported module: https://esm.sh/@hugeicons/react@1.1.7?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "elevenlabs-ui/Orb",
+      "args": {
+        "id": "elevenlabs-ui/Orb"
+      },
+      "statusVisible": true,
+      "status": "Could not load tailwind-merge@3.0.1: Failed to fetch dynamically imported module: https://esm.sh/tailwind-merge@3.0.1?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "tween-ui/Glow Button",
+      "args": {
+        "id": "tween-ui/Glow Button"
+      },
+      "statusVisible": true,
+      "status": "Could not load tailwind-merge@3.6.0: Failed to fetch dynamically imported module: https://esm.sh/tailwind-merge@3.6.0?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "hextaui/Combobox",
+      "args": {
+        "id": "hextaui/Combobox"
+      },
+      "statusVisible": true,
+      "status": "Could not load @tabler/icons-react@3.49.0: Failed to fetch dynamically imported module: https://esm.sh/@tabler/icons-react@3.49.0?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "beui/Tilt Card",
+      "args": {
+        "id": "beui/Tilt Card"
+      },
+      "statusVisible": true,
+      "status": "Could not load tailwind-merge@3.6.0: Failed to fetch dynamically imported module: https://esm.sh/tailwind-merge@3.6.0?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "loading-dev/Arc",
+      "args": {
+        "id": "loading-dev/Arc"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "",
+      "elements": 2
+    },
+    {
+      "id": "kibo-ui/Avatar Stack",
+      "args": {
+        "id": "kibo-ui/Avatar Stack"
+      },
+      "statusVisible": true,
+      "status": "Could not load tailwind-merge@3.3.1: Failed to fetch dynamically imported module: https://esm.sh/tailwind-merge@3.3.1?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "shadcn-ui/Button",
+      "args": {
+        "id": "shadcn-ui/Button",
+        "theme": "dark",
+        "styles": "[data-slot=\"button\"] { background: rgb(124,58,237); border-radius: 0; } body { background: #000; }"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Button",
+      "elements": 6
+    },
+    {
+      "id": "cult-ui/Agent Suggest Card Stack",
+      "args": {
+        "id": "cult-ui/Agent Suggest Card Stack"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "3\nSuggestions\n#5347\nUpdate auth config\nbot\nFix type errors\nbot\nnow\nApply",
+      "elements": 74
+    },
+    {
+      "id": "elevenlabs-ui/Orb",
+      "args": {
+        "id": "elevenlabs-ui/Orb"
+      },
+      "statusVisible": true,
+      "status": "Could not load @react-three/drei@10.7.6: Failed to fetch dynamically imported module: https://esm.sh/@react-three/drei@10.7.6?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "tween-ui/Glow Button",
+      "args": {
+        "id": "tween-ui/Glow Button"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Get started",
+      "elements": 15
+    },
+    {
+      "id": "beui/Tilt Card",
+      "args": {
+        "id": "beui/Tilt Card"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "PREMIUM\nTilt me\n\nMove your cursor across the card to see 3D tilt + glare.",
+      "elements": 6
+    },
+    {
+      "id": "kibo-ui/Avatar Stack",
+      "args": {
+        "id": "kibo-ui/Avatar Stack"
+      },
+      "statusVisible": true,
+      "status": "Preview resource blocked by CSP: img-src",
+      "text": "HB\nCN\nLR\nSC",
+      "elements": 14
+    },
+    {
+      "id": "shadcn-ui/Checkbox",
+      "args": {
+        "id": "shadcn-ui/Checkbox"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Accept terms and conditions\nAccept terms and conditions\n\nBy clicking this checkbox, you agree to the terms.\n\nEnable notifications\nEnable notifications\n\nYou can enable or disable notifications at any time.",
+      "elements": 25
+    },
+    {
+      "id": "chakra-ui/Button",
+      "args": {
+        "id": "chakra-ui/Button"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Button",
+      "elements": 1
+    },
+    {
+      "id": "shadcn-ui/Resizable",
+      "args": {
+        "id": "shadcn-ui/Resizable"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "One\nTwo\nThree",
+      "elements": 20
+    },
+    {
+      "id": "shadcn-ui/Drawer",
+      "args": {
+        "id": "shadcn-ui/Drawer"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Open Drawer",
+      "elements": 1
+    },
+    {
+      "id": "shadcn-ui/Sonner",
+      "args": {
+        "id": "shadcn-ui/Sonner"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Show Toast",
+      "elements": 2
+    },
+    {
+      "id": "shadcn-ui/Empty",
+      "args": {
+        "id": "shadcn-ui/Empty"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "No Projects Yet\nYou haven't created any projects yet. Get started by creating your first project.\nCreate Project\nImport Project\nLearn More",
+      "elements": 16
+    },
+    {
+      "id": "shadcn-ui/Data Table",
+      "args": {
+        "id": "shadcn-ui/Data Table"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Columns\n\tStatus\tEmail\n\t\nAmount\n\t\n\n\t\nSuccess\n\t\nken99@example.com\n\t\n$316.00\n\t\nOpen menu\n\n\n\t\nSuccess\n\t\nabe45@example.com\n\t\n$242.00\n\t\nOpen menu\n\n\n\t\nProcessing\n\t\nmonserrat44@example.com\n\t\n$837.00\n\t\nOpen menu\n\n\n\t\nSuccess\n\t\nsilas22@example.com\n\t\n$874.00\n\t\nOpen menu\n\n\n\t\nFailed\n\t\ncarmella@example.com\n\t\n$721.00\n\t\nOpen menu\n0 of 5 row(s) selected.\nPreviousNex",
+      "elements": 116
+    },
+    {
+      "id": "elevenlabs-ui/Voice Button",
+      "args": {
+        "id": "elevenlabs-ui/Voice Button"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Voice\n⌥Space",
+      "elements": 7
+    },
+    {
+      "id": "magic-ui/Particles",
+      "args": {
+        "id": "magic-ui/Particles",
+        "theme": "dark"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Particles",
+      "elements": 5
+    },
+    {
+      "id": "mantine/Accordion",
+      "args": {
+        "id": "mantine/Accordion"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "First question\nSecond question",
+      "elements": 19
+    },
+    {
+      "id": "shadcn-ui/Message Scroller",
+      "args": {
+        "id": "shadcn-ui/Message Scroller"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Opening Position\nChoose where a saved transcript opens.\n\nThis is the last message the user sent in the conversation.\n\nStart with the invite step. Teams are creating workspaces but waiting to add collaborators.\n\nRecommended follow-up:\n\n1. Compare invite drop-off by account size.\n2. Check whether users who skip invites still return within 24 hours.\n3",
+      "elements": 49
+    },
+    {
+      "id": "shadcn-ui/Questionnaire",
+      "args": {
+        "id": "shadcn-ui/Questionnaire"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Question 1 of 3\nWhat should the agent build next?\n\nChoose a direction or describe another task.\n\nTool call timeline\nShow what the agent ran and what came back.\nA\nApproval checkpoints\nAsk before sensitive or destructive actions.\nB\nSub-agent handoffs\nMake delegated work and results easier to follow.\nC\nNext",
+      "elements": 117
+    },
+    {
+      "id": "intent-ui/Button",
+      "args": {
+        "id": "intent-ui/Button"
+      },
+      "statusVisible": true,
+      "status": "Could not load cn@0.2.4: Failed to fetch dynamically imported module: https://esm.sh/cn@0.2.4?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "reui/File Upload",
+      "args": {
+        "id": "reui/File Upload"
+      },
+      "statusVisible": true,
+      "status": "Could not load lucide-react@1.17.0: Failed to fetch dynamically imported module: https://esm.sh/lucide-react@1.17.0?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "hextaui/Combobox",
+      "args": {
+        "id": "hextaui/Combobox"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Fruit",
+      "elements": 10
+    },
+    {
+      "id": "chakra-ui/Button",
+      "args": {
+        "id": "chakra-ui/Button"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Button",
+      "elements": 1
+    },
+    {
+      "id": "shadcn-ui/Data Table",
+      "args": {
+        "id": "shadcn-ui/Data Table"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Columns\n\tStatus\tEmail\n\t\nAmount\n\t\n\n\t\nSuccess\n\t\nken99@example.com\n\t\n$316.00\n\t\nOpen menu\n\n\n\t\nSuccess\n\t\nabe45@example.com\n\t\n$242.00\n\t\nOpen menu\n\n\n\t\nProcessing\n\t\nmonserrat44@example.com\n\t\n$837.00\n\t\nOpen menu\n\n\n\t\nSuccess\n\t\nsilas22@example.com\n\t\n$874.00\n\t\nOpen menu\n\n\n\t\nFailed\n\t\ncarmella@example.com\n\t\n$721.00\n\t\nOpen menu\n0 of 5 row(s) selected.\nPreviousNex",
+      "elements": 116
+    },
+    {
+      "id": "shadcn-ui/Resizable",
+      "args": {
+        "id": "shadcn-ui/Resizable"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "One\nTwo\nThree",
+      "elements": 20
+    },
+    {
+      "id": "shadcn-ui/Sonner",
+      "args": {
+        "id": "shadcn-ui/Sonner"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Show Toast",
+      "elements": 2
+    },
+    {
+      "id": "reui/Data Grid",
+      "args": {
+        "id": "reui/Data Grid"
+      },
+      "statusVisible": true,
+      "status": "Could not load @base-ui/react@1.5.0/button: Failed to fetch dynamically imported module: https://esm.sh/@base-ui/react@1.5.0/button?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "shadcn-ui/Questionnaire",
+      "args": {
+        "id": "shadcn-ui/Questionnaire"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Question 1 of 3\nWhat should the agent build next?\n\nChoose a direction or describe another task.\n\nTool call timeline\nShow what the agent ran and what came back.\nA\nApproval checkpoints\nAsk before sensitive or destructive actions.\nB\nSub-agent handoffs\nMake delegated work and results easier to follow.\nC\nNext",
+      "elements": 117
+    },
+    {
+      "id": "shadcn-ui/Data Table",
+      "args": {
+        "id": "shadcn-ui/Data Table"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Columns\n\tStatus\tEmail\n\t\nAmount\n\t\n\n\t\nSuccess\n\t\nken99@example.com\n\t\n$316.00\n\t\nOpen menu\n\n\n\t\nSuccess\n\t\nabe45@example.com\n\t\n$242.00\n\t\nOpen menu\n\n\n\t\nProcessing\n\t\nmonserrat44@example.com\n\t\n$837.00\n\t\nOpen menu\n\n\n\t\nSuccess\n\t\nsilas22@example.com\n\t\n$874.00\n\t\nOpen menu\n\n\n\t\nFailed\n\t\ncarmella@example.com\n\t\n$721.00\n\t\nOpen menu\n0 of 5 row(s) selected.\nPreviousNex",
+      "elements": 116
+    },
+    {
+      "id": "intent-ui/Button",
+      "args": {
+        "id": "intent-ui/Button"
+      },
+      "statusVisible": true,
+      "status": "Could not load tailwind-variants@3.2.2: Failed to fetch dynamically imported module: https://esm.sh/tailwind-variants@3.2.2?deps=react@19.3.0,react-dom@19.3.0",
+      "text": "",
+      "elements": 0
+    },
+    {
+      "id": "shadcn-ui/Dialog",
+      "args": {
+        "id": "shadcn-ui/Dialog"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Open Dialog",
+      "elements": 2
+    },
+    {
+      "id": "radix-ui/Accordion",
+      "args": {
+        "id": "radix-ui/Accordion"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "First question\nSecond question",
+      "elements": 9
+    },
+    {
+      "id": "shadcn-ui/Button",
+      "args": {
+        "id": "shadcn-ui/Button",
+        "theme": "dark",
+        "styles": "[data-slot=\"button\"] { background: rgb(124,58,237); border-radius: 0; } body { background: #000; }"
+      },
+      "statusVisible": false,
+      "status": "Rendering…",
+      "text": "Button",
+      "elements": 6
+    }
+  ]
+}

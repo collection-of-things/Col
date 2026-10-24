@@ -36,8 +36,9 @@ three candidates and show the user the source links before committing.
 
 Read `get_component.preview`. When `available` is true, call
 `render_component` with that exact `id`, optional user CSS in `styles`, and
-`theme: "light"` or `"dark"`. Col selects the real pinned library export,
-required stylesheet, and provider. Implementation code and arbitrary props
+`theme: "light"` or `"dark"`. Col selects a real pinned package export or
+original upstream source, including shadcn, with its styles and providers.
+Keep the returned source revision, integrity and limitations visible. Implementation code and arbitrary props
 are rejected. Use only presentation data; never send credentials or private data.
 
 When unavailable, show the reason and official documentation. A verified

@@ -38,7 +38,7 @@ export default function McpPage() {
           <><code>matchedOn</code> says why a result matched: name, alias, tag, or description.</>,
           <>Empty results explain themselves (<code>indexStatus</code>) and suggest close matches instead of returning silence.</>,
           <>Documentation snapshots carry their fetch date and source revision, so anything quoted can be re-checked later.</>,
-          <><code>render_component</code> takes a component ID and user CSS/theme, then loads the real pinned library implementation from esm.sh. It shows source and reproduction limits; components without a verified adapter return unavailable. It works in hosts that support MCP Apps, such as Claude, ChatGPT, VS Code, and Codex. In Claude Code, the agent asks for the same render as HTML and shows it inline or in your browser.</>,
+          <><code>render_component</code> takes a component ID and user CSS/theme, then runs the real pinned package export or original upstream source, including shadcn components. It shows source and reproduction limits; components without a verified adapter return unavailable. It works in hosts that support MCP Apps, such as Claude, ChatGPT, VS Code, and Codex. In Claude Code, the agent asks for the same render as HTML and shows it inline or in your browser.</>,
         ]} />
         <DocsText>This is a real result, exactly as an agent receives it:</DocsText>
         <DocsCode code={`{

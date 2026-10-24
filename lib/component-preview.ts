@@ -1,4 +1,9 @@
 import * as z from "zod/v4";
+import { packageRecipes, type PackageRecipe } from "./component-preview-packages.ts";
+import { transformPreviewPackageImports } from "./component-preview-package-bundles.ts";
+import extraSources from "../data/component-previews/extra.json" with { type: "json" };
+import shadcnSources from "../data/component-previews/shadcn.json" with { type: "json" };
+import packageStyles from "../data/component-previews/package-styles.json" with { type: "json" };
 
 /** The public renderer accepts presentation data, never replacement source. */
 export const componentPreviewArgs = z.strictObject({
@@ -53,11 +58,41 @@ const commonGaps = [
   "Only supplied CSS and color scheme are applied. App fonts, assets, global CSS and additional providers are not loaded automatically. CSP-blocked resources are reported as errors.",
 ];
 
-export function componentPreviewSupport(id: string) {
+type SourcePreview = {
+  code: string; styleKey: string; package: string; version: string; exportName: string;
+  source: { url: string; revision: string; integrity: string };
+  gaps: string[];
+};
+type SourceRegistry = {
+  entries: Record<string, SourcePreview>; styles: Record<string, string>;
+  unavailable: Record<string, string>; libraryBlockers?: Record<string, string>;
+};
+const sources: SourceRegistry = {
+  entries: { ...extraSources.entries, ...shadcnSources.entries },
+  styles: { ...extraSources.styles, ...shadcnSources.styles },
+  unavailable: { ...extraSources.unavailable, ...shadcnSources.unavailable },
+  libraryBlockers: extraSources.libraryBlockers,
+};
+const compiledStyles: Readonly<Record<string, { css: string }>> = packageStyles;
+
+function packageRecipe(id: string): PackageRecipe | undefined {
+  if (Object.hasOwn(packageRecipes, id)) return packageRecipes[id];
   const recipe = Object.hasOwn(recipes, id) ? recipes[id] : undefined;
+  if (!recipe) return undefined;
+  const provider = recipe.provider === "mantine";
+  return {
+    ...recipe,
+    imports: `import { ${recipe.exportName}${provider ? ", MantineProvider" : ""} } from ${JSON.stringify(`${recipe.package}@${recipe.version}`)};`,
+    jsx: provider ? `<MantineProvider forceColorScheme={PREVIEW_THEME}>${recipe.jsx}</MantineProvider>` : recipe.jsx,
+  };
+}
+
+export function componentPreviewSupport(id: string) {
+  const source = Object.hasOwn(sources.entries, id) ? sources.entries[id] : undefined;
+  const recipe = source ?? packageRecipe(id);
   return recipe
-    ? { available: true as const, package: recipe.package, version: recipe.version, exportName: recipe.exportName, gaps: [...recipe.gaps, ...commonGaps] }
-    : { available: false as const, gaps: ["Preview unavailable: no verified implementation adapter is recorded for this component. Col will not generate an approximation. Use the official documentation or verify it in your app."] };
+    ? { available: true as const, package: recipe.package, version: recipe.version, exportName: recipe.exportName, source: source ? { url: source.source.url, revision: source.source.revision, integrity: source.source.integrity } : undefined, gaps: [...recipe.gaps, ...commonGaps] }
+    : { available: false as const, gaps: [sources.unavailable[id] ?? sources.libraryBlockers?.[id.split("/")[0]] ?? "Preview unavailable: no verified implementation adapter is recorded for this component. Col will not generate an approximation. Use the official documentation or verify it in your app."] };
 }
 
 export type ComponentPreview = ReturnType<typeof createComponentPreview>;
@@ -74,21 +109,23 @@ export function createComponentPreview(args: z.infer<typeof componentPreviewArgs
   const requestKey = componentPreviewRequestKey(args);
   const identity = { id: args.id, docsUrl, requestKey };
   if (!support.available) return { ...identity, ...support };
-  const recipe = recipes[args.id];
+  const source = Object.hasOwn(sources.entries, args.id) ? sources.entries[args.id] : undefined;
+  const recipe = packageRecipe(args.id);
   const theme = args.theme ?? "light";
-  const provider = recipe.provider === "mantine";
-  const imports = [
-    ...recipe.stylesheets.map((sheet) => `import ${JSON.stringify(sheet)};`),
-    `import { ${recipe.exportName}${provider ? ", MantineProvider" : ""} } from ${JSON.stringify(`${recipe.package}@${recipe.version}`)};`,
-  ].join("\n");
-  const content = provider
-    ? `<MantineProvider forceColorScheme=${JSON.stringify(theme)}>${recipe.jsx}</MantineProvider>`
-    : recipe.jsx;
-  const code = `${imports}
+  const css = source ? sources.styles[source.styleKey] : recipe?.compileCss ? compiledStyles[recipe.compileCss]?.css : "";
+  const implementation = source?.code ?? `${recipe!.imports}
+${(recipe!.stylesheets ?? []).map((sheet) => `import ${JSON.stringify(sheet)};`).join("\n")}
+export default function LibraryPreview() { ${recipe!.setup ?? ""} return (${recipe!.jsx}); }`;
+  const code = `const PREVIEW_THEME = ${JSON.stringify(theme)};
 document.documentElement.style.colorScheme = ${JSON.stringify(theme)};
 document.documentElement.classList.toggle("dark", ${theme === "dark"});
-document.body.style.background = ${JSON.stringify(theme === "dark" ? "#000" : "#fff")};
-export default function LibraryPreview() { return (<>${content}<style>{${JSON.stringify(args.styles ?? "")}}</style></>); }
+const colLibraryStyles = document.createElement("style");
+colLibraryStyles.textContent = ${JSON.stringify(`:where(body) { background: ${theme === "dark" ? "#000" : "#fff"}; }\n${css ?? ""}`)};
+document.head.append(colLibraryStyles);
+const colUserStyles = document.createElement("style");
+colUserStyles.textContent = ${JSON.stringify(args.styles ?? "")};
+document.head.append(colUserStyles);
+${implementation}
 `;
-  return { ...identity, ...support, code, theme };
+  return { ...identity, ...support, code: transformPreviewPackageImports(code), theme };
 }

@@ -13,9 +13,9 @@
  *   to an inline HTML widget tool, or saves it as a file and opens it in a browser.
  *
  * The runtime validates TSX with Babel, compiles it with sucrase, points imports at
- * esm.sh, and mounts its default export with React. Col bundles nothing: every
- * package loads from esm.sh, with `?deps=` pinning React so the render and every
- * package share one React without an import map.
+ * esm.sh, and mounts its default export with React. Verified upstream source and
+ * selected npm dependencies are bundled ahead of time. Remaining packages load
+ * from esm.sh with shared React pins; there is no runtime source substitution.
  */
 import type { parse as parseTsx } from "@babel/parser";
 import type { ComponentPreview } from "./component-preview";
@@ -91,6 +91,10 @@ export const resolveImport = (specifier: string, reactVersion: string): string =
     throw new Error(`"${specifier}" is a local file; inline its code in the module instead`);
   }
   if (specifier.endsWith(".css")) return `https://esm.sh/${specifier}`;
+  // These pinned class utilities have no React dependency. Avoid an unnecessary
+  // React-specific CDN build variant while preserving the audited versions.
+  if (/^cn@0\.(?:2\.4|5\.0)$/.test(specifier)) return "https://esm.sh/" + specifier + "?bundle";
+  if (/^tailwind-merge@3\.(?:0\.1|3\.1|5\.0|6\.0)$/.test(specifier)) return "https://esm.sh/" + specifier + "?bundle";
   return `https://esm.sh/${specifier}?deps=react@${reactVersion},react-dom@${reactVersion}`;
 };
 
@@ -155,7 +159,11 @@ async function colRuntime(report) {
     status.hidden = failedGeneration !== current;
     root.render(createElement(Component));
   };
-  window.addEventListener("error", (event) => fail(event.error || event.message));
+  window.addEventListener("error", (event) => {
+    if (event.target instanceof HTMLImageElement || event.target instanceof HTMLMediaElement) {
+      fail("An upstream image or media asset could not load. This preview cannot fully reproduce it.");
+    } else if (event instanceof ErrorEvent) fail(event.error || event.message);
+  }, true);
   window.addEventListener("unhandledrejection", (event) => fail(event.reason));
   window.addEventListener("securitypolicyviolation", (event) => fail("Preview resource blocked by CSP: " + event.effectiveDirective));
 
@@ -167,7 +175,9 @@ async function colRuntime(report) {
     status.hidden = false;
     try {
     validatePreviewSyntax(code, parseSyntax);
-    const options = { transforms: ["typescript", "jsx"], jsxRuntime: "automatic", production: true };
+    // The client already runs ES modules. Preserve upstream JavaScript operators;
+    // only TS/JSX needs compilation, including when upstream output is minified.
+    const options = { transforms: ["typescript", "jsx"], jsxRuntime: "automatic", production: true, disableESTransforms: true };
     const js = transform(code, options).code;
     await init();
     if (current !== generation) return;
@@ -181,6 +191,7 @@ async function colRuntime(report) {
     }
     const [imports] = parse(js);
     const stylesheets = [];
+    const modules = [];
     let out = "";
     let last = 0;
     for (const entry of imports) {
@@ -204,11 +215,14 @@ async function colRuntime(report) {
         out += js.slice(last, entry.importStart);
         last = entry.importEnd;
       } else {
+        if (entry.type === "static") modules.push(import(url).catch((error) => {
+          throw new Error("Could not load " + entry.specifier + ": " + error.message);
+        }));
         out += js.slice(last, entry.start) + (entry.type === "dynamic" ? JSON.stringify(url) : url);
         last = entry.end;
       }
     }
-    await Promise.all(stylesheets);
+    await Promise.all([...stylesheets, ...modules]);
     if (current !== generation) return;
     const script = document.createElement("script");
     script.type = "module";
@@ -301,11 +315,18 @@ export function previewWidgetHtml(): string {
     frame = undefined;
     document.getElementById("col-root").innerHTML = (${previewDisclosure.toString()})(preview);
     if (!preview.available) return;
+    const source = result._meta?.["col/preview"];
+    const code = source?.requestKey === requestKey ? source.code : preview.code;
+    if (typeof code !== "string") {
+      status.hidden = false;
+      status.textContent = "Preview unavailable: the client did not deliver the verified source payload.";
+      return;
+    }
     frame = document.createElement("iframe");
     frame.title = "Component preview";
     frame.setAttribute("sandbox", "allow-scripts allow-forms");
     frame.style.cssText = "display:block;width:100%;height:360px;border:0";
-    frame.srcdoc = ${literal(before)} + JSON.stringify(preview.code).replace(/</g, "\\u003c") + ${literal(after)};
+    frame.srcdoc = ${literal(before)} + JSON.stringify(code).replace(/</g, "\\u003c") + ${literal(after)};
     document.getElementById("col-root").append(frame);
   };
   addEventListener("message", (event) => {
@@ -406,7 +427,9 @@ function previewDisclosure(preview: ComponentPreview): string {
   const identity = preview.available
     ? `Library implementation: ${escape(preview.id)} — ${escape(preview.package)}@${escape(preview.version)}, export ${escape(preview.exportName)}.`
     : `Preview unavailable: ${escape(preview.id)}.`;
-  return `<section data-col-provenance aria-label="Preview source and limitations"><p>${identity} <a href="${escape(preview.docsUrl)}" target="_blank" rel="noreferrer">Official documentation</a></p><p>Reproduction limits</p><ul>${preview.gaps.map((gap) => `<li>${escape(gap)}</li>`).join("")}</ul></section>`;
+  const source = preview.available && preview.source
+    ? `<p><a href="${escape(preview.source.url)}" target="_blank" rel="noreferrer">Pinned upstream source</a> · ${escape(preview.source.integrity)}</p>` : "";
+  return `<section data-col-provenance aria-label="Preview source and limitations"><p>${identity} <a href="${escape(preview.docsUrl)}" target="_blank" rel="noreferrer">Official documentation</a></p>${source}<p>Reproduction limits</p><ul>${preview.gaps.map((gap) => `<li>${escape(gap)}</li>`).join("")}</ul></section>`;
 }
 
 /** The fallback consumes exactly the same server-selected implementation. */
