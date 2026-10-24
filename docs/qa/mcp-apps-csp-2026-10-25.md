@@ -1,6 +1,6 @@
 # MCP Apps CSP warning — 25 October 2026
 
-Follow-up to [PR #81](https://git.cafe/screen/col/pulls/81), reviewed against `5a29319`. The nonfatal SDK warning recorded in the [24 October client report](jsx-validation-mcpjam-2026-10-24.md) is now resolved in MCPJam without changing CSP.
+Follow-up to [PR #37](https://github.com/screen-devs/col/pull/37), reviewed against `5a29319`. The nonfatal SDK warning recorded in the [24 October client report](jsx-validation-mcpjam-2026-10-24.md) is now resolved in MCPJam without changing CSP.
 
 ## Cause and surgical fix
 
@@ -48,6 +48,6 @@ Independent review found zero actionable requirement or implementation findings.
 
 ## Evidence and limits
 
-Local evidence is retained in `artifacts/col-csp-2026-10-25/`, including the published SDK bundle, failing probe, exact before/after policies, client observations, screenshots, and check logs. The private MCPJam startup logs contain local launch credentials and are excluded from commits and attachments. Representative before/after screenshots are attached to PR #81.
+Local evidence is retained in `artifacts/col-csp-2026-10-25/`, including the published SDK bundle, failing probe, exact before/after policies, client observations, screenshots, and check logs. The private MCPJam startup logs contain local launch credentials and are excluded from commits and attachments. Representative before/after screenshots are attached to PR #37.
 
 This follow-up verifies MCPJam, not actual Claude, ChatGPT, Cursor, or Codex MCP Apps hosts. It does not claim every arbitrary user module or package is CSP-clean. The broad catalog, transport, responsive-dialog, and fallback coverage from 24 October remains separately dated evidence; it was not repeated for this bridge-only change. Nothing was merged or deployed.

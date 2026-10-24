@@ -1,6 +1,6 @@
 # JSX validation and supported MCP Apps client verification
 
-Follow-up to [PR #81](https://git.cafe/screen/col/pulls/81), tested on 24 October 2026 against review base `a00a6f78`. This closes the two open verification items in the [earlier report](mcp-reliability-2026-10-24.md): mismatched JSX rejection and an actual supported-client run. The current implementation tracker/spec is [git.cafe #80](https://git.cafe/screen/col/issues/80); the original requested references were GitHub issues 35 and 36.
+Follow-up to [PR #37](https://github.com/screen-devs/col/pull/37), tested on 24 October 2026 against review base `a00a6f78`. This closes the two open verification items in the [earlier report](mcp-reliability-2026-10-24.md): mismatched JSX rejection and an actual supported-client run. The implementation follows [issue #35](https://github.com/screen-devs/col/issues/35) and [spec #36](https://github.com/screen-devs/col/issues/36).
 
 ## Fix and tradeoff
 
@@ -58,4 +58,4 @@ Independent source review found no actionable implementation findings: validatio
 
 ## Evidence
 
-Representative client screenshots are attached to PR #81. Local evidence is retained in `artifacts/col-jsx-client-2026-10-24/`: fixture inputs, client observations, unchanged fallback HTML, screenshots, and build/typecheck logs. Raw client startup logs contain a local access token and are deliberately excluded from the commit and PR attachments. The earlier report retains its independently dated broad HTTP/browser evidence.
+Representative client screenshots are attached to PR #37. Local evidence is retained in `artifacts/col-jsx-client-2026-10-24/`: fixture inputs, client observations, unchanged fallback HTML, screenshots, and build/typecheck logs. Raw client startup logs contain a local access token and are deliberately excluded from the commit and PR attachments. The earlier report retains its independently dated broad HTTP/browser evidence.
