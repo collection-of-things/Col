@@ -12,11 +12,13 @@
  *   `<iframe srcdoc>` so the host's CSS cannot restyle it. The agent passes it
  *   to an inline HTML widget tool, or saves it as a file and opens it in a browser.
  *
- * The runtime compiles the TSX with sucrase, points the module's imports at
+ * The runtime validates TSX with Babel, compiles it with sucrase, points imports at
  * esm.sh, and mounts its default export with React. Col bundles nothing: every
  * package loads from esm.sh, with `?deps=` pinning React so the render and every
  * package share one React without an import map.
  */
+import type { parse as parseTsx } from "@babel/parser";
+
 export const PREVIEW_WIDGET_URI = "ui://col/render-component.html";
 
 /**
@@ -40,10 +42,27 @@ const RUNTIME = {
   react: `https://esm.sh/react@${REACT_VERSION}`,
   reactDomClient: `https://esm.sh/react-dom@${REACT_VERSION}/client?deps=react@${REACT_VERSION}`,
   sucrase: "https://esm.sh/sucrase@3.35.1",
+  syntax: "https://esm.sh/@babel/parser@7.28.5",
   lexer: "https://esm.sh/es-module-lexer@3.0.2/js",
   tailwind: "https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.3",
   apps: "https://esm.sh/@modelcontextprotocol/ext-apps@2.0.3/app-with-deps",
 } as const;
+
+/** Reject malformed TSX before compilation or execution. Sucrase deliberately
+ * skips some syntax checks, including matching JSX tags. Embedded via
+ * `toString()`, so this function must have no outside runtime references. */
+export const validatePreviewSyntax = (code: string, parse: typeof parseTsx): void => {
+  try {
+    parse(code, { sourceType: "module", plugins: ["jsx", "typescript"], errorRecovery: false, attachComment: false });
+  } catch (error) {
+    // Parser messages can include user source. Report only its location.
+    const loc = error instanceof Error && "loc" in error ? error.loc : undefined;
+    const location = loc && typeof loc === "object" && "line" in loc && "column" in loc
+      && typeof loc.line === "number" && typeof loc.column === "number"
+      ? ` at line ${loc.line}, column ${loc.column + 1}` : "";
+    throw new Error(`Invalid TSX${location}. Check matching JSX tags, fragments, and module syntax.`);
+  }
+};
 
 
 /**
@@ -101,11 +120,13 @@ function runtimeScript(): string {
 async function colRuntime(report) {
   const resolveImport = ${resolveImport.toString()};
   const mountable = ${mountable.toString()};
-  const [{ createElement }, { createRoot }, { transform }, { init, parse }] = await Promise.all([
+  const validatePreviewSyntax = ${validatePreviewSyntax.toString()};
+  const [{ createElement }, { createRoot }, { transform }, { init, parse }, { parse: parseSyntax }] = await Promise.all([
     import(${JSON.stringify(RUNTIME.react)}),
     import(${JSON.stringify(RUNTIME.reactDomClient)}),
     import(${JSON.stringify(RUNTIME.sucrase)}),
     import(${JSON.stringify(RUNTIME.lexer)}),
+    import(${JSON.stringify(RUNTIME.syntax)}),
   ]);
   const status = document.getElementById("col-status");
   let generation = 0;
@@ -140,6 +161,7 @@ async function colRuntime(report) {
     status.textContent = "Rendering…";
     status.hidden = false;
     try {
+    validatePreviewSyntax(code, parseSyntax);
     const options = { transforms: ["typescript", "jsx"], jsxRuntime: "automatic", production: true };
     const js = transform(code, options).code;
     await init();

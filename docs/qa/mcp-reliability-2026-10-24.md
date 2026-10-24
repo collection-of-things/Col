@@ -6,7 +6,7 @@ Implementation of [issue #35](https://github.com/screen-devs/col/issues/35), fol
 
 The catalog, query limits, Origin policy, shared renderer, and public guidance have been updated. The HTTP sweep passed **1,805 requests and 5,218 assertions**, including every currently advertised library and component. Real browser interaction verified the HTML fallback and a local MCP Apps protocol harness.
 
-**Release verification remains open:** no actual supported MCP Apps client connected to this local implementation was available. The harness cannot establish host-specific CSP, sizing, or Origin compatibility. Verify the intended client and its trusted Origin before rollout. Neither tracker issue should be closed on the strength of this local run alone.
+**Follow-up completed:** the [JSX validation and MCPJam report](jsx-validation-mcpjam-2026-10-24.md) records strict TSX parsing and verification in the released MCPJam client, including host error reporting, correction, interaction, and desktop/phone dialog bounds. The original run below used a harness; it does not establish other hosts' compatibility. The follow-up documents a nonfatal SDK CSP warning and explicitly leaves untested clients unverified.
 
 ## Changes and tradeoffs
 
@@ -16,7 +16,7 @@ The catalog, query limits, Origin policy, shared renderer, and public guidance h
 - The existing module lexer identifies the actual default export. Comments, strings, aliases, classes, expressions, and newlines work. Static imports, named reexports, and literal dynamic imports share the resolver; stylesheet failures are visible. Import validation preserves ordinary TypeScript import elision.
 - Both preview shells use the same execution document. HTML previews have an opaque `allow-scripts allow-forms` sandbox. Each MCP Apps tool input replaces its execution iframe, preventing old timers, errors, and pending mounts from affecting corrected input. Replacing input intentionally resets component state.
 - Previews retain a 360px minimum viewport for overlays and grow to a bounded 900px, with scrolling for longer content. Each resize receiver checks the sending frame and positive finite bounds. Width changes can reflow content; height feedback does not repeatedly grow viewport-sized layouts.
-- No package dependencies, catalog records, tool names, stable IDs, or server-side code execution were added. Existing runtime CDN availability remains a dependency.
+- The initial implementation added no package dependencies. The follow-up adds pinned Babel syntax validation because Sucrase tolerates mismatched JSX. No catalog records, tool names, stable IDs, or server-side code execution were added. Existing runtime CDN availability remains a dependency.
 
 ## HTTP and catalog verification
 
@@ -58,8 +58,8 @@ Browser: Codex in-app Chromium, reported user agent **Chrome/155.0.0.0 on Window
 
 ## Known limits and checks still required
 
-- The existing Sucrase transformer tolerates mismatched JSX closing tags: `<main>Broken</div>` still renders. A genuine malformed parameter-list syntax error is reported. This work does not turn the transpiler into a complete JSX/type checker; that additional validation remains unimplemented.
-- An actual supported MCP Apps client and intended browser Origin must still be verified before release. The harness, synthetic CSP, and fallback tests are supporting evidence only.
+- The initial run found that Sucrase tolerated `<main>Broken</div>`. This is fixed by the follow-up's strict TSX parser, verified before user code executes. Type checking remains outside the preview contract.
+- The follow-up verifies the released MCPJam client. Actual Claude, ChatGPT, Cursor, and Codex MCP Apps clients remain unverified; the harness and client-emulation profiles do not establish their compatibility. Direct browser-Origin checks remain separate from MCPJam's proxy connection.
 - Arbitrary computed imports, server components, local project files, and all possible npm package/browser combinations are outside the supported preview contract. No universal sandbox-security claim is made.
 - This run did not deploy, merge, probe sensitive data, or perform sustained load testing. A few browser automation actions required reload/re-observation; those transient tool errors were not attributed to the product.
 
@@ -69,14 +69,14 @@ Final independent review: all reported findings are addressed, including stale e
 
 ## Spec
 
-Final independent source review found no remaining confirmed implementation defect after the execution-frame and resizing changes. The actual-client release gate remains open. The browser-discovered pre-existing mismatched-JSX limitation above is explicitly retained rather than counted as a successful syntax-rejection test.
+Final independent source review found no remaining confirmed implementation defect after the execution-frame and resizing changes. The follow-up resolves the actual-client verification gap using MCPJam and rejects the browser-discovered mismatched-JSX case.
 
-Review summary: zero outstanding actionable source-review findings on either axis; actual-client verification and complete JSX validation are the stated limits.
+Review summary: zero outstanding actionable source-review findings on either axis. See the follow-up for new checks and precise client-compatibility limits.
 
 ## Reproduction and evidence
 
 Run `npm test` (includes the production build), then `npm run typecheck` after generated build output is stable. Focused renderer, directory, tool, evaluation, and Origin tests are included in the normal suite.
 
-Final checks on the reviewed implementation: `npm test` passed the production build and **124 tests**; `npm run typecheck` passed; `git diff --check` passed. These were rerun after the final TypeScript import-preservation correction.
+Checks on the initial implementation: `npm test` passed the production build and **124 tests**; `npm run typecheck` passed; `git diff --check` passed. The follow-up reran the production build and **127 tests**, typecheck, and diff check after adding JSX validation.
 
 The working environment retains raw HTTP results, scripts, emitted HTML, browser observations, protocol logs, and screenshots under `artifacts/col-mcp-fixes-2026-10-24/`. These large local artifacts are not part of the source change. The review description includes the test results and attaches representative dialog and multiple-preview screenshots. Historical before-state evidence remains under `artifacts/col-mcp-qa-2026-10-17/`; historical counts are not substituted for this run's catalog.
