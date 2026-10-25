@@ -54,8 +54,11 @@ for (const [repo, descriptors] of groups) {
     const used = new Set();
     const themeProvider = project.dependencies["next-themes"];
     const demoImport = `import { ${descriptor.exportName ?? "default"} as ColOfficialDemo } from ${JSON.stringify(descriptor.entryPath)};`;
+    // The upstream toast demo relies on the app layout to mount its own Toaster.
+    const toasterImport = descriptor.id === "hextaui/Toast" ? 'import { Toaster as ColToaster } from "@/components/ui/toast";' : "";
+    const demo = toasterImport ? "<><ColOfficialDemo /><ColToaster /></>" : "<ColOfficialDemo />";
     const entry = themeProvider
-      ? `${demoImport} import { ThemeProvider } from "next-themes"; export default function ColThemedDemo() { return <ThemeProvider forcedTheme={PREVIEW_THEME} defaultTheme={PREVIEW_THEME} attribute="class" enableSystem={false}><ColOfficialDemo /></ThemeProvider>; }`
+      ? `${demoImport} ${toasterImport} import { ThemeProvider } from "next-themes"; export default function ColThemedDemo() { return <ThemeProvider forcedTheme={PREVIEW_THEME} defaultTheme={PREVIEW_THEME} attribute="class" enableSystem={false}>${demo}</ThemeProvider>; }`
       : `${demoImport} export default ColOfficialDemo;`;
     try {
       const result = await build({

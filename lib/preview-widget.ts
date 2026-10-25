@@ -12,12 +12,13 @@
  *   `<iframe srcdoc>` so the host's CSS cannot restyle it. The agent passes it
  *   to an inline HTML widget tool, or saves it as a file and opens it in a browser.
  *
- * The runtime validates TSX with Babel, compiles it with sucrase, points imports at
+ * The runtime validates source with Babel, compiles JSX/TSX with sucrase, points imports at
  * esm.sh, and mounts its default export with React. Verified upstream source and
  * selected npm dependencies are bundled ahead of time. Remaining packages load
  * from esm.sh with shared React pins; there is no runtime source substitution.
  */
 import type { parse as parseTsx } from "@babel/parser";
+import type { transform as transformSource } from "sucrase";
 import type { ComponentPreview } from "./component-preview";
 import { componentPreviewRequestKey } from "./component-preview.ts";
 
@@ -55,9 +56,26 @@ const RUNTIME = {
 /** Reject malformed TSX before compilation or execution. Sucrase deliberately
  * skips some syntax checks, including matching JSX tags. Embedded via
  * `toString()`, so this function must have no outside runtime references. */
-export const validatePreviewSyntax = (code: string, parse: typeof parseTsx): void => {
+export const validatePreviewSyntax = (code: string, parse: typeof parseTsx): "javascript" | "tsx" => {
+  // Strict grammar detection avoids allocating two compiler token graphs for
+  // already emitted JavaScript. Arbitrary source receives the same validation.
+  try {
+    parse(code, { sourceType: "module", errorRecovery: false, attachComment: false });
+    return "javascript";
+  } catch {
+    // JSX and TypeScript require the compiler after their own strict parse.
+  }
+  // Babel's TypeScript scope tracking can reject valid emitted bindings.
+  // Compositions with JSX still receive their own strict grammar check first.
+  try {
+    parse(code, { sourceType: "module", plugins: ["jsx"], errorRecovery: false, attachComment: false });
+    return "tsx";
+  } catch {
+    // Genuine TypeScript still receives strict TSX validation below.
+  }
   try {
     parse(code, { sourceType: "module", plugins: ["jsx", "typescript"], errorRecovery: false, attachComment: false });
+    return "tsx";
   } catch (error) {
     // Parser messages can include user source. Report only its location.
     const loc = error instanceof Error && "loc" in error ? error.loc : undefined;
@@ -66,6 +84,18 @@ export const validatePreviewSyntax = (code: string, parse: typeof parseTsx): voi
       ? ` at line ${loc.line}, column ${loc.column + 1}` : "";
     throw new Error(`Invalid TSX${location}. Check matching JSX tags, fragments, and module syntax.`);
   }
+};
+
+/** Keep validated JavaScript byte-for-byte; only JSX/TSX needs compilation.
+ * Explicit dependencies keep this embedded function independent of minified
+ * server bindings when its source is placed in the browser runtime. */
+export const preparePreviewSource = (code: string, parse: typeof parseTsx, transform: typeof transformSource, validate: typeof validatePreviewSyntax) => {
+  if (validate(code, parse) === "javascript") return { js: code, written: code };
+  const options = { transforms: ["typescript", "jsx"], jsxRuntime: "automatic", production: true, disableESTransforms: true } satisfies Parameters<typeof transformSource>[1];
+  return {
+    js: transform(code, options).code,
+    written: transform(code, { ...options, keepUnusedImports: true }).code,
+  };
 };
 
 
@@ -129,6 +159,7 @@ async function colRuntime(report) {
   const resolveImport = ${resolveImport.toString()};
   const mountable = ${mountable.toString()};
   const validatePreviewSyntax = ${validatePreviewSyntax.toString()};
+  const preparePreviewSource = ${preparePreviewSource.toString()};
   const [{ createElement }, { createRoot }, { transform }, { init, parse }, { parse: parseSyntax }] = await Promise.all([
     import(${JSON.stringify(RUNTIME.react)}),
     import(${JSON.stringify(RUNTIME.reactDomClient)}),
@@ -174,16 +205,12 @@ async function colRuntime(report) {
     status.textContent = "Rendering…";
     status.hidden = false;
     try {
-    validatePreviewSyntax(code, parseSyntax);
-    // The client already runs ES modules. Preserve upstream JavaScript operators;
-    // only TS/JSX needs compilation, including when upstream output is minified.
-    const options = { transforms: ["typescript", "jsx"], jsxRuntime: "automatic", production: true, disableESTransforms: true };
-    const js = transform(code, options).code;
+    const { js, written } = preparePreviewSource(code, parseSyntax, transform, validatePreviewSyntax);
     await init();
     if (current !== generation) return;
     // Validate written imports, but execute normal TS output so implicit type
     // imports (e.g. ReactNode) do not become nonexistent browser exports.
-    const writtenImports = parse(transform(code, { ...options, keepUnusedImports: true }).code)[0];
+    const writtenImports = parse(written)[0];
     for (const entry of writtenImports) {
       if (entry.type === "import-meta") continue;
       if (!entry.specifier || entry.glob || entry.phase) throw new Error("Use literal browser imports; computed and source/defer imports are unsupported");
@@ -431,7 +458,7 @@ function previewDisclosure(preview: ComponentPreview): string {
   const source = preview.available && preview.source
     ? `<p><a href="${escape(preview.source.url)}" target="_blank" rel="noreferrer">Pinned upstream source</a> · ${escape(preview.source.integrity)}</p>` : "";
   const assets = preview.available && preview.assets?.length
-    ? `<details><summary>Original demo images (${preview.assets.length})</summary><ul>${preview.assets.map(asset => `<li><a href="${escape(asset.downloadUrl)}" target="_blank" rel="noreferrer">${escape(asset.url)}</a> · ${escape(asset.attribution.name)} · ${escape(asset.attribution.license)} · SHA-256 ${escape(asset.sha256)}</li>`).join("")}</ul></details>` : "";
+    ? `<details><summary>Original demo assets (${preview.assets.length})</summary><ul>${preview.assets.map(asset => `<li><a href="${escape(asset.downloadUrl)}" target="_blank" rel="noreferrer">${escape(asset.url)}</a> · ${escape(asset.attribution.name)} · ${escape(asset.attribution.license)} · SHA-256 ${escape(asset.sha256)}</li>`).join("")}</ul></details>` : "";
   return `<section data-col-provenance aria-label="Preview source and limitations" style="overflow-wrap:anywhere"><p>${identity} <a href="${escape(preview.docsUrl)}" target="_blank" rel="noreferrer">Official documentation</a></p>${source}${assets}<p>Reproduction limits</p><ul>${preview.gaps.map((gap) => `<li>${escape(gap)}</li>`).join("")}</ul></section>`;
 }
 

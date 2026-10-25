@@ -2,6 +2,8 @@ import * as z from "zod/v4";
 import { packageRecipes, type PackageRecipe } from "./component-preview-packages.ts";
 import { transformPreviewPackageImports } from "./component-preview-package-bundles.ts";
 import { componentPreviewAssets, transformPreviewAssets } from "./component-preview-assets.ts";
+import { webAwesomeSystemIconSetup } from "./component-preview-webawesome.ts";
+import { adaptPreviewSourceImports } from "./component-preview-source-adapters.ts";
 import extraSources from "../data/component-previews/extra.json" with { type: "json" };
 import shadcnSources from "../data/component-previews/shadcn.json" with { type: "json" };
 import packageStyles from "../data/component-previews/package-styles.json" with { type: "json" };
@@ -59,6 +61,25 @@ const commonGaps = [
   "Only supplied CSS and color scheme are applied. App fonts, assets, global CSS and additional providers are not loaded automatically. CSP-blocked resources are reported as errors.",
 ];
 
+/** Observed constraints of the original examples, without replacement content. */
+const reproductionGaps: Readonly<Record<string, string[]>> = {
+  "shadcn-ui/Sidebar": ["The original Sidebar writes a cookie when toggled. This opaque sandbox blocks cookie persistence: it can collapse and expand, but reports the browser's cookie error. No storage emulation or broader sandbox permissions are applied."],
+  "kibo-ui/Stories": ["The original demo's five remote videos could not be retrieved (HTTP 403), and Sarah's avatar is missing (HTTP 404). Four available original avatars are embedded. Video playback and the missing avatar cannot be reproduced; no replacement media is used."],
+  "cult-ui/Bg Media": ["The original background video is 21,093,317 bytes, exceeding the 2,000,000-byte preview asset limit. It is not embedded or transcoded, and CSP blocks remote playback. The video's appearance and motion cannot be reproduced here."],
+  "kibo-ui/Glimpse": ["The original example fetches a live website to build its link preview. CSP blocks that request, so its remote title, description and image cannot be reproduced here."],
+  "kibo-ui/Sandbox": ["The original Sandpack editor needs an external bundler and preview iframe. CSP blocks external connections and frames, so editing UI may render but code execution and its live preview cannot work here."],
+  "cult-ui/Youtube Video Player": ["YouTube playback requires an external iframe, which this preview's CSP blocks. Player controls can be inspected, but the video cannot play here."],
+  "cult-ui/Side Panel": ["This fixed YouTube example uses ReactPlayer 2.16.0's official YouTube-only entry instead of its all-provider lazy entry. The original panel and player implementations are unchanged. Its remote player SDK and iframe are blocked by this preview's CSP, so the panel can be inspected but the video cannot play here."],
+  "elevenlabs-ui/Live Waveform": ["Live microphone input is unavailable in this opaque sandbox. The original idle and processing states can be inspected; live audio capture cannot be reproduced."],
+  "elevenlabs-ui/Voice Button": ["Live microphone input is unavailable in this opaque sandbox. The original button can be inspected; live audio capture cannot be reproduced."],
+  "elevenlabs-ui/Audio Player": ["Three original sample tracks fit the preview asset budget and are embedded unchanged. Seven tracks exceed the 2,000,000-byte per-file limit and cannot play under this CSP; they are not shortened, transcoded or replaced."],
+  "kibo-ui/Video Player": ["The original sample video is 72,619,954 bytes, exceeding the 2,000,000-byte preview asset limit. Controls can be inspected, but this video cannot play here; no replacement media is used."],
+  "kibo-ui/Pill": ["One original profile image is unavailable (HTTP 404). Its fallback may render, but the missing portrait cannot be reproduced."],
+  "magic-ui/Icon Cloud": ["Five original icon URLs return HTTP 404: java, css3, amazonaws, visualstudiocode and sonarqube. Their artwork cannot be reproduced; the remaining original icons are embedded without substitute logos."],
+  "magic-ui/Hero Video Dialog": ["The original thumbnails are embedded, but YouTube playback requires an external iframe that this preview's CSP blocks. The dialog can open; its video cannot play here."],
+  "magic-ui/Tweet Card": ["The original example requests live tweet data. CSP blocks that network request, so its tweet content and media cannot be reproduced here."],
+};
+
 type SourcePreview = {
   code: string; styleKey: string; package: string; version: string; exportName: string;
   source: { url: string; revision: string; integrity: string };
@@ -98,9 +119,9 @@ export function componentPreviewSupport(id: string) {
     "The original example's sample attachments or image assets are not hosted in this sandbox. Their loading failures are reported; no replacement assets are generated.",
     "Example links and asset paths belong to the upstream documentation. Their destinations and site-relative images are not supplied by your app; blocked resources are reported.",
     "Upstream theme CSS is included where listed. Site fonts and external images, media, network services and device APIs are not copied; blocked or unavailable resources must be reported.",
-  ].includes(gap)).concat("The listed original demo images are embedded as hash-pinned, unchanged bytes. Remote images are snapshots, not live profile updates. Example links, fonts, other assets, network services and device APIs are not reproduced; unavailable resources remain visible errors.") : recipe?.gaps;
+  ].includes(gap)).concat("The listed original demo assets are embedded as hash-pinned, unchanged bytes. Remote assets are snapshots, not live updates. Example links, fonts, other assets, network services and device APIs are not reproduced; unavailable resources remain visible errors.") : recipe?.gaps;
   return recipe
-    ? { available: true as const, package: recipe.package, version: recipe.version, exportName: recipe.exportName, source: source ? { url: source.source.url, revision: source.source.revision, integrity: source.source.integrity } : undefined, assets, gaps: [...gaps!, ...(id === "shadcn-ui/Sidebar" ? ["The original Sidebar writes a cookie when toggled. This opaque sandbox blocks cookie persistence: it can collapse and expand, but reports the browser's cookie error. No storage emulation or broader sandbox permissions are applied."] : []), ...commonGaps] }
+    ? { available: true as const, package: recipe.package, version: recipe.version, exportName: recipe.exportName, source: source ? { url: source.source.url, revision: source.source.revision, integrity: source.source.integrity } : undefined, assets, gaps: [...gaps!, ...(reproductionGaps[id] ?? []), ...commonGaps] }
     : { available: false as const, gaps: [sources.unavailable[id] ?? sources.libraryBlockers?.[id.split("/")[0]] ?? "Preview unavailable: no verified implementation adapter is recorded for this component. Col will not generate an approximation. Use the official documentation or verify it in your app."] };
 }
 
@@ -122,7 +143,7 @@ export function createComponentPreview(args: z.infer<typeof componentPreviewArgs
   const recipe = packageRecipe(args.id);
   const theme = args.theme ?? "light";
   const css = source ? sources.styles[source.styleKey] : recipe?.compileCss ? compiledStyles[recipe.compileCss]?.css : "";
-  const implementation = transformPreviewAssets(args.id, source?.code ?? `${recipe!.imports}
+  const implementation = transformPreviewAssets(args.id, source ? adaptPreviewSourceImports(args.id, source.code) : `${recipe!.imports}
 ${(recipe!.stylesheets ?? []).map((sheet) => `import ${JSON.stringify(sheet)};`).join("\n")}
 export default function LibraryPreview() { ${recipe!.setup ?? ""} return (${recipe!.jsx}); }`);
   const code = `const PREVIEW_THEME = ${JSON.stringify(theme)};
@@ -134,6 +155,7 @@ document.head.append(colLibraryStyles);
 const colUserStyles = document.createElement("style");
 colUserStyles.textContent = ${JSON.stringify(args.styles ?? "")};
 document.head.append(colUserStyles);
+${recipe?.package === "@awesome.me/webawesome" ? webAwesomeSystemIconSetup : ""}
 ${implementation}
 `;
   return { ...identity, ...support, code: transformPreviewPackageImports(code), theme };
