@@ -429,7 +429,9 @@ function previewDisclosure(preview: ComponentPreview): string {
     : `Preview unavailable: ${escape(preview.id)}.`;
   const source = preview.available && preview.source
     ? `<p><a href="${escape(preview.source.url)}" target="_blank" rel="noreferrer">Pinned upstream source</a> · ${escape(preview.source.integrity)}</p>` : "";
-  return `<section data-col-provenance aria-label="Preview source and limitations"><p>${identity} <a href="${escape(preview.docsUrl)}" target="_blank" rel="noreferrer">Official documentation</a></p>${source}<p>Reproduction limits</p><ul>${preview.gaps.map((gap) => `<li>${escape(gap)}</li>`).join("")}</ul></section>`;
+  const assets = preview.available && preview.assets?.length
+    ? `<details><summary>Original demo images (${preview.assets.length})</summary><ul>${preview.assets.map(asset => `<li><a href="${escape(asset.downloadUrl)}" target="_blank" rel="noreferrer">${escape(asset.url)}</a> · ${escape(asset.attribution.name)} · ${escape(asset.attribution.license)} · SHA-256 ${escape(asset.sha256)}</li>`).join("")}</ul></details>` : "";
+  return `<section data-col-provenance aria-label="Preview source and limitations"><p>${identity} <a href="${escape(preview.docsUrl)}" target="_blank" rel="noreferrer">Official documentation</a></p>${source}${assets}<p>Reproduction limits</p><ul>${preview.gaps.map((gap) => `<li>${escape(gap)}</li>`).join("")}</ul></section>`;
 }
 
 /** The fallback consumes exactly the same server-selected implementation. */

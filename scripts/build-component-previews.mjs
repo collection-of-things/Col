@@ -11,6 +11,7 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { posix, resolve } from "node:path";
 import { extraSourceDescriptors, extraSourceBlockers } from "./preview-sources-extra.mjs";
+import { resolveReuiIconRegistry, reuiIconRegistryGap } from "./preview-reui-icons.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const cache = resolve(root, "artifacts/col-preview-expansion/cache");
@@ -79,7 +80,8 @@ for (const [repo, descriptors] of groups) {
             const contents = await source(path);
             used.add(path);
             if (path.endsWith(".css")) { cssImports.add(path); return { contents: "", loader: "js" }; }
-            return { contents, loader: path.endsWith(".json") ? "json" : "tsx" };
+            const resolvedContents = repo === "keenthemes/reui" && path === "registry/icons/create-icon-loader.tsx" ? resolveReuiIconRegistry(contents) : contents;
+            return { contents: resolvedContents, loader: path.endsWith(".json") ? "json" : "tsx" };
           });
           builder.onLoad({ filter: /.*/, namespace: "browser-plumbing" }, async ({ path }) => {
             const contents = await download(path);
@@ -93,13 +95,14 @@ for (const [repo, descriptors] of groups) {
         } }],
       });
       const code = result.outputFiles[0].text;
+      if (result.warnings.some(warning => warning.id === "empty-glob")) throw new Error("An upstream dynamic module registry could not be resolved; explicit reviewed bundler support is required.");
       if (!code.trim() || !used.has(descriptor.entryPath) || !Object.values(result.metafile.outputs).some(entry => entry.exports.includes("default"))) {
         throw new Error(`Official demo did not emit a runtime default export: ${descriptor.entryPath}`);
       }
       output.entries[descriptor.id] = {
         code, styleKey: repo, package: repo, version: project.revision.slice(0, 12), exportName: `${descriptor.exportName ?? "default"} (official source)`,
         source: { url: `https://github.com/${repo}/blob/${project.revision}/${descriptor.entryPath}`, revision: project.revision, integrity: "sha256:" + hash(code), files: [...used].sort().map((path) => ({ url: path.startsWith("https:") ? path : prefix + path, sha256: hash(files.get(path)) })) },
-        gaps: [...descriptor.gaps, ...(themeProvider ? [`Uses the actual next-themes@${themeProvider} ThemeProvider with the requested color scheme forced. App-specific theme names and providers are not reproduced.`] : [])],
+        gaps: [...descriptor.gaps, ...(repo === "keenthemes/reui" ? [reuiIconRegistryGap] : []), ...(themeProvider ? [`Uses the actual next-themes@${themeProvider} ThemeProvider with the requested color scheme forced. App-specific theme names and providers are not reproduced.`] : [])],
       };
       console.log("BUILT", descriptor.id);
     } catch (error) {

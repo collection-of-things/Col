@@ -1,6 +1,7 @@
 import * as z from "zod/v4";
 import { packageRecipes, type PackageRecipe } from "./component-preview-packages.ts";
 import { transformPreviewPackageImports } from "./component-preview-package-bundles.ts";
+import { componentPreviewAssets, transformPreviewAssets } from "./component-preview-assets.ts";
 import extraSources from "../data/component-previews/extra.json" with { type: "json" };
 import shadcnSources from "../data/component-previews/shadcn.json" with { type: "json" };
 import packageStyles from "../data/component-previews/package-styles.json" with { type: "json" };
@@ -90,8 +91,16 @@ function packageRecipe(id: string): PackageRecipe | undefined {
 export function componentPreviewSupport(id: string) {
   const source = Object.hasOwn(sources.entries, id) ? sources.entries[id] : undefined;
   const recipe = source ?? packageRecipe(id);
+  const assets = componentPreviewAssets(id);
+  // These generated snapshot notes predate the verified original-asset bundle.
+  const gaps = assets.length ? recipe?.gaps.filter(gap => ![
+    "The original example's avatar image asset is unavailable in this sandbox; the real AvatarFallback is shown. No replacement image is generated.",
+    "The original example's sample attachments or image assets are not hosted in this sandbox. Their loading failures are reported; no replacement assets are generated.",
+    "Example links and asset paths belong to the upstream documentation. Their destinations and site-relative images are not supplied by your app; blocked resources are reported.",
+    "Upstream theme CSS is included where listed. Site fonts and external images, media, network services and device APIs are not copied; blocked or unavailable resources must be reported.",
+  ].includes(gap)).concat("The listed original demo images are embedded as hash-pinned, unchanged bytes. Remote images are snapshots, not live profile updates. Example links, fonts, other assets, network services and device APIs are not reproduced; unavailable resources remain visible errors.") : recipe?.gaps;
   return recipe
-    ? { available: true as const, package: recipe.package, version: recipe.version, exportName: recipe.exportName, source: source ? { url: source.source.url, revision: source.source.revision, integrity: source.source.integrity } : undefined, gaps: [...recipe.gaps, ...commonGaps] }
+    ? { available: true as const, package: recipe.package, version: recipe.version, exportName: recipe.exportName, source: source ? { url: source.source.url, revision: source.source.revision, integrity: source.source.integrity } : undefined, assets, gaps: [...gaps!, ...(id === "shadcn-ui/Sidebar" ? ["The original Sidebar writes a cookie when toggled. This opaque sandbox blocks cookie persistence: it can collapse and expand, but reports the browser's cookie error. No storage emulation or broader sandbox permissions are applied."] : []), ...commonGaps] }
     : { available: false as const, gaps: [sources.unavailable[id] ?? sources.libraryBlockers?.[id.split("/")[0]] ?? "Preview unavailable: no verified implementation adapter is recorded for this component. Col will not generate an approximation. Use the official documentation or verify it in your app."] };
 }
 
@@ -113,9 +122,9 @@ export function createComponentPreview(args: z.infer<typeof componentPreviewArgs
   const recipe = packageRecipe(args.id);
   const theme = args.theme ?? "light";
   const css = source ? sources.styles[source.styleKey] : recipe?.compileCss ? compiledStyles[recipe.compileCss]?.css : "";
-  const implementation = source?.code ?? `${recipe!.imports}
+  const implementation = transformPreviewAssets(args.id, source?.code ?? `${recipe!.imports}
 ${(recipe!.stylesheets ?? []).map((sheet) => `import ${JSON.stringify(sheet)};`).join("\n")}
-export default function LibraryPreview() { ${recipe!.setup ?? ""} return (${recipe!.jsx}); }`;
+export default function LibraryPreview() { ${recipe!.setup ?? ""} return (${recipe!.jsx}); }`);
   const code = `const PREVIEW_THEME = ${JSON.stringify(theme)};
 document.documentElement.style.colorScheme = ${JSON.stringify(theme)};
 document.documentElement.classList.toggle("dark", ${theme === "dark"});

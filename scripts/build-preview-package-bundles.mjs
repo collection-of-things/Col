@@ -12,12 +12,15 @@ import { packageRecipes } from "../lib/component-preview-packages.ts";
 
 const run = promisify(execFile);
 const root = resolve(import.meta.dirname, "..");
-const directory = resolve(root, "node_modules/.cache/col-preview-package-bundles");
-const outputPath = resolve(root, "data/component-previews/package-bundles.json");
-const lockPath = resolve(root, "data/component-previews/vendor/package-bundles-lock.json");
+const supplemental = process.argv.includes("--supplemental");
+const artifactName = supplemental ? "package-bundles-supplemental" : "package-bundles";
+const directory = resolve(root, `node_modules/.cache/col-preview-${artifactName}`);
+const outputPath = resolve(root, `data/component-previews/${artifactName}.json`);
+const lockPath = resolve(root, `data/component-previews/vendor/${artifactName}-lock.json`);
 const hash = value => createHash("sha256").update(value).digest("hex");
 const extraImports = JSON.parse(await readFile(resolve(root, "data/component-previews/vendor/package-imports.json"), "utf8"));
-const projects = [
+const upstreamNotices = JSON.parse(await readFile(resolve(root, "data/component-previews/vendor/package-license-notices.json"), "utf8"));
+const projects = supplemental ? [] : [
   { name: "@headlessui/react", version: "2.2.10", exports: "Button, Input, Textarea, Checkbox, Field, Label, Switch, Select, Fieldset, Legend, Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItems, MenuItem, Popover, PopoverButton, PopoverPanel, TabGroup, TabList, Tab, TabPanels, TabPanel, Listbox, ListboxButton, ListboxOptions, ListboxOption, RadioGroup, Radio, Combobox, ComboboxInput, ComboboxButton, ComboboxOptions, ComboboxOption, Dialog, DialogPanel, DialogTitle, Description, Transition" },
   { name: "@chakra-ui/react", version: "3.37.0", exports: "Button, Dialog, Menu, Tabs, Table, Slider, Select, createListCollection, ChakraProvider, defaultSystem" },
   { name: "@awesome.me/webawesome", version: "3.14.0", wrappers: ["button", "input", "dialog", "drawer", "select", "option", "tab-group", "tab", "tab-panel"] },
@@ -42,15 +45,34 @@ for (const file of ["extra.json", "shadcn.json"]) {
 for (const code of importSources) for (const statement of parse(code, { sourceType: "module", plugins: ["jsx", "typescript"] }).program.body) {
   if (statement.type !== "ImportDeclaration") continue;
   const names = observed.get(statement.source.value) ?? new Set();
-  for (const specifier of statement.specifiers) if (specifier.type === "ImportSpecifier") names.add(specifier.imported.name ?? specifier.imported.value);
+  for (const specifier of statement.specifiers) {
+    if (specifier.type === "ImportSpecifier") names.add(specifier.imported.name ?? specifier.imported.value);
+    else if (supplemental) names.add(specifier.type === "ImportDefaultSpecifier" ? "default" : "*");
+  }
   observed.set(statement.source.value, names);
+}
+if (supplemental) {
+  // Context-bearing packages share one graph, including every observed subpath.
+  const groups = [
+    ["tailwind-variants", "3.2.2"], ["lucide-react", "1.17.0"],
+    ["@base-ui/react", "1.5.0"],
+    ["@react-three/drei", "10.7.6", { "@react-three/fiber": "9.3.0", three: "0.180.0" }],
+    ["next-themes", "0.4.6"], ["cn", "0.2.4"], ["cn", "0.3.0"],
+    ["class-variance-authority", "0.7.1"], ["clsx", "2.1.1"],
+    ["tailwind-merge", "3.0.1"], ["@radix-ui/react-slot", "1.2.3"],
+  ];
+  for (const [name, version, dependencies = {}] of groups) {
+    const pins = Object.entries({ [name]: version, ...dependencies }).map(([pkg, pin]) => pkg + "@" + pin);
+    const imports = [...observed].filter(([specifier]) => pins.some(pin => specifier === pin || specifier.startsWith(pin + "/"))).map(([specifier, names]) => [specifier, [...names].sort()]);
+    projects.push({ name, version, dependencies, imports });
+  }
 }
 for (const project of projects) {
   const key = `${project.name}@${project.version}${project.subpath ? `/${project.subpath}` : ""}`;
   if (project.exports && project.exports !== "*") project.exports = [...new Set([...project.exports.split(", "), ...(observed.get(key) ?? [])])].sort().join(", ");
 }
 const installName = project => new Set(projects.filter(item => item.name === project.name).map(item => item.version)).size > 1 ? `col-preview-${hash(`${project.name}@${project.version}`).slice(0, 12)}` : project.name;
-const manifest = { private: true, dependencies: { ...Object.fromEntries(projects.map(project => [installName(project), installName(project) === project.name ? project.version : `npm:${project.name}@${project.version}`])), react: "19.3.0", "react-dom": "19.3.0", "@emotion/react": "11.14.0" } };
+const manifest = { private: true, dependencies: { ...Object.fromEntries(projects.map(project => [installName(project), installName(project) === project.name ? project.version : `npm:${project.name}@${project.version}`])), ...Object.assign({}, ...projects.map(project => project.dependencies)), react: "19.3.0", "react-dom": "19.3.0", ...(supplemental ? {} : { "@emotion/react": "11.14.0" }) } };
 await mkdir(directory, { recursive: true });
 await writeFile(resolve(directory, "package.json"), JSON.stringify(manifest));
 {
@@ -89,10 +111,17 @@ const output = {};
 for (const project of projects) {
   const projectKey = `${project.name}@${project.version}${project.subpath ? `/${project.subpath}` : ""}`;
   const installedName = installName(project);
-  const importMappings = project.imports ? Object.fromEntries(project.imports.map(([specifier, names], index) => [specifier, Object.fromEntries(names.map(name => [name, `Subpath${index}_${name}`]))])) : undefined;
+  const importMappings = project.imports ? Object.fromEntries(project.imports.map(([specifier, names], index) => [specifier, Object.fromEntries(names.map(name => [name, `Subpath${index}_${name === "*" ? "Namespace" : name}`]))])) : undefined;
   const names = project.wrappers?.map(value => "Wa" + value.split("-").map(part => part[0].toUpperCase() + part.slice(1)).join(""));
   const entry = project.imports
-    ? project.imports.map(([specifier, names]) => `export { ${names.map(name => `${name} as ${importMappings[specifier][name]}`).join(", ")} } from ${JSON.stringify(installedName + specifier.slice(`${project.name}@${project.version}`.length))};`).join("\n")
+    ? project.imports.map(([specifier, names]) => {
+      const match = specifier.match(/^(@[^/]+\/[^@/]+|[^@/]+)@([^/]+)(.*)$/);
+      if (!match) throw new Error("Expected an exact package pin: " + specifier);
+      const importedProject = projects.find(item => item.name === match[1] && item.version === match[2]);
+      const target = JSON.stringify((importedProject ? installName(importedProject) : match[1]) + match[3]);
+      const named = names.filter(name => name !== "*");
+      return [named.length ? `export { ${named.map(name => `${name} as ${importMappings[specifier][name]}`).join(", ")} } from ${target};` : "", names.includes("*") ? `export * as ${importMappings[specifier]["*"]} from ${target};` : ""].join("\n");
+    }).join("\n")
     : project.wrappers
       ? project.wrappers.map((path, index) => `export { default as ${names[index]} } from "${installedName}/dist/react/${path}/index.js";`).join("\n")
       : `export ${project.exports === "*" ? "*" : `{ ${project.exports} }`} from ${JSON.stringify(installedName + (project.subpath ? `/${project.subpath}` : ""))};`;
@@ -104,29 +133,39 @@ for (const project of projects) {
     external: ["react", "react/*", "react-dom", "react-dom/*"],
     logLevel: "silent",
   });
-  const code = (await transform(result.outputFiles[0].text, { format: "iife", globalName: "ColLibraryExports", target: "es2019", minifyIdentifiers: true, minifySyntax: true, minifyWhitespace: false, legalComments: "inline" })).code;
+  let code = (await transform(result.outputFiles[0].text, { format: "iife", globalName: "ColLibraryExports", target: "es2019", minifyIdentifiers: true, minifySyntax: true, minifyWhitespace: false, legalComments: "inline" })).code;
   if (!code.includes("ColLibraryExports")) throw new Error(`Empty package bundle: ${project.name}`);
   const externals = [...new Set(Object.values(result.metafile.outputs).flatMap(value => value.imports.filter(item => item.external).map(item => item.path)))].sort();
   if (externals.some(name => !/^react(?:-dom)?(?:\/|$)/.test(name))) throw new Error(`Unexpected external package in ${project.name}: ${externals.join(", ")}`);
   const packages = new Set();
+  const emittedPackages = new Set();
+  const emittedFiles = new Set(Object.values(result.metafile.outputs).flatMap(output => Object.entries(output.inputs).filter(([, input]) => input.bytesInOutput > 0).map(([path]) => path)));
   for (const path of Object.keys(result.metafile.inputs)) {
     if (path === "<stdin>") continue;
     const absolute = resolve(root, path);
     let folder = dirname(absolute);
     while (folder.startsWith(directory)) {
-      try { const pkg = JSON.parse(await readFile(resolve(folder, "package.json"), "utf8")); if (pkg.name && pkg.version) { packages.add(folder); break; } } catch {}
+      try { const pkg = JSON.parse(await readFile(resolve(folder, "package.json"), "utf8")); if (pkg.name && pkg.version) { packages.add(folder); if (emittedFiles.has(path)) emittedPackages.add(folder); break; } } catch {}
       const parent = dirname(folder);
       if (parent === folder) break;
       folder = parent;
     }
   }
   const licenses = [];
+  const emittedPackageIdentities = [];
   for (const folder of [...packages].sort()) {
     const pkg = JSON.parse(await readFile(resolve(folder, "package.json"), "utf8"));
+    if (emittedPackages.has(folder)) emittedPackageIdentities.push({ package: pkg.name, version: pkg.version });
     const files = (await readdir(folder)).filter(name => /^(?:licen[cs]e|copying|notice)(?:\.|$)/i.test(name));
     for (const name of files) {
       const text = await readFile(resolve(folder, name), "utf8").catch(() => undefined);
       if (text) licenses.push({ package: pkg.name, version: pkg.version, file: name, text });
+    }
+    if (emittedPackages.has(folder) && !licenses.some(notice => notice.package === pkg.name && notice.version === pkg.version)) {
+      const notice = upstreamNotices[`${pkg.name}@${pkg.version}`];
+      if (!notice || notice.integrity !== `sha256:${hash(notice.text)}` || !/^https:\/\/raw\.githubusercontent\.com\/[^/]+\/[^/]+\/[a-f\d]{40}\//.test(notice.url)) throw new Error(`Missing authenticated upstream license notice for ${pkg.name}@${pkg.version}`);
+      licenses.push({ package: pkg.name, version: pkg.version, file: "LICENSE (upstream)", text: notice.text, source: { url: notice.url, integrity: notice.integrity } });
+      code += `\n/*! ${pkg.name}@${pkg.version}\n${notice.text.replaceAll("*/", "* /")}\n*/\n`;
     }
   }
   const sourceFiles = await Promise.all(Object.keys(result.metafile.inputs).filter(path => path !== "<stdin>").sort().map(async path => {
@@ -140,7 +179,7 @@ for (const project of projects) {
   output[projectKey] = {
     code, externals, exports: Object.values(result.metafile.outputs)[0].exports, ...(importMappings ? { importMappings } : {}),
     source: { package: project.name, version: project.version, url: `https://registry.npmjs.org/${project.name}/-/${project.name.split("/").at(-1)}-${project.version}.tgz`, integrity: `sha256:${hash(code)}`, npmIntegrity, files: sourceFiles },
-    licenses, warnings: result.warnings.map(warning => warning.text), lockfileSha256: hash(lockText),
+    licenses, emittedPackages: emittedPackageIdentities, warnings: result.warnings.map(warning => warning.text), lockfileSha256: hash(lockText),
   };
   console.log(`Bundled ${project.name}@${project.version}: ${code.length} characters; externals ${externals.join(", ")}; ${licenses.length} license files.`);
 }

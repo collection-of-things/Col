@@ -1,5 +1,6 @@
 import { parse } from "@babel/parser";
 import packageBundles from "../data/component-previews/package-bundles.json" with { type: "json" };
+import supplementalBundles from "../data/component-previews/package-bundles-supplemental.json" with { type: "json" };
 
 type PackageBundle = {
   code: string;
@@ -8,7 +9,7 @@ type PackageBundle = {
   importMappings?: Readonly<Record<string, Readonly<Record<string, string>>>>;
 };
 
-const bundles: Readonly<Record<string, PackageBundle>> = packageBundles;
+const bundles: Readonly<Record<string, PackageBundle>> = { ...packageBundles, ...supplementalBundles };
 const webAwesomePrefix = "@awesome.me/webawesome@3.14.0/dist/react/";
 
 /** Replace only exact, audited package imports with their real npm bundle.
@@ -38,6 +39,11 @@ export function transformPreviewPackageImports(code: string): string {
     used.set(key, identifier);
     const definitions = statement.specifiers.map(item => {
       if (item.type === "ImportNamespaceSpecifier") {
+        const namespace = bundle.importMappings?.[specifier]?.["*"];
+        if (namespace) {
+          if (!bundle.exports.includes(namespace)) throw new Error(`Official preview package ${key} does not export ${namespace}.`);
+          return `const ${item.local.name} = ${identifier}[${JSON.stringify(namespace)}];`;
+        }
         if (bundle.importMappings?.[specifier]) throw new Error(`Official subpath preview ${specifier} requires its audited named exports.`);
         return `const ${item.local.name} = ${identifier};`;
       }

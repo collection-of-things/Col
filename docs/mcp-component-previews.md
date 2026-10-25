@@ -22,13 +22,15 @@ User CSS is appended after library CSS inside the execution frame. It cannot hid
 
 Widget source travels in request-keyed MCP Apps result metadata; model-facing results contain identity and limitations without the bundle. A client that drops that metadata receives a visible missing-source error. HTML fallback retains the complete fragment for text-only clients. Genuine bundles and CSS can make individual previews several megabytes; only the selected implementation is sent, but transport and browser compilation still have that cost.
 
+Selected original demo images and textures are embedded as unchanged, hash-pinned bytes. Their original URLs, attribution and hashes appear in the preview's image disclosure and discovery metadata. Repository images use immutable revisions; remote avatars and photos are explicitly snapshots, not live updates. Relocating their URLs does not widen CSP. Unknown assets and user-supplied CSS URLs remain subject to the host policy and visible failure reporting.
+
 ## Coverage
 
 The expanded registry includes package adapters for Mantine, Radix, Base UI, React Aria, Ark UI, Headless UI, Material UI, Chakra UI, HeroUI, cmdk and Web Awesome. Original-source adapters cover shadcn, Magic UI, Cult UI, Kibo UI, Intent UI, ReUI, ElevenLabs UI, Tween UI, Hexta UI, Be UI and Loading.so.
 
 Shadcn has source adapters for 62 of its 65 indexed IDs. Navigation Menu, Aspect Ratio and Direction remain unavailable because their selected official examples depend on Next routing, Next image handling or documentation translation context that this isolated preview cannot reproduce faithfully.
 
-This does not mean that every component in every catalog library can render. Each unsupported indexed component returns an explicit reason: missing browser-compatible source, framework runtime, application/server integration, or redistribution permission. Libraries without indexed component IDs remain discoverable as libraries. There is no substitution with a similarly named primitive. See the [client verification report](qa/mcp-preview-expansion-2026-10-25.md) for measured coverage and actual browser outcomes, including partial asset failures.
+This does not mean that every component in every catalog library can render. Each unsupported indexed component returns an explicit reason: missing browser-compatible source, framework runtime, application/server integration, or redistribution permission. Libraries without indexed component IDs remain discoverable as libraries. There is no substitution with a similarly named primitive. See the [coverage report](qa/mcp-preview-expansion-2026-10-25.md) and its [dependency and asset follow-up](qa/mcp-preview-closure-2026-10-25.md) for measured browser outcomes and remaining reproduction limits.
 
 ## Reproduction limits
 
@@ -39,6 +41,7 @@ Every preview shows its identity, official documentation and limits outside the 
 - `theme` selects light or dark; `styles` accepts up to 10,000 characters of CSS, including custom properties. App-specific theme objects, fonts, assets and extra providers are not imported automatically.
 - Headless libraries remain headless. Documentation-site styling is not part of those packages. Shadow DOM components expose their own styling boundaries.
 - Original demo images, fonts, media or network requests may be unavailable under the existing CSP. Failures remain visible, including when a component's own fallback renders. CSP is not relaxed to make a demo appear complete.
+- The original shadcn Sidebar collapses and expands, but its cookie write is blocked by the opaque sandbox. The preview explicitly discloses this persistence limit and reports the browser error; it does not emulate storage or grant same-origin access.
 - `sent-to-chat` means the server supplied a preview. Only inspecting the client establishes that it mounted. MCP Apps failures are also reported to model context.
 
 ## Maintaining verified source
@@ -50,9 +53,13 @@ node scripts/build-shadcn-previews.mjs
 node scripts/build-component-previews.mjs
 node scripts/build-preview-package-css.mjs
 node scripts/build-preview-package-bundles.mjs
+node scripts/build-preview-package-bundles.mjs --supplemental
+node scripts/build-preview-assets.mjs
 ```
 
 These are development-time builds, not network calls on each tool request. They require the root development dependencies and network access for any uncached pinned dependencies. Extra source rebuilds compare downloaded/cached bytes with committed source pins; an intentional reviewed source change requires `--refresh-source-pins`. Package rebuilds restore dependencies with `npm ci` from their committed lockfile. Review generated source, license and dependency changes before committing.
+
+The supplemental package build closes the Intent UI, ReUI and ElevenLabs dependency graphs while retaining shared React and shared Base UI/Three contexts. Emitted packages must have retained license notices; pinned upstream notices cover npm tarballs that omit them. The asset build verifies the committed snapshot offline by default. Use `--refresh-assets` only to intentionally recapture original images, then review their hashes and attribution. Passive SVG flags are validated and preserved unchanged; active or externally referencing SVGs are rejected.
 
 The source builders use esbuild; library styles use PostCSS and the library's Tailwind pipeline. Tests use the same pinned module lexer and Sucrase compiler as the browser runtime. Adding an adapter requires the real export/source, full required browser setup, explicit gaps and browser verification. Source identity checks and a successful compile alone do not establish visual or interaction parity.
 

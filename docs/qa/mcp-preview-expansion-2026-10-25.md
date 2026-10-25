@@ -1,5 +1,7 @@
 # Expanded real component previews — CoVe, 25 October 2026
 
+Follow-up: the four dependency failures and five asset warnings recorded below were reproduced and fixed in the [dependency and asset closure report](mcp-preview-closure-2026-10-25.md). This report retains the original observations rather than rewriting the baseline.
+
 ## Scope
 
 The adapter registry expanded from 11 to **536 of 1554 indexed component IDs across 22 libraries**, including **62 of 65 shadcn IDs**. This is source-backed adapter coverage. It is not a claim that all 536 were individually browser-tested or that every catalog library is supported.
