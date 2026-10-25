@@ -2,6 +2,8 @@
 
 All nine cases from the previous audit now mount in MCPJam 3.16.2 with Strict CSP: four dependency failures and five missing-asset cases. The rendered implementations remain the actual upstream components. This closes those loading failures, not every possible interaction or application integration.
 
+Follow-up: the [phone layout and picker report](mcp-preview-phone-picker-2026-10-25.md) fixes the horizontal overflow recorded below and records the user's confirmation that the file-selection dialog opens. File selection, replacement, removal and validation remain unverified. The observations below retain their original audit status.
+
 The [browser observation ledger](preview-closure-client-results-2026-10-25.json) records baseline, intermediate, final and negative-control runs. The baseline was commit `191f02710c80b16f8dd3ac14443c8193fefd64ee`; the final runs used the production build containing this follow-up. MCPJam connected to the local Col `/api/mcp` endpoint and executed `render_component` through its Playground. Its real SDK bridge, resource loader and nested sandbox were used; the test did not inject a replacement component or a simulated client.
 
 ## Results
