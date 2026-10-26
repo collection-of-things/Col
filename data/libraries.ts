@@ -1113,6 +1113,18 @@ export const libraries: Library[] = [
     useCases: ["Landing Pages", "Marketing Sites", "Micro-interactions", "Creative & Experimental"],
     tags: ["animated gradients", "webgl", "webgpu", "backgrounds", "shadcn registry"],
   },
+  {
+    name: "Dualkit",
+    slug: "dualkit",
+    addedAt: "2026-10-26T04:02:30+04:00",
+    description:
+      "Open-source bilingual Arabic and English toolkit for Gulf products: agent skills, @dualkit/format for Gulf currencies, Umm al-Qura dates, phones and IBANs, eight right-to-left aware React components, and a CLI that checks pages for Arabic and RTL bugs.",
+    url: "https://dualkit.dev",
+    category: "Component Library",
+    stacks: ["React", "Tailwind CSS", "TypeScript"],
+    useCases: ["Dashboards", "Rapid Prototyping"],
+    tags: ["shadcn registry", "rtl", "arabic", "bilingual", "hijri", "gulf"],
+  },
 ];
 
 /** Looks up a library by slug, throwing so a stale hard-coded slug fails the build instead of rendering a broken link. */
