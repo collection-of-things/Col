@@ -67,6 +67,7 @@ const reproductionGaps: Readonly<Record<string, string[]>> = {
   "kibo-ui/Stories": ["The original demo's five remote videos could not be retrieved (HTTP 403), and Sarah's avatar is missing (HTTP 404). Four available original avatars are embedded. Video playback and the missing avatar cannot be reproduced; no replacement media is used."],
   "cult-ui/Bg Media": ["The original background video is 21,093,317 bytes, exceeding the 2,000,000-byte preview asset limit. It is not embedded or transcoded, and CSP blocks remote playback. The video's appearance and motion cannot be reproduced here."],
   "kibo-ui/Glimpse": ["The original example fetches a live website to build its link preview. CSP blocks that request, so its remote title, description and image cannot be reproduced here."],
+  "kibo-ui/List": ["The original demo generates random sample tasks, owners and avatar URLs when loaded. Generated GitHub avatars are blocked by CSP and use the original name fallback; those portraits cannot be reproduced here. No random seed or substitute images are introduced."],
   "kibo-ui/Sandbox": ["The original Sandpack editor needs an external bundler and preview iframe. CSP blocks external connections and frames, so editing UI may render but code execution and its live preview cannot work here."],
   "cult-ui/Youtube Video Player": ["YouTube playback requires an external iframe, which this preview's CSP blocks. Player controls can be inspected, but the video cannot play here."],
   "cult-ui/Side Panel": ["This fixed YouTube example uses ReactPlayer 2.16.0's official YouTube-only entry instead of its all-provider lazy entry. The original panel and player implementations are unchanged. Its remote player SDK and iframe are blocked by this preview's CSP, so the panel can be inspected but the video cannot play here."],
@@ -150,7 +151,7 @@ export default function LibraryPreview() { ${recipe!.setup ?? ""} return (${reci
 document.documentElement.style.colorScheme = ${JSON.stringify(theme)};
 document.documentElement.classList.toggle("dark", ${theme === "dark"});
 const colLibraryStyles = document.createElement("style");
-colLibraryStyles.textContent = ${JSON.stringify(`:where(body) { background: ${theme === "dark" ? "#000" : "#fff"}; }\n${css ?? ""}`)};
+colLibraryStyles.textContent = ${JSON.stringify(`@layer col-preview-defaults { body { background: ${theme === "dark" ? "#000" : "#fff"}; } }\n${css ?? ""}`)};
 document.head.append(colLibraryStyles);
 const colUserStyles = document.createElement("style");
 colUserStyles.textContent = ${JSON.stringify(args.styles ?? "")};

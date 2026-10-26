@@ -280,7 +280,11 @@ function previewPage(script: string, tailwind = true): string {
 <title>Component preview</title>
 ${tailwind ? `<script src="${RUNTIME.tailwind}"></script>` : ""}
 <style>
-  body { margin: 0; padding: 16px; background: transparent; color: light-dark(#000, #fff); font: 14px/1.5 system-ui, sans-serif; }
+  @layer col-preview-defaults {
+    html { color: light-dark(#000, #fff); font-family: system-ui, sans-serif; line-height: 1.5; }
+    body { background: transparent; color: inherit; font: inherit; }
+  }
+  body { margin: 0; padding: 16px; }
   html { min-height: 360px; }
   #col-status { margin: 0; white-space: pre-wrap; }
 </style>

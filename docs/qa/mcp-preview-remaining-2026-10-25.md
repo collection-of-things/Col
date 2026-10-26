@@ -1,6 +1,6 @@
 # Remaining component client verification
 
-**Status: incomplete browser repair verification.** The baseline sweep covers every remaining available adapter, but the final repair reruns were interrupted by Windows memory/pagefile exhaustion. This report preserves failures and unverified states; it is not an all-pass signoff.
+**Historical status at 2026-10-25: incomplete browser repair verification.** The 55 pending IDs were subsequently observed; see the [final reruns and styling verification](mcp-preview-final-reruns-2026-10-26.md). This report preserves the original failures and unverified states rather than rewriting their history.
 
 This follow-up covers the 450 available adapters that were absent from the earlier 86-ID browser sweep. Their union is all 536 available adapters across 22 libraries. Coverage means each example was submitted through MCPJam's tool UI and its rendered result inspected. It does not mean every possible state, every host or every application configuration was tested.
 

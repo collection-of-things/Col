@@ -34,7 +34,7 @@ The expanded registry includes package adapters for Mantine, Radix, Base UI, Rea
 
 Shadcn has source adapters for 62 of its 65 indexed IDs. Navigation Menu, Aspect Ratio and Direction remain unavailable because their selected official examples depend on Next routing, Next image handling or documentation translation context that this isolated preview cannot reproduce faithfully.
 
-This does not mean that every component in every catalog library can render. Each unsupported indexed component returns an explicit reason: missing browser-compatible source, framework runtime, application/server integration, or redistribution permission. Libraries without indexed component IDs remain discoverable as libraries. There is no substitution with a similarly named primitive. See the [coverage report](qa/mcp-preview-expansion-2026-10-25.md), [dependency and asset follow-up](qa/mcp-preview-closure-2026-10-25.md), and [remaining-component client verification](qa/mcp-preview-remaining-2026-10-25.md) for measured browser outcomes and remaining reproduction limits.
+This does not mean that every component in every catalog library can render. Each unsupported indexed component returns an explicit reason: missing browser-compatible source, framework runtime, application/server integration, or redistribution permission. Libraries without indexed component IDs remain discoverable as libraries. There is no substitution with a similarly named primitive. See the [coverage report](qa/mcp-preview-expansion-2026-10-25.md), [dependency and asset follow-up](qa/mcp-preview-closure-2026-10-25.md), [remaining-component client verification](qa/mcp-preview-remaining-2026-10-25.md), and [final reruns and styling verification](qa/mcp-preview-final-reruns-2026-10-26.md) for measured browser outcomes and remaining reproduction limits.
 
 ## Reproduction limits
 
@@ -43,6 +43,7 @@ Every preview shows its identity, official documentation and limits outside the 
 - Implementations are real; example props, sample content and layout are fixed. App data, callbacks, routing and surrounding layout are not connected.
 - React 19.3.0 and recorded dependency versions are pinned. Col does not inspect the user's installed versions or local modifications.
 - `theme` selects light or dark; `styles` accepts up to 10,000 characters of CSS, including custom properties. App-specific theme objects, fonts, assets and extra providers are not imported automatically.
+- Preview fallback colors and typography occupy the lowest CSS layer, so the library's own styles take precedence. The browser's default root font size is preserved. Supplied user CSS is applied after library CSS inside the component frame.
 - Headless libraries remain headless. Documentation-site styling is not part of those packages. Shadow DOM components expose their own styling boundaries.
 - Original demo images, fonts, media or network requests may be unavailable under the existing CSP. Failures remain visible, including when a component's own fallback renders. CSP is not relaxed to make a demo appear complete.
 - The original shadcn Sidebar collapses and expands, but its cookie write is blocked by the opaque sandbox. The preview explicitly discloses this persistence limit and reports the browser error; it does not emulate storage or grant same-origin access.
