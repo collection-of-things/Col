@@ -719,7 +719,7 @@ const TOOL_DEFINITIONS: ToolDefinition[] = [
   {
     name: "render_component",
     title: "Render a component in the chat",
-    description: `Render the actual library implementation by component id. First inspect get_component.preview for availability, package version and reproduction limits. Col selects the pinned package export or original upstream source, CSS and providers; caller implementation code is rejected. Only user CSS and light/dark theme can change. Unsupported components return unavailable, never an approximation. Keep the visible provenance and limitations. In clients without MCP Apps use format 'html' and show the complete returned fragment unchanged. ${NO_CREDENTIALS_NOTE}`,
+    description: `Render the actual library implementation by component id. First inspect get_component.preview for availability, package version and reproduction limits. Col selects the pinned package export or original upstream source, CSS and providers; caller implementation code is rejected. Only user CSS and light/dark theme can change. Unsupported components return unavailable, never an approximation. Keep the visible provenance and limitations. In clients without MCP Apps use format 'html' and show the complete returned fragment unchanged. Large original media requires MCP Apps server-resource access; standalone HTML reports unavailable for those examples. ${NO_CREDENTIALS_NOTE}`,
     args: renderComponentArgs,
     annotations: annotation,
     meta: { ui: { resourceUri: PREVIEW_WIDGET_URI } },

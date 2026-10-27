@@ -1,0 +1,299 @@
+{
+  "date": "2026-10-27",
+  "client": "MCPJam 3.16.2",
+  "csp": "Strict",
+  "modelApiCalls": false,
+  "filePicker": "skipped",
+  "automated": {
+    "build": "passed",
+    "tests": {
+      "passed": 189,
+      "failed": 0
+    },
+    "typecheck": "passed",
+    "focused": {
+      "passed": 36,
+      "failed": 0
+    }
+  },
+  "media": [
+    {
+      "url": "https://openaicomproductionae4b.blob.core.windows.net/production-twill-01/c74791d0-75d2-48e6-acae-96d13bc97c56/paper-planes.mp4",
+      "sha256": "dac5c406f82c5d2c2f6473b6b864f23cd36055be91d01a4670ac1d4b797ffa42",
+      "bytes": 21093317,
+      "mediaType": "video/mp4",
+      "chunks": 15
+    },
+    {
+      "url": "https://stream.mux.com/DS00Spx1CV902MCtPj5WknGlR102V5HFkDe/high.mp4",
+      "sha256": "a044aeb02c226053aead6ba5eac8e460e5e10daf37640b21ad300ff20646aa6a",
+      "bytes": 72619954,
+      "mediaType": "video/mp4",
+      "chunks": 49
+    },
+    {
+      "url": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/00.mp3",
+      "sha256": "bbfb2daf93aa91dd404bf55e38e6fb8a1c6d06d19832a664b414fae27e7aff78",
+      "bytes": 2350536,
+      "mediaType": "audio/mpeg",
+      "chunks": 2
+    },
+    {
+      "url": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/01.mp3",
+      "sha256": "90d831b92a9be5acefe8e1a5f6fd58a7cfef991d3f7a2742bfce1fd9f20699cc",
+      "bytes": 4916596,
+      "mediaType": "audio/mpeg",
+      "chunks": 4
+    },
+    {
+      "url": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/04.mp3",
+      "sha256": "02b0154d1bcf758463f04ef2641909c81590d8c9d3b2de7e0459a648f432882a",
+      "bytes": 2062144,
+      "mediaType": "audio/mpeg",
+      "chunks": 2
+    },
+    {
+      "url": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/05.mp3",
+      "sha256": "5af4ab0f9f26f5781c210e146dca65a54812529abd03752eb2b20a46caa96600",
+      "bytes": 2398810,
+      "mediaType": "audio/mpeg",
+      "chunks": 2
+    },
+    {
+      "url": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/07.mp3",
+      "sha256": "661155c9a898d82ede7e88392cfc660b9fc4f88fee73102beb494c118230a063",
+      "bytes": 2754814,
+      "mediaType": "audio/mpeg",
+      "chunks": 2
+    },
+    {
+      "url": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/08.mp3",
+      "sha256": "0a7556fabcf30df8aef92b302cf7e1b22be5f8998bddb4ccdb1ad663a5e52759",
+      "bytes": 3038988,
+      "mediaType": "audio/mpeg",
+      "chunks": 3
+    },
+    {
+      "url": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/09.mp3",
+      "sha256": "60efc982f7f69803219a680ec38e5846500b709b819893b4c065062b09ee2058",
+      "bytes": 3015988,
+      "mediaType": "audio/mpeg",
+      "chunks": 3
+    }
+  ],
+  "measurements": {
+    "kibo": {
+      "id": "kibo-ui/Video Player",
+      "preparedMs": 47.340200000000095,
+      "codeBytes": 450001,
+      "metadataBytes": 478803,
+      "identityBytes": 2437,
+      "firstChunkBase64Bytes": 2000000,
+      "firstChunkReadMs": 87.20170000000007,
+      "chunkCount": 49,
+      "rssBefore": 192159744,
+      "rssAfter": 203423744
+    },
+    "audio": {
+      "id": "elevenlabs-ui/Audio Player",
+      "preparedMs": 220.91930000000013,
+      "codeBytes": 5843376,
+      "metadataBytes": 5864914,
+      "identityBytes": 8955,
+      "firstChunkBase64Bytes": 2000000,
+      "firstChunkReadMs": 14.276100000000042,
+      "chunkCount": 18,
+      "rssBefore": 193253376,
+      "rssAfter": 277876736
+    },
+    "deployment": {
+      "uniqueMediaFiles": 9,
+      "originalMediaBytes": 114251147,
+      "uniqueTraceBytes": 205051698
+    }
+  },
+  "observations": [
+    {
+      "id": "cult-ui/Bg Media",
+      "stage": "original video loaded",
+      "media": {
+        "readyState": 4,
+        "currentTime": 20,
+        "ended": true,
+        "width": 1280,
+        "height": 720
+      },
+      "sourceIdentity": "nolly-studio/cult-ui@7f031dc812f7",
+      "evidence": "images/resource-bg-media-initial-mcpjam.png",
+      "at": "2026-10-27T02:07:00.985Z"
+    },
+    {
+      "id": "cult-ui/Bg Media",
+      "stage": "original control restarted playback",
+      "media": [
+        {
+          "currentTime": 12.2748,
+          "ended": false,
+          "height": 720,
+          "paused": false,
+          "readyState": 4,
+          "width": 1280
+        }
+      ],
+      "statusVisible": false,
+      "at": "2026-10-27T02:08:09.594Z"
+    },
+    {
+      "id": "cult-ui/Bg Media",
+      "stage": "pause during active playback",
+      "media": [
+        {
+          "currentTime": 5.1633,
+          "ended": false,
+          "paused": true
+        }
+      ],
+      "at": "2026-10-27T02:09:02.199Z"
+    },
+    {
+      "component": "kibo-ui/Video Player",
+      "client": "MCPJam 3.16.2",
+      "result": "original media decoded; keyboard Play advanced footage, then keyboard Pause",
+      "duration": "2:14",
+      "verification": "Screenshots and original Media Chrome keyboard control; DOM inspection limited by browser automation message size for the data URL.",
+      "at": "2026-10-27T02:26:49.738Z",
+      "evidence": [
+        "images/resource-kibo-video-playing-mcpjam.png",
+        "images/resource-kibo-video-paused-mcpjam.png"
+      ]
+    },
+    {
+      "component": "elevenlabs-ui/Audio Player",
+      "track": "01",
+      "result": "original track playing",
+      "elapsed": "0:06",
+      "duration": "3:24",
+      "evidence": "images/resource-audio-01-mcpjam.png",
+      "at": "2026-10-27T02:34:32.017Z"
+    },
+    {
+      "component": "elevenlabs-ui/Audio Player",
+      "track": "00",
+      "result": "original track playing",
+      "elapsed": "0:16",
+      "duration": "1:37",
+      "evidence": "images/resource-audio-00-mcpjam.png",
+      "at": "2026-10-27T02:35:24.786Z"
+    },
+    {
+      "component": "elevenlabs-ui/Audio Player",
+      "track": "02",
+      "result": "existing original track playing",
+      "elapsed": "0:12",
+      "duration": "1:09",
+      "evidence": "images/resource-audio-02-mcpjam.png",
+      "at": "2026-10-27T02:35:48.133Z"
+    },
+    {
+      "component": "elevenlabs-ui/Audio Player",
+      "track": "03",
+      "result": "existing original track playing",
+      "elapsed": "0:11",
+      "duration": "1:09",
+      "evidence": "images/resource-audio-03-mcpjam.png",
+      "at": "2026-10-27T02:36:07.216Z"
+    },
+    {
+      "component": "elevenlabs-ui/Audio Player",
+      "track": "04",
+      "result": "restored original track playing",
+      "elapsed": "0:14",
+      "duration": "1:25",
+      "evidence": "images/resource-audio-04-mcpjam.png",
+      "at": "2026-10-27T02:36:25.980Z"
+    },
+    {
+      "component": "elevenlabs-ui/Audio Player",
+      "track": "05",
+      "result": "restored original track playing",
+      "elapsed": "0:12",
+      "duration": "1:39",
+      "evidence": "images/resource-audio-05-mcpjam.png",
+      "at": "2026-10-27T02:36:43.586Z"
+    },
+    {
+      "component": "elevenlabs-ui/Audio Player",
+      "track": "06",
+      "result": "existing original track playing",
+      "elapsed": "0:11",
+      "duration": "0:29",
+      "evidence": "images/resource-audio-06-mcpjam.png",
+      "at": "2026-10-27T02:37:00.190Z"
+    },
+    {
+      "component": "elevenlabs-ui/Audio Player",
+      "track": "07",
+      "result": "restored original track playing",
+      "elapsed": "0:14",
+      "duration": "1:54",
+      "evidence": "images/resource-audio-07-mcpjam.png",
+      "at": "2026-10-27T02:37:21.378Z"
+    },
+    {
+      "component": "elevenlabs-ui/Audio Player",
+      "track": "08",
+      "result": "restored original track playing",
+      "elapsed": "0:11",
+      "duration": "2:59",
+      "evidence": "images/resource-audio-08-mcpjam.png",
+      "at": "2026-10-27T02:37:41.853Z"
+    },
+    {
+      "component": "elevenlabs-ui/Audio Player",
+      "track": "09",
+      "result": "restored original track playing",
+      "elapsed": "0:11",
+      "duration": "2:59",
+      "evidence": "images/resource-audio-09-mcpjam.png",
+      "at": "2026-10-27T02:38:01.183Z"
+    },
+    {
+      "component": "elevenlabs-ui/Audio Player",
+      "track": "09",
+      "result": "original control paused playback",
+      "elapsed": "0:19",
+      "evidence": "images/resource-audio-paused-mcpjam.png",
+      "at": "2026-10-27T02:38:22.537Z"
+    },
+    {
+      "component": "cult-ui/Side Panel",
+      "theme": "dark",
+      "result": "original panel opens; external YouTube SDK still blocked",
+      "visibleError": "Preview resource blocked by CSP: script-src-elem",
+      "evidence": "images/resource-side-panel-csp-mcpjam.png",
+      "at": "2026-10-27T02:39:21.811Z"
+    },
+    {
+      "component": "cult-ui/Bg Media",
+      "format": "html",
+      "result": "explicit unavailable with Apps-resource requirement; no substitute",
+      "visibleText": "This original media requires bounded MCP Apps resource reads. The standalone HTML format cannot load it under the unchanged CSP; no substitute media is used.",
+      "at": "2026-10-27T02:40:00.801Z",
+      "evidence": "images/resource-html-limit-mcpjam.png"
+    }
+  ],
+  "remainingQueueLimits": [
+    "kibo-ui/Glimpse",
+    "kibo-ui/List",
+    "kibo-ui/Pill",
+    "kibo-ui/Sandbox",
+    "cult-ui/Side Panel"
+  ],
+  "caveats": [
+    "Large media requires MCP Apps resource access; standalone HTML explicitly unavailable for these three examples.",
+    "Browser still retains complete base64 originals; no multi-client memory stability claim.",
+    "Large data URLs exceeded or timed out DOM automation; keyboard controls and screenshots verified playback.",
+    "Audio was verified through duration, elapsed progress and control state, not an assertion of audible output.",
+    "This is a targeted resource follow-up, not a repeat of the complete catalog or prior 55-ID queue."
+  ]
+}

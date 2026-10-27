@@ -1,7 +1,7 @@
 import * as z from "zod/v4";
 import { packageRecipes, type PackageRecipe } from "./component-preview-packages.ts";
 import { transformPreviewPackageImports } from "./component-preview-package-bundles.ts";
-import { componentPreviewAssets, transformPreviewAssets } from "./component-preview-assets.ts";
+import { componentPreviewAssets, componentPreviewMedia, transformPreviewAssets } from "./component-preview-assets.ts";
 import { webAwesomeSystemIconSetup } from "./component-preview-webawesome.ts";
 import { adaptPreviewSourceImports } from "./component-preview-source-adapters.ts";
 import extraSources from "../data/component-previews/extra.json" with { type: "json" };
@@ -13,7 +13,7 @@ export const componentPreviewArgs = z.strictObject({
   id: z.string().min(1).max(200).describe("Exact component id from get_component. Check its preview availability first."),
   styles: z.string().max(10_000).optional().describe("User CSS only, including CSS custom properties. Applied inside the component frame; cannot style the provenance or limitations. External assets remain subject to CSP."),
   theme: z.enum(["light", "dark"]).optional().describe("Preview color scheme. Defaults to light; app theme objects are not imported automatically. Use styles for the user's CSS variables."),
-  format: z.enum(["widget", "html"]).optional().describe("widget renders in MCP Apps; html returns an isolated HTML preview for other clients. Both use the same verified implementation."),
+  format: z.enum(["widget", "html"]).optional().describe("widget renders in MCP Apps; html returns an isolated HTML preview for other clients. Large original media requires MCP Apps server-resource access and is explicitly unavailable in standalone HTML."),
 });
 
 type Recipe = {
@@ -65,7 +65,6 @@ const commonGaps = [
 const reproductionGaps: Readonly<Record<string, string[]>> = {
   "shadcn-ui/Sidebar": ["The original Sidebar writes a cookie when toggled. This opaque sandbox blocks cookie persistence: it can collapse and expand, but reports the browser's cookie error. No storage emulation or broader sandbox permissions are applied."],
   "kibo-ui/Stories": ["The original demo's five remote videos could not be retrieved (HTTP 403), and Sarah's avatar is missing (HTTP 404). Four available original avatars are embedded. Video playback and the missing avatar cannot be reproduced; no replacement media is used."],
-  "cult-ui/Bg Media": ["The original background video is 21,093,317 bytes, exceeding the 2,000,000-byte preview asset limit. It is not embedded or transcoded, and CSP blocks remote playback. The video's appearance and motion cannot be reproduced here."],
   "kibo-ui/Glimpse": ["The original example fetches a live website to build its link preview. CSP blocks that request, so its remote title, description and image cannot be reproduced here."],
   "kibo-ui/List": ["The original demo generates random sample tasks, owners and avatar URLs when loaded. Generated GitHub avatars are blocked by CSP and use the original name fallback; those portraits cannot be reproduced here. No random seed or substitute images are introduced."],
   "kibo-ui/Sandbox": ["The original Sandpack editor needs an external bundler and preview iframe. CSP blocks external connections and frames, so editing UI may render but code execution and its live preview cannot work here."],
@@ -73,8 +72,6 @@ const reproductionGaps: Readonly<Record<string, string[]>> = {
   "cult-ui/Side Panel": ["This fixed YouTube example uses ReactPlayer 2.16.0's official YouTube-only entry instead of its all-provider lazy entry. The original panel and player implementations are unchanged. Its remote player SDK and iframe are blocked by this preview's CSP, so the panel can be inspected but the video cannot play here."],
   "elevenlabs-ui/Live Waveform": ["Live microphone input is unavailable in this opaque sandbox. The original idle and processing states can be inspected; live audio capture cannot be reproduced."],
   "elevenlabs-ui/Voice Button": ["Live microphone input is unavailable in this opaque sandbox. The original button can be inspected; live audio capture cannot be reproduced."],
-  "elevenlabs-ui/Audio Player": ["Three original sample tracks fit the preview asset budget and are embedded unchanged. Seven tracks exceed the 2,000,000-byte per-file limit and cannot play under this CSP; they are not shortened, transcoded or replaced."],
-  "kibo-ui/Video Player": ["The original sample video is 72,619,954 bytes, exceeding the 2,000,000-byte preview asset limit. Controls can be inspected, but this video cannot play here; no replacement media is used."],
   "kibo-ui/Pill": ["One original profile image is unavailable (HTTP 404). Its fallback may render, but the missing portrait cannot be reproduced."],
   "magic-ui/Icon Cloud": ["Five original icon URLs return HTTP 404: java, css3, amazonaws, visualstudiocode and sonarqube. Their artwork cannot be reproduced; the remaining original icons are embedded without substitute logos."],
   "magic-ui/Hero Video Dialog": ["The original thumbnails are embedded, but YouTube playback requires an external iframe that this preview's CSP blocks. The dialog can open; its video cannot play here."],
@@ -122,7 +119,7 @@ export function componentPreviewSupport(id: string) {
     "Upstream theme CSS is included where listed. Site fonts and external images, media, network services and device APIs are not copied; blocked or unavailable resources must be reported.",
   ].includes(gap)).concat("The listed original demo assets are embedded as hash-pinned, unchanged bytes. Remote assets are snapshots, not live updates. Example links, fonts, other assets, network services and device APIs are not reproduced; unavailable resources remain visible errors.") : recipe?.gaps;
   return recipe
-    ? { available: true as const, package: recipe.package, version: recipe.version, exportName: recipe.exportName, source: source ? { url: source.source.url, revision: source.source.revision, integrity: source.source.integrity } : undefined, assets, gaps: [...gaps!, ...(reproductionGaps[id] ?? []), ...commonGaps] }
+    ? { available: true as const, package: recipe.package, version: recipe.version, exportName: recipe.exportName, source: source ? { url: source.source.url, revision: source.source.revision, integrity: source.source.integrity } : undefined, assets, gaps: [...gaps!, ...(reproductionGaps[id] ?? []), ...(Object.keys(componentPreviewMedia(id)).length ? ["Original large media is loaded through bounded MCP Apps resource reads. The client must support server resource access; standalone HTML previews cannot load these originals under the unchanged CSP."] : []), ...commonGaps] }
     : { available: false as const, gaps: [sources.unavailable[id] ?? sources.libraryBlockers?.[id.split("/")[0]] ?? "Preview unavailable: no verified implementation adapter is recorded for this component. Col will not generate an approximation. Use the official documentation or verify it in your app."] };
 }
 
@@ -140,6 +137,11 @@ export function createComponentPreview(args: z.infer<typeof componentPreviewArgs
   const requestKey = componentPreviewRequestKey(args);
   const identity = { id: args.id, docsUrl, requestKey };
   if (!support.available) return { ...identity, ...support };
+  const media = componentPreviewMedia(args.id);
+  if (args.format === "html" && Object.keys(media).length) return {
+    ...identity, ...support, available: false as const,
+    gaps: [...support.gaps, "This original media requires bounded MCP Apps resource reads. The standalone HTML format cannot load it under the unchanged CSP; no substitute media is used."],
+  };
   const source = Object.hasOwn(sources.entries, args.id) ? sources.entries[args.id] : undefined;
   const recipe = packageRecipe(args.id);
   const theme = args.theme ?? "light";
@@ -159,5 +161,5 @@ document.head.append(colUserStyles);
 ${recipe?.package === "@awesome.me/webawesome" ? webAwesomeSystemIconSetup : ""}
 ${implementation}
 `;
-  return { ...identity, ...support, code: transformPreviewPackageImports(code), theme };
+  return { ...identity, ...support, code: transformPreviewPackageImports(code), theme, media, mediaKeys: Object.keys(media) };
 }

@@ -20,6 +20,7 @@
 import type { parse as parseTsx } from "@babel/parser";
 import type { transform as transformSource } from "sucrase";
 import type { ComponentPreview } from "./component-preview";
+import type { PreviewMediaDescriptor } from "./component-preview-assets";
 import { componentPreviewRequestKey } from "./component-preview.ts";
 
 export const PREVIEW_WIDGET_URI = "ui://col/render-component.html";
@@ -298,6 +299,39 @@ ${script}
 `;
 }
 
+/** Exact media data stays inert, outside Babel/Sucrase and executable scripts. */
+export function previewMediaHtml(media: Record<string, string> = {}): string {
+  return Object.entries(media).map(([sha256, url]) => {
+    if (!/^[a-f0-9]{64}$/.test(sha256) || !/^data:(video\/mp4|audio\/mpeg);base64,[A-Za-z0-9+/]*={0,2}$/.test(url)) throw new Error("Invalid verified media payload");
+    return `<script type="application/octet-stream" id="col-media-${sha256}">${url}</script>`;
+  }).join("");
+}
+
+/** Read fixed originals through the host, with bounded responses and per-chunk integrity. */
+export async function resolvePreviewMedia(media: Record<string, PreviewMediaDescriptor> = {}, read: (uri: string) => Promise<string>, isCurrent: () => boolean): Promise<Record<string, string> | undefined> {
+  const result: Record<string, string> = {};
+  for (const [sha256, item] of Object.entries(media)) {
+    if (!/^[a-f0-9]{64}$/.test(sha256) || item.uri !== `col://preview-media/${sha256}` || !Number.isSafeInteger(item.bytes) || item.bytes <= 0 || item.bytes > 75_000_000 || item.chunkSize !== 1_500_000 || !["video/mp4", "audio/mpeg"].includes(item.mediaType) || item.chunks.length !== Math.ceil(item.bytes / item.chunkSize)) throw new Error("Invalid verified media descriptor");
+    const parts: string[] = [];
+    for (const [index, expected] of item.chunks.entries()) {
+      if (!isCurrent()) return;
+      if (!/^[a-f0-9]{64}$/.test(expected)) throw new Error("Invalid original media integrity");
+      const encoded = await read(`${item.uri}/${index}`);
+      if (!isCurrent()) return;
+      if (encoded.length > 2_000_000) throw new Error("Original media chunk exceeds response budget");
+      const binary = atob(encoded);
+      if (binary.length !== Math.min(item.chunkSize, item.bytes - index * item.chunkSize)) throw new Error("Truncated original media chunk");
+      const bytes = Uint8Array.from(binary, character => character.charCodeAt(0));
+      const digest = await crypto.subtle.digest("SHA-256", bytes);
+      const actual = Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, "0")).join("");
+      if (actual !== expected) throw new Error("Original media integrity mismatch");
+      parts.push(encoded);
+    }
+    result[sha256] = `data:${item.mediaType};base64,${parts.join("")}`;
+  }
+  return isCurrent() ? result : undefined;
+}
+
 /** The Apps bridge clears on input and renders only its matching server result. Old
  * modules, promises and event handlers cannot affect a corrected preview. */
 export function previewWidgetHtml(): string {
@@ -316,10 +350,12 @@ export function previewWidgetHtml(): string {
     .catch(() => {});
   let frame;
   let requestKey;
+  let generation = 0;
   function setTheme(value) {
     applyDocumentTheme(value);
   }
   app.ontoolinput = (params) => {
+    ++generation;
     const args = params.arguments ?? {};
     requestKey = (${componentPreviewRequestKey.toString()})(args);
     const status = document.getElementById("col-status");
@@ -329,18 +365,20 @@ export function previewWidgetHtml(): string {
     status.hidden = false;
     status.textContent = "Preview unavailable until a verified library result is received.";
   };
-  app.ontoolresult = (result) => {
+  app.ontoolresult = async (result) => {
     const status = document.getElementById("col-status");
     if (result.isError) {
       // SDK-level errors may have no request identity. The host displays those;
       // they must not overwrite a newer preview with an unrelated failure.
       if (result.structuredContent?.requestKey !== requestKey) return;
+      ++generation;
       status.hidden = false;
       status.textContent = "Preview unavailable: " + String(result.structuredContent.error).slice(0, 256);
       return;
     }
     const preview = result.structuredContent?.preview;
     if (!preview || preview.requestKey !== requestKey) return;
+    const current = ++generation;
     status.hidden = true;
     frame?.remove();
     frame = undefined;
@@ -353,11 +391,37 @@ export function previewWidgetHtml(): string {
       status.textContent = "Preview unavailable: the client did not deliver the verified source payload.";
       return;
     }
+    const media = source?.requestKey === requestKey ? source.media : preview.media;
+    if (preview.mediaKeys?.some((key) => typeof media?.[key] !== "object" || !media[key])) {
+      status.hidden = false;
+      status.textContent = "Preview unavailable: the client did not deliver the verified media payload.";
+      return;
+    }
+    let passiveMedia;
+    try {
+      if (preview.mediaKeys?.length) { status.hidden = false; status.textContent = "Loading original demo media…"; }
+      const resolved = preview.mediaKeys?.length ? await (${resolvePreviewMedia.toString()})(media, async (uri) => {
+        const response = await app.readServerResource({ uri });
+        const content = response.contents?.[0];
+        if (content?.uri !== uri || typeof content.blob !== "string") throw new Error("The client did not deliver the original media resource");
+        return content.blob;
+      }, () => generation === current && requestKey === preview.requestKey) : {};
+      if (!resolved) return;
+      passiveMedia = (${previewMediaHtml.toString().replace(/<\/script/gi, "<\\/script")})(resolved);
+      status.hidden = true;
+    }
+    catch (error) {
+      if (generation !== current || requestKey !== preview.requestKey) return;
+      status.hidden = false;
+      status.textContent = String(error.message);
+      return;
+    }
     frame = document.createElement("iframe");
     frame.title = "Component preview";
     frame.setAttribute("sandbox", "allow-scripts allow-forms");
     frame.style.cssText = "display:block;width:100%;height:360px;border:0";
-    frame.srcdoc = ${literal(before)} + JSON.stringify(code).replace(/</g, "\\u003c") + ${literal(after)};
+    frame.srcdoc = (${literal(before)} + JSON.stringify(code).replace(/</g, "\\u003c") + ${literal(after)})
+      .replace("</head>", () => passiveMedia + "</head>");
     document.getElementById("col-root").append(frame);
   };
   addEventListener("message", (event) => {
@@ -426,9 +490,9 @@ addEventListener("pagehide", () => observer.disconnect(), { once: true });
  * The code rides a JSON string with `<` escaped, so it cannot close its script
  * element early.
  */
-export function previewFragmentHtml(code: string, trusted = false): string {
+export function previewFragmentHtml(code: string, trusted = false, media: Record<string, string> = {}): string {
   const embedded = JSON.stringify(code).replace(/</g, "\\u003c");
-  const page = previewCodePage(embedded, trusted);
+  const page = previewCodePage(embedded, trusted).replace("</head>", () => previewMediaHtml(media) + "</head>");
   const srcdoc = page.replace(/&/g, "&amp;").replace(/"/g, "&quot;");
   return `<iframe data-col-preview title="Component preview" sandbox="allow-scripts allow-forms" srcdoc="${srcdoc}" style="display:block;width:100%;height:360px;border:0"></iframe>
 <script>
@@ -468,5 +532,5 @@ function previewDisclosure(preview: ComponentPreview): string {
 
 /** The fallback consumes exactly the same server-selected implementation. */
 export function verifiedPreviewFragmentHtml(preview: ComponentPreview): string {
-  return previewDisclosure(preview) + (preview.available ? previewFragmentHtml(preview.code, true) : "");
+  return previewDisclosure(preview) + (preview.available && !preview.mediaKeys?.length ? previewFragmentHtml(preview.code, true) : "");
 }

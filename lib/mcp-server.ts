@@ -1,4 +1,5 @@
-import { McpServer } from "@modelcontextprotocol/server";
+import { McpServer, ResourceTemplate } from "@modelcontextprotocol/server";
+import { readPreviewMediaChunk } from "./component-preview-assets.ts";
 import { createCatalogueTools, type CatalogueData } from "./mcp-tools.ts";
 import { PREVIEW_WIDGET_CSP, PREVIEW_WIDGET_MIME, PREVIEW_WIDGET_URI, previewWidgetHtml } from "./preview-widget.ts";
 
@@ -29,15 +30,15 @@ export function createColMcpServer(data: CatalogueData): McpServer {
         const result = tools.invoke(definition.name, args);
         if (definition.name !== "render_component" || result.structuredContent?.status !== "sent-to-chat") return result;
         const preview = result.structuredContent.preview;
-        if (!preview || typeof preview !== "object" || !("code" in preview) || !("requestKey" in preview)) return result;
-        const { code, ...identity } = preview;
+        if (!preview || typeof preview !== "object" || !("code" in preview) || !("media" in preview) || !("requestKey" in preview)) return result;
+        const { code, media, ...identity } = preview;
         const payload = { ...result.structuredContent, preview: identity };
         // Source bundles belong to the view, not the model's text context.
         return {
           ...result,
           content: [{ type: "text" as const, text: JSON.stringify(payload) }],
           structuredContent: payload,
-          _meta: { "col/preview": { requestKey: identity.requestKey, code } },
+          _meta: { "col/preview": { requestKey: identity.requestKey, code, media } },
         };
       },
     );
@@ -58,5 +59,12 @@ export function createColMcpServer(data: CatalogueData): McpServer {
     }),
   );
 
+  server.registerResource("Original demo media chunk", new ResourceTemplate("col://preview-media/{sha256}/{part}", { list: undefined }), {
+    description: "Hash-verified, bounded bytes of fixed original demo media. No arbitrary file or network access.",
+    mimeType: "application/octet-stream",
+  }, async (uri, { sha256, part }) => {
+    if (typeof sha256 !== "string" || typeof part !== "string") throw new Error("Invalid original media resource");
+    return { contents: [{ uri: uri.href, mimeType: "application/octet-stream", blob: await readPreviewMediaChunk(sha256, part) }] };
+  });
   return server;
 }

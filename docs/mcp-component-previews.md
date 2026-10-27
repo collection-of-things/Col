@@ -24,7 +24,11 @@ Widget source travels in request-keyed MCP Apps result metadata; model-facing re
 
 Selected original demo images, textures, animations, audio and video are embedded as unchanged, hash-pinned bytes. Their original URLs, attribution and hashes appear in the preview's asset disclosure and discovery metadata. Repository assets use immutable revisions; remote avatars and photos are explicitly snapshots, not live updates. Relocating their URLs does not widen CSP. Unknown assets and user-supplied CSS URLs remain subject to the host policy and visible failure reporting.
 
-Unavailable upstream files, assets exceeding the 2 MB per-file budget, live network services, external player frames and microphone capture cannot always be reproduced in the opaque sandbox. Known limitations are listed for the affected component. Col does not substitute media, emulate a backend or broaden sandbox permissions to conceal those gaps. Web Awesome system icons retain the library's bundled SVG artwork and official icon-registry extension, avoiding a network fetch for data already present locally.
+Small assets retain the 2 MB inline budget. Selected larger original videos and audio tracks are separate hash-pinned binary snapshots, bounded to 75 MB per file. MCP Apps loads them through server resource reads of at most 1.5 MB of original bytes (2 MB base64) per response. Both server and view verify each chunk; the view assembles unchanged media outside the JavaScript compiler. No arbitrary URL/file reader or browser network permission is added. The complete original still consumes transfer and browser memory.
+
+These large-media examples require MCP Apps server-resource access. Clients without it receive a visible error; `format: "html"` explicitly returns unavailable for these examples instead of embedding enormous payloads or substituting media. Ordinary standalone HTML previews keep their existing behavior.
+
+Unavailable upstream files, unrecorded oversized assets, live network services, external player frames and microphone capture cannot always be reproduced in the opaque sandbox. Known limitations are listed for the affected component. Col does not substitute media, emulate a backend or broaden sandbox permissions to conceal those gaps. Web Awesome system icons retain the library's bundled SVG artwork and official icon-registry extension, avoiding a network fetch for data already present locally.
 
 Cult Side Panel's fixed YouTube example uses ReactPlayer's official YouTube-only entry. The adapter checks the exact source hash, import and fixed video URL before selecting that entry; source drift fails visibly. Its original panel/player code is retained, while YouTube's remote SDK and iframe remain blocked and disclosed.
 
@@ -34,7 +38,7 @@ The expanded registry includes package adapters for Mantine, Radix, Base UI, Rea
 
 Shadcn has source adapters for 62 of its 65 indexed IDs. Navigation Menu, Aspect Ratio and Direction remain unavailable because their selected official examples depend on Next routing, Next image handling or documentation translation context that this isolated preview cannot reproduce faithfully.
 
-This does not mean that every component in every catalog library can render. Each unsupported indexed component returns an explicit reason: missing browser-compatible source, framework runtime, application/server integration, or redistribution permission. Libraries without indexed component IDs remain discoverable as libraries. There is no substitution with a similarly named primitive. See the [coverage report](qa/mcp-preview-expansion-2026-10-25.md), [dependency and asset follow-up](qa/mcp-preview-closure-2026-10-25.md), [remaining-component client verification](qa/mcp-preview-remaining-2026-10-25.md), and [final reruns and styling verification](qa/mcp-preview-final-reruns-2026-10-26.md) for measured browser outcomes and remaining reproduction limits.
+This does not mean that every component in every catalog library can render. Each unsupported indexed component returns an explicit reason: missing browser-compatible source, framework runtime, application/server integration, or redistribution permission. Libraries without indexed component IDs remain discoverable as libraries. There is no substitution with a similarly named primitive. See the [coverage report](qa/mcp-preview-expansion-2026-10-25.md), [dependency and asset follow-up](qa/mcp-preview-closure-2026-10-25.md), [remaining-component client verification](qa/mcp-preview-remaining-2026-10-25.md), [final reruns and styling verification](qa/mcp-preview-final-reruns-2026-10-26.md), and [original-media resource verification](qa/mcp-preview-resources-2026-10-27.md) for measured browser outcomes and remaining reproduction limits.
 
 ## Reproduction limits
 
@@ -60,6 +64,7 @@ node scripts/build-preview-package-css.mjs
 node scripts/build-preview-package-bundles.mjs
 node scripts/build-preview-package-bundles.mjs --supplemental
 node scripts/build-preview-assets.mjs
+node scripts/build-preview-media.mjs
 ```
 
 These are development-time builds, not network calls on each tool request. They require the root development dependencies and network access for any uncached pinned dependencies. Extra source rebuilds compare downloaded/cached bytes with committed source pins; an intentional reviewed source change requires `--refresh-source-pins`. Package rebuilds restore dependencies with `npm ci` from their committed lockfile. Review generated source, license and dependency changes before committing.
@@ -69,6 +74,8 @@ The supplemental package build closes dependency graphs used by the source demos
 On systems where a full npm installation is impractical, `--restore-runtime-files` restores runtime files from complete, integrity-checked official npm archives. `--verify-installed-runtime` retries the build against the same authenticated archives and checks every bundled input against its original bytes. Neither option trusts an unverified cached file or runs package install scripts.
 
 The asset build verifies the committed snapshot offline by default. Use `--refresh-assets` only to intentionally recapture original assets, then review their hashes and attribution. Passive SVG flags and icons are validated and preserved unchanged; active or externally referencing SVGs are rejected. Container validation does not establish media playback; verify changed media in a supported client.
+
+The separate media builder verifies original references, immutable snapshot bytes, containers and chunk hashes offline. Use `--capture-missing-media` only to capture explicitly added original URLs. Binary snapshots are included in the `/api/mcp` deployment trace; they are not imported into server startup JSON or executable preview source.
 
 The source builders use esbuild; library styles use PostCSS and the library's Tailwind pipeline. Tests use the same pinned module lexer and Sucrase compiler as the browser runtime. Adding an adapter requires the real export/source, full required browser setup, explicit gaps and browser verification. Source identity checks and a successful compile alone do not establish visual or interaction parity.
 

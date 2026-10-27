@@ -1,5 +1,7 @@
 # Final MCPJam reruns and styling verification
 
+**27 October follow-up:** the [original-media resource report](mcp-preview-resources-2026-10-27.md) restores and verifies both oversized original videos plus seven additional audio tracks. Five of this report's seven queue limits remain. The results below preserve the earlier test state.
+
 The 55-ID repair queue from the [previous report](mcp-preview-remaining-2026-10-25.md) has been observed in MCPJam 3.16.2. Forty-eight examples finish without a visible runtime/resource error; seven retain explicit reproduction limits below. No IDs remain unobserved. This is initial-render and selected-interaction coverage, not a claim that every state or every user's app is identical.
 
 ## CoVe verification

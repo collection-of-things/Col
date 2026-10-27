@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  outputFileTracingIncludes: { "/api/mcp": ["./data/component-previews/media/*"] },
   async headers() {
     return [{
       source: "/col-social-preview:version(.*).jpg",
