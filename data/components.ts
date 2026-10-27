@@ -1726,4 +1726,14 @@ export const componentIndex: ComponentIndex = {
     { name: "Section Fade", kind: "visual-effect", summary: "A section whose live gradient fades out at its edges.", verifiedAt: "2026-10-20", url: "https://gradients.sh/docs/components/section-fade" },
     { name: "Gradient Card", kind: "full-pattern", summary: "A card on a live gradient with a scrim that keeps white text legible.", verifiedAt: "2026-10-20", url: "https://gradients.sh/docs/components/gradient-card" },
   ],
+  "dualkit": [
+    { name: "Amount", kind: "full-pattern", summary: "Money in all six Gulf currencies, isolated from the sentence, with Arabic-Indic digits in Arabic.", aliases: ["currency"], dependencies: ["@dualkit/format"], registryDependencies: ["base"], verifiedAt: "2026-10-26", url: "https://dualkit.dev/r/amount.json" },
+    { name: "Button", kind: "full-pattern", summary: "Forward and back icons flip with the reading direction; close and check never do.", registryDependencies: ["base"], verifiedAt: "2026-10-26", url: "https://dualkit.dev/r/button.json" },
+    { name: "Date display", kind: "full-pattern", summary: "Gregorian with Umm al-Qura Hijri, pinned to Gulf time.", aliases: ["hijri date"], dependencies: ["@dualkit/format"], registryDependencies: ["base"], verifiedAt: "2026-10-26", url: "https://dualkit.dev/r/date-display.json" },
+    { name: "Digit input", kind: "full-pattern", summary: "One-time code boxes that read Western, Arabic-Indic and Persian digits, typed or pasted.", aliases: ["otp input"], dependencies: ["@dualkit/format"], registryDependencies: ["base"], verifiedAt: "2026-10-26", url: "https://dualkit.dev/r/digit-input.json" },
+    { name: "Field", kind: "full-pattern", summary: "A text field whose value keeps its own direction, so an email or IBAN stays left to right in an Arabic form.", registryDependencies: ["base"], verifiedAt: "2026-10-26", url: "https://dualkit.dev/r/field.json" },
+    { name: "Sheet", kind: "full-pattern", summary: "A modal side sheet from the inline end: right in English, left in Arabic. Traps focus and swipes back to close.", registryDependencies: ["base"], verifiedAt: "2026-10-26", url: "https://dualkit.dev/r/sheet.json" },
+    { name: "Tabs", kind: "full-pattern", summary: "WAI-ARIA tabs where the arrow keys follow the reading direction.", registryDependencies: ["base"], verifiedAt: "2026-10-26", url: "https://dualkit.dev/r/tabs.json" },
+    { name: "Toast", kind: "full-pattern", summary: "A status toast that swipes away towards the inline end and pauses on hover and focus.", registryDependencies: ["base"], verifiedAt: "2026-10-26", url: "https://dualkit.dev/r/toast.json" },
+  ],
 };
