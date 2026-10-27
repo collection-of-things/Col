@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
   - name: Open issues on GitHub
-    url: https://github.com/Zns-Nexus/col/issues
+    url: https://github.com/collection-of-things/Col/issues
     about: Col tracks issues and its roadmap on GitHub.

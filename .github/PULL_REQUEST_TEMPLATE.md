@@ -1,4 +1,4 @@
-<!-- Col reviews pull requests on git.cafe: https://git.cafe/screen/col/pulls. -->
+<!-- Col reviews pull requests on git.cafe: https://git.cafe/collection-of-devs/col/pulls. -->
 
 ## What changed
 

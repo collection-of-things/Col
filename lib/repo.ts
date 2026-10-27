@@ -1,4 +1,4 @@
-const url = "https://github.com/Zns-Nexus/col";
+const url = "https://github.com/collection-of-things/Col";
 
 /** Col's code, stars, issues, roadmap, and pull requests live on GitHub. */
 export const repo = {
@@ -9,7 +9,7 @@ export const repo = {
   pulls: `${url}/pulls`,
   pull: (number: number) => `${url}/pull/${number}`,
   /** Public repository API; the site caches requests server-side. */
-  api: "https://api.github.com/repos/Zns-Nexus/col",
+  api: "https://api.github.com/repos/collection-of-things/Col",
 } as const;
 
 /** Link to a file on the default branch. */

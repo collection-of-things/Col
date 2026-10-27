@@ -93,7 +93,7 @@ MCP requests without `Origin` remain supported. A supplied origin must match `ht
 Requirements: Node.js 20.9+ and npm.
 
 ```sh
-git clone https://git.cafe/screen/col Col
+git clone https://git.cafe/collection-of-devs/col Col
 cd Col
 npm install
 npm run dev
@@ -112,13 +112,13 @@ npm test
 
 ## Contribute
 
-Col's code, issues, and pull requests live on [git.cafe](https://git.cafe/screen/col). Open issues and pull requests there. Vercel deploys from the [GitHub mirror](https://github.com/screen-gd/Col).
+Col's code, issues, and pull requests live on [git.cafe](https://git.cafe/collection-of-devs/col). Open issues and pull requests there. Vercel deploys from the [GitHub mirror](https://github.com/collection-of-things/Col).
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before changing the catalog or code. It covers adding libraries, verified components, MCP servers, and connectors, along with the required checks.
 
 ### Request something
 
-Search existing [libraries](https://usecol.com/libraries), [issues](https://git.cafe/screen/col/issues), and [pull requests](https://git.cafe/screen/col/pulls) first. Open one focused [issue](https://git.cafe/screen/col/issues/new) per request.
+Search existing [libraries](https://usecol.com/libraries), [issues](https://git.cafe/collection-of-devs/col/issues), and [pull requests](https://git.cafe/collection-of-devs/col/pulls) first. Open one focused [issue](https://git.cafe/collection-of-devs/col/issues/new) per request.
 
 #### Request a library
 
