@@ -76,6 +76,36 @@ Integrations live in [`data/integrations.ts`](data/integrations.ts). [CONTEXT.md
 - For a bug fix, include reproduction steps, expected behavior, and how to verify the fix.
 - Explain why a new dependency is needed and include the matching lockfile change.
 
+## Media and large files
+
+git.cafe copies `main` to GitHub, and Vercel deploys from GitHub. git.cafe can send at most 16 MiB of new Git data to GitHub in one push. A larger merge never reaches GitHub, and git.cafe does not report why. GitHub warns at 50 MiB per file and blocks files over 100 MiB.
+
+Col's limits leave room under that: **5 MB per file and 10 MB of new data per pull request.**
+
+- **Agents:** these limits are hard. Before committing media, convert it to a web format (below) and rerun the size check until every file and the pull request are within the limits. Tell the user which files you converted and their sizes before and after.
+- **Contributors:** if a file or your pull request is over the limit, convert the media to a web format before submitting. A pull request over the limit is held until its media is reduced.
+- Leave Git LFS off: git.cafe's GitHub sync does not support LFS files.
+
+Use web versions of media:
+
+| Media | Use | Example |
+|---|---|---|
+| Images and screenshots | WebP, at most 1600 px wide | `ffmpeg -i in.png -c:v libwebp -quality 80 out.webp` |
+| Video | WebM or H.264 MP4, 720p, short clip, no audio track unless needed | `ffmpeg -i in.mov -vf scale=-2:720 -c:v libvpx-vp9 -crf 36 -b:v 0 -an out.webm` |
+| Audio | Opus or MP3 at 96–128 kbps, trimmed to the part that is used | `ffmpeg -i in.wav -c:a libopus -b:a 96k out.opus` |
+
+Link to the official source instead of committing a copy when the page only needs to reference it.
+
+Before submitting, check the largest new files and the total size against git.cafe `main`:
+
+```bash
+git fetch origin main
+git rev-list --objects origin/main..HEAD | git cat-file --batch-check='%(objecttype) %(objectsize) %(rest)' | awk '$1 == "blob"' | sort -k2 -n | tail -5
+git rev-list --objects origin/main..HEAD | git pack-objects --stdout -q | wc -c
+```
+
+The second command prints the bytes your pull request adds. Keep it under 10,000,000.
+
 ## Keep discovery up to date
 
 When adding or changing libraries, components, integrations, public pages, or features that agents can use, update all affected discovery outputs in the same pull request:
