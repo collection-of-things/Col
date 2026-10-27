@@ -1,0 +1,116 @@
+[
+  {
+    "check": "baseline-phone-overflow",
+    "measurement": [
+      {
+        "clientWidth": 351,
+        "scrollWidth": 520
+      }
+    ]
+  },
+  {
+    "check": "final-phone-collapsed-dark",
+    "measurements": [
+      {
+        "clientWidth": 351,
+        "scrollWidth": 351
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "width": 460
+      },
+      {
+        "complete": true,
+        "width": 460
+      },
+      {
+        "complete": true,
+        "width": 460
+      },
+      {
+        "complete": true,
+        "width": 408
+      },
+      {
+        "complete": true,
+        "width": 460
+      }
+    ],
+    "style": "overflow-wrap:anywhere"
+  },
+  {
+    "check": "final-phone-expanded-dark",
+    "open": "",
+    "measurements": [
+      {
+        "clientWidth": 351,
+        "overflowing": 0,
+        "scrollWidth": 351
+      }
+    ],
+    "sandbox": "allow-scripts allow-forms",
+    "csp": "default-src 'none'; script-src 'unsafe-inline' data: blob: https://esm.sh https://cdn.jsdelivr.net; style-src 'unsafe-inline' data: blob: https://esm.sh https://cdn.jsdelivr.net; img-src data: blob: https://esm.sh https://cdn.jsdelivr.net; font-src data: blob: https://esm.sh https://cdn.jsdelivr.net; media-src data: blob: https://esm.sh https://cdn.jsdelivr.net; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'"
+  },
+  {
+    "check": "final-phone-collapsed-light",
+    "measurements": [
+      {
+        "clientWidth": 366,
+        "scrollWidth": 366
+      }
+    ],
+    "images": [
+      {
+        "complete": true,
+        "width": 460
+      },
+      {
+        "complete": true,
+        "width": 460
+      },
+      {
+        "complete": true,
+        "width": 460
+      },
+      {
+        "complete": true,
+        "width": 408
+      },
+      {
+        "complete": true,
+        "width": 460
+      }
+    ]
+  },
+  {
+    "check": "final-phone-expanded-light",
+    "open": "",
+    "measurements": [
+      {
+        "clientWidth": 366,
+        "overflowing": 0,
+        "scrollWidth": 366
+      }
+    ]
+  },
+  {
+    "check": "file-picker-user-confirmation",
+    "method": "User manual test in MCPJam",
+    "result": "Dialog opens",
+    "unverified": [
+      "file selection",
+      "replacement",
+      "removal",
+      "file validation"
+    ]
+  },
+  {
+    "check": "file-picker-automation-controls",
+    "plainInput": "Native chooser opened; original-avatar.png selected and filename observed",
+    "nestedSandboxInput": "Minimal input inside nested sandbox frames failed automation with Click target is no longer available",
+    "mcpjam": "No file selected through automation; chooser timeouts/coordinate failures",
+    "conclusion": "Automation limitation reproduced outside Col; does not establish the full component file lifecycle"
+  }
+]

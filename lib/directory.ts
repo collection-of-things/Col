@@ -96,6 +96,11 @@ function buildHaystack(terms: readonly string[]): string {
   return [...folded, ...despaced].join(" ");
 }
 
+/** Attribute hits with the same folded and glued spellings used for inclusion. */
+export function termMatches(term: string, token: string): boolean {
+  return tokenMatches(buildHaystack([term]), token);
+}
+
 export function componentHaystack(component: LibraryComponent): string {
   return buildHaystack([component.name, ...(component.aliases ?? [])]);
 }
@@ -109,6 +114,7 @@ function buildIndex(registry: readonly Library[], components: ComponentIndex): I
     library,
     haystack: buildHaystack([
       library.name,
+      library.slug,
       library.description,
       library.category,
       ...library.stacks,
@@ -123,11 +129,11 @@ function buildIndex(registry: readonly Library[], components: ComponentIndex): I
 }
 
 /**
- * Relevance tiers, best first. An exact component name or alias beats a loose
- * component match, which beats a match on the library's own metadata.
+ * Exact library identity leads component matches, then other metadata.
  */
 function relevanceTier(result: SearchResult, normalizedQuery: string): number {
   if (normalizedQuery === "") return 2;
+  if (matchesLibraryIdentity(result.library, normalizedQuery)) return -1;
   const exact = result.components.some(
     ({ name, aliases }) =>
       name.toLowerCase() === normalizedQuery ||
@@ -135,6 +141,10 @@ function relevanceTier(result: SearchResult, normalizedQuery: string): number {
   );
   if (exact) return 0;
   return result.components.length > 0 ? 1 : 2;
+}
+
+export function matchesLibraryIdentity(library: Library, normalizedQuery: string): boolean {
+  return normalizedQuery === normalizeWords(library.name) || normalizedQuery === normalizeWords(library.slug);
 }
 
 /**
@@ -230,10 +240,12 @@ export function createDirectorySearch(
           ...tokens
             .filter((token) => tokenMatches(entry.haystack, token))
             .map((token) => {
-              if (tokenMatches(normalizeWords(entry.library.name), token)) return `name:${token}`;
-              if ((entry.library.tags ?? []).some((tag) => tokenMatches(normalizeWords(tag), token))) return `tag:${token}`;
-              if (entry.library.stacks.some((stack) => tokenMatches(normalizeWords(stack), token))) return `stack:${token}`;
-              if (entry.library.useCases.some((useCase) => tokenMatches(normalizeWords(useCase), token))) return `useCase:${token}`;
+              if (termMatches(entry.library.name, token)) return `name:${token}`;
+              if (termMatches(entry.library.slug, token)) return `slug:${token}`;
+              if ((entry.library.tags ?? []).some((tag) => termMatches(tag, token))) return `tag:${token}`;
+              if (entry.library.stacks.some((stack) => termMatches(stack, token))) return `stack:${token}`;
+              if (entry.library.useCases.some((useCase) => termMatches(useCase, token))) return `useCase:${token}`;
+              if (termMatches(entry.library.category, token)) return `category:${token}`;
               return `description:${token}`;
             }),
         ];

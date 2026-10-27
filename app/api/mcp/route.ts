@@ -5,6 +5,7 @@ import { libraryDetails } from "@/data/library-details";
 import { libraryCorpus } from "@/data/library-corpus";
 import { compatibility } from "@/data/compatibility";
 import { createColMcpServer } from "@/lib/mcp-server";
+import { isMcpOriginAllowed } from "@/lib/mcp-origin";
 
 /**
  * Col's MCP endpoint: one read-only Streamable HTTP route over the same
@@ -23,5 +24,8 @@ const handler = createMcpHandler(() =>
 );
 
 export async function POST(request: Request) {
+  if (!isMcpOriginAllowed(request.headers.get("origin"), process.env.COL_MCP_ALLOWED_ORIGINS)) {
+    return new Response("Forbidden Origin", { status: 403 });
+  }
   return handler.fetch(request);
 }

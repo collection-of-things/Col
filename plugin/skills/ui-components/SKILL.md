@@ -34,19 +34,24 @@ three candidates and show the user the source links before committing.
 
 ## 3. Render it in the chat
 
-Call `render_component` with one TSX module whose default export shows the
-chosen component in the user's own use case: their labels, layout, and theme,
-not a generic demo. Import packages by npm name, optionally pinned
-(`@mantine/core@9.7.1`); they load from esm.sh with React 19 shared. Import
-package CSS directly (`@mantine/core/styles.css`); Tailwind classes work.
-Relative and `@/` imports fail, so inline local files such as shadcn's
-`components/ui` sources. Never send real user data in tool arguments.
+Read `get_component.preview`. When `available` is true, call
+`render_component` with that exact `id`, optional user CSS in `styles`, and
+`theme: "light"` or `"dark"`. Col selects a real pinned package export or
+original upstream source, including shadcn, with its styles and providers.
+Keep the returned source revision, integrity and limitations visible. Implementation code and arbitrary props
+are rejected. Use only presentation data; never send credentials or private data.
 
-Hosts that support MCP Apps render the module live in the chat. If the module
-fails, the error comes back to you as model context: fix it and call again.
+When unavailable, show the reason and official documentation. A verified
+documentation page does not establish runnable source. Do not generate a
+substitute and present it as the original component. Keep package versions
+and reproduction limits visible; app fonts, data, layout and additional
+providers are not reproduced automatically.
+
+Hosts that support MCP Apps render the server-selected implementation. If it
+fails, inspect the error reported as model context and explain the limitation.
 
 Claude Code does not show MCP Apps. There, call `render_component` with the
-same code and `format: "html"`, then show the returned `html`:
+same ID and presentation options with `format: "html"`, then show the returned `html`:
 
 - If you have an inline HTML widget tool (such as `show_widget`), pass `html`
   to it unchanged.

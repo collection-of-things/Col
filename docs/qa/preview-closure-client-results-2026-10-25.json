@@ -1,0 +1,884 @@
+[
+  {
+    "phase": "baseline",
+    "id": "intent-ui/Button",
+    "args": {
+      "id": "intent-ui/Button"
+    },
+    "statusVisible": true,
+    "status": "Could not load tailwind-variants@3.2.2: Failed to fetch dynamically imported module: https://esm.sh/tailwind-variants@3.2.2?deps=react@19.3.0,react-dom@19.3.0",
+    "text": "",
+    "elements": 0,
+    "images": []
+  },
+  {
+    "phase": "baseline",
+    "id": "reui/File Upload",
+    "args": {
+      "id": "reui/File Upload"
+    },
+    "statusVisible": true,
+    "status": "Could not load lucide-react@1.17.0: Failed to fetch dynamically imported module: https://esm.sh/lucide-react@1.17.0?deps=react@19.3.0,react-dom@19.3.0",
+    "text": "",
+    "elements": 0,
+    "images": []
+  },
+  {
+    "phase": "baseline",
+    "id": "reui/Data Grid",
+    "args": {
+      "id": "reui/Data Grid"
+    },
+    "statusVisible": true,
+    "status": "Could not load @base-ui/react@1.5.0/select: Failed to fetch dynamically imported module: https://esm.sh/@base-ui/react@1.5.0/select?deps=react@19.3.0,react-dom@19.3.0",
+    "text": "",
+    "elements": 0,
+    "images": []
+  },
+  {
+    "phase": "baseline",
+    "id": "elevenlabs-ui/Orb",
+    "args": {
+      "id": "elevenlabs-ui/Orb"
+    },
+    "statusVisible": true,
+    "status": "Could not load @react-three/fiber@9.3.0: Failed to fetch dynamically imported module: https://esm.sh/@react-three/fiber@9.3.0?deps=react@19.3.0,react-dom@19.3.0",
+    "text": "",
+    "elements": 0,
+    "images": []
+  },
+  {
+    "phase": "baseline",
+    "id": "shadcn-ui/Sidebar",
+    "args": {
+      "id": "shadcn-ui/Sidebar"
+    },
+    "statusVisible": true,
+    "status": "Preview resource blocked by CSP: img-src",
+    "text": "Toggle Sidebar",
+    "elements": 9,
+    "images": []
+  },
+  {
+    "phase": "baseline",
+    "id": "shadcn-ui/Avatar",
+    "args": {
+      "id": "shadcn-ui/Avatar"
+    },
+    "statusVisible": true,
+    "status": "Preview resource blocked by CSP: img-src",
+    "text": "CN\nER\nCN\nLR\nER\n+3",
+    "elements": 14,
+    "images": []
+  },
+  {
+    "phase": "baseline",
+    "id": "shadcn-ui/Attachment",
+    "args": {
+      "id": "shadcn-ui/Attachment"
+    },
+    "statusVisible": true,
+    "status": "An upstream image or media asset could not load. This preview cannot fully reproduce it.",
+    "text": "workspace.png\nPNG · 820 KB\ndesk-reference.jpg\nJPG · 1.1 MB\noffice-reference.jpg\nJPG · 940 KB\nsales-dashboard.pdf\nUploading · 64%\nmessage-renderer.tsx\nTypeScript · 12 KB",
+    "elements": 47,
+    "images": [
+      {
+        "alt": "Workspace",
+        "complete": true,
+        "embedded": false,
+        "height": 0,
+        "width": 0
+      },
+      {
+        "alt": "Desk",
+        "complete": true,
+        "embedded": false,
+        "height": 0,
+        "width": 0
+      },
+      {
+        "alt": "Office",
+        "complete": true,
+        "embedded": false,
+        "height": 0,
+        "width": 0
+      }
+    ]
+  },
+  {
+    "phase": "baseline",
+    "id": "shadcn-ui/Message",
+    "args": {
+      "id": "shadcn-ui/Message"
+    },
+    "statusVisible": true,
+    "status": "Preview resource blocked by CSP: img-src",
+    "text": "ME\nDeploying to prod real quick.\nR\nIt's 4:55 PM. On a Friday.\nME\nIt's a one-line change.\nDelivered\nR\nIt's always a one-line change 😭.\nAlright, let me take a look.\n👍\nOliver is typing...",
+    "elements": 38,
+    "images": []
+  },
+  {
+    "phase": "baseline",
+    "id": "kibo-ui/Avatar Stack",
+    "args": {
+      "id": "kibo-ui/Avatar Stack"
+    },
+    "statusVisible": true,
+    "status": "Preview resource blocked by CSP: img-src",
+    "text": "HB\nCN\nLR\nSC",
+    "elements": 14,
+    "images": []
+  },
+  {
+    "phase": "dependencies-and-five-assets",
+    "id": "intent-ui/Button",
+    "args": {
+      "id": "intent-ui/Button"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "Label",
+    "elements": 2,
+    "images": []
+  },
+  {
+    "phase": "dependencies-and-five-assets",
+    "id": "reui/File Upload",
+    "args": {
+      "id": "reui/File Upload"
+    },
+    "statusVisible": true,
+    "status": "Module not found in bundle: ./__lucide__",
+    "text": "",
+    "elements": 0,
+    "images": []
+  },
+  {
+    "phase": "dependencies-and-five-assets",
+    "id": "reui/Data Grid",
+    "args": {
+      "id": "reui/Data Grid"
+    },
+    "statusVisible": true,
+    "status": "Module not found in bundle: ./__lucide__",
+    "text": "",
+    "elements": 0,
+    "images": []
+  },
+  {
+    "phase": "dependencies-and-five-assets",
+    "id": "elevenlabs-ui/Orb",
+    "args": {
+      "id": "elevenlabs-ui/Orb"
+    },
+    "statusVisible": true,
+    "status": "Could not load https://storage.googleapis.com/eleven-public-cdn/images/perlin-noise.png: undefined",
+    "text": "",
+    "elements": 0,
+    "images": []
+  },
+  {
+    "phase": "dependencies-and-five-assets",
+    "id": "shadcn-ui/Sidebar",
+    "args": {
+      "id": "shadcn-ui/Sidebar"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "Acme Inc\nEnterprise\nPlatform\nPlayground\nHistory\nStarred\nSettings\nModels\nDocumentation\nSettings\nProjects\nDesign Engineering\nMore\nSales & Marketing\nMore\nTravel\nMore\nMore\nshadcn\nm@example.com\nToggle Sidebar",
+    "elements": 148,
+    "images": [
+      {
+        "alt": "shadcn",
+        "complete": true,
+        "embedded": true,
+        "height": 400,
+        "width": 400
+      }
+    ]
+  },
+  {
+    "phase": "dependencies-and-five-assets",
+    "id": "shadcn-ui/Avatar",
+    "args": {
+      "id": "shadcn-ui/Avatar"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "+3",
+    "elements": 14,
+    "images": [
+      {
+        "alt": "@shadcn",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "@evilrabbit",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "@shadcn",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "@maxleiter",
+        "complete": true,
+        "embedded": true,
+        "height": 408,
+        "width": 408
+      },
+      {
+        "alt": "@evilrabbit",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      }
+    ]
+  },
+  {
+    "phase": "dependencies-and-five-assets",
+    "id": "shadcn-ui/Attachment",
+    "args": {
+      "id": "shadcn-ui/Attachment"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "workspace.png\nPNG · 820 KB\ndesk-reference.jpg\nJPG · 1.1 MB\noffice-reference.jpg\nJPG · 940 KB\nsales-dashboard.pdf\nUploading · 64%\nmessage-renderer.tsx\nTypeScript · 12 KB",
+    "elements": 47,
+    "images": [
+      {
+        "alt": "Workspace",
+        "complete": true,
+        "embedded": true,
+        "height": 601,
+        "width": 900
+      },
+      {
+        "alt": "Desk",
+        "complete": true,
+        "embedded": true,
+        "height": 600,
+        "width": 900
+      },
+      {
+        "alt": "Office",
+        "complete": true,
+        "embedded": true,
+        "height": 601,
+        "width": 900
+      }
+    ]
+  },
+  {
+    "phase": "dependencies-and-five-assets",
+    "id": "shadcn-ui/Message",
+    "args": {
+      "id": "shadcn-ui/Message"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "Deploying to prod real quick.\nIt's 4:55 PM. On a Friday.\nIt's a one-line change.\nDelivered\nIt's always a one-line change 😭.\nAlright, let me take a look.\n👍\nOliver is typing...",
+    "elements": 38,
+    "images": [
+      {
+        "alt": "@me",
+        "complete": true,
+        "embedded": true,
+        "height": 576,
+        "width": 576
+      },
+      {
+        "alt": "@rabbit",
+        "complete": true,
+        "embedded": true,
+        "height": 288,
+        "width": 288
+      },
+      {
+        "alt": "@me",
+        "complete": true,
+        "embedded": true,
+        "height": 576,
+        "width": 576
+      },
+      {
+        "alt": "@rabbit",
+        "complete": true,
+        "embedded": true,
+        "height": 288,
+        "width": 288
+      }
+    ]
+  },
+  {
+    "phase": "dependencies-and-five-assets",
+    "id": "kibo-ui/Avatar Stack",
+    "args": {
+      "id": "kibo-ui/Avatar Stack"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "",
+    "elements": 14,
+    "images": [
+      {
+        "alt": "",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      }
+    ]
+  },
+  {
+    "phase": "negative-control",
+    "id": "shadcn-ui/Avatar",
+    "args": {
+      "id": "shadcn-ui/Avatar",
+      "styles": "body { background-image: url(\"https://example.com/col-csp-negative.png\"); }"
+    },
+    "statusVisible": true,
+    "status": "Preview resource blocked by CSP: img-src",
+    "text": "+3",
+    "elements": 14,
+    "images": [
+      {
+        "alt": "@shadcn",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "@evilrabbit",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "@shadcn",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "@maxleiter",
+        "complete": true,
+        "embedded": true,
+        "height": 408,
+        "width": 408
+      },
+      {
+        "alt": "@evilrabbit",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      }
+    ]
+  },
+  {
+    "phase": "interaction",
+    "id": "shadcn-ui/Attachment",
+    "args": {
+      "id": "shadcn-ui/Attachment",
+      "theme": "dark"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "workspace.png\nPNG · 820 KB\ndesk-reference.jpg\nJPG · 1.1 MB\noffice-reference.jpg\nJPG · 940 KB\nsales-dashboard.pdf\nUploading · 64%\nmessage-renderer.tsx\nTypeScript · 12 KB",
+    "elements": 47,
+    "images": [
+      {
+        "alt": "Workspace",
+        "complete": true,
+        "embedded": true,
+        "height": 601,
+        "width": 900
+      },
+      {
+        "alt": "Desk",
+        "complete": true,
+        "embedded": true,
+        "height": 600,
+        "width": 900
+      },
+      {
+        "alt": "Office",
+        "complete": true,
+        "embedded": true,
+        "height": 601,
+        "width": 900
+      }
+    ]
+  },
+  {
+    "phase": "interaction",
+    "id": "shadcn-ui/Sidebar",
+    "args": {
+      "id": "shadcn-ui/Sidebar"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "Acme Inc\nEnterprise\nPlatform\nPlayground\nHistory\nStarred\nSettings\nModels\nDocumentation\nSettings\nProjects\nDesign Engineering\nMore\nSales & Marketing\nMore\nTravel\nMore\nMore\nshadcn\nm@example.com\nToggle Sidebar",
+    "elements": 148,
+    "images": [
+      {
+        "alt": "shadcn",
+        "complete": true,
+        "embedded": true,
+        "height": 400,
+        "width": 400
+      }
+    ]
+  },
+  {
+    "phase": "final",
+    "id": "elevenlabs-ui/Orb",
+    "args": {
+      "id": "elevenlabs-ui/Orb"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "Agent Orbs\n\nInteractive orb visualization with agent states\n\nIdle\nListening\nTalking",
+    "elements": 32,
+    "images": []
+  },
+  {
+    "phase": "final",
+    "id": "reui/File Upload",
+    "args": {
+      "id": "reui/File Upload"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "Upload image\n\nNo image attached",
+    "elements": 13,
+    "images": []
+  },
+  {
+    "phase": "final",
+    "id": "reui/Data Grid",
+    "args": {
+      "id": "reui/Data Grid"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "Name\tEmail\tLocation\tBalance ($)\nSarah Chen\t\nsarah@example.com\n\t\nUnited Kingdom\n\t$5243.03\nNick Johnson\t\nnick@example.com\n\t\nFrance\n\t$5943.03\nMichael Rodriguez\t\nmichael@example.com\n\t\nCanada\n\t$5343.03\nMaria Garcia\t\nmaria@example.com\n\t\nJapan\n\t$5843.03\nLiam Thompson\t\nliam@example.com\n\t\nItaly\n\t$6043.03\nRows per page\n5\n1 - 5 of 10\nGo to previous page\n1\n2\nGo to next page",
+    "elements": 92,
+    "images": [
+      {
+        "alt": "gb",
+        "complete": true,
+        "embedded": true,
+        "height": 600,
+        "width": 1200
+      },
+      {
+        "alt": "fr",
+        "complete": true,
+        "embedded": true,
+        "height": 600,
+        "width": 900
+      },
+      {
+        "alt": "ca",
+        "complete": true,
+        "embedded": true,
+        "height": 600,
+        "width": 1200
+      },
+      {
+        "alt": "jp",
+        "complete": true,
+        "embedded": true,
+        "height": 600,
+        "width": 900
+      },
+      {
+        "alt": "it",
+        "complete": true,
+        "embedded": true,
+        "height": 1000,
+        "width": 1500
+      }
+    ]
+  },
+  {
+    "phase": "interaction-final",
+    "id": "reui/Data Grid",
+    "checks": [
+      "Keyboard next page displays rows 6–10",
+      "Original Base UI selector changes page size from 5 to 10"
+    ],
+    "statusVisible": false,
+    "text": "Name\tEmail\tLocation\tBalance ($)\nSarah Chen\t\nsarah@example.com\n\t\nUnited Kingdom\n\t$5243.03\nNick Johnson\t\nnick@example.com\n\t\nFrance\n\t$5943.03\nMichael Rodriguez\t\nmichael@example.com\n\t\nCanada\n\t$5343.03\nMaria Garcia\t\nmaria@example.com\n\t\nJapan\n\t$5843.03\nLiam Thompson\t\nliam@example.com\n\t\nItaly\n\t$6043.03\nJames Brown\t\njames@example.com\n\t\nSpain\n\t$5743.03\nEmma Wilson\t\nemma@example.com\n\t\nAustralia\n\t$5443.03\nDavid Kim\t\ndavid@example.com\n\t\nGermany\n\t$5543.03\nAron Thompson\t\nlisa@example.com\n\t\nMalaysia\n\t$5643.03\nAlex Johnson\t\nalex@example.com\n\t\nUnited States\n\t$5143.03\nRows per page\n10\n1 - 10 of 10",
+    "images": [
+      {
+        "alt": "gb",
+        "complete": true,
+        "width": 1200
+      },
+      {
+        "alt": "fr",
+        "complete": true,
+        "width": 900
+      },
+      {
+        "alt": "ca",
+        "complete": true,
+        "width": 1200
+      },
+      {
+        "alt": "jp",
+        "complete": true,
+        "width": 900
+      },
+      {
+        "alt": "it",
+        "complete": true,
+        "width": 1500
+      },
+      {
+        "alt": "es",
+        "complete": true,
+        "width": 750
+      },
+      {
+        "alt": "au",
+        "complete": true,
+        "width": 1280
+      },
+      {
+        "alt": "de",
+        "complete": true,
+        "width": 1000
+      },
+      {
+        "alt": "my",
+        "complete": true,
+        "width": 1200
+      },
+      {
+        "alt": "us",
+        "complete": true,
+        "width": 1235
+      }
+    ]
+  },
+  {
+    "phase": "final",
+    "id": "intent-ui/Button",
+    "args": {
+      "id": "intent-ui/Button"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "Label",
+    "elements": 2,
+    "images": []
+  },
+  {
+    "phase": "final",
+    "id": "shadcn-ui/Sidebar",
+    "args": {
+      "id": "shadcn-ui/Sidebar"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "Acme Inc\nEnterprise\nPlatform\nPlayground\nHistory\nStarred\nSettings\nModels\nDocumentation\nSettings\nProjects\nDesign Engineering\nMore\nSales & Marketing\nMore\nTravel\nMore\nMore\nshadcn\nm@example.com\nToggle Sidebar",
+    "elements": 148,
+    "images": [
+      {
+        "alt": "shadcn",
+        "complete": true,
+        "embedded": true,
+        "height": 400,
+        "width": 400
+      }
+    ]
+  },
+  {
+    "phase": "final",
+    "id": "shadcn-ui/Avatar",
+    "args": {
+      "id": "shadcn-ui/Avatar"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "+3",
+    "elements": 14,
+    "images": [
+      {
+        "alt": "@shadcn",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "@evilrabbit",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "@shadcn",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "@maxleiter",
+        "complete": true,
+        "embedded": true,
+        "height": 408,
+        "width": 408
+      },
+      {
+        "alt": "@evilrabbit",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      }
+    ]
+  },
+  {
+    "phase": "final",
+    "id": "shadcn-ui/Attachment",
+    "args": {
+      "id": "shadcn-ui/Attachment"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "workspace.png\nPNG · 820 KB\ndesk-reference.jpg\nJPG · 1.1 MB\noffice-reference.jpg\nJPG · 940 KB\nsales-dashboard.pdf\nUploading · 64%\nmessage-renderer.tsx\nTypeScript · 12 KB",
+    "elements": 47,
+    "images": [
+      {
+        "alt": "Workspace",
+        "complete": true,
+        "embedded": true,
+        "height": 601,
+        "width": 900
+      },
+      {
+        "alt": "Desk",
+        "complete": true,
+        "embedded": true,
+        "height": 600,
+        "width": 900
+      },
+      {
+        "alt": "Office",
+        "complete": true,
+        "embedded": true,
+        "height": 601,
+        "width": 900
+      }
+    ]
+  },
+  {
+    "phase": "final",
+    "id": "shadcn-ui/Message",
+    "args": {
+      "id": "shadcn-ui/Message"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "Deploying to prod real quick.\nIt's 4:55 PM. On a Friday.\nIt's a one-line change.\nDelivered\nIt's always a one-line change 😭.\nAlright, let me take a look.\n👍\nOliver is typing...",
+    "elements": 38,
+    "images": [
+      {
+        "alt": "@me",
+        "complete": true,
+        "embedded": true,
+        "height": 576,
+        "width": 576
+      },
+      {
+        "alt": "@rabbit",
+        "complete": true,
+        "embedded": true,
+        "height": 288,
+        "width": 288
+      },
+      {
+        "alt": "@me",
+        "complete": true,
+        "embedded": true,
+        "height": 576,
+        "width": 576
+      },
+      {
+        "alt": "@rabbit",
+        "complete": true,
+        "embedded": true,
+        "height": 288,
+        "width": 288
+      }
+    ]
+  },
+  {
+    "phase": "final",
+    "id": "kibo-ui/Avatar Stack",
+    "args": {
+      "id": "kibo-ui/Avatar Stack"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "",
+    "elements": 14,
+    "images": [
+      {
+        "alt": "",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      }
+    ]
+  },
+  {
+    "phase": "interaction-final",
+    "id": "reui/File Upload",
+    "args": {
+      "id": "reui/File Upload"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "Upload image\n\nNo image attached",
+    "elements": 13,
+    "images": []
+  },
+  {
+    "phase": "security-final",
+    "sandbox": "allow-scripts allow-forms",
+    "inheritedCsp": "default-src 'none'; script-src 'unsafe-inline' data: blob: https://esm.sh https://cdn.jsdelivr.net; style-src 'unsafe-inline' data: blob: https://esm.sh https://cdn.jsdelivr.net; img-src data: blob: https://esm.sh https://cdn.jsdelivr.net; font-src data: blob: https://esm.sh https://cdn.jsdelivr.net; media-src data: blob: https://esm.sh https://cdn.jsdelivr.net; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'"
+  },
+  {
+    "phase": "interaction-observation",
+    "id": "elevenlabs-ui/Orb",
+    "result": "Three 120x120 original WebGL canvases rendered. Keyboard Listening and Talking selected their respective disabled active button; status remained hidden."
+  },
+  {
+    "phase": "interaction-observation",
+    "id": "shadcn-ui/Sidebar",
+    "result": "Keyboard toggle changed expanded to collapsed and back to expanded. Original cookie write raised SecurityError in the opaque sandbox. Explicit reproduction-limit disclosure added; sandbox unchanged."
+  },
+  {
+    "phase": "verification-limit",
+    "id": "reui/File Upload",
+    "result": "Original input and icon mounted. Nested-frame click coordinate failures and file-chooser timeouts prevented selecting a file, including a keyboard retry after scrolling into view. Selection, removal and validation unverified."
+  },
+  {
+    "phase": "mobile-final",
+    "id": "shadcn-ui/Avatar",
+    "args": {
+      "id": "shadcn-ui/Avatar",
+      "theme": "dark"
+    },
+    "statusVisible": false,
+    "status": "Rendering…",
+    "text": "+3",
+    "elements": 14,
+    "images": [
+      {
+        "alt": "@shadcn",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "@evilrabbit",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "@shadcn",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      },
+      {
+        "alt": "@maxleiter",
+        "complete": true,
+        "embedded": true,
+        "height": 408,
+        "width": 408
+      },
+      {
+        "alt": "@evilrabbit",
+        "complete": true,
+        "embedded": true,
+        "height": 460,
+        "width": 460
+      }
+    ]
+  },
+  {
+    "phase": "mobile-observation",
+    "id": "shadcn-ui/Avatar",
+    "result": "Phone preset, dark theme: five original avatars render. Provenance document has horizontal overflow (scrollWidth 520, clientWidth 351); this check does not establish a fully responsive host layout."
+  }
+]

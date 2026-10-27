@@ -1,0 +1,186 @@
+{
+  "total": 1554,
+  "available": 536,
+  "groups": {
+    "uiarc": {
+      "indexed": 3,
+      "available": 0
+    },
+    "intent-ui": {
+      "indexed": 6,
+      "available": 6
+    },
+    "reui": {
+      "indexed": 6,
+      "available": 6
+    },
+    "elevenlabs-ui": {
+      "indexed": 6,
+      "available": 6
+    },
+    "inspira-ui": {
+      "indexed": 6,
+      "available": 0
+    },
+    "reka-ui": {
+      "indexed": 6,
+      "available": 0
+    },
+    "melt-ui": {
+      "indexed": 6,
+      "available": 0
+    },
+    "zard-ui": {
+      "indexed": 6,
+      "available": 0
+    },
+    "spartan-ui": {
+      "indexed": 6,
+      "available": 0
+    },
+    "corvu": {
+      "indexed": 6,
+      "available": 0
+    },
+    "starwind-ui": {
+      "indexed": 6,
+      "available": 0
+    },
+    "webcoreui": {
+      "indexed": 4,
+      "available": 0
+    },
+    "web-awesome": {
+      "indexed": 6,
+      "available": 6
+    },
+    "react-bits": {
+      "indexed": 213,
+      "available": 0
+    },
+    "magic-ui": {
+      "indexed": 77,
+      "available": 76
+    },
+    "aceternity-ui": {
+      "indexed": 106,
+      "available": 0
+    },
+    "shadcn-ui": {
+      "indexed": 65,
+      "available": 62
+    },
+    "shadcn-svelte": {
+      "indexed": 62,
+      "available": 0
+    },
+    "base-ui": {
+      "indexed": 37,
+      "available": 20
+    },
+    "radix-ui": {
+      "indexed": 30,
+      "available": 17
+    },
+    "react-aria": {
+      "indexed": 54,
+      "available": 29
+    },
+    "ark-ui": {
+      "indexed": 52,
+      "available": 16
+    },
+    "headless-ui": {
+      "indexed": 16,
+      "available": 16
+    },
+    "mantine": {
+      "indexed": 178,
+      "available": 40
+    },
+    "mui": {
+      "indexed": 128,
+      "available": 32
+    },
+    "heroui": {
+      "indexed": 72,
+      "available": 15
+    },
+    "origin-ui": {
+      "indexed": 55,
+      "available": 0
+    },
+    "kibo-ui": {
+      "indexed": 41,
+      "available": 35
+    },
+    "flowbite": {
+      "indexed": 44,
+      "available": 0
+    },
+    "cult-ui": {
+      "indexed": 134,
+      "available": 119
+    },
+    "cmdk": {
+      "indexed": 1,
+      "available": 1
+    },
+    "morphin": {
+      "indexed": 6,
+      "available": 0
+    },
+    "viora-ui": {
+      "indexed": 10,
+      "available": 0
+    },
+    "tween-ui": {
+      "indexed": 8,
+      "available": 8
+    },
+    "scrollx-ui": {
+      "indexed": 8,
+      "available": 0
+    },
+    "toggle-supply": {
+      "indexed": 10,
+      "available": 0
+    },
+    "designpass": {
+      "indexed": 11,
+      "available": 0
+    },
+    "evil-buttons": {
+      "indexed": 11,
+      "available": 0
+    },
+    "beui": {
+      "indexed": 6,
+      "available": 6
+    },
+    "svelte-bits": {
+      "indexed": 5,
+      "available": 0
+    },
+    "canvas-ui": {
+      "indexed": 6,
+      "available": 0
+    },
+    "loading-dev": {
+      "indexed": 5,
+      "available": 5
+    },
+    "hextaui": {
+      "indexed": 8,
+      "available": 8
+    },
+    "chakra-ui": {
+      "indexed": 10,
+      "available": 7
+    },
+    "gradients-sh": {
+      "indexed": 12,
+      "available": 0
+    }
+  }
+}
