@@ -78,9 +78,15 @@ Col exposes five tools:
 | `search_components` | Find indexed components by name or alias. |
 | `get_library` | Read a library's details, official links, and available documentation. |
 | `get_component` | Inspect a component's sources and verification gaps. |
-| `render_component` | Render a TSX component module live in chat in clients that support MCP Apps. |
+| `render_component` | Preview an actual library implementation by ID, with its package version and explicit reproduction limits. |
+
+Search queries are keyword-based and limited to 4,096 Unicode code points. Stack filters use AND, including multiple frameworks; use-case filters use OR. Use structured filters and check requirements in official docs rather than treating prose or negation as hard constraints.
+
+Call `get_component` and check `preview.available`, then call `render_component` with its `id`, optional user `styles` (CSS), and `theme` (`light` or `dark`). Col supplies the pinned real library export or original upstream source, including shadcn components, required CSS and providers; implementation code and arbitrary imports are rejected. Both MCP Apps and the sandboxed HTML fallback display provenance and reproduction limits. Components without a verified adapter return `unavailable` with their specific limitation; there is no generated fallback. This is a breaking change from the former `code` argument. See the [rendering contract](docs/mcp-component-previews.md) for coverage and limitations.
 
 See the [client setup guide](https://usecol.com/mcp) for all supported clients and the [agent guide](https://usecol.com/mcp/agents) for tool arguments and workflows. The [Col agent plugin](plugin/README.md) bundles the connection with a component discovery skill. Use the plugin or a direct connection to avoid configuring Col twice.
+
+MCP requests without `Origin` remain supported. A supplied origin must match `https://usecol.com` or an explicit server-side `COL_MCP_ALLOWED_ORIGINS` entry. For self-hosting, set a comma-separated list of exact HTTP(S) origins in the deployment environment or `.env.local`, then restart/redeploy; for example, `COL_MCP_ALLOWED_ORIGINS="http://localhost:3000,https://client.example"`. Paths, trailing slashes, credentials, wildcards, opaque `null`, and multiple origins are rejected. Invalid entries grant no access. Host and forwarded-host headers never add trust. This policy does not enable CORS or add authentication; verify each browser client's origin before rollout.
 
 ## Run it locally
 

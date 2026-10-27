@@ -38,7 +38,7 @@ export default function McpPage() {
           <><code>matchedOn</code> says why a result matched: name, alias, tag, or description.</>,
           <>Empty results explain themselves (<code>indexStatus</code>) and suggest close matches instead of returning silence.</>,
           <>Documentation snapshots carry their fetch date and source revision, so anything quoted can be re-checked later.</>,
-          <><code>render_component</code> takes code your agent writes for your use case and renders it inside the chat, with packages loaded from esm.sh. It works in hosts that support MCP Apps, such as Claude, ChatGPT, VS Code, and Codex. In Claude Code, the agent asks for the same render as HTML and shows it inline or in your browser.</>,
+          <><code>render_component</code> takes a component ID and user CSS/theme, then runs the real pinned package export or original upstream source, including shadcn components. It shows source and reproduction limits; components without a verified adapter return unavailable. It works in hosts that support MCP Apps, such as Claude, ChatGPT, VS Code, and Codex. In Claude Code, the agent asks for the same render as HTML and shows it inline or in your browser.</>,
         ]} />
         <DocsText>This is a real result, exactly as an agent receives it:</DocsText>
         <DocsCode code={`{
@@ -107,11 +107,19 @@ export default function McpPage() {
           "Connection failed: select HTTP, not a local command or SSE. Check your client’s server logs and network access to the endpoint.",
           "A browser visit returns a method error: the endpoint expects MCP POST requests. Confirm the connection through your client instead.",
           "An empty search result: shorten the query or adjust filters, then check the library’s official docs. Coverage is partial.",
+          "HTTP 403: the supplied Origin is malformed or is not trusted by the server. Browser integrations need an explicitly allowed origin; non-browser clients normally omit this header.",
         ]} />
         <DocsLinks items={[
           { href: "/mcp/agents", title: "Agent guide", text: "Tool arguments, setup prompt, and the component workflow." },
           { href: "/integrations", title: "Other MCP servers", text: "Connect to individual UI libraries and design tools." },
         ]} />
+      </DocsSection>
+
+      <DocsSection title="Browser origins and self-hosting">
+        <DocsText>Requests without an <code>Origin</code> header remain supported. A supplied header must be a single exact HTTP or HTTPS origin. The canonical origin, <code>{siteUrl}</code>, is allowed; malformed values, <code>null</code>, and other origins receive HTTP 403 before the MCP message is processed.</DocsText>
+        <DocsText>Operators can add trusted client, development, or preview origins with the server-only <code>COL_MCP_ALLOWED_ORIGINS</code> environment variable. Set it in the deployment environment or <code>.env.local</code>, then restart or redeploy:</DocsText>
+        <DocsCode code={'COL_MCP_ALLOWED_ORIGINS="http://localhost:3000,https://client.example"'} label="Server environment example" />
+        <DocsText>Use comma-separated serialized origins with exact schemes and ports, no trailing slash, paths, credentials, or wildcards. Invalid entries grant no access. Verify each browser client’s actual origin before adding it. Request host and forwarded-host headers never add trust. This allowlist validates origins; it does not enable browser CORS access or add authentication.</DocsText>
       </DocsSection>
     </article>
   );

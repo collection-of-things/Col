@@ -1,0 +1,260 @@
+{
+  "chunkSize": 1500000,
+  "components": {
+    "cult-ui/Bg Media": {
+      "revision": "7f031dc812f7bda10213bab62752dd6d080297ff",
+      "integrity": "sha256:f85722caddb39fa236b5288ae2059bc182cca4ea6fc38e3119c083619744c6c8",
+      "assets": [
+        "https://openaicomproductionae4b.blob.core.windows.net/production-twill-01/c74791d0-75d2-48e6-acae-96d13bc97c56/paper-planes.mp4"
+      ]
+    },
+    "kibo-ui/Video Player": {
+      "revision": "3d63cdb15b79d972e3dc38a10997987672f9b263",
+      "integrity": "sha256:c61fc0f7cafd17712fdee4e3b54281fa9e9381acad0ccbfa5596cb8e77385317",
+      "assets": [
+        "https://stream.mux.com/DS00Spx1CV902MCtPj5WknGlR102V5HFkDe/high.mp4"
+      ]
+    },
+    "elevenlabs-ui/Audio Player": {
+      "revision": "3a28ebab197f8cfa599934f52db12ad1396e54f4",
+      "integrity": "sha256:99fa2a0879f3b6239d6f9ab9c7ffc07750cff06dc22ef1a5729547e8d892573d",
+      "assets": [
+        "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/00.mp3",
+        "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/01.mp3",
+        "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/04.mp3",
+        "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/05.mp3",
+        "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/07.mp3",
+        "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/08.mp3",
+        "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/09.mp3"
+      ]
+    }
+  },
+  "assets": {
+    "https://openaicomproductionae4b.blob.core.windows.net/production-twill-01/c74791d0-75d2-48e6-acae-96d13bc97c56/paper-planes.mp4": {
+      "url": "https://openaicomproductionae4b.blob.core.windows.net/production-twill-01/c74791d0-75d2-48e6-acae-96d13bc97c56/paper-planes.mp4",
+      "downloadUrl": "https://openaicomproductionae4b.blob.core.windows.net/production-twill-01/c74791d0-75d2-48e6-acae-96d13bc97c56/paper-planes.mp4",
+      "resolvedUrl": "https://openaicomproductionae4b.blob.core.windows.net/production-twill-01/c74791d0-75d2-48e6-acae-96d13bc97c56/paper-planes.mp4",
+      "sha256": "dac5c406f82c5d2c2f6473b6b864f23cd36055be91d01a4670ac1d4b797ffa42",
+      "bytes": 21093317,
+      "mediaType": "video/mp4",
+      "file": "dac5c406f82c5d2c2f6473b6b864f23cd36055be91d01a4670ac1d4b797ffa42.mp4",
+      "attribution": {
+        "name": "Original upstream demo media",
+        "license": "Upstream-linked media; no separate asset license asserted",
+        "url": "https://github.com/nolly-studio/cult-ui/blob/7f031dc812f7bda10213bab62752dd6d080297ff/apps/www/registry/default/example/bg-media-demo.tsx"
+      },
+      "chunks": [
+        "6229e9025aa94bd6b144d66aedc9613a14d4e5b4dd5d29a34cbb59e3dacf0271",
+        "e6132eb153812a8e3a3542aef2c23f065a67303b9f9c2deb359fae5e8b6cd3cd",
+        "ffd429a4edd9ff0e9ec0e006920bce15bc79578a930099fce45db948bc528291",
+        "66f7208f029f25f05acddabf6af94fc621cc8d16310add78aebc3949376b8acb",
+        "ebe49b77de90cc7af3f6f2804549cce54b01ae57560d5c42bdeda1edcdf809c0",
+        "3a2935238fbd0885f1c00630513668fff23dbac531ff360aab5809837e98f024",
+        "d9bf73e7300c608b4f22c25b9e2c45472d61a7d89ff511529f66b6a9c05d03dd",
+        "7c322a2409984a9c3e835da8049fc783986d84ba83d3248d6f7f1eb86927c785",
+        "f47b5a581aa8e2093db8962ea4ac52f60b86bd1e21538e988d40f34f3de20760",
+        "82336472163d356689d2bfc8aa3165529d2b7d76b1bf602a40184fe8f7bf6196",
+        "e0f4bfaa736b861ab7bde4b35b1f49cfe4e58d11daf2aec4edc542c2a8f25dca",
+        "aa2732fb9afe2186a339197f73c8dc40bccf87230d2503d8640fffe634b0128f",
+        "171ae630b1047633b061f5bf1d16e33926324861a12d13a80b8756b5df42872f",
+        "c1a7dd6e00e5544e3143eaaef57dab36be8b0e0d2a642f51d3cfa647f7d3f221",
+        "e37df20b8ccaf2ca41a646d0940584c02dfe9e413723bab36e2f485cf1c76f92"
+      ]
+    },
+    "https://stream.mux.com/DS00Spx1CV902MCtPj5WknGlR102V5HFkDe/high.mp4": {
+      "url": "https://stream.mux.com/DS00Spx1CV902MCtPj5WknGlR102V5HFkDe/high.mp4",
+      "downloadUrl": "https://stream.mux.com/DS00Spx1CV902MCtPj5WknGlR102V5HFkDe/high.mp4",
+      "resolvedUrl": "https://stream.mux.com/DS00Spx1CV902MCtPj5WknGlR102V5HFkDe/high.mp4",
+      "sha256": "a044aeb02c226053aead6ba5eac8e460e5e10daf37640b21ad300ff20646aa6a",
+      "bytes": 72619954,
+      "mediaType": "video/mp4",
+      "file": "a044aeb02c226053aead6ba5eac8e460e5e10daf37640b21ad300ff20646aa6a.mp4",
+      "attribution": {
+        "name": "Original upstream demo media",
+        "license": "Upstream-linked media; no separate asset license asserted",
+        "url": "https://github.com/shadcnblocks/kibo/blob/3d63cdb15b79d972e3dc38a10997987672f9b263/apps/docs/examples/video-player.tsx"
+      },
+      "chunks": [
+        "0579f615dedb088288a417c41202cbc92cb83692286ee624efd0187fc92e5ddb",
+        "5be57747d8e571696f7615863e7299dbe5fcd710301b0aaf7570bea9136b9de7",
+        "b876cc7a83a0fdc5a7a9eaa98e5ed32848ce086627910435fcbb74444ba9706f",
+        "cdeb45b3f58d4d8884de9e19e2e8092c3ac8537e34cf51d609cdc62bdf6203cd",
+        "66039551e6527644c1b97f6867cc487a98f52920fc495008363e117391f8d220",
+        "a022c08fcc10c36edb5edf808fb6d117eef1705736e0fa99de5948cc6de35682",
+        "03cd73e358bfbb35e9ae837560296e0d2f4f639152c55d08151bfe0490cc42ea",
+        "9a4be305f3ddfa40942b174d725b056a42dee23554a03f314f3b757f22b6b586",
+        "17a7c52df48283ac919e761e25ed8877e8450188423afebb77e17b8a8e1bfbc0",
+        "581267313e9d862ce763e3e928a5462aebcb26dfaa339e12f2ee38fdf41bbb83",
+        "024a3a2582187f0491df2cf7da84467de15b108e3b02128914e5c2b55668c383",
+        "10fcdabe841eb41326feaafa4e5307f39650bebe3285fe5d8f8a08c391afe250",
+        "5794842b335a09ae177fa1e5379d10fcd3cc836b1b48710a9cfb6bc2b1ceb8ea",
+        "ee56306a646ca2be3da83159fd9c45071d353fa941050e8210943c24083b8bdd",
+        "4ec619bd52bad499d05c69380765f2b2307450e797778c7ea9c6e0b1f6be27bb",
+        "2ef0ae9e26089589f558d607b2c8ffb80eb067efb05f56bec50c3c2a0a30d711",
+        "cf61a51e063633d0d35da0e32ab7f63e10cff1f0942da2a8c9c71b9c70313dfe",
+        "9bc4b80b2b6bb74e2ca15e73bbc14ba7d1fd13d91e5dfbde690e9b95b66b41a6",
+        "53a353c316c01ed67b59cbc45f64d90de9be0d065da82614f430464aad7d2362",
+        "13bc6c2e9a389a18bc7bde33c928216753a19d6cae02448b4af429ae9c30ae5b",
+        "a70e8fe08354172e9d104360d45fefee3dddb401e94fb90c5c7636dc715f4108",
+        "ca8987239930ea92cfed6029ed6389f78f1651f6ca6734b5bf3b4454d7a3a729",
+        "a27867adc4d169fe0bfd72012905b9d940885b81148d695e9837e134f492336a",
+        "dd1f562c373485fe8c3db4ec4218c2c7b69cc19e018b62fbe7ddb15c3a91726f",
+        "ba65c896b805449208b98bf7b49bba4b678d2fd43ae7fef7d7504fa1948a7432",
+        "92a0854fc655c1f29e084c9a889dca870f53930c8fa2af4c98bb0ba71bbbfd44",
+        "fc659c2813173d8cd540bea53342503ae1c38103efcc718e812a3d94c2bc582f",
+        "e5cd3b3d08e760e9e0a50ea22c1d74356dbb15f311fbd2ece505f4f6a863436a",
+        "7e2f0d680439403b8726e5490ff185e14df017d00449231d56b6cafa7ab9af5d",
+        "690565efdb21608a193c40454b0933125ee916f49e56fa0c380de6d58ab50b88",
+        "5191d02bdf01f0d51fcbf240419f62a21967fd7614605bb4cdb5c656cb343bd6",
+        "b9a93b203dfac8e225872dd91fd42510048a19f17132916de40b583990e80d7e",
+        "383f945222858445d6f5653dc3c28925ac969426158f4f3bd32fb8f181fc5540",
+        "1c6719a59f1c1ac6629cb93630f0e12d851255291858ebb6f60c4e18d043d7ca",
+        "7e7745ad1d6b85322724e44a5ccf328cab19c14ccd276bf26e66141237d33002",
+        "cd8d77daf9c40568f5b6e08cef2e34cec71a5cc5c7838485e26301e20d6ded5d",
+        "0b383a90ed502bb06e4639080fd67bdf08a0581ad7782f2556c7ee46e4f0eb04",
+        "63ce28e39a4b1303766822692cd773645746c95e4bac1a55f35ccfe7aaef69e4",
+        "39fa60ee8186524bd76def20fd625c31cec2729f1d32e17801eaaa657600c290",
+        "34de19eaf45fb399e1bb7b887f3588cdefc1b949b99ebc889238a709c01671d1",
+        "434319529abb6b25b5ca9aa4a88df092f8c692bee48e91c48c04b2361d742312",
+        "231dc8c57ea8c2d630635f6141310e5fc9355daf52514433c9e179ead835f645",
+        "de591d5dcfbf199ff32ff1fbf7c845b49462db3d5dafbc76c09b85c70bd1d704",
+        "2ac8e1acd2d64eeea60470867e60d566a980d831db5c843632736970e873b04c",
+        "6d48705ab0afbd4bedeb101616e0be3448d899482b9ab0af186eba4ef3302b68",
+        "43b51ea80c238b93f2d3a83c215379775eed78f5d9b95925d2c7dc317015db92",
+        "128f2a7845022d1304be18b2f9e04fd709801fe86a98a24a5fbdf95423ba0894",
+        "41598e97fae704346debe3449e9c78af15c2ccaaf6a45d38fbb56ea54ff5bf2a",
+        "de2a5f9446311036b52c59f9b6cbbac788b3b2f6c1137e6d112b39927f8947e8"
+      ]
+    },
+    "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/00.mp3": {
+      "url": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/00.mp3",
+      "downloadUrl": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/00.mp3",
+      "resolvedUrl": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/00.mp3",
+      "sha256": "bbfb2daf93aa91dd404bf55e38e6fb8a1c6d06d19832a664b414fae27e7aff78",
+      "bytes": 2350536,
+      "mediaType": "audio/mpeg",
+      "file": "bbfb2daf93aa91dd404bf55e38e6fb8a1c6d06d19832a664b414fae27e7aff78.mp3",
+      "attribution": {
+        "name": "Original upstream demo media",
+        "license": "Upstream-linked media; no separate asset license asserted",
+        "url": "https://github.com/elevenlabs/ui/blob/3a28ebab197f8cfa599934f52db12ad1396e54f4/apps/www/registry/elevenlabs-ui/examples/audio-player-demo.tsx"
+      },
+      "chunks": [
+        "317f773701bd1b7721a080885033a69a4f0f6f6ac2217d8b50a7bc9e34588370",
+        "4cfb666315f160240f2ac9190e94c8c5593e26095b3f5c0a5e519955bccc8e5c"
+      ]
+    },
+    "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/01.mp3": {
+      "url": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/01.mp3",
+      "downloadUrl": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/01.mp3",
+      "resolvedUrl": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/01.mp3",
+      "sha256": "90d831b92a9be5acefe8e1a5f6fd58a7cfef991d3f7a2742bfce1fd9f20699cc",
+      "bytes": 4916596,
+      "mediaType": "audio/mpeg",
+      "file": "90d831b92a9be5acefe8e1a5f6fd58a7cfef991d3f7a2742bfce1fd9f20699cc.mp3",
+      "attribution": {
+        "name": "Original upstream demo media",
+        "license": "Upstream-linked media; no separate asset license asserted",
+        "url": "https://github.com/elevenlabs/ui/blob/3a28ebab197f8cfa599934f52db12ad1396e54f4/apps/www/registry/elevenlabs-ui/examples/audio-player-demo.tsx"
+      },
+      "chunks": [
+        "adb1579394e6b99049d939506367e33ba597b6bb34c2b0c494950f7c23d57994",
+        "862dba97da20a1bc647c7d20388d388c4345460300cc204418667718135c7c5b",
+        "b7ff7d30164d5d54bd26704978511ea40f6389474fc9a7e57db5d087b4620b57",
+        "64b993926cc54d899f6af994f47a7d6251cbfb92d617486fc3138a6a539ac854"
+      ]
+    },
+    "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/04.mp3": {
+      "url": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/04.mp3",
+      "downloadUrl": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/04.mp3",
+      "resolvedUrl": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/04.mp3",
+      "sha256": "02b0154d1bcf758463f04ef2641909c81590d8c9d3b2de7e0459a648f432882a",
+      "bytes": 2062144,
+      "mediaType": "audio/mpeg",
+      "file": "02b0154d1bcf758463f04ef2641909c81590d8c9d3b2de7e0459a648f432882a.mp3",
+      "attribution": {
+        "name": "Original upstream demo media",
+        "license": "Upstream-linked media; no separate asset license asserted",
+        "url": "https://github.com/elevenlabs/ui/blob/3a28ebab197f8cfa599934f52db12ad1396e54f4/apps/www/registry/elevenlabs-ui/examples/audio-player-demo.tsx"
+      },
+      "chunks": [
+        "44391497ea7ae3057b39f9341f8c12474b51e981df89e99601936620c4fc1295",
+        "7b334d49b10dbe742369d905d8d7b0add38549710ed11b08b40ca66dcc7d763b"
+      ]
+    },
+    "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/05.mp3": {
+      "url": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/05.mp3",
+      "downloadUrl": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/05.mp3",
+      "resolvedUrl": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/05.mp3",
+      "sha256": "5af4ab0f9f26f5781c210e146dca65a54812529abd03752eb2b20a46caa96600",
+      "bytes": 2398810,
+      "mediaType": "audio/mpeg",
+      "file": "5af4ab0f9f26f5781c210e146dca65a54812529abd03752eb2b20a46caa96600.mp3",
+      "attribution": {
+        "name": "Original upstream demo media",
+        "license": "Upstream-linked media; no separate asset license asserted",
+        "url": "https://github.com/elevenlabs/ui/blob/3a28ebab197f8cfa599934f52db12ad1396e54f4/apps/www/registry/elevenlabs-ui/examples/audio-player-demo.tsx"
+      },
+      "chunks": [
+        "d093a9e21f6933af0e9c354e14a27142519d0e90e8651bd03cbe0a154fb9b3a9",
+        "628174fbe706b9c2e703b76f40a4e43273c21687b97f2ec0adce30f811fa04d3"
+      ]
+    },
+    "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/07.mp3": {
+      "url": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/07.mp3",
+      "downloadUrl": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/07.mp3",
+      "resolvedUrl": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/07.mp3",
+      "sha256": "661155c9a898d82ede7e88392cfc660b9fc4f88fee73102beb494c118230a063",
+      "bytes": 2754814,
+      "mediaType": "audio/mpeg",
+      "file": "661155c9a898d82ede7e88392cfc660b9fc4f88fee73102beb494c118230a063.mp3",
+      "attribution": {
+        "name": "Original upstream demo media",
+        "license": "Upstream-linked media; no separate asset license asserted",
+        "url": "https://github.com/elevenlabs/ui/blob/3a28ebab197f8cfa599934f52db12ad1396e54f4/apps/www/registry/elevenlabs-ui/examples/audio-player-demo.tsx"
+      },
+      "chunks": [
+        "a06d32620d80f7f8c262262657b95bc22199bbb71d4be28a4624a66cdb57c3b4",
+        "5100d2fa15c76e35517e94f53e9b7025e3855df6aebe6b13ba16f6a0ecef3a83"
+      ]
+    },
+    "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/08.mp3": {
+      "url": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/08.mp3",
+      "downloadUrl": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/08.mp3",
+      "resolvedUrl": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/08.mp3",
+      "sha256": "0a7556fabcf30df8aef92b302cf7e1b22be5f8998bddb4ccdb1ad663a5e52759",
+      "bytes": 3038988,
+      "mediaType": "audio/mpeg",
+      "file": "0a7556fabcf30df8aef92b302cf7e1b22be5f8998bddb4ccdb1ad663a5e52759.mp3",
+      "attribution": {
+        "name": "Original upstream demo media",
+        "license": "Upstream-linked media; no separate asset license asserted",
+        "url": "https://github.com/elevenlabs/ui/blob/3a28ebab197f8cfa599934f52db12ad1396e54f4/apps/www/registry/elevenlabs-ui/examples/audio-player-demo.tsx"
+      },
+      "chunks": [
+        "9ed9e8e5093fa53a0d2939a5a52d9b6e5d17ce1013e82f3aea6269c8f884947b",
+        "280e42589ca34422909bcb8f029401fccf00d1b0b3ff95efd97512461def914a",
+        "89de8e394093e7fa44892eafc6068c7b74f6ea880b331f288c3d1e1eca194411"
+      ]
+    },
+    "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/09.mp3": {
+      "url": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/09.mp3",
+      "downloadUrl": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/09.mp3",
+      "resolvedUrl": "https://storage.googleapis.com/eleven-public-cdn/audio/ui-elevenlabs-io/09.mp3",
+      "sha256": "60efc982f7f69803219a680ec38e5846500b709b819893b4c065062b09ee2058",
+      "bytes": 3015988,
+      "mediaType": "audio/mpeg",
+      "file": "60efc982f7f69803219a680ec38e5846500b709b819893b4c065062b09ee2058.mp3",
+      "attribution": {
+        "name": "Original upstream demo media",
+        "license": "Upstream-linked media; no separate asset license asserted",
+        "url": "https://github.com/elevenlabs/ui/blob/3a28ebab197f8cfa599934f52db12ad1396e54f4/apps/www/registry/elevenlabs-ui/examples/audio-player-demo.tsx"
+      },
+      "chunks": [
+        "e8b02746d40cb44ddbcd73be7a5938b6fced535117cb368ba6bd7dccfb3785c3",
+        "4beecb721bced0fb7516950581475fc9b2e3c0dd2766dc16c34f6b06c07f5f21",
+        "bf709241071a810ae26b2b79905b3e1cae2c5f50a020a302c2be83189d48ee2e"
+      ]
+    }
+  }
+}
