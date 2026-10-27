@@ -24,6 +24,7 @@
 - [ ] I checked mobile layouts when the interface changed.
 - [ ] I checked keyboard access and reduced motion when interaction changed.
 - [ ] I added screenshots or a recording for visible changes.
+- [ ] Every added or changed file is 5 MB or less, and this pull request adds 10 MB or less of new data (see "Media and large files" in CONTRIBUTING.md).
 - [ ] If I added a major feature, I included usage and setup documentation, linked it from `/docs`, and updated the README where needed.
 - [ ] For catalog, public page, or agent capability changes, I verified `llms.txt`, `robots.txt`, and the sitemap, and updated affected metadata and agent guides.
 - [ ] I linked every fully resolved issue, including issues I opened, with a separate `Closes #123` below. Partial fixes use `Refs #123` and explain the remaining work.

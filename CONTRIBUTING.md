@@ -76,6 +76,27 @@ Integrations live in [`data/integrations.ts`](data/integrations.ts). [CONTEXT.md
 - For a bug fix, include reproduction steps, expected behavior, and how to verify the fix.
 - Explain why a new dependency is needed and include the matching lockfile change.
 
+## Media and large files
+
+git.cafe copies `main` to GitHub, and Vercel deploys from GitHub. git.cafe can send at most 16 MiB of new Git data to GitHub in one push. A larger merge never reaches GitHub, and git.cafe does not report why. GitHub warns at 50 MiB per file and blocks files over 100 MiB.
+
+Col's limits leave room under that: **5 MB per file and 10 MB of new data per pull request.**
+
+- **Agents:** these limits are hard. Keep every added or changed file at 5 MB or less and each pull request at 10 MB or less. If the work needs more, stop and ask Screen.
+- **Contributors:** open an issue and get Screen's agreement before you submit a file over 5 MB or a pull request over 10 MB. Expect to split it or host the file elsewhere.
+- Compress media before committing it, and link to the official source where you can. Use short clips and compressed audio rather than full-length originals.
+- Leave Git LFS off: git.cafe's GitHub sync does not support LFS files.
+
+Before submitting, check the largest new files and the total size against git.cafe `main`:
+
+```bash
+git fetch origin main
+git rev-list --objects origin/main..HEAD | git cat-file --batch-check='%(objecttype) %(objectsize) %(rest)' | awk '$1 == "blob"' | sort -k2 -n | tail -5
+git rev-list --objects origin/main..HEAD | git pack-objects --stdout -q | wc -c
+```
+
+The second command prints the bytes your pull request adds. Keep it under 10,000,000.
+
 ## Keep discovery up to date
 
 When adding or changing libraries, components, integrations, public pages, or features that agents can use, update all affected discovery outputs in the same pull request:
