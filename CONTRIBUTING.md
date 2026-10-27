@@ -82,10 +82,19 @@ git.cafe copies `main` to GitHub, and Vercel deploys from GitHub. git.cafe can s
 
 Col's limits leave room under that: **5 MB per file and 10 MB of new data per pull request.**
 
-- **Agents:** these limits are hard. Keep every added or changed file at 5 MB or less and each pull request at 10 MB or less. If the work needs more, stop and ask Screen.
-- **Contributors:** open an issue and get Screen's agreement before you submit a file over 5 MB or a pull request over 10 MB. Expect to split it or host the file elsewhere.
-- Compress media before committing it, and link to the official source where you can. Use short clips and compressed audio rather than full-length originals.
+- **Agents:** these limits are hard. Before committing media, convert it to a web format (below) and rerun the size check until every file and the pull request are within the limits. Tell the user which files you converted and their sizes before and after.
+- **Contributors:** if a file or your pull request is over the limit, convert the media to a web format before submitting. A pull request over the limit is held until its media is reduced.
 - Leave Git LFS off: git.cafe's GitHub sync does not support LFS files.
+
+Use web versions of media:
+
+| Media | Use | Example |
+|---|---|---|
+| Images and screenshots | WebP, at most 1600 px wide | `ffmpeg -i in.png -c:v libwebp -quality 80 out.webp` |
+| Video | WebM or H.264 MP4, 720p, short clip, no audio track unless needed | `ffmpeg -i in.mov -vf scale=-2:720 -c:v libvpx-vp9 -crf 36 -b:v 0 -an out.webm` |
+| Audio | Opus or MP3 at 96–128 kbps, trimmed to the part that is used | `ffmpeg -i in.wav -c:a libopus -b:a 96k out.opus` |
+
+Link to the official source instead of committing a copy when the page only needs to reference it.
 
 Before submitting, check the largest new files and the total size against git.cafe `main`:
 
