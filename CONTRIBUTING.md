@@ -4,8 +4,8 @@ Thanks for helping make UI libraries easier to discover.
 
 ## Before you start
 
-- Col is maintained on [git.cafe](https://git.cafe/screen/col). Open issues and pull requests there.
-- Search existing [issues](https://git.cafe/screen/col/issues) and [pull requests](https://git.cafe/screen/col/pulls).
+- Col is maintained on [git.cafe](https://git.cafe/collection-of-devs/col). Open issues and pull requests there.
+- Search existing [issues](https://git.cafe/collection-of-devs/col/issues) and [pull requests](https://git.cafe/collection-of-devs/col/pulls).
 - For a library request, feature request, or bug report, include the details the [README](README.md#request-something) lists.
 - Keep each issue and pull request focused on one outcome.
 - For a major feature, redesign, or new dependency, open an issue and get Screen's agreement before implementation.
@@ -13,7 +13,7 @@ Thanks for helping make UI libraries easier to discover.
 ## Local setup
 
 ```bash
-git clone https://git.cafe/screen/col Col
+git clone https://git.cafe/collection-of-devs/col Col
 cd Col
 npm install
 npm run dev
@@ -145,6 +145,6 @@ Agents must read `AGENTS.md` and this guide before changing the repository, and 
 
 ## Deploys
 
-Vercel deploys from [`screen-gd/Col`](https://github.com/screen-gd/Col), a GitHub mirror that copies git.cafe every few minutes. Do not open pull requests on the mirror. Submit changes through a git.cafe pull request; only Screen merges into `main`. Do not push directly to `main` or force-push without Screen's approval.
+Vercel deploys from [`collection-of-things/Col`](https://github.com/collection-of-things/Col), a GitHub mirror kept in step with git.cafe by git.cafe's GitHub sync. Do not open pull requests on the mirror. Submit changes through a git.cafe pull request; only Screen merges into `main`. Do not push directly to `main` or force-push without Screen's approval.
 
 Reviewers may request metadata corrections, a smaller scope, accessibility fixes, or links to official sources before merging.
