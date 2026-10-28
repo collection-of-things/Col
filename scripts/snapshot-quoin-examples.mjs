@@ -253,8 +253,8 @@ for (const component of quoinComponents) {
               <Menu.SubmenuTrigger class={styles.Item}>Share</Menu.SubmenuTrigger>
               <Menu.Portal><Menu.Positioner class={styles.Positioner} side="right" sideOffset={4}>
                 <Menu.Popup class={styles.Popup}>
-                  <Menu.Item class={styles.Item} onClick={() => setSelected("Copy link selected")}>Copy link</Menu.Item>
-                  <Menu.Item class={styles.Item} onClick={() => setSelected("Email selected")}>Email</Menu.Item>
+                  <Menu.Item class={styles.Item} onClick={() => { setSelected("Copy link selected"); setSubmenuOpen(false); setOpen(false); }}>Copy link</Menu.Item>
+                  <Menu.Item class={styles.Item} onClick={() => { setSelected("Email selected"); setSubmenuOpen(false); setOpen(false); }}>Email</Menu.Item>
                 </Menu.Popup>
               </Menu.Positioner></Menu.Portal>
             </Menu.SubmenuRoot>`)
@@ -262,19 +262,49 @@ for (const component of quoinComponents) {
     supportingSources.push(await source("src/menu/submenu-root/menu-submenu-root.tsx"), await source("src/menu/item/menu-item.tsx"));
     gaps.push("The upstream menu composition is extended with a controlled submenu and local selection feedback. Item callbacks only update text; no clipboard, email, or external action is performed.");
   }
+  if (component.name === "Menubar") {
+    code = code
+      .replace('<ExportSubmenu />', '<ExportSubmenu onSelect={() => setOpen(false)} />')
+      .replace('<LayoutSubmenu />', '<LayoutSubmenu onSelect={() => setOpen(false)} />')
+      .replace(/function (ExportSubmenu|LayoutSubmenu)\(\) \{([\s\S]*?)(?=\nfunction )/g, (_, name, body) =>
+        `function ${name}(props: { onSelect: () => void }) {${body.replaceAll('onClick={handleClick}', 'onClick={(event) => { handleClick(event); props.onSelect(); }}')}`);
+    gaps.push("Nested selection explicitly closes the owning top-level menu; Quoin 0.6.0 otherwise closes only the selected item's nearest submenu.");
+  }
   if (component.name === "Navigation Menu") {
     code = code
+      .replace('export default function ExampleNavigationMenu() {', `export default function ExampleNavigationMenu() {
+  // Keep Escape dismissal stable until the pointer leaves or explicitly activates a trigger.
+  let hoverDismissed = false;`)
+      .replace('<NavigationMenu.Root class={styles.Root}>', `<NavigationMenu.Root class={styles.Root}
+      onPointerLeave={() => { hoverDismissed = false; }}
+      onValueChange={(_, details) => {
+        if (details.reason === "escape-key") hoverDismissed = true;
+        else if (details.reason === "trigger-hover" && hoverDismissed) details.cancel();
+        else hoverDismissed = false;
+      }}>`)
       .replace(/href="https?:\/\/[^"\n]+"/g, 'href="#preview"')
       .replace(/href: "\/react\/[^"\n]+"/g, 'href: "#preview"')
       .replace('<NavigationMenu.Link {...props} />', '<NavigationMenu.Link {...props} onClick={(event) => event.preventDefault()} />');
     gaps.push("Navigation links are adapted to local fragments and prevent their default navigation. The real Navigation Menu interactions remain active; no destination is opened.");
+    gaps.push("The composition suppresses hover reopening after Escape until pointer exit or explicit activation, and constrains the popup to the preview viewport.");
   }
   if (/src="https?:/.test(code)) gaps.push("The upstream demo includes a remote image. The sandbox may block it; its original fallback is retained and no replacement image is supplied.");
   if (/href="https?:/.test(code)) gaps.push("The upstream demo contains external links. Their destinations are not loaded by this preview and navigation may be blocked by the sandbox.");
-  if (component.name === "Form") gaps.push("Submission uses the upstream example's simulated response, not an application backend.");
+  if (component.name === "Form") {
+    code = code
+      .replace('const [errors, setErrors] = createSignal<FormErrors>({});', 'const [errors, setErrors] = createSignal<FormErrors>({});\n\tconst [url, setUrl] = createSignal("https://example.com");')
+      .replace('setErrors(serverErrors);', 'if (url() === value) setErrors(serverErrors);')
+      .replace('value="https://example.com"', 'value={url()}\n\t\t\t\t\tonInput={(event) => { setUrl(event.currentTarget.value); setErrors({}); }}');
+    gaps.push("Submission uses the upstream example's simulated response, not an application backend. The URL is signal-controlled and editing it clears the previous server error so a corrected value can be submitted.");
+  }
+  const responsiveCss = component.name === "Toolbar"
+    ? "\n.Toolbar { box-sizing: border-box; max-width: 100%; flex-wrap: wrap; }\n"
+    : component.name === "Navigation Menu"
+    ? "\n.List, .GridLinkList, .FlexLinkList { list-style: none; margin: 0; padding: 0; }\n.Popup { padding: 0; max-width: calc(100vw - 16px); }\n.Content { box-sizing: border-box; max-width: calc(100vw - 16px); max-height: calc(100vh - 96px); overflow-y: auto; padding: 1rem; }\n"
+    : "";
   examples[component.name] = {
     code,
-    css: theme + adaptStyles(readSource(cssPath).toString("utf8")),
+    css: theme + adaptStyles(readSource(cssPath).toString("utf8")) + responsiveCss,
     source: await source(demoPath),
     sources: [await source(demoPath), await source(cssPath), ...supportingSources],
     gaps,

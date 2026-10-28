@@ -118,7 +118,7 @@ export function componentPreviewSupport(id: string) {
       gaps: [...example.gaps,
         `Solid ${quoinBundles.runtimeVersion} and Quoin ${quoinBundles.version} are pinned; the client's installed versions are not inspected.`,
         "Quoin is unstyled. Example CSS and supplied CSS are applied; application fonts, providers, routing and backend actions are not reproduced.",
-        "DOM checks do not verify browser layout or positioning. Live MCP-client rendering has not been verified."] };
+        "The 40 examples were browser-tested in Chromium at desktop/mobile widths in both themes, including an MCP Apps test host. Other browser engines, assistive technology, and third-party MCP client UIs have not been verified."] };
   }
   const source = Object.hasOwn(sources.entries, id) ? sources.entries[id] : undefined;
   const recipe = source ?? packageRecipe(id);
