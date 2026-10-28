@@ -1,4 +1,5 @@
 import type { LibraryCorpusEntry } from "./types";
+import { quoinCorpus } from "./quoin-ui.ts";
 
 /**
  * The deep-coverage documentation corpus, one entry per library.
@@ -17,6 +18,7 @@ import type { LibraryCorpusEntry } from "./types";
  * sources; a page without such evidence earns no snapshot.
  */
 export const libraryCorpus: LibraryCorpusEntry[] = [
+  quoinCorpus,
   {
     slug: "21st-dev",
     permission: {

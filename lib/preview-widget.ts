@@ -1,6 +1,6 @@
 /**
  * The renderer behind `render_component`: turns the server-selected library composition
- * into a live React render inside the user's chat. It ships in two shells that
+ * into a live React or precompiled Solid render inside the user's chat. It ships in two shells that
  * share one runtime (`runtimeScript`):
  *
  * - `previewWidgetHtml()`: the MCP Apps view. The tool's `_meta.ui.resourceUri`
@@ -12,10 +12,11 @@
  *   `<iframe srcdoc>` so the host's CSS cannot restyle it. The agent passes it
  *   to an inline HTML widget tool, or saves it as a file and opens it in a browser.
  *
- * The runtime validates source with Babel, compiles JSX/TSX with sucrase, points imports at
- * esm.sh, and mounts its default export with React. Verified upstream source and
- * selected npm dependencies are bundled ahead of time. Remaining packages load
- * from esm.sh with shared React pins; there is no runtime source substitution.
+ * React source is validated with Babel and JSX/TSX compiled with sucrase; its
+ * imports share pinned React modules. Solid examples arrive as self-contained
+ * JavaScript whose default export mounts a root and returns its disposer. Both
+ * paths retain strict syntax validation; Solid never loads the React compiler
+ * or runtime. No component implementation is substituted at runtime.
  */
 import type { parse as parseTsx } from "@babel/parser";
 import type { transform as transformSource } from "sucrase";
@@ -137,7 +138,7 @@ export const resolveImport = (specifier: string, reactVersion: string): string =
  */
 export const mountable = (js: string, declaration?: { type: string; name: string; localName?: string; exportStart: number; end: number }, generation = 0): string => {
   if (!declaration || declaration.type !== "direct" || declaration.name !== "default") {
-    throw new Error("The module needs `export default` of a React component");
+    throw new Error("The module needs `export default` of a browser component");
   }
   let local = declaration.localName;
   if (!local) {
@@ -149,22 +150,23 @@ export const mountable = (js: string, declaration?: { type: string; name: string
 };
 
 /**
- * The shared runtime: defines `colRuntime(report?)`, which loads React and the
- * compiler, then resolves to `{ render(code), fail(error) }`. Failures show in
+ * The shared runtime: `colRuntime(report?, runtime?)` loads only the selected
+ * framework's tools, then resolves to `{ render(code), fail(error) }`. Failures show in
  * `#col-status`; `report` also forwards them, e.g. to the agent's context.
  * Uses only dynamic `import()`, so it runs in classic and module scripts alike.
  */
 function runtimeScript(): string {
   return `
-async function colRuntime(report) {
+async function colRuntime(report, runtime = "react") {
+  if (!["react", "solid"].includes(runtime)) throw new Error("Unsupported component runtime");
   const resolveImport = ${resolveImport.toString()};
   const mountable = ${mountable.toString()};
   const validatePreviewSyntax = ${validatePreviewSyntax.toString()};
   const preparePreviewSource = ${preparePreviewSource.toString()};
   const [{ createElement }, { createRoot }, { transform }, { init, parse }, { parse: parseSyntax }] = await Promise.all([
-    import(${JSON.stringify(RUNTIME.react)}),
-    import(${JSON.stringify(RUNTIME.reactDomClient)}),
-    import(${JSON.stringify(RUNTIME.sucrase)}),
+    runtime === "react" ? import(${JSON.stringify(RUNTIME.react)}) : {},
+    runtime === "react" ? import(${JSON.stringify(RUNTIME.reactDomClient)}) : {},
+    runtime === "react" ? import(${JSON.stringify(RUNTIME.sucrase)}) : {},
     import(${JSON.stringify(RUNTIME.lexer)}),
     import(${JSON.stringify(RUNTIME.syntax)}),
   ]);
@@ -180,9 +182,22 @@ async function colRuntime(report) {
     status.hidden = false;
     if (report) report(message);
   }
-  const root = createRoot(document.getElementById("col-root"), { onUncaughtError: (error) => fail(error) });
+  const target = document.getElementById("col-root");
+  const root = runtime === "react" ? createRoot(target, { onUncaughtError: (error) => fail(error) }) : undefined;
+  let dispose;
+  addEventListener("pagehide", () => { dispose?.(); root?.unmount(); });
   window.__colMount = (Component, current) => {
     if (current !== generation) return;
+    if (runtime === "solid") {
+      if (typeof Component !== "function") { fail("Invalid compiled Solid example", current); return; }
+      try {
+        dispose?.();
+        target.replaceChildren();
+        dispose = Component(target);
+        status.hidden = failedGeneration !== current;
+      } catch (error) { fail(error, current); }
+      return;
+    }
     const wrappedComponent = Component && [Symbol.for("react.memo"), Symbol.for("react.forward_ref"), Symbol.for("react.lazy")].includes(Component.$$typeof);
     if (!Component || Component.constructor?.name === "AsyncFunction" || typeof Component.then === "function" || (typeof Component !== "function" && !wrappedComponent)) {
       fail("Export a synchronous browser React component; async/server components are unsupported", current);
@@ -201,18 +216,22 @@ async function colRuntime(report) {
 
   async function render(code) {
     const current = ++generation;
+    dispose?.();
+    dispose = undefined;
     resources.forEach((resource) => resource.remove());
     resources = [];
     status.textContent = "Rendering…";
     status.hidden = false;
     try {
-    const { js, written } = preparePreviewSource(code, parseSyntax, transform, validatePreviewSyntax);
+    if (runtime === "solid" && validatePreviewSyntax(code, parseSyntax) !== "javascript") throw new Error("Solid examples must be compiled before delivery");
+    const { js, written } = runtime === "solid" ? { js: code, written: code } : preparePreviewSource(code, parseSyntax, transform, validatePreviewSyntax);
     await init();
     if (current !== generation) return;
     // Validate written imports, but execute normal TS output so implicit type
     // imports (e.g. ReactNode) do not become nonexistent browser exports.
     const writtenImports = parse(written)[0];
     for (const entry of writtenImports) {
+      if (runtime === "solid") throw new Error("Compiled Solid examples must bundle every dependency");
       if (entry.type === "import-meta") continue;
       if (!entry.specifier || entry.glob || entry.phase) throw new Error("Use literal browser imports; computed and source/defer imports are unsupported");
       resolveImport(entry.specifier, ${JSON.stringify(REACT_VERSION)});
@@ -336,7 +355,7 @@ export async function resolvePreviewMedia(media: Record<string, PreviewMediaDesc
  * modules, promises and event handlers cannot affect a corrected preview. */
 export function previewWidgetHtml(): string {
   const marker = "COL_CODE_PLACEHOLDER";
-  const [before, after] = previewCodePage(marker, true).split(marker);
+  const [before, after] = previewCodePage(marker, true, "COL_RUNTIME_PLACEHOLDER").split(marker);
   const literal = (value: string) => JSON.stringify(value).replace(/</g, "\\u003c");
   return previewPage(`<script type="module">
   import { config } from "${RUNTIME.appsZod}";
@@ -421,6 +440,7 @@ export function previewWidgetHtml(): string {
     frame.setAttribute("sandbox", "allow-scripts allow-forms");
     frame.style.cssText = "display:block;width:100%;height:360px;border:0";
     frame.srcdoc = (${literal(before)} + JSON.stringify(code).replace(/</g, "\\u003c") + ${literal(after)})
+      .replace("COL_RUNTIME_PLACEHOLDER", () => JSON.stringify(preview.runtime ?? "react"))
       .replace("</head>", () => passiveMedia + "</head>");
     document.getElementById("col-root").append(frame);
   };
@@ -439,10 +459,10 @@ export function previewWidgetHtml(): string {
 
 /** One execution document, shared by both shells. The argument is already a
  * safely embedded JSON expression, never executable component source. */
-function previewCodePage(embedded: string, trusted = false): string {
+function previewCodePage(embedded: string, trusted = false, runtime = '"react"'): string {
   return previewPage(`<script>
 ${runtimeScript()}
-colRuntime((message) => parent.postMessage({ colError: message }, "*"))
+colRuntime((message) => parent.postMessage({ colError: message }, "*"), ${runtime})
   .then(({ render, fail }) => render(${embedded}).catch(fail))
   .catch((error) => {
     const message = String((error && error.message) || error).slice(0, 256);
@@ -490,9 +510,9 @@ addEventListener("pagehide", () => observer.disconnect(), { once: true });
  * The code rides a JSON string with `<` escaped, so it cannot close its script
  * element early.
  */
-export function previewFragmentHtml(code: string, trusted = false, media: Record<string, string> = {}): string {
+export function previewFragmentHtml(code: string, trusted = false, media: Record<string, string> = {}, runtime: "react" | "solid" = "react"): string {
   const embedded = JSON.stringify(code).replace(/</g, "\\u003c");
-  const page = previewCodePage(embedded, trusted).replace("</head>", () => previewMediaHtml(media) + "</head>");
+  const page = previewCodePage(embedded, trusted, JSON.stringify(runtime)).replace("</head>", () => previewMediaHtml(media) + "</head>");
   const srcdoc = page.replace(/&/g, "&amp;").replace(/"/g, "&quot;");
   return `<iframe data-col-preview title="Component preview" sandbox="allow-scripts allow-forms" srcdoc="${srcdoc}" style="display:block;width:100%;height:360px;border:0"></iframe>
 <script>
@@ -532,5 +552,5 @@ function previewDisclosure(preview: ComponentPreview): string {
 
 /** The fallback consumes exactly the same server-selected implementation. */
 export function verifiedPreviewFragmentHtml(preview: ComponentPreview): string {
-  return previewDisclosure(preview) + (preview.available && !preview.mediaKeys?.length ? previewFragmentHtml(preview.code, true) : "");
+  return previewDisclosure(preview) + (preview.available && !preview.mediaKeys?.length ? previewFragmentHtml(preview.code, true, {}, "runtime" in preview ? preview.runtime : "react") : "");
 }

@@ -32,6 +32,16 @@ export interface LibraryCompatibility {
 
 export const compatibility: LibraryCompatibility[] = [
   {
+    slug: "quoin-ui",
+    facts: [
+      { subject: "quoin-ui", constraint: "0.6.0 (prerelease library)", status: "supported", evidence: "https://registry.npmjs.org/quoin-ui/0.6.0" },
+      ...["solid-js", "@solidjs/web", "@solidjs/signals"].map(subject => ({
+        subject, constraint: "2.0.0-rc.18", status: "supported" as const,
+        evidence: "https://registry.npmjs.org/quoin-ui/0.6.0",
+      })),
+    ],
+  },
+  {
     slug: "uiarc",
     facts: [
       { subject: "react", constraint: "19", status: "supported", evidence: "https://uiarc.dev/docs/installation#requirements" },

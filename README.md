@@ -44,6 +44,8 @@ Want to support the directory? See [sponsorship](https://usecol.com/sponsors).
 
 Col's hosted MCP server lets agents search libraries, find verified component records, and inspect documentation and render components live in chat. It uses Streamable HTTP and requires no Col account or API key.
 
+For SolidJS 2 applications, [Quoin support](https://usecol.com/docs/agents#solid-2-and-quoin) includes component-scoped API declarations, Solid usage examples, exact RC dependency requirements, and optional rendering with the genuine library. See the [maintainer guide](docs/quoin-solid.md) for source provenance and coverage.
+
 Server URL: **https://usecol.com/api/mcp**
 
 For Claude Code:

@@ -22,6 +22,8 @@
  * enforces that they stay on the library's domain and stay unique.
  */
 
+import { quoinComponents, QUOIN_VERIFIED_AT } from "./quoin/catalog.ts";
+
 /** A single named component a library documents, used for component search. */
 export interface LibraryComponent {
   /** The component's official name, spelled as the library documents it. */
@@ -64,6 +66,13 @@ export const componentConcepts: Record<string, string[]> = {
 export type ComponentIndex = Record<string, LibraryComponent[]>;
 
 export const componentIndex: ComponentIndex = {
+  "quoin-ui": quoinComponents.map(({ name, url, summary }) => ({
+    name, url, summary,
+    kind: "primitive",
+    verifiedAt: QUOIN_VERIFIED_AT,
+    dependencies: ["quoin-ui", "solid-js", "@solidjs/web", "@solidjs/signals"],
+    ...(name === "Menu" ? { aliases: ["submenu"] } : {}),
+  })),
   "uiarc": [
     { name: "Button", kind: "full-pattern", summary: "A native button with animated press feedback, loading states, and labels that resize as their content changes.", verifiedAt: "2026-10-12", url: "https://uiarc.dev/components/button", dependencies: ["motion"] },
     { name: "Dialog", kind: "full-pattern", summary: "A modal surface for confirmations, decisions, and short forms.", builtOn: "@radix-ui/react-dialog", concept: "dialog", verifiedAt: "2026-10-12", url: "https://uiarc.dev/components/dialog", dependencies: ["@radix-ui/react-dialog", "motion", "lucide-react"] },

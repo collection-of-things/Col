@@ -156,6 +156,8 @@ export type ComponentDetailsResult = Omit<ComponentHit, "library"> & {
   registryDependencies: string[];
   compatibility: CompatibilityReport;
   preview: ReturnType<typeof componentPreviewSupport>;
+  /** Permission-gated API and usage evidence scoped to this exact component. */
+  documentation: { verification: Verification; snapshots: DocSnapshot[] };
   evidence: Evidence;
 };
 
@@ -584,7 +586,7 @@ export function createCatalogueTools(data: CatalogueData): CatalogueTools {
       gettingStarted: setup?.links.map(({ url, text }) => `${text} ${url}`) ?? [],
       pricing: details?.pricing ?? null,
       compatibility: compatibilityReport(facts, trackedSubjects(library.stacks, facts)),
-      documentation: { verification: verificationFor(entry), snapshots: !library.outboundOnly && entry ? admissibleSnapshots(entry) : [] },
+      documentation: { verification: verificationFor(entry), snapshots: !library.outboundOnly && entry ? admissibleSnapshots(entry).filter(snapshot => !snapshot.componentId) : [] },
       evidence: {
         verification: libraryVerification(facts, entry),
         gaps: [
@@ -613,17 +615,25 @@ export function createCatalogueTools(data: CatalogueData): CatalogueTools {
     const details = data.details[library.slug];
     const facts = compatibilityFor(data, library.slug);
 
+    const entry = corpusFor(data, library.slug);
+    const snapshots = !library.outboundOnly && entry
+      ? admissibleSnapshots(entry).filter(snapshot => snapshot.componentId === args.id)
+      : [];
+
     return {
       ...componentHit(library, component, componentVerification(facts, corpusFor(data, library.slug))),
       library: { slug: library.slug, name: library.name, url: library.url, docsUrl: details?.docsUrl ?? null, stacks: library.stacks },
       preview: library.outboundOnly ? { available: false, gaps: ["This library permits outbound documentation links only; no preview is served."] } : componentPreviewSupport(args.id),
+      documentation: { verification: snapshots.length ? "partial" : "unverified", snapshots },
       dependencies: library.outboundOnly ? [] : component.dependencies ?? [],
       registryDependencies: library.outboundOnly ? [] : component.registryDependencies ?? [],
       compatibility: compatibilityReport(facts, trackedSubjects(library.stacks, facts)),
       evidence: {
         verification: componentVerification(facts, corpusFor(data, library.slug)),
         gaps: [
-          "The component page is verified on the library's own documentation. Col publishes no install commands, so read the library's setup docs for installation and API details, which may cover more than this component.",
+          snapshots.length
+            ? "The attached API and usage evidence is scoped to this component and its recorded revision. Source references may be published declarations rather than a dedicated documentation page. Col publishes no install commands; follow the official setup guide."
+            : "The component page is verified on the library's own documentation. Col publishes no install commands, so read the library's setup docs for installation and API details, which may cover more than this component.",
           compatibilityGap(facts),
           COVERAGE_GAP,
         ],
@@ -712,7 +722,7 @@ const TOOL_DEFINITIONS: ToolDefinition[] = [
   {
     name: "get_component",
     title: "Inspect one component in Col",
-    description: `One component's canonical documentation link, the npm dependencies and registry components the library records for it, and verified compatibility facts (explicit "unknown" where nothing is verified). Col publishes no install commands: read the library's setup docs for those. Ids come from search_components as '<library-slug>/<component name>'. ${COVERAGE_NOTE} ${NO_CREDENTIALS_NOTE}`,
+    description: `One component's canonical reference link, recorded dependencies, verified compatibility facts (explicit "unknown" where nothing is verified), and permitted component-specific API and usage snapshots when recorded. Reference links may point to the library's published API source. Col publishes no install commands: read the library's setup docs for those. Ids come from search_components as '<library-slug>/<component name>'. ${COVERAGE_NOTE} ${NO_CREDENTIALS_NOTE}`,
     args: getComponentArgs,
     annotations: annotation,
   },

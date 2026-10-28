@@ -4,11 +4,7 @@ import { test } from "node:test";
 import ts from "typescript";
 import { libraryOutbound } from "../lib/library-outbound.ts";
 
-const transpileUrl = (source) =>
-  `data:text/javascript,${encodeURIComponent(ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext } }).outputText)}`;
-
-const registrySource = readFileSync(new URL("../data/libraries.ts", import.meta.url), "utf8");
-const { libraries } = await import(transpileUrl(registrySource));
+import { libraries } from "../data/libraries.ts";
 
 const readBuilt = (relativePath) => {
   const file = new URL(`../.next/server/app/${relativePath}`, import.meta.url);
@@ -18,7 +14,7 @@ const readBuilt = (relativePath) => {
 const loadDetails = async (slug) => {
   const file = new URL(`../data/library-details/${slug}.ts`, import.meta.url);
   if (!existsSync(file)) return null;
-  const module = await import(transpileUrl(readFileSync(file, "utf8")));
+  const module = await import(file.href);
   return module.default ?? null;
 };
 

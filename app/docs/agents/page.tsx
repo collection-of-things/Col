@@ -21,6 +21,14 @@ export default function AgentsPage() {
         ]} />
       </DocsSection>
 
+      <DocsSection title="Solid 2 and Quoin">
+        <DocsText>Search with the <code>SolidJS</code> stack and library <code>quoin-ui</code>. Use <code>get_library</code> for exact version requirements, then <code>get_component</code> for the selected component’s published API declarations and Solid examples in <code>documentation.snapshots</code>. Your agent uses that evidence to implement the component in your application.</DocsText>
+        <DocsCode code={`search_components({ "library": "quoin-ui", "query": "dialog", "stacks": ["SolidJS"] })\nget_library({ "slug": "quoin-ui" })\nget_component({ "id": "quoin-ui/Dialog" })`} label="MCP tool calls" />
+        <DocsText>Quoin 0.6.0 requires <code>solid-js</code>, <code>@solidjs/web</code>, and <code>@solidjs/signals</code> at <code>2.0.0-rc.18</code>. Follow the linked official setup guide; a newer RC is not automatically compatible. Quoin is unstyled: the examples include CSS, and you supply your application’s styles.</DocsText>
+        <DocsText>Optional <code>render_component</code> requests use the genuine Quoin implementation with the pinned Solid runtime. Check each component’s <code>preview.available</code> and limitations first. Rendering availability is separate from API and example coverage.</DocsText>
+        <DocsNote>Quoin’s API references are published source and TypeScript declarations, not a separate documentation site. Snapshots identify their version and source; omitted declarations remain linked. Solid 1 compatibility, SSR, and your application’s installed versions are not inferred.</DocsNote>
+      </DocsSection>
+
       <DocsSection title="Read the catalog">
         <DocsText>The plain-text catalog at <a href="/llms.txt"><code>/llms.txt</code></a> lists each library’s official URL, description, category, stacks, and use cases. Fetch it when researching a project so your agent starts from the current directory.</DocsText>
         <DocsCode code={`Read ${siteUrl}/llms.txt.\nFind UI libraries for [framework] that support [use case].\nShortlist three options and explain the tradeoffs.\nVerify required components, installation, and licensing\nagainst each library’s official documentation.\nLink your sources and state anything you could not verify.`} label="Agent prompt" />

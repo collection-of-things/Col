@@ -80,6 +80,17 @@ export interface Library {
 
 export const libraries: Library[] = [
   {
+    name: "Quoin",
+    slug: "quoin-ui",
+    addedAt: "2026-10-28T15:12:49Z",
+    description: "Unstyled, accessible components and headless primitives for SolidJS 2, with composable APIs inspired by Base UI.",
+    url: "https://git.cafe/versecafe/quoin",
+    category: "Component Library",
+    stacks: ["SolidJS", "TypeScript"],
+    useCases: ["Dashboards", "Accessibility-first"],
+    tags: ["headless", "unstyled", "base ui", "solid 2", "release candidate"],
+  },
+  {
     name: "Arc",
     slug: "uiarc",
     addedAt: "2026-10-12T12:13:53+04:00",
