@@ -15,6 +15,8 @@ export interface ReusePermission {
 
 /** One captured documentation page from a library's official site. */
 export interface DocSnapshot {
+  /** When present, this snapshot belongs only to the exact component lookup. */
+  componentId?: string;
   /** Page title as the source presents it. */
   title: string;
   /** Canonical URL the snapshot was fetched from. */
@@ -25,6 +27,8 @@ export interface DocSnapshot {
   sourceRevision: string;
   /** The retrieved evidence: setup steps, API surface, or example code. */
   content: string;
+  /** Exact upstream files used to produce a bounded API or example snapshot. */
+  sources?: { url: string; integrity: string }[];
 }
 
 /** Deep-coverage documentation entry for one library. */

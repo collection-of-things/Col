@@ -1,0 +1,4 @@
+# This vendored notice is verified against the exact upstream license bytes.
+data/quoin/solid-LICENSE.txt text eol=lf
+# Existing preview manifests authenticate this lockfile's committed bytes.
+data/component-previews/vendor/package-bundles-supplemental-lock.json text eol=lf

@@ -7,6 +7,8 @@ import { adaptPreviewSourceImports } from "./component-preview-source-adapters.t
 import extraSources from "../data/component-previews/extra.json" with { type: "json" };
 import shadcnSources from "../data/component-previews/shadcn.json" with { type: "json" };
 import packageStyles from "../data/component-previews/package-styles.json" with { type: "json" };
+import quoinBundles from "../data/component-previews/quoin.json" with { type: "json" };
+import quoinExamples from "../data/quoin/examples.json" with { type: "json" };
 
 /** The public renderer accepts presentation data, never replacement source. */
 export const componentPreviewArgs = z.strictObject({
@@ -108,6 +110,16 @@ function packageRecipe(id: string): PackageRecipe | undefined {
 }
 
 export function componentPreviewSupport(id: string) {
+  const name = id.startsWith("quoin-ui/") ? id.slice("quoin-ui/".length) : "";
+  if (Object.hasOwn(quoinBundles.entries, name) && Object.hasOwn(quoinExamples, name)) {
+    const example = quoinExamples[name as keyof typeof quoinExamples];
+    return { available: true as const, runtime: "solid" as const, package: quoinBundles.package,
+      version: quoinBundles.version, exportName: name, source: example.source, assets: [],
+      gaps: [...example.gaps,
+        `Solid ${quoinBundles.runtimeVersion} and Quoin ${quoinBundles.version} are pinned; the client's installed versions are not inspected.`,
+        "Quoin is unstyled. Example CSS and supplied CSS are applied; application fonts, providers, routing and backend actions are not reproduced.",
+        "The 40 examples were browser-tested in Chromium at desktop/mobile widths in both themes, including an MCP Apps test host. Other browser engines, assistive technology, and third-party MCP client UIs have not been verified."] };
+  }
   const source = Object.hasOwn(sources.entries, id) ? sources.entries[id] : undefined;
   const recipe = source ?? packageRecipe(id);
   const assets = componentPreviewAssets(id);
@@ -145,8 +157,10 @@ export function createComponentPreview(args: z.infer<typeof componentPreviewArgs
   const source = Object.hasOwn(sources.entries, args.id) ? sources.entries[args.id] : undefined;
   const recipe = packageRecipe(args.id);
   const theme = args.theme ?? "light";
-  const css = source ? sources.styles[source.styleKey] : recipe?.compileCss ? compiledStyles[recipe.compileCss]?.css : "";
-  const implementation = transformPreviewAssets(args.id, source ? adaptPreviewSourceImports(args.id, source.code) : `${recipe!.imports}
+  const solidName = args.id.slice("quoin-ui/".length);
+  const solid = "runtime" in support && support.runtime === "solid";
+  const css = solid ? quoinExamples[solidName as keyof typeof quoinExamples].css : source ? sources.styles[source.styleKey] : recipe?.compileCss ? compiledStyles[recipe.compileCss]?.css : "";
+  const implementation = solid ? quoinBundles.entries[solidName as keyof typeof quoinBundles.entries].code : transformPreviewAssets(args.id, source ? adaptPreviewSourceImports(args.id, source.code) : `${recipe!.imports}
 ${(recipe!.stylesheets ?? []).map((sheet) => `import ${JSON.stringify(sheet)};`).join("\n")}
 export default function LibraryPreview() { ${recipe!.setup ?? ""} return (${recipe!.jsx}); }`);
   const code = `const PREVIEW_THEME = ${JSON.stringify(theme)};
@@ -161,5 +175,5 @@ document.head.append(colUserStyles);
 ${recipe?.package === "@awesome.me/webawesome" ? webAwesomeSystemIconSetup : ""}
 ${implementation}
 `;
-  return { ...identity, ...support, code: transformPreviewPackageImports(code), theme, media, mediaKeys: Object.keys(media) };
+  return { ...identity, ...support, code: solid ? code : transformPreviewPackageImports(code), theme, media, mediaKeys: Object.keys(media) };
 }

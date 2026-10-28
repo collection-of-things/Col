@@ -68,6 +68,7 @@ import melt_ui from "./melt-ui.ts";
 import zard_ui from "./zard-ui.ts";
 import spartan_ui from "./spartan-ui.ts";
 import corvu from "./corvu.ts";
+import quoin from "./quoin-ui.ts";
 import starwind_ui from "./starwind-ui.ts";
 import webcoreui from "./webcoreui.ts";
 import web_awesome from "./web-awesome.ts";
@@ -176,6 +177,7 @@ export const libraryDetails: Record<string, LibraryDetails> = {
   "zard-ui": zard_ui,
   "spartan-ui": spartan_ui,
   "corvu": corvu,
+  "quoin-ui": quoin,
   "starwind-ui": starwind_ui,
   "webcoreui": webcoreui,
   "web-awesome": web_awesome,

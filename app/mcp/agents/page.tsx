@@ -30,6 +30,7 @@ export default function McpAgentsPage() {
         <DocsText>Pass the exact returned ID to <code>get_component</code>, then use <code>get_library</code> for official setup links, pricing, documentation, and recorded compatibility. Col records no install commands of its own: read the current official docs before installing. Libraries that request outbound-only listings omit setup links.</DocsText>
         <DocsCode code={JSON.stringify({ id: "shadcn-ui/Command" }, null, 2)} label="get_component arguments" />
         <DocsCode code={JSON.stringify({ slug: "shadcn-ui" }, null, 2)} label="get_library arguments" />
+        <DocsText>When recorded, <code>get_component.documentation.snapshots</code> contains only that component’s permitted API declarations and readable usage examples. Library snapshots cover general setup. Quoin’s 40 public component and provider families include this evidence for Solid 2 RC; see <a href="/docs/agents#solid-2-and-quoin">Solid 2 and Quoin</a> for the pinned requirements and workflow. Source-reference links may point to published TypeScript declarations rather than a dedicated docs site.</DocsText>
         <DocsNote>Component IDs are case-sensitive. Copy them from search results rather than constructing them. An unknown ID or invalid filter returns a tool error.</DocsNote>
       </DocsSection>
 
