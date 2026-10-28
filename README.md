@@ -1,66 +1,54 @@
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="public/brand/col-mark-white.png" />
-    <img src="public/brand/col-mark-black.png" width="80" alt="Col logo" />
-  </picture>
+  <img src="public/brand/col-readme-icon.png" width="80" alt="Col logo" />
   <h1>Col</h1>
-  <p>A community-maintained directory of UI libraries, components, and tools for building interfaces.</p>
+  <p>A community directory of UI libraries, components, and design tools.</p>
   <p>
-    <a href="https://usecol.com">Visit Col</a> ·
+    <a href="https://usecol.com">Website</a> ·
     <a href="https://usecol.com/libraries">Libraries</a> ·
     <a href="https://usecol.com/components">Components</a> ·
-    <a href="https://usecol.com/mcp">Connect your agent</a>
+    <a href="https://usecol.com/mcp">MCP setup</a>
   </p>
 </div>
 
-## What is Col?
+## What you can do
 
-Col helps developers and designers find UI libraries that fit their projects. Search by framework, category, use case, or a specific component, then follow the library's official documentation to use it.
+- Filter [libraries](https://usecol.com/libraries) by framework, category, and use case.
+- Search [components](https://usecol.com/components) by name and open their official docs.
+- Find [MCP servers](https://usecol.com/integrations) for UI libraries and design tools.
+- Search the catalog from your coding agent with Col's MCP server.
 
-The catalog covers component libraries, animation tools, icons, and other interface resources. Each library has its own page with supported stacks, pricing, official links, and a setup prompt for coding agents.
-
-- Browse and filter [libraries](https://usecol.com/libraries) by stack, category, and use case.
-- Search [components](https://usecol.com/components) by name or alias, open their official docs, and inspect available previews.
-- Ask your agent to render a chosen component live in chat with your labels, layout, and theme. This requires a client that supports MCP Apps.
-- Save libraries in your browser to revisit later.
-- Find [MCP servers and connectors](https://usecol.com/integrations) for UI libraries and design tools, with client-specific setup.
-- Search the same catalog from your coding agent through Col's read-only MCP server.
-
-Component coverage is partial. A missing result means Col has not indexed it, not that the library lacks it. Col links to official sources and states verification gaps. Library setup comes from the provider's documentation; listings that only provide outbound links omit setup shortcuts.
+Each library page lists supported frameworks, pricing, official links, and a setup prompt for coding agents. Component coverage is partial: if a component is missing, Col hasn't added it yet.
 
 ## Sponsors
 
-Thank you to [React Bits](https://reactbits.dev) for sponsoring Col.
+<p align="center">
+  <a href="https://reactbits.dev">
+    <img src="public/sponsors/react-bits.jpg" width="480" alt="React Bits" />
+  </a>
+</p>
 
-<a href="https://reactbits.dev">
-  <img src="public/sponsors/react-bits.jpg" width="480" alt="React Bits, sponsor of Col. Free creative React components." />
-</a>
+<p align="center">
+  Thanks to <a href="https://reactbits.dev">React Bits</a> for sponsoring Col.<br />
+  <a href="https://usecol.com/sponsors">Become a sponsor</a>
+</p>
 
-React Bits provides animated React components, backgrounds, and text effects. The image above is their [official artwork](https://reactbits.dev/og.jpg).
+## Use Col from your agent
 
-Want to support the directory? See [sponsorship](https://usecol.com/sponsors).
+Server URL: `https://usecol.com/api/mcp`. No account or API key needed.
 
-## Connect Col MCP
-
-Col's hosted MCP server lets agents search libraries, find verified component records, and inspect documentation and render components live in chat. It uses Streamable HTTP and requires no Col account or API key.
-
-For SolidJS 2 applications, [Quoin support](https://usecol.com/docs/agents#solid-2-and-quoin) includes component-scoped API declarations, Solid usage examples, exact RC dependency requirements, and optional rendering with the genuine library. See the [maintainer guide](docs/quoin-solid.md) for source provenance and coverage.
-
-Server URL: **https://usecol.com/api/mcp**
-
-For Claude Code:
+Claude Code:
 
 ```sh
 claude mcp add --transport http col https://usecol.com/api/mcp
 ```
 
-For Codex:
+Codex:
 
 ```sh
 codex mcp add col --url https://usecol.com/api/mcp
 ```
 
-For Cursor, add Col to `.cursor/mcp.json`, preserving any existing servers:
+Cursor (`.cursor/mcp.json`):
 
 ```json
 {
@@ -72,27 +60,21 @@ For Cursor, add Col to `.cursor/mcp.json`, preserving any existing servers:
 }
 ```
 
-Col exposes five tools:
-
 | Tool | What it does |
 | --- | --- |
-| `search_libraries` | Find libraries by query, stack, category, or use case. |
-| `search_components` | Find indexed components by name or alias. |
-| `get_library` | Read a library's details, official links, and available documentation. |
-| `get_component` | Inspect a component's sources and verification gaps. |
-| `render_component` | Preview an actual library implementation by ID, with its package version and explicit reproduction limits. |
+| `search_libraries` | Find libraries by keyword, framework, category, or use case. |
+| `search_components` | Find components by name. |
+| `get_library` | Get a library's details and official links. |
+| `get_component` | Get a component's sources and whether it can be previewed. |
+| `render_component` | Show a live preview of a component in chat. |
 
-Search queries are keyword-based and limited to 4,096 Unicode code points. Stack filters use AND, including multiple frameworks; use-case filters use OR. Use structured filters and check requirements in official docs rather than treating prose or negation as hard constraints.
+For SolidJS 2 projects, Col covers [Quoin](https://usecol.com/docs/agents#solid-2-and-quoin) components with API details, usage examples and the exact dependency versions they need. The [Quoin guide](docs/quoin-solid.md) covers sources and coverage.
 
-Call `get_component` and check `preview.available`, then call `render_component` with its `id`, optional user `styles` (CSS), and `theme` (`light` or `dark`). Col supplies the pinned real library export or original upstream source, including shadcn components, required CSS and providers; implementation code and arbitrary imports are rejected. Both MCP Apps and the sandboxed HTML fallback display provenance and reproduction limits. Components without a verified adapter return `unavailable` with their specific limitation; there is no generated fallback. This is a breaking change from the former `code` argument. See the [rendering contract](docs/mcp-component-previews.md) for coverage and limitations.
-
-See the [client setup guide](https://usecol.com/mcp) for all supported clients and the [agent guide](https://usecol.com/mcp/agents) for tool arguments and workflows. The [Col agent plugin](plugin/README.md) bundles the connection with a component discovery skill. Use the plugin or a direct connection to avoid configuring Col twice.
-
-MCP requests without `Origin` remain supported. A supplied origin must match `https://usecol.com` or an explicit server-side `COL_MCP_ALLOWED_ORIGINS` entry. For self-hosting, set a comma-separated list of exact HTTP(S) origins in the deployment environment or `.env.local`, then restart/redeploy; for example, `COL_MCP_ALLOWED_ORIGINS="http://localhost:3000,https://client.example"`. Paths, trailing slashes, credentials, wildcards, opaque `null`, and multiple origins are rejected. Invalid entries grant no access. Host and forwarded-host headers never add trust. This policy does not enable CORS or add authentication; verify each browser client's origin before rollout.
+Previews need a client that supports MCP Apps. See [component previews](docs/mcp-component-previews.md) for coverage, the [setup guide](https://usecol.com/mcp) for other clients, and the [agent guide](https://usecol.com/mcp/agents) for tool arguments. The [Col plugin](plugin/README.md) bundles the connection with a component search skill; use either the plugin or a direct connection, not both.
 
 ## Run it locally
 
-Requirements: Node.js 20.9+ and npm.
+Requires Node.js 20.9+ and npm.
 
 ```sh
 git clone https://git.cafe/collection-of-devs/col Col
@@ -101,52 +83,36 @@ npm install
 npm run dev
 ```
 
-Open the local URL printed in the terminal, usually `http://localhost:3000`.
-
-Before submitting code or catalog changes:
+Before opening a pull request:
 
 ```sh
 npm run typecheck
 npm test
 ```
 
-`npm test` builds the site and runs the Node tests.
+To let a browser client other than `https://usecol.com` call your MCP server, set `COL_MCP_ALLOWED_ORIGINS` to a comma-separated list of exact origins, for example `COL_MCP_ALLOWED_ORIGINS="http://localhost:3000"`.
 
 ## Contribute
 
-Col's code, issues, and pull requests live on [git.cafe](https://git.cafe/collection-of-devs/col). Open issues and pull requests there. Vercel deploys from the [GitHub mirror](https://github.com/collection-of-things/Col).
+Code, issues, and pull requests live on [git.cafe](https://git.cafe/collection-of-devs/col). Read [CONTRIBUTING.md](CONTRIBUTING.md) before adding libraries, components, or code.
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) before changing the catalog or code. It covers adding libraries, verified components, MCP servers, and connectors, along with the required checks.
+Check existing [issues](https://git.cafe/collection-of-devs/col/issues) first, then [open one](https://git.cafe/collection-of-devs/col/issues/new) per request:
 
-### Request something
-
-Search existing [libraries](https://usecol.com/libraries), [issues](https://git.cafe/collection-of-devs/col/issues), and [pull requests](https://git.cafe/collection-of-devs/col/pulls) first. Open one focused [issue](https://git.cafe/collection-of-devs/col/issues/new) per request.
-
-#### Request a library
-
-Include its name, official URL, supported stacks, what it provides, the closest Col category and use cases, and confirmation that it is maintained and publicly accessible.
-
-#### Request a feature
-
-Explain the problem, the expected outcome, and any useful references.
-
-#### Report a bug
-
-Include the page or action, reproduction steps, expected and actual behavior, browser, operating system, viewport, and relevant screenshots or errors. Leave out secrets, tokens, and private information.
+- **Library:** name, official URL, supported frameworks, and what it offers.
+- **Feature:** the problem and the result you expect.
+- **Bug:** the page, steps to reproduce, what you expected, what happened, and your browser and OS. Leave out secrets and private information.
 
 ## Project structure
 
 ```text
-app/                  Pages, API routes, metadata, and discovery outputs
-components/           Directory UI, component previews, and shared controls
-data/                 Libraries, verified components, integrations, and stories
-lib/                  Search, MCP tools, client setup, and site helpers
-plugin/               Col agent plugin and component discovery skill
-public/               Brand assets and sponsor artwork
-tests/                Build output and integration checks
-docs/                 Architecture decisions and project documentation
+app/          Pages and API routes
+components/   UI components
+data/         Libraries, components, and integrations
+lib/          Search, MCP tools, and helpers
+plugin/       Col agent plugin
+public/       Brand and sponsor images
+tests/        Tests
+docs/         Project docs
 ```
 
-Built with Next.js, React, TypeScript, Tailwind CSS, shadcn/ui, and Radix UI. See [CONTEXT.md](CONTEXT.md) for catalog terminology.
-
-Col is licensed under the [MIT License](LICENSE).
+Built with Next.js, React, TypeScript, Tailwind CSS, shadcn/ui, and Radix UI. Licensed under [MIT](LICENSE).
