@@ -1,8 +1,5 @@
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="public/brand/col-mark-white.png" />
-    <img src="public/brand/col-mark-black.png" width="80" alt="Col logo" />
-  </picture>
+  <img src="public/brand/col-readme-icon.png" width="80" alt="Col logo" />
   <h1>Col</h1>
   <p>A community-maintained directory of UI libraries, components, and tools for building interfaces.</p>
   <p>

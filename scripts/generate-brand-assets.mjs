@@ -21,9 +21,13 @@ for (const [name, source] of [["white", mark], ["black", black]]) {
 }
 
 // Opaque black icons stay legible in both browser themes. Home screens need more inset.
-const icon = (inset) => Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><rect width="128" height="128" fill="#000"/><g transform="translate(${inset} ${inset}) scale(${(128 - inset * 2) / 128})">${mark.match(/<path[\s\S]*<\/svg>/)[0].replace("</svg>", "").replaceAll("<path ", '<path fill="#fff" ')}</g></svg>`);
+// A corner radius gives the README tile app-icon corners on light pages.
+const icon = (inset, radius = 0) => Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><rect width="128" height="128"${radius ? ` rx="${radius}"` : ""} fill="#000"/><g transform="translate(${inset} ${inset}) scale(${(128 - inset * 2) / 128})">${mark.match(/<path[\s\S]*<\/svg>/)[0].replace("</svg>", "").replaceAll("<path ", '<path fill="#fff" ')}</g></svg>`);
 await writeFile(path("app/icon.svg"), icon(4));
 await sharp(icon(12)).resize(180, 180).png().toFile(path("app/apple-icon.png"));
+
+// README logo: git.cafe ignores <picture> color-scheme sources, so one tile must read on light and dark pages.
+await sharp(icon(24, 28)).resize(256, 256).png().toFile(path("public/brand/col-readme-icon.png"));
 
 // ICO directory with real 16, 32 and 48 px PNG entries; no additional dependency.
 const sizes = [16, 32, 48];
@@ -46,4 +50,5 @@ await writeFile(path("app/favicon.ico"), ico);
 assert.equal(ico.length, offset);
 assert.equal(ico.readUInt16LE(4), 3);
 assert.equal((await sharp(path("app/apple-icon.png")).metadata()).width, 180);
-console.log("Generated and verified vector marks, 1024px PNGs, SVG/ICO favicons, and Apple icon.");
+assert.equal((await sharp(path("public/brand/col-readme-icon.png")).metadata()).width, 256);
+console.log("Generated and verified vector marks, 1024px PNGs, SVG/ICO favicons, Apple icon, and README icon.");
