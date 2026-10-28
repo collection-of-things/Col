@@ -12,6 +12,10 @@ Quoin publishes its APIs in source and TypeScript declarations rather than a ded
 
 Examples use the genuine Quoin exports. Upstream examples retain source references and license attribution; additional reviewed compositions state that they were authored for Col. Quoin provides behavior and styling hooks, while example CSS supplies the appearance. A component's documentation coverage and `preview.available` are independent, and errors or sandbox limitations must remain explicit.
 
+The 33 families backed by upstream demos preserve their official CSS and shared theme: colors, typography, rounded corners, hover/selection backgrounds, focus indicators, and panel styling. Theme media conditions follow the requested preview theme instead of the host OS preference. Toolbar and Navigation Menu retain documented layout constraints for narrow preview viewports; Col's visual theme is not applied to the components.
+
+The pinned repository has no matching demos for Button, Autocomplete, Combobox, Drawer, OTP Field, Direction Provider, or CSP Provider. These seven examples remain explicitly authored compositions. They reuse the cited upstream Dialog, Input, Menu, Tabs, or Scroll Area styles and shared theme, with necessary layout adjustments; they are not presented as official demos. Each example records the theme and stylesheet source hashes.
+
 For Dialog, `createDialog` supplies state and a context provider. Use the Dialog DOM primitives when the application needs the library's focus handling and portal behavior; the headless state API does not supply those behaviors by itself. Provider entries include examples and their own declarations, and Menu declarations cover submenu composition.
 
 The MIT reuse decision gates both general and component-specific snapshots. A denied or unknown permission, or an outbound-only library entry, prevents documentation content from being returned.

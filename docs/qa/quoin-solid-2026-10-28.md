@@ -2,6 +2,32 @@
 
 Issue: [#68](https://git.cafe/collection-of-devs/col/issues/68).
 
+## Official styling restoration
+
+The user requested that Quoin examples retain the official demo styling rather than Col's visual preferences. This section supersedes the visual appearance in the earlier verification below.
+
+The generator now uses the pinned upstream `demo/src/theme.css` and original component CSS declarations. It preserves colors, typography, rounded corners, panel backgrounds, hover/selection treatments, and focus indicators. Only color-scheme media conditions are bound to the renderer's explicit theme. Existing Toolbar and Navigation Menu viewport constraints remain documented layout adaptations. Every example includes the upstream theme and stylesheet hashes in its provenance.
+
+There are 33 families backed by 32 upstream demos (Radio and Radio Group share a demo). Button, Autocomplete, Combobox, Drawer, OTP Field, Direction Provider, and CSP Provider have no matching demo at this revision. Their authored compositions now reuse the official Dialog/Input/Menu/Tabs/Scroll Area styles and theme; they are explicitly not described as official demos. Drawer keeps bottom-aligned entry/exit transforms, and OTP inputs retain compact digit widths.
+
+| Check | Result |
+| --- | --- |
+| Delivered HTML preview, desktop/mobile, light/dark | **160/160** rendering and interaction cases passed in Chromium 156 |
+| Final Drawer and OTP layout corrections | **8/8** additional browser cases passed |
+| Actual MCP Apps SDK/widget browser test host | **40/40** families rendered; no runtime or widget errors |
+| Upstream CSS comparison | **94/94** initial/open-state style snapshots matched across all 33 upstream-backed families in both themes |
+| `npm run typecheck` | Passed |
+| `npm test` | Production build and **242/242** tests passed |
+| Final focused Quoin checks after the OTP CSS adjustment | **49/49** passed |
+| Standards review | No actionable findings |
+| Spec review | Drawer transition positioning finding corrected and browser-checked |
+
+The style comparison used the immutable upstream CSS as an independent reference, comparing computed colors, borders, radii, shadows, typography, outlines, and SVG paint on elements and pseudo-elements. The delivered styles were rendered with the host OS theme opposite to the requested preview theme, then compared with the original CSS under its intended OS theme. This verifies the sampled visual properties, not pixel identity of the host gallery layout. Form pointer position was stabilized between samples; Preview Card was rerun with access to its original remote image after the restricted-network attempt failed.
+
+Screenshots of all families in all four profiles were inspected in contact sheets, with individual popup and final OTP images checked separately. Four refreshed PR screenshots are optimized WebP: 37,179 bytes of PNG input became 20,596 bytes of WebP. Original captures remain local verification artifacts.
+
+Local evidence is under `artifacts/quoin-browser-2026-10-28/`: `official-style-results.json`, `official-final-layout-results.json`, `apps-results.json`, `official-style-comparison-final.json`, `official-style-full-test.log`, and `official-style-dom-final.log`. Reproduce the delivered browser checks with the commands below; the one-off upstream comparison script is `.scratch/solid2-quoin/compare-official-styles.mjs` in this checkout. The browser-engine and client limitations described below still apply.
+
 ## Browser verification follow-up
 
 The user subsequently requested live rendering and interaction testing. This follow-up supersedes the initial implementation's browser-verification limitation below.

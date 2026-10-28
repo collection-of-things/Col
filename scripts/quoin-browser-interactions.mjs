@@ -73,10 +73,10 @@ export async function interact(name, f, page, capture) {
       await capture('open'); await f.getByRole('menuitem', { name: 'Play Next' }).click();
       await expect(f.getByRole('menu')).toBeHidden(); break;
     case 'CSP Provider':
-      await expect(f.locator('.ScrollViewport')).toBeVisible();
+      await expect(f.locator('.Viewport')).toBeVisible();
       await expect.poll(() => f.locator('body style').count()).toBe(0);
-      await f.locator('.ScrollViewport').evaluate(e => e.scrollTop = 50);
-      await expect.poll(() => f.locator('.ScrollViewport').evaluate(e => e.scrollTop)).toBeGreaterThan(0); break;
+      await f.locator('.Viewport').evaluate(e => e.scrollTop = 50);
+      await expect.poll(() => f.locator('.Viewport').evaluate(e => e.scrollTop)).toBeGreaterThan(0); break;
     case 'Direction Provider':
       await f.getByRole('tab', { name: 'First', exact: true }).press('ArrowLeft');
       await expect(f.getByRole('tab', { name: 'Second', exact: true })).toBeFocused();
