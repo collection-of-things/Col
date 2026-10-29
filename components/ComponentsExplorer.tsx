@@ -101,7 +101,7 @@ export function ComponentsExplorer({ initialQuery = "" }: { initialQuery?: strin
               src={selected.component.url}
               title={`${selected.library.name} ${selected.component.name} official demo and documentation`}
               className={styles.frame}
-              sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+              sandbox="allow-scripts allow-same-origin allow-forms"
               referrerPolicy="strict-origin-when-cross-origin"
             />
             <p className={styles.frameNote}>If this site blocks the embedded view, use Open docs.</p>

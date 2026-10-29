@@ -21,7 +21,19 @@ const server = createServer((req, res) => {
   const url = new URL(req.url, 'http://localhost');
   const name = url.searchParams.get('name') || 'Button';
   const theme = url.searchParams.get('theme') || 'light';
+  // The theme is interpolated into the response HTML below; it must be one of
+  // the two values the renderer accepts, never raw request input.
+  if (theme !== 'light' && theme !== 'dark') {
+    res.writeHead(400, { 'Content-Type': 'text/plain; charset=utf-8' });
+    res.end('theme must be "light" or "dark"');
+    return;
+  }
   const result = tools.invoke('render_component', { id: `quoin-ui/${name}`, theme, format: 'html' });
+  if (result.isError || typeof result.structuredContent?.html !== 'string') {
+    res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+    res.end(result.content?.[0]?.text ?? 'render_component returned no HTML');
+    return;
+  }
   res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
   res.end(`<!doctype html><meta name="viewport" content="width=device-width, initial-scale=1"><style>html{color-scheme:${theme};background:${theme === 'dark' ? '#000' : '#fff'};color:${theme === 'dark' ? '#fff' : '#111'};font:14px system-ui}body{margin:8px}</style>${result.structuredContent.html}`);
 });
