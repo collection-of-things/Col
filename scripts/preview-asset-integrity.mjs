@@ -19,9 +19,19 @@ export function verifyPassiveSvg(source) {
       if (!stack.length && (name !== "svg" || end > 0)) throw new Error("Invalid SVG root");
       const selfClosing = /\/\s*$/.test(body);
       const text = selfClosing ? body.replace(/\/\s*$/, "") : body;
+      // Match attributes from a moving cursor: each whitespace run is consumed
+      // once, so a long run cannot restart the pattern at every offset.
+      const gap = /\s+/y;
+      const attribute = /([A-Za-z_:][\w:.-]*)=(?:"([^"]*)"|'([^']*)')/y;
       let position = 0;
-      for (const attr of text.matchAll(/\s+([A-Za-z_:][\w:.-]*)=(?:"([^"]*)"|'([^']*)')/g)) {
-        if (text.slice(position, attr.index).trim()) throw new Error("Invalid SVG attribute syntax");
+      while (position < text.length) {
+        gap.lastIndex = position;
+        if (!gap.exec(text)) break;
+        position = gap.lastIndex;
+        if (position === text.length) break;
+        attribute.lastIndex = position;
+        const attr = attribute.exec(text);
+        if (!attr) break;
         const key = attr[1], value = attr[2] ?? attr[3];
         if (!attributes.has(key)) throw new Error(`Unsupported SVG attribute: ${key}`);
         if (key === "role") {

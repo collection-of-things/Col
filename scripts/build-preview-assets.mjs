@@ -373,8 +373,16 @@ for (const [id, urls] of Object.entries(targets)) {
     if (!refresh && !captureMissing) throw new Error(`Unrecorded image; explicitly capture with --capture-missing-assets: ${url}`);
     const response = await fetch(downloadUrl, { signal: AbortSignal.timeout(30_000), headers: { Accept: "image/png,image/jpeg,image/svg+xml,image/gif,image/webp,video/webm,video/mp4,audio/mpeg" } });
     if (!response.ok) throw new Error(`Asset HTTP ${response.status}: ${downloadUrl}`);
-    const bytes = Buffer.from(await response.arrayBuffer());
-    if (bytes.length > 2_000_000) throw new Error(`Asset exceeds 2 MB: ${downloadUrl}`);
+    const chunks = [];
+    let received = 0;
+    for await (const chunk of response.body ?? []) {
+      received += chunk.byteLength;
+      // Enforce the limit on decoded bytes while reading, so a small compressed
+      // response cannot inflate past it before the check runs.
+      if (received > 2_000_000) throw new Error(`Asset exceeds 2 MB: ${downloadUrl}`);
+      chunks.push(chunk);
+    }
+    const bytes = Buffer.concat(chunks);
     const sha256 = hash(bytes);
     if (old && repositoryAsset && old.downloadUrl === downloadUrl && old.sha256 !== sha256) throw new Error(`Immutable repository asset changed: ${downloadUrl}`);
     result.assets[url] = verifyPreviewAsset({

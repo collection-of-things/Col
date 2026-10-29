@@ -8,14 +8,18 @@ import postcss from "postcss";
 import { quoinComponents, QUOIN_REVISION, QUOIN_SOURCE_URL } from "../data/quoin/catalog.ts";
 
 const upstream = resolve(process.argv[2] ?? "node_modules/.cache/col-quoin-upstream");
-if (execFileSync("git", ["-C", upstream, "rev-parse", "HEAD"], { encoding: "utf8" }).trim() !== QUOIN_REVISION) {
+// The supplied checkout is lower-trust input: ignore its replace refs so a
+// substituted object cannot pose as the pinned revision, and stop its config
+// from selecting executable helpers such as core.fsmonitor.
+const git = (args, options) => execFileSync("git", ["--no-replace-objects", "-c", "core.fsmonitor=false", "-C", upstream, ...args], options);
+if (git(["rev-parse", "HEAD"], { encoding: "utf8" }).trim() !== QUOIN_REVISION) {
   throw new Error("The Quoin checkout must match the recorded source revision");
 }
-if (execFileSync("git", ["-C", upstream, "status", "--porcelain", "--untracked-files=no"], { encoding: "utf8" }).trim()) {
+if (git(["status", "--porcelain", "--untracked-files=no"], { encoding: "utf8" }).trim()) {
   throw new Error("The Quoin checkout has modified tracked source files");
 }
 // Read immutable Git blobs, not working-tree bytes that may be edited or CRLF-converted.
-const readSource = path => execFileSync("git", ["-C", upstream, "show", `${QUOIN_REVISION}:${path}`]);
+const readSource = path => git(["show", `${QUOIN_REVISION}:${path}`]);
 const source = async path => ({
   url: `${QUOIN_SOURCE_URL}/blob/${QUOIN_REVISION}/${path}`,
   revision: QUOIN_REVISION,
