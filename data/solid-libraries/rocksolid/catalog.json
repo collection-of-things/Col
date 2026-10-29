@@ -1,0 +1,88 @@
+{
+  "library": {
+    "name": "RockSolid",
+    "slug": "rocksolid",
+    "description": "Styled SolidJS components with Tailwind CSS, theme customization, and RTL layout variants.",
+    "url": "https://rocksolidjs.com/",
+    "category": "Component Library",
+    "stacks": [
+      "SolidJS",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "useCases": [
+      "Dashboards",
+      "Accessibility-first"
+    ],
+    "tags": [
+      "rtl",
+      "themeable"
+    ],
+    "addedAt": "2026-10-30T00:34:31+05:30"
+  },
+  "details": {
+    "docsUrl": "https://rocksolidjs.com/installation/",
+    "repoUrl": "https://github.com/darshan-rajadhyaksha/rocksolid",
+    "pricing": {
+      "model": "free",
+      "summary": "The component source is free under the MIT license.",
+      "license": "MIT",
+      "source": "https://github.com/darshan-rajadhyaksha/rocksolid/blob/908ec4bf1534b36bf34bb9028ed8639cf773c205/LICENSE.txt"
+    }
+  },
+  "components": [
+    {
+      "name": "Button",
+      "url": "https://rocksolidjs.com/components/button/",
+      "kind": "full-pattern",
+      "summary": "A styled button with color, variant, size, and native interaction props.",
+      "concept": "button",
+      "verifiedAt": "2026-10-29T19:04:31Z",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Dialog",
+      "url": "https://rocksolidjs.com/components/dialog/",
+      "kind": "full-pattern",
+      "summary": "A modal dialog composed with title, content, and action components.",
+      "concept": "dialog",
+      "verifiedAt": "2026-10-29T19:04:31Z",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Tabs",
+      "url": "https://rocksolidjs.com/components/tabs/",
+      "kind": "full-pattern",
+      "summary": "Tab lists and panels with controlled state, orientation, and RTL layout styles.",
+      "concept": "tabs",
+      "verifiedAt": "2026-10-29T19:04:31Z",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    }
+  ],
+  "compatibility": [
+    {
+      "subject": "solid-js",
+      "constraint": "^1.9.5; preview pinned to 1.9.15",
+      "status": "supported",
+      "evidence": "https://github.com/darshan-rajadhyaksha/rocksolid/blob/908ec4bf1534b36bf34bb9028ed8639cf773c205/package.json"
+    },
+    {
+      "subject": "tailwindcss",
+      "constraint": "^4.1.4; preview compiled with 4.3.3",
+      "status": "supported",
+      "evidence": "https://github.com/darshan-rajadhyaksha/rocksolid/blob/908ec4bf1534b36bf34bb9028ed8639cf773c205/package.json"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "slug": "magicui-solid",
+  "permission": {
+    "status": "granted",
+    "source": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/README.md",
+    "checkedAt": "2026-10-29T19:35:27Z"
+  },
+  "snapshots": [
+    {
+      "componentId": "magicui-solid/Marquee",
+      "title": "Marquee",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/marquee/",
+      "fetchedAt": "2026-10-29T19:35:27Z",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "content": "Marquee accepts children, class, reverse, pauseOnHover, vertical and repeat. The source defaults reverse/pauseOnHover/vertical to false and repeat to 4. Duration and gap are CSS variables; the documented example sets --duration:20s.\n\nDocumented SolidJS example:\n```tsx\nimport { For } from 'solid-js'\nimport { Marquee } from '@/registry/magicui/marquee'\n\nconst reviews = [\n  { name: 'Jack', username: '@jack', body: 'I\\'ve never seen anything like this before. It\\'s amazing. I love it.', img: 'https://avatar.vercel.sh/jack' },\n  { name: 'Jill', username: '@jill', body: 'I don\\'t know what to say. I\\'m speechless. This is amazing.', img: 'https://avatar.vercel.sh/jill' },\n  { name: 'John', username: '@john', body: 'I\\'m at a loss for words. This is amazing. I love it.', img: 'https://avatar.vercel.sh/john' },\n  { name: 'Jane', username: '@jane', body: 'I\\'m at a loss for words. This is amazing. I love it.', img: 'https://avatar.vercel.sh/jane' },\n  { name: 'Jenny', username: '@jenny', body: 'I\\'m at a loss for words. This is amazing. I love it.', img: 'https://avatar.vercel.sh/jenny' },\n  { name: 'James', username: '@james', body: 'I\\'m at a loss for words. This is amazing. I love it.', img: 'https://avatar.vercel.sh/james' },\n]\n\nconst firstRow = reviews.slice(0, reviews.length / 2)\nconst secondRow = reviews.slice(reviews.length / 2)\n\nfunction ReviewCard(props: { img: string, name: string, username: string, body: string }) {\n  return (\n    <figure\n      class=\"\n        relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border\n        border-gray-950/10 bg-gray-950/1 p-4\n        hover:bg-gray-950/5\n        dark:border-gray-50/10 dark:bg-gray-50/10\n        dark:hover:bg-gray-50/15\n      \"\n    >\n      <div class=\"flex flex-row items-center gap-2\">\n        <img class=\"rounded-full\" width=\"32\" height=\"32\" alt=\"\" src={props.img} />\n        <div class=\"flex flex-col\">\n          <figcaption class=\"\n            text-sm font-medium\n            dark:text-white\n          \"\n          >\n            {props.name}\n          </figcaption>\n          <p class=\"\n            text-xs font-medium\n            dark:text-white/40\n          \"\n          >\n            {props.username}\n          </p>\n        </div>\n      </div>\n      <blockquote class=\"mt-2 text-sm\">{props.body}</blockquote>\n    </figure>\n  )\n}\n\nexport function MarqueeDemo() {\n  return (\n    <div class=\"\n      relative flex w-full flex-col items-center justify-center overflow-hidden\n    \"\n    >\n      <Marquee pauseOnHover class=\"[--duration:20s]\">\n        <For each={firstRow}>{review => <ReviewCard {...review} />}</For>\n      </Marquee>\n      <Marquee reverse pauseOnHover class=\"[--duration:20s]\">\n        <For each={secondRow}>{review => <ReviewCard {...review} />}</For>\n      </Marquee>\n      <div class=\"\n        pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-linear-to-r\n        from-background\n      \"\n      />\n      <div class=\"\n        pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-linear-to-l\n        from-background\n      \"\n      />\n    </div>\n  )\n}\n\n```\n\nSource revision: 3100c2f704620f96dc431dd86f86bbbf9bb05965. Preserve the source component classes and its matching theme/animation CSS. Preview compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16. This is the SolidJS port; do not substitute React Magic UI source. Registry files and the original Geist font are bundled for isolated rendering.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/marquee.tsx",
+          "integrity": "9eb0a05a87f3f15936b089f1379f67f9fd5c99eeb3b3c3524169b5ff2468c6cb"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/content/docs/docs/components/marquee.mdx",
+          "integrity": "a1c86ddaa652ee49985c0645e2354473e4f2186e477591e74b9fa815ac778d7a"
+        }
+      ]
+    },
+    {
+      "componentId": "magicui-solid/Ripple Button",
+      "title": "Ripple Button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/ripple-button/",
+      "fetchedAt": "2026-10-29T19:35:27Z",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "content": "RippleButton accepts button props, onClick(MouseEvent), rippleColor and duration. The source defaults rippleColor to #ffffff and duration to 600ms; the documented example uses #ADD8E6. Its click handler creates a ripple using the button bounding rectangle and cleans up its timeout on disposal.\n\nDocumented SolidJS example:\n```tsx\nimport { RippleButton } from '@/registry/magicui/ripple-button'\n\nexport function RippleButtonDemo() {\n  return <RippleButton rippleColor=\"#ADD8E6\">Click me</RippleButton>\n}\n\n```\n\nSource revision: 3100c2f704620f96dc431dd86f86bbbf9bb05965. Preserve the source component classes and its matching theme/animation CSS. Preview compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16. This is the SolidJS port; do not substitute React Magic UI source. Registry files and the original Geist font are bundled for isolated rendering.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/ripple-button.tsx",
+          "integrity": "3ade371a463ef5a7fab531bd111a07077cebde1f9832477ad8d1ca9ef22a76d4"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/content/docs/docs/components/ripple-button.mdx",
+          "integrity": "f5291cd15a6d639d8040541a8bdb44a6fe20daf6531abcb6bb3ea6e54d663d58"
+        }
+      ]
+    },
+    {
+      "componentId": "magicui-solid/Shimmer Button",
+      "title": "Shimmer Button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/shimmer-button/",
+      "fetchedAt": "2026-10-29T19:35:27Z",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "content": "ShimmerButton accepts Solid button props plus shimmerColor, shimmerSize, borderRadius, shimmerDuration and background. Source defaults are #ffffff, 0.05em, 100px, 3s and rgba(0, 0, 0, 1). Original animation keyframes are required alongside the copied component.\n\nDocumented SolidJS example:\n```tsx\nimport { ShimmerButton } from '@/registry/magicui/shimmer-button'\n\nexport function ShimmerButtonDemo() {\n  return (\n    <ShimmerButton class=\"shadow-2xl\">\n      <span class=\"\n        text-center text-sm leading-none font-medium tracking-tight\n        whitespace-pre-wrap text-white\n        lg:text-lg\n        dark:from-white dark:to-slate-900/10\n      \"\n      >\n        Shimmer Button\n      </span>\n    </ShimmerButton>\n  )\n}\n\n```\n\nSource revision: 3100c2f704620f96dc431dd86f86bbbf9bb05965. Preserve the source component classes and its matching theme/animation CSS. Preview compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16. This is the SolidJS port; do not substitute React Magic UI source. Registry files and the original Geist font are bundled for isolated rendering.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/shimmer-button.tsx",
+          "integrity": "816287516187fd682760c6742d0dd5eebed23aafa1086c4fcdd794dea6f41f5b"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/content/docs/docs/components/shimmer-button.mdx",
+          "integrity": "49b11561cf9abe565a0708d856012d2d0e54f603dea22c80df856c00c99230ef"
+        }
+      ]
+    },
+    {
+      "title": "Installation and registry setup",
+      "url": "https://axuj.github.io/magicui-solid/docs/installation/",
+      "content": "Official setup: https://axuj.github.io/magicui-solid/docs/installation/\n\nBegin with a SolidJS project configured for Tailwind CSS v4. The guide registers @magicui-solid in components.json using https://axuj.github.io/magicui-solid/r/{name}.json, with the project's actual CSS path and aliases. Follow its Solid-specific component installation flow; the React initialization flow does not apply.\n\nEach component depends on @magicui-solid/theme. Installation supplies dependencies, CSS variables, Tailwind color mappings, radii and animation keyframes while retaining existing theme values. Manual copy-paste setup also needs the component's dependencies and matching theme CSS; the official guide provides the installation steps.\n\nCol previews retain the published demos' Starlight Black theme and Geist typography. That documentation-site context differs from the installation theme defaults.",
+      "fetchedAt": "2026-10-29T20:15:48.592Z",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/content/docs/docs/installation.mdx",
+          "integrity": "90e6c2ccd4548302f5dd42b84a1f450e2125a905a90ad5d8bed730c12348ac48"
+        }
+      ]
+    }
+  ]
+}

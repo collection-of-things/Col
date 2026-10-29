@@ -1,0 +1,157 @@
+{
+  "slug": "zaidan",
+  "permission": {
+    "status": "granted",
+    "source": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/LICENSE",
+    "checkedAt": "2026-10-29T18:56:49Z"
+  },
+  "snapshots": [
+    {
+      "title": "Zaidan setup and coverage",
+      "url": "https://zaidan.carere.dev/docs",
+      "fetchedAt": "2026-10-29T18:56:49Z",
+      "sourceRevision": "271ffce00aaeee0dfa32f2321c9b6e212af39c3d",
+      "content": "Use the official Zaidan installation guide and shadcn registry. These examples select the original Kobalte foundation and Vega style. Preserve the registry styles, utilities, theme variables and style-vega class around portal roots. The official docs container uses Geist Variable; portalled content outside that container inherits Inter Variable from the body. Imports use the upstream @/registry/kobalte/ui paths and should be adapted to your copied component paths.\n\nVerified preview coverage: Button, Checkbox, Dialog. Other components and variants have not been mirrored. Only the Kobalte foundation with Vega styling is previewed.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/package.json",
+          "integrity": "sha256:cb655f2c50e432b5069451495c0447b5f186b2db51e14af9b1e17ec6935888b1"
+        }
+      ]
+    },
+    {
+      "componentId": "zaidan/Button",
+      "title": "Button — official example and API",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/button",
+      "fetchedAt": "2026-10-29T18:56:49Z",
+      "sourceRevision": "271ffce00aaeee0dfa32f2321c9b6e212af39c3d",
+      "content": "Use the official Zaidan installation guide and shadcn registry. These examples select the original Kobalte foundation and Vega style. Preserve the registry styles, utilities, theme variables and style-vega class around portal roots. The official docs container uses Geist Variable; portalled content outside that container inherits Inter Variable from the body. Imports use the upstream @/registry/kobalte/ui paths and should be adapted to your copied component paths.\n\nPinned Solid runtime: 1.9.17. Component coverage is partial.\n\nDependency scope: the recorded packages and registry components cover this pinned component, its selected official example, and their imported UI/class helpers. They do not enumerate the full project toolchain or unselected variants. Packages: solid-js, @kobalte/core, class-variance-authority, clsx, tailwind-merge, lucide-solid. Other registry components: none. The cn helper requires clsx and tailwind-merge; unrelated docs-server storage helpers are excluded.\n\nOfficial example (unchanged):\n```tsx\nimport { ArrowUpIcon } from \"lucide-solid\";\nimport { Button } from \"@/registry/kobalte/ui/button\";\n\nexport default function ButtonDemo() {\n  return (\n    <div class=\"flex flex-wrap items-center gap-2 md:flex-row\">\n      <Button variant=\"outline\">Button</Button>\n      <Button variant=\"outline\" size=\"icon\" aria-label=\"Submit\">\n        <ArrowUpIcon />\n      </Button>\n    </div>\n  );\n}\n\n```\n\nComponent implementation/API (unchanged):\n```tsx\nimport { type ButtonRootProps, Root } from \"@kobalte/core/button\";\nimport type { PolymorphicProps } from \"@kobalte/core/polymorphic\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\nimport { type ComponentProps, splitProps, type ValidComponent } from \"solid-js\";\nimport { cn } from \"@/lib/utils\";\n\nconst buttonVariants = cva(\n  \"group/button z-button inline-flex shrink-0 select-none items-center justify-center whitespace-nowrap outline-none transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0\",\n  {\n    variants: {\n      variant: {\n        default: \"z-button-variant-default\",\n        outline: \"z-button-variant-outline\",\n        secondary: \"z-button-variant-secondary\",\n        ghost: \"z-button-variant-ghost\",\n        destructive: \"z-button-variant-destructive\",\n        link: \"z-button-variant-link\",\n      },\n      size: {\n        default: \"z-button-size-default\",\n        xs: \"z-button-size-xs\",\n        sm: \"z-button-size-sm\",\n        lg: \"z-button-size-lg\",\n        icon: \"z-button-size-icon\",\n        \"icon-xs\": \"z-button-size-icon-xs\",\n        \"icon-sm\": \"z-button-size-icon-sm\",\n        \"icon-lg\": \"z-button-size-icon-lg\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n      size: \"default\",\n    },\n  },\n);\n\ntype ButtonProps<T extends ValidComponent = \"button\"> = PolymorphicProps<T, ButtonRootProps<T>> &\n  VariantProps<typeof buttonVariants> &\n  Partial<Pick<ComponentProps<T>, \"class\">>;\n\nconst Button = <T extends ValidComponent = \"button\">(props: ButtonProps<T>) => {\n  const [local, others] = splitProps(props as ButtonProps, [\"variant\", \"size\", \"class\"]);\n  return (\n    <Root\n      class={cn(buttonVariants({ variant: local.variant, size: local.size }), local.class)}\n      data-slot=\"button\"\n      {...others}\n    />\n  );\n};\n\nexport { Button, type ButtonProps, buttonVariants };\n\n```",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/examples/docs/button-demo.tsx",
+          "integrity": "sha256:10f3b9716a9786893d37a62f776774680ae38d2ffd5cd43604ffd215ce18e927"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/ui/button.tsx",
+          "integrity": "sha256:6778766b3334490ae1d199a63e0c3c87f43da85a9732d32fb936626e58a1bc3f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/pages/ui/kobalte/button.mdx",
+          "integrity": "sha256:6d197b8c0932d2034c75cf6f773360594f44475917c91822cab6efd0c32190a5"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/styles/typeset.css",
+          "integrity": "sha256:8afe0f05aa8bc60e65dfbe40c9be895173724ed38b70266ea53cba9c129e98ac"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/lib/utils.ts",
+          "integrity": "sha256:b67c3f23e4fe3780735e586c729a787f6a6207e7132048df7f49896adf69bc09"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/registry.json",
+          "integrity": "sha256:7a0b2f68f762793502df0ac7d431c9dec5b78f8d348d94aabafc3e64c9777fe0"
+        }
+      ]
+    },
+    {
+      "componentId": "zaidan/Checkbox",
+      "title": "Checkbox — official example and API",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/checkbox",
+      "fetchedAt": "2026-10-29T18:56:49Z",
+      "sourceRevision": "271ffce00aaeee0dfa32f2321c9b6e212af39c3d",
+      "content": "Use the official Zaidan installation guide and shadcn registry. These examples select the original Kobalte foundation and Vega style. Preserve the registry styles, utilities, theme variables and style-vega class around portal roots. The official docs container uses Geist Variable; portalled content outside that container inherits Inter Variable from the body. Imports use the upstream @/registry/kobalte/ui paths and should be adapted to your copied component paths.\n\nPinned Solid runtime: 1.9.17. Component coverage is partial.\n\nDependency scope: the recorded packages and registry components cover this pinned component, its selected official example, and their imported UI/class helpers. They do not enumerate the full project toolchain or unselected variants. Packages: solid-js, @kobalte/core, class-variance-authority, clsx, tailwind-merge, lucide-solid. Other registry components: field, label, separator. The cn helper requires clsx and tailwind-merge; unrelated docs-server storage helpers are excluded.\n\nOfficial example (unchanged):\n```tsx\nimport { Checkbox } from \"@/registry/kobalte/ui/checkbox\";\nimport {\n  Field,\n  FieldContent,\n  FieldDescription,\n  FieldGroup,\n  FieldLabel,\n  FieldTitle,\n} from \"@/registry/kobalte/ui/field\";\n\nexport default function CheckboxDemo() {\n  return (\n    <FieldGroup class=\"max-w-sm\">\n      <Field orientation=\"horizontal\">\n        <Checkbox id=\"terms-checkbox\" name=\"terms-checkbox\" />\n        <FieldLabel for=\"terms-checkbox\">Accept terms and conditions</FieldLabel>\n      </Field>\n      <Field orientation=\"horizontal\">\n        <Checkbox id=\"terms-checkbox-2\" name=\"terms-checkbox-2\" defaultChecked />\n        <FieldContent>\n          <FieldLabel for=\"terms-checkbox-2\">Accept terms and conditions</FieldLabel>\n          <FieldDescription>By clicking this checkbox, you agree to the terms.</FieldDescription>\n        </FieldContent>\n      </Field>\n      <Field orientation=\"horizontal\" data-disabled>\n        <Checkbox id=\"toggle-checkbox\" name=\"toggle-checkbox\" disabled />\n        <FieldLabel for=\"toggle-checkbox\">Enable notifications</FieldLabel>\n      </Field>\n      <FieldLabel>\n        <Field orientation=\"horizontal\">\n          <Checkbox id=\"toggle-checkbox-2\" name=\"toggle-checkbox-2\" />\n          <FieldContent>\n            <FieldTitle>Enable notifications</FieldTitle>\n            <FieldDescription>\n              You can enable or disable notifications at any time.\n            </FieldDescription>\n          </FieldContent>\n        </Field>\n      </FieldLabel>\n    </FieldGroup>\n  );\n}\n\n```\n\nComponent implementation/API (unchanged):\n```tsx\nimport * as CheckboxPrimitive from \"@kobalte/core/checkbox\";\nimport type { PolymorphicProps } from \"@kobalte/core/polymorphic\";\nimport { CheckIcon } from \"lucide-solid\";\nimport { type ComponentProps, splitProps, type ValidComponent } from \"solid-js\";\n\nimport { cn } from \"@/lib/utils\";\n\ntype CheckboxProps<T extends ValidComponent = \"div\"> = PolymorphicProps<\n  T,\n  CheckboxPrimitive.CheckboxRootProps<T>\n> &\n  Pick<ComponentProps<T>, \"class\">;\n\nconst Checkbox = <T extends ValidComponent = \"div\">(props: CheckboxProps<T>) => {\n  const [local, others] = splitProps(props as CheckboxProps, [\"class\", \"id\"]);\n  return (\n    <CheckboxPrimitive.Root\n      data-slot=\"checkbox\"\n      class=\"peer data-disabled:cursor-not-allowed data-disabled:opacity-50\"\n      {...others}\n    >\n      <CheckboxPrimitive.Input data-slot=\"checkbox-input\" class=\"peer sr-only\" id={local.id} />\n      <CheckboxPrimitive.Control\n        onClick={(e) => e.preventDefault()}\n        class={cn(\n          \"relative z-checkbox shrink-0 outline-none after:absolute after:-inset-x-3 after:-inset-y-2\",\n          local.class,\n        )}\n      >\n        <CheckboxPrimitive.Indicator\n          data-slot=\"checkbox-indicator\"\n          class=\"z-checkbox-indicator grid place-content-center text-current transition-none\"\n        >\n          <CheckIcon class=\"size-3.5\" />\n        </CheckboxPrimitive.Indicator>\n      </CheckboxPrimitive.Control>\n    </CheckboxPrimitive.Root>\n  );\n};\n\ntype CheckboxLabelProps<T extends ValidComponent = \"label\"> = PolymorphicProps<\n  T,\n  CheckboxPrimitive.CheckboxLabelProps<T>\n> &\n  Pick<ComponentProps<T>, \"class\" | \"children\">;\n\nconst CheckboxLabel = <T extends ValidComponent = \"label\">(props: CheckboxLabelProps<T>) => {\n  const [local, others] = splitProps(props as CheckboxLabelProps, [\"class\", \"children\"]);\n  return (\n    <CheckboxPrimitive.Label\n      data-slot=\"checkbox-label\"\n      class={cn(\n        \"font-medium text-sm leading-none peer-data-disabled:cursor-not-allowed peer-data-disabled:opacity-70\",\n        local.class,\n      )}\n      {...others}\n    >\n      {local.children}\n    </CheckboxPrimitive.Label>\n  );\n};\n\nexport { Checkbox, CheckboxLabel };\n\n```",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/examples/docs/checkbox-demo.tsx",
+          "integrity": "sha256:252277c0cfd8ef61580549121c69c6a6a5928ed268466de5ee6c9dad45921261"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/ui/checkbox.tsx",
+          "integrity": "sha256:b0f257bbd7fbbc7194929dc1c962b067a4a944d9626b72315dfd2e715c8d7ef4"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/pages/ui/kobalte/checkbox.mdx",
+          "integrity": "sha256:c8283060b21222a26aec05ad8bfb5c672b7e8b6cc26193d2f431019096069c2c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/styles/typeset.css",
+          "integrity": "sha256:8afe0f05aa8bc60e65dfbe40c9be895173724ed38b70266ea53cba9c129e98ac"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/lib/utils.ts",
+          "integrity": "sha256:b67c3f23e4fe3780735e586c729a787f6a6207e7132048df7f49896adf69bc09"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/ui/field.tsx",
+          "integrity": "sha256:01ca1564aa1ab23a59c54ed584f41fd54dfff2e3bacd1902e956a4f9f7c5056a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/ui/label.tsx",
+          "integrity": "sha256:9e2900cff38226957432a097dcdb11c36dbacabe17207c8e0494adf3c8b861b5"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/ui/separator.tsx",
+          "integrity": "sha256:e81f02037d68981a908011ec8272b86b6119da340b45dd10fcbdb2316fa53502"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/registry.json",
+          "integrity": "sha256:7a0b2f68f762793502df0ac7d431c9dec5b78f8d348d94aabafc3e64c9777fe0"
+        }
+      ]
+    },
+    {
+      "componentId": "zaidan/Dialog",
+      "title": "Dialog — official example and API",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/dialog",
+      "fetchedAt": "2026-10-29T18:56:49Z",
+      "sourceRevision": "271ffce00aaeee0dfa32f2321c9b6e212af39c3d",
+      "content": "Use the official Zaidan installation guide and shadcn registry. These examples select the original Kobalte foundation and Vega style. Preserve the registry styles, utilities, theme variables and style-vega class around portal roots. The official docs container uses Geist Variable; portalled content outside that container inherits Inter Variable from the body. Imports use the upstream @/registry/kobalte/ui paths and should be adapted to your copied component paths.\n\nPinned Solid runtime: 1.9.17. Component coverage is partial.\n\nVerified upstream limitation: Upstream exposes the visible Cancel button with the accessible name Dismiss. Its portalled Save changes button has no owning form, so it does not submit. This behavior was reproduced on the official Dialog page and in Col using Chrome 156.0.8078.48. Both controls remain inside the dialog portal; Cancel and Escape close it and restore trigger focus.\n\nDependency scope: the recorded packages and registry components cover this pinned component, its selected official example, and their imported UI/class helpers. They do not enumerate the full project toolchain or unselected variants. Packages: solid-js, @kobalte/core, class-variance-authority, clsx, tailwind-merge, lucide-solid. Other registry components: button, field, input, label, separator. The cn helper requires clsx and tailwind-merge; unrelated docs-server storage helpers are excluded.\n\nOfficial example (unchanged):\n```tsx\nimport { Button } from \"@/registry/kobalte/ui/button\";\nimport {\n  Dialog,\n  DialogClose,\n  DialogContent,\n  DialogDescription,\n  DialogFooter,\n  DialogHeader,\n  DialogTitle,\n  DialogTrigger,\n} from \"@/registry/kobalte/ui/dialog\";\nimport { Field, FieldGroup } from \"@/registry/kobalte/ui/field\";\nimport { Input } from \"@/registry/kobalte/ui/input\";\nimport { Label } from \"@/registry/kobalte/ui/label\";\n\nexport default function DialogDemo() {\n  return (\n    <Dialog>\n      <form onSubmit={(event) => event.preventDefault()}>\n        <DialogTrigger as={Button} variant=\"outline\">\n          Open Dialog\n        </DialogTrigger>\n        <DialogContent class=\"sm:max-w-sm\">\n          <DialogHeader>\n            <DialogTitle>Edit profile</DialogTitle>\n            <DialogDescription>\n              Make changes to your profile here. Click save when you're done.\n            </DialogDescription>\n          </DialogHeader>\n          <FieldGroup>\n            <Field>\n              <Label for=\"name-1\">Name</Label>\n              <Input id=\"name-1\" name=\"name\" value=\"Pedro Duarte\" />\n            </Field>\n            <Field>\n              <Label for=\"username-1\">Username</Label>\n              <Input id=\"username-1\" name=\"username\" value=\"@peduarte\" />\n            </Field>\n          </FieldGroup>\n          <DialogFooter>\n            <DialogClose as={Button} variant=\"outline\">\n              Cancel\n            </DialogClose>\n            <Button type=\"submit\">Save changes</Button>\n          </DialogFooter>\n        </DialogContent>\n      </form>\n    </Dialog>\n  );\n}\n\n```\n\nComponent implementation/API (unchanged):\n```tsx\nimport * as DialogPrimitive from \"@kobalte/core/dialog\";\nimport type { PolymorphicProps } from \"@kobalte/core/polymorphic\";\nimport { X } from \"lucide-solid\";\nimport type { Component, ComponentProps, ValidComponent } from \"solid-js\";\nimport { mergeProps, Show, splitProps } from \"solid-js\";\n\nimport { cn } from \"@/lib/utils\";\nimport { Button } from \"@/registry/kobalte/ui/button\";\n\nconst Dialog: Component<DialogPrimitive.DialogRootProps> = (props) => {\n  return <DialogPrimitive.Root data-slot=\"dialog\" {...props} />;\n};\n\ntype DialogTriggerProps<T extends ValidComponent = \"button\"> = PolymorphicProps<\n  T,\n  DialogPrimitive.DialogTriggerProps<T>\n>;\n\nconst DialogTrigger = <T extends ValidComponent = \"button\">(props: DialogTriggerProps<T>) => {\n  return <DialogPrimitive.Trigger data-slot=\"dialog-trigger\" {...props} />;\n};\n\nconst DialogPortal = (props: DialogPrimitive.DialogPortalProps) => {\n  return <DialogPrimitive.Portal data-slot=\"dialog-portal\" {...props} />;\n};\n\ntype DialogCloseProps<T extends ValidComponent = \"button\"> = PolymorphicProps<\n  T,\n  DialogPrimitive.DialogCloseButtonProps<T>\n>;\n\nconst DialogClose = <T extends ValidComponent = \"button\">(props: DialogCloseProps<T>) => {\n  return <DialogPrimitive.CloseButton data-slot=\"dialog-close\" {...props} />;\n};\n\ntype DialogOverlayProps<T extends ValidComponent = \"div\"> = PolymorphicProps<\n  T,\n  DialogPrimitive.DialogOverlayProps<T>\n> &\n  Pick<ComponentProps<T>, \"class\">;\n\nconst DialogOverlay = <T extends ValidComponent = \"div\">(props: DialogOverlayProps<T>) => {\n  const [local, others] = splitProps(props as DialogOverlayProps, [\"class\"]);\n  return (\n    <DialogPrimitive.Overlay\n      data-slot=\"dialog-overlay\"\n      class={cn(\"z-dialog-overlay fixed inset-0 isolate z-50\", local.class)}\n      {...others}\n    />\n  );\n};\n\ntype DialogContentProps<T extends ValidComponent = \"div\"> = PolymorphicProps<\n  T,\n  DialogPrimitive.DialogContentProps<T>\n> &\n  Pick<ComponentProps<T>, \"class\" | \"children\"> & {\n    showCloseButton?: boolean;\n  };\n\nconst DialogContent = <T extends ValidComponent = \"div\">(props: DialogContentProps<T>) => {\n  const mergedProps = mergeProps({ showCloseButton: true } as DialogContentProps, props);\n  const [local, others] = splitProps(mergedProps, [\"class\", \"children\", \"showCloseButton\"]);\n  return (\n    <DialogPortal>\n      <DialogOverlay />\n      <DialogPrimitive.Content\n        data-slot=\"dialog-content\"\n        class={cn(\n          \"z-dialog-content fixed top-1/2 left-1/2 z-50 w-full -translate-x-1/2 -translate-y-1/2 outline-none\",\n          local.class,\n        )}\n        {...others}\n      >\n        {local.children}\n        <Show when={local.showCloseButton}>\n          <DialogPrimitive.CloseButton\n            as={Button}\n            variant=\"ghost\"\n            size=\"icon-sm\"\n            data-slot=\"dialog-close\"\n            class=\"z-dialog-close\"\n          >\n            <X />\n            <span class=\"sr-only\">Close</span>\n          </DialogPrimitive.CloseButton>\n        </Show>\n      </DialogPrimitive.Content>\n    </DialogPortal>\n  );\n};\n\ntype DialogHeaderProps = ComponentProps<\"div\">;\n\nconst DialogHeader = (props: DialogHeaderProps) => {\n  const [local, others] = splitProps(props, [\"class\"]);\n  return (\n    <div\n      data-slot=\"dialog-header\"\n      class={cn(\"z-dialog-header flex flex-col\", local.class)}\n      {...others}\n    />\n  );\n};\n\ntype DialogFooterProps = ComponentProps<\"div\"> & {\n  showCloseButton?: boolean;\n};\n\nconst DialogFooter = (props: DialogFooterProps) => {\n  const mergedProps = mergeProps({ showCloseButton: false } as DialogFooterProps, props);\n  const [local, others] = splitProps(mergedProps, [\"class\", \"children\", \"showCloseButton\"]);\n  return (\n    <div\n      data-slot=\"dialog-footer\"\n      class={cn(\n        \"z-dialog-footer flex flex-col-reverse gap-2 sm:flex-row sm:justify-end\",\n        local.class,\n      )}\n      {...others}\n    >\n      {local.children}\n      <Show when={local.showCloseButton}>\n        <DialogPrimitive.CloseButton as={Button} variant=\"outline\">\n          Close\n        </DialogPrimitive.CloseButton>\n      </Show>\n    </div>\n  );\n};\n\ntype DialogTitleProps<T extends ValidComponent = \"h2\"> = PolymorphicProps<\n  T,\n  DialogPrimitive.DialogTitleProps<T>\n> &\n  Pick<ComponentProps<T>, \"class\">;\n\nconst DialogTitle = <T extends ValidComponent = \"h2\">(props: DialogTitleProps<T>) => {\n  const [local, others] = splitProps(props as DialogTitleProps, [\"class\"]);\n  return (\n    <DialogPrimitive.Title\n      data-slot=\"dialog-title\"\n      class={cn(\"z-dialog-title z-font-heading\", local.class)}\n      {...others}\n    />\n  );\n};\n\ntype DialogDescriptionProps<T extends ValidComponent = \"p\"> = PolymorphicProps<\n  T,\n  DialogPrimitive.DialogDescriptionProps<T>\n> &\n  Pick<ComponentProps<T>, \"class\">;\n\nconst DialogDescription = <T extends ValidComponent = \"p\">(props: DialogDescriptionProps<T>) => {\n  const [local, others] = splitProps(props as DialogDescriptionProps, [\"class\"]);\n  return (\n    <DialogPrimitive.Description\n      data-slot=\"dialog-description\"\n      class={cn(\"z-dialog-description\", local.class)}\n      {...others}\n    />\n  );\n};\n\nexport {\n  Dialog,\n  DialogClose,\n  DialogContent,\n  DialogDescription,\n  DialogFooter,\n  DialogHeader,\n  DialogOverlay,\n  DialogPortal,\n  DialogTitle,\n  DialogTrigger,\n};\n\n```",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/examples/docs/dialog-demo.tsx",
+          "integrity": "sha256:6856fff2ac8c5225bf4bf71130857bb2916bbdda4340801ad0fddb2251147731"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/ui/dialog.tsx",
+          "integrity": "sha256:ccb515ce4f3b7b4c7495fe9eb19b849858a1bd22cef80329b32dd7dd999261de"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/pages/ui/kobalte/dialog.mdx",
+          "integrity": "sha256:e05d89f3c752138e23f37a3603643c82b394506158b700f57f36e6a5ca8d697c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/styles/typeset.css",
+          "integrity": "sha256:8afe0f05aa8bc60e65dfbe40c9be895173724ed38b70266ea53cba9c129e98ac"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/ui/button.tsx",
+          "integrity": "sha256:6778766b3334490ae1d199a63e0c3c87f43da85a9732d32fb936626e58a1bc3f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/lib/utils.ts",
+          "integrity": "sha256:b67c3f23e4fe3780735e586c729a787f6a6207e7132048df7f49896adf69bc09"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/ui/field.tsx",
+          "integrity": "sha256:01ca1564aa1ab23a59c54ed584f41fd54dfff2e3bacd1902e956a4f9f7c5056a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/ui/label.tsx",
+          "integrity": "sha256:9e2900cff38226957432a097dcdb11c36dbacabe17207c8e0494adf3c8b861b5"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/ui/separator.tsx",
+          "integrity": "sha256:e81f02037d68981a908011ec8272b86b6119da340b45dd10fcbdb2316fa53502"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/ui/input.tsx",
+          "integrity": "sha256:b370b1fcbaf73c8945111b0889ba38314297df441514781ac202f1782441392b"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/src/registry/kobalte/registry.json",
+          "integrity": "sha256:7a0b2f68f762793502df0ac7d431c9dec5b78f8d348d94aabafc3e64c9777fe0"
+        }
+      ]
+    }
+  ]
+}

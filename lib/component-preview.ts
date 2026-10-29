@@ -9,6 +9,7 @@ import shadcnSources from "../data/component-previews/shadcn.json" with { type: 
 import packageStyles from "../data/component-previews/package-styles.json" with { type: "json" };
 import quoinBundles from "../data/component-previews/quoin.json" with { type: "json" };
 import quoinExamples from "../data/quoin/examples.json" with { type: "json" };
+import { solidPreviews, type SolidPreview } from "../data/component-previews/solid/index.ts";
 
 /** The public renderer accepts presentation data, never replacement source. */
 export const componentPreviewArgs = z.strictObject({
@@ -96,6 +97,22 @@ const sources: SourceRegistry = {
   libraryBlockers: extraSources.libraryBlockers,
 };
 const compiledStyles: Readonly<Record<string, { css: string }>> = packageStyles;
+const allSolidPreviews: Readonly<Record<string, SolidPreview>> = {
+  ...Object.fromEntries(Object.entries(quoinBundles.entries).flatMap(([name, bundle]) => {
+    const example = quoinExamples[name as keyof typeof quoinExamples];
+    if (!example) return [];
+    const preview: SolidPreview = {
+      code: bundle.code, css: example.css, package: quoinBundles.package, version: quoinBundles.version,
+      runtimeVersion: quoinBundles.runtimeVersion, exportName: name, source: example.source,
+      gaps: [...example.gaps,
+        `Solid ${quoinBundles.runtimeVersion} and Quoin ${quoinBundles.version} are pinned; the client's installed versions are not inspected.`,
+        "Quoin is unstyled. Example CSS and supplied CSS are applied; application fonts, providers, routing and backend actions are not reproduced.",
+        "The 40 examples were browser-tested in Chromium at desktop/mobile widths in both themes, including an MCP Apps test host. Other browser engines, assistive technology, and third-party MCP client UIs have not been verified."],
+    };
+    return [[`quoin-ui/${name}`, preview]];
+  })),
+  ...solidPreviews,
+};
 
 function packageRecipe(id: string): PackageRecipe | undefined {
   if (Object.hasOwn(packageRecipes, id)) return packageRecipes[id];
@@ -110,15 +127,20 @@ function packageRecipe(id: string): PackageRecipe | undefined {
 }
 
 export function componentPreviewSupport(id: string) {
-  const name = id.startsWith("quoin-ui/") ? id.slice("quoin-ui/".length) : "";
-  if (Object.hasOwn(quoinBundles.entries, name) && Object.hasOwn(quoinExamples, name)) {
-    const example = quoinExamples[name as keyof typeof quoinExamples];
-    return { available: true as const, runtime: "solid" as const, package: quoinBundles.package,
-      version: quoinBundles.version, exportName: name, source: example.source, assets: [],
-      gaps: [...example.gaps,
-        `Solid ${quoinBundles.runtimeVersion} and Quoin ${quoinBundles.version} are pinned; the client's installed versions are not inspected.`,
-        "Quoin is unstyled. Example CSS and supplied CSS are applied; application fonts, providers, routing and backend actions are not reproduced.",
-        "The 40 examples were browser-tested in Chromium at desktop/mobile widths in both themes, including an MCP Apps test host. Other browser engines, assistive technology, and third-party MCP client UIs have not been verified."] };
+  const solid = Object.hasOwn(allSolidPreviews, id) ? allSolidPreviews[id] : undefined;
+  if (solid) {
+    if (!solid.code?.trim() || !solid.css?.trim()) {
+      return { available: false as const, gaps: [...solid.gaps, "Preview unavailable: its verified component implementation or required stylesheet is missing."] };
+    }
+    const fontGap = solid.css.includes("data:font/") && !solid.assets?.some(asset => asset.mediaType.startsWith("font/"))
+      ? ["Embedded font sources and licenses are recorded in the repository's library provenance, but not individually listed in this preview's asset disclosure."] : [];
+    return { available: true as const, runtime: "solid" as const, package: solid.package,
+      version: solid.version, runtimeVersion: solid.runtimeVersion, exportName: solid.exportName,
+      source: { ...solid.source, integrity: solid.source.integrity.startsWith("sha256:") ? solid.source.integrity : `sha256:${solid.source.integrity}` }, assets: solid.assets ?? [],
+      gaps: Object.hasOwn(solidPreviews, id) ? [...solid.gaps, ...fontGap,
+        "This is a pinned example; other component variants and the client's installed versions are not inspected.",
+        "Application routing, backend actions, native APIs, and unrelated network services are not reproduced.",
+        "Browser and client compatibility depends on the host and the documented verification scope."] : solid.gaps };
   }
   const source = Object.hasOwn(sources.entries, id) ? sources.entries[id] : undefined;
   const recipe = source ?? packageRecipe(id);
@@ -157,10 +179,9 @@ export function createComponentPreview(args: z.infer<typeof componentPreviewArgs
   const source = Object.hasOwn(sources.entries, args.id) ? sources.entries[args.id] : undefined;
   const recipe = packageRecipe(args.id);
   const theme = args.theme ?? "light";
-  const solidName = args.id.slice("quoin-ui/".length);
-  const solid = "runtime" in support && support.runtime === "solid";
-  const css = solid ? quoinExamples[solidName as keyof typeof quoinExamples].css : source ? sources.styles[source.styleKey] : recipe?.compileCss ? compiledStyles[recipe.compileCss]?.css : "";
-  const implementation = solid ? quoinBundles.entries[solidName as keyof typeof quoinBundles.entries].code : transformPreviewAssets(args.id, source ? adaptPreviewSourceImports(args.id, source.code) : `${recipe!.imports}
+  const solid = Object.hasOwn(allSolidPreviews, args.id) ? allSolidPreviews[args.id] : undefined;
+  const css = solid ? solid.css : source ? sources.styles[source.styleKey] : recipe?.compileCss ? compiledStyles[recipe.compileCss]?.css : "";
+  const implementation = solid ? solid.code : transformPreviewAssets(args.id, source ? adaptPreviewSourceImports(args.id, source.code) : `${recipe!.imports}
 ${(recipe!.stylesheets ?? []).map((sheet) => `import ${JSON.stringify(sheet)};`).join("\n")}
 export default function LibraryPreview() { ${recipe!.setup ?? ""} return (${recipe!.jsx}); }`);
   const code = `const PREVIEW_THEME = ${JSON.stringify(theme)};

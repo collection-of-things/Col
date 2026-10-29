@@ -1,0 +1,106 @@
+{
+  "library": {
+    "name": "MagicUI Solid",
+    "slug": "magicui-solid",
+    "description": "A SolidJS port of Magic UI with copy-paste animated components and a shadcn-compatible registry.",
+    "url": "https://axuj.github.io/magicui-solid/",
+    "category": "Animation & Motion",
+    "stacks": [
+      "SolidJS",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "useCases": [
+      "Landing Pages",
+      "Micro-interactions",
+      "Marketing Sites"
+    ],
+    "tags": [
+      "Magic UI port",
+      "copy-paste",
+      "shadcn registry",
+      "animated components"
+    ],
+    "addedAt": "2026-10-29T19:35:27Z"
+  },
+  "details": {
+    "docsUrl": "https://axuj.github.io/magicui-solid/docs/installation/",
+    "repoUrl": "https://github.com/axuj/magicui-solid",
+    "pricing": {
+      "model": "free",
+      "summary": "The upstream README declares MIT licensing; its linked LICENSE file is absent at the pinned revision.",
+      "license": "MIT",
+      "source": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/README.md"
+    }
+  },
+  "components": [
+    {
+      "name": "Marquee",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/marquee/",
+      "dependencies": [
+        "solid-js",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "utils",
+        "theme"
+      ],
+      "kind": "visual-effect",
+      "summary": "Repeated horizontal or vertical content with optional reverse motion and hover pause.",
+      "verifiedAt": "2026-10-30"
+    },
+    {
+      "name": "Ripple Button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/ripple-button/",
+      "dependencies": [
+        "solid-js",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "utils",
+        "theme"
+      ],
+      "kind": "primitive",
+      "summary": "A styled Solid button that creates click-positioned animated ripples.",
+      "verifiedAt": "2026-10-30"
+    },
+    {
+      "name": "Shimmer Button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/shimmer-button/",
+      "dependencies": [
+        "solid-js",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "utils",
+        "theme"
+      ],
+      "kind": "primitive",
+      "summary": "A styled button with a moving conic-gradient border shimmer.",
+      "verifiedAt": "2026-10-30"
+    }
+  ],
+  "compatibility": [
+    {
+      "subject": "solid-js",
+      "constraint": "^1.9.5; previews verified with 1.9.17",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/package.json"
+    },
+    {
+      "subject": "tailwindcss",
+      "constraint": "^4.3.3; previews compiled with 4.3.3",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/package.json"
+    },
+    {
+      "subject": "solid-js 2",
+      "constraint": "",
+      "status": "unknown",
+      "evidence": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/package.json"
+    }
+  ]
+}

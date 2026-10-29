@@ -1,0 +1,395 @@
+/*
+ * @hope-ui/presets/hope/theme.css — hope's semantic token *values* (the default look).
+ *
+ * hope authors its `--hope-*` custom properties directly in CSS (here), not in TypeScript. Each
+ * value points at a Tailwind palette var via `var(--color-*)`, so the theme stays in lockstep with
+ * Tailwind's scale; the derived colors (`focus-halo`, `scrim`) are `color-mix(...)` — authoring a
+ * derived value in the preset is allowed (the preset owns the raw scale); recipes stay pure. The
+ * shared `_base/_theme-map.css` maps the color `--hope-*` names into clean Tailwind utilities
+ * (`bg-primary`, `text-primary-emphasis`, …); `_base/_opacity.css` exposes the opacity axis.
+ *
+ * This is a **standalone subpath** (`@hope-ui/presets/hope/theme.css`), imported by the consumer
+ * directly, *after* `./tailwind.css` — not from within it — so the token layer is opt-out: skip it
+ * and import your own `theme.css` to restyle every token. Its declarations land in the consumer's
+ * compiled stylesheet, where:
+ *   - the `var(--color-*)` references keep Tailwind v4 from tree-shaking the palette shades this
+ *     preset uses (no `@source` scan trick needed — the references are literally in the CSS), and
+ *   - `<ThemeProvider preset={hope}>` renders no DOM of its own (hope is a zero-DOM preset).
+ *
+ * Interaction ladder convention: each variant owns its full rest → hovered → pressed ladder, and
+ * every `(role × variant × state)` is its own flat token (no borrowing across variants). hope's
+ * defaults collapse the ladder's last rung — every `-pressed` ships equal to its `-hovered` value,
+ * so press and hover paint identically — while keeping `-pressed` a real, overridable token a
+ * consumer can repoint. In light mode a state darkens one scale step (rest 600 → hovered/pressed
+ * 700); in dark mode it lightens (rest 400 → hovered/pressed 300).
+ *
+ * `.dark` follows `:root`: both selectors have equal specificity, so source order decides, and the
+ * dark overrides win whenever the `.dark` class (see `_base/_variants.css`) is present. Conformance
+ * checks only `:root`, so the two blocks are kept in lockstep by hand — 142 color tokens each.
+ */
+
+:root {
+  /* Surfaces (elevation) */
+  --hope-surface: var(--color-white);
+  --hope-surface-raised: var(--color-white);
+  --hope-surface-raised-hovered: var(--color-neutral-100);
+  --hope-surface-raised-pressed: var(--color-neutral-100);
+  --hope-surface-overlay: var(--color-white);
+  --hope-surface-sunken: var(--color-neutral-50);
+  /*
+   * Tonal, not an elevation step — mixed *into* the surface it sits on, so the same token darkens a
+   * light card and lightens a dark one. That direction-flip is the whole point: `surface-sunken` is
+   * one step below the *page*, which in dark mode is already near-black, so a "well" inside a
+   * neutral-900 card can only paint a hole. Anchoring the mix to `--hope-surface-overlay` (rather
+   * than to a fixed shade) means a consumer who repoints their overlay gets a footer that still
+   * tracks it.
+   */
+  --hope-surface-muted: color-mix(in oklab, var(--color-neutral-100) 50%, var(--hope-surface-overlay));
+  --hope-surface-inverse: var(--color-neutral-900);
+
+  /* Standard text ramp (on neutral surfaces) */
+  --hope-foreground: var(--color-neutral-900);
+  --hope-foreground-muted: var(--color-neutral-600);
+  --hope-foreground-subtle: var(--color-neutral-400);
+  --hope-foreground-disabled: var(--color-neutral-300);
+
+  /* On-state text (inverse surface + collection states) */
+  --hope-on-inverse: var(--color-neutral-50);
+  --hope-on-active: var(--color-neutral-900);
+  --hope-on-selected: var(--color-violet-700);
+
+  /* primary (violet) */
+  --hope-primary: var(--color-violet-600);
+  --hope-primary-hovered: var(--color-violet-700);
+  --hope-primary-pressed: var(--color-violet-700);
+  --hope-primary-soft: var(--color-violet-100);
+  --hope-primary-soft-hovered: var(--color-violet-200);
+  --hope-primary-soft-pressed: var(--color-violet-200);
+  --hope-primary-outline-hovered: var(--color-violet-100);
+  --hope-primary-outline-pressed: var(--color-violet-100);
+  --hope-primary-ghost-hovered: var(--color-violet-100);
+  --hope-primary-ghost-pressed: var(--color-violet-100);
+  --hope-primary-inverted: var(--color-white);
+  --hope-primary-inverted-hovered: var(--color-neutral-100);
+  --hope-primary-inverted-pressed: var(--color-neutral-100);
+  --hope-primary-line: var(--color-violet-300);
+  --hope-primary-subtle-line: var(--color-violet-200);
+  --hope-primary-emphasis: var(--color-violet-700);
+  --hope-primary-link-hovered: var(--color-violet-800);
+  --hope-primary-link-pressed: var(--color-violet-800);
+  --hope-on-primary: var(--color-white);
+  --hope-on-primary-inverted: var(--color-violet-600);
+
+  /* neutral (two-tier role border: `-line` strong + `-subtle-line` soft) */
+  --hope-neutral: var(--color-neutral-700);
+  --hope-neutral-hovered: var(--color-neutral-800);
+  --hope-neutral-pressed: var(--color-neutral-800);
+  --hope-neutral-soft: var(--color-neutral-100);
+  --hope-neutral-soft-hovered: var(--color-neutral-200);
+  --hope-neutral-soft-pressed: var(--color-neutral-200);
+  --hope-neutral-outline-hovered: var(--color-neutral-100);
+  --hope-neutral-outline-pressed: var(--color-neutral-100);
+  --hope-neutral-ghost-hovered: var(--color-neutral-100);
+  --hope-neutral-ghost-pressed: var(--color-neutral-100);
+  --hope-neutral-inverted: var(--color-white);
+  --hope-neutral-inverted-hovered: var(--color-neutral-100);
+  --hope-neutral-inverted-pressed: var(--color-neutral-100);
+  --hope-neutral-line: var(--color-neutral-300);
+  --hope-neutral-subtle-line: var(--color-neutral-200);
+  --hope-neutral-emphasis: var(--color-neutral-700);
+  --hope-neutral-link-hovered: var(--color-neutral-800);
+  --hope-neutral-link-pressed: var(--color-neutral-800);
+  --hope-on-neutral: var(--color-white);
+  --hope-on-neutral-inverted: var(--color-neutral-700);
+
+  /* success (green) */
+  --hope-success: var(--color-green-600);
+  --hope-success-hovered: var(--color-green-700);
+  --hope-success-pressed: var(--color-green-700);
+  --hope-success-soft: var(--color-green-100);
+  --hope-success-soft-hovered: var(--color-green-200);
+  --hope-success-soft-pressed: var(--color-green-200);
+  --hope-success-outline-hovered: var(--color-green-100);
+  --hope-success-outline-pressed: var(--color-green-100);
+  --hope-success-ghost-hovered: var(--color-green-100);
+  --hope-success-ghost-pressed: var(--color-green-100);
+  --hope-success-inverted: var(--color-white);
+  --hope-success-inverted-hovered: var(--color-neutral-100);
+  --hope-success-inverted-pressed: var(--color-neutral-100);
+  --hope-success-line: var(--color-green-300);
+  --hope-success-subtle-line: var(--color-green-200);
+  --hope-success-emphasis: var(--color-green-700);
+  --hope-success-link-hovered: var(--color-green-800);
+  --hope-success-link-pressed: var(--color-green-800);
+  --hope-on-success: var(--color-white);
+  --hope-on-success-inverted: var(--color-green-600);
+
+  /* info (sky) */
+  --hope-info: var(--color-sky-600);
+  --hope-info-hovered: var(--color-sky-700);
+  --hope-info-pressed: var(--color-sky-700);
+  --hope-info-soft: var(--color-sky-100);
+  --hope-info-soft-hovered: var(--color-sky-200);
+  --hope-info-soft-pressed: var(--color-sky-200);
+  --hope-info-outline-hovered: var(--color-sky-100);
+  --hope-info-outline-pressed: var(--color-sky-100);
+  --hope-info-ghost-hovered: var(--color-sky-100);
+  --hope-info-ghost-pressed: var(--color-sky-100);
+  --hope-info-inverted: var(--color-white);
+  --hope-info-inverted-hovered: var(--color-neutral-100);
+  --hope-info-inverted-pressed: var(--color-neutral-100);
+  --hope-info-line: var(--color-sky-300);
+  --hope-info-subtle-line: var(--color-sky-200);
+  --hope-info-emphasis: var(--color-sky-700);
+  --hope-info-link-hovered: var(--color-sky-800);
+  --hope-info-link-pressed: var(--color-sky-800);
+  --hope-on-info: var(--color-white);
+  --hope-on-info-inverted: var(--color-sky-600);
+
+  /* warning (amber) — a light fill, so `on-warning` is dark and the emphasis ramp sits deeper */
+  --hope-warning: var(--color-amber-400);
+  --hope-warning-hovered: var(--color-amber-500);
+  --hope-warning-pressed: var(--color-amber-500);
+  --hope-warning-soft: var(--color-amber-100);
+  --hope-warning-soft-hovered: var(--color-amber-200);
+  --hope-warning-soft-pressed: var(--color-amber-200);
+  --hope-warning-outline-hovered: var(--color-amber-100);
+  --hope-warning-outline-pressed: var(--color-amber-100);
+  --hope-warning-ghost-hovered: var(--color-amber-100);
+  --hope-warning-ghost-pressed: var(--color-amber-100);
+  /* warning's on-color is dark (taupe-900), so its inverted fill is a dark chip that *lightens* on
+     interaction; the content is amber (the role color) — the honest, symmetric swap of solid. */
+  --hope-warning-inverted: var(--color-taupe-900);
+  --hope-warning-inverted-hovered: var(--color-taupe-800);
+  --hope-warning-inverted-pressed: var(--color-taupe-800);
+  --hope-warning-line: var(--color-amber-400);
+  --hope-warning-subtle-line: var(--color-amber-300);
+  --hope-warning-emphasis: var(--color-amber-800);
+  --hope-warning-link-hovered: var(--color-amber-900);
+  --hope-warning-link-pressed: var(--color-amber-900);
+  --hope-on-warning: var(--color-taupe-900);
+  --hope-on-warning-inverted: var(--color-amber-400);
+
+  /* danger (red) */
+  --hope-danger: var(--color-red-600);
+  --hope-danger-hovered: var(--color-red-700);
+  --hope-danger-pressed: var(--color-red-700);
+  --hope-danger-soft: var(--color-red-100);
+  --hope-danger-soft-hovered: var(--color-red-200);
+  --hope-danger-soft-pressed: var(--color-red-200);
+  --hope-danger-outline-hovered: var(--color-red-100);
+  --hope-danger-outline-pressed: var(--color-red-100);
+  --hope-danger-ghost-hovered: var(--color-red-100);
+  --hope-danger-ghost-pressed: var(--color-red-100);
+  --hope-danger-inverted: var(--color-white);
+  --hope-danger-inverted-hovered: var(--color-neutral-100);
+  --hope-danger-inverted-pressed: var(--color-neutral-100);
+  --hope-danger-line: var(--color-red-300);
+  --hope-danger-subtle-line: var(--color-red-200);
+  --hope-danger-emphasis: var(--color-red-700);
+  --hope-danger-link-hovered: var(--color-red-800);
+  --hope-danger-link-pressed: var(--color-red-800);
+  --hope-on-danger: var(--color-white);
+  --hope-on-danger-inverted: var(--color-red-600);
+
+  /* Neutral borders */
+  --hope-subtle: var(--color-neutral-200);
+  --hope-strong: var(--color-neutral-300);
+
+  /* Collection-state fills (`active` = transient highlight; `selected` = persistent chosen) */
+  --hope-active: var(--color-neutral-100);
+  --hope-selected: var(--color-violet-100);
+
+  /* Systemic */
+  --hope-focus: var(--color-violet-600);
+  --hope-focus-halo: color-mix(in oklab, var(--color-violet-600) 50%, transparent);
+  --hope-scrim: color-mix(in oklab, var(--color-neutral-900) 50%, transparent);
+
+  /*
+   * Surface-adaptive interaction wash (part of the surface family). Unlike every token above, these
+   * mix against `currentColor` — the inherited text color — not a fixed shade, so a control with no
+   * rest background of its own (CloseButton, or Button's `adaptive` variant) tints correctly on any
+   * surface (solid / soft / light / dark) without a colorScheme. `currentColor` resolves at the use
+   * site, so there is deliberately **no `.dark` counterpart** — it already flips per surface. The
+   * `color-mix` lives here (the preset owns raw color math); recipes reference only the finished
+   * `bg-surface-adaptive-*` utilities. Focus is not special-cased — a surface-adaptive control uses
+   * the shared `focus-halo` ring, same as every other Button variant.
+   */
+  --hope-surface-adaptive-hovered: color-mix(in oklab, currentColor 10%, transparent);
+  --hope-surface-adaptive-pressed: color-mix(in oklab, currentColor 15%, transparent);
+
+  /* Opacity axis (dim applied to a disabled control / to content obscured while loading) */
+  --hope-opacity-disabled: 0.4;
+  --hope-opacity-loading: 1;
+
+  /* Radius knob — drives the whole `--radius-*` scale (see `./tailwind.css`). shadcn's base. */
+  --hope-radius: 0.625rem;
+}
+
+.dark {
+  /* Surfaces (elevation) */
+  --hope-surface: var(--color-neutral-950);
+  --hope-surface-raised: var(--color-neutral-900);
+  --hope-surface-raised-hovered: var(--color-neutral-800);
+  --hope-surface-raised-pressed: var(--color-neutral-800);
+  --hope-surface-overlay: var(--color-neutral-900);
+  --hope-surface-sunken: var(--color-black);
+  --hope-surface-muted: color-mix(in oklab, var(--color-neutral-800) 50%, var(--hope-surface-overlay));
+  --hope-surface-inverse: var(--color-neutral-50);
+
+  /* Standard text ramp (on neutral surfaces) */
+  --hope-foreground: var(--color-neutral-50);
+  --hope-foreground-muted: var(--color-neutral-400);
+  --hope-foreground-subtle: var(--color-neutral-500);
+  --hope-foreground-disabled: var(--color-neutral-600);
+
+  /* On-state text (inverse surface + collection states) */
+  --hope-on-inverse: var(--color-neutral-900);
+  --hope-on-active: var(--color-neutral-50);
+  --hope-on-selected: var(--color-violet-200);
+
+  /* primary (violet) */
+  --hope-primary: var(--color-violet-400);
+  --hope-primary-hovered: var(--color-violet-300);
+  --hope-primary-pressed: var(--color-violet-300);
+  --hope-primary-soft: var(--color-violet-950);
+  --hope-primary-soft-hovered: var(--color-violet-900);
+  --hope-primary-soft-pressed: var(--color-violet-900);
+  --hope-primary-outline-hovered: var(--color-violet-950);
+  --hope-primary-outline-pressed: var(--color-violet-950);
+  --hope-primary-ghost-hovered: var(--color-violet-950);
+  --hope-primary-ghost-pressed: var(--color-violet-950);
+  --hope-primary-inverted: var(--color-neutral-950);
+  --hope-primary-inverted-hovered: var(--color-neutral-900);
+  --hope-primary-inverted-pressed: var(--color-neutral-900);
+  --hope-primary-line: var(--color-violet-700);
+  --hope-primary-subtle-line: var(--color-violet-800);
+  --hope-primary-emphasis: var(--color-violet-200);
+  --hope-primary-link-hovered: var(--color-violet-100);
+  --hope-primary-link-pressed: var(--color-violet-100);
+  --hope-on-primary: var(--color-neutral-950);
+  --hope-on-primary-inverted: var(--color-violet-400);
+
+  /* neutral (two-tier role border: `-line` strong + `-subtle-line` soft) */
+  --hope-neutral: var(--color-neutral-300);
+  --hope-neutral-hovered: var(--color-neutral-200);
+  --hope-neutral-pressed: var(--color-neutral-200);
+  --hope-neutral-soft: var(--color-neutral-800);
+  --hope-neutral-soft-hovered: var(--color-neutral-700);
+  --hope-neutral-soft-pressed: var(--color-neutral-700);
+  --hope-neutral-outline-hovered: var(--color-neutral-800);
+  --hope-neutral-outline-pressed: var(--color-neutral-800);
+  --hope-neutral-ghost-hovered: var(--color-neutral-800);
+  --hope-neutral-ghost-pressed: var(--color-neutral-800);
+  --hope-neutral-inverted: var(--color-neutral-950);
+  --hope-neutral-inverted-hovered: var(--color-neutral-900);
+  --hope-neutral-inverted-pressed: var(--color-neutral-900);
+  --hope-neutral-line: var(--color-neutral-700);
+  --hope-neutral-subtle-line: var(--color-neutral-800);
+  --hope-neutral-emphasis: var(--color-neutral-200);
+  --hope-neutral-link-hovered: var(--color-neutral-100);
+  --hope-neutral-link-pressed: var(--color-neutral-100);
+  --hope-on-neutral: var(--color-neutral-950);
+  --hope-on-neutral-inverted: var(--color-neutral-300);
+
+  /* success (green) */
+  --hope-success: var(--color-green-400);
+  --hope-success-hovered: var(--color-green-300);
+  --hope-success-pressed: var(--color-green-300);
+  --hope-success-soft: var(--color-green-950);
+  --hope-success-soft-hovered: var(--color-green-900);
+  --hope-success-soft-pressed: var(--color-green-900);
+  --hope-success-outline-hovered: var(--color-green-950);
+  --hope-success-outline-pressed: var(--color-green-950);
+  --hope-success-ghost-hovered: var(--color-green-950);
+  --hope-success-ghost-pressed: var(--color-green-950);
+  --hope-success-inverted: var(--color-neutral-950);
+  --hope-success-inverted-hovered: var(--color-neutral-900);
+  --hope-success-inverted-pressed: var(--color-neutral-900);
+  --hope-success-line: var(--color-green-700);
+  --hope-success-subtle-line: var(--color-green-800);
+  --hope-success-emphasis: var(--color-green-200);
+  --hope-success-link-hovered: var(--color-green-100);
+  --hope-success-link-pressed: var(--color-green-100);
+  --hope-on-success: var(--color-neutral-950);
+  --hope-on-success-inverted: var(--color-green-400);
+
+  /* info (sky) */
+  --hope-info: var(--color-sky-400);
+  --hope-info-hovered: var(--color-sky-300);
+  --hope-info-pressed: var(--color-sky-300);
+  --hope-info-soft: var(--color-sky-950);
+  --hope-info-soft-hovered: var(--color-sky-900);
+  --hope-info-soft-pressed: var(--color-sky-900);
+  --hope-info-outline-hovered: var(--color-sky-950);
+  --hope-info-outline-pressed: var(--color-sky-950);
+  --hope-info-ghost-hovered: var(--color-sky-950);
+  --hope-info-ghost-pressed: var(--color-sky-950);
+  --hope-info-inverted: var(--color-neutral-950);
+  --hope-info-inverted-hovered: var(--color-neutral-900);
+  --hope-info-inverted-pressed: var(--color-neutral-900);
+  --hope-info-line: var(--color-sky-700);
+  --hope-info-subtle-line: var(--color-sky-800);
+  --hope-info-emphasis: var(--color-sky-200);
+  --hope-info-link-hovered: var(--color-sky-100);
+  --hope-info-link-pressed: var(--color-sky-100);
+  --hope-on-info: var(--color-neutral-950);
+  --hope-on-info-inverted: var(--color-sky-400);
+
+  /* warning (amber) */
+  --hope-warning: var(--color-amber-600);
+  --hope-warning-hovered: var(--color-amber-500);
+  --hope-warning-pressed: var(--color-amber-500);
+  --hope-warning-soft: var(--color-amber-950);
+  --hope-warning-soft-hovered: var(--color-amber-900);
+  --hope-warning-soft-pressed: var(--color-amber-900);
+  --hope-warning-outline-hovered: var(--color-amber-950);
+  --hope-warning-outline-pressed: var(--color-amber-950);
+  --hope-warning-ghost-hovered: var(--color-amber-950);
+  --hope-warning-ghost-pressed: var(--color-amber-950);
+  --hope-warning-inverted: var(--color-neutral-950);
+  --hope-warning-inverted-hovered: var(--color-neutral-900);
+  --hope-warning-inverted-pressed: var(--color-neutral-900);
+  --hope-warning-line: var(--color-amber-600);
+  --hope-warning-subtle-line: var(--color-amber-700);
+  --hope-warning-emphasis: var(--color-amber-200);
+  --hope-warning-link-hovered: var(--color-amber-100);
+  --hope-warning-link-pressed: var(--color-amber-100);
+  --hope-on-warning: var(--color-neutral-950);
+  --hope-on-warning-inverted: var(--color-amber-600);
+
+  /* danger (red) */
+  --hope-danger: var(--color-red-400);
+  --hope-danger-hovered: var(--color-red-300);
+  --hope-danger-pressed: var(--color-red-300);
+  --hope-danger-soft: var(--color-red-950);
+  --hope-danger-soft-hovered: var(--color-red-900);
+  --hope-danger-soft-pressed: var(--color-red-900);
+  --hope-danger-outline-hovered: var(--color-red-950);
+  --hope-danger-outline-pressed: var(--color-red-950);
+  --hope-danger-ghost-hovered: var(--color-red-950);
+  --hope-danger-ghost-pressed: var(--color-red-950);
+  --hope-danger-inverted: var(--color-neutral-950);
+  --hope-danger-inverted-hovered: var(--color-neutral-900);
+  --hope-danger-inverted-pressed: var(--color-neutral-900);
+  --hope-danger-line: var(--color-red-700);
+  --hope-danger-subtle-line: var(--color-red-800);
+  --hope-danger-emphasis: var(--color-red-200);
+  --hope-danger-link-hovered: var(--color-red-100);
+  --hope-danger-link-pressed: var(--color-red-100);
+  --hope-on-danger: var(--color-neutral-950);
+  --hope-on-danger-inverted: var(--color-red-400);
+
+  /* Neutral borders */
+  --hope-subtle: var(--color-neutral-800);
+  --hope-strong: var(--color-neutral-700);
+
+  /* Collection-state fills (`active` = transient highlight; `selected` = persistent chosen) */
+  --hope-active: var(--color-neutral-800);
+  --hope-selected: var(--color-violet-950);
+
+  /* Systemic */
+  --hope-focus: var(--color-violet-500);
+  --hope-focus-halo: color-mix(in oklab, var(--color-violet-500) 50%, transparent);
+  --hope-scrim: color-mix(in oklab, var(--color-black) 70%, transparent);
+}

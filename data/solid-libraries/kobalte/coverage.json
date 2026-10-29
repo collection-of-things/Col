@@ -1,0 +1,335 @@
+{
+  "checkedAt": "2026-10-30",
+  "source": "https://kobalte.dev/docs/core/components/button",
+  "sourceIntegrity": "52f1af400895884e5d985ca8bdba853676aaaf923f18b589424d1a31e877631e",
+  "revision": "675b4a11f4f074007c98b47a573760a1b60849ff",
+  "selectedComponents": [
+    "Button",
+    "Dialog",
+    "Tabs"
+  ],
+  "documentationInventory": [
+    {
+      "name": "Accordion",
+      "url": "https://kobalte.dev/docs/core/components/accordion",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Alert Dialog",
+      "url": "https://kobalte.dev/docs/core/components/alert-dialog",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Alert",
+      "url": "https://kobalte.dev/docs/core/components/alert",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Badge",
+      "url": "https://kobalte.dev/docs/core/components/badge",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Breadcrumbs",
+      "url": "https://kobalte.dev/docs/core/components/breadcrumbs",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Button",
+      "url": "https://kobalte.dev/docs/core/components/button",
+      "httpStatus": 200,
+      "preview": "supported",
+      "documentation": "source-snapshot"
+    },
+    {
+      "name": "Checkbox",
+      "url": "https://kobalte.dev/docs/core/components/checkbox",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Collapsible",
+      "url": "https://kobalte.dev/docs/core/components/collapsible",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Color Area",
+      "url": "https://kobalte.dev/docs/core/components/color-area",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Color Channel Field",
+      "url": "https://kobalte.dev/docs/core/components/color-channel-field",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Color Field",
+      "url": "https://kobalte.dev/docs/core/components/color-field",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Color Slider",
+      "url": "https://kobalte.dev/docs/core/components/color-slider",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Color Swatch",
+      "url": "https://kobalte.dev/docs/core/components/color-swatch",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Color Wheel",
+      "url": "https://kobalte.dev/docs/core/components/color-wheel",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Combobox",
+      "url": "https://kobalte.dev/docs/core/components/combobox",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Context Menu",
+      "url": "https://kobalte.dev/docs/core/components/context-menu",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Dialog",
+      "url": "https://kobalte.dev/docs/core/components/dialog",
+      "httpStatus": 200,
+      "preview": "supported",
+      "documentation": "source-snapshot"
+    },
+    {
+      "name": "Dropdown Menu",
+      "url": "https://kobalte.dev/docs/core/components/dropdown-menu",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "File Field",
+      "url": "https://kobalte.dev/docs/core/components/file-field",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Hover Card",
+      "url": "https://kobalte.dev/docs/core/components/hover-card",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Image",
+      "url": "https://kobalte.dev/docs/core/components/image",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Link",
+      "url": "https://kobalte.dev/docs/core/components/link",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Menubar",
+      "url": "https://kobalte.dev/docs/core/components/menubar",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Meter",
+      "url": "https://kobalte.dev/docs/core/components/meter",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Navigation Menu",
+      "url": "https://kobalte.dev/docs/core/components/navigation-menu",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Number Field",
+      "url": "https://kobalte.dev/docs/core/components/number-field",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Pagination",
+      "url": "https://kobalte.dev/docs/core/components/pagination",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Popover",
+      "url": "https://kobalte.dev/docs/core/components/popover",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Progress",
+      "url": "https://kobalte.dev/docs/core/components/progress",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Radio Group",
+      "url": "https://kobalte.dev/docs/core/components/radio-group",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Rating",
+      "url": "https://kobalte.dev/docs/core/components/rating",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Search",
+      "url": "https://kobalte.dev/docs/core/components/search",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Segmented Control",
+      "url": "https://kobalte.dev/docs/core/components/segmented-control",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Select",
+      "url": "https://kobalte.dev/docs/core/components/select",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Separator",
+      "url": "https://kobalte.dev/docs/core/components/separator",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Skeleton",
+      "url": "https://kobalte.dev/docs/core/components/skeleton",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Slider",
+      "url": "https://kobalte.dev/docs/core/components/slider",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Switch",
+      "url": "https://kobalte.dev/docs/core/components/switch",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Tabs",
+      "url": "https://kobalte.dev/docs/core/components/tabs",
+      "httpStatus": 200,
+      "preview": "supported",
+      "documentation": "source-snapshot"
+    },
+    {
+      "name": "Text Field",
+      "url": "https://kobalte.dev/docs/core/components/text-field",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Time Field",
+      "url": "https://kobalte.dev/docs/core/components/time-field",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Toast",
+      "url": "https://kobalte.dev/docs/core/components/toast",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Toggle Button",
+      "url": "https://kobalte.dev/docs/core/components/toggle-button",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Toggle Group",
+      "url": "https://kobalte.dev/docs/core/components/toggle-group",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Tooltip",
+      "url": "https://kobalte.dev/docs/core/components/tooltip",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "I18n Provider",
+      "url": "https://kobalte.dev/docs/core/components/i18n-provider",
+      "httpStatus": 200,
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    }
+  ]
+}

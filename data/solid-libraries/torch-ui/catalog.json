@@ -1,0 +1,100 @@
+{
+  "library": {
+    "name": "TorchUI",
+    "slug": "torch-ui",
+    "description": "Styled SolidJS components built on Kobalte with Tailwind CSS themes, light and dark modes.",
+    "url": "https://torch-ui.dev/",
+    "category": "Component Library",
+    "stacks": [
+      "SolidJS",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "useCases": [
+      "Dashboards",
+      "Accessibility-first"
+    ],
+    "tags": [
+      "kobalte",
+      "themeable"
+    ],
+    "addedAt": "2026-10-30T00:34:31+05:30"
+  },
+  "details": {
+    "docsUrl": "https://torch-ui.dev/installation",
+    "repoUrl": "https://github.com/sean-dowd-sr/torch-ui",
+    "pricing": {
+      "model": "free",
+      "summary": "The component source is free under the MIT license, with third-party notices.",
+      "license": "MIT",
+      "source": "https://github.com/sean-dowd-sr/torch-ui/blob/2bd057316175457ff1e5103b961867cf388bf73f/LICENSE"
+    }
+  },
+  "components": [
+    {
+      "name": "Button",
+      "url": "https://torch-ui.dev/actions/button",
+      "kind": "full-pattern",
+      "summary": "A themed button or toggle button with variants, sizes, and pressed state.",
+      "concept": "button",
+      "verifiedAt": "2026-10-29T19:04:31Z",
+      "builtOn": "@kobalte/core",
+      "dependencies": [
+        "@torch-ui/solid",
+        "@kobalte/core",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Dialog",
+      "url": "https://torch-ui.dev/overlays/dialog",
+      "kind": "full-pattern",
+      "summary": "A controlled modal overlay with header, footer, close controls, and transitions.",
+      "concept": "dialog",
+      "verifiedAt": "2026-10-29T19:04:31Z",
+      "builtOn": "@kobalte/core",
+      "dependencies": [
+        "@torch-ui/solid",
+        "@kobalte/core",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Accordion",
+      "url": "https://torch-ui.dev/layout/accordion",
+      "kind": "full-pattern",
+      "summary": "Styled Kobalte accordion items with triggers and animated content.",
+      "concept": "accordion",
+      "verifiedAt": "2026-10-29T19:04:31Z",
+      "builtOn": "@kobalte/core",
+      "dependencies": [
+        "@torch-ui/solid",
+        "@kobalte/core",
+        "solid-js",
+        "tailwindcss"
+      ]
+    }
+  ],
+  "compatibility": [
+    {
+      "subject": "solid-js",
+      "constraint": "^1.9.0; preview pinned to 1.9.11",
+      "status": "supported",
+      "evidence": "https://github.com/sean-dowd-sr/torch-ui/blob/2bd057316175457ff1e5103b961867cf388bf73f/package.json"
+    },
+    {
+      "subject": "@kobalte/core",
+      "constraint": ">=0.13.11; preview pinned to 0.13.11",
+      "status": "supported",
+      "evidence": "https://github.com/sean-dowd-sr/torch-ui/blob/2bd057316175457ff1e5103b961867cf388bf73f/package.json"
+    },
+    {
+      "subject": "tailwindcss",
+      "constraint": "^4.0.0; preview compiled with 4.2.1",
+      "status": "supported",
+      "evidence": "https://github.com/sean-dowd-sr/torch-ui/blob/2bd057316175457ff1e5103b961867cf388bf73f/package.json"
+    }
+  ]
+}

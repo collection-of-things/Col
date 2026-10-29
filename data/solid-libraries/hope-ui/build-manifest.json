@@ -1,0 +1,2270 @@
+{
+  "Button": {
+    "codeIntegrity": "e4b8674fd666905eae69f8dc51ce7e02e96583b73f053b590f7625d7da2a96f2",
+    "cssIntegrity": "9df525d79a0a859194fed7580233481e16bc6c12f8746ff07bc9badcec35ae0f",
+    "lockIntegrity": "e8141d77264a0290d1c69489abfe4a121e8abb5b11f0fa4c7f6fb15f018a20fc",
+    "styleInputs": [
+      {
+        "path": "node_modules/tailwindcss/index.css",
+        "sha256": "175f88737ecb7e033059eac4a3b22a3b5f971d5a05d9fd50811610a0714633b2"
+      },
+      {
+        "path": "node_modules/tailwindcss/preflight.css",
+        "sha256": "ace8310eed6dc5568a56fc16e1d695cf58da7528d81d66d81649e93cce644df6"
+      },
+      {
+        "path": "node_modules/tailwindcss/theme.css",
+        "sha256": "443d7af364200f8ec8352dc78e39485a118a1840d498c97967bf0ae402b39167"
+      },
+      {
+        "path": "node_modules/tailwindcss/utilities.css",
+        "sha256": "0e5844ec75de2fb4a76097b26bb624bf8f9d9cf59f6d947855b743dd25f920fb"
+      },
+      {
+        "path": "node_modules/tailwindcss/LICENSE",
+        "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/tailwind.css",
+        "sha256": "dbf57820479931a104304e9cd4c8be57a61e9a7d69672358f9239dce3db816e8"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/theme.css",
+        "sha256": "3557312228d2b9f93a4d24b03d58e6e15a6904ab8fb3080fbb1681530cd1490d"
+      }
+    ],
+    "inputs": [
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/error.js",
+        "sha256": "635596a52d887368153be0bd2df5d277a4cc49d91c36374f4be2540280cd871a"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/constants.js",
+        "sha256": "f3bc198d45a893ec271d43044115d8b9c6f2785a6e6d119e79f8dffd292b3280"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/invariants.js",
+        "sha256": "66f533dfdca6e5610ae08505b581e018ce44a62662e76dafe2bb91cdb57f9622"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/dev.js",
+        "sha256": "af9b29d055b17baa1dc1152bdae7e9b04d32631b6fff8285c1afb1898e7ad0b6"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/lanes.js",
+        "sha256": "098318780943862561f145b7722f1d8eacfef0234d85960b62c9b170d84c4cbd"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/scheduler.js",
+        "sha256": "abf9a737fb88145af7eac159a216723b3f53b8873f0857445b2b75c7a6155a47"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/heap.js",
+        "sha256": "04d47c3288967429facf13bdbdf4628bf05cbe5853f328e70332b7686226a8ce"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/owner.js",
+        "sha256": "9fed76a1cb269ad217e23d90dad5072015fc72d260a5419555a6897e8df55860"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/graph.js",
+        "sha256": "a94c8b304af790e1e4b8b4abbc4353ae76dcbca3a7bed3aa728fd4e752fb99d4"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/async.js",
+        "sha256": "8f1ea32cdad16aa23d98e076bd59eecb1b2c9f877ae026360d295269764fbe5f"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/core.js",
+        "sha256": "932cc951e6159ad3211768b5234e850bf1c57011daa713ac395051d9959410e2"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/external.js",
+        "sha256": "268a2ed925cf97ce4398533ead37ff8c0fe88402b74f97399332b5ac97df60b3"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/context.js",
+        "sha256": "aa51b126a021a4cf471af67986fb7d4f369fa81a7d182f9de41e8486eb28c380"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/optimistic.js",
+        "sha256": "713e1ac1b1c95c84f81ecc700d45e949e5e0c18120ab675adc0e7d890e594b09"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/verdict.js",
+        "sha256": "12f196995363f6d14df9a612203bee48e554c9b8014ac65f453e3892987af14e"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/effect.js",
+        "sha256": "d734b0614fc2f9369723bbc1ba4d383bf189d8067037baccd5b71cd1a97167fa"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/action.js",
+        "sha256": "c50f8e9902f9f001c91c2220fe82e1a16807fc6ee49389c0e2b9f9e7e7da1007"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/signals.js",
+        "sha256": "e9ffbfe5848d2598ad140555fec735c928b0b77ad4bd470f3323a24c315d3f51"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/reconcile.js",
+        "sha256": "c69e0e91aaaa0602a8f0c474a5096c9b9ea9f75de8310f502d9a716b2891a36c"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/projection.js",
+        "sha256": "396694ebc845f33db1c7691f22653dd051995913a8fc61b6dba2abfeecc83ad1"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/store.js",
+        "sha256": "15c5b92182cce9d15fd12674c3d3e952352ec5f966ee588407464506860f1b34"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/affects.js",
+        "sha256": "cb226f41e3d188fde40926f0c1c343c6e95e393a079b1b9897272fb5d4e441e7"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/map.js",
+        "sha256": "298be4d9870dfb1d689be976ca38b1172e0129ad6ca23ae7b53d21f67ef5448a"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/optimistic.js",
+        "sha256": "b9d6acb4488d8af79d71c7ea066ca8896d10938f69355e1b06015bb02749d084"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/storePath.js",
+        "sha256": "88873afb64ccb8e3de1e93e7a32c247df374faae17f7a928e0d9068bd9b5adbd"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/utils.js",
+        "sha256": "d78463023062c32a0bcb7d1373e9e733b58ec2d8684f7a4123116ddbf8d8f891"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/boundaries.js",
+        "sha256": "46ae3c0054fc1088abcf39467a657128dd93b91bfcee6f6dc4df39650482c7d0"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/index.js",
+        "sha256": "d51f0e49d46afddbbb0bacc7cafe3668924f84e9e9a315415d3d5d45d0e2897f"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/solid-js/dist/solid.js",
+        "sha256": "a82a8e7fdbb053f32c7922df22f77fdabb2a07aba0df1f25b62864dca9e1093b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/web/dist/web.js",
+        "sha256": "197e250b10ba4ff7ffb1c89008bbafca717e39148d5650734241d34f5b2f76e3"
+      },
+      {
+        "path": "upstream/packages/theming/src/preset.ts",
+        "sha256": "9ecd0dd0eaf8ced374805da23171185da8323b587c6c7303544189b2dec5e50a"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipe-registry.ts",
+        "sha256": "1853d5d242b4f7bbfcb12ca19df67b4004e76e3b097f956efbc4d582dc27c58b"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/alert.ts",
+        "sha256": "ba8f92506e2ca140a12f829a9f0f688ccffba54b3bbded101aabb171176f5ad7"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/badge.ts",
+        "sha256": "7591619fe34cd1b3b4980c84466671faf4fbcc9510409d31847104c3ac0fb050"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/button.ts",
+        "sha256": "e6b9a86a0a6a96180902db4a8ce7698de9b03e7b5430d5e9f15ce8c63980220d"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/calendar.ts",
+        "sha256": "421a689cd34861587efaa095c262dbe16de4925352a7285f8d484eb0fc3b6d6a"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/close-button.ts",
+        "sha256": "9ac58fe6bda9cdb6ea617edfbf5f75e145aa49bc7b38b7ed9bda404a4c113acc"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/combobox.ts",
+        "sha256": "943b72f895fa1ba25fccf05494731f22c1b39d519f0ce3e4f53c18805ac24f43"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/dialog.ts",
+        "sha256": "2daa0f9636cc9321484adef946a6158bf4ec85f196bdd38c1cf362d5b422ad8a"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/listbox.ts",
+        "sha256": "6d4e8aa4d7d1c663e155933b2ef210b3ea65fb92fdf55bb36ec6552151b627dc"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/popover.ts",
+        "sha256": "01f08087b46c48250cf6f5e7f7789c92dd247c2ed8c3fa27df8e72326db41f92"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/select.ts",
+        "sha256": "80fb160d890e87be877792cfd8b07a1f9a6fad86f0f62f80a6282f76e6e805b4"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/index.ts",
+        "sha256": "ccde1bf2554f2671748f9c32d5cf27b280cd58cc86d7c8d78002bba62af4a24c"
+      },
+      {
+        "path": "upstream/packages/theming/src/semantic-tokens.ts",
+        "sha256": "3f5f976f1069b7f21e9569b81bfdd50293d2384200067fff9f39786127068a3e"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/tailwind-variants/dist/chunk-OYFAXDFZ.js",
+        "sha256": "1f874dd408070761a2342c17e49f6ead41943e9a6092c9ace6df3f4af2e1910b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/tailwind-variants/dist/chunk-SUL6UUW2.js",
+        "sha256": "e6f1f6dc0ff8187a3f3f6fff94cf77086d2e08bab997e36edba166c75d8b2254"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/tailwind-variants/dist/index.js",
+        "sha256": "cafd92d6ed98754ee4c89b2015935c57d473ca654867ca0fb65918957785839e"
+      },
+      {
+        "path": "upstream/packages/theming/src/styling.ts",
+        "sha256": "c1afd76f376f7690fef544c38d3af5f2401fb531de462d09cb3941fcfb96f25c"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-auto-focus.ts",
+        "sha256": "90e5740c86ef4a90301af96af35af86a202aba740f2906b102ab44af5c3c0f17"
+      },
+      {
+        "path": "upstream/packages/primitives/src/utils/events.ts",
+        "sha256": "01725df40daed40a0e94d3d85ce9f9ff111de2221dc50e05ea2f955d7859d1a5"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-press.ts",
+        "sha256": "ced7eb7a8a0a5f07dc171bd556add5c0183dc766132cdb7def381751a21b4528"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-button.ts",
+        "sha256": "2bab7b21111c3e49e252d527fbf936b00f3cda835a631d6381e5fe47aed914ae"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-registered-element.ts",
+        "sha256": "83ea7d0ccfc95b73b119a52d0cf006f10a57823d2be09e24326455b882514860"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-collection.ts",
+        "sha256": "ef973b5cca937ea12c729d2d38c7e3cf09429cca711c3480cff402f659277934"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-component-context.ts",
+        "sha256": "db8b55f9d3f31adf245e76ce0dd28d1225b59b2667c96bbf1fe594d0d4ba30b6"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-controllable-state.ts",
+        "sha256": "f283a44ca2049ae09a7ac360363ceac8b3720f64ccba2db0a8f2ee0105628926"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/scroll-into-view.ts",
+        "sha256": "7ce19ffe3e79751ac8dfee2ae35e2cfcf7befc106767958e1c690f11fd7c4d23"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-data-collection.ts",
+        "sha256": "678a6fa22fea24308f3f7761bd0d57b780a59483f8866537f5453b44a992c7f1"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-dismissable.ts",
+        "sha256": "ecad6631bf7346635b3d52a3dd07a73d2c5c0d957e1794f67cc77b71afb72c7b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
+        "sha256": "f53b3ea1eec15af77ca9def295b8f40f6d65706acfc5aaac4801ca3ca21ef7bd"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
+        "sha256": "c6c359d91fbc6636f6143aae9ff47105eeacea869b14afe7d54e120444ab8f37"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs",
+        "sha256": "b6658b1eac47e2917e6d10ebbeefb9c4ac9a166f0052bed6e08c871ed848b680"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs",
+        "sha256": "a1c916ed18ed8bb2c586079f7946d35797b45bc79eafae1d99ec6f812672ef54"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-floating.ts",
+        "sha256": "44a0867090f4516ea6c0e9d243fb3d9dc490ad33e2cc5efa9d579b5b7206076e"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-focus-restore.ts",
+        "sha256": "4ed1bca9c3f34b5cc5787bd1c197fb021d29e3e1e1477ae1b824a0e865ea0c58"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-focus-scope.ts",
+        "sha256": "30e9ca2a540988fc25a6e1d7ecdfefc9f6ee01ebd31145b3dde61339a2d2f954"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-focus-trap.ts",
+        "sha256": "49f09f17336014aac512684ab75d95cc02d40be75ee41d22907ec528282b5f2a"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-grid-navigation.ts",
+        "sha256": "a7ebe676aaf5eccd765785ffc49b7e1401bd5db7b966eb957d600a6704779ca8"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-hide-outside.ts",
+        "sha256": "6c6f592fc9f2c26393b6aca1100239beef35cf906ff3d83eb6f9255159020376"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-list-expansion.ts",
+        "sha256": "eff6fe624660015e2c133316bdda997a58851508f06ad68d02d0ea2fbda124f4"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-list-focus.ts",
+        "sha256": "25fe00f99c478c698018f16dd713e52e5816cc87990bc37fcc9fbe0b700d7766"
+      },
+      {
+        "path": "upstream/packages/primitives/src/utils/keymap.ts",
+        "sha256": "1ef812ab363b3e7394df9d60647ac6d3bef89630a70ecd5d9606e78aa3f2af2a"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-list-navigation.ts",
+        "sha256": "2879bb8d61aec0e26e9378edc25f119a7c28826746fb2e02189e712037cf4159"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-list-selection.ts",
+        "sha256": "d18e7fdddf105cfba667aef1d0645f3d1a327324b3752821cfcc614b8e6698a0"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-list-typeahead.ts",
+        "sha256": "ebf861400c0a906953054ecd5cc92c87c35b38ac2e463fbb1a21d098cac3b818"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-presence.ts",
+        "sha256": "77e748b00a3befbd6072574dd4680eb90f8dcfdfe0033def31bf9863a33244c8"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-registered-id.ts",
+        "sha256": "653d32a132c5d19da601e96165ddc9c1fe9bbfe028737d9fc4201bd265b6302a"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-scroll-lock.ts",
+        "sha256": "428555246621c3e2f37c223a0df9b2d6b84070c09c0931f63b8f2f022d2cf111"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-text-direction-warning.ts",
+        "sha256": "9bfa0fe1e8b49b8688fb6f91cfc268033d46b425d50c3f02e984ed1f398b8907"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-text-input.ts",
+        "sha256": "ec7867abf501b2e4c597e10f5b535c187fc92d4923bcd996446197e0c2cc2f9b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@tanstack/virtual-core/dist/esm/lazy-measurements.js",
+        "sha256": "db1c48346696c7340333ea7672ee0709c736a6e8da0db824b4bbf0d8b7e499b6"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@tanstack/virtual-core/dist/esm/utils.js",
+        "sha256": "5c3be002a2e586ffdb85b85345f0786c8ba88f316685e7121945b1cac8da9a48"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@tanstack/virtual-core/dist/esm/index.js",
+        "sha256": "255d29a9969a23e9867a11fb323ccac5a97c95bb765e1f3b68e9715dd12362bd"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-virtual-collection.ts",
+        "sha256": "b812a00a079831202936d78d849d65cae306d92cc006954eb1bb98da3c8a7f11"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/index.ts",
+        "sha256": "7cd10e5719576386becda86818c5b57e003dac987b69637af617fa96c6c3f780"
+      },
+      {
+        "path": "upstream/packages/primitives/src/utils/defaults.ts",
+        "sha256": "2190a8174a4cc4473ab758c3108757ff5180da295fbd33ef6a19c6c81cf0ad91"
+      },
+      {
+        "path": "upstream/packages/primitives/src/utils/run-if-function.ts",
+        "sha256": "05c684de3a8105d230f09f15e158b703edc700ea34f731bc7870731d00f88887"
+      },
+      {
+        "path": "upstream/packages/primitives/src/utils/index.ts",
+        "sha256": "63d3cdcb7ccca95b573f0b0a956d9c48efa45eda82010bc3f4575fe81dbd66e1"
+      },
+      {
+        "path": "upstream/packages/theming/src/theme-context.tsx",
+        "sha256": "ffc9c79a0d4a506bfedff085650766245df3e7a79bab2914cdc16af6d5268baf"
+      },
+      {
+        "path": "upstream/packages/theming/src/index.ts",
+        "sha256": "96301c7f102f79a4be2877b695363d106afbfa86381f4da6431de40fba6cf954"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/alert.ts",
+        "sha256": "9274ad0bd375eaec452757833a3f0d686db62820ccf3dfdf622a14150fd9b1fc"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/badge.ts",
+        "sha256": "9c04e9f60f50fa06fa4da9ef58d7f62a5af70e12bf13615f7fa796cb513cf8ec"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/button.ts",
+        "sha256": "4e87c31b46a108d7f11a2035671856f341cae4f7d7c08f0a8981e778f322c4c1"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/calendar.ts",
+        "sha256": "0813fd0fd687153843624e1c0b408dbf027da5cf0f2ede1f161575bae164ba71"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/close-button.ts",
+        "sha256": "aede3f62b186b0fb5f88c9a466e677adc12dbd7cb444eb5b638e30d134e30a2c"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/combobox.ts",
+        "sha256": "0776fba4a28df285ca46a6d0d9861dcc2644fce951df4c332fefa1938b4c9230"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/dialog.ts",
+        "sha256": "d1bb1f6b802717767cbb24c2c609303127728d61c661e7468a7552a6193a60f2"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/listbox.ts",
+        "sha256": "b2bd4dd7778265b87cd6d59d6ac39a1b6678c6c54b66fb02c267aed9bffd00ea"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/popover.ts",
+        "sha256": "1382c29e24359ca0b196531f7e5a070e9897ad3a3ffa7b01e4bea127910ac3fb"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/select.ts",
+        "sha256": "a9b50674540145bcb8dd7a35747d850b90c7ec1ffffba76c48bad88668cf9d26"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/index.ts",
+        "sha256": "0602a5af6d9ffd716125ebcbbe2289f5b0d848632e11cda91da334f0e71c9d30"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/index.ts",
+        "sha256": "9330322766069353751ec6b04c0e8fb1b43eae4f3bea8ec9d18f2d6e74f5a9f0"
+      },
+      {
+        "path": "upstream/packages/primitives/src/render/render.tsx",
+        "sha256": "0030314d4908b1ef8f8601a87d81ababa3487a07d3c68a5706e89d8cc5305a07"
+      },
+      {
+        "path": "upstream/packages/primitives/src/render/index.ts",
+        "sha256": "3130227fbb57e02f898e39767acc3142c1f5d3069369f34697370ad122772fab"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/check-icon.tsx",
+        "sha256": "d38243f98780424d6ce81197b272be3e7cc0651eb3126dcda3211d8c3cb6c15e"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/chevron-down-icon.tsx",
+        "sha256": "0ea471063fb13cc7f05219cf03df8d747fe964bac633ac93c3ec7d2f352bec76"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/chevron-left-icon.tsx",
+        "sha256": "db2ab7c0b6a4c791a5dc7fc8bcbba096b2d714d07d463545d6a3999314f7d211"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/chevron-right-icon.tsx",
+        "sha256": "861521341c5f2007b28b206b36df6d3b86b39fe1801f4f4731dad56fec25a731"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/circle-check-icon.tsx",
+        "sha256": "8a4296faf8a62e91c92039c2d1b1928c9085c38036c6b4a3426976ade2c82ced"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/circle-x-icon.tsx",
+        "sha256": "2b075ec0a2dc8a135727e3f6a47cab5d62a2dd1613b89065953b1426e02899a5"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/info-icon.tsx",
+        "sha256": "d1b8835591cee50377758af4b502246dfeaeccfb31e50b8013f70895fa8534c4"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/loader-circle-icon.tsx",
+        "sha256": "636ec476a0f3323cd0331d63b450bfee61c14603b8f25f05a06cb0ded7235997"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/triangle-alert-icon.tsx",
+        "sha256": "90343ce32bac35e5d23072f920389a694b99aeeedbce8f65f8e6f6309213df01"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/x-icon.tsx",
+        "sha256": "593bc2eb91559eb8d64def2f4e7528489e84b74216b32e138929152324900907"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/index.ts",
+        "sha256": "c87cad20b17c6e7123fe90ff4443d9baeb879a29d4e66e6ae8c2b6bf07d0418b"
+      },
+      {
+        "path": "upstream/packages/components/src/button/button.tsx",
+        "sha256": "f3307df3427c20fe601a577851a08c3ff3d76f0f2724964e66cc9bfc59add399"
+      },
+      {
+        "path": "upstream/packages/components/src/button/index.ts",
+        "sha256": "8b0e37175d8b317e417cbee1e11b9a341322be409981de42eae1bab82a2568df"
+      },
+      {
+        "path": "upstream/apps/docs/src/components/demos/button/ButtonIconsDemo.tsx",
+        "sha256": "dfb5b6e5985b49ade83dd462c00c6e8794726cecde4f5b49d32bcbf0097304e5"
+      },
+      {
+        "path": "examples/Button.tsx",
+        "sha256": "2f09d8736ffe25f2fba6cb9495342a81326e015c50174d67bfbd42e241e7fe25"
+      }
+    ],
+    "packages": {
+      "node_modules/@solidjs/signals": {
+        "version": "2.0.0-beta.32",
+        "resolved": "https://registry.npmjs.org/@solidjs/signals/-/signals-2.0.0-beta.32.tgz",
+        "integrity": "sha512-ZRdZksswcPRyPnye6AR3LMacc0Dn/sV/cW1jPsMgJHO5pg2iNvg+8UWojLXClIO2K3oD2ftVWeQIwyVbvM971A==",
+        "license": "MIT"
+      },
+      "node_modules/solid-js": {
+        "version": "2.0.0-beta.32",
+        "resolved": "https://registry.npmjs.org/solid-js/-/solid-js-2.0.0-beta.32.tgz",
+        "integrity": "sha512-Ka7SHt7wn8JYn61sXf9neBhxIdVGes8qVIdTNgrOu7LN0SveQ6k1tGa7BCvhqvDgrciy8a9lh4oW6cZdaU3s3w==",
+        "license": "MIT",
+        "dependencies": {
+          "@solidjs/signals": "^2.0.0-beta.32",
+          "csstype": "^3.1.0",
+          "seroval": "~1.5.4",
+          "seroval-plugins": "~1.5.4"
+        }
+      },
+      "node_modules/@solidjs/web": {
+        "version": "2.0.0-beta.32",
+        "resolved": "https://registry.npmjs.org/@solidjs/web/-/web-2.0.0-beta.32.tgz",
+        "integrity": "sha512-7HBUbGNoNnQIKTtgJRpmqZkQ5GzBt4K6d1BiHAaHksWbdYAsXkzRU7b72WtTwklN4Z2iA5MY8b5jiITlvY1noA==",
+        "license": "MIT",
+        "dependencies": {
+          "seroval": "~1.5.4",
+          "seroval-plugins": "~1.5.4"
+        },
+        "peerDependencies": {
+          "solid-js": "^2.0.0-beta.32"
+        }
+      },
+      "node_modules/tailwind-variants": {
+        "version": "3.3.1",
+        "resolved": "https://registry.npmjs.org/tailwind-variants/-/tailwind-variants-3.3.1.tgz",
+        "integrity": "sha512-4pAvwUtM4HKBiRZftncAbpn6V9Hhwoa5Fl7O2u5zbp7Z5Cvu+/o/6+176WY3WCEES209543quG8zFIcXCsc5Jw==",
+        "license": "MIT",
+        "engines": {
+          "node": ">=16.9.x",
+          "pnpm": ">=7.x"
+        },
+        "peerDependencies": {
+          "tailwind-merge": ">=3.0.0",
+          "tailwindcss": "*"
+        },
+        "peerDependenciesMeta": {
+          "tailwind-merge": {
+            "optional": true
+          },
+          "tailwindcss": {
+            "optional": true
+          }
+        }
+      },
+      "node_modules/@floating-ui/utils": {
+        "version": "0.2.12",
+        "resolved": "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.12.tgz",
+        "integrity": "sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==",
+        "license": "MIT"
+      },
+      "node_modules/@floating-ui/core": {
+        "version": "1.8.0",
+        "resolved": "https://registry.npmjs.org/@floating-ui/core/-/core-1.8.0.tgz",
+        "integrity": "sha512-0CIZ5itps/8x7BG8dEIhs53BvCUH2PCoogtakwRTut+Arm58sJooJ0AuZhLw2HJYIR5cMLNPBSS728sPho2khQ==",
+        "license": "MIT",
+        "dependencies": {
+          "@floating-ui/utils": "^0.2.12"
+        }
+      },
+      "node_modules/@floating-ui/dom": {
+        "version": "1.8.0",
+        "resolved": "https://registry.npmjs.org/@floating-ui/dom/-/dom-1.8.0.tgz",
+        "integrity": "sha512-yXSrzeHZBTZadLOlfyhCkJHNeLJnHRnRInwdZ40L7ZiaAtrBwoYlsDrX3v5zB1Utk7CLfzcOVnVVWoXEky7Ceg==",
+        "license": "MIT",
+        "dependencies": {
+          "@floating-ui/core": "^1.8.0",
+          "@floating-ui/utils": "^0.2.12"
+        }
+      },
+      "node_modules/@tanstack/virtual-core": {
+        "version": "3.17.7",
+        "resolved": "https://registry.npmjs.org/@tanstack/virtual-core/-/virtual-core-3.17.7.tgz",
+        "integrity": "sha512-bp+v10y65sp2H7WpWfIMyxTNfl8ZVfxFTLRjPIFRryi6FV/J33z4IS53WO4pTk36KlvJ4iLiQz+oaydDC1xbcA==",
+        "license": "MIT",
+        "funding": {
+          "type": "github",
+          "url": "https://github.com/sponsors/tannerlinsley"
+        }
+      }
+    }
+  },
+  "Dialog": {
+    "codeIntegrity": "65fc06373a74e632a954304d882928c23e716e353046bfd407aeb65975dc76ac",
+    "cssIntegrity": "9df525d79a0a859194fed7580233481e16bc6c12f8746ff07bc9badcec35ae0f",
+    "lockIntegrity": "e8141d77264a0290d1c69489abfe4a121e8abb5b11f0fa4c7f6fb15f018a20fc",
+    "styleInputs": [
+      {
+        "path": "node_modules/tailwindcss/index.css",
+        "sha256": "175f88737ecb7e033059eac4a3b22a3b5f971d5a05d9fd50811610a0714633b2"
+      },
+      {
+        "path": "node_modules/tailwindcss/preflight.css",
+        "sha256": "ace8310eed6dc5568a56fc16e1d695cf58da7528d81d66d81649e93cce644df6"
+      },
+      {
+        "path": "node_modules/tailwindcss/theme.css",
+        "sha256": "443d7af364200f8ec8352dc78e39485a118a1840d498c97967bf0ae402b39167"
+      },
+      {
+        "path": "node_modules/tailwindcss/utilities.css",
+        "sha256": "0e5844ec75de2fb4a76097b26bb624bf8f9d9cf59f6d947855b743dd25f920fb"
+      },
+      {
+        "path": "node_modules/tailwindcss/LICENSE",
+        "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/tailwind.css",
+        "sha256": "dbf57820479931a104304e9cd4c8be57a61e9a7d69672358f9239dce3db816e8"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/theme.css",
+        "sha256": "3557312228d2b9f93a4d24b03d58e6e15a6904ab8fb3080fbb1681530cd1490d"
+      }
+    ],
+    "inputs": [
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/error.js",
+        "sha256": "635596a52d887368153be0bd2df5d277a4cc49d91c36374f4be2540280cd871a"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/constants.js",
+        "sha256": "f3bc198d45a893ec271d43044115d8b9c6f2785a6e6d119e79f8dffd292b3280"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/invariants.js",
+        "sha256": "66f533dfdca6e5610ae08505b581e018ce44a62662e76dafe2bb91cdb57f9622"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/dev.js",
+        "sha256": "af9b29d055b17baa1dc1152bdae7e9b04d32631b6fff8285c1afb1898e7ad0b6"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/lanes.js",
+        "sha256": "098318780943862561f145b7722f1d8eacfef0234d85960b62c9b170d84c4cbd"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/scheduler.js",
+        "sha256": "abf9a737fb88145af7eac159a216723b3f53b8873f0857445b2b75c7a6155a47"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/heap.js",
+        "sha256": "04d47c3288967429facf13bdbdf4628bf05cbe5853f328e70332b7686226a8ce"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/owner.js",
+        "sha256": "9fed76a1cb269ad217e23d90dad5072015fc72d260a5419555a6897e8df55860"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/graph.js",
+        "sha256": "a94c8b304af790e1e4b8b4abbc4353ae76dcbca3a7bed3aa728fd4e752fb99d4"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/async.js",
+        "sha256": "8f1ea32cdad16aa23d98e076bd59eecb1b2c9f877ae026360d295269764fbe5f"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/core.js",
+        "sha256": "932cc951e6159ad3211768b5234e850bf1c57011daa713ac395051d9959410e2"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/external.js",
+        "sha256": "268a2ed925cf97ce4398533ead37ff8c0fe88402b74f97399332b5ac97df60b3"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/context.js",
+        "sha256": "aa51b126a021a4cf471af67986fb7d4f369fa81a7d182f9de41e8486eb28c380"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/optimistic.js",
+        "sha256": "713e1ac1b1c95c84f81ecc700d45e949e5e0c18120ab675adc0e7d890e594b09"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/verdict.js",
+        "sha256": "12f196995363f6d14df9a612203bee48e554c9b8014ac65f453e3892987af14e"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/effect.js",
+        "sha256": "d734b0614fc2f9369723bbc1ba4d383bf189d8067037baccd5b71cd1a97167fa"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/action.js",
+        "sha256": "c50f8e9902f9f001c91c2220fe82e1a16807fc6ee49389c0e2b9f9e7e7da1007"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/signals.js",
+        "sha256": "e9ffbfe5848d2598ad140555fec735c928b0b77ad4bd470f3323a24c315d3f51"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/reconcile.js",
+        "sha256": "c69e0e91aaaa0602a8f0c474a5096c9b9ea9f75de8310f502d9a716b2891a36c"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/projection.js",
+        "sha256": "396694ebc845f33db1c7691f22653dd051995913a8fc61b6dba2abfeecc83ad1"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/store.js",
+        "sha256": "15c5b92182cce9d15fd12674c3d3e952352ec5f966ee588407464506860f1b34"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/affects.js",
+        "sha256": "cb226f41e3d188fde40926f0c1c343c6e95e393a079b1b9897272fb5d4e441e7"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/map.js",
+        "sha256": "298be4d9870dfb1d689be976ca38b1172e0129ad6ca23ae7b53d21f67ef5448a"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/optimistic.js",
+        "sha256": "b9d6acb4488d8af79d71c7ea066ca8896d10938f69355e1b06015bb02749d084"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/storePath.js",
+        "sha256": "88873afb64ccb8e3de1e93e7a32c247df374faae17f7a928e0d9068bd9b5adbd"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/utils.js",
+        "sha256": "d78463023062c32a0bcb7d1373e9e733b58ec2d8684f7a4123116ddbf8d8f891"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/boundaries.js",
+        "sha256": "46ae3c0054fc1088abcf39467a657128dd93b91bfcee6f6dc4df39650482c7d0"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/index.js",
+        "sha256": "d51f0e49d46afddbbb0bacc7cafe3668924f84e9e9a315415d3d5d45d0e2897f"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/solid-js/dist/solid.js",
+        "sha256": "a82a8e7fdbb053f32c7922df22f77fdabb2a07aba0df1f25b62864dca9e1093b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/web/dist/web.js",
+        "sha256": "197e250b10ba4ff7ffb1c89008bbafca717e39148d5650734241d34f5b2f76e3"
+      },
+      {
+        "path": "upstream/packages/theming/src/preset.ts",
+        "sha256": "9ecd0dd0eaf8ced374805da23171185da8323b587c6c7303544189b2dec5e50a"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipe-registry.ts",
+        "sha256": "1853d5d242b4f7bbfcb12ca19df67b4004e76e3b097f956efbc4d582dc27c58b"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/alert.ts",
+        "sha256": "ba8f92506e2ca140a12f829a9f0f688ccffba54b3bbded101aabb171176f5ad7"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/badge.ts",
+        "sha256": "7591619fe34cd1b3b4980c84466671faf4fbcc9510409d31847104c3ac0fb050"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/button.ts",
+        "sha256": "e6b9a86a0a6a96180902db4a8ce7698de9b03e7b5430d5e9f15ce8c63980220d"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/calendar.ts",
+        "sha256": "421a689cd34861587efaa095c262dbe16de4925352a7285f8d484eb0fc3b6d6a"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/close-button.ts",
+        "sha256": "9ac58fe6bda9cdb6ea617edfbf5f75e145aa49bc7b38b7ed9bda404a4c113acc"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/combobox.ts",
+        "sha256": "943b72f895fa1ba25fccf05494731f22c1b39d519f0ce3e4f53c18805ac24f43"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/dialog.ts",
+        "sha256": "2daa0f9636cc9321484adef946a6158bf4ec85f196bdd38c1cf362d5b422ad8a"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/listbox.ts",
+        "sha256": "6d4e8aa4d7d1c663e155933b2ef210b3ea65fb92fdf55bb36ec6552151b627dc"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/popover.ts",
+        "sha256": "01f08087b46c48250cf6f5e7f7789c92dd247c2ed8c3fa27df8e72326db41f92"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/select.ts",
+        "sha256": "80fb160d890e87be877792cfd8b07a1f9a6fad86f0f62f80a6282f76e6e805b4"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/index.ts",
+        "sha256": "ccde1bf2554f2671748f9c32d5cf27b280cd58cc86d7c8d78002bba62af4a24c"
+      },
+      {
+        "path": "upstream/packages/theming/src/semantic-tokens.ts",
+        "sha256": "3f5f976f1069b7f21e9569b81bfdd50293d2384200067fff9f39786127068a3e"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/tailwind-variants/dist/chunk-OYFAXDFZ.js",
+        "sha256": "1f874dd408070761a2342c17e49f6ead41943e9a6092c9ace6df3f4af2e1910b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/tailwind-variants/dist/chunk-SUL6UUW2.js",
+        "sha256": "e6f1f6dc0ff8187a3f3f6fff94cf77086d2e08bab997e36edba166c75d8b2254"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/tailwind-variants/dist/index.js",
+        "sha256": "cafd92d6ed98754ee4c89b2015935c57d473ca654867ca0fb65918957785839e"
+      },
+      {
+        "path": "upstream/packages/theming/src/styling.ts",
+        "sha256": "c1afd76f376f7690fef544c38d3af5f2401fb531de462d09cb3941fcfb96f25c"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-auto-focus.ts",
+        "sha256": "90e5740c86ef4a90301af96af35af86a202aba740f2906b102ab44af5c3c0f17"
+      },
+      {
+        "path": "upstream/packages/primitives/src/utils/events.ts",
+        "sha256": "01725df40daed40a0e94d3d85ce9f9ff111de2221dc50e05ea2f955d7859d1a5"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-press.ts",
+        "sha256": "ced7eb7a8a0a5f07dc171bd556add5c0183dc766132cdb7def381751a21b4528"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-button.ts",
+        "sha256": "2bab7b21111c3e49e252d527fbf936b00f3cda835a631d6381e5fe47aed914ae"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-registered-element.ts",
+        "sha256": "83ea7d0ccfc95b73b119a52d0cf006f10a57823d2be09e24326455b882514860"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-collection.ts",
+        "sha256": "ef973b5cca937ea12c729d2d38c7e3cf09429cca711c3480cff402f659277934"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-component-context.ts",
+        "sha256": "db8b55f9d3f31adf245e76ce0dd28d1225b59b2667c96bbf1fe594d0d4ba30b6"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-controllable-state.ts",
+        "sha256": "f283a44ca2049ae09a7ac360363ceac8b3720f64ccba2db0a8f2ee0105628926"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/scroll-into-view.ts",
+        "sha256": "7ce19ffe3e79751ac8dfee2ae35e2cfcf7befc106767958e1c690f11fd7c4d23"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-data-collection.ts",
+        "sha256": "678a6fa22fea24308f3f7761bd0d57b780a59483f8866537f5453b44a992c7f1"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-dismissable.ts",
+        "sha256": "ecad6631bf7346635b3d52a3dd07a73d2c5c0d957e1794f67cc77b71afb72c7b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
+        "sha256": "f53b3ea1eec15af77ca9def295b8f40f6d65706acfc5aaac4801ca3ca21ef7bd"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
+        "sha256": "c6c359d91fbc6636f6143aae9ff47105eeacea869b14afe7d54e120444ab8f37"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs",
+        "sha256": "b6658b1eac47e2917e6d10ebbeefb9c4ac9a166f0052bed6e08c871ed848b680"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs",
+        "sha256": "a1c916ed18ed8bb2c586079f7946d35797b45bc79eafae1d99ec6f812672ef54"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-floating.ts",
+        "sha256": "44a0867090f4516ea6c0e9d243fb3d9dc490ad33e2cc5efa9d579b5b7206076e"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-focus-restore.ts",
+        "sha256": "4ed1bca9c3f34b5cc5787bd1c197fb021d29e3e1e1477ae1b824a0e865ea0c58"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-focus-scope.ts",
+        "sha256": "30e9ca2a540988fc25a6e1d7ecdfefc9f6ee01ebd31145b3dde61339a2d2f954"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-focus-trap.ts",
+        "sha256": "49f09f17336014aac512684ab75d95cc02d40be75ee41d22907ec528282b5f2a"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-grid-navigation.ts",
+        "sha256": "a7ebe676aaf5eccd765785ffc49b7e1401bd5db7b966eb957d600a6704779ca8"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-hide-outside.ts",
+        "sha256": "6c6f592fc9f2c26393b6aca1100239beef35cf906ff3d83eb6f9255159020376"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-list-expansion.ts",
+        "sha256": "eff6fe624660015e2c133316bdda997a58851508f06ad68d02d0ea2fbda124f4"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-list-focus.ts",
+        "sha256": "25fe00f99c478c698018f16dd713e52e5816cc87990bc37fcc9fbe0b700d7766"
+      },
+      {
+        "path": "upstream/packages/primitives/src/utils/keymap.ts",
+        "sha256": "1ef812ab363b3e7394df9d60647ac6d3bef89630a70ecd5d9606e78aa3f2af2a"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-list-navigation.ts",
+        "sha256": "2879bb8d61aec0e26e9378edc25f119a7c28826746fb2e02189e712037cf4159"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-list-selection.ts",
+        "sha256": "d18e7fdddf105cfba667aef1d0645f3d1a327324b3752821cfcc614b8e6698a0"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-list-typeahead.ts",
+        "sha256": "ebf861400c0a906953054ecd5cc92c87c35b38ac2e463fbb1a21d098cac3b818"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-presence.ts",
+        "sha256": "77e748b00a3befbd6072574dd4680eb90f8dcfdfe0033def31bf9863a33244c8"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-registered-id.ts",
+        "sha256": "653d32a132c5d19da601e96165ddc9c1fe9bbfe028737d9fc4201bd265b6302a"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-scroll-lock.ts",
+        "sha256": "428555246621c3e2f37c223a0df9b2d6b84070c09c0931f63b8f2f022d2cf111"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-text-direction-warning.ts",
+        "sha256": "9bfa0fe1e8b49b8688fb6f91cfc268033d46b425d50c3f02e984ed1f398b8907"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-text-input.ts",
+        "sha256": "ec7867abf501b2e4c597e10f5b535c187fc92d4923bcd996446197e0c2cc2f9b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@tanstack/virtual-core/dist/esm/lazy-measurements.js",
+        "sha256": "db1c48346696c7340333ea7672ee0709c736a6e8da0db824b4bbf0d8b7e499b6"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@tanstack/virtual-core/dist/esm/utils.js",
+        "sha256": "5c3be002a2e586ffdb85b85345f0786c8ba88f316685e7121945b1cac8da9a48"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@tanstack/virtual-core/dist/esm/index.js",
+        "sha256": "255d29a9969a23e9867a11fb323ccac5a97c95bb765e1f3b68e9715dd12362bd"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-virtual-collection.ts",
+        "sha256": "b812a00a079831202936d78d849d65cae306d92cc006954eb1bb98da3c8a7f11"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/index.ts",
+        "sha256": "7cd10e5719576386becda86818c5b57e003dac987b69637af617fa96c6c3f780"
+      },
+      {
+        "path": "upstream/packages/primitives/src/utils/defaults.ts",
+        "sha256": "2190a8174a4cc4473ab758c3108757ff5180da295fbd33ef6a19c6c81cf0ad91"
+      },
+      {
+        "path": "upstream/packages/primitives/src/utils/run-if-function.ts",
+        "sha256": "05c684de3a8105d230f09f15e158b703edc700ea34f731bc7870731d00f88887"
+      },
+      {
+        "path": "upstream/packages/primitives/src/utils/index.ts",
+        "sha256": "63d3cdcb7ccca95b573f0b0a956d9c48efa45eda82010bc3f4575fe81dbd66e1"
+      },
+      {
+        "path": "upstream/packages/theming/src/theme-context.tsx",
+        "sha256": "ffc9c79a0d4a506bfedff085650766245df3e7a79bab2914cdc16af6d5268baf"
+      },
+      {
+        "path": "upstream/packages/theming/src/index.ts",
+        "sha256": "96301c7f102f79a4be2877b695363d106afbfa86381f4da6431de40fba6cf954"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/alert.ts",
+        "sha256": "9274ad0bd375eaec452757833a3f0d686db62820ccf3dfdf622a14150fd9b1fc"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/badge.ts",
+        "sha256": "9c04e9f60f50fa06fa4da9ef58d7f62a5af70e12bf13615f7fa796cb513cf8ec"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/button.ts",
+        "sha256": "4e87c31b46a108d7f11a2035671856f341cae4f7d7c08f0a8981e778f322c4c1"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/calendar.ts",
+        "sha256": "0813fd0fd687153843624e1c0b408dbf027da5cf0f2ede1f161575bae164ba71"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/close-button.ts",
+        "sha256": "aede3f62b186b0fb5f88c9a466e677adc12dbd7cb444eb5b638e30d134e30a2c"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/combobox.ts",
+        "sha256": "0776fba4a28df285ca46a6d0d9861dcc2644fce951df4c332fefa1938b4c9230"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/dialog.ts",
+        "sha256": "d1bb1f6b802717767cbb24c2c609303127728d61c661e7468a7552a6193a60f2"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/listbox.ts",
+        "sha256": "b2bd4dd7778265b87cd6d59d6ac39a1b6678c6c54b66fb02c267aed9bffd00ea"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/popover.ts",
+        "sha256": "1382c29e24359ca0b196531f7e5a070e9897ad3a3ffa7b01e4bea127910ac3fb"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/select.ts",
+        "sha256": "a9b50674540145bcb8dd7a35747d850b90c7ec1ffffba76c48bad88668cf9d26"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/index.ts",
+        "sha256": "0602a5af6d9ffd716125ebcbbe2289f5b0d848632e11cda91da334f0e71c9d30"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/index.ts",
+        "sha256": "9330322766069353751ec6b04c0e8fb1b43eae4f3bea8ec9d18f2d6e74f5a9f0"
+      },
+      {
+        "path": "upstream/packages/primitives/src/render/render.tsx",
+        "sha256": "0030314d4908b1ef8f8601a87d81ababa3487a07d3c68a5706e89d8cc5305a07"
+      },
+      {
+        "path": "upstream/packages/primitives/src/render/index.ts",
+        "sha256": "3130227fbb57e02f898e39767acc3142c1f5d3069369f34697370ad122772fab"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/check-icon.tsx",
+        "sha256": "d38243f98780424d6ce81197b272be3e7cc0651eb3126dcda3211d8c3cb6c15e"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/chevron-down-icon.tsx",
+        "sha256": "0ea471063fb13cc7f05219cf03df8d747fe964bac633ac93c3ec7d2f352bec76"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/chevron-left-icon.tsx",
+        "sha256": "db2ab7c0b6a4c791a5dc7fc8bcbba096b2d714d07d463545d6a3999314f7d211"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/chevron-right-icon.tsx",
+        "sha256": "861521341c5f2007b28b206b36df6d3b86b39fe1801f4f4731dad56fec25a731"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/circle-check-icon.tsx",
+        "sha256": "8a4296faf8a62e91c92039c2d1b1928c9085c38036c6b4a3426976ade2c82ced"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/circle-x-icon.tsx",
+        "sha256": "2b075ec0a2dc8a135727e3f6a47cab5d62a2dd1613b89065953b1426e02899a5"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/info-icon.tsx",
+        "sha256": "d1b8835591cee50377758af4b502246dfeaeccfb31e50b8013f70895fa8534c4"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/loader-circle-icon.tsx",
+        "sha256": "636ec476a0f3323cd0331d63b450bfee61c14603b8f25f05a06cb0ded7235997"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/triangle-alert-icon.tsx",
+        "sha256": "90343ce32bac35e5d23072f920389a694b99aeeedbce8f65f8e6f6309213df01"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/x-icon.tsx",
+        "sha256": "593bc2eb91559eb8d64def2f4e7528489e84b74216b32e138929152324900907"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/index.ts",
+        "sha256": "c87cad20b17c6e7123fe90ff4443d9baeb879a29d4e66e6ae8c2b6bf07d0418b"
+      },
+      {
+        "path": "upstream/packages/components/src/button/button.tsx",
+        "sha256": "f3307df3427c20fe601a577851a08c3ff3d76f0f2724964e66cc9bfc59add399"
+      },
+      {
+        "path": "upstream/packages/components/src/button/index.ts",
+        "sha256": "8b0e37175d8b317e417cbee1e11b9a341322be409981de42eae1bab82a2568df"
+      },
+      {
+        "path": "upstream/packages/primitives/src/dialog/dialog-backdrop.ts",
+        "sha256": "c665882552e3c3bdf071bd04fa52a349719a7fb3cee44c3b6da38e7c40fe0a71"
+      },
+      {
+        "path": "upstream/packages/primitives/src/dialog/dialog-close-trigger.ts",
+        "sha256": "4cb98ca72e461715265c49fa3e4cffcb0aff9b42b48eae8dcde63c41bb50d2f8"
+      },
+      {
+        "path": "upstream/packages/primitives/src/dialog/dialog-content.ts",
+        "sha256": "c2b6610ea9037e05a07f44eeaf0a69deb935f10f2ac5773376abaf7186904bb7"
+      },
+      {
+        "path": "upstream/packages/primitives/src/dialog/dialog-description.ts",
+        "sha256": "52b620581f9c90ef539c0109050ae8356653f12f952737f915fc600e6e28e96b"
+      },
+      {
+        "path": "upstream/packages/primitives/src/dialog/dialog-portal.ts",
+        "sha256": "a99a3c4c3b32b162da523f59e1d91eaee640c00d8166bb4e01a920d125bb910a"
+      },
+      {
+        "path": "upstream/packages/primitives/src/dialog/dialog-root.ts",
+        "sha256": "ba846c9aaf499206919f8794506221d15023250df809324b37980346dee0b01b"
+      },
+      {
+        "path": "upstream/packages/primitives/src/dialog/dialog-title.ts",
+        "sha256": "1690211c6a6111b7ffc51ee3f3efcd988f0549dbd867c07bbbb9c4db3ab0a959"
+      },
+      {
+        "path": "upstream/packages/primitives/src/dialog/dialog-trigger.ts",
+        "sha256": "9774f29ca695caf8d596c864082f634b8f70a1873a4248de5f41fb55c2ac8ee6"
+      },
+      {
+        "path": "upstream/packages/primitives/src/dialog/index.ts",
+        "sha256": "e7c727bf5f5ece0a5aa3f69962f6c0674f85dc92027443a9aee2d8358fcff3a2"
+      },
+      {
+        "path": "upstream/packages/components/src/dialog/dialog-context.ts",
+        "sha256": "5172b1258975f2f5e92fc33cfa5de9f79492fae788913fe14e0544b0f19c7eb0"
+      },
+      {
+        "path": "upstream/packages/components/src/dialog/dialog-backdrop.tsx",
+        "sha256": "ef8b0493c36b54eae0c1777435194fcf77b7d4c9eef0533f68de728aff30318e"
+      },
+      {
+        "path": "upstream/packages/components/src/dialog/dialog-body.tsx",
+        "sha256": "9d32549c57751dc83a7eb804bdde66b6c301e795507744fd4e9219df37ec1036"
+      },
+      {
+        "path": "upstream/packages/i18n/src/direction.ts",
+        "sha256": "b1725af6d5dbd038be134ef2efe32eba131f289a266d99b1f3f43525fcc2589a"
+      },
+      {
+        "path": "upstream/packages/i18n/src/default-locale.ts",
+        "sha256": "9eb84e111d9ade0f3bd5b8724fe977ef37c2e2be26fe9a4d469a216969e195f8"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/ar.ts",
+        "sha256": "738ea4031bdfac3f880a1bd9d16edfeb4af1c9feea92ab6c4aee626eb821b5da"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/da.ts",
+        "sha256": "271ad2ca288d782f8562ef08877cf5493d5bfeb31a324c5a532e17095cacee02"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/de.ts",
+        "sha256": "cf7f3ae14d4314bd099d7c65732b54367de4fd76be7c0e514e462484bce0b279"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/el.ts",
+        "sha256": "558a4d77e70a548d06741090fb1409559b2ac0b8c084f5405697c7451a3bdfa6"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/en.ts",
+        "sha256": "858eaf22060b69b31a82c6dd90298fb572509569c266f80ea59a56667a49d50c"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/es.ts",
+        "sha256": "8d4eaf5c174537b6aabdf579f981ca053aaa01fd747643b4547538c57eb24fe2"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/fi.ts",
+        "sha256": "2b355ca42445df51129fec9f05b86ab5b118569fd60c3dc407ff4102c689fa8f"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/fr.ts",
+        "sha256": "5a7578bacf1286d015014d8c35fd2dcd0dbef64c51da51bb12fc6ee982ae2889"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/it.ts",
+        "sha256": "7c232913199bd608250e0753081ae6f391623a5285221c2871561fd77d491df1"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/pl.ts",
+        "sha256": "bf1e6fb063dcf1363dce9d7090fed339f2941671af9f32cb37656cecdb98b210"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/pt.ts",
+        "sha256": "c11e2297e9665feb1e9554d73d6db3256d6c10368dfc50ae24f7bbd8ea5cb01a"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/sv.ts",
+        "sha256": "785077db1cc65106ac76f418282c2a9b061b8c8c6cb132ad0d4517b0f0dabb00"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/index.ts",
+        "sha256": "b3020c7c022ef34107ed46cf491a97215fd58157f39e2c8772eea1750d0ca003"
+      },
+      {
+        "path": "upstream/packages/i18n/src/catalogs.ts",
+        "sha256": "3edaa0a91a07b746c6e3b084a48fa42e11dba048664b7280ec4de0c49c264f62"
+      },
+      {
+        "path": "upstream/packages/i18n/src/messages.ts",
+        "sha256": "3c07b9d60a97b8d3ed12113c912f2b560dbd1c556b2829fe06b75b36a4f682a3"
+      },
+      {
+        "path": "upstream/packages/i18n/src/translate.ts",
+        "sha256": "afa90dd341bb1ce8c26c6712a2fd96a401d59db14ffd4cdffca1b979db89be96"
+      },
+      {
+        "path": "upstream/packages/i18n/src/i18n-provider.tsx",
+        "sha256": "b633d2c7713654ad300192048632a5daa3dec9b2200c3acdb4bd7be5825d69f7"
+      },
+      {
+        "path": "upstream/packages/i18n/src/collator.ts",
+        "sha256": "107c2a2b93bc1a340869186281a4f2fc5ac2a325eafe9321d12cc2bd96487728"
+      },
+      {
+        "path": "upstream/packages/i18n/src/index.ts",
+        "sha256": "551bc4823cdcdad63c89ffcfee0625c28d95b08b1f627cd54a5dacaa7c1ca158"
+      },
+      {
+        "path": "upstream/packages/components/src/close-button/close-button.tsx",
+        "sha256": "82c0091c81ba816fd2f07a23149ff8ed542cb5ffb5c30e47f29b121a6bba9f2a"
+      },
+      {
+        "path": "upstream/packages/components/src/close-button/index.ts",
+        "sha256": "3be2e829467db2f2518ce90e142eafed072abaa38a5f2b7b6ba7b266aa23cfa6"
+      },
+      {
+        "path": "upstream/packages/components/src/dialog/dialog-close-trigger.tsx",
+        "sha256": "e55e7313cca85cc9e0c2ddb7f32bff8b476fdcf5c275aaa500986466d24e87b7"
+      },
+      {
+        "path": "upstream/packages/components/src/dialog/dialog-content.tsx",
+        "sha256": "04a3755b2d281dcd2740eff2f95ed938df091fe7f52e28735571e5b575f1f8c3"
+      },
+      {
+        "path": "upstream/packages/components/src/dialog/dialog-description.tsx",
+        "sha256": "bedeee80fe8b868f8c80651f19809aec709a297bef29c1ae680e82276802773d"
+      },
+      {
+        "path": "upstream/packages/components/src/dialog/dialog-footer.tsx",
+        "sha256": "b484f87a24349b176c614b8306eaddfa300002cd3938be1a39a8393df428a0ad"
+      },
+      {
+        "path": "upstream/packages/components/src/dialog/dialog-header.tsx",
+        "sha256": "07dd4214b462a0c0fc398dfd2d3dc38565901199f64b33b45e0714db9da8b5b1"
+      },
+      {
+        "path": "upstream/packages/primitives/src/modal-backdrop/modal-backdrop.tsx",
+        "sha256": "17610b35c47b4f852aed1b8013f942cd0f6f3a3f2174c0b706e10b91fe1e0c23"
+      },
+      {
+        "path": "upstream/packages/primitives/src/modal-backdrop/index.ts",
+        "sha256": "2f11f7d47154e3e783cd55909f2320f0d1d3e9b7566cd0b2c44420914a7a8277"
+      },
+      {
+        "path": "upstream/packages/components/src/dialog/dialog-portal.tsx",
+        "sha256": "d01c45e198ce150c3cf82f1d829692f2df5853475bfef6f936f9ccc403073360"
+      },
+      {
+        "path": "upstream/packages/components/src/dialog/dialog-positioner.tsx",
+        "sha256": "6e17369cd73645884998cd6df50a4930548bc768902f0bf1b76fe00bdc4b57c4"
+      },
+      {
+        "path": "upstream/packages/components/src/dialog/dialog-root.tsx",
+        "sha256": "739c0817afd8fb6b9691f7da3e9337426a890719a742f2acafc055a5826842fc"
+      },
+      {
+        "path": "upstream/packages/components/src/dialog/dialog-title.tsx",
+        "sha256": "1bf90684c968f71a5d17c47a5a8301dce6b70d7a7ae5b428c4cd0f0b6d676609"
+      },
+      {
+        "path": "upstream/packages/components/src/dialog/dialog-trigger.tsx",
+        "sha256": "1324173a33171954c377b9a738cdf6b2e7ae468766b207c2272e19146e18acb7"
+      },
+      {
+        "path": "upstream/packages/components/src/dialog/index.ts",
+        "sha256": "75b1fc9f3d7350beceff582320bc6ff0ddafc9237fca6dde7c86899e78904735"
+      },
+      {
+        "path": "upstream/apps/docs/src/components/demos/dialog/DialogBasicDemo.tsx",
+        "sha256": "3d60e7efefe260d20d05052bf077db744dee5b6a46a244cd2e691dfd95fbbaa5"
+      },
+      {
+        "path": "examples/Dialog.tsx",
+        "sha256": "061f4a9494c795adfdeda0c569c1b005cb2e12f7ee72e61feae4172cf0e023eb"
+      }
+    ],
+    "packages": {
+      "node_modules/@solidjs/signals": {
+        "version": "2.0.0-beta.32",
+        "resolved": "https://registry.npmjs.org/@solidjs/signals/-/signals-2.0.0-beta.32.tgz",
+        "integrity": "sha512-ZRdZksswcPRyPnye6AR3LMacc0Dn/sV/cW1jPsMgJHO5pg2iNvg+8UWojLXClIO2K3oD2ftVWeQIwyVbvM971A==",
+        "license": "MIT"
+      },
+      "node_modules/solid-js": {
+        "version": "2.0.0-beta.32",
+        "resolved": "https://registry.npmjs.org/solid-js/-/solid-js-2.0.0-beta.32.tgz",
+        "integrity": "sha512-Ka7SHt7wn8JYn61sXf9neBhxIdVGes8qVIdTNgrOu7LN0SveQ6k1tGa7BCvhqvDgrciy8a9lh4oW6cZdaU3s3w==",
+        "license": "MIT",
+        "dependencies": {
+          "@solidjs/signals": "^2.0.0-beta.32",
+          "csstype": "^3.1.0",
+          "seroval": "~1.5.4",
+          "seroval-plugins": "~1.5.4"
+        }
+      },
+      "node_modules/@solidjs/web": {
+        "version": "2.0.0-beta.32",
+        "resolved": "https://registry.npmjs.org/@solidjs/web/-/web-2.0.0-beta.32.tgz",
+        "integrity": "sha512-7HBUbGNoNnQIKTtgJRpmqZkQ5GzBt4K6d1BiHAaHksWbdYAsXkzRU7b72WtTwklN4Z2iA5MY8b5jiITlvY1noA==",
+        "license": "MIT",
+        "dependencies": {
+          "seroval": "~1.5.4",
+          "seroval-plugins": "~1.5.4"
+        },
+        "peerDependencies": {
+          "solid-js": "^2.0.0-beta.32"
+        }
+      },
+      "node_modules/tailwind-variants": {
+        "version": "3.3.1",
+        "resolved": "https://registry.npmjs.org/tailwind-variants/-/tailwind-variants-3.3.1.tgz",
+        "integrity": "sha512-4pAvwUtM4HKBiRZftncAbpn6V9Hhwoa5Fl7O2u5zbp7Z5Cvu+/o/6+176WY3WCEES209543quG8zFIcXCsc5Jw==",
+        "license": "MIT",
+        "engines": {
+          "node": ">=16.9.x",
+          "pnpm": ">=7.x"
+        },
+        "peerDependencies": {
+          "tailwind-merge": ">=3.0.0",
+          "tailwindcss": "*"
+        },
+        "peerDependenciesMeta": {
+          "tailwind-merge": {
+            "optional": true
+          },
+          "tailwindcss": {
+            "optional": true
+          }
+        }
+      },
+      "node_modules/@floating-ui/utils": {
+        "version": "0.2.12",
+        "resolved": "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.12.tgz",
+        "integrity": "sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==",
+        "license": "MIT"
+      },
+      "node_modules/@floating-ui/core": {
+        "version": "1.8.0",
+        "resolved": "https://registry.npmjs.org/@floating-ui/core/-/core-1.8.0.tgz",
+        "integrity": "sha512-0CIZ5itps/8x7BG8dEIhs53BvCUH2PCoogtakwRTut+Arm58sJooJ0AuZhLw2HJYIR5cMLNPBSS728sPho2khQ==",
+        "license": "MIT",
+        "dependencies": {
+          "@floating-ui/utils": "^0.2.12"
+        }
+      },
+      "node_modules/@floating-ui/dom": {
+        "version": "1.8.0",
+        "resolved": "https://registry.npmjs.org/@floating-ui/dom/-/dom-1.8.0.tgz",
+        "integrity": "sha512-yXSrzeHZBTZadLOlfyhCkJHNeLJnHRnRInwdZ40L7ZiaAtrBwoYlsDrX3v5zB1Utk7CLfzcOVnVVWoXEky7Ceg==",
+        "license": "MIT",
+        "dependencies": {
+          "@floating-ui/core": "^1.8.0",
+          "@floating-ui/utils": "^0.2.12"
+        }
+      },
+      "node_modules/@tanstack/virtual-core": {
+        "version": "3.17.7",
+        "resolved": "https://registry.npmjs.org/@tanstack/virtual-core/-/virtual-core-3.17.7.tgz",
+        "integrity": "sha512-bp+v10y65sp2H7WpWfIMyxTNfl8ZVfxFTLRjPIFRryi6FV/J33z4IS53WO4pTk36KlvJ4iLiQz+oaydDC1xbcA==",
+        "license": "MIT",
+        "funding": {
+          "type": "github",
+          "url": "https://github.com/sponsors/tannerlinsley"
+        }
+      }
+    }
+  },
+  "Select": {
+    "codeIntegrity": "d28c13e437c535df1f684d169ca1f4c51adcf5c212b3b6b59981370cd535abbc",
+    "cssIntegrity": "9df525d79a0a859194fed7580233481e16bc6c12f8746ff07bc9badcec35ae0f",
+    "lockIntegrity": "e8141d77264a0290d1c69489abfe4a121e8abb5b11f0fa4c7f6fb15f018a20fc",
+    "styleInputs": [
+      {
+        "path": "node_modules/tailwindcss/index.css",
+        "sha256": "175f88737ecb7e033059eac4a3b22a3b5f971d5a05d9fd50811610a0714633b2"
+      },
+      {
+        "path": "node_modules/tailwindcss/preflight.css",
+        "sha256": "ace8310eed6dc5568a56fc16e1d695cf58da7528d81d66d81649e93cce644df6"
+      },
+      {
+        "path": "node_modules/tailwindcss/theme.css",
+        "sha256": "443d7af364200f8ec8352dc78e39485a118a1840d498c97967bf0ae402b39167"
+      },
+      {
+        "path": "node_modules/tailwindcss/utilities.css",
+        "sha256": "0e5844ec75de2fb4a76097b26bb624bf8f9d9cf59f6d947855b743dd25f920fb"
+      },
+      {
+        "path": "node_modules/tailwindcss/LICENSE",
+        "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/tailwind.css",
+        "sha256": "dbf57820479931a104304e9cd4c8be57a61e9a7d69672358f9239dce3db816e8"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/theme.css",
+        "sha256": "3557312228d2b9f93a4d24b03d58e6e15a6904ab8fb3080fbb1681530cd1490d"
+      }
+    ],
+    "inputs": [
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/error.js",
+        "sha256": "635596a52d887368153be0bd2df5d277a4cc49d91c36374f4be2540280cd871a"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/constants.js",
+        "sha256": "f3bc198d45a893ec271d43044115d8b9c6f2785a6e6d119e79f8dffd292b3280"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/invariants.js",
+        "sha256": "66f533dfdca6e5610ae08505b581e018ce44a62662e76dafe2bb91cdb57f9622"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/dev.js",
+        "sha256": "af9b29d055b17baa1dc1152bdae7e9b04d32631b6fff8285c1afb1898e7ad0b6"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/lanes.js",
+        "sha256": "098318780943862561f145b7722f1d8eacfef0234d85960b62c9b170d84c4cbd"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/scheduler.js",
+        "sha256": "abf9a737fb88145af7eac159a216723b3f53b8873f0857445b2b75c7a6155a47"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/heap.js",
+        "sha256": "04d47c3288967429facf13bdbdf4628bf05cbe5853f328e70332b7686226a8ce"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/owner.js",
+        "sha256": "9fed76a1cb269ad217e23d90dad5072015fc72d260a5419555a6897e8df55860"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/graph.js",
+        "sha256": "a94c8b304af790e1e4b8b4abbc4353ae76dcbca3a7bed3aa728fd4e752fb99d4"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/async.js",
+        "sha256": "8f1ea32cdad16aa23d98e076bd59eecb1b2c9f877ae026360d295269764fbe5f"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/core.js",
+        "sha256": "932cc951e6159ad3211768b5234e850bf1c57011daa713ac395051d9959410e2"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/external.js",
+        "sha256": "268a2ed925cf97ce4398533ead37ff8c0fe88402b74f97399332b5ac97df60b3"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/context.js",
+        "sha256": "aa51b126a021a4cf471af67986fb7d4f369fa81a7d182f9de41e8486eb28c380"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/optimistic.js",
+        "sha256": "713e1ac1b1c95c84f81ecc700d45e949e5e0c18120ab675adc0e7d890e594b09"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/verdict.js",
+        "sha256": "12f196995363f6d14df9a612203bee48e554c9b8014ac65f453e3892987af14e"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/effect.js",
+        "sha256": "d734b0614fc2f9369723bbc1ba4d383bf189d8067037baccd5b71cd1a97167fa"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/core/action.js",
+        "sha256": "c50f8e9902f9f001c91c2220fe82e1a16807fc6ee49389c0e2b9f9e7e7da1007"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/signals.js",
+        "sha256": "e9ffbfe5848d2598ad140555fec735c928b0b77ad4bd470f3323a24c315d3f51"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/reconcile.js",
+        "sha256": "c69e0e91aaaa0602a8f0c474a5096c9b9ea9f75de8310f502d9a716b2891a36c"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/projection.js",
+        "sha256": "396694ebc845f33db1c7691f22653dd051995913a8fc61b6dba2abfeecc83ad1"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/store.js",
+        "sha256": "15c5b92182cce9d15fd12674c3d3e952352ec5f966ee588407464506860f1b34"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/affects.js",
+        "sha256": "cb226f41e3d188fde40926f0c1c343c6e95e393a079b1b9897272fb5d4e441e7"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/map.js",
+        "sha256": "298be4d9870dfb1d689be976ca38b1172e0129ad6ca23ae7b53d21f67ef5448a"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/optimistic.js",
+        "sha256": "b9d6acb4488d8af79d71c7ea066ca8896d10938f69355e1b06015bb02749d084"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/storePath.js",
+        "sha256": "88873afb64ccb8e3de1e93e7a32c247df374faae17f7a928e0d9068bd9b5adbd"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/store/utils.js",
+        "sha256": "d78463023062c32a0bcb7d1373e9e733b58ec2d8684f7a4123116ddbf8d8f891"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/boundaries.js",
+        "sha256": "46ae3c0054fc1088abcf39467a657128dd93b91bfcee6f6dc4df39650482c7d0"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/signals/dist/prod/index.js",
+        "sha256": "d51f0e49d46afddbbb0bacc7cafe3668924f84e9e9a315415d3d5d45d0e2897f"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/solid-js/dist/solid.js",
+        "sha256": "a82a8e7fdbb053f32c7922df22f77fdabb2a07aba0df1f25b62864dca9e1093b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solidjs/web/dist/web.js",
+        "sha256": "197e250b10ba4ff7ffb1c89008bbafca717e39148d5650734241d34f5b2f76e3"
+      },
+      {
+        "path": "upstream/packages/theming/src/preset.ts",
+        "sha256": "9ecd0dd0eaf8ced374805da23171185da8323b587c6c7303544189b2dec5e50a"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipe-registry.ts",
+        "sha256": "1853d5d242b4f7bbfcb12ca19df67b4004e76e3b097f956efbc4d582dc27c58b"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/alert.ts",
+        "sha256": "ba8f92506e2ca140a12f829a9f0f688ccffba54b3bbded101aabb171176f5ad7"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/badge.ts",
+        "sha256": "7591619fe34cd1b3b4980c84466671faf4fbcc9510409d31847104c3ac0fb050"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/button.ts",
+        "sha256": "e6b9a86a0a6a96180902db4a8ce7698de9b03e7b5430d5e9f15ce8c63980220d"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/calendar.ts",
+        "sha256": "421a689cd34861587efaa095c262dbe16de4925352a7285f8d484eb0fc3b6d6a"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/close-button.ts",
+        "sha256": "9ac58fe6bda9cdb6ea617edfbf5f75e145aa49bc7b38b7ed9bda404a4c113acc"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/combobox.ts",
+        "sha256": "943b72f895fa1ba25fccf05494731f22c1b39d519f0ce3e4f53c18805ac24f43"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/dialog.ts",
+        "sha256": "2daa0f9636cc9321484adef946a6158bf4ec85f196bdd38c1cf362d5b422ad8a"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/listbox.ts",
+        "sha256": "6d4e8aa4d7d1c663e155933b2ef210b3ea65fb92fdf55bb36ec6552151b627dc"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/popover.ts",
+        "sha256": "01f08087b46c48250cf6f5e7f7789c92dd247c2ed8c3fa27df8e72326db41f92"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/select.ts",
+        "sha256": "80fb160d890e87be877792cfd8b07a1f9a6fad86f0f62f80a6282f76e6e805b4"
+      },
+      {
+        "path": "upstream/packages/theming/src/recipes/index.ts",
+        "sha256": "ccde1bf2554f2671748f9c32d5cf27b280cd58cc86d7c8d78002bba62af4a24c"
+      },
+      {
+        "path": "upstream/packages/theming/src/semantic-tokens.ts",
+        "sha256": "3f5f976f1069b7f21e9569b81bfdd50293d2384200067fff9f39786127068a3e"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/tailwind-variants/dist/chunk-OYFAXDFZ.js",
+        "sha256": "1f874dd408070761a2342c17e49f6ead41943e9a6092c9ace6df3f4af2e1910b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/tailwind-variants/dist/chunk-SUL6UUW2.js",
+        "sha256": "e6f1f6dc0ff8187a3f3f6fff94cf77086d2e08bab997e36edba166c75d8b2254"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/tailwind-variants/dist/index.js",
+        "sha256": "cafd92d6ed98754ee4c89b2015935c57d473ca654867ca0fb65918957785839e"
+      },
+      {
+        "path": "upstream/packages/theming/src/styling.ts",
+        "sha256": "c1afd76f376f7690fef544c38d3af5f2401fb531de462d09cb3941fcfb96f25c"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-auto-focus.ts",
+        "sha256": "90e5740c86ef4a90301af96af35af86a202aba740f2906b102ab44af5c3c0f17"
+      },
+      {
+        "path": "upstream/packages/primitives/src/utils/events.ts",
+        "sha256": "01725df40daed40a0e94d3d85ce9f9ff111de2221dc50e05ea2f955d7859d1a5"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-press.ts",
+        "sha256": "ced7eb7a8a0a5f07dc171bd556add5c0183dc766132cdb7def381751a21b4528"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-button.ts",
+        "sha256": "2bab7b21111c3e49e252d527fbf936b00f3cda835a631d6381e5fe47aed914ae"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-registered-element.ts",
+        "sha256": "83ea7d0ccfc95b73b119a52d0cf006f10a57823d2be09e24326455b882514860"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-collection.ts",
+        "sha256": "ef973b5cca937ea12c729d2d38c7e3cf09429cca711c3480cff402f659277934"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-component-context.ts",
+        "sha256": "db8b55f9d3f31adf245e76ce0dd28d1225b59b2667c96bbf1fe594d0d4ba30b6"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-controllable-state.ts",
+        "sha256": "f283a44ca2049ae09a7ac360363ceac8b3720f64ccba2db0a8f2ee0105628926"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/scroll-into-view.ts",
+        "sha256": "7ce19ffe3e79751ac8dfee2ae35e2cfcf7befc106767958e1c690f11fd7c4d23"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-data-collection.ts",
+        "sha256": "678a6fa22fea24308f3f7761bd0d57b780a59483f8866537f5453b44a992c7f1"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-dismissable.ts",
+        "sha256": "ecad6631bf7346635b3d52a3dd07a73d2c5c0d957e1794f67cc77b71afb72c7b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
+        "sha256": "f53b3ea1eec15af77ca9def295b8f40f6d65706acfc5aaac4801ca3ca21ef7bd"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
+        "sha256": "c6c359d91fbc6636f6143aae9ff47105eeacea869b14afe7d54e120444ab8f37"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs",
+        "sha256": "b6658b1eac47e2917e6d10ebbeefb9c4ac9a166f0052bed6e08c871ed848b680"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs",
+        "sha256": "a1c916ed18ed8bb2c586079f7946d35797b45bc79eafae1d99ec6f812672ef54"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-floating.ts",
+        "sha256": "44a0867090f4516ea6c0e9d243fb3d9dc490ad33e2cc5efa9d579b5b7206076e"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-focus-restore.ts",
+        "sha256": "4ed1bca9c3f34b5cc5787bd1c197fb021d29e3e1e1477ae1b824a0e865ea0c58"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-focus-scope.ts",
+        "sha256": "30e9ca2a540988fc25a6e1d7ecdfefc9f6ee01ebd31145b3dde61339a2d2f954"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-focus-trap.ts",
+        "sha256": "49f09f17336014aac512684ab75d95cc02d40be75ee41d22907ec528282b5f2a"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-grid-navigation.ts",
+        "sha256": "a7ebe676aaf5eccd765785ffc49b7e1401bd5db7b966eb957d600a6704779ca8"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-hide-outside.ts",
+        "sha256": "6c6f592fc9f2c26393b6aca1100239beef35cf906ff3d83eb6f9255159020376"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-list-expansion.ts",
+        "sha256": "eff6fe624660015e2c133316bdda997a58851508f06ad68d02d0ea2fbda124f4"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-list-focus.ts",
+        "sha256": "25fe00f99c478c698018f16dd713e52e5816cc87990bc37fcc9fbe0b700d7766"
+      },
+      {
+        "path": "upstream/packages/primitives/src/utils/keymap.ts",
+        "sha256": "1ef812ab363b3e7394df9d60647ac6d3bef89630a70ecd5d9606e78aa3f2af2a"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-list-navigation.ts",
+        "sha256": "2879bb8d61aec0e26e9378edc25f119a7c28826746fb2e02189e712037cf4159"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-list-selection.ts",
+        "sha256": "d18e7fdddf105cfba667aef1d0645f3d1a327324b3752821cfcc614b8e6698a0"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-list-typeahead.ts",
+        "sha256": "ebf861400c0a906953054ecd5cc92c87c35b38ac2e463fbb1a21d098cac3b818"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-presence.ts",
+        "sha256": "77e748b00a3befbd6072574dd4680eb90f8dcfdfe0033def31bf9863a33244c8"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-registered-id.ts",
+        "sha256": "653d32a132c5d19da601e96165ddc9c1fe9bbfe028737d9fc4201bd265b6302a"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-scroll-lock.ts",
+        "sha256": "428555246621c3e2f37c223a0df9b2d6b84070c09c0931f63b8f2f022d2cf111"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-text-direction-warning.ts",
+        "sha256": "9bfa0fe1e8b49b8688fb6f91cfc268033d46b425d50c3f02e984ed1f398b8907"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-text-input.ts",
+        "sha256": "ec7867abf501b2e4c597e10f5b535c187fc92d4923bcd996446197e0c2cc2f9b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@tanstack/virtual-core/dist/esm/lazy-measurements.js",
+        "sha256": "db1c48346696c7340333ea7672ee0709c736a6e8da0db824b4bbf0d8b7e499b6"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@tanstack/virtual-core/dist/esm/utils.js",
+        "sha256": "5c3be002a2e586ffdb85b85345f0786c8ba88f316685e7121945b1cac8da9a48"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@tanstack/virtual-core/dist/esm/index.js",
+        "sha256": "255d29a9969a23e9867a11fb323ccac5a97c95bb765e1f3b68e9715dd12362bd"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/create-virtual-collection.ts",
+        "sha256": "b812a00a079831202936d78d849d65cae306d92cc006954eb1bb98da3c8a7f11"
+      },
+      {
+        "path": "upstream/packages/primitives/src/internal/index.ts",
+        "sha256": "7cd10e5719576386becda86818c5b57e003dac987b69637af617fa96c6c3f780"
+      },
+      {
+        "path": "upstream/packages/primitives/src/utils/defaults.ts",
+        "sha256": "2190a8174a4cc4473ab758c3108757ff5180da295fbd33ef6a19c6c81cf0ad91"
+      },
+      {
+        "path": "upstream/packages/primitives/src/utils/run-if-function.ts",
+        "sha256": "05c684de3a8105d230f09f15e158b703edc700ea34f731bc7870731d00f88887"
+      },
+      {
+        "path": "upstream/packages/primitives/src/utils/index.ts",
+        "sha256": "63d3cdcb7ccca95b573f0b0a956d9c48efa45eda82010bc3f4575fe81dbd66e1"
+      },
+      {
+        "path": "upstream/packages/theming/src/theme-context.tsx",
+        "sha256": "ffc9c79a0d4a506bfedff085650766245df3e7a79bab2914cdc16af6d5268baf"
+      },
+      {
+        "path": "upstream/packages/theming/src/index.ts",
+        "sha256": "96301c7f102f79a4be2877b695363d106afbfa86381f4da6431de40fba6cf954"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/alert.ts",
+        "sha256": "9274ad0bd375eaec452757833a3f0d686db62820ccf3dfdf622a14150fd9b1fc"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/badge.ts",
+        "sha256": "9c04e9f60f50fa06fa4da9ef58d7f62a5af70e12bf13615f7fa796cb513cf8ec"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/button.ts",
+        "sha256": "4e87c31b46a108d7f11a2035671856f341cae4f7d7c08f0a8981e778f322c4c1"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/calendar.ts",
+        "sha256": "0813fd0fd687153843624e1c0b408dbf027da5cf0f2ede1f161575bae164ba71"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/close-button.ts",
+        "sha256": "aede3f62b186b0fb5f88c9a466e677adc12dbd7cb444eb5b638e30d134e30a2c"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/combobox.ts",
+        "sha256": "0776fba4a28df285ca46a6d0d9861dcc2644fce951df4c332fefa1938b4c9230"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/dialog.ts",
+        "sha256": "d1bb1f6b802717767cbb24c2c609303127728d61c661e7468a7552a6193a60f2"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/listbox.ts",
+        "sha256": "b2bd4dd7778265b87cd6d59d6ac39a1b6678c6c54b66fb02c267aed9bffd00ea"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/popover.ts",
+        "sha256": "1382c29e24359ca0b196531f7e5a070e9897ad3a3ffa7b01e4bea127910ac3fb"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/select.ts",
+        "sha256": "a9b50674540145bcb8dd7a35747d850b90c7ec1ffffba76c48bad88668cf9d26"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/recipes/index.ts",
+        "sha256": "0602a5af6d9ffd716125ebcbbe2289f5b0d848632e11cda91da334f0e71c9d30"
+      },
+      {
+        "path": "upstream/packages/presets/src/hope/index.ts",
+        "sha256": "9330322766069353751ec6b04c0e8fb1b43eae4f3bea8ec9d18f2d6e74f5a9f0"
+      },
+      {
+        "path": "upstream/packages/i18n/src/direction.ts",
+        "sha256": "b1725af6d5dbd038be134ef2efe32eba131f289a266d99b1f3f43525fcc2589a"
+      },
+      {
+        "path": "upstream/packages/i18n/src/default-locale.ts",
+        "sha256": "9eb84e111d9ade0f3bd5b8724fe977ef37c2e2be26fe9a4d469a216969e195f8"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/ar.ts",
+        "sha256": "738ea4031bdfac3f880a1bd9d16edfeb4af1c9feea92ab6c4aee626eb821b5da"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/da.ts",
+        "sha256": "271ad2ca288d782f8562ef08877cf5493d5bfeb31a324c5a532e17095cacee02"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/de.ts",
+        "sha256": "cf7f3ae14d4314bd099d7c65732b54367de4fd76be7c0e514e462484bce0b279"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/el.ts",
+        "sha256": "558a4d77e70a548d06741090fb1409559b2ac0b8c084f5405697c7451a3bdfa6"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/en.ts",
+        "sha256": "858eaf22060b69b31a82c6dd90298fb572509569c266f80ea59a56667a49d50c"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/es.ts",
+        "sha256": "8d4eaf5c174537b6aabdf579f981ca053aaa01fd747643b4547538c57eb24fe2"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/fi.ts",
+        "sha256": "2b355ca42445df51129fec9f05b86ab5b118569fd60c3dc407ff4102c689fa8f"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/fr.ts",
+        "sha256": "5a7578bacf1286d015014d8c35fd2dcd0dbef64c51da51bb12fc6ee982ae2889"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/it.ts",
+        "sha256": "7c232913199bd608250e0753081ae6f391623a5285221c2871561fd77d491df1"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/pl.ts",
+        "sha256": "bf1e6fb063dcf1363dce9d7090fed339f2941671af9f32cb37656cecdb98b210"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/pt.ts",
+        "sha256": "c11e2297e9665feb1e9554d73d6db3256d6c10368dfc50ae24f7bbd8ea5cb01a"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/sv.ts",
+        "sha256": "785077db1cc65106ac76f418282c2a9b061b8c8c6cb132ad0d4517b0f0dabb00"
+      },
+      {
+        "path": "upstream/packages/i18n/src/locales/index.ts",
+        "sha256": "b3020c7c022ef34107ed46cf491a97215fd58157f39e2c8772eea1750d0ca003"
+      },
+      {
+        "path": "upstream/packages/i18n/src/catalogs.ts",
+        "sha256": "3edaa0a91a07b746c6e3b084a48fa42e11dba048664b7280ec4de0c49c264f62"
+      },
+      {
+        "path": "upstream/packages/i18n/src/messages.ts",
+        "sha256": "3c07b9d60a97b8d3ed12113c912f2b560dbd1c556b2829fe06b75b36a4f682a3"
+      },
+      {
+        "path": "upstream/packages/i18n/src/translate.ts",
+        "sha256": "afa90dd341bb1ce8c26c6712a2fd96a401d59db14ffd4cdffca1b979db89be96"
+      },
+      {
+        "path": "upstream/packages/i18n/src/i18n-provider.tsx",
+        "sha256": "b633d2c7713654ad300192048632a5daa3dec9b2200c3acdb4bd7be5825d69f7"
+      },
+      {
+        "path": "upstream/packages/i18n/src/collator.ts",
+        "sha256": "107c2a2b93bc1a340869186281a4f2fc5ac2a325eafe9321d12cc2bd96487728"
+      },
+      {
+        "path": "upstream/packages/i18n/src/index.ts",
+        "sha256": "551bc4823cdcdad63c89ffcfee0625c28d95b08b1f627cd54a5dacaa7c1ca158"
+      },
+      {
+        "path": "upstream/packages/primitives/src/combobox/combobox-clear.ts",
+        "sha256": "500b70690e441fc0ffb5c1069f5409339b86be02510298bdba9e9da5bcc4b849"
+      },
+      {
+        "path": "upstream/packages/primitives/src/combobox/combobox-content.ts",
+        "sha256": "9c20fd6a92144eb74e7c57f86acecddd0bfcb8e32935778c340b37e910b64207"
+      },
+      {
+        "path": "upstream/packages/primitives/src/combobox/combobox-input.ts",
+        "sha256": "1e21638a160d1162c3453704e064af5ad1013812cc8b8ad8143615e53615dbb3"
+      },
+      {
+        "path": "upstream/packages/primitives/src/combobox/combobox-list.ts",
+        "sha256": "8692978fff997aa1fbcd2534df0f8ba6108953ebf81d51e98a2c3a4ef701b85e"
+      },
+      {
+        "path": "upstream/packages/primitives/src/combobox/combobox-positioner.ts",
+        "sha256": "ced7141da7920e0074c86493563675522f5980d10c1990fbb80fb4580f7389ac"
+      },
+      {
+        "path": "upstream/packages/primitives/src/listbox/listbox-group.ts",
+        "sha256": "0b650d4a23817f5618a886ab8efbb23b67e9dd898223caec32f705f491b1f3e3"
+      },
+      {
+        "path": "upstream/packages/primitives/src/listbox/listbox-group-label.ts",
+        "sha256": "938c08ba1b4a2b4510d3d2d8e1a902df1422f2244b1a94f9c326ff5b7cee91d0"
+      },
+      {
+        "path": "upstream/packages/primitives/src/listbox/listbox-item.ts",
+        "sha256": "28ea7eb40c02b2e7ae4101769e3f7fb655eb04c1f8197ed12902e4586532aa27"
+      },
+      {
+        "path": "upstream/packages/primitives/src/listbox/listbox-root.ts",
+        "sha256": "5cb0e0f97b5558a0d9708492f2e0baeee8834c0120b287e17f0b153f1b72b709"
+      },
+      {
+        "path": "upstream/packages/primitives/src/listbox/listbox-separator.ts",
+        "sha256": "188f24efd0e57df693b321c73da8c8a6e96aa2db99c437e8b2a3c9ba0c29865e"
+      },
+      {
+        "path": "upstream/packages/primitives/src/listbox/index.ts",
+        "sha256": "d512ccbca5281b521cc0b4b2ac073a8ce43038f23004bd12c7fa4d584ae7dbdc"
+      },
+      {
+        "path": "upstream/packages/primitives/src/combobox/combobox-root.ts",
+        "sha256": "7e2bfa55354da0f7d4bcb2b185483a584b5663d6bccb802e52db1ef77eba3ef8"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solid-primitives/a11y/dist/announce.js",
+        "sha256": "8c44fa625315f7dde7df831a12545921e92a7c1c92f2d55498954870e7e8c04b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solid-primitives/a11y/node_modules/@solid-primitives/utils/dist/index.js",
+        "sha256": "206bace61b53891f9649564492471cd26518202b1a306f2c169973e3ac47b1d2"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solid-primitives/a11y/dist/form-control.js",
+        "sha256": "e69ff39c5b87e3344c7a08d7437581f171eabc38a89a3e94f5215a9e4dbac7d8"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solid-primitives/a11y/dist/reduced-motion.js",
+        "sha256": "ecbf1eae6869dabfe8b5013c1febc517b6cf594aa7da9beeb39aa70f90bf55f2"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/hope-ui-build/node_modules/@solid-primitives/a11y/dist/index.js",
+        "sha256": "feb10791ee234e0065f173287db5d02192538099ebe1fcf740f61cfa75e62742"
+      },
+      {
+        "path": "upstream/packages/primitives/src/combobox/combobox-status.ts",
+        "sha256": "cb1d9489ad06c59f3dd140b66779b615d267c3b9f45e931e487f34de995b8e3a"
+      },
+      {
+        "path": "upstream/packages/primitives/src/combobox/combobox-toggle.ts",
+        "sha256": "67a899f84457a72ee13a3a6839ba3a700c8c8b37e2d337a1c707df11c11baa29"
+      },
+      {
+        "path": "upstream/packages/primitives/src/combobox/combobox-trigger.ts",
+        "sha256": "5ea24d09b192ba2a7b56e9feb2a6d564a0d563662b8639e6592eb2249086e237"
+      },
+      {
+        "path": "upstream/packages/primitives/src/combobox/combobox-value.ts",
+        "sha256": "c654033bb02dc7c5c158772052f46565cef3095ba6aedae22f1b95b46353d284"
+      },
+      {
+        "path": "upstream/packages/primitives/src/combobox/index.ts",
+        "sha256": "fa12313060a727942f273e0a89ccbbf93bf606a1a2a47c5b2a0c88cf29cb2dda"
+      },
+      {
+        "path": "upstream/packages/primitives/src/render/render.tsx",
+        "sha256": "0030314d4908b1ef8f8601a87d81ababa3487a07d3c68a5706e89d8cc5305a07"
+      },
+      {
+        "path": "upstream/packages/primitives/src/render/index.ts",
+        "sha256": "3130227fbb57e02f898e39767acc3142c1f5d3069369f34697370ad122772fab"
+      },
+      {
+        "path": "upstream/packages/components/src/select/select-context.ts",
+        "sha256": "44941d7ef7b20a4a31ff5d5959898402ad53df77ee5c4960f3cf102362a9fb4c"
+      },
+      {
+        "path": "upstream/packages/components/src/select/select-content.tsx",
+        "sha256": "cd868c9f45355acfb8871ba2a51ccac01929c6aab8de9635a3531c48d42144e3"
+      },
+      {
+        "path": "upstream/packages/components/src/select/select-group.tsx",
+        "sha256": "b62aa7f6c0f19c60fcbe99e153791801a4472c6d130d7b432edfb1d221042fce"
+      },
+      {
+        "path": "upstream/packages/components/src/select/select-group-label.tsx",
+        "sha256": "9c0241da7794c4450b6e3b172932133b01a9b0fbe550ed69bda1fca56b0a9b2a"
+      },
+      {
+        "path": "upstream/packages/components/src/select/select-icon.tsx",
+        "sha256": "8d3aca4eb2b86f3eb5aa7be11535db84759ae189062ac62e77032f05064385ed"
+      },
+      {
+        "path": "upstream/packages/components/src/select/select-item.tsx",
+        "sha256": "73668acb8f625394c771f49142619745006524cbff82493a2404f27e200db65d"
+      },
+      {
+        "path": "upstream/packages/components/src/select/select-item-indicator.tsx",
+        "sha256": "1ef9996abe7526a6bf5dfa5630a6728dfc60ddd46f5236d61f8318f13eff8326"
+      },
+      {
+        "path": "upstream/packages/components/src/select/select-item-text.tsx",
+        "sha256": "81936cb911fd66e4837d1f1595c2fb93f4849db42deb54bfdfa69c4721fb0ddc"
+      },
+      {
+        "path": "upstream/packages/components/src/select/select-list.tsx",
+        "sha256": "5c3e840f8f95de0d18c1b27262cb961306feb3bd332669e19275a7f591678d51"
+      },
+      {
+        "path": "upstream/packages/components/src/select/select-portal.tsx",
+        "sha256": "46fb6e67e4b8510fdacf4c81b1f642eab4f9b7d662ecb64225d77c1024f59159"
+      },
+      {
+        "path": "upstream/packages/components/src/select/select-positioner.tsx",
+        "sha256": "e73bd223129c24c9de260c944e1b7804769848a917397057b389933289f411d0"
+      },
+      {
+        "path": "upstream/packages/primitives/src/hidden-select/create-hidden-select.ts",
+        "sha256": "f0c97cb0506c8e5950bb1be05a63fb3f55e48d0abf5bf750a77491a2ac5d90f7"
+      },
+      {
+        "path": "upstream/packages/primitives/src/hidden-select/hidden-select.tsx",
+        "sha256": "b1ce63766fd4c5ebe5eaf856460fea3105a8c5c7691e8974b22e96750215a457"
+      },
+      {
+        "path": "upstream/packages/primitives/src/hidden-select/index.ts",
+        "sha256": "8ed6e335a7c1f09c3d934f990c6d4816fb366d889ea68db689db42934bc57fb4"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/check-icon.tsx",
+        "sha256": "d38243f98780424d6ce81197b272be3e7cc0651eb3126dcda3211d8c3cb6c15e"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/chevron-down-icon.tsx",
+        "sha256": "0ea471063fb13cc7f05219cf03df8d747fe964bac633ac93c3ec7d2f352bec76"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/chevron-left-icon.tsx",
+        "sha256": "db2ab7c0b6a4c791a5dc7fc8bcbba096b2d714d07d463545d6a3999314f7d211"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/chevron-right-icon.tsx",
+        "sha256": "861521341c5f2007b28b206b36df6d3b86b39fe1801f4f4731dad56fec25a731"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/circle-check-icon.tsx",
+        "sha256": "8a4296faf8a62e91c92039c2d1b1928c9085c38036c6b4a3426976ade2c82ced"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/circle-x-icon.tsx",
+        "sha256": "2b075ec0a2dc8a135727e3f6a47cab5d62a2dd1613b89065953b1426e02899a5"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/info-icon.tsx",
+        "sha256": "d1b8835591cee50377758af4b502246dfeaeccfb31e50b8013f70895fa8534c4"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/loader-circle-icon.tsx",
+        "sha256": "636ec476a0f3323cd0331d63b450bfee61c14603b8f25f05a06cb0ded7235997"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/triangle-alert-icon.tsx",
+        "sha256": "90343ce32bac35e5d23072f920389a694b99aeeedbce8f65f8e6f6309213df01"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/x-icon.tsx",
+        "sha256": "593bc2eb91559eb8d64def2f4e7528489e84b74216b32e138929152324900907"
+      },
+      {
+        "path": "upstream/packages/components/src/icons/index.ts",
+        "sha256": "c87cad20b17c6e7123fe90ff4443d9baeb879a29d4e66e6ae8c2b6bf07d0418b"
+      },
+      {
+        "path": "upstream/packages/components/src/select/select-root.tsx",
+        "sha256": "b815857df0e9bfe881b10db94e153669610418ffc2ba658fb82600e11863ee3d"
+      },
+      {
+        "path": "upstream/packages/components/src/select/select-separator.tsx",
+        "sha256": "e6f8a74ed70e6edb304d4639ccbcb6ee176205a0f3078528a108bfe80ce925d5"
+      },
+      {
+        "path": "upstream/packages/components/src/select/select-trigger.tsx",
+        "sha256": "5b53f0989fd8f5be74693526ca8b2d3dd7116004235d94b131adc4212496c7ea"
+      },
+      {
+        "path": "upstream/packages/components/src/select/select-value.tsx",
+        "sha256": "528ec9630f3031151cfb85bf609dc6e84b3e070a33e8ad8be753439f5a3d02a4"
+      },
+      {
+        "path": "upstream/packages/components/src/select/index.ts",
+        "sha256": "98e4586d7b228b9f2f15ac7a61b4488a53f1dcf0f09dc801771574091e712e32"
+      },
+      {
+        "path": "upstream/apps/docs/src/components/demos/select/data.tsx",
+        "sha256": "04ac28bdca538a140fa6f37896a30613f7a72ff645c08421ea280944cfa91a3e"
+      },
+      {
+        "path": "upstream/apps/docs/src/components/demos/select/SelectBasicDemo.tsx",
+        "sha256": "247c5b0707c723ef097164c91195536294184369f0cb64335578d7e5db6754de"
+      },
+      {
+        "path": "examples/Select.tsx",
+        "sha256": "5cb1aa2f3aa7ea2d7e752040cf26cfd0876910be6ce4ad884bda207c9be11015"
+      }
+    ],
+    "packages": {
+      "node_modules/@solidjs/signals": {
+        "version": "2.0.0-beta.32",
+        "resolved": "https://registry.npmjs.org/@solidjs/signals/-/signals-2.0.0-beta.32.tgz",
+        "integrity": "sha512-ZRdZksswcPRyPnye6AR3LMacc0Dn/sV/cW1jPsMgJHO5pg2iNvg+8UWojLXClIO2K3oD2ftVWeQIwyVbvM971A==",
+        "license": "MIT"
+      },
+      "node_modules/solid-js": {
+        "version": "2.0.0-beta.32",
+        "resolved": "https://registry.npmjs.org/solid-js/-/solid-js-2.0.0-beta.32.tgz",
+        "integrity": "sha512-Ka7SHt7wn8JYn61sXf9neBhxIdVGes8qVIdTNgrOu7LN0SveQ6k1tGa7BCvhqvDgrciy8a9lh4oW6cZdaU3s3w==",
+        "license": "MIT",
+        "dependencies": {
+          "@solidjs/signals": "^2.0.0-beta.32",
+          "csstype": "^3.1.0",
+          "seroval": "~1.5.4",
+          "seroval-plugins": "~1.5.4"
+        }
+      },
+      "node_modules/@solidjs/web": {
+        "version": "2.0.0-beta.32",
+        "resolved": "https://registry.npmjs.org/@solidjs/web/-/web-2.0.0-beta.32.tgz",
+        "integrity": "sha512-7HBUbGNoNnQIKTtgJRpmqZkQ5GzBt4K6d1BiHAaHksWbdYAsXkzRU7b72WtTwklN4Z2iA5MY8b5jiITlvY1noA==",
+        "license": "MIT",
+        "dependencies": {
+          "seroval": "~1.5.4",
+          "seroval-plugins": "~1.5.4"
+        },
+        "peerDependencies": {
+          "solid-js": "^2.0.0-beta.32"
+        }
+      },
+      "node_modules/tailwind-variants": {
+        "version": "3.3.1",
+        "resolved": "https://registry.npmjs.org/tailwind-variants/-/tailwind-variants-3.3.1.tgz",
+        "integrity": "sha512-4pAvwUtM4HKBiRZftncAbpn6V9Hhwoa5Fl7O2u5zbp7Z5Cvu+/o/6+176WY3WCEES209543quG8zFIcXCsc5Jw==",
+        "license": "MIT",
+        "engines": {
+          "node": ">=16.9.x",
+          "pnpm": ">=7.x"
+        },
+        "peerDependencies": {
+          "tailwind-merge": ">=3.0.0",
+          "tailwindcss": "*"
+        },
+        "peerDependenciesMeta": {
+          "tailwind-merge": {
+            "optional": true
+          },
+          "tailwindcss": {
+            "optional": true
+          }
+        }
+      },
+      "node_modules/@floating-ui/utils": {
+        "version": "0.2.12",
+        "resolved": "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.12.tgz",
+        "integrity": "sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==",
+        "license": "MIT"
+      },
+      "node_modules/@floating-ui/core": {
+        "version": "1.8.0",
+        "resolved": "https://registry.npmjs.org/@floating-ui/core/-/core-1.8.0.tgz",
+        "integrity": "sha512-0CIZ5itps/8x7BG8dEIhs53BvCUH2PCoogtakwRTut+Arm58sJooJ0AuZhLw2HJYIR5cMLNPBSS728sPho2khQ==",
+        "license": "MIT",
+        "dependencies": {
+          "@floating-ui/utils": "^0.2.12"
+        }
+      },
+      "node_modules/@floating-ui/dom": {
+        "version": "1.8.0",
+        "resolved": "https://registry.npmjs.org/@floating-ui/dom/-/dom-1.8.0.tgz",
+        "integrity": "sha512-yXSrzeHZBTZadLOlfyhCkJHNeLJnHRnRInwdZ40L7ZiaAtrBwoYlsDrX3v5zB1Utk7CLfzcOVnVVWoXEky7Ceg==",
+        "license": "MIT",
+        "dependencies": {
+          "@floating-ui/core": "^1.8.0",
+          "@floating-ui/utils": "^0.2.12"
+        }
+      },
+      "node_modules/@tanstack/virtual-core": {
+        "version": "3.17.7",
+        "resolved": "https://registry.npmjs.org/@tanstack/virtual-core/-/virtual-core-3.17.7.tgz",
+        "integrity": "sha512-bp+v10y65sp2H7WpWfIMyxTNfl8ZVfxFTLRjPIFRryi6FV/J33z4IS53WO4pTk36KlvJ4iLiQz+oaydDC1xbcA==",
+        "license": "MIT",
+        "funding": {
+          "type": "github",
+          "url": "https://github.com/sponsors/tannerlinsley"
+        }
+      },
+      "node_modules/@solid-primitives/a11y": {
+        "version": "1.0.0-next.2",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/a11y/-/a11y-1.0.0-next.2.tgz",
+        "integrity": "sha512-jQLdvurGPMN570gdgGFnJ04yiVLWvsngHoFxgzmkjg31P6ZrZsS9XDk+k4ASecECF4HDvmNCj1PmldXuioPuIg==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^7.0.0-next.3"
+        },
+        "peerDependencies": {
+          "@solidjs/web": "^2.0.0-beta.20",
+          "solid-js": "^2.0.0-beta.20"
+        }
+      },
+      "node_modules/@solid-primitives/a11y/node_modules/@solid-primitives/utils": {
+        "version": "7.0.0-next.7",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/utils/-/utils-7.0.0-next.7.tgz",
+        "integrity": "sha512-t1ZYgNililGfuHBJ34iT/m3b75MxNOSyjmPrm2MVhNnUM76hBziULCteA6YQ0laIb6THBv8gRvssHK2BxMYw3Q==",
+        "license": "MIT",
+        "peerDependencies": {
+          "@solidjs/web": "^2.0.0-rc.14",
+          "solid-js": "^2.0.0-rc.14"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "library": {
+    "name": "SolidUI",
+    "slug": "solid-ui",
+    "addedAt": "2026-10-30T00:26:49+05:30",
+    "description": "Copy-and-paste SolidJS components ported from shadcn/ui and Tremor, styled with Tailwind CSS.",
+    "url": "https://www.solid-ui.com",
+    "category": "Component Library",
+    "stacks": [
+      "SolidJS",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "useCases": [
+      "Dashboards",
+      "Data Visualization",
+      "Rapid Prototyping"
+    ],
+    "tags": [
+      "shadcn",
+      "tremor",
+      "copy paste"
+    ]
+  },
+  "details": {
+    "docsUrl": "https://www.solid-ui.com/docs/introduction",
+    "repoUrl": "https://github.com/stefan-karger/solid-ui",
+    "pricing": {
+      "model": "free",
+      "summary": "The component source is free under the MIT license.",
+      "license": "MIT",
+      "source": "https://raw.githubusercontent.com/stefan-karger/solid-ui/21ba4fa59b775a8bf9ee8249883de34aba1cf807/LICENSE"
+    }
+  },
+  "components": [
+    {
+      "name": "Button",
+      "url": "https://www.solid-ui.com/docs/components/button",
+      "kind": "full-pattern",
+      "summary": "A styled button with documented variants and keyboard behavior.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "solid-js",
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "builtOn": "@kobalte/core",
+      "registryDependencies": []
+    },
+    {
+      "name": "Accordion",
+      "url": "https://www.solid-ui.com/docs/components/accordion",
+      "kind": "full-pattern",
+      "summary": "Expandable sections with accessible headings and state-driven chevron styling.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "solid-js",
+        "@kobalte/core",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "builtOn": "@kobalte/core",
+      "registryDependencies": []
+    },
+    {
+      "name": "Progress Circle",
+      "url": "https://www.solid-ui.com/docs/components/progress-circle",
+      "kind": "full-pattern",
+      "summary": "An SVG progress ring ported from Tremor with size, stroke and animation options.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "solid-js",
+        "@kobalte/core",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "aliases": [
+        "progress ring",
+        "circular progress"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "card"
+      ]
+    }
+  ],
+  "compatibility": [
+    {
+      "subject": "solid-js",
+      "constraint": "1.9.3 (verified preview runtime; Solid 1)",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/stefan-karger/solid-ui/21ba4fa59b775a8bf9ee8249883de34aba1cf807/apps/docs/package.json"
+    },
+    {
+      "subject": "Solid 2",
+      "constraint": "No verified Solid 2 port for this pinned source",
+      "status": "unknown",
+      "evidence": "https://raw.githubusercontent.com/stefan-karger/solid-ui/21ba4fa59b775a8bf9ee8249883de34aba1cf807/apps/docs/package.json"
+    },
+    {
+      "subject": "tailwindcss",
+      "constraint": "4.x (preview compiler pinned to 4.3.3)",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/stefan-karger/solid-ui/21ba4fa59b775a8bf9ee8249883de34aba1cf807/apps/docs/package.json"
+    },
+    {
+      "subject": "@kobalte/core",
+      "constraint": "0.13.7",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/stefan-karger/solid-ui/21ba4fa59b775a8bf9ee8249883de34aba1cf807/apps/docs/package.json"
+    }
+  ]
+}

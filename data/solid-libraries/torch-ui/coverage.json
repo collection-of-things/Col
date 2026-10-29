@@ -1,0 +1,881 @@
+{
+  "checkedAt": "2026-10-29T19:04:31Z",
+  "source": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+  "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+  "navigationIntegrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+  "selectedComponents": [
+    "Button",
+    "Dialog",
+    "Accordion"
+  ],
+  "scope": "Partial verified index. Navigation-only entries have not been fetched individually and are not offered as supported previews.",
+  "documentationInventory": [
+    {
+      "name": "Text",
+      "url": "https://torch-ui.dev/typography/text",
+      "category": "Typography",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Icons",
+      "url": "https://torch-ui.dev/typography/icons",
+      "category": "Typography",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Heading",
+      "url": "https://torch-ui.dev/typography/heading",
+      "category": "Typography",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Code",
+      "url": "https://torch-ui.dev/typography/code",
+      "category": "Typography",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Block Quote",
+      "url": "https://torch-ui.dev/typography/block-quote",
+      "category": "Typography",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Button",
+      "url": "https://torch-ui.dev/actions/button",
+      "category": "Actions",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence"
+    },
+    {
+      "name": "Button Group",
+      "url": "https://torch-ui.dev/actions/button-group",
+      "category": "Actions",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Copy",
+      "url": "https://torch-ui.dev/actions/copy",
+      "category": "Actions",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Link",
+      "url": "https://torch-ui.dev/actions/link",
+      "category": "Actions",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Dark Mode Toggle",
+      "url": "https://torch-ui.dev/actions/dark-mode-toggle",
+      "category": "Actions",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Input",
+      "url": "https://torch-ui.dev/forms/input",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Number Field",
+      "url": "https://torch-ui.dev/forms/number-field",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Code Input",
+      "url": "https://torch-ui.dev/forms/code-input",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Text Area",
+      "url": "https://torch-ui.dev/forms/text-area",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Select",
+      "url": "https://torch-ui.dev/forms/select",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Multi Select",
+      "url": "https://torch-ui.dev/forms/multi-select",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Autocomplete",
+      "url": "https://torch-ui.dev/forms/autocomplete",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Checkbox",
+      "url": "https://torch-ui.dev/forms/checkbox",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Radio Group",
+      "url": "https://torch-ui.dev/forms/radio-group",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Switch",
+      "url": "https://torch-ui.dev/forms/switch",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Slider",
+      "url": "https://torch-ui.dev/forms/slider",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Reorderable List",
+      "url": "https://torch-ui.dev/forms/reorderable-list",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Date Picker",
+      "url": "https://torch-ui.dev/forms/date-picker",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Date Range Picker",
+      "url": "https://torch-ui.dev/forms/date-range-picker",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Time Picker",
+      "url": "https://torch-ui.dev/forms/time-picker",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Color Picker",
+      "url": "https://torch-ui.dev/forms/color-picker",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "File Upload",
+      "url": "https://torch-ui.dev/forms/file-upload",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Field Picker",
+      "url": "https://torch-ui.dev/forms/field-picker",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Relative Date",
+      "url": "https://torch-ui.dev/forms/relative-date",
+      "category": "Forms",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Container",
+      "url": "https://torch-ui.dev/layout/container",
+      "category": "Layout",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Grid",
+      "url": "https://torch-ui.dev/layout/grid",
+      "category": "Layout",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Section",
+      "url": "https://torch-ui.dev/layout/section",
+      "category": "Layout",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Card",
+      "url": "https://torch-ui.dev/layout/card",
+      "category": "Layout",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Divider",
+      "url": "https://torch-ui.dev/layout/divider",
+      "category": "Layout",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Page Heading",
+      "url": "https://torch-ui.dev/layout/page-heading",
+      "category": "Layout",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Collapsible",
+      "url": "https://torch-ui.dev/layout/collapsible",
+      "category": "Layout",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Accordion",
+      "url": "https://torch-ui.dev/layout/accordion",
+      "category": "Layout",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence"
+    },
+    {
+      "name": "Code Block",
+      "url": "https://torch-ui.dev/layout/code-block",
+      "category": "Layout",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Inline",
+      "url": "https://torch-ui.dev/layout/inline",
+      "category": "Layout",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Form",
+      "url": "https://torch-ui.dev/layout/form",
+      "category": "Layout",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Wizard",
+      "url": "https://torch-ui.dev/layout/wizard",
+      "category": "Layout",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Prompt With Action",
+      "url": "https://torch-ui.dev/layout/prompt-with-action",
+      "category": "Layout",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Breadcrumbs",
+      "url": "https://torch-ui.dev/navigation/breadcrumbs",
+      "category": "Navigation",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Navigation Menu",
+      "url": "https://torch-ui.dev/navigation/navigation-menu",
+      "category": "Navigation",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Mega Menu",
+      "url": "https://torch-ui.dev/navigation/mega-menu",
+      "category": "Navigation",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Sidebar",
+      "url": "https://torch-ui.dev/navigation/sidebar",
+      "category": "Navigation",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Dropdown Menu",
+      "url": "https://torch-ui.dev/navigation/dropdown-menu",
+      "category": "Navigation",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Tabs",
+      "url": "https://torch-ui.dev/navigation/tabs",
+      "category": "Navigation",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Pagination",
+      "url": "https://torch-ui.dev/navigation/pagination",
+      "category": "Navigation",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "View Switcher",
+      "url": "https://torch-ui.dev/navigation/view-switcher",
+      "category": "Navigation",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Dialog",
+      "url": "https://torch-ui.dev/overlays/dialog",
+      "category": "Overlays",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence"
+    },
+    {
+      "name": "Drawer",
+      "url": "https://torch-ui.dev/overlays/drawer",
+      "category": "Overlays",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Context Menu",
+      "url": "https://torch-ui.dev/overlays/context-menu",
+      "category": "Overlays",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Popover",
+      "url": "https://torch-ui.dev/overlays/popover",
+      "category": "Overlays",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Hover Card",
+      "url": "https://torch-ui.dev/overlays/hover-card",
+      "category": "Overlays",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Tooltip",
+      "url": "https://torch-ui.dev/overlays/tooltip",
+      "category": "Overlays",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Search Palette",
+      "url": "https://torch-ui.dev/overlays/search-palette",
+      "category": "Overlays",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Alert",
+      "url": "https://torch-ui.dev/feedback/alert",
+      "category": "Feedback",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Alert Dialog",
+      "url": "https://torch-ui.dev/feedback/alert-dialog",
+      "category": "Feedback",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Banner",
+      "url": "https://torch-ui.dev/feedback/banner",
+      "category": "Feedback",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Toast",
+      "url": "https://torch-ui.dev/feedback/toast",
+      "category": "Feedback",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Progress",
+      "url": "https://torch-ui.dev/feedback/progress",
+      "category": "Feedback",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Loading",
+      "url": "https://torch-ui.dev/feedback/loading",
+      "category": "Feedback",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Skeleton",
+      "url": "https://torch-ui.dev/feedback/skeleton",
+      "category": "Feedback",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Password Strength",
+      "url": "https://torch-ui.dev/feedback/password-strength",
+      "category": "Feedback",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Image",
+      "url": "https://torch-ui.dev/data-display/image",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Video",
+      "url": "https://torch-ui.dev/data-display/video",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Avatar",
+      "url": "https://torch-ui.dev/data-display/avatar",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Persona",
+      "url": "https://torch-ui.dev/data-display/persona",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Stat",
+      "url": "https://torch-ui.dev/data-display/stat",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Tag",
+      "url": "https://torch-ui.dev/data-display/tag",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Badge",
+      "url": "https://torch-ui.dev/data-display/badge",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Color Swatch",
+      "url": "https://torch-ui.dev/data-display/color-swatch",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Carousel",
+      "url": "https://torch-ui.dev/data-display/carousel",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Table",
+      "url": "https://torch-ui.dev/data-display/table",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Table Panel",
+      "url": "https://torch-ui.dev/data-display/table-panel",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Table View",
+      "url": "https://torch-ui.dev/data-display/table-view",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Data Table",
+      "url": "https://torch-ui.dev/data-display/data-table",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Timeline",
+      "url": "https://torch-ui.dev/data-display/timeline",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Tree View",
+      "url": "https://torch-ui.dev/data-display/tree-view",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Empty State",
+      "url": "https://torch-ui.dev/data-display/empty-state",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Kbd",
+      "url": "https://torch-ui.dev/data-display/kbd",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Board",
+      "url": "https://torch-ui.dev/data-display/board",
+      "category": "Data Display",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Bar Chart",
+      "url": "https://torch-ui.dev/charts/bar",
+      "category": "Charts",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Line Chart",
+      "url": "https://torch-ui.dev/charts/line",
+      "category": "Charts",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Pie Chart",
+      "url": "https://torch-ui.dev/charts/pie",
+      "category": "Charts",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Sparkline",
+      "url": "https://torch-ui.dev/charts/sparkline",
+      "category": "Charts",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Other Charts",
+      "url": "https://torch-ui.dev/charts/other",
+      "category": "Charts",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Login Form",
+      "url": "https://torch-ui.dev/recipes/login-form",
+      "category": "Recipes",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Register Form",
+      "url": "https://torch-ui.dev/recipes/register-form",
+      "category": "Recipes",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Settings Form",
+      "url": "https://torch-ui.dev/recipes/settings-form",
+      "category": "Recipes",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Form Dialog",
+      "url": "https://torch-ui.dev/recipes/form-dialog",
+      "category": "Recipes",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Form Drawer",
+      "url": "https://torch-ui.dev/recipes/form-drawer",
+      "category": "Recipes",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Wizard Flow",
+      "url": "https://torch-ui.dev/recipes/wizard-flow",
+      "category": "Recipes",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Stat Grid",
+      "url": "https://torch-ui.dev/recipes/stat-grid",
+      "category": "Recipes",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "User Card",
+      "url": "https://torch-ui.dev/recipes/user-card",
+      "category": "Recipes",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Comment Thread",
+      "url": "https://torch-ui.dev/recipes/comment-thread",
+      "category": "Recipes",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Filter Builder",
+      "url": "https://torch-ui.dev/recipes/filter-builder",
+      "category": "Recipes",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "View Customizer",
+      "url": "https://torch-ui.dev/recipes/view-customizer",
+      "category": "Recipes",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    },
+    {
+      "name": "Table Panel",
+      "url": "https://torch-ui.dev/recipes/table-panel",
+      "category": "Recipes",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-only"
+    }
+  ],
+  "excludedNavigation": [
+    {
+      "name": "Introduction",
+      "url": "https://torch-ui.dev/introduction",
+      "reason": "setup or utility documentation"
+    },
+    {
+      "name": "Installation",
+      "url": "https://torch-ui.dev/installation",
+      "reason": "setup or utility documentation"
+    },
+    {
+      "name": "Quick Start",
+      "url": "https://torch-ui.dev/quick-start",
+      "reason": "setup or utility documentation"
+    },
+    {
+      "name": "Theme",
+      "url": "https://torch-ui.dev/theme",
+      "reason": "setup or utility documentation"
+    },
+    {
+      "name": "Components",
+      "url": "https://torch-ui.dev/components",
+      "reason": "setup or utility documentation"
+    },
+    {
+      "name": "Accessibility",
+      "url": "https://torch-ui.dev/accessibility",
+      "reason": "setup or utility documentation"
+    },
+    {
+      "name": "Fonts",
+      "url": "https://torch-ui.dev/typography/fonts",
+      "reason": "setup or utility documentation"
+    },
+    {
+      "name": "Chart Options",
+      "url": "https://torch-ui.dev/charts/options",
+      "reason": "setup or utility documentation"
+    },
+    {
+      "name": "cn",
+      "url": "https://torch-ui.dev/utilities/cn",
+      "reason": "setup or utility documentation"
+    },
+    {
+      "name": "mergeRefs",
+      "url": "https://torch-ui.dev/utilities/merge-refs",
+      "reason": "setup or utility documentation"
+    },
+    {
+      "name": "Internationalization",
+      "url": "https://torch-ui.dev/utilities/i18n",
+      "reason": "setup or utility documentation"
+    },
+    {
+      "name": "ComponentSize",
+      "url": "https://torch-ui.dev/utilities/component-size",
+      "reason": "setup or utility documentation"
+    },
+    {
+      "name": "createSortableDrag",
+      "url": "https://torch-ui.dev/utilities/create-sortable-drag",
+      "reason": "setup or utility documentation"
+    }
+  ]
+}

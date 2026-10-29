@@ -1,0 +1,113 @@
+{
+  "library": {
+    "name": "hope-ui",
+    "slug": "hope-ui",
+    "description": "Themeable SolidJS 2 components with Tailwind CSS v4 presets, available as an early source preview.",
+    "url": "https://www.hope-ui.dev/",
+    "category": "Component Library",
+    "stacks": [
+      "SolidJS",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "useCases": [
+      "Dashboards",
+      "Accessibility-first"
+    ],
+    "tags": [
+      "solid 2",
+      "early preview",
+      "theming"
+    ],
+    "addedAt": "2026-10-30T00:34:31+05:30"
+  },
+  "details": {
+    "docsUrl": "https://www.hope-ui.dev/get-started/about",
+    "repoUrl": "https://github.com/hope-ui/hope-ui",
+    "pricing": {
+      "model": "free",
+      "summary": "Source is free under MIT with notices for incorporated Apache-2.0 code; the current Solid 2 packages are not published to npm.",
+      "license": "MIT and Apache-2.0 notices",
+      "source": "https://github.com/hope-ui/hope-ui/blob/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/LICENSE.md"
+    }
+  },
+  "components": [
+    {
+      "name": "Button",
+      "url": "https://www.hope-ui.dev/components/button",
+      "kind": "full-pattern",
+      "summary": "A styled button with variants, color schemes, and icon decorators.",
+      "concept": "button",
+      "verifiedAt": "2026-10-29T19:04:31Z",
+      "dependencies": [
+        "@hope-ui/components",
+        "@hope-ui/theming",
+        "@hope-ui/presets",
+        "solid-js",
+        "@solidjs/web",
+        "@solidjs/signals",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Dialog",
+      "url": "https://www.hope-ui.dev/components/dialog",
+      "kind": "full-pattern",
+      "summary": "A controlled modal with backdrop, positioner, title, description, and actions.",
+      "concept": "dialog",
+      "verifiedAt": "2026-10-29T19:04:31Z",
+      "dependencies": [
+        "@hope-ui/components",
+        "@hope-ui/theming",
+        "@hope-ui/presets",
+        "solid-js",
+        "@solidjs/web",
+        "@solidjs/signals",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Select",
+      "url": "https://www.hope-ui.dev/components/select",
+      "kind": "full-pattern",
+      "summary": "A styled select with a named trigger and portaled list of options.",
+      "concept": "select",
+      "verifiedAt": "2026-10-29T19:04:31Z",
+      "dependencies": [
+        "@hope-ui/components",
+        "@hope-ui/theming",
+        "@hope-ui/presets",
+        "solid-js",
+        "@solidjs/web",
+        "@solidjs/signals",
+        "tailwindcss"
+      ]
+    }
+  ],
+  "compatibility": [
+    {
+      "subject": "solid-js",
+      "constraint": "2.0.0-beta.32",
+      "status": "supported",
+      "evidence": "https://github.com/hope-ui/hope-ui/blob/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/pnpm-workspace.yaml"
+    },
+    {
+      "subject": "@solidjs/web",
+      "constraint": "2.0.0-beta.32",
+      "status": "supported",
+      "evidence": "https://github.com/hope-ui/hope-ui/blob/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/pnpm-workspace.yaml"
+    },
+    {
+      "subject": "@solidjs/signals",
+      "constraint": "2.0.0-beta.32",
+      "status": "supported",
+      "evidence": "https://github.com/hope-ui/hope-ui/blob/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/pnpm-workspace.yaml"
+    },
+    {
+      "subject": "tailwindcss",
+      "constraint": "^4.3.3; preview compiled with 4.3.3",
+      "status": "supported",
+      "evidence": "https://github.com/hope-ui/hope-ui/blob/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/package.json"
+    }
+  ]
+}

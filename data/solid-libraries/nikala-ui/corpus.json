@@ -1,0 +1,81 @@
+{
+  "slug": "nikala-ui",
+  "permission": {
+    "status": "granted",
+    "source": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/LICENSE",
+    "checkedAt": "2026-10-29T19:32:25Z"
+  },
+  "snapshots": [
+    {
+      "componentId": "nikala-ui/Button",
+      "title": "Button",
+      "url": "https://nikala.dev/docs/components/button",
+      "fetchedAt": "2026-10-29T19:32:25Z",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "content": "Button accepts standard Solid button attributes, variant and size, and loading:boolean. Loading disables the button and shows its Spinner. The documented default uses the original primary yellow theme.\n\nDocumented SolidJS example:\n```tsx\nimport { Button } from \"@/components/ui/button\";\n\nexport default function Example() {\nreturn (<Button>Button</Button>);\n}\n```\n\nSource revision: ce75abc6a948d2d78b2b22d368c2997832d0909b. Preserve the source component classes and its matching theme/animation CSS. Preview compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16. This is browser UI. Native Tauri v2 window, dialog and updater APIs require a desktop host and are not emulated in a browser preview.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/button.tsx",
+          "integrity": "c66992a954cc6cd9f64e95b14909eeb47e204f319c46e7b5e349537811538ede"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/button.tsx",
+          "integrity": "055fe28a4a73b709b0b862123ace265139a730d91fadb231f3a6cd1f9a07c591"
+        }
+      ]
+    },
+    {
+      "componentId": "nikala-ui/Toggle Group",
+      "title": "Toggle Group",
+      "url": "https://nikala.dev/docs/components/toggle-group",
+      "fetchedAt": "2026-10-29T19:32:25Z",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "content": "ToggleGroup accepts type single|multiple, controlled value/onChange, defaultValue, orientation horizontal|vertical, variant default|outline, size sm|default|lg and disabled. ToggleGroupItem requires value and exposes its selection through aria-checked and data-state.\n\nDocumented SolidJS example:\n```tsx\nimport { createSignal } from \"solid-js\";\nimport { ToggleGroup, ToggleGroupItem } from \"@/components/ui/toggle-group\";\nimport { AlignLeft, AlignCenter, AlignRight, AlignJustify } from \"lucide-solid\";\n\nexport default function Example() {\nconst [alignment, setAlignment] = createSignal<string>(\"left\");\n\nreturn (\n  <div class=\"flex flex-col items-center gap-3\">\n    <ToggleGroup\n      type=\"single\"\n      value={alignment()}\n      onChange={(val) => setAlignment(val || \"left\")}\n      variant=\"outline\"\n    >\n      <ToggleGroupItem value=\"left\" aria-label=\"Align Left\">\n        <AlignLeft class=\"size-4\" />\n      </ToggleGroupItem>\n      <ToggleGroupItem value=\"center\" aria-label=\"Align Center\">\n        <AlignCenter class=\"size-4\" />\n      </ToggleGroupItem>\n      <ToggleGroupItem value=\"right\" aria-label=\"Align Right\">\n        <AlignRight class=\"size-4\" />\n      </ToggleGroupItem>\n      <ToggleGroupItem value=\"justify\" aria-label=\"Align Justify\">\n        <AlignJustify class=\"size-4\" />\n      </ToggleGroupItem>\n    </ToggleGroup>\n\n    <p class=\"text-xs text-muted-foreground\">\n      Selected Alignment: <span class=\"font-semibold text-foreground\">{alignment()}</span>\n    </p>\n  </div>\n);\n}\n```\n\nSource revision: ce75abc6a948d2d78b2b22d368c2997832d0909b. Preserve the source component classes and its matching theme/animation CSS. Preview compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16. This is browser UI. Native Tauri v2 window, dialog and updater APIs require a desktop host and are not emulated in a browser preview.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/toggle-group.tsx",
+          "integrity": "4ae157abd1f1ad1bb4aca4ec3f4994b717b84f64fc09e8dca7c4f7e8d8e10d3d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/toggle-group.tsx",
+          "integrity": "b8a252805d648dedfcb68e43f497b33f363a14cc380358fcda0bd32765508a58"
+        }
+      ]
+    },
+    {
+      "componentId": "nikala-ui/Timeline",
+      "title": "Timeline",
+      "url": "https://nikala.dev/docs/components/timeline",
+      "fetchedAt": "2026-10-29T19:32:25Z",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "content": "Timeline accepts orientation vertical|horizontal, align left|right|alternate and size sm|default|lg. Compose TimelineItem, TimelineSeparator, TimelinePoint, TimelineConnector and TimelineContent; TimelineTitle, TimelineDescription and TimelineTime carry each event. TimelinePoint supports status variants; TimelineConnector supports dashed.\n\nDocumented SolidJS example:\n```tsx\nimport { Timeline, TimelineItem, TimelineSeparator, TimelinePoint, TimelineConnector, TimelineContent, TimelineTitle, TimelineDescription, TimelineTime } from \"@/components/ui/timeline\";\nimport { Check, CreditCard, Package, Truck } from \"lucide-solid\";\n\nexport default function Example() {\nreturn (<Timeline>\n  {/* Step 1: Completed */}\n  <TimelineItem>\n    <TimelineSeparator>\n      <TimelinePoint status=\"success\">\n        <Check class=\"size-4\" />\n      </TimelinePoint>\n      <TimelineConnector />\n    </TimelineSeparator>\n    <TimelineContent>\n      <div class=\"flex items-center justify-between gap-2\">\n        <TimelineTitle>Order Placed</TimelineTitle>\n        <TimelineTime>Oct 14, 09:30 AM</TimelineTime>\n      </div>\n      <TimelineDescription>Your order #NK-9281 has been received and logged.</TimelineDescription>\n    </TimelineContent>\n  </TimelineItem>\n\n  {/* Step 2: Completed */}\n  <TimelineItem>\n    <TimelineSeparator>\n      <TimelinePoint status=\"success\">\n        <CreditCard class=\"size-4\" />\n      </TimelinePoint>\n      <TimelineConnector />\n    </TimelineSeparator>\n    <TimelineContent>\n      <div class=\"flex items-center justify-between gap-2\">\n        <TimelineTitle>Payment Confirmed</TimelineTitle>\n        <TimelineTime>Oct 14, 09:32 AM</TimelineTime>\n      </div>\n      <TimelineDescription>Payment of $149.00 processed via Stripe.</TimelineDescription>\n    </TimelineContent>\n  </TimelineItem>\n\n  {/* Step 3: In Progress */}\n  <TimelineItem>\n    <TimelineSeparator>\n      <TimelinePoint status=\"primary\">\n        <Package class=\"size-4\" />\n      </TimelinePoint>\n      <TimelineConnector dashed />\n    </TimelineSeparator>\n    <TimelineContent>\n      <div class=\"flex items-center justify-between gap-2\">\n        <TimelineTitle class=\"text-primary\">Fulfillment & Packaging</TimelineTitle>\n        <TimelineTime>In Progress</TimelineTime>\n      </div>\n      <TimelineDescription>Items packed at Tbilisi Logistics Hub.</TimelineDescription>\n    </TimelineContent>\n  </TimelineItem>\n\n  {/* Step 4: Pending */}\n  <TimelineItem>\n    <TimelineSeparator>\n      <TimelinePoint status=\"muted\">\n        <Truck class=\"size-4\" />\n      </TimelinePoint>\n    </TimelineSeparator>\n    <TimelineContent>\n      <div class=\"flex items-center justify-between gap-2\">\n        <TimelineTitle class=\"text-muted-foreground\">Out for Delivery</TimelineTitle>\n        <TimelineTime>Pending</TimelineTime>\n      </div>\n      <TimelineDescription>Courier dispatch scheduled for tomorrow.</TimelineDescription>\n    </TimelineContent>\n  </TimelineItem>\n</Timeline>);\n}\n```\n\nSource revision: ce75abc6a948d2d78b2b22d368c2997832d0909b. Preserve the source component classes and its matching theme/animation CSS. Preview compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16. This is browser UI. Native Tauri v2 window, dialog and updater APIs require a desktop host and are not emulated in a browser preview.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/timeline.tsx",
+          "integrity": "e7f514c0d7e974061616b02387b7991dccc5195f3ad36c0b58f68219b6d63e72"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/timeline.tsx",
+          "integrity": "332ed87cb719e419f4a468c2d216f1e528946b322dda771bc67fd33131b82da8"
+        }
+      ]
+    },
+    {
+      "title": "Introduction and Quick Start",
+      "url": "https://nikala.dev/docs",
+      "fetchedAt": "2026-10-29T19:41:26Z",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "content": "Nikala UI is a copy-paste component system for SolidJS and Tailwind CSS v4. The official Quick Start initializes Nikala UI in an existing SolidJS project with the CLI init command, then uses add button card input theme-manager to copy components into the workspace. Select a package-manager command on the official page. Component code is imported from local aliases such as @/components/ui/button, not from an invented aggregate npm component package. Keep the generated Tailwind v4 theme tokens and local cn helper. The preview examples use browser UI; Tauri v2 desktop integrations require their native host. See the official CLI Reference and Theming Guide linked from the docs for project-specific alias and theme configuration.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/index.tsx",
+          "integrity": "f294693cd3cbb41929de51e542d1af5a047fa1eefc62c77c6c13f23aa729c89f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/components/docs/intro/intro-quickstart-section.tsx",
+          "integrity": "5d4af6f42fc94d5f62c66fe31409c8ce42465e9b95a5fa5db52c0cb942f8eab1"
+        }
+      ]
+    }
+  ]
+}

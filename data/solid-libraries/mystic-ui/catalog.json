@@ -1,0 +1,122 @@
+{
+  "library": {
+    "name": "Mystic UI",
+    "slug": "mystic-ui",
+    "description": "Alpha copy-paste animated SolidJS components with separate Tailwind CSS and Panda CSS variants.",
+    "url": "https://mystic-ui.vercel.app/",
+    "category": "Animation & Motion",
+    "stacks": [
+      "SolidJS",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "useCases": [
+      "Landing Pages",
+      "Micro-interactions",
+      "Creative & Experimental"
+    ],
+    "tags": [
+      "copy-paste",
+      "Panda CSS",
+      "alpha",
+      "CSS animation"
+    ],
+    "addedAt": "2026-10-29T19:35:27Z"
+  },
+  "details": {
+    "docsUrl": "https://mystic-ui.vercel.app/docs/tailwind",
+    "repoUrl": "https://github.com/TheComputerM/mystic-ui",
+    "pricing": {
+      "model": "free",
+      "summary": "Free source components under the project’s MIT license.",
+      "license": "MIT",
+      "source": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/LICENSE.md"
+    }
+  },
+  "components": [
+    {
+      "name": "Marquee",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/marquee",
+      "dependencies": [
+        "solid-js",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "kind": "visual-effect",
+      "summary": "Scrolling repeated content with duration, gap, direction and hover pause controls.",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/marquee",
+        "panda": "https://mystic-ui.vercel.app/docs/panda/components/marquee"
+      }
+    },
+    {
+      "name": "Orbiting Circles",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/orbiting-circles",
+      "dependencies": [
+        "solid-js",
+        "clsx",
+        "tailwind-merge",
+        "solid-icons"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "kind": "visual-effect",
+      "summary": "Content follows circular paths with configurable radius, delay and direction.",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/orbiting-circles",
+        "panda": "https://mystic-ui.vercel.app/docs/panda/components/orbiting-circles"
+      }
+    },
+    {
+      "name": "Ripple",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/ripple",
+      "dependencies": [
+        "solid-js",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "kind": "visual-effect",
+      "summary": "Concentric animated circles with size, opacity and count controls.",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/ripple",
+        "panda": "https://mystic-ui.vercel.app/docs/panda/components/ripple"
+      }
+    }
+  ],
+  "compatibility": [
+    {
+      "subject": "solid-js",
+      "constraint": "^1.9.3; previews verified with 1.9.17",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/package.json"
+    },
+    {
+      "subject": "tailwindcss",
+      "constraint": "^3.4.16; Tailwind variant previews compiled with 3.4.19",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/package.json"
+    },
+    {
+      "subject": "solid-js 2",
+      "constraint": "",
+      "status": "unknown",
+      "evidence": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/package.json"
+    },
+    {
+      "subject": "maintenance",
+      "constraint": "Alpha; latest repository commit at verification is 2024-12-24",
+      "status": "supported",
+      "evidence": "https://github.com/TheComputerM/mystic-ui/commit/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f"
+    }
+  ]
+}

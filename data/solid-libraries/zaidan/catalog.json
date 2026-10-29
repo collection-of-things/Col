@@ -1,0 +1,129 @@
+{
+  "library": {
+    "name": "Zaidan",
+    "slug": "zaidan",
+    "addedAt": "2026-10-30T00:26:49+05:30",
+    "description": "A shadcn-compatible registry of SolidJS components built on Kobalte and Corvu, with selectable Tailwind CSS themes.",
+    "url": "https://zaidan.carere.dev",
+    "category": "Component Library",
+    "stacks": [
+      "SolidJS",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "useCases": [
+      "Dashboards",
+      "Accessibility-first",
+      "Rapid Prototyping"
+    ],
+    "tags": [
+      "shadcn registry",
+      "kobalte",
+      "corvu",
+      "themes"
+    ]
+  },
+  "details": {
+    "docsUrl": "https://zaidan.carere.dev/docs",
+    "repoUrl": "https://github.com/carere/zaidan",
+    "pricing": {
+      "model": "free",
+      "summary": "The component source is free under the MIT license.",
+      "license": "MIT",
+      "source": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/LICENSE"
+    }
+  },
+  "components": [
+    {
+      "name": "Button",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/button",
+      "kind": "full-pattern",
+      "summary": "A styled button with documented variants and keyboard behavior.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "solid-js",
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "tailwind-merge",
+        "lucide-solid"
+      ],
+      "builtOn": "@kobalte/core",
+      "registryDependencies": []
+    },
+    {
+      "name": "Checkbox",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/checkbox",
+      "kind": "full-pattern",
+      "summary": "Selectable form controls with checked and disabled states.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "solid-js",
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "tailwind-merge",
+        "lucide-solid"
+      ],
+      "builtOn": "@kobalte/core",
+      "registryDependencies": [
+        "field",
+        "label",
+        "separator"
+      ]
+    },
+    {
+      "name": "Dialog",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/dialog",
+      "kind": "full-pattern",
+      "summary": "A modal with accessible title, focus management and portal rendering.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "solid-js",
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "tailwind-merge",
+        "lucide-solid"
+      ],
+      "builtOn": "@kobalte/core",
+      "concept": "dialog",
+      "aliases": [
+        "modal"
+      ],
+      "registryDependencies": [
+        "button",
+        "field",
+        "input",
+        "label",
+        "separator"
+      ]
+    }
+  ],
+  "compatibility": [
+    {
+      "subject": "solid-js",
+      "constraint": "1.9.17 (verified preview runtime; Solid 1)",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/package.json"
+    },
+    {
+      "subject": "Solid 2",
+      "constraint": "No verified Solid 2 port for this pinned source",
+      "status": "unknown",
+      "evidence": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/package.json"
+    },
+    {
+      "subject": "tailwindcss",
+      "constraint": "4.x (preview compiler pinned to 4.3.3)",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/package.json"
+    },
+    {
+      "subject": "@kobalte/core",
+      "constraint": "0.13.14",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/carere/zaidan/271ffce00aaeee0dfa32f2321c9b6e212af39c3d/package.json"
+    }
+  ]
+}

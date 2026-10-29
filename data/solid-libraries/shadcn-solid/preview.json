@@ -1,0 +1,30 @@
+{
+  "sourceBase": "apps/docs/src",
+  "alias": "@/",
+  "stylesheet": "apps/docs/src/styles/app.css",
+  "adaptations": [
+    "Original docs Tailwind v4 theme, variables, state selectors and animation package retained.",
+    "Original Geist variable font assets embedded as data URLs with the SIL Open Font License.",
+    "Reviewed mount wrapper maps the preview theme to the upstream data-kb-theme attribute and disposes the Solid root."
+  ],
+  "examples": [
+    {
+      "name": "Button",
+      "exportName": "Button",
+      "path": "apps/docs/src/registry/examples/button-demo.tsx"
+    },
+    {
+      "name": "Dialog",
+      "exportName": "Dialog",
+      "path": "apps/docs/src/registry/examples/dialog-demo.tsx",
+      "gaps": [
+        "The pinned upstream registry index omits Dialog, and the official docs reported a missing dialog-demo on 2026-10-30. This preview uses the pinned official source and example; live upstream demo styling could not be compared."
+      ]
+    },
+    {
+      "name": "Tabs",
+      "exportName": "Tabs",
+      "path": "apps/docs/src/registry/examples/tabs-demo.tsx"
+    }
+  ]
+}

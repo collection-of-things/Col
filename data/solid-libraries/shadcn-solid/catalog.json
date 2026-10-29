@@ -1,0 +1,118 @@
+{
+  "library": {
+    "name": "shadcn-solid",
+    "slug": "shadcn-solid",
+    "addedAt": "2026-10-30T00:26:49+05:30",
+    "description": "A SolidJS port of shadcn/ui with copy-and-paste components built on Kobalte and styled with Tailwind CSS.",
+    "url": "https://shadcn-solid.netlify.app",
+    "category": "Component Library",
+    "stacks": [
+      "SolidJS",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "useCases": [
+      "Dashboards",
+      "Accessibility-first",
+      "Rapid Prototyping"
+    ],
+    "tags": [
+      "shadcn",
+      "kobalte",
+      "copy paste"
+    ]
+  },
+  "details": {
+    "docsUrl": "https://shadcn-solid.netlify.app/docs/introduction",
+    "repoUrl": "https://github.com/hngngn/shadcn-solid",
+    "pricing": {
+      "model": "free",
+      "summary": "The component source is free under the MIT license.",
+      "license": "MIT",
+      "source": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/LICENSE.md"
+    }
+  },
+  "components": [
+    {
+      "name": "Button",
+      "url": "https://shadcn-solid.netlify.app/docs/components/button",
+      "kind": "full-pattern",
+      "summary": "A styled button with documented variants and keyboard behavior.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "solid-js",
+        "@kobalte/core",
+        "cva",
+        "tailwind-merge"
+      ],
+      "builtOn": "@kobalte/core",
+      "registryDependencies": []
+    },
+    {
+      "name": "Dialog",
+      "url": "https://shadcn-solid.netlify.app/docs/components/dialog",
+      "kind": "full-pattern",
+      "summary": "A modal with accessible title, focus management and portal rendering.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "solid-js",
+        "@kobalte/core",
+        "cva",
+        "tailwind-merge"
+      ],
+      "builtOn": "@kobalte/core",
+      "concept": "dialog",
+      "aliases": [
+        "modal"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Tabs",
+      "url": "https://shadcn-solid.netlify.app/docs/components/tabs",
+      "kind": "full-pattern",
+      "summary": "Layered account and password panels with a selected-tab indicator.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "solid-js",
+        "@kobalte/core",
+        "cva",
+        "tailwind-merge"
+      ],
+      "builtOn": "@kobalte/core",
+      "registryDependencies": [
+        "button",
+        "card",
+        "text-field"
+      ]
+    }
+  ],
+  "compatibility": [
+    {
+      "subject": "solid-js",
+      "constraint": "1.9.17 (verified preview runtime; Solid 1)",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/package.json"
+    },
+    {
+      "subject": "Solid 2",
+      "constraint": "No verified Solid 2 port for this pinned source",
+      "status": "unknown",
+      "evidence": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/package.json"
+    },
+    {
+      "subject": "tailwindcss",
+      "constraint": "4.x (preview compiler pinned to 4.3.3)",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/package.json"
+    },
+    {
+      "subject": "@kobalte/core",
+      "constraint": "0.13.14",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/package.json"
+    }
+  ]
+}

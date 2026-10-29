@@ -1,0 +1,84 @@
+{
+  "library": {
+    "name": "Kobalte",
+    "slug": "kobalte",
+    "addedAt": "2026-10-30T00:17:02+05:30",
+    "description": "Unstyled, accessible SolidJS primitives with composable APIs and data attributes for custom styling.",
+    "url": "https://kobalte.dev",
+    "category": "Component Library",
+    "stacks": [
+      "SolidJS",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "useCases": [
+      "Dashboards",
+      "Accessibility-first"
+    ],
+    "tags": [
+      "headless",
+      "unstyled",
+      "primitives"
+    ]
+  },
+  "details": {
+    "docsUrl": "https://kobalte.dev/docs/core/overview/introduction",
+    "repoUrl": "https://github.com/kobaltedev/kobalte",
+    "pricing": {
+      "model": "free",
+      "summary": "Kobalte is free and open source under the MIT license.",
+      "license": "MIT",
+      "source": "https://raw.githubusercontent.com/kobaltedev/kobalte/675b4a11f4f074007c98b47a573760a1b60849ff/LICENSE.md"
+    }
+  },
+  "components": [
+    {
+      "name": "Button",
+      "url": "https://kobalte.dev/docs/core/components/button",
+      "summary": "An accessible button with disabled-state behavior and native keyboard activation.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Dialog",
+      "url": "https://kobalte.dev/docs/core/components/dialog",
+      "summary": "A modal dialog with focus management, dismissal, and an original styled portal.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ],
+      "concept": "dialog"
+    },
+    {
+      "name": "Tabs",
+      "url": "https://kobalte.dev/docs/core/components/tabs",
+      "summary": "Keyboard-accessible tabs with a moving selection indicator and content panels.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    }
+  ],
+  "compatibility": [
+    {
+      "subject": "solid-js",
+      "constraint": "^1.9.8; preview pinned to 1.9.17",
+      "status": "supported",
+      "evidence": "https://registry.npmjs.org/@kobalte/core/0.13.14"
+    },
+    {
+      "subject": "tailwindcss",
+      "constraint": "v3 uses @kobalte/tailwindcss; v4 uses native data attributes",
+      "status": "supported",
+      "evidence": "https://kobalte.dev/docs/core/overview/styling"
+    }
+  ]
+}

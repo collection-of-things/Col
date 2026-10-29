@@ -1,0 +1,16 @@
+{
+  "name": "col-preview-torch-ui",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "solid-js": "1.9.11",
+    "babel-preset-solid": "1.9.10",
+    "@babel/core": "7.29.0",
+    "@babel/preset-typescript": "7.28.5",
+    "@kobalte/core": "0.13.11",
+    "tailwindcss": "4.2.1",
+    "@tailwindcss/cli": "4.2.1",
+    "tailwind-merge": "3.5.0",
+    "clsx": "2.1.1"
+  }
+}

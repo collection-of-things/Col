@@ -1,0 +1,81 @@
+{
+  "slug": "mystic-ui",
+  "permission": {
+    "status": "granted",
+    "source": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/LICENSE.md",
+    "checkedAt": "2026-10-29T19:35:27Z"
+  },
+  "snapshots": [
+    {
+      "componentId": "mystic-ui/Marquee",
+      "title": "Marquee",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/marquee",
+      "fetchedAt": "2026-10-29T19:35:27Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "Tailwind Marquee accepts children and HTML div attributes plus pauseOnHover, repeat, reverse, vertical, duration and gap. Defaults are false, 4, false, false, 40 seconds and 1rem. The example uses 20 seconds for its first row and reverses the second row.\n\nDocumented SolidJS example:\n```tsx\nimport { cn } from \"@/lib/utils\";\nimport { Marquee } from \"@/ui/marquee\";\nimport { For } from \"solid-js\";\n\nconst reviews = [\n\t{\n\t\tname: \"Jack\",\n\t\tusername: \"@jack\",\n\t\tbody: \"I've never seen anything like this before. It's amazing. I love it.\",\n\t\timg: \"https://avatar.vercel.sh/jack\",\n\t},\n\t{\n\t\tname: \"Jill\",\n\t\tusername: \"@jill\",\n\t\tbody: \"I don't know what to say. I'm speechless. This is amazing.\",\n\t\timg: \"https://avatar.vercel.sh/jill\",\n\t},\n\t{\n\t\tname: \"John\",\n\t\tusername: \"@john\",\n\t\tbody: \"I'm at a loss for words. This is amazing. I love it.\",\n\t\timg: \"https://avatar.vercel.sh/john\",\n\t},\n];\n\nconst ReviewCard = ({\n\timg,\n\tname,\n\tusername,\n\tbody,\n}: {\n\timg: string;\n\tname: string;\n\tusername: string;\n\tbody: string;\n}) => {\n\treturn (\n\t\t<figure\n\t\t\tclass={cn(\n\t\t\t\t\"relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4\",\n\t\t\t\t// light styles\n\t\t\t\t\"border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]\",\n\t\t\t\t// dark styles\n\t\t\t\t\"dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]\",\n\t\t\t)}\n\t\t>\n\t\t\t<div class=\"flex flex-row items-center gap-2\">\n\t\t\t\t<img\n\t\t\t\t\tclass=\"rounded-full\"\n\t\t\t\t\twidth=\"32\"\n\t\t\t\t\theight=\"32\"\n\t\t\t\t\talt=\"avatar-img\"\n\t\t\t\t\tsrc={img}\n\t\t\t\t/>\n\t\t\t\t<div class=\"flex flex-col\">\n\t\t\t\t\t<span class=\"text-sm font-medium dark:text-white\">{name}</span>\n\t\t\t\t\t<p class=\"text-xs font-medium dark:text-white/40\">{username}</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<blockquote class=\"mt-2 text-sm\">{body}</blockquote>\n\t\t</figure>\n\t);\n};\n\nexport default function MarqueeDemo() {\n\treturn (\n\t\t<div class=\"relative overflow-hidden\">\n\t\t\t<Marquee pauseOnHover duration={20}>\n\t\t\t\t<For each={reviews}>{(review) => <ReviewCard {...review} />}</For>\n\t\t\t</Marquee>\n\t\t\t<Marquee reverse pauseOnHover>\n\t\t\t\t<For each={reviews}>{(review) => <ReviewCard {...review} />}</For>\n\t\t\t</Marquee>\n\t\t\t<div class=\"pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background\" />\n\t\t\t<div class=\"pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background\" />\n\t\t</div>\n\t);\n}\n\n```\n\nSource revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Preserve the source component classes and its matching theme/animation CSS. Preview compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16. This snapshot and preview use the Tailwind 3 variant; the official page also offers Panda CSS. Latest upstream commit checked on 2026-10-30 is dated 2024-12-24. The upstream alpha status is not a guarantee of current maintenance.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/marquee.tsx",
+          "integrity": "55d832ac6bf668e9ce545111ce7253eb0621c1e23a88051f173b433b016a370f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/marquee/default.tsx",
+          "integrity": "e250b94e24dd01fe2bee05f2434caac08d3a32733a3e61bb176fdd49cf9c09ed"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Orbiting Circles",
+      "title": "Orbiting Circles",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/orbiting-circles",
+      "fetchedAt": "2026-10-29T19:35:27Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "Tailwind OrbitingCircles accepts duration, delay, radius, path, reverse and class with children. Defaults are 20 seconds, 0 seconds, 50 pixels, true and false. The example uses 80 and 160 pixel radii, 10 second delays, and reverse motion on its outer pair.\n\nDocumented SolidJS example:\n```tsx\nimport { OrbitingCircles } from \"@/ui/orbiting-circles\";\nimport {\n\tTbBrand4chan,\n\tTbBrandBitbucket,\n\tTbBrandGithubFilled,\n\tTbBrandReddit,\n} from \"solid-icons/tb\";\n\nexport default function OrbitingCirclesDemo() {\n\treturn (\n\t\t<div class=\"relative flex items-center justify-center h-[500px] w-full overflow-hidden\">\n\t\t\t<span class=\"text-4xl md:text-6xl font-bold tracking-tight\">Circles</span>\n\t\t\t<OrbitingCircles radius={80}>\n\t\t\t\t<TbBrandGithubFilled size=\"28\" />\n\t\t\t</OrbitingCircles>\n\t\t\t<OrbitingCircles radius={80} delay={10}>\n\t\t\t\t<TbBrandBitbucket size=\"28\" />\n\t\t\t</OrbitingCircles>\n\n\t\t\t<OrbitingCircles reverse radius={160}>\n\t\t\t\t<TbBrandReddit size=\"28\" />\n\t\t\t</OrbitingCircles>\n\t\t\t<OrbitingCircles reverse radius={160} delay={10}>\n\t\t\t\t<TbBrand4chan size=\"28\" />\n\t\t\t</OrbitingCircles>\n\t\t</div>\n\t);\n}\n\n```\n\nSource revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Preserve the source component classes and its matching theme/animation CSS. Preview compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16. This snapshot and preview use the Tailwind 3 variant; the official page also offers Panda CSS. Latest upstream commit checked on 2026-10-30 is dated 2024-12-24. The upstream alpha status is not a guarantee of current maintenance.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/orbiting-circles.tsx",
+          "integrity": "7c086bebabb0f37ec2377ae89381fbf058367782f762ac45903754ac81d23ed8"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/orbiting-circles/default.tsx",
+          "integrity": "5dceb025762512dd4adf3fdacdba73e8b493cff203b1bdf845d8c3e3a77331df"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Ripple",
+      "title": "Ripple",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/ripple",
+      "fetchedAt": "2026-10-29T19:35:27Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "Tailwind Ripple accepts mainCircleSize, mainCircleOpacity, numCircles and class. Defaults are 210 pixels, 0.24 and 8. Each successive circle grows by 70 pixels, fades by 0.03 and is delayed by 0.06 seconds. The last circle has a dashed border.\n\nDocumented SolidJS example:\n```tsx\nimport { Ripple } from \"@/ui/ripple\";\n\nexport default function RippleDemo() {\n\treturn (\n\t\t<div class=\"relative h-[800px] w-full flex items-center justify-center overflow-hidden\">\n\t\t\t<img\n\t\t\t\tsrc=\"https://raw.githubusercontent.com/solidjs/solid-site/refs/heads/main/src/assets/logo.svg\"\n\t\t\t\tclass=\"w-20 grayscale\"\n\t\t\t\talt=\"Solid JS\"\n\t\t\t/>\n\t\t\t<Ripple />\n\t\t</div>\n\t);\n}\n\n```\n\nSource revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Preserve the source component classes and its matching theme/animation CSS. Preview compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16. This snapshot and preview use the Tailwind 3 variant; the official page also offers Panda CSS. Latest upstream commit checked on 2026-10-30 is dated 2024-12-24. The upstream alpha status is not a guarantee of current maintenance.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/ripple.tsx",
+          "integrity": "7d823631b9b01792e62fbd35f3ea283167000da44e3e3cb8cd3ddcef5097a3f0"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/ripple/default.tsx",
+          "integrity": "e420ff5ffc43bebdf5e439c6a9a5a1e38131b8d677f528f0415cb458df852d64"
+        }
+      ]
+    },
+    {
+      "title": "Setup with Tailwind and Panda CSS",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/setup",
+      "content": "Official setup guides: https://mystic-ui.vercel.app/docs/tailwind/setup and https://mystic-ui.vercel.app/docs/panda/setup.\n\nStart with a SolidJS project using the chosen CSS framework and follow its official initialization steps. The Tailwind setup selects the Tailwind variant and requires a manually defined cn utility at the configured utils alias, using clsx and tailwind-merge. The Panda setup selects the Panda variant and includes @pandacss/preset-panda in the Panda configuration's presets.\n\nKeep each variant's component source and generated CSS together. Col's three previews use the source-pinned Tailwind 3 components and corresponding registry animation configuration. The official website's embedded stories render the Panda variant, including on Tailwind documentation pages.",
+      "fetchedAt": "2026-10-29T20:15:48.592Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/pages/setup-tailwind.mdx",
+          "integrity": "1c065175340412e899b014cc15ac7768cab1ef8f1e78739ec6fbde3aa2dfc1eb"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/pages/setup-panda.mdx",
+          "integrity": "46b14dff495f4ba90abb61d1f292a3ab344ad8399025b79641a6b0d64f05aa8d"
+        }
+      ]
+    }
+  ]
+}

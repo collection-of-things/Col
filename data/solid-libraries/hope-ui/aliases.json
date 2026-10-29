@@ -1,0 +1,17 @@
+{
+  "@hope-ui/components/button": "upstream/packages/components/src/button/index.ts",
+  "@hope-ui/components/close-button": "upstream/packages/components/src/close-button/index.ts",
+  "@hope-ui/components/dialog": "upstream/packages/components/src/dialog/index.ts",
+  "@hope-ui/components/select": "upstream/packages/components/src/select/index.ts",
+  "@hope-ui/primitives/combobox": "upstream/packages/primitives/src/combobox/index.ts",
+  "@hope-ui/primitives/dialog": "upstream/packages/primitives/src/dialog/index.ts",
+  "@hope-ui/primitives/hidden-select": "upstream/packages/primitives/src/hidden-select/index.ts",
+  "@hope-ui/primitives/listbox": "upstream/packages/primitives/src/listbox/index.ts",
+  "@hope-ui/primitives/modal-backdrop": "upstream/packages/primitives/src/modal-backdrop/index.ts",
+  "@hope-ui/primitives/internal": "upstream/packages/primitives/src/internal/index.ts",
+  "@hope-ui/primitives/render": "upstream/packages/primitives/src/render/index.ts",
+  "@hope-ui/primitives/utils": "upstream/packages/primitives/src/utils/index.ts",
+  "@hope-ui/i18n": "upstream/packages/i18n/src/index.ts",
+  "@hope-ui/theming": "upstream/packages/theming/src/index.ts",
+  "@hope-ui/presets/hope": "upstream/packages/presets/src/hope/index.ts"
+}

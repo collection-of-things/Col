@@ -1,0 +1,560 @@
+{
+  "checkedAt": "2026-10-29T19:35:27Z",
+  "source": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/config/docs.ts",
+  "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+  "navigationIntegrity": "e4417c733a03a824c81ad91c302a1682f6cf11c97e395e8a8483fafa3cd0f518",
+  "selectedComponents": [
+    "Button",
+    "Toggle Group",
+    "Timeline"
+  ],
+  "documentationInventory": [
+    {
+      "name": "Accordion",
+      "url": "https://nikala.dev/docs/components/accordion",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Alert",
+      "url": "https://nikala.dev/docs/components/alert",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "API Table",
+      "url": "https://nikala.dev/docs/components/api-table",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Aspect Ratio",
+      "url": "https://nikala.dev/docs/components/aspect-ratio",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Avatar",
+      "url": "https://nikala.dev/docs/components/avatar",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Badge",
+      "url": "https://nikala.dev/docs/components/badge",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Banner",
+      "url": "https://nikala.dev/docs/components/banner",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Breadcrumb",
+      "url": "https://nikala.dev/docs/components/breadcrumb",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Bubble",
+      "url": "https://nikala.dev/docs/components/bubble",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Button",
+      "url": "https://nikala.dev/docs/components/button",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200"
+    },
+    {
+      "name": "Button Group",
+      "url": "https://nikala.dev/docs/components/button-group",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Callout",
+      "url": "https://nikala.dev/docs/components/callout",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Card",
+      "url": "https://nikala.dev/docs/components/card",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Checkbox",
+      "url": "https://nikala.dev/docs/components/checkbox",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Code Block",
+      "url": "https://nikala.dev/docs/components/code-block",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Code Group",
+      "url": "https://nikala.dev/docs/components/code-group",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Collapsible",
+      "url": "https://nikala.dev/docs/components/collapsible",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Combobox",
+      "url": "https://nikala.dev/docs/components/combobox",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Command",
+      "url": "https://nikala.dev/docs/components/command",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Component Viewer",
+      "url": "https://nikala.dev/docs/components/component-viewer",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Container",
+      "url": "https://nikala.dev/docs/components/container",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Context Menu",
+      "url": "https://nikala.dev/docs/components/context-menu",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Dialog",
+      "url": "https://nikala.dev/docs/components/dialog",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Dropdown Menu",
+      "url": "https://nikala.dev/docs/components/dropdown-menu",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Dropzone",
+      "url": "https://nikala.dev/docs/components/dropzone",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Empty",
+      "url": "https://nikala.dev/docs/components/empty",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Field",
+      "url": "https://nikala.dev/docs/components/field",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "File Tree",
+      "url": "https://nikala.dev/docs/components/file-tree",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Footer",
+      "url": "https://nikala.dev/docs/components/footer",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Form",
+      "url": "https://nikala.dev/docs/components/form",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Form Message",
+      "url": "https://nikala.dev/docs/components/form-message",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Hover Card",
+      "url": "https://nikala.dev/docs/components/hover-card",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Icon Button",
+      "url": "https://nikala.dev/docs/components/icon-button",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Input",
+      "url": "https://nikala.dev/docs/components/input",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Input Group",
+      "url": "https://nikala.dev/docs/components/input-group",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Kbd",
+      "url": "https://nikala.dev/docs/components/kbd",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Label",
+      "url": "https://nikala.dev/docs/components/label",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "List",
+      "url": "https://nikala.dev/docs/components/list",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Marker",
+      "url": "https://nikala.dev/docs/components/marker",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Marquee",
+      "url": "https://nikala.dev/docs/components/marquee",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Message",
+      "url": "https://nikala.dev/docs/components/message",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Navbar",
+      "url": "https://nikala.dev/docs/components/navbar",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Navigation Menu",
+      "url": "https://nikala.dev/docs/components/navigation-menu",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Number Input",
+      "url": "https://nikala.dev/docs/components/number-input",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Package Manager Tabs",
+      "url": "https://nikala.dev/docs/components/package-manager-tabs",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Pager",
+      "url": "https://nikala.dev/docs/components/pager",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Pagination",
+      "url": "https://nikala.dev/docs/components/pagination",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Pin Input",
+      "url": "https://nikala.dev/docs/components/pin-input",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Popover",
+      "url": "https://nikala.dev/docs/components/popover",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Progress",
+      "url": "https://nikala.dev/docs/components/progress",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Radio Group",
+      "url": "https://nikala.dev/docs/components/radio-group",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Rating",
+      "url": "https://nikala.dev/docs/components/rating",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Resizable",
+      "url": "https://nikala.dev/docs/components/resizable",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Review Card",
+      "url": "https://nikala.dev/docs/components/review-card",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Rich Text Editor",
+      "url": "https://nikala.dev/docs/components/rich-text-editor",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Scroll Area",
+      "url": "https://nikala.dev/docs/components/scroll-area",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Section Heading",
+      "url": "https://nikala.dev/docs/components/section-heading",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Select",
+      "url": "https://nikala.dev/docs/components/select",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Separator",
+      "url": "https://nikala.dev/docs/components/separator",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Sheet",
+      "url": "https://nikala.dev/docs/components/sheet",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Sidebar",
+      "url": "https://nikala.dev/docs/components/sidebar",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Skeleton",
+      "url": "https://nikala.dev/docs/components/skeleton",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Slider",
+      "url": "https://nikala.dev/docs/components/slider",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Spinner",
+      "url": "https://nikala.dev/docs/components/spinner",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Stat",
+      "url": "https://nikala.dev/docs/components/stat",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Status",
+      "url": "https://nikala.dev/docs/components/status",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Steps",
+      "url": "https://nikala.dev/docs/components/steps",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Switch",
+      "url": "https://nikala.dev/docs/components/switch",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Table",
+      "url": "https://nikala.dev/docs/components/table",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Table of Contents",
+      "url": "https://nikala.dev/docs/components/table-of-contents",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Tabs",
+      "url": "https://nikala.dev/docs/components/tabs",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Textarea",
+      "url": "https://nikala.dev/docs/components/textarea",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Theme Manager",
+      "url": "https://nikala.dev/docs/components/theme-manager",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Timeline",
+      "url": "https://nikala.dev/docs/components/timeline",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200"
+    },
+    {
+      "name": "Toast",
+      "url": "https://nikala.dev/docs/components/toast",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Toggle",
+      "url": "https://nikala.dev/docs/components/toggle",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    },
+    {
+      "name": "Toggle Group",
+      "url": "https://nikala.dev/docs/components/toggle-group",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200"
+    },
+    {
+      "name": "Tooltip",
+      "url": "https://nikala.dev/docs/components/tooltip",
+      "preview": "not-indexed",
+      "documentation": "official-link-only",
+      "urlVerification": "navigation-derived"
+    }
+  ],
+  "notes": "Only selected component URLs were fetched and source-verified individually; other entries are taken from the official navigation or its pinned source, not individually HTTP-checked."
+}

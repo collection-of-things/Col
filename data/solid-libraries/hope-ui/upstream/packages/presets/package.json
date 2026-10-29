@@ -1,0 +1,47 @@
+{
+  "name": "@hope-ui/presets",
+  "version": "0.0.0",
+  "description": "hope-ui presets — one tree-shakable package, per-preset subpaths (@hope-ui/presets/hope is the default visual identity). Each preset ships two Tailwind v4 CSS files — tailwind.css (structure: the @theme inline mapping to clean utilities) and theme.css (the --hope-* design-token values, opt-out so you can bring your own) — plus a runtime recipe map: import the CSS into your Tailwind entry, pass the recipe map to <ThemeProvider>.",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "src",
+    "dist",
+    "LICENSE.md"
+  ],
+  "hope": {
+    "entries": {
+      "hope": "src/hope/index.ts"
+    }
+  },
+  "exports": {
+    "./hope": {
+      "types": "./dist/hope/index.d.ts",
+      "solid": "./dist/hope/index.jsx",
+      "default": "./dist/hope/index.jsx"
+    },
+    "./hope/tailwind.css": {
+      "style": "./src/hope/tailwind.css",
+      "default": "./src/hope/tailwind.css"
+    },
+    "./hope/theme.css": {
+      "style": "./src/hope/theme.css",
+      "default": "./src/hope/theme.css"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "tailwindcss": "^4.0.0"
+  },
+  "dependencies": {
+    "@hope-ui/theming": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3"
+  }
+}

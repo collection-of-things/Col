@@ -1,0 +1,137 @@
+{
+  "folder": "torch",
+  "repo": "sean-dowd-sr/torch-ui",
+  "rev": "2bd057316175457ff1e5103b961867cf388bf73f",
+  "version": "0.6.20",
+  "package": "@torch-ui/solid",
+  "runtime": "solid1",
+  "runtimeVersion": "1.9.11",
+  "components": [
+    "Button",
+    "Dialog",
+    "Accordion"
+  ],
+  "sources": [
+    {
+      "path": "upstream/src/icons/icons.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/icons.tsx",
+      "integrity": "2881e4f7bd9266ad3d530fb84b15c843ce3d6d186c8b9fb8dea45e7bd9ecf7d3"
+    },
+    {
+      "path": "upstream/src/icons/index.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/index.tsx",
+      "integrity": "90cebcf75b6ca55de4e3da831d5c26432ee91099221ef11a4fe0f210e533d407"
+    },
+    {
+      "path": "upstream/src/styles/code-block-tokens.css",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/styles/code-block-tokens.css",
+      "integrity": "b12d4a1f900d9eae7d1336de2d182037e3b5cf7b45968545c11ba677a411fea2"
+    },
+    {
+      "path": "upstream/src/styles/theme.css",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/styles/theme.css",
+      "integrity": "2d9df6d356796c04cfaea0e830daf2c6b4d9ee6595369a072afaaad73a4e03f3"
+    },
+    {
+      "path": "upstream/src/types/component-size.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/types/component-size.ts",
+      "integrity": "4a73d2a8c58b12fce3a594789e7bbd8363f627995c2f7c8df2984e232f665d3a"
+    },
+    {
+      "path": "upstream/src/utilities/classNames.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/utilities/classNames.ts",
+      "integrity": "a0d047a6e6341282bb1abdc14bb205665734f4ccb6511eb793c97768b1088d69"
+    },
+    {
+      "path": "upstream/src/utilities/componentSizeContext.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/utilities/componentSizeContext.ts",
+      "integrity": "37735ff8c40654e03512cc332de003b19c8500c8d42fc5b31d7072ca3871883e"
+    },
+    {
+      "path": "upstream/src/components/actions/Button.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/actions/Button.tsx",
+      "integrity": "b73c39abecca08c601feb3b8dcc8ce3ba001ff7e5bd315c84fad7c612389a38c"
+    },
+    {
+      "path": "upstream/src/components/layout/Accordion.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Accordion.tsx",
+      "integrity": "4d8292c8d91734f25ff632a2ba8f0205299d088182170a6550665b94fb0a2ae0"
+    },
+    {
+      "path": "upstream/src/components/overlays/Dialog.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/overlays/Dialog.tsx",
+      "integrity": "a6412045ab656f5fbc11b429de76db5e77ea3191f2580050843f7a139cbae355"
+    },
+    {
+      "path": "upstream/LICENSE",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/LICENSE",
+      "integrity": "410de65614253e409b1c457170f8bcd8513bd6e4b1518ce1ce1986a2eac24b2f"
+    },
+    {
+      "path": "upstream/package.json",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/package.json",
+      "integrity": "c5626d638a2d49cf640161951173efa42602ecaea774c33b6ba9db9622fa2399"
+    },
+    {
+      "path": "upstream/THIRD_PARTY_NOTICES.md",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/THIRD_PARTY_NOTICES.md",
+      "integrity": "435a192b9d315f23b8c6b7e02ded68f60ad1bcbbe93b368859effafac1e82995"
+    },
+    {
+      "path": "upstream/styles/theme.css",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/styles/theme.css",
+      "integrity": "2d9df6d356796c04cfaea0e830daf2c6b4d9ee6595369a072afaaad73a4e03f3"
+    },
+    {
+      "path": "upstream/skill/reference/actions/Button.md",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/skill/reference/actions/Button.md",
+      "integrity": "f59640de5cefc5bbe850b662be62f4f5666775e97442ea52101875447f797551"
+    },
+    {
+      "path": "upstream/skill/reference/overlays/Dialog.md",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/skill/reference/overlays/Dialog.md",
+      "integrity": "149ec75ce9d6478d8de40db97c58abc376f076930d67c5a65168ab3db6141979"
+    },
+    {
+      "path": "upstream/skill/reference/layout/Accordion.md",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/skill/reference/layout/Accordion.md",
+      "integrity": "6def82b16a22667e416fe7282a9da7818399da736b3d935c5854b8ebe0bd5683"
+    },
+    {
+      "path": "upstream/docs/fonts/inter-latin.woff2",
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "integrity": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62"
+    },
+    {
+      "path": "upstream/docs/google-fonts.css",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap",
+      "integrity": "08d44620e2884e6ca3df2fbc7f6578b05358cac9110eb68e30e90054772f7626"
+    },
+    {
+      "path": "upstream/docs/fonts/LICENSE-inter.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/6157dfaa640ca5738b4d1a7070fe389c3036d7fc/ofl/inter/OFL.txt",
+      "integrity": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    }
+  ],
+  "componentSources": {
+    "Button": "upstream/src/components/actions/Button.tsx",
+    "Dialog": "upstream/src/components/overlays/Dialog.tsx",
+    "Accordion": "upstream/src/components/layout/Accordion.tsx"
+  },
+  "exports": {
+    "Accordion": "AccordionRoot"
+  },
+  "assets": [
+    {
+      "path": "upstream/docs/fonts/inter-latin.woff2",
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "integrity": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+      "mimeType": "font/woff2"
+    }
+  ],
+  "gaps": {
+    "Dialog": [
+      "Live upstream comparison on 2026-10-30: the official Summon Familiar demo did not open a dialog in two browser checks. The light trigger styling matched; open-state and dark live styling remain unverified. The bundled pinned-source dialog passes local interaction tests."
+    ]
+  }
+}

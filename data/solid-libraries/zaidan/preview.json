@@ -1,0 +1,54 @@
+{
+  "sourceBase": "src",
+  "alias": "@/",
+  "stylesheet": "src/styles.css",
+  "adaptations": [
+    "Original default Vega style, theme variables and registry utilities compiled; unselected style presets and documentation-only styles omitted.",
+    "Only unchanged Vega CSS sections for Button, Checkbox, Dialog and their Field/Input/Label/Separator dependencies are compiled. Unused calendar animations and unrelated component styles are not included.",
+    "Original Geist Variable and Inter Variable Latin font faces are embedded for the English demos, preserving the docs container and portal typography; other language subsets are not bundled.",
+    "The exact cn function is extracted from src/lib/utils.ts; unrelated documentation-server storage and navigation helpers are excluded.",
+    "Reviewed mount wrapper applies style-vega on the document root so portals retain their styling, maps the theme, and restores those attributes on disposal.",
+    "The original [data-slot=\"docs\"] font rule from src/styles/typeset.css is retained on the mount target. Inline demos inherit Geist while portals retain the body Inter font; the target attribute is restored on disposal."
+  ],
+  "examples": [
+    {
+      "name": "Button",
+      "exportName": "Button",
+      "path": "src/registry/kobalte/examples/docs/button-demo.tsx"
+    },
+    {
+      "name": "Checkbox",
+      "exportName": "Checkbox",
+      "path": "src/registry/kobalte/examples/docs/checkbox-demo.tsx"
+    },
+    {
+      "name": "Dialog",
+      "exportName": "Dialog",
+      "path": "src/registry/kobalte/examples/docs/dialog-demo.tsx",
+      "gaps": [
+        "Upstream exposes the visible Cancel button with the accessible name Dismiss. Its portalled Save changes button has no owning form, so it does not submit."
+      ]
+    }
+  ],
+  "styleSections": [
+    "Button",
+    "Checkbox",
+    "Dialog",
+    "Field",
+    "Input",
+    "Label",
+    "Separator"
+  ],
+  "candidateFiles": [
+    "src/registry/kobalte/ui/button.tsx",
+    "src/registry/kobalte/ui/checkbox.tsx",
+    "src/registry/kobalte/ui/dialog.tsx",
+    "src/registry/kobalte/ui/field.tsx",
+    "src/registry/kobalte/ui/input.tsx",
+    "src/registry/kobalte/ui/label.tsx",
+    "src/registry/kobalte/ui/separator.tsx",
+    "src/registry/kobalte/examples/docs/button-demo.tsx",
+    "src/registry/kobalte/examples/docs/checkbox-demo.tsx",
+    "src/registry/kobalte/examples/docs/dialog-demo.tsx"
+  ]
+}

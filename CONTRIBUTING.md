@@ -37,6 +37,7 @@ Checklist:
 - If a founder requests a listing without setup shortcuts, set `outboundOnly: true` on their entry in `data/libraries.ts`. The page keeps official Visit / Docs / Source links and library facts, hides install, getting started, and the agent prompt, and omits local recommendations. MCP results omit setup shortcuts and documentation snapshots too. Leave the flag unset unless requested.
 - Confirm the project is publicly accessible and actively useful.
 - Add the matching detail page in [`data/library-details/`](data/library-details/index.ts) and register it in that file's `libraryDetails` map, keyed by the same `slug`. The detail tests fail without it.
+- Solid preview collections keep their catalog metadata and source evidence in separate files under `data/solid-libraries/`; follow the existing collection's build and integrity records when changing one.
 
 If a new category or stack is genuinely required, explain why in the pull request.
 

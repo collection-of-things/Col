@@ -1,0 +1,1355 @@
+{
+  "entries": {
+    "shadcn-solid/Button": {
+      "codeIntegrity": "sha256:84686d3113704adac977935a703be8e5a04685c4f7067d027014ecf3a082901e",
+      "cssIntegrity": "sha256:a8de29bff8be860d32c54909151a5a9f49f5d86075ff5db48d388543eb01359b",
+      "inputs": [
+        {
+          "path": "../../solid-js/dist/solid.js",
+          "sha256": "2d8f12f3e25009c6a522c981f1b46695951b59ec800a2471f516bb79ce1f9934"
+        },
+        {
+          "path": "../../solid-js/web/dist/web.js",
+          "sha256": "e0ba3633593bfa2081f030fb0033e60340d6a2a53e35e8ada1d1cd0af7a81c90"
+        },
+        {
+          "path": "../../@solid-primitives/utils/dist/types.js",
+          "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+        },
+        {
+          "path": "../../@solid-primitives/utils/dist/index.js",
+          "sha256": "e899c544004dc1eea92cdfbd35b073e02f57eed58f300a1c8b3e70e6668d974b"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/eventListener.js",
+          "sha256": "2178d7598aa696e362edc807b882f0b999acca901dc27871888a94dce932ccb6"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/eventListenerMap.js",
+          "sha256": "ee9eedad2aa14629ec2af22ee8dd0224374979e6cec21651858927b2e94ee1a9"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/components.js",
+          "sha256": "a409d7cace7ab2cdf47a26d7dd7b96de8c288f1708af3ecb0965bf6b83b630be"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/eventListenerStack.js",
+          "sha256": "04b9101b74e798fd5c80bed08191ed0d680c17a97ef287d8bde705f42ff72cca"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/callbackWrappers.js",
+          "sha256": "cc49777688ec8041ba122918e1e2930051d4eae51ae0ab95efd190f40987be88"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/types.js",
+          "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/index.js",
+          "sha256": "372ce86d011a31bd610d3f0db39e6af69c6d1b7ff9f7f167c1051fbc3f1df63c"
+        },
+        {
+          "path": "../../@solid-primitives/keyed/dist/index.js",
+          "sha256": "91464fbcfb2b60d2026323438da21ab74bc9756dedcc314e8f35b05895f341b7"
+        },
+        {
+          "path": "../../@solid-primitives/trigger/dist/index.js",
+          "sha256": "c909d51320d89b46399ca7337d8acf27892a00cf61ab8f503182149a9e91ea5d"
+        },
+        {
+          "path": "../../@solid-primitives/map/dist/index.js",
+          "sha256": "f27e645966e6765ad6b01a9078f22523608ec924869e5b0f65b5e83db51ae053"
+        },
+        {
+          "path": "../../@solid-primitives/static-store/dist/index.js",
+          "sha256": "f1912ffa021157039c9c6dca297af04bc3f50c879c7363ed4e7f7ec2c87d4d04"
+        },
+        {
+          "path": "../../@solid-primitives/rootless/dist/index.js",
+          "sha256": "0b7d93cfb6e96d7878b49ec28816d50216274e5e486b4171bb64c8c4bc36767f"
+        },
+        {
+          "path": "../../@solid-primitives/media/dist/index.js",
+          "sha256": "2672366f1950bb450590128c5eed55b4f291db23c187cb536f86acb0cfd31ef7"
+        },
+        {
+          "path": "../../@solid-primitives/props/dist/propTraps.js",
+          "sha256": "0fad53421b9e54c04c95de75a0fd214d89a28d6fb8c88c3d77560dd4de105293"
+        },
+        {
+          "path": "../../@solid-primitives/props/dist/filterProps.js",
+          "sha256": "951617863a74789c27a211dfb11a14734d01e1a358d9d067f691cbde4c9aea9a"
+        },
+        {
+          "path": "../../@solid-primitives/props/dist/combineProps.js",
+          "sha256": "113da1b26cdf9ab2fcd82bea8e4a3461eca560c1e7beafb38db0382126772b1c"
+        },
+        {
+          "path": "../../@solid-primitives/props/dist/index.js",
+          "sha256": "d989aad8a152d55519c725f56f8ca8a0aeccda07d4f2dcefe191f020cef381d4"
+        },
+        {
+          "path": "../../@solid-primitives/refs/dist/index.js",
+          "sha256": "02dd19d96d7c96f8f798fd7a8883204837a64cab674be5a8c0088d70ea76921a"
+        },
+        {
+          "path": "../../@kobalte/utils/dist/index.js",
+          "sha256": "2117628a30cfb91851cf8751e3a35147776e3671eee52bd790dc74607d5a3eb8"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/ET5T45DO.js",
+          "sha256": "a8e890ea871a8626f68419b0e5d5387481bd95d1c35ecab86850a360f5f09991"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/6Y7B2NEO.js",
+          "sha256": "a0c728a93cb18ae4ef2f1ec65b482401564b6ba096fa281b922125a7a4949dfc"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/5ZKAE4VZ.js",
+          "sha256": "864bcd72136941db10f94b91654f2beab7c9a9e7276815576eaf02b3cc5470ac"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/7OVKXYPU.js",
+          "sha256": "81dcc91eb3d9f0c3ac2e8afe84c6b70a6c22729497cfdb90108c21b84ba61b35"
+        },
+        {
+          "path": "../../@kobalte/core/dist/button/index.js",
+          "sha256": "7fe5c249fe86a1858cabf838ce9542d010474bb4fb17db8b7de7f30efe9fe575"
+        },
+        {
+          "path": "../../clsx/dist/clsx.mjs",
+          "sha256": "d949e5cdbfebc76a6642b1901095e900fc3f2262d8dc0373aa44850a9bc75522"
+        },
+        {
+          "path": "../../cva/dist/index.mjs",
+          "sha256": "2345364901df1fd8aa1e3d3122c7a88484f8555401192942eb5c353880e128c0"
+        },
+        {
+          "path": "../../tailwind-merge/dist/bundle-mjs.mjs",
+          "sha256": "4a952fc10c828632c608dd103b7d8bcab097d9c6f32bfc343a2d9e0822c86116"
+        },
+        {
+          "path": "apps/docs/src/registry/lib/cva.ts",
+          "sha256": "967acec16cc6d13ee085eb83c7918fda6ea646af513f35d85070a61647dcb9d0"
+        },
+        {
+          "path": "apps/docs/src/registry/ui/button.tsx",
+          "sha256": "9f9df6d1b74867f41089eb87d2836f80b6ed9ee7ab6b2fb99e5f4f635865412e"
+        },
+        {
+          "path": "apps/docs/src/registry/examples/button-demo.tsx",
+          "sha256": "93270ba039ceb2662b5d48cef2fefca105bb84865215c1631821757f139c6542"
+        },
+        {
+          "path": "Button.tsx",
+          "sha256": "872bd7944413d464a1783b0b1a44e7157b20e4655d1af1310c04f77a04b64444"
+        }
+      ],
+      "packages": {
+        "node_modules/solid-js": {
+          "version": "1.9.17",
+          "resolved": "https://registry.npmjs.org/solid-js/-/solid-js-1.9.17.tgz",
+          "integrity": "sha512-4GAmLOWPfNV8H9Jfn2LSFTpNEG6jiOKPiwd5lnLGQtehHaX6l3TOLzJqQ7mqwB/3k1Yy3zyumFVopmc/tm34ow==",
+          "license": "MIT",
+          "dependencies": {
+            "csstype": "^3.1.0",
+            "seroval": "~1.6.8",
+            "seroval-plugins": "~1.6.8"
+          }
+        },
+        "node_modules/@solid-primitives/utils": {
+          "version": "6.4.1",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/utils/-/utils-6.4.1.tgz",
+          "integrity": "sha512-ISSB5QX1qP2ynrheIpYwc4oKR5Ny4siNuUyf1qZniy+Il+p/PtDB0QK1Dnle8noiHpwRD3gpPdubOC3qI/Zamg==",
+          "license": "MIT",
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/event-listener": {
+          "version": "2.4.6",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/event-listener/-/event-listener-2.4.6.tgz",
+          "integrity": "sha512-5I0YJcTVYIWoMmgBSROBZGcz+ymhew/pGTg2dHW74BUjFKsV8Li4bOZYl0YAGP4mHw5o4UBd9/BEesqBci3wxw==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/keyed": {
+          "version": "1.5.3",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/keyed/-/keyed-1.5.3.tgz",
+          "integrity": "sha512-zNadtyYBhJSOjXtogkGHmRxjGdz9KHc8sGGVAGlUABkE8BED2tbIZoxkwSqzOwde8OcUEH0bb5DLZUWIMvyBSA==",
+          "license": "MIT",
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/trigger": {
+          "version": "1.2.4",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/trigger/-/trigger-1.2.4.tgz",
+          "integrity": "sha512-Ju0e+ZOD7hpOp7nptJimvDSZHWFvIvF9iBWMvuwt30smX7c5wmB8Kmc0AdDuv0wOTi06PQ1J5IrP1WJbH2yUBQ==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/map": {
+          "version": "0.4.13",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/map/-/map-0.4.13.tgz",
+          "integrity": "sha512-B1zyFbsiTQvqPr+cuPCXO72sRuczG9Swncqk5P74NCGw1VE8qa/Ry9GlfI1e/VdeQYHjan+XkbE3rO2GW/qKew==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/trigger": "^1.1.0"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/static-store": {
+          "version": "0.1.4",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/static-store/-/static-store-0.1.4.tgz",
+          "integrity": "sha512-LgtVaVBtB7EbmS4+M0b8xY5Iq6pUWXBsIC4VgtrFKDGDdyCaDt88sHk0fUlx1Enxm/XZnZyLXJABRoa39RjJqA==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/rootless": {
+          "version": "1.5.4",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/rootless/-/rootless-1.5.4.tgz",
+          "integrity": "sha512-TOIZa1VUfVJ+9nkCcRajw3U4t9vBOP1HxX1WHNTbXq32mXwlqTvUnC4CRIilohcryBkT9u2ZkhUDSHRTaGp55g==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/media": {
+          "version": "2.3.6",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/media/-/media-2.3.6.tgz",
+          "integrity": "sha512-pk49gPOq/UMRUJ+pTSrOfBiR8xJjRYHXIf1iR/jSnyQ/KroU+ZXhkZzavC7hvfp2vJeOTW5k2/HN0r3Q1VJ7Pw==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/event-listener": "^2.4.6",
+            "@solid-primitives/rootless": "^1.5.4",
+            "@solid-primitives/static-store": "^0.1.4",
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/props": {
+          "version": "3.2.4",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/props/-/props-3.2.4.tgz",
+          "integrity": "sha512-MXXdvi2TSB6d+0N6ueA/HP1j/Kh9SEc4WdF1ZDMLwPagxW6pIHHSS9xbRO0RjqSVpNP4j0nxCWT1hx3CkJNhNA==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/refs": {
+          "version": "1.1.4",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/refs/-/refs-1.1.4.tgz",
+          "integrity": "sha512-bLjwIs6ZPu8NQnuw04sU3Zc8qKSpbc0umUU/O4SHf6oWOdO4+dHY8vb1T7C4b/Tg103+9WGr6sEE0+NFlbaB/A==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@kobalte/utils": {
+          "version": "0.9.2",
+          "resolved": "https://registry.npmjs.org/@kobalte/utils/-/utils-0.9.2.tgz",
+          "integrity": "sha512-jRVXr+zsVHxzDXRoh+CDeXzvCsFJ6uiHhqqNQ26Cw9ZsZ3D6nqPUBt1gGVtj2ZPmRL3a9Uk1v8D1aJ8/I12Dow==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/event-listener": "^2.2.14",
+            "@solid-primitives/keyed": "^1.2.0",
+            "@solid-primitives/map": "^0.4.7",
+            "@solid-primitives/media": "^2.2.4",
+            "@solid-primitives/props": "^3.1.8",
+            "@solid-primitives/refs": "^1.0.5",
+            "@solid-primitives/utils": "^6.2.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.8.8"
+          }
+        },
+        "node_modules/@kobalte/core": {
+          "version": "0.13.14",
+          "resolved": "https://registry.npmjs.org/@kobalte/core/-/core-0.13.14.tgz",
+          "integrity": "sha512-SBVB1lnvYbYt2x3t7fG0lo5fGLEbHQ6PII3NDPva8vD5e2v53On84ZVQiuIk0XI/55R4GQhden7Yem+R/XR8uQ==",
+          "license": "MIT",
+          "dependencies": {
+            "@floating-ui/dom": "^1.5.1",
+            "@internationalized/number": "^3.2.1",
+            "@kobalte/utils": "^0.9.2",
+            "@solid-primitives/props": "^3.1.8",
+            "@solid-primitives/resize-observer": "^2.0.26",
+            "solid-presence": "^0.2.0",
+            "solid-prevent-scroll": "^0.1.11"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.9.8"
+          }
+        },
+        "node_modules/clsx": {
+          "version": "2.1.1",
+          "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+          "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+          "license": "MIT",
+          "engines": {
+            "node": ">=6"
+          }
+        },
+        "node_modules/cva": {
+          "version": "1.0.0-beta.4",
+          "resolved": "https://registry.npmjs.org/cva/-/cva-1.0.0-beta.4.tgz",
+          "integrity": "sha512-F/JS9hScapq4DBVQXcK85l9U91M6ePeXoBMSp7vypzShoefUBxjQTo3g3935PUHgQd+IW77DjbPRIxugy4/GCQ==",
+          "license": "Apache-2.0",
+          "dependencies": {
+            "clsx": "^2.1.1"
+          },
+          "funding": {
+            "url": "https://polar.sh/cva"
+          },
+          "peerDependencies": {
+            "typescript": ">= 4.5.5"
+          },
+          "peerDependenciesMeta": {
+            "typescript": {
+              "optional": true
+            }
+          }
+        },
+        "node_modules/tailwind-merge": {
+          "version": "3.7.0",
+          "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.7.0.tgz",
+          "integrity": "sha512-XPPUyAc+cvspz3lHTcR/QgPfW2A0lv/xQNIjX3HGhLR+Nq2lHaLq5MtTesHn8GUr3W3DguT2KT5x3NVgRtYwmA==",
+          "license": "MIT",
+          "funding": {
+            "type": "github",
+            "url": "https://github.com/sponsors/dcastil"
+          }
+        }
+      },
+      "lockIntegrity": "sha256:297b93ff61a8099c9a8a1753990989a52aed9cf2fd30a934e8a60e173fff1fa4"
+    },
+    "shadcn-solid/Dialog": {
+      "codeIntegrity": "sha256:5c1a3858124ce1a6940a9fa771b583ce1f5bbdb2a016a32a2850fef3a7c7a0a1",
+      "cssIntegrity": "sha256:a8de29bff8be860d32c54909151a5a9f49f5d86075ff5db48d388543eb01359b",
+      "inputs": [
+        {
+          "path": "../../solid-js/dist/solid.js",
+          "sha256": "2d8f12f3e25009c6a522c981f1b46695951b59ec800a2471f516bb79ce1f9934"
+        },
+        {
+          "path": "../../solid-js/web/dist/web.js",
+          "sha256": "e0ba3633593bfa2081f030fb0033e60340d6a2a53e35e8ada1d1cd0af7a81c90"
+        },
+        {
+          "path": "../../@solid-primitives/utils/dist/types.js",
+          "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+        },
+        {
+          "path": "../../@solid-primitives/utils/dist/index.js",
+          "sha256": "e899c544004dc1eea92cdfbd35b073e02f57eed58f300a1c8b3e70e6668d974b"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/eventListener.js",
+          "sha256": "2178d7598aa696e362edc807b882f0b999acca901dc27871888a94dce932ccb6"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/eventListenerMap.js",
+          "sha256": "ee9eedad2aa14629ec2af22ee8dd0224374979e6cec21651858927b2e94ee1a9"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/components.js",
+          "sha256": "a409d7cace7ab2cdf47a26d7dd7b96de8c288f1708af3ecb0965bf6b83b630be"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/eventListenerStack.js",
+          "sha256": "04b9101b74e798fd5c80bed08191ed0d680c17a97ef287d8bde705f42ff72cca"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/callbackWrappers.js",
+          "sha256": "cc49777688ec8041ba122918e1e2930051d4eae51ae0ab95efd190f40987be88"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/types.js",
+          "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/index.js",
+          "sha256": "372ce86d011a31bd610d3f0db39e6af69c6d1b7ff9f7f167c1051fbc3f1df63c"
+        },
+        {
+          "path": "../../@solid-primitives/keyed/dist/index.js",
+          "sha256": "91464fbcfb2b60d2026323438da21ab74bc9756dedcc314e8f35b05895f341b7"
+        },
+        {
+          "path": "../../@solid-primitives/trigger/dist/index.js",
+          "sha256": "c909d51320d89b46399ca7337d8acf27892a00cf61ab8f503182149a9e91ea5d"
+        },
+        {
+          "path": "../../@solid-primitives/map/dist/index.js",
+          "sha256": "f27e645966e6765ad6b01a9078f22523608ec924869e5b0f65b5e83db51ae053"
+        },
+        {
+          "path": "../../@solid-primitives/static-store/dist/index.js",
+          "sha256": "f1912ffa021157039c9c6dca297af04bc3f50c879c7363ed4e7f7ec2c87d4d04"
+        },
+        {
+          "path": "../../@solid-primitives/rootless/dist/index.js",
+          "sha256": "0b7d93cfb6e96d7878b49ec28816d50216274e5e486b4171bb64c8c4bc36767f"
+        },
+        {
+          "path": "../../@solid-primitives/media/dist/index.js",
+          "sha256": "2672366f1950bb450590128c5eed55b4f291db23c187cb536f86acb0cfd31ef7"
+        },
+        {
+          "path": "../../@solid-primitives/props/dist/propTraps.js",
+          "sha256": "0fad53421b9e54c04c95de75a0fd214d89a28d6fb8c88c3d77560dd4de105293"
+        },
+        {
+          "path": "../../@solid-primitives/props/dist/filterProps.js",
+          "sha256": "951617863a74789c27a211dfb11a14734d01e1a358d9d067f691cbde4c9aea9a"
+        },
+        {
+          "path": "../../@solid-primitives/props/dist/combineProps.js",
+          "sha256": "113da1b26cdf9ab2fcd82bea8e4a3461eca560c1e7beafb38db0382126772b1c"
+        },
+        {
+          "path": "../../@solid-primitives/props/dist/index.js",
+          "sha256": "d989aad8a152d55519c725f56f8ca8a0aeccda07d4f2dcefe191f020cef381d4"
+        },
+        {
+          "path": "../../@solid-primitives/refs/dist/index.js",
+          "sha256": "02dd19d96d7c96f8f798fd7a8883204837a64cab674be5a8c0088d70ea76921a"
+        },
+        {
+          "path": "../../@kobalte/utils/dist/index.js",
+          "sha256": "2117628a30cfb91851cf8751e3a35147776e3671eee52bd790dc74607d5a3eb8"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/ET5T45DO.js",
+          "sha256": "a8e890ea871a8626f68419b0e5d5387481bd95d1c35ecab86850a360f5f09991"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/6Y7B2NEO.js",
+          "sha256": "a0c728a93cb18ae4ef2f1ec65b482401564b6ba096fa281b922125a7a4949dfc"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/5ZKAE4VZ.js",
+          "sha256": "864bcd72136941db10f94b91654f2beab7c9a9e7276815576eaf02b3cc5470ac"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/7OVKXYPU.js",
+          "sha256": "81dcc91eb3d9f0c3ac2e8afe84c6b70a6c22729497cfdb90108c21b84ba61b35"
+        },
+        {
+          "path": "../../@kobalte/core/dist/button/index.js",
+          "sha256": "7fe5c249fe86a1858cabf838ce9542d010474bb4fb17db8b7de7f30efe9fe575"
+        },
+        {
+          "path": "../../clsx/dist/clsx.mjs",
+          "sha256": "d949e5cdbfebc76a6642b1901095e900fc3f2262d8dc0373aa44850a9bc75522"
+        },
+        {
+          "path": "../../cva/dist/index.mjs",
+          "sha256": "2345364901df1fd8aa1e3d3122c7a88484f8555401192942eb5c353880e128c0"
+        },
+        {
+          "path": "../../tailwind-merge/dist/bundle-mjs.mjs",
+          "sha256": "4a952fc10c828632c608dd103b7d8bcab097d9c6f32bfc343a2d9e0822c86116"
+        },
+        {
+          "path": "apps/docs/src/registry/lib/cva.ts",
+          "sha256": "967acec16cc6d13ee085eb83c7918fda6ea646af513f35d85070a61647dcb9d0"
+        },
+        {
+          "path": "apps/docs/src/registry/ui/button.tsx",
+          "sha256": "9f9df6d1b74867f41089eb87d2836f80b6ed9ee7ab6b2fb99e5f4f635865412e"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/2YCOH52P.js",
+          "sha256": "f1d1f301ab31c0d0806c43c46966b10becc3b27c1c8c23169fb9caf33f2a80a0"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/G3KI2B4X.js",
+          "sha256": "c9fc5d3066bdd5a626900c1c273b029505dc9db2dcc8579bc78af9bab00ce542"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/YA7DCYMB.js",
+          "sha256": "f256ff23fc5613c43cdc08e967eeec6d77750e475f6d7e2514b5a14d3091e913"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/2FYCRCMB.js",
+          "sha256": "b3b0e86a5c8e11041d3b2c471e6647b5d0017d9b22bc3bf0e9a2d7da89f97642"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/QEMPLYZX.js",
+          "sha256": "43cb1c3d7d1de94d50c6070517871386102b4beddddd0ff48d9d39db8382ef44"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/3MORIDD7.js",
+          "sha256": "35f2e7c8f0db0392ca6be2a75749df38532474a40504db36efbde7dfe26c794a"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/EGUPPEWQ.js",
+          "sha256": "44a6b4263624728be7566bc2928c95d799073279438fa0178459ad9743ef95a6"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/BLN63FDC.js",
+          "sha256": "2c5cae597116fbb5855428bd0b21775f76711a2ada6a1f64780426bda7facdf8"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/7LCANGHD.js",
+          "sha256": "3cf855d58ba603e3a2f575d883a3d05e388c62e35712ed01a12342a0a1cea6d0"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/E4R2EMM4.js",
+          "sha256": "8812c4067d5373b4248cfcfd2690750ba177d33b9cb7815257948b0da46aefd7"
+        },
+        {
+          "path": "../../@corvu/utils/dist/chunk/ZV6G25TT.js",
+          "sha256": "d37aaf1e9cf1c53a9b40b00f9ca1006a19a2184e282fc0b830c57e74b16f296f"
+        },
+        {
+          "path": "../../@corvu/utils/dist/reactivity/index.js",
+          "sha256": "d4fd9091d244ae263312f18a15fd4d49bc5346483faeb5a6ef00bd88fce4e542"
+        },
+        {
+          "path": "../../@corvu/utils/dist/chunk/SEUPK2SH.js",
+          "sha256": "316b9013e2c0379c67752cea04e0399a30de5b65f91f32bd576614b32fdb50e9"
+        },
+        {
+          "path": "../../@corvu/utils/dist/dom/index.js",
+          "sha256": "df7f842b5c2765cd441eeafe9235154c76bf0ec3191cf8375f5f8c403697ec60"
+        },
+        {
+          "path": "../../@corvu/utils/dist/create/style.js",
+          "sha256": "9b8afca2e12741d2fd01379ad3c2fe3d38a87c34519e2971a0345bb7576e91e4"
+        },
+        {
+          "path": "../../@corvu/utils/dist/scroll/index.js",
+          "sha256": "0ca41488f8f32859f92c9a47ebafb6ddf133a93b5067ead6164b2eb57ef934dd"
+        },
+        {
+          "path": "../../solid-prevent-scroll/dist/index.js",
+          "sha256": "1fc4aaec00d0511acdf1813d5f6011fa561cfe169c6f861b29490de9503f310c"
+        },
+        {
+          "path": "../../solid-presence/dist/index.js",
+          "sha256": "dc95a1a8fa0a03bcf4c030ef11073dd78b9de28b1e87686c8d9ec89fdf7ffe29"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/GMZC233U.js",
+          "sha256": "720e5c92dce69cf1a27d6e6414656458932cde51302bbd7241aa5a2e9c86c754"
+        },
+        {
+          "path": "../../@kobalte/core/dist/dialog/index.js",
+          "sha256": "391790e179b3f901acecffd03ef0271a9d65c42b940b93a9e498cdbeccb2943e"
+        },
+        {
+          "path": "apps/docs/src/registry/ui/dialog.tsx",
+          "sha256": "fd130702ec6aff4b6fc7b9adf0071d5f59fbb1dc46abbc2ce0183ba24192b344"
+        },
+        {
+          "path": "apps/docs/src/registry/examples/dialog-demo.tsx",
+          "sha256": "fa52972c1d96cf77f60af02aaf19f7cea4f9e962b1709277d101bb9a961f082a"
+        },
+        {
+          "path": "Dialog.tsx",
+          "sha256": "c5595d4f74a5cdb3e12309bc28bb13f001562723a79f3a444365feb34f253f9b"
+        }
+      ],
+      "packages": {
+        "node_modules/solid-js": {
+          "version": "1.9.17",
+          "resolved": "https://registry.npmjs.org/solid-js/-/solid-js-1.9.17.tgz",
+          "integrity": "sha512-4GAmLOWPfNV8H9Jfn2LSFTpNEG6jiOKPiwd5lnLGQtehHaX6l3TOLzJqQ7mqwB/3k1Yy3zyumFVopmc/tm34ow==",
+          "license": "MIT",
+          "dependencies": {
+            "csstype": "^3.1.0",
+            "seroval": "~1.6.8",
+            "seroval-plugins": "~1.6.8"
+          }
+        },
+        "node_modules/@solid-primitives/utils": {
+          "version": "6.4.1",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/utils/-/utils-6.4.1.tgz",
+          "integrity": "sha512-ISSB5QX1qP2ynrheIpYwc4oKR5Ny4siNuUyf1qZniy+Il+p/PtDB0QK1Dnle8noiHpwRD3gpPdubOC3qI/Zamg==",
+          "license": "MIT",
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/event-listener": {
+          "version": "2.4.6",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/event-listener/-/event-listener-2.4.6.tgz",
+          "integrity": "sha512-5I0YJcTVYIWoMmgBSROBZGcz+ymhew/pGTg2dHW74BUjFKsV8Li4bOZYl0YAGP4mHw5o4UBd9/BEesqBci3wxw==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/keyed": {
+          "version": "1.5.3",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/keyed/-/keyed-1.5.3.tgz",
+          "integrity": "sha512-zNadtyYBhJSOjXtogkGHmRxjGdz9KHc8sGGVAGlUABkE8BED2tbIZoxkwSqzOwde8OcUEH0bb5DLZUWIMvyBSA==",
+          "license": "MIT",
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/trigger": {
+          "version": "1.2.4",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/trigger/-/trigger-1.2.4.tgz",
+          "integrity": "sha512-Ju0e+ZOD7hpOp7nptJimvDSZHWFvIvF9iBWMvuwt30smX7c5wmB8Kmc0AdDuv0wOTi06PQ1J5IrP1WJbH2yUBQ==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/map": {
+          "version": "0.4.13",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/map/-/map-0.4.13.tgz",
+          "integrity": "sha512-B1zyFbsiTQvqPr+cuPCXO72sRuczG9Swncqk5P74NCGw1VE8qa/Ry9GlfI1e/VdeQYHjan+XkbE3rO2GW/qKew==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/trigger": "^1.1.0"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/static-store": {
+          "version": "0.1.4",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/static-store/-/static-store-0.1.4.tgz",
+          "integrity": "sha512-LgtVaVBtB7EbmS4+M0b8xY5Iq6pUWXBsIC4VgtrFKDGDdyCaDt88sHk0fUlx1Enxm/XZnZyLXJABRoa39RjJqA==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/rootless": {
+          "version": "1.5.4",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/rootless/-/rootless-1.5.4.tgz",
+          "integrity": "sha512-TOIZa1VUfVJ+9nkCcRajw3U4t9vBOP1HxX1WHNTbXq32mXwlqTvUnC4CRIilohcryBkT9u2ZkhUDSHRTaGp55g==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/media": {
+          "version": "2.3.6",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/media/-/media-2.3.6.tgz",
+          "integrity": "sha512-pk49gPOq/UMRUJ+pTSrOfBiR8xJjRYHXIf1iR/jSnyQ/KroU+ZXhkZzavC7hvfp2vJeOTW5k2/HN0r3Q1VJ7Pw==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/event-listener": "^2.4.6",
+            "@solid-primitives/rootless": "^1.5.4",
+            "@solid-primitives/static-store": "^0.1.4",
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/props": {
+          "version": "3.2.4",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/props/-/props-3.2.4.tgz",
+          "integrity": "sha512-MXXdvi2TSB6d+0N6ueA/HP1j/Kh9SEc4WdF1ZDMLwPagxW6pIHHSS9xbRO0RjqSVpNP4j0nxCWT1hx3CkJNhNA==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/refs": {
+          "version": "1.1.4",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/refs/-/refs-1.1.4.tgz",
+          "integrity": "sha512-bLjwIs6ZPu8NQnuw04sU3Zc8qKSpbc0umUU/O4SHf6oWOdO4+dHY8vb1T7C4b/Tg103+9WGr6sEE0+NFlbaB/A==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@kobalte/utils": {
+          "version": "0.9.2",
+          "resolved": "https://registry.npmjs.org/@kobalte/utils/-/utils-0.9.2.tgz",
+          "integrity": "sha512-jRVXr+zsVHxzDXRoh+CDeXzvCsFJ6uiHhqqNQ26Cw9ZsZ3D6nqPUBt1gGVtj2ZPmRL3a9Uk1v8D1aJ8/I12Dow==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/event-listener": "^2.2.14",
+            "@solid-primitives/keyed": "^1.2.0",
+            "@solid-primitives/map": "^0.4.7",
+            "@solid-primitives/media": "^2.2.4",
+            "@solid-primitives/props": "^3.1.8",
+            "@solid-primitives/refs": "^1.0.5",
+            "@solid-primitives/utils": "^6.2.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.8.8"
+          }
+        },
+        "node_modules/@kobalte/core": {
+          "version": "0.13.14",
+          "resolved": "https://registry.npmjs.org/@kobalte/core/-/core-0.13.14.tgz",
+          "integrity": "sha512-SBVB1lnvYbYt2x3t7fG0lo5fGLEbHQ6PII3NDPva8vD5e2v53On84ZVQiuIk0XI/55R4GQhden7Yem+R/XR8uQ==",
+          "license": "MIT",
+          "dependencies": {
+            "@floating-ui/dom": "^1.5.1",
+            "@internationalized/number": "^3.2.1",
+            "@kobalte/utils": "^0.9.2",
+            "@solid-primitives/props": "^3.1.8",
+            "@solid-primitives/resize-observer": "^2.0.26",
+            "solid-presence": "^0.2.0",
+            "solid-prevent-scroll": "^0.1.11"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.9.8"
+          }
+        },
+        "node_modules/clsx": {
+          "version": "2.1.1",
+          "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+          "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+          "license": "MIT",
+          "engines": {
+            "node": ">=6"
+          }
+        },
+        "node_modules/cva": {
+          "version": "1.0.0-beta.4",
+          "resolved": "https://registry.npmjs.org/cva/-/cva-1.0.0-beta.4.tgz",
+          "integrity": "sha512-F/JS9hScapq4DBVQXcK85l9U91M6ePeXoBMSp7vypzShoefUBxjQTo3g3935PUHgQd+IW77DjbPRIxugy4/GCQ==",
+          "license": "Apache-2.0",
+          "dependencies": {
+            "clsx": "^2.1.1"
+          },
+          "funding": {
+            "url": "https://polar.sh/cva"
+          },
+          "peerDependencies": {
+            "typescript": ">= 4.5.5"
+          },
+          "peerDependenciesMeta": {
+            "typescript": {
+              "optional": true
+            }
+          }
+        },
+        "node_modules/tailwind-merge": {
+          "version": "3.7.0",
+          "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.7.0.tgz",
+          "integrity": "sha512-XPPUyAc+cvspz3lHTcR/QgPfW2A0lv/xQNIjX3HGhLR+Nq2lHaLq5MtTesHn8GUr3W3DguT2KT5x3NVgRtYwmA==",
+          "license": "MIT",
+          "funding": {
+            "type": "github",
+            "url": "https://github.com/sponsors/dcastil"
+          }
+        },
+        "node_modules/@corvu/utils": {
+          "version": "0.4.2",
+          "resolved": "https://registry.npmjs.org/@corvu/utils/-/utils-0.4.2.tgz",
+          "integrity": "sha512-Ox2kYyxy7NoXdKWdHeDEjZxClwzO4SKM8plAaVwmAJPxHMqA0rLOoAsa+hBDwRLpctf+ZRnAd/ykguuJidnaTA==",
+          "license": "MIT",
+          "dependencies": {
+            "@floating-ui/dom": "^1.6.11"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.8"
+          }
+        },
+        "node_modules/solid-prevent-scroll": {
+          "version": "0.1.11",
+          "resolved": "https://registry.npmjs.org/solid-prevent-scroll/-/solid-prevent-scroll-0.1.11.tgz",
+          "integrity": "sha512-2PComVCDHaQN/5t7ogEqUYeHasritZKXZ8Sb/VLkl0Web8o9YhEwOo8LSujJEahvMlYCNyKt0zRJeHldOAeWZg==",
+          "license": "MIT",
+          "dependencies": {
+            "@corvu/utils": "~0.4.2"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.8"
+          }
+        },
+        "node_modules/solid-presence": {
+          "version": "0.2.0",
+          "resolved": "https://registry.npmjs.org/solid-presence/-/solid-presence-0.2.0.tgz",
+          "integrity": "sha512-YM92o+jvpzX3XGaD4rLYmq/Kc2ZVh47GSCLEufHBFQQIurvZTs8SoGJxO8BJGNDxBKdcS8F3dYhW1SDXp4BNjA==",
+          "license": "MIT",
+          "dependencies": {
+            "@corvu/utils": "~0.4.2"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.8"
+          }
+        }
+      },
+      "lockIntegrity": "sha256:297b93ff61a8099c9a8a1753990989a52aed9cf2fd30a934e8a60e173fff1fa4"
+    },
+    "shadcn-solid/Tabs": {
+      "codeIntegrity": "sha256:9302ccba9e6d362df6ab52410a3f53fa17de1c919f9674109d5fb8512949e0c6",
+      "cssIntegrity": "sha256:a8de29bff8be860d32c54909151a5a9f49f5d86075ff5db48d388543eb01359b",
+      "inputs": [
+        {
+          "path": "../../solid-js/dist/solid.js",
+          "sha256": "2d8f12f3e25009c6a522c981f1b46695951b59ec800a2471f516bb79ce1f9934"
+        },
+        {
+          "path": "../../solid-js/web/dist/web.js",
+          "sha256": "e0ba3633593bfa2081f030fb0033e60340d6a2a53e35e8ada1d1cd0af7a81c90"
+        },
+        {
+          "path": "../../@solid-primitives/utils/dist/types.js",
+          "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+        },
+        {
+          "path": "../../@solid-primitives/utils/dist/index.js",
+          "sha256": "e899c544004dc1eea92cdfbd35b073e02f57eed58f300a1c8b3e70e6668d974b"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/eventListener.js",
+          "sha256": "2178d7598aa696e362edc807b882f0b999acca901dc27871888a94dce932ccb6"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/eventListenerMap.js",
+          "sha256": "ee9eedad2aa14629ec2af22ee8dd0224374979e6cec21651858927b2e94ee1a9"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/components.js",
+          "sha256": "a409d7cace7ab2cdf47a26d7dd7b96de8c288f1708af3ecb0965bf6b83b630be"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/eventListenerStack.js",
+          "sha256": "04b9101b74e798fd5c80bed08191ed0d680c17a97ef287d8bde705f42ff72cca"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/callbackWrappers.js",
+          "sha256": "cc49777688ec8041ba122918e1e2930051d4eae51ae0ab95efd190f40987be88"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/types.js",
+          "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+        },
+        {
+          "path": "../../@solid-primitives/event-listener/dist/index.js",
+          "sha256": "372ce86d011a31bd610d3f0db39e6af69c6d1b7ff9f7f167c1051fbc3f1df63c"
+        },
+        {
+          "path": "../../@solid-primitives/keyed/dist/index.js",
+          "sha256": "91464fbcfb2b60d2026323438da21ab74bc9756dedcc314e8f35b05895f341b7"
+        },
+        {
+          "path": "../../@solid-primitives/trigger/dist/index.js",
+          "sha256": "c909d51320d89b46399ca7337d8acf27892a00cf61ab8f503182149a9e91ea5d"
+        },
+        {
+          "path": "../../@solid-primitives/map/dist/index.js",
+          "sha256": "f27e645966e6765ad6b01a9078f22523608ec924869e5b0f65b5e83db51ae053"
+        },
+        {
+          "path": "../../@solid-primitives/static-store/dist/index.js",
+          "sha256": "f1912ffa021157039c9c6dca297af04bc3f50c879c7363ed4e7f7ec2c87d4d04"
+        },
+        {
+          "path": "../../@solid-primitives/rootless/dist/index.js",
+          "sha256": "0b7d93cfb6e96d7878b49ec28816d50216274e5e486b4171bb64c8c4bc36767f"
+        },
+        {
+          "path": "../../@solid-primitives/media/dist/index.js",
+          "sha256": "2672366f1950bb450590128c5eed55b4f291db23c187cb536f86acb0cfd31ef7"
+        },
+        {
+          "path": "../../@solid-primitives/props/dist/propTraps.js",
+          "sha256": "0fad53421b9e54c04c95de75a0fd214d89a28d6fb8c88c3d77560dd4de105293"
+        },
+        {
+          "path": "../../@solid-primitives/props/dist/filterProps.js",
+          "sha256": "951617863a74789c27a211dfb11a14734d01e1a358d9d067f691cbde4c9aea9a"
+        },
+        {
+          "path": "../../@solid-primitives/props/dist/combineProps.js",
+          "sha256": "113da1b26cdf9ab2fcd82bea8e4a3461eca560c1e7beafb38db0382126772b1c"
+        },
+        {
+          "path": "../../@solid-primitives/props/dist/index.js",
+          "sha256": "d989aad8a152d55519c725f56f8ca8a0aeccda07d4f2dcefe191f020cef381d4"
+        },
+        {
+          "path": "../../@solid-primitives/refs/dist/index.js",
+          "sha256": "02dd19d96d7c96f8f798fd7a8883204837a64cab674be5a8c0088d70ea76921a"
+        },
+        {
+          "path": "../../@kobalte/utils/dist/index.js",
+          "sha256": "2117628a30cfb91851cf8751e3a35147776e3671eee52bd790dc74607d5a3eb8"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/ET5T45DO.js",
+          "sha256": "a8e890ea871a8626f68419b0e5d5387481bd95d1c35ecab86850a360f5f09991"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/6Y7B2NEO.js",
+          "sha256": "a0c728a93cb18ae4ef2f1ec65b482401564b6ba096fa281b922125a7a4949dfc"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/5ZKAE4VZ.js",
+          "sha256": "864bcd72136941db10f94b91654f2beab7c9a9e7276815576eaf02b3cc5470ac"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/7OVKXYPU.js",
+          "sha256": "81dcc91eb3d9f0c3ac2e8afe84c6b70a6c22729497cfdb90108c21b84ba61b35"
+        },
+        {
+          "path": "../../@kobalte/core/dist/button/index.js",
+          "sha256": "7fe5c249fe86a1858cabf838ce9542d010474bb4fb17db8b7de7f30efe9fe575"
+        },
+        {
+          "path": "../../clsx/dist/clsx.mjs",
+          "sha256": "d949e5cdbfebc76a6642b1901095e900fc3f2262d8dc0373aa44850a9bc75522"
+        },
+        {
+          "path": "../../cva/dist/index.mjs",
+          "sha256": "2345364901df1fd8aa1e3d3122c7a88484f8555401192942eb5c353880e128c0"
+        },
+        {
+          "path": "../../tailwind-merge/dist/bundle-mjs.mjs",
+          "sha256": "4a952fc10c828632c608dd103b7d8bcab097d9c6f32bfc343a2d9e0822c86116"
+        },
+        {
+          "path": "apps/docs/src/registry/lib/cva.ts",
+          "sha256": "967acec16cc6d13ee085eb83c7918fda6ea646af513f35d85070a61647dcb9d0"
+        },
+        {
+          "path": "apps/docs/src/registry/ui/button.tsx",
+          "sha256": "9f9df6d1b74867f41089eb87d2836f80b6ed9ee7ab6b2fb99e5f4f635865412e"
+        },
+        {
+          "path": "apps/docs/src/registry/ui/card.tsx",
+          "sha256": "ddbe75ed78b78e182c9b47f39c00db4cb861b87d0e518fe84f174776b3e79892"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/43XIKO67.js",
+          "sha256": "308f504bf2c76e1e9366bc12a3a67af479af2db2eed675b203b19fdeb4a93cb9"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/3NGA46QE.js",
+          "sha256": "3e790e3621d642d2d254af7bd3b4f99e3365edde427690fba72818a0d7c9d96d"
+        },
+        {
+          "path": "../../@internationalized/number/dist/private/NumberFormatter.mjs",
+          "sha256": "815cad5a39566d7e7e644106d962bae60e58e335052c98d693bc1fc45e1a89d8"
+        },
+        {
+          "path": "../../@internationalized/number/dist/private/NumberParser.mjs",
+          "sha256": "decae14f924ed357e4e7ea6b98b1ee04563835ebed1dc5ed9b20453068a50c09"
+        },
+        {
+          "path": "../../@internationalized/number/dist/index.mjs",
+          "sha256": "8128ca7741316df526cbc33f325f6552826e07a8e1e58de7b54c44e0da76b79d"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/7TPOQ36Z.js",
+          "sha256": "747ddfb72283226f815a556fac2abc54e75fe4ef5d01bb48272cb486306e7fea"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/BLN63FDC.js",
+          "sha256": "2c5cae597116fbb5855428bd0b21775f76711a2ada6a1f64780426bda7facdf8"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/3D6FM2PJ.js",
+          "sha256": "7f92f7e6de3ba4d7a6861eb4aae8fc242df1f8138ce929e6fe04bda9d4d9cfbf"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/7CVNMTYF.js",
+          "sha256": "1d2cd51d47e128c6f38d0335176b1d98c25608a58b4fa2f1264e6740da527cd3"
+        },
+        {
+          "path": "../../@corvu/utils/dist/chunk/ZV6G25TT.js",
+          "sha256": "d37aaf1e9cf1c53a9b40b00f9ca1006a19a2184e282fc0b830c57e74b16f296f"
+        },
+        {
+          "path": "../../@corvu/utils/dist/reactivity/index.js",
+          "sha256": "d4fd9091d244ae263312f18a15fd4d49bc5346483faeb5a6ef00bd88fce4e542"
+        },
+        {
+          "path": "../../solid-presence/dist/index.js",
+          "sha256": "dc95a1a8fa0a03bcf4c030ef11073dd78b9de28b1e87686c8d9ec89fdf7ffe29"
+        },
+        {
+          "path": "../../@solid-primitives/resize-observer/dist/index.js",
+          "sha256": "b81f8955dc609e2f3731c6ae9f68e526153c08b9f85bbc1970766e44a8457095"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/7DPKSDZL.js",
+          "sha256": "d64185115451aa475f8246abe85a6cabfb0ae76aa81aa0f11fbd539c00cd38ed"
+        },
+        {
+          "path": "../../@kobalte/core/dist/tabs/index.js",
+          "sha256": "9aa58be7bcf74b7c3f47be318ee65a1f94a6e94a1531f0781fe3dc402191ec63"
+        },
+        {
+          "path": "apps/docs/src/registry/ui/tabs.tsx",
+          "sha256": "423536dffbb02a3656103a40e5d618af3fa8127ca1029f9cbcb39811a7c4e6f0"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/E4R2EMM4.js",
+          "sha256": "8812c4067d5373b4248cfcfd2690750ba177d33b9cb7815257948b0da46aefd7"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/YKGT7A57.js",
+          "sha256": "e06cb9ba38dfbde1c7faf9463c8d704ab10e734bc7864052dbe6bbb96413a863"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/K6P57S75.js",
+          "sha256": "c8940b6c2b6dc206eaea7fb978109acfd1ff18a99ea95800b54f09195a34b965"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/7ZHN3PYD.js",
+          "sha256": "92c262eca26aef3542418d29f7ca1b3159cf8bb9ba917ce21d76a95f11b9c2c9"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/ANN3A2QM.js",
+          "sha256": "ea81c56d7e1f9ece8a16df14fe60546e15f6bbf23f62c5a9e360bbf982f2dcb6"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/ICNSTULC.js",
+          "sha256": "fed7ba6129c81f9e1fded04fd7f9e40523dd9f5df4d725bce4589d76a1f96aa2"
+        },
+        {
+          "path": "../../@kobalte/core/dist/chunk/OPRD3XHK.js",
+          "sha256": "eda956dfd2635e0038b77127bee482ecc427e18554f14178316d1e58b5ca5529"
+        },
+        {
+          "path": "../../@kobalte/core/dist/text-field/index.js",
+          "sha256": "3efe96768dc53b7318a6fbeefaea13685d9c6fb375934a76e9576f58fd3803b9"
+        },
+        {
+          "path": "apps/docs/src/registry/ui/text-field.tsx",
+          "sha256": "33d67c411df9c7f3da675b61082951295a55a9c12dba95e53fbc8fc18dfbb478"
+        },
+        {
+          "path": "apps/docs/src/registry/examples/tabs-demo.tsx",
+          "sha256": "e8d23fcf2038a526fa0fa33575fe389fa886d03eaf21a9e9cfc90422ce2dc419"
+        },
+        {
+          "path": "Tabs.tsx",
+          "sha256": "39d05bb68dbb0f5cf9813c0ff1354605c3a5c8d1a802508ba223713b83e891fc"
+        }
+      ],
+      "packages": {
+        "node_modules/solid-js": {
+          "version": "1.9.17",
+          "resolved": "https://registry.npmjs.org/solid-js/-/solid-js-1.9.17.tgz",
+          "integrity": "sha512-4GAmLOWPfNV8H9Jfn2LSFTpNEG6jiOKPiwd5lnLGQtehHaX6l3TOLzJqQ7mqwB/3k1Yy3zyumFVopmc/tm34ow==",
+          "license": "MIT",
+          "dependencies": {
+            "csstype": "^3.1.0",
+            "seroval": "~1.6.8",
+            "seroval-plugins": "~1.6.8"
+          }
+        },
+        "node_modules/@solid-primitives/utils": {
+          "version": "6.4.1",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/utils/-/utils-6.4.1.tgz",
+          "integrity": "sha512-ISSB5QX1qP2ynrheIpYwc4oKR5Ny4siNuUyf1qZniy+Il+p/PtDB0QK1Dnle8noiHpwRD3gpPdubOC3qI/Zamg==",
+          "license": "MIT",
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/event-listener": {
+          "version": "2.4.6",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/event-listener/-/event-listener-2.4.6.tgz",
+          "integrity": "sha512-5I0YJcTVYIWoMmgBSROBZGcz+ymhew/pGTg2dHW74BUjFKsV8Li4bOZYl0YAGP4mHw5o4UBd9/BEesqBci3wxw==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/keyed": {
+          "version": "1.5.3",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/keyed/-/keyed-1.5.3.tgz",
+          "integrity": "sha512-zNadtyYBhJSOjXtogkGHmRxjGdz9KHc8sGGVAGlUABkE8BED2tbIZoxkwSqzOwde8OcUEH0bb5DLZUWIMvyBSA==",
+          "license": "MIT",
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/trigger": {
+          "version": "1.2.4",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/trigger/-/trigger-1.2.4.tgz",
+          "integrity": "sha512-Ju0e+ZOD7hpOp7nptJimvDSZHWFvIvF9iBWMvuwt30smX7c5wmB8Kmc0AdDuv0wOTi06PQ1J5IrP1WJbH2yUBQ==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/map": {
+          "version": "0.4.13",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/map/-/map-0.4.13.tgz",
+          "integrity": "sha512-B1zyFbsiTQvqPr+cuPCXO72sRuczG9Swncqk5P74NCGw1VE8qa/Ry9GlfI1e/VdeQYHjan+XkbE3rO2GW/qKew==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/trigger": "^1.1.0"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/static-store": {
+          "version": "0.1.4",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/static-store/-/static-store-0.1.4.tgz",
+          "integrity": "sha512-LgtVaVBtB7EbmS4+M0b8xY5Iq6pUWXBsIC4VgtrFKDGDdyCaDt88sHk0fUlx1Enxm/XZnZyLXJABRoa39RjJqA==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/rootless": {
+          "version": "1.5.4",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/rootless/-/rootless-1.5.4.tgz",
+          "integrity": "sha512-TOIZa1VUfVJ+9nkCcRajw3U4t9vBOP1HxX1WHNTbXq32mXwlqTvUnC4CRIilohcryBkT9u2ZkhUDSHRTaGp55g==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/media": {
+          "version": "2.3.6",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/media/-/media-2.3.6.tgz",
+          "integrity": "sha512-pk49gPOq/UMRUJ+pTSrOfBiR8xJjRYHXIf1iR/jSnyQ/KroU+ZXhkZzavC7hvfp2vJeOTW5k2/HN0r3Q1VJ7Pw==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/event-listener": "^2.4.6",
+            "@solid-primitives/rootless": "^1.5.4",
+            "@solid-primitives/static-store": "^0.1.4",
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/props": {
+          "version": "3.2.4",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/props/-/props-3.2.4.tgz",
+          "integrity": "sha512-MXXdvi2TSB6d+0N6ueA/HP1j/Kh9SEc4WdF1ZDMLwPagxW6pIHHSS9xbRO0RjqSVpNP4j0nxCWT1hx3CkJNhNA==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@solid-primitives/refs": {
+          "version": "1.1.4",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/refs/-/refs-1.1.4.tgz",
+          "integrity": "sha512-bLjwIs6ZPu8NQnuw04sU3Zc8qKSpbc0umUU/O4SHf6oWOdO4+dHY8vb1T7C4b/Tg103+9WGr6sEE0+NFlbaB/A==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        },
+        "node_modules/@kobalte/utils": {
+          "version": "0.9.2",
+          "resolved": "https://registry.npmjs.org/@kobalte/utils/-/utils-0.9.2.tgz",
+          "integrity": "sha512-jRVXr+zsVHxzDXRoh+CDeXzvCsFJ6uiHhqqNQ26Cw9ZsZ3D6nqPUBt1gGVtj2ZPmRL3a9Uk1v8D1aJ8/I12Dow==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/event-listener": "^2.2.14",
+            "@solid-primitives/keyed": "^1.2.0",
+            "@solid-primitives/map": "^0.4.7",
+            "@solid-primitives/media": "^2.2.4",
+            "@solid-primitives/props": "^3.1.8",
+            "@solid-primitives/refs": "^1.0.5",
+            "@solid-primitives/utils": "^6.2.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.8.8"
+          }
+        },
+        "node_modules/@kobalte/core": {
+          "version": "0.13.14",
+          "resolved": "https://registry.npmjs.org/@kobalte/core/-/core-0.13.14.tgz",
+          "integrity": "sha512-SBVB1lnvYbYt2x3t7fG0lo5fGLEbHQ6PII3NDPva8vD5e2v53On84ZVQiuIk0XI/55R4GQhden7Yem+R/XR8uQ==",
+          "license": "MIT",
+          "dependencies": {
+            "@floating-ui/dom": "^1.5.1",
+            "@internationalized/number": "^3.2.1",
+            "@kobalte/utils": "^0.9.2",
+            "@solid-primitives/props": "^3.1.8",
+            "@solid-primitives/resize-observer": "^2.0.26",
+            "solid-presence": "^0.2.0",
+            "solid-prevent-scroll": "^0.1.11"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.9.8"
+          }
+        },
+        "node_modules/clsx": {
+          "version": "2.1.1",
+          "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+          "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+          "license": "MIT",
+          "engines": {
+            "node": ">=6"
+          }
+        },
+        "node_modules/cva": {
+          "version": "1.0.0-beta.4",
+          "resolved": "https://registry.npmjs.org/cva/-/cva-1.0.0-beta.4.tgz",
+          "integrity": "sha512-F/JS9hScapq4DBVQXcK85l9U91M6ePeXoBMSp7vypzShoefUBxjQTo3g3935PUHgQd+IW77DjbPRIxugy4/GCQ==",
+          "license": "Apache-2.0",
+          "dependencies": {
+            "clsx": "^2.1.1"
+          },
+          "funding": {
+            "url": "https://polar.sh/cva"
+          },
+          "peerDependencies": {
+            "typescript": ">= 4.5.5"
+          },
+          "peerDependenciesMeta": {
+            "typescript": {
+              "optional": true
+            }
+          }
+        },
+        "node_modules/tailwind-merge": {
+          "version": "3.7.0",
+          "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.7.0.tgz",
+          "integrity": "sha512-XPPUyAc+cvspz3lHTcR/QgPfW2A0lv/xQNIjX3HGhLR+Nq2lHaLq5MtTesHn8GUr3W3DguT2KT5x3NVgRtYwmA==",
+          "license": "MIT",
+          "funding": {
+            "type": "github",
+            "url": "https://github.com/sponsors/dcastil"
+          }
+        },
+        "node_modules/@internationalized/number": {
+          "version": "3.6.9",
+          "resolved": "https://registry.npmjs.org/@internationalized/number/-/number-3.6.9.tgz",
+          "integrity": "sha512-GgWy2caO/+hV9sT/oCTWGHvbjmJMPT9kkXzoKRLnkEq7adghhR7UprhvY9sXrKfrp3NcDfhF6QQHXR1KfQbB8g==",
+          "license": "Apache-2.0",
+          "dependencies": {
+            "@swc/helpers": "^0.5.0"
+          }
+        },
+        "node_modules/@corvu/utils": {
+          "version": "0.4.2",
+          "resolved": "https://registry.npmjs.org/@corvu/utils/-/utils-0.4.2.tgz",
+          "integrity": "sha512-Ox2kYyxy7NoXdKWdHeDEjZxClwzO4SKM8plAaVwmAJPxHMqA0rLOoAsa+hBDwRLpctf+ZRnAd/ykguuJidnaTA==",
+          "license": "MIT",
+          "dependencies": {
+            "@floating-ui/dom": "^1.6.11"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.8"
+          }
+        },
+        "node_modules/solid-presence": {
+          "version": "0.2.0",
+          "resolved": "https://registry.npmjs.org/solid-presence/-/solid-presence-0.2.0.tgz",
+          "integrity": "sha512-YM92o+jvpzX3XGaD4rLYmq/Kc2ZVh47GSCLEufHBFQQIurvZTs8SoGJxO8BJGNDxBKdcS8F3dYhW1SDXp4BNjA==",
+          "license": "MIT",
+          "dependencies": {
+            "@corvu/utils": "~0.4.2"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.8"
+          }
+        },
+        "node_modules/@solid-primitives/resize-observer": {
+          "version": "2.2.0",
+          "resolved": "https://registry.npmjs.org/@solid-primitives/resize-observer/-/resize-observer-2.2.0.tgz",
+          "integrity": "sha512-9Fuu/EWBeGj+atGHRJp70HKhdfalmpjwxY8a32NZixdLNmfCJ45AfhLQNr6uOzETbbiMx4iCKlTrJ8KZCHC2Ww==",
+          "license": "MIT",
+          "dependencies": {
+            "@solid-primitives/event-listener": "^2.4.6",
+            "@solid-primitives/rootless": "^1.5.4",
+            "@solid-primitives/static-store": "^0.1.4",
+            "@solid-primitives/utils": "^6.4.1"
+          },
+          "peerDependencies": {
+            "solid-js": "^1.6.12"
+          }
+        }
+      },
+      "lockIntegrity": "sha256:297b93ff61a8099c9a8a1753990989a52aed9cf2fd30a934e8a60e173fff1fa4"
+    }
+  },
+  "cssPackages": {
+    "node_modules/tailwindcss": {
+      "version": "4.3.3",
+      "resolved": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.3.3.tgz",
+      "integrity": "sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==",
+      "license": "MIT"
+    },
+    "node_modules/tw-animate-css": {
+      "version": "1.4.0",
+      "resolved": "https://registry.npmjs.org/tw-animate-css/-/tw-animate-css-1.4.0.tgz",
+      "integrity": "sha512-7bziOlRqH0hJx80h/3mbicLW7o8qLsH5+RaLR2t+OHM3D0JlWGODQKQ4cxbK7WlvmUxpcj6Kgu6EKqjrGFe3QQ==",
+      "license": "MIT",
+      "funding": {
+        "url": "https://github.com/sponsors/Wombosvideo"
+      }
+    }
+  },
+  "stylesheet": "apps/docs/src/styles/app.css",
+  "adaptations": [
+    "Original docs Tailwind v4 theme, variables, state selectors and animation package retained.",
+    "Original Geist variable font assets embedded as data URLs with the SIL Open Font License.",
+    "Reviewed mount wrapper maps the preview theme to the upstream data-kb-theme attribute and disposes the Solid root."
+  ]
+}

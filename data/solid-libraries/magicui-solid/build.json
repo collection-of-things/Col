@@ -1,0 +1,870 @@
+{
+  "revision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+  "cssBuild": {
+    "verification": "Fresh npm ci --ignore-scripts --no-audit --no-fund --prefer-offline against the committed lock before compilation",
+    "lockIntegrity": "d2a918da301a2fd7819bcff0db2d849d20ce91d021d0234dbf9d1e253735b38f",
+    "cssIntegrity": "8c5138247678dfe8034b8ba867b682de838a78a60c9bd5b5c198e26544478e59",
+    "packages": {
+      "tailwindcss": {
+        "version": "4.3.3",
+        "resolved": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.3.3.tgz",
+        "integrity": "sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==",
+        "license": "MIT"
+      },
+      "postcss": {
+        "version": "8.5.6",
+        "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.5.6.tgz",
+        "integrity": "sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==",
+        "funding": [
+          {
+            "type": "opencollective",
+            "url": "https://opencollective.com/postcss/"
+          },
+          {
+            "type": "tidelift",
+            "url": "https://tidelift.com/funding/github/npm/postcss"
+          },
+          {
+            "type": "github",
+            "url": "https://github.com/sponsors/ai"
+          }
+        ],
+        "license": "MIT",
+        "dependencies": {
+          "nanoid": "^3.3.11",
+          "picocolors": "^1.1.1",
+          "source-map-js": "^1.2.1"
+        },
+        "engines": {
+          "node": "^10 || ^12 || >=14"
+        }
+      },
+      "@tailwindcss/postcss": {
+        "version": "4.3.3",
+        "resolved": "https://registry.npmjs.org/@tailwindcss/postcss/-/postcss-4.3.3.tgz",
+        "integrity": "sha512-JTSZZGQi1AyKirbLN3azmjVzef92tcX7h+iSqPdaeStyFpGpDlKvvpxeOE8njhbUanbRwr3z8DyzhICWnMtQeg==",
+        "license": "MIT",
+        "dependencies": {
+          "@alloc/quick-lru": "^5.2.0",
+          "@tailwindcss/node": "4.3.3",
+          "@tailwindcss/oxide": "4.3.3",
+          "postcss": "^8.5.16",
+          "tailwindcss": "4.3.3"
+        }
+      },
+      "@tailwindcss/node": {
+        "version": "4.3.3",
+        "resolved": "https://registry.npmjs.org/@tailwindcss/node/-/node-4.3.3.tgz",
+        "integrity": "sha512-/T8IKEsf9VTU6tLjgC7+sv2mOPtQxzE2jMw7u4Tt40Tx+QSZxpzh95/H6cMKoja9XuW7iMdLJYBB0o9G1CaAgg==",
+        "license": "MIT",
+        "dependencies": {
+          "@jridgewell/remapping": "^2.3.5",
+          "enhanced-resolve": "^5.24.1",
+          "jiti": "^2.7.0",
+          "lightningcss": "1.32.0",
+          "magic-string": "^0.30.21",
+          "source-map-js": "^1.2.1",
+          "tailwindcss": "4.3.3"
+        }
+      },
+      "@tailwindcss/oxide": {
+        "version": "4.3.3",
+        "resolved": "https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.3.3.tgz",
+        "integrity": "sha512-krXjAikiaFSPaK/FkAQT5UTx3VormQaiZ5hBFlJZ9UFQGB/rwg1MZIhHAG9smMQRTdyJxP6Qt5MwMtdyU5FWrA==",
+        "license": "MIT",
+        "engines": {
+          "node": ">= 20"
+        },
+        "optionalDependencies": {
+          "@tailwindcss/oxide-android-arm64": "4.3.3",
+          "@tailwindcss/oxide-darwin-arm64": "4.3.3",
+          "@tailwindcss/oxide-darwin-x64": "4.3.3",
+          "@tailwindcss/oxide-freebsd-x64": "4.3.3",
+          "@tailwindcss/oxide-linux-arm-gnueabihf": "4.3.3",
+          "@tailwindcss/oxide-linux-arm64-gnu": "4.3.3",
+          "@tailwindcss/oxide-linux-arm64-musl": "4.3.3",
+          "@tailwindcss/oxide-linux-x64-gnu": "4.3.3",
+          "@tailwindcss/oxide-linux-x64-musl": "4.3.3",
+          "@tailwindcss/oxide-wasm32-wasi": "4.3.3",
+          "@tailwindcss/oxide-win32-arm64-msvc": "4.3.3",
+          "@tailwindcss/oxide-win32-x64-msvc": "4.3.3"
+        }
+      }
+    },
+    "sourcePackages": {
+      "starlight-theme-black": {
+        "version": "0.7.1",
+        "resolved": "https://registry.npmjs.org/starlight-theme-black/-/starlight-theme-black-0.7.1.tgz",
+        "integrity": "sha512-AWfrsHcPETyDsyMtBLSsUZ4HZMLcsUfF+JGNX4X/zIyOL9eU5cFi/nsJ/rf0CxjPMpe+ljZcrumdefEgQnhSoQ==",
+        "sourcePrefix": "theme-black/"
+      },
+      "@astrojs/starlight": {
+        "version": "0.41.4",
+        "resolved": "https://registry.npmjs.org/@astrojs/starlight/-/starlight-0.41.4.tgz",
+        "integrity": "sha512-cRCKZhM2BKYViCakBiN68aVwPn5qj/XtMMq//G54xOWdXXcvic1gMMEI+veNlIKOqqC4QmIjcjk4jiFtlZ3mMg==",
+        "sourcePrefix": "starlight/"
+      }
+    },
+    "inputs": [
+      {
+        "path": "node_modules/@alloc/quick-lru/index.js",
+        "integrity": "6858dee2a66e28a9be1e70dc21f7dbab5592c03f181c57957e41743a225414cf"
+      },
+      {
+        "path": "node_modules/@jridgewell/gen-mapping/dist/gen-mapping.umd.js",
+        "integrity": "1d501e1cc3755fbc9a1b12a8722fc87930c71b15e1d21a664ddfa4fed0d5fad7"
+      },
+      {
+        "path": "node_modules/@jridgewell/remapping/dist/remapping.umd.js",
+        "integrity": "12b13f8a108bde767c8305aa222393dbb81472f47dcc401cd3a9e886633251b0"
+      },
+      {
+        "path": "node_modules/@jridgewell/resolve-uri/dist/resolve-uri.umd.js",
+        "integrity": "2d46a62531a9ffa1e6e04995a94ae35d7a10869e2116132068a8755a15d46663"
+      },
+      {
+        "path": "node_modules/@jridgewell/sourcemap-codec/dist/sourcemap-codec.umd.js",
+        "integrity": "36f67483c3beef15e041483b68e1b66e8b6b3e6c50ab654a5e97464082324cc9"
+      },
+      {
+        "path": "node_modules/@jridgewell/trace-mapping/dist/trace-mapping.umd.js",
+        "integrity": "5ad4ec0709f78aa806c70965d4c162270e1df605f5572aa3a1ced31fe73dd07a"
+      },
+      {
+        "path": "node_modules/@tailwindcss/node/dist/index.js",
+        "integrity": "327db60a5789485ca5aef115ac26a7cc59447cef18a9c69ba9f7bacdcd8b872c"
+      },
+      {
+        "path": "node_modules/@tailwindcss/node/dist/require-cache.js",
+        "integrity": "5a2e51ff93e144cdc6d41e1241dd17026c394470f93bf5cf7cb7ef234b833346"
+      },
+      {
+        "path": "node_modules/@tailwindcss/oxide-win32-x64-msvc/package.json",
+        "integrity": "09657fdd8d8e83db093959eb5a8aec87cadb50bbb084cf403c490a8b94d557ed"
+      },
+      {
+        "path": "node_modules/@tailwindcss/oxide-win32-x64-msvc/tailwindcss-oxide.win32-x64-msvc.node",
+        "integrity": "abdc655d7f9f413e2da0c97c90852fa476bcac3f2659e9ad51901cf58cb7eac4"
+      },
+      {
+        "path": "node_modules/@tailwindcss/oxide/index.js",
+        "integrity": "311f226094e81c0e8d85c6ec02b453b1c0e1239999ae65e78a0d5e02bc005db5"
+      },
+      {
+        "path": "node_modules/@tailwindcss/postcss/dist/index.js",
+        "integrity": "4ec76d251e34e4082e2847921f6296c4191d328a5d3ab5dacb6153c1b18f3050"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/AliasFieldPlugin.js",
+        "integrity": "6b3c8862194c7764e712c05cf8c42bea3ef512d7d68eb372fb8183c6e6fec5ef"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/AliasPlugin.js",
+        "integrity": "e11338e3e060aa3e0f6ba4e2766725a6b19c40127e6085bf895911f9353a2fd4"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/AliasUtils.js",
+        "integrity": "d6e0437bbd738f3cd163076ac5b8090deb57d0c5c655c68044b0120e0be81854"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/AppendPlugin.js",
+        "integrity": "b8fa7010ae0371b00311853d1c7559b51b81e943105006553adda316a2b3cd80"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/CachedInputFileSystem.js",
+        "integrity": "cb50b98ec7957d8c71f7ca88cce9cfd0d4b010aa0852a26133d47702be22d14a"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/ConditionalPlugin.js",
+        "integrity": "d975d22234645a46403f7c418af0cfe7a3539f4f07e4817555915dedafa0b2e6"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js",
+        "integrity": "44610e08d264e06ae14619e083592ebee5eadf4f71f24fd96cb2d72a0a5f620f"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/DescriptionFileUtils.js",
+        "integrity": "b610a75edcdb704860c4ac881cd3f7f99526e379d4579b1e6778af9a7f3449bd"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js",
+        "integrity": "738883d76d8095d1411d1ebe0c680fa135bc375f7996ce3bdbf6b1b3e2465001"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/ExportsFieldPlugin.js",
+        "integrity": "e376ac7b7f6ca6d23cf3fab72dc5a0db6fb364cc29c0db112886ac50799cea30"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/ExtensionAliasPlugin.js",
+        "integrity": "cd897d13e9ee74719d7663c08b3affc01a642bd372ce0e3cced78693c4273a6e"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/FileExistsPlugin.js",
+        "integrity": "c4909758344e4512f5777e4daeca178630ad42bfaf5999629a1fd208d6043830"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/ImportsFieldPlugin.js",
+        "integrity": "43595d0c47a19e21c96e89e96ed3d8b7aba7a49d42cd0dbff06b2a920df29f7a"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/JoinRequestPartPlugin.js",
+        "integrity": "6e1192e7e0e1f376b37141f702be722fb8f45e2ae6f597e62badbaee31b1b50b"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/JoinRequestPlugin.js",
+        "integrity": "cd7caa375886846f4419b3bdb280f9bc55448c92697ef58b9278e0816237a90d"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/MainFieldPlugin.js",
+        "integrity": "f4ef929263dbcc46e01022ae323cb605333c70acc4e715a0c0b92856d9563733"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/ModulesInHierarchicalDirectoriesPlugin.js",
+        "integrity": "957113353b0c917bede810c5cae338b31106eb75be9b0970bf38ba5550bcf0de"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/ModulesInRootPlugin.js",
+        "integrity": "4457e96896409416cbda57b958446806a350b35e5fed98c142b21bf909238a58"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/ModulesUtils.js",
+        "integrity": "637ae89cbaddc9021760ad7848c3df078c0075106edad7a5215ac812936b4086"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/NextPlugin.js",
+        "integrity": "f8fb346642ef7dc8f72932083efde52ca9bc082277d6d27d27cdbca78702fe65"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/PackageMapPlugin.js",
+        "integrity": "ebdeaef544616ace9412923e1fd46abd0433d0b794c68e48df361c634486fdcd"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/ParsePlugin.js",
+        "integrity": "fceb130a5497e074570c5eb685964c95bd73b938be230ddea29c26752880bf5b"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/PnpPlugin.js",
+        "integrity": "04a05ec64a17ec2d1316cc4c48f52f0ec2062dd16589c3728f757df2a1637dee"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/Resolver.js",
+        "integrity": "67495c4bd067f0a8340070aada24812d6e01a8c612d404c9f2b7eb338eef100c"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/ResolverFactory.js",
+        "integrity": "2b581a39449268041dd9f4d2c1af23e0f775d04b8906825eec1d9806f8d3ceb5"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/RestrictionsPlugin.js",
+        "integrity": "a5372eb0a93c3b8adaa730e7dbf37de7117f6011da54b00ecf6834d6f8943ac1"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/ResultPlugin.js",
+        "integrity": "c97f89955332c5be77539038b9bbd0adf380298add88dc664df860f8466b2e0d"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/RootsPlugin.js",
+        "integrity": "4003f3642b072f5c10cba7a54492a186d9c132922caa3ca93de64ca8c2024a8d"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/SelfReferencePlugin.js",
+        "integrity": "23a1fa60ffe6de0a90812c09bfa13dabae868831452fd8ae5d314e5973671c08"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/SymlinkPlugin.js",
+        "integrity": "14467169eba960c59f1f6056637f5d8ec847077ab2de2a2a1b66fb3dfb9479c6"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/SyncAsyncFileSystemDecorator.js",
+        "integrity": "02cd0986d1b844094b559625a6265cab3b39368ffb854c560caa138392a20d81"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/TryNextPlugin.js",
+        "integrity": "94bafdef268939eb9ca6a598f477077be540b674da464990571f38d20398e061"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/TsconfigPathsPlugin.js",
+        "integrity": "15e4533d9776f174a2e178d3ec479733324e1b5db701abae9e44f4b0e3a9d1d6"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js",
+        "integrity": "4ed44e2dcef4476f3f87eeeb3f6ac984ffd6729402d17b0b7d14aecf47e9180e"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/UseFilePlugin.js",
+        "integrity": "d3c331aad0992357e63042fc3ce46601a579295b3dee550346505402cf79f060"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/createInnerContext.js",
+        "integrity": "2605f113b8abfe22a238bbed394fd186b9124a849184e386564488d05aabff42"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/forEachBail.js",
+        "integrity": "b0033cee7d8a2dcf9572208ea0159c5809481c633962e14cb54aba3ccffcd84e"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/getInnerRequest.js",
+        "integrity": "f3dbfc1380d6d774c754f5fe8b3e6cc368677d2161d2ef4507643f1bf94f84d2"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/getPaths.js",
+        "integrity": "bb9d447dde717ec8d4468f079eeb4cb9f722a126458a647a02d4a9dce8774686"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/index.js",
+        "integrity": "84bfd7802288abbd8d22850eb35297889bded526344999e2242034c3d43f9e37"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/util/entrypoints.js",
+        "integrity": "819d325947e44ab5d84be467740f4fccbf2936398f2aa330877fd32827319d22"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/util/fileURLToPath.js",
+        "integrity": "ced9da062ecf64dc6f8143b8e63cddfe01914839b35e0d213e1e735460ce3779"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/util/fs.js",
+        "integrity": "40e6b6536724186b36ac38779c30195241e16d0f3d861d36e6a73cd81b7cff09"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/util/identifier.js",
+        "integrity": "26587a64c239ece1f708d8ce72f5b81a4137711df823f3aa5add8a786c772820"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/util/memoize.js",
+        "integrity": "3639a47afa307767bbb40c9a666632202b5c7d4ca39ff24185734f6ab87560fb"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/util/packageMap.js",
+        "integrity": "4587651c39c897640bce9ac42e6d0b865a0676d09663a83200e3a30b8b49701a"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/util/path.js",
+        "integrity": "5ef6e62c134c0bc2e0005facb1df84458d52bd6a8789ec6253a4c4f72002ac65"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/util/pathToFileURL.js",
+        "integrity": "bcd85ca964531152281c79fa028d5df1eb516e7d5fbdeaadda1ff83e56f5c426"
+      },
+      {
+        "path": "node_modules/enhanced-resolve/lib/util/strip-json-comments.js",
+        "integrity": "271d8cd067c2b3d90a72b671a325e630b0582f376b660f61fe4fc5e7b668f03b"
+      },
+      {
+        "path": "node_modules/jiti/dist/jiti.cjs",
+        "integrity": "a0b3b8d5e06a0519c66b62179e29200533057920f6f11370546e979dacd24c49"
+      },
+      {
+        "path": "node_modules/jiti/lib/jiti.cjs",
+        "integrity": "a80e7f04d21d4ef5c540287e41d6ab36dbff73132620e1894cd83425bb1e62a7"
+      },
+      {
+        "path": "node_modules/lightningcss-win32-x64-msvc/lightningcss.win32-x64-msvc.node",
+        "integrity": "83e7e838ef1bbf5454c651103574fec31a1cec0b453b999d1173365cbc6c7841"
+      },
+      {
+        "path": "node_modules/lightningcss/node/browserslistToTargets.js",
+        "integrity": "18b2c767c8623273e0c5ead5bb8e09f3f843d8401aaa6518dbdd20337849f37b"
+      },
+      {
+        "path": "node_modules/lightningcss/node/composeVisitors.js",
+        "integrity": "0d5aeaeaf42ccc6c64d10add07aa243102cdc8c6c25c3e2ebb1b01c46a1356f5"
+      },
+      {
+        "path": "node_modules/lightningcss/node/flags.js",
+        "integrity": "646027f1c0977cf151916b221edf51c2b4287ff5b5028c60243f6b014e9a388d"
+      },
+      {
+        "path": "node_modules/lightningcss/node/index.js",
+        "integrity": "8b7f10ff14d65a382bd7041a747df4a0d4b7c4e22b2842bcaca2588cd86bb045"
+      },
+      {
+        "path": "node_modules/magic-string/dist/magic-string.cjs.js",
+        "integrity": "15e180b8bbb5a3fa6a945951b5802dfb75a0967e82f9beeec520cb1ea0fa9ee2"
+      },
+      {
+        "path": "node_modules/nanoid/non-secure/index.cjs",
+        "integrity": "73b3dc5bf17d98fc9b9894748907e338c536f47412ae495a5f8052565381ddb2"
+      },
+      {
+        "path": "node_modules/picocolors/picocolors.js",
+        "integrity": "213bb870fcaad4def0215fe34fbb0f529836cc4d2462e02f14f1a49d09781625"
+      },
+      {
+        "path": "node_modules/postcss/lib/at-rule.js",
+        "integrity": "33b932bda8f304e9838a70232673326b6c0fd5fa030df35071bf36c127042a0b"
+      },
+      {
+        "path": "node_modules/postcss/lib/comment.js",
+        "integrity": "674385438f42526f2c05c19dfb66fcc521f5cf180ccc85b3215ad5c07ac21a40"
+      },
+      {
+        "path": "node_modules/postcss/lib/container.js",
+        "integrity": "0f8aaa013a910e142be706c3d6f54a3ce04751a08df3f17ed3a61bb91f863c39"
+      },
+      {
+        "path": "node_modules/postcss/lib/css-syntax-error.js",
+        "integrity": "904b4bb371539a6303e4e211f0a8991fde7bc94d8674253d627389ff291d0ec1"
+      },
+      {
+        "path": "node_modules/postcss/lib/declaration.js",
+        "integrity": "2ccb78406c7a45aab26fc463a0fe5e3e855caf3ab1ba283616ae867046aa3b54"
+      },
+      {
+        "path": "node_modules/postcss/lib/document.js",
+        "integrity": "f66f02fde48389fe1a361a8f71da7ee0236a49c94cf22378e70ba6a2e9f4fab1"
+      },
+      {
+        "path": "node_modules/postcss/lib/fromJSON.js",
+        "integrity": "5087cfda6c555ac560cfec7f6c5904c07835da403e398e6b03f078f8107c129f"
+      },
+      {
+        "path": "node_modules/postcss/lib/input.js",
+        "integrity": "4442c5ccd2c9e03ca36dc4d03cbe3144415fea7b4b055de1bf76b0127aa913b2"
+      },
+      {
+        "path": "node_modules/postcss/lib/lazy-result.js",
+        "integrity": "299821a7481d314dafccf1a19919130a6c9592f560fa16911b4a8d024c06dfa3"
+      },
+      {
+        "path": "node_modules/postcss/lib/list.js",
+        "integrity": "6df35bac40d4c449ae8e9078776e5c17c529337830a01472761902a546032f52"
+      },
+      {
+        "path": "node_modules/postcss/lib/map-generator.js",
+        "integrity": "8e85d9c76706a860b0aa59d52cab53e92b7ee38e86a80772e5c7168c197d48d0"
+      },
+      {
+        "path": "node_modules/postcss/lib/no-work-result.js",
+        "integrity": "f49f7aabebd8f4dc74fdf70cc7f018e190c95f84908befad48201d96b15b0599"
+      },
+      {
+        "path": "node_modules/postcss/lib/node.js",
+        "integrity": "a4cfc9d293a44d9d2a7966731532d39f65f3ef4ea232032b250fe272730eb098"
+      },
+      {
+        "path": "node_modules/postcss/lib/parse.js",
+        "integrity": "7662c5ad1fd5f97a7c1615f0e5e7bc268e762916bcf6fb7bf9dda45537493764"
+      },
+      {
+        "path": "node_modules/postcss/lib/parser.js",
+        "integrity": "407fe4f1ca3ebb51a6df9632286109fa47b89a2cb241647470f6de25aea72d55"
+      },
+      {
+        "path": "node_modules/postcss/lib/postcss.js",
+        "integrity": "8314c843f5dfa922e6f3fb9b8d8bf3e4b0be0d94b08075e1b4f3599f4276fb67"
+      },
+      {
+        "path": "node_modules/postcss/lib/previous-map.js",
+        "integrity": "c65f892497d017eb21b0956e5feb5c3d11cbcd083307e57c908e59109d6bed32"
+      },
+      {
+        "path": "node_modules/postcss/lib/processor.js",
+        "integrity": "809c06d851ab53f691eff43a1802c239e896439c51f5959a339177802c42344d"
+      },
+      {
+        "path": "node_modules/postcss/lib/result.js",
+        "integrity": "b4239438538d41187fc9a572c83bb89b09524301764ebd4f46c71fe31edd04dd"
+      },
+      {
+        "path": "node_modules/postcss/lib/root.js",
+        "integrity": "66bf461dbd984702272d737e8dc86a254b0481ae7934162f4ce0b32d9a19ec76"
+      },
+      {
+        "path": "node_modules/postcss/lib/rule.js",
+        "integrity": "216ca23a33b1a0145c7925daa442a34e33a9ea41c6f3bb58fca7c4fb355e0166"
+      },
+      {
+        "path": "node_modules/postcss/lib/stringifier.js",
+        "integrity": "c29cb2393a49240b06b710a626120ce9097236e289adc9d876c5421f6e8b9fcb"
+      },
+      {
+        "path": "node_modules/postcss/lib/stringify.js",
+        "integrity": "99229cdda200513f88f7fee46004d5c39c1492a73451509e66164d26dff34abc"
+      },
+      {
+        "path": "node_modules/postcss/lib/symbols.js",
+        "integrity": "eb8ab8b9648d400ec3e8e37e75dc159734b97ba21137f12da11b4afc2547a1b4"
+      },
+      {
+        "path": "node_modules/postcss/lib/terminal-highlight.js",
+        "integrity": "27f1eb6cc633f3947e053c96f16b1754bcffcda2742ecc9a1e11cc2a75d70d9b"
+      },
+      {
+        "path": "node_modules/postcss/lib/tokenize.js",
+        "integrity": "fb29fa5e5432989bdba2b153952763356c0cb7ffeacc2ae14c3cabfb414afb4d"
+      },
+      {
+        "path": "node_modules/postcss/lib/warn-once.js",
+        "integrity": "5683ff69eeb8e77373a4bd0e0b9da611c7575ee434ba3c458c0552ab4806464a"
+      },
+      {
+        "path": "node_modules/postcss/lib/warning.js",
+        "integrity": "a969d1ec8a5025c028278ee037cc21c5c7b8129e80269ea3bd8d831a957474fa"
+      },
+      {
+        "path": "node_modules/source-map-js/lib/array-set.js",
+        "integrity": "163bb3055aaea7140167740036a83161fd912c344b14f992754b80f21477d754"
+      },
+      {
+        "path": "node_modules/source-map-js/lib/base64-vlq.js",
+        "integrity": "f3407e528f54ec0787bd0a71eeac0c99fffd98445916fcbe116dc69ca3be928b"
+      },
+      {
+        "path": "node_modules/source-map-js/lib/base64.js",
+        "integrity": "651bf433cf05e9ec8cee0b94639483236a605d48279e83d3d5c5de81c21d6599"
+      },
+      {
+        "path": "node_modules/source-map-js/lib/binary-search.js",
+        "integrity": "c7f4a47a125af0bd860443dfd71d2f412d1a97dcb53ab7038189d63b91dc32bd"
+      },
+      {
+        "path": "node_modules/source-map-js/lib/mapping-list.js",
+        "integrity": "35ddb82861f11a70ab84cb47d620fcb28d7f884bb444644e06bde815b836ef9e"
+      },
+      {
+        "path": "node_modules/source-map-js/lib/quick-sort.js",
+        "integrity": "1e2857cc4f6c9c36b764ce529f39b9243bed27aed809e895d7cec04c8a869266"
+      },
+      {
+        "path": "node_modules/source-map-js/lib/source-map-consumer.js",
+        "integrity": "9ad10db386da13c1f95e6a680d6298dbb306c77f57a9a3539e4595b723a7654b"
+      },
+      {
+        "path": "node_modules/source-map-js/lib/source-map-generator.js",
+        "integrity": "07894c9ea1e674263e2e7694d43d4fb935e98549b93946205b9536c1420696c0"
+      },
+      {
+        "path": "node_modules/source-map-js/lib/source-node.js",
+        "integrity": "d1a0ef136bf0e974ba956506c88e91fef5d8681bbf10c486ff9566a7d6d76f3c"
+      },
+      {
+        "path": "node_modules/source-map-js/lib/util.js",
+        "integrity": "0629f3ae2f3049cda3a2e87ea651dcf0cc71108f4681795ab989a8ac1573fc03"
+      },
+      {
+        "path": "node_modules/source-map-js/source-map.js",
+        "integrity": "dc098456c2d9ab90a4c0a17cca9be16665b9813df20906553a98b0088a157be7"
+      },
+      {
+        "path": "node_modules/tailwindcss/dist/lib.js",
+        "integrity": "934fd25eee4dc84b2bb168b751816bba4c29cc6ed665a86ef6d6594c54da80d8"
+      },
+      {
+        "path": "node_modules/tailwindcss/preflight.css",
+        "integrity": "ace8310eed6dc5568a56fc16e1d695cf58da7528d81d66d81649e93cce644df6"
+      },
+      {
+        "path": "node_modules/tailwindcss/theme.css",
+        "integrity": "443d7af364200f8ec8352dc78e39485a118a1840d498c97967bf0ae402b39167"
+      },
+      {
+        "path": "node_modules/tailwindcss/utilities.css",
+        "integrity": "0e5844ec75de2fb4a76097b26bb624bf8f9d9cf59f6d947855b743dd25f920fb"
+      },
+      {
+        "path": "node_modules/tapable/lib/AsyncParallelBailHook.js",
+        "integrity": "141de5a3604d922aa4c259c678b71b0e4c33d18aa9732cb4c4e106d6f436a3b5"
+      },
+      {
+        "path": "node_modules/tapable/lib/AsyncParallelHook.js",
+        "integrity": "642ff825a096928a71a5cb19cf2970b88448baf840bb3c3f62aefe52de0d23b9"
+      },
+      {
+        "path": "node_modules/tapable/lib/AsyncSeriesBailHook.js",
+        "integrity": "7ce728a99733be718b6067e6631313dee732febb140974dc85da6f69935f9f8b"
+      },
+      {
+        "path": "node_modules/tapable/lib/AsyncSeriesHook.js",
+        "integrity": "bc88189f293de687c1082dddec33ae11de06a403f7688596b08e5ccd2e7dd1eb"
+      },
+      {
+        "path": "node_modules/tapable/lib/AsyncSeriesLoopHook.js",
+        "integrity": "36c09da98da6954a67e722dab2a092c5900f1aa40f4bfef721ebef1ad67c8243"
+      },
+      {
+        "path": "node_modules/tapable/lib/AsyncSeriesWaterfallHook.js",
+        "integrity": "d0b62f82944a7cc16651b6feeaef2551d65a86d478ebb6a05a5d3c1f711da8a1"
+      },
+      {
+        "path": "node_modules/tapable/lib/Hook.js",
+        "integrity": "3f76307d0cd231b46df6f35b1e49c99becb892b3eb3967711bb7e535453d8fcc"
+      },
+      {
+        "path": "node_modules/tapable/lib/HookCodeFactory.js",
+        "integrity": "ebd1c3d48d6b21622687eeff968ac9e52e4c6973386be6fd5e68aca0811768c9"
+      },
+      {
+        "path": "node_modules/tapable/lib/HookMap.js",
+        "integrity": "f481d9fa54f2e4a77708335d8fe90e35486bc0578374e272aa4e1c9569b6af5b"
+      },
+      {
+        "path": "node_modules/tapable/lib/MultiHook.js",
+        "integrity": "e40e41314d6d5f86b66c51b2d01d8baf40fcd8d6cd4629be643efb860f88f7c2"
+      },
+      {
+        "path": "node_modules/tapable/lib/SyncBailHook.js",
+        "integrity": "447accd98688700751e9a296ec92f54c74e7ba313025c2482735a4f42645de0c"
+      },
+      {
+        "path": "node_modules/tapable/lib/SyncHook.js",
+        "integrity": "d6d8ff87c32e1d67c13483c19801c4cf14e62b0ee2225b7a6745778d94259cda"
+      },
+      {
+        "path": "node_modules/tapable/lib/SyncLoopHook.js",
+        "integrity": "65d46e31194274ade53254e25a74d7f47e510c91ce94de1505778300ffa8e0d6"
+      },
+      {
+        "path": "node_modules/tapable/lib/SyncWaterfallHook.js",
+        "integrity": "6d806bb60ef683516c32c9736e2cf18c7c14106cdd002d5b1a705b12150b8d83"
+      },
+      {
+        "path": "node_modules/tapable/lib/index.js",
+        "integrity": "db40318101efc7a8d5962e3250e7e8b93cb65ba193e29847ec4faa467d93d2d9"
+      },
+      {
+        "path": "preview.css",
+        "integrity": "f89f9b4068b0d118ac87c7ea295cea66ea6b0459a84171e96a3661867712da70"
+      },
+      {
+        "path": "source/src/demos/MarqueeDemo.tsx",
+        "integrity": "e03fdcfaa2a5066b8df23be0f60eb49cb441a9da831c4ba51a48319f594df62c"
+      },
+      {
+        "path": "source/src/demos/RippleButtonDemo.tsx",
+        "integrity": "3b84f04c83d0d9a7409e6af6c1f2dd63b626d930453bae87d83e9683b298323c"
+      },
+      {
+        "path": "source/src/demos/ShimmerButtonDemo.tsx",
+        "integrity": "c459b6400b3e462f54b8d83b84bb43bb6f6e3b426a0f98ab1aabc8564cba275d"
+      },
+      {
+        "path": "source/src/registry/magicui/marquee.tsx",
+        "integrity": "9eb0a05a87f3f15936b089f1379f67f9fd5c99eeb3b3c3524169b5ff2468c6cb"
+      },
+      {
+        "path": "source/src/registry/magicui/ripple-button.tsx",
+        "integrity": "3ade371a463ef5a7fab531bd111a07077cebde1f9832477ad8d1ca9ef22a76d4"
+      },
+      {
+        "path": "source/src/registry/magicui/shimmer-button.tsx",
+        "integrity": "816287516187fd682760c6742d0dd5eebed23aafa1086c4fcdd794dea6f41f5b"
+      }
+    ]
+  },
+  "records": {
+    "magicui-solid/Marquee": {
+      "codeIntegrity": "a8a839a4c14a6b83a473f4e4317ef0c968728f96d54004b4e0f12be3e7bafe9c",
+      "cssIntegrity": "8c5138247678dfe8034b8ba867b682de838a78a60c9bd5b5c198e26544478e59",
+      "lockIntegrity": "d2a918da301a2fd7819bcff0db2d849d20ce91d021d0234dbf9d1e253735b38f",
+      "inputs": [
+        {
+          "path": "../node_modules/solid-js/dist/solid.js",
+          "sha256": "2d8f12f3e25009c6a522c981f1b46695951b59ec800a2471f516bb79ce1f9934"
+        },
+        {
+          "path": "../node_modules/solid-js/web/dist/web.js",
+          "sha256": "e0ba3633593bfa2081f030fb0033e60340d6a2a53e35e8ada1d1cd0af7a81c90"
+        },
+        {
+          "path": "../node_modules/clsx/dist/clsx.mjs",
+          "sha256": "d949e5cdbfebc76a6642b1901095e900fc3f2262d8dc0373aa44850a9bc75522"
+        },
+        {
+          "path": "../node_modules/tailwind-merge/dist/bundle-mjs.mjs",
+          "sha256": "bb843b41186520f990a35330687da381a76ae7af89432fe2400afb7d73852181"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "sha256": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/marquee.tsx",
+          "sha256": "9eb0a05a87f3f15936b089f1379f67f9fd5c99eeb3b3c3524169b5ff2468c6cb"
+        },
+        {
+          "path": "src/demos/MarqueeDemo.tsx",
+          "sha256": "e03fdcfaa2a5066b8df23be0f60eb49cb441a9da831c4ba51a48319f594df62c"
+        },
+        {
+          "path": "MarqueeDemo.mount.tsx",
+          "sha256": "3fc7beb93f2d44b20e59c31f2009427bb06348daee747b170d8eb889ad12b35c"
+        }
+      ],
+      "packages": {
+        "node_modules/solid-js": {
+          "version": "1.9.17",
+          "resolved": "https://registry.npmjs.org/solid-js/-/solid-js-1.9.17.tgz",
+          "integrity": "sha512-4GAmLOWPfNV8H9Jfn2LSFTpNEG6jiOKPiwd5lnLGQtehHaX6l3TOLzJqQ7mqwB/3k1Yy3zyumFVopmc/tm34ow==",
+          "license": "MIT",
+          "dependencies": {
+            "csstype": "^3.1.0",
+            "seroval": "~1.6.8",
+            "seroval-plugins": "~1.6.8"
+          }
+        },
+        "node_modules/clsx": {
+          "version": "2.1.1",
+          "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+          "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+          "license": "MIT",
+          "engines": {
+            "node": ">=6"
+          }
+        },
+        "node_modules/tailwind-merge": {
+          "version": "3.6.0",
+          "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.6.0.tgz",
+          "integrity": "sha512-uxL7qAVQriqRQPAyK3pj66VqskWqoZ37PW94jwOTwNfq/z9oyu1V+eqrZqtR2+fCiXdYOZe/Modt8GtvqNzu+w==",
+          "license": "MIT",
+          "funding": {
+            "type": "github",
+            "url": "https://github.com/sponsors/dcastil"
+          }
+        }
+      }
+    },
+    "magicui-solid/Ripple Button": {
+      "codeIntegrity": "e1c1b16da448be9b962fc84d7e97d4ffdfd933c9a2e8d118c55d18f82b6482c8",
+      "cssIntegrity": "8c5138247678dfe8034b8ba867b682de838a78a60c9bd5b5c198e26544478e59",
+      "lockIntegrity": "d2a918da301a2fd7819bcff0db2d849d20ce91d021d0234dbf9d1e253735b38f",
+      "inputs": [
+        {
+          "path": "../node_modules/solid-js/dist/solid.js",
+          "sha256": "2d8f12f3e25009c6a522c981f1b46695951b59ec800a2471f516bb79ce1f9934"
+        },
+        {
+          "path": "../node_modules/solid-js/web/dist/web.js",
+          "sha256": "e0ba3633593bfa2081f030fb0033e60340d6a2a53e35e8ada1d1cd0af7a81c90"
+        },
+        {
+          "path": "../node_modules/clsx/dist/clsx.mjs",
+          "sha256": "d949e5cdbfebc76a6642b1901095e900fc3f2262d8dc0373aa44850a9bc75522"
+        },
+        {
+          "path": "../node_modules/tailwind-merge/dist/bundle-mjs.mjs",
+          "sha256": "bb843b41186520f990a35330687da381a76ae7af89432fe2400afb7d73852181"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "sha256": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/ripple-button.tsx",
+          "sha256": "3ade371a463ef5a7fab531bd111a07077cebde1f9832477ad8d1ca9ef22a76d4"
+        },
+        {
+          "path": "src/demos/RippleButtonDemo.tsx",
+          "sha256": "3b84f04c83d0d9a7409e6af6c1f2dd63b626d930453bae87d83e9683b298323c"
+        },
+        {
+          "path": "RippleButtonDemo.mount.tsx",
+          "sha256": "045b257c3dba46d0cc4cd4c8dc3d6d0fe49d3ec82f0fb1141be86b6274286af5"
+        }
+      ],
+      "packages": {
+        "node_modules/solid-js": {
+          "version": "1.9.17",
+          "resolved": "https://registry.npmjs.org/solid-js/-/solid-js-1.9.17.tgz",
+          "integrity": "sha512-4GAmLOWPfNV8H9Jfn2LSFTpNEG6jiOKPiwd5lnLGQtehHaX6l3TOLzJqQ7mqwB/3k1Yy3zyumFVopmc/tm34ow==",
+          "license": "MIT",
+          "dependencies": {
+            "csstype": "^3.1.0",
+            "seroval": "~1.6.8",
+            "seroval-plugins": "~1.6.8"
+          }
+        },
+        "node_modules/clsx": {
+          "version": "2.1.1",
+          "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+          "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+          "license": "MIT",
+          "engines": {
+            "node": ">=6"
+          }
+        },
+        "node_modules/tailwind-merge": {
+          "version": "3.6.0",
+          "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.6.0.tgz",
+          "integrity": "sha512-uxL7qAVQriqRQPAyK3pj66VqskWqoZ37PW94jwOTwNfq/z9oyu1V+eqrZqtR2+fCiXdYOZe/Modt8GtvqNzu+w==",
+          "license": "MIT",
+          "funding": {
+            "type": "github",
+            "url": "https://github.com/sponsors/dcastil"
+          }
+        }
+      }
+    },
+    "magicui-solid/Shimmer Button": {
+      "codeIntegrity": "2f5e4b2f4cc353a42d5e7448cf7c19879e82c5fa00d0df95c101b54bfd167ad0",
+      "cssIntegrity": "8c5138247678dfe8034b8ba867b682de838a78a60c9bd5b5c198e26544478e59",
+      "lockIntegrity": "d2a918da301a2fd7819bcff0db2d849d20ce91d021d0234dbf9d1e253735b38f",
+      "inputs": [
+        {
+          "path": "../node_modules/solid-js/dist/solid.js",
+          "sha256": "2d8f12f3e25009c6a522c981f1b46695951b59ec800a2471f516bb79ce1f9934"
+        },
+        {
+          "path": "../node_modules/solid-js/web/dist/web.js",
+          "sha256": "e0ba3633593bfa2081f030fb0033e60340d6a2a53e35e8ada1d1cd0af7a81c90"
+        },
+        {
+          "path": "../node_modules/clsx/dist/clsx.mjs",
+          "sha256": "d949e5cdbfebc76a6642b1901095e900fc3f2262d8dc0373aa44850a9bc75522"
+        },
+        {
+          "path": "../node_modules/tailwind-merge/dist/bundle-mjs.mjs",
+          "sha256": "bb843b41186520f990a35330687da381a76ae7af89432fe2400afb7d73852181"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "sha256": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/shimmer-button.tsx",
+          "sha256": "816287516187fd682760c6742d0dd5eebed23aafa1086c4fcdd794dea6f41f5b"
+        },
+        {
+          "path": "src/demos/ShimmerButtonDemo.tsx",
+          "sha256": "c459b6400b3e462f54b8d83b84bb43bb6f6e3b426a0f98ab1aabc8564cba275d"
+        },
+        {
+          "path": "ShimmerButtonDemo.mount.tsx",
+          "sha256": "4fc9e17a1ddba799e4d257b5b7b5a8b7417d926dda14966d3fc9f76984c0750c"
+        }
+      ],
+      "packages": {
+        "node_modules/solid-js": {
+          "version": "1.9.17",
+          "resolved": "https://registry.npmjs.org/solid-js/-/solid-js-1.9.17.tgz",
+          "integrity": "sha512-4GAmLOWPfNV8H9Jfn2LSFTpNEG6jiOKPiwd5lnLGQtehHaX6l3TOLzJqQ7mqwB/3k1Yy3zyumFVopmc/tm34ow==",
+          "license": "MIT",
+          "dependencies": {
+            "csstype": "^3.1.0",
+            "seroval": "~1.6.8",
+            "seroval-plugins": "~1.6.8"
+          }
+        },
+        "node_modules/clsx": {
+          "version": "2.1.1",
+          "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+          "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+          "license": "MIT",
+          "engines": {
+            "node": ">=6"
+          }
+        },
+        "node_modules/tailwind-merge": {
+          "version": "3.6.0",
+          "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.6.0.tgz",
+          "integrity": "sha512-uxL7qAVQriqRQPAyK3pj66VqskWqoZ37PW94jwOTwNfq/z9oyu1V+eqrZqtR2+fCiXdYOZe/Modt8GtvqNzu+w==",
+          "license": "MIT",
+          "funding": {
+            "type": "github",
+            "url": "https://github.com/sponsors/dcastil"
+          }
+        }
+      }
+    }
+  }
+}

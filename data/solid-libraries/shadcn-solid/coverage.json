@@ -1,0 +1,325 @@
+{
+  "checkedAt": "2026-10-30T00:26:49+05:30",
+  "source": "https://shadcn-solid.netlify.app/docs/components/button",
+  "selectedComponents": [
+    "Button",
+    "Dialog",
+    "Tabs"
+  ],
+  "documentationInventory": [
+    {
+      "name": "Components",
+      "url": "https://shadcn-solid.netlify.app/docs/components/accordion",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Alert",
+      "url": "https://shadcn-solid.netlify.app/docs/components/alert",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Alert Dialog",
+      "url": "https://shadcn-solid.netlify.app/docs/components/alert-dialog",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Badge",
+      "url": "https://shadcn-solid.netlify.app/docs/components/badge",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Breadcrumbs",
+      "url": "https://shadcn-solid.netlify.app/docs/components/breadcrumbs",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Button",
+      "url": "https://shadcn-solid.netlify.app/docs/components/button",
+      "preview": "supported",
+      "documentation": "source-snapshot"
+    },
+    {
+      "name": "Button Group",
+      "url": "https://shadcn-solid.netlify.app/docs/components/button-group",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Calendar",
+      "url": "https://shadcn-solid.netlify.app/docs/components/calendar",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Card",
+      "url": "https://shadcn-solid.netlify.app/docs/components/card",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Carousel",
+      "url": "https://shadcn-solid.netlify.app/docs/components/carousel",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Chart",
+      "url": "https://shadcn-solid.netlify.app/docs/components/chart",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Checkbox",
+      "url": "https://shadcn-solid.netlify.app/docs/components/checkbox",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Collapsible",
+      "url": "https://shadcn-solid.netlify.app/docs/components/collapsible",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Combobox",
+      "url": "https://shadcn-solid.netlify.app/docs/components/combobox",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Command",
+      "url": "https://shadcn-solid.netlify.app/docs/components/command",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Context Menu",
+      "url": "https://shadcn-solid.netlify.app/docs/components/context-menu",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Data Table",
+      "url": "https://shadcn-solid.netlify.app/docs/components/data-table",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Date Picker",
+      "url": "https://shadcn-solid.netlify.app/docs/components/date-picker",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Dialog",
+      "url": "https://shadcn-solid.netlify.app/docs/components/dialog",
+      "preview": "supported",
+      "documentation": "source-snapshot"
+    },
+    {
+      "name": "Drawer",
+      "url": "https://shadcn-solid.netlify.app/docs/components/drawer",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Dropdown Menu",
+      "url": "https://shadcn-solid.netlify.app/docs/components/dropdown-menu",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "File Field",
+      "url": "https://shadcn-solid.netlify.app/docs/components/file-field",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Hover Card",
+      "url": "https://shadcn-solid.netlify.app/docs/components/hover-card",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Kbd",
+      "url": "https://shadcn-solid.netlify.app/docs/components/kbd",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Menubar",
+      "url": "https://shadcn-solid.netlify.app/docs/components/menubar",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Navigation Menu",
+      "url": "https://shadcn-solid.netlify.app/docs/components/navigation-menu",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Number Field",
+      "url": "https://shadcn-solid.netlify.app/docs/components/number-field",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "OTP Field",
+      "url": "https://shadcn-solid.netlify.app/docs/components/otp-field",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Pagination",
+      "url": "https://shadcn-solid.netlify.app/docs/components/pagination",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Popover",
+      "url": "https://shadcn-solid.netlify.app/docs/components/popover",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Progress",
+      "url": "https://shadcn-solid.netlify.app/docs/components/progress",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Radio Group",
+      "url": "https://shadcn-solid.netlify.app/docs/components/radio-group",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Resizable",
+      "url": "https://shadcn-solid.netlify.app/docs/components/resizable",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Search",
+      "url": "https://shadcn-solid.netlify.app/docs/components/search",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Segmented Control",
+      "url": "https://shadcn-solid.netlify.app/docs/components/segmented-control",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Select",
+      "url": "https://shadcn-solid.netlify.app/docs/components/select",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Separator",
+      "url": "https://shadcn-solid.netlify.app/docs/components/separator",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Sidebar",
+      "url": "https://shadcn-solid.netlify.app/docs/components/sidebar",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Skeleton",
+      "url": "https://shadcn-solid.netlify.app/docs/components/skeleton",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Slider",
+      "url": "https://shadcn-solid.netlify.app/docs/components/slider",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Sonner",
+      "url": "https://shadcn-solid.netlify.app/docs/components/sonner",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Switch",
+      "url": "https://shadcn-solid.netlify.app/docs/components/switch",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Table",
+      "url": "https://shadcn-solid.netlify.app/docs/components/table",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Tabs",
+      "url": "https://shadcn-solid.netlify.app/docs/components/tabs",
+      "preview": "supported",
+      "documentation": "source-snapshot"
+    },
+    {
+      "name": "Text Field",
+      "url": "https://shadcn-solid.netlify.app/docs/components/text-field",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Toggle Button",
+      "url": "https://shadcn-solid.netlify.app/docs/components/toggle-button",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Toggle Group",
+      "url": "https://shadcn-solid.netlify.app/docs/components/toggle-group",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    },
+    {
+      "name": "Tooltip",
+      "url": "https://shadcn-solid.netlify.app/docs/components/tooltip",
+      "preview": "not-indexed",
+      "documentation": "official-link-only"
+    }
+  ],
+  "pageChecks": [
+    {
+      "name": "Button",
+      "url": "https://shadcn-solid.netlify.app/docs/components/button",
+      "finalUrl": "https://shadcn-solid.netlify.app/docs/components/button",
+      "status": 200,
+      "sha256": "d2b0e290a3e147299962b89407c26e2c69b026d27b5ce0258ba37a37450cf225"
+    },
+    {
+      "name": "Dialog",
+      "url": "https://shadcn-solid.netlify.app/docs/components/dialog",
+      "finalUrl": "https://shadcn-solid.netlify.app/docs/components/dialog",
+      "status": 200,
+      "sha256": "11737f6722d5b75ca4251db250b02b35fd7ec004f6b4dfd824ceafbea9656810"
+    },
+    {
+      "name": "Tabs",
+      "url": "https://shadcn-solid.netlify.app/docs/components/tabs",
+      "finalUrl": "https://shadcn-solid.netlify.app/docs/components/tabs",
+      "status": 200,
+      "sha256": "038058e5e95946fbf206714d65dc9543bf5b477da6b5acb3934fb1468879645d"
+    }
+  ],
+  "gaps": [
+    "Col intentionally indexes only the selected verified components. Other documented components and variants are not mirrored."
+  ]
+}

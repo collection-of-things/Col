@@ -1,0 +1,133 @@
+{
+  "slug": "shadcn-solid",
+  "permission": {
+    "status": "granted",
+    "source": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/LICENSE.md",
+    "checkedAt": "2026-10-29T18:56:49Z"
+  },
+  "snapshots": [
+    {
+      "title": "shadcn-solid setup and coverage",
+      "url": "https://shadcn-solid.netlify.app/docs/introduction",
+      "fetchedAt": "2026-10-29T18:56:49Z",
+      "sourceRevision": "4c75b892148dc81f81167a43756d4ce0fbfe6eae",
+      "content": "Use the official installation guide to copy components and their Tailwind theme into a Solid project. Upstream examples import from @/registry/ui; adjust that alias to your copied components. These previews compile the pinned Tailwind v4 registry sources.\n\nVerified preview coverage: Button, Dialog, Tabs. Other components and variants have not been mirrored. ",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/package.json",
+          "integrity": "sha256:2d21cfb82a24dc9bde72ce7fd133c175b638ab33c250a90525d03e11408ef739"
+        }
+      ]
+    },
+    {
+      "componentId": "shadcn-solid/Button",
+      "title": "Button — official example and API",
+      "url": "https://shadcn-solid.netlify.app/docs/components/button",
+      "fetchedAt": "2026-10-29T18:56:49Z",
+      "sourceRevision": "4c75b892148dc81f81167a43756d4ce0fbfe6eae",
+      "content": "Use the official installation guide to copy components and their Tailwind theme into a Solid project. Upstream examples import from @/registry/ui; adjust that alias to your copied components. These previews compile the pinned Tailwind v4 registry sources.\n\nPinned Solid runtime: 1.9.17. Component coverage is partial.\n\nDependency scope: the recorded packages and registry components cover this pinned component, its selected official example, and their imported UI/class helpers. They do not enumerate the full project toolchain or unselected variants. Packages: solid-js, @kobalte/core, cva, tailwind-merge. Other registry components: none.\n\nOfficial example (unchanged):\n```tsx\nimport { Button } from \"@/registry/ui/button\"\n\nconst ButtonDemo = () => {\n  return <Button>Button</Button>\n}\n\nexport default ButtonDemo\n\n```\n\nComponent implementation/API (unchanged):\n```tsx\nimport type { ComponentProps, ValidComponent } from \"solid-js\"\nimport { splitProps } from \"solid-js\"\nimport { Root as ButtonPrimitive } from \"@kobalte/core/button\"\nimport type { VariantProps } from \"cva\"\n\nimport { cva } from \"@/registry/lib/cva\"\n\nexport const buttonVariants = cva({\n  base: [\n    \"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all [&_svg:not([class*=size-])]:size-4 shrink-0 outline-none\",\n    \"disabled:pointer-events-none disabled:opacity-50\",\n    \"[&_svg]:pointer-events-none [&_svg]:shrink-0\",\n    \"focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]\",\n    \"aria-[invalid]:ring-destructive/20 aria-[invalid]:dark:ring-destructive/40 aria-[invalid]:border-destructive\",\n  ],\n\n  variants: {\n    variant: {\n      default: \"bg-primary text-primary-foreground hover:bg-primary/90\",\n      destructive:\n        \"bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 focus-visible:dark:ring-destructive/40 dark:bg-destructive/60\",\n      outline:\n        \"border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground hover:dark:bg-input/50 dark:bg-input/30 dark:border-input\",\n      secondary: \"bg-secondary text-secondary-foreground hover:bg-secondary/80\",\n      ghost:\n        \"hover:bg-accent hover:text-accent-foreground hover:dark:bg-accent/50\",\n      link: \"text-primary underline-offset-4 hover:underline\",\n    },\n    size: {\n      default: \"h-9 px-4 py-2 has-[>svg]:px-3\",\n      sm: \"h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5\",\n      lg: \"h-10 rounded-md px-6 has-[>svg]:px-4\",\n      icon: \"size-9\",\n      \"icon-sm\": \"size-8\",\n      \"icon-lg\": \"size-10\",\n    },\n  },\n  defaultVariants: {\n    variant: \"default\",\n    size: \"default\",\n  },\n})\n\nexport type ButtonProps<T extends ValidComponent = \"button\"> = ComponentProps<\n  typeof ButtonPrimitive<T>\n> &\n  VariantProps<typeof buttonVariants>\n\nexport const Button = <T extends ValidComponent = \"button\">(\n  props: ButtonProps<T>,\n) => {\n  const [, rest] = splitProps(props as ButtonProps, [\n    \"class\",\n    \"variant\",\n    \"size\",\n  ])\n\n  return (\n    <ButtonPrimitive\n      data-slot=\"button\"\n      class={buttonVariants({\n        variant: props.variant,\n        size: props.size,\n        class: props.class,\n      })}\n      {...rest}\n    />\n  )\n}\n\n```",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/registry/examples/button-demo.tsx",
+          "integrity": "sha256:93270ba039ceb2662b5d48cef2fefca105bb84865215c1631821757f139c6542"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/registry/ui/button.tsx",
+          "integrity": "sha256:9f9df6d1b74867f41089eb87d2836f80b6ed9ee7ab6b2fb99e5f4f635865412e"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/content/docs/components/button.mdx",
+          "integrity": "sha256:b9ef59e20263ff0d9a26a95c17a925bb757dade765b8e23cfc44514e17e1b22d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/registry/lib/cva.ts",
+          "integrity": "sha256:967acec16cc6d13ee085eb83c7918fda6ea646af513f35d85070a61647dcb9d0"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/scripts/registry/uis.ts",
+          "integrity": "sha256:594676ddd69ae5396cf550a273f4d142928a31d3ff41b3da23c36e6af784566d"
+        }
+      ]
+    },
+    {
+      "componentId": "shadcn-solid/Dialog",
+      "title": "Dialog — official example and API",
+      "url": "https://shadcn-solid.netlify.app/docs/components/dialog",
+      "fetchedAt": "2026-10-29T18:56:49Z",
+      "sourceRevision": "4c75b892148dc81f81167a43756d4ce0fbfe6eae",
+      "content": "Use the official installation guide to copy components and their Tailwind theme into a Solid project. Upstream examples import from @/registry/ui; adjust that alias to your copied components. These previews compile the pinned Tailwind v4 registry sources.\n\nPinned Solid runtime: 1.9.17. Component coverage is partial.\n\nDependency scope: the recorded packages and registry components cover this pinned component, its selected official example, and their imported UI/class helpers. They do not enumerate the full project toolchain or unselected variants. Packages: solid-js, @kobalte/core, cva, tailwind-merge. Other registry components: button.\n\nVerified upstream limitation: The pinned upstream registry index omits Dialog, and the official docs reported a missing dialog-demo on 2026-10-30. This preview uses the pinned official source and example; live upstream demo styling could not be compared.\n\nOfficial example (unchanged):\n```tsx\nimport { For } from \"solid-js\"\n\nimport { Button } from \"@/registry/ui/button\"\nimport {\n  Dialog,\n  DialogContent,\n  DialogDescription,\n  DialogHeader,\n  DialogPortal,\n  DialogTitle,\n  DialogTrigger,\n} from \"@/registry/ui/dialog\"\n\nconst DialogDemo = () => {\n  return (\n    <Dialog>\n      <DialogTrigger<typeof Button>\n        as={(props) => (\n          <Button variant=\"outline\" {...props}>\n            Scrollable Content\n          </Button>\n        )}\n      />\n      <DialogPortal>\n        <DialogContent class=\"sm:max-w-[425px]\">\n          <DialogHeader>\n            <DialogTitle>Scrollable Content</DialogTitle>\n            <DialogDescription>\n              This is a dialog with scrollable content.\n            </DialogDescription>\n          </DialogHeader>\n          <div class=\"-mx-6 max-h-[500px] overflow-y-auto px-6 text-sm\">\n            <h4 class=\"mb-4 text-lg leading-none font-medium\">Lorem Ipsum</h4>\n            <For each={Array.from({ length: 10 })}>\n              {() => (\n                <p class=\"mb-4 leading-normal\">\n                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed\n                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n                  Ut enim ad minim veniam, quis nostrud exercitation ullamco\n                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n                  irure dolor in reprehenderit in voluptate velit esse cillum\n                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat\n                  cupidatat non proident, sunt in culpa qui officia deserunt\n                  mollit anim id est laborum.\n                </p>\n              )}\n            </For>\n          </div>\n        </DialogContent>\n      </DialogPortal>\n    </Dialog>\n  )\n}\n\nexport default DialogDemo\n\n```\n\nComponent implementation/API (unchanged):\n```tsx\nimport type { ComponentProps, ValidComponent } from \"solid-js\"\nimport { Show, mergeProps, splitProps } from \"solid-js\"\nimport { Dialog as DialogPrimitive } from \"@kobalte/core/dialog\"\n\nimport { cx } from \"@/registry/lib/cva\"\n\nexport const DialogPortal = DialogPrimitive.Portal\n\nexport type DialogProps = ComponentProps<typeof DialogPrimitive>\n\nexport const Dialog = (props: DialogProps) => {\n  return <DialogPrimitive data-slot=\"dialog\" {...props} />\n}\n\nexport type DialogTriggerProps<T extends ValidComponent = \"button\"> =\n  ComponentProps<typeof DialogPrimitive.Trigger<T>>\n\nexport const DialogTrigger = <T extends ValidComponent = \"button\">(\n  props: DialogTriggerProps<T>,\n) => {\n  return <DialogPrimitive.Trigger data-slot=\"dialog-trigger\" {...props} />\n}\n\nexport type DialogCloseButtonProps<T extends ValidComponent = \"button\"> =\n  ComponentProps<typeof DialogPrimitive.CloseButton<T>>\n\nexport const DialogCloseButton = <T extends ValidComponent = \"button\">(\n  props: DialogCloseButtonProps<T>,\n) => {\n  return <DialogPrimitive.CloseButton data-slot=\"dialog-close\" {...props} />\n}\n\nexport type DialogContentProps<T extends ValidComponent = \"div\"> =\n  ComponentProps<typeof DialogPrimitive.Content<T>> & {\n    showCloseButton?: boolean\n  }\n\nexport const DialogContent = <T extends ValidComponent = \"div\">(\n  props: DialogContentProps<T>,\n) => {\n  const merge = mergeProps(\n    {\n      showCloseButton: true,\n    } as DialogContentProps,\n    props,\n  )\n  const [, rest] = splitProps(merge, [\"class\", \"children\", \"showCloseButton\"])\n\n  return (\n    <>\n      <DialogPrimitive.Overlay\n        data-slot=\"dialog-overlay\"\n        class=\"data-[expanded]:animate-in data-[closed]:animate-out data-[closed]:fade-out-0 data-[expanded]:fade-in-0 fixed inset-0 z-50 bg-black/50\"\n      />\n      <DialogPrimitive.Content\n        data-slot=\"dialog-content\"\n        class={cx(\n          \"bg-background data-[expanded]:animate-in data-[closed]:animate-out data-[closed]:fade-out-0 data-[expanded]:fade-in-0 data-[closed]:zoom-out-95 data-[expanded]:zoom-in-95 fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border p-6 shadow-lg duration-200 sm:max-w-lg\",\n          props.class,\n        )}\n        {...rest}\n      >\n        {props.children}\n        <Show when={props.showCloseButton}>\n          <DialogPrimitive.CloseButton\n            aria-label=\"Close\"\n            class=\"focus-visible:ring-ring absolute top-4 right-4 rounded-xs opacity-70 transition-[opacity,box-shadow] duration-200 hover:opacity-100 focus-visible:ring-2 focus-visible:outline-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4\"\n          >\n            <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n              <path\n                fill=\"none\"\n                stroke=\"currentColor\"\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n                stroke-width=\"2\"\n                d=\"M18 6L6 18M6 6l12 12\"\n              />\n            </svg>\n          </DialogPrimitive.CloseButton>\n        </Show>\n      </DialogPrimitive.Content>\n    </>\n  )\n}\n\nexport type DialogHeaderProps = ComponentProps<\"div\">\n\nexport const DialogHeader = (props: DialogHeaderProps) => {\n  const [, rest] = splitProps(props, [\"class\"])\n\n  return (\n    <div\n      data-slot=\"dialog-header\"\n      class={cx(\"flex flex-col gap-2 text-center sm:text-left\", props.class)}\n      {...rest}\n    />\n  )\n}\n\nexport type DialogFooterProps = ComponentProps<\"div\">\n\nexport const DialogFooter = (props: DialogFooterProps) => {\n  const [, rest] = splitProps(props, [\"class\"])\n\n  return (\n    <div\n      data-slot=\"dialog-footer\"\n      class={cx(\n        \"flex flex-col-reverse gap-2 sm:flex-row sm:justify-end\",\n        props.class,\n      )}\n      {...rest}\n    />\n  )\n}\n\nexport type DialogTitleProps<T extends ValidComponent = \"h2\"> = ComponentProps<\n  typeof DialogPrimitive.Title<T>\n>\n\nexport const DialogTitle = <T extends ValidComponent = \"h2\">(\n  props: DialogTitleProps<T>,\n) => {\n  const [, rest] = splitProps(props as DialogTitleProps, [\"class\"])\n\n  return (\n    <DialogPrimitive.Title\n      data-slot=\"dialog-title\"\n      class={cx(\"text-lg leading-none font-semibold\", props.class)}\n      {...rest}\n    />\n  )\n}\n\nexport type DialogDescriptionProps<T extends ValidComponent = \"p\"> =\n  ComponentProps<typeof DialogPrimitive.Description<T>>\n\nexport const DialogDescription = <T extends ValidComponent = \"p\">(\n  props: DialogDescriptionProps<T>,\n) => {\n  const [, rest] = splitProps(props as DialogDescriptionProps, [\"class\"])\n\n  return (\n    <DialogPrimitive.Description\n      data-slot=\"dialog-description\"\n      class={cx(\"text-muted-foreground text-sm\", props.class)}\n      {...rest}\n    />\n  )\n}\n\n```",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/registry/examples/dialog-demo.tsx",
+          "integrity": "sha256:fa52972c1d96cf77f60af02aaf19f7cea4f9e962b1709277d101bb9a961f082a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/registry/ui/dialog.tsx",
+          "integrity": "sha256:fd130702ec6aff4b6fc7b9adf0071d5f59fbb1dc46abbc2ce0183ba24192b344"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/content/docs/components/dialog.mdx",
+          "integrity": "sha256:4984a0c5ed959433b85ad46423e069379d231ec6196315b223618c8d86df441b"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/registry/ui/button.tsx",
+          "integrity": "sha256:9f9df6d1b74867f41089eb87d2836f80b6ed9ee7ab6b2fb99e5f4f635865412e"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/registry/lib/cva.ts",
+          "integrity": "sha256:967acec16cc6d13ee085eb83c7918fda6ea646af513f35d85070a61647dcb9d0"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/scripts/registry/uis.ts",
+          "integrity": "sha256:594676ddd69ae5396cf550a273f4d142928a31d3ff41b3da23c36e6af784566d"
+        },
+        {
+          "url": "https://shadcn-solid.netlify.app/docs/components/dialog",
+          "integrity": "sha256:3f611957e2767e7e8a7eb1763677fed3f7eaa11fcb3c50d89cdb5f36a9047f09"
+        }
+      ]
+    },
+    {
+      "componentId": "shadcn-solid/Tabs",
+      "title": "Tabs — official example and API",
+      "url": "https://shadcn-solid.netlify.app/docs/components/tabs",
+      "fetchedAt": "2026-10-29T18:56:49Z",
+      "sourceRevision": "4c75b892148dc81f81167a43756d4ce0fbfe6eae",
+      "content": "Use the official installation guide to copy components and their Tailwind theme into a Solid project. Upstream examples import from @/registry/ui; adjust that alias to your copied components. These previews compile the pinned Tailwind v4 registry sources.\n\nPinned Solid runtime: 1.9.17. Component coverage is partial.\n\nDependency scope: the recorded packages and registry components cover this pinned component, its selected official example, and their imported UI/class helpers. They do not enumerate the full project toolchain or unselected variants. Packages: solid-js, @kobalte/core, cva, tailwind-merge. Other registry components: button, card, text-field.\n\nOfficial example (unchanged):\n```tsx\nimport { Button } from \"@/registry/ui/button\"\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/registry/ui/card\"\nimport {\n  Tabs,\n  TabsContent,\n  TabsIndicator,\n  TabsList,\n  TabsTrigger,\n} from \"@/registry/ui/tabs\"\nimport {\n  TextField,\n  TextFieldInput,\n  TextFieldLabel,\n} from \"@/registry/ui/text-field\"\n\nconst TabsDemo = () => {\n  return (\n    <div class=\"flex w-full max-w-sm flex-col gap-6\">\n      <Tabs defaultValue=\"account\">\n        <TabsList>\n          <TabsTrigger value=\"account\">Account</TabsTrigger>\n          <TabsTrigger value=\"password\">Password</TabsTrigger>\n          <TabsIndicator />\n        </TabsList>\n        <TabsContent value=\"account\">\n          <Card>\n            <CardHeader>\n              <CardTitle>Account</CardTitle>\n              <CardDescription>\n                Make changes to your account here. Click save when you&apos;re\n                done.\n              </CardDescription>\n            </CardHeader>\n            <CardContent class=\"grid gap-6\">\n              <TextField defaultValue=\"Pedro Duarte\" class=\"grid gap-3\">\n                <TextFieldLabel>Name</TextFieldLabel>\n                <TextFieldInput />\n              </TextField>\n              <TextField defaultValue=\"@peduarte\" class=\"grid gap-3\">\n                <TextFieldLabel>Username</TextFieldLabel>\n                <TextFieldInput />\n              </TextField>\n            </CardContent>\n            <CardFooter>\n              <Button>Save changes</Button>\n            </CardFooter>\n          </Card>\n        </TabsContent>\n        <TabsContent value=\"password\">\n          <Card>\n            <CardHeader>\n              <CardTitle>Password</CardTitle>\n              <CardDescription>\n                Change your password here. After saving, you&apos;ll be logged\n                out.\n              </CardDescription>\n            </CardHeader>\n            <CardContent class=\"grid gap-6\">\n              <TextField defaultValue=\"\" class=\"grid gap-3\">\n                <TextFieldLabel>Current password</TextFieldLabel>\n                <TextFieldInput />\n              </TextField>\n              <TextField defaultValue=\"\" class=\"grid gap-3\">\n                <TextFieldLabel>New password</TextFieldLabel>\n                <TextFieldInput />\n              </TextField>\n            </CardContent>\n            <CardFooter>\n              <Button>Save password</Button>\n            </CardFooter>\n          </Card>\n        </TabsContent>\n      </Tabs>\n    </div>\n  )\n}\n\nexport default TabsDemo\n\n```\n\nComponent implementation/API (unchanged):\n```tsx\nimport type { ComponentProps, ValidComponent } from \"solid-js\"\nimport { splitProps } from \"solid-js\"\nimport { Tabs as TabsPrimitive } from \"@kobalte/core/tabs\"\n\nimport { cx } from \"@/registry/lib/cva\"\n\nexport type TabsProps<T extends ValidComponent = \"div\"> = ComponentProps<\n  typeof TabsPrimitive<T>\n>\n\nexport const Tabs = <T extends ValidComponent = \"div\">(props: TabsProps<T>) => {\n  const [, rest] = splitProps(props as TabsProps, [\"class\"])\n\n  return (\n    <TabsPrimitive\n      data-slot=\"tabs\"\n      class={cx(\n        \"flex flex-col gap-2\",\n        \"data-[orientation=vertical]:flex-row\",\n        props.class,\n      )}\n      {...rest}\n    />\n  )\n}\n\nexport type TabsListProps<T extends ValidComponent = \"div\"> = ComponentProps<\n  typeof TabsPrimitive.List<T>\n>\n\nexport const TabsList = <T extends ValidComponent = \"div\">(\n  props: TabsListProps<T>,\n) => {\n  const [, rest] = splitProps(props as TabsListProps, [\"class\"])\n\n  return (\n    <TabsPrimitive.List\n      data-slot=\"tabs-list\"\n      class={cx(\n        \"bg-muted text-muted-foreground ring-muted relative flex h-[calc(var(--spacing)*7.5)] w-fit items-center justify-center rounded-lg ring-[3px]\",\n        \"data-[orientation=vertical]:mt-[3px] data-[orientation=vertical]:size-full data-[orientation=vertical]:flex-col\",\n        props.class,\n      )}\n      {...rest}\n    />\n  )\n}\n\nexport type TabsTriggerProps<T extends ValidComponent = \"button\"> =\n  ComponentProps<typeof TabsPrimitive.Trigger<T>>\n\nexport const TabsTrigger = <T extends ValidComponent = \"button\">(\n  props: TabsTriggerProps<T>,\n) => {\n  const [, rest] = splitProps(props as TabsTriggerProps, [\"class\"])\n\n  return (\n    <TabsPrimitive.Trigger\n      data-slot=\"tabs-trigger\"\n      class={cx(\n        \"text-foreground dark:text-muted-foreground dark:data-[selected]:text-foreground peer relative z-10 inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color] focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4\",\n        props.class,\n      )}\n      {...rest}\n    />\n  )\n}\n\nexport type TabsContentProps<T extends ValidComponent = \"div\"> = ComponentProps<\n  typeof TabsPrimitive.Content<T>\n>\n\nexport const TabsContent = <T extends ValidComponent = \"div\">(\n  props: TabsContentProps<T>,\n) => {\n  const [, rest] = splitProps(props as TabsContentProps, [\"class\"])\n\n  return (\n    <TabsPrimitive.Content\n      data-slot=\"tabs-content\"\n      class={cx(\"flex-1 outline-none\", props.class)}\n      {...rest}\n    />\n  )\n}\n\nexport type TabsIndicatorProps<T extends ValidComponent = \"div\"> =\n  ComponentProps<typeof TabsPrimitive.Indicator<T>>\n\nexport const TabsIndicator = <T extends ValidComponent = \"div\">(\n  props: TabsIndicatorProps<T>,\n) => {\n  const [, rest] = splitProps(props as TabsIndicatorProps, [\"class\"])\n\n  return (\n    <TabsPrimitive.Indicator\n      data-slot=\"tabs-indicator\"\n      class={cx(\n        \"bg-background dark:bg-input/30 dark:border-input peer-focus-visible:border-ring peer-focus-visible:ring-ring/50 peer-focus-visible:outline-ring absolute inset-0 rounded-lg border border-transparent shadow-sm transition-[box-shadow,transform,width,height] duration-200 peer-focus-visible:ring-[3px] peer-focus-visible:outline-1\",\n        props.class,\n      )}\n      {...rest}\n    />\n  )\n}\n\n```",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/registry/examples/tabs-demo.tsx",
+          "integrity": "sha256:e8d23fcf2038a526fa0fa33575fe389fa886d03eaf21a9e9cfc90422ce2dc419"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/registry/ui/tabs.tsx",
+          "integrity": "sha256:423536dffbb02a3656103a40e5d618af3fa8127ca1029f9cbcb39811a7c4e6f0"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/content/docs/components/tabs.mdx",
+          "integrity": "sha256:87ad3ea3a6bafb353e4e1f50be8223626130f735d2eeda6eb50668a85834253c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/registry/ui/button.tsx",
+          "integrity": "sha256:9f9df6d1b74867f41089eb87d2836f80b6ed9ee7ab6b2fb99e5f4f635865412e"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/registry/lib/cva.ts",
+          "integrity": "sha256:967acec16cc6d13ee085eb83c7918fda6ea646af513f35d85070a61647dcb9d0"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/registry/ui/card.tsx",
+          "integrity": "sha256:ddbe75ed78b78e182c9b47f39c00db4cb861b87d0e518fe84f174776b3e79892"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/src/registry/ui/text-field.tsx",
+          "integrity": "sha256:33d67c411df9c7f3da675b61082951295a55a9c12dba95e53fbc8fc18dfbb478"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/scripts/registry/uis.ts",
+          "integrity": "sha256:594676ddd69ae5396cf550a273f4d142928a31d3ff41b3da23c36e6af784566d"
+        }
+      ]
+    }
+  ]
+}

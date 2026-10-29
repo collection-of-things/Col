@@ -1,0 +1,5 @@
+{
+  "@torch-ui/solid/actions": "upstream/src/components/actions/Button.tsx",
+  "@torch-ui/solid/overlays": "upstream/src/components/overlays/Dialog.tsx",
+  "@torch-ui/solid/layout": "upstream/src/components/layout/Accordion.tsx"
+}

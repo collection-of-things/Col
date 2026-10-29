@@ -1,0 +1,30 @@
+{
+  "sourceBase": "apps/docs/src",
+  "alias": "~/",
+  "stylesheet": "apps/docs/src/styles/app.css",
+  "adaptations": [
+    "Original docs stylesheet compiled with Tailwind CSS 4.3.3 and the original Kobalte Tailwind plugin.",
+    "Original Geist font assets embedded as data URLs with the SIL Open Font License.",
+    "Reviewed mount wrapper only: maps the selected preview theme to data-kb-theme and disposes the Solid root."
+  ],
+  "examples": [
+    {
+      "name": "Button",
+      "exportName": "Button",
+      "path": "apps/docs/src/registry/example/button-demo.tsx"
+    },
+    {
+      "name": "Accordion",
+      "exportName": "Accordion",
+      "path": "apps/docs/src/registry/example/accordion-demo.tsx"
+    },
+    {
+      "name": "Progress Circle",
+      "exportName": "ProgressCircle",
+      "path": "apps/docs/src/registry/example/progress-circle-demo.tsx",
+      "gaps": [
+        "The original demo references a remote GitHub avatar. Offline rendering retains the upstream EK fallback; the personal image is not redistributed."
+      ]
+    }
+  ]
+}

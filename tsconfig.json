@@ -38,6 +38,9 @@
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "data/solid-libraries/*/node_modules",
+    "data/solid-libraries/*/upstream",
+    "data/solid-libraries/*/examples"
   ]
 }

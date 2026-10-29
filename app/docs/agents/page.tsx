@@ -21,6 +21,12 @@ export default function AgentsPage() {
         ]} />
       </DocsSection>
 
+      <DocsSection title="SolidJS library previews">
+        <DocsText>Search the <code>SolidJS</code> stack, choose a library, and inspect <code>get_component</code> for its verified example and preview availability. The preview reports its pinned <code>runtimeVersion</code>; Solid 1 and Solid 2 are not interchangeable.</DocsText>
+        <DocsCode code={`search_components({ "library": "kobalte", "query": "dialog", "stacks": ["SolidJS"] })\nget_component({ "id": "kobalte/Dialog" })\nrender_component({ "id": "kobalte/Dialog", "theme": "dark" })`} label="SolidJS component workflow" />
+        <DocsNote>Kobalte is unstyled: its previews use the official demo CSS. The other libraries retain their recorded upstream styles. Some examples have specific asset, source, or environment limits; inspect the returned gaps.</DocsNote>
+      </DocsSection>
+
       <DocsSection title="Solid 2 and Quoin">
         <DocsText>Search with the <code>SolidJS</code> stack and library <code>quoin-ui</code>. Use <code>get_library</code> for exact version requirements, then <code>get_component</code> for the selected component’s published API declarations and Solid examples in <code>documentation.snapshots</code>. Your agent uses that evidence to implement the component in your application.</DocsText>
         <DocsCode code={`search_components({ "library": "quoin-ui", "query": "dialog", "stacks": ["SolidJS"] })\nget_library({ "slug": "quoin-ui" })\nget_component({ "id": "quoin-ui/Dialog" })`} label="MCP tool calls" />

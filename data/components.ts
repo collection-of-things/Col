@@ -1,3 +1,5 @@
+import { solidCatalogs } from "./solid-libraries/catalog.ts";
+
 /**
  * The verified component index — the data behind searching by component name.
  *
@@ -66,6 +68,7 @@ export const componentConcepts: Record<string, string[]> = {
 export type ComponentIndex = Record<string, LibraryComponent[]>;
 
 export const componentIndex: ComponentIndex = {
+  ...Object.fromEntries(Object.values(solidCatalogs).map(({ library, components }) => [library.slug, components])),
   "quoin-ui": quoinComponents.map(({ name, url, summary }) => ({
     name, url, summary,
     kind: "primitive",

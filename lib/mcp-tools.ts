@@ -722,7 +722,7 @@ const TOOL_DEFINITIONS: ToolDefinition[] = [
   {
     name: "get_component",
     title: "Inspect one component in Col",
-    description: `One component's canonical reference link, recorded dependencies, verified compatibility facts (explicit "unknown" where nothing is verified), and permitted component-specific API and usage snapshots when recorded. Reference links may point to the library's published API source. Col publishes no install commands: read the library's setup docs for those. Ids come from search_components as '<library-slug>/<component name>'. ${COVERAGE_NOTE} ${NO_CREDENTIALS_NOTE}`,
+    description: `One component's canonical reference link, recorded dependencies, verified compatibility facts (explicit "unknown" where nothing is verified), and permitted component-specific API and usage snapshots when recorded. Solid previews include their pinned runtimeVersion. Reference links may point to the library's published API source. Col publishes no install commands: read the library's setup docs for those. Ids come from search_components as '<library-slug>/<component name>'. ${COVERAGE_NOTE} ${NO_CREDENTIALS_NOTE}`,
     args: getComponentArgs,
     annotations: annotation,
   },

@@ -1,0 +1,465 @@
+{
+  "folder": "rocksolid",
+  "repo": "darshan-rajadhyaksha/rocksolid",
+  "rev": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+  "version": "0.1.4",
+  "package": "rocksolidjs",
+  "runtime": "solid1",
+  "runtimeVersion": "1.9.15",
+  "components": [
+    "Button",
+    "Dialog",
+    "Tabs"
+  ],
+  "sources": [
+    {
+      "path": "upstream/src/components/index.css",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/index.css",
+      "integrity": "1fd6f4137875b35bc712da5589d8af3dbe34ff512cfa1c0a57ef003caa8264ff"
+    },
+    {
+      "path": "upstream/src/components/Accordion/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Accordion/style.ts",
+      "integrity": "689332999cca96235719484a55e18fe3d8849b6b818eaf6bd17db999583a94b7"
+    },
+    {
+      "path": "upstream/src/components/AccordionDetails/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/AccordionDetails/style.ts",
+      "integrity": "bfaa19257874cc9b5c3ea79bf3b0f81db95f63e0456543fc026092088d185d0e"
+    },
+    {
+      "path": "upstream/src/components/AccordionSummary/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/AccordionSummary/style.ts",
+      "integrity": "6484a1f5808de8fb3e00211ff730c706ab1e45077fb9516122d4a518024e021b"
+    },
+    {
+      "path": "upstream/src/components/Alert/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Alert/style.ts",
+      "integrity": "7e54df489b6623c8304b7afb925ba0d4322bae749888e09144b6b82503c2d1d1"
+    },
+    {
+      "path": "upstream/src/components/Avatar/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Avatar/style.ts",
+      "integrity": "4664291370c7786b226be025ae44871e29fc311867e3233e74ef6c6766eee73c"
+    },
+    {
+      "path": "upstream/src/components/Backdrop/Backdrop.tsx",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Backdrop/Backdrop.tsx",
+      "integrity": "88430e1d984388d54a73b57c2f2c00c1519a372794bdec5732ccd263725bf098"
+    },
+    {
+      "path": "upstream/src/components/Backdrop/index.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Backdrop/index.ts",
+      "integrity": "6f978bf636db9b7f2826b92f6ccaa3231ea704a0e9f639ac105e75a4baaa2025"
+    },
+    {
+      "path": "upstream/src/components/Backdrop/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Backdrop/style.ts",
+      "integrity": "4851b6856b4b7f076e4b62ab72d7860103bcd88cc11a318b3766f31307a71c7e"
+    },
+    {
+      "path": "upstream/src/components/Badge/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Badge/style.ts",
+      "integrity": "cbc010fe56df7b6e864b7ea6a7d316a1c45ad4d655f1ae974f98c5391257032b"
+    },
+    {
+      "path": "upstream/src/components/Breadcrumbs/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Breadcrumbs/style.ts",
+      "integrity": "45f0fac57d0bc70c43a4e0112385885995299af2c5e96279e24ad89b8d7365af"
+    },
+    {
+      "path": "upstream/src/components/Button/Button.tsx",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Button/Button.tsx",
+      "integrity": "b372afa1e3aeab1b18883a9a668ad90ad1bd69432467d3128eb06747688c3d5a"
+    },
+    {
+      "path": "upstream/src/components/Button/index.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Button/index.ts",
+      "integrity": "c15998f013f7e463af4e9bbef6a5036df08cb78240cd495160523b8c0c06a4c6"
+    },
+    {
+      "path": "upstream/src/components/Button/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Button/style.ts",
+      "integrity": "dd97c7f66d14ea13c79d88708f51cf5ec080c915e6321d4637cf1dfe0da0be53"
+    },
+    {
+      "path": "upstream/src/components/ButtonGroup/ButtonGroupContext.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/ButtonGroup/ButtonGroupContext.ts",
+      "integrity": "64a5128b45bb21b49222cc0f3c49ca771a5b5feda6651c6a1623d83026108119"
+    },
+    {
+      "path": "upstream/src/components/ButtonGroup/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/ButtonGroup/style.ts",
+      "integrity": "f6a315d2629d8830774ebcd0c2b1aa407e426f5b2cf5004476168d639ec24846"
+    },
+    {
+      "path": "upstream/src/components/Card/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Card/style.ts",
+      "integrity": "89394c31d96142ede301cb1fb2e260b018d005ee5e0f0680feb4a51404c8d8cd"
+    },
+    {
+      "path": "upstream/src/components/CardContent/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/CardContent/style.ts",
+      "integrity": "538a84478ca7b5baf5feaed2f9e86e489c4bc5fa786fae7c9b83880fa3107918"
+    },
+    {
+      "path": "upstream/src/components/CardDescription/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/CardDescription/style.ts",
+      "integrity": "a1e2b8dff3811412e6bf0c9c5732f14bbf056cd81ae594c19b337180e13b7213"
+    },
+    {
+      "path": "upstream/src/components/CardFooter/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/CardFooter/style.ts",
+      "integrity": "639849442caa2d8db0904e05093af5157afda5d621b78465e5cebcb22aae07ba"
+    },
+    {
+      "path": "upstream/src/components/CardHeader/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/CardHeader/style.ts",
+      "integrity": "ce24196db16504dcbce93a850539789b2cf54f533378174e82961ccb31387a72"
+    },
+    {
+      "path": "upstream/src/components/CardTitle/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/CardTitle/style.ts",
+      "integrity": "c3c5bd7134ef5aabef5bc268a40257106cac3b043b203de2db234c373c79ede7"
+    },
+    {
+      "path": "upstream/src/components/Checkbox/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Checkbox/style.ts",
+      "integrity": "cb807fb44bc569e4a92bd9f53cbab8b8e89459e68b0b74a9cc6837005efcbf4c"
+    },
+    {
+      "path": "upstream/src/components/Chip/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Chip/style.ts",
+      "integrity": "8d80f2c0cc67934607c316f3599c1903c50c376b33d505d8e959d1efff840857"
+    },
+    {
+      "path": "upstream/src/components/Dialog/Dialog.tsx",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Dialog/Dialog.tsx",
+      "integrity": "c19d6c9b4fa7fa4fddbc960437fbd2534a3359f8ea7d4db6e6d94dde64f73bb5"
+    },
+    {
+      "path": "upstream/src/components/Dialog/index.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Dialog/index.ts",
+      "integrity": "362fbcb7b9a0a595f32b5234b8832b6a4a3146b382788d52fde1ac924c6a5c1a"
+    },
+    {
+      "path": "upstream/src/components/Dialog/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Dialog/style.ts",
+      "integrity": "382861f6c82ba9caaffec80bc450b3c1c6648994fa1b67b2fbc72aff2cc79562"
+    },
+    {
+      "path": "upstream/src/components/DialogActions/DialogActions.tsx",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/DialogActions/DialogActions.tsx",
+      "integrity": "6e07bc67496187414c61c6a1530e1ffa91c9d2ea5f3a5a0fbba589abbc1a891e"
+    },
+    {
+      "path": "upstream/src/components/DialogActions/index.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/DialogActions/index.ts",
+      "integrity": "df8d6558193280c512b5836088f35894b69f6fca310e0c0e4adc717a9dfa60f8"
+    },
+    {
+      "path": "upstream/src/components/DialogActions/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/DialogActions/style.ts",
+      "integrity": "4bcabca88917213d8fd89dacef93104e3f47151d29780c9579addeb3067db588"
+    },
+    {
+      "path": "upstream/src/components/DialogContent/DialogContent.tsx",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/DialogContent/DialogContent.tsx",
+      "integrity": "b1525be936a9ba4f1a2d9d57350be5464ec163372e50a1f4c893b11369d25121"
+    },
+    {
+      "path": "upstream/src/components/DialogContent/index.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/DialogContent/index.ts",
+      "integrity": "1046486708b0281ee52b71952ef834caae39f0252e151fef20d4e1488317d237"
+    },
+    {
+      "path": "upstream/src/components/DialogContent/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/DialogContent/style.ts",
+      "integrity": "220f8487fb68974e0b138819c305677ac7c49eacb362104938950e083c6dcc97"
+    },
+    {
+      "path": "upstream/src/components/DialogTitle/DialogTitle.tsx",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/DialogTitle/DialogTitle.tsx",
+      "integrity": "87d3de06e2c4591e1a78b14ee6476c14c9746b74ef866251fc9c856816be06f8"
+    },
+    {
+      "path": "upstream/src/components/DialogTitle/index.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/DialogTitle/index.ts",
+      "integrity": "000944b287e6fff4f5c77cd190bcbd17184a74b179f3a9c9d4ff0f49dd20af0a"
+    },
+    {
+      "path": "upstream/src/components/DialogTitle/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/DialogTitle/style.ts",
+      "integrity": "e8bad01dec9f5f7b8b878378a817ebecce3d24f9bbe43c6e6c39adf2e83a541e"
+    },
+    {
+      "path": "upstream/src/components/Divider/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Divider/style.ts",
+      "integrity": "c6e4dec8a64cb84d09fd07d8c81ca91a249dc95ef0a7bae9fdbf061e67f313dd"
+    },
+    {
+      "path": "upstream/src/components/IconButton/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/IconButton/style.ts",
+      "integrity": "121f9c90636fc3704292f1131bdbb0f38f07bf1ee948a4c4b1ed56c7acefc101"
+    },
+    {
+      "path": "upstream/src/components/Input/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Input/style.ts",
+      "integrity": "a7fedb8d3f8dcba99853e25226da4eb3fd53a3dfd52d73769fd5acb1843771d6"
+    },
+    {
+      "path": "upstream/src/components/Label/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Label/style.ts",
+      "integrity": "252737a906e76b639d1b55e457466c931d4ca677963b63af419f9868006b619d"
+    },
+    {
+      "path": "upstream/src/components/Link/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Link/style.ts",
+      "integrity": "f837d4cd54e0d13fe93c6e98a4c08d8d2a6b34fefce4bdbe7a7f39e4cffe1cb4"
+    },
+    {
+      "path": "upstream/src/components/Progress/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Progress/style.ts",
+      "integrity": "1edc5549a37cfb20859075f7c4295af08017392d4d344a013beee1c4a39c7776"
+    },
+    {
+      "path": "upstream/src/components/Radio/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Radio/style.ts",
+      "integrity": "fe395c262ac81ea935b2b0cc2916af0c552ccf89468936b2f277fc9e9a7cfbff"
+    },
+    {
+      "path": "upstream/src/components/Select/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Select/style.ts",
+      "integrity": "fae0a3ce9050324e48df0c50a83756b08ad454548ee4c71182732a103f9acf85"
+    },
+    {
+      "path": "upstream/src/components/Skeleton/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Skeleton/style.ts",
+      "integrity": "29c55fe3fcd9987fa56d41f561c632236b8813fb7a4a109c7d82f684d1afb0de"
+    },
+    {
+      "path": "upstream/src/components/Spinner/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Spinner/style.ts",
+      "integrity": "a622b8e8826b7d00d964f70171b709cb4ac7a39559546b30c0faca675218d825"
+    },
+    {
+      "path": "upstream/src/components/Switch/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Switch/style.ts",
+      "integrity": "befae8828d665799771a5a1af065ff94fe11b972a95d2d5f61c1cfe4ef8e2fe9"
+    },
+    {
+      "path": "upstream/src/components/Tab/index.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Tab/index.ts",
+      "integrity": "2951ddd42ee747a3bb873f0d09c3d54fb0059442b0f21f7742d4062f32457e4b"
+    },
+    {
+      "path": "upstream/src/components/Tab/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Tab/style.ts",
+      "integrity": "d8dc9a6c3c5fd717004d472d85ed7c1c4ec7e06ab580286f780d141e53c0096e"
+    },
+    {
+      "path": "upstream/src/components/Tab/Tab.tsx",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Tab/Tab.tsx",
+      "integrity": "fa32d950ee7c02a1a4b6cda852aae5a376f523fe455bd60ed9394900319c1fb4"
+    },
+    {
+      "path": "upstream/src/components/Table/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Table/style.ts",
+      "integrity": "15764b9bdb838285065f6c53d356de9a45047cb759eeb7759062d4927276977f"
+    },
+    {
+      "path": "upstream/src/components/TableCell/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/TableCell/style.ts",
+      "integrity": "863a163725c23dce1ff3c5676870fcf0a6b960b407d130a79161d2a9710edfcc"
+    },
+    {
+      "path": "upstream/src/components/TableFooter/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/TableFooter/style.ts",
+      "integrity": "e7fd46927f11a8fba42048986549041d6d3b31ede460f9598d3ac3688e5f3258"
+    },
+    {
+      "path": "upstream/src/components/TableRow/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/TableRow/style.ts",
+      "integrity": "b38381c1c003d5f803172de6008847e9b4a20dcb26e808f7f5633689634f9b1c"
+    },
+    {
+      "path": "upstream/src/components/TabPanel/index.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/TabPanel/index.ts",
+      "integrity": "7686789ca52c967c1a7f08ff8cadd1e0f734f7363ccf5820487db8d4b4a2d0fa"
+    },
+    {
+      "path": "upstream/src/components/TabPanel/TabPanel.tsx",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/TabPanel/TabPanel.tsx",
+      "integrity": "df8159bba46606822be2b33b044dc0307dfb7661b6a3195cd5ad2ae7e3118107"
+    },
+    {
+      "path": "upstream/src/components/Tabs/index.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Tabs/index.ts",
+      "integrity": "40e41b8393f003b92bd67ee57a7d95aa1b758bc93ffbee72437b523c65c3a63b"
+    },
+    {
+      "path": "upstream/src/components/Tabs/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Tabs/style.ts",
+      "integrity": "4da30c2a34d4904a81be83b549472d0e11b6cfc9348450aeaa8eb898c8e5c267"
+    },
+    {
+      "path": "upstream/src/components/Tabs/Tabs.tsx",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Tabs/Tabs.tsx",
+      "integrity": "6c2eefd1d72804820496be8cd0bf32786a0181c6534b203e07544ed4bb2b6c18"
+    },
+    {
+      "path": "upstream/src/components/Tabs/TabsContentContext.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Tabs/TabsContentContext.ts",
+      "integrity": "b2d78c7d6001e609287fb020081246dd0f169f86143e4714b6c4aa611ea39074"
+    },
+    {
+      "path": "upstream/src/components/TabsContext/context.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/TabsContext/context.ts",
+      "integrity": "40e6427049466286cf7749990bc49745f059720c88dcb47bfd4a5322d40a639f"
+    },
+    {
+      "path": "upstream/src/components/TabsContext/index.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/TabsContext/index.ts",
+      "integrity": "bfef3db61b38f9851232fd39678386dea7f1a04cbcf0e4ae26bd890f2f2ad33a"
+    },
+    {
+      "path": "upstream/src/components/TabsContext/TabsContext.tsx",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/TabsContext/TabsContext.tsx",
+      "integrity": "ba913961c129c5cbcac3c48fb6d91cf62d4b14ece2b1d9aadbd3e8e381692a04"
+    },
+    {
+      "path": "upstream/src/components/Textarea/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Textarea/style.ts",
+      "integrity": "3ed067a3ad183604c2f27f0acb183d7bed39823a4e8b6e2a99524b920b1f829f"
+    },
+    {
+      "path": "upstream/src/components/ThemeProvider/componentsTV.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/ThemeProvider/componentsTV.ts",
+      "integrity": "44e124ec011bb3c3f4d903c30d286515a50e52e655c0f1ee9e06f78a35263961"
+    },
+    {
+      "path": "upstream/src/components/ThemeProvider/index.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/ThemeProvider/index.ts",
+      "integrity": "9789b73bac78e25203a720fbfadace8dcd18d4c3371ba97ad9ffc63517fa07c7"
+    },
+    {
+      "path": "upstream/src/components/ThemeProvider/ThemeContext.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/ThemeProvider/ThemeContext.ts",
+      "integrity": "05ef9841217c07b925c027fb4c95c762464569c4e44d14bd8abcc437aa7708aa"
+    },
+    {
+      "path": "upstream/src/components/ThemeProvider/ThemeProvider.tsx",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/ThemeProvider/ThemeProvider.tsx",
+      "integrity": "8e059233807019f3e39c6753aa9aee17a8fde5004a04742bbdf2da1e5afedde2"
+    },
+    {
+      "path": "upstream/src/components/Typography/style.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Typography/style.ts",
+      "integrity": "aba079d3fd09b3944392b029aad55f0ba241243114c88666119cfc7837cb8bd3"
+    },
+    {
+      "path": "upstream/src/components/Typography/Typography.tsx",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Typography/Typography.tsx",
+      "integrity": "c8151ef5e83164eda8f992eeb76bcd89f61833a6e3b38ff2fb77b7528be52041"
+    },
+    {
+      "path": "upstream/src/components/utils/asVariant.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/utils/asVariant.ts",
+      "integrity": "c92860b76703feef128c41a7b70cb9fdb2700f8ff9ece404a0c3c1a42b40255e"
+    },
+    {
+      "path": "upstream/src/components/utils/cn.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/utils/cn.ts",
+      "integrity": "c3b911fcbb990dc0a456f0ab22fdb6c8360728d5ecf31bd79b6e12d8a148a8c3"
+    },
+    {
+      "path": "upstream/src/components/utils/typedKeys.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/utils/typedKeys.ts",
+      "integrity": "5070a30f16fbd7cc1488a01cb1e1306324a10413bc32401b68437821c7a3c373"
+    },
+    {
+      "path": "upstream/src/components/styles/theme/colors.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/styles/theme/colors.ts",
+      "integrity": "3e35ff4ea8fe918f5b1c6b6b0e9592f89150c3d1e9669dd1d8501d7ecfe14671"
+    },
+    {
+      "path": "upstream/src/components/styles/theme/disabled.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/styles/theme/disabled.ts",
+      "integrity": "3fbe4576d8712de9945eafeba10dc9c0dfb14e6968ea366e49c5b40bee1c460e"
+    },
+    {
+      "path": "upstream/src/components/styles/theme/index.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/styles/theme/index.ts",
+      "integrity": "97ded7d84e0f047485e9dba65004d50667f1aacc30551344338b1c320a3af354"
+    },
+    {
+      "path": "upstream/src/components/styles/theme/rounded.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/styles/theme/rounded.ts",
+      "integrity": "c4a6382b36a2894e0b1b5e410830498393c6552cfc0b1539d5c9f1fb1ef8092c"
+    },
+    {
+      "path": "upstream/src/components/styles/theme/shadow.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/styles/theme/shadow.ts",
+      "integrity": "c422f4803f30366c0657de74f137002ec44aecd75e17f3abc2a0acfabf8fcb2e"
+    },
+    {
+      "path": "upstream/src/components/styles/theme/typography.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/styles/theme/typography.ts",
+      "integrity": "59acc32b5a0e80cd5450c1217c825c340f70cce020f48b087da6a7c927ee59ad"
+    },
+    {
+      "path": "upstream/src/components/styles/theme/utilities.ts",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/styles/theme/utilities.ts",
+      "integrity": "f2c542eaa68e76d479162e732da6829ce22d0efa99ca821218536cbd16195835"
+    },
+    {
+      "path": "upstream/package.json",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/package.json",
+      "integrity": "33e6c932e69dea31d272bf17c37c0e6fb73c88d74275d02cab05f875db10c134"
+    },
+    {
+      "path": "upstream/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/LICENSE.txt",
+      "integrity": "03f0ffcfb78e0fd4543a4a2b2b28b490cbb2aada1efe583e0e557906c0160f8f"
+    },
+    {
+      "path": "upstream/docs/fonts/dmsans-latin.woff2",
+      "url": "https://fonts.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZOIHQ.woff2",
+      "integrity": "ca72d2bcea8f4daa783dbdfa2d9b46068c3ce38168e05918fb867aa453b4f890"
+    },
+    {
+      "path": "upstream/docs/google-fonts.css",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap",
+      "integrity": "a77ab01d67856703b7cce6d60a69bcf9f0821315dc0b498aee08700fc90b3bee"
+    },
+    {
+      "path": "upstream/docs/fonts/LICENSE-dmsans.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/6157dfaa640ca5738b4d1a7070fe389c3036d7fc/ofl/dmsans/OFL.txt",
+      "integrity": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1"
+    }
+  ],
+  "componentSources": {
+    "Button": "upstream/src/components/Button/Button.tsx",
+    "Dialog": "upstream/src/components/Dialog/Dialog.tsx",
+    "Tabs": "upstream/src/components/Tabs/Tabs.tsx"
+  },
+  "gaps": {
+    "Tabs": [
+      "RTL layout uses upstream rtl: styles. Upstream horizontal arrow-key order does not invert for RTL."
+    ]
+  },
+  "evidenceSources": [
+    {
+      "url": "https://rocksolidjs.com/_astro/base.y96oGwT6.css",
+      "integrity": "349d45e11c60965cd0019db4e31c06b89ef6f79ac844d6dc7a5914dc610f6a37"
+    }
+  ],
+  "assets": [
+    {
+      "path": "upstream/docs/fonts/dmsans-latin.woff2",
+      "url": "https://fonts.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZOIHQ.woff2",
+      "integrity": "ca72d2bcea8f4daa783dbdfa2d9b46068c3ce38168e05918fb867aa453b4f890",
+      "mimeType": "font/woff2"
+    }
+  ]
+}

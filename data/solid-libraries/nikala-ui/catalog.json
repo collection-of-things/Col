@@ -1,0 +1,110 @@
+{
+  "library": {
+    "name": "Nikala UI",
+    "slug": "nikala-ui",
+    "description": "Copy-paste SolidJS components and reactive primitives with Tailwind CSS v4 themes and a Tauri desktop suite.",
+    "url": "https://nikala.dev/",
+    "category": "Component Library",
+    "stacks": [
+      "SolidJS",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "useCases": [
+      "Dashboards",
+      "Rapid Prototyping"
+    ],
+    "tags": [
+      "copy-paste",
+      "design tokens",
+      "Tauri",
+      "reactive primitives"
+    ],
+    "addedAt": "2026-10-29T19:32:25Z"
+  },
+  "details": {
+    "docsUrl": "https://nikala.dev/docs",
+    "repoUrl": "https://github.com/nikala-ui/ui",
+    "pricing": {
+      "model": "free",
+      "summary": "Free source components under the project's MIT license.",
+      "license": "MIT",
+      "source": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/LICENSE"
+    }
+  },
+  "components": [
+    {
+      "name": "Button",
+      "url": "https://nikala.dev/docs/components/button",
+      "dependencies": [
+        "solid-js",
+        "class-variance-authority",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "cn",
+        "spinner"
+      ],
+      "kind": "primitive",
+      "summary": "Styled action button with variants, sizes, disabled and loading states.",
+      "verifiedAt": "2026-10-30",
+      "concept": "button"
+    },
+    {
+      "name": "Toggle Group",
+      "url": "https://nikala.dev/docs/components/toggle-group",
+      "dependencies": [
+        "solid-js",
+        "lucide-solid",
+        "class-variance-authority",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "cn",
+        "create-controllable-signal"
+      ],
+      "kind": "primitive",
+      "summary": "Single or multiple selection buttons with controlled Solid state.",
+      "verifiedAt": "2026-10-30"
+    },
+    {
+      "name": "Timeline",
+      "url": "https://nikala.dev/docs/components/timeline",
+      "dependencies": [
+        "solid-js",
+        "lucide-solid",
+        "class-variance-authority",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "cn"
+      ],
+      "kind": "layout",
+      "summary": "Compound chronological steps with status points, connectors and event content.",
+      "verifiedAt": "2026-10-30"
+    }
+  ],
+  "compatibility": [
+    {
+      "subject": "solid-js",
+      "constraint": "^1.9.5; previews verified with 1.9.17",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/package.json"
+    },
+    {
+      "subject": "tailwindcss",
+      "constraint": "^4.0.7; previews compiled with 4.3.3",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/package.json"
+    },
+    {
+      "subject": "solid-js 2",
+      "constraint": "",
+      "status": "unknown",
+      "evidence": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/package.json"
+    }
+  ]
+}
