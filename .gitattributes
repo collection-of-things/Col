@@ -2,3 +2,23 @@
 data/quoin/solid-LICENSE.txt text eol=lf
 # Existing preview manifests authenticate this lockfile's committed bytes.
 data/component-previews/vendor/package-bundles-supplemental-lock.json text eol=lf
+data/component-previews/vendor/package-bundles-react-recovery-lock.json text eol=lf
+data/component-previews/vendor/package-bundles-cult-radix-lock.json text eol=lf
+# Preview rebuilds authenticate these exact upstream bytes and lockfiles.
+# Upstream snapshots retain their original whitespace as well as their bytes.
+data/solid-libraries/*/upstream/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+data/solid-libraries/*/examples/** -text whitespace=cr-at-eol
+# These captured examples retain whitespace included in their input hashes.
+data/solid-libraries/rocksolid/examples/items/ButtonGroup.tsx -text whitespace=-blank-at-eol,cr-at-eol
+data/solid-libraries/torch-ui/examples/items/Password-Strength.tsx -text whitespace=-blank-at-eol,cr-at-eol
+data/solid-libraries/torch-ui/examples/items/Register-Form.tsx -text whitespace=-blank-at-eol,cr-at-eol
+data/solid-libraries/*/demos/** -text whitespace=cr-at-eol
+data/solid-libraries/*/package-lock.json -text whitespace=cr-at-eol
+data/solid-libraries/*/baseline-package-lock.json -text whitespace=cr-at-eol
+data/solid-libraries/*/theme.css -text whitespace=cr-at-eol
+data/solid-libraries/*/docs-context.css -text whitespace=cr-at-eol
+# Motion builders authenticate the decoded baseline artifact bytes.
+data/component-previews/solid/*/*.json text eol=lf
+data/component-previews/solid/nikala-ui.json -text whitespace=cr-at-eol
+data/component-previews/solid/magicui-solid.json -text whitespace=cr-at-eol
+data/component-previews/solid/mystic-ui.json -text whitespace=cr-at-eol

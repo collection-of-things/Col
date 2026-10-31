@@ -1,0 +1,103 @@
+packages:
+  - "packages/*"
+  - "apps/*"
+
+allowBuilds:
+  esbuild: true
+
+catalog:
+  # The solid trio moves in lockstep (CLAUDE.md requires a single solid version). A version
+  # skew breaks context and hydration *silently*, so the whole repo moves together.
+  #
+  # `@tanstack/solid-router` (a docs-app dep) names an exact `@solidjs/web` in its own
+  # `dependencies`, but it ALSO declares `@solidjs/web`/`solid-js` as peers with a wide
+  # `>=2.0.0-0 <3.0.0` range — so the exact pin is a fallback, not a ceiling on this repo.
+  # It is still worth checking after every install that only one copy landed:
+  #   ls node_modules/.pnpm | grep -E '^(solid-js|@solidjs\+web)@'
+  # Two lines there is the skew above, and nothing fails loudly when it happens.
+  #
+  # `@solidjs/signals` is not referenced by any package.json — it arrives transitively via
+  # `solid-js`. The entry is here to document the lockstep, and costs nothing.
+  solid-js: 2.0.0-beta.32
+  "@solidjs/signals": 2.0.0-beta.32
+  "@solidjs/web": 2.0.0-beta.32
+  # The JSX compiler, pinned for the same reason the runtime is. Only two pipelines compile
+  # this repo's JSX (the Vitest projects and Storybook) and they must agree with each other
+  # AND with the runtime above — a mismatch surfaces as a runtime error deep inside
+  # `@solidjs/web`, never as a config error. `solid-babel-options.ts` already unifies the
+  # compiler's *options*; these two entries unify its *version*.
+  #
+  # This was a live bug, not a hypothetical: the root pinned `vite-plugin-solid@3.0.0-next.5`
+  # exactly while apps/docs used `^3.0.0-next.11`, and next.5 depends on `babel-preset-solid`
+  # by open range — so every test and story compiled with `babel-preset-solid@2.0.0-beta.16`
+  # against a beta.19 runtime. `babel-preset-solid` also needs the `overrides` entry below,
+  # because a catalog only binds specifiers that say `catalog:` and vite-plugin-solid asks
+  # for it by range.
+  vite-plugin-solid: 3.0.0-next.23
+  babel-preset-solid: 2.0.0-beta.32
+  # Framework-agnostic virtualizer core. Adopted (not merely referenced) by
+  # `createVirtualCollection`; an *optional* peerDependency of @hope-ui/primitives so the
+  # kernel stays zero-dependency for consumers who never virtualize. See
+  # __internal__/solid-primitives-eval.md.
+  "@tanstack/virtual-core": 3.17.7
+  # Framework-agnostic overlay positioning core (placement / flip / shift / offset / arrow /
+  # autoUpdate). Adopted (not merely referenced) by `createFloating`; an *optional*
+  # peerDependency of @hope-ui/primitives so the kernel stays zero-dependency for consumers who
+  # never open a floating layer. The Vue port is the structural reference, not the React one —
+  # see __internal__/reference-implementations.md.
+  "@floating-ui/dom": 1.8.0
+  # Immutable, locale-aware date-only value types (`CalendarDate`) — the substrate the
+  # calendar family is built on, same as React Aria. See __internal__/solid-primitives-eval.md and
+  # packages/primitives/src/calendar/.
+  "@internationalized/date": 3.12.3
+  # SolidJS 2.0 (`next`-branch) community primitive adopted by the calendar family:
+  # `@solid-primitives/a11y` (`createAnnounce` — the screen-reader live-region announcer). Peers on
+  # solid-js/@solidjs/web ^2.0.0-beta. Adoption verdict: __internal__/solid-primitives-eval.md.
+  # (`@solid-primitives/i18n` was dropped — hope-ui's i18n module now ships its own catalog+resolver.)
+  "@solid-primitives/a11y": 1.0.0-next.2
+
+# `vite-plugin-solid` depends on `babel-preset-solid` by RANGE, and a range resolves to
+# whatever is newest on the registry that day — which is how the compiler drifted a version
+# behind the runtime without anyone changing a file. The catalog entry above only governs the
+# root devDependency; this is what collapses the nested range onto it.
+overrides:
+  babel-preset-solid: "catalog:"
+
+minimumReleaseAgeExclude:
+  - vite@8.2.1
+  - '@storybook/addon-a11y@10.5.7'
+  - '@storybook/addon-docs@10.5.7'
+  - '@storybook/csf-plugin@10.5.7'
+  - '@storybook/react-dom-shim@10.5.7'
+  - storybook@10.5.7
+  - '@solidjs/signals@2.0.0-beta.32'
+  - '@solidjs/web@2.0.0-beta.32'
+  - solid-js@2.0.0-beta.32
+  - '@tanstack/virtual-core@3.17.7'
+  - '@floating-ui/dom@1.8.0'
+  - '@internationalized/date@3.12.3'
+  - '@solid-primitives/a11y@1.0.0-next.2'
+  # apps/docs (TanStack Start) deps still in cooldown — excluded so `pnpm install` isn't gated.
+  - '@tanstack/solid-router@2.0.0-beta.29'
+  - '@tanstack/solid-start@2.0.0-beta.30'
+  - '@tanstack/solid-start-client@2.0.0-beta.29'
+  - '@tanstack/solid-start-server@2.0.0-beta.29'
+  - '@tanstack/start-static-server-functions@1.167.24'
+  # Transitive halves of the two TanStack pins above — appended by pnpm itself, and pinned to the
+  # exact versions those releases depend on.
+  - '@tanstack/router-core@1.171.19'
+  - '@tanstack/start-client-core@1.170.19'
+  - '@tanstack/start-storage-context@1.167.21'
+  - 'vite-plugin-solid@3.0.0-next.23'
+  - 'babel-preset-solid@2.0.0-beta.32'
+  # turbo ships its binary as one optional dependency per platform, so the runner and all six
+  # have to clear the cooldown together or a fresh install on any of them is gated.
+  - turbo@2.10.9
+  - '@turbo/darwin-64@2.10.9'
+  - '@turbo/darwin-arm64@2.10.9'
+  - '@turbo/linux-64@2.10.9'
+  - '@turbo/linux-arm64@2.10.9'
+  - '@turbo/windows-64@2.10.9'
+  - '@turbo/windows-arm64@2.10.9'
+  # Name pattern (no version): pnpm forbids a version union on a wildcard name.
+  - '@dom-expressions/*'

@@ -37,6 +37,7 @@ Checklist:
 - If a founder requests a listing without setup shortcuts, set `outboundOnly: true` on their entry in `data/libraries.ts`. The page keeps official Visit / Docs / Source links and library facts, hides install, getting started, and the agent prompt, and omits local recommendations. MCP results omit setup shortcuts and documentation snapshots too. Leave the flag unset unless requested.
 - Confirm the project is publicly accessible and actively useful.
 - Add the matching detail page in [`data/library-details/`](data/library-details/index.ts) and register it in that file's `libraryDetails` map, keyed by the same `slug`. The detail tests fail without it.
+- Solid preview collections keep their catalog metadata and source evidence in separate files under `data/solid-libraries/`; follow the existing collection's build and integrity records when changing one.
 
 If a new category or stack is genuinely required, explain why in the pull request.
 
@@ -96,7 +97,7 @@ Use web versions of media:
 
 Link to the official source instead of committing a copy when the page only needs to reference it.
 
-Before submitting, check the largest new files and the total size against git.cafe `main`:
+Before submitting, check the largest new files and total size against the pull request's target branch. For a pull request targeting git.cafe `main`:
 
 ```bash
 git fetch origin main
@@ -104,7 +105,7 @@ git rev-list --objects origin/main..HEAD | git cat-file --batch-check='%(objectt
 git rev-list --objects origin/main..HEAD | git pack-objects --stdout -q | wc -c
 ```
 
-The second command prints the bytes your pull request adds. Keep it under 10,000,000.
+The second command prints the bytes your pull request adds. Keep it under 10,000,000. For a stacked pull request, fetch its target branch and replace `origin/main` with that branch; check again after retargeting.
 
 ## Keep discovery up to date
 
