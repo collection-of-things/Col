@@ -1,0 +1,364 @@
+{
+  "library": {
+    "name": "RockSolid",
+    "slug": "rocksolid",
+    "description": "Styled SolidJS components with Tailwind CSS, theme customization, and RTL layout variants.",
+    "url": "https://rocksolidjs.com/",
+    "category": "Component Library",
+    "stacks": [
+      "SolidJS",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "useCases": [
+      "Dashboards",
+      "Accessibility-first"
+    ],
+    "tags": [
+      "rtl",
+      "themeable"
+    ],
+    "addedAt": "2026-10-30T00:34:31+05:30"
+  },
+  "details": {
+    "docsUrl": "https://rocksolidjs.com/installation/",
+    "repoUrl": "https://github.com/darshan-rajadhyaksha/rocksolid",
+    "pricing": {
+      "model": "free",
+      "summary": "The component source is free under the MIT license.",
+      "license": "MIT",
+      "source": "https://github.com/darshan-rajadhyaksha/rocksolid/blob/908ec4bf1534b36bf34bb9028ed8639cf773c205/LICENSE.txt"
+    }
+  },
+  "components": [
+    {
+      "name": "Button",
+      "url": "https://rocksolidjs.com/components/button/",
+      "kind": "full-pattern",
+      "summary": "A styled button with color, variant, size, and native interaction props.",
+      "concept": "button",
+      "verifiedAt": "2026-10-29T19:04:31Z",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Dialog",
+      "url": "https://rocksolidjs.com/components/dialog/",
+      "kind": "full-pattern",
+      "summary": "A modal dialog composed with title, content, and action components.",
+      "concept": "dialog",
+      "verifiedAt": "2026-10-29T19:04:31Z",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Tabs",
+      "url": "https://rocksolidjs.com/components/tabs/",
+      "kind": "full-pattern",
+      "summary": "Tab lists and panels with controlled state, orientation, and RTL layout styles.",
+      "concept": "tabs",
+      "verifiedAt": "2026-10-29T19:04:31Z",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Accordion",
+      "url": "https://rocksolidjs.com/components/accordion/",
+      "kind": "full-pattern",
+      "summary": "A vertically stacked set of interactive sections that can be expanded and collapsed.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Alert",
+      "url": "https://rocksolidjs.com/components/alert/",
+      "kind": "full-pattern",
+      "summary": "Alert component displays important information, status updates, warnings, or errors to users.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Avatar",
+      "url": "https://rocksolidjs.com/components/avatar/",
+      "kind": "full-pattern",
+      "summary": "Avatar component displays a user's profile image or entity with an image.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Badge",
+      "url": "https://rocksolidjs.com/components/badge/",
+      "kind": "full-pattern",
+      "summary": "Badge component displays a small label or indicator attached to another element.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Breadcrumbs",
+      "url": "https://rocksolidjs.com/components/breadcrumbs/",
+      "kind": "full-pattern",
+      "summary": "Breadcrumbs displays a navigation hierarchy that helps users understand their current location within an application.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "ButtonGroup",
+      "url": "https://rocksolidjs.com/components/button-group/",
+      "kind": "full-pattern",
+      "summary": "Groups related buttons together into a single, connected control.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Card",
+      "url": "https://rocksolidjs.com/components/card/",
+      "kind": "full-pattern",
+      "summary": "Card component displays related content and actions in a flexible, composable container.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "url": "https://rocksolidjs.com/components/checkbox/",
+      "kind": "full-pattern",
+      "summary": "Checkbox component allows users to select or deselect an option.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Chip",
+      "url": "https://rocksolidjs.com/components/chip/",
+      "kind": "full-pattern",
+      "summary": "Chip component displays a compact label with optional avatars, icons, delete actions, and disabled state.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Divider",
+      "url": "https://rocksolidjs.com/components/divider/",
+      "kind": "full-pattern",
+      "summary": "Divider component separates content into distinct sections with a horizontal or vertical line.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "IconButton",
+      "url": "https://rocksolidjs.com/components/icon-button/",
+      "kind": "full-pattern",
+      "summary": "A compact button designed for actions represented by an icon.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Input",
+      "url": "https://rocksolidjs.com/components/input/",
+      "kind": "full-pattern",
+      "summary": "A text input component for collecting and editing user-entered values.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Label",
+      "url": "https://rocksolidjs.com/components/label/",
+      "kind": "full-pattern",
+      "summary": "A text label that identifies and describes a form control.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Link",
+      "url": "https://rocksolidjs.com/components/link/",
+      "kind": "full-pattern",
+      "summary": "Link component displays a navigational link that can be styled with semantic colors, underlines, and truncation.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Progress",
+      "url": "https://rocksolidjs.com/components/progress/",
+      "kind": "full-pattern",
+      "summary": "A visual indicator that shows the completion or progress of a task.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Radio",
+      "url": "https://rocksolidjs.com/components/radio/",
+      "kind": "full-pattern",
+      "summary": "A selectable control for choosing one option from a set of mutually exclusive choices.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Select",
+      "url": "https://rocksolidjs.com/components/select/",
+      "kind": "full-pattern",
+      "summary": "Select component allows users to choose one option from a list of available values.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "url": "https://rocksolidjs.com/components/skeleton/",
+      "kind": "full-pattern",
+      "summary": "Skeleton component displays a placeholder shape while content is loading.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Spinner",
+      "url": "https://rocksolidjs.com/components/spinner/",
+      "kind": "full-pattern",
+      "summary": "Spinner component displays a loading indicator while content or an action is in progress.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Switch",
+      "url": "https://rocksolidjs.com/components/switch/",
+      "kind": "full-pattern",
+      "summary": "A control that allows users to toggle an option between on and off states.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Table",
+      "url": "https://rocksolidjs.com/components/table/",
+      "kind": "full-pattern",
+      "summary": "Table component displays structured data in rows and columns.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Textarea",
+      "url": "https://rocksolidjs.com/components/textarea/",
+      "kind": "full-pattern",
+      "summary": "Textarea component enables users to enter and edit multi-line text.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Typography",
+      "url": "https://rocksolidjs.com/components/typography/",
+      "kind": "full-pattern",
+      "summary": "Typography component displays text with consistent styles, colors, alignment, and semantic elements.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "rocksolidjs",
+        "solid-js",
+        "tailwindcss"
+      ]
+    }
+  ],
+  "compatibility": [
+    {
+      "subject": "solid-js",
+      "constraint": "^1.9.5; preview pinned to 1.9.15",
+      "status": "supported",
+      "evidence": "https://github.com/darshan-rajadhyaksha/rocksolid/blob/908ec4bf1534b36bf34bb9028ed8639cf773c205/package.json"
+    },
+    {
+      "subject": "tailwindcss",
+      "constraint": "^4.1.4; preview compiled with 4.3.3",
+      "status": "supported",
+      "evidence": "https://github.com/darshan-rajadhyaksha/rocksolid/blob/908ec4bf1534b36bf34bb9028ed8639cf773c205/package.json"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+/* Match the official documentation's theme selector; preserve every upstream utility value. */
+@custom-variant dark (&:where(.dark, .dark *));

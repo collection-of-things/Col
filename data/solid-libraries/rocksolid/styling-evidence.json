@@ -1,0 +1,10 @@
+{
+  "source": {
+    "url": "https://rocksolidjs.com/_astro/base.y96oGwT6.css",
+    "integrity": "349d45e11c60965cd0019db4e31c06b89ef6f79ac844d6dc7a5914dc610f6a37"
+  },
+  "verifiedAt": "2026-10-29T19:04:31Z",
+  "darkSelector": ":where(.dark,.dark *)",
+  "systemColorSchemeRules": 0,
+  "adaptation": "theme.css selects the same upstream dark utilities with the documented class selector; no color, dimension, border, radius, or interaction value is replaced."
+}
