@@ -1,0 +1,251 @@
+{
+  "slug": "hope-ui",
+  "permission": {
+    "status": "granted",
+    "source": "https://github.com/hope-ui/hope-ui/blob/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/LICENSE.md",
+    "checkedAt": "2026-10-29T19:04:31Z"
+  },
+  "snapshots": [
+    {
+      "title": "hope-ui source and compatibility",
+      "url": "https://www.hope-ui.dev/get-started/about",
+      "fetchedAt": "2026-10-29T19:04:31Z",
+      "sourceRevision": "1dc059fcb9045ea5f066fd6109347f0fdce5a03e",
+      "content": "Verified package: @hope-ui/components. Source revision: 1dc059fcb9045ea5f066fd6109347f0fdce5a03e. Source is free under MIT with notices for incorporated Apache-2.0 code; the current Solid 2 packages are not published to npm.\nRuntime and CSS evidence: solid-js 2.0.0-beta.32, @solidjs/web 2.0.0-beta.32, @solidjs/signals 2.0.0-beta.32, tailwindcss 4.3.3.\nThe current @hope-ui/components source targets Solid 2 beta.32. This is different from the older @hope-ui/solid package. The examples require ThemeProvider with the hope preset plus both hope/tailwind.css and hope/theme.css. No current npm install command is claimed.\n",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/pnpm-workspace.yaml",
+          "integrity": "c36a81ce37baa9b9bea7cdee4c16b484063f7d30e71db0cf3af25abe7bb6d137"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/package.json",
+          "integrity": "a330146d7440079ab8f34fb03b2b783e249d6ef95fadfbf1ce924ba35cf1b372"
+        }
+      ]
+    },
+    {
+      "componentId": "hope-ui/Button",
+      "title": "hope-ui Button",
+      "url": "https://www.hope-ui.dev/components/button",
+      "fetchedAt": "2026-10-29T19:04:31Z",
+      "sourceRevision": "1dc059fcb9045ea5f066fd6109347f0fdce5a03e",
+      "content": "A styled button with variants, color schemes, and icon decorators.\n\nOfficial example; mount uses the original hope ThemeProvider and preset.\n```tsx\nimport { Button } from \"@hope-ui/components/button\";\nimport type { JSX } from \"@solidjs/web\";\n\n// Live demo for the \"Icons & decorators\" section.\n//\n// Decorators are icon **components** passed straight to `startDecorator`/`endDecorator` — the\n// natural way to use an icon set. (Earlier this had to be a raw <svg> host element to dodge a\n// SolidJS beta hydration bug where a component inside a <Show>-gated slot mis-hydrated; Button now\n// resolves each slot's content with Solid's `children()` helper, so a component hydrates cleanly.\n// This still can't live inline in the .mdx: MDX routes lowercase intrinsics through its component\n// map, which carries no `svg`/`path`, so an inline <svg> in MDX throws — hence the .tsx demo.)\nfunction CheckIcon(): JSX.Element {\n  return (\n    <svg\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n      aria-hidden=\"true\"\n    >\n      <path d=\"M20 6 9 17l-5-5\" />\n    </svg>\n  );\n}\n\nfunction ArrowRightIcon(): JSX.Element {\n  return (\n    <svg\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n      aria-hidden=\"true\"\n    >\n      <path d=\"M5 12h14M12 5l7 7-7 7\" />\n    </svg>\n  );\n}\n\nexport function ButtonIconsDemo() {\n  return (\n    <div class=\"flex flex-wrap items-center justify-center gap-3 not-prose\">\n      <Button variant=\"solid\" startDecorator={<CheckIcon />}>\n        Save\n      </Button>\n      <Button variant=\"default\" endDecorator={<ArrowRightIcon />}>\n        Continue\n      </Button>\n    </div>\n  );\n}\n\n```\n\nVerified limitations: Source-only early preview: @hope-ui/components is not published to npm; pinned to the verified Solid 2 beta source revision.\n",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/button/index.ts",
+          "integrity": "8b0e37175d8b317e417cbee1e11b9a341322be409981de42eae1bab82a2568df"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/button/ButtonIconsDemo.tsx",
+          "integrity": "dfb5b6e5985b49ade83dd462c00c6e8794726cecde4f5b49d32bcbf0097304e5"
+        }
+      ]
+    },
+    {
+      "componentId": "hope-ui/Dialog",
+      "title": "hope-ui Dialog",
+      "url": "https://www.hope-ui.dev/components/dialog",
+      "fetchedAt": "2026-10-29T19:04:31Z",
+      "sourceRevision": "1dc059fcb9045ea5f066fd6109347f0fdce5a03e",
+      "content": "A controlled modal with backdrop, positioner, title, description, and actions.\n\nOfficial example; mount uses the original hope ThemeProvider and preset.\n```tsx\nimport { Button, type ButtonProps } from \"@hope-ui/components/button\";\nimport { Dialog } from \"@hope-ui/components/dialog\";\nimport { createSignal } from \"solid-js\";\n\n// The canonical styled dialog for the \"Usage\" section: a trigger opens a centered card with a\n// header (title + description), a body, and a footer action row, plus the auto corner ✕\n// (`showCloseButton` defaults to `true`). Controlled via a signal so the footer's Cancel/Delete\n// can close it. A hope `Button` is the trigger, rendered through `Dialog.Trigger`'s `render` prop —\n// Solid types a native button's `disabled` wider than `Button` does, so the spread is cast.\nexport function DialogBasicDemo() {\n  const [open, setOpen] = createSignal(false);\n\n  return (\n    <Dialog.Root open={open()} onOpenChange={setOpen}>\n      <Dialog.Trigger render={(p) => <Button {...(p as ButtonProps)}>Delete project</Button>} />\n      <Dialog.Portal>\n        <Dialog.Backdrop />\n        <Dialog.Positioner>\n          <Dialog.Content>\n            <Dialog.Header>\n              <Dialog.Title>Delete project</Dialog.Title>\n              <Dialog.Description>\n                This permanently deletes <b>Acme Marketing Site</b> and everything inside it.\n              </Dialog.Description>\n            </Dialog.Header>\n            <Dialog.Body>\n              <p>Removed for every member of the workspace. This action cannot be undone.</p>\n            </Dialog.Body>\n            <Dialog.Footer>\n              <Button onClick={() => setOpen(false)}>Cancel</Button>\n              <Button variant=\"solid\" colorScheme=\"danger\" onClick={() => setOpen(false)}>\n                Delete project\n              </Button>\n            </Dialog.Footer>\n          </Dialog.Content>\n        </Dialog.Positioner>\n      </Dialog.Portal>\n    </Dialog.Root>\n  );\n}\n\n```\n\nVerified limitations: Source-only early preview: @hope-ui/components is not published to npm; pinned to the verified Solid 2 beta source revision.\n",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/dialog/index.ts",
+          "integrity": "75b1fc9f3d7350beceff582320bc6ff0ddafc9237fca6dde7c86899e78904735"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/dialog/DialogBasicDemo.tsx",
+          "integrity": "3d60e7efefe260d20d05052bf077db744dee5b6a46a244cd2e691dfd95fbbaa5"
+        }
+      ]
+    },
+    {
+      "componentId": "hope-ui/Select",
+      "title": "hope-ui Select",
+      "url": "https://www.hope-ui.dev/components/select",
+      "fetchedAt": "2026-10-29T19:04:31Z",
+      "sourceRevision": "1dc059fcb9045ea5f066fd6109347f0fdce5a03e",
+      "content": "A styled select with a named trigger and portaled list of options.\n\nOfficial example; mount uses the original hope ThemeProvider and preset.\n```tsx\nimport { Select } from \"@hope-ui/components/select\";\nimport { FRUIT_NAMES } from \"./data\";\n\n// The canonical Select for the \"Usage\" section, and the smallest one that exists: an array of\n// strings, a placeholder, and the fixed Trigger → Portal → Positioner → Content → List spine.\n// Uncontrolled — the trigger owns the open state, and Escape / an outside click / picking a row all\n// close it. The trigger is named with `aria-label`: Select ships no `Label` part, and a nameless\n// `role=\"combobox\"` is an accessibility violation.\nexport function SelectBasicDemo() {\n  return (\n    <Select.Root items={FRUIT_NAMES}>\n      <Select.Trigger aria-label=\"Choose a fruit\">\n        <Select.Value placeholder=\"Pick a fruit\" />\n        <Select.Icon />\n      </Select.Trigger>\n      <Select.Portal>\n        <Select.Positioner>\n          <Select.Content>\n            <Select.List>\n              {(fruit: string) => (\n                <Select.Item item={fruit}>\n                  <Select.ItemText>{fruit}</Select.ItemText>\n                  <Select.ItemIndicator />\n                </Select.Item>\n              )}\n            </Select.List>\n          </Select.Content>\n        </Select.Positioner>\n      </Select.Portal>\n    </Select.Root>\n  );\n}\n\n```\n\nShared fixture imported above; save this upstream excerpt as `data.tsx` beside the example:\n```tsx\nexport const FRUIT_NAMES = [\"Apple\", \"Banana\", \"Cherry\", \"Date\", \"Elderberry\", \"Fig\"];\n```\n\nVerified limitations: Source-only early preview: @hope-ui/components is not published to npm; pinned to the verified Solid 2 beta source revision.\n",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/index.ts",
+          "integrity": "98e4586d7b228b9f2f15ac7a61b4488a53f1dcf0f09dc801771574091e712e32"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/select/SelectBasicDemo.tsx",
+          "integrity": "247c5b0707c723ef097164c91195536294184369f0cb64335578d7e5db6754de"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/select/data.tsx",
+          "integrity": "04ac28bdca538a140fa6f37896a30613f7a72ff645c08421ea280944cfa91a3e"
+        }
+      ]
+    },
+    {
+      "componentId": "hope-ui/Alert",
+      "title": "Alert: official example and source",
+      "url": "https://www.hope-ui.dev/components/alert",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "1dc059fcb9045ea5f066fd6109347f0fdce5a03e",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/alert/index.ts",
+          "integrity": "329e11b6a8b1cfedda0fc5d40839134bf854deac53c4e66ace66de5b025e784e"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/alert/AlertColorSchemesDemo.tsx",
+          "integrity": "8c90caf660c2293ac5b5f7f9aff9e1906d7cf56761ecb3f4a110863a7bd7d8eb"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/60-feedback/alert.mdx",
+          "integrity": "5e03d76a68f83d236e9ceb36a66d245050df1f2f5063c2b16ffe56ec9863c706"
+        }
+      ],
+      "content": "The current hope-ui source targets Solid 2 beta.32 and uses ThemeProvider with the hope preset. A styled status message with semantic colors and built-in status icons.\n\nOriginal documented example:\n```tsx\nimport { Alert } from \"@hope-ui/components/alert\";\nimport type { AlertColorScheme } from \"@hope-ui/theming\";\nimport { For } from \"solid-js\";\n\n// Live demo for the \"Status\" section: the four status roles, each rendered with its\n// built-in glyph. Omitting `icon` falls back to hope's status glyph — info / success /\n// warning / danger only (primary and neutral ship none). Each row states its meaning in\n// words, with the color and glyph as reinforcing second channels.\nconst ROWS: { colorScheme: AlertColorScheme; title: string; description: string }[] = [\n  { colorScheme: \"info\", title: \"Heads up\", description: \"A new workspace theme is available.\" },\n  { colorScheme: \"success\", title: \"Payment received\", description: \"Your invoice is settled.\" },\n  {\n    colorScheme: \"warning\",\n    title: \"Storage almost full\",\n    description: \"You’ve used 92% of your plan’s quota.\",\n  },\n  {\n    colorScheme: \"danger\",\n    title: \"Deployment failed\",\n    description: \"The last build could not be published.\",\n  },\n];\n\nexport function AlertColorSchemesDemo() {\n  return (\n    <div class=\"not-prose flex w-full max-w-md flex-col gap-3\">\n      <For each={ROWS}>\n        {(row) => (\n          <Alert.Root\n            variant=\"soft\"\n            colorScheme={row.colorScheme}\n            title={row.title}\n            description={row.description}\n          />\n        )}\n      </For>\n    </div>\n  );\n}\n\n```"
+    },
+    {
+      "componentId": "hope-ui/Badge",
+      "title": "Badge: official example and source",
+      "url": "https://www.hope-ui.dev/components/badge",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "1dc059fcb9045ea5f066fd6109347f0fdce5a03e",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/badge/index.ts",
+          "integrity": "22dbf845d062506ec50b17c74abb58608bc9cc33eba129610d382345e57597b5"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/badge/BadgeStatusDemo.tsx",
+          "integrity": "880212a0114bdd72f58bce812b54e95684dee78085a5af9b520cf289ad903bbe"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/80-data-display/badge.mdx",
+          "integrity": "7495ec80fe488e8a3c03002286f25a0fa441795c584275a52859aae203ac749f"
+        }
+      ],
+      "content": "The current hope-ui source targets Solid 2 beta.32 and uses ThemeProvider with the hope preset. A compact styled status label with semantic colors and variants.\n\nOriginal documented example:\n```tsx\nimport { Badge } from \"@hope-ui/components/badge\";\nimport type { BadgeColorScheme } from \"@hope-ui/theming\";\nimport { For } from \"solid-js\";\n\n// Live demo for the \"Status\" section: the `dot` variant as a real status indicator\n// in a small deployments-style list. `dot` renders role-neutral chrome (so the label\n// stays legible in both themes) with a single role-colored status pip, which maps\n// cleanly onto success / warning / danger / neutral states.\nconst ROWS: { name: string; state: string; color: BadgeColorScheme }[] = [\n  { name: \"api-gateway\", state: \"Live\", color: \"success\" },\n  { name: \"web-frontend\", state: \"Deploying\", color: \"warning\" },\n  { name: \"billing-worker\", state: \"Failed\", color: \"danger\" },\n  { name: \"legacy-cron\", state: \"Paused\", color: \"neutral\" },\n];\n\nexport function BadgeStatusDemo() {\n  return (\n    <div class=\"not-prose w-full max-w-sm divide-y divide-subtle overflow-hidden rounded-lg border border-subtle bg-surface\">\n      <For each={ROWS}>\n        {(row) => (\n          <div class=\"flex items-center justify-between gap-4 px-4 py-2.5\">\n            <span class=\"font-mono text-sm text-foreground\">{row.name}</span>\n            <Badge variant=\"dot\" colorScheme={row.color}>\n              {row.state}\n            </Badge>\n          </div>\n        )}\n      </For>\n    </div>\n  );\n}\n\n```"
+    },
+    {
+      "componentId": "hope-ui/Calendar",
+      "title": "Calendar: official example and source",
+      "url": "https://www.hope-ui.dev/components/calendar",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "1dc059fcb9045ea5f066fd6109347f0fdce5a03e",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/calendar/index.ts",
+          "integrity": "8497651786cc700b740f95c59f79c248ad24721da53a7cbf8d7ddffa517176a1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/calendar/CalendarBasicDemo.tsx",
+          "integrity": "880435783da5685752f7d62f81cc95f8eb98cd778d633df94fed7f4f74ec64dd"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/40-date-and-time/calendar.mdx",
+          "integrity": "95e11c29f0ca176e36bddf46bb533d3632b94d73500aff83a123f7ccae4c2f61"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/calendar/data.ts",
+          "integrity": "e0ef0770b4ea1929653e56dba030e9f1953b646147dd7ebe042761a0bf7cc202"
+        }
+      ],
+      "content": "The current hope-ui source targets Solid 2 beta.32 and uses ThemeProvider with the hope preset. An accessible date-selection calendar with themed header and month grid.\n\nOriginal documented example:\n```tsx\nimport { Calendar } from \"@hope-ui/components/calendar\";\nimport { createSignal } from \"solid-js\";\nimport { formatSelection, REFERENCE_DATE, type SelectionValue } from \"./data\";\n\n// The default: single selection, composed from the compound parts so the anatomy is concrete —\n// Header (Prev / Heading / Next) over the month Grid. Controlled (`value`/`onValueChange`): the\n// committed date is mirrored into a signal that drives both the calendar and the readout. Arrow keys /\n// Home / End / PageUp/Down move the roving focus; Enter, Space, or a click selects.\nexport function CalendarBasicDemo() {\n  const [value, setValue] = createSignal<SelectionValue>(null);\n\n  return (\n    <div class=\"flex flex-col items-center gap-3\">\n      <Calendar.Root defaultFocusedValue={REFERENCE_DATE} value={value()} onValueChange={setValue}>\n        <Calendar.Header>\n          <Calendar.PrevButton />\n          <Calendar.Heading />\n          <Calendar.NextButton />\n        </Calendar.Header>\n        <Calendar.Grid />\n      </Calendar.Root>\n      <output class=\"text-sm text-foreground-muted\">Selected: {formatSelection(value())}</output>\n    </div>\n  );\n}\n\n```\n\nSupporting original data module (data.ts):\n```tsx\nimport { CalendarDate } from \"@internationalized/date\";\n\n// A fixed anchor month shared by every Calendar demo. The calendar seeds its visible month from\n// `defaultFocusedValue`; leaving it to `today()` would differ between build time (this SSG site is\n// prerendered) and view time, so the server HTML and the hydrated client would disagree on the whole\n// grid — a hydration mismatch. A stable date keeps the prerendered markup and the client identical.\nexport const REFERENCE_DATE = new CalendarDate(2020, 9, 7);\n\n// The value union the calendar hands `onValueChange`, described structurally so the demos read it\n// without importing `@hope-ui/primitives` — the themeable component is the public surface.\ntype DateRangeValue = { start: CalendarDate; end: CalendarDate };\nexport type SelectionValue = CalendarDate | DateRangeValue | CalendarDate[] | null;\n\n/** Render any selection as ISO `YYYY-MM-DD` text for a demo's readout (`CalendarDate.toString()`). */\nexport function formatSelection(value: SelectionValue): string {\n  if (value == null) {\n    return \"—\";\n  }\n  if (Array.isArray(value)) {\n    return value.length ? value.map(String).join(\", \") : \"—\";\n  }\n  if (\"start\" in value) {\n    return `${value.start} → ${value.end}`;\n  }\n  return String(value);\n}\n\n```"
+    },
+    {
+      "componentId": "hope-ui/CloseButton",
+      "title": "CloseButton: official example and source",
+      "url": "https://www.hope-ui.dev/components/close-button",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "1dc059fcb9045ea5f066fd6109347f0fdce5a03e",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/close-button/index.ts",
+          "integrity": "3be2e829467db2f2518ce90e142eafed072abaa38a5f2b7b6ba7b266aa23cfa6"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/close-button/CloseButtonSurfacesDemo.tsx",
+          "integrity": "802e1897c8165fad3d955d18b7e7895da8be02c8535f45098872d9ef1a35c087"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/10-buttons/close-button.mdx",
+          "integrity": "da8b377019a08b9022e801ae96d5e54aa8392148902e1c4c312377f526191473"
+        }
+      ],
+      "content": "The current hope-ui source targets Solid 2 beta.32 and uses ThemeProvider with the hope preset. A close button that adapts its icon and interaction states to its surface.\n\nOriginal documented example:\n```tsx\nimport { CloseButton } from \"@hope-ui/components/close-button\";\nimport type { JSX } from \"@solidjs/web\";\n\n// Live demo for the \"Adapts to the surface\" section.\n//\n// CloseButton asserts no color of its own: the glyph inherits `currentColor` and its hover/press\n// wash + focus ring derive from it, so one component reads correctly on any surface. Each cell sets\n// its own background + text color; the same `<CloseButton />` picks that up with zero configuration.\n// (The colored surface classes are plain divs — no inline <svg> — but this lives in .tsx to keep the\n// stacked layout out of the MDX flow.)\nfunction Cell(props: { class: string; label: string }): JSX.Element {\n  return (\n    <div class={`flex items-center justify-between gap-6 rounded-lg p-4 ${props.class}`}>\n      <span class=\"text-sm font-medium\">{props.label}</span>\n      <CloseButton />\n    </div>\n  );\n}\n\nexport function CloseButtonSurfacesDemo() {\n  return (\n    <div class=\"flex w-full max-w-md flex-col gap-3 not-prose\">\n      {/* Light surface: dark text -> a dark, low-alpha wash. */}\n      <Cell class=\"bg-surface text-foreground border border-subtle\" label=\"On a light surface\" />\n      {/* Soft-tinted surface: role-emphasis text -> a role-tinted wash. */}\n      <Cell class=\"bg-primary-soft text-primary-emphasis\" label=\"On a soft surface\" />\n      {/* Solid colored surface: on-color text -> a light wash. */}\n      <Cell class=\"bg-primary text-on-primary\" label=\"On a solid surface\" />\n      {/* Dark surface: light text -> a light, low-alpha wash. */}\n      <Cell class=\"bg-surface-inverse text-on-inverse\" label=\"On a dark surface\" />\n    </div>\n  );\n}\n\n```"
+    },
+    {
+      "componentId": "hope-ui/Combobox",
+      "title": "Combobox: official example and source",
+      "url": "https://www.hope-ui.dev/components/combobox",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "1dc059fcb9045ea5f066fd6109347f0fdce5a03e",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/index.ts",
+          "integrity": "005a0667a4566a1d12dbb056023ea4b5967adf37acc065055ccaf7f067d4c8c5"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/combobox/ComboboxBasicDemo.tsx",
+          "integrity": "c3cf1fe2b67d4971c1208e8c57b11209582dfcf3100e5964f788b76093502a15"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/30-collections/combobox.mdx",
+          "integrity": "6bbe6ba7cf0e1044a1dab1c04df861179cf2b7e9c452637f9d6d32a13fc93d64"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/combobox/data.tsx",
+          "integrity": "78ce421f4bcccf2a6ef31e627d57e5640cae1bb731feae3c8e2045d0e063e284"
+        }
+      ],
+      "content": "The current hope-ui source targets Solid 2 beta.32 and uses ThemeProvider with the hope preset. A searchable, accessible list of selectable options.\n\nOriginal documented example:\n```tsx\nimport { Combobox } from \"@hope-ui/components/combobox\";\nimport { FRUITS, FruitControl, FruitPopup, isItemDisabled, itemToLabel, itemToValue } from \"./data\";\n\n// The canonical Combobox for the \"Usage\" section: the Control shell around the input, and the fixed\n// Portal → Positioner → Content spine holding the List. Uncontrolled — typing opens the popup and\n// narrows the rows, Enter or a click commits, Escape puts the last committed label back.\n//\n// Elderberry is disabled in the data, so it is dimmed and the arrows skip it. Try `cafe` or `acai`:\n// the filter is collator-backed, so it folds diacritics as well as case.\nexport function ComboboxBasicDemo() {\n  return (\n    <Combobox.Root\n      items={FRUITS}\n      itemToValue={itemToValue}\n      itemToLabel={itemToLabel}\n      isItemDisabled={isItemDisabled}\n    >\n      <FruitControl label=\"Choose a fruit\" />\n      <FruitPopup />\n    </Combobox.Root>\n  );\n}\n\n```\n\nSupporting original data module (data.tsx):\n```tsx\nimport { Combobox } from \"@hope-ui/components/combobox\";\nimport type { JSX } from \"@solidjs/web\";\n\n// Shared fixtures for the Combobox demos. The dataset is deliberately accented: `Açaí` and `Café au\n// lait` are what make the folding claim demonstrable rather than asserted — typing their\n// plain-ASCII spelling (`acai`, `cafe`) matches them, which `toLowerCase().includes()` never would.\n\nexport interface Fruit {\n  id: number;\n  name: string;\n  disabled?: boolean;\n}\n\nexport const FRUITS: Fruit[] = [\n  { id: 1, name: \"Apple\" },\n  { id: 2, name: \"Banana\" },\n  { id: 3, name: \"Cherry\" },\n  { id: 4, name: \"Date\" },\n  { id: 5, name: \"Elderberry\", disabled: true },\n  { id: 6, name: \"Fig\" },\n  { id: 7, name: \"Açaí\" },\n  { id: 8, name: \"Café au lait\" },\n];\n\nexport const itemToValue = (fruit: Fruit) => String(fruit.id);\nexport const itemToLabel = (fruit: Fruit) => fruit.name;\nexport const isItemDisabled = (fruit: Fruit) => fruit.disabled ?? false;\n\nexport interface Basket {\n  kind: string;\n  fruits: Fruit[];\n}\n\nexport const BASKETS: Basket[] = [\n  {\n    kind: \"Citrus\",\n    fruits: [\n      { id: 11, name: \"Orange\" },\n      { id: 12, name: \"Lemon\" },\n      { id: 13, name: \"Grapefruit\" },\n    ],\n  },\n  {\n    kind: \"Berries\",\n    fruits: [\n      { id: 21, name: \"Strawberry\" },\n      { id: 22, name: \"Blueberry\" },\n      { id: 23, name: \"Raspberry\" },\n    ],\n  },\n];\n\n// Enough room under the control for the popup to land without flipping, so a demo shows the shape it\n// is meant to show. The docs' `<Preview>` panel is only 10rem tall on its own.\nexport function Stage(props: { children: JSX.Element }): JSX.Element {\n  return (\n    <div class=\"not-prose flex min-h-72 w-full flex-col items-center gap-3 pt-2\">\n      {props.children}\n    </div>\n  );\n}\n\n// One option row: the label in a truncating `ItemText`, plus the check `ItemIndicator` painted only\n// while the row is selected. `item` is the row's whole identity — its value, its label and whether it\n// is disabled all come from `Combobox.Root`'s accessors, read from the data.\n//\n// Sharing it across the demos keeps each one about the thing it demonstrates rather than about row\n// markup.\nexport function FruitItem(props: { fruit: Fruit }): JSX.Element {\n  return (\n    <Combobox.Item item={props.fruit}>\n      <Combobox.ItemText>{props.fruit.name}</Combobox.ItemText>\n      <Combobox.ItemIndicator />\n    </Combobox.Item>\n  );\n}\n\n// The control every demo repeats: the shell, the input that owns focus, the clear button, and the\n// chevron. `aria-label` is mandatory — Combobox ships no `Label` part, and a nameless\n// `role=\"combobox\"` is an accessibility violation that the popup inherits.\nexport function FruitControl(props: { label: string; placeholder?: string }): JSX.Element {\n  return (\n    <Combobox.Control>\n      <Combobox.Input aria-label={props.label} placeholder={props.placeholder ?? \"Search fruit…\"} />\n      <Combobox.Clear />\n      <Combobox.Trigger>\n        <Combobox.Icon />\n      </Combobox.Trigger>\n    </Combobox.Control>\n  );\n}\n\n// The popup spine, flat: `Empty` and `Status` sit in the card **beside** `List`, never inside it — a\n// `role=\"listbox\"` may only contain options and groups.\nexport function FruitPopup(): JSX.Element {\n  return (\n    <Combobox.Portal>\n      <Combobox.Positioner>\n        <Combobox.Content>\n          <Combobox.List>{(fruit: Fruit) => <FruitItem fruit={fruit} />}</Combobox.List>\n          <Combobox.Empty>No fruit matches that.</Combobox.Empty>\n          <Combobox.Status />\n        </Combobox.Content>\n      </Combobox.Positioner>\n    </Combobox.Portal>\n  );\n}\n\n```"
+    },
+    {
+      "componentId": "hope-ui/Listbox",
+      "title": "Listbox: official example and source",
+      "url": "https://www.hope-ui.dev/components/listbox",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "1dc059fcb9045ea5f066fd6109347f0fdce5a03e",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/listbox/index.ts",
+          "integrity": "7d4449be2bbd2bc74e405eb1f65d7206d46aea4db682a1f23fd8c86c10c4573c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/listbox/ListboxBasicDemo.tsx",
+          "integrity": "7366efd88c029869f4b18a3886fe36ac6e2d577d73977927652c9dfd2e3b72d1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/30-collections/listbox.mdx",
+          "integrity": "0dd572e5607bb19b8b06a788ab479d5df358324b74423655e22914c65a1204ab"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/listbox/data.tsx",
+          "integrity": "e0d13aab0a5cad9e1b3e48ab6a4c51bb6a086fd02d6006767afcc110ed47148a"
+        }
+      ],
+      "content": "The current hope-ui source targets Solid 2 beta.32 and uses ThemeProvider with the hope preset. A styled listbox with keyboard navigation and single or multiple selection.\n\nOriginal documented example:\n```tsx\nimport { Listbox } from \"@hope-ui/components/listbox\";\nimport { createSignal } from \"solid-js\";\nimport { FRUITS, type Fruit, FruitItem, isItemDisabled, itemToLabel, itemToValue } from \"./data\";\n\n// The default: single selection, roving focus. Controlled via a signal; the chosen row keeps a\n// check glyph. Arrow keys / Home / End / type-to-search move the highlight; Enter, Space, or a\n// click selects. Starts with \"Cherry\" selected.\nexport function ListboxBasicDemo() {\n  const [value, setValue] = createSignal<Fruit[]>([FRUITS[2]]);\n\n  return (\n    <Listbox.Root\n      aria-label=\"Choose a fruit\"\n      items={FRUITS}\n      itemToValue={itemToValue}\n      itemToLabel={itemToLabel}\n      isItemDisabled={isItemDisabled}\n      value={value()}\n      onChange={setValue}\n    >\n      {(fruit) => <FruitItem fruit={fruit} />}\n    </Listbox.Root>\n  );\n}\n\n```\n\nSupporting original data module (data.tsx):\n```tsx\nimport { Listbox } from \"@hope-ui/components/listbox\";\nimport type { JSX } from \"@solidjs/web\";\n\n// Shared dataset + helpers for the Listbox demos. Items are objects (not bare strings) so the\n// demos show the data accessors doing real work: `itemToValue` is the selection identity (and, with\n// `name`, the string submitted to a form), `itemToLabel` the typeahead / display text, and\n// `isItemDisabled` the per-row disabled state — all answered from the data, before a row mounts.\nexport interface Fruit {\n  id: number;\n  name: string;\n  disabled?: boolean;\n}\n\nexport const FRUITS: Fruit[] = [\n  { id: 1, name: \"Apple\" },\n  { id: 2, name: \"Banana\" },\n  { id: 3, name: \"Cherry\" },\n  { id: 4, name: \"Date\" },\n  { id: 5, name: \"Elderberry\", disabled: true },\n  { id: 6, name: \"Fig\" },\n];\n\nexport const itemToValue = (fruit: Fruit) => String(fruit.id);\nexport const itemToLabel = (fruit: Fruit) => fruit.name;\nexport const isItemDisabled = (fruit: Fruit) => fruit.disabled ?? false;\n\n// One option row: the check `ItemIndicator` (painted only while the row is selected) plus its label.\n// `item` is the row's whole identity — everything else about it comes from the accessors above.\nexport function FruitItem(props: { fruit: Fruit }): JSX.Element {\n  return (\n    <Listbox.Item item={props.fruit}>\n      <Listbox.ItemIndicator />\n      {props.fruit.name}\n    </Listbox.Item>\n  );\n}\n\n```"
+    },
+    {
+      "componentId": "hope-ui/Popover",
+      "title": "Popover: official example and source",
+      "url": "https://www.hope-ui.dev/components/popover",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "1dc059fcb9045ea5f066fd6109347f0fdce5a03e",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/popover/index.ts",
+          "integrity": "d9551ae80fd177f44033a5158a3d5fecc9ed98bea97013fea8612a266db06ad0"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/popover/PopoverBasicDemo.tsx",
+          "integrity": "bb44a3b69ea5b51b311dc00fbb4c3b0e07f2af95de2ae612ab14ecff65850bc9"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/70-overlays/popover.mdx",
+          "integrity": "e1a46cdc24a41188eb2089703e64492e9d41122d051e3f126ab3125f92affd1a"
+        }
+      ],
+      "content": "The current hope-ui source targets Solid 2 beta.32 and uses ThemeProvider with the hope preset. A themed, anchored popup with trigger, arrow and accessible content.\n\nOriginal documented example:\n```tsx\nimport { Button, type ButtonProps } from \"@hope-ui/components/button\";\nimport { Popover } from \"@hope-ui/components/popover\";\n\n// The canonical styled popover for the \"Usage\" section: a hope `Button` trigger, the measured layer,\n// and a card with an arrow, a title and a description. Uncontrolled — the trigger toggles it, and\n// Escape / an outside click / Tab-ing away close it. Solid types a native button's `disabled` wider\n// than `Button` does, so the trigger's spread is cast (the same bridge `Popover.CloseTrigger` makes\n// when it spreads onto `CloseButton`).\nexport function PopoverBasicDemo() {\n  return (\n    <Popover.Root>\n      <Popover.Trigger render={(p) => <Button {...(p as ButtonProps)}>Share</Button>} />\n      <Popover.Portal>\n        <Popover.Positioner>\n          <Popover.Content>\n            <Popover.Arrow />\n            <Popover.Title>Share this page</Popover.Title>\n            <Popover.Description>\n              Anyone with the link can view it. Change who has access in{\" \"}\n              {/* biome-ignore lint/a11y/useValidAnchor: an illustrative link, showing the\n                  description slot's link styling. It must stay inert: the docs build prerenders by\n                  crawling the hrefs it finds in a live <Preview>, so a made-up route would fail it. */}\n              <a href=\"#\">project settings</a>.\n            </Popover.Description>\n          </Popover.Content>\n        </Popover.Positioner>\n      </Popover.Portal>\n    </Popover.Root>\n  );\n}\n\n```"
+    }
+  ]
+}

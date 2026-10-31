@@ -1,0 +1,1414 @@
+{
+  "checkedAt": "2026-10-30T06:02:41.674630Z",
+  "browser": "156.0.8078.79",
+  "renderer": "render_component HTML",
+  "sandbox": "allow-scripts allow-forms",
+  "viewport": {
+    "width": 1280,
+    "height": 960
+  },
+  "runs": [
+    {
+      "stage": "shadcn-solid",
+      "completedAt": "2026-10-30T05:59:25.199425Z",
+      "cases": 96,
+      "passed": 96
+    },
+    {
+      "stage": "shadcn-solid-interactions",
+      "completedAt": "2026-10-30T06:02:41.674630Z",
+      "cases": 10,
+      "passed": 10
+    }
+  ],
+  "rows": [
+    {
+      "id": "shadcn-solid/Accordion",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Is it accessible?",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Is it accessible?\nYes. It adheres to the WAI-ARIA design pattern.\nIs it styled?\nIs it animated?"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Alert",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Success! Your changes have been saved\nThis is an alert with icon, title and description."
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Alert Dialog",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Show Dialog",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Show Dialog\nAre you absolutely sure?\n\nThis action cannot be undone. This will permanently delete your account and remove your data from our servers.\n\n"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Badge",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Badge"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Breadcrumbs",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "More\nToggle menu",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Home\nMore\nToggle menu\nDocumentation\nThemes\nGitHub\nComponents\nBreadcrumb"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Button",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Button"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Button Group",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Archive\nReport\nSnooze"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Calendar",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "September 2026\nMon\nTue\nWed\nThu\nFri\nSat\nSun\n31\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n1\n2\n3\n4"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Card",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Meeting Notes\nTranscript from the meeting with the client.\n\nClient requested dashboard redesign with focus on mobile responsiveness.\n\nNew analytics wi"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Carousel",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "1\n2\n3\n4\n5"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Chart",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Desktop\n24828",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Bar Chart - Interactive\nShowing total visitors for the last 3 months\nDesktop\n24828\nMobile\n25010\nApr 1\nApr 11\nApr 21\nMay 1\nMay 11\nMay 21\nMay 31\nJun 10\n"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Checkbox",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "checkbox (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Accept terms and conditions\nBy clicking this checkbox, you agree to the terms and conditions."
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Collapsible",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "@RyanCarniato starred 2 repositories\nsolid-js\nsolid-start"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Combobox",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Choose the fruit you like the most.\nApple\nBanana\nBlueberry\nGrapes\nPineapple"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Command",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "No results found."
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Context Menu",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "context menu (right click)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Right click here\nBack\n⌘[\nForward\n⌘]\nReload\n⌘R\nMore Tools\nShow Bookmarks Bar\n⌘⇧B\nShow Full URLs\nPeople\nPedro Duarte\nColm Tuite"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Data Table",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Status",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Status\nView\n\tTask\t\nTitle\n\t\nStatus\n\t\n\n\t\nTASK-70\n\t\nfeature\nI'll generate the digital ADP program, that should matrix the CSS panel!\n\t\nIn-Progress\n\t\n\n\n\t\n"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Date Picker",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Select date",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Select date\nOctober 2026\nMon\nTue\nWed\nThu\nFri\nSat\nSun\n28\n29\n30\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n1"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Dialog",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Scrollable Content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Scrollable Content\nScrollable Content\n\nThis is a dialog with scrollable content.\n\nLorem Ipsum\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Drawer",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Scrollable Content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Scrollable Content\nMove Goal\n\nSet your daily activity goal.\n\nLorem Ipsum\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temp"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Dropdown Menu",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open\nBack\n⌘[\nForward\n⌘]\nReload\n⌘R\nMore Tools\nShow Bookmarks Bar\n⌘⇧B\nShow Full URLs\nPeople\nPedro Duarte\nColm Tuite"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/File Field",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Choose files!",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Drop your files here...\nChoose files!"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Hover Card",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "hover content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "@solid_js\n@solid_js\n\nSimple and performant reactivity for building user interfaces.\n\nJoined March 2021"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Kbd",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "⌘\n⇧\n⌥\n⌃\nCtrl\n+\nB"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Menubar",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "File",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "File\nEdit\nView\nProfiles\nNew Tab\n⌘T\nNew Window\n⌘N\nNew Incognito Window\nShare\nPrint...\n⌘P"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Navigation Menu",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Home",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Home\nDocumentation\nDocs\nshadcn-solid\nBeautifully designed components built with your choice of UI and CSS frameworks.\nIntroduction\nBeautifully designe"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Number Field",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Age"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/OTP Field",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1288,
+        "width": 1264,
+        "visibleText": "1"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Pagination",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "1",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "1\n2\n10"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Popover",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open popover",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open popover\nDimensions\n\nSet the dimensions for the layer.\n\nWidth\nMax. width\nHeight\nMax. height"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Progress",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Progress\n80%"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Radio Group",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "radio (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Favorite fruit\nApple\nOrange\nWatermelon"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Resizable",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "One\nTwo\nThree"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Search",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "No component found"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Segmented Control",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Favorite fruit\nApple\nOrange\nWatermelon"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Select",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Select a fruit",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Select a fruit\nApple\nBanana\nBlueberry\nGrapes\nPineapple"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Separator",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Radix Primitives\n\nAn open-source UI component library.\n\nBlog\nDocs\nSource"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Sidebar",
+      "theme": "light",
+      "errors": [
+        "Failed to set the 'cookie' property on 'Document': The document is sandboxed and lacks the 'allow-same-origin' flag."
+      ],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Failed to set the 'cookie' property on 'Document': The document is sandboxed and lacks the 'allow-same-origin' flag.\n\nApplication\nHome\nInbox\nCalendar\n"
+      },
+      "expectedError": "The opaque sandbox blocks the original preference cookie write.",
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Skeleton",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Slider",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "slider (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Sonner",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Show Toast",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Show Toast"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Switch",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "switch (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Airplane Mode"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Table",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "A list of your recent invoices.\nInvoice\tStatus\tMethod\tAmount\nINV001\tPaid\tCredit Card\t$250.00\nINV002\tPending\tPayPal\t$150.00\nINV003\tUnpaid\tBank Transfer"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Tabs",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Account",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Account\nPassword\nAccount\nMake changes to your account here. Click save when you're done.\nName\nUsername\nSave changes"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Text Field",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Toggle Button",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Toggle Group",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Tooltip",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "hover content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Hover\n\nAdd to library"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Accordion",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Is it accessible?",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Is it accessible?\nYes. It adheres to the WAI-ARIA design pattern.\nIs it styled?\nIs it animated?"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Alert",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Success! Your changes have been saved\nThis is an alert with icon, title and description."
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Alert Dialog",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Show Dialog",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Show Dialog\nAre you absolutely sure?\n\nThis action cannot be undone. This will permanently delete your account and remove your data from our servers.\n\n"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Badge",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Badge"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Breadcrumbs",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "More\nToggle menu",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Home\nMore\nToggle menu\nDocumentation\nThemes\nGitHub\nComponents\nBreadcrumb"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Button",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Button"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Button Group",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Archive\nReport\nSnooze"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Calendar",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "September 2026\nMon\nTue\nWed\nThu\nFri\nSat\nSun\n31\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n1\n2\n3\n4"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Card",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Meeting Notes\nTranscript from the meeting with the client.\n\nClient requested dashboard redesign with focus on mobile responsiveness.\n\nNew analytics wi"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Carousel",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "1\n2\n3\n4\n5"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Chart",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Desktop\n24828",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Bar Chart - Interactive\nShowing total visitors for the last 3 months\nDesktop\n24828\nMobile\n25010\nApr 1\nApr 11\nApr 21\nMay 1\nMay 11\nMay 21\nMay 31\nJun 10\n"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Checkbox",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "checkbox (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Accept terms and conditions\nBy clicking this checkbox, you agree to the terms and conditions."
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Collapsible",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "@RyanCarniato starred 2 repositories\nsolid-js\nsolid-start"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Combobox",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Choose the fruit you like the most.\nApple\nBanana\nBlueberry\nGrapes\nPineapple"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Command",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "No results found."
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Context Menu",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "context menu (right click)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Right click here\nBack\n⌘[\nForward\n⌘]\nReload\n⌘R\nMore Tools\nShow Bookmarks Bar\n⌘⇧B\nShow Full URLs\nPeople\nPedro Duarte\nColm Tuite"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Data Table",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Status",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Status\nView\n\tTask\t\nTitle\n\t\nStatus\n\t\n\n\t\nTASK-70\n\t\nfeature\nI'll generate the digital ADP program, that should matrix the CSS panel!\n\t\nIn-Progress\n\t\n\n\n\t\n"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Date Picker",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Select date",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Select date\nOctober 2026\nMon\nTue\nWed\nThu\nFri\nSat\nSun\n28\n29\n30\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n1"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Dialog",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Scrollable Content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Scrollable Content\nScrollable Content\n\nThis is a dialog with scrollable content.\n\nLorem Ipsum\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Drawer",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Scrollable Content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Scrollable Content\nMove Goal\n\nSet your daily activity goal.\n\nLorem Ipsum\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temp"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Dropdown Menu",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open\nBack\n⌘[\nForward\n⌘]\nReload\n⌘R\nMore Tools\nShow Bookmarks Bar\n⌘⇧B\nShow Full URLs\nPeople\nPedro Duarte\nColm Tuite"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/File Field",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Choose files!",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Drop your files here...\nChoose files!"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Hover Card",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "hover content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "@solid_js\n@solid_js\n\nSimple and performant reactivity for building user interfaces.\n\nJoined March 2021"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Kbd",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "⌘\n⇧\n⌥\n⌃\nCtrl\n+\nB"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Menubar",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "File",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "File\nEdit\nView\nProfiles\nNew Tab\n⌘T\nNew Window\n⌘N\nNew Incognito Window\nShare\nPrint...\n⌘P"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Navigation Menu",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Home",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Home\nDocumentation\nDocs\nshadcn-solid\nBeautifully designed components built with your choice of UI and CSS frameworks.\nIntroduction\nBeautifully designe"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Number Field",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Age"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/OTP Field",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1288,
+        "width": 1264,
+        "visibleText": "1"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Pagination",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "1",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "1\n2\n10"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Popover",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open popover",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open popover\nDimensions\n\nSet the dimensions for the layer.\n\nWidth\nMax. width\nHeight\nMax. height"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Progress",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Progress\n80%"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Radio Group",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "radio (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Favorite fruit\nApple\nOrange\nWatermelon"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Resizable",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "One\nTwo\nThree"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Search",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "No component found"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Segmented Control",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Favorite fruit\nApple\nOrange\nWatermelon"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Select",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Select a fruit",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Select a fruit\nApple\nBanana\nBlueberry\nGrapes\nPineapple"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Separator",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Radix Primitives\n\nAn open-source UI component library.\n\nBlog\nDocs\nSource"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Sidebar",
+      "theme": "dark",
+      "errors": [
+        "Failed to set the 'cookie' property on 'Document': The document is sandboxed and lacks the 'allow-same-origin' flag."
+      ],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Failed to set the 'cookie' property on 'Document': The document is sandboxed and lacks the 'allow-same-origin' flag.\n\nApplication\nHome\nInbox\nCalendar\n"
+      },
+      "expectedError": "The opaque sandbox blocks the original preference cookie write.",
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Skeleton",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Slider",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "slider (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Sonner",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Show Toast",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Show Toast"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Switch",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "switch (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Airplane Mode"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Table",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "A list of your recent invoices.\nInvoice\tStatus\tMethod\tAmount\nINV001\tPaid\tCredit Card\t$250.00\nINV002\tPending\tPayPal\t$150.00\nINV003\tUnpaid\tBank Transfer"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Tabs",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Account",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Account\nPassword\nAccount\nMake changes to your account here. Click save when you're done.\nName\nUsername\nSave changes"
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Text Field",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Toggle Button",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Toggle Group",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "shadcn-solid/Tooltip",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "hover content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Hover\n\nAdd to library"
+      },
+      "pass": true
+    }
+  ]
+}
