@@ -1,0 +1,272 @@
+{
+  "name": "rocksolidjs",
+  "private": false,
+  "version": "0.1.4",
+  "description": "A modern, accessible component library built with SolidJS and Tailwind CSS.",
+  "keywords": [
+    "solid",
+    "solidjs",
+    "ui",
+    "library",
+    "design-system",
+    "components",
+    "aria",
+    "tailwindcss",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "Darshan Sunil Rajadhyaksha",
+  "homepage": "https://rocksolidjs.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darshan-rajadhyaksha/rocksolid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/darshan-rajadhyaksha/rocksolid/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:dev": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "build": "npm run typecheck && vite build",
+    "typecheck": "tsc -p tsconfig.build.json --noEmit",
+    "version": "changeset version && node scripts/sync-lock-version.js",
+    "release": "npm run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^1.0.1",
+    "@changesets/cli": "^3.0.2",
+    "@solidjs/testing-library": "^0.8.10",
+    "@tailwindcss/vite": "^4.3.3",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/node": "^24.13.3",
+    "@vitest/coverage-v8": "^5.0.0",
+    "glob": "^13.0.6",
+    "jsdom": "^30.0.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.0",
+    "vite-plugin-dts": "^5.0.3",
+    "vite-plugin-solid": "^2.11.13",
+    "vitest": "^5.0.0"
+  },
+  "dependencies": {
+    "tailwind-variants": "^3.1.0",
+    "ts-deepmerge": "^8.0.0",
+    "valibot": "1.4.2"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.9.5",
+    "tailwindcss": "^4.1.4"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./index.css": "./dist/index.css",
+    "./Accordion": {
+      "import": "./dist/Accordion/Accordion.js",
+      "types": "./dist/Accordion/Accordion.d.ts"
+    },
+    "./AccordionSummary": {
+      "import": "./dist/AccordionSummary/AccordionSummary.js",
+      "types": "./dist/AccordionSummary/AccordionSummary.d.ts"
+    },
+    "./AccordionDetails": {
+      "import": "./dist/AccordionDetails/AccordionDetails.js",
+      "types": "./dist/AccordionDetails/AccordionDetails.d.ts"
+    },
+    "./Alert": {
+      "import": "./dist/Alert/Alert.js",
+      "types": "./dist/Alert/Alert.d.ts"
+    },
+    "./Avatar": {
+      "import": "./dist/Avatar/Avatar.js",
+      "types": "./dist/Avatar/Avatar.d.ts"
+    },
+    "./Badge": {
+      "import": "./dist/Badge/Badge.js",
+      "types": "./dist/Badge/Badge.d.ts"
+    },
+    "./Breadcrumbs": {
+      "import": "./dist/Breadcrumbs/Breadcrumbs.js",
+      "types": "./dist/Breadcrumbs/Breadcrumbs.d.ts"
+    },
+    "./Button": {
+      "import": "./dist/Button/Button.js",
+      "types": "./dist/Button/Button.d.ts"
+    },
+    "./ButtonGroup": {
+      "import": "./dist/ButtonGroup/ButtonGroup.js",
+      "types": "./dist/ButtonGroup/ButtonGroup.d.ts"
+    },
+    "./Card": {
+      "import": "./dist/Card/Card.js",
+      "types": "./dist/Card/Card.d.ts"
+    },
+    "./CardHeader": {
+      "import": "./dist/CardHeader/CardHeader.js",
+      "types": "./dist/CardHeader/CardHeader.d.ts"
+    },
+    "./CardTitle": {
+      "import": "./dist/CardTitle/CardTitle.js",
+      "types": "./dist/CardTitle/CardTitle.d.ts"
+    },
+    "./CardDescription": {
+      "import": "./dist/CardDescription/CardDescription.js",
+      "types": "./dist/CardDescription/CardDescription.d.ts"
+    },
+    "./CardContent": {
+      "import": "./dist/CardContent/CardContent.js",
+      "types": "./dist/CardContent/CardContent.d.ts"
+    },
+    "./CardFooter": {
+      "import": "./dist/CardFooter/CardFooter.js",
+      "types": "./dist/CardFooter/CardFooter.d.ts"
+    },
+    "./Checkbox": {
+      "import": "./dist/Checkbox/Checkbox.js",
+      "types": "./dist/Checkbox/Checkbox.d.ts"
+    },
+    "./Chip": {
+      "import": "./dist/Chip/Chip.js",
+      "types": "./dist/Chip/Chip.d.ts"
+    },
+    "./Dialog": {
+      "import": "./dist/Dialog/Dialog.js",
+      "types": "./dist/Dialog/Dialog.d.ts"
+    },
+    "./DialogActions": {
+      "import": "./dist/DialogActions/DialogActions.js",
+      "types": "./dist/DialogActions/DialogActions.d.ts"
+    },
+    "./DialogContent": {
+      "import": "./dist/DialogContent/DialogContent.js",
+      "types": "./dist/DialogContent/DialogContent.d.ts"
+    },
+    "./DialogTitle": {
+      "import": "./dist/DialogTitle/DialogTitle.js",
+      "types": "./dist/DialogTitle/DialogTitle.d.ts"
+    },
+    "./Divider": {
+      "import": "./dist/Divider/Divider.js",
+      "types": "./dist/Divider/Divider.d.ts"
+    },
+    "./IconButton": {
+      "import": "./dist/IconButton/IconButton.js",
+      "types": "./dist/IconButton/IconButton.d.ts"
+    },
+    "./Input": {
+      "import": "./dist/Input/Input.js",
+      "types": "./dist/Input/Input.d.ts"
+    },
+    "./Label": {
+      "import": "./dist/Label/Label.js",
+      "types": "./dist/Label/Label.d.ts"
+    },
+    "./Link": {
+      "import": "./dist/Link/Link.js",
+      "types": "./dist/Link/Link.d.ts"
+    },
+    "./Progress": {
+      "import": "./dist/Progress/Progress.js",
+      "types": "./dist/Progress/Progress.d.ts"
+    },
+    "./Radio": {
+      "import": "./dist/Radio/Radio.js",
+      "types": "./dist/Radio/Radio.d.ts"
+    },
+    "./RadioGroup": {
+      "import": "./dist/RadioGroup/RadioGroup.js",
+      "types": "./dist/RadioGroup/RadioGroup.d.ts"
+    },
+    "./Select": {
+      "import": "./dist/Select/Select.js",
+      "types": "./dist/Select/Select.d.ts"
+    },
+    "./Skeleton": {
+      "import": "./dist/Skeleton/Skeleton.js",
+      "types": "./dist/Skeleton/Skeleton.d.ts"
+    },
+    "./Spinner": {
+      "import": "./dist/Spinner/Spinner.js",
+      "types": "./dist/Spinner/Spinner.d.ts"
+    },
+    "./Switch": {
+      "import": "./dist/Switch/Switch.js",
+      "types": "./dist/Switch/Switch.d.ts"
+    },
+    "./Table": {
+      "import": "./dist/Table/Table.js",
+      "types": "./dist/Table/Table.d.ts"
+    },
+    "./TableHead": {
+      "import": "./dist/TableHead/TableHead.js",
+      "types": "./dist/TableHead/TableHead.d.ts"
+    },
+    "./TableBody": {
+      "import": "./dist/TableBody/TableBody.js",
+      "types": "./dist/TableBody/TableBody.d.ts"
+    },
+    "./TableFooter": {
+      "import": "./dist/TableFooter/TableFooter.js",
+      "types": "./dist/TableFooter/TableFooter.d.ts"
+    },
+    "./TableRow": {
+      "import": "./dist/TableRow/TableRow.js",
+      "types": "./dist/TableRow/TableRow.d.ts"
+    },
+    "./TableCell": {
+      "import": "./dist/TableCell/TableCell.js",
+      "types": "./dist/TableCell/TableCell.d.ts"
+    },
+    "./Tab": {
+      "import": "./dist/Tab/Tab.js",
+      "types": "./dist/Tab/Tab.d.ts"
+    },
+    "./Tabs": {
+      "import": "./dist/Tabs/Tabs.js",
+      "types": "./dist/Tabs/Tabs.d.ts"
+    },
+    "./TabsContext": {
+      "import": "./dist/TabsContext/TabsContext.js",
+      "types": "./dist/TabsContext/TabsContext.d.ts"
+    },
+    "./TabPanel": {
+      "import": "./dist/TabPanel/TabPanel.js",
+      "types": "./dist/TabPanel/TabPanel.d.ts"
+    },
+    "./Textarea": {
+      "import": "./dist/Textarea/Textarea.js",
+      "types": "./dist/Textarea/Textarea.d.ts"
+    },
+    "./ThemeProvider": {
+      "import": "./dist/ThemeProvider/ThemeProvider.js",
+      "types": "./dist/ThemeProvider/ThemeProvider.d.ts"
+    },
+    "./Typography": {
+      "import": "./dist/Typography/Typography.js",
+      "types": "./dist/Typography/Typography.d.ts"
+    },
+    "./styles": {
+      "import": "./dist/styles/index.js",
+      "types": "./dist/styles/index.d.ts"
+    },
+    "./styles/createTheme": {
+      "import": "./dist/styles/createTheme.js",
+      "types": "./dist/styles/createTheme.d.ts"
+    },
+    "./styles/useTheme": {
+      "import": "./dist/styles/useTheme.js",
+      "types": "./dist/styles/useTheme.d.ts"
+    }
+  }
+}

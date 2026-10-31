@@ -1,0 +1,5 @@
+{
+  "rocksolidjs": "upstream/src/components",
+  "@": "upstream/src",
+  "@/icons/download": "examples/items/DownloadIcon.tsx"
+}
