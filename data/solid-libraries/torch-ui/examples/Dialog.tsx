@@ -1,0 +1,12 @@
+import { render } from "solid-js/web";
+import { createSignal } from "solid-js";
+import { Dialog } from "@torch-ui/solid/overlays";
+import { Button } from "@torch-ui/solid/actions";
+function Example() {
+  const [open, setOpen] = createSignal(false);
+  return <><Button onClick={() => setOpen(true)}>Summon Familiar</Button>
+    <Dialog open={open()} onClose={() => setOpen(false)} header={<h3 class="text-lg font-semibold">Summon a Familiar</h3>}>
+      <p class="text-sm text-ink-600">Choose a creature to serve as your magical companion. Your familiar acts on your initiative each round.</p>
+    </Dialog></>;
+}
+export default function mount(target: HTMLElement) { return render(() => <Example />, target); }

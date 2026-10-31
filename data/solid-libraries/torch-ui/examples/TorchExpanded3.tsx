@@ -1,0 +1,22 @@
+import Mount0 from "./items/Navigation-Menu";
+import Mount1 from "./items/Mega-Menu";
+import Mount2 from "./items/Sidebar";
+import Mount3 from "./items/Dropdown-Menu";
+import Mount4 from "./items/Tabs";
+import Mount5 from "./items/Pagination";
+import Mount6 from "./items/View-Switcher";
+import Mount7 from "./items/Drawer";
+import Mount8 from "./items/Context-Menu";
+import Mount9 from "./items/Popover";
+import Mount10 from "./items/Hover-Card";
+import Mount11 from "./items/Tooltip";
+import Mount12 from "./items/Search-Palette";
+import Mount13 from "./items/Alert";
+import Mount14 from "./items/Alert-Dialog";
+import Mount15 from "./items/Banner";
+import Mount16 from "./items/Toast";
+import Mount17 from "./items/Progress";
+import Mount18 from "./items/Loading";
+import Mount19 from "./items/Skeleton";
+const examples = { "torch-ui/Navigation Menu": Mount0, "torch-ui/Mega Menu": Mount1, "torch-ui/Sidebar": Mount2, "torch-ui/Dropdown Menu": Mount3, "torch-ui/Tabs": Mount4, "torch-ui/Pagination": Mount5, "torch-ui/View Switcher": Mount6, "torch-ui/Drawer": Mount7, "torch-ui/Context Menu": Mount8, "torch-ui/Popover": Mount9, "torch-ui/Hover Card": Mount10, "torch-ui/Tooltip": Mount11, "torch-ui/Search Palette": Mount12, "torch-ui/Alert": Mount13, "torch-ui/Alert Dialog": Mount14, "torch-ui/Banner": Mount15, "torch-ui/Toast": Mount16, "torch-ui/Progress": Mount17, "torch-ui/Loading": Mount18, "torch-ui/Skeleton": Mount19 };
+export default function mount(target) { const selected = examples[PREVIEW_COMPONENT]; if (!selected) throw new Error("Unknown TorchUI example"); return selected(target); }

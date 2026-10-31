@@ -1,0 +1,23 @@
+import Mount0 from "./items/Password-Strength";
+import Mount1 from "./items/Image";
+import Mount2 from "./items/Video";
+import Mount3 from "./items/Avatar";
+import Mount4 from "./items/Persona";
+import Mount5 from "./items/Stat";
+import Mount6 from "./items/Tag";
+import Mount7 from "./items/Badge";
+import Mount8 from "./items/Color-Swatch";
+import Mount9 from "./items/Carousel";
+import Mount10 from "./items/Table";
+import Mount11 from "./items/Table-Panel";
+import Mount12 from "./items/Data-Table";
+import Mount13 from "./items/Timeline";
+import Mount14 from "./items/Tree-View";
+import Mount15 from "./items/Empty-State";
+import Mount16 from "./items/Kbd";
+import Mount17 from "./items/Board";
+import Mount18 from "./items/Bar-Chart";
+import Mount19 from "./items/Line-Chart";
+import Mount20 from "./items/Table-View";
+const examples = { "torch-ui/PasswordStrengthIndicator": Mount0, "torch-ui/Image": Mount1, "torch-ui/Video": Mount2, "torch-ui/Avatar": Mount3, "torch-ui/Persona": Mount4, "torch-ui/Stat": Mount5, "torch-ui/Tag": Mount6, "torch-ui/Badge": Mount7, "torch-ui/Color Swatch": Mount8, "torch-ui/Carousel": Mount9, "torch-ui/Table": Mount10, "torch-ui/Table Panel": Mount11, "torch-ui/Data Table": Mount12, "torch-ui/Timeline": Mount13, "torch-ui/TreeView": Mount14, "torch-ui/Empty State": Mount15, "torch-ui/Kbd": Mount16, "torch-ui/Board": Mount17, "torch-ui/Bar Chart": Mount18, "torch-ui/Line Chart": Mount19, "torch-ui/Table View": Mount20 };
+export default function mount(target) { const selected = examples[PREVIEW_COMPONENT]; if (!selected) throw new Error("Unknown TorchUI example"); return selected(target); }
