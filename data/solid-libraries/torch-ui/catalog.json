@@ -1,0 +1,1373 @@
+{
+  "library": {
+    "name": "TorchUI",
+    "slug": "torch-ui",
+    "description": "Styled SolidJS components built on Kobalte with Tailwind CSS themes, light and dark modes.",
+    "url": "https://torch-ui.dev/",
+    "category": "Component Library",
+    "stacks": [
+      "SolidJS",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "useCases": [
+      "Dashboards",
+      "Accessibility-first"
+    ],
+    "tags": [
+      "kobalte",
+      "themeable"
+    ],
+    "addedAt": "2026-10-30T00:34:31+05:30"
+  },
+  "details": {
+    "docsUrl": "https://torch-ui.dev/installation",
+    "repoUrl": "https://github.com/sean-dowd-sr/torch-ui",
+    "pricing": {
+      "model": "free",
+      "summary": "The component source is free under the MIT license, with third-party notices.",
+      "license": "MIT",
+      "source": "https://github.com/sean-dowd-sr/torch-ui/blob/2bd057316175457ff1e5103b961867cf388bf73f/LICENSE"
+    }
+  },
+  "components": [
+    {
+      "name": "Button",
+      "url": "https://torch-ui.dev/actions/button",
+      "kind": "full-pattern",
+      "summary": "A themed button or toggle button with variants, sizes, and pressed state.",
+      "concept": "button",
+      "verifiedAt": "2026-10-29T19:04:31Z",
+      "builtOn": "@kobalte/core",
+      "dependencies": [
+        "@torch-ui/solid",
+        "@kobalte/core",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Dialog",
+      "url": "https://torch-ui.dev/overlays/dialog",
+      "kind": "full-pattern",
+      "summary": "A controlled modal overlay with header, footer, close controls, and transitions.",
+      "concept": "dialog",
+      "verifiedAt": "2026-10-29T19:04:31Z",
+      "builtOn": "@kobalte/core",
+      "dependencies": [
+        "@torch-ui/solid",
+        "@kobalte/core",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Accordion",
+      "url": "https://torch-ui.dev/layout/accordion",
+      "kind": "full-pattern",
+      "summary": "Styled Kobalte accordion items with triggers and animated content.",
+      "concept": "accordion",
+      "verifiedAt": "2026-10-29T19:04:31Z",
+      "builtOn": "@kobalte/core",
+      "dependencies": [
+        "@torch-ui/solid",
+        "@kobalte/core",
+        "solid-js",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Text",
+      "url": "https://torch-ui.dev/typography/text",
+      "kind": "full-pattern",
+      "summary": "Body text with size and style utilities.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Heading",
+      "url": "https://torch-ui.dev/typography/heading",
+      "kind": "full-pattern",
+      "summary": "Semantic heading elements across all six levels.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Block Quote",
+      "url": "https://torch-ui.dev/typography/block-quote",
+      "kind": "full-pattern",
+      "summary": "A styled block for quoted text with an optional citation.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Button Group",
+      "url": "https://torch-ui.dev/actions/button-group",
+      "kind": "full-pattern",
+      "summary": "Groups related buttons together, including split button support.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Copy",
+      "url": "https://torch-ui.dev/actions/copy",
+      "kind": "full-pattern",
+      "summary": "A trigger that copies text to the clipboard and confirms with feedback.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Link",
+      "url": "https://torch-ui.dev/actions/link",
+      "kind": "full-pattern",
+      "summary": "A styled anchor element with optional external link indicator.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Dark Mode Toggle",
+      "url": "https://torch-ui.dev/actions/dark-mode-toggle",
+      "kind": "full-pattern",
+      "summary": "A toggle switch for switching between light and dark theme.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Input",
+      "url": "https://torch-ui.dev/forms/input",
+      "kind": "full-pattern",
+      "summary": "A text field with support for labels, adornments, and compact mode.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Number Field",
+      "url": "https://torch-ui.dev/forms/number-field",
+      "kind": "full-pattern",
+      "summary": "A numeric input with step controls and min/max bounds.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Code Input",
+      "url": "https://torch-ui.dev/forms/code-input",
+      "kind": "full-pattern",
+      "summary": "A segmented input field for OTP or short code entry.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Text Area",
+      "url": "https://torch-ui.dev/forms/text-area",
+      "kind": "full-pattern",
+      "summary": "A multi-line text input with resize and character limit support.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Select",
+      "url": "https://torch-ui.dev/forms/select",
+      "kind": "full-pattern",
+      "summary": "A dropdown for selecting a single option from a list.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Multi Select",
+      "url": "https://torch-ui.dev/forms/multi-select",
+      "kind": "full-pattern",
+      "summary": "A dropdown for selecting multiple options, displayed as tags.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Autocomplete",
+      "url": "https://torch-ui.dev/forms/autocomplete",
+      "kind": "full-pattern",
+      "summary": "A text input that suggests matching options as you type.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "url": "https://torch-ui.dev/forms/checkbox",
+      "kind": "full-pattern",
+      "summary": "A binary input with support for indeterminate state.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Radio Group",
+      "url": "https://torch-ui.dev/forms/radio-group",
+      "kind": "full-pattern",
+      "summary": "A group of options where only one can be selected at a time.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Switch",
+      "url": "https://torch-ui.dev/forms/switch",
+      "kind": "full-pattern",
+      "summary": "A toggle for switching between on and off states.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Slider",
+      "url": "https://torch-ui.dev/forms/slider",
+      "kind": "full-pattern",
+      "summary": "A drag handle for selecting a single value or range.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Date Picker",
+      "url": "https://torch-ui.dev/forms/date-picker",
+      "kind": "full-pattern",
+      "summary": "A date input with a calendar popover for selection.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Date Range Picker",
+      "url": "https://torch-ui.dev/forms/date-range-picker",
+      "kind": "full-pattern",
+      "summary": "A dual calendar for selecting a start and end date range.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Time Picker",
+      "url": "https://torch-ui.dev/forms/time-picker",
+      "kind": "full-pattern",
+      "summary": "A time input with a popover for selecting hours and minutes.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "File Upload",
+      "url": "https://torch-ui.dev/forms/file-upload",
+      "kind": "full-pattern",
+      "summary": "A file input that supports drag-and-drop and shows a preview.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Field Picker",
+      "url": "https://torch-ui.dev/forms/field-picker",
+      "kind": "full-pattern",
+      "summary": "A picker for selecting fields or columns, used in filter builders.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Relative Date",
+      "url": "https://torch-ui.dev/forms/relative-date",
+      "kind": "full-pattern",
+      "summary": "A picker for selecting relative date ranges like \"last 7 days\".",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Container",
+      "url": "https://torch-ui.dev/layout/container",
+      "kind": "layout",
+      "summary": "A max-width wrapper for centering page content.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Grid",
+      "url": "https://torch-ui.dev/layout/grid",
+      "kind": "layout",
+      "summary": "A responsive column grid for laying out content.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Section",
+      "url": "https://torch-ui.dev/layout/section",
+      "kind": "layout",
+      "summary": "A page section with an optional title and description.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Card",
+      "url": "https://torch-ui.dev/layout/card",
+      "kind": "layout",
+      "summary": "A container for grouping related content with optional image and header.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Divider",
+      "url": "https://torch-ui.dev/layout/divider",
+      "kind": "layout",
+      "summary": "A horizontal or vertical line for separating content.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Page Heading",
+      "url": "https://torch-ui.dev/layout/page-heading",
+      "kind": "layout",
+      "summary": "A page-level title and description block used at the top of views.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Collapsible",
+      "url": "https://torch-ui.dev/layout/collapsible",
+      "kind": "layout",
+      "summary": "A single section that can be expanded or collapsed.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Code Block",
+      "url": "https://torch-ui.dev/layout/code-block",
+      "kind": "layout",
+      "summary": "A syntax-highlighted code block with a copy button.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Inline",
+      "url": "https://torch-ui.dev/layout/inline",
+      "kind": "layout",
+      "summary": "Inline is documented by TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Form",
+      "url": "https://torch-ui.dev/layout/form",
+      "kind": "layout",
+      "summary": "A form wrapper with legend and error summary support.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Wizard",
+      "url": "https://torch-ui.dev/layout/wizard",
+      "kind": "layout",
+      "summary": "A stepper component for guiding users through multi-step flows.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Prompt With Action",
+      "url": "https://torch-ui.dev/layout/prompt-with-action",
+      "kind": "layout",
+      "summary": "A card section with a headline and call-to-action button.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Breadcrumbs",
+      "url": "https://torch-ui.dev/navigation/breadcrumbs",
+      "kind": "full-pattern",
+      "summary": "A navigation trail showing the current page location.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Navigation Menu",
+      "url": "https://torch-ui.dev/navigation/navigation-menu",
+      "kind": "full-pattern",
+      "summary": "A horizontal nav bar with animated dropdown menus.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Sidebar",
+      "url": "https://torch-ui.dev/navigation/sidebar",
+      "kind": "full-pattern",
+      "summary": "A side navigation panel with groups and collapsible sections.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss",
+        "lucide-solid"
+      ]
+    },
+    {
+      "name": "Drawer",
+      "url": "https://torch-ui.dev/overlays/drawer",
+      "kind": "full-pattern",
+      "summary": "A panel that slides in from the edge of the screen.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Context Menu",
+      "url": "https://torch-ui.dev/overlays/context-menu",
+      "kind": "full-pattern",
+      "summary": "A menu that appears on right-click or long-press.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Popover",
+      "url": "https://torch-ui.dev/overlays/popover",
+      "kind": "full-pattern",
+      "summary": "A floating content panel anchored to a trigger element.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Hover Card",
+      "url": "https://torch-ui.dev/overlays/hover-card",
+      "kind": "full-pattern",
+      "summary": "A card that appears on hover, useful for previews and rich tooltips.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss",
+        "lucide-solid"
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "url": "https://torch-ui.dev/overlays/tooltip",
+      "kind": "full-pattern",
+      "summary": "A short hint that appears on hover or focus.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Search Palette",
+      "url": "https://torch-ui.dev/overlays/search-palette",
+      "kind": "full-pattern",
+      "summary": "A command palette for searching and navigating quickly.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Alert",
+      "url": "https://torch-ui.dev/feedback/alert",
+      "kind": "full-pattern",
+      "summary": "An inline message for communicating status or feedback.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Alert Dialog",
+      "url": "https://torch-ui.dev/feedback/alert-dialog",
+      "kind": "full-pattern",
+      "summary": "A confirmation dialog that requires an explicit user action.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Banner",
+      "url": "https://torch-ui.dev/feedback/banner",
+      "kind": "full-pattern",
+      "summary": "Banner is documented by TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Progress",
+      "url": "https://torch-ui.dev/feedback/progress",
+      "kind": "full-pattern",
+      "summary": "A bar showing the progress of a task or process.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Loading",
+      "url": "https://torch-ui.dev/feedback/loading",
+      "kind": "full-pattern",
+      "summary": "A spinner or overlay for indicating loading state.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "url": "https://torch-ui.dev/feedback/skeleton",
+      "kind": "full-pattern",
+      "summary": "A placeholder shape shown while content is loading.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "PasswordStrengthIndicator",
+      "url": "https://torch-ui.dev/feedback/password-strength",
+      "kind": "full-pattern",
+      "summary": "A visual indicator of password complexity and strength.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ],
+      "aliases": [
+        "Password Strength"
+      ]
+    },
+    {
+      "name": "Avatar",
+      "url": "https://torch-ui.dev/data-display/avatar",
+      "kind": "full-pattern",
+      "summary": "A user image or initials with optional badge and ring.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Persona",
+      "url": "https://torch-ui.dev/data-display/persona",
+      "kind": "full-pattern",
+      "summary": "An avatar paired with a name and optional metadata.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Stat",
+      "url": "https://torch-ui.dev/data-display/stat",
+      "kind": "full-pattern",
+      "summary": "A metric displayed with a label, value, and optional sparkline.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Tag",
+      "url": "https://torch-ui.dev/data-display/tag",
+      "kind": "full-pattern",
+      "summary": "A small label or chip for categories and metadata.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Badge",
+      "url": "https://torch-ui.dev/data-display/badge",
+      "kind": "full-pattern",
+      "summary": "A small count or status indicator attached to another element.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Color Swatch",
+      "url": "https://torch-ui.dev/data-display/color-swatch",
+      "kind": "full-pattern",
+      "summary": "A small color preview with optional selection state.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Table",
+      "url": "https://torch-ui.dev/data-display/table",
+      "kind": "full-pattern",
+      "summary": "Semantic table components for structured data.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Table Panel",
+      "url": "https://torch-ui.dev/data-display/table-panel",
+      "kind": "full-pattern",
+      "summary": "A table inside a panel with optional header actions.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ],
+      "variants": {
+        "Recipe composition": "https://torch-ui.dev/recipes/table-panel"
+      }
+    },
+    {
+      "name": "Timeline",
+      "url": "https://torch-ui.dev/data-display/timeline",
+      "kind": "full-pattern",
+      "summary": "A vertical list of time-ordered events with icons and metadata.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "TreeView",
+      "url": "https://torch-ui.dev/data-display/tree-view",
+      "kind": "full-pattern",
+      "summary": "A hierarchical list of expandable and selectable nodes.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ],
+      "aliases": [
+        "Tree View"
+      ]
+    },
+    {
+      "name": "Empty State",
+      "url": "https://torch-ui.dev/data-display/empty-state",
+      "kind": "full-pattern",
+      "summary": "A placeholder displayed when a list or view has no data.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Kbd",
+      "url": "https://torch-ui.dev/data-display/kbd",
+      "kind": "full-pattern",
+      "summary": "Keyboard key labels for documenting shortcuts and hotkeys.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Board",
+      "url": "https://torch-ui.dev/data-display/board",
+      "kind": "full-pattern",
+      "summary": "Board is documented by TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Bar Chart",
+      "url": "https://torch-ui.dev/charts/bar",
+      "kind": "full-pattern",
+      "summary": "A bar chart with stacked and horizontal variants.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss",
+        "chart.js"
+      ]
+    },
+    {
+      "name": "Line Chart",
+      "url": "https://torch-ui.dev/charts/line",
+      "kind": "full-pattern",
+      "summary": "A line or area chart with fill and stepped line support.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss",
+        "chart.js"
+      ]
+    },
+    {
+      "name": "Pie Chart",
+      "url": "https://torch-ui.dev/charts/pie",
+      "kind": "full-pattern",
+      "summary": "A pie or doughnut chart with multi-series support.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss",
+        "chart.js"
+      ]
+    },
+    {
+      "name": "Sparkline",
+      "url": "https://torch-ui.dev/charts/sparkline",
+      "kind": "full-pattern",
+      "summary": "A small inline line chart for showing trends at a glance.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss",
+        "chart.js"
+      ]
+    },
+    {
+      "name": "Other charts",
+      "url": "https://torch-ui.dev/charts/other",
+      "kind": "full-pattern",
+      "summary": "Radar, polar area, scatter, and bubble chart types.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss",
+        "chart.js"
+      ],
+      "aliases": [
+        "Other Charts"
+      ]
+    },
+    {
+      "name": "Login Form",
+      "url": "https://torch-ui.dev/recipes/login-form",
+      "kind": "full-pattern",
+      "summary": "Login Form is documented by TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Register Form",
+      "url": "https://torch-ui.dev/recipes/register-form",
+      "kind": "full-pattern",
+      "summary": "Register Form is documented by TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Settings Form",
+      "url": "https://torch-ui.dev/recipes/settings-form",
+      "kind": "full-pattern",
+      "summary": "Settings Form is documented by TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Form Dialog",
+      "url": "https://torch-ui.dev/recipes/form-dialog",
+      "kind": "full-pattern",
+      "summary": "Form Dialog is documented by TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Form Drawer",
+      "url": "https://torch-ui.dev/recipes/form-drawer",
+      "kind": "full-pattern",
+      "summary": "Form Drawer is documented by TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Wizard Flow",
+      "url": "https://torch-ui.dev/recipes/wizard-flow",
+      "kind": "full-pattern",
+      "summary": "Wizard Flow is documented by TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Stat Grid",
+      "url": "https://torch-ui.dev/recipes/stat-grid",
+      "kind": "full-pattern",
+      "summary": "Stat Grid is documented by TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss",
+        "lucide-solid"
+      ]
+    },
+    {
+      "name": "User Card",
+      "url": "https://torch-ui.dev/recipes/user-card",
+      "kind": "full-pattern",
+      "summary": "User Card is documented by TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss",
+        "lucide-solid"
+      ]
+    },
+    {
+      "name": "Code",
+      "url": "https://torch-ui.dev/typography/code",
+      "kind": "full-pattern",
+      "summary": "Inline code with optional syntax highlighting and a copy button.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Reorderable List",
+      "url": "https://torch-ui.dev/forms/reorderable-list",
+      "kind": "full-pattern",
+      "summary": "A list where items can be reordered by drag or keyboard.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Color Picker",
+      "url": "https://torch-ui.dev/forms/color-picker",
+      "kind": "full-pattern",
+      "summary": "A color input with a swatch preview and optional popover.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Mega Menu",
+      "url": "https://torch-ui.dev/navigation/mega-menu",
+      "kind": "full-pattern",
+      "summary": "A wide multi-column dropdown navigation panel.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss",
+        "lucide-solid"
+      ]
+    },
+    {
+      "name": "Dropdown Menu",
+      "url": "https://torch-ui.dev/navigation/dropdown-menu",
+      "kind": "full-pattern",
+      "summary": "A button that opens a menu of selectable items.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Tabs",
+      "url": "https://torch-ui.dev/navigation/tabs",
+      "kind": "full-pattern",
+      "summary": "Tabbed navigation for switching between content panels.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Pagination",
+      "url": "https://torch-ui.dev/navigation/pagination",
+      "kind": "full-pattern",
+      "summary": "Controls for navigating between pages of content.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "View Switcher",
+      "url": "https://torch-ui.dev/navigation/view-switcher",
+      "kind": "full-pattern",
+      "summary": "A control for toggling between grid, list, and other view layouts.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Toast",
+      "url": "https://torch-ui.dev/feedback/toast",
+      "kind": "full-pattern",
+      "summary": "A temporary notification that appears and dismisses automatically.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Image",
+      "url": "https://torch-ui.dev/data-display/image",
+      "kind": "full-pattern",
+      "summary": "An image with loading skeleton, error fallback, and overlay support.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Video",
+      "url": "https://torch-ui.dev/data-display/video",
+      "kind": "full-pattern",
+      "summary": "A video player with aspect ratio, fallback, and autoplay support.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Carousel",
+      "url": "https://torch-ui.dev/data-display/carousel",
+      "kind": "full-pattern",
+      "summary": "A horizontally scrolling content area with navigation controls.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Data Table",
+      "url": "https://torch-ui.dev/data-display/data-table",
+      "kind": "full-pattern",
+      "summary": "Data Table is documented by TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Comment Thread",
+      "url": "https://torch-ui.dev/recipes/comment-thread",
+      "kind": "full-pattern",
+      "summary": "Comment Thread is documented by TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss",
+        "lucide-solid"
+      ]
+    },
+    {
+      "name": "Filter Builder",
+      "url": "https://torch-ui.dev/recipes/filter-builder",
+      "kind": "full-pattern",
+      "summary": "Filter Builder is documented by TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss",
+        "lucide-solid"
+      ]
+    },
+    {
+      "name": "View Customizer",
+      "url": "https://torch-ui.dev/recipes/view-customizer",
+      "kind": "full-pattern",
+      "summary": "View Customizer is documented by TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss",
+        "lucide-solid"
+      ]
+    },
+    {
+      "name": "Icons",
+      "url": "https://torch-ui.dev/typography/icons",
+      "kind": "full-pattern",
+      "summary": "Lucide icons sized and styled for use within TorchUI.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Table View",
+      "url": "https://torch-ui.dev/data-display/table-view",
+      "kind": "full-pattern",
+      "summary": "Manages multiple saved table views, filters, and column customization; the documented wrapper is not yet available.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@torch-ui/solid",
+        "solid-js",
+        "@kobalte/core",
+        "tailwindcss"
+      ]
+    }
+  ],
+  "compatibility": [
+    {
+      "subject": "solid-js",
+      "constraint": "^1.9.0; preview pinned to 1.9.11",
+      "status": "supported",
+      "evidence": "https://github.com/sean-dowd-sr/torch-ui/blob/2bd057316175457ff1e5103b961867cf388bf73f/package.json"
+    },
+    {
+      "subject": "@kobalte/core",
+      "constraint": ">=0.13.11; preview pinned to 0.13.11",
+      "status": "supported",
+      "evidence": "https://github.com/sean-dowd-sr/torch-ui/blob/2bd057316175457ff1e5103b961867cf388bf73f/package.json"
+    },
+    {
+      "subject": "tailwindcss",
+      "constraint": "^4.0.0; preview compiled with 4.2.1",
+      "status": "supported",
+      "evidence": "https://github.com/sean-dowd-sr/torch-ui/blob/2bd057316175457ff1e5103b961867cf388bf73f/package.json"
+    }
+  ]
+}

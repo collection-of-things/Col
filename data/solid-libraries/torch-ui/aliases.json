@@ -1,0 +1,13 @@
+{
+  "@torch-ui/solid/actions": "upstream/src/components/actions/index.tsx",
+  "@torch-ui/solid/overlays": "upstream/src/components/overlays/index.tsx",
+  "@torch-ui/solid/layout": "upstream/src/components/layout/index.tsx",
+  "@torch-ui/solid/charts": "upstream/src/components/charts/index.tsx",
+  "@torch-ui/solid/data-display": "upstream/src/components/data-display/index.tsx",
+  "@torch-ui/solid/feedback": "upstream/src/components/feedback/index.tsx",
+  "@torch-ui/solid/forms": "upstream/src/components/forms/index.tsx",
+  "@torch-ui/solid/navigation": "upstream/src/components/navigation/index.tsx",
+  "@torch-ui/solid/typography": "upstream/src/components/typography/index.tsx",
+  "@torch-ui/solid/icons": "upstream/src/icons/index.tsx",
+  "@torch-ui/solid": "upstream/src/index.tsx"
+}

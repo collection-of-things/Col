@@ -1,0 +1,1449 @@
+{
+  "Button": {
+    "codeIntegrity": "e3b84ccdb8f4e0fa0cbdeda8584ebed104cb59eb1feec9c21cd37d8d2771bffb",
+    "cssIntegrity": "a691edb1a85d164e863786e8911d295518debe4f139abd0aaabf1fb64b46ea5f",
+    "lockIntegrity": "7a04320f9dab5fcee4b5740127a8189a4af8b1454bff3aad3f147f9caa29a2fb",
+    "styleInputs": [
+      {
+        "path": "node_modules/tailwindcss/index.css",
+        "sha256": "415a5f01208fe877d36ee8421b2135a766f258374f817a8a0a41c478c4009391"
+      },
+      {
+        "path": "node_modules/tailwindcss/preflight.css",
+        "sha256": "fa2d5ae43ae561061b7ce348b89636dbdc6cd71ab5992d4e1cdd046d0b4f28f9"
+      },
+      {
+        "path": "node_modules/tailwindcss/theme.css",
+        "sha256": "ce91efc0ca2e741e56fe263662e5282dc0a16f19a8647f0c38b60fcc4e2119b1"
+      },
+      {
+        "path": "node_modules/tailwindcss/utilities.css",
+        "sha256": "0e5844ec75de2fb4a76097b26bb624bf8f9d9cf59f6d947855b743dd25f920fb"
+      },
+      {
+        "path": "node_modules/tailwindcss/LICENSE",
+        "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+      },
+      {
+        "path": "upstream/styles/theme.css",
+        "sha256": "2d9df6d356796c04cfaea0e830daf2c6b4d9ee6595369a072afaaad73a4e03f3"
+      },
+      {
+        "path": "docs-context.css",
+        "sha256": "cc1a2ad120f237ddeacefb2a856dcbc11ef2be328858d9133674a062cc90b817"
+      },
+      {
+        "path": "upstream/docs/fonts/inter-latin.woff2",
+        "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62"
+      }
+    ],
+    "inputs": [
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/solid-js/dist/solid.js",
+        "sha256": "60df90c66eaedbd15de57670efc0d07e4572f21db8ec58b64e9ad901fd6ac244"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/solid-js/web/dist/web.js",
+        "sha256": "e7493ea760279b2aa51b310c5f39b374853adaf41973f4f67ae90d8375997f68"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/utils/dist/types.js",
+        "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/utils/dist/index.js",
+        "sha256": "e899c544004dc1eea92cdfbd35b073e02f57eed58f300a1c8b3e70e6668d974b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/eventListener.js",
+        "sha256": "2178d7598aa696e362edc807b882f0b999acca901dc27871888a94dce932ccb6"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/eventListenerMap.js",
+        "sha256": "ee9eedad2aa14629ec2af22ee8dd0224374979e6cec21651858927b2e94ee1a9"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/components.js",
+        "sha256": "a409d7cace7ab2cdf47a26d7dd7b96de8c288f1708af3ecb0965bf6b83b630be"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/eventListenerStack.js",
+        "sha256": "04b9101b74e798fd5c80bed08191ed0d680c17a97ef287d8bde705f42ff72cca"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/callbackWrappers.js",
+        "sha256": "cc49777688ec8041ba122918e1e2930051d4eae51ae0ab95efd190f40987be88"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/types.js",
+        "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/index.js",
+        "sha256": "372ce86d011a31bd610d3f0db39e6af69c6d1b7ff9f7f167c1051fbc3f1df63c"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/keyed/dist/index.js",
+        "sha256": "91464fbcfb2b60d2026323438da21ab74bc9756dedcc314e8f35b05895f341b7"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/trigger/dist/index.js",
+        "sha256": "c909d51320d89b46399ca7337d8acf27892a00cf61ab8f503182149a9e91ea5d"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/map/dist/index.js",
+        "sha256": "f27e645966e6765ad6b01a9078f22523608ec924869e5b0f65b5e83db51ae053"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/static-store/dist/index.js",
+        "sha256": "f1912ffa021157039c9c6dca297af04bc3f50c879c7363ed4e7f7ec2c87d4d04"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/rootless/dist/index.js",
+        "sha256": "0b7d93cfb6e96d7878b49ec28816d50216274e5e486b4171bb64c8c4bc36767f"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/media/dist/index.js",
+        "sha256": "2672366f1950bb450590128c5eed55b4f291db23c187cb536f86acb0cfd31ef7"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/props/dist/propTraps.js",
+        "sha256": "0fad53421b9e54c04c95de75a0fd214d89a28d6fb8c88c3d77560dd4de105293"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/props/dist/filterProps.js",
+        "sha256": "951617863a74789c27a211dfb11a14734d01e1a358d9d067f691cbde4c9aea9a"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/props/dist/combineProps.js",
+        "sha256": "113da1b26cdf9ab2fcd82bea8e4a3461eca560c1e7beafb38db0382126772b1c"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/props/dist/index.js",
+        "sha256": "d989aad8a152d55519c725f56f8ca8a0aeccda07d4f2dcefe191f020cef381d4"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/refs/dist/index.js",
+        "sha256": "02dd19d96d7c96f8f798fd7a8883204837a64cab674be5a8c0088d70ea76921a"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/utils/dist/index.js",
+        "sha256": "2117628a30cfb91851cf8751e3a35147776e3671eee52bd790dc74607d5a3eb8"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/ET5T45DO.js",
+        "sha256": "a8e890ea871a8626f68419b0e5d5387481bd95d1c35ecab86850a360f5f09991"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/6Y7B2NEO.js",
+        "sha256": "a0c728a93cb18ae4ef2f1ec65b482401564b6ba096fa281b922125a7a4949dfc"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/5ZKAE4VZ.js",
+        "sha256": "864bcd72136941db10f94b91654f2beab7c9a9e7276815576eaf02b3cc5470ac"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/7OVKXYPU.js",
+        "sha256": "81dcc91eb3d9f0c3ac2e8afe84c6b70a6c22729497cfdb90108c21b84ba61b35"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/button/index.js",
+        "sha256": "7fe5c249fe86a1858cabf838ce9542d010474bb4fb17db8b7de7f30efe9fe575"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/BLN63FDC.js",
+        "sha256": "2c5cae597116fbb5855428bd0b21775f76711a2ada6a1f64780426bda7facdf8"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/YGDQXQ2B.js",
+        "sha256": "a0ee4ae3b9de470c43ea8656c23a013809a3cfdf985155f937efdcd817216476"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/53Y5XP3B.js",
+        "sha256": "272d749ba8a27db7d7a87f7535cd87d057e173b647f8c8fe098778cc8e080ddb"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/toggle-button/index.js",
+        "sha256": "6b49da7670421eb2067dba3e93249c132f1ebccfb939d02ad8346b930ca23b23"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/clsx/dist/clsx.mjs",
+        "sha256": "d949e5cdbfebc76a6642b1901095e900fc3f2262d8dc0373aa44850a9bc75522"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/tailwind-merge/dist/bundle-mjs.mjs",
+        "sha256": "2645348938bcfe3e52ff61cfac8adf4cccad5451f7b1279d0f2eac590646baba"
+      },
+      {
+        "path": "upstream/src/utilities/classNames.ts",
+        "sha256": "a0d047a6e6341282bb1abdc14bb205665734f4ccb6511eb793c97768b1088d69"
+      },
+      {
+        "path": "upstream/src/types/component-size.ts",
+        "sha256": "4a73d2a8c58b12fce3a594789e7bbd8363f627995c2f7c8df2984e232f665d3a"
+      },
+      {
+        "path": "upstream/src/utilities/componentSizeContext.ts",
+        "sha256": "37735ff8c40654e03512cc332de003b19c8500c8d42fc5b31d7072ca3871883e"
+      },
+      {
+        "path": "upstream/src/icons/icons.tsx",
+        "sha256": "2881e4f7bd9266ad3d530fb84b15c843ce3d6d186c8b9fb8dea45e7bd9ecf7d3"
+      },
+      {
+        "path": "upstream/src/icons/index.tsx",
+        "sha256": "90cebcf75b6ca55de4e3da831d5c26432ee91099221ef11a4fe0f210e533d407"
+      },
+      {
+        "path": "upstream/src/components/actions/Button.tsx",
+        "sha256": "b73c39abecca08c601feb3b8dcc8ce3ba001ff7e5bd315c84fad7c612389a38c"
+      },
+      {
+        "path": "examples/Button.tsx",
+        "sha256": "9d4e0d9abf7ffeb3e31c612dc83d5fa039b12e8d0bf8724286e6929b420fe5eb"
+      }
+    ],
+    "packages": {
+      "node_modules/solid-js": {
+        "version": "1.9.11",
+        "resolved": "https://registry.npmjs.org/solid-js/-/solid-js-1.9.11.tgz",
+        "integrity": "sha512-WEJtcc5mkh/BnHA6Yrg4whlF8g6QwpmXXRg4P2ztPmcKeHHlH4+djYecBLhSpecZY2RRECXYUwIc/C2r3yzQ4Q==",
+        "license": "MIT",
+        "dependencies": {
+          "csstype": "^3.1.0",
+          "seroval": "~1.5.0",
+          "seroval-plugins": "~1.5.0"
+        }
+      },
+      "node_modules/@solid-primitives/utils": {
+        "version": "6.4.1",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/utils/-/utils-6.4.1.tgz",
+        "integrity": "sha512-ISSB5QX1qP2ynrheIpYwc4oKR5Ny4siNuUyf1qZniy+Il+p/PtDB0QK1Dnle8noiHpwRD3gpPdubOC3qI/Zamg==",
+        "license": "MIT",
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/event-listener": {
+        "version": "2.4.6",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/event-listener/-/event-listener-2.4.6.tgz",
+        "integrity": "sha512-5I0YJcTVYIWoMmgBSROBZGcz+ymhew/pGTg2dHW74BUjFKsV8Li4bOZYl0YAGP4mHw5o4UBd9/BEesqBci3wxw==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/keyed": {
+        "version": "1.5.3",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/keyed/-/keyed-1.5.3.tgz",
+        "integrity": "sha512-zNadtyYBhJSOjXtogkGHmRxjGdz9KHc8sGGVAGlUABkE8BED2tbIZoxkwSqzOwde8OcUEH0bb5DLZUWIMvyBSA==",
+        "license": "MIT",
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/trigger": {
+        "version": "1.2.4",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/trigger/-/trigger-1.2.4.tgz",
+        "integrity": "sha512-Ju0e+ZOD7hpOp7nptJimvDSZHWFvIvF9iBWMvuwt30smX7c5wmB8Kmc0AdDuv0wOTi06PQ1J5IrP1WJbH2yUBQ==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/map": {
+        "version": "0.4.13",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/map/-/map-0.4.13.tgz",
+        "integrity": "sha512-B1zyFbsiTQvqPr+cuPCXO72sRuczG9Swncqk5P74NCGw1VE8qa/Ry9GlfI1e/VdeQYHjan+XkbE3rO2GW/qKew==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/trigger": "^1.1.0"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/static-store": {
+        "version": "0.1.4",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/static-store/-/static-store-0.1.4.tgz",
+        "integrity": "sha512-LgtVaVBtB7EbmS4+M0b8xY5Iq6pUWXBsIC4VgtrFKDGDdyCaDt88sHk0fUlx1Enxm/XZnZyLXJABRoa39RjJqA==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/rootless": {
+        "version": "1.5.4",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/rootless/-/rootless-1.5.4.tgz",
+        "integrity": "sha512-TOIZa1VUfVJ+9nkCcRajw3U4t9vBOP1HxX1WHNTbXq32mXwlqTvUnC4CRIilohcryBkT9u2ZkhUDSHRTaGp55g==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/media": {
+        "version": "2.3.6",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/media/-/media-2.3.6.tgz",
+        "integrity": "sha512-pk49gPOq/UMRUJ+pTSrOfBiR8xJjRYHXIf1iR/jSnyQ/KroU+ZXhkZzavC7hvfp2vJeOTW5k2/HN0r3Q1VJ7Pw==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/event-listener": "^2.4.6",
+          "@solid-primitives/rootless": "^1.5.4",
+          "@solid-primitives/static-store": "^0.1.4",
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/props": {
+        "version": "3.2.4",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/props/-/props-3.2.4.tgz",
+        "integrity": "sha512-MXXdvi2TSB6d+0N6ueA/HP1j/Kh9SEc4WdF1ZDMLwPagxW6pIHHSS9xbRO0RjqSVpNP4j0nxCWT1hx3CkJNhNA==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/refs": {
+        "version": "1.1.4",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/refs/-/refs-1.1.4.tgz",
+        "integrity": "sha512-bLjwIs6ZPu8NQnuw04sU3Zc8qKSpbc0umUU/O4SHf6oWOdO4+dHY8vb1T7C4b/Tg103+9WGr6sEE0+NFlbaB/A==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@kobalte/utils": {
+        "version": "0.9.2",
+        "resolved": "https://registry.npmjs.org/@kobalte/utils/-/utils-0.9.2.tgz",
+        "integrity": "sha512-jRVXr+zsVHxzDXRoh+CDeXzvCsFJ6uiHhqqNQ26Cw9ZsZ3D6nqPUBt1gGVtj2ZPmRL3a9Uk1v8D1aJ8/I12Dow==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/event-listener": "^2.2.14",
+          "@solid-primitives/keyed": "^1.2.0",
+          "@solid-primitives/map": "^0.4.7",
+          "@solid-primitives/media": "^2.2.4",
+          "@solid-primitives/props": "^3.1.8",
+          "@solid-primitives/refs": "^1.0.5",
+          "@solid-primitives/utils": "^6.2.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.8.8"
+        }
+      },
+      "node_modules/@kobalte/core": {
+        "version": "0.13.11",
+        "resolved": "https://registry.npmjs.org/@kobalte/core/-/core-0.13.11.tgz",
+        "integrity": "sha512-hK7TYpdib/XDb/r/4XDBFaO9O+3ZHz4ZWryV4/3BfES+tSQVgg2IJupDnztKXB0BqbSRy/aWlHKw1SPtNPYCFQ==",
+        "license": "MIT",
+        "dependencies": {
+          "@floating-ui/dom": "^1.5.1",
+          "@internationalized/date": "^3.4.0",
+          "@internationalized/number": "^3.2.1",
+          "@kobalte/utils": "^0.9.1",
+          "@solid-primitives/props": "^3.1.8",
+          "@solid-primitives/resize-observer": "^2.0.26",
+          "solid-presence": "^0.1.8",
+          "solid-prevent-scroll": "^0.1.4"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.8.15"
+        }
+      },
+      "node_modules/clsx": {
+        "version": "2.1.1",
+        "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+        "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+        "license": "MIT",
+        "engines": {
+          "node": ">=6"
+        }
+      },
+      "node_modules/tailwind-merge": {
+        "version": "3.5.0",
+        "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.5.0.tgz",
+        "integrity": "sha512-I8K9wewnVDkL1NTGoqWmVEIlUcB9gFriAEkXkfCjX5ib8ezGxtR3xD7iZIxrfArjEsH7F1CHD4RFUtxefdqV/A==",
+        "license": "MIT",
+        "funding": {
+          "type": "github",
+          "url": "https://github.com/sponsors/dcastil"
+        }
+      }
+    }
+  },
+  "Dialog": {
+    "codeIntegrity": "a73924af3177102dc4adf3aeb1da4a877dca1c02c9f9ccd1f614307c3fc84683",
+    "cssIntegrity": "a691edb1a85d164e863786e8911d295518debe4f139abd0aaabf1fb64b46ea5f",
+    "lockIntegrity": "7a04320f9dab5fcee4b5740127a8189a4af8b1454bff3aad3f147f9caa29a2fb",
+    "styleInputs": [
+      {
+        "path": "node_modules/tailwindcss/index.css",
+        "sha256": "415a5f01208fe877d36ee8421b2135a766f258374f817a8a0a41c478c4009391"
+      },
+      {
+        "path": "node_modules/tailwindcss/preflight.css",
+        "sha256": "fa2d5ae43ae561061b7ce348b89636dbdc6cd71ab5992d4e1cdd046d0b4f28f9"
+      },
+      {
+        "path": "node_modules/tailwindcss/theme.css",
+        "sha256": "ce91efc0ca2e741e56fe263662e5282dc0a16f19a8647f0c38b60fcc4e2119b1"
+      },
+      {
+        "path": "node_modules/tailwindcss/utilities.css",
+        "sha256": "0e5844ec75de2fb4a76097b26bb624bf8f9d9cf59f6d947855b743dd25f920fb"
+      },
+      {
+        "path": "node_modules/tailwindcss/LICENSE",
+        "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+      },
+      {
+        "path": "upstream/styles/theme.css",
+        "sha256": "2d9df6d356796c04cfaea0e830daf2c6b4d9ee6595369a072afaaad73a4e03f3"
+      },
+      {
+        "path": "docs-context.css",
+        "sha256": "cc1a2ad120f237ddeacefb2a856dcbc11ef2be328858d9133674a062cc90b817"
+      },
+      {
+        "path": "upstream/docs/fonts/inter-latin.woff2",
+        "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62"
+      }
+    ],
+    "inputs": [
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/solid-js/dist/solid.js",
+        "sha256": "60df90c66eaedbd15de57670efc0d07e4572f21db8ec58b64e9ad901fd6ac244"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/solid-js/web/dist/web.js",
+        "sha256": "e7493ea760279b2aa51b310c5f39b374853adaf41973f4f67ae90d8375997f68"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/utils/dist/types.js",
+        "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/utils/dist/index.js",
+        "sha256": "e899c544004dc1eea92cdfbd35b073e02f57eed58f300a1c8b3e70e6668d974b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/eventListener.js",
+        "sha256": "2178d7598aa696e362edc807b882f0b999acca901dc27871888a94dce932ccb6"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/eventListenerMap.js",
+        "sha256": "ee9eedad2aa14629ec2af22ee8dd0224374979e6cec21651858927b2e94ee1a9"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/components.js",
+        "sha256": "a409d7cace7ab2cdf47a26d7dd7b96de8c288f1708af3ecb0965bf6b83b630be"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/eventListenerStack.js",
+        "sha256": "04b9101b74e798fd5c80bed08191ed0d680c17a97ef287d8bde705f42ff72cca"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/callbackWrappers.js",
+        "sha256": "cc49777688ec8041ba122918e1e2930051d4eae51ae0ab95efd190f40987be88"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/types.js",
+        "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/index.js",
+        "sha256": "372ce86d011a31bd610d3f0db39e6af69c6d1b7ff9f7f167c1051fbc3f1df63c"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/keyed/dist/index.js",
+        "sha256": "91464fbcfb2b60d2026323438da21ab74bc9756dedcc314e8f35b05895f341b7"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/trigger/dist/index.js",
+        "sha256": "c909d51320d89b46399ca7337d8acf27892a00cf61ab8f503182149a9e91ea5d"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/map/dist/index.js",
+        "sha256": "f27e645966e6765ad6b01a9078f22523608ec924869e5b0f65b5e83db51ae053"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/static-store/dist/index.js",
+        "sha256": "f1912ffa021157039c9c6dca297af04bc3f50c879c7363ed4e7f7ec2c87d4d04"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/rootless/dist/index.js",
+        "sha256": "0b7d93cfb6e96d7878b49ec28816d50216274e5e486b4171bb64c8c4bc36767f"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/media/dist/index.js",
+        "sha256": "2672366f1950bb450590128c5eed55b4f291db23c187cb536f86acb0cfd31ef7"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/props/dist/propTraps.js",
+        "sha256": "0fad53421b9e54c04c95de75a0fd214d89a28d6fb8c88c3d77560dd4de105293"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/props/dist/filterProps.js",
+        "sha256": "951617863a74789c27a211dfb11a14734d01e1a358d9d067f691cbde4c9aea9a"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/props/dist/combineProps.js",
+        "sha256": "113da1b26cdf9ab2fcd82bea8e4a3461eca560c1e7beafb38db0382126772b1c"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/props/dist/index.js",
+        "sha256": "d989aad8a152d55519c725f56f8ca8a0aeccda07d4f2dcefe191f020cef381d4"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/refs/dist/index.js",
+        "sha256": "02dd19d96d7c96f8f798fd7a8883204837a64cab674be5a8c0088d70ea76921a"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/utils/dist/index.js",
+        "sha256": "2117628a30cfb91851cf8751e3a35147776e3671eee52bd790dc74607d5a3eb8"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/ZKYDDHM6.js",
+        "sha256": "d4c8793e3ae46d61bcc69be22683bebcbfc01c6392b6b5f257bb2f46652c5e1f"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/ISKHZMHS.js",
+        "sha256": "27732845991c1494b1fc34ebeb7046c0df06feed0d5dfa7e2ba4f59b725577b3"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/YA7DCYMB.js",
+        "sha256": "f256ff23fc5613c43cdc08e967eeec6d77750e475f6d7e2514b5a14d3091e913"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/455ZADO2.js",
+        "sha256": "42a50daefb806833c2378405c4eb5cd0254511c6ecde9387d8683d1fcce983f4"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/KKN23NY7.js",
+        "sha256": "f0d0d7e6adfc2c2521e67a6142bb0fd67790227f978987589775d9389b335b40"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/QEMPLYZX.js",
+        "sha256": "43cb1c3d7d1de94d50c6070517871386102b4beddddd0ff48d9d39db8382ef44"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/6Y7B2NEO.js",
+        "sha256": "a0c728a93cb18ae4ef2f1ec65b482401564b6ba096fa281b922125a7a4949dfc"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/BASJUNIE.js",
+        "sha256": "45d95c466c4d312e1a4326a1c70745d4b6c75f03c15731d80bb8a107fd6abe6c"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/BLN63FDC.js",
+        "sha256": "2c5cae597116fbb5855428bd0b21775f76711a2ada6a1f64780426bda7facdf8"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/7LCANGHD.js",
+        "sha256": "3cf855d58ba603e3a2f575d883a3d05e388c62e35712ed01a12342a0a1cea6d0"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/ET5T45DO.js",
+        "sha256": "a8e890ea871a8626f68419b0e5d5387481bd95d1c35ecab86850a360f5f09991"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/5ZKAE4VZ.js",
+        "sha256": "864bcd72136941db10f94b91654f2beab7c9a9e7276815576eaf02b3cc5470ac"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/7OVKXYPU.js",
+        "sha256": "81dcc91eb3d9f0c3ac2e8afe84c6b70a6c22729497cfdb90108c21b84ba61b35"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/E4R2EMM4.js",
+        "sha256": "8812c4067d5373b4248cfcfd2690750ba177d33b9cb7815257948b0da46aefd7"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@corvu/utils/dist/chunk/ZV6G25TT.js",
+        "sha256": "d37aaf1e9cf1c53a9b40b00f9ca1006a19a2184e282fc0b830c57e74b16f296f"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@corvu/utils/dist/reactivity/index.js",
+        "sha256": "d4fd9091d244ae263312f18a15fd4d49bc5346483faeb5a6ef00bd88fce4e542"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@corvu/utils/dist/chunk/SEUPK2SH.js",
+        "sha256": "316b9013e2c0379c67752cea04e0399a30de5b65f91f32bd576614b32fdb50e9"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@corvu/utils/dist/dom/index.js",
+        "sha256": "df7f842b5c2765cd441eeafe9235154c76bf0ec3191cf8375f5f8c403697ec60"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@corvu/utils/dist/create/style.js",
+        "sha256": "9b8afca2e12741d2fd01379ad3c2fe3d38a87c34519e2971a0345bb7576e91e4"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@corvu/utils/dist/scroll/index.js",
+        "sha256": "0ca41488f8f32859f92c9a47ebafb6ddf133a93b5067ead6164b2eb57ef934dd"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/solid-prevent-scroll/dist/index.js",
+        "sha256": "1fc4aaec00d0511acdf1813d5f6011fa561cfe169c6f861b29490de9503f310c"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/solid-presence/dist/index.js",
+        "sha256": "b4b4d3d1e2da677e2ce07c790966be7bb776f9c4b2f316a2bff85313ea2bc9f9"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/KRZCLZJ6.js",
+        "sha256": "87405362d260d30d0417e0c9eb3048c3340e13fe3a1479215c67aaa4f280e50c"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/dialog/index.js",
+        "sha256": "b51b69a68d0d8a54c875cbe6655e84dd5c52aec2b92ab42ded22106dd2983d6b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/clsx/dist/clsx.mjs",
+        "sha256": "d949e5cdbfebc76a6642b1901095e900fc3f2262d8dc0373aa44850a9bc75522"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/tailwind-merge/dist/bundle-mjs.mjs",
+        "sha256": "2645348938bcfe3e52ff61cfac8adf4cccad5451f7b1279d0f2eac590646baba"
+      },
+      {
+        "path": "upstream/src/utilities/classNames.ts",
+        "sha256": "a0d047a6e6341282bb1abdc14bb205665734f4ccb6511eb793c97768b1088d69"
+      },
+      {
+        "path": "upstream/src/icons/icons.tsx",
+        "sha256": "2881e4f7bd9266ad3d530fb84b15c843ce3d6d186c8b9fb8dea45e7bd9ecf7d3"
+      },
+      {
+        "path": "upstream/src/icons/index.tsx",
+        "sha256": "90cebcf75b6ca55de4e3da831d5c26432ee91099221ef11a4fe0f210e533d407"
+      },
+      {
+        "path": "upstream/src/components/overlays/Dialog.tsx",
+        "sha256": "a6412045ab656f5fbc11b429de76db5e77ea3191f2580050843f7a139cbae355"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/button/index.js",
+        "sha256": "7fe5c249fe86a1858cabf838ce9542d010474bb4fb17db8b7de7f30efe9fe575"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/YGDQXQ2B.js",
+        "sha256": "a0ee4ae3b9de470c43ea8656c23a013809a3cfdf985155f937efdcd817216476"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/53Y5XP3B.js",
+        "sha256": "272d749ba8a27db7d7a87f7535cd87d057e173b647f8c8fe098778cc8e080ddb"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/toggle-button/index.js",
+        "sha256": "6b49da7670421eb2067dba3e93249c132f1ebccfb939d02ad8346b930ca23b23"
+      },
+      {
+        "path": "upstream/src/types/component-size.ts",
+        "sha256": "4a73d2a8c58b12fce3a594789e7bbd8363f627995c2f7c8df2984e232f665d3a"
+      },
+      {
+        "path": "upstream/src/utilities/componentSizeContext.ts",
+        "sha256": "37735ff8c40654e03512cc332de003b19c8500c8d42fc5b31d7072ca3871883e"
+      },
+      {
+        "path": "upstream/src/components/actions/Button.tsx",
+        "sha256": "b73c39abecca08c601feb3b8dcc8ce3ba001ff7e5bd315c84fad7c612389a38c"
+      },
+      {
+        "path": "examples/Dialog.tsx",
+        "sha256": "2d5e856f89fdfee519d969564d0c2b5cd5d9548ffa6b4b2076f251720caec4d5"
+      }
+    ],
+    "packages": {
+      "node_modules/solid-js": {
+        "version": "1.9.11",
+        "resolved": "https://registry.npmjs.org/solid-js/-/solid-js-1.9.11.tgz",
+        "integrity": "sha512-WEJtcc5mkh/BnHA6Yrg4whlF8g6QwpmXXRg4P2ztPmcKeHHlH4+djYecBLhSpecZY2RRECXYUwIc/C2r3yzQ4Q==",
+        "license": "MIT",
+        "dependencies": {
+          "csstype": "^3.1.0",
+          "seroval": "~1.5.0",
+          "seroval-plugins": "~1.5.0"
+        }
+      },
+      "node_modules/@solid-primitives/utils": {
+        "version": "6.4.1",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/utils/-/utils-6.4.1.tgz",
+        "integrity": "sha512-ISSB5QX1qP2ynrheIpYwc4oKR5Ny4siNuUyf1qZniy+Il+p/PtDB0QK1Dnle8noiHpwRD3gpPdubOC3qI/Zamg==",
+        "license": "MIT",
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/event-listener": {
+        "version": "2.4.6",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/event-listener/-/event-listener-2.4.6.tgz",
+        "integrity": "sha512-5I0YJcTVYIWoMmgBSROBZGcz+ymhew/pGTg2dHW74BUjFKsV8Li4bOZYl0YAGP4mHw5o4UBd9/BEesqBci3wxw==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/keyed": {
+        "version": "1.5.3",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/keyed/-/keyed-1.5.3.tgz",
+        "integrity": "sha512-zNadtyYBhJSOjXtogkGHmRxjGdz9KHc8sGGVAGlUABkE8BED2tbIZoxkwSqzOwde8OcUEH0bb5DLZUWIMvyBSA==",
+        "license": "MIT",
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/trigger": {
+        "version": "1.2.4",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/trigger/-/trigger-1.2.4.tgz",
+        "integrity": "sha512-Ju0e+ZOD7hpOp7nptJimvDSZHWFvIvF9iBWMvuwt30smX7c5wmB8Kmc0AdDuv0wOTi06PQ1J5IrP1WJbH2yUBQ==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/map": {
+        "version": "0.4.13",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/map/-/map-0.4.13.tgz",
+        "integrity": "sha512-B1zyFbsiTQvqPr+cuPCXO72sRuczG9Swncqk5P74NCGw1VE8qa/Ry9GlfI1e/VdeQYHjan+XkbE3rO2GW/qKew==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/trigger": "^1.1.0"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/static-store": {
+        "version": "0.1.4",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/static-store/-/static-store-0.1.4.tgz",
+        "integrity": "sha512-LgtVaVBtB7EbmS4+M0b8xY5Iq6pUWXBsIC4VgtrFKDGDdyCaDt88sHk0fUlx1Enxm/XZnZyLXJABRoa39RjJqA==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/rootless": {
+        "version": "1.5.4",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/rootless/-/rootless-1.5.4.tgz",
+        "integrity": "sha512-TOIZa1VUfVJ+9nkCcRajw3U4t9vBOP1HxX1WHNTbXq32mXwlqTvUnC4CRIilohcryBkT9u2ZkhUDSHRTaGp55g==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/media": {
+        "version": "2.3.6",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/media/-/media-2.3.6.tgz",
+        "integrity": "sha512-pk49gPOq/UMRUJ+pTSrOfBiR8xJjRYHXIf1iR/jSnyQ/KroU+ZXhkZzavC7hvfp2vJeOTW5k2/HN0r3Q1VJ7Pw==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/event-listener": "^2.4.6",
+          "@solid-primitives/rootless": "^1.5.4",
+          "@solid-primitives/static-store": "^0.1.4",
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/props": {
+        "version": "3.2.4",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/props/-/props-3.2.4.tgz",
+        "integrity": "sha512-MXXdvi2TSB6d+0N6ueA/HP1j/Kh9SEc4WdF1ZDMLwPagxW6pIHHSS9xbRO0RjqSVpNP4j0nxCWT1hx3CkJNhNA==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/refs": {
+        "version": "1.1.4",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/refs/-/refs-1.1.4.tgz",
+        "integrity": "sha512-bLjwIs6ZPu8NQnuw04sU3Zc8qKSpbc0umUU/O4SHf6oWOdO4+dHY8vb1T7C4b/Tg103+9WGr6sEE0+NFlbaB/A==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@kobalte/utils": {
+        "version": "0.9.2",
+        "resolved": "https://registry.npmjs.org/@kobalte/utils/-/utils-0.9.2.tgz",
+        "integrity": "sha512-jRVXr+zsVHxzDXRoh+CDeXzvCsFJ6uiHhqqNQ26Cw9ZsZ3D6nqPUBt1gGVtj2ZPmRL3a9Uk1v8D1aJ8/I12Dow==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/event-listener": "^2.2.14",
+          "@solid-primitives/keyed": "^1.2.0",
+          "@solid-primitives/map": "^0.4.7",
+          "@solid-primitives/media": "^2.2.4",
+          "@solid-primitives/props": "^3.1.8",
+          "@solid-primitives/refs": "^1.0.5",
+          "@solid-primitives/utils": "^6.2.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.8.8"
+        }
+      },
+      "node_modules/@kobalte/core": {
+        "version": "0.13.11",
+        "resolved": "https://registry.npmjs.org/@kobalte/core/-/core-0.13.11.tgz",
+        "integrity": "sha512-hK7TYpdib/XDb/r/4XDBFaO9O+3ZHz4ZWryV4/3BfES+tSQVgg2IJupDnztKXB0BqbSRy/aWlHKw1SPtNPYCFQ==",
+        "license": "MIT",
+        "dependencies": {
+          "@floating-ui/dom": "^1.5.1",
+          "@internationalized/date": "^3.4.0",
+          "@internationalized/number": "^3.2.1",
+          "@kobalte/utils": "^0.9.1",
+          "@solid-primitives/props": "^3.1.8",
+          "@solid-primitives/resize-observer": "^2.0.26",
+          "solid-presence": "^0.1.8",
+          "solid-prevent-scroll": "^0.1.4"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.8.15"
+        }
+      },
+      "node_modules/@corvu/utils": {
+        "version": "0.4.2",
+        "resolved": "https://registry.npmjs.org/@corvu/utils/-/utils-0.4.2.tgz",
+        "integrity": "sha512-Ox2kYyxy7NoXdKWdHeDEjZxClwzO4SKM8plAaVwmAJPxHMqA0rLOoAsa+hBDwRLpctf+ZRnAd/ykguuJidnaTA==",
+        "license": "MIT",
+        "dependencies": {
+          "@floating-ui/dom": "^1.6.11"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.8"
+        }
+      },
+      "node_modules/solid-prevent-scroll": {
+        "version": "0.1.11",
+        "resolved": "https://registry.npmjs.org/solid-prevent-scroll/-/solid-prevent-scroll-0.1.11.tgz",
+        "integrity": "sha512-2PComVCDHaQN/5t7ogEqUYeHasritZKXZ8Sb/VLkl0Web8o9YhEwOo8LSujJEahvMlYCNyKt0zRJeHldOAeWZg==",
+        "license": "MIT",
+        "dependencies": {
+          "@corvu/utils": "~0.4.2"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.8"
+        }
+      },
+      "node_modules/solid-presence": {
+        "version": "0.1.8",
+        "resolved": "https://registry.npmjs.org/solid-presence/-/solid-presence-0.1.8.tgz",
+        "integrity": "sha512-pWGtXUFWYYUZNbg5YpG5vkQJyOtzn2KXhxYaMx/4I+lylTLYkITOLevaCwMRN+liCVk0pqB6EayLWojNqBFECA==",
+        "license": "MIT",
+        "dependencies": {
+          "@corvu/utils": "~0.4.0"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.8"
+        }
+      },
+      "node_modules/clsx": {
+        "version": "2.1.1",
+        "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+        "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+        "license": "MIT",
+        "engines": {
+          "node": ">=6"
+        }
+      },
+      "node_modules/tailwind-merge": {
+        "version": "3.5.0",
+        "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.5.0.tgz",
+        "integrity": "sha512-I8K9wewnVDkL1NTGoqWmVEIlUcB9gFriAEkXkfCjX5ib8ezGxtR3xD7iZIxrfArjEsH7F1CHD4RFUtxefdqV/A==",
+        "license": "MIT",
+        "funding": {
+          "type": "github",
+          "url": "https://github.com/sponsors/dcastil"
+        }
+      }
+    }
+  },
+  "Accordion": {
+    "codeIntegrity": "eb3c823a33ca52319ebe0f046040798178ff79fc88841573b69b6386d90da547",
+    "cssIntegrity": "a691edb1a85d164e863786e8911d295518debe4f139abd0aaabf1fb64b46ea5f",
+    "lockIntegrity": "7a04320f9dab5fcee4b5740127a8189a4af8b1454bff3aad3f147f9caa29a2fb",
+    "styleInputs": [
+      {
+        "path": "node_modules/tailwindcss/index.css",
+        "sha256": "415a5f01208fe877d36ee8421b2135a766f258374f817a8a0a41c478c4009391"
+      },
+      {
+        "path": "node_modules/tailwindcss/preflight.css",
+        "sha256": "fa2d5ae43ae561061b7ce348b89636dbdc6cd71ab5992d4e1cdd046d0b4f28f9"
+      },
+      {
+        "path": "node_modules/tailwindcss/theme.css",
+        "sha256": "ce91efc0ca2e741e56fe263662e5282dc0a16f19a8647f0c38b60fcc4e2119b1"
+      },
+      {
+        "path": "node_modules/tailwindcss/utilities.css",
+        "sha256": "0e5844ec75de2fb4a76097b26bb624bf8f9d9cf59f6d947855b743dd25f920fb"
+      },
+      {
+        "path": "node_modules/tailwindcss/LICENSE",
+        "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+      },
+      {
+        "path": "upstream/styles/theme.css",
+        "sha256": "2d9df6d356796c04cfaea0e830daf2c6b4d9ee6595369a072afaaad73a4e03f3"
+      },
+      {
+        "path": "docs-context.css",
+        "sha256": "cc1a2ad120f237ddeacefb2a856dcbc11ef2be328858d9133674a062cc90b817"
+      },
+      {
+        "path": "upstream/docs/fonts/inter-latin.woff2",
+        "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62"
+      }
+    ],
+    "inputs": [
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/solid-js/dist/solid.js",
+        "sha256": "60df90c66eaedbd15de57670efc0d07e4572f21db8ec58b64e9ad901fd6ac244"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/solid-js/web/dist/web.js",
+        "sha256": "e7493ea760279b2aa51b310c5f39b374853adaf41973f4f67ae90d8375997f68"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/utils/dist/types.js",
+        "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/utils/dist/index.js",
+        "sha256": "e899c544004dc1eea92cdfbd35b073e02f57eed58f300a1c8b3e70e6668d974b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/eventListener.js",
+        "sha256": "2178d7598aa696e362edc807b882f0b999acca901dc27871888a94dce932ccb6"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/eventListenerMap.js",
+        "sha256": "ee9eedad2aa14629ec2af22ee8dd0224374979e6cec21651858927b2e94ee1a9"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/components.js",
+        "sha256": "a409d7cace7ab2cdf47a26d7dd7b96de8c288f1708af3ecb0965bf6b83b630be"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/eventListenerStack.js",
+        "sha256": "04b9101b74e798fd5c80bed08191ed0d680c17a97ef287d8bde705f42ff72cca"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/callbackWrappers.js",
+        "sha256": "cc49777688ec8041ba122918e1e2930051d4eae51ae0ab95efd190f40987be88"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/types.js",
+        "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/event-listener/dist/index.js",
+        "sha256": "372ce86d011a31bd610d3f0db39e6af69c6d1b7ff9f7f167c1051fbc3f1df63c"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/keyed/dist/index.js",
+        "sha256": "91464fbcfb2b60d2026323438da21ab74bc9756dedcc314e8f35b05895f341b7"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/trigger/dist/index.js",
+        "sha256": "c909d51320d89b46399ca7337d8acf27892a00cf61ab8f503182149a9e91ea5d"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/map/dist/index.js",
+        "sha256": "f27e645966e6765ad6b01a9078f22523608ec924869e5b0f65b5e83db51ae053"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/static-store/dist/index.js",
+        "sha256": "f1912ffa021157039c9c6dca297af04bc3f50c879c7363ed4e7f7ec2c87d4d04"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/rootless/dist/index.js",
+        "sha256": "0b7d93cfb6e96d7878b49ec28816d50216274e5e486b4171bb64c8c4bc36767f"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/media/dist/index.js",
+        "sha256": "2672366f1950bb450590128c5eed55b4f291db23c187cb536f86acb0cfd31ef7"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/props/dist/propTraps.js",
+        "sha256": "0fad53421b9e54c04c95de75a0fd214d89a28d6fb8c88c3d77560dd4de105293"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/props/dist/filterProps.js",
+        "sha256": "951617863a74789c27a211dfb11a14734d01e1a358d9d067f691cbde4c9aea9a"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/props/dist/combineProps.js",
+        "sha256": "113da1b26cdf9ab2fcd82bea8e4a3461eca560c1e7beafb38db0382126772b1c"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/props/dist/index.js",
+        "sha256": "d989aad8a152d55519c725f56f8ca8a0aeccda07d4f2dcefe191f020cef381d4"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@solid-primitives/refs/dist/index.js",
+        "sha256": "02dd19d96d7c96f8f798fd7a8883204837a64cab674be5a8c0088d70ea76921a"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/utils/dist/index.js",
+        "sha256": "2117628a30cfb91851cf8751e3a35147776e3671eee52bd790dc74607d5a3eb8"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/JMA2RWU6.js",
+        "sha256": "3e790e3621d642d2d254af7bd3b4f99e3365edde427690fba72818a0d7c9d96d"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/utils.mjs",
+        "sha256": "dc83c93143c9715741c69dbdf0aa6a415435cc17fa5023f1da473d3e637ecedb"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/calendars/GregorianCalendar.mjs",
+        "sha256": "1ee0c564ce4e5a6dc06d92a85795a3b7a76936263d84abd07d72b5bc6e3a8434"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/weekStartData.mjs",
+        "sha256": "5788984c1e07007bcb0bec14f09d6ad4a0ca9e8ebdcf6c5fc404d683552a7cbc"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/queries.mjs",
+        "sha256": "5bbf3d45a1d05c33e3fd9803ed3c92d3da53859390ab566641d6744915044236"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/conversion.mjs",
+        "sha256": "aecf5ca538a7947b705001afb05ff8b5585fc2cc02e3334f6cd876ceb8f6cd27"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/manipulation.mjs",
+        "sha256": "f6c9214daffad3595f3defb899781d35893109652859873240ef1b363de33cc1"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/string.mjs",
+        "sha256": "15ebfbdd38d188c540315e5678d7a4b332a226e69475d69ddc785a2377e225b6"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/CalendarDate.mjs",
+        "sha256": "ca1b61cda7bf967e974ae5246ca3a23e2d99aabc76c0591b06341f9709bfcac8"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/calendars/JapaneseCalendar.mjs",
+        "sha256": "ad45f7a7b3ea1f6e81146337c0b14ae7f3401fad61a4dbaa8ece9f217d9f45ac"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/calendars/BuddhistCalendar.mjs",
+        "sha256": "09b7bf32fed9b92f879ca9a7aa757e1ccae1028e848a5ee46b14c55f3a8c689b"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/calendars/TaiwanCalendar.mjs",
+        "sha256": "08a4c68be0647c87de84f5663cfe2c1faf1286b8a8797e4f326935600b749b12"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/calendars/PersianCalendar.mjs",
+        "sha256": "c4fa486414de3604ce9b52650d1c563bd3ab765f748b0eb6dfa2ecd281fad8fa"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/calendars/IndianCalendar.mjs",
+        "sha256": "2e7d594efce4b3759af1042badd17f33f7577a5916b59c3685a61cc29b303ec3"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/calendars/IslamicCalendar.mjs",
+        "sha256": "9d846cd49ecc4a771284c623d6746a1a1f297905594dccf8aa5ec292c62f5585"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/calendars/HebrewCalendar.mjs",
+        "sha256": "ec685961a6a25ae39e018d845a511023f8451fb5226e7daf709fd02ce1765c28"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/calendars/EthiopicCalendar.mjs",
+        "sha256": "50a8826538399793ee62996c22b2ed62db0f4728786211b79455868df3dfbc89"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/createCalendar.mjs",
+        "sha256": "f3ce653443e285b74402cd86322e4c1a25d52ef9b1bda33825ddc6b3c64cecf4"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/private/DateFormatter.mjs",
+        "sha256": "b52cac5c254d4238c8375e5f6411159e2c678ce494204ccc46d63abba52a5021"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/date/dist/index.mjs",
+        "sha256": "ab2b1b2a3b0976495b43e0f26b2e5484b3f284c63bfdbaf22d2234daff79146d"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/number/dist/private/NumberFormatter.mjs",
+        "sha256": "815cad5a39566d7e7e644106d962bae60e58e335052c98d693bc1fc45e1a89d8"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/number/dist/private/NumberParser.mjs",
+        "sha256": "decae14f924ed357e4e7ea6b98b1ee04563835ebed1dc5ed9b20453068a50c09"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@internationalized/number/dist/index.mjs",
+        "sha256": "8128ca7741316df526cbc33f325f6552826e07a8e1e58de7b54c44e0da76b79d"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/XHJPQEZP.js",
+        "sha256": "5310cb0cc34edcc4479ef9b5c60bca5186c321c0c917429898eb07d046d4e501"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/BLN63FDC.js",
+        "sha256": "2c5cae597116fbb5855428bd0b21775f76711a2ada6a1f64780426bda7facdf8"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/H6DSIDEC.js",
+        "sha256": "4957747120fc2c6352f26618722a7ccded9e68d9b88b2ff712b0ff12afe01ff7"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/GLKC2QFF.js",
+        "sha256": "cbeede69383cf789d336e4188d13f32b55f80f21a9993288e5b32ca566310c2d"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/7LCANGHD.js",
+        "sha256": "3cf855d58ba603e3a2f575d883a3d05e388c62e35712ed01a12342a0a1cea6d0"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/ET5T45DO.js",
+        "sha256": "a8e890ea871a8626f68419b0e5d5387481bd95d1c35ecab86850a360f5f09991"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/6Y7B2NEO.js",
+        "sha256": "a0c728a93cb18ae4ef2f1ec65b482401564b6ba096fa281b922125a7a4949dfc"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/5ZKAE4VZ.js",
+        "sha256": "864bcd72136941db10f94b91654f2beab7c9a9e7276815576eaf02b3cc5470ac"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/7OVKXYPU.js",
+        "sha256": "81dcc91eb3d9f0c3ac2e8afe84c6b70a6c22729497cfdb90108c21b84ba61b35"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/E4R2EMM4.js",
+        "sha256": "8812c4067d5373b4248cfcfd2690750ba177d33b9cb7815257948b0da46aefd7"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@corvu/utils/dist/chunk/ZV6G25TT.js",
+        "sha256": "d37aaf1e9cf1c53a9b40b00f9ca1006a19a2184e282fc0b830c57e74b16f296f"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@corvu/utils/dist/reactivity/index.js",
+        "sha256": "d4fd9091d244ae263312f18a15fd4d49bc5346483faeb5a6ef00bd88fce4e542"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/solid-presence/dist/index.js",
+        "sha256": "b4b4d3d1e2da677e2ce07c790966be7bb776f9c4b2f316a2bff85313ea2bc9f9"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/IN725QRS.js",
+        "sha256": "8c576eca963de8a0c21cc4b9c383273e8a13f1ce098fcb98e0590169b90815ba"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/7CVNMTYF.js",
+        "sha256": "1d2cd51d47e128c6f38d0335176b1d98c25608a58b4fa2f1264e6740da527cd3"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/chunk/SOATIGPW.js",
+        "sha256": "f6dc7c3503b74d39060f97deee3d0c1632cc8deb7219292847ddf23be146a0b5"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/@kobalte/core/dist/accordion/index.js",
+        "sha256": "d6208416e959d27d567bb2dfbbcc028070ea0f254241890a64a8c3ee63f71203"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/clsx/dist/clsx.mjs",
+        "sha256": "d949e5cdbfebc76a6642b1901095e900fc3f2262d8dc0373aa44850a9bc75522"
+      },
+      {
+        "path": "../../../.scratch/solid-library-69/solid-styled/torch-ui-build/node_modules/tailwind-merge/dist/bundle-mjs.mjs",
+        "sha256": "2645348938bcfe3e52ff61cfac8adf4cccad5451f7b1279d0f2eac590646baba"
+      },
+      {
+        "path": "upstream/src/utilities/classNames.ts",
+        "sha256": "a0d047a6e6341282bb1abdc14bb205665734f4ccb6511eb793c97768b1088d69"
+      },
+      {
+        "path": "upstream/src/icons/icons.tsx",
+        "sha256": "2881e4f7bd9266ad3d530fb84b15c843ce3d6d186c8b9fb8dea45e7bd9ecf7d3"
+      },
+      {
+        "path": "upstream/src/icons/index.tsx",
+        "sha256": "90cebcf75b6ca55de4e3da831d5c26432ee91099221ef11a4fe0f210e533d407"
+      },
+      {
+        "path": "upstream/src/components/layout/Accordion.tsx",
+        "sha256": "4d8292c8d91734f25ff632a2ba8f0205299d088182170a6550665b94fb0a2ae0"
+      },
+      {
+        "path": "examples/Accordion.tsx",
+        "sha256": "abe1bf24e4e0af5acde3d4f902136e03fa66e85da1154abf4c64715ba8e5d951"
+      }
+    ],
+    "packages": {
+      "node_modules/solid-js": {
+        "version": "1.9.11",
+        "resolved": "https://registry.npmjs.org/solid-js/-/solid-js-1.9.11.tgz",
+        "integrity": "sha512-WEJtcc5mkh/BnHA6Yrg4whlF8g6QwpmXXRg4P2ztPmcKeHHlH4+djYecBLhSpecZY2RRECXYUwIc/C2r3yzQ4Q==",
+        "license": "MIT",
+        "dependencies": {
+          "csstype": "^3.1.0",
+          "seroval": "~1.5.0",
+          "seroval-plugins": "~1.5.0"
+        }
+      },
+      "node_modules/@solid-primitives/utils": {
+        "version": "6.4.1",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/utils/-/utils-6.4.1.tgz",
+        "integrity": "sha512-ISSB5QX1qP2ynrheIpYwc4oKR5Ny4siNuUyf1qZniy+Il+p/PtDB0QK1Dnle8noiHpwRD3gpPdubOC3qI/Zamg==",
+        "license": "MIT",
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/event-listener": {
+        "version": "2.4.6",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/event-listener/-/event-listener-2.4.6.tgz",
+        "integrity": "sha512-5I0YJcTVYIWoMmgBSROBZGcz+ymhew/pGTg2dHW74BUjFKsV8Li4bOZYl0YAGP4mHw5o4UBd9/BEesqBci3wxw==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/keyed": {
+        "version": "1.5.3",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/keyed/-/keyed-1.5.3.tgz",
+        "integrity": "sha512-zNadtyYBhJSOjXtogkGHmRxjGdz9KHc8sGGVAGlUABkE8BED2tbIZoxkwSqzOwde8OcUEH0bb5DLZUWIMvyBSA==",
+        "license": "MIT",
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/trigger": {
+        "version": "1.2.4",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/trigger/-/trigger-1.2.4.tgz",
+        "integrity": "sha512-Ju0e+ZOD7hpOp7nptJimvDSZHWFvIvF9iBWMvuwt30smX7c5wmB8Kmc0AdDuv0wOTi06PQ1J5IrP1WJbH2yUBQ==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/map": {
+        "version": "0.4.13",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/map/-/map-0.4.13.tgz",
+        "integrity": "sha512-B1zyFbsiTQvqPr+cuPCXO72sRuczG9Swncqk5P74NCGw1VE8qa/Ry9GlfI1e/VdeQYHjan+XkbE3rO2GW/qKew==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/trigger": "^1.1.0"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/static-store": {
+        "version": "0.1.4",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/static-store/-/static-store-0.1.4.tgz",
+        "integrity": "sha512-LgtVaVBtB7EbmS4+M0b8xY5Iq6pUWXBsIC4VgtrFKDGDdyCaDt88sHk0fUlx1Enxm/XZnZyLXJABRoa39RjJqA==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/rootless": {
+        "version": "1.5.4",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/rootless/-/rootless-1.5.4.tgz",
+        "integrity": "sha512-TOIZa1VUfVJ+9nkCcRajw3U4t9vBOP1HxX1WHNTbXq32mXwlqTvUnC4CRIilohcryBkT9u2ZkhUDSHRTaGp55g==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/media": {
+        "version": "2.3.6",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/media/-/media-2.3.6.tgz",
+        "integrity": "sha512-pk49gPOq/UMRUJ+pTSrOfBiR8xJjRYHXIf1iR/jSnyQ/KroU+ZXhkZzavC7hvfp2vJeOTW5k2/HN0r3Q1VJ7Pw==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/event-listener": "^2.4.6",
+          "@solid-primitives/rootless": "^1.5.4",
+          "@solid-primitives/static-store": "^0.1.4",
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/props": {
+        "version": "3.2.4",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/props/-/props-3.2.4.tgz",
+        "integrity": "sha512-MXXdvi2TSB6d+0N6ueA/HP1j/Kh9SEc4WdF1ZDMLwPagxW6pIHHSS9xbRO0RjqSVpNP4j0nxCWT1hx3CkJNhNA==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@solid-primitives/refs": {
+        "version": "1.1.4",
+        "resolved": "https://registry.npmjs.org/@solid-primitives/refs/-/refs-1.1.4.tgz",
+        "integrity": "sha512-bLjwIs6ZPu8NQnuw04sU3Zc8qKSpbc0umUU/O4SHf6oWOdO4+dHY8vb1T7C4b/Tg103+9WGr6sEE0+NFlbaB/A==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/utils": "^6.4.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.6.12"
+        }
+      },
+      "node_modules/@kobalte/utils": {
+        "version": "0.9.2",
+        "resolved": "https://registry.npmjs.org/@kobalte/utils/-/utils-0.9.2.tgz",
+        "integrity": "sha512-jRVXr+zsVHxzDXRoh+CDeXzvCsFJ6uiHhqqNQ26Cw9ZsZ3D6nqPUBt1gGVtj2ZPmRL3a9Uk1v8D1aJ8/I12Dow==",
+        "license": "MIT",
+        "dependencies": {
+          "@solid-primitives/event-listener": "^2.2.14",
+          "@solid-primitives/keyed": "^1.2.0",
+          "@solid-primitives/map": "^0.4.7",
+          "@solid-primitives/media": "^2.2.4",
+          "@solid-primitives/props": "^3.1.8",
+          "@solid-primitives/refs": "^1.0.5",
+          "@solid-primitives/utils": "^6.2.1"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.8.8"
+        }
+      },
+      "node_modules/@kobalte/core": {
+        "version": "0.13.11",
+        "resolved": "https://registry.npmjs.org/@kobalte/core/-/core-0.13.11.tgz",
+        "integrity": "sha512-hK7TYpdib/XDb/r/4XDBFaO9O+3ZHz4ZWryV4/3BfES+tSQVgg2IJupDnztKXB0BqbSRy/aWlHKw1SPtNPYCFQ==",
+        "license": "MIT",
+        "dependencies": {
+          "@floating-ui/dom": "^1.5.1",
+          "@internationalized/date": "^3.4.0",
+          "@internationalized/number": "^3.2.1",
+          "@kobalte/utils": "^0.9.1",
+          "@solid-primitives/props": "^3.1.8",
+          "@solid-primitives/resize-observer": "^2.0.26",
+          "solid-presence": "^0.1.8",
+          "solid-prevent-scroll": "^0.1.4"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.8.15"
+        }
+      },
+      "node_modules/@internationalized/date": {
+        "version": "3.12.4",
+        "resolved": "https://registry.npmjs.org/@internationalized/date/-/date-3.12.4.tgz",
+        "integrity": "sha512-M1dEn4c1U1HsSlaVR8upZtSqvXrTkHDfv18H01uCSJyjVLDxnBR38v/fMxecmlwXKR4i9HeZcmgQAPE6A+aGJQ==",
+        "license": "Apache-2.0",
+        "dependencies": {
+          "@swc/helpers": "^0.5.0"
+        }
+      },
+      "node_modules/@internationalized/number": {
+        "version": "3.6.9",
+        "resolved": "https://registry.npmjs.org/@internationalized/number/-/number-3.6.9.tgz",
+        "integrity": "sha512-GgWy2caO/+hV9sT/oCTWGHvbjmJMPT9kkXzoKRLnkEq7adghhR7UprhvY9sXrKfrp3NcDfhF6QQHXR1KfQbB8g==",
+        "license": "Apache-2.0",
+        "dependencies": {
+          "@swc/helpers": "^0.5.0"
+        }
+      },
+      "node_modules/@corvu/utils": {
+        "version": "0.4.2",
+        "resolved": "https://registry.npmjs.org/@corvu/utils/-/utils-0.4.2.tgz",
+        "integrity": "sha512-Ox2kYyxy7NoXdKWdHeDEjZxClwzO4SKM8plAaVwmAJPxHMqA0rLOoAsa+hBDwRLpctf+ZRnAd/ykguuJidnaTA==",
+        "license": "MIT",
+        "dependencies": {
+          "@floating-ui/dom": "^1.6.11"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.8"
+        }
+      },
+      "node_modules/solid-presence": {
+        "version": "0.1.8",
+        "resolved": "https://registry.npmjs.org/solid-presence/-/solid-presence-0.1.8.tgz",
+        "integrity": "sha512-pWGtXUFWYYUZNbg5YpG5vkQJyOtzn2KXhxYaMx/4I+lylTLYkITOLevaCwMRN+liCVk0pqB6EayLWojNqBFECA==",
+        "license": "MIT",
+        "dependencies": {
+          "@corvu/utils": "~0.4.0"
+        },
+        "peerDependencies": {
+          "solid-js": "^1.8"
+        }
+      },
+      "node_modules/clsx": {
+        "version": "2.1.1",
+        "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+        "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+        "license": "MIT",
+        "engines": {
+          "node": ">=6"
+        }
+      },
+      "node_modules/tailwind-merge": {
+        "version": "3.5.0",
+        "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.5.0.tgz",
+        "integrity": "sha512-I8K9wewnVDkL1NTGoqWmVEIlUcB9gFriAEkXkfCjX5ib8ezGxtR3xD7iZIxrfArjEsH7F1CHD4RFUtxefdqV/A==",
+        "license": "MIT",
+        "funding": {
+          "type": "github",
+          "url": "https://github.com/sponsors/dcastil"
+        }
+      }
+    }
+  }
+}

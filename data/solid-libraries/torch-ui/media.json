@@ -1,0 +1,87 @@
+{
+  "photo": {
+    "url": "https://picsum.photos/seed/torch/600/400",
+    "final": "https://fastly.picsum.photos/id/500/600/400.jpg?hmac=z7Vc2MQOfDpqZ_ZIdJpfPWz9RPE3gH5KraMZmtF1fCM",
+    "bytes": 12854,
+    "type": "image/jpeg",
+    "id": "500",
+    "sha256": "70a2c98b0ed50d35923ededf242a834ca396ca33bd509a57a6d1ceca11123b93",
+    "author": "Greg Shield",
+    "source": "https://unsplash.com/photos/JV4Ic7fSZbw",
+    "license": "https://unsplash.com/license",
+    "delivered": {
+      "sha256": "dba4747c3c8f05ff817f21872e70cc757e87dc90e04f3ef14c01e79226d8c18c",
+      "bytes": 8790,
+      "mediaType": "image/webp",
+      "width": 600,
+      "height": 400
+    },
+    "transformation": "Lossy WebP conversion at quality 85, preserving the 600 × 400 composition; source/delivered SSIM 0.985842.",
+    "command": "ffmpeg -i image.jpg -frames:v 1 -c:v libwebp -preset photo -quality 85 -compression_level 6 image.webp"
+  },
+  "poster": {
+    "url": "https://video.blender.org/lazy-static/previews/3d95fb3d-c866-42c8-9db1-fe82f48ccb95.jpg",
+    "final": "https://video.blender.org/lazy-static/previews/3d95fb3d-c866-42c8-9db1-fe82f48ccb95.jpg",
+    "bytes": 89072,
+    "type": "image/jpeg",
+    "id": null,
+    "sha256": "2a9e76d50baca5316ca398bac1f69caaf3ad8dc6b4b61657e8039eb307cf74a1",
+    "attribution": "© Blender Foundation",
+    "license": "Blender excludes the Blender and Spring logos from the Spring website's CC BY 4.0 license; the delivered film frame is CC BY 4.0.",
+    "licenseUrl": "https://studio.blender.org/projects/spring/pages/about/",
+    "delivered": {
+      "sha256": "37a7521ecfd9f231dddc79d841b0149ed4d1a5c1364ede50d98bf4ada862aaca",
+      "bytes": 20538,
+      "mediaType": "image/webp",
+      "width": 640,
+      "height": 268,
+      "source": "https://archive.org/download/springopenmovie/springopenmovie.mp4"
+    },
+    "transformation": "A 640 × 268 WebP frame at five seconds from the licensed Spring excerpt replaces the documented poster to avoid the Blender and Spring logos excluded from the Spring website's CC BY license.",
+    "command": "node scripts/solid-libraries/torch-ui-poster-webp.mjs <verified-excerpt.mp4> <poster.webp>"
+  },
+  "video": {
+    "original": {
+      "url": "https://archive.org/download/springopenmovie/springopenmovie.mp4",
+      "final": "https://dn800303.us.archive.org/0/items/springopenmovie/springopenmovie.mp4",
+      "bytes": 90190341,
+      "type": "video/mp4",
+      "id": null,
+      "sha256": "c4965c017428ce5ac5c0d51e52692505842f4cb3c0b582c8bbb7cc4e056a5931"
+    },
+    "delivered": {
+      "sha256": "0d3b8c7006aaa128d2404e69382c5adf8634d3e02d694647351d508fab8c31ee",
+      "bytes": 152632
+    },
+    "transformation": "The first 10.083 seconds use a stream-copy excerpt of a 640 × 268 H.264, 24 fps, stereo AAC conversion of the 1920 × 804, 24 fps, 464.17-second original. The trim adds no further re-encoding.",
+    "command": "ffmpeg -i original.mp4 -t 30 -vf scale=640:-2 -c:v libx264 -preset fast -threads 2 -crf 28 -maxrate 350k -bufsize 700k -c:a aac -b:a 48k -ac 2 -movflags +faststart intermediate.mp4; ffmpeg -i intermediate.mp4 -t 10 -c copy -movflags +faststart delivered.mp4",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "© Blender Foundation | cloud.blender.org/spring"
+  },
+  "omitted": [
+    {
+      "component": "torch-ui/Skeleton",
+      "url": "https://torch-ui.dev/avatar.jpg",
+      "checkedAt": "2026-10-30",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "reason": "The documented placeholder returns the site HTML shell rather than an image."
+    },
+    {
+      "component": "torch-ui/User Card",
+      "url": "https://torch-ui.dev/images/headshots/lyra_swiftfoot.jpg",
+      "checkedAt": "2026-10-30",
+      "httpStatus": 200,
+      "contentType": "image/jpeg",
+      "bytes": 207543,
+      "sha256": "cb88677afc4b161ecd191eb657317513d0b975be7788a5ebfcf24ae54f2b924e",
+      "reason": "The image is outside the pinned MIT repository and no redistribution license was verified."
+    }
+  ],
+  "omittedRepositoryEvidence": {
+    "url": "https://api.github.com/repos/sean-dowd-sr/torch-ui/git/trees/2bd057316175457ff1e5103b961867cf388bf73f?recursive=1",
+    "sha256": "4ebcec004d46290967f67fb1c3ea87880ad7c798953917f47cc80ca12721fee8",
+    "checkedAt": "2026-10-30",
+    "result": "The complete tree is not truncated and contains neither avatar.jpg nor lyra_swiftfoot.jpg."
+  }
+}
