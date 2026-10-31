@@ -69,7 +69,12 @@ export async function openMotionBuild(slug) {
   for (const [path, file] of Object.entries(upstream.files)) {
     if (sha256(file.content) !== file.integrity) throw new Error(`Source integrity mismatch: ${path}`);
     const destination = containedPath(sourceRoot, path);
-    const content = inlineAssets(file.content,path);
+    let content = inlineAssets(file.content,path);
+    if (slug === "magicui-solid" && path === "src/demos/ConfettiDemo.tsx") {
+      const marker = "<Confetti\n";
+      if (content.split(marker).length !== 2) throw new Error("Original Confetti demo changed");
+      content = content.replace(marker, `${marker}        globalOptions={{ useWorker: false }}\n`);
+    }
     await mkdir(dirname(destination), { recursive: true });
     await writeFile(destination, content);
   }
@@ -172,6 +177,7 @@ export async function expandMotionLibrary(slug) {
     if(previousNotice<0)artifact.notices.push(authoredNotice);else artifact.notices[previousNotice]=authoredNotice;
   }
   const sourceUrls = new Set(Object.values(build.upstream.files).map(file=>file.url));
+  // The pinned MagicUI Solid README gives no copyright notice; its retained seed notice records that gap.
   const sourceNotices = artifact.notices.filter(notice => sourceUrls.has(notice.url) || notice.url.includes("/tailwindcss/-/") || build.upstream.assets[notice.url]?.licenseNotice);
   const banner = "/*!\n" + sourceNotices.map(notice=>`${notice.url}\n${notice.text}`).join("\n\n").replaceAll("*/", "* /") + "\n*/\n";
   const attempts = [];

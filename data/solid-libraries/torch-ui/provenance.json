@@ -1005,13 +1005,15 @@
       "Date Picker": {
         "source": "upstream/src/components/forms/DatePicker.tsx",
         "gaps": [
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "Upstream compares minimum dates with calendar cells at different times of day, which can disable the minimum day."
         ]
       },
       "Date Range Picker": {
         "source": "upstream/src/components/forms/DateRangePicker.tsx",
         "gaps": [
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "Upstream date comparisons can disable the minimum day and a same-day range."
         ]
       },
       "Time Picker": {
@@ -1097,7 +1099,8 @@
       "Inline": {
         "source": "upstream/src/components/layout/Inline.tsx",
         "gaps": [
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The preview uses the pinned layout Inline demo; its tiles match the live documentation styling."
         ]
       },
       "Form": {
@@ -1137,7 +1140,9 @@
         "source": "upstream/src/components/navigation/MegaMenu.tsx",
         "gaps": [
           "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The runnable example uses the labels, links, and layout from the live documentation demo.",
+          "The original wide navigation and menu panels extend beyond narrow preview viewports."
         ]
       },
       "Sidebar": {
@@ -1150,7 +1155,8 @@
         "source": "upstream/src/components/navigation/DropdownMenu.tsx",
         "gaps": [
           "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The preview uses the underlying Kobalte trigger with the same TorchUI Button styling to avoid nested buttons."
         ]
       },
       "Tabs": {
@@ -1189,7 +1195,8 @@
       "Popover": {
         "source": "upstream/src/components/overlays/Popover.tsx",
         "gaps": [
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The preview removes nested buttons and replaces corrupted example text with a fire icon and separator."
         ]
       },
       "Hover Card": {
@@ -1324,7 +1331,8 @@
       "Table": {
         "source": "upstream/src/components/data-display/Table.tsx",
         "gaps": [
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The preview fills the abbreviated documentation snippet with the three rows from the live demo."
         ]
       },
       "Table Panel": {
@@ -1364,7 +1372,8 @@
       "Empty State": {
         "source": "upstream/src/components/data-display/EmptyState.tsx",
         "gaps": [
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The preview uses the pinned EmptyState demo and its live documentation container."
         ]
       },
       "Kbd": {
@@ -1384,14 +1393,16 @@
         "source": "upstream/docs/torch-site.snapshot",
         "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
         "gaps": [
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "Upstream chart cleanup can be mismatched if its asynchronous chart load fails or finishes after unmount."
         ]
       },
       "Line Chart": {
         "source": "upstream/docs/torch-site.snapshot",
         "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
         "gaps": [
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "Upstream chart cleanup can be mismatched if its asynchronous chart load fails or finishes after unmount."
         ]
       }
     },
@@ -1400,7 +1411,8 @@
         "source": "upstream/docs/torch-site.snapshot",
         "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
         "gaps": [
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "Upstream chart cleanup can be mismatched if its asynchronous chart load fails or finishes after unmount."
         ]
       },
       "Sparkline": {
@@ -1413,7 +1425,8 @@
         "source": "upstream/docs/torch-site.snapshot",
         "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
         "gaps": [
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "Upstream chart cleanup can be mismatched if its asynchronous chart load fails or finishes after unmount."
         ]
       },
       "Login Form": {
@@ -1428,14 +1441,16 @@
         "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
         "gaps": [
           "The sample is wrapped from the published TorchUI documentation example.",
-          "The published recipe passes a password prop unsupported by the pinned PasswordStrengthIndicator; this preview uses the analysis from TorchUI’s documented PasswordStrengthIndicator example to supply its required strength, score, and details."
+          "The published recipe passes a password prop unsupported by the pinned PasswordStrengthIndicator; this preview uses the analysis from TorchUI’s documented PasswordStrengthIndicator example to supply its required strength, score, and details.",
+          "The preview adds the new-password autocomplete hint to the password input."
         ]
       },
       "Settings Form": {
         "source": "upstream/docs/torch-site.snapshot",
         "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
         "gaps": [
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The preview adds current-password and new-password autocomplete hints."
         ]
       },
       "Form Dialog": {
@@ -1449,14 +1464,16 @@
         "source": "upstream/docs/torch-site.snapshot",
         "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
         "gaps": [
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The preview uses one labeled drawer header and footer, validates without native form submission in restrictive hosts, and replaces the original loading spinner with text. Dismiss matches the close control’s accessible name."
         ]
       },
       "Wizard Flow": {
         "source": "upstream/docs/torch-site.snapshot",
         "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
         "gaps": [
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The preview makes the success state reactive and validates button and Enter actions without native form submission in restrictive hosts."
         ]
       },
       "Stat Grid": {

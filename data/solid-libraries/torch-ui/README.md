@@ -6,6 +6,8 @@ The official navigation contains 100 rows for 99 distinct names. The previews us
 
 The upstream theme, orange primary token, surface and ink scales, radii, icons, portal styling, and keyframe injection remain intact. Examples that omit application state or fixture data supply only the glue needed to run them; the exact documented snippets and captured live documentation script are in the corpus and provenance records. Accordion defaults to single selection without collapsing the selected item.
 
+Runnable examples adapt a few documentation snippets to match the live demos or correct interaction and accessibility problems; each affected preview discloses its adaptation. The preserved upstream date pickers and charts retain their date-comparison and cleanup limitations.
+
 The original three-column Board is inside a keyboard-accessible horizontal scroll region on narrow screens; its component styling and column layout are unchanged.
 
 The Image photograph is a quality-85 WebP conversion (12,854 to 8,790 bytes, still 600 × 400). A 20,538-byte frame from the licensed Spring film replaces the documented 89,072-byte poster to avoid the Blender and Spring logos excluded from the Spring website's CC BY license. Spring plays a 10.083-second excerpt at 640 × 268 and the original 24 fps with stereo audio (152,632 bytes versus 90,190,341 bytes for the 1920 × 804 original). The shorter clip is stream-copied from the original conversion without further re-encoding. The excerpt ends early; MCP Apps loads it through bounded resource reads, while standalone HTML embeds the same verified bytes. `media.json` records original and delivered hashes, licensing, and the conversion command.

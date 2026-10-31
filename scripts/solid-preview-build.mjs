@@ -2,7 +2,7 @@ import { build } from "esbuild";
 import { createHash } from "node:crypto";
 import { createRequire } from "node:module";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { dirname, relative, resolve } from "node:path";
+import { dirname, isAbsolute, relative, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { authenticateRuntimeFile, restoreArchive, resolveNpmCli } from "./preview-package-archive.mjs";
 
@@ -79,14 +79,15 @@ export async function buildSolidPreview({ entry, resolveDir, sourceRoot = dirnam
   const inputs = [];
   const isSnapshot = absolute => {
     const path = relative(sourceRoot, absolute).replaceAll("\\", "/");
-    return path !== ".." && !path.startsWith("../") && !path.split("/").includes("node_modules");
+    return path !== ".." && !path.startsWith("../") && !isAbsolute(path) && !path.split("/").includes("node_modules");
   };
   for (const input of Object.keys(result.metafile.inputs)) {
     const absolute = resolve(resolveDir, input);
     const path = relative(resolveDir, absolute).replaceAll("\\", "/");
     const bytes = await readFile(absolute);
     inputs.push({ path: relative(sourceRoot, absolute).replaceAll("\\", "/"), sha256: hash(bytes) });
-    if (isSnapshot(absolute) || !path.startsWith("node_modules/")) continue;
+    if (isSnapshot(absolute)) continue;
+    if (!path.startsWith("node_modules/")) throw new Error(`Solid preview input is outside its source and locked dependencies: ${path}`);
     let owner = dirname(path).replaceAll("\\", "/");
     while (!lock.packages[owner] && owner !== ".") owner = dirname(owner).replaceAll("\\", "/");
     if (!lock.packages[owner]) throw new Error(`No locked package owns ${path}`);

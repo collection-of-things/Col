@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { spawnSync } from "node:child_process";
 import { createRequire } from "node:module";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { dirname, relative, resolve } from "node:path";
+import { dirname, isAbsolute, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { brotliCompressSync, constants } from "node:zlib";
 import { buildSolidPreview } from "../solid-preview-build.mjs";
@@ -55,7 +55,26 @@ export async function openSourceBuild(slug) {
 
 /** Record the clean-installed CSS compiler modules and original CSS inputs. */
 export async function recordCssBuild(build, css, extraFiles = []) {
-  const modules = Object.keys(build.require.cache).filter(path => path.startsWith(resolve(build.resolveDir, "node_modules") + "\\") || path.startsWith(resolve(build.resolveDir, "node_modules") + "/"));
+  const moduleRoot = resolve(build.resolveDir, "node_modules");
+  const queue = [];
+  for (const name of ["postcss", build.lock.packages["node_modules/@tailwindcss/postcss"] ? "@tailwindcss/postcss" : "tailwindcss"]) {
+    const filename = build.require.resolve(name);
+    const path = relative(moduleRoot, filename).replaceAll("\\", "/");
+    if (path === ".." || path.startsWith("../") || isAbsolute(path)) throw new Error(`CSS compiler is outside locked dependencies: ${name}`);
+    if (!build.require.cache[filename]) throw new Error("No locked CSS compiler modules were recorded");
+    queue.push(build.require.cache[filename]);
+  }
+  const seen = new Set();
+  while (queue.length) {
+    const module = queue.pop();
+    if (seen.has(module.filename)) continue;
+    seen.add(module.filename);
+    const path = relative(moduleRoot, module.filename).replaceAll("\\", "/");
+    if (path === ".." || path.startsWith("../") || isAbsolute(path)) throw new Error(`CSS compiler dependency is outside locked dependencies: ${path}`);
+    queue.push(...module.children);
+  }
+  const modules = Object.keys(build.require.cache).filter(path => path.startsWith(moduleRoot + "\\") || path.startsWith(moduleRoot + "/"));
+  if (!modules.length) throw new Error("No locked CSS compiler modules were recorded");
   const inputs = [];
   for (const path of [...new Set([...modules, ...extraFiles])].sort()) inputs.push({ path: relative(build.resolveDir, path).replaceAll("\\", "/"), integrity: sha256(await readFile(path)) });
   const versions = Object.fromEntries(["tailwindcss", "postcss", "@tailwindcss/postcss", "@tailwindcss/node", "@tailwindcss/oxide"].filter(name => build.lock.packages[`node_modules/${name}`]).map(name => [name, build.lock.packages[`node_modules/${name}`]]));
