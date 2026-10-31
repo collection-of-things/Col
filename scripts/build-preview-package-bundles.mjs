@@ -16,13 +16,17 @@ import { adaptPreviewSourceImports } from "../lib/component-preview-source-adapt
 
 const run = promisify(execFile);
 const root = resolve(import.meta.dirname, "..");
-const supplemental = process.argv.includes("--supplemental");
+const reactRecovery = process.argv.includes("--react-preview-recovery");
+const cultRadix = process.argv.includes("--cult-radix-recovery");
+if (reactRecovery && cultRadix) throw new Error("Choose one recovery bundle");
+const supplemental = process.argv.includes("--supplemental") || reactRecovery || cultRadix;
+const cultPreviewIds = ["cult-ui/Bg Image Texture", "cult-ui/Bg Animated Fractal Grid", "cult-ui/Canvas Fractal Grid", "cult-ui/Color Picker", "cult-ui/Fluted Glass", "cult-ui/Halo Field", "cult-ui/Mock Browser Window", "cult-ui/Shader Lens Blur", "cult-ui/Toolbar Expandable", "cult-ui/Wizard Expandable"];
 const verifyInstalledRuntime = process.argv.includes("--verify-installed-runtime");
 const restoreRuntimeFiles = process.argv.includes("--restore-runtime-files") || verifyInstalledRuntime;
 const verifiedRuntimeFiles = new Set();
 const expectedRuntimeHashes = new Map();
 const isPackageMetadata = path => /(?:^|\/)(?:package\.json|licen[cs]e(?:\.[^/]*)?|notice(?:\.[^/]*)?|copying(?:\.[^/]*)?|readme(?:\.[^/]*)?)$/i.test(path);
-const artifactName = supplemental ? "package-bundles-supplemental" : "package-bundles";
+const artifactName = cultRadix ? "package-bundles-cult-radix" : reactRecovery ? "package-bundles-react-recovery" : supplemental ? "package-bundles-supplemental" : "package-bundles";
 const directory = resolve(root, `node_modules/.cache/col-preview-${artifactName}`);
 const outputPath = resolve(root, `data/component-previews/${artifactName}.json`);
 const lockPath = resolve(root, `data/component-previews/vendor/${artifactName}-lock.json`);
@@ -46,10 +50,10 @@ const projects = supplemental ? [] : [
 // Read every advertised preview before choosing exports, so a fallback for one
 // failing demo cannot hide other genuine exports used elsewhere in the catalog.
 const observed = new Map();
-const importSources = Object.values(packageRecipes).map(recipe => recipe.imports);
+const importSources = cultRadix ? [] : Object.values(packageRecipes).map(recipe => recipe.imports);
 for (const file of ["extra.json", "shadcn.json"]) {
   const previews = JSON.parse(await readFile(resolve(root, "data/component-previews", file), "utf8"));
-  importSources.push(...Object.entries(previews.entries).map(([id, entry]) => adaptPreviewSourceImports(id, entry.code)));
+  importSources.push(...Object.entries(previews.entries).filter(([id]) => !cultRadix || cultPreviewIds.includes(id)).map(([id, entry]) => adaptPreviewSourceImports(id, entry.code)));
 }
 for (const code of importSources) for (const statement of parse(code, { sourceType: "module", plugins: ["jsx", "typescript"] }).program.body) {
   if (statement.type !== "ImportDeclaration") continue;
@@ -62,7 +66,13 @@ for (const code of importSources) for (const statement of parse(code, { sourceTy
 }
 if (supplemental) {
   // Context-bearing packages share one graph, including every observed subpath.
-  const groups = [
+  const groups = cultRadix ? [["radix-ui", "1.4.3", {
+    "@radix-ui/react-accordion": "1.2.12", "@radix-ui/react-label": "2.1.7",
+    "@radix-ui/react-scroll-area": "1.2.10", "@radix-ui/react-select": "2.2.6",
+    "@radix-ui/react-separator": "1.1.7", "@radix-ui/react-slider": "1.3.6",
+    "@radix-ui/react-switch": "1.2.6", "@radix-ui/react-tabs": "1.1.13",
+    "@radix-ui/react-tooltip": "1.2.8", "@radix-ui/react-use-controllable-state": "1.2.2",
+  }]] : reactRecovery ? [["motion", "12.23.12"], ["@radix-ui/react-label", "2.1.7"]] : [
     ["tailwind-variants", "3.2.2"], ["lucide-react", "1.17.0"],
     ["@heroicons/react", "2.2.0"],
     ["@internationalized/number", "3.6.9"],
@@ -123,7 +133,7 @@ const installName = project => new Set(projects.flatMap(item => [
   ...(item.name === project.name ? [item.version] : []),
   ...(item.dependencies?.[project.name] ? [item.dependencies[project.name]] : []),
 ])).size > 1 ? `col-preview-${hash(`${project.name}@${project.version}`).slice(0, 12)}` : project.name;
-const manifest = { private: true, dependencies: { ...Object.fromEntries(projects.map(project => [installName(project), installName(project) === project.name ? project.version : `npm:${project.name}@${project.version}`])), ...Object.assign({}, ...projects.map(project => project.dependencies)), react: "19.3.0", "react-dom": "19.3.0", ...(supplemental ? {} : { "@emotion/react": "11.14.0" }) } };
+const manifest = { private: true, dependencies: { ...Object.fromEntries(projects.map(project => [installName(project), installName(project) === project.name ? project.version : `npm:${project.name}@${project.version}`])), ...Object.assign({}, ...projects.map(project => project.dependencies)), react: "19.3.0", "react-dom": "19.3.0", ...(reactRecovery ? { "@emotion/is-prop-valid": "1.4.0", "framer-motion": "12.23.12", "motion-dom": "12.23.12", "motion-utils": "12.23.6" } : {}), ...(supplemental ? {} : { "@emotion/react": "11.14.0" }) } };
 const selectedNames = process.argv.find(value => value.startsWith("--only="))?.slice("--only=".length).split(",");
 if (selectedNames && process.argv.includes("--update-lock")) throw new Error("Targeted rebuilds require the unchanged authenticated lockfile");
 const selectedProjects = selectedNames ? projects.filter(project => selectedNames.includes(project.name)) : projects;
@@ -301,6 +311,7 @@ for (const project of selectedProjects) {
       code += `\n/*! ${pkg.name}@${pkg.version}\n${notice.text.replaceAll("*/", "* /")}\n*/\n`;
     }
   }
+  if (reactRecovery || cultRadix) for (const notice of licenses) if (!code.includes(notice.text)) code += `\n/*! ${notice.package}@${notice.version}\n${notice.text.replaceAll("*/", "* /")}\n*/\n`;
   const sourceFiles = await Promise.all(Object.keys(result.metafile.inputs).filter(path => path !== "<stdin>").sort().map(async path => {
     const absolute = resolve(root, path);
     const sourcePath = relative(directory, absolute).replaceAll("\\", "/");
@@ -313,7 +324,7 @@ for (const project of selectedProjects) {
   output[projectKey] = {
     code, externals, exports: Object.entries(result.metafile.outputs).find(([path]) => path.endsWith(".js"))[1].exports, ...(importMappings ? { importMappings } : {}),
     source: { package: project.name, version: project.version, url: `https://registry.npmjs.org/${project.name}/-/${project.name.split("/").at(-1)}-${project.version}.tgz`, integrity: `sha256:${hash(code)}`, npmIntegrity, files: sourceFiles },
-    licenses, emittedPackages: emittedPackageIdentities, warnings: result.warnings.map(warning => warning.text), lockfileSha256: hash(lockText),
+    licenses, emittedPackages: emittedPackageIdentities, warnings: result.warnings.map(warning => warning.text), lockfileSha256: hash(lockText), ...(cultRadix ? { components: cultPreviewIds } : {}),
   };
   console.log(`Bundled ${project.name}@${project.version}: ${code.length} characters; externals ${externals.join(", ")}; ${licenses.length} license files.`);
 }
