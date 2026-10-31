@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { hostname } from "@/lib/utils";
 
@@ -11,7 +12,8 @@ interface LibraryLogoProps {
 }
 
 /**
- * Renders a library's real logo via Google's favicon service.
+ * Renders a library's real logo via Google's favicon service. The image
+ * optimizer fetches it server-side, so visitors never contact Google.
  * Falls back to a monogram tile if the fetch fails.
  */
 export function LibraryLogo({
@@ -35,13 +37,11 @@ export function LibraryLogo({
   }
 
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
+    <Image
       src={`https://www.google.com/s2/favicons?domain=${hostname(url)}&sz=128`}
       alt={`${name} logo`}
       width={size}
       height={size}
-      loading="lazy"
       onError={() => setFailed(true)}
       className={`shrink-0 rounded-md object-contain ${className}`}
     />

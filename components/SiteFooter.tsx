@@ -32,8 +32,8 @@ export function SiteFooter() {
         })}
       </nav>
       <a href="https://www.dotstore.io/launches/2026-w41/col" target="_blank" rel="noopener noreferrer" className={styles.productBadge}>
-        <Image src="https://www.dotstore.io/launches/2026-w41/col/badge/award-dark.svg" alt="Col on dotstore" width={250} height={56} unoptimized className={styles.badgeDark} />
-        <Image src="https://www.dotstore.io/launches/2026-w41/col/badge/award-light.svg" alt="Col on dotstore" width={250} height={56} unoptimized className={styles.badgeLight} />
+        <Image src="/badges/dotstore-award-dark.svg" alt="Col on dotstore" width={250} height={56} className={styles.badgeDark} />
+        <Image src="/badges/dotstore-award-light.svg" alt="Col on dotstore" width={250} height={56} className={styles.badgeLight} />
       </a>
       <p className={styles.footerLegal}>
         © {new Date().getFullYear()} Screen · <a href={repoFile("LICENSE")} target="_blank" rel="noopener noreferrer">MIT license</a>
