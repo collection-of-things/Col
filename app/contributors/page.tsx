@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/site";
+import Image from "next/image";
 import type { CSSProperties } from "react";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { getContributors } from "@/lib/contributors";
@@ -45,8 +46,7 @@ export default async function ContributorsPage() {
               <a href={contributor.url} target="_blank" rel="noopener noreferrer" className="cb-card">
                 <span className="cb-media">
                   {contributor.avatarUrl ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={contributor.avatarUrl} alt="" width={72} height={72} loading={index < 12 ? "eager" : "lazy"} className="cb-avatar" />
+                    <Image src={contributor.avatarUrl} alt="" width={72} height={72} loading={index < 12 ? "eager" : "lazy"} className="cb-avatar" />
                   ) : <span className="cb-avatar" aria-hidden />}
                   <ArrowUpRight className="cb-open" aria-hidden />
                 </span>
