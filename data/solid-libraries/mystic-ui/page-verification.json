@@ -1,0 +1,222 @@
+{
+  "checkedAt": "2026-10-30T01:01:15.790Z",
+  "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+  "entries": [
+    {
+      "name": "Android",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/android",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/android",
+      "title": "Android",
+      "integrity": "874ff2e13b89ab403795a8495f29f571025da3e6f94ad19fbab27b66396617ca"
+    },
+    {
+      "name": "Animated Beam",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-beam",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-beam",
+      "title": "Animated Beam",
+      "integrity": "cfb42894a26ea9e8686ee8d3d9c04ddc3e4c911314b84c941b57a99d6459775a"
+    },
+    {
+      "name": "Animated Shiny Text",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-shiny-text",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-shiny-text",
+      "title": "Animated Shiny Text",
+      "integrity": "54d672ed64162f1cc6c15efe5cf0fcb7b6311db762f8bb6333a5f83ebd1006a9"
+    },
+    {
+      "name": "Border Beam",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/border-beam",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/border-beam",
+      "title": "Border Beam",
+      "integrity": "01fe172985433fa0b68e54f1040771116632f56076b53864f23ed0dc3fb3516c"
+    },
+    {
+      "name": "Dock",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/dock",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/dock",
+      "title": "Dock",
+      "integrity": "e1b02e527c300dd30e55358710a5873d45ef27385dfc552f747a2ab0eae5f266"
+    },
+    {
+      "name": "Dot Pattern",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/dot-pattern",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/dot-pattern",
+      "title": "Dot Pattern",
+      "integrity": "1d2fbf789875bde109eecaf38913cac0ef0000cd7ac81656dcafd55ed8754f63"
+    },
+    {
+      "name": "Flip Text",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/flip-text",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/flip-text",
+      "title": "Flip Text",
+      "integrity": "8f95afa064c2fb5b70116067c316d2e7c278632dfe381b4fdb4447c7b4867ea4"
+    },
+    {
+      "name": "Gradual Spacing",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/gradual-spacing",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/gradual-spacing",
+      "title": "Gradual Spacing",
+      "integrity": "4c218554efeb9d759e03be0d50915da4797f54553b78dba1403cfb1fff1c5211"
+    },
+    {
+      "name": "Grid Pattern",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/grid-pattern",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/grid-pattern",
+      "title": "Grid Pattern",
+      "integrity": "7ac2b6cfcdfe223a629d25a691ecec0a7dd4c9f6a3fef568c2f58af16c290cd1"
+    },
+    {
+      "name": "iPhone 15",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/iphone-15",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/iphone-15",
+      "title": "iPhone 15",
+      "integrity": "ec273f805740097e5c2defd166ab07233407c841f5c58c60aa5e1b527a4ae5c1"
+    },
+    {
+      "name": "Letter Pullup",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/letter-pullup",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/letter-pullup",
+      "title": "Letter Pullup",
+      "integrity": "ddf7c1d68df83be4a51145f46b16ed5151699dd35aeea5c3736fd77024bbc1c9"
+    },
+    {
+      "name": "Marquee",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/marquee",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/marquee",
+      "title": "Marquee",
+      "integrity": "b5a8f990036694416f5379a2d0850a33058a961c8ac54c27de07bf53b31fa479"
+    },
+    {
+      "name": "Meteors",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/meteors",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/meteors",
+      "title": "Meteors",
+      "integrity": "7d0ffb0b2ddff19898c2c03d5cd2b9645c9de6d1ba0594087fba265f47c4436c"
+    },
+    {
+      "name": "No Signal Screen",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/no-signal-screen",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/no-signal-screen",
+      "title": "No Signal Screen",
+      "integrity": "27f6b4cd102e4e24c87f847fe95cfc984df83adb4c38bb573ae2f7831ef53b1d"
+    },
+    {
+      "name": "Number Ticker",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/number-ticker",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/number-ticker",
+      "title": "Number Ticker",
+      "integrity": "00e02e880566bb08c8dd0ba61fc0673ed3c1b2458ae5b2b81722e7909ef52aad"
+    },
+    {
+      "name": "Orbiting Circles",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/orbiting-circles",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/orbiting-circles",
+      "title": "Orbiting Circles",
+      "integrity": "4ed8d1530b2c534f217d619405759c4188ad89d425f819132a6fd7694cd7a005"
+    },
+    {
+      "name": "Retro Grid",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/retro-grid",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/retro-grid",
+      "title": "Retro Grid",
+      "integrity": "0f84aeb582072482ee12eea9b83427d171956a24b3913a31da5501db518557ed"
+    },
+    {
+      "name": "Ripple",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/ripple",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/ripple",
+      "title": "Ripple",
+      "integrity": "151d0a6632fa4d018787599b08dd2ac9c2a95173c5bc97f83340e499fb1478f1"
+    },
+    {
+      "name": "Safari",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/safari",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/safari",
+      "title": "Safari",
+      "integrity": "808be44f81a62164234f80bfd84c6a5e307bb06d0bf914e61ceee01388ad321e"
+    },
+    {
+      "name": "Shine Border",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/shine-border",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/shine-border",
+      "title": "Shine Border",
+      "integrity": "b1195f2ee2f8386bc3dc0d0d11a64aa76e7cc5931cbe6fc9b4a02f977c675896"
+    },
+    {
+      "name": "Sparkles Text",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/sparkles-text",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/sparkles-text",
+      "title": "Sparkles Text",
+      "integrity": "e0af87a85a1b6e33d3856b8948f3749fd5e50d763d398009c4ef84156fe1b34b"
+    },
+    {
+      "name": "Spotlight",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/spotlight",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/spotlight",
+      "title": "Spotlight",
+      "integrity": "cef67ee9823660d31de88b237284425b603cf1b8973211d12463cdc6adca7a9a"
+    },
+    {
+      "name": "Text Reveal",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/text-reveal",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/text-reveal",
+      "title": "Text Reveal",
+      "integrity": "cfb66f702410ce7e0a481959ed97ac5268552736d1c796b7246bf442a0cd272b"
+    },
+    {
+      "name": "Typing Animation",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/typing-animation",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/typing-animation",
+      "title": "Typing Animation",
+      "integrity": "4b6b04e7977087fca6425304f5228823e1fd305ecb8765046d64e9a8b6878f4d"
+    },
+    {
+      "name": "Word Fade In",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-fade-in",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/word-fade-in",
+      "title": "Word Fade In",
+      "integrity": "c9e6b756845fb7d19fc52781cb948caf0169e5b200edcebe1d112e7cc98be2f3"
+    },
+    {
+      "name": "Word Pullup",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-pullup",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/word-pullup",
+      "title": "Word Pullup",
+      "integrity": "b274f40e9e0a57eee58f62b8e2c42b62bce36c6ac9f5b95c28e3c25c2594459e"
+    },
+    {
+      "name": "Word Rotate",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-rotate",
+      "status": 200,
+      "resolvedUrl": "https://mystic-ui.vercel.app/docs/tailwind/components/word-rotate",
+      "title": "Word Rotate",
+      "integrity": "3e5b98f864da76b3c346605092d5f1d336c6399837987c746a9d121d4ee9f9a2"
+    }
+  ]
+}

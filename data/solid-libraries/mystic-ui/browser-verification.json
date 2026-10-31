@@ -1,0 +1,2810 @@
+{
+  "checkedAt": "2026-10-30T06:27:13.128Z",
+  "sandbox": "allow-scripts allow-forms",
+  "viewport": {
+    "width": 900,
+    "height": 900
+  },
+  "results": [
+    {
+      "id": "mystic-ui/Marquee",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/marquee",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "b1dddbbe0fa905b00328c4de30bb8e0b6297498791c077a2bfad33c30381d321",
+      "cssIntegrity": "a0174ae2ac2cf4658d82c40663110c399efaa8986887fb7f27c995140c6a8d1c",
+      "before": {
+        "text": "Jack@jackI've never seen anything like this before. It's amazing. I love it.Jill@jillI don't know what to say. I'm speechless. This is amazing.John@johnI'm at a loss for words. This is amazing. I love it.Jack@jackI've never seen anything li",
+        "elements": 181,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "marquee",
+            "duration": 20000
+          },
+          {
+            "name": "marquee",
+            "duration": 20000
+          },
+          {
+            "name": "marquee",
+            "duration": 20000
+          },
+          {
+            "name": "marquee",
+            "duration": 20000
+          },
+          {
+            "name": "marquee",
+            "duration": 40000
+          },
+          {
+            "name": "marquee",
+            "duration": 40000
+          },
+          {
+            "name": "marquee",
+            "duration": 40000
+          },
+          {
+            "name": "marquee",
+            "duration": 40000
+          }
+        ],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          }
+        ],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Jack@jackI've never seen anything like this before. It's amazing. I love it.Jill@jillI don't know what to say. I'm speechless. This is amazing.John@johnI'm at a loss for words. This is amazing. I love it.Jack@jackI've never seen anything li",
+        "animations": 8,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Marquee",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/marquee",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "b1dddbbe0fa905b00328c4de30bb8e0b6297498791c077a2bfad33c30381d321",
+      "cssIntegrity": "a0174ae2ac2cf4658d82c40663110c399efaa8986887fb7f27c995140c6a8d1c",
+      "before": {
+        "text": "Jack@jackI've never seen anything like this before. It's amazing. I love it.Jill@jillI don't know what to say. I'm speechless. This is amazing.John@johnI'm at a loss for words. This is amazing. I love it.Jack@jackI've never seen anything li",
+        "elements": 181,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "marquee",
+            "duration": 20000
+          },
+          {
+            "name": "marquee",
+            "duration": 20000
+          },
+          {
+            "name": "marquee",
+            "duration": 20000
+          },
+          {
+            "name": "marquee",
+            "duration": 20000
+          },
+          {
+            "name": "marquee",
+            "duration": 40000
+          },
+          {
+            "name": "marquee",
+            "duration": 40000
+          },
+          {
+            "name": "marquee",
+            "duration": 40000
+          },
+          {
+            "name": "marquee",
+            "duration": 40000
+          }
+        ],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          },
+          {
+            "loaded": true,
+            "alt": "avatar-img",
+            "src": "data:image/png;base64,iVBORw0K"
+          }
+        ],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Jack@jackI've never seen anything like this before. It's amazing. I love it.Jill@jillI don't know what to say. I'm speechless. This is amazing.John@johnI'm at a loss for words. This is amazing. I love it.Jack@jackI've never seen anything li",
+        "animations": 8,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Orbiting Circles",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/orbiting-circles",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "0397e641064c25d3515d1cdc463d9a1dfb9687a244dad31e159690ee173895b2",
+      "cssIntegrity": "a0174ae2ac2cf4658d82c40663110c399efaa8986887fb7f27c995140c6a8d1c",
+      "before": {
+        "text": "Circles",
+        "elements": 36,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "orbit",
+            "duration": 20000
+          },
+          {
+            "name": "orbit",
+            "duration": 20000
+          },
+          {
+            "name": "orbit",
+            "duration": 20000
+          },
+          {
+            "name": "orbit",
+            "duration": 20000
+          }
+        ],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Circles",
+        "animations": 4,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Orbiting Circles",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/orbiting-circles",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "0397e641064c25d3515d1cdc463d9a1dfb9687a244dad31e159690ee173895b2",
+      "cssIntegrity": "a0174ae2ac2cf4658d82c40663110c399efaa8986887fb7f27c995140c6a8d1c",
+      "before": {
+        "text": "Circles",
+        "elements": 36,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "orbit",
+            "duration": 20000
+          },
+          {
+            "name": "orbit",
+            "duration": 20000
+          },
+          {
+            "name": "orbit",
+            "duration": 20000
+          },
+          {
+            "name": "orbit",
+            "duration": 20000
+          }
+        ],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Circles",
+        "animations": 4,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Ripple",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/ripple",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "0867192b48ccbaee57284dfe6aee2100fdc0fac2cf690a613311023c40206a18",
+      "cssIntegrity": "a0174ae2ac2cf4658d82c40663110c399efaa8986887fb7f27c995140c6a8d1c",
+      "before": {
+        "text": "",
+        "elements": 11,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "ripple",
+            "duration": 2000
+          },
+          {
+            "name": "ripple",
+            "duration": 2000
+          },
+          {
+            "name": "ripple",
+            "duration": 2000
+          },
+          {
+            "name": "ripple",
+            "duration": 2000
+          },
+          {
+            "name": "ripple",
+            "duration": 2000
+          },
+          {
+            "name": "ripple",
+            "duration": 2000
+          },
+          {
+            "name": "ripple",
+            "duration": 2000
+          },
+          {
+            "name": "ripple",
+            "duration": 2000
+          }
+        ],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [
+          {
+            "loaded": true,
+            "alt": "Solid JS",
+            "src": "data:image/svg+xml;base64,PHN2"
+          }
+        ],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "",
+        "animations": 8,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Ripple",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/ripple",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "0867192b48ccbaee57284dfe6aee2100fdc0fac2cf690a613311023c40206a18",
+      "cssIntegrity": "a0174ae2ac2cf4658d82c40663110c399efaa8986887fb7f27c995140c6a8d1c",
+      "before": {
+        "text": "",
+        "elements": 11,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "ripple",
+            "duration": 2000
+          },
+          {
+            "name": "ripple",
+            "duration": 2000
+          },
+          {
+            "name": "ripple",
+            "duration": 2000
+          },
+          {
+            "name": "ripple",
+            "duration": 2000
+          },
+          {
+            "name": "ripple",
+            "duration": 2000
+          },
+          {
+            "name": "ripple",
+            "duration": 2000
+          },
+          {
+            "name": "ripple",
+            "duration": 2000
+          },
+          {
+            "name": "ripple",
+            "duration": 2000
+          }
+        ],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [
+          {
+            "loaded": true,
+            "alt": "Solid JS",
+            "src": "data:image/svg+xml;base64,PHN2"
+          }
+        ],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "",
+        "animations": 8,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Android",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/android",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "420ec00ee6e82f46bcc7261f88db3c6d82d7c7a2b30548ba1d75de97d4e695ad",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "android mock",
+        "elements": 13,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "android mock",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Android",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/android",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "420ec00ee6e82f46bcc7261f88db3c6d82d7c7a2b30548ba1d75de97d4e695ad",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "android mock",
+        "elements": 13,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "android mock",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Animated Beam",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-beam",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "42327bcd235c3d2e2a92fb62620853357f2d174039ef0aef759e1037f302236a",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "",
+        "elements": 99,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Animated Beam",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-beam",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "42327bcd235c3d2e2a92fb62620853357f2d174039ef0aef759e1037f302236a",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "",
+        "elements": 99,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Animated Shiny Text",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-shiny-text",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "9329fb7a4d1445c6bec459e291fd88c354a8978621f0d6e483fe8d41aab4921c",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "✨ Introducing Mystic UI",
+        "elements": 6,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "shiny-text",
+            "duration": 8000
+          }
+        ],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "✨ Introducing Mystic UI",
+        "animations": 1,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Animated Shiny Text",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-shiny-text",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "9329fb7a4d1445c6bec459e291fd88c354a8978621f0d6e483fe8d41aab4921c",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "✨ Introducing Mystic UI",
+        "elements": 6,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "shiny-text",
+            "duration": 8000
+          }
+        ],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "✨ Introducing Mystic UI",
+        "animations": 1,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Border Beam",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/border-beam",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "b38c86bda873e403737a191c25d95a36de5e24665ed6f586fa4eddc2195d3fbe",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Border Beam",
+        "elements": 3,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "border-beam",
+            "duration": 15000
+          }
+        ],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Border Beam",
+        "animations": 1,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Border Beam",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/border-beam",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "b38c86bda873e403737a191c25d95a36de5e24665ed6f586fa4eddc2195d3fbe",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Border Beam",
+        "elements": 3,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "border-beam",
+            "duration": 15000
+          }
+        ],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Border Beam",
+        "animations": 1,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Dock",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/dock",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "7c199b60fcaec88e0c884f43ec6c187e519397d936a034f5ffeae47603089d64",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "",
+        "elements": 14,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Dock",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/dock",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "7c199b60fcaec88e0c884f43ec6c187e519397d936a034f5ffeae47603089d64",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "",
+        "elements": 14,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Dot Pattern",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/dot-pattern",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "d1818987cae91664dc025fa1a87fc6e4f68144eac84d940001b89698819210b8",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Dot Pattern",
+        "elements": 7,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Dot Pattern",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Dot Pattern",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/dot-pattern",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "d1818987cae91664dc025fa1a87fc6e4f68144eac84d940001b89698819210b8",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Dot Pattern",
+        "elements": 7,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Dot Pattern",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Flip Text",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/flip-text",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "9e4082a4ca217df163cd89e92b154a4b84643a191148290861c3b7ed2efda7f7",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Flip Text",
+        "elements": 11,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          }
+        ],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Flip Text",
+        "animations": 10,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Flip Text",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/flip-text",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "9e4082a4ca217df163cd89e92b154a4b84643a191148290861c3b7ed2efda7f7",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Flip Text",
+        "elements": 11,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          }
+        ],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Flip Text",
+        "animations": 10,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Gradual Spacing",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/gradual-spacing",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "2aac8d0c980c477aa17feab64d5771c6bba8fc8546e472dc19b1710f16927ea7",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Gradual Spacing",
+        "elements": 17,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          }
+        ],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Gradual Spacing",
+        "animations": 14,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Gradual Spacing",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/gradual-spacing",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "2aac8d0c980c477aa17feab64d5771c6bba8fc8546e472dc19b1710f16927ea7",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Gradual Spacing",
+        "elements": 17,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          },
+          {
+            "name": "web-animation",
+            "duration": 500
+          }
+        ],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Gradual Spacing",
+        "animations": 14,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Grid Pattern",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/grid-pattern",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "3502e2fdfacc081dc363805c61c6cdfb467e876b75b71cb4857e0ae1f29b8277",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Grid Pattern",
+        "elements": 8,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Grid Pattern",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Grid Pattern",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/grid-pattern",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "3502e2fdfacc081dc363805c61c6cdfb467e876b75b71cb4857e0ae1f29b8277",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Grid Pattern",
+        "elements": 8,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Grid Pattern",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/iPhone 15",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/iphone-15",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "ba14d18813423ebd941dbd2a6e1ec9899422f641f575724c7011fc63924070b4",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "",
+        "elements": 17,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/iPhone 15",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/iphone-15",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "ba14d18813423ebd941dbd2a6e1ec9899422f641f575724c7011fc63924070b4",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "",
+        "elements": 17,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Letter Pullup",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/letter-pullup",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "f3ad58ec1754b914748d532c693adadf5d2692aaf36084234f2c02be4f0ad1d2",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Staggered Letter Pull Up",
+        "elements": 28,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          }
+        ],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Staggered Letter Pull Up",
+        "animations": 13,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Letter Pullup",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/letter-pullup",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "f3ad58ec1754b914748d532c693adadf5d2692aaf36084234f2c02be4f0ad1d2",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Staggered Letter Pull Up",
+        "elements": 28,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          }
+        ],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Staggered Letter Pull Up",
+        "animations": 13,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Meteors",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/meteors",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "74c4abeb6a15b2353ccf9f574717bab232cea3a848d975512a58a12fee757cd4",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Meteors",
+        "elements": 62,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "meteor",
+            "duration": 3000
+          },
+          {
+            "name": "meteor",
+            "duration": 8000
+          },
+          {
+            "name": "meteor",
+            "duration": 4000
+          },
+          {
+            "name": "meteor",
+            "duration": 8000
+          },
+          {
+            "name": "meteor",
+            "duration": 5000
+          },
+          {
+            "name": "meteor",
+            "duration": 9000
+          },
+          {
+            "name": "meteor",
+            "duration": 5000
+          },
+          {
+            "name": "meteor",
+            "duration": 9000
+          },
+          {
+            "name": "meteor",
+            "duration": 5000
+          },
+          {
+            "name": "meteor",
+            "duration": 2000
+          },
+          {
+            "name": "meteor",
+            "duration": 9000
+          },
+          {
+            "name": "meteor",
+            "duration": 4000
+          },
+          {
+            "name": "meteor",
+            "duration": 8000
+          },
+          {
+            "name": "meteor",
+            "duration": 3000
+          },
+          {
+            "name": "meteor",
+            "duration": 9000
+          }
+        ],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Meteors",
+        "animations": 30,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Meteors",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/meteors",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "74c4abeb6a15b2353ccf9f574717bab232cea3a848d975512a58a12fee757cd4",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Meteors",
+        "elements": 62,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "meteor",
+            "duration": 5000
+          },
+          {
+            "name": "meteor",
+            "duration": 8000
+          },
+          {
+            "name": "meteor",
+            "duration": 7000
+          },
+          {
+            "name": "meteor",
+            "duration": 6000
+          },
+          {
+            "name": "meteor",
+            "duration": 6000
+          },
+          {
+            "name": "meteor",
+            "duration": 8000
+          },
+          {
+            "name": "meteor",
+            "duration": 3000
+          },
+          {
+            "name": "meteor",
+            "duration": 6000
+          },
+          {
+            "name": "meteor",
+            "duration": 8000
+          },
+          {
+            "name": "meteor",
+            "duration": 5000
+          },
+          {
+            "name": "meteor",
+            "duration": 4000
+          },
+          {
+            "name": "meteor",
+            "duration": 3000
+          },
+          {
+            "name": "meteor",
+            "duration": 9000
+          },
+          {
+            "name": "meteor",
+            "duration": 2000
+          },
+          {
+            "name": "meteor",
+            "duration": 7000
+          }
+        ],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Meteors",
+        "animations": 30,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/No Signal Screen",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/no-signal-screen",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "9c4039a07811516a943a5bdfc062968767b051c0ec2ccb0e477dcd193f59a43c",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "No Signal",
+        "elements": 3,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "No Signal",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/No Signal Screen",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/no-signal-screen",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "9c4039a07811516a943a5bdfc062968767b051c0ec2ccb0e477dcd193f59a43c",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "No Signal",
+        "elements": 3,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "No Signal",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Number Ticker",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/number-ticker",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "7fb13dff26a6e63379a702761cf6c00909904a6ae7f54cb7d6f4230c2cb34b68",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "51",
+        "elements": 2,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "73",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Number Ticker",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/number-ticker",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "7fb13dff26a6e63379a702761cf6c00909904a6ae7f54cb7d6f4230c2cb34b68",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "49",
+        "elements": 2,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "72",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Retro Grid",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/retro-grid",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "d4996a12d094a2ff09e470400f296d6f0d222670a29f85d29b336eaf6c643b02",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Retro Grid",
+        "elements": 6,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "grid",
+            "duration": 15000
+          }
+        ],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Retro Grid",
+        "animations": 1,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Retro Grid",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/retro-grid",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "d4996a12d094a2ff09e470400f296d6f0d222670a29f85d29b336eaf6c643b02",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Retro Grid",
+        "elements": 6,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "grid",
+            "duration": 15000
+          }
+        ],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Retro Grid",
+        "animations": 1,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Safari",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/safari",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "6b15b9d56d84f9507908370a51e2a81b39578b2274c26cc1db9be02da05fbe6a",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "start.solidjs.comstart.solidjs.com",
+        "elements": 37,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "start.solidjs.comstart.solidjs.com",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Safari",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/safari",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "6b15b9d56d84f9507908370a51e2a81b39578b2274c26cc1db9be02da05fbe6a",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "start.solidjs.comstart.solidjs.com",
+        "elements": 37,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "start.solidjs.comstart.solidjs.com",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Shine Border",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/shine-border",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "55ea7d0316a2b9ecc467bd788487e301fb16e8bc65c03324c42d43b279689452",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Shine Border",
+        "elements": 3,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "shine",
+            "duration": 14000
+          }
+        ],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Shine Border",
+        "animations": 1,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Shine Border",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/shine-border",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "55ea7d0316a2b9ecc467bd788487e301fb16e8bc65c03324c42d43b279689452",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Shine Border",
+        "elements": 3,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "shine",
+            "duration": 14000
+          }
+        ],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Shine Border",
+        "animations": 1,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Sparkles Text",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/sparkles-text",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "35ccd2e28d95a8eda8892cb3815c0e7363c8bf5042d459ff5166ff68ab37069f",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Mystic UI",
+        "elements": 22,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          }
+        ],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Mystic UI",
+        "animations": 30,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Sparkles Text",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/sparkles-text",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "35ccd2e28d95a8eda8892cb3815c0e7363c8bf5042d459ff5166ff68ab37069f",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Mystic UI",
+        "elements": 22,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          },
+          {
+            "name": "web-animation",
+            "duration": 1200
+          }
+        ],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Mystic UI",
+        "animations": 30,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Spotlight",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/spotlight",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "0b5e0ee379db00a191e14ebfe6110b0b7c6cd253df6c527b1c9db7040baa5b25",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Spotlight",
+        "elements": 10,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "spotlight",
+            "duration": 2000
+          }
+        ],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Spotlight",
+        "animations": 1,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Spotlight",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/spotlight",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "0b5e0ee379db00a191e14ebfe6110b0b7c6cd253df6c527b1c9db7040baa5b25",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Spotlight",
+        "elements": 10,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "spotlight",
+            "duration": 2000
+          }
+        ],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Spotlight",
+        "animations": 1,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Text Reveal",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/text-reveal",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "aa426e67df6f5101f47ec7bc4bbb20b804975514ec3bf8831035bda13f294780",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Imagine magical components for SolidJS",
+        "elements": 8,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Imagine magical components for SolidJS",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Text Reveal",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/text-reveal",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "aa426e67df6f5101f47ec7bc4bbb20b804975514ec3bf8831035bda13f294780",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Imagine magical components for SolidJS",
+        "elements": 8,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Imagine magical components for SolidJS",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Typing Animation",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/typing-animation",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "7dbe0c7c1c1e0a64414744e57b67feb899f5c139b9e085f3170ff24fd71d922c",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Ty",
+        "elements": 1,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Typi",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Typing Animation",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/typing-animation",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "7dbe0c7c1c1e0a64414744e57b67feb899f5c139b9e085f3170ff24fd71d922c",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Ty",
+        "elements": 1,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Typi",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Word Fade In",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-fade-in",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "0fe5a1fd5a1c71a2daab5ad6a3f1039580b131632039b9a47e708c7124beb178",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Word Fade In",
+        "elements": 4,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "web-animation",
+            "duration": 1000
+          },
+          {
+            "name": "web-animation",
+            "duration": 1000
+          },
+          {
+            "name": "web-animation",
+            "duration": 1000
+          },
+          {
+            "name": "web-animation",
+            "duration": 1000
+          },
+          {
+            "name": "web-animation",
+            "duration": 1000
+          },
+          {
+            "name": "web-animation",
+            "duration": 1000
+          }
+        ],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Word Fade In",
+        "animations": 6,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Word Fade In",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-fade-in",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "0fe5a1fd5a1c71a2daab5ad6a3f1039580b131632039b9a47e708c7124beb178",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Word Fade In",
+        "elements": 4,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "web-animation",
+            "duration": 1000
+          },
+          {
+            "name": "web-animation",
+            "duration": 1000
+          },
+          {
+            "name": "web-animation",
+            "duration": 1000
+          },
+          {
+            "name": "web-animation",
+            "duration": 1000
+          },
+          {
+            "name": "web-animation",
+            "duration": 1000
+          },
+          {
+            "name": "web-animation",
+            "duration": 1000
+          }
+        ],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Word Fade In",
+        "animations": 6,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Word Pullup",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-pullup",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "0821470815cf4b36cdea6b34e057eed311c98e754da24b537a88a681c49d2e42",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Staggered Word Pull Up",
+        "elements": 5,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          }
+        ],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Staggered Word Pull Up",
+        "animations": 2,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Word Pullup",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-pullup",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "0821470815cf4b36cdea6b34e057eed311c98e754da24b537a88a681c49d2e42",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Staggered Word Pull Up",
+        "elements": 5,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
+          }
+        ],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Staggered Word Pull Up",
+        "animations": 2,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Word Rotate",
+      "theme": "light",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-rotate",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "3f948ec5345ffa479f601d029f7969859626e8f0c7f8f17fd6b148ce036366ec",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Word",
+        "elements": 2,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Word",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "mystic-ui/Word Rotate",
+      "theme": "dark",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-rotate",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "3f948ec5345ffa479f601d029f7969859626e8f0c7f8f17fd6b148ce036366ec",
+      "cssIntegrity": "93a8a6a77fed63ef6fc8747dce719ee1a8c7c54401a5fdc8a28a133f23ae74c1",
+      "before": {
+        "text": "Word",
+        "elements": 2,
+        "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Word",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "dark"
+      },
+      "expectedBlockedAssets": []
+    }
+  ]
+}

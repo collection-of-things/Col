@@ -1,0 +1,8 @@
+{
+  "magicui-solid/Hero Video Dialog": [
+    "The original dialog opens and closes, but its YouTube embed requires external network access and is blocked in the sandbox: https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
+  ],
+  "magicui-solid/Video Text": [
+    "The original video is reused unchanged. CodePen terms rely on the uploader’s warranty of rights; the filmmaker was not independently identified."
+  ]
+}

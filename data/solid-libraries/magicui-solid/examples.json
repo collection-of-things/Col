@@ -1,0 +1,1980 @@
+{
+  "checkedAt": "2026-10-30T01:04:54.305Z",
+  "examples": [
+    {
+      "id": "magicui-solid/Android",
+      "name": "Android",
+      "slug": "android",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/android/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/AndroidDemo.tsx",
+      "exportName": "AndroidDemo",
+      "componentSource": "src/registry/magicui/android.tsx",
+      "docsSource": "src/content/docs/docs/components/android.mdx",
+      "sourcePaths": [
+        "src/registry/magicui/android.tsx"
+      ],
+      "packages": [
+        "solid-js"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A mockup of an Android device."
+    },
+    {
+      "id": "magicui-solid/Animated Beam",
+      "name": "Animated Beam",
+      "slug": "animated-beam",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/animated-beam/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/AnimatedBeamDemo.tsx",
+      "exportName": "AnimatedBeamDemo",
+      "componentSource": "src/registry/magicui/animated-beam.tsx",
+      "docsSource": "src/content/docs/docs/components/animated-beam.mdx",
+      "sourcePaths": [
+        "src/demos/shared/circle.tsx",
+        "src/demos/shared/icons.tsx",
+        "src/lib/utils.ts",
+        "src/registry/magicui/animated-beam.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An animated beam of light which travels along a path. Useful for showcasing the "
+    },
+    {
+      "id": "magicui-solid/Animated Circular Progress Bar",
+      "name": "Animated Circular Progress Bar",
+      "slug": "animated-circular-progress-bar",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/animated-circular-progress-bar/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/AnimatedCircularProgressBarDemo.tsx",
+      "exportName": "AnimatedCircularProgressBarDemo",
+      "componentSource": "src/registry/magicui/animated-circular-progress-bar.tsx",
+      "docsSource": "src/content/docs/docs/components/animated-circular-progress-bar.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/animated-circular-progress-bar.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Animated Circular Progress Bar is a component that displays a circular gauge with a percentage value."
+    },
+    {
+      "id": "magicui-solid/Animated Gradient Text",
+      "name": "Animated Gradient Text",
+      "slug": "animated-gradient-text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/animated-gradient-text/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/AnimatedGradientTextDemo.tsx",
+      "exportName": "AnimatedGradientTextDemo",
+      "componentSource": "src/registry/magicui/animated-gradient-text.tsx",
+      "docsSource": "src/content/docs/docs/components/animated-gradient-text.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/animated-gradient-text.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An animated gradient background which transitions between colors for text."
+    },
+    {
+      "id": "magicui-solid/Animated Grid Pattern",
+      "name": "Animated Grid Pattern",
+      "slug": "animated-grid-pattern",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/animated-grid-pattern/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/AnimatedGridPatternDemo.tsx",
+      "exportName": "AnimatedGridPatternDemo",
+      "componentSource": "src/registry/magicui/animated-grid-pattern.tsx",
+      "docsSource": "src/content/docs/docs/components/animated-grid-pattern.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/animated-grid-pattern.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A animated background grid pattern made with SVGs, fully customizable using Tailwind CSS."
+    },
+    {
+      "id": "magicui-solid/Animated List",
+      "name": "Animated List",
+      "slug": "animated-list",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/animated-list/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/AnimatedListDemo.tsx",
+      "exportName": "AnimatedListDemo",
+      "componentSource": "src/registry/magicui/animated-list.tsx",
+      "docsSource": "src/content/docs/docs/components/animated-list.mdx",
+      "sourcePaths": [
+        "src/lib/flip.ts",
+        "src/lib/utils.ts",
+        "src/registry/magicui/animated-list.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A list that animates each item in sequence with a delay. Used to showcase notifications or events on your landing page."
+    },
+    {
+      "id": "magicui-solid/Animated Shiny Text",
+      "name": "Animated Shiny Text",
+      "slug": "animated-shiny-text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/animated-shiny-text/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/AnimatedShinyTextDemo.tsx",
+      "exportName": "AnimatedShinyTextDemo",
+      "componentSource": "src/registry/magicui/animated-shiny-text.tsx",
+      "docsSource": "src/content/docs/docs/components/animated-shiny-text.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/animated-shiny-text.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A light glare effect which pans across text making it appear as if it is shimmering."
+    },
+    {
+      "id": "magicui-solid/Theme Toggler",
+      "name": "Theme Toggler",
+      "slug": "animated-theme-toggler",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/animated-theme-toggler/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "adaptation": "Uses the original component's documented controlled theme/onThemeChange API with the official demo wrapper. The parent owns in-memory state, so unavailable localStorage persistence is not requested; original styling and view-transition behavior are retained.",
+      "module": "demos/theme-toggler.tsx",
+      "exportName": "default",
+      "componentSource": "src/registry/magicui/animated-theme-toggler.tsx",
+      "docsSource": "src/content/docs/docs/components/animated-theme-toggler.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/animated-theme-toggler.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Animated theme toggle using the View Transitions API with configurable clip-path shapes and origin."
+    },
+    {
+      "id": "magicui-solid/Aurora Text",
+      "name": "Aurora Text",
+      "slug": "aurora-text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/aurora-text/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/AuroraTextDemo.tsx",
+      "exportName": "AuroraTextDemo",
+      "componentSource": "src/registry/magicui/aurora-text.tsx",
+      "docsSource": "src/content/docs/docs/components/aurora-text.mdx",
+      "sourcePaths": [
+        "src/registry/magicui/aurora-text.tsx"
+      ],
+      "packages": [
+        "solid-js"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A beautiful aurora text effect"
+    },
+    {
+      "id": "magicui-solid/Avatar Circles",
+      "name": "Avatar Circles",
+      "slug": "avatar-circles",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/avatar-circles/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/AvatarCirclesDemo.tsx",
+      "exportName": "AvatarCirclesDemo",
+      "componentSource": "src/registry/magicui/avatar-circles.tsx",
+      "docsSource": "src/content/docs/docs/components/avatar-circles.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/avatar-circles.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [
+        "https://avatars.githubusercontent.com/u/106103625",
+        "https://avatars.githubusercontent.com/u/16860528",
+        "https://avatars.githubusercontent.com/u/20110627",
+        "https://avatars.githubusercontent.com/u/59228569",
+        "https://avatars.githubusercontent.com/u/59442788",
+        "https://avatars.githubusercontent.com/u/89768406",
+        "https://github.com/BankkRoll",
+        "https://github.com/dillionverma",
+        "https://github.com/itsarghyadas",
+        "https://github.com/safethecode",
+        "https://github.com/sanjay-mali",
+        "https://github.com/tomonarifeehan"
+      ],
+      "description": "Overlapping circles of avatars."
+    },
+    {
+      "id": "magicui-solid/Backlight",
+      "name": "Backlight",
+      "slug": "backlight",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/backlight/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/BacklightVideoDemo.tsx",
+      "exportName": "BacklightVideoDemo",
+      "componentSource": "src/registry/magicui/backlight.tsx",
+      "docsSource": "src/content/docs/docs/components/backlight.mdx",
+      "sourcePaths": [
+        "src/registry/magicui/backlight.tsx"
+      ],
+      "packages": [
+        "solid-js"
+      ],
+      "unresolved": [],
+      "remoteUrls": [
+        "https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4"
+      ],
+      "description": "A backlight glow effect for videos, images, and SVGs."
+    },
+    {
+      "id": "magicui-solid/Bento Grid",
+      "name": "Bento Grid",
+      "slug": "bento-grid",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/bento-grid/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/BentoGridDemo.tsx",
+      "exportName": "BentoGridDemo",
+      "componentSource": "src/registry/magicui/bento-grid.tsx",
+      "docsSource": "src/content/docs/docs/components/bento-grid.mdx",
+      "sourcePaths": [
+        "src/components/ui/button.tsx",
+        "src/demos/AnimatedBeamMultipleOutputsDemo.tsx",
+        "src/demos/shared/circle.tsx",
+        "src/demos/shared/icons.tsx",
+        "src/lib/flip.ts",
+        "src/lib/utils.ts",
+        "src/registry/magicui/animated-beam.tsx",
+        "src/registry/magicui/animated-list.tsx",
+        "src/registry/magicui/bento-grid.tsx",
+        "src/registry/magicui/marquee.tsx"
+      ],
+      "packages": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A bento grid layout component that showcases content in a grid of cards with hover effects."
+    },
+    {
+      "id": "magicui-solid/Blur Fade",
+      "name": "Blur Fade",
+      "slug": "blur-fade",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/blur-fade/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "adaptation": "Uses the official BlurFadeTextDemo shown on the same documentation page, preserving the original blur/fade animation without requesting live stock photographs.",
+      "module": "src/demos/BlurFadeTextDemo.tsx",
+      "exportName": "BlurFadeTextDemo",
+      "componentSource": "src/registry/magicui/blur-fade.tsx",
+      "docsSource": "src/content/docs/docs/components/blur-fade.mdx",
+      "sourcePaths": [
+        "src/registry/magicui/blur-fade.tsx"
+      ],
+      "packages": [
+        "motion",
+        "solid-js"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Blur fade in and out animation. Used to smoothly fade in and out content."
+    },
+    {
+      "id": "magicui-solid/Border Beam",
+      "name": "Border Beam",
+      "slug": "border-beam",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/border-beam/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/BorderBeamDemo.tsx",
+      "exportName": "BorderBeamDemo",
+      "componentSource": "src/registry/magicui/border-beam.tsx",
+      "docsSource": "src/content/docs/docs/components/border-beam.mdx",
+      "sourcePaths": [
+        "src/components/ui/button.tsx",
+        "src/lib/utils.ts",
+        "src/registry/magicui/border-beam.tsx"
+      ],
+      "packages": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An animated beam of light which travels along the border of its container."
+    },
+    {
+      "id": "magicui-solid/Code Comparison",
+      "name": "Code Comparison",
+      "slug": "code-comparison",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/code-comparison/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/CodeComparisonDemo.tsx",
+      "exportName": "CodeComparisonDemo",
+      "componentSource": "src/registry/magicui/code-comparison.tsx",
+      "docsSource": "src/content/docs/docs/components/code-comparison.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/code-comparison.tsx"
+      ],
+      "packages": [
+        "@shikijs/themes",
+        "@shikijs/transformers",
+        "clsx",
+        "lucide-solid",
+        "shiki",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A component which compares two code snippets."
+    },
+    {
+      "id": "magicui-solid/Comic Text",
+      "name": "Comic Text",
+      "slug": "comic-text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/comic-text/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/ComicTextDemo.tsx",
+      "exportName": "ComicTextDemo",
+      "componentSource": "src/registry/magicui/comic-text.tsx",
+      "docsSource": "src/content/docs/docs/components/comic-text.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/comic-text.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Comic text animation that looks like a comic book text"
+    },
+    {
+      "id": "magicui-solid/Confetti",
+      "name": "Confetti",
+      "slug": "confetti",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/confetti/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/ConfettiDemo.tsx",
+      "exportName": "ConfettiDemo",
+      "componentSource": "src/registry/magicui/confetti.tsx",
+      "docsSource": "src/content/docs/docs/components/confetti.mdx",
+      "sourcePaths": [
+        "src/components/ui/button.tsx",
+        "src/lib/utils.ts",
+        "src/registry/magicui/confetti.tsx"
+      ],
+      "packages": [
+        "@kobalte/core",
+        "canvas-confetti",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Confetti animations are best used to delight your users when something special happens"
+    },
+    {
+      "id": "magicui-solid/Cool Mode",
+      "name": "Cool Mode",
+      "slug": "cool-mode",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/cool-mode/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/CoolModeDemo.tsx",
+      "exportName": "CoolModeDemo",
+      "componentSource": "src/registry/magicui/cool-mode.tsx",
+      "docsSource": "src/content/docs/docs/components/cool-mode.mdx",
+      "sourcePaths": [
+        "src/components/ui/button.tsx",
+        "src/lib/utils.ts",
+        "src/registry/magicui/cool-mode.tsx"
+      ],
+      "packages": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Cool mode effect for buttons, links, and other DOMs"
+    },
+    {
+      "id": "magicui-solid/Dia Text Reveal",
+      "name": "Dia Text Reveal",
+      "slug": "dia-text-reveal",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/dia-text-reveal/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/DiaTextRevealDemo.tsx",
+      "exportName": "DiaTextRevealDemo",
+      "componentSource": "src/registry/magicui/dia-text-reveal.tsx",
+      "docsSource": "src/content/docs/docs/components/dia-text-reveal.mdx",
+      "sourcePaths": [
+        "src/lib/create-in-view.ts",
+        "src/lib/utils.ts",
+        "src/registry/magicui/dia-text-reveal.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A horizontal color band sweeps across text with a gradient shine, then settles on your theme foreground color."
+    },
+    {
+      "id": "magicui-solid/Dock",
+      "name": "Dock",
+      "slug": "dock",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/dock/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/DockDemo.tsx",
+      "exportName": "DockDemo",
+      "componentSource": "src/registry/magicui/dock.tsx",
+      "docsSource": "src/content/docs/docs/components/dock.mdx",
+      "sourcePaths": [
+        "src/components/ui/button.tsx",
+        "src/components/ui/tooltip.tsx",
+        "src/demos/shared/icons.tsx",
+        "src/lib/utils.ts",
+        "src/registry/magicui/dock.tsx"
+      ],
+      "packages": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An implementation of the macOS dock using SolidJS + TailwindCSS + motion."
+    },
+    {
+      "id": "magicui-solid/Dot Pattern",
+      "name": "Dot Pattern",
+      "slug": "dot-pattern",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/dot-pattern/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/DotPatternDemo.tsx",
+      "exportName": "DotPatternDemo",
+      "componentSource": "src/registry/magicui/dot-pattern.tsx",
+      "docsSource": "src/content/docs/docs/components/dot-pattern.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/dot-pattern.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A background dot pattern made with SVGs, fully customizable using Tailwind CSS."
+    },
+    {
+      "id": "magicui-solid/Dotted Map",
+      "name": "Dotted Map",
+      "slug": "dotted-map",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/dotted-map/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/DottedMapDemo.tsx",
+      "exportName": "DottedMapDemo",
+      "componentSource": "src/registry/magicui/dotted-map.tsx",
+      "docsSource": "src/content/docs/docs/components/dotted-map.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/dotted-map.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "svg-dotted-map",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [
+        "https://flagcdn.com/w80/kr.webp",
+        "https://flagcdn.com/w80/us.webp"
+      ],
+      "description": "A component with a svg dotted map."
+    },
+    {
+      "id": "magicui-solid/File Tree",
+      "name": "File Tree",
+      "slug": "file-tree",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/file-tree/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/FileTreeDemo.tsx",
+      "exportName": "FileTreeDemo",
+      "componentSource": "src/registry/magicui/file-tree.tsx",
+      "docsSource": "src/content/docs/docs/components/file-tree.mdx",
+      "sourcePaths": [
+        "src/components/ui/button.tsx",
+        "src/lib/utils.ts",
+        "src/registry/magicui/file-tree.tsx"
+      ],
+      "packages": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A component used to showcase the folder and file structure of a directory."
+    },
+    {
+      "id": "magicui-solid/Flickering Grid",
+      "name": "Flickering Grid",
+      "slug": "flickering-grid",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/flickering-grid/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/FlickeringGridDemo.tsx",
+      "exportName": "FlickeringGridDemo",
+      "componentSource": "src/registry/magicui/flickering-grid.tsx",
+      "docsSource": "src/content/docs/docs/components/flickering-grid.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/flickering-grid.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A flickering grid background made with SVGs, fully customizable using Tailwind CSS."
+    },
+    {
+      "id": "magicui-solid/Glare Hover",
+      "name": "Glare Hover",
+      "slug": "glare-hover",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/glare-hover/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/GlareHoverDemo.tsx",
+      "exportName": "GlareHoverDemo",
+      "componentSource": "src/registry/magicui/glare-hover.tsx",
+      "docsSource": "src/content/docs/docs/components/glare-hover.mdx",
+      "sourcePaths": [
+        "src/components/ui/button.tsx",
+        "src/lib/utils.ts",
+        "src/registry/magicui/glare-hover.tsx"
+      ],
+      "packages": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A diagonal light glare on hover using a ::before gradient, CSS variables, and background-position animation—no extra global keyframes required."
+    },
+    {
+      "id": "magicui-solid/Globe",
+      "name": "Globe",
+      "slug": "globe",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/globe/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/GlobeDemo.tsx",
+      "exportName": "GlobeDemo",
+      "componentSource": "src/registry/magicui/globe.tsx",
+      "docsSource": "src/content/docs/docs/components/globe.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/globe.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "cobe",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An autorotating, interactive, and highly performant globe made using WebGL."
+    },
+    {
+      "id": "magicui-solid/Glyph Matrix",
+      "name": "Glyph Matrix",
+      "slug": "glyph-matrix",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/glyph-matrix/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/GlyphMatrixDemo.tsx",
+      "exportName": "GlyphMatrixDemo",
+      "componentSource": "src/registry/magicui/glyph-matrix.tsx",
+      "docsSource": "src/content/docs/docs/components/glyph-matrix.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/glyph-matrix.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An animated grid of subtly shifting glyphs on a canvas, with a theme-aware color driven by the consumer."
+    },
+    {
+      "id": "magicui-solid/Grid Pattern",
+      "name": "Grid Pattern",
+      "slug": "grid-pattern",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/grid-pattern/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/GridPatternDemo.tsx",
+      "exportName": "GridPatternDemo",
+      "componentSource": "src/registry/magicui/grid-pattern.tsx",
+      "docsSource": "src/content/docs/docs/components/grid-pattern.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/grid-pattern.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A background grid pattern made with SVGs, fully customizable using Tailwind CSS."
+    },
+    {
+      "id": "magicui-solid/Hero Video Dialog",
+      "name": "Hero Video Dialog",
+      "slug": "hero-video-dialog",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/hero-video-dialog/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/HeroVideoDialogDemo.tsx",
+      "exportName": "HeroVideoDialogDemo",
+      "componentSource": "src/registry/magicui/hero-video-dialog.tsx",
+      "docsSource": "src/content/docs/docs/components/hero-video-dialog.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/hero-video-dialog.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "lucide-solid",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [
+        "https://startup-template-sage.vercel.app/hero-dark.png",
+        "https://startup-template-sage.vercel.app/hero-light.png",
+        "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
+      ],
+      "description": "A hero video dialog component that opens a video player with configurable animations."
+    },
+    {
+      "id": "magicui-solid/Hexagon Pattern",
+      "name": "Hexagon Pattern",
+      "slug": "hexagon-pattern",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/hexagon-pattern/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/HexagonPatternDemo.tsx",
+      "exportName": "HexagonPatternDemo",
+      "componentSource": "src/registry/magicui/hexagon-pattern.tsx",
+      "docsSource": "src/content/docs/docs/components/hexagon-pattern.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/hexagon-pattern.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A background hexagon pattern made with SVGs, fully customizable using Tailwind CSS."
+    },
+    {
+      "id": "magicui-solid/Text Highlighter",
+      "name": "Text Highlighter",
+      "slug": "highlighter",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/highlighter/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/HighlighterDemo.tsx",
+      "exportName": "HighlighterDemo",
+      "componentSource": "src/registry/magicui/highlighter.tsx",
+      "docsSource": "src/content/docs/docs/components/highlighter.mdx",
+      "sourcePaths": [
+        "src/lib/create-in-view.ts",
+        "src/registry/magicui/highlighter.tsx"
+      ],
+      "packages": [
+        "motion",
+        "rough-notation",
+        "solid-js"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A text highlighter that mimics the effect of a human-drawn marker stroke."
+    },
+    {
+      "id": "magicui-solid/Hyper Text",
+      "name": "Hyper Text",
+      "slug": "hyper-text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/hyper-text/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/HyperTextDemo.tsx",
+      "exportName": "HyperTextDemo",
+      "componentSource": "src/registry/magicui/hyper-text.tsx",
+      "docsSource": "src/content/docs/docs/components/hyper-text.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/hyper-text.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A text animation that scrambles letters before revealing the final text."
+    },
+    {
+      "id": "magicui-solid/Icon Cloud",
+      "name": "Icon Cloud",
+      "slug": "icon-cloud",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/icon-cloud/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/IconCloudDemo.tsx",
+      "exportName": "IconCloudDemo",
+      "componentSource": "src/registry/magicui/icon-cloud.tsx",
+      "docsSource": "src/content/docs/docs/components/icon-cloud.mdx",
+      "sourcePaths": [
+        "src/components/ui/button.tsx",
+        "src/lib/utils.ts",
+        "src/registry/magicui/icon-cloud.tsx"
+      ],
+      "packages": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [
+        "https://cdn.simpleicons.org/android/android",
+        "https://cdn.simpleicons.org/androidstudio/androidstudio",
+        "https://cdn.simpleicons.org/cloudflare/cloudflare",
+        "https://cdn.simpleicons.org/css/css",
+        "https://cdn.simpleicons.org/cypress/cypress",
+        "https://cdn.simpleicons.org/dart/dart",
+        "https://cdn.simpleicons.org/docker/docker",
+        "https://cdn.simpleicons.org/express/express",
+        "https://cdn.simpleicons.org/figma/figma",
+        "https://cdn.simpleicons.org/firebase/firebase",
+        "https://cdn.simpleicons.org/flutter/flutter",
+        "https://cdn.simpleicons.org/git/git",
+        "https://cdn.simpleicons.org/github/github",
+        "https://cdn.simpleicons.org/gitlab/gitlab",
+        "https://cdn.simpleicons.org/html5/html5",
+        "https://cdn.simpleicons.org/javascript/javascript",
+        "https://cdn.simpleicons.org/jest/jest",
+        "https://cdn.simpleicons.org/jira/jira",
+        "https://cdn.simpleicons.org/nextdotjs/nextdotjs",
+        "https://cdn.simpleicons.org/nginx/nginx",
+        "https://cdn.simpleicons.org/nodedotjs/nodedotjs",
+        "https://cdn.simpleicons.org/openjdk/openjdk",
+        "https://cdn.simpleicons.org/postgresql/postgresql",
+        "https://cdn.simpleicons.org/prisma/prisma",
+        "https://cdn.simpleicons.org/react/react",
+        "https://cdn.simpleicons.org/sonar/sonar",
+        "https://cdn.simpleicons.org/testinglibrary/testinglibrary",
+        "https://cdn.simpleicons.org/typescript/typescript",
+        "https://cdn.simpleicons.org/vercel/vercel",
+        "https://cdn.simpleicons.org/vite/vite"
+      ],
+      "description": "An interactive 3D tag cloud component."
+    },
+    {
+      "id": "magicui-solid/Interactive Grid Pattern",
+      "name": "Interactive Grid Pattern",
+      "slug": "interactive-grid-pattern",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/interactive-grid-pattern/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/InteractiveGridPatternDemo.tsx",
+      "exportName": "InteractiveGridPatternDemo",
+      "componentSource": "src/registry/magicui/interactive-grid-pattern.tsx",
+      "docsSource": "src/content/docs/docs/components/interactive-grid-pattern.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/interactive-grid-pattern.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A interactive background grid pattern made with SVGs, fully customizable using Tailwind CSS."
+    },
+    {
+      "id": "magicui-solid/Interactive Hover Button",
+      "name": "Interactive Hover Button",
+      "slug": "interactive-hover-button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/interactive-hover-button/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/InteractiveHoverButtonDemo.tsx",
+      "exportName": "InteractiveHoverButtonDemo",
+      "componentSource": "src/registry/magicui/interactive-hover-button.tsx",
+      "docsSource": "src/content/docs/docs/components/interactive-hover-button.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/interactive-hover-button.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A visually engaging button component that responds to hover with dynamic transitions, adapting smoothly between light and dark modes for enhanced user interactivity."
+    },
+    {
+      "id": "magicui-solid/iPhone",
+      "name": "iPhone",
+      "slug": "iphone",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/iphone/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/IphoneDemo.tsx",
+      "exportName": "IphoneDemo",
+      "componentSource": "src/registry/magicui/iphone.tsx",
+      "docsSource": "src/content/docs/docs/components/iphone.mdx",
+      "sourcePaths": [
+        "src/registry/magicui/iphone.tsx"
+      ],
+      "packages": [
+        "solid-js"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A mockup of the iPhone"
+    },
+    {
+      "id": "magicui-solid/Kinetic Text",
+      "name": "Kinetic Text",
+      "slug": "kinetic-text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/kinetic-text/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/KineticTextDemo.tsx",
+      "exportName": "KineticTextDemo",
+      "componentSource": "src/registry/magicui/kinetic-text.tsx",
+      "docsSource": "src/content/docs/docs/components/kinetic-text.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/kinetic-text.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A text component that animates font weight of characters on hover."
+    },
+    {
+      "id": "magicui-solid/Lens",
+      "name": "Lens",
+      "slug": "lens",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/lens/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/LensDemo.tsx",
+      "exportName": "LensDemo",
+      "componentSource": "src/registry/magicui/lens.tsx",
+      "docsSource": "src/content/docs/docs/components/lens.mdx",
+      "sourcePaths": [
+        "src/components/ui/button.tsx",
+        "src/lib/utils.ts",
+        "src/registry/magicui/lens.tsx"
+      ],
+      "packages": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [
+        "https://images.unsplash.com/photo-1736606355698-5efdb410fe93?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "description": "A interactive component that enables zooming into images, videos and other elements."
+    },
+    {
+      "id": "magicui-solid/Light Rays",
+      "name": "Light Rays",
+      "slug": "light-rays",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/light-rays/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/LightRaysDemo.tsx",
+      "exportName": "LightRaysDemo",
+      "componentSource": "src/registry/magicui/light-rays.tsx",
+      "docsSource": "src/content/docs/docs/components/light-rays.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/light-rays.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A component with animated light rays which shine down from above."
+    },
+    {
+      "id": "magicui-solid/Line Shadow Text",
+      "name": "Line Shadow Text",
+      "slug": "line-shadow-text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/line-shadow-text/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/LineShadowTextDemo.tsx",
+      "exportName": "LineShadowTextDemo",
+      "componentSource": "src/registry/magicui/line-shadow-text.tsx",
+      "docsSource": "src/content/docs/docs/components/line-shadow-text.mdx",
+      "sourcePaths": [
+        "src/demos/shared/theme.tsx",
+        "src/lib/utils.ts",
+        "src/registry/magicui/line-shadow-text.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A text component with a moving line shadow."
+    },
+    {
+      "id": "magicui-solid/Magic Card",
+      "name": "Magic Card",
+      "slug": "magic-card",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/magic-card/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/MagicCardDemo.tsx",
+      "exportName": "MagicCardDemo",
+      "componentSource": "src/registry/magicui/magic-card.tsx",
+      "docsSource": "src/content/docs/docs/components/magic-card.mdx",
+      "sourcePaths": [
+        "src/components/ui/button.tsx",
+        "src/demos/shared/theme.tsx",
+        "src/lib/utils.ts",
+        "src/registry/magicui/magic-card.tsx"
+      ],
+      "packages": [
+        "@kobalte/core",
+        "@solid-primitives/spring",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A spotlight effect that follows your mouse cursor and highlights borders on hover."
+    },
+    {
+      "id": "magicui-solid/Marquee",
+      "name": "Marquee",
+      "slug": "marquee",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/marquee/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/MarqueeDemo.tsx",
+      "exportName": "MarqueeDemo",
+      "componentSource": "src/registry/magicui/marquee.tsx",
+      "docsSource": "src/content/docs/docs/components/marquee.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/marquee.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [
+        "https://avatar.vercel.sh/jack",
+        "https://avatar.vercel.sh/james",
+        "https://avatar.vercel.sh/jane",
+        "https://avatar.vercel.sh/jenny",
+        "https://avatar.vercel.sh/jill",
+        "https://avatar.vercel.sh/john"
+      ],
+      "description": "An infinite scrolling component that can be used to display text, images, or videos."
+    },
+    {
+      "id": "magicui-solid/Meteors",
+      "name": "Meteors",
+      "slug": "meteors",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/meteors/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/MeteorsDemo.tsx",
+      "exportName": "MeteorsDemo",
+      "componentSource": "src/registry/magicui/meteors.tsx",
+      "docsSource": "src/content/docs/docs/components/meteors.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/meteors.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A meteor shower effect."
+    },
+    {
+      "id": "magicui-solid/Morphing Text",
+      "name": "Morphing Text",
+      "slug": "morphing-text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/morphing-text/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/MorphingTextDemo.tsx",
+      "exportName": "MorphingTextDemo",
+      "componentSource": "src/registry/magicui/morphing-text.tsx",
+      "docsSource": "src/content/docs/docs/components/morphing-text.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/morphing-text.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A dynamic text morphing component for Magic UI."
+    },
+    {
+      "id": "magicui-solid/Neon Gradient Card",
+      "name": "Neon Gradient Card",
+      "slug": "neon-gradient-card",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/neon-gradient-card/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/NeonGradientCardDemo.tsx",
+      "exportName": "NeonGradientCardDemo",
+      "componentSource": "src/registry/magicui/neon-gradient-card.tsx",
+      "docsSource": "src/content/docs/docs/components/neon-gradient-card.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/neon-gradient-card.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A beautiful neon card effect"
+    },
+    {
+      "id": "magicui-solid/Noise Texture",
+      "name": "Noise Texture",
+      "slug": "noise-texture",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/noise-texture/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/NoiseTextureDemo.tsx",
+      "exportName": "NoiseTextureDemo",
+      "componentSource": "src/registry/magicui/noise-texture.tsx",
+      "docsSource": "src/content/docs/docs/components/noise-texture.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/noise-texture.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An SVG fractal noise layer using feTurbulence for subtle texture overlays."
+    },
+    {
+      "id": "magicui-solid/Number Ticker",
+      "name": "Number Ticker",
+      "slug": "number-ticker",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/number-ticker/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/NumberTickerDemo.tsx",
+      "exportName": "NumberTickerDemo",
+      "componentSource": "src/registry/magicui/number-ticker.tsx",
+      "docsSource": "src/content/docs/docs/components/number-ticker.mdx",
+      "sourcePaths": [
+        "src/lib/create-in-view.ts",
+        "src/lib/utils.ts",
+        "src/registry/magicui/number-ticker.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Animate numbers to count up or down to a target number."
+    },
+    {
+      "id": "magicui-solid/Orbiting Circles",
+      "name": "Orbiting Circles",
+      "slug": "orbiting-circles",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/orbiting-circles/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/OrbitingCirclesDemo.tsx",
+      "exportName": "OrbitingCirclesDemo",
+      "componentSource": "src/registry/magicui/orbiting-circles.tsx",
+      "docsSource": "src/content/docs/docs/components/orbiting-circles.mdx",
+      "sourcePaths": [
+        "src/demos/shared/icons.tsx",
+        "src/lib/utils.ts",
+        "src/registry/magicui/orbiting-circles.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A collection of circles which move in orbit along a circular path."
+    },
+    {
+      "id": "magicui-solid/Particles",
+      "name": "Particles",
+      "slug": "particles",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/particles/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/ParticlesDemo.tsx",
+      "exportName": "ParticlesDemo",
+      "componentSource": "src/registry/magicui/particles.tsx",
+      "docsSource": "src/content/docs/docs/components/particles.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/particles.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Particles are a fun way to add some visual flair to your website. They can be used to create a sense of depth, movement, and interactivity."
+    },
+    {
+      "id": "magicui-solid/Pixel Image",
+      "name": "Pixel Image",
+      "slug": "pixel-image",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/pixel-image/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/PixelImageDemo.tsx",
+      "exportName": "PixelImageDemo",
+      "componentSource": "src/registry/magicui/pixel-image.tsx",
+      "docsSource": "src/content/docs/docs/components/pixel-image.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/pixel-image.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [
+        "https://axuj.github.io/magicui-solid/pixel-image-demo.jpg"
+      ],
+      "description": "A component that displays your image with a pixelated effect, enhancing the visual appeal of any image in your website."
+    },
+    {
+      "id": "magicui-solid/Pointer",
+      "name": "Pointer",
+      "slug": "pointer",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/pointer/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/PointerDemo.tsx",
+      "exportName": "PointerDemo",
+      "componentSource": "src/registry/magicui/pointer.tsx",
+      "docsSource": "src/content/docs/docs/components/pointer.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/pointer.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A component that displays a pointer when hovering over an element."
+    },
+    {
+      "id": "magicui-solid/Progressive Blur",
+      "name": "Progressive Blur",
+      "slug": "progressive-blur",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/progressive-blur/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/ProgressiveBlurDemo.tsx",
+      "exportName": "ProgressiveBlurDemo",
+      "componentSource": "src/registry/magicui/progressive-blur.tsx",
+      "docsSource": "src/content/docs/docs/components/progressive-blur.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/progressive-blur.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Add a progressive blur effect to scrollable content"
+    },
+    {
+      "id": "magicui-solid/Pulsating Button",
+      "name": "Pulsating Button",
+      "slug": "pulsating-button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/pulsating-button/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/PulsatingButtonDemo.tsx",
+      "exportName": "PulsatingButtonDemo",
+      "componentSource": "src/registry/magicui/pulsating-button.tsx",
+      "docsSource": "src/content/docs/docs/components/pulsating-button.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/pulsating-button.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An animated pulsating button useful for capturing attention of users."
+    },
+    {
+      "id": "magicui-solid/Rainbow Button",
+      "name": "Rainbow Button",
+      "slug": "rainbow-button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/rainbow-button/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/RainbowButtonDemo.tsx",
+      "exportName": "RainbowButtonDemo",
+      "componentSource": "src/registry/magicui/rainbow-button.tsx",
+      "docsSource": "src/content/docs/docs/components/rainbow-button.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/rainbow-button.tsx"
+      ],
+      "packages": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An animated button with a rainbow effect"
+    },
+    {
+      "id": "magicui-solid/Retro Grid",
+      "name": "Retro Grid",
+      "slug": "retro-grid",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/retro-grid/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/RetroGridDemo.tsx",
+      "exportName": "RetroGridDemo",
+      "componentSource": "src/registry/magicui/retro-grid.tsx",
+      "docsSource": "src/content/docs/docs/components/retro-grid.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/retro-grid.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An animated scrolling retro grid effect"
+    },
+    {
+      "id": "magicui-solid/Ripple",
+      "name": "Ripple",
+      "slug": "ripple",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/ripple/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/RippleDemo.tsx",
+      "exportName": "RippleDemo",
+      "componentSource": "src/registry/magicui/ripple.tsx",
+      "docsSource": "src/content/docs/docs/components/ripple.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/ripple.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An animated ripple effect typically used behind elements to emphasize them."
+    },
+    {
+      "id": "magicui-solid/Ripple Button",
+      "name": "Ripple Button",
+      "slug": "ripple-button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/ripple-button/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/RippleButtonDemo.tsx",
+      "exportName": "RippleButtonDemo",
+      "componentSource": "src/registry/magicui/ripple-button.tsx",
+      "docsSource": "src/content/docs/docs/components/ripple-button.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/ripple-button.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An animated button with ripple useful for user engagement"
+    },
+    {
+      "id": "magicui-solid/Safari",
+      "name": "Safari",
+      "slug": "safari",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/safari/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/SafariDemo.tsx",
+      "exportName": "SafariDemo",
+      "componentSource": "src/registry/magicui/safari.tsx",
+      "docsSource": "src/content/docs/docs/components/safari.mdx",
+      "sourcePaths": [
+        "src/registry/magicui/safari.tsx"
+      ],
+      "packages": [
+        "solid-js"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A safari browser mockup to showcase your website."
+    },
+    {
+      "id": "magicui-solid/Scroll Based Velocity",
+      "name": "Scroll Based Velocity",
+      "slug": "scroll-based-velocity",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/scroll-based-velocity/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/ScrollBasedVelocityDemo.tsx",
+      "exportName": "ScrollBasedVelocityDemo",
+      "componentSource": "src/registry/magicui/scroll-based-velocity.tsx",
+      "docsSource": "src/content/docs/docs/components/scroll-based-velocity.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/scroll-based-velocity.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Scrolling text whose speed changes based on scroll speed"
+    },
+    {
+      "id": "magicui-solid/Scroll Progress",
+      "name": "Scroll Progress",
+      "slug": "scroll-progress",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/scroll-progress/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/ScrollProgressDemo.tsx",
+      "exportName": "ScrollProgressDemo",
+      "componentSource": "src/registry/magicui/scroll-progress.tsx",
+      "docsSource": "src/content/docs/docs/components/scroll-progress.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/scroll-progress.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Animated Scroll Progress for your pages"
+    },
+    {
+      "id": "magicui-solid/Shimmer Button",
+      "name": "Shimmer Button",
+      "slug": "shimmer-button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/shimmer-button/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/ShimmerButtonDemo.tsx",
+      "exportName": "ShimmerButtonDemo",
+      "componentSource": "src/registry/magicui/shimmer-button.tsx",
+      "docsSource": "src/content/docs/docs/components/shimmer-button.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/shimmer-button.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A button with a shimmering light which travels around the perimeter"
+    },
+    {
+      "id": "magicui-solid/Shine Border",
+      "name": "Shine Border",
+      "slug": "shine-border",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/shine-border/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/ShineBorderDemo.tsx",
+      "exportName": "ShineBorderDemo",
+      "componentSource": "src/registry/magicui/shine-border.tsx",
+      "docsSource": "src/content/docs/docs/components/shine-border.mdx",
+      "sourcePaths": [
+        "src/components/ui/button.tsx",
+        "src/lib/utils.ts",
+        "src/registry/magicui/shine-border.tsx"
+      ],
+      "packages": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Shine border is an animated background border effect."
+    },
+    {
+      "id": "magicui-solid/Shiny Button",
+      "name": "Shiny Button",
+      "slug": "shiny-button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/shiny-button/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/ShinyButtonDemo.tsx",
+      "exportName": "ShinyButtonDemo",
+      "componentSource": "src/registry/magicui/shiny-button.tsx",
+      "docsSource": "src/content/docs/docs/components/shiny-button.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/shiny-button.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A shiny button component with dynamic styles in the dark mode or light mode."
+    },
+    {
+      "id": "magicui-solid/Smooth Cursor",
+      "name": "Smooth Cursor",
+      "slug": "smooth-cursor",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/smooth-cursor/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/SmoothCursorDemo.tsx",
+      "exportName": "SmoothCursorDemo",
+      "componentSource": "src/registry/magicui/smooth-cursor.tsx",
+      "docsSource": "src/content/docs/docs/components/smooth-cursor.mdx",
+      "sourcePaths": [
+        "src/registry/magicui/smooth-cursor.tsx"
+      ],
+      "packages": [
+        "@solid-primitives/spring",
+        "solid-js"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A customizable, physics-based smooth cursor animation component."
+    },
+    {
+      "id": "magicui-solid/Sparkles Text",
+      "name": "Sparkles Text",
+      "slug": "sparkles-text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/sparkles-text/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/SparklesTextDemo.tsx",
+      "exportName": "SparklesTextDemo",
+      "componentSource": "src/registry/magicui/sparkles-text.tsx",
+      "docsSource": "src/content/docs/docs/components/sparkles-text.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/sparkles-text.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A dynamic text that generates continuous sparkles with smooth transitions, perfect for highlighting text with animated stars."
+    },
+    {
+      "id": "magicui-solid/Spinning Text",
+      "name": "Spinning Text",
+      "slug": "spinning-text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/spinning-text/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/SpinningTextDemo.tsx",
+      "exportName": "SpinningTextDemo",
+      "componentSource": "src/registry/magicui/spinning-text.tsx",
+      "docsSource": "src/content/docs/docs/components/spinning-text.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/spinning-text.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "The Spinning Text component animates text in a circular motion with customizable speed, direction, color, and transitions for dynamic and engaging effects."
+    },
+    {
+      "id": "magicui-solid/Striped Pattern",
+      "name": "Striped Pattern",
+      "slug": "striped-pattern",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/striped-pattern/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/StripedPatternDemo.tsx",
+      "exportName": "StripedPatternDemo",
+      "componentSource": "src/registry/magicui/striped-pattern.tsx",
+      "docsSource": "src/content/docs/docs/components/striped-pattern.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/striped-pattern.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A background striped pattern made with SVGs, fully customizable using Tailwind CSS."
+    },
+    {
+      "id": "magicui-solid/Terminal",
+      "name": "Terminal",
+      "slug": "terminal",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/terminal/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/TerminalDemo.tsx",
+      "exportName": "TerminalDemo",
+      "componentSource": "src/registry/magicui/terminal.tsx",
+      "docsSource": "src/content/docs/docs/components/terminal.mdx",
+      "sourcePaths": [
+        "src/lib/create-in-view.ts",
+        "src/lib/utils.ts",
+        "src/registry/magicui/terminal.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An implementation of the MacOS terminal. Useful for showcasing a command line interface."
+    },
+    {
+      "id": "magicui-solid/Text 3D Flip",
+      "name": "Text 3D Flip",
+      "slug": "text-3d-flip",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/text-3d-flip/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/Text3DFlipDemo.tsx",
+      "exportName": "Text3DFlipDemo",
+      "componentSource": "src/registry/magicui/text-3d-flip.tsx",
+      "docsSource": "src/content/docs/docs/components/text-3d-flip.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/text-3d-flip.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A text effect that flips each letter in 3D with a staggered animation on hover."
+    },
+    {
+      "id": "magicui-solid/Text Animate",
+      "name": "Text Animate",
+      "slug": "text-animate",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/text-animate/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/TextAnimateDemo.tsx",
+      "exportName": "TextAnimateDemo",
+      "componentSource": "src/registry/magicui/text-animate.tsx",
+      "docsSource": "src/content/docs/docs/components/text-animate.mdx",
+      "sourcePaths": [
+        "src/lib/create-in-view.ts",
+        "src/lib/utils.ts",
+        "src/registry/magicui/text-animate.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A text animation component that animates text using a variety of different animations."
+    },
+    {
+      "id": "magicui-solid/Text Reveal",
+      "name": "Text Reveal",
+      "slug": "text-reveal",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/text-reveal/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/TextRevealDemo.tsx",
+      "exportName": "TextRevealDemo",
+      "componentSource": "src/registry/magicui/text-reveal.tsx",
+      "docsSource": "src/content/docs/docs/components/text-reveal.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/text-reveal.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Fade in text as you scroll down the page."
+    },
+    {
+      "id": "magicui-solid/Tweet Card",
+      "name": "Tweet Card",
+      "slug": "tweet-card",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/tweet-card/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "demos/tweet-card.tsx",
+      "exportName": "default",
+      "componentSource": "src/registry/magicui/client-tweet-card.tsx",
+      "docsSource": "src/content/docs/docs/components/tweet-card.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/client-tweet-card.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [
+        "https://avatar.vercel.sh/jane",
+        "https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4"
+      ],
+      "description": "A card that displays a tweet with the author's name, handle, and profile picture.",
+      "adaptation": "Sample content, a generated avatar and a licensed video replace the live post and its media. The original MagicTweet export and documentation's centered preview layout are retained; the video reserves its 16:9 dimensions while loading. ClientTweetCard's loading and error states are not reproduced, and links cannot open inside the sandbox."
+    },
+    {
+      "id": "magicui-solid/Typing Animation",
+      "name": "Typing Animation",
+      "slug": "typing-animation",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/typing-animation/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/TypingAnimationDemo.tsx",
+      "exportName": "TypingAnimationDemo",
+      "componentSource": "src/registry/magicui/typing-animation.tsx",
+      "docsSource": "src/content/docs/docs/components/typing-animation.mdx",
+      "sourcePaths": [
+        "src/lib/create-in-view.ts",
+        "src/lib/utils.ts",
+        "src/registry/magicui/typing-animation.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Characters appearing in typed animation."
+    },
+    {
+      "id": "magicui-solid/Video Text",
+      "name": "Video Text",
+      "slug": "video-text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/video-text/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/VideoTextDemo.tsx",
+      "exportName": "VideoTextDemo",
+      "componentSource": "src/registry/magicui/video-text.tsx",
+      "docsSource": "src/content/docs/docs/components/video-text.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/video-text.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [
+        "https://cdn.magicui.design/ocean-small.webm"
+      ],
+      "description": "A text component with a video background."
+    },
+    {
+      "id": "magicui-solid/Warp Background",
+      "name": "Warp Background",
+      "slug": "warp-background",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/warp-background/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/WarpBackgroundDemo.tsx",
+      "exportName": "WarpBackgroundDemo",
+      "componentSource": "src/registry/magicui/warp-background.tsx",
+      "docsSource": "src/content/docs/docs/components/warp-background.mdx",
+      "sourcePaths": [
+        "src/components/ui/card.tsx",
+        "src/lib/utils.ts",
+        "src/registry/magicui/warp-background.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A card with a time warping background effect."
+    },
+    {
+      "id": "magicui-solid/Word Rotate",
+      "name": "Word Rotate",
+      "slug": "word-rotate",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/word-rotate/",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "module": "src/demos/WordRotateDemo.tsx",
+      "exportName": "WordRotateDemo",
+      "componentSource": "src/registry/magicui/word-rotate.tsx",
+      "docsSource": "src/content/docs/docs/components/word-rotate.mdx",
+      "sourcePaths": [
+        "src/lib/utils.ts",
+        "src/registry/magicui/word-rotate.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A vertical rotation of words"
+    }
+  ]
+}

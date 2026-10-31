@@ -1,0 +1,1110 @@
+{
+  "checkedAt": "2026-10-30T01:01:15.790Z",
+  "revision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+  "method": "Public dependencies combine pinned component requirements with selected-demo imports. Component and demo-only requirements retain separate provenance; Solid JSX requires the recorded Solid runtime. Unknown local references remain explicit.",
+  "entries": {
+    "mystic-ui/Android": {
+      "dependencies": [
+        "solid-js"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/ui/android.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/android.tsx",
+          "integrity": "cfb06a08e53c23c21d587b4fb2e3e5cf5ea73321f7505981fff999f81a3c3fcc"
+        },
+        {
+          "path": "packages/registry/tailwind/android.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/android.json",
+          "integrity": "11e32514c77335338c5b061d00e6a3d59fbda5a2e95384aaf81cbefc1ef059c2"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "solid-js"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/android.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/android.mdx",
+        "integrity": "cc8dad89182e79c01f1237353cdba3a7fec4c86f394319840208e5d616286dd7",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "components/tailwind/src/ui/android.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Animated Beam": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-icons",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/animated-beam.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/animated-beam.tsx",
+          "integrity": "686dd5d22bc6b87f287d2b8c02858e23dc482c4b2203b9e6f5f24def2eca9aa0"
+        },
+        {
+          "path": "packages/registry/tailwind/animated-beam.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/animated-beam.json",
+          "integrity": "8f5cc635b07b981012d43f06de871ad1d43928962cad5cf27e6e9145fdd0ed98"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "solid-icons"
+      ],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/animated-beam/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/animated-beam/default.tsx",
+        "integrity": "311993a2296e34bca16ddc41f349135190ed42ff7e76d28ea19b5ba170b3659f",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/animated-beam.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Animated Shiny Text": {
+      "dependencies": [
+        "clsx",
+        "solid-icons",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/animated-shiny-text.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/animated-shiny-text.tsx",
+          "integrity": "6f9562a64e986480d9ee6c759d173ab11742f854aa6588d8414515a455ab5b2b"
+        },
+        {
+          "path": "packages/registry/tailwind/animated-shiny-text.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/animated-shiny-text.json",
+          "integrity": "c3d78306d3e55aea0840d8640094132c78a18086b33c263ee156a095c1ed2daf"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "solid-icons"
+      ],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/animated-shiny-text/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/animated-shiny-text/default.tsx",
+        "integrity": "0507c66a77ec5847cb4fe94fb1962d24cc62383cc53f3dd946dc6197d490385a",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/animated-shiny-text.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Border Beam": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/border-beam.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/border-beam.tsx",
+          "integrity": "3900f3a8e64b51eb445301e52a9a50097e49264b741c669fb15465a5fc7008f8"
+        },
+        {
+          "path": "packages/registry/tailwind/border-beam.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/border-beam.json",
+          "integrity": "d2d682c4a08d89ad8dff95fd116d64e1b937b509c50eb6afe1ddaca6a97daa3c"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/border-beam/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/border-beam/default.tsx",
+        "integrity": "7167750241b7858894a61842e08736e4972072b6ecff0b4396cef6a23a9dab16",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/border-beam.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Dock": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/dock.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/dock.tsx",
+          "integrity": "8dc47ed194c214c76d75beb0d3ba4e08abd58c305012d3e7b6c88a6abd628734"
+        },
+        {
+          "path": "packages/registry/tailwind/dock.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/dock.json",
+          "integrity": "31105f3ff1592069d9a8823a25c5f6ca1fe7a7a3a971c5989c4cf3fe560c1b5a"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/dock/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/dock/default.tsx",
+        "integrity": "1c8cc3acf9e912dd202f5cd5b9544caf109350746f861a2fee2e8333416550b1",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/dock.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Dot Pattern": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/dot-pattern.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/dot-pattern.tsx",
+          "integrity": "895811c534bfed995d33ca046c911330ba43396a22aeb74659e79046e0bfb265"
+        },
+        {
+          "path": "packages/registry/tailwind/dot-pattern.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/dot-pattern.json",
+          "integrity": "0bb77ce9f0bf7d41def36f3034b9da19cdb9cf201db1aa52d2ff40db46890615"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/dot-pattern/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/dot-pattern/default.tsx",
+        "integrity": "465de5230d2fb4187c8feb065a54ad00e9ad49a4f32ec78efbfc403710595044",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/dot-pattern.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Flip Text": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/flip-text.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/flip-text.tsx",
+          "integrity": "411ae7db719a6864a355ad8f484a00547f8b6f649735a5f4802765d936c5e8cb"
+        },
+        {
+          "path": "packages/registry/tailwind/flip-text.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/flip-text.json",
+          "integrity": "af4ee5ff555bf0521eb31afed0dc3a652c92c825311416449896808d0b614993"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/flip-text/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/flip-text/default.tsx",
+        "integrity": "e141066666a75174f1f25da7e2efeb4512e7862ef1a68d938e18e8a30b681869",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/flip-text.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Gradual Spacing": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/gradual-spacing.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/gradual-spacing.tsx",
+          "integrity": "ac8e178bc9840844b355777211f039bcc52b0bb57566bfdaf94e391a8a0df48a"
+        },
+        {
+          "path": "packages/registry/tailwind/gradual-spacing.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/gradual-spacing.json",
+          "integrity": "86c4344cc82258da7599e095d882769fee42bd12b4d58f89f025c9f3369de357"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/gradual-spacing/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/gradual-spacing/default.tsx",
+        "integrity": "575491814764f3ede399a95db674c521c14535c4140d76cae0dd0925f2b5114f",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/gradual-spacing.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Grid Pattern": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/grid-pattern.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/grid-pattern.tsx",
+          "integrity": "d5bab1b3ea10c0527054bfc12d3b8360c50e9223dc23f0243a16693a27bc5b48"
+        },
+        {
+          "path": "packages/registry/tailwind/grid-pattern.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/grid-pattern.json",
+          "integrity": "d9ed3c0606a5f33cd5e19ad51bc15c1eef8dd9359c37f64fddaf4fc8e69c09ab"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/grid-pattern/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/grid-pattern/default.tsx",
+        "integrity": "cc3cb815072e4dfcd8b0c9dee29ade49a6e51f0abb0ce5ce4146a0dd2cbe9cd8",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/grid-pattern.tsx"
+        ]
+      }
+    },
+    "mystic-ui/iPhone 15": {
+      "dependencies": [
+        "solid-js"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/ui/iphone-15.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/iphone-15.tsx",
+          "integrity": "0822d26cfde483b3339eb9b56fe6b3aa109a0ff6891d06794b03b9f294ceb82d"
+        },
+        {
+          "path": "packages/registry/tailwind/iphone-15.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/iphone-15.json",
+          "integrity": "1ae243d756172c90efa963af394585ac32fe6a5e3957fa160fb439dbacd9bc0a"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "solid-js"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/iphone-15/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/iphone-15/default.tsx",
+        "integrity": "16460a78086055b39fe72841c79aaffff667fd47a422fc1b55df0e237db131b6",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/ui/iphone-15.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Letter Pullup": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/letter-pullup.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/letter-pullup.tsx",
+          "integrity": "dc88d51a3444b63e84775e444399d09ee1a06eb21e38156c425bcc2261f3cb48"
+        },
+        {
+          "path": "packages/registry/tailwind/letter-pullup.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/letter-pullup.json",
+          "integrity": "e24cc2516b3e89904cdaccdaa51ed5b1103e1f17ae8d45576ed51ac28f00843c"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/letter-pullup/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/letter-pullup/default.tsx",
+        "integrity": "c8d9029af4af0882b6cc6d7c701f1ce3fa1301f1b83d31b2c27a216c0adf14a0",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/letter-pullup.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Marquee": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/marquee.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/marquee.tsx",
+          "integrity": "55d832ac6bf668e9ce545111ce7253eb0621c1e23a88051f173b433b016a370f"
+        },
+        {
+          "path": "packages/registry/tailwind/marquee.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/marquee.json",
+          "integrity": "082dfaab5ee95c33612a34053e4a2ace2f8b1a6e199f4c7c7f15d2429dbb9096"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/marquee/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/marquee/default.tsx",
+        "integrity": "e250b94e24dd01fe2bee05f2434caac08d3a32733a3e61bb176fdd49cf9c09ed",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/marquee.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Meteors": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/meteors.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/meteors.tsx",
+          "integrity": "e0b129a164df2ee65add05275c47998af5f1b659222792f0ea1ef9bb9321f7ef"
+        },
+        {
+          "path": "packages/registry/tailwind/meteors.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/meteors.json",
+          "integrity": "37db51cddb03f634c06e36b523935f0707b7dc3b7daae2cc0167f0080b700c68"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/meteors/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/meteors/default.tsx",
+        "integrity": "945ce6bc843504fab3f01ae850b3cdc055ad7f4ddcdd450a29ae30a406c9b0b9",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/meteors.tsx"
+        ]
+      }
+    },
+    "mystic-ui/No Signal Screen": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/no-signal-screen.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/no-signal-screen.tsx",
+          "integrity": "0190596938122ed22e9b7efdf5bb80ed4275c93bd7ac20f8bb81735ca65e5f90"
+        },
+        {
+          "path": "packages/registry/tailwind/no-signal-screen.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/no-signal-screen.json",
+          "integrity": "381e5913a8118adf32904b3b1a84cb55c9630520333709dd64637eb463878649"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/no-signal-screen/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/no-signal-screen/default.tsx",
+        "integrity": "6f35d274f531361086af7e0f81b496657aa6e5d01a548ba50dcf3583d9dd619a",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/no-signal-screen.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Number Ticker": {
+      "dependencies": [
+        "motion",
+        "solid-js"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/ui/number-ticker.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/number-ticker.tsx",
+          "integrity": "f614a5fe4007f1d2a8988d9e22cf90ff3e201d448ae4da7920a3beb392dbfece"
+        },
+        {
+          "path": "packages/registry/tailwind/number-ticker.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/number-ticker.json",
+          "integrity": "a097cc63ae4e9aac4073ad2b8b8bf591207c9bd62220ae6b06897a4aeac5c390"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "motion",
+        "solid-js"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/number-ticker/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/number-ticker/default.tsx",
+        "integrity": "5ee3570cbfac9dae2f2c11ed0a1fe0b1c76e8b508cf7477feffbcab9cb836f24",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/ui/number-ticker.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Orbiting Circles": {
+      "dependencies": [
+        "clsx",
+        "solid-icons",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/orbiting-circles.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/orbiting-circles.tsx",
+          "integrity": "7c086bebabb0f37ec2377ae89381fbf058367782f762ac45903754ac81d23ed8"
+        },
+        {
+          "path": "packages/registry/tailwind/orbiting-circles.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/orbiting-circles.json",
+          "integrity": "5b0b8eb56a8e0e5e1c23761589ffa0087c3ad32dade342027ed7ac92bb1dbf09"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "solid-icons"
+      ],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/orbiting-circles/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/orbiting-circles/default.tsx",
+        "integrity": "5dceb025762512dd4adf3fdacdba73e8b493cff203b1bdf845d8c3e3a77331df",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/orbiting-circles.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Retro Grid": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/retro-grid.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/retro-grid.tsx",
+          "integrity": "fb05c5d313d923f42e5b68ac3c0e9144ebe57b35998123f127a875e182fa5e47"
+        },
+        {
+          "path": "packages/registry/tailwind/retro-grid.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/retro-grid.json",
+          "integrity": "a5875912b0c9ad09d197c8b88082ff194f6d4c20d37e1a3a32a2c80aeb6519ec"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/retro-grid/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/retro-grid/default.tsx",
+        "integrity": "4d17754a4ca67c9d4ca506fe4dc510262eb669032b6cd8823fc23931c4fbbc65",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/retro-grid.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Ripple": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/ripple.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/ripple.tsx",
+          "integrity": "7d823631b9b01792e62fbd35f3ea283167000da44e3e3cb8cd3ddcef5097a3f0"
+        },
+        {
+          "path": "packages/registry/tailwind/ripple.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/ripple.json",
+          "integrity": "57b0ad160f724c5f71ede8c1ba49f49cecf7948af9e708abbb0615875a14d939"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/ripple/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/ripple/default.tsx",
+        "integrity": "e420ff5ffc43bebdf5e439c6a9a5a1e38131b8d677f528f0415cb458df852d64",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/ripple.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Safari": {
+      "dependencies": [
+        "solid-js"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/ui/safari.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/safari.tsx",
+          "integrity": "45b68b3503e4c211c6425a731a025195808dd3fdcd0995d2e00a08a0865e9f3d"
+        },
+        {
+          "path": "packages/registry/tailwind/safari.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/safari.json",
+          "integrity": "0879648d4982feed6ba07765245a73a78cea3423084580cbdbec5fa1f8ea8c76"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "solid-js"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/safari/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/safari/default.tsx",
+        "integrity": "43fc04badb79454fdddd6db8bddac7ac479e407a80af34bc41b0254ff05388fe",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/ui/safari.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Shine Border": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/shine-border.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/shine-border.tsx",
+          "integrity": "aab9fb1bba1d5c1394e27357d2abfe4194ef94b2c514c17bd593be52875dbbb6"
+        },
+        {
+          "path": "packages/registry/tailwind/shine-border.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/shine-border.json",
+          "integrity": "b859e585c9848261e9201e98f50d1ebc568fd28c961bc4b2d8f0a2f58d8dd02d"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/shine-border/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/shine-border/default.tsx",
+        "integrity": "e0125ce5f5969e6e2335cb2077f44daf0e47154c4c49965677542dd5bfe0df4f",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/shine-border.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Sparkles Text": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/sparkles-text.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/sparkles-text.tsx",
+          "integrity": "1720c30e832f1ab1a04450218427ccafa5da9d798adb00fb882ef9c0d61b69bf"
+        },
+        {
+          "path": "packages/registry/tailwind/sparkles-text.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/sparkles-text.json",
+          "integrity": "990bb17f958f616f37162c74f7ec26298ee6c0a96678bc2d304e619f6bcfebe3"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/sparkles-text/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/sparkles-text/default.tsx",
+        "integrity": "8fc6882434bb3d06c233b9febfdfd7da8e6b5b516da685a3e6ae86609e656168",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/sparkles-text.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Spotlight": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/spotlight.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/spotlight.tsx",
+          "integrity": "572cf6bcb2dd750735b6437bb8cdabce8e8c770440ca5bc3131516de676008c3"
+        },
+        {
+          "path": "packages/registry/tailwind/spotlight.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/spotlight.json",
+          "integrity": "746fd5c06fe02372d8252050762f7016ebb286a08ae4389515db13d7a7ac777a"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/spotlight/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/spotlight/default.tsx",
+        "integrity": "1840791feb898aad80b0bfced66c40881066a5d4394f0ab929fefcb3d05d042d",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/spotlight.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Text Reveal": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/text-reveal.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/text-reveal.tsx",
+          "integrity": "3130916ff0e879f658204bb5dace0148f4fd0a6712e91040b92403584a98e000"
+        },
+        {
+          "path": "packages/registry/tailwind/text-reveal.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/text-reveal.json",
+          "integrity": "9cd30970338a9a3c8278eb1bac971d17bc661f096b2f71897dbb61a8780a6bb4"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/text-reveal/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/text-reveal/default.tsx",
+        "integrity": "887e75fcc51082143fc63863925aec2ccb8cd7c4294cba527ca28f6351cbb54c",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/text-reveal.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Typing Animation": {
+      "dependencies": [
+        "solid-js"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/ui/typing-animation.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/typing-animation.tsx",
+          "integrity": "3b157a076c37bf7c17d42e1f1ea917ed2dfcfe56da6b102297463d9ff83c94ec"
+        },
+        {
+          "path": "packages/registry/tailwind/typing-animation.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/typing-animation.json",
+          "integrity": "78eacc204bcedacfd9d87c9174d2eae1b75333808d28cf0ad6f14cef947ddd43"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "solid-js"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/typing-animation/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/typing-animation/default.tsx",
+        "integrity": "91c1bdcaff85cd8ec92e496e9e606085b7b7c40ebe4bad08da5a2b93ca14cd67",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/ui/typing-animation.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Word Fade In": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/word-fade-in.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/word-fade-in.tsx",
+          "integrity": "fccbbd02390b5374f204e54f68b7a7fe411d71ee0b3eb683d77ea54e770c835e"
+        },
+        {
+          "path": "packages/registry/tailwind/word-fade-in.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/word-fade-in.json",
+          "integrity": "5f12f63922e79f5e9cd1bc7320ab9353af0393d979853ac5246d8d45396451e4"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/word-fade-in/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/word-fade-in/default.tsx",
+        "integrity": "293c6050ea4e02ee3d024226dcb221491f75fd2087c6fa80d7aa910c0b386a74",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/word-fade-in.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Word Pullup": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/lib/utils.ts",
+          "integrity": "0fca478853f3fc4310e40ebff727a53da7ec677938f4e3e0d5ecaa62e936a199"
+        },
+        {
+          "path": "components/tailwind/src/ui/word-pullup.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/word-pullup.tsx",
+          "integrity": "0b2e6a816c07f1006d42a8ec9ed0df06055a758dfff73658a14826d29272a257"
+        },
+        {
+          "path": "packages/registry/tailwind/word-pullup.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/word-pullup.json",
+          "integrity": "cb295839be5f0fbdc6d164784f72c5141adf0b2bd0a4c1b65404e33842cac439"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/word-pullup/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/word-pullup/default.tsx",
+        "integrity": "82b435472054ab4477c0afbc865f848eb37a788d9b6b26d6a472b9f40129f005",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/lib/utils.ts",
+          "components/tailwind/src/ui/word-pullup.tsx"
+        ]
+      }
+    },
+    "mystic-ui/Word Rotate": {
+      "dependencies": [
+        "solid-js",
+        "solid-motionone"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "components/tailwind/src/ui/word-rotate.tsx",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/word-rotate.tsx",
+          "integrity": "32b7c54cf569f33b969caaae727a40b541e0cdc7a2caeddb8ce59169e452f2a4"
+        },
+        {
+          "path": "packages/registry/tailwind/word-rotate.json",
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/packages/registry/tailwind/word-rotate.json",
+          "integrity": "9628cd9a3c0bf064a2e396c6434ae93825911b90e929d4033ebc6e395650d810"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "solid-js",
+        "solid-motionone"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "components/tailwind/src/stories/word-rotate/default.tsx",
+        "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/word-rotate/default.tsx",
+        "integrity": "aeacbfa3d77aad9ba716a1af720cafbcaed920be0f77f406afeb0efeee4dcb89",
+        "kind": "original-source",
+        "sourcePaths": [
+          "components/tailwind/src/ui/word-rotate.tsx"
+        ]
+      }
+    }
+  }
+}

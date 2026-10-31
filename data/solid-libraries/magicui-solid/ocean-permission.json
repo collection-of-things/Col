@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-30",
+  "sha256": "94b243dc90c04db913d0b3d79c62544564d54fc8e6fbb50559dc54bedbb99028",
+  "bytes": 722190,
+  "identicalCopies": [
+    "https://cdn.magicui.design/ocean-small.webm",
+    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ocean-small.webm",
+    "https://github.com/oreillymedia/Using_SVG/blob/9e0fa92477f71625e06e2d3648601736aa2cd02d/ch15-masking-files/ocean-assets/ocean-small.webm"
+  ],
+  "uploader": {
+    "name": "Dudley Storey",
+    "codepenUserId": 4273,
+    "publicPen": "https://codepen.io/dudleystorey/pen/QvvEYQ",
+    "penCreatedAt": "2017-04-30T09:13:48Z",
+    "pathEvidence": "https://blog.codepen.io/2015/07/29/using-requirejs-in-pens/"
+  },
+  "permission": {
+    "source": "https://blog.codepen.io/legal/terms-of-service/",
+    "basis": "CodePen's terms grant other users redistribution rights for uploaded or displayed content and require uploaders to warrant that they have authority to grant those rights.",
+    "limitation": "The uploader's authority is relied on; the person who filmed the footage and the terms in force at upload were not independently identified. The Pen date does not establish when the video was made."
+  }
+}

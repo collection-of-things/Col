@@ -1,0 +1,221 @@
+{
+  "artifactFile": "data/component-previews/solid/magicui-solid.json",
+  "artifactIntegrity": "d3087e28fcd26e706f34a0055813b07685801b7770ec0c44622a6b54fb9b7636",
+  "lockIntegrity": "d2a918da301a2fd7819bcff0db2d849d20ce91d021d0234dbf9d1e253735b38f",
+  "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+  "records": {
+    "magicui-solid/Marquee": {
+      "codeIntegrity": "a8a839a4c14a6b83a473f4e4317ef0c968728f96d54004b4e0f12be3e7bafe9c",
+      "cssIntegrity": "8c5138247678dfe8034b8ba867b682de838a78a60c9bd5b5c198e26544478e59",
+      "lockIntegrity": "d2a918da301a2fd7819bcff0db2d849d20ce91d021d0234dbf9d1e253735b38f",
+      "inputs": [
+        {
+          "path": "../node_modules/solid-js/dist/solid.js",
+          "sha256": "2d8f12f3e25009c6a522c981f1b46695951b59ec800a2471f516bb79ce1f9934"
+        },
+        {
+          "path": "../node_modules/solid-js/web/dist/web.js",
+          "sha256": "e0ba3633593bfa2081f030fb0033e60340d6a2a53e35e8ada1d1cd0af7a81c90"
+        },
+        {
+          "path": "../node_modules/clsx/dist/clsx.mjs",
+          "sha256": "d949e5cdbfebc76a6642b1901095e900fc3f2262d8dc0373aa44850a9bc75522"
+        },
+        {
+          "path": "../node_modules/tailwind-merge/dist/bundle-mjs.mjs",
+          "sha256": "bb843b41186520f990a35330687da381a76ae7af89432fe2400afb7d73852181"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "sha256": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/marquee.tsx",
+          "sha256": "9eb0a05a87f3f15936b089f1379f67f9fd5c99eeb3b3c3524169b5ff2468c6cb"
+        },
+        {
+          "path": "src/demos/MarqueeDemo.tsx",
+          "sha256": "e03fdcfaa2a5066b8df23be0f60eb49cb441a9da831c4ba51a48319f594df62c"
+        },
+        {
+          "path": "MarqueeDemo.mount.tsx",
+          "sha256": "3fc7beb93f2d44b20e59c31f2009427bb06348daee747b170d8eb889ad12b35c"
+        }
+      ],
+      "packages": {
+        "node_modules/solid-js": {
+          "version": "1.9.17",
+          "resolved": "https://registry.npmjs.org/solid-js/-/solid-js-1.9.17.tgz",
+          "integrity": "sha512-4GAmLOWPfNV8H9Jfn2LSFTpNEG6jiOKPiwd5lnLGQtehHaX6l3TOLzJqQ7mqwB/3k1Yy3zyumFVopmc/tm34ow==",
+          "license": "MIT",
+          "dependencies": {
+            "csstype": "^3.1.0",
+            "seroval": "~1.6.8",
+            "seroval-plugins": "~1.6.8"
+          }
+        },
+        "node_modules/clsx": {
+          "version": "2.1.1",
+          "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+          "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+          "license": "MIT",
+          "engines": {
+            "node": ">=6"
+          }
+        },
+        "node_modules/tailwind-merge": {
+          "version": "3.6.0",
+          "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.6.0.tgz",
+          "integrity": "sha512-uxL7qAVQriqRQPAyK3pj66VqskWqoZ37PW94jwOTwNfq/z9oyu1V+eqrZqtR2+fCiXdYOZe/Modt8GtvqNzu+w==",
+          "license": "MIT",
+          "funding": {
+            "type": "github",
+            "url": "https://github.com/sponsors/dcastil"
+          }
+        }
+      }
+    },
+    "magicui-solid/Ripple Button": {
+      "codeIntegrity": "e1c1b16da448be9b962fc84d7e97d4ffdfd933c9a2e8d118c55d18f82b6482c8",
+      "cssIntegrity": "8c5138247678dfe8034b8ba867b682de838a78a60c9bd5b5c198e26544478e59",
+      "lockIntegrity": "d2a918da301a2fd7819bcff0db2d849d20ce91d021d0234dbf9d1e253735b38f",
+      "inputs": [
+        {
+          "path": "../node_modules/solid-js/dist/solid.js",
+          "sha256": "2d8f12f3e25009c6a522c981f1b46695951b59ec800a2471f516bb79ce1f9934"
+        },
+        {
+          "path": "../node_modules/solid-js/web/dist/web.js",
+          "sha256": "e0ba3633593bfa2081f030fb0033e60340d6a2a53e35e8ada1d1cd0af7a81c90"
+        },
+        {
+          "path": "../node_modules/clsx/dist/clsx.mjs",
+          "sha256": "d949e5cdbfebc76a6642b1901095e900fc3f2262d8dc0373aa44850a9bc75522"
+        },
+        {
+          "path": "../node_modules/tailwind-merge/dist/bundle-mjs.mjs",
+          "sha256": "bb843b41186520f990a35330687da381a76ae7af89432fe2400afb7d73852181"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "sha256": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/ripple-button.tsx",
+          "sha256": "3ade371a463ef5a7fab531bd111a07077cebde1f9832477ad8d1ca9ef22a76d4"
+        },
+        {
+          "path": "src/demos/RippleButtonDemo.tsx",
+          "sha256": "3b84f04c83d0d9a7409e6af6c1f2dd63b626d930453bae87d83e9683b298323c"
+        },
+        {
+          "path": "RippleButtonDemo.mount.tsx",
+          "sha256": "045b257c3dba46d0cc4cd4c8dc3d6d0fe49d3ec82f0fb1141be86b6274286af5"
+        }
+      ],
+      "packages": {
+        "node_modules/solid-js": {
+          "version": "1.9.17",
+          "resolved": "https://registry.npmjs.org/solid-js/-/solid-js-1.9.17.tgz",
+          "integrity": "sha512-4GAmLOWPfNV8H9Jfn2LSFTpNEG6jiOKPiwd5lnLGQtehHaX6l3TOLzJqQ7mqwB/3k1Yy3zyumFVopmc/tm34ow==",
+          "license": "MIT",
+          "dependencies": {
+            "csstype": "^3.1.0",
+            "seroval": "~1.6.8",
+            "seroval-plugins": "~1.6.8"
+          }
+        },
+        "node_modules/clsx": {
+          "version": "2.1.1",
+          "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+          "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+          "license": "MIT",
+          "engines": {
+            "node": ">=6"
+          }
+        },
+        "node_modules/tailwind-merge": {
+          "version": "3.6.0",
+          "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.6.0.tgz",
+          "integrity": "sha512-uxL7qAVQriqRQPAyK3pj66VqskWqoZ37PW94jwOTwNfq/z9oyu1V+eqrZqtR2+fCiXdYOZe/Modt8GtvqNzu+w==",
+          "license": "MIT",
+          "funding": {
+            "type": "github",
+            "url": "https://github.com/sponsors/dcastil"
+          }
+        }
+      }
+    },
+    "magicui-solid/Shimmer Button": {
+      "codeIntegrity": "2f5e4b2f4cc353a42d5e7448cf7c19879e82c5fa00d0df95c101b54bfd167ad0",
+      "cssIntegrity": "8c5138247678dfe8034b8ba867b682de838a78a60c9bd5b5c198e26544478e59",
+      "lockIntegrity": "d2a918da301a2fd7819bcff0db2d849d20ce91d021d0234dbf9d1e253735b38f",
+      "inputs": [
+        {
+          "path": "../node_modules/solid-js/dist/solid.js",
+          "sha256": "2d8f12f3e25009c6a522c981f1b46695951b59ec800a2471f516bb79ce1f9934"
+        },
+        {
+          "path": "../node_modules/solid-js/web/dist/web.js",
+          "sha256": "e0ba3633593bfa2081f030fb0033e60340d6a2a53e35e8ada1d1cd0af7a81c90"
+        },
+        {
+          "path": "../node_modules/clsx/dist/clsx.mjs",
+          "sha256": "d949e5cdbfebc76a6642b1901095e900fc3f2262d8dc0373aa44850a9bc75522"
+        },
+        {
+          "path": "../node_modules/tailwind-merge/dist/bundle-mjs.mjs",
+          "sha256": "bb843b41186520f990a35330687da381a76ae7af89432fe2400afb7d73852181"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "sha256": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/shimmer-button.tsx",
+          "sha256": "816287516187fd682760c6742d0dd5eebed23aafa1086c4fcdd794dea6f41f5b"
+        },
+        {
+          "path": "src/demos/ShimmerButtonDemo.tsx",
+          "sha256": "c459b6400b3e462f54b8d83b84bb43bb6f6e3b426a0f98ab1aabc8564cba275d"
+        },
+        {
+          "path": "ShimmerButtonDemo.mount.tsx",
+          "sha256": "4fc9e17a1ddba799e4d257b5b7b5a8b7417d926dda14966d3fc9f76984c0750c"
+        }
+      ],
+      "packages": {
+        "node_modules/solid-js": {
+          "version": "1.9.17",
+          "resolved": "https://registry.npmjs.org/solid-js/-/solid-js-1.9.17.tgz",
+          "integrity": "sha512-4GAmLOWPfNV8H9Jfn2LSFTpNEG6jiOKPiwd5lnLGQtehHaX6l3TOLzJqQ7mqwB/3k1Yy3zyumFVopmc/tm34ow==",
+          "license": "MIT",
+          "dependencies": {
+            "csstype": "^3.1.0",
+            "seroval": "~1.6.8",
+            "seroval-plugins": "~1.6.8"
+          }
+        },
+        "node_modules/clsx": {
+          "version": "2.1.1",
+          "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+          "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+          "license": "MIT",
+          "engines": {
+            "node": ">=6"
+          }
+        },
+        "node_modules/tailwind-merge": {
+          "version": "3.6.0",
+          "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.6.0.tgz",
+          "integrity": "sha512-uxL7qAVQriqRQPAyK3pj66VqskWqoZ37PW94jwOTwNfq/z9oyu1V+eqrZqtR2+fCiXdYOZe/Modt8GtvqNzu+w==",
+          "license": "MIT",
+          "funding": {
+            "type": "github",
+            "url": "https://github.com/sponsors/dcastil"
+          }
+        }
+      }
+    }
+  }
+}
