@@ -1,7 +1,5 @@
 # Kobalte previews
 
-> During this review stack, rebuild scripts and preview artifacts arrive in the final integration stage.
-
 The documented controls use Kobalte's original demos and CSS modules at the revision recorded in `sources.json`. Kobalte itself is unstyled. The original SolidBase theme and Inter font are retained. The nonvisual I18n Provider has no standalone visual demo, so its preview composes the documented provider and `useLocale` examples. `coverage.json` records the indexed documentation inventory.
 
 Rebuild from the repository root with Node 24:

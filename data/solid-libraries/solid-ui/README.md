@@ -1,5 +1,3 @@
-> During this review stack, rebuild scripts and preview artifacts arrive in the final integration stage.
-
 SolidUI is pinned to `stefan-karger/solid-ui@21ba4fa59b775a8bf9ee8249883de34aba1cf807`. `sources.json` retains the official MIT source, original Geist font bytes and their SIL license. `corpus.json` supplies readable evidence separately from website metadata.
 
 Rebuild from the repository root:

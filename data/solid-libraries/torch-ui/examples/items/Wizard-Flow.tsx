@@ -38,16 +38,24 @@ export function WizardFlow() {
   const [teamSize, setTeamSize] = createSignal('2-10')
   const [acceptUpdates, setAcceptUpdates] = createSignal(true)
 
-  async function handleFinish(e: SubmitEvent) {
-    e.preventDefault()
+  async function finish() {
+    if (submitting()) return
     setSubmitting(true)
     await new Promise((r) => setTimeout(r, 1200))
     setSubmitting(false)
     setDone(true)
   }
 
-  if (done()) {
-    return (
+  function submitOnEnter(event: KeyboardEvent & { currentTarget: HTMLFormElement }) {
+    // IME may finish composition before its final keydown.
+    if (event.key === 'Enter' && !event.isComposing && event.keyCode !== 229 && event.target instanceof HTMLInputElement && ['text', 'email'].includes(event.target.type)) {
+      event.preventDefault()
+      event.currentTarget.querySelector<HTMLButtonElement>('button[type="submit"]')?.click()
+    }
+  }
+
+  return (
+    <Show when={!done()} fallback={
       <Card class="w-full max-w-lg mx-auto text-center">
         <Card.Body class="py-12">
           <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-900/30">
@@ -59,16 +67,13 @@ export function WizardFlow() {
           <p class="mt-2 text-sm text-ink-600">Welcome, {name()}. Your workspace <strong>{orgName()}</strong> is ready.</p>
         </Card.Body>
       </Card>
-    )
-  }
-
-  return (
+    }>
     <Card class="w-full max-w-lg mx-auto">
       <Card.Body>
         <WizardStepper step={step()} totalSteps={STEP_LABELS.length} stepLabels={STEP_LABELS} variant="pills" class="mb-6" />
 
         <Show when={step() === 1}>
-          <Form onSubmit={(e) => { e.preventDefault(); setStep(2) }} class="gap-4">
+          <Form onSubmit={(e) => { e.preventDefault(); setStep(2) }} onKeyDown={submitOnEnter} class="gap-4">
             <div>
               <h2 class="text-lg font-semibold text-ink-900">Your account</h2>
               <p class="mt-1 text-sm text-ink-600">Tell us a little about yourself.</p>
@@ -77,13 +82,13 @@ export function WizardFlow() {
             <Input label="Work email" type="email" placeholder="you@company.com" value={email()} onValueChange={setEmail} required />
             <Select label="Your role" options={ROLE_OPTIONS} value={role()} onValueChange={setRole} />
             <div class="flex justify-end">
-              <Button type="submit" variant="primary">Next</Button>
+              <Button type="submit" variant="primary" onClick={(e) => { e.preventDefault(); if (e.currentTarget.form?.reportValidity()) setStep(2) }}>Next</Button>
             </div>
           </Form>
         </Show>
 
         <Show when={step() === 2}>
-          <Form onSubmit={(e) => { e.preventDefault(); setStep(3) }} class="gap-4">
+          <Form onSubmit={(e) => { e.preventDefault(); setStep(3) }} onKeyDown={submitOnEnter} class="gap-4">
             <div>
               <h2 class="text-lg font-semibold text-ink-900">Your organization</h2>
               <p class="mt-1 text-sm text-ink-600">Set up your team workspace.</p>
@@ -93,13 +98,13 @@ export function WizardFlow() {
             <Checkbox label="Send me product updates and tips" checked={acceptUpdates()} onValueChange={setAcceptUpdates} />
             <div class="flex justify-between">
               <Button variant="ghost" onClick={() => setStep(1)}>Back</Button>
-              <Button type="submit" variant="primary">Next</Button>
+              <Button type="submit" variant="primary" onClick={(e) => { e.preventDefault(); if (e.currentTarget.form?.reportValidity()) setStep(3) }}>Next</Button>
             </div>
           </Form>
         </Show>
 
         <Show when={step() === 3}>
-          <Form onSubmit={handleFinish} class="gap-4">
+          <Form onSubmit={(e) => { e.preventDefault(); void finish() }} onKeyDown={submitOnEnter} class="gap-4">
             <div>
               <h2 class="text-lg font-semibold text-ink-900">Review &amp; confirm</h2>
               <p class="mt-1 text-sm text-ink-600">Everything look right?</p>
@@ -120,12 +125,13 @@ export function WizardFlow() {
             </Card>
             <div class="flex justify-between">
               <Button variant="ghost" onClick={() => setStep(2)}>Back</Button>
-              <Button type="submit" variant="primary" loading={submitting()}>Finish setup</Button>
+              <Button type="submit" variant="primary" loading={submitting()} onClick={(e) => { e.preventDefault(); if (e.currentTarget.form?.reportValidity()) void finish() }}>Finish setup</Button>
             </div>
           </Form>
         </Show>
       </Card.Body>
     </Card>
+    </Show>
   )
 }
 import { render } from "solid-js/web";

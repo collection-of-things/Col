@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-31T08:34:43.317Z",
+  "checkedAt": "2026-10-31T11:21:28.734Z",
   "attempts": [
     {
       "id": "magicui-solid/Backlight",
@@ -14,6 +14,351 @@
     {
       "id": "magicui-solid/Tweet Card",
       "group": "tweet",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Android",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Animated Beam",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Animated Circular Progress Bar",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Animated Gradient Text",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Animated Grid Pattern",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Animated List",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Animated Shiny Text",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Theme Toggler",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Aurora Text",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Avatar Circles",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Bento Grid",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Blur Fade",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Border Beam",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Comic Text",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Confetti",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Cool Mode",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Dia Text Reveal",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Dock",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Dot Pattern",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Dotted Map",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/File Tree",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Flickering Grid",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Glare Hover",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Globe",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Glyph Matrix",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Grid Pattern",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Hero Video Dialog",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Hexagon Pattern",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Text Highlighter",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Hyper Text",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Icon Cloud",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Interactive Grid Pattern",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Interactive Hover Button",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/iPhone",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Kinetic Text",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Lens",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Light Rays",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Line Shadow Text",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Magic Card",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Meteors",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Morphing Text",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Neon Gradient Card",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Noise Texture",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Number Ticker",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Orbiting Circles",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Particles",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Pixel Image",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Pointer",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Progressive Blur",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Pulsating Button",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Rainbow Button",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Retro Grid",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Ripple",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Safari",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Scroll Based Velocity",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Scroll Progress",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Shine Border",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Shiny Button",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Smooth Cursor",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Sparkles Text",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Spinning Text",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Striped Pattern",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Terminal",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Text 3D Flip",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Text Animate",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Text Reveal",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Typing Animation",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Warp Background",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Word Rotate",
+      "group": "components",
       "compiled": true
     }
   ]

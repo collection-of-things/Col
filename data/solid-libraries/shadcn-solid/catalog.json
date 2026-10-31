@@ -774,9 +774,9 @@
     },
     {
       "subject": "@kobalte/core",
-      "constraint": "0.13.14",
+      "constraint": "^0.13.11 (upstream); 0.13.14 (verified preview)",
       "status": "supported",
-      "evidence": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/apps/docs/package.json"
+      "evidence": "https://raw.githubusercontent.com/hngngn/shadcn-solid/4c75b892148dc81f81167a43756d4ce0fbfe6eae/package.json"
     }
   ]
 }

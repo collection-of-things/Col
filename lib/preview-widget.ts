@@ -23,6 +23,7 @@ import type { transform as transformSource } from "sucrase";
 import type { ComponentPreview } from "./component-preview";
 import type { PreviewMediaDescriptor } from "./component-preview-assets";
 import { componentPreviewRequestKey } from "./component-preview.ts";
+import { gzipSync } from "node:zlib";
 
 export const PREVIEW_WIDGET_URI = "ui://col/render-component.html";
 
@@ -126,7 +127,9 @@ export const resolveImport = (specifier: string, reactVersion: string): string =
   // These pinned class utilities have no React dependency. Avoid an unnecessary
   // React-specific CDN build variant while preserving the audited versions.
   if (/^cn@0\.(?:2\.4|5\.0)$/.test(specifier)) return "https://esm.sh/" + specifier + "?bundle";
-  if (/^tailwind-merge@3\.(?:0\.1|3\.1|5\.0|6\.0)$/.test(specifier)) return "https://esm.sh/" + specifier + "?bundle";
+  // esm.sh fails for this pinned release; jsDelivr serves its published ESM entry.
+  if (specifier === "tailwind-merge@3.3.1") return "https://cdn.jsdelivr.net/npm/tailwind-merge@3.3.1/dist/bundle-mjs.mjs";
+  if (/^tailwind-merge@3\.(?:0\.1|5\.0|6\.0)$/.test(specifier)) return "https://esm.sh/" + specifier + "?bundle";
   return `https://esm.sh/${specifier}?deps=react@${reactVersion},react-dom@${reactVersion}`;
 };
 
@@ -418,7 +421,7 @@ export function previewWidgetHtml(): string {
     }
     let passiveMedia;
     try {
-      if (preview.mediaKeys?.length) { status.hidden = false; status.textContent = "Loading original demo media…"; }
+      if (preview.mediaKeys?.length) { status.hidden = false; status.textContent = "Loading demo media…"; }
       const resolved = preview.mediaKeys?.length ? await (${resolvePreviewMedia.toString()})(media, async (uri) => {
         const response = await app.readServerResource({ uri });
         const content = response.contents?.[0];
@@ -463,7 +466,7 @@ function previewCodePage(embedded: string, trusted = false, runtime = '"react"')
   return previewPage(`<script>
 ${runtimeScript()}
 colRuntime((message) => parent.postMessage({ colError: message }, "*"), ${runtime})
-  .then(({ render, fail }) => render(${embedded}).catch(fail))
+  .then(async ({ render, fail }) => render(${embedded}).catch(fail))
   .catch((error) => {
     const message = String((error && error.message) || error).slice(0, 256);
     document.getElementById("col-status").textContent = message;
@@ -507,11 +510,17 @@ addEventListener("pagehide", () => observer.disconnect(), { once: true });
  * Code's widget restyles every input) cannot reach the component. The frame
  * inherits the host's script allowlist, and reports its height so it fits the
  * render. Saved after `FRAGMENT_PAGE_PREFIX`, it also opens in any browser.
- * The code rides a JSON string with `<` escaped, so it cannot close its script
- * element early.
+ * Large source is compressed for transport and decoded inside the isolated frame;
+ * uncompressed source rides a JSON string with `<` escaped.
  */
 export function previewFragmentHtml(code: string, trusted = false, media: Record<string, string> = {}, runtime: "react" | "solid" = "react"): string {
-  const embedded = JSON.stringify(code).replace(/</g, "\\u003c");
+  let embedded = JSON.stringify(code).replace(/</g, "\\u003c");
+  if (code.length > 100_000) {
+    const compressed = gzipSync(code).toString("base64");
+    if (compressed.length < embedded.length) {
+      embedded = `(await new Response(new Blob([Uint8Array.from(atob(${JSON.stringify(compressed)}), character => character.charCodeAt(0))]).stream().pipeThrough(new DecompressionStream("gzip"))).text())`;
+    }
+  }
   const page = previewCodePage(embedded, trusted, JSON.stringify(runtime)).replace("</head>", () => previewMediaHtml(media) + "</head>");
   const srcdoc = page.replace(/&/g, "&amp;").replace(/"/g, "&quot;");
   return `<iframe data-col-preview title="Component preview" sandbox="allow-scripts allow-forms" srcdoc="${srcdoc}" style="display:block;width:100%;height:360px;border:0"></iframe>
@@ -546,11 +555,16 @@ function previewDisclosure(preview: ComponentPreview): string {
   const source = preview.available && preview.source
     ? `<p><a href="${escape(preview.source.url)}" target="_blank" rel="noreferrer">Pinned upstream source</a> · ${escape(preview.source.integrity)}</p>` : "";
   const assets = preview.available && preview.assets?.length
-    ? `<details><summary>Original demo assets (${preview.assets.length})</summary><ul>${preview.assets.map(asset => `<li><a href="${escape(asset.downloadUrl)}" target="_blank" rel="noreferrer">${escape(asset.url)}</a> · ${escape(asset.attribution.name)} · ${escape(asset.attribution.license)} · SHA-256 ${escape(asset.sha256)}</li>`).join("")}</ul></details>` : "";
+    ? `<details><summary>Demo assets (${preview.assets.length})</summary><ul>${preview.assets.map(asset => {
+      const requested = asset.url === asset.downloadUrl ? "" : `Requested: ${escape(asset.url)} · `;
+      const license = asset.licenseUrl ? `<a href="${escape(asset.licenseUrl)}" target="_blank" rel="noreferrer">${escape(asset.attribution.license)}</a>` : escape(asset.attribution.license);
+      return `<li>${requested}<a href="${escape(asset.downloadUrl)}" target="_blank" rel="noreferrer">${escape(asset.downloadUrl)}</a> · ${escape(asset.attribution.name)} · ${license} · SHA-256 ${escape(asset.sha256)}${asset.transformation ? ` · ${escape(asset.transformation)}` : ""}${asset.original ? ` · Original SHA-256 ${escape(asset.original.sha256)}` : ""}</li>`;
+    }).join("")}</ul></details>` : "";
   return `<section data-col-provenance aria-label="Preview source and limitations" style="overflow-wrap:anywhere"><p>${identity} <a href="${escape(preview.docsUrl)}" target="_blank" rel="noreferrer">Official documentation</a></p>${source}${assets}<p>Reproduction limits</p><ul>${preview.gaps.map((gap) => `<li>${escape(gap)}</li>`).join("")}</ul></section>`;
 }
 
 /** The fallback consumes exactly the same server-selected implementation. */
-export function verifiedPreviewFragmentHtml(preview: ComponentPreview): string {
-  return previewDisclosure(preview) + (preview.available && !preview.mediaKeys?.length ? previewFragmentHtml(preview.code, true, {}, "runtime" in preview ? preview.runtime : "react") : "");
+export function verifiedPreviewFragmentHtml(preview: ComponentPreview, inlineMedia: Record<string, string> = {}): string {
+  const mediaAvailable = preview.available && (preview.mediaKeys ?? []).every(key => Object.hasOwn(inlineMedia, key));
+  return previewDisclosure(preview) + (preview.available && mediaAvailable ? previewFragmentHtml(preview.code, true, inlineMedia, "runtime" in preview ? preview.runtime : "react") : "");
 }

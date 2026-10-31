@@ -38,13 +38,17 @@ export function FormDrawer() {
     setTags([])
   }
 
-  async function handleSubmit(e: SubmitEvent) {
-    e.preventDefault()
+  async function saveProject() {
+    if (loading()) return
     setLoading(true)
     await new Promise((r) => setTimeout(r, 1000))
     setLoading(false)
     setOpen(false)
     reset()
+  }
+
+  function submitProject() {
+    if (!loading() && document.querySelector<HTMLFormElement>('#project-form')?.reportValidity()) void saveProject()
   }
 
   return (
@@ -55,30 +59,35 @@ export function FormDrawer() {
         open={open()}
         onClose={() => setOpen(false)}
         onCloseComplete={reset}
+        onSave={submitProject}
+        title="New project"
+        aria-label="New project"
+        cancelLabel="Dismiss"
+        saveLabel={loading() ? 'Creating…' : 'Create project'}
         side="end"
         size="md"
         showCloseButton
+        noPadding
       >
         <div class="flex h-full flex-col">
-          <div class="border-b border-surface-border px-6 py-4">
-            <h2 class="text-base font-semibold text-ink-900">New project</h2>
-            <p class="mt-0.5 text-sm text-ink-500">Fill in the details to create a new project.</p>
-          </div>
           <div class="flex-1 overflow-y-auto px-6 py-6">
-            <Form onSubmit={handleSubmit} id="project-form">
+            <p class="mb-4 text-sm text-ink-500">Fill in the details to create a new project.</p>
+            <Form
+              onSubmit={(event) => { event.preventDefault(); void saveProject() }}
+              onKeyDown={(event) => {
+                // IME may finish composition before its final keydown.
+                if (event.key === 'Enter' && !event.isComposing && event.keyCode !== 229 && event.target instanceof HTMLInputElement && ['text', 'email'].includes(event.target.type)) {
+                  event.preventDefault()
+                  submitProject()
+                }
+              }}
+              id="project-form"
+            >
               <Input label="Project name" placeholder="e.g. Website Redesign" value={projectName()} onValueChange={setProjectName} required />
               <TextArea label="Summary" placeholder="Brief description of the project goals" value={summary()} onValueChange={setSummary} rows={4} />
               <Select label="Status" options={STATUS_OPTIONS} value={status()} onValueChange={setStatus} />
               <MultiSelect label="Tags" options={TAG_OPTIONS} value={tags()} onValueChange={setTags} />
             </Form>
-          </div>
-          <div class="border-t border-surface-border px-6 py-4">
-            <div class="flex justify-end gap-2">
-              <Button variant="outlined" onClick={() => setOpen(false)}>Cancel</Button>
-              <Button variant="primary" loading={loading()} type="submit" form="project-form">
-                Create project
-              </Button>
-            </div>
           </div>
         </div>
       </Drawer>

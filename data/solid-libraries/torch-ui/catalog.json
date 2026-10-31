@@ -93,7 +93,7 @@
       "name": "Heading",
       "url": "https://torch-ui.dev/typography/heading",
       "kind": "full-pattern",
-      "summary": "Semantic heading elements across all six levels.",
+      "summary": "A page or section title with an optional description.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -379,7 +379,7 @@
       "name": "Relative Date",
       "url": "https://torch-ui.dev/forms/relative-date",
       "kind": "full-pattern",
-      "summary": "A picker for selecting relative date ranges like \"last 7 days\".",
+      "summary": "An input for a date offset from today.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -496,7 +496,7 @@
       "name": "Inline",
       "url": "https://torch-ui.dev/layout/inline",
       "kind": "layout",
-      "summary": "Inline is documented by TorchUI.",
+      "summary": "A horizontal row with default alignment and spacing.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -693,7 +693,7 @@
       "name": "Banner",
       "url": "https://torch-ui.dev/feedback/banner",
       "kind": "full-pattern",
-      "summary": "Banner is documented by TorchUI.",
+      "summary": "A full-width strip for announcements and maintenance notices.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -923,7 +923,7 @@
       "name": "Board",
       "url": "https://torch-ui.dev/data-display/board",
       "kind": "full-pattern",
-      "summary": "Board is documented by TorchUI.",
+      "summary": "A Kanban board with cards and status columns.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -1009,7 +1009,7 @@
       "name": "Login Form",
       "url": "https://torch-ui.dev/recipes/login-form",
       "kind": "full-pattern",
-      "summary": "Login Form is documented by TorchUI.",
+      "summary": "A sign-in form with email, password, and remember-me controls.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -1022,7 +1022,7 @@
       "name": "Register Form",
       "url": "https://torch-ui.dev/recipes/register-form",
       "kind": "full-pattern",
-      "summary": "Register Form is documented by TorchUI.",
+      "summary": "A sign-up form with password strength and terms agreement.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -1035,7 +1035,7 @@
       "name": "Settings Form",
       "url": "https://torch-ui.dev/recipes/settings-form",
       "kind": "full-pattern",
-      "summary": "Settings Form is documented by TorchUI.",
+      "summary": "A tabbed form for profile, security, and notification settings.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -1048,7 +1048,7 @@
       "name": "Form Dialog",
       "url": "https://torch-ui.dev/recipes/form-dialog",
       "kind": "full-pattern",
-      "summary": "Form Dialog is documented by TorchUI.",
+      "summary": "A modal task form with header and footer actions.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -1061,7 +1061,7 @@
       "name": "Form Drawer",
       "url": "https://torch-ui.dev/recipes/form-drawer",
       "kind": "full-pattern",
-      "summary": "Form Drawer is documented by TorchUI.",
+      "summary": "A side drawer containing a project form with save and cancel actions.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -1074,7 +1074,7 @@
       "name": "Wizard Flow",
       "url": "https://torch-ui.dev/recipes/wizard-flow",
       "kind": "full-pattern",
-      "summary": "Wizard Flow is documented by TorchUI.",
+      "summary": "A three-step onboarding form with account, organization, and review steps.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -1087,7 +1087,7 @@
       "name": "Stat Grid",
       "url": "https://torch-ui.dev/recipes/stat-grid",
       "kind": "full-pattern",
-      "summary": "Stat Grid is documented by TorchUI.",
+      "summary": "A responsive grid of statistics with trends and sparklines.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -1101,7 +1101,7 @@
       "name": "User Card",
       "url": "https://torch-ui.dev/recipes/user-card",
       "kind": "full-pattern",
-      "summary": "User Card is documented by TorchUI.",
+      "summary": "A profile card with an avatar, role, contact details, and follow control.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -1272,7 +1272,7 @@
       "name": "Data Table",
       "url": "https://torch-ui.dev/data-display/data-table",
       "kind": "full-pattern",
-      "summary": "Data Table is documented by TorchUI.",
+      "summary": "A data grid with search, filters, and load-more controls.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -1285,7 +1285,7 @@
       "name": "Comment Thread",
       "url": "https://torch-ui.dev/recipes/comment-thread",
       "kind": "full-pattern",
-      "summary": "Comment Thread is documented by TorchUI.",
+      "summary": "A comment feed with avatars, likes, and a reply composer.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -1299,7 +1299,7 @@
       "name": "Filter Builder",
       "url": "https://torch-ui.dev/recipes/filter-builder",
       "kind": "full-pattern",
-      "summary": "Filter Builder is documented by TorchUI.",
+      "summary": "A copyable recipe for nested AND/OR filter rules.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",
@@ -1313,7 +1313,7 @@
       "name": "View Customizer",
       "url": "https://torch-ui.dev/recipes/view-customizer",
       "kind": "full-pattern",
-      "summary": "View Customizer is documented by TorchUI.",
+      "summary": "A copyable recipe for choosing and reordering table columns.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
         "@torch-ui/solid",

@@ -1,0 +1,33 @@
+import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { createHash } from "node:crypto";
+import { spawnSync } from "node:child_process";
+import { resolve } from "node:path";
+
+const url="https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4";
+const scratch=resolve(".scratch/solid-library-69/solid-motion/media");
+await mkdir(scratch,{recursive:true});
+const original=resolve(scratch,"backlight-original.mp4");
+let bytes=await readFile(original).catch(()=>undefined);
+if(!bytes){const response=await fetch(url,{signal:AbortSignal.timeout(90_000)});if(!response.ok)throw new Error(`Original Pexels media ${response.status}`);bytes=Buffer.from(await response.arrayBuffer());await writeFile(original,bytes);}
+if(createHash("sha256").update(bytes).digest("hex")!=="786875befed7288925443d185ce6a328c507a0fb9699da5b523bb600dfb98f80")throw new Error("Original Backlight source bytes changed");
+const output=resolve(scratch,"backlight-720p-excerpt.mp4");
+const ffmpeg=spawnSync("ffmpeg",["-y","-hide_banner","-loglevel","error","-ss","3","-i",original,"-t","2","-vf","scale=-2:720","-r","30","-c:v","libx264","-crf","30","-preset","slow","-an","-movflags","+faststart",output],{stdio:"inherit",windowsHide:true});
+if(ffmpeg.status!==0)throw new Error("Original Backlight media conversion failed");
+const converted=await readFile(output);
+if(converted.length>3_000_000)throw new Error(`Backlight media needs more compression: ${converted.length} bytes`);
+const hash=value=>createHash("sha256").update(value).digest("hex");
+const path="data/solid-libraries/magicui-solid/upstream.json";
+const upstream=JSON.parse(await readFile(path,"utf8"));
+const file=`${hash(converted)}.mp4`;
+const resourceFile=`data/component-previews/media/${file}`;
+await mkdir("data/component-previews/media",{recursive:true});
+await writeFile(resourceFile,converted);
+upstream.assets[url]={resourceFile,bytes:converted.length,mediaType:"video/mp4",integrity:hash(converted),downloadUrl:url,resolvedUrl:url,attribution:{name:"Pexels Backlight demo video (lossy 720p excerpt)",license:"Pexels License",url:"https://www.pexels.com/license/"},original:{sha256:hash(bytes),bytes:bytes.length},transformation:"Lossy 2-second excerpt from source seconds 3–5, converted to 720p H.264, 30 fps, no audio, CRF 30 to satisfy Col's media limits. The excerpt loops in the original component; it is not the complete original video."};
+const {resourceFile:_resourceFile,integrity,...asset}=upstream.assets[url];
+const chunkSize=1_500_000;
+const chunks=[];
+for(let offset=0;offset<converted.length;offset+=chunkSize)chunks.push(hash(converted.subarray(offset,offset+chunkSize)));
+const manifest={chunkSize,assets:{[url]:{url,...asset,sha256:integrity,file,chunks}},components:{"magicui-solid/Backlight":{assets:[url]},"magicui-solid/Tweet Card":{assets:[url]}}};
+await writeFile("data/component-previews/solid/magicui-solid/resource-media.json",JSON.stringify(manifest,null,2)+"\n");
+await writeFile(path,JSON.stringify(upstream,null,2)+"\n");
+console.log(JSON.stringify({originalBytes:bytes.length,renderedBytes:converted.length,originalSha256:hash(bytes),renderedSha256:hash(converted)}));

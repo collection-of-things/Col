@@ -4,7 +4,7 @@ import IconButton from "rocksolidjs/IconButton";
 export default function Example() {
   return (
     <Badge badgeContent={50}>
-      <IconButton>
+      <IconButton aria-label="Notifications">
         <NotificationIcon />
       </IconButton>
     </Badge>

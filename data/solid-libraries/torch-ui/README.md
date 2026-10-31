@@ -1,12 +1,12 @@
 # TorchUI preview sources
 
-> During this review stack, rebuild scripts and preview artifacts arrive in the final integration stage.
-
 The verified project is `sean-dowd-sr/torch-ui`, package `@torch-ui/solid` 0.6.20. Previews pin Solid 1.9.11, its Babel preset 1.9.10, Kobalte 0.13.11, Tailwind 4.2.1, Chart.js 4.5.1, and Lucide Solid 1.64.0 where used.
 
 The official navigation contains 100 rows for 99 distinct names. The previews use original component sources and published demonstrations. The Table Panel recipe is a separate DataTable/ViewSwitcher composition linked as a variant of the documented Table Panel name; the canonical preview shows the basic TablePanel component. The Table View preview reproduces the official page's underlying DataTable example. The TableView wrapper itself is not yet available upstream, and the preview discloses that limitation.
 
 The upstream theme, orange primary token, surface and ink scales, radii, icons, portal styling, and keyframe injection remain intact. Examples that omit application state or fixture data supply only the glue needed to run them; the exact documented snippets and captured live documentation script are in the corpus and provenance records. Accordion defaults to single selection without collapsing the selected item.
+
+Runnable examples adapt a few documentation snippets to match the live demos or correct interaction and accessibility problems; each affected preview discloses its adaptation. The preserved upstream date pickers and charts retain their date-comparison and cleanup limitations.
 
 The original three-column Board is inside a keyboard-accessible horizontal scroll region on narrow screens; its component styling and column layout are unchanged.
 
