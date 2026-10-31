@@ -1,0 +1,125 @@
+{
+  "checkedAt": "2026-10-30T06:18:14.524Z",
+  "attempts": [
+    {
+      "id": "mystic-ui/Android",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Animated Beam",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Animated Shiny Text",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Border Beam",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Dock",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Dot Pattern",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Flip Text",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Gradual Spacing",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Grid Pattern",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/iPhone 15",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Letter Pullup",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Meteors",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/No Signal Screen",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Number Ticker",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Retro Grid",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Safari",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Shine Border",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Sparkles Text",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Spotlight",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Text Reveal",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Typing Animation",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Word Fade In",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Word Pullup",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "mystic-ui/Word Rotate",
+      "group": "components",
+      "compiled": true
+    }
+  ]
+}

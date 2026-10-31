@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-30T07:07:53.690Z",
+  "source": {
+    "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/CodeComparisonDemo.tsx",
+    "integrity": "eed6b19a2957d4982291240f2ab947e76927a1bca5e0bcd9cdad63cd9570b601"
+  },
+  "method": "Byte-for-byte HTML comparison of the default Shiki bundle and official fine-grained Shiki API, using the actual CodeComparison demo, original TypeScript grammar, GitHub themes and notation transformers.",
+  "results": [
+    {
+      "theme": "github-dark",
+      "example": "beforeCode",
+      "byteIdentical": true,
+      "bytes": 6099,
+      "sha256": "12372de437b486d766a2bc7fb94c7dd9a4b072c5a43ce54c96d0cf58278dd405"
+    },
+    {
+      "theme": "github-dark",
+      "example": "afterCode",
+      "byteIdentical": true,
+      "bytes": 2793,
+      "sha256": "f91f2a71efdfa6591f8aecd4e9582377e2ed536b88bae85ad0ea5cae7d943b69"
+    },
+    {
+      "theme": "github-light",
+      "example": "beforeCode",
+      "byteIdentical": true,
+      "bytes": 6097,
+      "sha256": "44f114e15eb84c04f63d0b1907ef070e8f68f35bf7d7f8d258c426d52be2765b"
+    },
+    {
+      "theme": "github-light",
+      "example": "afterCode",
+      "byteIdentical": true,
+      "bytes": 2791,
+      "sha256": "a865d1e694e1e0d7e80bfa1d183c065c153f9892b9a0e263e503cde2833783b2"
+    }
+  ]
+}

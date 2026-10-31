@@ -1,0 +1,614 @@
+{
+  "checkedAt": "2026-10-30T01:04:54.305Z",
+  "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+  "entries": [
+    {
+      "name": "Android",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/android/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/android/",
+      "title": "Android",
+      "integrity": "21e6130bc5be6dd37ff87bbd20a406196ee8427e4fe7b13ce310d99730090319"
+    },
+    {
+      "name": "Animated Beam",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/animated-beam/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/animated-beam/",
+      "title": "Animated Beam",
+      "integrity": "3b5c7fe395e6a46c5984b122dd6197ccc06211bdbbbb1320c27de31425e36272"
+    },
+    {
+      "name": "Animated Circular Progress Bar",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/animated-circular-progress-bar/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/animated-circular-progress-bar/",
+      "title": "Animated Circular Progress Bar",
+      "integrity": "c753d11b94c46b7df9d0181e613f3aa2cc7c37faf09fa0377ab9fde522ac3f4f"
+    },
+    {
+      "name": "Animated Gradient Text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/animated-gradient-text/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/animated-gradient-text/",
+      "title": "Animated Gradient Text",
+      "integrity": "dc58dd30cc6e783f35b0228fb31baa055d938a353e3727cff59fabbe4193712a"
+    },
+    {
+      "name": "Animated Grid Pattern",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/animated-grid-pattern/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/animated-grid-pattern/",
+      "title": "Animated Grid Pattern",
+      "integrity": "5830da15288610b86749da723e49fc9fca72e9b8c9f4ef2fd8925e5332785adf"
+    },
+    {
+      "name": "Animated List",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/animated-list/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/animated-list/",
+      "title": "Animated List",
+      "integrity": "2cb497e4bdd6423eb47887caf5c7296efe4a91b45764aea9db17f0d494b5b04a"
+    },
+    {
+      "name": "Animated Shiny Text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/animated-shiny-text/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/animated-shiny-text/",
+      "title": "Animated Shiny Text",
+      "integrity": "dec0bdbbd6e23e08e8eeffa413232d2e6fde2b384deabc7948c9decec199c011"
+    },
+    {
+      "name": "Aurora Text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/aurora-text/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/aurora-text/",
+      "title": "Aurora Text",
+      "integrity": "845746061bb5f580cbac727da405f1071a532fde851c81931cd06c3e41ea0b35"
+    },
+    {
+      "name": "Avatar Circles",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/avatar-circles/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/avatar-circles/",
+      "title": "Avatar Circles",
+      "integrity": "8469e5dbb037fdd77206cd6e34600251d1ac93a7104b2dfc5d519979d0b33b13"
+    },
+    {
+      "name": "Backlight",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/backlight/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/backlight/",
+      "title": "Backlight",
+      "integrity": "2a20247caa181b68004798189057657dd68a1ec565d0fa0750ffe3fe7c2762d7"
+    },
+    {
+      "name": "Bento Grid",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/bento-grid/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/bento-grid/",
+      "title": "Bento Grid",
+      "integrity": "99dd5fb827a67169607fd048715507b860142f821b260d73b89cc885b48d6b7a"
+    },
+    {
+      "name": "Blur Fade",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/blur-fade/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/blur-fade/",
+      "title": "Blur Fade",
+      "integrity": "a8fc75a233b9215600009e61f65a7daf56f9c2caf997e47a97e7b40897fb0492"
+    },
+    {
+      "name": "Border Beam",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/border-beam/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/border-beam/",
+      "title": "Border Beam",
+      "integrity": "1350bd23e07ca2305ef482969efcfa1b0aa78841adc5d4f6aa4aea911328f2ff"
+    },
+    {
+      "name": "Code Comparison",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/code-comparison/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/code-comparison/",
+      "title": "Code Comparison",
+      "integrity": "2ebbc62ed2969b001ee16af984b22350b034979b227009338b9f155cbb4c8589"
+    },
+    {
+      "name": "Comic Text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/comic-text/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/comic-text/",
+      "title": "Comic Text",
+      "integrity": "a4bdf3f8eba4be605a6db66626e4dd91137b491f6091f5a2aeabf0810ca086eb"
+    },
+    {
+      "name": "Confetti",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/confetti/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/confetti/",
+      "title": "Confetti",
+      "integrity": "13c11f655a8be81e7cbe95df3ab445d7a6d4874b490da1627862950a361dfbd0"
+    },
+    {
+      "name": "Cool Mode",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/cool-mode/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/cool-mode/",
+      "title": "Cool Mode",
+      "integrity": "be08e87d119053e7b614586829210922484f4cf660c55d2cefb0d9842e7ae788"
+    },
+    {
+      "name": "Dia Text Reveal",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/dia-text-reveal/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/dia-text-reveal/",
+      "title": "Dia Text Reveal",
+      "integrity": "2c2fc0d7a08e61785b808d9d45f308a4e3d376e9b825f7f12bf30091b5510e38"
+    },
+    {
+      "name": "Dock",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/dock/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/dock/",
+      "title": "Dock",
+      "integrity": "0f12e5811af2decc8eede8a066c6be11cb717c99e8120410ddecd5c83af7d4c1"
+    },
+    {
+      "name": "Dot Pattern",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/dot-pattern/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/dot-pattern/",
+      "title": "Dot Pattern",
+      "integrity": "1754403f25c412771a959e8732caa19f03a3f9e784e2e00e8ad9221474278384"
+    },
+    {
+      "name": "Dotted Map",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/dotted-map/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/dotted-map/",
+      "title": "Dotted Map",
+      "integrity": "b29a4a1e7ef0574ef440f6f267315ba0b4d723eaeef2a1ea1db8ee1158009e36"
+    },
+    {
+      "name": "File Tree",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/file-tree/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/file-tree/",
+      "title": "File Tree",
+      "integrity": "7c3c4e275af8c67172eca4075b80cbefca53e36179ec8051aed7e677bad0a08a"
+    },
+    {
+      "name": "Flickering Grid",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/flickering-grid/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/flickering-grid/",
+      "title": "Flickering Grid",
+      "integrity": "e39adaf9df1b291a249afd0ba67f2e06d776a6853b3a1ffd2de79c796ac086a8"
+    },
+    {
+      "name": "Glare Hover",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/glare-hover/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/glare-hover/",
+      "title": "Glare Hover",
+      "integrity": "ef6d6cc0148c6195c2707ed277d8f70124a3f9413c663e64a4f6ccd65696da46"
+    },
+    {
+      "name": "Globe",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/globe/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/globe/",
+      "title": "Globe",
+      "integrity": "6861602b8b893bf85d84f75773f7c149045a26f03bd992b12100d6f0fa51cb58"
+    },
+    {
+      "name": "Glyph Matrix",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/glyph-matrix/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/glyph-matrix/",
+      "title": "Glyph Matrix",
+      "integrity": "97cf5c28415b4312a7297b53269000e99ae671d47922b37abc5f578ee453639c"
+    },
+    {
+      "name": "Grid Pattern",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/grid-pattern/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/grid-pattern/",
+      "title": "Grid Pattern",
+      "integrity": "742f79b3ff8ba9d50bc7426599aaec5344fa334b588c10a2d704a1f3a444fa39"
+    },
+    {
+      "name": "Hero Video Dialog",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/hero-video-dialog/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/hero-video-dialog/",
+      "title": "Hero Video Dialog",
+      "integrity": "d12457a193919935850c227b966fb9e74258a7b84a42f2103a29990805ddf544"
+    },
+    {
+      "name": "Hexagon Pattern",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/hexagon-pattern/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/hexagon-pattern/",
+      "title": "Hexagon Pattern",
+      "integrity": "11096e993a6ed39a3cf0fd96313962a750a3efe72bdec00c3dd654d3f204912c"
+    },
+    {
+      "name": "Hyper Text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/hyper-text/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/hyper-text/",
+      "title": "Hyper Text",
+      "integrity": "077c68b2c9ce18a1f49ac7a983537740c7d306aeba4f3395ec42e9808f4c511a"
+    },
+    {
+      "name": "Icon Cloud",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/icon-cloud/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/icon-cloud/",
+      "title": "Icon Cloud",
+      "integrity": "d959c846599c6e4b42579848934ea39b67b9e445fac5ed68a6aede31a4f42814"
+    },
+    {
+      "name": "Interactive Grid Pattern",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/interactive-grid-pattern/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/interactive-grid-pattern/",
+      "title": "Interactive Grid Pattern",
+      "integrity": "eae5724c145edbe817262b52aae2d5422b77192721b804db0b3dfc507efe9060"
+    },
+    {
+      "name": "Interactive Hover Button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/interactive-hover-button/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/interactive-hover-button/",
+      "title": "Interactive Hover Button",
+      "integrity": "e7d2637c88f814be7cb444a7e5a4a627fbf13802e61ef3b8c2e0b6fe79fba703"
+    },
+    {
+      "name": "iPhone",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/iphone/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/iphone/",
+      "title": "iPhone",
+      "integrity": "068ac9067735e2c8eba313850a9239dad9efbc04f629fb3a039b00b3efd9d9dd"
+    },
+    {
+      "name": "Kinetic Text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/kinetic-text/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/kinetic-text/",
+      "title": "Kinetic Text",
+      "integrity": "0ac1331eb47f664ad774406596737543cda94016440d7148763fcc71152a9a83"
+    },
+    {
+      "name": "Lens",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/lens/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/lens/",
+      "title": "Lens",
+      "integrity": "def129a8700b83d6d8b741135bc2eeef1ad06a0941f63bc7bd75080368b248cc"
+    },
+    {
+      "name": "Light Rays",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/light-rays/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/light-rays/",
+      "title": "Light Rays",
+      "integrity": "925d275997138cb931cc1eb2898331a563379d6f721599c8f98bed336173355d"
+    },
+    {
+      "name": "Line Shadow Text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/line-shadow-text/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/line-shadow-text/",
+      "title": "Line Shadow Text",
+      "integrity": "6c23039b3682415526639bd91d6efcea3b6d8cbbf9b00911d7094a12f551ab0e"
+    },
+    {
+      "name": "Magic Card",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/magic-card/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/magic-card/",
+      "title": "Magic Card",
+      "integrity": "9b651478480964eb3c005c0a21c9c1201754b5eebbba4e9e079fffb9c0e67ee7"
+    },
+    {
+      "name": "Marquee",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/marquee/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/marquee/",
+      "title": "Marquee",
+      "integrity": "6bab18f8343663a94af3b87a4162bfc1be7b665ab7cdefc7721580ac58cbff92"
+    },
+    {
+      "name": "Meteors",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/meteors/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/meteors/",
+      "title": "Meteors",
+      "integrity": "2282ccf7ca63a61668e27cd82b94522f67ccf76af0d923ce2501173d183606d1"
+    },
+    {
+      "name": "Morphing Text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/morphing-text/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/morphing-text/",
+      "title": "Morphing Text",
+      "integrity": "b885dbcff608d710e067bdf7cf634008d6395bef9d6636cf047d93705e96c16a"
+    },
+    {
+      "name": "Neon Gradient Card",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/neon-gradient-card/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/neon-gradient-card/",
+      "title": "Neon Gradient Card",
+      "integrity": "0aabf8be0139ef5755498d916d5217ae02fa51fdfe8f120d636663d575aeaf41"
+    },
+    {
+      "name": "Noise Texture",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/noise-texture/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/noise-texture/",
+      "title": "Noise Texture",
+      "integrity": "15bafbe38a1098dc788210d694ac5945ca7f25472cef6713a41c403bf65550fd"
+    },
+    {
+      "name": "Number Ticker",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/number-ticker/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/number-ticker/",
+      "title": "Number Ticker",
+      "integrity": "31c6e16c92a31a6bf6c5e2737f1b7689952f5405e4eab06f70447c51fe760ca5"
+    },
+    {
+      "name": "Orbiting Circles",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/orbiting-circles/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/orbiting-circles/",
+      "title": "Orbiting Circles",
+      "integrity": "9f00e2215c4bfcbdd675b5d12f523aaad63e9dd81bff317e115c533264e0199e"
+    },
+    {
+      "name": "Particles",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/particles/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/particles/",
+      "title": "Particles",
+      "integrity": "c0e9d4a14566342ec2541f1b175bd3fce0a114c495346700184010f152ae83fb"
+    },
+    {
+      "name": "Pixel Image",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/pixel-image/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/pixel-image/",
+      "title": "Pixel Image",
+      "integrity": "a57f52c10624c563186c399c513d6b682e6d8916bf81a78a06f828c2d6ae1185"
+    },
+    {
+      "name": "Pointer",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/pointer/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/pointer/",
+      "title": "Pointer",
+      "integrity": "92378c93606188103cd1fc962ba9f5925553b1e4643b202518ef31ea404de002"
+    },
+    {
+      "name": "Progressive Blur",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/progressive-blur/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/progressive-blur/",
+      "title": "Progressive Blur",
+      "integrity": "334c3dda27aa70025767780dcd7e4171ab9f74b33c8347ffb33ec15d79404652"
+    },
+    {
+      "name": "Pulsating Button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/pulsating-button/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/pulsating-button/",
+      "title": "Pulsating Button",
+      "integrity": "dd29e382d84478ee3a0c2c0161dd18356c1d3c0aa274bdb5ea2ed7a9db9837ab"
+    },
+    {
+      "name": "Rainbow Button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/rainbow-button/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/rainbow-button/",
+      "title": "Rainbow Button",
+      "integrity": "2631709f0a175ca8d2626b7f8549f552f896b49a245b803c470e5bc21cbf02b7"
+    },
+    {
+      "name": "Retro Grid",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/retro-grid/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/retro-grid/",
+      "title": "Retro Grid",
+      "integrity": "f043fd3823b6840266ee1b5ee9dc2a1a46817eebe26bfcc8bd7d6a270ea5b549"
+    },
+    {
+      "name": "Ripple",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/ripple/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/ripple/",
+      "title": "Ripple",
+      "integrity": "349c57032771262be4c80cbc389e1e52edfa2280431ae3f629635504d1f3832d"
+    },
+    {
+      "name": "Ripple Button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/ripple-button/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/ripple-button/",
+      "title": "Ripple Button",
+      "integrity": "7f7aab22e08cceb7b83e00ca48ac1b70be8a67a682969fc919c087532005cae2"
+    },
+    {
+      "name": "Safari",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/safari/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/safari/",
+      "title": "Safari",
+      "integrity": "94ff5d79aa22b6b14ab94b0d898bb1ddb08b4fade177a7056f4db0e7154759ad"
+    },
+    {
+      "name": "Scroll Based Velocity",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/scroll-based-velocity/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/scroll-based-velocity/",
+      "title": "Scroll Based Velocity",
+      "integrity": "da23fbc5c28e32948a29031c8be151bfd7e5d6142474445154c105ae56fb554f"
+    },
+    {
+      "name": "Scroll Progress",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/scroll-progress/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/scroll-progress/",
+      "title": "Scroll Progress",
+      "integrity": "3509f2c5051dc935bd5297136cec15bbd088fc15f851c257694d29ba8189da75"
+    },
+    {
+      "name": "Shimmer Button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/shimmer-button/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/shimmer-button/",
+      "title": "Shimmer Button",
+      "integrity": "7729116dae72ffc480b2767d7d73e23106e267845242fce5e531537461d5c92d"
+    },
+    {
+      "name": "Shine Border",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/shine-border/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/shine-border/",
+      "title": "Shine Border",
+      "integrity": "9f2a73ef5a22dd8a992bf8720050e56b96521878821d98c9313ec78284709a04"
+    },
+    {
+      "name": "Shiny Button",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/shiny-button/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/shiny-button/",
+      "title": "Shiny Button",
+      "integrity": "fc4b8881808b1ab9bd95a4bdd46b810693d1d8f4ef92580bac4d4e5b66c20df3"
+    },
+    {
+      "name": "Smooth Cursor",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/smooth-cursor/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/smooth-cursor/",
+      "title": "Smooth Cursor",
+      "integrity": "ac998809e0347eee8c3e14b33fc384ae51e559c4c699ac22f86379199d8750e1"
+    },
+    {
+      "name": "Sparkles Text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/sparkles-text/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/sparkles-text/",
+      "title": "Sparkles Text",
+      "integrity": "e841e39356adc48d45e424ddc5918be1309e021427837970ecc2edf36f6d32eb"
+    },
+    {
+      "name": "Spinning Text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/spinning-text/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/spinning-text/",
+      "title": "Spinning Text",
+      "integrity": "ac99e5f191968e68825a639ebf0226a505cb284f669eeae812cf8cb5a8764150"
+    },
+    {
+      "name": "Striped Pattern",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/striped-pattern/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/striped-pattern/",
+      "title": "Striped Pattern",
+      "integrity": "1da3c3d7264729245a55b199f5f1ac9cdd47f2b6f6c08794ec9a3ebba11139e0"
+    },
+    {
+      "name": "Terminal",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/terminal/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/terminal/",
+      "title": "Terminal",
+      "integrity": "95ddc15cb3968418ac95d2a3237fbbfd444f4ec7baacc7589647e6f4d2f0a30f"
+    },
+    {
+      "name": "Text 3D Flip",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/text-3d-flip/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/text-3d-flip/",
+      "title": "Text 3D Flip",
+      "integrity": "e0d041c17081c3fd017c2af49d4f20d0ca71f88e45693c030411fc5425686657"
+    },
+    {
+      "name": "Text Animate",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/text-animate/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/text-animate/",
+      "title": "Text Animate",
+      "integrity": "d7dfa7817cac92d210004660f4fc9e5d626361ddb6a235bef871c772cde5409c"
+    },
+    {
+      "name": "Text Highlighter",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/highlighter/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/highlighter/",
+      "title": "Text Highlighter",
+      "integrity": "0dab6b756ece40d315e2559c454b189dbb4e6faab48c4658af8a8c6aa3887ac6"
+    },
+    {
+      "name": "Text Reveal",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/text-reveal/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/text-reveal/",
+      "title": "Text Reveal",
+      "integrity": "d29e1aaa6f740e783d681252b047e656c46c0ba28ab07171b5b172e3c1ea2b7d"
+    },
+    {
+      "name": "Theme Toggler",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/animated-theme-toggler/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/animated-theme-toggler/",
+      "title": "Theme Toggler",
+      "integrity": "4e64e1cc5528e4d942274bb08ab0c21fe0947e7e871f448829a84e414f61f738"
+    },
+    {
+      "name": "Tweet Card",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/tweet-card/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/tweet-card/",
+      "title": "Tweet Card",
+      "integrity": "3872fc24eb7fda12d39dad1d26e0fc5bef661e572a135a2a053445a7e32fdaf1"
+    },
+    {
+      "name": "Typing Animation",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/typing-animation/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/typing-animation/",
+      "title": "Typing Animation",
+      "integrity": "e76632dc88b8f40bcaaeb80a8a7dad59520c9ad3cf31e282ba80f6b3da123af5"
+    },
+    {
+      "name": "Video Text",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/video-text/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/video-text/",
+      "title": "Video Text",
+      "integrity": "dc1e7ac9c311f69b8d8f87f9255f574f6886624416e068ab1643c0a2cee236b3"
+    },
+    {
+      "name": "Warp Background",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/warp-background/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/warp-background/",
+      "title": "Warp Background",
+      "integrity": "0363d75559752ed3453e31ce715871cc92cb2f948d4b9be007a30a949113516b"
+    },
+    {
+      "name": "Word Rotate",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/word-rotate/",
+      "status": 200,
+      "resolvedUrl": "https://axuj.github.io/magicui-solid/docs/components/word-rotate/",
+      "title": "Word Rotate",
+      "integrity": "31bb5a293eee23208ee1440feb0ce67e0d4a7d89edb1facd52a12c0fd863b566"
+    }
+  ]
+}
