@@ -14,7 +14,9 @@ import { verifyReactLens } from "./verify-react-lens.mjs";
 import { blockCultRadixCdn, verifyCultRecovery } from "./verify-cult-recovery.mjs";
 import { verifyTorchTableView } from "./verify-torch-table-view.mjs";
 import { verifyMagicuiTweet } from "./verify-magicui-tweet.mjs";
+import { verifyMagicuiConfetti } from "./verify-magicui-confetti.mjs";
 import { verifyTorchVideo } from "./verify-torch-video.mjs";
+import { verifyTorchReview } from "./verify-torch-review.mjs";
 
 // A small MCP Apps host exercises real transport, widget delivery, and frame replacement.
 const require = createRequire(import.meta.url);
@@ -95,7 +97,9 @@ try {
         await frame.locator("#col-root > *:visible").first().waitFor({ state: "visible", timeout: 25000 });
         await frame.locator("#col-status").waitFor({ state: "hidden", timeout: 10000 });
         if (id === "magic-ui/Lens") await verifyReactLens(frame, expect);
+        if (id === "rocksolid/Badge") await expect(frame.getByRole("button", { name: "Notifications", exact: true })).toBeVisible();
         await verifyCultRecovery(frame, id, expect, theme);
+        if (await verifyTorchReview(frame, id, expect)) await expect(app.locator('iframe[title="Component preview"]')).toHaveAttribute("sandbox", "allow-scripts allow-forms");
         if (id === "torch-ui/Table View") {
           await expect(app.locator("[data-col-provenance]")).toContainText("TableView wrapper is not yet available");
           await expect(app.locator('iframe[title="Component preview"]')).toHaveAttribute("sandbox", "allow-scripts allow-forms");
@@ -113,6 +117,10 @@ try {
           await expect(app.locator("[data-col-provenance]")).toContainText("Sample content");
           await expect(app.locator('iframe[title="Component preview"]')).toHaveAttribute("sandbox", "allow-scripts allow-forms");
           await verifyMagicuiTweet(frame, expect, theme);
+        }
+        if (id === "magicui-solid/Confetti") {
+          await expect(app.locator('iframe[title="Component preview"]')).toHaveAttribute("sandbox", "allow-scripts allow-forms");
+          await verifyMagicuiConfetti(frame, expect);
         }
         if (["magicui-solid/Backlight", "magicui-solid/Video Text"].includes(id)) {
           const video = frame.locator("video").first();

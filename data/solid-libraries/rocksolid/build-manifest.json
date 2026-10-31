@@ -1133,23 +1133,23 @@
       ],
       "inputs": [
         {
-          "path": "../../../.scratch/solid-library-69/solid-styled/rocksolid-build/node_modules/solid-js/dist/solid.js",
+          "path": "../../../../solid-library-69/solid-styled/rocksolid-build/node_modules/solid-js/dist/solid.js",
           "sha256": "2d8f12f3e25009c6a522c981f1b46695951b59ec800a2471f516bb79ce1f9934"
         },
         {
-          "path": "../../../.scratch/solid-library-69/solid-styled/rocksolid-build/node_modules/solid-js/web/dist/web.js",
+          "path": "../../../../solid-library-69/solid-styled/rocksolid-build/node_modules/solid-js/web/dist/web.js",
           "sha256": "0146f3c5e0bca28349b59583790346efb7600d079379e19150672f9736664728"
         },
         {
-          "path": "../../../.scratch/solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/chunk-OYFAXDFZ.js",
+          "path": "../../../../solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/chunk-OYFAXDFZ.js",
           "sha256": "1f874dd408070761a2342c17e49f6ead41943e9a6092c9ace6df3f4af2e1910b"
         },
         {
-          "path": "../../../.scratch/solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/chunk-SUL6UUW2.js",
+          "path": "../../../../solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/chunk-SUL6UUW2.js",
           "sha256": "e6f1f6dc0ff8187a3f3f6fff94cf77086d2e08bab997e36edba166c75d8b2254"
         },
         {
-          "path": "../../../.scratch/solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/index.js",
+          "path": "../../../../solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/index.js",
           "sha256": "cafd92d6ed98754ee4c89b2015935c57d473ca654867ca0fb65918957785839e"
         },
         {
@@ -1502,7 +1502,7 @@
         },
         {
           "path": "examples/items/Badge.tsx",
-          "sha256": "3cf7a727897384d1cee7e86eec960063d95909b95024031a2ef0d8b4fafc130f"
+          "sha256": "f1fd96af1a9b31b12fceeb166723b7335e4b50636439add94f320e256c3f062b"
         },
         {
           "path": "upstream/src/components/Breadcrumbs/Breadcrumbs.tsx",
@@ -1698,23 +1698,23 @@
       ],
       "inputs": [
         {
-          "path": "../../../.scratch/solid-library-69/solid-styled/rocksolid-build/node_modules/solid-js/dist/solid.js",
+          "path": "../../../../solid-library-69/solid-styled/rocksolid-build/node_modules/solid-js/dist/solid.js",
           "sha256": "2d8f12f3e25009c6a522c981f1b46695951b59ec800a2471f516bb79ce1f9934"
         },
         {
-          "path": "../../../.scratch/solid-library-69/solid-styled/rocksolid-build/node_modules/solid-js/web/dist/web.js",
+          "path": "../../../../solid-library-69/solid-styled/rocksolid-build/node_modules/solid-js/web/dist/web.js",
           "sha256": "0146f3c5e0bca28349b59583790346efb7600d079379e19150672f9736664728"
         },
         {
-          "path": "../../../.scratch/solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/chunk-OYFAXDFZ.js",
+          "path": "../../../../solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/chunk-OYFAXDFZ.js",
           "sha256": "1f874dd408070761a2342c17e49f6ead41943e9a6092c9ace6df3f4af2e1910b"
         },
         {
-          "path": "../../../.scratch/solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/chunk-SUL6UUW2.js",
+          "path": "../../../../solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/chunk-SUL6UUW2.js",
           "sha256": "e6f1f6dc0ff8187a3f3f6fff94cf77086d2e08bab997e36edba166c75d8b2254"
         },
         {
-          "path": "../../../.scratch/solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/index.js",
+          "path": "../../../../solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/index.js",
           "sha256": "cafd92d6ed98754ee4c89b2015935c57d473ca654867ca0fb65918957785839e"
         },
         {
@@ -2183,23 +2183,23 @@
       ],
       "inputs": [
         {
-          "path": "../../../.scratch/solid-library-69/solid-styled/rocksolid-build/node_modules/solid-js/dist/solid.js",
+          "path": "../../../../solid-library-69/solid-styled/rocksolid-build/node_modules/solid-js/dist/solid.js",
           "sha256": "2d8f12f3e25009c6a522c981f1b46695951b59ec800a2471f516bb79ce1f9934"
         },
         {
-          "path": "../../../.scratch/solid-library-69/solid-styled/rocksolid-build/node_modules/solid-js/web/dist/web.js",
+          "path": "../../../../solid-library-69/solid-styled/rocksolid-build/node_modules/solid-js/web/dist/web.js",
           "sha256": "0146f3c5e0bca28349b59583790346efb7600d079379e19150672f9736664728"
         },
         {
-          "path": "../../../.scratch/solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/chunk-OYFAXDFZ.js",
+          "path": "../../../../solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/chunk-OYFAXDFZ.js",
           "sha256": "1f874dd408070761a2342c17e49f6ead41943e9a6092c9ace6df3f4af2e1910b"
         },
         {
-          "path": "../../../.scratch/solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/chunk-SUL6UUW2.js",
+          "path": "../../../../solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/chunk-SUL6UUW2.js",
           "sha256": "e6f1f6dc0ff8187a3f3f6fff94cf77086d2e08bab997e36edba166c75d8b2254"
         },
         {
-          "path": "../../../.scratch/solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/index.js",
+          "path": "../../../../solid-library-69/solid-styled/rocksolid-build/node_modules/tailwind-variants/dist/index.js",
           "sha256": "cafd92d6ed98754ee4c89b2015935c57d473ca654867ca0fb65918957785839e"
         },
         {
@@ -2606,49 +2606,49 @@
   },
   "Accordion": {
     "group": "RockExpanded1",
-    "codeIntegrity": "dcceb031adc11ce965bf122cbc040ad0f8b4d30319ffaf41d248a88721294057",
+    "codeIntegrity": "75db41ece4c2b87229742029219fbd3fb11e4c6c664d8d167654f26035577c74",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },
   "Alert": {
     "group": "RockExpanded1",
-    "codeIntegrity": "dcceb031adc11ce965bf122cbc040ad0f8b4d30319ffaf41d248a88721294057",
+    "codeIntegrity": "75db41ece4c2b87229742029219fbd3fb11e4c6c664d8d167654f26035577c74",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },
   "Avatar": {
     "group": "RockExpanded1",
-    "codeIntegrity": "dcceb031adc11ce965bf122cbc040ad0f8b4d30319ffaf41d248a88721294057",
+    "codeIntegrity": "75db41ece4c2b87229742029219fbd3fb11e4c6c664d8d167654f26035577c74",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },
   "Badge": {
     "group": "RockExpanded1",
-    "codeIntegrity": "dcceb031adc11ce965bf122cbc040ad0f8b4d30319ffaf41d248a88721294057",
+    "codeIntegrity": "75db41ece4c2b87229742029219fbd3fb11e4c6c664d8d167654f26035577c74",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },
   "Breadcrumbs": {
     "group": "RockExpanded1",
-    "codeIntegrity": "dcceb031adc11ce965bf122cbc040ad0f8b4d30319ffaf41d248a88721294057",
+    "codeIntegrity": "75db41ece4c2b87229742029219fbd3fb11e4c6c664d8d167654f26035577c74",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },
   "ButtonGroup": {
     "group": "RockExpanded1",
-    "codeIntegrity": "dcceb031adc11ce965bf122cbc040ad0f8b4d30319ffaf41d248a88721294057",
+    "codeIntegrity": "75db41ece4c2b87229742029219fbd3fb11e4c6c664d8d167654f26035577c74",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },
   "Card": {
     "group": "RockExpanded1",
-    "codeIntegrity": "dcceb031adc11ce965bf122cbc040ad0f8b4d30319ffaf41d248a88721294057",
+    "codeIntegrity": "75db41ece4c2b87229742029219fbd3fb11e4c6c664d8d167654f26035577c74",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },
   "Checkbox": {
     "group": "RockExpanded1",
-    "codeIntegrity": "dcceb031adc11ce965bf122cbc040ad0f8b4d30319ffaf41d248a88721294057",
+    "codeIntegrity": "75db41ece4c2b87229742029219fbd3fb11e4c6c664d8d167654f26035577c74",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },

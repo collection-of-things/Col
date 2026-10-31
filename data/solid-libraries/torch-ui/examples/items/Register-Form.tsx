@@ -84,6 +84,7 @@ export function RegisterForm() {
             <Input
               label="Password"
               type="password"
+              autoComplete="new-password"
               placeholder="Choose a strong password"
               value={password()}
               onValueChange={setPassword}

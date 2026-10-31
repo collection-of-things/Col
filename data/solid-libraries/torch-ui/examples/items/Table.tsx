@@ -21,7 +21,16 @@ return (<>
       <TableCell>Fighter</TableCell>
       <TableCell>Ready</TableCell>
     </TableRow>
-    ...
+    <TableRow>
+      <TableCell>Lyra Swiftfoot</TableCell>
+      <TableCell>Rogue</TableCell>
+      <TableCell>Ready</TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell>Grimshaw Stone</TableCell>
+      <TableCell>Cleric</TableCell>
+      <TableCell>Resting</TableCell>
+    </TableRow>
   </TableBody>
 </Table>
 </>);

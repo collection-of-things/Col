@@ -84,3 +84,17 @@ test("motion library data has no interrupted writes and stays under the per-file
   for(const dir of roots)for(const path of await readdir(dir,{recursive:true})){const full=`${dir}/${path}`;if((await stat(full)).isFile())paths.push(full);}
   for(const path of paths){const bytes=await readFile(path);assert.ok(bytes.length<5_000_000,path);assert.ok(!bytes.includes(0),path);if(path.endsWith(".json"))JSON.parse(bytes.toString());}
 });
+
+test("MagicUI Solid's Confetti bundle records its locked dependencies and their notices",async()=>{
+  const build=await readJson("data/solid-libraries/magicui-solid/build.json");
+  const artifact=await readArtifact("magicui-solid");
+  const code=artifact.groups.components.code;
+  assert.ok(build.groups.components.packages.includes("node_modules/solid-js"));
+  assert.ok(build.groups.components.packages.includes("node_modules/canvas-confetti"));
+  assert.ok(build.cssBuild.inputs.some(input=>input.path.startsWith("node_modules/postcss/")));
+  assert.ok(build.cssBuild.inputs.some(input=>input.path.startsWith("node_modules/@tailwindcss/postcss/")));
+  assert.ok(Object.keys(build.inputs).every(path=>!path.startsWith("../../")),"build inputs remain inside the isolated build");
+  assert.match(code,/canvas-confetti@1\.9\.4/);
+  assert.match(code,/Kiril Vatev/);
+  assert.match(code,/no upstream copyright notice was supplied/);
+});

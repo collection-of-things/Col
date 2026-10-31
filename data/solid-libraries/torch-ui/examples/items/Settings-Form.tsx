@@ -80,9 +80,9 @@ export function SettingsForm() {
         <Form onSubmit={handleSave}>
           <Section title="Change Password" titleClass="text-base font-semibold text-ink-900">
             <div class="mt-4 flex flex-col gap-4">
-              <Input label="Current password" type="password" placeholder="••••••••" value={currentPassword()} onValueChange={setCurrentPassword} required />
-              <Input label="New password" type="password" placeholder="Choose a strong password" value={newPassword()} onValueChange={setNewPassword} required />
-              <Input label="Confirm new password" type="password" placeholder="Repeat new password" value={confirmPassword()} onValueChange={setConfirmPassword} required />
+              <Input label="Current password" type="password" autoComplete="current-password" placeholder="••••••••" value={currentPassword()} onValueChange={setCurrentPassword} required />
+              <Input label="New password" type="password" autoComplete="new-password" placeholder="Choose a strong password" value={newPassword()} onValueChange={setNewPassword} required />
+              <Input label="Confirm new password" type="password" autoComplete="new-password" placeholder="Repeat new password" value={confirmPassword()} onValueChange={setConfirmPassword} required />
             </div>
           </Section>
           <div class="flex justify-end">

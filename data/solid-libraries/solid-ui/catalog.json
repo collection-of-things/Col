@@ -253,9 +253,6 @@
         "clsx",
         "solid-js",
         "tailwind-merge"
-      ],
-      "registryDependencies": [
-        "label"
       ]
     },
     {
@@ -474,13 +471,9 @@
       "summary": "Renders an accessible label associated with controls.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
-        "@kobalte/core",
         "clsx",
         "solid-js",
         "tailwind-merge"
-      ],
-      "registryDependencies": [
-        "checkbox"
       ]
     },
     {

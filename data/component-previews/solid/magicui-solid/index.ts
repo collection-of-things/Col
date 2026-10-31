@@ -1,11 +1,11 @@
 import seedPacked from "../magicui-solid.json" with { type: "json" };
+import { decodePackedJson, decodeSolidPreviewArtifact } from "../packed.ts";
+const seed=decodeSolidPreviewArtifact(seedPacked);
+if (!seed.sources || !seed.notices) throw new Error("Baseline provenance is missing");
 import expanded from "./expanded.json" with { type: "json" };
 import group0 from "./components.json" with { type: "json" };
 import group1 from "./media.json" with { type: "json" };
 import group2Packed from "./highlight.json" with { type: "json" };
-import { decodePackedJson, decodeSolidPreviewArtifact } from "../packed.ts";
-const seed=decodeSolidPreviewArtifact(seedPacked);
-if (!seed.sources || !seed.notices) throw new Error("Baseline provenance is missing");
 const group2=decodePackedJson<{code:string;style:string}>(group2Packed);
 import group3 from "./tweet.json" with { type: "json" };
 export default { ...expanded, entries: { ...seed.entries, ...expanded.entries }, groups: { ...expanded.groups, "components": group0, "media": group1, "highlight": group2, "tweet": group3 }, sources: [...new Map([...seed.sources, ...(expanded.sources??[])].map(item => [item.url, item])).values()], notices: [...new Map([...seed.notices, ...(expanded.notices??[])].map(item => [item.url, item])).values()] };

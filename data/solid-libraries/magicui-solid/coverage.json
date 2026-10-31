@@ -308,6 +308,7 @@
       "checkedAt": "2026-10-30T01:04:54.305Z",
       "browserVerification": "light-and-dark-passed",
       "gaps": [
+        "The documented globalOptions disable the worker so the original animation runs within the preview's restricted CSP.",
         "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
       ]
     },

@@ -12,7 +12,9 @@ import { verifyReactLens } from "./verify-react-lens.mjs";
 import { blockCultRadixCdn, verifyCultRecovery } from "./verify-cult-recovery.mjs";
 import { verifyTorchTableView } from "./verify-torch-table-view.mjs";
 import { verifyMagicuiTweet } from "./verify-magicui-tweet.mjs";
+import { verifyMagicuiConfetti } from "./verify-magicui-confetti.mjs";
 import { verifyTorchVideo } from "./verify-torch-video.mjs";
+import { verifyTorchReview } from "./verify-torch-review.mjs";
 
 // Opt-in verification of the real standalone HTML frame, outside npm test.
 const require = createRequire(import.meta.url);
@@ -46,6 +48,7 @@ const interact = {
   "hope-ui/Dialog": async frame => { await button(frame, "Delete project").click(); await expect(frame.getByRole("dialog")).toContainText("Delete project"); await frame.getByRole("dialog").getByRole("button", { name: "Cancel" }).click(); await expect(frame.getByRole("dialog")).toHaveCount(0); },
   "hope-ui/Select": async frame => { await frame.getByRole("combobox", { name: "Choose a fruit" }).click(); await frame.getByRole("option", { name: "Apple" }).click(); await expect(frame.getByRole("combobox", { name: "Choose a fruit" })).toContainText("Apple"); },
   "rocksolid/Button": async frame => { await button(frame, "Clicked 0 times").click(); await expect(button(frame, "Clicked 1 times")).toBeVisible(); },
+  "rocksolid/Badge": async frame => expect(button(frame, "Notifications")).toBeVisible(),
   "rocksolid/Dialog": async frame => { await button(frame, "Open dialog").click(); await expect(frame.getByRole("dialog")).toContainText("Getting Started"); await frame.getByRole("dialog").getByRole("button", { name: "Close" }).click(); await expect(frame.getByRole("dialog")).toHaveCount(0); },
   "rocksolid/Tabs": async frame => { await frame.getByRole("tab", { name: "Profile" }).click(); await expect(frame.getByRole("tab", { name: "Profile" })).toHaveAttribute("aria-selected", "true"); await expect(frame.locator('[dir="rtl"]')).toBeVisible(); },
   "nikala-ui/Button": async frame => expect(button(frame, "Button")).toBeVisible(),
@@ -60,6 +63,7 @@ const interact = {
   "magicui-solid/Ripple Button": async frame => { await button(frame, "Click me").click(); await expect(frame.locator(".animate-rippling").first()).toBeVisible(); await expect(frame.locator(".animate-rippling")).toHaveCount(0); },
   "magicui-solid/Shimmer Button": async frame => expect(button(frame, "Shimmer Button")).toBeVisible(),
   "magicui-solid/Backlight": playVideo,
+  "magicui-solid/Confetti": frame => verifyMagicuiConfetti(frame, expect),
   "magicui-solid/Video Text": async frame => { await playVideo(frame); await expect(frame.getByText("OCEAN", { exact: true })).toHaveCount(1); expect(await frame.locator("video").first().evaluate(element => getComputedStyle(element.parentElement).maskImage)).toContain("data:image/svg+xml"); },
   "magicui-solid/Tweet Card": async (frame, theme) => verifyMagicuiTweet(frame, expect, theme),
   "mystic-ui/Marquee": async frame => expect(frame.locator(".animate-marquee").first()).toBeVisible(),
@@ -109,7 +113,9 @@ try {
         await frame.locator("#col-root > *:visible").first().waitFor({ state: "visible", timeout: 25000 });
         await frame.locator("#col-status").waitFor({ state: "hidden", timeout: 10000 });
         const cultInteraction = await verifyCultRecovery(frame, id, expect, theme);
-        row.check = cultInteraction || interact[id] ? "interaction" : await verifyVisibleControl(frame);
+        const torchInteraction = await verifyTorchReview(frame, id, expect);
+        if (torchInteraction) await expect(page.locator('iframe[data-col-preview]')).toHaveAttribute("sandbox", "allow-scripts allow-forms");
+        row.check = cultInteraction || torchInteraction || interact[id] ? "interaction" : await verifyVisibleControl(frame);
         if (!cultInteraction && interact[id]) await interact[id](frame, theme);
         if (id === "torch-ui/Table View") {
           await expect(page.locator("[data-col-provenance]")).toContainText("TableView wrapper is not yet available");
@@ -135,6 +141,7 @@ try {
           await expect(page.locator("[data-col-provenance]")).toContainText("Sample content");
           await expect(page.locator('iframe[data-col-preview]')).toHaveAttribute("sandbox", "allow-scripts allow-forms");
         }
+        if (id === "magicui-solid/Confetti") await expect(page.locator('iframe[data-col-preview]')).toHaveAttribute("sandbox", "allow-scripts allow-forms");
         if (process.env.SOLID_USER_CSS) {
           const radius = await frame.locator("#col-root button").first().evaluate(element => getComputedStyle(element).borderRadius);
           if (radius !== "2px") throw new Error(`User CSS was not applied after the library styles: ${radius}`);
