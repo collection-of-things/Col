@@ -1,5 +1,3 @@
-> During this review stack, rebuild scripts and preview artifacts arrive in the final integration stage.
-
 Zaidan is pinned to `carere/zaidan@271ffce00aaeee0dfa32f2321c9b6e212af39c3d`. `sources.json` retains the official MIT source and attribution for its shadcn-derived utilities. Fontsource's original Geist Variable and Inter Variable Latin font faces and SIL licenses are authenticated against the package lock during the build. `corpus.json` is separate from client catalog metadata.
 
 Rebuild from the repository root:
