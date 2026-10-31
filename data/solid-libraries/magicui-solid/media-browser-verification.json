@@ -1,0 +1,397 @@
+{
+  "checkedAt": "2026-10-30T07:04:25.601Z",
+  "results": [
+    {
+      "id": "magicui-solid/Lens",
+      "theme": "light",
+      "transport": "actual render_component standalone HTML",
+      "errors": [],
+      "compilerRequests": [
+        "https://esm.sh/es-module-lexer@3.0.2/js",
+        "https://esm.sh/@babel/parser@7.28.5",
+        "https://esm.sh/@babel/parser@7.28.5/es2022/parser.mjs",
+        "https://esm.sh/es-module-lexer@3.0.2/es2022/js.mjs"
+      ],
+      "externalRequests": [],
+      "passed": true,
+      "responseBytes": 3163017,
+      "codeIntegrity": "71aebf285620f24c040e263f01a6391a8369e51a1b14497952f61496b54b1f5c",
+      "lens": {
+        "images": 2,
+        "mask": "radial-gradient(75px at 150px 120px, black 100%, transparent 100%)",
+        "zoom": "scale(2)"
+      },
+      "images": [
+        {
+          "width": 1600,
+          "height": 1066,
+          "deliveredWebP": true
+        },
+        {
+          "width": 1600,
+          "height": 1066,
+          "deliveredWebP": true
+        }
+      ]
+    },
+    {
+      "id": "magicui-solid/Lens",
+      "theme": "dark",
+      "transport": "actual render_component standalone HTML",
+      "errors": [],
+      "compilerRequests": [
+        "https://esm.sh/es-module-lexer@3.0.2/js",
+        "https://esm.sh/@babel/parser@7.28.5",
+        "https://esm.sh/@babel/parser@7.28.5/es2022/parser.mjs",
+        "https://esm.sh/es-module-lexer@3.0.2/es2022/js.mjs"
+      ],
+      "externalRequests": [],
+      "passed": true,
+      "responseBytes": 3162999,
+      "codeIntegrity": "289088213714ee97aa7b7ba97e7925e93191aedb4a7ada19fa8020e7d1ff9939",
+      "lens": {
+        "images": 2,
+        "mask": "radial-gradient(75px at 150px 120px, black 100%, transparent 100%)",
+        "zoom": "scale(2)"
+      },
+      "images": [
+        {
+          "width": 1600,
+          "height": 1066,
+          "deliveredWebP": true
+        },
+        {
+          "width": 1600,
+          "height": 1066,
+          "deliveredWebP": true
+        }
+      ]
+    },
+    {
+      "id": "magicui-solid/Pixel Image",
+      "theme": "light",
+      "transport": "actual render_component standalone HTML",
+      "errors": [],
+      "compilerRequests": [
+        "https://esm.sh/es-module-lexer@3.0.2/js",
+        "https://esm.sh/@babel/parser@7.28.5",
+        "https://esm.sh/es-module-lexer@3.0.2/es2022/js.mjs",
+        "https://esm.sh/@babel/parser@7.28.5/es2022/parser.mjs"
+      ],
+      "externalRequests": [],
+      "passed": true,
+      "responseBytes": 3123235,
+      "codeIntegrity": "632184067db92e229fc2ac65fd25df7abcafdfbd23103e5c799365930d77b363",
+      "images": [
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        }
+      ]
+    },
+    {
+      "id": "magicui-solid/Pixel Image",
+      "theme": "dark",
+      "transport": "actual render_component standalone HTML",
+      "errors": [],
+      "compilerRequests": [
+        "https://esm.sh/es-module-lexer@3.0.2/js",
+        "https://esm.sh/@babel/parser@7.28.5",
+        "https://esm.sh/es-module-lexer@3.0.2/es2022/js.mjs",
+        "https://esm.sh/@babel/parser@7.28.5/es2022/parser.mjs"
+      ],
+      "externalRequests": [],
+      "passed": true,
+      "responseBytes": 3123225,
+      "codeIntegrity": "06f6fcd5360a0619d5067b66d02b34792be47db1624d34b52c8624a029f02686",
+      "images": [
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "deliveredWebP": true
+        }
+      ]
+    },
+    {
+      "id": "magicui-solid/Backlight",
+      "theme": "light",
+      "transport": "actual render_component standalone HTML",
+      "errors": [],
+      "compilerRequests": [
+        "https://esm.sh/es-module-lexer@3.0.2/js",
+        "https://esm.sh/@babel/parser@7.28.5",
+        "https://esm.sh/es-module-lexer@3.0.2/es2022/js.mjs",
+        "https://esm.sh/@babel/parser@7.28.5/es2022/parser.mjs"
+      ],
+      "externalRequests": [],
+      "passed": true,
+      "responseBytes": 1679129,
+      "codeIntegrity": "7ce1545f34ee62c45fe9fd1c258ce653c80c95b0bfccdfd8cd131a084d129a16",
+      "images": [],
+      "video": {
+        "readyState": 4,
+        "currentTime": 1.0811,
+        "paused": false,
+        "duration": 2,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "magicui-solid/Backlight",
+      "theme": "dark",
+      "transport": "actual render_component standalone HTML",
+      "errors": [],
+      "compilerRequests": [
+        "https://esm.sh/es-module-lexer@3.0.2/js",
+        "https://esm.sh/@babel/parser@7.28.5",
+        "https://esm.sh/es-module-lexer@3.0.2/es2022/js.mjs",
+        "https://esm.sh/@babel/parser@7.28.5/es2022/parser.mjs"
+      ],
+      "externalRequests": [],
+      "passed": true,
+      "responseBytes": 1679127,
+      "codeIntegrity": "fb2c4502e753e5b5ae4750c59109b9567958f02f50e127457ee348c032409206",
+      "images": [],
+      "video": {
+        "readyState": 4,
+        "currentTime": 1.0365,
+        "paused": false,
+        "duration": 2,
+        "width": 1280,
+        "height": 720
+      }
+    }
+  ]
+}

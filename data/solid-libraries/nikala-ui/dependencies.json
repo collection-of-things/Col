@@ -1,0 +1,4337 @@
+{
+  "checkedAt": "2026-10-30T01:00:27.520Z",
+  "revision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+  "method": "Public dependencies combine pinned component requirements with selected-demo imports. Component and demo-only requirements retain separate provenance; Solid JSX requires the recorded Solid runtime. Unknown local references remain explicit.",
+  "entries": {
+    "nikala-ui/Accordion": {
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/accordion.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/accordion.tsx",
+          "integrity": "256da2b8dc41b0ddab8502a5feedcb9db16ff877ffdfa50d608e3ceff42486fb"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/accordion.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/accordion.tsx",
+        "integrity": "b75b240df66b880c58ef349436dab84e341cf30a1a4623afe5ace02b60e1b2af",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/accordion.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Alert": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/alert.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/alert.tsx",
+          "integrity": "bb45b8a149d2fd6ca6118f8629cff984dcd4876c171d25cf35b5f4fd99670148"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/alert.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/alert.tsx",
+        "integrity": "e53e03ba8e17befdbd7da7023161ec655ef3f739b1f746897bc5f2f89dd65c5f",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/alert.tsx"
+        ]
+      }
+    },
+    "nikala-ui/API Table": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "badge",
+        "section-heading",
+        "table"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/api-table.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/api-table.tsx",
+          "integrity": "2f08c4b75161763be0d668b84d1899a515a5ca89ba8bb0818ec63200739beade"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/badge.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/badge.tsx",
+          "integrity": "974842eeec5a6ad906ef016ca8b01673b2cf739669f32fc359f39a0289da92cf"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/section-heading.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/section-heading.tsx",
+          "integrity": "1c2eff511f11a607110c640943f124bef1e9038f44df0f9964f1c90e9b5b1266"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/table.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/table.tsx",
+          "integrity": "89752f170d760b91c9a32aafb668db315973a18fbcc9b4ff672e878bab049186"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/api-table.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/api-table.tsx",
+        "integrity": "11ee88d0344f7ffb86a6a404fff7f10b7869ca01e55b1be6ede25179f704e2fa",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/api-table.tsx",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/section-heading.tsx",
+          "packages/core/src/registry/components/ui/table.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Aspect Ratio": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/aspect-ratio.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/aspect-ratio.tsx",
+          "integrity": "12c0968a70eed34dbe56eadd628863ada2d8051eb0808856fdb786198c75ad34"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/aspect-ratio.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/aspect-ratio.tsx",
+        "integrity": "f09a823798f2087453e621fb99036526a7047556a2f0613aa26b74668e1aa43a",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/aspect-ratio.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Avatar": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/avatar.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/avatar.tsx",
+          "integrity": "995a46ecd86750c4bf78e3f0c301af0dfe9ca17d5d46d650013260576f990ef1"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/avatar.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/avatar.tsx",
+        "integrity": "1fff637fde5bc19148246bc211b77b0e36ee890a9a245152e37082814e6fc005",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/avatar.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Badge": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/badge.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/badge.tsx",
+          "integrity": "974842eeec5a6ad906ef016ca8b01673b2cf739669f32fc359f39a0289da92cf"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/badge.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/badge.tsx",
+        "integrity": "4b3b8ac6f8488654d4e01c91f6fe22b859d17bc7fe4876bcc649a54a13419bc7",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/badge.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Banner": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/banner.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/banner.tsx",
+          "integrity": "b4b9627d2359b0d1ed794e87d9cdd1292484d725f018a95555242fdd24a87284"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/banner.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/banner.tsx",
+        "integrity": "8d88972eab8e4aa121c89f9a4961e89b609da53cc7e74c21a15ed96a0522d1eb",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/banner.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Breadcrumb": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/breadcrumb.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/breadcrumb.tsx",
+          "integrity": "a206ce657a05a7f0ac8e14365d1d943fb994206bdf80f34d19ed94c2c70a7fe0"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/breadcrumb.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/breadcrumb.tsx",
+        "integrity": "7056157b562c0b3094d90e00ae3f341bf15a89d6b62d30fb9d109dd466410c46",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/breadcrumb.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Bubble": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/bubble.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/bubble.tsx",
+          "integrity": "39a6b8a4e5d3af8f62a5f9afbe4663d636fec5f2f2f947b468ca8854cb5a295c"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/bubble.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/bubble.tsx",
+        "integrity": "640e592ba5ea4ba6a2452471cbcf91ef2208bf77e17612b76f701d6736292b4d",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/bubble.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Button": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "spinner"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/button.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/button.tsx",
+          "integrity": "c66992a954cc6cd9f64e95b14909eeb47e204f319c46e7b5e349537811538ede"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/spinner.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/spinner.tsx",
+          "integrity": "a4c4d10d1fa58a5486c2b1ddc2659e5a51c4709129127feef1c14c74db344718"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/button.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/button.tsx",
+        "integrity": "4224dde574fdd79cadfafc88d83d9a7543f73bc1ca7bbd3067dcdaafb24816fb",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Button Group": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/button-group.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/button-group.tsx",
+          "integrity": "3052bcf57f96c27b8b178bc365307fd75c5448da942da1187a110cbd07f90ec5"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority"
+      ],
+      "exampleSource": {
+        "path": "demos/button-group.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/button-group.tsx",
+        "integrity": "452ca2a2b483686188f794e702f5f3a341d3f51eba68fda7fe52b1f13b6befe8",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/button-group.tsx",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Callout": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/callout.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/callout.tsx",
+          "integrity": "bf3825aff8e0363a7e54de89c703da56a5d34507e69a60baa39f5808735f2c24"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/callout.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/callout.tsx",
+        "integrity": "dda21fbf762ed8a3c6a07e059d25ff8db988b681f09388cb51676049159aaee7",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/callout.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Card": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/card.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/card.tsx",
+          "integrity": "e2ff769f3df48d217cc287718986a898f3574d9649f90a97b58f36b5a0530fb7"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority",
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/card.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/card.tsx",
+        "integrity": "6d04c685042e0f485d1efb95b7d0dde7dc81575f9520f448f1e5a811a78e0930",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/avatar.tsx",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/card.tsx",
+          "packages/core/src/registry/components/ui/input.tsx",
+          "packages/core/src/registry/components/ui/label.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/core/src/registry/components/ui/switch.tsx",
+          "packages/hooks/src/create-controllable-signal.ts"
+        ]
+      }
+    },
+    "nikala-ui/Checkbox": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/checkbox.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/checkbox.tsx",
+          "integrity": "7df20b59b27353a96ebf340c44670082b9aa7fa8934af7365fea9cbe266e23b9"
+        },
+        {
+          "path": "packages/hooks/src/create-controllable-signal.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-controllable-signal.ts",
+          "integrity": "83cf5facb4103223b44730256dba9f51b0120d411f0331b3463a6d1c00b59003"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority"
+      ],
+      "exampleSource": {
+        "path": "demos/checkbox.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/checkbox.tsx",
+        "integrity": "ca69f4bf26dbcaeca015704bde52bca5b8a6ba8cfa02688807a0613090b2b16c",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/checkbox.tsx",
+          "packages/core/src/registry/components/ui/label.tsx",
+          "packages/hooks/src/create-controllable-signal.ts"
+        ]
+      }
+    },
+    "nikala-ui/Code Block": {
+      "dependencies": [
+        "@kobalte/core",
+        "@shikijs/langs",
+        "@shikijs/themes",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "shiki",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "spinner",
+        "tabs",
+        "tooltip"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/badge.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/badge.tsx",
+          "integrity": "974842eeec5a6ad906ef016ca8b01673b2cf739669f32fc359f39a0289da92cf"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/button.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/button.tsx",
+          "integrity": "c66992a954cc6cd9f64e95b14909eeb47e204f319c46e7b5e349537811538ede"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/code-block.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/code-block.tsx",
+          "integrity": "f96ec7a29d2b1f0eaf2b3ab70fd396048afbda2e9464c7567b05e134c064af6d"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/spinner.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/spinner.tsx",
+          "integrity": "a4c4d10d1fa58a5486c2b1ddc2659e5a51c4709129127feef1c14c74db344718"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/tabs.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/tabs.tsx",
+          "integrity": "0c95a46b4fea7aeb90b5352aabfd1564de362a34fbd3e0c2cb504450bba46e35"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/tooltip.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/tooltip.tsx",
+          "integrity": "ad9c8724b447cf404fbed7cb3176e9dc42e0a1205f5f4429de1a72d8793f8e46"
+        },
+        {
+          "path": "packages/hooks/src/create-clipboard.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-clipboard.ts",
+          "integrity": "b46899d06ce8be9cf4aacb4b1ac935434fa6bfaeaa56ec25227f9543e45be25b"
+        },
+        {
+          "path": "packages/hooks/src/create-controllable-signal.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-controllable-signal.ts",
+          "integrity": "83cf5facb4103223b44730256dba9f51b0120d411f0331b3463a6d1c00b59003"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "@shikijs/langs",
+        "@shikijs/themes",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "shiki",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/code-block.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/code-block.tsx",
+        "integrity": "ba50f532395fc92998051ececde2638bc0362c8169906fe698bc367aa272a8cf",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/code-block.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/core/src/registry/components/ui/tabs.tsx",
+          "packages/core/src/registry/components/ui/tooltip.tsx",
+          "packages/hooks/src/create-clipboard.ts",
+          "packages/hooks/src/create-controllable-signal.ts"
+        ]
+      }
+    },
+    "nikala-ui/Code Group": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "tabs"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/code-group.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/code-group.tsx",
+          "integrity": "1c84268ab74a3b721d76c81a5c5801147efc68e29306db5d9f2a27541edb24a0"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/tabs.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/tabs.tsx",
+          "integrity": "0c95a46b4fea7aeb90b5352aabfd1564de362a34fbd3e0c2cb504450bba46e35"
+        },
+        {
+          "path": "packages/hooks/src/create-controllable-signal.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-controllable-signal.ts",
+          "integrity": "83cf5facb4103223b44730256dba9f51b0120d411f0331b3463a6d1c00b59003"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/code-group.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/code-group.tsx",
+        "integrity": "03ae29bccdc2407a331bcf230411709341f7cba93707a3ea7a7dd055baee4e52",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/code-group.tsx",
+          "packages/core/src/registry/components/ui/tabs.tsx",
+          "packages/hooks/src/create-controllable-signal.ts"
+        ]
+      }
+    },
+    "nikala-ui/Collapsible": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/collapsible.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/collapsible.tsx",
+          "integrity": "69221f11046df0ff87cc10963d7198513883c30e76750fd8b178ca58f5aec048"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority",
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/collapsible.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/collapsible.tsx",
+        "integrity": "e2cc0878f0615d06daddf9c3320e19aafd7859e75be123146ec11ea4c615127d",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "apps/web/src/hooks/use-package-manager.ts",
+          "apps/web/src/lib/cli-formatter.ts",
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/collapsible.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Combobox": {
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "scroll-area"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/combobox.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/combobox.tsx",
+          "integrity": "e7436fdef0ddde90e2fd438d1f87cc936fcac17b5468ab72d3894cf922a752d7"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/scroll-area.tsx",
+          "integrity": "2ab12fac5a92c02aa5596ad1cd8d3b332cd41b91cd17193c8e40dbe869467cd4"
+        },
+        {
+          "path": "packages/hooks/src/create-resize-observer.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-resize-observer.ts",
+          "integrity": "6afe34f5ad4f60c380de7e3ac4473ec31e1c04e87d56dd7c8ec5dfa957e668d6"
+        },
+        {
+          "path": "packages/hooks/src/create-scroll-position.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-scroll-position.ts",
+          "integrity": "5f4907289efc98a5c4c85c7e73d4980b9533b76e6c69e3532483b92220b8ffe9"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/combobox.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/combobox.tsx",
+        "integrity": "1a768eda3101260eb4f9d0a176bbf36fb9c2c0af28463f130447d0578a5dbd32",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/avatar.tsx",
+          "packages/core/src/registry/components/ui/combobox.tsx",
+          "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "packages/hooks/src/create-resize-observer.ts",
+          "packages/hooks/src/create-scroll-position.ts"
+        ]
+      }
+    },
+    "nikala-ui/Command": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "input-group",
+        "kbd",
+        "list",
+        "scroll-area"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/command.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/command.tsx",
+          "integrity": "5ffd74198cc9ec1d52da8779e327692e3637a208a2d4d74c5bea592f6ee57dc6"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/input-group.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/input-group.tsx",
+          "integrity": "8fcac9c8dfcc233b2fa881b6bb28b5c2c7f1c8132c953b257c2028b2ba604401"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/kbd.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/kbd.tsx",
+          "integrity": "30cbdde0b2266d064136e66c973358ccbed0d36bac9cf7f7b74f0fa774398054"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/list.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/list.tsx",
+          "integrity": "20b2f0e76d7bab7a9a798733930b9bc541172b6694126c97382f00fe5a4e135b"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/scroll-area.tsx",
+          "integrity": "2ab12fac5a92c02aa5596ad1cd8d3b332cd41b91cd17193c8e40dbe869467cd4"
+        },
+        {
+          "path": "packages/hooks/src/create-keybindings.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-keybindings.ts",
+          "integrity": "9090082e4e7e953b632561917150dda5bacd970bd3acc1468f65b26794bd14b5"
+        },
+        {
+          "path": "packages/hooks/src/create-resize-observer.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-resize-observer.ts",
+          "integrity": "6afe34f5ad4f60c380de7e3ac4473ec31e1c04e87d56dd7c8ec5dfa957e668d6"
+        },
+        {
+          "path": "packages/hooks/src/create-scroll-position.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-scroll-position.ts",
+          "integrity": "5f4907289efc98a5c4c85c7e73d4980b9533b76e6c69e3532483b92220b8ffe9"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/command.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/command.tsx",
+        "integrity": "789dcf38f691e340d63c862b23e82ae280c91672871e5f7c9552402b9590fb1d",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/command.tsx",
+          "packages/core/src/registry/components/ui/input-group.tsx",
+          "packages/core/src/registry/components/ui/kbd.tsx",
+          "packages/core/src/registry/components/ui/list.tsx",
+          "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/hooks/src/create-keybindings.ts",
+          "packages/hooks/src/create-resize-observer.ts",
+          "packages/hooks/src/create-scroll-position.ts"
+        ]
+      }
+    },
+    "nikala-ui/Component Viewer": {
+      "dependencies": [
+        "@kobalte/core",
+        "@shikijs/langs",
+        "@shikijs/themes",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "shiki",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "code-block",
+        "spinner",
+        "tabs",
+        "tooltip"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/badge.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/badge.tsx",
+          "integrity": "974842eeec5a6ad906ef016ca8b01673b2cf739669f32fc359f39a0289da92cf"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/button.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/button.tsx",
+          "integrity": "c66992a954cc6cd9f64e95b14909eeb47e204f319c46e7b5e349537811538ede"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/code-block.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/code-block.tsx",
+          "integrity": "f96ec7a29d2b1f0eaf2b3ab70fd396048afbda2e9464c7567b05e134c064af6d"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/component-viewer.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/component-viewer.tsx",
+          "integrity": "073a65a87762e77d36faa45f80fef2fd009ca3924756a6a7f4785363773bc1fc"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/spinner.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/spinner.tsx",
+          "integrity": "a4c4d10d1fa58a5486c2b1ddc2659e5a51c4709129127feef1c14c74db344718"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/tabs.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/tabs.tsx",
+          "integrity": "0c95a46b4fea7aeb90b5352aabfd1564de362a34fbd3e0c2cb504450bba46e35"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/tooltip.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/tooltip.tsx",
+          "integrity": "ad9c8724b447cf404fbed7cb3176e9dc42e0a1205f5f4429de1a72d8793f8e46"
+        },
+        {
+          "path": "packages/hooks/src/create-clipboard.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-clipboard.ts",
+          "integrity": "b46899d06ce8be9cf4aacb4b1ac935434fa6bfaeaa56ec25227f9543e45be25b"
+        },
+        {
+          "path": "packages/hooks/src/create-controllable-signal.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-controllable-signal.ts",
+          "integrity": "83cf5facb4103223b44730256dba9f51b0120d411f0331b3463a6d1c00b59003"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "@shikijs/langs",
+        "@shikijs/themes",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "shiki",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/component-viewer.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/component-viewer.tsx",
+        "integrity": "430ab20465626c7b638ab0a1eca0aaa0d02ad3a515cdf272f26c7949abb10a7a",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/card.tsx",
+          "packages/core/src/registry/components/ui/code-block.tsx",
+          "packages/core/src/registry/components/ui/component-viewer.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/core/src/registry/components/ui/tabs.tsx",
+          "packages/core/src/registry/components/ui/tooltip.tsx",
+          "packages/hooks/src/create-clipboard.ts",
+          "packages/hooks/src/create-controllable-signal.ts"
+        ]
+      }
+    },
+    "nikala-ui/Container": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/container.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/container.tsx",
+          "integrity": "011f1cf340612223724c527a82e417fd75cfb315d34c2d57ef1e3e957ccec488"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/container.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/container.tsx",
+        "integrity": "877fb983454b2fe0f7862ef57e9902295b0b312a993bcf5a3eed44df77a5caa3",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/card.tsx",
+          "packages/core/src/registry/components/ui/container.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Context Menu": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "kbd",
+        "scroll-area",
+        "separator"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/context-menu.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/context-menu.tsx",
+          "integrity": "60549fc71eb165224982d4ffc9a38a54875baf7eb2387b0eb64fe6d602034766"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/kbd.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/kbd.tsx",
+          "integrity": "30cbdde0b2266d064136e66c973358ccbed0d36bac9cf7f7b74f0fa774398054"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/scroll-area.tsx",
+          "integrity": "2ab12fac5a92c02aa5596ad1cd8d3b332cd41b91cd17193c8e40dbe869467cd4"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/separator.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/separator.tsx",
+          "integrity": "caf7a2c78853230dfb58356cd55e205cde2dabb0a5c8743874ecaa1e21a89b33"
+        },
+        {
+          "path": "packages/hooks/src/create-click-outside.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-click-outside.ts",
+          "integrity": "bb94e66a377936849d9e8720d02e973180c1f011813464777ef479c2e30ae882"
+        },
+        {
+          "path": "packages/hooks/src/create-resize-observer.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-resize-observer.ts",
+          "integrity": "6afe34f5ad4f60c380de7e3ac4473ec31e1c04e87d56dd7c8ec5dfa957e668d6"
+        },
+        {
+          "path": "packages/hooks/src/create-scroll-position.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-scroll-position.ts",
+          "integrity": "5f4907289efc98a5c4c85c7e73d4980b9533b76e6c69e3532483b92220b8ffe9"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/context-menu.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/context-menu.tsx",
+        "integrity": "0d36a9f809283c10310ce16d9c783ec3353c56e4c4dd4254a61371c0ccb8a4ef",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/context-menu.tsx",
+          "packages/core/src/registry/components/ui/kbd.tsx",
+          "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "packages/core/src/registry/components/ui/separator.tsx",
+          "packages/hooks/src/create-click-outside.ts",
+          "packages/hooks/src/create-resize-observer.ts",
+          "packages/hooks/src/create-scroll-position.ts"
+        ]
+      }
+    },
+    "nikala-ui/Dialog": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "scroll-area"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/dialog.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/dialog.tsx",
+          "integrity": "2e59aeb22f684fb9bcf306c930587a0ea2b46a1f669e789e42be17abb48a9413"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/scroll-area.tsx",
+          "integrity": "2ab12fac5a92c02aa5596ad1cd8d3b332cd41b91cd17193c8e40dbe869467cd4"
+        },
+        {
+          "path": "packages/hooks/src/create-resize-observer.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-resize-observer.ts",
+          "integrity": "6afe34f5ad4f60c380de7e3ac4473ec31e1c04e87d56dd7c8ec5dfa957e668d6"
+        },
+        {
+          "path": "packages/hooks/src/create-scroll-position.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-scroll-position.ts",
+          "integrity": "5f4907289efc98a5c4c85c7e73d4980b9533b76e6c69e3532483b92220b8ffe9"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority"
+      ],
+      "exampleSource": {
+        "path": "demos/dialog.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/dialog.tsx",
+        "integrity": "913e99f000137e586cf67c5756fbacf3d21f099cf84e036f33ac433dbcfbd3ca",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/dialog.tsx",
+          "packages/core/src/registry/components/ui/input.tsx",
+          "packages/core/src/registry/components/ui/label.tsx",
+          "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/hooks/src/create-resize-observer.ts",
+          "packages/hooks/src/create-scroll-position.ts"
+        ]
+      }
+    },
+    "nikala-ui/Dropdown Menu": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "scroll-area"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/dropdown-menu.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/dropdown-menu.tsx",
+          "integrity": "dae45be18827690c20c239c22c76f60d24ea036f3274bd0ab0ebf1c937f63476"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/scroll-area.tsx",
+          "integrity": "2ab12fac5a92c02aa5596ad1cd8d3b332cd41b91cd17193c8e40dbe869467cd4"
+        },
+        {
+          "path": "packages/hooks/src/create-click-outside.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-click-outside.ts",
+          "integrity": "bb94e66a377936849d9e8720d02e973180c1f011813464777ef479c2e30ae882"
+        },
+        {
+          "path": "packages/hooks/src/create-resize-observer.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-resize-observer.ts",
+          "integrity": "6afe34f5ad4f60c380de7e3ac4473ec31e1c04e87d56dd7c8ec5dfa957e668d6"
+        },
+        {
+          "path": "packages/hooks/src/create-scroll-position.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-scroll-position.ts",
+          "integrity": "5f4907289efc98a5c4c85c7e73d4980b9533b76e6c69e3532483b92220b8ffe9"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority"
+      ],
+      "exampleSource": {
+        "path": "demos/dropdown-menu.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/dropdown-menu.tsx",
+        "integrity": "e208008d655a4af6ab5c8f2f5c0ec8ee6a9cca07fb4029bece604d384d1c2a58",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/dropdown-menu.tsx",
+          "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/hooks/src/create-click-outside.ts",
+          "packages/hooks/src/create-resize-observer.ts",
+          "packages/hooks/src/create-scroll-position.ts"
+        ]
+      }
+    },
+    "nikala-ui/Dropzone": {
+      "dependencies": [
+        "@tiptap/core",
+        "@tiptap/extension-character-count",
+        "@tiptap/extension-highlight",
+        "@tiptap/extension-image",
+        "@tiptap/extension-link",
+        "@tiptap/extension-placeholder",
+        "@tiptap/extension-subscript",
+        "@tiptap/extension-superscript",
+        "@tiptap/extension-table",
+        "@tiptap/extension-task-item",
+        "@tiptap/extension-task-list",
+        "@tiptap/extension-text-align",
+        "@tiptap/extension-typography",
+        "@tiptap/extension-underline",
+        "@tiptap/starter-kit",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge",
+        "tiptap-markdown"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/dropzone.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/dropzone.tsx",
+          "integrity": "c11b2aa486fb06f85c0ad9f47dceb2e73dc99ffc0e34b991e21de57d041b5609"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "@tiptap/core",
+        "@tiptap/extension-character-count",
+        "@tiptap/extension-highlight",
+        "@tiptap/extension-image",
+        "@tiptap/extension-link",
+        "@tiptap/extension-placeholder",
+        "@tiptap/extension-subscript",
+        "@tiptap/extension-superscript",
+        "@tiptap/extension-table",
+        "@tiptap/extension-task-item",
+        "@tiptap/extension-task-list",
+        "@tiptap/extension-text-align",
+        "@tiptap/extension-typography",
+        "@tiptap/extension-underline",
+        "@tiptap/starter-kit",
+        "class-variance-authority",
+        "tiptap-markdown"
+      ],
+      "exampleSource": {
+        "path": "demos/dropzone.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/dropzone.tsx",
+        "integrity": "e8a58ca12a9a42d14ce5fdc97a8f92c44793618c01fcd35ef8deceb897945558",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/avatar.tsx",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/dropzone.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/hooks/src/create-active-element.ts",
+          "packages/hooks/src/create-app-updater.ts",
+          "packages/hooks/src/create-audio-video.ts",
+          "packages/hooks/src/create-battery.ts",
+          "packages/hooks/src/create-chat-scroll.ts",
+          "packages/hooks/src/create-click-outside.ts",
+          "packages/hooks/src/create-clipboard.ts",
+          "packages/hooks/src/create-color-mode.ts",
+          "packages/hooks/src/create-controllable-signal.ts",
+          "packages/hooks/src/create-debounce.ts",
+          "packages/hooks/src/create-disclosure.ts",
+          "packages/hooks/src/create-document-tabs.ts",
+          "packages/hooks/src/create-document-title.ts",
+          "packages/hooks/src/create-drop-zone.ts",
+          "packages/hooks/src/create-event-source.ts",
+          "packages/hooks/src/create-favicon.ts",
+          "packages/hooks/src/create-fetch.ts",
+          "packages/hooks/src/create-focus-trap.ts",
+          "packages/hooks/src/create-form.ts",
+          "packages/hooks/src/create-fullscreen.ts",
+          "packages/hooks/src/create-geolocation.ts",
+          "packages/hooks/src/create-global-shortcut.ts",
+          "packages/hooks/src/create-hover.ts",
+          "packages/hooks/src/create-idle.ts",
+          "packages/hooks/src/create-infinite-scroll.ts",
+          "packages/hooks/src/create-input-mask.ts",
+          "packages/hooks/src/create-intersection-observer.ts",
+          "packages/hooks/src/create-keybindings.ts",
+          "packages/hooks/src/create-lock-scroll.ts",
+          "packages/hooks/src/create-long-press.ts",
+          "packages/hooks/src/create-media-query.ts",
+          "packages/hooks/src/create-mouse-position.ts",
+          "packages/hooks/src/create-network-status.ts",
+          "packages/hooks/src/create-orientation.ts",
+          "packages/hooks/src/create-pagination.ts",
+          "packages/hooks/src/create-permission.ts",
+          "packages/hooks/src/create-previous.ts",
+          "packages/hooks/src/create-resize-observer.ts",
+          "packages/hooks/src/create-scroll-into-view.ts",
+          "packages/hooks/src/create-scroll-position.ts",
+          "packages/hooks/src/create-storage.ts",
+          "packages/hooks/src/create-tauri-window.ts",
+          "packages/hooks/src/create-timer.ts",
+          "packages/hooks/src/create-tiptap-editor.ts",
+          "packages/hooks/src/create-undo-redo.ts",
+          "packages/hooks/src/create-web-notification.ts",
+          "packages/hooks/src/create-websocket.ts",
+          "packages/hooks/src/create-window-size.ts",
+          "packages/hooks/src/index.ts"
+        ]
+      }
+    },
+    "nikala-ui/Empty": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/empty.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/empty.tsx",
+          "integrity": "02fae8ca9a63960409be68548829198b1b87cbeccb461d704cb6a6703c60e83c"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority",
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/empty.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/empty.tsx",
+        "integrity": "2cfee4ace39acad5426f0cf0f27e6ed9258a6457cd8c188490bcd22b26c37640",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/empty.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Field": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "label"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/field.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/field.tsx",
+          "integrity": "b19f76384c9ec7857a1ca9a9464d704577901009115d4ad1a1f6617f1cce194d"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/label.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/label.tsx",
+          "integrity": "452a2a585a605c981e19e2418193fe6e318be68af3c16b34488fa0053775f4ef"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/field.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/field.tsx",
+        "integrity": "8ac4071f73b1e6630008446938c74af86756f662c1397afac1e2edce45764c92",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/field.tsx",
+          "packages/core/src/registry/components/ui/input.tsx",
+          "packages/core/src/registry/components/ui/label.tsx"
+        ]
+      }
+    },
+    "nikala-ui/File Tree": {
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "collapsible"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/collapsible.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/collapsible.tsx",
+          "integrity": "69221f11046df0ff87cc10963d7198513883c30e76750fd8b178ca58f5aec048"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/file-tree.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/file-tree.tsx",
+          "integrity": "c004419a59b8c8380b539063e2eb887e18a1b1bd5d599e1d7a5b3799bf9c2558"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/file-tree.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/file-tree.tsx",
+        "integrity": "307582417db8064cf6f50b1f18263cf96192758ee567b97ea76686015072b52d",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/collapsible.tsx",
+          "packages/core/src/registry/components/ui/file-tree.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Footer": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/footer.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/footer.tsx",
+          "integrity": "34ae47210d82fcc78debd092377f4d8eb3cb126cb54c8c5b922d4e67bbff5319"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/footer.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/footer.tsx",
+        "integrity": "b3640a913ad5854d8e19ed9e506311d0cf2914a67e43a7d28e4cb71c359de00e",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/footer.tsx",
+          "packages/core/src/registry/components/ui/input.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Form": {
+      "dependencies": [
+        "@tiptap/core",
+        "@tiptap/extension-character-count",
+        "@tiptap/extension-highlight",
+        "@tiptap/extension-image",
+        "@tiptap/extension-link",
+        "@tiptap/extension-placeholder",
+        "@tiptap/extension-subscript",
+        "@tiptap/extension-superscript",
+        "@tiptap/extension-table",
+        "@tiptap/extension-task-item",
+        "@tiptap/extension-task-list",
+        "@tiptap/extension-text-align",
+        "@tiptap/extension-typography",
+        "@tiptap/extension-underline",
+        "@tiptap/starter-kit",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge",
+        "tiptap-markdown"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/form.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/form.tsx",
+          "integrity": "cd81dff9dfac615d4d8cc2c3e645983c356801be7e9c81ca2b2a903c2b3cc07c"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "@tiptap/core",
+        "@tiptap/extension-character-count",
+        "@tiptap/extension-highlight",
+        "@tiptap/extension-image",
+        "@tiptap/extension-link",
+        "@tiptap/extension-placeholder",
+        "@tiptap/extension-subscript",
+        "@tiptap/extension-superscript",
+        "@tiptap/extension-table",
+        "@tiptap/extension-task-item",
+        "@tiptap/extension-task-list",
+        "@tiptap/extension-text-align",
+        "@tiptap/extension-typography",
+        "@tiptap/extension-underline",
+        "@tiptap/starter-kit",
+        "class-variance-authority",
+        "tiptap-markdown"
+      ],
+      "exampleSource": {
+        "path": "demos/form.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/form.tsx",
+        "integrity": "7bec4ef7468754baa8cd313203607929563c8e560a0ccef8aecc4da7909c7bed",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/field.tsx",
+          "packages/core/src/registry/components/ui/form-message.tsx",
+          "packages/core/src/registry/components/ui/form.tsx",
+          "packages/core/src/registry/components/ui/input.tsx",
+          "packages/core/src/registry/components/ui/label.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/core/src/registry/components/ui/textarea.tsx",
+          "packages/hooks/src/create-active-element.ts",
+          "packages/hooks/src/create-app-updater.ts",
+          "packages/hooks/src/create-audio-video.ts",
+          "packages/hooks/src/create-battery.ts",
+          "packages/hooks/src/create-chat-scroll.ts",
+          "packages/hooks/src/create-click-outside.ts",
+          "packages/hooks/src/create-clipboard.ts",
+          "packages/hooks/src/create-color-mode.ts",
+          "packages/hooks/src/create-controllable-signal.ts",
+          "packages/hooks/src/create-debounce.ts",
+          "packages/hooks/src/create-disclosure.ts",
+          "packages/hooks/src/create-document-tabs.ts",
+          "packages/hooks/src/create-document-title.ts",
+          "packages/hooks/src/create-drop-zone.ts",
+          "packages/hooks/src/create-event-source.ts",
+          "packages/hooks/src/create-favicon.ts",
+          "packages/hooks/src/create-fetch.ts",
+          "packages/hooks/src/create-focus-trap.ts",
+          "packages/hooks/src/create-form.ts",
+          "packages/hooks/src/create-fullscreen.ts",
+          "packages/hooks/src/create-geolocation.ts",
+          "packages/hooks/src/create-global-shortcut.ts",
+          "packages/hooks/src/create-hover.ts",
+          "packages/hooks/src/create-idle.ts",
+          "packages/hooks/src/create-infinite-scroll.ts",
+          "packages/hooks/src/create-input-mask.ts",
+          "packages/hooks/src/create-intersection-observer.ts",
+          "packages/hooks/src/create-keybindings.ts",
+          "packages/hooks/src/create-lock-scroll.ts",
+          "packages/hooks/src/create-long-press.ts",
+          "packages/hooks/src/create-media-query.ts",
+          "packages/hooks/src/create-mouse-position.ts",
+          "packages/hooks/src/create-network-status.ts",
+          "packages/hooks/src/create-orientation.ts",
+          "packages/hooks/src/create-pagination.ts",
+          "packages/hooks/src/create-permission.ts",
+          "packages/hooks/src/create-previous.ts",
+          "packages/hooks/src/create-resize-observer.ts",
+          "packages/hooks/src/create-scroll-into-view.ts",
+          "packages/hooks/src/create-scroll-position.ts",
+          "packages/hooks/src/create-storage.ts",
+          "packages/hooks/src/create-tauri-window.ts",
+          "packages/hooks/src/create-timer.ts",
+          "packages/hooks/src/create-tiptap-editor.ts",
+          "packages/hooks/src/create-undo-redo.ts",
+          "packages/hooks/src/create-web-notification.ts",
+          "packages/hooks/src/create-websocket.ts",
+          "packages/hooks/src/create-window-size.ts",
+          "packages/hooks/src/index.ts"
+        ]
+      }
+    },
+    "nikala-ui/Form Message": {
+      "dependencies": [
+        "@tiptap/core",
+        "@tiptap/extension-character-count",
+        "@tiptap/extension-highlight",
+        "@tiptap/extension-image",
+        "@tiptap/extension-link",
+        "@tiptap/extension-placeholder",
+        "@tiptap/extension-subscript",
+        "@tiptap/extension-superscript",
+        "@tiptap/extension-table",
+        "@tiptap/extension-task-item",
+        "@tiptap/extension-task-list",
+        "@tiptap/extension-text-align",
+        "@tiptap/extension-typography",
+        "@tiptap/extension-underline",
+        "@tiptap/starter-kit",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge",
+        "tiptap-markdown"
+      ],
+      "registryDependencies": [
+        "field",
+        "label"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/field.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/field.tsx",
+          "integrity": "b19f76384c9ec7857a1ca9a9464d704577901009115d4ad1a1f6617f1cce194d"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/form-message.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/form-message.tsx",
+          "integrity": "f95c8e0ad8d599ad4384aa3f93a4d2438e04f86dcfc9336a8cd3234489acf519"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/label.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/label.tsx",
+          "integrity": "452a2a585a605c981e19e2418193fe6e318be68af3c16b34488fa0053775f4ef"
+        },
+        {
+          "path": "packages/hooks/src/create-form.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-form.ts",
+          "integrity": "48b105fd3a7dc085fcddf55df967be051a2b3adb8e14378798c47d1a118b427c"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "@tiptap/core",
+        "@tiptap/extension-character-count",
+        "@tiptap/extension-highlight",
+        "@tiptap/extension-image",
+        "@tiptap/extension-link",
+        "@tiptap/extension-placeholder",
+        "@tiptap/extension-subscript",
+        "@tiptap/extension-superscript",
+        "@tiptap/extension-table",
+        "@tiptap/extension-task-item",
+        "@tiptap/extension-task-list",
+        "@tiptap/extension-text-align",
+        "@tiptap/extension-typography",
+        "@tiptap/extension-underline",
+        "@tiptap/starter-kit",
+        "tiptap-markdown"
+      ],
+      "exampleSource": {
+        "path": "demos/form-message.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/form-message.tsx",
+        "integrity": "97491e4a5f7d4b4edecccee4c3d30e4c414de8cb96418e5487803c0b27053c8e",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/checkbox.tsx",
+          "packages/core/src/registry/components/ui/field.tsx",
+          "packages/core/src/registry/components/ui/form-message.tsx",
+          "packages/core/src/registry/components/ui/form.tsx",
+          "packages/core/src/registry/components/ui/input.tsx",
+          "packages/core/src/registry/components/ui/label.tsx",
+          "packages/hooks/src/create-active-element.ts",
+          "packages/hooks/src/create-app-updater.ts",
+          "packages/hooks/src/create-audio-video.ts",
+          "packages/hooks/src/create-battery.ts",
+          "packages/hooks/src/create-chat-scroll.ts",
+          "packages/hooks/src/create-click-outside.ts",
+          "packages/hooks/src/create-clipboard.ts",
+          "packages/hooks/src/create-color-mode.ts",
+          "packages/hooks/src/create-controllable-signal.ts",
+          "packages/hooks/src/create-debounce.ts",
+          "packages/hooks/src/create-disclosure.ts",
+          "packages/hooks/src/create-document-tabs.ts",
+          "packages/hooks/src/create-document-title.ts",
+          "packages/hooks/src/create-drop-zone.ts",
+          "packages/hooks/src/create-event-source.ts",
+          "packages/hooks/src/create-favicon.ts",
+          "packages/hooks/src/create-fetch.ts",
+          "packages/hooks/src/create-focus-trap.ts",
+          "packages/hooks/src/create-form.ts",
+          "packages/hooks/src/create-fullscreen.ts",
+          "packages/hooks/src/create-geolocation.ts",
+          "packages/hooks/src/create-global-shortcut.ts",
+          "packages/hooks/src/create-hover.ts",
+          "packages/hooks/src/create-idle.ts",
+          "packages/hooks/src/create-infinite-scroll.ts",
+          "packages/hooks/src/create-input-mask.ts",
+          "packages/hooks/src/create-intersection-observer.ts",
+          "packages/hooks/src/create-keybindings.ts",
+          "packages/hooks/src/create-lock-scroll.ts",
+          "packages/hooks/src/create-long-press.ts",
+          "packages/hooks/src/create-media-query.ts",
+          "packages/hooks/src/create-mouse-position.ts",
+          "packages/hooks/src/create-network-status.ts",
+          "packages/hooks/src/create-orientation.ts",
+          "packages/hooks/src/create-pagination.ts",
+          "packages/hooks/src/create-permission.ts",
+          "packages/hooks/src/create-previous.ts",
+          "packages/hooks/src/create-resize-observer.ts",
+          "packages/hooks/src/create-scroll-into-view.ts",
+          "packages/hooks/src/create-scroll-position.ts",
+          "packages/hooks/src/create-storage.ts",
+          "packages/hooks/src/create-tauri-window.ts",
+          "packages/hooks/src/create-timer.ts",
+          "packages/hooks/src/create-tiptap-editor.ts",
+          "packages/hooks/src/create-undo-redo.ts",
+          "packages/hooks/src/create-web-notification.ts",
+          "packages/hooks/src/create-websocket.ts",
+          "packages/hooks/src/create-window-size.ts",
+          "packages/hooks/src/index.ts"
+        ]
+      }
+    },
+    "nikala-ui/Hover Card": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/hover-card.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/hover-card.tsx",
+          "integrity": "8d3ab3a6bcb18971fcde014b21eb1d0f2a0f46dee7e13a9b5afce90232a8b1b1"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority"
+      ],
+      "exampleSource": {
+        "path": "demos/hover-card.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/hover-card.tsx",
+        "integrity": "1b0ebd91e7be72652a9e80cd5bb6d074f88facc0af16fe028a7e5942a2a1611a",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/avatar.tsx",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/hover-card.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Icon Button": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "spinner"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/button.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/button.tsx",
+          "integrity": "c66992a954cc6cd9f64e95b14909eeb47e204f319c46e7b5e349537811538ede"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/icon-button.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/icon-button.tsx",
+          "integrity": "3619daa6d1ef5d4d8535e821dade358a565984472013a40805c3a03c7654d6f3"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/spinner.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/spinner.tsx",
+          "integrity": "a4c4d10d1fa58a5486c2b1ddc2659e5a51c4709129127feef1c14c74db344718"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/icon-button.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/icon-button.tsx",
+        "integrity": "6989bb84f70b04eb4d953f5750c1d5476d490535cd46e52d7cbb1b2fc817a127",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/icon-button.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Input": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/input.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/input.tsx",
+          "integrity": "a688919b6129c20326e4f2d7edc09c1c441241963b49c29581496a3f449147dd"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority"
+      ],
+      "exampleSource": {
+        "path": "demos/input.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/input.tsx",
+        "integrity": "cbf2563e53ff75a8025ce5e64b568251639903b39a4031ea214557f856378634",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/input.tsx",
+          "packages/core/src/registry/components/ui/label.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Input Group": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/input-group.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/input-group.tsx",
+          "integrity": "8fcac9c8dfcc233b2fa881b6bb28b5c2c7f1c8132c953b257c2028b2ba604401"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/input-group.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/input-group.tsx",
+        "integrity": "023a6a35ba9ddb79f03dd9ed0ce3445a1938a9a3d716b25b3acf12de8c40c650",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/input-group.tsx",
+          "packages/core/src/registry/components/ui/kbd.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Kbd": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/kbd.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/kbd.tsx",
+          "integrity": "30cbdde0b2266d064136e66c973358ccbed0d36bac9cf7f7b74f0fa774398054"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/kbd.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/kbd.tsx",
+        "integrity": "a93603d1238642293c49b3c689420f5e4b6e132f440fe2e6e514596a1fe5ea58",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/kbd.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Label": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/label.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/label.tsx",
+          "integrity": "452a2a585a605c981e19e2418193fe6e318be68af3c16b34488fa0053775f4ef"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/label.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/label.tsx",
+        "integrity": "f7934138057e9222885b0bd9ea9040eff55735628f1583c193bac27695163ddc",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/checkbox.tsx",
+          "packages/core/src/registry/components/ui/input.tsx",
+          "packages/core/src/registry/components/ui/label.tsx",
+          "packages/hooks/src/create-controllable-signal.ts"
+        ]
+      }
+    },
+    "nikala-ui/List": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/list.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/list.tsx",
+          "integrity": "20b2f0e76d7bab7a9a798733930b9bc541172b6694126c97382f00fe5a4e135b"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/list.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/list.tsx",
+        "integrity": "2a5980dfa171f07302e02ae3543f962bcc9da383decf0cde8d2ec4ac6846edf3",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/list.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Marker": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/marker.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/marker.tsx",
+          "integrity": "905848f4311c9d578dbdab2b3c838ffcb956b6d84c262d4c86eab89d6daaa950"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/marker.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/marker.tsx",
+        "integrity": "b896ec1db5fb78ab902df6221053f279a6a195890ace2d752869acb4b047ea59",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/marker.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Marquee": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/marquee.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/marquee.tsx",
+          "integrity": "378c875705fe1f7b278270e66c32062d534d987314924bfac4c0e9180896d54e"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority",
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/marquee.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/marquee.tsx",
+        "integrity": "393ddc3863a013a576328f3f887bb524f2b5dfcb6550740ca6b3d883446fbeb0",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/avatar.tsx",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/card.tsx",
+          "packages/core/src/registry/components/ui/marquee.tsx",
+          "packages/core/src/registry/components/ui/rating.tsx",
+          "packages/core/src/registry/components/ui/review-card.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Message": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/message.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/message.tsx",
+          "integrity": "663cadd2c0d3202c097e9d5f827a7ce19013fc22818050611c369fb673d10d8f"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority",
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/message.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/message.tsx",
+        "integrity": "ce19e3893d954b4a87f2cfb07b1c3318ea7210a82ed483e7478e1dcb3cfd9d24",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/avatar.tsx",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/bubble.tsx",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/marker.tsx",
+          "packages/core/src/registry/components/ui/message.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Navbar": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/navbar.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/navbar.tsx",
+          "integrity": "c39de49ed572b56f440b11a7f9e0d41bdcde1ecc97778faed744dd0bfaeb9e04"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "@kobalte/core"
+      ],
+      "exampleSource": {
+        "path": "demos/navbar.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/navbar.tsx",
+        "integrity": "9010bfc3fa5d6b2edc6ab779904ff58e3e43e22fd770867941d57811208904b0",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/dropdown-menu.tsx",
+          "packages/core/src/registry/components/ui/input.tsx",
+          "packages/core/src/registry/components/ui/navbar.tsx",
+          "packages/core/src/registry/components/ui/navigation-menu.tsx",
+          "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/hooks/src/create-click-outside.ts",
+          "packages/hooks/src/create-resize-observer.ts",
+          "packages/hooks/src/create-scroll-position.ts"
+        ]
+      }
+    },
+    "nikala-ui/Navigation Menu": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/navigation-menu.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/navigation-menu.tsx",
+          "integrity": "46b95c91050a9617e99f61f649a7d70aeb136dbacdbab600e7464ebe08a25771"
+        },
+        {
+          "path": "packages/hooks/src/create-click-outside.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-click-outside.ts",
+          "integrity": "bb94e66a377936849d9e8720d02e973180c1f011813464777ef479c2e30ae882"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/navigation-menu.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/navigation-menu.tsx",
+        "integrity": "921889b0d4e5e3c5e8f4da492431ea5203d630edee35c618213dba53c30db520",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/navigation-menu.tsx",
+          "packages/hooks/src/create-click-outside.ts"
+        ]
+      }
+    },
+    "nikala-ui/Number Input": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "spinner"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/button.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/button.tsx",
+          "integrity": "c66992a954cc6cd9f64e95b14909eeb47e204f319c46e7b5e349537811538ede"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/input.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/input.tsx",
+          "integrity": "a688919b6129c20326e4f2d7edc09c1c441241963b49c29581496a3f449147dd"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/number-input.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/number-input.tsx",
+          "integrity": "dcc0dfe1afb6679b0a8342048f8b7fab7bc40dca792371507203ffe0e7875e15"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/spinner.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/spinner.tsx",
+          "integrity": "a4c4d10d1fa58a5486c2b1ddc2659e5a51c4709129127feef1c14c74db344718"
+        },
+        {
+          "path": "packages/hooks/src/create-long-press.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-long-press.ts",
+          "integrity": "c831aea7ae4d8200e453f2dec7a001997ea28a305f15de6e3a96b98b0f631ee4"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/number-input.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/number-input.tsx",
+        "integrity": "2cd53d118c3455e6bb36c3d3164ab015e86ed31f9ff27877566be44a6c46691b",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/input.tsx",
+          "packages/core/src/registry/components/ui/label.tsx",
+          "packages/core/src/registry/components/ui/number-input.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/hooks/src/create-long-press.ts"
+        ]
+      }
+    },
+    "nikala-ui/Package Manager Tabs": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "spinner",
+        "tabs",
+        "tooltip"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/button.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/button.tsx",
+          "integrity": "c66992a954cc6cd9f64e95b14909eeb47e204f319c46e7b5e349537811538ede"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/package-manager-tabs.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/package-manager-tabs.tsx",
+          "integrity": "1707298c3943866138f968e147dc00b518c8c40bc340ad20ae9f40f2274fbd20"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/spinner.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/spinner.tsx",
+          "integrity": "a4c4d10d1fa58a5486c2b1ddc2659e5a51c4709129127feef1c14c74db344718"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/tabs.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/tabs.tsx",
+          "integrity": "0c95a46b4fea7aeb90b5352aabfd1564de362a34fbd3e0c2cb504450bba46e35"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/tooltip.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/tooltip.tsx",
+          "integrity": "ad9c8724b447cf404fbed7cb3176e9dc42e0a1205f5f4429de1a72d8793f8e46"
+        },
+        {
+          "path": "packages/hooks/src/create-clipboard.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-clipboard.ts",
+          "integrity": "b46899d06ce8be9cf4aacb4b1ac935434fa6bfaeaa56ec25227f9543e45be25b"
+        },
+        {
+          "path": "packages/hooks/src/create-controllable-signal.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-controllable-signal.ts",
+          "integrity": "83cf5facb4103223b44730256dba9f51b0120d411f0331b3463a6d1c00b59003"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/package-manager-tabs.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/package-manager-tabs.tsx",
+        "integrity": "c2898660e0db089eb296a3dfaede4f6bf007d69402b5c7fcf6aa1a2b234f761d",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/package-manager-tabs.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/core/src/registry/components/ui/tabs.tsx",
+          "packages/core/src/registry/components/ui/tooltip.tsx",
+          "packages/hooks/src/create-clipboard.ts",
+          "packages/hooks/src/create-controllable-signal.ts"
+        ]
+      }
+    },
+    "nikala-ui/Pager": {
+      "dependencies": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "card"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/card.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/card.tsx",
+          "integrity": "e2ff769f3df48d217cc287718986a898f3574d9649f90a97b58f36b5a0530fb7"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/pager.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/pager.tsx",
+          "integrity": "5cdf8b31d2a9dc2831f8e4f31125b2780f74a1bf5681f81ea6d1fc953f993c23"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/pager.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/pager.tsx",
+        "integrity": "2e2dff4d3f252cfc70b9841a9189c58db1e35c9dcda75ec0220cbdd2e6d3c8f6",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/card.tsx",
+          "packages/core/src/registry/components/ui/pager.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Pagination": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/pagination.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/pagination.tsx",
+          "integrity": "840738bac7656986d3cbb9fa6894852eb4ae37afb7ae960ea58712557ef07980"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/pagination.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/pagination.tsx",
+        "integrity": "66be9503e5123678edcbedc99907c166427fd3edb0a6030282919b9388495aad",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/pagination.tsx",
+          "packages/hooks/src/create-pagination.ts"
+        ]
+      }
+    },
+    "nikala-ui/Pin Input": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/pin-input.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/pin-input.tsx",
+          "integrity": "66278fc28446602ff8cbb1e0fe8bfd208a7a6a44684338e15b5c14dce18c8a99"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/pin-input.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/pin-input.tsx",
+        "integrity": "ded5b1896f4324ec4f8fc8f650ee9c7f1e1b19e592dcaf9d53335c8a2df3429a",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/pin-input.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Popover": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/popover.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/popover.tsx",
+          "integrity": "83aaaeca01fab1bf89e547d2fcd54f2284b31c91e89ccc10801f2f2089e0365b"
+        },
+        {
+          "path": "packages/hooks/src/create-click-outside.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-click-outside.ts",
+          "integrity": "bb94e66a377936849d9e8720d02e973180c1f011813464777ef479c2e30ae882"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority"
+      ],
+      "exampleSource": {
+        "path": "demos/popover.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/popover.tsx",
+        "integrity": "8e89e0a9eb7c5f12bf628ba87366e6b1a024b9b47d8c018b1170ddfc6eaeb1e9",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/input.tsx",
+          "packages/core/src/registry/components/ui/label.tsx",
+          "packages/core/src/registry/components/ui/popover.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/hooks/src/create-click-outside.ts"
+        ]
+      }
+    },
+    "nikala-ui/Progress": {
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/progress.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/progress.tsx",
+          "integrity": "e1ac8c8080b015bab2ad4e47f5c86e8fdbbf423fe256a7f3570648167af160a0"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/progress.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/progress.tsx",
+        "integrity": "f768e81456741a5f3eefa56ad3fca57e8c0f057aff5659e7fa390f9c4c4fb3e1",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/progress.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Radio Group": {
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/radio-group.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/radio-group.tsx",
+          "integrity": "5e73dd2eb875cd3ffcdbad1c065e16e635c742fabcd63b5b76bb5f8a3284a33a"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/radio-group.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/radio-group.tsx",
+        "integrity": "32591dcb2a69df10fe8aee028b7df17483a89d8476384ba0e9892adbeb6306f8",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/radio-group.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Rating": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/rating.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/rating.tsx",
+          "integrity": "3148de4dd787ac823245bf65feb7c2b912a09942aa0530e5f6bf6cc71a9186dd"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/rating.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/rating.tsx",
+        "integrity": "a7af2a8251aeabfac738bb5ca597c2557ba9ecf275c4e5da37cf3e56f8bf6fbb",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/rating.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Resizable": {
+      "dependencies": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/resizable.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/resizable.tsx",
+          "integrity": "e6afbb9d5344bd1ec910ac4518cb6ee68824e36c88f3514afb3658b459937254"
+        },
+        {
+          "path": "packages/hooks/src/create-resize-observer.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-resize-observer.ts",
+          "integrity": "6afe34f5ad4f60c380de7e3ac4473ec31e1c04e87d56dd7c8ec5dfa957e668d6"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/resizable.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/resizable.tsx",
+        "integrity": "8af26d9259674779ef1dafda3d2349c2eefd94a364b395147199696078c0329b",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/resizable.tsx",
+          "packages/hooks/src/create-resize-observer.ts"
+        ]
+      }
+    },
+    "nikala-ui/Review Card": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "rating"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/avatar.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/avatar.tsx",
+          "integrity": "995a46ecd86750c4bf78e3f0c301af0dfe9ca17d5d46d650013260576f990ef1"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/rating.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/rating.tsx",
+          "integrity": "3148de4dd787ac823245bf65feb7c2b912a09942aa0530e5f6bf6cc71a9186dd"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/review-card.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/review-card.tsx",
+          "integrity": "d95c6f0a00ee2afbe51fbaaf558f56f224b80bad29c6cc9bf95337c8eb62d660"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/review-card.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/review-card.tsx",
+        "integrity": "017bf1add4944ea75f23b90c96ae874fb85d38d025d2ac6f9594b2b963edac2d",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/avatar.tsx",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/rating.tsx",
+          "packages/core/src/registry/components/ui/review-card.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Rich Text Editor": {
+      "dependencies": [
+        "@tiptap/core",
+        "@tiptap/extension-character-count",
+        "@tiptap/extension-highlight",
+        "@tiptap/extension-image",
+        "@tiptap/extension-link",
+        "@tiptap/extension-placeholder",
+        "@tiptap/extension-subscript",
+        "@tiptap/extension-superscript",
+        "@tiptap/extension-table",
+        "@tiptap/extension-task-item",
+        "@tiptap/extension-task-list",
+        "@tiptap/extension-text-align",
+        "@tiptap/extension-typography",
+        "@tiptap/extension-underline",
+        "@tiptap/starter-kit",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge",
+        "tiptap-markdown"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/rich-text-editor/bubble-menu.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/rich-text-editor/bubble-menu.tsx",
+          "integrity": "5542f3d0bfa741875c9d85b5fe5157aa3b1a8e4b3bb91b364427f4a166460480"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/rich-text-editor/editor.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/rich-text-editor/editor.tsx",
+          "integrity": "093aaeaa5e3d1bd0c97f3a39b4ae2fa453315aa92a3858d043fb3d489beb61ac"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/rich-text-editor/extensions.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/rich-text-editor/extensions.ts",
+          "integrity": "e933489f2f46d46c5f63ef34e8a4b8449135f0a5290cd0f8953659b8eb293670"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/rich-text-editor/footer.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/rich-text-editor/footer.tsx",
+          "integrity": "206906478bab8b090a795127668bad3260160d66c671fd4195dfb4ed03d2c92f"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/rich-text-editor/image-dialog.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/rich-text-editor/image-dialog.tsx",
+          "integrity": "827be8ad175ce7205cdd63690e099cbdbd8d61877ae1b6aedfae0f2ec7298d02"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/rich-text-editor/index.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/rich-text-editor/index.ts",
+          "integrity": "f04548dc739ed7911cec1ff99040afddedfe9c4114afe56e7c29dd3b5f3d9788"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/rich-text-editor/link-dialog.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/rich-text-editor/link-dialog.tsx",
+          "integrity": "0469dbd91171bebf1941ff9dd2e632774280475948d7e39a24bf132140eb36fb"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/rich-text-editor/markdown.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/rich-text-editor/markdown.ts",
+          "integrity": "9c72d106257d4e15051804485d36965aa8f4921b46ddfb210fbda79701ff6a5b"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/rich-text-editor/slash-command.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/rich-text-editor/slash-command.tsx",
+          "integrity": "d58f6cfbe235b5581fa383a6f24c12140dc6688d1188170c1867f4aafc7b9b32"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/rich-text-editor/table-controls.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/rich-text-editor/table-controls.tsx",
+          "integrity": "41cb017f9fa7fd9335ff48a663bc4164d7e8e53189c8f0de97d6545c1b5608f9"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/rich-text-editor/toolbar.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/rich-text-editor/toolbar.tsx",
+          "integrity": "66886f2b05db785f04445665685a069ac7c02f93949bd43105b19c261ff8d77d"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/rich-text-editor/use-editor.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/rich-text-editor/use-editor.ts",
+          "integrity": "4afae335834fd17c68c5372f0914b162fba3db54b2e0dc95db5d0652669d118e"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@tiptap/core",
+        "@tiptap/extension-character-count",
+        "@tiptap/extension-highlight",
+        "@tiptap/extension-image",
+        "@tiptap/extension-link",
+        "@tiptap/extension-placeholder",
+        "@tiptap/extension-subscript",
+        "@tiptap/extension-superscript",
+        "@tiptap/extension-table",
+        "@tiptap/extension-task-item",
+        "@tiptap/extension-task-list",
+        "@tiptap/extension-text-align",
+        "@tiptap/extension-typography",
+        "@tiptap/extension-underline",
+        "@tiptap/starter-kit",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge",
+        "tiptap-markdown"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/rich-text-editor.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/rich-text-editor.tsx",
+        "integrity": "1ebd49a4acb004aed6cb77a8402e784e3d062ad397524294833918b7e25f6d1e",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/rich-text-editor/bubble-menu.tsx",
+          "packages/core/src/registry/components/ui/rich-text-editor/editor.tsx",
+          "packages/core/src/registry/components/ui/rich-text-editor/extensions.ts",
+          "packages/core/src/registry/components/ui/rich-text-editor/footer.tsx",
+          "packages/core/src/registry/components/ui/rich-text-editor/image-dialog.tsx",
+          "packages/core/src/registry/components/ui/rich-text-editor/index.ts",
+          "packages/core/src/registry/components/ui/rich-text-editor/link-dialog.tsx",
+          "packages/core/src/registry/components/ui/rich-text-editor/markdown.ts",
+          "packages/core/src/registry/components/ui/rich-text-editor/slash-command.tsx",
+          "packages/core/src/registry/components/ui/rich-text-editor/table-controls.tsx",
+          "packages/core/src/registry/components/ui/rich-text-editor/toolbar.tsx",
+          "packages/core/src/registry/components/ui/rich-text-editor/use-editor.ts"
+        ]
+      }
+    },
+    "nikala-ui/Scroll Area": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/scroll-area.tsx",
+          "integrity": "2ab12fac5a92c02aa5596ad1cd8d3b332cd41b91cd17193c8e40dbe869467cd4"
+        },
+        {
+          "path": "packages/hooks/src/create-resize-observer.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-resize-observer.ts",
+          "integrity": "6afe34f5ad4f60c380de7e3ac4473ec31e1c04e87d56dd7c8ec5dfa957e668d6"
+        },
+        {
+          "path": "packages/hooks/src/create-scroll-position.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-scroll-position.ts",
+          "integrity": "5f4907289efc98a5c4c85c7e73d4980b9533b76e6c69e3532483b92220b8ffe9"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/scroll-area.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/scroll-area.tsx",
+        "integrity": "b12b73169262264d5228eaa1dca80e779221fab3c3975508be70946d907b41f5",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "packages/core/src/registry/components/ui/separator.tsx",
+          "packages/hooks/src/create-resize-observer.ts",
+          "packages/hooks/src/create-scroll-position.ts"
+        ]
+      }
+    },
+    "nikala-ui/Section Heading": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "badge"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/badge.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/badge.tsx",
+          "integrity": "974842eeec5a6ad906ef016ca8b01673b2cf739669f32fc359f39a0289da92cf"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/section-heading.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/section-heading.tsx",
+          "integrity": "1c2eff511f11a607110c640943f124bef1e9038f44df0f9964f1c90e9b5b1266"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/section-heading.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/section-heading.tsx",
+        "integrity": "8f97ed39df88549500a92ffab36ee2f82bf1c4e09555c1b6ea06a2ebffe32bc8",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/section-heading.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Select": {
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "scroll-area"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/scroll-area.tsx",
+          "integrity": "2ab12fac5a92c02aa5596ad1cd8d3b332cd41b91cd17193c8e40dbe869467cd4"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/select.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/select.tsx",
+          "integrity": "69bdc662bc2dd50634102bedf0d26b28ce0ad3b9effa843eb0646247dc54f484"
+        },
+        {
+          "path": "packages/hooks/src/create-click-outside.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-click-outside.ts",
+          "integrity": "bb94e66a377936849d9e8720d02e973180c1f011813464777ef479c2e30ae882"
+        },
+        {
+          "path": "packages/hooks/src/create-resize-observer.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-resize-observer.ts",
+          "integrity": "6afe34f5ad4f60c380de7e3ac4473ec31e1c04e87d56dd7c8ec5dfa957e668d6"
+        },
+        {
+          "path": "packages/hooks/src/create-scroll-position.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-scroll-position.ts",
+          "integrity": "5f4907289efc98a5c4c85c7e73d4980b9533b76e6c69e3532483b92220b8ffe9"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/select.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/select.tsx",
+        "integrity": "2c1c6d5a1ec246102f375e4c6188109bc056d78ea19ea46127cf23497356c30f",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "packages/core/src/registry/components/ui/select.tsx",
+          "packages/hooks/src/create-click-outside.ts",
+          "packages/hooks/src/create-resize-observer.ts",
+          "packages/hooks/src/create-scroll-position.ts"
+        ]
+      }
+    },
+    "nikala-ui/Separator": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/separator.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/separator.tsx",
+          "integrity": "caf7a2c78853230dfb58356cd55e205cde2dabb0a5c8743874ecaa1e21a89b33"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/separator.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/separator.tsx",
+        "integrity": "825d6b2b1ecf9b141ee1c256221e174dfd01d5f6fe6bdcd3532714ccb3c2f265",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/separator.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Sheet": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "scroll-area"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/scroll-area.tsx",
+          "integrity": "2ab12fac5a92c02aa5596ad1cd8d3b332cd41b91cd17193c8e40dbe869467cd4"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/sheet.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/sheet.tsx",
+          "integrity": "23d5bf563372dc8bc26a2cca964c07c85d6a5d320e3cd7e4f5a68318ce92cc5d"
+        },
+        {
+          "path": "packages/hooks/src/create-resize-observer.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-resize-observer.ts",
+          "integrity": "6afe34f5ad4f60c380de7e3ac4473ec31e1c04e87d56dd7c8ec5dfa957e668d6"
+        },
+        {
+          "path": "packages/hooks/src/create-scroll-position.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-scroll-position.ts",
+          "integrity": "5f4907289efc98a5c4c85c7e73d4980b9533b76e6c69e3532483b92220b8ffe9"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/sheet.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/sheet.tsx",
+        "integrity": "3452c5bcf41d32317fe9f69fff80fa10c8d74d6df3fd2ee958238f9535ab196a",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/input.tsx",
+          "packages/core/src/registry/components/ui/label.tsx",
+          "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "packages/core/src/registry/components/ui/sheet.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/hooks/src/create-resize-observer.ts",
+          "packages/hooks/src/create-scroll-position.ts"
+        ]
+      }
+    },
+    "nikala-ui/Sidebar": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "separator",
+        "skeleton",
+        "tooltip"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/separator.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/separator.tsx",
+          "integrity": "caf7a2c78853230dfb58356cd55e205cde2dabb0a5c8743874ecaa1e21a89b33"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/sidebar.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/sidebar.tsx",
+          "integrity": "f904ef47f2de6f02d9f1ee451463155bf4309211b2d8b99dbcfbc4681e40156a"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/skeleton.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/skeleton.tsx",
+          "integrity": "d5f0ab6bc1a3f03fe2e87020475994a7b8e38f8cc55412a916e84869f5f09d5d"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/tooltip.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/tooltip.tsx",
+          "integrity": "ad9c8724b447cf404fbed7cb3176e9dc42e0a1205f5f4429de1a72d8793f8e46"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/sidebar.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/sidebar.tsx",
+        "integrity": "29f54166ac6a7d3e153eae6df649c940e23845dd7358b2aae57ad6c6127413e5",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/avatar.tsx",
+          "packages/core/src/registry/components/ui/collapsible.tsx",
+          "packages/core/src/registry/components/ui/dropdown-menu.tsx",
+          "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "packages/core/src/registry/components/ui/separator.tsx",
+          "packages/core/src/registry/components/ui/sidebar.tsx",
+          "packages/core/src/registry/components/ui/skeleton.tsx",
+          "packages/core/src/registry/components/ui/tooltip.tsx",
+          "packages/hooks/src/create-click-outside.ts",
+          "packages/hooks/src/create-resize-observer.ts",
+          "packages/hooks/src/create-scroll-position.ts"
+        ]
+      }
+    },
+    "nikala-ui/Skeleton": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/skeleton.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/skeleton.tsx",
+          "integrity": "d5f0ab6bc1a3f03fe2e87020475994a7b8e38f8cc55412a916e84869f5f09d5d"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/skeleton.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/skeleton.tsx",
+        "integrity": "fe32a70ab18566a98d9924088e9a380f2083e892be0a2b3ac5ba3a80702987bb",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/skeleton.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Slider": {
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/slider.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/slider.tsx",
+          "integrity": "b6c74a723fa0dda273eb9093d242816a404124585174ee6f0834f9c8a8c8bf6b"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/slider.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/slider.tsx",
+        "integrity": "2fae44df98db40fe1306d3fce452fc07dc5a7d4d69e826be52773b9d504f9b5d",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/slider.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Spinner": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/spinner.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/spinner.tsx",
+          "integrity": "a4c4d10d1fa58a5486c2b1ddc2659e5a51c4709129127feef1c14c74db344718"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/spinner.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/spinner.tsx",
+        "integrity": "9cfcec0dcfd3388537488470e69841881be39a3fb114677705488e839efd98f8",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Stat": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/stat.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/stat.tsx",
+          "integrity": "7e892fbe6fe00eae0f3998973b9ed174e5fa949b7b006dcc53c884278e9cdb4f"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/stat.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/stat.tsx",
+        "integrity": "509f2e2271ff00bf19cdb89c33a6be94a2e1cc0c6cc6c0d553b29c8ee32d6286",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/stat.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Status": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/status.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/status.tsx",
+          "integrity": "198bc7d1286f54f39a0853bd11c5abcc5e083c42c913ef74870816dd331b5f64"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/status.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/status.tsx",
+        "integrity": "785b38998c5bdd39f0ee797a6e21abdebdb8173e0ce0ad118489f97fed28a154",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/status.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Steps": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "badge"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/badge.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/badge.tsx",
+          "integrity": "974842eeec5a6ad906ef016ca8b01673b2cf739669f32fc359f39a0289da92cf"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/steps.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/steps.tsx",
+          "integrity": "130360327210a834a9766820c3533b502b100dfb6a8107830a5581e68131ddf2"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "@kobalte/core",
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/steps.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/steps.tsx",
+        "integrity": "2b48b3a8ced2d5ad21297369655b1bad01a555dc492f893de36ed994ab6e1c9f",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/package-manager-tabs.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/core/src/registry/components/ui/steps.tsx",
+          "packages/core/src/registry/components/ui/tabs.tsx",
+          "packages/core/src/registry/components/ui/tooltip.tsx",
+          "packages/hooks/src/create-clipboard.ts",
+          "packages/hooks/src/create-controllable-signal.ts"
+        ]
+      }
+    },
+    "nikala-ui/Switch": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/switch.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/switch.tsx",
+          "integrity": "f90d347305f1317a6d4073c5a6ca1a9af780c5a84be064bc9bfc1739fcd3eeae"
+        },
+        {
+          "path": "packages/hooks/src/create-controllable-signal.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-controllable-signal.ts",
+          "integrity": "83cf5facb4103223b44730256dba9f51b0120d411f0331b3463a6d1c00b59003"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority"
+      ],
+      "exampleSource": {
+        "path": "demos/switch.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/switch.tsx",
+        "integrity": "57910b4d87180a8e41234a90a5ab4f674ab0200d4db21c7bb156cf37d5d25d83",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/label.tsx",
+          "packages/core/src/registry/components/ui/switch.tsx",
+          "packages/hooks/src/create-controllable-signal.ts"
+        ]
+      }
+    },
+    "nikala-ui/Table": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/table.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/table.tsx",
+          "integrity": "89752f170d760b91c9a32aafb668db315973a18fbcc9b4ff672e878bab049186"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority",
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/table.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/table.tsx",
+        "integrity": "ee8166a67711ee27bc35c50e2df80004fc395f9359ac87bf9617883212d82d16",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/avatar.tsx",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/checkbox.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/core/src/registry/components/ui/table.tsx",
+          "packages/hooks/src/create-controllable-signal.ts"
+        ]
+      }
+    },
+    "nikala-ui/Table of Contents": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "list",
+        "scroll-area"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/list.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/list.tsx",
+          "integrity": "20b2f0e76d7bab7a9a798733930b9bc541172b6694126c97382f00fe5a4e135b"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/scroll-area.tsx",
+          "integrity": "2ab12fac5a92c02aa5596ad1cd8d3b332cd41b91cd17193c8e40dbe869467cd4"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/table-of-contents.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/table-of-contents.tsx",
+          "integrity": "08ae04cb0a7c470da5a2fd56c4816c6c14b15be4dbeb1a2187d836acd83bec0e"
+        },
+        {
+          "path": "packages/hooks/src/create-resize-observer.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-resize-observer.ts",
+          "integrity": "6afe34f5ad4f60c380de7e3ac4473ec31e1c04e87d56dd7c8ec5dfa957e668d6"
+        },
+        {
+          "path": "packages/hooks/src/create-scroll-position.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-scroll-position.ts",
+          "integrity": "5f4907289efc98a5c4c85c7e73d4980b9533b76e6c69e3532483b92220b8ffe9"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/table-of-contents.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/table-of-contents.tsx",
+        "integrity": "fd0a541a9c7e85683da84babb374d642ed40928bc390f499ba33fff0bec8446a",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/list.tsx",
+          "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "packages/core/src/registry/components/ui/table-of-contents.tsx",
+          "packages/hooks/src/create-resize-observer.ts",
+          "packages/hooks/src/create-scroll-position.ts"
+        ]
+      }
+    },
+    "nikala-ui/Tabs": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/tabs.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/tabs.tsx",
+          "integrity": "0c95a46b4fea7aeb90b5352aabfd1564de362a34fbd3e0c2cb504450bba46e35"
+        },
+        {
+          "path": "packages/hooks/src/create-controllable-signal.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-controllable-signal.ts",
+          "integrity": "83cf5facb4103223b44730256dba9f51b0120d411f0331b3463a6d1c00b59003"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority"
+      ],
+      "exampleSource": {
+        "path": "demos/tabs.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/tabs.tsx",
+        "integrity": "fe6590c2273bb4a6baf3689d3cc8fbf419c03532232a1323d90f4a6e6c974d4a",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/card.tsx",
+          "packages/core/src/registry/components/ui/input.tsx",
+          "packages/core/src/registry/components/ui/label.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/core/src/registry/components/ui/tabs.tsx",
+          "packages/hooks/src/create-controllable-signal.ts"
+        ]
+      }
+    },
+    "nikala-ui/Textarea": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/textarea.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/textarea.tsx",
+          "integrity": "a2d775310897c515cab80fad4ef4f9efa19a4e2f397dbeed1a1a48719871a8cc"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority"
+      ],
+      "exampleSource": {
+        "path": "demos/textarea.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/textarea.tsx",
+        "integrity": "57c71671f7ebec37a7118a048ecc02e93c31a7807bc6168f43087c9fe0c03d36",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/label.tsx",
+          "packages/core/src/registry/components/ui/textarea.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Theme Manager": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu",
+        "scroll-area",
+        "spinner"
+      ],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/button.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/button.tsx",
+          "integrity": "c66992a954cc6cd9f64e95b14909eeb47e204f319c46e7b5e349537811538ede"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/dropdown-menu.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/dropdown-menu.tsx",
+          "integrity": "dae45be18827690c20c239c22c76f60d24ea036f3274bd0ab0ebf1c937f63476"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/scroll-area.tsx",
+          "integrity": "2ab12fac5a92c02aa5596ad1cd8d3b332cd41b91cd17193c8e40dbe869467cd4"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/spinner.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/spinner.tsx",
+          "integrity": "a4c4d10d1fa58a5486c2b1ddc2659e5a51c4709129127feef1c14c74db344718"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/theme-toggle.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/theme-toggle.tsx",
+          "integrity": "0b2785d5fd1b2a1edef8f4ae05f6cb2ccae2ed295159ae94cab5dca8dbec8156"
+        },
+        {
+          "path": "packages/core/src/registry/providers/theme-provider.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/providers/theme-provider.tsx",
+          "integrity": "2852d6be3874bdd3932d6f4af149d0a02d4ec71c908f6a5e92b15e53a36d8e0b"
+        },
+        {
+          "path": "packages/core/src/registry/providers/theme-script.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/providers/theme-script.tsx",
+          "integrity": "79ce38afbaefa9b6be5993065a527350da405d5921b34f0ab6a22870a73bb4d6"
+        },
+        {
+          "path": "packages/core/src/registry/providers/theme-transitions.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/providers/theme-transitions.ts",
+          "integrity": "cef3a70e67fcff1927a90692a51ab36ccd2d9863376cfe3678e4e3de719a2057"
+        },
+        {
+          "path": "packages/hooks/src/create-click-outside.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-click-outside.ts",
+          "integrity": "bb94e66a377936849d9e8720d02e973180c1f011813464777ef479c2e30ae882"
+        },
+        {
+          "path": "packages/hooks/src/create-resize-observer.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-resize-observer.ts",
+          "integrity": "6afe34f5ad4f60c380de7e3ac4473ec31e1c04e87d56dd7c8ec5dfa957e668d6"
+        },
+        {
+          "path": "packages/hooks/src/create-scroll-position.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-scroll-position.ts",
+          "integrity": "5f4907289efc98a5c4c85c7e73d4980b9533b76e6c69e3532483b92220b8ffe9"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/theme-manager.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/theme-manager.tsx",
+        "integrity": "2d54ed8e4578894b88505f491178f1399e9d78889bbc609d54ba3d91fc312398",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/alert.tsx",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/dropdown-menu.tsx",
+          "packages/core/src/registry/components/ui/scroll-area.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/core/src/registry/components/ui/tabs.tsx",
+          "packages/core/src/registry/components/ui/theme-toggle.tsx",
+          "packages/core/src/registry/providers/theme-provider.tsx",
+          "packages/core/src/registry/providers/theme-script.tsx",
+          "packages/core/src/registry/providers/theme-transitions.ts",
+          "packages/hooks/src/create-click-outside.ts",
+          "packages/hooks/src/create-controllable-signal.ts",
+          "packages/hooks/src/create-resize-observer.ts",
+          "packages/hooks/src/create-scroll-position.ts"
+        ]
+      }
+    },
+    "nikala-ui/Timeline": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/timeline.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/timeline.tsx",
+          "integrity": "e7f514c0d7e974061616b02387b7991dccc5195f3ad36c0b58f68219b6d63e72"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/timeline.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/timeline.tsx",
+        "integrity": "6022aeb17ca70c9131c84957b95aa938d854887d93a155a4d6edcef08737ce54",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/badge.tsx",
+          "packages/core/src/registry/components/ui/timeline.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Toast": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/toast.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/toast.tsx",
+          "integrity": "4994c3fc6af028238d968e57750807bb551384d1fff3dc73f0a1aeb53e2802de"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/toast.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/toast.tsx",
+        "integrity": "85e28fa0700bc6f1ef82b4e96763ccbe1e596dd23120a2daedf9d369003d713b",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/core/src/registry/components/ui/toast.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Toggle": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/toggle.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/toggle.tsx",
+          "integrity": "f37c16aee538897c23d46e198ea4085310d65637aeee89028e78c2d23c1045cd"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/toggle.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/toggle.tsx",
+        "integrity": "5ebd91bf399e7c9cfbc3ee83222b2c3d457becb91446822812bbb30a531c2af7",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/toggle.tsx"
+        ]
+      }
+    },
+    "nikala-ui/Toggle Group": {
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/toggle-group.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/toggle-group.tsx",
+          "integrity": "4ae157abd1f1ad1bb4aca4ec3f4994b717b84f64fc09e8dca7c4f7e8d8e10d3d"
+        },
+        {
+          "path": "packages/hooks/src/create-controllable-signal.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/hooks/src/create-controllable-signal.ts",
+          "integrity": "83cf5facb4103223b44730256dba9f51b0120d411f0331b3463a6d1c00b59003"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "demos/toggle-group.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/toggle-group.tsx",
+        "integrity": "c96d80e263f84bed60ccd8bbb99bfc441d2f1c7ccca9c5face168cb08dfaac83",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/toggle-group.tsx",
+          "packages/hooks/src/create-controllable-signal.ts"
+        ]
+      }
+    },
+    "nikala-ui/Tooltip": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "packages/core/src/lib/cn.ts",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/lib/cn.ts",
+          "integrity": "11af8c331d1b20328cfe6d31f713cbd67cbd761bc198de7879ff717afb2dbb25"
+        },
+        {
+          "path": "packages/core/src/registry/components/ui/tooltip.tsx",
+          "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/packages/core/src/registry/components/ui/tooltip.tsx",
+          "integrity": "ad9c8724b447cf404fbed7cb3176e9dc42e0a1205f5f4429de1a72d8793f8e46"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "class-variance-authority"
+      ],
+      "exampleSource": {
+        "path": "demos/tooltip.tsx",
+        "url": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/routes/docs/components/tooltip.tsx",
+        "integrity": "d69aa861f0c1bffe282ba2cb79b3d746afad6cd537859ad3ed33f6709ac24ca3",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "packages/core/src/lib/cn.ts",
+          "packages/core/src/registry/components/ui/button.tsx",
+          "packages/core/src/registry/components/ui/spinner.tsx",
+          "packages/core/src/registry/components/ui/tooltip.tsx"
+        ]
+      }
+    }
+  }
+}

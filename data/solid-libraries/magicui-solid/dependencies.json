@@ -1,0 +1,3518 @@
+{
+  "checkedAt": "2026-10-30T01:04:54.305Z",
+  "revision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+  "method": "Public dependencies combine pinned component requirements with selected-demo imports. Component and demo-only requirements retain separate provenance; Solid JSX requires the recorded Solid runtime. Unknown local references remain explicit.",
+  "entries": {
+    "magicui-solid/Android": {
+      "dependencies": [
+        "solid-js"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/registry/magicui/android.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/android.tsx",
+          "integrity": "42afd3f5ee952e095414228df8e54c305d9a2a006e0e3575864a27d3ba40461c"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "solid-js"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/AndroidDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/AndroidDemo.tsx",
+        "integrity": "98c8a448e15b6616cc057768442452dee8770c40566988c5f56ed8176236f964",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/registry/magicui/android.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Animated Beam": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/animated-beam.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/animated-beam.tsx",
+          "integrity": "2c48412388309d1d58b7303dbf4a134041663135c437d63c740bab21699627c9"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/AnimatedBeamDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/AnimatedBeamDemo.tsx",
+        "integrity": "fb84f724409c93b74fdb1db682fc4bb667fdf48bd941f2bae927b428f7d50274",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/demos/shared/circle.tsx",
+          "src/demos/shared/icons.tsx",
+          "src/lib/utils.ts",
+          "src/registry/magicui/animated-beam.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Animated Circular Progress Bar": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/animated-circular-progress-bar.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/animated-circular-progress-bar.tsx",
+          "integrity": "0039a901d281831a6f55989f218feae00fb0ae2c3f32241992c6b400c7c6cb25"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/AnimatedCircularProgressBarDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/AnimatedCircularProgressBarDemo.tsx",
+        "integrity": "499a7efe7c642f8a1303d9dc4a3720c97f0043914ee6bc0917cf2efdfa0854b1",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/animated-circular-progress-bar.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Animated Gradient Text": {
+      "dependencies": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/animated-gradient-text.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/animated-gradient-text.tsx",
+          "integrity": "ef50392295ad26bb263043fc0727c3e30e8916ee6a67a0475321800ab4253e61"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "src/demos/AnimatedGradientTextDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/AnimatedGradientTextDemo.tsx",
+        "integrity": "ea7192622c51716b3b55315f2206310f151a6bb5aacf1286cccc77a9c6b2f894",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/animated-gradient-text.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Animated Grid Pattern": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/animated-grid-pattern.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/animated-grid-pattern.tsx",
+          "integrity": "32b0cce0dbab7969f3a6cf57ca1a6924661bbc53de10811cc0d68746dcbee1ad"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/AnimatedGridPatternDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/AnimatedGridPatternDemo.tsx",
+        "integrity": "aa5783917980de716fccac20cc08f3c4d72a34573d55bc15f281f699b58c7e43",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/animated-grid-pattern.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Animated List": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/flip",
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/flip.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/flip.ts",
+          "integrity": "71c3d13490a08880b3c6466d22f217a021abf6f65554e731952c23b52cdfc8f4"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/animated-list.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/animated-list.tsx",
+          "integrity": "c7b67c518829c476495732b6ae5795af98ede5a8fbc85b50bd953bef454d670f"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/AnimatedListDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/AnimatedListDemo.tsx",
+        "integrity": "0afa4358d46648a3ca1406b33ba97c107b7a025b598ff50f5a8bdf85467a8fa5",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/flip.ts",
+          "src/lib/utils.ts",
+          "src/registry/magicui/animated-list.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Animated Shiny Text": {
+      "dependencies": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/animated-shiny-text.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/animated-shiny-text.tsx",
+          "integrity": "193493d186163a1ce54ca99f1795af799c676f12c8f772c04b0f6aa5f6c3fdf6"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "src/demos/AnimatedShinyTextDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/AnimatedShinyTextDemo.tsx",
+        "integrity": "f54a743e2468807222a0d6d41107d267ea8efe13c05e86f30376d52f904bdf6c",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/animated-shiny-text.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Theme Toggler": {
+      "dependencies": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/animated-theme-toggler.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/animated-theme-toggler.tsx",
+          "integrity": "39f92cdb764243c7755f413d11027ecdef735c79d471681af5b61827813be960"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/theme-toggler.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/content/docs/docs/components/animated-theme-toggler.mdx",
+        "integrity": "9c6bb41f8bdb770117abf9ba2a82dcd39bb515826026e7b35e862710a64d336b",
+        "kind": "authored-extraction-of-pinned-documentation",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/animated-theme-toggler.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Aurora Text": {
+      "dependencies": [
+        "solid-js"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/registry/magicui/aurora-text.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/aurora-text.tsx",
+          "integrity": "f58e40d15efa3198f2f4306b3694facd2a13b1c637df9fd9f116a67004952d27"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "solid-js"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/AuroraTextDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/AuroraTextDemo.tsx",
+        "integrity": "b85d190d53ffd588981c3fd4a067270558b014a3dd71974319621797ea225ba9",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/registry/magicui/aurora-text.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Avatar Circles": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/avatar-circles.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/avatar-circles.tsx",
+          "integrity": "998aac6ff6cd5d896daeafe69e269cf8a62c857f6b2b6e67fea1c8b0cc29c574"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/AvatarCirclesDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/AvatarCirclesDemo.tsx",
+        "integrity": "63bb76c0d7be474018005ce31b72d7e00535d626bf00f31e4dd0bcd42b045e9d",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/avatar-circles.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Backlight": {
+      "dependencies": [
+        "solid-js"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/registry/magicui/backlight.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/backlight.tsx",
+          "integrity": "e5ebc82581e749934bdc828784b866b33b685fd375b872efbef357e92a2446b1"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "solid-js"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/BacklightVideoDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/BacklightVideoDemo.tsx",
+        "integrity": "a2aa22a302944b7c44666f8045d680fe3fca2dac58347651dcbc4bbd0e50822c",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/registry/magicui/backlight.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Bento Grid": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme",
+        "https://www.solid-ui.com/r/button.json"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/components/ui/button.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/components/ui/button.tsx",
+          "integrity": "f439829ff3c4ca0f71f69f9a5405002795ccfda8bd8f6a5610d6f520b3134fed"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/bento-grid.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/bento-grid.tsx",
+          "integrity": "c037b7391b4bddde6cf2ecf4412fd57c4c83d624b5381d2262de39a2a4e35794"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "motion"
+      ],
+      "exampleSource": {
+        "path": "src/demos/BentoGridDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/BentoGridDemo.tsx",
+        "integrity": "776a60a30b0892442dd7ee524091cd832972ae14de0d7fe93dea6547ca29fb30",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/components/ui/button.tsx",
+          "src/demos/AnimatedBeamMultipleOutputsDemo.tsx",
+          "src/demos/shared/circle.tsx",
+          "src/demos/shared/icons.tsx",
+          "src/lib/flip.ts",
+          "src/lib/utils.ts",
+          "src/registry/magicui/animated-beam.tsx",
+          "src/registry/magicui/animated-list.tsx",
+          "src/registry/magicui/bento-grid.tsx",
+          "src/registry/magicui/marquee.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Blur Fade": {
+      "dependencies": [
+        "motion",
+        "solid-js"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/registry/magicui/blur-fade.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/blur-fade.tsx",
+          "integrity": "d808093f0b400b0c418d7008fc3ec9dc24536f3c1f54c9949d98a8ba582a68b8"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "motion",
+        "solid-js"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/BlurFadeTextDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/BlurFadeTextDemo.tsx",
+        "integrity": "e7730b1c635f34cc661e26ca59af583d68e2009a13b5fe540f585e7f7a0ebc83",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/registry/magicui/blur-fade.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Border Beam": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/border-beam.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/border-beam.tsx",
+          "integrity": "0388921026b683af79db8da23bd81ea68650862bef1bfd0092600909e90b208e"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "@kobalte/core",
+        "class-variance-authority"
+      ],
+      "exampleSource": {
+        "path": "src/demos/BorderBeamDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/BorderBeamDemo.tsx",
+        "integrity": "f460750a793dbd7d02abe1b4ee1e98327d3fe2cee09a93ca289d21f4b489da54",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/components/ui/button.tsx",
+          "src/lib/utils.ts",
+          "src/registry/magicui/border-beam.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Code Comparison": {
+      "dependencies": [
+        "@shikijs/themes",
+        "@shikijs/transformers",
+        "@shikijs/types",
+        "clsx",
+        "lucide-solid",
+        "shiki",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/code-comparison.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/code-comparison.tsx",
+          "integrity": "34f6b2056a3c1e3cb1c706ed3692259283ada1232ac275a9d14c2ce396a5acd6"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@shikijs/themes",
+        "@shikijs/transformers",
+        "@shikijs/types",
+        "clsx",
+        "lucide-solid",
+        "shiki",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/CodeComparisonDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/CodeComparisonDemo.tsx",
+        "integrity": "eed6b19a2957d4982291240f2ab947e76927a1bca5e0bcd9cdad63cd9570b601",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/code-comparison.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Comic Text": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/comic-text.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/comic-text.tsx",
+          "integrity": "bd9a0a54d1ce76591de7c3ddeccfbad579d52e0648f1f326e0078e9b2876e8fd"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/ComicTextDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/ComicTextDemo.tsx",
+        "integrity": "d66434dec6f0cd0a7650fc09800a1e958056efbf9e7b97f34a8cc1c692e7b880",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/comic-text.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Confetti": {
+      "dependencies": [
+        "@kobalte/core",
+        "@types/canvas-confetti",
+        "canvas-confetti",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme",
+        "https://www.solid-ui.com/r/button.json"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/components/ui/button.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/components/ui/button.tsx",
+          "integrity": "f439829ff3c4ca0f71f69f9a5405002795ccfda8bd8f6a5610d6f520b3134fed"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/confetti.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/confetti.tsx",
+          "integrity": "a331816c26d5b249af04447341254d99c48c58b1338235eb2930ad02cbd4a698"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "@types/canvas-confetti",
+        "canvas-confetti",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/ConfettiDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/ConfettiDemo.tsx",
+        "integrity": "2e4f9d54468a3a52f7b670427b51fa266fd9f8181e03c7c9e02c6f033420e94f",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/components/ui/button.tsx",
+          "src/lib/utils.ts",
+          "src/registry/magicui/confetti.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Cool Mode": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/registry/magicui/cool-mode.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/cool-mode.tsx",
+          "integrity": "ce40ad91e0439ee87def251a10517dbad115117854d127b4d0c9a22aeea8d1cb"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "solid-js"
+      ],
+      "exampleDependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "exampleSource": {
+        "path": "src/demos/CoolModeDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/CoolModeDemo.tsx",
+        "integrity": "f99a6b1bb86e7fb83d133e1a8fdb9aa76cc159a483b6767bc3b8ecd47ef18eac",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/components/ui/button.tsx",
+          "src/lib/utils.ts",
+          "src/registry/magicui/cool-mode.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Dia Text Reveal": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/create-in-view",
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/create-in-view.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/create-in-view.ts",
+          "integrity": "5257f3cdcc77438d2bc9d9485b4f5db75b1176a2a8d0f3c96df29b1b296b4963"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/dia-text-reveal.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/dia-text-reveal.tsx",
+          "integrity": "0cd89335bf6af8797c6b590db0f38d2dfb216f470eae5166411e99ce74cb76c5"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/DiaTextRevealDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/DiaTextRevealDemo.tsx",
+        "integrity": "cba8451caf64758daca4ae5eb49f0a9dba063d28dcf7da05ab032b24d8836686",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/create-in-view.ts",
+          "src/lib/utils.ts",
+          "src/registry/magicui/dia-text-reveal.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Dock": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/dock.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/dock.tsx",
+          "integrity": "786d7978a3da6c7d567ecc2075cb4e32bf4b5c34d378b6fa29134514a98cf5d2"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "class-variance-authority",
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "@kobalte/core",
+        "lucide-solid"
+      ],
+      "exampleSource": {
+        "path": "src/demos/DockDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/DockDemo.tsx",
+        "integrity": "734e66c797aaf098f2c3ce93e4d16ef59d32243dc1d0e37d2de796383ba35622",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/components/ui/button.tsx",
+          "src/components/ui/tooltip.tsx",
+          "src/demos/shared/icons.tsx",
+          "src/lib/utils.ts",
+          "src/registry/magicui/dock.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Dot Pattern": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/dot-pattern.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/dot-pattern.tsx",
+          "integrity": "821750d14a831f5d1270eaf98d6d964f3617079796a08864058c23b43a15b731"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/DotPatternDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/DotPatternDemo.tsx",
+        "integrity": "c2de64fc0b3df74f678d353b98fc5c05277dcbb862d4659a1728361f6dc42e91",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/dot-pattern.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Dotted Map": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "svg-dotted-map",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/dotted-map.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/dotted-map.tsx",
+          "integrity": "a347b2538115482cf9ebfd09370609de5bdbb6be8e8d3602cf21ebe5f8a36218"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "svg-dotted-map",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/DottedMapDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/DottedMapDemo.tsx",
+        "integrity": "eab3158c3cfbb89e41de6287a02d4f0d968446232407cc68eba0cbb00eebd347",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/dotted-map.tsx"
+        ]
+      }
+    },
+    "magicui-solid/File Tree": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme",
+        "https://www.solid-ui.com/r/button.json"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/components/ui/button.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/components/ui/button.tsx",
+          "integrity": "f439829ff3c4ca0f71f69f9a5405002795ccfda8bd8f6a5610d6f520b3134fed"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/file-tree.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/file-tree.tsx",
+          "integrity": "1b23b7df3fcf20d94faca06cc861986456a9c288201582959da8566b2c2771c6"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/FileTreeDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/FileTreeDemo.tsx",
+        "integrity": "7f129ed0743a8b4d1106d63a710f54c04244eaf676be3beaa0bf859ac19ce713",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/components/ui/button.tsx",
+          "src/lib/utils.ts",
+          "src/registry/magicui/file-tree.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Flickering Grid": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/flickering-grid.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/flickering-grid.tsx",
+          "integrity": "20681c2da48af569e76ef44735d7d3daa182cf585624c28e9510fef03d8601fa"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/FlickeringGridDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/FlickeringGridDemo.tsx",
+        "integrity": "3097b6ad791e02055c14699792b74baa6b67acf5be4a0c953f4f1027773dac61",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/flickering-grid.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Glare Hover": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/glare-hover.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/glare-hover.tsx",
+          "integrity": "4f8661b0d8bd818f09848ff531b115a7e4f9dd1cb1eb6e796347540284028e58"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "@kobalte/core",
+        "class-variance-authority"
+      ],
+      "exampleSource": {
+        "path": "src/demos/GlareHoverDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/GlareHoverDemo.tsx",
+        "integrity": "188a7b29ad81710a3145c96dd2c08738e99689e775b869a03ed9e2e66fb25cfd",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/components/ui/button.tsx",
+          "src/lib/utils.ts",
+          "src/registry/magicui/glare-hover.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Globe": {
+      "dependencies": [
+        "clsx",
+        "cobe",
+        "cobe@0.6.5",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/globe.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/globe.tsx",
+          "integrity": "1196094d0d0faa9c2cdc5a044ae8e52c97e486f2b913b54841778f402fda2e5b"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "cobe",
+        "cobe@0.6.5",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/GlobeDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/GlobeDemo.tsx",
+        "integrity": "98738d26bc0c72c75838fabcbc95848586f978f5da460798beb3237ae597c5e8",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/globe.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Glyph Matrix": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/glyph-matrix.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/glyph-matrix.tsx",
+          "integrity": "ab0b9dc19c9c714003a4f73ac9fe386b2e562dd133021dc0a813f405b5c062f9"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/GlyphMatrixDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/GlyphMatrixDemo.tsx",
+        "integrity": "b76b5cf2cfa33d5bcb611612bafa94a3401b0556144321c30cb50a0f9cf44138",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/glyph-matrix.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Grid Pattern": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/grid-pattern.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/grid-pattern.tsx",
+          "integrity": "0fe50ac00c7a031ea96fa66d59bfbc2dc5b34fa524af5f1529733783c158679f"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/GridPatternDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/GridPatternDemo.tsx",
+        "integrity": "b489584e21bcb5f6a337e46478d041661ec9262b10f5990ebfd52c2027eb57f6",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/grid-pattern.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Hero Video Dialog": {
+      "dependencies": [
+        "clsx",
+        "lucide-solid",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/hero-video-dialog.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/hero-video-dialog.tsx",
+          "integrity": "93a8fe261a936adeb14d18e079e45f15708e5b60ae4191c58aab5f8ac16b10c2"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "lucide-solid",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/HeroVideoDialogDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/HeroVideoDialogDemo.tsx",
+        "integrity": "6a3c633014b50fdbf0ed18e833e8956cd5e7b4fa6e267f0f09ee7a003118d1b5",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/hero-video-dialog.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Hexagon Pattern": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/hexagon-pattern.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/hexagon-pattern.tsx",
+          "integrity": "8fb0533ad738eb867edb854c93c598028ebcf8ac899f304ff64c1bbce80e81a1"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/HexagonPatternDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/HexagonPatternDemo.tsx",
+        "integrity": "d217f24fd70c5797602017009bba8f2503c4830a6a356ac9fd7d807f64ea9b12",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/hexagon-pattern.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Text Highlighter": {
+      "dependencies": [
+        "motion",
+        "rough-notation",
+        "solid-js"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/create-in-view",
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/create-in-view.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/create-in-view.ts",
+          "integrity": "5257f3cdcc77438d2bc9d9485b4f5db75b1176a2a8d0f3c96df29b1b296b4963"
+        },
+        {
+          "path": "src/registry/magicui/highlighter.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/highlighter.tsx",
+          "integrity": "03ea428fbed10b6a752bf49ada4d233aa08968b2d72ad08cfd2db962cfb9d256"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "motion",
+        "rough-notation",
+        "solid-js"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/HighlighterDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/HighlighterDemo.tsx",
+        "integrity": "7abe5642dc98476d39969658df9fc520320e4d9e118f4d3a8605e80ae5fb88c7",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/create-in-view.ts",
+          "src/registry/magicui/highlighter.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Hyper Text": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/hyper-text.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/hyper-text.tsx",
+          "integrity": "9a305099ca0c41262b67a0882656d28b9d9f2606943452a38aa477cbb19d8dbf"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/HyperTextDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/HyperTextDemo.tsx",
+        "integrity": "dbc54dedeb7d6f37e74d1d9b043a2ae088669be12ffff0c6ec25793f68f2b7a3",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/hyper-text.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Icon Cloud": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme",
+        "https://www.solid-ui.com/r/button.json"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/components/ui/button.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/components/ui/button.tsx",
+          "integrity": "f439829ff3c4ca0f71f69f9a5405002795ccfda8bd8f6a5610d6f520b3134fed"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/icon-cloud.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/icon-cloud.tsx",
+          "integrity": "ddfba6028d3e5c03e147252dbe7d2a58288927f16f62ae25407e788a68d1362f"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/IconCloudDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/IconCloudDemo.tsx",
+        "integrity": "7f0a4e5a2faa0883d6a767e90ebb2dac53bc11ef368c483a3c36ee0cda16099b",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/components/ui/button.tsx",
+          "src/lib/utils.ts",
+          "src/registry/magicui/icon-cloud.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Interactive Grid Pattern": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/interactive-grid-pattern.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/interactive-grid-pattern.tsx",
+          "integrity": "a05b8975a4d7c5e2be511f4818b2f55b336bd54b3efa969c75fffd8a1a085b01"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/InteractiveGridPatternDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/InteractiveGridPatternDemo.tsx",
+        "integrity": "088df5b977c7ac7c1e7173a6febb7a3b15326cb436090e001add0ac22fdd1e13",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/interactive-grid-pattern.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Interactive Hover Button": {
+      "dependencies": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/interactive-hover-button.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/interactive-hover-button.tsx",
+          "integrity": "b0eca6d643bd5cb2beae006998be545568096d50b376a80bae5e1c06fd3cd2ae"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/InteractiveHoverButtonDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/InteractiveHoverButtonDemo.tsx",
+        "integrity": "3251f13490e5e8c259dd1f3bddbaa2383de08aab5c59b19b5da4e899c2452f80",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/interactive-hover-button.tsx"
+        ]
+      }
+    },
+    "magicui-solid/iPhone": {
+      "dependencies": [
+        "solid-js"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/registry/magicui/iphone.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/iphone.tsx",
+          "integrity": "113f72a8f60a7e0131d7f1f90e7f122cd17c6a087d3b74d239a1843fc6dfd9fb"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "solid-js"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/IphoneDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/IphoneDemo.tsx",
+        "integrity": "5c28975b75d73b934cbd8de0e1ae7e24a2b0f8df1d1359abe4a6f3471a444747",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/registry/magicui/iphone.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Kinetic Text": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/kinetic-text.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/kinetic-text.tsx",
+          "integrity": "b1dee344d56e2bae89d52dcdca6b8a88be92812e2debb07fb859ba58ff14760e"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/KineticTextDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/KineticTextDemo.tsx",
+        "integrity": "4c50a0f7ec024be3136898440566db211a8358bf27412de09ac8676148e634e0",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/kinetic-text.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Lens": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/registry/magicui/lens.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/lens.tsx",
+          "integrity": "7f75cc796867342e5946e9937cbcb0316a8267377a4193777ae09a45ee8d0e62"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "motion",
+        "solid-js"
+      ],
+      "exampleDependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "exampleSource": {
+        "path": "src/demos/LensDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/LensDemo.tsx",
+        "integrity": "b144ddb59087e980a125eddefe11861a6bff6e9d59328930bb5027f1d4de2093",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/components/ui/button.tsx",
+          "src/lib/utils.ts",
+          "src/registry/magicui/lens.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Light Rays": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/light-rays.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/light-rays.tsx",
+          "integrity": "e891c455227c92d085f19737b2e2dda1f0e4b2f5295be2ff30e89f66786a3746"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/LightRaysDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/LightRaysDemo.tsx",
+        "integrity": "b44f776cc45f0c413475a86c38607f9f7220ab41622d5771f8ba5c25b1094640",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/light-rays.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Line Shadow Text": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/line-shadow-text.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/line-shadow-text.tsx",
+          "integrity": "cb26de440545057b139e882c64f13c7a3d56d704497c2f89bd93aec9d140a2cf"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/LineShadowTextDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/LineShadowTextDemo.tsx",
+        "integrity": "63bd97751981c9b2327a8959ad962af05078cd04b850ccfa55ab48dfa3d71a4c",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/demos/shared/theme.tsx",
+          "src/lib/utils.ts",
+          "src/registry/magicui/line-shadow-text.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Magic Card": {
+      "dependencies": [
+        "@kobalte/core",
+        "@solid-primitives/spring",
+        "class-variance-authority",
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/magic-card.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/magic-card.tsx",
+          "integrity": "47dbaa3d0b6e134b267adec795fb47c3bb30ccce24abacc9aaf2491b28d00234"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@solid-primitives/spring",
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "@kobalte/core",
+        "class-variance-authority"
+      ],
+      "exampleSource": {
+        "path": "src/demos/MagicCardDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/MagicCardDemo.tsx",
+        "integrity": "4f69277cb60c59fc8259984b1bee0df67f87efeaf9e35f42da921d277bc20538",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/components/ui/button.tsx",
+          "src/demos/shared/theme.tsx",
+          "src/lib/utils.ts",
+          "src/registry/magicui/magic-card.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Marquee": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/marquee.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/marquee.tsx",
+          "integrity": "9eb0a05a87f3f15936b089f1379f67f9fd5c99eeb3b3c3524169b5ff2468c6cb"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/MarqueeDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/MarqueeDemo.tsx",
+        "integrity": "ee437946d2b2e71f0004acb5ad9cb9368b12c1ec796a7891744e241d40ba2fcf",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/marquee.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Meteors": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/meteors.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/meteors.tsx",
+          "integrity": "118b71ac657a63037d3ebfa898b9e779ba9af9cca901aaeedd1274591287c7f4"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/MeteorsDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/MeteorsDemo.tsx",
+        "integrity": "b62228e568f688402df1f7d4a916c8124c851cad7b2b0f739b20f5e5de6e27be",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/meteors.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Morphing Text": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/morphing-text.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/morphing-text.tsx",
+          "integrity": "ed0fa5ee2663a5509495048571eb4968a974494bdb6ebe44759065ee667e25cf"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/MorphingTextDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/MorphingTextDemo.tsx",
+        "integrity": "50043575b9c396029d7209ed1668e3d5c5bf91d1d86fc447093403becd542817",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/morphing-text.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Neon Gradient Card": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/neon-gradient-card.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/neon-gradient-card.tsx",
+          "integrity": "2b393c2ac51085ea0447434b676db657d01e01923f18d4ac0fdfd705874cc596"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/NeonGradientCardDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/NeonGradientCardDemo.tsx",
+        "integrity": "9b7cb7c303c87f9463a8698927bb76c72e444c194dbe364da3826e1b76c98d8a",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/neon-gradient-card.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Noise Texture": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/noise-texture.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/noise-texture.tsx",
+          "integrity": "298753af22fae2975dc1110916e1fcecfa92c39e5c6b1a6272db6687ef695b81"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/NoiseTextureDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/NoiseTextureDemo.tsx",
+        "integrity": "cb780f5e0f457f5376373159e8fdc32d6254ad47d3678cc5e6f8820180440e8f",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/noise-texture.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Number Ticker": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/create-in-view",
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/create-in-view.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/create-in-view.ts",
+          "integrity": "5257f3cdcc77438d2bc9d9485b4f5db75b1176a2a8d0f3c96df29b1b296b4963"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/number-ticker.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/number-ticker.tsx",
+          "integrity": "9d64dcd2f64a3916b054158e8bec98264c6f41c3fce427d9ca51edbc59306e3a"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/NumberTickerDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/NumberTickerDemo.tsx",
+        "integrity": "db36544238efe393eb70fbb0766b723d572fac732aa43f89e3bb5a6fde2d7619",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/create-in-view.ts",
+          "src/lib/utils.ts",
+          "src/registry/magicui/number-ticker.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Orbiting Circles": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/orbiting-circles.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/orbiting-circles.tsx",
+          "integrity": "8e685f54129644728d22ea737f2573686748c76a10e96eba789d0259556b25cf"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/OrbitingCirclesDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/OrbitingCirclesDemo.tsx",
+        "integrity": "03cb68a659e946de4c0a7cc8a95efed6b7f9f8d1c137ea5b8913f26c9be9d4e2",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/demos/shared/icons.tsx",
+          "src/lib/utils.ts",
+          "src/registry/magicui/orbiting-circles.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Particles": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/particles.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/particles.tsx",
+          "integrity": "244c9a1638dcad961d61f459ebb1b13f3f0d6735df23536b26fddc83bd99c724"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/ParticlesDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/ParticlesDemo.tsx",
+        "integrity": "2f05f4eabcd263afc718b32c06a7014ad4c2c6a51dcc48c59e154d13ca977226",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/particles.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Pixel Image": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/pixel-image.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/pixel-image.tsx",
+          "integrity": "7d76be639ed17bce7df1bbac44fb3ca8ded04affa0159860f3f3a4256c6685f8"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/PixelImageDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/PixelImageDemo.tsx",
+        "integrity": "1a0980cc6a223016426a5a7dfac8fcaf4d7b09e04ef2e755193731317cb7cf87",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/pixel-image.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Pointer": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/pointer.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/pointer.tsx",
+          "integrity": "6905fd9c968ac18c0148edb23c6f7164aba1ef7a5816dbb0d91dc6faf6f303b6"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/PointerDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/PointerDemo.tsx",
+        "integrity": "7d34fea519970be610b4cb40c90a3f6f0543387b9244e480c5d50a39986f3594",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/pointer.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Progressive Blur": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/progressive-blur.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/progressive-blur.tsx",
+          "integrity": "46cc919b56d19c4075124063be7e4d505624201b1b4456d4361321916ad9448e"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/ProgressiveBlurDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/ProgressiveBlurDemo.tsx",
+        "integrity": "2d6f5e341bc7b344d8536fd3ccb5b7da9d35f7a0233e068eeb82f9a77fca6ce1",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/progressive-blur.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Pulsating Button": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/pulsating-button.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/pulsating-button.tsx",
+          "integrity": "31e2864e17ebb84626f473386f54709a6a76b48ea88ba7f2c6c58c3f7f61ccde"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/PulsatingButtonDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/PulsatingButtonDemo.tsx",
+        "integrity": "f58381f256eae9b911865b5ae05e66c114cf405b00773d474cdc92894f50c030",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/pulsating-button.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Rainbow Button": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/rainbow-button.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/rainbow-button.tsx",
+          "integrity": "fb8d09374533ba191d559cff93b2ebfb71e773cd27148aff1f6bd132a560a4a4"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/RainbowButtonDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/RainbowButtonDemo.tsx",
+        "integrity": "1d68b4e184439053cea511de677d078551dab2d96bf1573dad60d6a8fb3b4fca",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/rainbow-button.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Retro Grid": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/retro-grid.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/retro-grid.tsx",
+          "integrity": "921e18c5cb6112e3b3f08a6d945d48505360262d522188febbb8ebcbc6c1f700"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/RetroGridDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/RetroGridDemo.tsx",
+        "integrity": "5915328893775ad6e1802856a28e324a6aff2c8bb6de266da2e65be2a3c7eac0",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/retro-grid.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Ripple": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/ripple.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/ripple.tsx",
+          "integrity": "b70f583c0489ec21d60c096021606e0f074dfed808932c54ccf1dc1772d3161b"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/RippleDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/RippleDemo.tsx",
+        "integrity": "d3b0284e972ec3d3490dcbe5c4ad79ce0488cf6bb1f6e4c7accaa00a5bd89515",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/ripple.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Ripple Button": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/ripple-button.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/ripple-button.tsx",
+          "integrity": "3ade371a463ef5a7fab531bd111a07077cebde1f9832477ad8d1ca9ef22a76d4"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/RippleButtonDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/RippleButtonDemo.tsx",
+        "integrity": "3b84f04c83d0d9a7409e6af6c1f2dd63b626d930453bae87d83e9683b298323c",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/ripple-button.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Safari": {
+      "dependencies": [
+        "solid-js"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/registry/magicui/safari.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/safari.tsx",
+          "integrity": "1cb07db41e5485c0764507aa65321bbc73800b599642f78bcf9f74032e02aa70"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "solid-js"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/SafariDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/SafariDemo.tsx",
+        "integrity": "8feb4ede3a378fd95b0997bfd42064c4dd4e2d33a8ffd616969f27e21f09a67d",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/registry/magicui/safari.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Scroll Based Velocity": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/scroll-based-velocity.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/scroll-based-velocity.tsx",
+          "integrity": "5b874e5177b8483613cf353d90110ad9fce961943295d87d2bede283ae307d1d"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/ScrollBasedVelocityDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/ScrollBasedVelocityDemo.tsx",
+        "integrity": "f8d133e12e1c7041ac23db34417162dfa4b2a21f07d4b6325bf343a309b5707b",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/scroll-based-velocity.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Scroll Progress": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/scroll-progress.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/scroll-progress.tsx",
+          "integrity": "d66fd36768067ac0b525ca13437c43b8956f15f4e47856cbb89af47db79f0ab9"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/ScrollProgressDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/ScrollProgressDemo.tsx",
+        "integrity": "ecefb259ac425b153090afce77349cf9deb64b564015cc5d4d6b1c20ca1d2211",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/scroll-progress.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Shimmer Button": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/shimmer-button.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/shimmer-button.tsx",
+          "integrity": "816287516187fd682760c6742d0dd5eebed23aafa1086c4fcdd794dea6f41f5b"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/ShimmerButtonDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/ShimmerButtonDemo.tsx",
+        "integrity": "c459b6400b3e462f54b8d83b84bb43bb6f6e3b426a0f98ab1aabc8564cba275d",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/shimmer-button.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Shine Border": {
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/shine-border.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/shine-border.tsx",
+          "integrity": "a060a90dc238dc10d9df28b01f4a0f2c83fe4064b2691e304e8e09a435e63c1b"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [
+        "@kobalte/core",
+        "class-variance-authority"
+      ],
+      "exampleSource": {
+        "path": "src/demos/ShineBorderDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/ShineBorderDemo.tsx",
+        "integrity": "232587b1bdfdf91d4f9573a942e3a2d83305ca8646b2d2f99c4db143a2b392ee",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/components/ui/button.tsx",
+          "src/lib/utils.ts",
+          "src/registry/magicui/shine-border.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Shiny Button": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/shiny-button.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/shiny-button.tsx",
+          "integrity": "5d1edca211ca0ee7f11ab3ceb00d483d952fd9641820d2c60fc6b9c8ef7d42e9"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/ShinyButtonDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/ShinyButtonDemo.tsx",
+        "integrity": "ed276d95b31bc33d2ccd256993bbefece437c281b9b94596f31ec0ab8e3257e6",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/shiny-button.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Smooth Cursor": {
+      "dependencies": [
+        "@solid-primitives/spring",
+        "solid-js"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/registry/magicui/smooth-cursor.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/smooth-cursor.tsx",
+          "integrity": "51ec15d252f6704f113ca233c0d0a75d5a55974098480a46264a3cd03432f2a3"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "@solid-primitives/spring",
+        "solid-js"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/SmoothCursorDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/SmoothCursorDemo.tsx",
+        "integrity": "4b4915c4ec5660eccd6f0ae6776053c9f13dd83d6739b25c0659b3c0edaadabe",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/registry/magicui/smooth-cursor.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Sparkles Text": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/sparkles-text.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/sparkles-text.tsx",
+          "integrity": "ebf29a7b4dddb1c2254699b945c35328ba4efa451468eecbcbe1c0bda3d53e3f"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/SparklesTextDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/SparklesTextDemo.tsx",
+        "integrity": "cdac25cdce2949dea6a5db0c11cfa28f7dde6c4d3c76247fe2d187732a4572e4",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/sparkles-text.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Spinning Text": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/spinning-text.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/spinning-text.tsx",
+          "integrity": "3937e78a7c6f463bbb07c4df1f89e56cd3d0a3d7bce25a5de7db811d74f7eafa"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/SpinningTextDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/SpinningTextDemo.tsx",
+        "integrity": "b693e4b8a8d1e071003481328bb7aecfac60b28a5610bcdadac0d46debde47cf",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/spinning-text.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Striped Pattern": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/striped-pattern.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/striped-pattern.tsx",
+          "integrity": "45434732e27f1272c802f0f06e561d19267e357d12f8a09c1ef60ee88a309db6"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/StripedPatternDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/StripedPatternDemo.tsx",
+        "integrity": "8265c6f1d7adca558875f1e2962a4934627b82afc4f9d83bdb9af7d8c0f84133",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/striped-pattern.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Terminal": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/create-in-view",
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/create-in-view.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/create-in-view.ts",
+          "integrity": "5257f3cdcc77438d2bc9d9485b4f5db75b1176a2a8d0f3c96df29b1b296b4963"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/terminal.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/terminal.tsx",
+          "integrity": "b51fe144d87556a307de429ded3dcd70fc9c4e01469ba7dead73eb65c6fce501"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/TerminalDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/TerminalDemo.tsx",
+        "integrity": "784ecc878c2da22753c5490c44225165257f1adb699f731e318bb37ba6471e76",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/create-in-view.ts",
+          "src/lib/utils.ts",
+          "src/registry/magicui/terminal.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Text 3D Flip": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/text-3d-flip.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/text-3d-flip.tsx",
+          "integrity": "c5ad772a66062b790c1c8917045e2f0f2a94f542cd08c4f7a9e334bfe529a3e6"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/Text3DFlipDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/Text3DFlipDemo.tsx",
+        "integrity": "ea6e1952e80555dfdd15bdfb1f32f8e41440b0365bbdd4e5a77ea204d29818b2",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/text-3d-flip.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Text Animate": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/create-in-view",
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/create-in-view.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/create-in-view.ts",
+          "integrity": "5257f3cdcc77438d2bc9d9485b4f5db75b1176a2a8d0f3c96df29b1b296b4963"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/text-animate.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/text-animate.tsx",
+          "integrity": "dd96e83a2ff3e4dcdc1192112f95f37da6c2667ce8d5df714db1626d08cb6194"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/TextAnimateDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/TextAnimateDemo.tsx",
+        "integrity": "2dd1ac823912fb7edaa64d2a1558f204497c0e120b6d68c2985114a1ca808deb",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/create-in-view.ts",
+          "src/lib/utils.ts",
+          "src/registry/magicui/text-animate.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Text Reveal": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/text-reveal.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/text-reveal.tsx",
+          "integrity": "43242734cbc163ab2c4414be963256879f933a1415a5751aa41b20f0ee18453c"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/TextRevealDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/TextRevealDemo.tsx",
+        "integrity": "48248e3db0cfc3672f0787ef2bc251c55b489bd1417916dc65f78619bdc027ac",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/text-reveal.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Tweet Card": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "sources": [
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/client-tweet-card.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/client-tweet-card.tsx",
+          "integrity": "ed3144767ad5e1e0b3965e528600408143f0623e06beffe342b9788365a0513b"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "demos/tweet-card.tsx",
+        "documentedExample": {
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/TweetCardDemo.tsx",
+          "integrity": "efaf372cb15ffd0402092d38aef454230d0c73e17ab4c85be0488ef1b328cc9b"
+        },
+        "integrity": "426fffac58587d1b2dbf134b69b829684c7a3c662e9e851bfde4f31467a0a396",
+        "kind": "authored-sample",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/client-tweet-card.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Typing Animation": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/create-in-view",
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/create-in-view.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/create-in-view.ts",
+          "integrity": "5257f3cdcc77438d2bc9d9485b4f5db75b1176a2a8d0f3c96df29b1b296b4963"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/typing-animation.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/typing-animation.tsx",
+          "integrity": "3c22bc42e4fe1d6e5be897772be7662770fc56527dd43e6bcf7c5e1930bd96a3"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/TypingAnimationDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/TypingAnimationDemo.tsx",
+        "integrity": "c1890f791a8dda610c034bf4b4972be2386479d65b7a091464fce2ef9523a2eb",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/create-in-view.ts",
+          "src/lib/utils.ts",
+          "src/registry/magicui/typing-animation.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Video Text": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/video-text.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/video-text.tsx",
+          "integrity": "9289b161afccce1a88222b9630fca61a27c502711ee8afc1792f403fdb70e097"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/VideoTextDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/VideoTextDemo.tsx",
+        "integrity": "0b9f72c8316c6a6f254c43d39a931cd2288c989e7301d0dd7bc61b261f15ae21",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/video-text.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Warp Background": {
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/warp-background.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/warp-background.tsx",
+          "integrity": "e94229d6f3b27c357c63a679302e006472be5597180a50b1ae3ac8e4a6169291"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/WarpBackgroundDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/WarpBackgroundDemo.tsx",
+        "integrity": "ce6ad9d2fc7e13ab5ebbaad45ae8d56dc4c548d0d231944435993bb187961a60",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/components/ui/card.tsx",
+          "src/lib/utils.ts",
+          "src/registry/magicui/warp-background.tsx"
+        ]
+      }
+    },
+    "magicui-solid/Word Rotate": {
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "@magicui-solid/theme"
+      ],
+      "sources": [
+        {
+          "path": "registry.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/registry.ts",
+          "integrity": "32628ca59f916449c1cb77c47ee393ade8b1f90f29b62a861d8b3392d5903fec"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/lib/utils.ts",
+          "integrity": "fa2cacd778a093784275258b9b785802e6e5713777d134a08a6a27abd7b34793"
+        },
+        {
+          "path": "src/registry/magicui/word-rotate.tsx",
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/word-rotate.tsx",
+          "integrity": "d9c62fdd6ab6421e59baef94adfb4e962f9eb83ee11297254c14c0eba26f1463"
+        }
+      ],
+      "unresolved": [],
+      "componentDependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "exampleDependencies": [],
+      "exampleSource": {
+        "path": "src/demos/WordRotateDemo.tsx",
+        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/WordRotateDemo.tsx",
+        "integrity": "124927ed0c8cd355aac315846ccf49bf3a5760a8ea7fed849497096381a676c5",
+        "kind": "original-source",
+        "sourcePaths": [
+          "src/lib/utils.ts",
+          "src/registry/magicui/word-rotate.tsx"
+        ]
+      }
+    }
+  }
+}

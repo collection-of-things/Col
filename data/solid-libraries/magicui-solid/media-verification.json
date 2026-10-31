@@ -1,0 +1,60 @@
+{
+  "checkedAt": "2026-10-30T07:06:01.397Z",
+  "asset": {
+    "url": "https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4",
+    "original": {
+      "sha256": "786875befed7288925443d185ce6a328c507a0fb9699da5b523bb600dfb98f80",
+      "bytes": 43852026
+    },
+    "delivered": {
+      "sha256": "637d45b338d25f0c00e223822a735ce77de52c9cfc1aa9b615560349883d4b3c",
+      "bytes": 392139
+    },
+    "transformation": "Lossy 2-second excerpt from source seconds 3–5, converted to 720p H.264, 30 fps, no audio, CRF 30 to satisfy Col's media limits. The excerpt loops in the original component; it is not the complete original video."
+  },
+  "frameComparison": {
+    "method": "Decoded side-by-side frames at equal source times, each scaled to 640px width for inspection.",
+    "samples": [
+      {
+        "originalSeconds": 3.5,
+        "excerptSeconds": 0.5
+      },
+      {
+        "originalSeconds": 4.5,
+        "excerptSeconds": 1.5
+      }
+    ],
+    "observation": "The same palm leaves, framing, green colors and background remain. Fine leaf edges and background detail are softer in the lossy derivative, and the original 50 fps movement is sampled at 30 fps. No scene or artwork is substituted."
+  },
+  "playback": "browser-verification.json records direct sandbox playback; media-browser-verification.json separately checks the actual render_component standalone HTML output. Shared MCP Apps tests cover resource transport.",
+  "imageComparisons": [
+    {
+      "url": "https://images.unsplash.com/photo-1736606355698-5efdb410fe93?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "original": {
+        "sha256": "418c49ab3efe24dad38ff928cde13bb5bfb6ceadafaf02b3793331d524e9006a",
+        "bytes": 398795
+      },
+      "delivered": {
+        "sha256": "4953b1844075bb28e434bb584b30bab66a48bf34f395b9527100ba17b58b81f2",
+        "bytes": 128990
+      },
+      "transformation": "Lossy WebP derivative of the exact Unsplash photo, resized from 2071 pixels wide to 1600 pixels wide at quality 80 to satisfy Col's media policy. The original image, framing and lens interaction are retained.",
+      "method": "Decoded original and delivered WebP side by side at 700 pixels wide using ffmpeg; inspected after conversion.",
+      "observation": "The same mountain campsite, orange tents, snow, distant figures and sunset remain with identical framing. The derivative slightly softens fine terrain and cloud detail."
+    },
+    {
+      "url": "https://axuj.github.io/magicui-solid/pixel-image-demo.jpg",
+      "original": {
+        "sha256": "48bc7701a1f057adc7cab5aad19bee180d960720ec903327625e5850d360c48b",
+        "bytes": 900059
+      },
+      "delivered": {
+        "sha256": "8f96172cd3f2fc6aa7d3641e6884b3c70f72e79d1dc126cc90cec6b0de162ed5",
+        "bytes": 121382
+      },
+      "transformation": "Lossy WebP derivative of the exact repository image: 1920×1920 JPEG resized to 800×800 with quality 80. The original photograph, framing and component animation are retained.",
+      "method": "Decoded original and delivered WebP side by side at 700 pixels wide using ffmpeg; inspected after conversion.",
+      "observation": "The same Copenhagen waterfront buildings, red-and-white boat and water remain with identical square framing and colors. The derivative slightly softens roof, rigging and water detail."
+    }
+  ]
+}

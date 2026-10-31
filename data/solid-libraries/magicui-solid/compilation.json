@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-31T08:34:43.317Z",
+  "attempts": [
+    {
+      "id": "magicui-solid/Backlight",
+      "group": "media",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Video Text",
+      "group": "media",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Tweet Card",
+      "group": "tweet",
+      "compiled": true
+    }
+  ]
+}
