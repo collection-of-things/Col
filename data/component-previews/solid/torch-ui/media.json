@@ -1,0 +1,37 @@
+{
+  "chunkSize": 1500000,
+  "components": {
+    "torch-ui/Video": {
+      "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+      "integrity": "sha256:96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+      "assets": [
+        "https://archive.org/download/springopenmovie/springopenmovie.mp4"
+      ]
+    }
+  },
+  "assets": {
+    "https://archive.org/download/springopenmovie/springopenmovie.mp4": {
+      "url": "https://archive.org/download/springopenmovie/springopenmovie.mp4",
+      "downloadUrl": "https://archive.org/download/springopenmovie/springopenmovie.mp4",
+      "resolvedUrl": "https://dn800303.us.archive.org/0/items/springopenmovie/springopenmovie.mp4",
+      "sha256": "0d3b8c7006aaa128d2404e69382c5adf8634d3e02d694647351d508fab8c31ee",
+      "bytes": 152632,
+      "mediaType": "video/mp4",
+      "file": "0d3b8c7006aaa128d2404e69382c5adf8634d3e02d694647351d508fab8c31ee.mp4",
+      "attribution": {
+        "name": "Spring — © Blender Foundation | cloud.blender.org/spring",
+        "license": "CC BY 4.0",
+        "url": "https://studio.blender.org/projects/spring/pages/about/"
+      },
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "original": {
+        "sha256": "c4965c017428ce5ac5c0d51e52692505842f4cb3c0b582c8bbb7cc4e056a5931",
+        "bytes": 90190341
+      },
+      "transformation": "The first 10.083 seconds use a stream-copy excerpt of a 640 × 268 H.264, 24 fps, stereo AAC conversion of the 1920 × 804, 24 fps, 464.17-second original. The trim adds no further re-encoding.",
+      "chunks": [
+        "0d3b8c7006aaa128d2404e69382c5adf8634d3e02d694647351d508fab8c31ee"
+      ]
+    }
+  }
+}

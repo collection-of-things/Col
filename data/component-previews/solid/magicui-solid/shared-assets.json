@@ -1,0 +1,19 @@
+{
+  "assets": {
+    "https://cdn.magicui.design/ocean-small.webm": {
+      "sha256": "94b243dc90c04db913d0b3d79c62544564d54fc8e6fbb50559dc54bedbb99028",
+      "attribution": {
+        "name": "Dudley Storey, CodePen uploader of the original ocean video",
+        "license": "CodePen user-content license (MIT; uploader warrants authority)",
+        "url": "https://blog.codepen.io/legal/terms-of-service/"
+      }
+    }
+  },
+  "components": {
+    "magicui-solid/Video Text": {
+      "source": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/registry/magicui/video-text.tsx",
+      "revision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "assets": ["https://cdn.magicui.design/ocean-small.webm"]
+    }
+  }
+}
