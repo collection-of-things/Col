@@ -1,0 +1,22 @@
+import Mount0 from "./items/Text";
+import Mount1 from "./items/Heading";
+import Mount2 from "./items/Code";
+import Mount3 from "./items/Block-Quote";
+import Mount4 from "./items/Button-Group";
+import Mount5 from "./items/Copy";
+import Mount6 from "./items/Link";
+import Mount7 from "./items/Dark-Mode-Toggle";
+import Mount8 from "./items/Input";
+import Mount9 from "./items/Number-Field";
+import Mount10 from "./items/Code-Input";
+import Mount11 from "./items/Text-Area";
+import Mount12 from "./items/Select";
+import Mount13 from "./items/Multi-Select";
+import Mount14 from "./items/Autocomplete";
+import Mount15 from "./items/Checkbox";
+import Mount16 from "./items/Radio-Group";
+import Mount17 from "./items/Switch";
+import Mount18 from "./items/Slider";
+import Mount19 from "./items/Reorderable-List";
+const examples = { "torch-ui/Text": Mount0, "torch-ui/Heading": Mount1, "torch-ui/Code": Mount2, "torch-ui/Block Quote": Mount3, "torch-ui/Button Group": Mount4, "torch-ui/Copy": Mount5, "torch-ui/Link": Mount6, "torch-ui/Dark Mode Toggle": Mount7, "torch-ui/Input": Mount8, "torch-ui/Number Field": Mount9, "torch-ui/Code Input": Mount10, "torch-ui/Text Area": Mount11, "torch-ui/Select": Mount12, "torch-ui/Multi Select": Mount13, "torch-ui/Autocomplete": Mount14, "torch-ui/Checkbox": Mount15, "torch-ui/Radio Group": Mount16, "torch-ui/Switch": Mount17, "torch-ui/Slider": Mount18, "torch-ui/Reorderable List": Mount19 };
+export default function mount(target) { const selected = examples[PREVIEW_COMPONENT]; if (!selected) throw new Error("Unknown TorchUI example"); return selected(target); }

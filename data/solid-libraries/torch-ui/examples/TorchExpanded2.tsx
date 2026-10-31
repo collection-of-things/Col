@@ -1,0 +1,22 @@
+import Mount0 from "./items/Date-Picker";
+import Mount1 from "./items/Date-Range-Picker";
+import Mount2 from "./items/Time-Picker";
+import Mount3 from "./items/Color-Picker";
+import Mount4 from "./items/File-Upload";
+import Mount5 from "./items/Field-Picker";
+import Mount6 from "./items/Relative-Date";
+import Mount7 from "./items/Container";
+import Mount8 from "./items/Grid";
+import Mount9 from "./items/Section";
+import Mount10 from "./items/Card";
+import Mount11 from "./items/Divider";
+import Mount12 from "./items/Page-Heading";
+import Mount13 from "./items/Collapsible";
+import Mount14 from "./items/Code-Block";
+import Mount15 from "./items/Inline";
+import Mount16 from "./items/Form";
+import Mount17 from "./items/Wizard";
+import Mount18 from "./items/Prompt-With-Action";
+import Mount19 from "./items/Breadcrumbs";
+const examples = { "torch-ui/Date Picker": Mount0, "torch-ui/Date Range Picker": Mount1, "torch-ui/Time Picker": Mount2, "torch-ui/Color Picker": Mount3, "torch-ui/File Upload": Mount4, "torch-ui/Field Picker": Mount5, "torch-ui/Relative Date": Mount6, "torch-ui/Container": Mount7, "torch-ui/Grid": Mount8, "torch-ui/Section": Mount9, "torch-ui/Card": Mount10, "torch-ui/Divider": Mount11, "torch-ui/Page Heading": Mount12, "torch-ui/Collapsible": Mount13, "torch-ui/Code Block": Mount14, "torch-ui/Inline": Mount15, "torch-ui/Form": Mount16, "torch-ui/Wizard": Mount17, "torch-ui/Prompt With Action": Mount18, "torch-ui/Breadcrumbs": Mount19 };
+export default function mount(target) { const selected = examples[PREVIEW_COMPONENT]; if (!selected) throw new Error("Unknown TorchUI example"); return selected(target); }

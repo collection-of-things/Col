@@ -1,0 +1,203 @@
+{
+  "name": "@torch-ui/solid",
+  "version": "0.6.20",
+  "description": "A modern, accessible SolidJS component library built with Tailwind CSS and Kobalte",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "styles",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "build": "tsup --silent && node scripts/copy-styles.mjs",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "e2e": "playwright test",
+    "e2e:ui": "playwright test --ui",
+    "e2e:report": "playwright show-report"
+  },
+  "keywords": [
+    "solidjs",
+    "ui",
+    "components",
+    "tailwind",
+    "kobalte",
+    "accessibility",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sean-dowd-sr/torch-ui.git"
+  },
+  "homepage": "https://torch-ui.dev",
+  "engines": {
+    "node": ">=18"
+  },
+  "bugs": {
+    "url": "https://github.com/sean-dowd-sr/torch-ui/issues"
+  },
+  "author": "Sean Dowd <sean.dowd.sr@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@torch-ui/solid": "0.6.19",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.1"
+  },
+  "peerDependencies": {
+    "@kobalte/core": ">=0.13.11",
+    "chart.js": "^4.0.0",
+    "solid-js": "^1.9.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "chart.js": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "devDependencies": {
+    "@kobalte/core": "^0.13.11",
+    "@playwright/test": "^1.58.2",
+    "@solidjs/testing-library": "^0.8.10",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest-axe": "^3.5.9",
+    "@types/node": "^25.3.3",
+    "@types/prismjs": "^1.26.6",
+    "chart.js": "^4.5.1",
+    "jest-axe": "^10.0.0",
+    "jsdom": "^28.1.0",
+    "prismjs": "^1.30.0",
+    "solid-js": "^1.9.11",
+    "tsup": "^8.5.1",
+    "tsup-preset-solid": "^2.2.0",
+    "typescript": "^5.9.3",
+    "vite-plugin-solid": "^2.11.10",
+    "vitest": "^4.0.18"
+  },
+  "main": "./dist/index/index.js",
+  "module": "./dist/index/index.js",
+  "types": "./dist/index/index.d.ts",
+  "browser": {},
+  "exports": {
+    ".": {
+      "solid": "./dist/index/index.js",
+      "import": {
+        "types": "./dist/index/index.d.ts",
+        "default": "./dist/index/index.js"
+      }
+    },
+    "./actions": {
+      "solid": "./dist/actions/index.js",
+      "import": {
+        "types": "./dist/actions/index.d.ts",
+        "default": "./dist/actions/index.js"
+      }
+    },
+    "./charts": {
+      "solid": "./dist/charts/index.js",
+      "import": {
+        "types": "./dist/charts/index.d.ts",
+        "default": "./dist/charts/index.js"
+      }
+    },
+    "./data-display": {
+      "solid": "./dist/data-display/index.js",
+      "import": {
+        "types": "./dist/data-display/index.d.ts",
+        "default": "./dist/data-display/index.js"
+      }
+    },
+    "./feedback": {
+      "solid": "./dist/feedback/index.js",
+      "import": {
+        "types": "./dist/feedback/index.d.ts",
+        "default": "./dist/feedback/index.js"
+      }
+    },
+    "./forms": {
+      "solid": "./dist/forms/index.js",
+      "import": {
+        "types": "./dist/forms/index.d.ts",
+        "default": "./dist/forms/index.js"
+      }
+    },
+    "./layout": {
+      "solid": "./dist/layout/index.js",
+      "import": {
+        "types": "./dist/layout/index.d.ts",
+        "default": "./dist/layout/index.js"
+      }
+    },
+    "./navigation": {
+      "solid": "./dist/navigation/index.js",
+      "import": {
+        "types": "./dist/navigation/index.d.ts",
+        "default": "./dist/navigation/index.js"
+      }
+    },
+    "./overlays": {
+      "solid": "./dist/overlays/index.js",
+      "import": {
+        "types": "./dist/overlays/index.d.ts",
+        "default": "./dist/overlays/index.js"
+      }
+    },
+    "./typography": {
+      "solid": "./dist/typography/index.js",
+      "import": {
+        "types": "./dist/typography/index.d.ts",
+        "default": "./dist/typography/index.js"
+      }
+    },
+    "./styles/theme.css": {
+      "style": "./dist/styles/theme.css",
+      "default": "./dist/styles/theme.css"
+    },
+    "./styles/code-block-tokens.css": {
+      "style": "./dist/styles/code-block-tokens.css",
+      "default": "./dist/styles/code-block-tokens.css"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "actions": [
+        "./dist/actions/index.d.ts"
+      ],
+      "charts": [
+        "./dist/charts/index.d.ts"
+      ],
+      "data-display": [
+        "./dist/data-display/index.d.ts"
+      ],
+      "feedback": [
+        "./dist/feedback/index.d.ts"
+      ],
+      "forms": [
+        "./dist/forms/index.d.ts"
+      ],
+      "layout": [
+        "./dist/layout/index.d.ts"
+      ],
+      "navigation": [
+        "./dist/navigation/index.d.ts"
+      ],
+      "overlays": [
+        "./dist/overlays/index.d.ts"
+      ],
+      "typography": [
+        "./dist/typography/index.d.ts"
+      ]
+    }
+  }
+}
