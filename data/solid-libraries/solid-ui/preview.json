@@ -1,0 +1,476 @@
+{
+  "sourceBase": "apps/docs/src",
+  "alias": "~/",
+  "stylesheet": "apps/docs/src/styles/app.css",
+  "adaptations": [
+    "Original docs stylesheet compiled with Tailwind CSS 4.3.3 and the original Kobalte Tailwind plugin.",
+    "Original Geist font assets embedded as data URLs with the SIL Open Font License.",
+    "Reviewed mount wrapper only: maps the selected preview theme to data-kb-theme and disposes the Solid root.",
+    "The Sidebar demo runs within a Solid MemoryRouter because its original links require route context."
+  ],
+  "examples": [
+    {
+      "name": "Accordion",
+      "exportName": "Accordion",
+      "path": "apps/docs/src/registry/example/accordion-demo.tsx",
+      "gaps": [],
+      "assets": []
+    },
+    {
+      "name": "Alert",
+      "exportName": "Alert",
+      "path": "apps/docs/src/registry/example/alert-demo.tsx",
+      "gaps": [],
+      "group": "batch-01",
+      "assets": []
+    },
+    {
+      "name": "Alert Dialog",
+      "exportName": "AlertDialog",
+      "path": "apps/docs/src/registry/example/alert-dialog-demo.tsx",
+      "gaps": [],
+      "group": "batch-01",
+      "assets": []
+    },
+    {
+      "name": "Aspect Ratio",
+      "exportName": "AspectRatio",
+      "path": "apps/docs/src/registry/example/aspect-ratio-demo.tsx",
+      "gaps": [],
+      "group": "batch-01",
+      "assets": [
+        "https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
+      ]
+    },
+    {
+      "name": "Avatar",
+      "exportName": "Avatar",
+      "path": "apps/docs/src/registry/example/avatar-demo.tsx",
+      "gaps": [
+        "The official demo references external images without verified redistribution permission; sandbox restrictions may leave them unavailable. No replacement image is supplied."
+      ],
+      "group": "batch-01",
+      "assets": []
+    },
+    {
+      "name": "Badge",
+      "exportName": "Badge",
+      "path": "apps/docs/src/registry/example/badge-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
+    },
+    {
+      "name": "Badge Delta",
+      "exportName": "BadgeDelta",
+      "path": "apps/docs/src/registry/example/badge-delta-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
+    },
+    {
+      "name": "Bar List",
+      "exportName": "BarList",
+      "path": "apps/docs/src/registry/example/bar-list-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
+    },
+    {
+      "name": "Breadcrumb",
+      "exportName": "Breadcrumb",
+      "path": "apps/docs/src/registry/example/breadcrumb-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
+    },
+    {
+      "name": "Button",
+      "exportName": "Button",
+      "path": "apps/docs/src/registry/example/button-demo.tsx",
+      "gaps": [],
+      "assets": []
+    },
+    {
+      "name": "Callout",
+      "exportName": "Callout",
+      "path": "apps/docs/src/registry/example/callout-demo.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
+    },
+    {
+      "name": "Card",
+      "exportName": "Card",
+      "path": "apps/docs/src/registry/example/card-demo.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
+    },
+    {
+      "name": "Carousel",
+      "exportName": "Carousel",
+      "path": "apps/docs/src/registry/example/carousel-demo.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
+    },
+    {
+      "name": "Charts",
+      "exportName": "Charts",
+      "path": "apps/docs/src/registry/example/area-chart-demo.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
+    },
+    {
+      "name": "Checkbox",
+      "exportName": "Checkbox",
+      "path": "apps/docs/src/registry/example/checkbox-demo.tsx",
+      "gaps": [],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Collapsible",
+      "exportName": "Collapsible",
+      "path": "apps/docs/src/registry/example/collapsible-demo.tsx",
+      "gaps": [],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Combobox",
+      "exportName": "Combobox",
+      "path": "apps/docs/src/registry/example/combobox-demo.tsx",
+      "gaps": [],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Command",
+      "exportName": "Command",
+      "path": "apps/docs/src/registry/example/command-demo.tsx",
+      "gaps": [],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Context Menu",
+      "exportName": "ContextMenu",
+      "path": "apps/docs/src/registry/example/context-menu-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
+    },
+    {
+      "name": "Data Table",
+      "exportName": "DataTable",
+      "path": "apps/docs/src/registry/example/data-table-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
+    },
+    {
+      "name": "Date Picker",
+      "exportName": "DatePicker",
+      "path": "apps/docs/src/registry/example/date-picker-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
+    },
+    {
+      "name": "Delta Bar",
+      "exportName": "DeltaBar",
+      "path": "apps/docs/src/registry/example/delta-bar-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
+    },
+    {
+      "name": "Dialog",
+      "exportName": "Dialog",
+      "path": "apps/docs/src/registry/example/dialog-demo.tsx",
+      "gaps": [],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Drawer",
+      "exportName": "Drawer",
+      "path": "apps/docs/src/registry/example/drawer-demo.tsx",
+      "gaps": [],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Dropdown Menu",
+      "exportName": "DropdownMenu",
+      "path": "apps/docs/src/registry/example/dropdown-menu-demo.tsx",
+      "gaps": [],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Flex",
+      "exportName": "Flex",
+      "path": "apps/docs/src/registry/example/flex-demo.tsx",
+      "gaps": [],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Grid",
+      "exportName": "Grid",
+      "path": "apps/docs/src/registry/example/grid-demo.tsx",
+      "gaps": [],
+      "group": "batch-07",
+      "assets": []
+    },
+    {
+      "name": "Hover Card",
+      "exportName": "HoverCard",
+      "path": "apps/docs/src/registry/example/hover-card-demo.tsx",
+      "gaps": [
+        "The official demo references external images without verified redistribution permission; sandbox restrictions may leave them unavailable. No replacement image is supplied."
+      ],
+      "group": "batch-07",
+      "assets": []
+    },
+    {
+      "name": "Label",
+      "exportName": "Label",
+      "path": "apps/docs/src/registry/example/checkbox-demo.tsx",
+      "gaps": [],
+      "group": "batch-07",
+      "assets": []
+    },
+    {
+      "name": "Menubar",
+      "exportName": "Menubar",
+      "path": "apps/docs/src/registry/example/menubar-demo.tsx",
+      "gaps": [],
+      "group": "batch-07",
+      "assets": []
+    },
+    {
+      "name": "Navigation Menu",
+      "exportName": "NavigationMenu",
+      "path": "apps/docs/src/registry/example/navigation-menu-demo.tsx",
+      "gaps": [],
+      "group": "batch-08",
+      "assets": []
+    },
+    {
+      "name": "Number Field",
+      "exportName": "NumberField",
+      "path": "apps/docs/src/registry/example/number-field-demo.tsx",
+      "gaps": [],
+      "group": "batch-08",
+      "assets": []
+    },
+    {
+      "name": "OTP Field",
+      "exportName": "OTPField",
+      "path": "apps/docs/src/registry/example/otp-field-demo.tsx",
+      "gaps": [],
+      "group": "batch-08",
+      "assets": []
+    },
+    {
+      "name": "Pagination",
+      "exportName": "Pagination",
+      "path": "apps/docs/src/registry/example/pagination-demo.tsx",
+      "gaps": [],
+      "group": "batch-08",
+      "assets": []
+    },
+    {
+      "name": "Popover",
+      "exportName": "Popover",
+      "path": "apps/docs/src/registry/example/popover-demo.tsx",
+      "gaps": [],
+      "group": "batch-09",
+      "assets": []
+    },
+    {
+      "name": "Progress",
+      "exportName": "Progress",
+      "path": "apps/docs/src/registry/example/progress-demo.tsx",
+      "gaps": [],
+      "group": "batch-09",
+      "assets": []
+    },
+    {
+      "name": "Progress Circle",
+      "exportName": "ProgressCircle",
+      "path": "apps/docs/src/registry/example/progress-circle-demo.tsx",
+      "gaps": [
+        "The original demo references a remote GitHub avatar. Offline rendering retains the upstream EK fallback; the personal image is not redistributed."
+      ],
+      "assets": []
+    },
+    {
+      "name": "Radio Group",
+      "exportName": "RadioGroup",
+      "path": "apps/docs/src/registry/example/radio-group-demo.tsx",
+      "gaps": [],
+      "group": "batch-09",
+      "assets": []
+    },
+    {
+      "name": "Resizable",
+      "exportName": "Resizable",
+      "path": "apps/docs/src/registry/example/resizable-demo.tsx",
+      "gaps": [],
+      "group": "batch-09",
+      "assets": []
+    },
+    {
+      "name": "Select",
+      "exportName": "Select",
+      "path": "apps/docs/src/registry/example/select-demo.tsx",
+      "gaps": [],
+      "group": "batch-10",
+      "assets": []
+    },
+    {
+      "name": "Separator",
+      "exportName": "Separator",
+      "path": "apps/docs/src/registry/example/separator-demo.tsx",
+      "gaps": [],
+      "group": "batch-10",
+      "assets": []
+    },
+    {
+      "name": "Sheet",
+      "exportName": "Sheet",
+      "path": "apps/docs/src/registry/example/sheet-demo.tsx",
+      "gaps": [],
+      "group": "batch-10",
+      "assets": []
+    },
+    {
+      "name": "Sidebar",
+      "exportName": "Sidebar",
+      "path": "apps/docs/src/registry/block/demo-sidebar.tsx",
+      "gaps": [
+        "An isolated Solid MemoryRouter supplies the original demo routing context; links remain within the preview.",
+        "The original sidebar writes a preference cookie on toggle. The opaque sandbox blocks that write, so the browser reports an error and the preference cannot persist."
+      ],
+      "group": "batch-10",
+      "assets": [],
+      "wrapper": "memory-router"
+    },
+    {
+      "name": "Skeleton",
+      "exportName": "Skeleton",
+      "path": "apps/docs/src/registry/example/skeleton-demo.tsx",
+      "gaps": [],
+      "group": "batch-11",
+      "assets": []
+    },
+    {
+      "name": "Slider",
+      "exportName": "Slider",
+      "path": "apps/docs/src/registry/example/slider-demo.tsx",
+      "gaps": [],
+      "group": "batch-11",
+      "assets": []
+    },
+    {
+      "name": "Sonner",
+      "exportName": "Sonner",
+      "path": "apps/docs/src/registry/example/sonner-demo.tsx",
+      "gaps": [],
+      "group": "batch-11",
+      "assets": []
+    },
+    {
+      "name": "Switch",
+      "exportName": "Switch",
+      "path": "apps/docs/src/registry/example/switch-demo.tsx",
+      "gaps": [],
+      "group": "batch-11",
+      "assets": []
+    },
+    {
+      "name": "Table",
+      "exportName": "Table",
+      "path": "apps/docs/src/registry/example/table-demo.tsx",
+      "gaps": [],
+      "group": "batch-12",
+      "assets": []
+    },
+    {
+      "name": "Tabs",
+      "exportName": "Tabs",
+      "path": "apps/docs/src/registry/example/tabs-demo.tsx",
+      "gaps": [],
+      "group": "batch-12",
+      "assets": []
+    },
+    {
+      "name": "Text Field",
+      "exportName": "TextField",
+      "path": "apps/docs/src/registry/example/text-field-demo.tsx",
+      "gaps": [],
+      "group": "batch-12",
+      "assets": []
+    },
+    {
+      "name": "Timeline",
+      "exportName": "Timeline",
+      "path": "apps/docs/src/registry/example/timeline-demo.tsx",
+      "gaps": [],
+      "group": "batch-12",
+      "assets": []
+    },
+    {
+      "name": "Toast",
+      "exportName": "Toast",
+      "path": "apps/docs/src/registry/example/toast-demo.tsx",
+      "gaps": [],
+      "group": "batch-13",
+      "assets": []
+    },
+    {
+      "name": "Toggle",
+      "exportName": "Toggle",
+      "path": "apps/docs/src/registry/example/toggle-demo.tsx",
+      "gaps": [],
+      "group": "batch-13",
+      "assets": []
+    },
+    {
+      "name": "Toggle Group",
+      "exportName": "ToggleGroup",
+      "path": "apps/docs/src/registry/example/toggle-group-demo.tsx",
+      "gaps": [],
+      "group": "batch-13",
+      "assets": []
+    },
+    {
+      "name": "Tooltip",
+      "exportName": "Tooltip",
+      "path": "apps/docs/src/registry/example/tooltip-demo.tsx",
+      "gaps": [],
+      "group": "batch-13",
+      "assets": []
+    }
+  ],
+  "licenseFallbacks": {
+    "embla-carousel@8.6.0": {
+      "path": "licenses/embla-carousel/LICENSE",
+      "license": "MIT"
+    },
+    "embla-carousel-solid@8.6.0": {
+      "path": "licenses/embla-carousel/LICENSE",
+      "license": "MIT"
+    },
+    "embla-carousel-reactive-utils@8.6.0": {
+      "path": "licenses/embla-carousel/LICENSE",
+      "license": "MIT"
+    }
+  }
+}
