@@ -1,16 +1,6 @@
 {
-  "checkedAt": "2026-10-31T11:21:28.734Z",
+  "checkedAt": "2026-10-31T20:16:32.472Z",
   "attempts": [
-    {
-      "id": "magicui-solid/Backlight",
-      "group": "media",
-      "compiled": true
-    },
-    {
-      "id": "magicui-solid/Video Text",
-      "group": "media",
-      "compiled": true
-    },
     {
       "id": "magicui-solid/Tweet Card",
       "group": "tweet",
@@ -143,11 +133,6 @@
     },
     {
       "id": "magicui-solid/Grid Pattern",
-      "group": "components",
-      "compiled": true
-    },
-    {
-      "id": "magicui-solid/Hero Video Dialog",
       "group": "components",
       "compiled": true
     },
@@ -359,6 +344,21 @@
     {
       "id": "magicui-solid/Word Rotate",
       "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Backlight",
+      "group": "media",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Hero Video Dialog",
+      "group": "media",
+      "compiled": true
+    },
+    {
+      "id": "magicui-solid/Video Text",
+      "group": "media",
       "compiled": true
     }
   ]

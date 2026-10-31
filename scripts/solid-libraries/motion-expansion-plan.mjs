@@ -60,6 +60,15 @@ for (const slug of ["nikala-ui", "magicui-solid", "mystic-ui"]) {
         module = `src/demos/${exportName}.tsx`;
         code = upstream.files[module]?.content;
         componentSource = resolveImport(module, `@/registry/magicui/${componentSlug}`);
+        if (componentSlug === "confetti") record.adaptation = "The documented globalOptions disable the worker so the original animation runs within the preview's restricted CSP.";
+        if (componentSlug === "avatar-circles" || componentSlug === "hero-video-dialog") {
+          module = `demos/${componentSlug}.tsx`;
+          exportName = "default";
+          code = await readFile(`${directory}/${module}`, "utf8");
+          record.adaptation = componentSlug === "avatar-circles"
+            ? "Sample generated avatars replace unverified profile images; profile links are inactive. The original component and styling are retained."
+            : "A licensed sample image and video replace the unverified original thumbnail and external player. The original component, animation and styling are retained.";
+        }
         if (componentSlug === "tweet-card") {
           componentSource = "src/registry/magicui/client-tweet-card.tsx";
           module = "demos/tweet-card.tsx";

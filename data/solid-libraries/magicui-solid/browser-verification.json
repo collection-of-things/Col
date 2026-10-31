@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-31T11:26:16.492Z",
+  "checkedAt": "2026-10-31T20:23:09.584Z",
   "sandbox": "allow-scripts allow-forms",
   "viewport": {
     "width": 900,
@@ -556,7 +556,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9771783193c708daf1c6841633184ef5700a542be9c3fd3a8cb77a09508cd1fd",
+      "codeIntegrity": "41b9577302b764670ba43409c0e09bb1953cabbd26323f93fb76ca4f52746efd",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -588,7 +588,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9771783193c708daf1c6841633184ef5700a542be9c3fd3a8cb77a09508cd1fd",
+      "codeIntegrity": "41b9577302b764670ba43409c0e09bb1953cabbd26323f93fb76ca4f52746efd",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -620,7 +620,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9231d227b7b0e43f9f3e5480893be4fae4eb784a090203c5077f84cebd3d5f31",
+      "codeIntegrity": "f6ab82de8b431bd652ab26416579248e9f327f9357029ee40f4580b5567d805d",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -652,7 +652,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9231d227b7b0e43f9f3e5480893be4fae4eb784a090203c5077f84cebd3d5f31",
+      "codeIntegrity": "f6ab82de8b431bd652ab26416579248e9f327f9357029ee40f4580b5567d805d",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -684,7 +684,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "e9dd315a05614061f49899b80a675ff3c852823628b8fb76112ac3b060451ff1",
+      "codeIntegrity": "3dab43e9c5ca6b5c06d10d4328cb797bcb377000251c2e9d4863b8a73cecc1bc",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "10",
@@ -710,7 +710,7 @@
       "actions": [],
       "after": {
         "text": "10",
-        "animations": 2,
+        "animations": 0,
         "videos": [],
         "htmlTheme": "light",
         "dataTheme": "light"
@@ -725,7 +725,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "e9dd315a05614061f49899b80a675ff3c852823628b8fb76112ac3b060451ff1",
+      "codeIntegrity": "3dab43e9c5ca6b5c06d10d4328cb797bcb377000251c2e9d4863b8a73cecc1bc",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "10",
@@ -751,7 +751,7 @@
       "actions": [],
       "after": {
         "text": "10",
-        "animations": 2,
+        "animations": 0,
         "videos": [],
         "htmlTheme": "dark",
         "dataTheme": "dark"
@@ -766,7 +766,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "a09792442ad21a5bd24de47dd4a294030baebc4ab66fa435a37070a051ccbe82",
+      "codeIntegrity": "035e33f2d6830cf3874d62c4b3acb04d003a69642cf68454cc3ce47fa290f422",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "🎉 Introducing Magic UI",
@@ -807,7 +807,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "a09792442ad21a5bd24de47dd4a294030baebc4ab66fa435a37070a051ccbe82",
+      "codeIntegrity": "035e33f2d6830cf3874d62c4b3acb04d003a69642cf68454cc3ce47fa290f422",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "🎉 Introducing Magic UI",
@@ -848,7 +848,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "213f0da3d20c8da927af71c28505866cf31e397d72b048504c48c60acb5baef5",
+      "codeIntegrity": "d83f64d9de1f4f9edbd1b5193e17549b1b11acdc843157c949e30c218e85898f",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -880,7 +880,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "213f0da3d20c8da927af71c28505866cf31e397d72b048504c48c60acb5baef5",
+      "codeIntegrity": "d83f64d9de1f4f9edbd1b5193e17549b1b11acdc843157c949e30c218e85898f",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -912,7 +912,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "bf161fdd278ceba16c19258df1c411ccb8387a0d2defc61eefbc56632c64443c",
+      "codeIntegrity": "c5a1c3c81e31c06c6301cacd8aeb98aca52f7d9d683d0ac6386dbdac072d5b80",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "💸Payment received·15m agoMagic UI",
@@ -933,8 +933,8 @@
       },
       "actions": [],
       "after": {
-        "text": "💸Payment received·15m agoMagic UI",
-        "animations": 0,
+        "text": "💸Payment received·15m agoMagic UI👤User signed up·10m agoMagic UI",
+        "animations": 1,
         "videos": [],
         "htmlTheme": "light",
         "dataTheme": "light"
@@ -949,7 +949,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "bf161fdd278ceba16c19258df1c411ccb8387a0d2defc61eefbc56632c64443c",
+      "codeIntegrity": "c5a1c3c81e31c06c6301cacd8aeb98aca52f7d9d683d0ac6386dbdac072d5b80",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "💸Payment received·15m agoMagic UI",
@@ -986,7 +986,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "48caf65e4cb622fe48ed98ba98fc582f9619cb2a26e0d70932dbb845c2b5852c",
+      "codeIntegrity": "de2b117480953fb10aaab2a8f439754d3288299377d50bfae3ef88141faf5468",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "✨ Introducing Magic UI",
@@ -1023,7 +1023,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "48caf65e4cb622fe48ed98ba98fc582f9619cb2a26e0d70932dbb845c2b5852c",
+      "codeIntegrity": "de2b117480953fb10aaab2a8f439754d3288299377d50bfae3ef88141faf5468",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "✨ Introducing Magic UI",
@@ -1060,7 +1060,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d887d6cae3b53b0823e4af1f179209e44b80bcb232e532c40d40ba840cc29a4f",
+      "codeIntegrity": "f541f7d19db0850a6bde6546754b025ffbea34925aaf4ee3e4a1012a090a0c58",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Toggle theme",
@@ -1098,7 +1098,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d887d6cae3b53b0823e4af1f179209e44b80bcb232e532c40d40ba840cc29a4f",
+      "codeIntegrity": "f541f7d19db0850a6bde6546754b025ffbea34925aaf4ee3e4a1012a090a0c58",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Toggle theme",
@@ -1136,7 +1136,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d7866c90871c7ee54197d467471adf65b1a129ed72e36249d2750a1f676fdfbd",
+      "codeIntegrity": "efd378378b22f0b4dec050965d44319bf69d714b82336ad3b58a15581d95e7c5",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Ship beautifulbeautiful",
@@ -1173,7 +1173,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d7866c90871c7ee54197d467471adf65b1a129ed72e36249d2750a1f676fdfbd",
+      "codeIntegrity": "efd378378b22f0b4dec050965d44319bf69d714b82336ad3b58a15581d95e7c5",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Ship beautifulbeautiful",
@@ -1208,23 +1208,9 @@
       "url": "https://axuj.github.io/magicui-solid/docs/components/avatar-circles/",
       "passed": true,
       "errors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_FAILED",
-        "Failed to load resource: net::ERR_FAILED",
-        "Failed to load resource: net::ERR_FAILED",
-        "Failed to load resource: net::ERR_FAILED",
-        "Failed to load resource: net::ERR_FAILED",
-        "Failed to load resource: net::ERR_FAILED"
-      ],
-      "blockedRequests": [
-        "https://avatars.githubusercontent.com/u/16860528",
-        "https://avatars.githubusercontent.com/u/20110627",
-        "https://avatars.githubusercontent.com/u/106103625",
-        "https://avatars.githubusercontent.com/u/59228569",
-        "https://avatars.githubusercontent.com/u/59442788",
-        "https://avatars.githubusercontent.com/u/89768406"
-      ],
-      "codeIntegrity": "7d6c26ad7d0f4a1d3052925844d90594b90303332b69aad8728b0b63715aca10",
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "c8425bc8475a2a68a7a14baff64c0336faca5a6dfa88337f4e9c1ddd2d559296",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "+99",
@@ -1237,34 +1223,34 @@
       "media": {
         "images": [
           {
-            "loaded": false,
+            "loaded": true,
             "alt": "Avatar 1",
-            "src": "https://avatars.githubusercontent.com/u/16860528"
+            "src": "data:image/png;base64,iVBORw0K"
           },
           {
-            "loaded": false,
+            "loaded": true,
             "alt": "Avatar 2",
-            "src": "https://avatars.githubusercontent.com/u/20110627"
+            "src": "data:image/png;base64,iVBORw0K"
           },
           {
-            "loaded": false,
+            "loaded": true,
             "alt": "Avatar 3",
-            "src": "https://avatars.githubusercontent.com/u/106103625"
+            "src": "data:image/png;base64,iVBORw0K"
           },
           {
-            "loaded": false,
+            "loaded": true,
             "alt": "Avatar 4",
-            "src": "https://avatars.githubusercontent.com/u/59228569"
+            "src": "data:image/png;base64,iVBORw0K"
           },
           {
-            "loaded": false,
+            "loaded": true,
             "alt": "Avatar 5",
-            "src": "https://avatars.githubusercontent.com/u/59442788"
+            "src": "data:image/png;base64,iVBORw0K"
           },
           {
-            "loaded": false,
+            "loaded": true,
             "alt": "Avatar 6",
-            "src": "https://avatars.githubusercontent.com/u/89768406"
+            "src": "data:image/png;base64,iVBORw0K"
           }
         ],
         "videos": []
@@ -1277,14 +1263,7 @@
         "htmlTheme": "light",
         "dataTheme": "light"
       },
-      "expectedBlockedAssets": [
-        "https://avatars.githubusercontent.com/u/16860528",
-        "https://avatars.githubusercontent.com/u/20110627",
-        "https://avatars.githubusercontent.com/u/106103625",
-        "https://avatars.githubusercontent.com/u/59228569",
-        "https://avatars.githubusercontent.com/u/59442788",
-        "https://avatars.githubusercontent.com/u/89768406"
-      ]
+      "expectedBlockedAssets": []
     },
     {
       "id": "magicui-solid/Avatar Circles",
@@ -1292,23 +1271,9 @@
       "url": "https://axuj.github.io/magicui-solid/docs/components/avatar-circles/",
       "passed": true,
       "errors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_FAILED",
-        "Failed to load resource: net::ERR_FAILED",
-        "Failed to load resource: net::ERR_FAILED",
-        "Failed to load resource: net::ERR_FAILED",
-        "Failed to load resource: net::ERR_FAILED",
-        "Failed to load resource: net::ERR_FAILED"
-      ],
-      "blockedRequests": [
-        "https://avatars.githubusercontent.com/u/16860528",
-        "https://avatars.githubusercontent.com/u/20110627",
-        "https://avatars.githubusercontent.com/u/106103625",
-        "https://avatars.githubusercontent.com/u/59228569",
-        "https://avatars.githubusercontent.com/u/59442788",
-        "https://avatars.githubusercontent.com/u/89768406"
-      ],
-      "codeIntegrity": "7d6c26ad7d0f4a1d3052925844d90594b90303332b69aad8728b0b63715aca10",
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "c8425bc8475a2a68a7a14baff64c0336faca5a6dfa88337f4e9c1ddd2d559296",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "+99",
@@ -1321,34 +1286,34 @@
       "media": {
         "images": [
           {
-            "loaded": false,
+            "loaded": true,
             "alt": "Avatar 1",
-            "src": "https://avatars.githubusercontent.com/u/16860528"
+            "src": "data:image/png;base64,iVBORw0K"
           },
           {
-            "loaded": false,
+            "loaded": true,
             "alt": "Avatar 2",
-            "src": "https://avatars.githubusercontent.com/u/20110627"
+            "src": "data:image/png;base64,iVBORw0K"
           },
           {
-            "loaded": false,
+            "loaded": true,
             "alt": "Avatar 3",
-            "src": "https://avatars.githubusercontent.com/u/106103625"
+            "src": "data:image/png;base64,iVBORw0K"
           },
           {
-            "loaded": false,
+            "loaded": true,
             "alt": "Avatar 4",
-            "src": "https://avatars.githubusercontent.com/u/59228569"
+            "src": "data:image/png;base64,iVBORw0K"
           },
           {
-            "loaded": false,
+            "loaded": true,
             "alt": "Avatar 5",
-            "src": "https://avatars.githubusercontent.com/u/59442788"
+            "src": "data:image/png;base64,iVBORw0K"
           },
           {
-            "loaded": false,
+            "loaded": true,
             "alt": "Avatar 6",
-            "src": "https://avatars.githubusercontent.com/u/89768406"
+            "src": "data:image/png;base64,iVBORw0K"
           }
         ],
         "videos": []
@@ -1361,14 +1326,7 @@
         "htmlTheme": "dark",
         "dataTheme": "dark"
       },
-      "expectedBlockedAssets": [
-        "https://avatars.githubusercontent.com/u/16860528",
-        "https://avatars.githubusercontent.com/u/20110627",
-        "https://avatars.githubusercontent.com/u/106103625",
-        "https://avatars.githubusercontent.com/u/59228569",
-        "https://avatars.githubusercontent.com/u/59442788",
-        "https://avatars.githubusercontent.com/u/89768406"
-      ]
+      "expectedBlockedAssets": []
     },
     {
       "id": "magicui-solid/Bento Grid",
@@ -1378,7 +1336,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "e6cca931908ba96c6963d2dbc3508e584b3e085cb3a29143d3837927c8d3f610",
+      "codeIntegrity": "66cf0a7d3ce5eb41e402bbece9360cb02d012b434425928673463597927c05b0",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "bitcoin.pdfBitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.finances.xlsxA spreadsheet or worksheet is a file made of rows and columns that help sort data, arrange data eas",
@@ -1431,7 +1389,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "e6cca931908ba96c6963d2dbc3508e584b3e085cb3a29143d3837927c8d3f610",
+      "codeIntegrity": "66cf0a7d3ce5eb41e402bbece9360cb02d012b434425928673463597927c05b0",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "bitcoin.pdfBitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.finances.xlsxA spreadsheet or worksheet is a file made of rows and columns that help sort data, arrange data eas",
@@ -1484,7 +1442,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "409fd3ff317c497b4a90c2668b24ea954c202bb00c2d181064526d195578f4db",
+      "codeIntegrity": "2109e1abe7add4b3183566b745ae568c2fe0c6d2c7c6eeb3982766e931b88042",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Hello World 👋Nice to meet you",
@@ -1518,7 +1476,7 @@
       "actions": [],
       "after": {
         "text": "Hello World 👋Nice to meet you",
-        "animations": 1,
+        "animations": 0,
         "videos": [],
         "htmlTheme": "light",
         "dataTheme": "light"
@@ -1533,13 +1491,21 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "409fd3ff317c497b4a90c2668b24ea954c202bb00c2d181064526d195578f4db",
+      "codeIntegrity": "2109e1abe7add4b3183566b745ae568c2fe0c6d2c7c6eeb3982766e931b88042",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Hello World 👋Nice to meet you",
         "elements": 5,
         "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
         "animations": [
+          {
+            "name": "web-animation",
+            "duration": 400
+          },
+          {
+            "name": "web-animation",
+            "duration": 400
+          },
           {
             "name": "web-animation",
             "duration": 400
@@ -1574,7 +1540,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "263518a0ab7b03b949308e063a2cbc77f197a0bde5aa9e0ca54cd7fe93849c23",
+      "codeIntegrity": "387564dc9fed2d0de9c8364722f74458e40cecfc4ee94166b5fcaa1404bbc82b",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "LoginEnter your credentials to access your account.EmailPasswordRegisterLogin",
@@ -1611,7 +1577,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "263518a0ab7b03b949308e063a2cbc77f197a0bde5aa9e0ca54cd7fe93849c23",
+      "codeIntegrity": "387564dc9fed2d0de9c8364722f74458e40cecfc4ee94166b5fcaa1404bbc82b",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "LoginEnter your credentials to access your account.EmailPasswordRegisterLogin",
@@ -1648,7 +1614,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "8e38a5883d3485057606c550894cd0c9b169a9b44ad6cbbdb2ec04b9e24a524f",
+      "codeIntegrity": "6fa3d5dccdf5178fc9cc8780b11596cc029d68f5408a6d20a96986c45c006e9e",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "BOOM!",
@@ -1685,7 +1651,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "8e38a5883d3485057606c550894cd0c9b169a9b44ad6cbbdb2ec04b9e24a524f",
+      "codeIntegrity": "6fa3d5dccdf5178fc9cc8780b11596cc029d68f5408a6d20a96986c45c006e9e",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "BOOM!",
@@ -1722,7 +1688,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "1b4d82344cfdb781bba989e29120172351f0691bab9347dac597cc91cd9028a6",
+      "codeIntegrity": "0db150156b1dc22a3bdb471d60e80146751d85f52726d58130778d80ed9e6772",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Confetti",
@@ -1754,7 +1720,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "1b4d82344cfdb781bba989e29120172351f0691bab9347dac597cc91cd9028a6",
+      "codeIntegrity": "0db150156b1dc22a3bdb471d60e80146751d85f52726d58130778d80ed9e6772",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Confetti",
@@ -1786,7 +1752,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "15c48ce19971b60c934fdb0f4c74ac128bca3a8cc273e4ba467982849ac9cd14",
+      "codeIntegrity": "d4aa93ca95d06fad7f4f40d01edc04431a0bf0032755d1fad440d9abaeb1728c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Click Me!",
@@ -1824,7 +1790,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "15c48ce19971b60c934fdb0f4c74ac128bca3a8cc273e4ba467982849ac9cd14",
+      "codeIntegrity": "d4aa93ca95d06fad7f4f40d01edc04431a0bf0032755d1fad440d9abaeb1728c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Click Me!",
@@ -1862,7 +1828,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "78ed8f1b76a7645de4d8e578324d12ad82b62347c83641ccbca77bf6da045b59",
+      "codeIntegrity": "af83b553006f10648522d240e8e91ecaa467be85b5a27818ece46e67c72db208",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Magic UI",
@@ -1894,7 +1860,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "78ed8f1b76a7645de4d8e578324d12ad82b62347c83641ccbca77bf6da045b59",
+      "codeIntegrity": "af83b553006f10648522d240e8e91ecaa467be85b5a27818ece46e67c72db208",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Magic UI",
@@ -1926,7 +1892,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "22727082ea11e39a3343d978ecc531fdba6c0f05340fb64cf6509a1be0a268ff",
+      "codeIntegrity": "1a605505da17b0fcaa0145b8305527c58eec98ef511a71e7f3ce32b688f8fc7c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Dock",
@@ -1964,7 +1930,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "22727082ea11e39a3343d978ecc531fdba6c0f05340fb64cf6509a1be0a268ff",
+      "codeIntegrity": "1a605505da17b0fcaa0145b8305527c58eec98ef511a71e7f3ce32b688f8fc7c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Dock",
@@ -2002,7 +1968,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "bb59ae152246884b46677e9714fad28bda4f895a9afc6b5d1370edf6bd823e3a",
+      "codeIntegrity": "d5a7b14c2d4b6d7b92e68fd259c765cf6c6380742cad1e09ab3c5e4693b633dc",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2034,7 +2000,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "bb59ae152246884b46677e9714fad28bda4f895a9afc6b5d1370edf6bd823e3a",
+      "codeIntegrity": "d5a7b14c2d4b6d7b92e68fd259c765cf6c6380742cad1e09ab3c5e4693b633dc",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2066,7 +2032,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "05b356e1c8661b7142e7af235dd139cfec80f0230a4680c5d915c5f9caae68d5",
+      "codeIntegrity": "cbae64d1e35cf8cbc0ee3a632b2079a6e7e211533a058b3b1ac72e306be5c732",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "SeoulNYC",
@@ -2109,7 +2075,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "05b356e1c8661b7142e7af235dd139cfec80f0230a4680c5d915c5f9caae68d5",
+      "codeIntegrity": "cbae64d1e35cf8cbc0ee3a632b2079a6e7e211533a058b3b1ac72e306be5c732",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "SeoulNYC",
@@ -2152,7 +2118,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f1e715df1dfcb481a1cdaae00022a5f1d289669f289c3e51c0dc7e12cbc3bd14",
+      "codeIntegrity": "42b369e220dd8997d6fc393f34b38db44d1ced4fafea99a33fea1f61f650f215",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "srcapplayout.tsxpage.tsxcomponentsuibutton.tsxfooter.tsxheader.tsxlibutils.ts",
@@ -2191,7 +2157,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f1e715df1dfcb481a1cdaae00022a5f1d289669f289c3e51c0dc7e12cbc3bd14",
+      "codeIntegrity": "42b369e220dd8997d6fc393f34b38db44d1ced4fafea99a33fea1f61f650f215",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "srcapplayout.tsxpage.tsxcomponentsuibutton.tsxfooter.tsxheader.tsxlibutils.ts",
@@ -2230,7 +2196,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "eb86880b38bf769a45211d78c28d167e8cc9f66f6e0c5dd30b9e08b733b4d4ba",
+      "codeIntegrity": "f0b3ab05d8b6ccc8ed7bcfd05e80af24b205f6b6e7cddd0b242e89eb5fddc42c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2262,7 +2228,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "eb86880b38bf769a45211d78c28d167e8cc9f66f6e0c5dd30b9e08b733b4d4ba",
+      "codeIntegrity": "f0b3ab05d8b6ccc8ed7bcfd05e80af24b205f6b6e7cddd0b242e89eb5fddc42c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2294,7 +2260,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "2715cf1c7fa5c5049a8f5484af75bf3ec6565c2e92aceb17069b88bd5e7cc1cf",
+      "codeIntegrity": "2ca3acf3077fe7012b9326c62675d37238305149faf52a1dd9d15316609a78f1",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "ProPopularFor teams that need more.$49/moUnlimited projectsTeam collaborationAdvanced analyticsSSO (coming soon)Get started",
@@ -2332,7 +2298,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "2715cf1c7fa5c5049a8f5484af75bf3ec6565c2e92aceb17069b88bd5e7cc1cf",
+      "codeIntegrity": "2ca3acf3077fe7012b9326c62675d37238305149faf52a1dd9d15316609a78f1",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "ProPopularFor teams that need more.$49/moUnlimited projectsTeam collaborationAdvanced analyticsSSO (coming soon)Get started",
@@ -2370,7 +2336,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "06f2b44d1459210ff534ba4707779a5a827b956440d58a3c939fcc77fdd39404",
+      "codeIntegrity": "5cc28ce16bc7ba93369c2c60b5f81c167499ce2fe11b2e438a1f418b82043735",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Globe",
@@ -2407,7 +2373,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "06f2b44d1459210ff534ba4707779a5a827b956440d58a3c939fcc77fdd39404",
+      "codeIntegrity": "5cc28ce16bc7ba93369c2c60b5f81c167499ce2fe11b2e438a1f418b82043735",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Globe",
@@ -2444,7 +2410,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "62245dd5db652a848cf44f70d18c7c1df5816da669b65c348da58af6f8d9ff70",
+      "codeIntegrity": "9f428bf0c2ad1ea7ee527279f3fadf26b061885cb03cc77635297a98cb06bae7",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2476,7 +2442,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "62245dd5db652a848cf44f70d18c7c1df5816da669b65c348da58af6f8d9ff70",
+      "codeIntegrity": "9f428bf0c2ad1ea7ee527279f3fadf26b061885cb03cc77635297a98cb06bae7",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2508,7 +2474,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "5a2c11f253a73bd0abc43f7b226e1d14669698e8df522d580eebdb57fceb6b6e",
+      "codeIntegrity": "2cca7e6c28112bb11dd575940a9e60a98f18632dedd5d93c796acb5e5e5a962d",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2540,7 +2506,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "5a2c11f253a73bd0abc43f7b226e1d14669698e8df522d580eebdb57fceb6b6e",
+      "codeIntegrity": "2cca7e6c28112bb11dd575940a9e60a98f18632dedd5d93c796acb5e5e5a962d",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2570,16 +2536,9 @@
       "url": "https://axuj.github.io/magicui-solid/docs/components/hero-video-dialog/",
       "passed": true,
       "errors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_FAILED",
-        "Failed to load resource: net::ERR_FAILED"
-      ],
-      "blockedRequests": [
-        "https://startup-template-sage.vercel.app/hero-light.png",
-        "https://startup-template-sage.vercel.app/hero-dark.png",
-        "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-      ],
-      "codeIntegrity": "c8bc9737bd0f3b39128bbfd0802193139e72bb35861ec5f47fdd74d4a1e83407",
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "80f8dcbbcd838803e7a75d6fcb575c7b68db9774c451ec538abf35742100191b",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2592,14 +2551,14 @@
       "media": {
         "images": [
           {
-            "loaded": false,
-            "alt": "Hero Video",
-            "src": "https://startup-template-sage.vercel.app/hero-light.png"
+            "loaded": true,
+            "alt": "Sample video thumbnail",
+            "src": "data:image/webp;base64,UklGRtb"
           },
           {
-            "loaded": false,
-            "alt": "Hero Video",
-            "src": "https://startup-template-sage.vercel.app/hero-dark.png"
+            "loaded": true,
+            "alt": "Sample video thumbnail",
+            "src": "data:image/webp;base64,UklGRtb"
           }
         ],
         "videos": []
@@ -2618,11 +2577,7 @@
         "htmlTheme": "light",
         "dataTheme": "light"
       },
-      "expectedBlockedAssets": [
-        "https://startup-template-sage.vercel.app/hero-light.png",
-        "https://startup-template-sage.vercel.app/hero-dark.png",
-        "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-      ]
+      "expectedBlockedAssets": []
     },
     {
       "id": "magicui-solid/Hero Video Dialog",
@@ -2630,16 +2585,9 @@
       "url": "https://axuj.github.io/magicui-solid/docs/components/hero-video-dialog/",
       "passed": true,
       "errors": [],
-      "consoleErrors": [
-        "Failed to load resource: net::ERR_FAILED",
-        "Failed to load resource: net::ERR_FAILED"
-      ],
-      "blockedRequests": [
-        "https://startup-template-sage.vercel.app/hero-light.png",
-        "https://startup-template-sage.vercel.app/hero-dark.png",
-        "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-      ],
-      "codeIntegrity": "c8bc9737bd0f3b39128bbfd0802193139e72bb35861ec5f47fdd74d4a1e83407",
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "80f8dcbbcd838803e7a75d6fcb575c7b68db9774c451ec538abf35742100191b",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2652,14 +2600,14 @@
       "media": {
         "images": [
           {
-            "loaded": false,
-            "alt": "Hero Video",
-            "src": "https://startup-template-sage.vercel.app/hero-light.png"
+            "loaded": true,
+            "alt": "Sample video thumbnail",
+            "src": "data:image/webp;base64,UklGRtb"
           },
           {
-            "loaded": false,
-            "alt": "Hero Video",
-            "src": "https://startup-template-sage.vercel.app/hero-dark.png"
+            "loaded": true,
+            "alt": "Sample video thumbnail",
+            "src": "data:image/webp;base64,UklGRtb"
           }
         ],
         "videos": []
@@ -2678,11 +2626,7 @@
         "htmlTheme": "dark",
         "dataTheme": "dark"
       },
-      "expectedBlockedAssets": [
-        "https://startup-template-sage.vercel.app/hero-light.png",
-        "https://startup-template-sage.vercel.app/hero-dark.png",
-        "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-      ]
+      "expectedBlockedAssets": []
     },
     {
       "id": "magicui-solid/Hexagon Pattern",
@@ -2692,7 +2636,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "7fb12390a33ccfd0756a170306d70fc14e7702321d76e00ab8791c99bc39d874",
+      "codeIntegrity": "d98efb71f57bb53e4cea50fd6345beb773bbb6813674b841fa6e0b4eea26dfcf",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2724,7 +2668,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "7fb12390a33ccfd0756a170306d70fc14e7702321d76e00ab8791c99bc39d874",
+      "codeIntegrity": "d98efb71f57bb53e4cea50fd6345beb773bbb6813674b841fa6e0b4eea26dfcf",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2756,7 +2700,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "2886693171fccd17f0969869e64a4b54434c825fc0521b4d52f804e0b35f74ae",
+      "codeIntegrity": "dba7e24fe6310a8e0ca6e610843adedad5e72a51888ae4ae3f4c81cb7804553d",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "The Magic UI Highlighter makes important text stand out effortlessly.",
@@ -2765,19 +2709,19 @@
         "animations": [
           {
             "name": "rough-notation-dash",
-            "duration": 304.1303422073421
+            "duration": 294.9305346686718
           },
           {
             "name": "rough-notation-dash",
-            "duration": 295.8696577926579
+            "duration": 305.06946533132816
           },
           {
             "name": "rough-notation-dash",
-            "duration": 301.1894505615405
+            "duration": 307.4503827932694
           },
           {
             "name": "rough-notation-dash",
-            "duration": 298.8105494384595
+            "duration": 292.5496172067306
           }
         ],
         "htmlTheme": "light",
@@ -2805,7 +2749,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "2886693171fccd17f0969869e64a4b54434c825fc0521b4d52f804e0b35f74ae",
+      "codeIntegrity": "dba7e24fe6310a8e0ca6e610843adedad5e72a51888ae4ae3f4c81cb7804553d",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "The Magic UI Highlighter makes important text stand out effortlessly.",
@@ -2814,19 +2758,19 @@
         "animations": [
           {
             "name": "rough-notation-dash",
-            "duration": 305.67800825348587
+            "duration": 295.593315533506
           },
           {
             "name": "rough-notation-dash",
-            "duration": 294.3219917465142
+            "duration": 304.406684466494
           },
           {
             "name": "rough-notation-dash",
-            "duration": 282.4375433213713
+            "duration": 293.6626385865327
           },
           {
             "name": "rough-notation-dash",
-            "duration": 317.5624566786287
+            "duration": 306.3373614134673
           }
         ],
         "htmlTheme": "dark",
@@ -2854,10 +2798,10 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c3f2d51d97878cdfaf0828f26bf977583cb510ebb891d6bcd456b7d622b3e50d",
+      "codeIntegrity": "45e1801de50d813085bf70b3a92aea1ab60e858969b8fa0c6c8b96097027d8a8",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
-        "text": "HOVER TBI",
+        "text": "HOVER CAQ",
         "elements": 10,
         "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
         "animations": [],
@@ -2886,10 +2830,10 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c3f2d51d97878cdfaf0828f26bf977583cb510ebb891d6bcd456b7d622b3e50d",
+      "codeIntegrity": "45e1801de50d813085bf70b3a92aea1ab60e858969b8fa0c6c8b96097027d8a8",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
-        "text": "HOVER IGB",
+        "text": "HOVER UXF",
         "elements": 10,
         "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
         "animations": [],
@@ -2918,7 +2862,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3f9223523d028b8a2d5488aabee6d567836acadaa87228f2232a7c605299a0de",
+      "codeIntegrity": "7830f6068b8bac190da08be7a44a95f7c3f2f442ff653c458c5be8ce83c12fb2",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2956,7 +2900,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3f9223523d028b8a2d5488aabee6d567836acadaa87228f2232a7c605299a0de",
+      "codeIntegrity": "7830f6068b8bac190da08be7a44a95f7c3f2f442ff653c458c5be8ce83c12fb2",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2994,7 +2938,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "fff92d16c9e8459a9a882fcad894d1ff0dfdcf194efacd7a71c7cea655e094af",
+      "codeIntegrity": "c6bf157b6360fd6090949857c4251d51e21c9f8285e15078d60ff07e73a4cd2c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -3026,7 +2970,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "fff92d16c9e8459a9a882fcad894d1ff0dfdcf194efacd7a71c7cea655e094af",
+      "codeIntegrity": "c6bf157b6360fd6090949857c4251d51e21c9f8285e15078d60ff07e73a4cd2c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -3058,7 +3002,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "aa45343dc401d1703f9fa7f34918852bf5361697ab7b3303c1340f65f97c6014",
+      "codeIntegrity": "a469d350778d238ab53de6ea166ad67b150effd8941df7bc76d99045564a2e03",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Hover MeHover Me",
@@ -3096,7 +3040,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "aa45343dc401d1703f9fa7f34918852bf5361697ab7b3303c1340f65f97c6014",
+      "codeIntegrity": "a469d350778d238ab53de6ea166ad67b150effd8941df7bc76d99045564a2e03",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Hover MeHover Me",
@@ -3134,7 +3078,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c7169a6541878e03df4c562d082ac8500c3b0c78b163240bb78b86228fd974bb",
+      "codeIntegrity": "ef6259a2fb2da4f7ec2a0ca3b2f09c68b92a3737d54217f82daaafbb1fafa36c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -3166,7 +3110,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c7169a6541878e03df4c562d082ac8500c3b0c78b163240bb78b86228fd974bb",
+      "codeIntegrity": "ef6259a2fb2da4f7ec2a0ca3b2f09c68b92a3737d54217f82daaafbb1fafa36c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -3198,7 +3142,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "a835e2fcdbd837393b6c781b16e315cb28ed7bf2f515bb596180f382c8a30c61",
+      "codeIntegrity": "b60bbacd794955b3284b6786927b8c3f05bb4955e4eb5822fe066019e830269b",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "NostalgiaNostalgia",
@@ -3230,7 +3174,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "a835e2fcdbd837393b6c781b16e315cb28ed7bf2f515bb596180f382c8a30c61",
+      "codeIntegrity": "b60bbacd794955b3284b6786927b8c3f05bb4955e4eb5822fe066019e830269b",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "NostalgiaNostalgia",
@@ -3262,7 +3206,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "19edf17d9cb4ccc488875d5117fc56dd75829e4090c711c9d497e4e40c9d7109",
+      "codeIntegrity": "a8febb0a5d5e3bd84c3c0320117353165170f9c55e422d9f41dd5dac171be6b2",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Your next campSee our latest and best camp destinations all across the five continents of the globe.Let's goAnother time",
@@ -3306,7 +3250,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "19edf17d9cb4ccc488875d5117fc56dd75829e4090c711c9d497e4e40c9d7109",
+      "codeIntegrity": "a8febb0a5d5e3bd84c3c0320117353165170f9c55e422d9f41dd5dac171be6b2",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Your next campSee our latest and best camp destinations all across the five continents of the globe.Let's goAnother time",
@@ -3350,7 +3294,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "001412e2a8ec4a8bdd8787b06a5cd6737a171dc1fc40612b91ec6ea2c8bd0193",
+      "codeIntegrity": "a5081a11f08869b46d5f4bdd38617094f727be2799ce4c4b8178cf0d58979b7a",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Ambient glowLight RaysDrop this component into any container and it will fill the space with softly animated light rays shining from above.",
@@ -3382,7 +3326,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "001412e2a8ec4a8bdd8787b06a5cd6737a171dc1fc40612b91ec6ea2c8bd0193",
+      "codeIntegrity": "a5081a11f08869b46d5f4bdd38617094f727be2799ce4c4b8178cf0d58979b7a",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Ambient glowLight RaysDrop this component into any container and it will fill the space with softly animated light rays shining from above.",
@@ -3414,7 +3358,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c90c9a40e2c541d5e0141800e569faba1c2e498d26e4bb2499e55fd8a1641382",
+      "codeIntegrity": "7084eac9af4c23df0966be042a70d52813769da995977cc7a62f66ca9be40ba0",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "ShipFast",
@@ -3451,7 +3395,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c90c9a40e2c541d5e0141800e569faba1c2e498d26e4bb2499e55fd8a1641382",
+      "codeIntegrity": "7084eac9af4c23df0966be042a70d52813769da995977cc7a62f66ca9be40ba0",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "ShipFast",
@@ -3488,7 +3432,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "4f9f1f870ae078534ce675d91591879d26eef9db26507301db121ecceee1b119",
+      "codeIntegrity": "07641720912b01c2d2b9731144ce7169519a7e207a1dff00d123b19a9050cf97",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "LoginEnter your credentials to access your accountEmailPasswordSign In",
@@ -3525,7 +3469,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "4f9f1f870ae078534ce675d91591879d26eef9db26507301db121ecceee1b119",
+      "codeIntegrity": "07641720912b01c2d2b9731144ce7169519a7e207a1dff00d123b19a9050cf97",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "LoginEnter your credentials to access your accountEmailPasswordSign In",
@@ -3562,7 +3506,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "34433a8813e7e1cbfaf60d18ca9c5d170dfe37592ec545b8765d11dd0afc4808",
+      "codeIntegrity": "7f7ff20fb16b4f1c17afa80b16ddfc71e82f2a2f06cde7d35da00d1b54ecee2f",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Meteors",
@@ -3571,27 +3515,7 @@
         "animations": [
           {
             "name": "meteor",
-            "duration": 9000
-          },
-          {
-            "name": "meteor",
-            "duration": 9000
-          },
-          {
-            "name": "meteor",
-            "duration": 5000
-          },
-          {
-            "name": "meteor",
-            "duration": 2000
-          },
-          {
-            "name": "meteor",
-            "duration": 9000
-          },
-          {
-            "name": "meteor",
-            "duration": 7000
+            "duration": 8000
           },
           {
             "name": "meteor",
@@ -3599,76 +3523,7 @@
           },
           {
             "name": "meteor",
-            "duration": 5000
-          },
-          {
-            "name": "meteor",
-            "duration": 7000
-          },
-          {
-            "name": "meteor",
-            "duration": 3000
-          },
-          {
-            "name": "meteor",
-            "duration": 2000
-          },
-          {
-            "name": "meteor",
-            "duration": 8000
-          },
-          {
-            "name": "meteor",
-            "duration": 3000
-          },
-          {
-            "name": "meteor",
-            "duration": 7000
-          },
-          {
-            "name": "meteor",
-            "duration": 3000
-          }
-        ],
-        "htmlTheme": "light",
-        "dataTheme": "light"
-      },
-      "media": {
-        "images": [],
-        "videos": []
-      },
-      "actions": [],
-      "after": {
-        "text": "Meteors",
-        "animations": 30,
-        "videos": [],
-        "htmlTheme": "light",
-        "dataTheme": "light"
-      },
-      "expectedBlockedAssets": []
-    },
-    {
-      "id": "magicui-solid/Meteors",
-      "theme": "dark",
-      "url": "https://axuj.github.io/magicui-solid/docs/components/meteors/",
-      "passed": true,
-      "errors": [],
-      "consoleErrors": [],
-      "blockedRequests": [],
-      "codeIntegrity": "34433a8813e7e1cbfaf60d18ca9c5d170dfe37592ec545b8765d11dd0afc4808",
-      "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
-      "before": {
-        "text": "Meteors",
-        "elements": 62,
-        "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
-        "animations": [
-          {
-            "name": "meteor",
-            "duration": 5000
-          },
-          {
-            "name": "meteor",
-            "duration": 2000
+            "duration": 4000
           },
           {
             "name": "meteor",
@@ -3676,7 +3531,31 @@
           },
           {
             "name": "meteor",
-            "duration": 3000
+            "duration": 8000
+          },
+          {
+            "name": "meteor",
+            "duration": 6000
+          },
+          {
+            "name": "meteor",
+            "duration": 6000
+          },
+          {
+            "name": "meteor",
+            "duration": 6000
+          },
+          {
+            "name": "meteor",
+            "duration": 2000
+          },
+          {
+            "name": "meteor",
+            "duration": 6000
+          },
+          {
+            "name": "meteor",
+            "duration": 7000
           },
           {
             "name": "meteor",
@@ -3688,15 +3567,48 @@
           },
           {
             "name": "meteor",
-            "duration": 8000
+            "duration": 7000
           },
           {
             "name": "meteor",
-            "duration": 8000
-          },
+            "duration": 4000
+          }
+        ],
+        "htmlTheme": "light",
+        "dataTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Meteors",
+        "animations": 30,
+        "videos": [],
+        "htmlTheme": "light",
+        "dataTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "magicui-solid/Meteors",
+      "theme": "dark",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/meteors/",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "7f7ff20fb16b4f1c17afa80b16ddfc71e82f2a2f06cde7d35da00d1b54ecee2f",
+      "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
+      "before": {
+        "text": "Meteors",
+        "elements": 62,
+        "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
           {
             "name": "meteor",
-            "duration": 5000
+            "duration": 7000
           },
           {
             "name": "meteor",
@@ -3704,19 +3616,51 @@
           },
           {
             "name": "meteor",
+            "duration": 7000
+          },
+          {
+            "name": "meteor",
+            "duration": 4000
+          },
+          {
+            "name": "meteor",
+            "duration": 6000
+          },
+          {
+            "name": "meteor",
+            "duration": 6000
+          },
+          {
+            "name": "meteor",
+            "duration": 6000
+          },
+          {
+            "name": "meteor",
+            "duration": 3000
+          },
+          {
+            "name": "meteor",
+            "duration": 7000
+          },
+          {
+            "name": "meteor",
+            "duration": 4000
+          },
+          {
+            "name": "meteor",
+            "duration": 7000
+          },
+          {
+            "name": "meteor",
+            "duration": 4000
+          },
+          {
+            "name": "meteor",
+            "duration": 3000
+          },
+          {
+            "name": "meteor",
             "duration": 9000
-          },
-          {
-            "name": "meteor",
-            "duration": 2000
-          },
-          {
-            "name": "meteor",
-            "duration": 5000
-          },
-          {
-            "name": "meteor",
-            "duration": 2000
           },
           {
             "name": "meteor",
@@ -3748,7 +3692,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "4f51e495a599a2fcd8bf1c2f5941e5a79f35731520c6fdf838c4e30e44b57f5b",
+      "codeIntegrity": "c41695f291dbae2480c1901512ddda1265181f198b0e7bad053344a98e06dbe6",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "HelloMorphing",
@@ -3780,7 +3724,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "4f51e495a599a2fcd8bf1c2f5941e5a79f35731520c6fdf838c4e30e44b57f5b",
+      "codeIntegrity": "c41695f291dbae2480c1901512ddda1265181f198b0e7bad053344a98e06dbe6",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "HelloMorphing",
@@ -3812,7 +3756,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6235a6bef3dad147053d421ac465c953d98923390f27f18198aae575405c29fd",
+      "codeIntegrity": "4403c76b75ca2d6c16f8d8258a2c2dedbcf8f7039b1d4e2e6eda7c1db8aa628f",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Neon Gradient Card",
@@ -3853,7 +3797,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6235a6bef3dad147053d421ac465c953d98923390f27f18198aae575405c29fd",
+      "codeIntegrity": "4403c76b75ca2d6c16f8d8258a2c2dedbcf8f7039b1d4e2e6eda7c1db8aa628f",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Neon Gradient Card",
@@ -3894,7 +3838,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d4a365b9629dc70403a95901a7c2c6f69f418e998c53f7637f6c7cb81421fc7c",
+      "codeIntegrity": "cc4139f1d77689c32e151170c5ee838af52b034192aaae90b5aa72e469b722b6",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -3926,7 +3870,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d4a365b9629dc70403a95901a7c2c6f69f418e998c53f7637f6c7cb81421fc7c",
+      "codeIntegrity": "cc4139f1d77689c32e151170c5ee838af52b034192aaae90b5aa72e469b722b6",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -3958,7 +3902,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "335f2435dc56a687a873229424cea8901c97eeda2c439662ef586e34b945efd4",
+      "codeIntegrity": "6da1481ebf93067a0ac49c4c8d556de3a3be11b130e0f68b533dd02b02870946",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "47",
@@ -3967,6 +3911,38 @@
         "animations": [],
         "htmlTheme": "light",
         "dataTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "82",
+        "animations": 0,
+        "videos": [],
+        "htmlTheme": "light",
+        "dataTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "magicui-solid/Number Ticker",
+      "theme": "dark",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/number-ticker/",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "6da1481ebf93067a0ac49c4c8d556de3a3be11b130e0f68b533dd02b02870946",
+      "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
+      "before": {
+        "text": "48",
+        "elements": 1,
+        "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [],
+        "htmlTheme": "dark",
+        "dataTheme": "dark"
       },
       "media": {
         "images": [],
@@ -3977,38 +3953,6 @@
         "text": "80",
         "animations": 0,
         "videos": [],
-        "htmlTheme": "light",
-        "dataTheme": "light"
-      },
-      "expectedBlockedAssets": []
-    },
-    {
-      "id": "magicui-solid/Number Ticker",
-      "theme": "dark",
-      "url": "https://axuj.github.io/magicui-solid/docs/components/number-ticker/",
-      "passed": true,
-      "errors": [],
-      "consoleErrors": [],
-      "blockedRequests": [],
-      "codeIntegrity": "335f2435dc56a687a873229424cea8901c97eeda2c439662ef586e34b945efd4",
-      "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
-      "before": {
-        "text": "47",
-        "elements": 1,
-        "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
-        "animations": [],
-        "htmlTheme": "dark",
-        "dataTheme": "dark"
-      },
-      "media": {
-        "images": [],
-        "videos": []
-      },
-      "actions": [],
-      "after": {
-        "text": "77",
-        "animations": 0,
-        "videos": [],
         "htmlTheme": "dark",
         "dataTheme": "dark"
       },
@@ -4022,7 +3966,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d6a67ce403219c05b40656f57d6398fe5cb6295091b93b0bc159b1eb9e7ed5ac",
+      "codeIntegrity": "89a000aa2ab57bdaf62d900e28cf00951d4e46ac29005d1e82486e9d2f336680",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -4091,7 +4035,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d6a67ce403219c05b40656f57d6398fe5cb6295091b93b0bc159b1eb9e7ed5ac",
+      "codeIntegrity": "89a000aa2ab57bdaf62d900e28cf00951d4e46ac29005d1e82486e9d2f336680",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -4160,7 +4104,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "844e4d31f4191a2dfee14ca88902addfadf6291e907f613bd4cc7194e2d1dbf1",
+      "codeIntegrity": "a1746abfd734d3b152c43a3660c970aa6c8ae63b0393ea563996fb235bae71a7",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Particles",
@@ -4192,7 +4136,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "844e4d31f4191a2dfee14ca88902addfadf6291e907f613bd4cc7194e2d1dbf1",
+      "codeIntegrity": "a1746abfd734d3b152c43a3660c970aa6c8ae63b0393ea563996fb235bae71a7",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Particles",
@@ -4224,7 +4168,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c208dbf557fc103287d364e14e0bd2896b718beaef4f5d7311b2a96532dd36c0",
+      "codeIntegrity": "3371d83464fe80bac4dd77099a66398c2e1673dada3cf7b95d25b40e2c62f746",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -4423,7 +4367,7 @@
       "actions": [],
       "after": {
         "text": "",
-        "animations": 24,
+        "animations": 19,
         "videos": [],
         "htmlTheme": "light",
         "dataTheme": "light"
@@ -4438,7 +4382,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c208dbf557fc103287d364e14e0bd2896b718beaef4f5d7311b2a96532dd36c0",
+      "codeIntegrity": "3371d83464fe80bac4dd77099a66398c2e1673dada3cf7b95d25b40e2c62f746",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -4637,7 +4581,7 @@
       "actions": [],
       "after": {
         "text": "",
-        "animations": 24,
+        "animations": 23,
         "videos": [],
         "htmlTheme": "dark",
         "dataTheme": "dark"
@@ -4652,7 +4596,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "241763b9660dcd0e83b2f16638809ce3373177c8a8fc6965cb322a061033990b",
+      "codeIntegrity": "b517f87ae7efd489fc762e9756c62e8c529a34e40148918f987fa6963198659b",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Animated PointerAnimated pointerColored PointerA custom pointer with different colorCustom ShapeA pointer with a custom SVG shapeEmoji PointerUsing an emoji as a custom pointer👆",
@@ -4684,7 +4628,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "241763b9660dcd0e83b2f16638809ce3373177c8a8fc6965cb322a061033990b",
+      "codeIntegrity": "b517f87ae7efd489fc762e9756c62e8c529a34e40148918f987fa6963198659b",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Animated PointerAnimated pointerColored PointerA custom pointer with different colorCustom ShapeA pointer with a custom SVG shapeEmoji PointerUsing an emoji as a custom pointer👆",
@@ -4716,7 +4660,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "04e0088beb73d6f7473f8bac4b8d2ff16e65d0469012216c1784bebf81eb8822",
+      "codeIntegrity": "6f4df3b13347a887e2ace56a6444dc17f2017c9e869e5ff1cb29b0051c15f8e7",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "012345678910111213141516171819",
@@ -4754,7 +4698,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "04e0088beb73d6f7473f8bac4b8d2ff16e65d0469012216c1784bebf81eb8822",
+      "codeIntegrity": "6f4df3b13347a887e2ace56a6444dc17f2017c9e869e5ff1cb29b0051c15f8e7",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "012345678910111213141516171819",
@@ -4792,7 +4736,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "a28501da86a3c895da45b41fed1c3ef2acca1c329a7287f9a50550fe7f720c2f",
+      "codeIntegrity": "fcb1748c93762ed864795dfe8517ef21e133739d7b43504f30776d19bda92404",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Join Affiliate Program",
@@ -4835,7 +4779,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "a28501da86a3c895da45b41fed1c3ef2acca1c329a7287f9a50550fe7f720c2f",
+      "codeIntegrity": "fcb1748c93762ed864795dfe8517ef21e133739d7b43504f30776d19bda92404",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Join Affiliate Program",
@@ -4878,7 +4822,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "5bd2d522dd666ac29dc54d3cb913925167b1f2691fe4ba8e0917368084d26779",
+      "codeIntegrity": "a3d575eeff6660f7d6e45c895d6ca2dbc8d5138606a25ffebad506c093979902",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Get Unlimited Access",
@@ -4925,7 +4869,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "5bd2d522dd666ac29dc54d3cb913925167b1f2691fe4ba8e0917368084d26779",
+      "codeIntegrity": "a3d575eeff6660f7d6e45c895d6ca2dbc8d5138606a25ffebad506c093979902",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Get Unlimited Access",
@@ -4972,7 +4916,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "2b214bf1ad0279dc86000c62f936472e5d7996e61d3089da72796f249977c645",
+      "codeIntegrity": "deffa9348cdb271886234d4ab723f7d67d9e33274551ce6c64d5fae9a9256932",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Retro Grid\n@keyframes retro-grid-fallback-scroll {\n  from {\n    transform: translateY(-50%);\n  }\n\n  to {\n    transform: translateY(0);\n  }\n}\n\n@media (prefers-reduced-motion: reduce) {\n  [data-retro-grid-scroll=\"true\"] {\n    animation: none ",
@@ -5004,7 +4948,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "2b214bf1ad0279dc86000c62f936472e5d7996e61d3089da72796f249977c645",
+      "codeIntegrity": "deffa9348cdb271886234d4ab723f7d67d9e33274551ce6c64d5fae9a9256932",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Retro Grid\n@keyframes retro-grid-fallback-scroll {\n  from {\n    transform: translateY(-50%);\n  }\n\n  to {\n    transform: translateY(0);\n  }\n}\n\n@media (prefers-reduced-motion: reduce) {\n  [data-retro-grid-scroll=\"true\"] {\n    animation: none ",
@@ -5036,7 +4980,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b9b64e1438ee228abe7f8931904bb18a013a0c366ad0d4be567ad47100edb7f3",
+      "codeIntegrity": "2a74a46c570351c942e037c2e86b949b06e6039eb5cb6ea0d97c3755e868c13e",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Ripple",
@@ -5101,7 +5045,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b9b64e1438ee228abe7f8931904bb18a013a0c366ad0d4be567ad47100edb7f3",
+      "codeIntegrity": "2a74a46c570351c942e037c2e86b949b06e6039eb5cb6ea0d97c3755e868c13e",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Ripple",
@@ -5166,7 +5110,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d4de1de67911d430e0496b3a6e3b148f927cf41da218547a099f6bd0404cbc66",
+      "codeIntegrity": "cf15a44d76a5fc9362438e339c833b6715de71cf0403e9e34bcb0831b4dc781e",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "magicui.design",
@@ -5198,7 +5142,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d4de1de67911d430e0496b3a6e3b148f927cf41da218547a099f6bd0404cbc66",
+      "codeIntegrity": "cf15a44d76a5fc9362438e339c833b6715de71cf0403e9e34bcb0831b4dc781e",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "magicui.design",
@@ -5230,7 +5174,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "03f888c065f488c8d6c5a043595a9a6063c40cb495f658cb18b34e00ec717b4f",
+      "codeIntegrity": "c39c7f97a17333af52db9623e6f37282c013cfb689cf46780bdc1b121ec69e08",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Velocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity Scroll",
@@ -5262,7 +5206,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "03f888c065f488c8d6c5a043595a9a6063c40cb495f658cb18b34e00ec717b4f",
+      "codeIntegrity": "c39c7f97a17333af52db9623e6f37282c013cfb689cf46780bdc1b121ec69e08",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Velocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity Scroll",
@@ -5294,7 +5238,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "dbed72caceee5d9a2eabb03d493bd122bd16ebc1e01dba7abed5897f5a858342",
+      "codeIntegrity": "fe21c4b60d280c3984e2a3c4dc79339e645c3d6aa987c7b6c4114a4cb23c6292",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Note: The scroll progress is shown below the navbar of the page.",
@@ -5326,7 +5270,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "dbed72caceee5d9a2eabb03d493bd122bd16ebc1e01dba7abed5897f5a858342",
+      "codeIntegrity": "fe21c4b60d280c3984e2a3c4dc79339e645c3d6aa987c7b6c4114a4cb23c6292",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Note: The scroll progress is shown below the navbar of the page.",
@@ -5358,7 +5302,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6d880950100dd9c4b06dc09e4942f50f0949bbb299b8d517a30072659a2018e2",
+      "codeIntegrity": "0415750af0a487453e144f70fa4291510f686945f095d11d5d486684701e6822",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "LoginEnter your credentials to access your accountEmailPasswordSign In",
@@ -5400,7 +5344,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6d880950100dd9c4b06dc09e4942f50f0949bbb299b8d517a30072659a2018e2",
+      "codeIntegrity": "0415750af0a487453e144f70fa4291510f686945f095d11d5d486684701e6822",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "LoginEnter your credentials to access your accountEmailPasswordSign In",
@@ -5442,7 +5386,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "53845924461ff715e8e51fd63081bd4f97c084aefc44688d900d802b376978b2",
+      "codeIntegrity": "168f9782ac67863f0f9c12592260a8953301fa1047bd8b769257a32146a3e257",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Shiny Button",
@@ -5480,7 +5424,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "53845924461ff715e8e51fd63081bd4f97c084aefc44688d900d802b376978b2",
+      "codeIntegrity": "168f9782ac67863f0f9c12592260a8953301fa1047bd8b769257a32146a3e257",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Shiny Button",
@@ -5518,7 +5462,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3d812398b850fd2408db168c4c6bd6f623445cf99bb5bf23f942d94493972aeb",
+      "codeIntegrity": "798dfea6d7b4e735bdebf0d93a059958797cf804a602a30d7eabe54d584a68c2",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Move your mouse aroundSmoothCursor is disabled on touch devices",
@@ -5550,7 +5494,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3d812398b850fd2408db168c4c6bd6f623445cf99bb5bf23f942d94493972aeb",
+      "codeIntegrity": "798dfea6d7b4e735bdebf0d93a059958797cf804a602a30d7eabe54d584a68c2",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Move your mouse aroundSmoothCursor is disabled on touch devices",
@@ -5582,7 +5526,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "0b8890eca74f0df1b49a74aac83de4c138a1e9899864bce95eb30ef375da7e1c",
+      "codeIntegrity": "d810e339d10955b015c023a8d1a0d97fa7ebe291668c3f66ca169beee29b42d8",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Magic UI",
@@ -5655,7 +5599,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "0b8890eca74f0df1b49a74aac83de4c138a1e9899864bce95eb30ef375da7e1c",
+      "codeIntegrity": "d810e339d10955b015c023a8d1a0d97fa7ebe291668c3f66ca169beee29b42d8",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Magic UI",
@@ -5728,7 +5672,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "1a06dfdaa95b6e0693cddc4e465b6510b7abf157fdf08d181169758e66f517ef",
+      "codeIntegrity": "e53ab918efed61855ed652428a637767f2dd6ceb82e0be1b5b2efc33efff906d",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "learn more • earn more • grow more • learn more • earn more • grow more •",
@@ -5760,7 +5704,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "1a06dfdaa95b6e0693cddc4e465b6510b7abf157fdf08d181169758e66f517ef",
+      "codeIntegrity": "e53ab918efed61855ed652428a637767f2dd6ceb82e0be1b5b2efc33efff906d",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "learn more • earn more • grow more • learn more • earn more • grow more •",
@@ -5792,7 +5736,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f768de2aba9556ce7a87df6e70e82359a44f31775dcfb6755d00f0f8b5f77bc7",
+      "codeIntegrity": "bf470ed9742f731c3d0b7be6e472232d12c1a14ea01a0c2a7ef48eb4bdd8cd47",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -5824,7 +5768,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f768de2aba9556ce7a87df6e70e82359a44f31775dcfb6755d00f0f8b5f77bc7",
+      "codeIntegrity": "bf470ed9742f731c3d0b7be6e472232d12c1a14ea01a0c2a7ef48eb4bdd8cd47",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -5856,7 +5800,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "2285a701c2eeda69d09e82c72d2e569a13fc45cbd865d0e8f5db6c5a981a7479",
+      "codeIntegrity": "7959af2c58c25cfbbb96d15eed2deea2cec7d9f374815d53e2dfda0eb2b7b961",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "> pnpm dlx shadcn@latest init> pnpm✔ Preflight checks.✔ Verifying framework. Found Next.js.✔ Validating Tailwind CSS.✔ Validating import alias.✔ Writing components.json.✔ Checking registry.✔ Updating tailwind.config.ts✔ Updating app/globals",
@@ -5872,7 +5816,7 @@
       },
       "actions": [],
       "after": {
-        "text": "> pnpm dlx shadcn@latest init> pnpm dlx sha✔ Preflight checks.✔ Verifying framework. Found Next.js.✔ Validating Tailwind CSS.✔ Validating import alias.✔ Writing components.json.✔ Checking registry.✔ Updating tailwind.config.ts✔ Updating app",
+        "text": "> pnpm dlx shadcn@latest init> pnpm dlx shad✔ Preflight checks.✔ Verifying framework. Found Next.js.✔ Validating Tailwind CSS.✔ Validating import alias.✔ Writing components.json.✔ Checking registry.✔ Updating tailwind.config.ts✔ Updating ap",
         "animations": 0,
         "videos": [],
         "htmlTheme": "light",
@@ -5888,7 +5832,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "2285a701c2eeda69d09e82c72d2e569a13fc45cbd865d0e8f5db6c5a981a7479",
+      "codeIntegrity": "7959af2c58c25cfbbb96d15eed2deea2cec7d9f374815d53e2dfda0eb2b7b961",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "> pnpm dlx shadcn@latest init> pnpm✔ Preflight checks.✔ Verifying framework. Found Next.js.✔ Validating Tailwind CSS.✔ Validating import alias.✔ Writing components.json.✔ Checking registry.✔ Updating tailwind.config.ts✔ Updating app/globals",
@@ -5920,7 +5864,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "abe43fb45942af73b5e1aa043db15839fc91e3167140d21d0daad6e5b1eb7dfc",
+      "codeIntegrity": "6a8d186e15a2bd3a0b3b3c8e8da5597c1e1581e16d739b54613a03336b62c4f6",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Stay hungry, stay foolishSSttaayy hhuunnggrryy,, ssttaayy ffoooolliisshh",
@@ -5952,7 +5896,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "abe43fb45942af73b5e1aa043db15839fc91e3167140d21d0daad6e5b1eb7dfc",
+      "codeIntegrity": "6a8d186e15a2bd3a0b3b3c8e8da5597c1e1581e16d739b54613a03336b62c4f6",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Stay hungry, stay foolishSSttaayy hhuunnggrryy,, ssttaayy ffoooolliisshh",
@@ -5984,7 +5928,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9b005dd022e2f8d811e8f8655d40087f31ddfc565694b2e38d154b29284db82f",
+      "codeIntegrity": "6ebbf3aff70c56a3e136ba2b377dbbcf97c4296dac0ee9ec960479ad66169c05",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Blur in by characterBlur in by character",
@@ -6077,7 +6021,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9b005dd022e2f8d811e8f8655d40087f31ddfc565694b2e38d154b29284db82f",
+      "codeIntegrity": "6ebbf3aff70c56a3e136ba2b377dbbcf97c4296dac0ee9ec960479ad66169c05",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Blur in by characterBlur in by character",
@@ -6114,10 +6058,6 @@
           },
           {
             "name": "web-animation",
-            "duration": 300
-          },
-          {
-            "name": "web-animation",
             "duration": 400
           },
           {
@@ -6143,6 +6083,10 @@
           {
             "name": "web-animation",
             "duration": 400
+          },
+          {
+            "name": "web-animation",
+            "duration": 300
           }
         ],
         "htmlTheme": "dark",
@@ -6170,7 +6114,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "65122e0f2916401d14ee9e087765aa6cbf4842fcd548b661c7768c14d9db253b",
+      "codeIntegrity": "cc61523de6a80ec7d8a3d0da8a9149b0e0ac81e7ecc8ceaa33e8442310d5b882",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "MagicMagicUIUIwillwillchangechangethethewaywayyouyoudesign.design.",
@@ -6202,7 +6146,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "65122e0f2916401d14ee9e087765aa6cbf4842fcd548b661c7768c14d9db253b",
+      "codeIntegrity": "cc61523de6a80ec7d8a3d0da8a9149b0e0ac81e7ecc8ceaa33e8442310d5b882",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "MagicMagicUIUIwillwillchangechangethethewaywayyouyoudesign.design.",
@@ -6234,7 +6178,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "a7136c0bbab67c8c607287f2e71d20e9032a4231ce2e96a6ff18f31a26fc4be1",
+      "codeIntegrity": "6f00c2222e108138afa8414dd38babf7977181db1c71cfb1bfe9df009f9c3ac7",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Hel|",
@@ -6248,43 +6192,6 @@
         ],
         "htmlTheme": "light",
         "dataTheme": "light"
-      },
-      "media": {
-        "images": [],
-        "videos": []
-      },
-      "actions": [],
-      "after": {
-        "text": "Hello Wo|",
-        "animations": 1,
-        "videos": [],
-        "htmlTheme": "light",
-        "dataTheme": "light"
-      },
-      "expectedBlockedAssets": []
-    },
-    {
-      "id": "magicui-solid/Typing Animation",
-      "theme": "dark",
-      "url": "https://axuj.github.io/magicui-solid/docs/components/typing-animation/",
-      "passed": true,
-      "errors": [],
-      "consoleErrors": [],
-      "blockedRequests": [],
-      "codeIntegrity": "a7136c0bbab67c8c607287f2e71d20e9032a4231ce2e96a6ff18f31a26fc4be1",
-      "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
-      "before": {
-        "text": "Hel|",
-        "elements": 2,
-        "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
-        "animations": [
-          {
-            "name": "blink-cursor",
-            "duration": 1200
-          }
-        ],
-        "htmlTheme": "dark",
-        "dataTheme": "dark"
       },
       "media": {
         "images": [],
@@ -6295,6 +6202,43 @@
         "text": "Hello W|",
         "animations": 1,
         "videos": [],
+        "htmlTheme": "light",
+        "dataTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "magicui-solid/Typing Animation",
+      "theme": "dark",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/typing-animation/",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "6f00c2222e108138afa8414dd38babf7977181db1c71cfb1bfe9df009f9c3ac7",
+      "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
+      "before": {
+        "text": "Hel|",
+        "elements": 2,
+        "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "blink-cursor",
+            "duration": 1200
+          }
+        ],
+        "htmlTheme": "dark",
+        "dataTheme": "dark"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Hello Wo|",
+        "animations": 1,
+        "videos": [],
         "htmlTheme": "dark",
         "dataTheme": "dark"
       },
@@ -6308,7 +6252,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9b7d5cd96cc0c97887cf99a1a84bcdcdb4fed3595866e92e0f4479a7026697a7",
+      "codeIntegrity": "64fd955fdef21a23e9b88f8dd291190e71de059b754451092a4df29d58d4ac72",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Congratulations on Your Promotion!Your hard work and dedication have paid off. We're thrilled to see you take this next step in your career. Keep up the fantastic work!",
@@ -6389,7 +6333,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9b7d5cd96cc0c97887cf99a1a84bcdcdb4fed3595866e92e0f4479a7026697a7",
+      "codeIntegrity": "64fd955fdef21a23e9b88f8dd291190e71de059b754451092a4df29d58d4ac72",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Congratulations on Your Promotion!Your hard work and dedication have paid off. We're thrilled to see you take this next step in your career. Keep up the fantastic work!",
@@ -6470,7 +6414,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "50165bfff433a00e306bdd89cb0e5697302cd733ce3bcfbb7eea7fce10016dab",
+      "codeIntegrity": "40198d88ff7de72cb8c6400eef64b270c7bfd73310fc613e0275690db3fe3025",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Word",
@@ -6502,7 +6446,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "50165bfff433a00e306bdd89cb0e5697302cd733ce3bcfbb7eea7fce10016dab",
+      "codeIntegrity": "40198d88ff7de72cb8c6400eef64b270c7bfd73310fc613e0275690db3fe3025",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Word",
@@ -6534,7 +6478,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "020ec645ece73bbeb5f32d043194aabce81fac2dd27642e65304512517fa88bf",
+      "codeIntegrity": "9e8f3425ebf5b0d43589c3d6f58bbb2ce529a767310fcb27a63f0873c09ec09c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -6549,7 +6493,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.283359,
+            "time": 0.322505,
             "paused": false,
             "source": "data:video/mp4;base64,AAAAIGZ0"
           }
@@ -6562,7 +6506,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.749165,
+            "time": 0.744053,
             "paused": false
           }
         ],
@@ -6586,7 +6530,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "020ec645ece73bbeb5f32d043194aabce81fac2dd27642e65304512517fa88bf",
+      "codeIntegrity": "9e8f3425ebf5b0d43589c3d6f58bbb2ce529a767310fcb27a63f0873c09ec09c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -6601,7 +6545,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.426668,
+            "time": 0.425931,
             "paused": false,
             "source": "data:video/mp4;base64,AAAAIGZ0"
           }
@@ -6614,7 +6558,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.849588,
+            "time": 0.849106,
             "paused": false
           }
         ],
@@ -6702,7 +6646,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "0378ecf4417cb3508789db06a152d1a4a33b731a6487c6ab9fcefacd3369a9db",
+      "codeIntegrity": "907244231cbc691873e35cd5fa6959fc4131e9a8e959a83478b34e69e7f24690",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Your browser does not support the video tag.OCEAN",
@@ -6717,7 +6661,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.224247,
+            "time": 0.320751,
             "paused": false,
             "source": "data:video/webm;base64,GkXfowE"
           }
@@ -6730,7 +6674,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.792916,
+            "time": 0.789789,
             "paused": false
           }
         ],
@@ -6754,7 +6698,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "0378ecf4417cb3508789db06a152d1a4a33b731a6487c6ab9fcefacd3369a9db",
+      "codeIntegrity": "907244231cbc691873e35cd5fa6959fc4131e9a8e959a83478b34e69e7f24690",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Your browser does not support the video tag.OCEAN",
@@ -6769,7 +6713,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.322872,
+            "time": 0.347781,
             "paused": false,
             "source": "data:video/webm;base64,GkXfowE"
           }
@@ -6782,7 +6726,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.824787,
+            "time": 0.862473,
             "paused": false
           }
         ],
@@ -6827,7 +6771,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.380284,
+            "time": 0.377586,
             "paused": false,
             "source": "data:video/mp4;base64,AAAAIGZ0"
           }
@@ -6840,7 +6784,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.819033,
+            "time": 0.783525,
             "paused": false
           }
         ],
@@ -6885,7 +6829,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.362403,
+            "time": 0.378934,
             "paused": false,
             "source": "data:video/mp4;base64,AAAAIGZ0"
           }
@@ -6898,7 +6842,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.8168,
+            "time": 0.823036,
             "paused": false
           }
         ],

@@ -1,8 +1,10 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFile, readdir, stat } from "node:fs/promises";
+import { copyFile, mkdir, mkdtemp, readFile, readdir, rm, stat } from "node:fs/promises";
 import { createHash } from "node:crypto";
-import { resolve } from "node:path";
+import { execFileSync } from "node:child_process";
+import { tmpdir } from "node:os";
+import { join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { parse } from "@babel/parser";
 import { brotliDecompressSync } from "node:zlib";
@@ -13,6 +15,30 @@ const readJson=async path=>JSON.parse(await readFile(path,"utf8"));
 const readArtifact=async slug=>(await import(pathToFileURL(resolve(`data/component-previews/solid/${slug}/index.ts`)).href)).default;
 const hash=bytes=>createHash("sha256").update(bytes).digest("hex");
 const command=/\b(?:npx|bunx)\s|\b(?:npm|pnpm|yarn|bun)\s+(?:install|add|create|dlx|exec|i)\b/i;
+
+test("regenerating the MagicUI Solid plan retains preview adaptations", async t => {
+  const fixture = await mkdtemp(join(tmpdir(), "col-motion-plan-"));
+  t.after(() => rm(fixture, { recursive: true, force: true }));
+  for (const slug of Object.keys(sizes)) {
+    const source = resolve(`data/solid-libraries/${slug}`);
+    const target = join(fixture, "data/solid-libraries", slug);
+    await mkdir(target, { recursive: true });
+    for (const name of ["upstream.json", "coverage.json", "page-verification.json"]) await copyFile(join(source, name), join(target, name));
+    if (slug === "magicui-solid") {
+      await mkdir(join(target, "demos"));
+      for (const name of ["tweet-card", "avatar-circles", "hero-video-dialog"]) await copyFile(join(source, `demos/${name}.tsx`), join(target, `demos/${name}.tsx`));
+    }
+  }
+  execFileSync(process.execPath, [resolve("scripts/solid-libraries/motion-expansion-plan.mjs")], { cwd: fixture, stdio: "pipe" });
+  const generated = await readJson(join(fixture, "data/solid-libraries/magicui-solid/examples.json"));
+  const committed = await readJson("data/solid-libraries/magicui-solid/examples.json");
+  const confetti = generated.examples.find(item => item.id === "magicui-solid/Confetti");
+  assert.equal(confetti?.module, "src/demos/ConfettiDemo.tsx");
+  assert.equal(confetti.adaptation, committed.examples.find(item => item.id === "magicui-solid/Confetti")?.adaptation);
+  for (const id of ["magicui-solid/Avatar Circles", "magicui-solid/Hero Video Dialog"]) {
+    assert.deepEqual(generated.examples.find(item => item.id === id), committed.examples.find(item => item.id === id));
+  }
+});
 function runtimeImports(code){
   const found=[];
   const walk=node=>{if(!node||typeof node!=="object")return;if(Array.isArray(node)){node.forEach(walk);return;}if(node.type==="ImportDeclaration"||node.type==="ImportExpression"||(node.type==="CallExpression"&&node.callee.type==="Import"))found.push(node.type);for(const [key,value] of Object.entries(node))if(!["loc","comments","tokens"].includes(key))walk(value);};

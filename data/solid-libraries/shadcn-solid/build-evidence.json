@@ -2970,7 +2970,7 @@
       "lockIntegrity": "sha256:40d1c0827743a58526d31a25421a853f6d27a9d155575ea730e873502968fd84"
     },
     "batch-07": {
-      "codeIntegrity": "sha256:4dd6836c4efffe8ad3cb5fcf5718bfe7d378bc60a08e4cad6c8fb5f2afd8779a",
+      "codeIntegrity": "sha256:a76f20a1421e72b8b37fcd15b6dbe570c4eb6d5902881487b437df1678e231ce",
       "cssIntegrity": "sha256:eb12ece480cdfafb610459530fc55af730b62b476c3ff406f609f743ba77605d",
       "inputs": [
         0,
@@ -3094,7 +3094,7 @@
         "node_modules/solid-prevent-scroll",
         "node_modules/solid-presence"
       ],
-      "inputsIntegrity": "sha256:b23518cb0338e100c1cd2ee78318481435fa57d1cb14fa9409e4247a8fbc6a06",
+      "inputsIntegrity": "sha256:59b9d9273102c176909ed5358c8c7b2eb23b9c2fda7565a6d50d5220d0f66b66",
       "packagesIntegrity": "sha256:5d976bcfa90e7470eb47a9ef15de9f63481a94bbbc2f55cc43a14ee76407b2ee",
       "lockIntegrity": "sha256:40d1c0827743a58526d31a25421a853f6d27a9d155575ea730e873502968fd84"
     },
@@ -10940,7 +10940,7 @@
     },
     {
       "path": "apps/docs/src/registry/examples/otp-field-demo.tsx",
-      "sha256": "567504c6324d3b312e1c2c8e87c32a7719233a28b773926cb033f6426b95ceb4"
+      "sha256": "3826051fd7200156533046b52e72631b7c25ef58bc3295d1c99185b78eb4b6db"
     },
     {
       "path": "../../@kobalte/core/dist/pagination/index.js",
@@ -12349,6 +12349,7 @@
   "adaptations": [
     "Original docs Tailwind v4 theme, variables, state selectors and animation package retained.",
     "Original Geist variable font assets embedded as data URLs with the SIL Open Font License.",
-    "Reviewed mount wrapper maps the preview theme to the upstream data-kb-theme attribute and disposes the Solid root."
+    "Reviewed mount wrapper maps the preview theme to the upstream data-kb-theme attribute and disposes the Solid root.",
+    "OTP examples disable Corvu password-manager displacement; affected avatar examples use the original fallback in place of unverified external images."
   ]
 }

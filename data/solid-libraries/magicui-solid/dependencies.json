@@ -436,10 +436,13 @@
       ],
       "exampleDependencies": [],
       "exampleSource": {
-        "path": "src/demos/AvatarCirclesDemo.tsx",
-        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/AvatarCirclesDemo.tsx",
-        "integrity": "63bb76c0d7be474018005ce31b72d7e00535d626bf00f31e4dd0bcd42b045e9d",
-        "kind": "original-source",
+        "path": "demos/avatar-circles.tsx",
+        "documentedExample": {
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/AvatarCirclesDemo.tsx",
+          "integrity": "63bb76c0d7be474018005ce31b72d7e00535d626bf00f31e4dd0bcd42b045e9d"
+        },
+        "integrity": "f0e7ba30aa688149a241af1b951d6325aa1a53bb7d2b8baea7a1cab377e485ff",
+        "kind": "authored-sample",
         "sourcePaths": [
           "src/lib/utils.ts",
           "src/registry/magicui/avatar-circles.tsx"
@@ -1365,10 +1368,13 @@
       ],
       "exampleDependencies": [],
       "exampleSource": {
-        "path": "src/demos/HeroVideoDialogDemo.tsx",
-        "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/HeroVideoDialogDemo.tsx",
-        "integrity": "6a3c633014b50fdbf0ed18e833e8956cd5e7b4fa6e267f0f09ee7a003118d1b5",
-        "kind": "original-source",
+        "path": "demos/hero-video-dialog.tsx",
+        "documentedExample": {
+          "url": "https://raw.githubusercontent.com/axuj/magicui-solid/3100c2f704620f96dc431dd86f86bbbf9bb05965/src/demos/HeroVideoDialogDemo.tsx",
+          "integrity": "6a3c633014b50fdbf0ed18e833e8956cd5e7b4fa6e267f0f09ee7a003118d1b5"
+        },
+        "integrity": "308bfb9d3425ce8831d10f05ad2010972f668838e77a5fd96f0046e410dcb360",
+        "kind": "authored-sample",
         "sourcePaths": [
           "src/lib/utils.ts",
           "src/registry/magicui/hero-video-dialog.tsx"

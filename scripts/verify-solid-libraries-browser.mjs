@@ -15,6 +15,7 @@ import { verifyMagicuiTweet } from "./verify-magicui-tweet.mjs";
 import { verifyMagicuiConfetti } from "./verify-magicui-confetti.mjs";
 import { verifyTorchVideo } from "./verify-torch-video.mjs";
 import { verifyTorchReview } from "./verify-torch-review.mjs";
+import { offlineMediaPreviews, verifySolidReview } from "./verify-solid-review.mjs";
 
 // Opt-in verification of the real standalone HTML frame, outside npm test.
 const require = createRequire(import.meta.url);
@@ -37,20 +38,29 @@ const interact = {
   "kobalte/Tabs": async frame => { await frame.getByRole("tab", { name: "Dashboard" }).click(); await expect(frame.getByText("Dashboard details")).toBeVisible(); },
   "solid-ui/Button": async frame => expect(button(frame, "Primary")).toBeVisible(),
   "solid-ui/Accordion": async frame => { const trigger = button(frame, "Is it accessible?"); await trigger.click(); await expect(trigger).toHaveAttribute("aria-expanded", "true"); await expect(frame.getByText("Yes. It adheres to the WAI-ARIA design pattern.")).toBeVisible(); },
-  "solid-ui/Progress Circle": async frame => { await expect(frame.locator("circle[stroke-dashoffset]").first()).toBeVisible(); await expect(frame.getByText("75%").first()).toBeVisible(); },
+  "solid-ui/Avatar": frame => verifySolidReview(frame, "solid-ui/Avatar", expect),
+  "solid-ui/Progress Circle": async frame => { await expect(frame.locator("circle[stroke-dashoffset]").first()).toBeVisible(); await expect(frame.getByText("75%").first()).toBeVisible(); await verifySolidReview(frame, "solid-ui/Progress Circle", expect); },
+  "solid-ui/OTP Field": frame => verifySolidReview(frame, "solid-ui/OTP Field", expect),
   "shadcn-solid/Button": async frame => expect(frame.locator('[data-slot="button"]').first()).toHaveText("Button"),
   "shadcn-solid/Dialog": async frame => { await button(frame, "Scrollable Content").click(); await expect(frame.getByRole("dialog")).toBeVisible(); await frame.getByRole("dialog").press("Escape"); await expect(frame.getByRole("dialog")).toHaveCount(0); },
   "shadcn-solid/Tabs": async frame => { await frame.getByRole("tab", { name: "Password" }).click(); await expect(button(frame, "Save password")).toBeVisible(); },
+  "shadcn-solid/OTP Field": frame => verifySolidReview(frame, "shadcn-solid/OTP Field", expect),
   "zaidan/Button": async frame => expect(frame.locator('[data-slot="button"]').first()).toBeVisible(),
   "zaidan/Checkbox": async frame => { const input = frame.locator('input[name="terms-checkbox"]'); await expect(input).not.toBeChecked(); await frame.locator('label[for="terms-checkbox"]').click(); await expect(input).toBeChecked(); },
   "zaidan/Dialog": async frame => { await button(frame, "Open Dialog").click(); const dialog = frame.getByRole("dialog"); await expect(dialog).toContainText("Edit profile"); await dialog.getByRole("button", { name: "Dismiss", exact: true }).filter({ hasText: "Cancel" }).click(); await expect(dialog).toHaveCount(0); },
+  "zaidan/Input OTP": frame => verifySolidReview(frame, "zaidan/Input OTP", expect),
+  "zaidan/Avatar": frame => verifySolidReview(frame, "zaidan/Avatar", expect),
+  "zaidan/Message": frame => verifySolidReview(frame, "zaidan/Message", expect),
+  "zaidan/Sidebar": frame => verifySolidReview(frame, "zaidan/Sidebar", expect),
   "hope-ui/Button": async frame => expect(frame.getByRole("button", { name: /Save/ }).first()).toBeVisible(),
   "hope-ui/Dialog": async frame => { await button(frame, "Delete project").click(); await expect(frame.getByRole("dialog")).toContainText("Delete project"); await frame.getByRole("dialog").getByRole("button", { name: "Cancel" }).click(); await expect(frame.getByRole("dialog")).toHaveCount(0); },
   "hope-ui/Select": async frame => { await frame.getByRole("combobox", { name: "Choose a fruit" }).click(); await frame.getByRole("option", { name: "Apple" }).click(); await expect(frame.getByRole("combobox", { name: "Choose a fruit" })).toContainText("Apple"); },
   "rocksolid/Button": async frame => { await button(frame, "Clicked 0 times").click(); await expect(button(frame, "Clicked 1 times")).toBeVisible(); },
   "rocksolid/Badge": async frame => expect(button(frame, "Notifications")).toBeVisible(),
+  "rocksolid/Accordion": frame => verifySolidReview(frame, "rocksolid/Accordion", expect),
   "rocksolid/Dialog": async frame => { await button(frame, "Open dialog").click(); await expect(frame.getByRole("dialog")).toContainText("Getting Started"); await frame.getByRole("dialog").getByRole("button", { name: "Close" }).click(); await expect(frame.getByRole("dialog")).toHaveCount(0); },
-  "rocksolid/Tabs": async frame => { await frame.getByRole("tab", { name: "Profile" }).click(); await expect(frame.getByRole("tab", { name: "Profile" })).toHaveAttribute("aria-selected", "true"); await expect(frame.locator('[dir="rtl"]')).toBeVisible(); },
+  "rocksolid/Tabs": frame => verifySolidReview(frame, "rocksolid/Tabs", expect),
+  "rocksolid/Chip": frame => verifySolidReview(frame, "rocksolid/Chip", expect),
   "nikala-ui/Button": async frame => expect(button(frame, "Button")).toBeVisible(),
   "nikala-ui/Toggle Group": async frame => { await frame.getByRole("radio", { name: "Align Center" }).click(); await expect(frame.getByText("Selected Alignment: center")).toBeVisible(); const right = frame.getByRole("radio", { name: "Align Right" }); await right.focus(); await right.press("Space"); await expect(frame.getByText("Selected Alignment: right")).toBeVisible(); },
   "nikala-ui/Timeline": async frame => { await expect(frame.getByText("Order Placed")).toBeVisible(); await expect(frame.getByText("Out for Delivery")).toBeVisible(); },
@@ -63,6 +73,8 @@ const interact = {
   "magicui-solid/Ripple Button": async frame => { await button(frame, "Click me").click(); await expect(frame.locator(".animate-rippling").first()).toBeVisible(); await expect(frame.locator(".animate-rippling")).toHaveCount(0); },
   "magicui-solid/Shimmer Button": async frame => expect(button(frame, "Shimmer Button")).toBeVisible(),
   "magicui-solid/Backlight": playVideo,
+  "magicui-solid/Avatar Circles": frame => verifySolidReview(frame, "magicui-solid/Avatar Circles", expect),
+  "magicui-solid/Hero Video Dialog": frame => verifySolidReview(frame, "magicui-solid/Hero Video Dialog", expect),
   "magicui-solid/Confetti": frame => verifyMagicuiConfetti(frame, expect),
   "magicui-solid/Video Text": async frame => { await playVideo(frame); await expect(frame.getByText("OCEAN", { exact: true })).toHaveCount(1); expect(await frame.locator("video").first().evaluate(element => getComputedStyle(element.parentElement).maskImage)).toContain("data:image/svg+xml"); },
   "magicui-solid/Tweet Card": async (frame, theme) => verifyMagicuiTweet(frame, expect, theme),
@@ -103,9 +115,10 @@ try {
       const page = await context.newPage();
       if (process.env.SOLID_BLOCK_CULT_RADIX) await blockCultRadixCdn(page);
       page.setDefaultTimeout(7000);
-      const errors = [], failedRequests = [];
+      const errors = [], failedRequests = [], remoteRequests = [];
       page.on("pageerror", error => errors.push(error.message));
       page.on("requestfailed", request => failedRequests.push({ url: request.url(), error: request.failure()?.errorText }));
+      page.on("request", request => { if (/^https?:\/\//.test(request.url()) && new URL(request.url()).hostname !== "127.0.0.1" && !["script", "stylesheet", "font"].includes(request.resourceType())) remoteRequests.push(request.url()); });
       const row = { id, profile, errors, failedRequests };
       try {
         await page.goto(`http://127.0.0.1:${server.address().port}/?id=${encodeURIComponent(id)}&theme=${theme}`);
@@ -157,7 +170,9 @@ try {
         });
         if (row.dom.scrollWidth > row.dom.width + 1) throw new Error(`Preview overflows horizontally: ${row.dom.scrollWidth} > ${row.dom.width}`);
         if (errors.length) throw new Error(errors.join("; "));
+        if (offlineMediaPreviews.has(id) && remoteRequests.length) throw new Error(`Unexpected remote requests: ${remoteRequests.join(", ")}`);
         row.pass = true;
+        if (process.env.SOLID_SCREENSHOTS) await page.screenshot({ path: `${output}/${profile}-${id.replaceAll("/", "-").replaceAll(" ", "-")}.png` });
       } catch (error) {
         row.pass = false;
         row.failure = error.message;

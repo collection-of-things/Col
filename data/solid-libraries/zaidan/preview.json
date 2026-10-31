@@ -10,7 +10,8 @@
     "The original [data-slot=\"docs\"] font rule from src/styles/typeset.css is retained on the mount target. Inline demos inherit Geist while portals retain the body Inter font; the target attribute is restored on disposal.",
     "All original Vega style sections and the selected documented demos are compiled for the expanded preview set.",
     "The original calendar keyframes are moved outside the nested style-vega selector so the CSS optimizer preserves them unchanged.",
-    "Toast uses the original Zaidan ColorModeProvider initialized to the selected preview theme."
+    "Toast uses the original Zaidan ColorModeProvider initialized to the selected preview theme.",
+    "OTP examples disable Corvu password-manager displacement; affected avatar examples use the original fallback in place of unverified external images."
   ],
   "examples": [
     {
@@ -64,7 +65,7 @@
       "exportName": "Avatar",
       "path": "src/registry/kobalte/examples/docs/avatar-demo.tsx",
       "gaps": [
-        "The official demo references external images without verified redistribution permission; sandbox restrictions may leave them unavailable. No replacement image is supplied."
+        "The preview omits the unverified external profile images and displays the original component fallback."
       ],
       "group": "batch-01",
       "assets": []
@@ -248,7 +249,9 @@
       "name": "Input OTP",
       "exportName": "InputOTP",
       "path": "src/registry/kobalte/examples/docs/input-otp-demo.tsx",
-      "gaps": [],
+      "gaps": [
+        "The preview disables Corvu password-manager displacement to fit the sandbox frame; the original OTP slot styling is unchanged."
+      ],
       "group": "batch-04",
       "assets": []
     },
@@ -297,7 +300,7 @@
       "exportName": "Message",
       "path": "src/registry/kobalte/examples/docs/message-demo.tsx",
       "gaps": [
-        "The official demo references external images without verified redistribution permission; sandbox restrictions may leave them unavailable. No replacement image is supplied."
+        "The preview omits the unverified external profile images and displays the original component fallback."
       ],
       "group": "batch-04",
       "assets": []
@@ -395,7 +398,7 @@
       "exportName": "Sidebar",
       "path": "src/registry/kobalte/examples/docs/sidebar-demo.tsx",
       "gaps": [
-        "The official demo references external images without verified redistribution permission; sandbox restrictions may leave them unavailable. No replacement image is supplied."
+        "The preview omits the unverified external profile images and displays the original component fallback."
       ],
       "group": "batch-06",
       "assets": []

@@ -5,7 +5,8 @@
   "adaptations": [
     "Original docs Tailwind v4 theme, variables, state selectors and animation package retained.",
     "Original Geist variable font assets embedded as data URLs with the SIL Open Font License.",
-    "Reviewed mount wrapper maps the preview theme to the upstream data-kb-theme attribute and disposes the Solid root."
+    "Reviewed mount wrapper maps the preview theme to the upstream data-kb-theme attribute and disposes the Solid root.",
+    "OTP examples disable Corvu password-manager displacement; affected avatar examples use the original fallback in place of unverified external images."
   ],
   "examples": [
     {
@@ -228,7 +229,9 @@
       "name": "OTP Field",
       "exportName": "OTPField",
       "path": "apps/docs/src/registry/examples/otp-field-demo.tsx",
-      "gaps": [],
+      "gaps": [
+        "The preview disables Corvu password-manager displacement to fit the sandbox frame; the original OTP slot styling is unchanged."
+      ],
       "group": "batch-07",
       "assets": []
     },

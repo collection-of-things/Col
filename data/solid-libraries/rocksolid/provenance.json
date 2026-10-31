@@ -962,7 +962,9 @@
     "RockExpanded1": {
       "Accordion": {
         "source": "upstream/src/components/Accordion/Accordion.tsx",
-        "gaps": []
+        "gaps": [
+          "The preview makes collapsed panels inert and hidden from assistive technology; other upstream variants retain their original behavior."
+        ]
       },
       "Alert": {
         "source": "upstream/src/components/Alert/Alert.tsx",
@@ -970,7 +972,9 @@
       },
       "Avatar": {
         "source": "upstream/src/components/Avatar/Avatar.tsx",
-        "gaps": []
+        "gaps": [
+          "This preview uses text avatars. The upstream image variant derives alt text from initials and can throw on image failure when image slot props omit onError."
+        ]
       },
       "Badge": {
         "source": "upstream/src/components/Badge/Badge.tsx",
@@ -999,7 +1003,7 @@
       "Chip": {
         "source": "upstream/src/components/Chip/Chip.tsx",
         "gaps": [
-          "The original documented delete handler logs the event; it does not remove the chip."
+          "The preview removes chips on deletion and adds keyboard access to the upstream delete control."
         ]
       },
       "Divider": {
@@ -1031,6 +1035,12 @@
       "Radio": {
         "source": "upstream/src/components/Radio/Radio.tsx",
         "gaps": []
+      },
+      "Tabs": {
+        "source": "upstream/src/components/Tabs/Tabs.tsx",
+        "gaps": [
+          "The vertical example adds orientation semantics and Up/Down keyboard focus and prevents horizontal arrow handling, retaining the original styling."
+        ]
       }
     },
     "RockExpanded3": {

@@ -228,8 +228,9 @@
       "url": "https://axuj.github.io/magicui-solid/docs/components/avatar-circles/",
       "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
       "checkedAt": "2026-10-30T01:04:54.305Z",
-      "module": "src/demos/AvatarCirclesDemo.tsx",
-      "exportName": "AvatarCirclesDemo",
+      "adaptation": "Sample generated avatars replace unverified profile images; profile links are inactive. The original component and styling are retained.",
+      "module": "demos/avatar-circles.tsx",
+      "exportName": "default",
       "componentSource": "src/registry/magicui/avatar-circles.tsx",
       "docsSource": "src/content/docs/docs/components/avatar-circles.mdx",
       "sourcePaths": [
@@ -243,18 +244,12 @@
       ],
       "unresolved": [],
       "remoteUrls": [
-        "https://avatars.githubusercontent.com/u/106103625",
-        "https://avatars.githubusercontent.com/u/16860528",
-        "https://avatars.githubusercontent.com/u/20110627",
-        "https://avatars.githubusercontent.com/u/59228569",
-        "https://avatars.githubusercontent.com/u/59442788",
-        "https://avatars.githubusercontent.com/u/89768406",
-        "https://github.com/BankkRoll",
-        "https://github.com/dillionverma",
-        "https://github.com/itsarghyadas",
-        "https://github.com/safethecode",
-        "https://github.com/sanjay-mali",
-        "https://github.com/tomonarifeehan"
+        "https://avatar.vercel.sh/jack",
+        "https://avatar.vercel.sh/james",
+        "https://avatar.vercel.sh/jane",
+        "https://avatar.vercel.sh/jenny",
+        "https://avatar.vercel.sh/jill",
+        "https://avatar.vercel.sh/john"
       ],
       "description": "Overlapping circles of avatars."
     },
@@ -428,6 +423,7 @@
       "url": "https://axuj.github.io/magicui-solid/docs/components/confetti/",
       "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
       "checkedAt": "2026-10-30T01:04:54.305Z",
+      "adaptation": "The documented globalOptions disable the worker so the original animation runs within the preview's restricted CSP.",
       "module": "src/demos/ConfettiDemo.tsx",
       "exportName": "ConfettiDemo",
       "componentSource": "src/registry/magicui/confetti.tsx",
@@ -447,8 +443,7 @@
       ],
       "unresolved": [],
       "remoteUrls": [],
-      "description": "Confetti animations are best used to delight your users when something special happens",
-      "adaptation": "The documented globalOptions disable the worker so the original animation runs within the preview's restricted CSP."
+      "description": "Confetti animations are best used to delight your users when something special happens"
     },
     {
       "id": "magicui-solid/Cool Mode",
@@ -746,8 +741,9 @@
       "url": "https://axuj.github.io/magicui-solid/docs/components/hero-video-dialog/",
       "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
       "checkedAt": "2026-10-30T01:04:54.305Z",
-      "module": "src/demos/HeroVideoDialogDemo.tsx",
-      "exportName": "HeroVideoDialogDemo",
+      "adaptation": "A licensed sample image and video replace the unverified original thumbnail and external player. The original component, animation and styling are retained.",
+      "module": "demos/hero-video-dialog.tsx",
+      "exportName": "default",
       "componentSource": "src/registry/magicui/hero-video-dialog.tsx",
       "docsSource": "src/content/docs/docs/components/hero-video-dialog.mdx",
       "sourcePaths": [
@@ -763,9 +759,8 @@
       ],
       "unresolved": [],
       "remoteUrls": [
-        "https://startup-template-sage.vercel.app/hero-dark.png",
-        "https://startup-template-sage.vercel.app/hero-light.png",
-        "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
+        "https://images.unsplash.com/photo-1736606355698-5efdb410fe93?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4"
       ],
       "description": "A hero video dialog component that opens a video player with configurable animations."
     },
@@ -1854,6 +1849,7 @@
       "url": "https://axuj.github.io/magicui-solid/docs/components/tweet-card/",
       "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
       "checkedAt": "2026-10-30T01:04:54.305Z",
+      "adaptation": "Sample content, a generated avatar and a licensed video replace the live post and its media. The original MagicTweet export and documentation's centered preview layout are retained; the video reserves its 16:9 dimensions while loading. ClientTweetCard's loading and error states are not reproduced, and links cannot open inside the sandbox.",
       "module": "demos/tweet-card.tsx",
       "exportName": "default",
       "componentSource": "src/registry/magicui/client-tweet-card.tsx",
@@ -1872,8 +1868,7 @@
         "https://avatar.vercel.sh/jane",
         "https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4"
       ],
-      "description": "A card that displays a tweet with the author's name, handle, and profile picture.",
-      "adaptation": "Sample content, a generated avatar and a licensed video replace the live post and its media. The original MagicTweet export and documentation's centered preview layout are retained; the video reserves its 16:9 dimensions while loading. ClientTweetCard's loading and error states are not reproduced, and links cannot open inside the sandbox."
+      "description": "A card that displays a tweet with the author's name, handle, and profile picture."
     },
     {
       "id": "magicui-solid/Typing Animation",

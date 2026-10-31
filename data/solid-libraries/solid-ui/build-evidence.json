@@ -542,7 +542,7 @@
       "lockIntegrity": "sha256:3da6b21d4ff2d1abfdd6000ba9203e60d1ebf27e76fcf84e7b47f4372efb07e8"
     },
     "batch-01": {
-      "codeIntegrity": "sha256:88f0001939126750deec00fd548d22759bba77b894726d584ac2a23864d1dce5",
+      "codeIntegrity": "sha256:838a4036d2c910cdf073742cd20faedce5286d87e5709600eff0302ae3f94569",
       "cssIntegrity": "sha256:2c76adcad2eddbcd3eaea1f39bfbbd07e48a735b00f2731a6f865fb66f737633",
       "inputs": [
         0,
@@ -635,7 +635,7 @@
         "node_modules/solid-prevent-scroll",
         "node_modules/solid-presence"
       ],
-      "inputsIntegrity": "sha256:8f9e296744915dca1c177e5c7fec70c76a535698d16bbb188186bad8fc8adc1b",
+      "inputsIntegrity": "sha256:5d1e0e80484ccb96ef7886db1f824ed58a54ec9de4ee1e0de77b189d24a5e22e",
       "packagesIntegrity": "sha256:fd93e1526db4b50bb8df822e887aa3688f6e425e9a79f981e69a07d276302793",
       "lockIntegrity": "sha256:3da6b21d4ff2d1abfdd6000ba9203e60d1ebf27e76fcf84e7b47f4372efb07e8"
     },
@@ -1741,7 +1741,7 @@
       "lockIntegrity": "sha256:3da6b21d4ff2d1abfdd6000ba9203e60d1ebf27e76fcf84e7b47f4372efb07e8"
     },
     "batch-08": {
-      "codeIntegrity": "sha256:47ddd3602aa762af49f2910bf1651f1dd01fb25fa64ce543a6c8d5164e09bc4d",
+      "codeIntegrity": "sha256:602e2a5f4fc4323b088e39b1c0a410aa5fe5df955801f44f63e25da1fccd8b6a",
       "cssIntegrity": "sha256:2c76adcad2eddbcd3eaea1f39bfbbd07e48a735b00f2731a6f865fb66f737633",
       "inputs": [
         0,
@@ -1892,7 +1892,7 @@
         "node_modules/@corvu/otp-field",
         "node_modules/class-variance-authority"
       ],
-      "inputsIntegrity": "sha256:7b3c21b903f147a7bb4b1fc44c2960dd4f20dd034047c945c9386e2982317010",
+      "inputsIntegrity": "sha256:eb9b07b19cfb4da8592f7d7ac98f41d9f0686789df3d6ec1d66d1b4abdd1c0ab",
       "packagesIntegrity": "sha256:98fac9a648a6a3bad19e1743f96860bbf2edc513f020f1ce05dd830738395aa1",
       "lockIntegrity": "sha256:3da6b21d4ff2d1abfdd6000ba9203e60d1ebf27e76fcf84e7b47f4372efb07e8"
     },
@@ -2040,7 +2040,7 @@
       "lockIntegrity": "sha256:3da6b21d4ff2d1abfdd6000ba9203e60d1ebf27e76fcf84e7b47f4372efb07e8"
     },
     "direct:Progress Circle": {
-      "codeIntegrity": "sha256:7b1367bc50be81e22253b8d4cff45494294b0224c80e7de42bbbf6fc813030ee",
+      "codeIntegrity": "sha256:312104b7b4a94a0fae9e35608c6e8381e23d336f885a40e78c08b165f9cbeb3b",
       "cssIntegrity": "sha256:2c76adcad2eddbcd3eaea1f39bfbbd07e48a735b00f2731a6f865fb66f737633",
       "inputs": [
         0,
@@ -2064,7 +2064,7 @@
         "node_modules/clsx",
         "node_modules/tailwind-merge"
       ],
-      "inputsIntegrity": "sha256:b74fac5ef79a6b300cd362521ea90c8ad61c54d4e4c6bd77089434f7095bd37d",
+      "inputsIntegrity": "sha256:fd649906edaba2fdfa3140353f08790b59d1c7effc8c95fae0873df8a7f81214",
       "packagesIntegrity": "sha256:dfb6527aeb62cf1b5901e8b8808e86e6fce0882ed28b80a68e07881a2808a089",
       "lockIntegrity": "sha256:3da6b21d4ff2d1abfdd6000ba9203e60d1ebf27e76fcf84e7b47f4372efb07e8"
     },
@@ -3009,7 +3009,7 @@
     },
     {
       "path": "apps/docs/src/registry/example/avatar-demo.tsx",
-      "sha256": "2b7bafe05b9927df26cf310cd0d288dd28fd45f5990ef460bf06c7e0af89d84f"
+      "sha256": "7607feb95136eb1fd6deb3ddc85a6319f7eadc767d5e77277137f0ba3b00ae37"
     },
     {
       "path": "col-batch-01.tsx",
@@ -4257,7 +4257,7 @@
     },
     {
       "path": "apps/docs/src/registry/example/otp-field-demo.tsx",
-      "sha256": "eac4ca88b813a289714bf5f173c6010d2786fc91f092ffdd56468177cd8d008c"
+      "sha256": "76208f2b52639427d7d67afdb172f5018b69adb5d41104ffeb74f21da9e880fb"
     },
     {
       "path": "../../@kobalte/core/dist/pagination/index.js",
@@ -4325,7 +4325,7 @@
     },
     {
       "path": "apps/docs/src/registry/example/progress-circle-demo.tsx",
-      "sha256": "0478cae5e7c7ee612125488b087b7a693ef8ae3c58ff52ab2ab94a9914a73b35"
+      "sha256": "c80378e67ba383fc315a9b4101218cbd4b5be248170cce4b5fc0c8c2e2ab7715"
     },
     {
       "path": "col-direct-Progress-Circle.tsx",
@@ -5962,6 +5962,7 @@
     "Original docs stylesheet compiled with Tailwind CSS 4.3.3 and the original Kobalte Tailwind plugin.",
     "Original Geist font assets embedded as data URLs with the SIL Open Font License.",
     "Reviewed mount wrapper only: maps the selected preview theme to data-kb-theme and disposes the Solid root.",
-    "The Sidebar demo runs within a Solid MemoryRouter because its original links require route context."
+    "The Sidebar demo runs within a Solid MemoryRouter because its original links require route context.",
+    "OTP examples disable Corvu password-manager displacement; affected avatar examples use the original fallback in place of unverified external images."
   ]
 }

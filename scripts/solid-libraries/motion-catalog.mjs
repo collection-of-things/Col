@@ -47,6 +47,8 @@ function apiEvidence(code){
   return chosen.join("\n\n");
 }
 
+const officialSampleDemos={"magicui-solid/Tweet Card":"src/demos/TweetCardDemo.tsx","magicui-solid/Avatar Circles":"src/demos/AvatarCirclesDemo.tsx","magicui-solid/Hero Video Dialog":"src/demos/HeroVideoDialogDemo.tsx"};
+
 export async function updateMotionCatalog(slug){
   const dir=`data/solid-libraries/${slug}`;
   const [catalog,corpus,coverage,manifest,upstream,pages,artifact,browser]=await Promise.all([
@@ -68,8 +70,9 @@ export async function updateMotionCatalog(slug){
     dependency.dependencies=[...new Set([...dependency.dependencies,...dependency.exampleDependencies])].sort();
     const demoFile=upstream.files[example.module];
     const demoBytes=demoFile?.content??await readFile(`${dir}/${example.module}`,"utf8");
-    const sample=example.id==="magicui-solid/Tweet Card";
-    const officialDemo=sample?upstream.files["src/demos/TweetCardDemo.tsx"]:undefined;
+    const sample=Object.hasOwn(officialSampleDemos,example.id);
+    const officialDemo=sample?upstream.files[officialSampleDemos[example.id]]:undefined;
+    if(sample&&!officialDemo)throw new Error(`Missing documented example: ${example.id}`);
     dependency.exampleSource={path:example.module,...(sample?{documentedExample:{url:officialDemo.url,integrity:officialDemo.integrity}}:{url:(demoFile??upstream.files[example.docsSource]).url}),integrity:createHash("sha256").update(demoBytes).digest("hex"),kind:demoFile?"original-source":sample?"authored-sample":"authored-extraction-of-pinned-documentation",sourcePaths:example.sourcePaths};
     dependencyEvidence.entries[example.id]=dependency;
     const demoRequirements=dependency.exampleDependencies.length?`The documented example additionally imports ${dependency.exampleDependencies.map(name=>`\`${name}\``).join(", ")}; these are demo requirements, separate from the component dependency graph.`:"";
@@ -85,10 +88,10 @@ export async function updateMotionCatalog(slug){
     const demo=readableDemo(code,example.exportName);
     const api=apiEvidence(source.content);
     const gaps=artifact.entries[example.id]?.gaps??artifact.unavailable?.[example.id]?.gaps??[];
-    const exampleLabel=example.id==="magicui-solid/Tweet Card"?"Col's preview composition with sample content":`Original documented Solid example${example.module.startsWith("demos/")?" extracted from its live documentation preview":""}`;
+    const exampleLabel=sample?"Col's preview composition with sample content":`Original documented Solid example${example.module.startsWith("demos/")?" extracted from its live documentation preview":""}`;
     const content=[description,`Official component guide: ${example.url}. Component source: ${source.url}.`,api?`Source-pinned component props:\n\`\`\`ts\n${api}\n\`\`\``:"",demo?`${exampleLabel}:\n\`\`\`tsx\n${demo}\n\`\`\``:`The full official example is available in the source-pinned documentation. Keep its imports, composition and matching original CSS together: ${(demoSource??upstream.files[example.docsSource]).url}.`,demoRequirements,example.adaptation??"",`Pinned revision: ${upstream.revision}. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.`,...gaps.filter(gap=>gap!==example.adaptation)].filter(Boolean).join("\n\n");
     if(executable.test(content))throw new Error(`Installation command escaped the corpus boundary: ${example.id}`);
-    const sources=[source,demoSource,...(example.id==="magicui-solid/Tweet Card"?[upstream.files["src/demos/TweetCardDemo.tsx"]]:[]),upstream.files[example.docsSource]].filter(Boolean).map(({url,integrity})=>({url,integrity}));
+    const sources=[source,demoSource,officialDemo,upstream.files[example.docsSource]].filter(Boolean).map(({url,integrity})=>({url,integrity}));
     snapshots.push({componentId:example.id,title:example.name,url:example.url,fetchedAt:pages.checkedAt,sourceRevision:upstream.revision,content,sources:[...new Map(sources.map(source=>[source.url,source])).values()]});
   }
   corpus.snapshots=snapshots;
