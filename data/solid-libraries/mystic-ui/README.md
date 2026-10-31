@@ -1,5 +1,7 @@
 # Mystic UI source previews
 
+> During this review stack, rebuild scripts and preview artifacts arrive in the final integration stage.
+
 All **27 documented components** are individually verified and indexed from `TheComputerM/mystic-ui` revision `c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f`, checked on 2026-10-30. The latest repository commit checked is dated 2024-12-24; the official site calls the project alpha. `coverage.json` lists exact names and URLs; `page-verification.json` records each HTTP-200 page and hash.
 
 Previews use the genuine Solid **Tailwind variant** and original story modules. Tailwind 3.4.19 compiles the original classes and each registry's animation configuration. Solid 1.9.17 and babel-preset-solid 1.9.16 are isolated from Col's runtime. Closed shared modules avoid repeated dependencies; MIT and authenticated package notices accompany the outputs.
