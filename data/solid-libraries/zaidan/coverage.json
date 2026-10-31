@@ -1,0 +1,496 @@
+{
+  "checkedAt": "2026-10-30T00:26:49+05:30",
+  "source": "https://zaidan.carere.dev/docs/components/kobalte/button",
+  "selectedComponents": [
+    "Accordion",
+    "Alert",
+    "Alert Dialog",
+    "Aspect Ratio",
+    "Attachment",
+    "Avatar",
+    "Badge",
+    "Breadcrumb",
+    "Bubble",
+    "Button",
+    "Button Group",
+    "Calendar",
+    "Card",
+    "Carousel",
+    "Chart",
+    "Checkbox",
+    "Collapsible",
+    "Combobox",
+    "Command",
+    "Context Menu",
+    "Dialog",
+    "Drawer",
+    "Dropdown Menu",
+    "Empty",
+    "Field",
+    "Hover Card",
+    "Input",
+    "Input Group",
+    "Input OTP",
+    "Item",
+    "Kbd",
+    "Label",
+    "Marker",
+    "Menubar",
+    "Message",
+    "Native Select",
+    "Navigation Menu",
+    "Pagination",
+    "Popover",
+    "Progress",
+    "Radio Group",
+    "Resizable",
+    "Scroll Area",
+    "Select",
+    "Separator",
+    "Sheet",
+    "Sidebar",
+    "Skeleton",
+    "Slider",
+    "Spinner",
+    "Switch",
+    "Table",
+    "Tabs",
+    "Textarea",
+    "Toast",
+    "Toggle",
+    "Toggle Group",
+    "Tooltip"
+  ],
+  "documentationInventory": [
+    {
+      "name": "Accordion",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/accordion",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Alert",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/alert",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Alert Dialog",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/alert-dialog",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Aspect Ratio",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/aspect-ratio",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Attachment",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/attachment",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Avatar",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/avatar",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Badge",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/badge",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Breadcrumb",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/breadcrumb",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Bubble",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/bubble",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Button",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/button",
+      "preview": "supported",
+      "documentation": "source-snapshot"
+    },
+    {
+      "name": "Button Group",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/button-group",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Calendar",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/calendar",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Card",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/card",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Carousel",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/carousel",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Chart",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/chart",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Checkbox",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/checkbox",
+      "preview": "supported",
+      "documentation": "source-snapshot"
+    },
+    {
+      "name": "Collapsible",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/collapsible",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Combobox",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/combobox",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Command",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/command",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Context Menu",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/context-menu",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Dialog",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/dialog",
+      "preview": "supported",
+      "documentation": "source-snapshot"
+    },
+    {
+      "name": "Drawer",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/drawer",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Dropdown Menu",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/dropdown-menu",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Empty",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/empty",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Field",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/field",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Hover Card",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/hover-card",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Input",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/input",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Input Group",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/input-group",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Input OTP",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/input-otp",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Item",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/item",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Kbd",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/kbd",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Label",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/label",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Marker",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/marker",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Menubar",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/menubar",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Message",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/message",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Native Select",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/native-select",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Navigation Menu",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/navigation-menu",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Pagination",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/pagination",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Popover",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/popover",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Progress",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/progress",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Radio Group",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/radio-group",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Resizable",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/resizable",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Scroll Area",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/scroll-area",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Select",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/select",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Separator",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/separator",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Sheet",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/sheet",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Sidebar",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/sidebar",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Skeleton",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/skeleton",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Slider",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/slider",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Spinner",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/spinner",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Switch",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/switch",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Table",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/table",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Tabs",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/tabs",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Textarea",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/textarea",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Toast",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/toast",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Toggle",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/toggle",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Toggle Group",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/toggle-group",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Tooltip",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/tooltip",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    }
+  ],
+  "pageChecks": [
+    {
+      "name": "Button",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/button",
+      "finalUrl": "https://zaidan.carere.dev/docs/components/kobalte/button",
+      "status": 200,
+      "sha256": "db8e22f5c177394970eb7e524c0c78e69a25773408eaaa3985bf67d294544154"
+    },
+    {
+      "name": "Checkbox",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/checkbox",
+      "finalUrl": "https://zaidan.carere.dev/docs/components/kobalte/checkbox",
+      "status": 200,
+      "sha256": "bd5a20d48d7900b10708f37999f51f8b4772579e066ce12d17c0e574497720fa"
+    },
+    {
+      "name": "Dialog",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/dialog",
+      "finalUrl": "https://zaidan.carere.dev/docs/components/kobalte/dialog",
+      "status": 200,
+      "sha256": "1e447579a6fc4cf35bd6b487be82ab2d6fa1dafbf2cbd1a502868761fadfe349"
+    }
+  ],
+  "gaps": [
+    "Col intentionally indexes only the selected verified components. Other documented components and variants are not mirrored.",
+    "Only the Kobalte foundation and original Vega style are previewed; other styles and Corvu variants remain unverified."
+  ]
+}

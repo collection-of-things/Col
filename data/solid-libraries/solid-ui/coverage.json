@@ -1,0 +1,471 @@
+{
+  "checkedAt": "2026-10-30T00:26:49+05:30",
+  "source": "https://www.solid-ui.com/docs/components/button",
+  "selectedComponents": [
+    "Accordion",
+    "Alert",
+    "Alert Dialog",
+    "Aspect Ratio",
+    "Avatar",
+    "Badge",
+    "Badge Delta",
+    "Bar List",
+    "Breadcrumb",
+    "Button",
+    "Callout",
+    "Card",
+    "Carousel",
+    "Charts",
+    "Checkbox",
+    "Collapsible",
+    "Combobox",
+    "Command",
+    "Context Menu",
+    "Data Table",
+    "Date Picker",
+    "Delta Bar",
+    "Dialog",
+    "Drawer",
+    "Dropdown Menu",
+    "Flex",
+    "Grid",
+    "Hover Card",
+    "Label",
+    "Menubar",
+    "Navigation Menu",
+    "Number Field",
+    "OTP Field",
+    "Pagination",
+    "Popover",
+    "Progress",
+    "Progress Circle",
+    "Radio Group",
+    "Resizable",
+    "Select",
+    "Separator",
+    "Sheet",
+    "Sidebar",
+    "Skeleton",
+    "Slider",
+    "Sonner",
+    "Switch",
+    "Table",
+    "Tabs",
+    "Text Field",
+    "Timeline",
+    "Toast",
+    "Toggle",
+    "Toggle Group",
+    "Tooltip"
+  ],
+  "documentationInventory": [
+    {
+      "name": "Accordion",
+      "url": "https://www.solid-ui.com/docs/components/accordion",
+      "preview": "supported",
+      "documentation": "source-snapshot"
+    },
+    {
+      "name": "Alert",
+      "url": "https://www.solid-ui.com/docs/components/alert",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Alert Dialog",
+      "url": "https://www.solid-ui.com/docs/components/alert-dialog",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Aspect Ratio",
+      "url": "https://www.solid-ui.com/docs/components/aspect-ratio",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Avatar",
+      "url": "https://www.solid-ui.com/docs/components/avatar",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Badge",
+      "url": "https://www.solid-ui.com/docs/components/badge",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Badge Delta",
+      "url": "https://www.solid-ui.com/docs/components/badge-delta",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Bar List",
+      "url": "https://www.solid-ui.com/docs/components/bar-list",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Breadcrumb",
+      "url": "https://www.solid-ui.com/docs/components/breadcrumb",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Button",
+      "url": "https://www.solid-ui.com/docs/components/button",
+      "preview": "supported",
+      "documentation": "source-snapshot"
+    },
+    {
+      "name": "Callout",
+      "url": "https://www.solid-ui.com/docs/components/callout",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Card",
+      "url": "https://www.solid-ui.com/docs/components/card",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Carousel",
+      "url": "https://www.solid-ui.com/docs/components/carousel",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Charts",
+      "url": "https://www.solid-ui.com/docs/components/charts",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Checkbox",
+      "url": "https://www.solid-ui.com/docs/components/checkbox",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Collapsible",
+      "url": "https://www.solid-ui.com/docs/components/collapsible",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Combobox",
+      "url": "https://www.solid-ui.com/docs/components/combobox",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Command",
+      "url": "https://www.solid-ui.com/docs/components/command",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Context Menu",
+      "url": "https://www.solid-ui.com/docs/components/context-menu",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Data Table",
+      "url": "https://www.solid-ui.com/docs/components/data-table",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Date Picker",
+      "url": "https://www.solid-ui.com/docs/components/date-picker",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Delta Bar",
+      "url": "https://www.solid-ui.com/docs/components/delta-bar",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Dialog",
+      "url": "https://www.solid-ui.com/docs/components/dialog",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Drawer",
+      "url": "https://www.solid-ui.com/docs/components/drawer",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Dropdown Menu",
+      "url": "https://www.solid-ui.com/docs/components/dropdown-menu",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Flex",
+      "url": "https://www.solid-ui.com/docs/components/flex",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Grid",
+      "url": "https://www.solid-ui.com/docs/components/grid",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Hover Card",
+      "url": "https://www.solid-ui.com/docs/components/hover-card",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Label",
+      "url": "https://www.solid-ui.com/docs/components/label",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Menubar",
+      "url": "https://www.solid-ui.com/docs/components/menubar",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Navigation Menu",
+      "url": "https://www.solid-ui.com/docs/components/navigation-menu",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Number Field",
+      "url": "https://www.solid-ui.com/docs/components/number-field",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "OTP Field",
+      "url": "https://www.solid-ui.com/docs/components/otp-field",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Pagination",
+      "url": "https://www.solid-ui.com/docs/components/pagination",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Popover",
+      "url": "https://www.solid-ui.com/docs/components/popover",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Progress",
+      "url": "https://www.solid-ui.com/docs/components/progress",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Progress Circle",
+      "url": "https://www.solid-ui.com/docs/components/progress-circle",
+      "preview": "supported",
+      "documentation": "source-snapshot"
+    },
+    {
+      "name": "Radio Group",
+      "url": "https://www.solid-ui.com/docs/components/radio-group",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Resizable",
+      "url": "https://www.solid-ui.com/docs/components/resizable",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Select",
+      "url": "https://www.solid-ui.com/docs/components/select",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Separator",
+      "url": "https://www.solid-ui.com/docs/components/separator",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Sheet",
+      "url": "https://www.solid-ui.com/docs/components/sheet",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Sidebar",
+      "url": "https://www.solid-ui.com/docs/components/sidebar",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Skeleton",
+      "url": "https://www.solid-ui.com/docs/components/skeleton",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Slider",
+      "url": "https://www.solid-ui.com/docs/components/slider",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Sonner",
+      "url": "https://www.solid-ui.com/docs/components/sonner",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Switch",
+      "url": "https://www.solid-ui.com/docs/components/switch",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Table",
+      "url": "https://www.solid-ui.com/docs/components/table",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Tabs",
+      "url": "https://www.solid-ui.com/docs/components/tabs",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Text Field",
+      "url": "https://www.solid-ui.com/docs/components/text-field",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Timeline",
+      "url": "https://www.solid-ui.com/docs/components/timeline",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Toast",
+      "url": "https://www.solid-ui.com/docs/components/toast",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Toggle",
+      "url": "https://www.solid-ui.com/docs/components/toggle",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Toggle Group",
+      "url": "https://www.solid-ui.com/docs/components/toggle-group",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    },
+    {
+      "name": "Tooltip",
+      "url": "https://www.solid-ui.com/docs/components/tooltip",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
+    }
+  ],
+  "pageChecks": [
+    {
+      "name": "Button",
+      "url": "https://www.solid-ui.com/docs/components/button",
+      "finalUrl": "https://www.solid-ui.com/docs/components/button",
+      "status": 200,
+      "sha256": "606d7e4ed33f8f1a1bab2bb3abe0603a6af09ac9ff269978ed0f95b84a9e21fc"
+    },
+    {
+      "name": "Accordion",
+      "url": "https://www.solid-ui.com/docs/components/accordion",
+      "finalUrl": "https://www.solid-ui.com/docs/components/accordion",
+      "status": 200,
+      "sha256": "b425f73411d5e1a4809ebf143d5f8b0878209771f266f8f48992e791062695cc"
+    },
+    {
+      "name": "Progress Circle",
+      "url": "https://www.solid-ui.com/docs/components/progress-circle",
+      "finalUrl": "https://www.solid-ui.com/docs/components/progress-circle",
+      "status": 200,
+      "sha256": "c6c65cd8ce678e5013e0bb963aa81cb8f88dd3ddc862cdaf13dfe339a30fcd08"
+    }
+  ],
+  "gaps": [
+    "Col intentionally indexes only the selected verified components. Other documented components and variants are not mirrored."
+  ]
+}

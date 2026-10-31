@@ -1,0 +1,1543 @@
+{
+  "folder": "hope",
+  "repo": "hope-ui/hope-ui",
+  "rev": "1dc059fcb9045ea5f066fd6109347f0fdce5a03e",
+  "version": "1dc059fcb9045ea5f066fd6109347f0fdce5a03e",
+  "package": "@hope-ui/components",
+  "runtime": "solid2",
+  "runtimeVersion": "2.0.0-beta.32",
+  "components": [
+    "Button",
+    "Dialog",
+    "Select"
+  ],
+  "sources": [
+    {
+      "path": "upstream/packages/components/src/button/button.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/button/button.tsx",
+      "integrity": "f3307df3427c20fe601a577851a08c3ff3d76f0f2724964e66cc9bfc59add399"
+    },
+    {
+      "path": "upstream/packages/components/src/button/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/button/index.ts",
+      "integrity": "8b0e37175d8b317e417cbee1e11b9a341322be409981de42eae1bab82a2568df"
+    },
+    {
+      "path": "upstream/packages/components/src/close-button/close-button.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/close-button/close-button.tsx",
+      "integrity": "82c0091c81ba816fd2f07a23149ff8ed542cb5ffb5c30e47f29b121a6bba9f2a"
+    },
+    {
+      "path": "upstream/packages/components/src/close-button/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/close-button/index.ts",
+      "integrity": "3be2e829467db2f2518ce90e142eafed072abaa38a5f2b7b6ba7b266aa23cfa6"
+    },
+    {
+      "path": "upstream/packages/components/src/dialog/dialog-backdrop.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/dialog/dialog-backdrop.tsx",
+      "integrity": "ef8b0493c36b54eae0c1777435194fcf77b7d4c9eef0533f68de728aff30318e"
+    },
+    {
+      "path": "upstream/packages/components/src/dialog/dialog-body.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/dialog/dialog-body.tsx",
+      "integrity": "9d32549c57751dc83a7eb804bdde66b6c301e795507744fd4e9219df37ec1036"
+    },
+    {
+      "path": "upstream/packages/components/src/dialog/dialog-close-trigger.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/dialog/dialog-close-trigger.tsx",
+      "integrity": "e55e7313cca85cc9e0c2ddb7f32bff8b476fdcf5c275aaa500986466d24e87b7"
+    },
+    {
+      "path": "upstream/packages/components/src/dialog/dialog-content.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/dialog/dialog-content.tsx",
+      "integrity": "04a3755b2d281dcd2740eff2f95ed938df091fe7f52e28735571e5b575f1f8c3"
+    },
+    {
+      "path": "upstream/packages/components/src/dialog/dialog-context.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/dialog/dialog-context.ts",
+      "integrity": "5172b1258975f2f5e92fc33cfa5de9f79492fae788913fe14e0544b0f19c7eb0"
+    },
+    {
+      "path": "upstream/packages/components/src/dialog/dialog-description.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/dialog/dialog-description.tsx",
+      "integrity": "bedeee80fe8b868f8c80651f19809aec709a297bef29c1ae680e82276802773d"
+    },
+    {
+      "path": "upstream/packages/components/src/dialog/dialog-footer.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/dialog/dialog-footer.tsx",
+      "integrity": "b484f87a24349b176c614b8306eaddfa300002cd3938be1a39a8393df428a0ad"
+    },
+    {
+      "path": "upstream/packages/components/src/dialog/dialog-header.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/dialog/dialog-header.tsx",
+      "integrity": "07dd4214b462a0c0fc398dfd2d3dc38565901199f64b33b45e0714db9da8b5b1"
+    },
+    {
+      "path": "upstream/packages/components/src/dialog/dialog-portal.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/dialog/dialog-portal.tsx",
+      "integrity": "d01c45e198ce150c3cf82f1d829692f2df5853475bfef6f936f9ccc403073360"
+    },
+    {
+      "path": "upstream/packages/components/src/dialog/dialog-positioner.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/dialog/dialog-positioner.tsx",
+      "integrity": "6e17369cd73645884998cd6df50a4930548bc768902f0bf1b76fe00bdc4b57c4"
+    },
+    {
+      "path": "upstream/packages/components/src/dialog/dialog-root.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/dialog/dialog-root.tsx",
+      "integrity": "739c0817afd8fb6b9691f7da3e9337426a890719a742f2acafc055a5826842fc"
+    },
+    {
+      "path": "upstream/packages/components/src/dialog/dialog-title.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/dialog/dialog-title.tsx",
+      "integrity": "1bf90684c968f71a5d17c47a5a8301dce6b70d7a7ae5b428c4cd0f0b6d676609"
+    },
+    {
+      "path": "upstream/packages/components/src/dialog/dialog-trigger.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/dialog/dialog-trigger.tsx",
+      "integrity": "1324173a33171954c377b9a738cdf6b2e7ae468766b207c2272e19146e18acb7"
+    },
+    {
+      "path": "upstream/packages/components/src/dialog/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/dialog/index.ts",
+      "integrity": "75b1fc9f3d7350beceff582320bc6ff0ddafc9237fca6dde7c86899e78904735"
+    },
+    {
+      "path": "upstream/packages/components/src/icons/check-icon.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/icons/check-icon.tsx",
+      "integrity": "d38243f98780424d6ce81197b272be3e7cc0651eb3126dcda3211d8c3cb6c15e"
+    },
+    {
+      "path": "upstream/packages/components/src/icons/chevron-down-icon.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/icons/chevron-down-icon.tsx",
+      "integrity": "0ea471063fb13cc7f05219cf03df8d747fe964bac633ac93c3ec7d2f352bec76"
+    },
+    {
+      "path": "upstream/packages/components/src/icons/chevron-left-icon.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/icons/chevron-left-icon.tsx",
+      "integrity": "db2ab7c0b6a4c791a5dc7fc8bcbba096b2d714d07d463545d6a3999314f7d211"
+    },
+    {
+      "path": "upstream/packages/components/src/icons/chevron-right-icon.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/icons/chevron-right-icon.tsx",
+      "integrity": "861521341c5f2007b28b206b36df6d3b86b39fe1801f4f4731dad56fec25a731"
+    },
+    {
+      "path": "upstream/packages/components/src/icons/circle-check-icon.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/icons/circle-check-icon.tsx",
+      "integrity": "8a4296faf8a62e91c92039c2d1b1928c9085c38036c6b4a3426976ade2c82ced"
+    },
+    {
+      "path": "upstream/packages/components/src/icons/circle-x-icon.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/icons/circle-x-icon.tsx",
+      "integrity": "2b075ec0a2dc8a135727e3f6a47cab5d62a2dd1613b89065953b1426e02899a5"
+    },
+    {
+      "path": "upstream/packages/components/src/icons/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/icons/index.ts",
+      "integrity": "c87cad20b17c6e7123fe90ff4443d9baeb879a29d4e66e6ae8c2b6bf07d0418b"
+    },
+    {
+      "path": "upstream/packages/components/src/icons/info-icon.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/icons/info-icon.tsx",
+      "integrity": "d1b8835591cee50377758af4b502246dfeaeccfb31e50b8013f70895fa8534c4"
+    },
+    {
+      "path": "upstream/packages/components/src/icons/loader-circle-icon.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/icons/loader-circle-icon.tsx",
+      "integrity": "636ec476a0f3323cd0331d63b450bfee61c14603b8f25f05a06cb0ded7235997"
+    },
+    {
+      "path": "upstream/packages/components/src/icons/triangle-alert-icon.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/icons/triangle-alert-icon.tsx",
+      "integrity": "90343ce32bac35e5d23072f920389a694b99aeeedbce8f65f8e6f6309213df01"
+    },
+    {
+      "path": "upstream/packages/components/src/icons/x-icon.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/icons/x-icon.tsx",
+      "integrity": "593bc2eb91559eb8d64def2f4e7528489e84b74216b32e138929152324900907"
+    },
+    {
+      "path": "upstream/packages/components/src/select/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/index.ts",
+      "integrity": "98e4586d7b228b9f2f15ac7a61b4488a53f1dcf0f09dc801771574091e712e32"
+    },
+    {
+      "path": "upstream/packages/components/src/select/select-content.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/select-content.tsx",
+      "integrity": "cd868c9f45355acfb8871ba2a51ccac01929c6aab8de9635a3531c48d42144e3"
+    },
+    {
+      "path": "upstream/packages/components/src/select/select-context.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/select-context.ts",
+      "integrity": "44941d7ef7b20a4a31ff5d5959898402ad53df77ee5c4960f3cf102362a9fb4c"
+    },
+    {
+      "path": "upstream/packages/components/src/select/select-group-label.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/select-group-label.tsx",
+      "integrity": "9c0241da7794c4450b6e3b172932133b01a9b0fbe550ed69bda1fca56b0a9b2a"
+    },
+    {
+      "path": "upstream/packages/components/src/select/select-group.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/select-group.tsx",
+      "integrity": "b62aa7f6c0f19c60fcbe99e153791801a4472c6d130d7b432edfb1d221042fce"
+    },
+    {
+      "path": "upstream/packages/components/src/select/select-icon.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/select-icon.tsx",
+      "integrity": "8d3aca4eb2b86f3eb5aa7be11535db84759ae189062ac62e77032f05064385ed"
+    },
+    {
+      "path": "upstream/packages/components/src/select/select-item-indicator.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/select-item-indicator.tsx",
+      "integrity": "1ef9996abe7526a6bf5dfa5630a6728dfc60ddd46f5236d61f8318f13eff8326"
+    },
+    {
+      "path": "upstream/packages/components/src/select/select-item-text.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/select-item-text.tsx",
+      "integrity": "81936cb911fd66e4837d1f1595c2fb93f4849db42deb54bfdfa69c4721fb0ddc"
+    },
+    {
+      "path": "upstream/packages/components/src/select/select-item.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/select-item.tsx",
+      "integrity": "73668acb8f625394c771f49142619745006524cbff82493a2404f27e200db65d"
+    },
+    {
+      "path": "upstream/packages/components/src/select/select-list.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/select-list.tsx",
+      "integrity": "5c3e840f8f95de0d18c1b27262cb961306feb3bd332669e19275a7f591678d51"
+    },
+    {
+      "path": "upstream/packages/components/src/select/select-portal.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/select-portal.tsx",
+      "integrity": "46fb6e67e4b8510fdacf4c81b1f642eab4f9b7d662ecb64225d77c1024f59159"
+    },
+    {
+      "path": "upstream/packages/components/src/select/select-positioner.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/select-positioner.tsx",
+      "integrity": "e73bd223129c24c9de260c944e1b7804769848a917397057b389933289f411d0"
+    },
+    {
+      "path": "upstream/packages/components/src/select/select-root.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/select-root.tsx",
+      "integrity": "b815857df0e9bfe881b10db94e153669610418ffc2ba658fb82600e11863ee3d"
+    },
+    {
+      "path": "upstream/packages/components/src/select/select-separator.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/select-separator.tsx",
+      "integrity": "e6f8a74ed70e6edb304d4639ccbcb6ee176205a0f3078528a108bfe80ce925d5"
+    },
+    {
+      "path": "upstream/packages/components/src/select/select-trigger.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/select-trigger.tsx",
+      "integrity": "5b53f0989fd8f5be74693526ca8b2d3dd7116004235d94b131adc4212496c7ea"
+    },
+    {
+      "path": "upstream/packages/components/src/select/select-value.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/select/select-value.tsx",
+      "integrity": "528ec9630f3031151cfb85bf609dc6e84b3e070a33e8ad8be753439f5a3d02a4"
+    },
+    {
+      "path": "upstream/packages/primitives/src/combobox/combobox-clear.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/combobox/combobox-clear.ts",
+      "integrity": "500b70690e441fc0ffb5c1069f5409339b86be02510298bdba9e9da5bcc4b849"
+    },
+    {
+      "path": "upstream/packages/primitives/src/combobox/combobox-content.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/combobox/combobox-content.ts",
+      "integrity": "9c20fd6a92144eb74e7c57f86acecddd0bfcb8e32935778c340b37e910b64207"
+    },
+    {
+      "path": "upstream/packages/primitives/src/combobox/combobox-input.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/combobox/combobox-input.ts",
+      "integrity": "1e21638a160d1162c3453704e064af5ad1013812cc8b8ad8143615e53615dbb3"
+    },
+    {
+      "path": "upstream/packages/primitives/src/combobox/combobox-list.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/combobox/combobox-list.ts",
+      "integrity": "8692978fff997aa1fbcd2534df0f8ba6108953ebf81d51e98a2c3a4ef701b85e"
+    },
+    {
+      "path": "upstream/packages/primitives/src/combobox/combobox-positioner.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/combobox/combobox-positioner.ts",
+      "integrity": "ced7141da7920e0074c86493563675522f5980d10c1990fbb80fb4580f7389ac"
+    },
+    {
+      "path": "upstream/packages/primitives/src/combobox/combobox-root.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/combobox/combobox-root.ts",
+      "integrity": "7e2bfa55354da0f7d4bcb2b185483a584b5663d6bccb802e52db1ef77eba3ef8"
+    },
+    {
+      "path": "upstream/packages/primitives/src/combobox/combobox-status.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/combobox/combobox-status.ts",
+      "integrity": "cb1d9489ad06c59f3dd140b66779b615d267c3b9f45e931e487f34de995b8e3a"
+    },
+    {
+      "path": "upstream/packages/primitives/src/combobox/combobox-toggle.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/combobox/combobox-toggle.ts",
+      "integrity": "67a899f84457a72ee13a3a6839ba3a700c8c8b37e2d337a1c707df11c11baa29"
+    },
+    {
+      "path": "upstream/packages/primitives/src/combobox/combobox-trigger.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/combobox/combobox-trigger.ts",
+      "integrity": "5ea24d09b192ba2a7b56e9feb2a6d564a0d563662b8639e6592eb2249086e237"
+    },
+    {
+      "path": "upstream/packages/primitives/src/combobox/combobox-value.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/combobox/combobox-value.ts",
+      "integrity": "c654033bb02dc7c5c158772052f46565cef3095ba6aedae22f1b95b46353d284"
+    },
+    {
+      "path": "upstream/packages/primitives/src/combobox/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/combobox/index.ts",
+      "integrity": "fa12313060a727942f273e0a89ccbbf93bf606a1a2a47c5b2a0c88cf29cb2dda"
+    },
+    {
+      "path": "upstream/packages/primitives/src/dialog/dialog-backdrop.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/dialog/dialog-backdrop.ts",
+      "integrity": "c665882552e3c3bdf071bd04fa52a349719a7fb3cee44c3b6da38e7c40fe0a71"
+    },
+    {
+      "path": "upstream/packages/primitives/src/dialog/dialog-close-trigger.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/dialog/dialog-close-trigger.ts",
+      "integrity": "4cb98ca72e461715265c49fa3e4cffcb0aff9b42b48eae8dcde63c41bb50d2f8"
+    },
+    {
+      "path": "upstream/packages/primitives/src/dialog/dialog-content.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/dialog/dialog-content.ts",
+      "integrity": "c2b6610ea9037e05a07f44eeaf0a69deb935f10f2ac5773376abaf7186904bb7"
+    },
+    {
+      "path": "upstream/packages/primitives/src/dialog/dialog-description.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/dialog/dialog-description.ts",
+      "integrity": "52b620581f9c90ef539c0109050ae8356653f12f952737f915fc600e6e28e96b"
+    },
+    {
+      "path": "upstream/packages/primitives/src/dialog/dialog-portal.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/dialog/dialog-portal.ts",
+      "integrity": "a99a3c4c3b32b162da523f59e1d91eaee640c00d8166bb4e01a920d125bb910a"
+    },
+    {
+      "path": "upstream/packages/primitives/src/dialog/dialog-root.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/dialog/dialog-root.ts",
+      "integrity": "ba846c9aaf499206919f8794506221d15023250df809324b37980346dee0b01b"
+    },
+    {
+      "path": "upstream/packages/primitives/src/dialog/dialog-title.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/dialog/dialog-title.ts",
+      "integrity": "1690211c6a6111b7ffc51ee3f3efcd988f0549dbd867c07bbbb9c4db3ab0a959"
+    },
+    {
+      "path": "upstream/packages/primitives/src/dialog/dialog-trigger.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/dialog/dialog-trigger.ts",
+      "integrity": "9774f29ca695caf8d596c864082f634b8f70a1873a4248de5f41fb55c2ac8ee6"
+    },
+    {
+      "path": "upstream/packages/primitives/src/dialog/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/dialog/index.ts",
+      "integrity": "e7c727bf5f5ece0a5aa3f69962f6c0674f85dc92027443a9aee2d8358fcff3a2"
+    },
+    {
+      "path": "upstream/packages/primitives/src/hidden-select/create-hidden-select.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/hidden-select/create-hidden-select.ts",
+      "integrity": "f0c97cb0506c8e5950bb1be05a63fb3f55e48d0abf5bf750a77491a2ac5d90f7"
+    },
+    {
+      "path": "upstream/packages/primitives/src/hidden-select/hidden-select.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/hidden-select/hidden-select.tsx",
+      "integrity": "b1ce63766fd4c5ebe5eaf856460fea3105a8c5c7691e8974b22e96750215a457"
+    },
+    {
+      "path": "upstream/packages/primitives/src/hidden-select/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/hidden-select/index.ts",
+      "integrity": "8ed6e335a7c1f09c3d934f990c6d4816fb366d889ea68db689db42934bc57fb4"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-auto-focus.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-auto-focus.ts",
+      "integrity": "90e5740c86ef4a90301af96af35af86a202aba740f2906b102ab44af5c3c0f17"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-button.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-button.ts",
+      "integrity": "2bab7b21111c3e49e252d527fbf936b00f3cda835a631d6381e5fe47aed914ae"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-collection.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-collection.ts",
+      "integrity": "ef973b5cca937ea12c729d2d38c7e3cf09429cca711c3480cff402f659277934"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-component-context.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-component-context.ts",
+      "integrity": "db8b55f9d3f31adf245e76ce0dd28d1225b59b2667c96bbf1fe594d0d4ba30b6"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-controllable-state.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-controllable-state.ts",
+      "integrity": "f283a44ca2049ae09a7ac360363ceac8b3720f64ccba2db0a8f2ee0105628926"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-data-collection.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-data-collection.ts",
+      "integrity": "678a6fa22fea24308f3f7761bd0d57b780a59483f8866537f5453b44a992c7f1"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-dismissable.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-dismissable.ts",
+      "integrity": "ecad6631bf7346635b3d52a3dd07a73d2c5c0d957e1794f67cc77b71afb72c7b"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-floating.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-floating.ts",
+      "integrity": "44a0867090f4516ea6c0e9d243fb3d9dc490ad33e2cc5efa9d579b5b7206076e"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-focus-restore.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-focus-restore.ts",
+      "integrity": "4ed1bca9c3f34b5cc5787bd1c197fb021d29e3e1e1477ae1b824a0e865ea0c58"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-focus-scope.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-focus-scope.ts",
+      "integrity": "30e9ca2a540988fc25a6e1d7ecdfefc9f6ee01ebd31145b3dde61339a2d2f954"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-focus-trap.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-focus-trap.ts",
+      "integrity": "49f09f17336014aac512684ab75d95cc02d40be75ee41d22907ec528282b5f2a"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-grid-navigation.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-grid-navigation.ts",
+      "integrity": "a7ebe676aaf5eccd765785ffc49b7e1401bd5db7b966eb957d600a6704779ca8"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-hide-outside.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-hide-outside.ts",
+      "integrity": "6c6f592fc9f2c26393b6aca1100239beef35cf906ff3d83eb6f9255159020376"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-list-expansion.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-list-expansion.ts",
+      "integrity": "eff6fe624660015e2c133316bdda997a58851508f06ad68d02d0ea2fbda124f4"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-list-focus.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-list-focus.ts",
+      "integrity": "25fe00f99c478c698018f16dd713e52e5816cc87990bc37fcc9fbe0b700d7766"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-list-navigation.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-list-navigation.ts",
+      "integrity": "2879bb8d61aec0e26e9378edc25f119a7c28826746fb2e02189e712037cf4159"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-list-selection.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-list-selection.ts",
+      "integrity": "d18e7fdddf105cfba667aef1d0645f3d1a327324b3752821cfcc614b8e6698a0"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-list-typeahead.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-list-typeahead.ts",
+      "integrity": "ebf861400c0a906953054ecd5cc92c87c35b38ac2e463fbb1a21d098cac3b818"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-presence.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-presence.ts",
+      "integrity": "77e748b00a3befbd6072574dd4680eb90f8dcfdfe0033def31bf9863a33244c8"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-press.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-press.ts",
+      "integrity": "ced7eb7a8a0a5f07dc171bd556add5c0183dc766132cdb7def381751a21b4528"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-registered-element.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-registered-element.ts",
+      "integrity": "83ea7d0ccfc95b73b119a52d0cf006f10a57823d2be09e24326455b882514860"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-registered-id.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-registered-id.ts",
+      "integrity": "653d32a132c5d19da601e96165ddc9c1fe9bbfe028737d9fc4201bd265b6302a"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-scroll-lock.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-scroll-lock.ts",
+      "integrity": "428555246621c3e2f37c223a0df9b2d6b84070c09c0931f63b8f2f022d2cf111"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-text-direction-warning.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-text-direction-warning.ts",
+      "integrity": "9bfa0fe1e8b49b8688fb6f91cfc268033d46b425d50c3f02e984ed1f398b8907"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-text-input.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-text-input.ts",
+      "integrity": "ec7867abf501b2e4c597e10f5b535c187fc92d4923bcd996446197e0c2cc2f9b"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/create-virtual-collection.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/create-virtual-collection.ts",
+      "integrity": "b812a00a079831202936d78d849d65cae306d92cc006954eb1bb98da3c8a7f11"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/index.ts",
+      "integrity": "7cd10e5719576386becda86818c5b57e003dac987b69637af617fa96c6c3f780"
+    },
+    {
+      "path": "upstream/packages/primitives/src/internal/scroll-into-view.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/internal/scroll-into-view.ts",
+      "integrity": "7ce19ffe3e79751ac8dfee2ae35e2cfcf7befc106767958e1c690f11fd7c4d23"
+    },
+    {
+      "path": "upstream/packages/primitives/src/listbox/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/listbox/index.ts",
+      "integrity": "d512ccbca5281b521cc0b4b2ac073a8ce43038f23004bd12c7fa4d584ae7dbdc"
+    },
+    {
+      "path": "upstream/packages/primitives/src/listbox/listbox-group-label.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/listbox/listbox-group-label.ts",
+      "integrity": "938c08ba1b4a2b4510d3d2d8e1a902df1422f2244b1a94f9c326ff5b7cee91d0"
+    },
+    {
+      "path": "upstream/packages/primitives/src/listbox/listbox-group.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/listbox/listbox-group.ts",
+      "integrity": "0b650d4a23817f5618a886ab8efbb23b67e9dd898223caec32f705f491b1f3e3"
+    },
+    {
+      "path": "upstream/packages/primitives/src/listbox/listbox-item.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/listbox/listbox-item.ts",
+      "integrity": "28ea7eb40c02b2e7ae4101769e3f7fb655eb04c1f8197ed12902e4586532aa27"
+    },
+    {
+      "path": "upstream/packages/primitives/src/listbox/listbox-root.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/listbox/listbox-root.ts",
+      "integrity": "5cb0e0f97b5558a0d9708492f2e0baeee8834c0120b287e17f0b153f1b72b709"
+    },
+    {
+      "path": "upstream/packages/primitives/src/listbox/listbox-separator.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/listbox/listbox-separator.ts",
+      "integrity": "188f24efd0e57df693b321c73da8c8a6e96aa2db99c437e8b2a3c9ba0c29865e"
+    },
+    {
+      "path": "upstream/packages/primitives/src/modal-backdrop/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/modal-backdrop/index.ts",
+      "integrity": "2f11f7d47154e3e783cd55909f2320f0d1d3e9b7566cd0b2c44420914a7a8277"
+    },
+    {
+      "path": "upstream/packages/primitives/src/modal-backdrop/modal-backdrop.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/modal-backdrop/modal-backdrop.tsx",
+      "integrity": "17610b35c47b4f852aed1b8013f942cd0f6f3a3f2174c0b706e10b91fe1e0c23"
+    },
+    {
+      "path": "upstream/packages/primitives/src/render/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/render/index.ts",
+      "integrity": "3130227fbb57e02f898e39767acc3142c1f5d3069369f34697370ad122772fab"
+    },
+    {
+      "path": "upstream/packages/primitives/src/render/render.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/render/render.tsx",
+      "integrity": "0030314d4908b1ef8f8601a87d81ababa3487a07d3c68a5706e89d8cc5305a07"
+    },
+    {
+      "path": "upstream/packages/primitives/src/utils/defaults.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/utils/defaults.ts",
+      "integrity": "2190a8174a4cc4473ab758c3108757ff5180da295fbd33ef6a19c6c81cf0ad91"
+    },
+    {
+      "path": "upstream/packages/primitives/src/utils/events.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/utils/events.ts",
+      "integrity": "01725df40daed40a0e94d3d85ce9f9ff111de2221dc50e05ea2f955d7859d1a5"
+    },
+    {
+      "path": "upstream/packages/primitives/src/utils/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/utils/index.ts",
+      "integrity": "63d3cdcb7ccca95b573f0b0a956d9c48efa45eda82010bc3f4575fe81dbd66e1"
+    },
+    {
+      "path": "upstream/packages/primitives/src/utils/keymap.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/utils/keymap.ts",
+      "integrity": "1ef812ab363b3e7394df9d60647ac6d3bef89630a70ecd5d9606e78aa3f2af2a"
+    },
+    {
+      "path": "upstream/packages/primitives/src/utils/run-if-function.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/utils/run-if-function.ts",
+      "integrity": "05c684de3a8105d230f09f15e158b703edc700ea34f731bc7870731d00f88887"
+    },
+    {
+      "path": "upstream/packages/i18n/src/catalogs.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/catalogs.ts",
+      "integrity": "3edaa0a91a07b746c6e3b084a48fa42e11dba048664b7280ec4de0c49c264f62"
+    },
+    {
+      "path": "upstream/packages/i18n/src/collator.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/collator.ts",
+      "integrity": "107c2a2b93bc1a340869186281a4f2fc5ac2a325eafe9321d12cc2bd96487728"
+    },
+    {
+      "path": "upstream/packages/i18n/src/default-locale.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/default-locale.ts",
+      "integrity": "9eb84e111d9ade0f3bd5b8724fe977ef37c2e2be26fe9a4d469a216969e195f8"
+    },
+    {
+      "path": "upstream/packages/i18n/src/direction.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/direction.ts",
+      "integrity": "b1725af6d5dbd038be134ef2efe32eba131f289a266d99b1f3f43525fcc2589a"
+    },
+    {
+      "path": "upstream/packages/i18n/src/i18n-provider.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/i18n-provider.tsx",
+      "integrity": "b633d2c7713654ad300192048632a5daa3dec9b2200c3acdb4bd7be5825d69f7"
+    },
+    {
+      "path": "upstream/packages/i18n/src/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/index.ts",
+      "integrity": "551bc4823cdcdad63c89ffcfee0625c28d95b08b1f627cd54a5dacaa7c1ca158"
+    },
+    {
+      "path": "upstream/packages/i18n/src/messages.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/messages.ts",
+      "integrity": "3c07b9d60a97b8d3ed12113c912f2b560dbd1c556b2829fe06b75b36a4f682a3"
+    },
+    {
+      "path": "upstream/packages/i18n/src/translate.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/translate.ts",
+      "integrity": "afa90dd341bb1ce8c26c6712a2fd96a401d59db14ffd4cdffca1b979db89be96"
+    },
+    {
+      "path": "upstream/packages/i18n/src/locales/ar.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/locales/ar.ts",
+      "integrity": "738ea4031bdfac3f880a1bd9d16edfeb4af1c9feea92ab6c4aee626eb821b5da"
+    },
+    {
+      "path": "upstream/packages/i18n/src/locales/da.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/locales/da.ts",
+      "integrity": "271ad2ca288d782f8562ef08877cf5493d5bfeb31a324c5a532e17095cacee02"
+    },
+    {
+      "path": "upstream/packages/i18n/src/locales/de.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/locales/de.ts",
+      "integrity": "cf7f3ae14d4314bd099d7c65732b54367de4fd76be7c0e514e462484bce0b279"
+    },
+    {
+      "path": "upstream/packages/i18n/src/locales/el.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/locales/el.ts",
+      "integrity": "558a4d77e70a548d06741090fb1409559b2ac0b8c084f5405697c7451a3bdfa6"
+    },
+    {
+      "path": "upstream/packages/i18n/src/locales/en.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/locales/en.ts",
+      "integrity": "858eaf22060b69b31a82c6dd90298fb572509569c266f80ea59a56667a49d50c"
+    },
+    {
+      "path": "upstream/packages/i18n/src/locales/es.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/locales/es.ts",
+      "integrity": "8d4eaf5c174537b6aabdf579f981ca053aaa01fd747643b4547538c57eb24fe2"
+    },
+    {
+      "path": "upstream/packages/i18n/src/locales/fi.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/locales/fi.ts",
+      "integrity": "2b355ca42445df51129fec9f05b86ab5b118569fd60c3dc407ff4102c689fa8f"
+    },
+    {
+      "path": "upstream/packages/i18n/src/locales/fr.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/locales/fr.ts",
+      "integrity": "5a7578bacf1286d015014d8c35fd2dcd0dbef64c51da51bb12fc6ee982ae2889"
+    },
+    {
+      "path": "upstream/packages/i18n/src/locales/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/locales/index.ts",
+      "integrity": "b3020c7c022ef34107ed46cf491a97215fd58157f39e2c8772eea1750d0ca003"
+    },
+    {
+      "path": "upstream/packages/i18n/src/locales/it.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/locales/it.ts",
+      "integrity": "7c232913199bd608250e0753081ae6f391623a5285221c2871561fd77d491df1"
+    },
+    {
+      "path": "upstream/packages/i18n/src/locales/pl.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/locales/pl.ts",
+      "integrity": "bf1e6fb063dcf1363dce9d7090fed339f2941671af9f32cb37656cecdb98b210"
+    },
+    {
+      "path": "upstream/packages/i18n/src/locales/pt.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/locales/pt.ts",
+      "integrity": "c11e2297e9665feb1e9554d73d6db3256d6c10368dfc50ae24f7bbd8ea5cb01a"
+    },
+    {
+      "path": "upstream/packages/i18n/src/locales/sv.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/src/locales/sv.ts",
+      "integrity": "785077db1cc65106ac76f418282c2a9b061b8c8c6cb132ad0d4517b0f0dabb00"
+    },
+    {
+      "path": "upstream/packages/theming/src/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/index.ts",
+      "integrity": "96301c7f102f79a4be2877b695363d106afbfa86381f4da6431de40fba6cf954"
+    },
+    {
+      "path": "upstream/packages/theming/src/preset.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/preset.ts",
+      "integrity": "9ecd0dd0eaf8ced374805da23171185da8323b587c6c7303544189b2dec5e50a"
+    },
+    {
+      "path": "upstream/packages/theming/src/recipe-registry.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/recipe-registry.ts",
+      "integrity": "1853d5d242b4f7bbfcb12ca19df67b4004e76e3b097f956efbc4d582dc27c58b"
+    },
+    {
+      "path": "upstream/packages/theming/src/semantic-tokens.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/semantic-tokens.ts",
+      "integrity": "3f5f976f1069b7f21e9569b81bfdd50293d2384200067fff9f39786127068a3e"
+    },
+    {
+      "path": "upstream/packages/theming/src/styling.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/styling.ts",
+      "integrity": "c1afd76f376f7690fef544c38d3af5f2401fb531de462d09cb3941fcfb96f25c"
+    },
+    {
+      "path": "upstream/packages/theming/src/theme-context.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/theme-context.tsx",
+      "integrity": "ffc9c79a0d4a506bfedff085650766245df3e7a79bab2914cdc16af6d5268baf"
+    },
+    {
+      "path": "upstream/packages/theming/src/recipes/alert.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/recipes/alert.ts",
+      "integrity": "ba8f92506e2ca140a12f829a9f0f688ccffba54b3bbded101aabb171176f5ad7"
+    },
+    {
+      "path": "upstream/packages/theming/src/recipes/badge.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/recipes/badge.ts",
+      "integrity": "7591619fe34cd1b3b4980c84466671faf4fbcc9510409d31847104c3ac0fb050"
+    },
+    {
+      "path": "upstream/packages/theming/src/recipes/button.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/recipes/button.ts",
+      "integrity": "e6b9a86a0a6a96180902db4a8ce7698de9b03e7b5430d5e9f15ce8c63980220d"
+    },
+    {
+      "path": "upstream/packages/theming/src/recipes/calendar.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/recipes/calendar.ts",
+      "integrity": "421a689cd34861587efaa095c262dbe16de4925352a7285f8d484eb0fc3b6d6a"
+    },
+    {
+      "path": "upstream/packages/theming/src/recipes/close-button.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/recipes/close-button.ts",
+      "integrity": "9ac58fe6bda9cdb6ea617edfbf5f75e145aa49bc7b38b7ed9bda404a4c113acc"
+    },
+    {
+      "path": "upstream/packages/theming/src/recipes/combobox.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/recipes/combobox.ts",
+      "integrity": "943b72f895fa1ba25fccf05494731f22c1b39d519f0ce3e4f53c18805ac24f43"
+    },
+    {
+      "path": "upstream/packages/theming/src/recipes/dialog.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/recipes/dialog.ts",
+      "integrity": "2daa0f9636cc9321484adef946a6158bf4ec85f196bdd38c1cf362d5b422ad8a"
+    },
+    {
+      "path": "upstream/packages/theming/src/recipes/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/recipes/index.ts",
+      "integrity": "ccde1bf2554f2671748f9c32d5cf27b280cd58cc86d7c8d78002bba62af4a24c"
+    },
+    {
+      "path": "upstream/packages/theming/src/recipes/listbox.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/recipes/listbox.ts",
+      "integrity": "6d4e8aa4d7d1c663e155933b2ef210b3ea65fb92fdf55bb36ec6552151b627dc"
+    },
+    {
+      "path": "upstream/packages/theming/src/recipes/popover.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/recipes/popover.ts",
+      "integrity": "01f08087b46c48250cf6f5e7f7789c92dd247c2ed8c3fa27df8e72326db41f92"
+    },
+    {
+      "path": "upstream/packages/theming/src/recipes/select.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/src/recipes/select.ts",
+      "integrity": "80fb160d890e87be877792cfd8b07a1f9a6fad86f0f62f80a6282f76e6e805b4"
+    },
+    {
+      "path": "upstream/packages/presets/src/hope/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/hope/index.ts",
+      "integrity": "9330322766069353751ec6b04c0e8fb1b43eae4f3bea8ec9d18f2d6e74f5a9f0"
+    },
+    {
+      "path": "upstream/packages/presets/src/hope/tailwind.css",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/hope/tailwind.css",
+      "integrity": "dbf57820479931a104304e9cd4c8be57a61e9a7d69672358f9239dce3db816e8"
+    },
+    {
+      "path": "upstream/packages/presets/src/hope/theme.css",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/hope/theme.css",
+      "integrity": "3557312228d2b9f93a4d24b03d58e6e15a6904ab8fb3080fbb1681530cd1490d"
+    },
+    {
+      "path": "upstream/packages/presets/src/_base/base.css",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/_base/base.css",
+      "integrity": "18fbb6cd1225602b89b4a16bb952bd9332fa10e9930987b392b74dba7a8646bc"
+    },
+    {
+      "path": "upstream/packages/presets/src/_base/_opacity.css",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/_base/_opacity.css",
+      "integrity": "56d15f33a2e739aa5ce82922bc8f8b988536fd616c820f40bd539f7f69fb0c03"
+    },
+    {
+      "path": "upstream/packages/presets/src/_base/_scrollbar.css",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/_base/_scrollbar.css",
+      "integrity": "09a6fecf1bfbb26d80e4faa385491718cc8b575485a4023a18d7a07a4b64f209"
+    },
+    {
+      "path": "upstream/packages/presets/src/_base/_theme-map.css",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/_base/_theme-map.css",
+      "integrity": "b073a7126960450480dc6a045e6689a4701bfce8978ff76bd1b07954f276ebf9"
+    },
+    {
+      "path": "upstream/packages/presets/src/_base/_variants.css",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/_base/_variants.css",
+      "integrity": "4fd58884240c44a58cc70a304154dd34f08d67454e1d6cff36e4399cf8b07162"
+    },
+    {
+      "path": "upstream/packages/presets/src/hope/recipes/alert.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/hope/recipes/alert.ts",
+      "integrity": "9274ad0bd375eaec452757833a3f0d686db62820ccf3dfdf622a14150fd9b1fc"
+    },
+    {
+      "path": "upstream/packages/presets/src/hope/recipes/badge.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/hope/recipes/badge.ts",
+      "integrity": "9c04e9f60f50fa06fa4da9ef58d7f62a5af70e12bf13615f7fa796cb513cf8ec"
+    },
+    {
+      "path": "upstream/packages/presets/src/hope/recipes/button.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/hope/recipes/button.ts",
+      "integrity": "4e87c31b46a108d7f11a2035671856f341cae4f7d7c08f0a8981e778f322c4c1"
+    },
+    {
+      "path": "upstream/packages/presets/src/hope/recipes/calendar.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/hope/recipes/calendar.ts",
+      "integrity": "0813fd0fd687153843624e1c0b408dbf027da5cf0f2ede1f161575bae164ba71"
+    },
+    {
+      "path": "upstream/packages/presets/src/hope/recipes/close-button.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/hope/recipes/close-button.ts",
+      "integrity": "aede3f62b186b0fb5f88c9a466e677adc12dbd7cb444eb5b638e30d134e30a2c"
+    },
+    {
+      "path": "upstream/packages/presets/src/hope/recipes/combobox.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/hope/recipes/combobox.ts",
+      "integrity": "0776fba4a28df285ca46a6d0d9861dcc2644fce951df4c332fefa1938b4c9230"
+    },
+    {
+      "path": "upstream/packages/presets/src/hope/recipes/dialog.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/hope/recipes/dialog.ts",
+      "integrity": "d1bb1f6b802717767cbb24c2c609303127728d61c661e7468a7552a6193a60f2"
+    },
+    {
+      "path": "upstream/packages/presets/src/hope/recipes/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/hope/recipes/index.ts",
+      "integrity": "0602a5af6d9ffd716125ebcbbe2289f5b0d848632e11cda91da334f0e71c9d30"
+    },
+    {
+      "path": "upstream/packages/presets/src/hope/recipes/listbox.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/hope/recipes/listbox.ts",
+      "integrity": "b2bd4dd7778265b87cd6d59d6ac39a1b6678c6c54b66fb02c267aed9bffd00ea"
+    },
+    {
+      "path": "upstream/packages/presets/src/hope/recipes/popover.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/hope/recipes/popover.ts",
+      "integrity": "1382c29e24359ca0b196531f7e5a070e9897ad3a3ffa7b01e4bea127910ac3fb"
+    },
+    {
+      "path": "upstream/packages/presets/src/hope/recipes/select.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/src/hope/recipes/select.ts",
+      "integrity": "a9b50674540145bcb8dd7a35747d850b90c7ec1ffffba76c48bad88668cf9d26"
+    },
+    {
+      "path": "upstream/packages/components/package.json",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/package.json",
+      "integrity": "ae78719d5df491edf3d64a1d7a09ae956a64e0f808f2f114c2cbb637507c83f3"
+    },
+    {
+      "path": "upstream/packages/primitives/package.json",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/package.json",
+      "integrity": "1e2abc773691e780cc7feb9fd2b0cd628431eb27c351cde252034af974032017"
+    },
+    {
+      "path": "upstream/packages/i18n/package.json",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/i18n/package.json",
+      "integrity": "fa7997d7428ad3561557745c788a2876caa04fb706939d3e59947fba6ae00459"
+    },
+    {
+      "path": "upstream/packages/theming/package.json",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/theming/package.json",
+      "integrity": "1444984b814e461bbec59625f24c5e894570c008e0d37a4877976ba916c26f3b"
+    },
+    {
+      "path": "upstream/packages/presets/package.json",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/presets/package.json",
+      "integrity": "0589b87c845d5772627d4d0bf679e3431438886de4e30cb67af786e86772b551"
+    },
+    {
+      "path": "upstream/LICENSE.md",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/LICENSE.md",
+      "integrity": "0687ccb108b8dd994ecc4db913e5f1e99e9bfc41169d5fe706e96eaab1071c6a"
+    },
+    {
+      "path": "upstream/NOTICE.md",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/NOTICE.md",
+      "integrity": "766003a251bd9bc4dc2ac588e88f64b74215e5aadaa76966bb828f5db39efc07"
+    },
+    {
+      "path": "upstream/licenses/LICENSE-APACHE-2.0.txt",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/licenses/LICENSE-APACHE-2.0.txt",
+      "integrity": "acaf0db944d2333df7503997fd90427e35bb2f72d36a0fbb39d0f0ab7e1fca2f"
+    },
+    {
+      "path": "upstream/pnpm-workspace.yaml",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/pnpm-workspace.yaml",
+      "integrity": "c36a81ce37baa9b9bea7cdee4c16b484063f7d30e71db0cf3af25abe7bb6d137"
+    },
+    {
+      "path": "upstream/apps/docs/src/components/demos/button/ButtonIconsDemo.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/button/ButtonIconsDemo.tsx",
+      "integrity": "dfb5b6e5985b49ade83dd462c00c6e8794726cecde4f5b49d32bcbf0097304e5"
+    },
+    {
+      "path": "upstream/apps/docs/src/components/demos/dialog/DialogBasicDemo.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/dialog/DialogBasicDemo.tsx",
+      "integrity": "3d60e7efefe260d20d05052bf077db744dee5b6a46a244cd2e691dfd95fbbaa5"
+    },
+    {
+      "path": "upstream/apps/docs/src/components/demos/select/SelectBasicDemo.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/select/SelectBasicDemo.tsx",
+      "integrity": "247c5b0707c723ef097164c91195536294184369f0cb64335578d7e5db6754de"
+    },
+    {
+      "path": "upstream/apps/docs/src/content/components/10-buttons/button.mdx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/10-buttons/button.mdx",
+      "integrity": "5813ec435c6a44fd6e7bb485641318c2af4182555d649f9ef360940cb31783fc"
+    },
+    {
+      "path": "upstream/apps/docs/src/content/components/70-overlays/dialog.mdx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/70-overlays/dialog.mdx",
+      "integrity": "13ef5bfc199b397c87754c3c4b1a537fb5ecf2750238fe3f865054398f9f65b3"
+    },
+    {
+      "path": "upstream/apps/docs/src/content/components/30-collections/select.mdx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/30-collections/select.mdx",
+      "integrity": "f405057e747f7dd46358f76fa33e7bab76409a65288925ef577e8e035d4cd4d1"
+    },
+    {
+      "path": "upstream/apps/docs/src/components/demos/select/data.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/select/data.tsx",
+      "integrity": "04ac28bdca538a140fa6f37896a30613f7a72ff645c08421ea280944cfa91a3e"
+    },
+    {
+      "path": "upstream/package.json",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/package.json",
+      "integrity": "a330146d7440079ab8f34fb03b2b783e249d6ef95fadfbf1ce924ba35cf1b372"
+    },
+    {
+      "path": "upstream/apps/docs/src/components/demos/alert/AlertColorSchemesDemo.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/alert/AlertColorSchemesDemo.tsx",
+      "integrity": "8c90caf660c2293ac5b5f7f9aff9e1906d7cf56761ecb3f4a110863a7bd7d8eb"
+    },
+    {
+      "path": "upstream/apps/docs/src/components/demos/close-button/CloseButtonSurfacesDemo.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/close-button/CloseButtonSurfacesDemo.tsx",
+      "integrity": "802e1897c8165fad3d955d18b7e7895da8be02c8535f45098872d9ef1a35c087"
+    },
+    {
+      "path": "upstream/apps/docs/src/components/demos/badge/BadgeStatusDemo.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/badge/BadgeStatusDemo.tsx",
+      "integrity": "880212a0114bdd72f58bce812b54e95684dee78085a5af9b520cf289ad903bbe"
+    },
+    {
+      "path": "upstream/apps/docs/src/components/demos/calendar/CalendarBasicDemo.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/calendar/CalendarBasicDemo.tsx",
+      "integrity": "880435783da5685752f7d62f81cc95f8eb98cd778d633df94fed7f4f74ec64dd"
+    },
+    {
+      "path": "upstream/apps/docs/src/components/demos/calendar/data.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/calendar/data.ts",
+      "integrity": "e0ef0770b4ea1929653e56dba030e9f1953b646147dd7ebe042761a0bf7cc202"
+    },
+    {
+      "path": "upstream/apps/docs/src/content/components/80-data-display/badge.mdx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/80-data-display/badge.mdx",
+      "integrity": "7495ec80fe488e8a3c03002286f25a0fa441795c584275a52859aae203ac749f"
+    },
+    {
+      "path": "upstream/apps/docs/src/content/components/60-feedback/alert.mdx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/60-feedback/alert.mdx",
+      "integrity": "5e03d76a68f83d236e9ceb36a66d245050df1f2f5063c2b16ffe56ec9863c706"
+    },
+    {
+      "path": "upstream/apps/docs/src/content/components/40-date-and-time/calendar.mdx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/40-date-and-time/calendar.mdx",
+      "integrity": "95e11c29f0ca176e36bddf46bb533d3632b94d73500aff83a123f7ccae4c2f61"
+    },
+    {
+      "path": "upstream/apps/docs/src/components/demos/combobox/data.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/combobox/data.tsx",
+      "integrity": "78ce421f4bcccf2a6ef31e627d57e5640cae1bb731feae3c8e2045d0e063e284"
+    },
+    {
+      "path": "upstream/apps/docs/src/components/demos/listbox/data.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/listbox/data.tsx",
+      "integrity": "e0d13aab0a5cad9e1b3e48ab6a4c51bb6a086fd02d6006767afcc110ed47148a"
+    },
+    {
+      "path": "upstream/apps/docs/src/content/components/30-collections/listbox.mdx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/30-collections/listbox.mdx",
+      "integrity": "0dd572e5607bb19b8b06a788ab479d5df358324b74423655e22914c65a1204ab"
+    },
+    {
+      "path": "upstream/apps/docs/src/components/demos/popover/PopoverBasicDemo.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/popover/PopoverBasicDemo.tsx",
+      "integrity": "bb44a3b69ea5b51b311dc00fbb4c3b0e07f2af95de2ae612ab14ecff65850bc9"
+    },
+    {
+      "path": "upstream/apps/docs/src/content/components/10-buttons/close-button.mdx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/10-buttons/close-button.mdx",
+      "integrity": "da8b377019a08b9022e801ae96d5e54aa8392148902e1c4c312377f526191473"
+    },
+    {
+      "path": "upstream/packages/components/src/alert/alert-actions.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/alert/alert-actions.tsx",
+      "integrity": "a12351358d0898f9c94ab01d14943b6307dd743a192e610dd538e87de55e13b7"
+    },
+    {
+      "path": "upstream/apps/docs/src/content/components/70-overlays/popover.mdx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/70-overlays/popover.mdx",
+      "integrity": "e1a46cdc24a41188eb2089703e64492e9d41122d051e3f126ab3125f92affd1a"
+    },
+    {
+      "path": "upstream/packages/components/src/alert/alert-content.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/alert/alert-content.tsx",
+      "integrity": "1ca2575bd08642dc5dc550175cdb563a6f9f62cfff972af50ea77e782da9e8a9"
+    },
+    {
+      "path": "upstream/packages/components/src/alert/alert-close-trigger.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/alert/alert-close-trigger.tsx",
+      "integrity": "401eea117fef69f18694a180d334749ad3b8fa3f25bbb55e37ba36d37120df85"
+    },
+    {
+      "path": "upstream/apps/docs/src/components/demos/listbox/ListboxBasicDemo.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/listbox/ListboxBasicDemo.tsx",
+      "integrity": "7366efd88c029869f4b18a3886fe36ac6e2d577d73977927652c9dfd2e3b72d1"
+    },
+    {
+      "path": "upstream/apps/docs/src/components/demos/combobox/ComboboxBasicDemo.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/components/demos/combobox/ComboboxBasicDemo.tsx",
+      "integrity": "c3cf1fe2b67d4971c1208e8c57b11209582dfcf3100e5964f788b76093502a15"
+    },
+    {
+      "path": "upstream/apps/docs/src/content/components/30-collections/combobox.mdx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/apps/docs/src/content/components/30-collections/combobox.mdx",
+      "integrity": "6bbe6ba7cf0e1044a1dab1c04df861179cf2b7e9c452637f9d6d32a13fc93d64"
+    },
+    {
+      "path": "upstream/packages/components/src/alert/alert-context.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/alert/alert-context.ts",
+      "integrity": "fa6d314bf282b8ede916a8e63c75be3370602c41b202a5abd42ee9c6a9dd214c"
+    },
+    {
+      "path": "upstream/packages/components/src/alert/alert-icons.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/alert/alert-icons.tsx",
+      "integrity": "457660ba9a891e4dfa554345a758b6121fd4909a0638e59ccfbb6a7ea54df326"
+    },
+    {
+      "path": "upstream/packages/components/src/alert/alert-description.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/alert/alert-description.tsx",
+      "integrity": "a581bed8f50504ebd6103908c3e01c2923d7041cbe0c58f23bde4f5cc58b5791"
+    },
+    {
+      "path": "upstream/packages/components/src/alert/alert-icon.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/alert/alert-icon.tsx",
+      "integrity": "67e3e51df1c26aed1b8960ce7c95e5a83d2b05daea9ab27859cf038b0a0d4a6b"
+    },
+    {
+      "path": "upstream/packages/components/src/alert/alert-root.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/alert/alert-root.tsx",
+      "integrity": "42a3d1ccf7db361be82182d999c2b97de6e1daa992af4983fb834611bada09e8"
+    },
+    {
+      "path": "upstream/packages/components/src/alert/alert-title.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/alert/alert-title.tsx",
+      "integrity": "9d962f8e05a6f823a102d006d4dfa3b855fd1cda18d106e18e5dd5001cb129bd"
+    },
+    {
+      "path": "upstream/packages/components/src/badge/badge.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/badge/badge.tsx",
+      "integrity": "a5223aac0f28a22013a6875c55cea23f886f311d73c7178a4a2f7de24399598e"
+    },
+    {
+      "path": "upstream/packages/components/src/calendar/calendar-grid.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/calendar/calendar-grid.tsx",
+      "integrity": "a10a694c6523d4930669b190b069e0c5d4b5769950e37bbb668b577a3e5e0dbf"
+    },
+    {
+      "path": "upstream/packages/components/src/badge/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/badge/index.ts",
+      "integrity": "22dbf845d062506ec50b17c74abb58608bc9cc33eba129610d382345e57597b5"
+    },
+    {
+      "path": "upstream/packages/components/src/alert/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/alert/index.ts",
+      "integrity": "329e11b6a8b1cfedda0fc5d40839134bf854deac53c4e66ace66de5b025e784e"
+    },
+    {
+      "path": "upstream/packages/components/src/calendar/calendar-header.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/calendar/calendar-header.tsx",
+      "integrity": "ec14df0aeb2f64b82e8a65e60900c62f22ab1906b93a166fbf7983f51899ec4b"
+    },
+    {
+      "path": "upstream/packages/components/src/calendar/calendar-cell.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/calendar/calendar-cell.tsx",
+      "integrity": "261fedb37f8d47a7ce22367c772c4730c55351e6c27c859b1a241b16d75fa1f9"
+    },
+    {
+      "path": "upstream/packages/components/src/calendar/calendar-context.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/calendar/calendar-context.ts",
+      "integrity": "7ad9695c0fedeb7433e80261fc3ea5532fec55e6b83ad0112439f40104403deb"
+    },
+    {
+      "path": "upstream/packages/components/src/calendar/calendar-heading.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/calendar/calendar-heading.tsx",
+      "integrity": "4f219bac6d5d7b372807d2ad7a8ca3fdf23cd216bee3b254a51b8537bf706bdd"
+    },
+    {
+      "path": "upstream/packages/components/src/calendar/calendar-root.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/calendar/calendar-root.tsx",
+      "integrity": "e11ed34411e4803e76896322a0a62d3f6139052f6b37999321ba742d35220370"
+    },
+    {
+      "path": "upstream/packages/components/src/calendar/calendar-next-button.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/calendar/calendar-next-button.tsx",
+      "integrity": "3b1c2b2406e1205995d565a53d505d2842f8f8aea18a07b448fce4e0f6a6fc81"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-content.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-content.tsx",
+      "integrity": "761980aa11e956e46b9f3312cd899ad68ef2348e8804e7d1001f064981d05606"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-control.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-control.tsx",
+      "integrity": "dd66e1af051bbe7578a287fa3156c47054b732703fdf1e0daf69d5f8306982e4"
+    },
+    {
+      "path": "upstream/packages/components/src/calendar/calendar-prev-button.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/calendar/calendar-prev-button.tsx",
+      "integrity": "efcfbc4522bf43f21deeb65542713b915de79f20e1673312e04cb2b717ce4deb"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-context.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-context.ts",
+      "integrity": "bd90523c772185c4e5a8c381a18febb085f279b0ae89819b6f02905ba8dabe18"
+    },
+    {
+      "path": "upstream/packages/components/src/calendar/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/calendar/index.ts",
+      "integrity": "8497651786cc700b740f95c59f79c248ad24721da53a7cbf8d7ddffa517176a1"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-clear.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-clear.tsx",
+      "integrity": "c2a51ac1df21c849f974017ae668a5b114d49ebc7f129ebbb32a3a8a026e4bd7"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-empty.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-empty.tsx",
+      "integrity": "197704a053ccd7404a6f531fb328cb5fbcd4d97011a142932a73fc258ca7ed5c"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-group.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-group.tsx",
+      "integrity": "ba897aa9ff3c8724409e290bca8a921b18cbe94e65865a377c70b39b2e90c4f7"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-icon.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-icon.tsx",
+      "integrity": "bca6dad6402420408039fae5525c2cb41c1337d892dcbab020db8dfef8e99a05"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-group-label.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-group-label.tsx",
+      "integrity": "e13c29201dd139a1a5a0c8c67290b8fbf6f7ae2834a5b31f5fa2bdd735f6e7cb"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-item-indicator.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-item-indicator.tsx",
+      "integrity": "e0499c8ee8fa4beb378f90c32b18d6e51ea492e8a4a5cabe7052866c9d09100b"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-input.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-input.tsx",
+      "integrity": "a37cf028a9a6f9b1ff25d5abc55a0ed5972bbb0de9b191ec34a59421e5f06749"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-item-text.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-item-text.tsx",
+      "integrity": "3f0bfdad65520dfdb18349cba7ee257b093a03a7eb986981f29d44d13f39ad1c"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-filter.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-filter.ts",
+      "integrity": "e167a8b3eec577d8253d14014c6b098334d05588953dd64eed491bf2af72f534"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-list.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-list.tsx",
+      "integrity": "e303b92dfccfdf4f64d2a522d1cd30c88aff362c5f765695e26fd25fd588c1fd"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-portal.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-portal.tsx",
+      "integrity": "5eae685ecd088c8dcd739acab03c55efe34d524d6b8151e8eea26cea90864187"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-item.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-item.tsx",
+      "integrity": "03c1af9ca5173f50dddfec930901aac2fd2a503645dec510a26bfebdc7d58bc7"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-positioner.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-positioner.tsx",
+      "integrity": "dd74c4ed45c2c990fe9635e55cec467c6db491cdf0efd20632bec521c7b0d9a7"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-root.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-root.tsx",
+      "integrity": "db35d4d3b6c7982f7af02760355d5b1b52f53d5acdb3f7d9314d3dbfd5b5908c"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-separator.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-separator.tsx",
+      "integrity": "2ae301287dc5ab398ba03679669c3f1bfec325908d8c0fa6884c301e1b3a0c23"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-trigger.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-trigger.tsx",
+      "integrity": "07e0405d2b5120d740bd4389558b2dcd9e51804be463f0133436f12db1a89ee6"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/combobox-status.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/combobox-status.tsx",
+      "integrity": "4610ed5dac62ea72d7346af7f14cea9dde21554d0a94a37e04cc6f216f418460"
+    },
+    {
+      "path": "upstream/packages/components/src/combobox/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/combobox/index.ts",
+      "integrity": "005a0667a4566a1d12dbb056023ea4b5967adf37acc065055ccaf7f067d4c8c5"
+    },
+    {
+      "path": "upstream/packages/components/src/listbox/listbox-context.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/listbox/listbox-context.ts",
+      "integrity": "cbf3d1ae87793d0f1469cd35aedf692b90656116624fbbff3f4e64a9614670a1"
+    },
+    {
+      "path": "upstream/packages/components/src/listbox/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/listbox/index.ts",
+      "integrity": "7d4449be2bbd2bc74e405eb1f65d7206d46aea4db682a1f23fd8c86c10c4573c"
+    },
+    {
+      "path": "upstream/packages/components/src/listbox/listbox-group.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/listbox/listbox-group.tsx",
+      "integrity": "8bc363572205140356385250738b2770ba899e1c636059d3dcbb536c42434233"
+    },
+    {
+      "path": "upstream/packages/components/src/listbox/listbox-group-label.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/listbox/listbox-group-label.tsx",
+      "integrity": "a1cc1762a0358295c7fe4b00f188ce4d6bc6f238704aa85ede9d01334a033cf2"
+    },
+    {
+      "path": "upstream/packages/components/src/listbox/listbox-item-indicator.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/listbox/listbox-item-indicator.tsx",
+      "integrity": "584822df036d3253028399cdb868cb1a3d03f7e53dbcc9009c4b42c839fadf46"
+    },
+    {
+      "path": "upstream/packages/components/src/listbox/listbox-item.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/listbox/listbox-item.tsx",
+      "integrity": "62ebe1ee9561d14f7712617f523a10b23b8983005cd22967de94ee9bf1fef409"
+    },
+    {
+      "path": "upstream/packages/components/src/listbox/listbox-root.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/listbox/listbox-root.tsx",
+      "integrity": "da3010efca1dfda33a1fedf62f3ed1efb3000dd805017cc12bf9bac0aa68bf7d"
+    },
+    {
+      "path": "upstream/packages/components/src/popover/popover-anchor.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/popover/popover-anchor.tsx",
+      "integrity": "679adcf2ecb71fc765f71d50c59c3320a58d71e5d8991e14a343614920c9dcf4"
+    },
+    {
+      "path": "upstream/packages/components/src/popover/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/popover/index.ts",
+      "integrity": "d9551ae80fd177f44033a5158a3d5fecc9ed98bea97013fea8612a266db06ad0"
+    },
+    {
+      "path": "upstream/packages/components/src/listbox/listbox-separator.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/listbox/listbox-separator.tsx",
+      "integrity": "ea1e4dd009113d4c1831da39369727ccb11fbc8a8bb577c1603c505f1339a85d"
+    },
+    {
+      "path": "upstream/packages/components/src/popover/popover-content.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/popover/popover-content.tsx",
+      "integrity": "ac0a76c4b1fe90185b49a4116c042cecc1eff9b7dc7f5fc24dc9329aaf8bf337"
+    },
+    {
+      "path": "upstream/packages/components/src/popover/popover-arrow.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/popover/popover-arrow.tsx",
+      "integrity": "b2f65523b05f73b9448c2d76b79a01235f16d843cb67b46768493bee40588730"
+    },
+    {
+      "path": "upstream/packages/components/src/popover/popover-context.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/popover/popover-context.ts",
+      "integrity": "86b1d46936477efe67fc95a2d341c40e410e86fa940b182c3b58d47b7fdd3e9d"
+    },
+    {
+      "path": "upstream/packages/components/src/popover/popover-portal.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/popover/popover-portal.tsx",
+      "integrity": "ed26f8f6b159784efcba4c07a4910b7e041bf7ec35a984ac193af99073f0ae29"
+    },
+    {
+      "path": "upstream/packages/components/src/popover/popover-description.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/popover/popover-description.tsx",
+      "integrity": "895eff7972092a0d23bde99c18016efcf3f5ed5cd30855f4e96360d8bb8b8ce4"
+    },
+    {
+      "path": "upstream/packages/components/src/popover/popover-close-trigger.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/popover/popover-close-trigger.tsx",
+      "integrity": "d86f943b78ecaced050aca4f933ef80e4188aabaab6abd5837a6fad6c79ef6f7"
+    },
+    {
+      "path": "upstream/packages/components/src/popover/popover-header.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/popover/popover-header.tsx",
+      "integrity": "4128d7c6776d2487436346da8498cd092fdde1d7dcce95cfdfad6119673f16df"
+    },
+    {
+      "path": "upstream/packages/components/src/popover/popover-positioner.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/popover/popover-positioner.tsx",
+      "integrity": "f7b4e63badd00cf73084445bf706b84f404695e556e91a3346d2d47cf44d27ad"
+    },
+    {
+      "path": "upstream/packages/components/src/popover/popover-trigger.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/popover/popover-trigger.tsx",
+      "integrity": "11cec218a76ee58bf47b552cc318ef07067f3f660f125d08f863a7a4671f79da"
+    },
+    {
+      "path": "upstream/packages/components/src/popover/popover-title.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/popover/popover-title.tsx",
+      "integrity": "c3f02852a86dfaeb309da384676623dd440817dee038b58b1d952c55ad8ebfa3"
+    },
+    {
+      "path": "upstream/packages/components/src/popover/popover-root.tsx",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/components/src/popover/popover-root.tsx",
+      "integrity": "512b7752d808abfc9fc0b5a14901ae53e21b2643fa26125e827cd8d60af4d968"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/calendar-grid.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/calendar-grid.ts",
+      "integrity": "621ff9da7a9f0923828831a77849e9e0440daa8d2c7cb510096554d9eb00f73c"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/calendar-cell.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/calendar-cell.ts",
+      "integrity": "28905a42b81b4e3ce024766ac011bcb1464820032e0154dc19a7d6d26d5cbf72"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/calendar-group.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/calendar-group.ts",
+      "integrity": "157fb7f11469b9d6d565e00a3929c684ca087d5b908dd5bdbf5b228ba597206c"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/calendar-heading.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/calendar-heading.ts",
+      "integrity": "564b040eb0b0462e819c452f3973c2d724c9a59a3e5d1355874f05c184f26dcf"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/utils/decade-view.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/utils/decade-view.ts",
+      "integrity": "bbcc78e20572c9bd9b08f8cd0e9e34acf6b021a9caa38c5b24f49861fdba51d2"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/index.ts",
+      "integrity": "1ae595ed8370891cb2ee8acf53e959d32c60634a4180e3f6717c0d1f3eb1063e"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/calendar-prev.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/calendar-prev.ts",
+      "integrity": "cbc887897997f9e1520ce9858b0e740089529acc5d94ebb3b1cb218983bc45f2"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/calendar-next.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/calendar-next.ts",
+      "integrity": "2b359d05f7c74ee6b1b66abc4bcde0f08287b428994ce6776f7b1935995ed2c7"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/utils/boundary.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/utils/boundary.ts",
+      "integrity": "1fab06a5322c018072f928a6813bcc49357b19ae7b94c1b3ccb9a2157446b833"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/calendar-root.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/calendar-root.ts",
+      "integrity": "208a0e5a0ad5a2defdb6d4552dbdf2f22c4b02a7e697d1449e86c49ad3b1f2bb"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/utils/multiple-selection.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/utils/multiple-selection.ts",
+      "integrity": "a3cd4137a9f01e6fe5eca7904c35d580dbba359c4d6f19014288e746ced5c3d5"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/utils/month-view.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/utils/month-view.ts",
+      "integrity": "b65fa9a4397103684132e8a5070cbb6febe53a9b2948c33b6d6e4fa01915c76d"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/utils/navigation.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/utils/navigation.ts",
+      "integrity": "055a92543523b313a3d05cb052b7608370c62c37faa9aa33bb366ad4dc15ac79"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/utils/view.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/utils/view.ts",
+      "integrity": "43daad6f3e12802b5059654617e5944cfc09ed2363ee0b842fe52c78a8b2e4e6"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/utils/single-selection.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/utils/single-selection.ts",
+      "integrity": "4fc2df046ca9644eb9e71abf292ecb808fe063e4dd40afec91b2d1c1918f07fc"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/utils/range-selection.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/utils/range-selection.ts",
+      "integrity": "e6cbc85dca7ba5f66db91a6ae26b3b3758cc05da8ddf0d39c28fccda5867df43"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/utils/selection.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/utils/selection.ts",
+      "integrity": "74c5801adeb839162e8f5723232eb5b6e2963a247bc292f6dbbd0d166a3ac752"
+    },
+    {
+      "path": "upstream/packages/primitives/src/calendar/utils/year-view.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/calendar/utils/year-view.ts",
+      "integrity": "f670f5495f1060a4d4d9e6437d7fb530bb6f0e04b98c4b879fb6ac6a24f83850"
+    },
+    {
+      "path": "upstream/packages/primitives/src/popover/index.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/popover/index.ts",
+      "integrity": "e1d2f51be34ca6381e9ff07fedebf2616a7744b4dd9e2155f3a465dbba0ebe3a"
+    },
+    {
+      "path": "upstream/packages/primitives/src/popover/popover-anchor.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/popover/popover-anchor.ts",
+      "integrity": "5ff277add1030db5f54cbdad351a7310ad0fd596990e150616445fd6f9ff2843"
+    },
+    {
+      "path": "upstream/packages/primitives/src/popover/popover-positioner.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/popover/popover-positioner.ts",
+      "integrity": "8223eb5bd2d0b2a66e32e30fa2593c92248c9ef64f9df23f411d6574095deb33"
+    },
+    {
+      "path": "upstream/packages/primitives/src/popover/popover-description.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/popover/popover-description.ts",
+      "integrity": "67a469660ebd56e43d82575ec6bd7dd04730de6515f425c90b5224c15c1333e0"
+    },
+    {
+      "path": "upstream/packages/primitives/src/popover/popover-close-trigger.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/popover/popover-close-trigger.ts",
+      "integrity": "5ba50e8778cf1dfbb172096721f3df89774ef623e3fdbb294b6d31107430a051"
+    },
+    {
+      "path": "upstream/packages/primitives/src/popover/popover-content.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/popover/popover-content.ts",
+      "integrity": "72ee31b0eb43ad453615fcdd5d56943ec7c9131408a4e8271bd4c32e3344ecd5"
+    },
+    {
+      "path": "upstream/packages/primitives/src/popover/popover-root.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/popover/popover-root.ts",
+      "integrity": "087f2e088f7c9d22a5aea3cb56e373dea5b5d8afe19168e0ad09f1fe2d3cea8c"
+    },
+    {
+      "path": "upstream/packages/primitives/src/popover/popover-arrow.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/popover/popover-arrow.ts",
+      "integrity": "6b58a3f31d3fabb9a9e06d1888b1635d7c3e80b4a6067c8a2f553ed04f9e1feb"
+    },
+    {
+      "path": "upstream/packages/primitives/src/popover/popover-trigger.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/popover/popover-trigger.ts",
+      "integrity": "b466943be3ffcece469ed0cae13d5c0635cceed17df21fdc663711ee9eff53f2"
+    },
+    {
+      "path": "upstream/packages/primitives/src/popover/popover-title.ts",
+      "url": "https://raw.githubusercontent.com/hope-ui/hope-ui/1dc059fcb9045ea5f066fd6109347f0fdce5a03e/packages/primitives/src/popover/popover-title.ts",
+      "integrity": "74572bf5056203123c99242888953c4e93584d5b11f0bb0f12f289c7f49643a3"
+    }
+  ],
+  "componentSources": {
+    "Button": "upstream/packages/components/src/button/index.ts",
+    "Dialog": "upstream/packages/components/src/dialog/index.ts",
+    "Select": "upstream/packages/components/src/select/index.ts"
+  },
+  "gaps": {
+    "Button": [
+      "Source-only early preview: @hope-ui/components is not published to npm; pinned to the verified Solid 2 beta source revision."
+    ],
+    "Dialog": [
+      "Source-only early preview: @hope-ui/components is not published to npm; pinned to the verified Solid 2 beta source revision."
+    ],
+    "Select": [
+      "Source-only early preview: @hope-ui/components is not published to npm; pinned to the verified Solid 2 beta source revision."
+    ]
+  },
+  "groups": {
+    "HopeExpanded": {
+      "Alert": {
+        "source": "upstream/packages/components/src/alert/index.ts",
+        "gaps": [
+          "Source-only early preview: @hope-ui/components is not published to npm; pinned to the verified Solid 2 beta source revision."
+        ]
+      },
+      "Badge": {
+        "source": "upstream/packages/components/src/badge/index.ts",
+        "gaps": [
+          "Source-only early preview: @hope-ui/components is not published to npm; pinned to the verified Solid 2 beta source revision."
+        ]
+      },
+      "Calendar": {
+        "source": "upstream/packages/components/src/calendar/index.ts",
+        "gaps": [
+          "Source-only early preview: @hope-ui/components is not published to npm; pinned to the verified Solid 2 beta source revision."
+        ]
+      },
+      "CloseButton": {
+        "source": "upstream/packages/components/src/close-button/index.ts",
+        "gaps": [
+          "Source-only early preview: @hope-ui/components is not published to npm; pinned to the verified Solid 2 beta source revision."
+        ]
+      },
+      "Combobox": {
+        "source": "upstream/packages/components/src/combobox/index.ts",
+        "gaps": [
+          "Source-only early preview: @hope-ui/components is not published to npm; pinned to the verified Solid 2 beta source revision."
+        ]
+      },
+      "Listbox": {
+        "source": "upstream/packages/components/src/listbox/index.ts",
+        "gaps": [
+          "Source-only early preview: @hope-ui/components is not published to npm; pinned to the verified Solid 2 beta source revision."
+        ]
+      },
+      "Popover": {
+        "source": "upstream/packages/components/src/popover/index.ts",
+        "gaps": [
+          "Source-only early preview: @hope-ui/components is not published to npm; pinned to the verified Solid 2 beta source revision."
+        ]
+      }
+    }
+  }
+}
