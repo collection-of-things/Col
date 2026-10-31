@@ -717,7 +717,7 @@
   },
   "Tabs": {
     "group": "RockExpanded2",
-    "codeIntegrity": "1f400472631ba7abc763be76a901e4489fac5cd7a1e603d70f81ede86480abe5",
+    "codeIntegrity": "254a1665060a7c27130707eb099f9e7716cefffd2c3255d4addc81528aa27b93",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },
@@ -1585,7 +1585,7 @@
         },
         {
           "path": "examples/items/Chip.tsx",
-          "sha256": "5a8dda2f5b94cb03199b18138a3f4ade520fc77941312197d19c2bc7502ca1e7"
+          "sha256": "004efab0022ff0fe4a18119870048500c692ebe8ee92a4b4d4fb587a430a8ad0"
         },
         {
           "path": "upstream/src/components/ButtonGroup/ButtonGroupContext.ts",
@@ -2328,49 +2328,49 @@
   },
   "Chip": {
     "group": "RockExpanded2",
-    "codeIntegrity": "1f400472631ba7abc763be76a901e4489fac5cd7a1e603d70f81ede86480abe5",
+    "codeIntegrity": "254a1665060a7c27130707eb099f9e7716cefffd2c3255d4addc81528aa27b93",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },
   "Divider": {
     "group": "RockExpanded2",
-    "codeIntegrity": "1f400472631ba7abc763be76a901e4489fac5cd7a1e603d70f81ede86480abe5",
+    "codeIntegrity": "254a1665060a7c27130707eb099f9e7716cefffd2c3255d4addc81528aa27b93",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },
   "IconButton": {
     "group": "RockExpanded2",
-    "codeIntegrity": "1f400472631ba7abc763be76a901e4489fac5cd7a1e603d70f81ede86480abe5",
+    "codeIntegrity": "254a1665060a7c27130707eb099f9e7716cefffd2c3255d4addc81528aa27b93",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },
   "Input": {
     "group": "RockExpanded2",
-    "codeIntegrity": "1f400472631ba7abc763be76a901e4489fac5cd7a1e603d70f81ede86480abe5",
+    "codeIntegrity": "254a1665060a7c27130707eb099f9e7716cefffd2c3255d4addc81528aa27b93",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },
   "Label": {
     "group": "RockExpanded2",
-    "codeIntegrity": "1f400472631ba7abc763be76a901e4489fac5cd7a1e603d70f81ede86480abe5",
+    "codeIntegrity": "254a1665060a7c27130707eb099f9e7716cefffd2c3255d4addc81528aa27b93",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },
   "Link": {
     "group": "RockExpanded2",
-    "codeIntegrity": "1f400472631ba7abc763be76a901e4489fac5cd7a1e603d70f81ede86480abe5",
+    "codeIntegrity": "254a1665060a7c27130707eb099f9e7716cefffd2c3255d4addc81528aa27b93",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },
   "Progress": {
     "group": "RockExpanded2",
-    "codeIntegrity": "1f400472631ba7abc763be76a901e4489fac5cd7a1e603d70f81ede86480abe5",
+    "codeIntegrity": "254a1665060a7c27130707eb099f9e7716cefffd2c3255d4addc81528aa27b93",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },
   "Radio": {
     "group": "RockExpanded2",
-    "codeIntegrity": "1f400472631ba7abc763be76a901e4489fac5cd7a1e603d70f81ede86480abe5",
+    "codeIntegrity": "254a1665060a7c27130707eb099f9e7716cefffd2c3255d4addc81528aa27b93",
     "cssIntegrity": "c08a18d1214511bac6044731e576e003cd7e823c6530c8a2c655bed26cb3031a",
     "lockIntegrity": "1fce4252a8230eec0a7645635571ca4c2712a79e57072afbcf8918725849b659"
   },

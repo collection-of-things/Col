@@ -10,8 +10,8 @@ export default function Example() {
         label="Chip 1"
         variant="solid"
         onDelete={() => setFirst(false)}
-        onClick={(e) => {}}
-        aria-label="Chip 1, press Delete to remove"
+        onClick={() => setFirst(false)}
+        aria-label="Remove Chip 1"
         onKeyDown={(event) => { if (event.key === "Delete" || event.key === "Backspace") { event.preventDefault(); setFirst(false); } }}
       /></Show>
       <Show when={second()}><Chip

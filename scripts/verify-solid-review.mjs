@@ -35,7 +35,10 @@ export async function verifySolidReview(frame, id, expect, { chipKeyboard = fals
   }
   if (id === "rocksolid/Chip") {
     const label = frame.getByText("Chip 1", { exact: true });
-    if (chipKeyboard) await frame.getByRole("button", { name: "Chip 1, press Delete to remove" }).press("Delete");
+    const remove = frame.getByRole("button", { name: "Remove Chip 1", exact: true });
+    const action = process.env.SOLID_CHIP_ACTION ?? (chipKeyboard ? "Delete" : "icon");
+    if (action === "click") await remove.click();
+    else if (action !== "icon") await remove.press(action);
     else await label.locator("..").locator(":scope > span").last().click();
     await expect(label).toHaveCount(0);
     await expect(frame.getByText("Chip 2", { exact: true })).toBeVisible();
