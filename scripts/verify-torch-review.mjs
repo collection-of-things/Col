@@ -3,6 +3,19 @@ export async function verifyTorchReview(frame, id, expect) {
   if (id === "torch-ui/Inline") {
     await expect(frame.getByText("Left", { exact: true })).toBeVisible();
     await expect(frame.getByText("Right", { exact: true })).toBeVisible();
+  } else if (id === "torch-ui/Date Range Picker") {
+    const trigger = button("Campaign window");
+    await trigger.click();
+    const day = button("15").first();
+    await day.click();
+    await expect(day).toBeEnabled();
+    await day.click();
+    await expect(trigger).toContainText(/15.*15/);
+  } else if (["torch-ui/Bar Chart", "torch-ui/Line Chart", "torch-ui/Pie Chart", "torch-ui/Other charts", "torch-ui/Sparkline", "torch-ui/Stat Grid"].includes(id)) {
+    await expect.poll(() => frame.locator("canvas").evaluateAll(canvases => canvases.length > 0 && canvases.every(canvas => {
+      const pixels = canvas.getContext("2d")?.getImageData(0, 0, canvas.width, canvas.height).data;
+      return pixels?.some((value, index) => index % 4 === 3 && value > 0);
+    }))).toBe(true);
   } else if (id === "torch-ui/Empty State") {
     await expect(frame.getByText("No quests available", { exact: true })).toBeVisible();
     await expect(frame.getByText("Check the tavern board after the next guild post.")).toBeVisible();

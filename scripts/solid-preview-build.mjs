@@ -19,7 +19,7 @@ export function verifySolidLicenseFallback(packageName, version, declaredLicense
 
 /** Compile a reviewed mount entry against its isolated, locked Solid graph.
  * Source/demo extraction and upstream theme compilation stay with each library. */
-export async function buildSolidPreview({ entry, resolveDir, sourceRoot = dirname(entry), runtime = "solid1", compiler = "babel", aliases = {}, css = "", licenseFallbacks = {}, unusedImports = [] }) {
+export async function buildSolidPreview({ entry, resolveDir, sourceRoot = dirname(entry), runtime = "solid1", compiler = "babel", aliases = {}, css = "", licenseFallbacks = {}, unusedImports = [], transformSource }) {
   resolveDir = resolve(resolveDir);
   sourceRoot = resolve(sourceRoot);
   const require = createRequire(resolve(resolveDir, "package.json"));
@@ -58,7 +58,8 @@ export async function buildSolidPreview({ entry, resolveDir, sourceRoot = dirnam
         return { path: found.path, errors: found.errors, warnings: found.warnings };
       });
       builder.onLoad({ filter: /\.[jt]sx$/ }, async ({ path }) => {
-        const source = await readFile(path, "utf8");
+        const original = await readFile(path, "utf8");
+        const source = transformSource ? transformSource(path, original) : original;
         if (babel) {
           const transformed = await babel.transformAsync(source, {
             filename: path, babelrc: false, configFile: false,
