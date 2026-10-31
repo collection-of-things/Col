@@ -13,7 +13,7 @@ interface LibraryLogoProps {
 
 /**
  * Renders a library's real logo via Google's favicon service. The image
- * optimizer fetches it server-side, so visitors never contact Google.
+ * same-origin endpoint fetches it server-side, so visitors never contact Google.
  * Falls back to a monogram tile if the fetch fails.
  */
 export function LibraryLogo({
@@ -38,7 +38,8 @@ export function LibraryLogo({
 
   return (
     <Image
-      src={`https://www.google.com/s2/favicons?domain=${hostname(url)}&sz=128`}
+      src={`/api/favicon?domain=${encodeURIComponent(hostname(url))}`}
+      unoptimized
       alt={`${name} logo`}
       width={size}
       height={size}

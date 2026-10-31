@@ -4,10 +4,9 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   outputFileTracingIncludes: { "/api/mcp": ["./data/component-previews/media/*"] },
   images: {
-    // Remote images load through the server-side optimizer so visitor IPs stay private.
+    // Contributor avatars load through the server-side optimizer.
     remotePatterns: [
-      { protocol: "https", hostname: "www.google.com", pathname: "/s2/favicons" },
-      { protocol: "https", hostname: "avatars.githubusercontent.com", pathname: "/u/**" },
+      { protocol: "https", hostname: "avatars.githubusercontent.com", port: "", pathname: "/u/**", search: "?v=4" },
     ],
   },
   async headers() {
