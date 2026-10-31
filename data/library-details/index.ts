@@ -1,4 +1,14 @@
 import type { LibraryDetails } from "./types.ts";
+import kobalte from "./kobalte.ts";
+import solid_ui from "./solid-ui.ts";
+import shadcn_solid from "./shadcn-solid.ts";
+import zaidan from "./zaidan.ts";
+import hope_ui from "./hope-ui.ts";
+import rocksolid from "./rocksolid.ts";
+import nikala_ui from "./nikala-ui.ts";
+import torch_ui from "./torch-ui.ts";
+import magicui_solid from "./magicui-solid.ts";
+import mystic_ui from "./mystic-ui.ts";
 import uiarc from "./uiarc.ts";
 import _21st_dev from "./21st-dev.ts";
 import react_bits from "./react-bits.ts";
@@ -108,6 +118,16 @@ export type { LibraryDetails };
  * are identical.
  */
 export const libraryDetails: Record<string, LibraryDetails> = {
+  "kobalte": kobalte,
+  "solid-ui": solid_ui,
+  "shadcn-solid": shadcn_solid,
+  "zaidan": zaidan,
+  "hope-ui": hope_ui,
+  "rocksolid": rocksolid,
+  "nikala-ui": nikala_ui,
+  "torch-ui": torch_ui,
+  "magicui-solid": magicui_solid,
+  "mystic-ui": mystic_ui,
   "uiarc": uiarc,
   "21st-dev": _21st_dev,
   "react-bits": react_bits,

@@ -1,3 +1,5 @@
+import { solidCatalogs } from "./solid-libraries/catalog.ts";
+
 /**
  * The library registry — the heart of this project.
  *
@@ -79,6 +81,7 @@ export interface Library {
 }
 
 export const libraries: Library[] = [
+  ...Object.values(solidCatalogs).map(({ library }) => library),
   {
     name: "Quoin",
     slug: "quoin-ui",

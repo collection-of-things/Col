@@ -13,6 +13,7 @@ import { compatibilityReport, trackedSubjects, type CompatibilityReport } from "
 import { libraryPath, siteUrl } from "./site.ts";
 import { libraryOutbound } from "./library-outbound.ts";
 import { componentPreviewArgs, componentPreviewSupport, componentPreviewRequestKey, createComponentPreview, type ComponentPreview } from "./component-preview.ts";
+import { inlinePreviewMedia } from "./component-preview-assets.ts";
 
 /**
  * The MCP tool layer — the one seam the MCP endpoint serves.
@@ -654,7 +655,7 @@ export function createCatalogueTools(data: CatalogueData): CatalogueTools {
     const gaps = [...preview.gaps, ...(args.format === "html" ? HTML_GAPS : RENDER_GAPS)];
     if (!preview.available) return { status: "unavailable", preview, gaps, ...(args.format === "html" ? { html: verifiedPreviewFragmentHtml(preview) } : {}) };
     return args.format === "html"
-      ? { status: "html", preview, html: verifiedPreviewFragmentHtml(preview), gaps }
+      ? { status: "html", preview, html: verifiedPreviewFragmentHtml(preview, inlinePreviewMedia(args.id)), gaps }
       : { status: "sent-to-chat", preview, gaps };
   }
 
@@ -708,7 +709,7 @@ const TOOL_DEFINITIONS: ToolDefinition[] = [
   {
     name: "search_components",
     title: "Search Col's verified component index",
-    description: `Find components by keywords in their official name or a real alias, optionally scoped to one library and one or more stacks. Raw queries allow up to 4,096 Unicode code points; keyword search does not interpret negation or every prose condition. Every hit links to the component's own documentation page on the library's domain, states what matched, and names its kind. ${COVERAGE_NOTE} ${NO_CREDENTIALS_NOTE}`,
+    description: `Find components by keywords in their official name or a real alias, optionally scoped to one library and one or more stacks. Raw queries allow up to 4,096 Unicode code points; keyword search does not interpret negation or every prose condition. Every hit links to the component's own documentation page on the library's domain and states what matched; its kind is included when recorded. ${COVERAGE_NOTE} ${NO_CREDENTIALS_NOTE}`,
     args: searchComponentsArgs,
     annotations: annotation,
   },
@@ -722,14 +723,14 @@ const TOOL_DEFINITIONS: ToolDefinition[] = [
   {
     name: "get_component",
     title: "Inspect one component in Col",
-    description: `One component's canonical reference link, recorded dependencies, verified compatibility facts (explicit "unknown" where nothing is verified), and permitted component-specific API and usage snapshots when recorded. Reference links may point to the library's published API source. Col publishes no install commands: read the library's setup docs for those. Ids come from search_components as '<library-slug>/<component name>'. ${COVERAGE_NOTE} ${NO_CREDENTIALS_NOTE}`,
+    description: `One component's canonical reference link, recorded dependencies, verified compatibility facts (explicit "unknown" where nothing is verified), and permitted component-specific API and usage snapshots when recorded. Solid previews include their pinned runtimeVersion. Reference links may point to the library's published API source. Col publishes no install commands: read the library's setup docs for those. Ids come from search_components as '<library-slug>/<component name>'. ${COVERAGE_NOTE} ${NO_CREDENTIALS_NOTE}`,
     args: getComponentArgs,
     annotations: annotation,
   },
   {
     name: "render_component",
     title: "Render a component in the chat",
-    description: `Render the actual library implementation by component id. First inspect get_component.preview for availability, package version and reproduction limits. Col selects the pinned package export or original upstream source, CSS and providers; caller implementation code is rejected. Only user CSS and light/dark theme can change. Unsupported components return unavailable, never an approximation. Keep the visible provenance and limitations. In clients without MCP Apps use format 'html' and show the complete returned fragment unchanged. Large original media requires MCP Apps server-resource access; standalone HTML reports unavailable for those examples. ${NO_CREDENTIALS_NOTE}`,
+    description: `Render the actual library implementation by component id. First inspect get_component.preview for availability, package version and reproduction limits. Col selects the pinned package export or original upstream source, CSS and providers; caller implementation code is rejected. Only user CSS and light/dark theme can change. Unsupported components return unavailable, never an approximation. Keep the visible provenance and limitations. In clients without MCP Apps use format 'html' and show the complete returned fragment unchanged. Large media requires MCP Apps server-resource access; standalone HTML reports unavailable for those examples. ${NO_CREDENTIALS_NOTE}`,
     args: renderComponentArgs,
     annotations: annotation,
     meta: { ui: { resourceUri: PREVIEW_WIDGET_URI } },

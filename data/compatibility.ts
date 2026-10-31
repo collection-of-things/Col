@@ -1,3 +1,5 @@
+import { solidCatalogs } from "./solid-libraries/catalog.ts";
+
 /**
  * Version and variant compatibility, recorded per library.
  *
@@ -31,6 +33,7 @@ export interface LibraryCompatibility {
 }
 
 export const compatibility: LibraryCompatibility[] = [
+  ...Object.values(solidCatalogs).map(({ library, compatibility: facts }) => ({ slug: library.slug, facts })),
   {
     slug: "quoin-ui",
     facts: [

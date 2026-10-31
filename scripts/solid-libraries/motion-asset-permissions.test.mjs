@@ -1,0 +1,34 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import { mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join, resolve } from "node:path";
+import { spawnSync } from "node:child_process";
+
+test("permission refresh preserves verified video availability and blocks unverified video", t => {
+  const root = mkdtempSync(join(tmpdir(), "col-permission-test-"));
+  t.after(() => rmSync(root, { recursive: true, force: true }));
+  const base = join(root, "data", "solid-libraries");
+  for (const slug of ["nikala-ui", "magicui-solid"]) mkdirSync(join(base, slug), { recursive: true });
+  const url = "https://cdn.magicui.design/ocean-small.webm";
+  const hash = "1".repeat(64);
+  const asset = { attribution: { license: "CodePen user-content license", url: "https://blog.codepen.io/legal/terms-of-service/" }, manifestFile: "data/component-previews/assets.json", integrity: hash };
+  const write = (slug, file, value) => writeFileSync(join(base, slug, file), JSON.stringify(value));
+  write("nikala-ui", "upstream.json", { assets: {} });
+  write("magicui-solid", "upstream.json", { assets: { [url]: asset } });
+  write("magicui-solid", "ocean-permission.json", { sha256: hash, permission: { source: asset.attribution.url } });
+  write("magicui-solid", "unavailable.json", { "magicui-solid/Video Text": "stale", "magicui-solid/Tweet Card": "blocked" });
+  const run = () => spawnSync(process.execPath, [resolve("scripts/solid-libraries/motion-asset-permissions.mjs")], { cwd: root, encoding: "utf8" });
+  const unavailable = () => JSON.parse(readFileSync(join(base, "magicui-solid", "unavailable.json"), "utf8"));
+  assert.equal(run().status, 0);
+  assert.deepEqual(unavailable(), { "magicui-solid/Tweet Card": "blocked" });
+  asset.blocked = "Original media permission is unverified.";
+  write("magicui-solid", "upstream.json", { assets: { [url]: asset } });
+  assert.equal(run().status, 0);
+  assert.match(unavailable()["magicui-solid/Video Text"], /permission is unverified/);
+  delete asset.blocked;
+  asset.integrity = "2".repeat(64);
+  write("magicui-solid", "upstream.json", { assets: { [url]: asset } });
+  assert.notEqual(run().status, 0);
+  assert.match(unavailable()["magicui-solid/Video Text"], /permission is unverified/);
+});
