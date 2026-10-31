@@ -1,0 +1,101 @@
+{
+  "name": "@hope-ui/primitives",
+  "version": "0.0.0",
+  "description": "Internal behavior kernel for hope-ui (advanced/unstable escape hatch, not a stability-promised public API): composable SolidJS primitives for rendering, focus, dismissal, presence, and ARIA wiring",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "LICENSE.md",
+    "LICENSE-APACHE-2.0.txt",
+    "NOTICE.md"
+  ],
+  "hope": {
+    "entries": {
+      "calendar": "src/calendar/index.ts",
+      "combobox": "src/combobox/index.ts",
+      "dialog": "src/dialog/index.ts",
+      "hidden-select": "src/hidden-select/index.ts",
+      "listbox": "src/listbox/index.ts",
+      "modal-backdrop": "src/modal-backdrop/index.ts",
+      "popover": "src/popover/index.ts",
+      "internal": "src/internal/index.ts",
+      "render": "src/render/index.ts",
+      "utils": "src/utils/index.ts"
+    }
+  },
+  "exports": {
+    "./calendar": {
+      "types": "./dist/calendar/index.d.ts",
+      "solid": "./dist/calendar/index.jsx"
+    },
+    "./combobox": {
+      "types": "./dist/combobox/index.d.ts",
+      "solid": "./dist/combobox/index.jsx"
+    },
+    "./dialog": {
+      "types": "./dist/dialog/index.d.ts",
+      "solid": "./dist/dialog/index.jsx"
+    },
+    "./hidden-select": {
+      "types": "./dist/hidden-select/index.d.ts",
+      "solid": "./dist/hidden-select/index.jsx"
+    },
+    "./listbox": {
+      "types": "./dist/listbox/index.d.ts",
+      "solid": "./dist/listbox/index.jsx"
+    },
+    "./modal-backdrop": {
+      "types": "./dist/modal-backdrop/index.d.ts",
+      "solid": "./dist/modal-backdrop/index.jsx"
+    },
+    "./popover": {
+      "types": "./dist/popover/index.d.ts",
+      "solid": "./dist/popover/index.jsx"
+    },
+    "./internal": {
+      "types": "./dist/internal/index.d.ts",
+      "solid": "./dist/internal/index.jsx"
+    },
+    "./render": {
+      "types": "./dist/render/index.d.ts",
+      "solid": "./dist/render/index.jsx"
+    },
+    "./utils": {
+      "types": "./dist/utils/index.d.ts",
+      "solid": "./dist/utils/index.jsx"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@floating-ui/dom": "catalog:",
+    "@solidjs/web": "catalog:",
+    "@tanstack/virtual-core": "catalog:",
+    "solid-js": "catalog:"
+  },
+  "peerDependenciesMeta": {
+    "@floating-ui/dom": {
+      "optional": true
+    },
+    "@tanstack/virtual-core": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@hope-ui/i18n": "workspace:*",
+    "@internationalized/date": "catalog:",
+    "@solid-primitives/a11y": "catalog:"
+  },
+  "devDependencies": {
+    "@floating-ui/dom": "catalog:",
+    "@hope-ui/internal-test-utils": "workspace:*",
+    "@solidjs/web": "catalog:",
+    "@tanstack/virtual-core": "catalog:",
+    "solid-js": "catalog:"
+  }
+}
