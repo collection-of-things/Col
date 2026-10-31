@@ -1,5 +1,7 @@
 # hope-ui preview sources
 
+> During this review stack, rebuild scripts and preview artifacts arrive in the final integration stage.
+
 The verified `hope-ui/hope-ui` revision in `provenance.json` is the current, unpublished Solid 2 preview. It is not the older `@hope-ui/solid` package. Runtime and Babel preset are pinned to `2.0.0-beta.32` in the isolated dependency lock.
 
 All ten documented components use official documentation demos. The mount entries add the required `ThemeProvider` and `hope` preset. The original preset recipes, Tailwind structure, semantic tokens, icons, transitions, and light/dark values are preserved. Seven examples share a compiled group; Button, Dialog, and Select retain their individual bundles.

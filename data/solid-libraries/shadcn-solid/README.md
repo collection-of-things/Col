@@ -1,3 +1,5 @@
+> During this review stack, rebuild scripts and preview artifacts arrive in the final integration stage.
+
 shadcn-solid is pinned to `hngngn/shadcn-solid@4c75b892148dc81f81167a43756d4ce0fbfe6eae`. It is a separate project from SolidUI. `sources.json` retains the official MIT source, original Geist variable fonts and their SIL license. `corpus.json` supplies readable evidence separately from website metadata.
 
 Rebuild from the repository root:
