@@ -4,22 +4,180 @@
   "stylesheet": "src/styles.css",
   "adaptations": [
     "Original default Vega style, theme variables and registry utilities compiled; unselected style presets and documentation-only styles omitted.",
-    "Only unchanged Vega CSS sections for Button, Checkbox, Dialog and their Field/Input/Label/Separator dependencies are compiled. Unused calendar animations and unrelated component styles are not included.",
     "Original Geist Variable and Inter Variable Latin font faces are embedded for the English demos, preserving the docs container and portal typography; other language subsets are not bundled.",
     "The exact cn function is extracted from src/lib/utils.ts; unrelated documentation-server storage and navigation helpers are excluded.",
     "Reviewed mount wrapper applies style-vega on the document root so portals retain their styling, maps the theme, and restores those attributes on disposal.",
-    "The original [data-slot=\"docs\"] font rule from src/styles/typeset.css is retained on the mount target. Inline demos inherit Geist while portals retain the body Inter font; the target attribute is restored on disposal."
+    "The original [data-slot=\"docs\"] font rule from src/styles/typeset.css is retained on the mount target. Inline demos inherit Geist while portals retain the body Inter font; the target attribute is restored on disposal.",
+    "All original Vega style sections and the selected documented demos are compiled for the expanded preview set.",
+    "The original calendar keyframes are moved outside the nested style-vega selector so the CSS optimizer preserves them unchanged.",
+    "Toast uses the original Zaidan ColorModeProvider initialized to the selected preview theme."
   ],
   "examples": [
     {
+      "name": "Accordion",
+      "exportName": "Accordion",
+      "path": "src/registry/kobalte/examples/docs/accordion-demo.tsx",
+      "gaps": [],
+      "group": "batch-01",
+      "assets": []
+    },
+    {
+      "name": "Alert",
+      "exportName": "Alert",
+      "path": "src/registry/kobalte/examples/docs/alert-demo.tsx",
+      "gaps": [],
+      "group": "batch-01",
+      "assets": []
+    },
+    {
+      "name": "Alert Dialog",
+      "exportName": "AlertDialog",
+      "path": "src/registry/kobalte/examples/docs/alert-dialog-demo.tsx",
+      "gaps": [],
+      "group": "batch-01",
+      "assets": []
+    },
+    {
+      "name": "Aspect Ratio",
+      "exportName": "AspectRatio",
+      "path": "src/registry/kobalte/examples/docs/aspect-ratio-demo.tsx",
+      "gaps": [],
+      "group": "batch-01",
+      "assets": [
+        "https://avatar.vercel.sh/shadcn1"
+      ]
+    },
+    {
+      "name": "Attachment",
+      "exportName": "Attachment",
+      "path": "src/registry/kobalte/examples/docs/attachment-demo.tsx",
+      "gaps": [],
+      "group": "batch-01",
+      "assets": [
+        "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=900&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&auto=format&fit=crop&q=80"
+      ]
+    },
+    {
+      "name": "Avatar",
+      "exportName": "Avatar",
+      "path": "src/registry/kobalte/examples/docs/avatar-demo.tsx",
+      "gaps": [
+        "The official demo references external images without verified redistribution permission; sandbox restrictions may leave them unavailable. No replacement image is supplied."
+      ],
+      "group": "batch-01",
+      "assets": []
+    },
+    {
+      "name": "Badge",
+      "exportName": "Badge",
+      "path": "src/registry/kobalte/examples/docs/badge-demo.tsx",
+      "gaps": [],
+      "group": "batch-01",
+      "assets": []
+    },
+    {
+      "name": "Breadcrumb",
+      "exportName": "Breadcrumb",
+      "path": "src/registry/kobalte/examples/docs/breadcrumb-demo.tsx",
+      "gaps": [],
+      "group": "batch-01",
+      "assets": []
+    },
+    {
+      "name": "Bubble",
+      "exportName": "Bubble",
+      "path": "src/registry/kobalte/examples/docs/bubble-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
+    },
+    {
       "name": "Button",
       "exportName": "Button",
-      "path": "src/registry/kobalte/examples/docs/button-demo.tsx"
+      "path": "src/registry/kobalte/examples/docs/button-demo.tsx",
+      "gaps": [],
+      "assets": []
+    },
+    {
+      "name": "Button Group",
+      "exportName": "ButtonGroup",
+      "path": "src/registry/kobalte/examples/docs/button-group-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
+    },
+    {
+      "name": "Calendar",
+      "exportName": "Calendar",
+      "path": "src/registry/kobalte/examples/docs/calendar-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
+    },
+    {
+      "name": "Card",
+      "exportName": "Card",
+      "path": "src/registry/kobalte/examples/docs/card-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
+    },
+    {
+      "name": "Carousel",
+      "exportName": "Carousel",
+      "path": "src/registry/kobalte/examples/docs/carousel-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
+    },
+    {
+      "name": "Chart",
+      "exportName": "Chart",
+      "path": "src/registry/kobalte/examples/docs/chart-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
     },
     {
       "name": "Checkbox",
       "exportName": "Checkbox",
-      "path": "src/registry/kobalte/examples/docs/checkbox-demo.tsx"
+      "path": "src/registry/kobalte/examples/docs/checkbox-demo.tsx",
+      "gaps": [],
+      "assets": []
+    },
+    {
+      "name": "Collapsible",
+      "exportName": "Collapsible",
+      "path": "src/registry/kobalte/examples/docs/collapsible-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
+    },
+    {
+      "name": "Combobox",
+      "exportName": "Combobox",
+      "path": "src/registry/kobalte/examples/docs/combobox-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
+    },
+    {
+      "name": "Command",
+      "exportName": "Command",
+      "path": "src/registry/kobalte/examples/docs/command-demo.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
+    },
+    {
+      "name": "Context Menu",
+      "exportName": "ContextMenu",
+      "path": "src/registry/kobalte/examples/docs/context-menu-demo.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
     },
     {
       "name": "Dialog",
@@ -27,28 +185,505 @@
       "path": "src/registry/kobalte/examples/docs/dialog-demo.tsx",
       "gaps": [
         "Upstream exposes the visible Cancel button with the accessible name Dismiss. Its portalled Save changes button has no owning form, so it does not submit."
-      ]
+      ],
+      "assets": []
+    },
+    {
+      "name": "Drawer",
+      "exportName": "Drawer",
+      "path": "src/registry/kobalte/examples/docs/drawer-demo.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
+    },
+    {
+      "name": "Dropdown Menu",
+      "exportName": "DropdownMenu",
+      "path": "src/registry/kobalte/examples/docs/dropdown-menu-demo.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
+    },
+    {
+      "name": "Empty",
+      "exportName": "Empty",
+      "path": "src/registry/kobalte/examples/docs/empty-demo.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
+    },
+    {
+      "name": "Field",
+      "exportName": "Field",
+      "path": "src/registry/kobalte/examples/docs/field-demo.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
+    },
+    {
+      "name": "Hover Card",
+      "exportName": "HoverCard",
+      "path": "src/registry/kobalte/examples/docs/hover-card-demo.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
+    },
+    {
+      "name": "Input",
+      "exportName": "Input",
+      "path": "src/registry/kobalte/examples/docs/input-demo.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
+    },
+    {
+      "name": "Input Group",
+      "exportName": "InputGroup",
+      "path": "src/registry/kobalte/examples/docs/input-group-demo.tsx",
+      "gaps": [],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Input OTP",
+      "exportName": "InputOTP",
+      "path": "src/registry/kobalte/examples/docs/input-otp-demo.tsx",
+      "gaps": [],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Item",
+      "exportName": "Item",
+      "path": "src/registry/kobalte/examples/docs/item-demo.tsx",
+      "gaps": [],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Kbd",
+      "exportName": "Kbd",
+      "path": "src/registry/kobalte/examples/docs/kbd-demo.tsx",
+      "gaps": [],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Label",
+      "exportName": "Label",
+      "path": "src/registry/kobalte/examples/docs/label-demo.tsx",
+      "gaps": [],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Marker",
+      "exportName": "Marker",
+      "path": "src/registry/kobalte/examples/docs/marker-demo.tsx",
+      "gaps": [],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Menubar",
+      "exportName": "Menubar",
+      "path": "src/registry/kobalte/examples/docs/menubar-demo.tsx",
+      "gaps": [],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Message",
+      "exportName": "Message",
+      "path": "src/registry/kobalte/examples/docs/message-demo.tsx",
+      "gaps": [
+        "The official demo references external images without verified redistribution permission; sandbox restrictions may leave them unavailable. No replacement image is supplied."
+      ],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Native Select",
+      "exportName": "NativeSelect",
+      "path": "src/registry/kobalte/examples/docs/native-select-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
+    },
+    {
+      "name": "Navigation Menu",
+      "exportName": "NavigationMenu",
+      "path": "src/registry/kobalte/examples/docs/navigation-menu-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
+    },
+    {
+      "name": "Pagination",
+      "exportName": "Pagination",
+      "path": "src/registry/kobalte/examples/docs/pagination-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
+    },
+    {
+      "name": "Popover",
+      "exportName": "Popover",
+      "path": "src/registry/kobalte/examples/docs/popover-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
+    },
+    {
+      "name": "Progress",
+      "exportName": "Progress",
+      "path": "src/registry/kobalte/examples/docs/progress-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
+    },
+    {
+      "name": "Radio Group",
+      "exportName": "RadioGroup",
+      "path": "src/registry/kobalte/examples/docs/radio-group-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
+    },
+    {
+      "name": "Resizable",
+      "exportName": "Resizable",
+      "path": "src/registry/kobalte/examples/docs/resizable-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
+    },
+    {
+      "name": "Scroll Area",
+      "exportName": "ScrollArea",
+      "path": "src/registry/kobalte/examples/docs/scroll-area-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
+    },
+    {
+      "name": "Select",
+      "exportName": "Select",
+      "path": "src/registry/kobalte/examples/docs/select-demo.tsx",
+      "gaps": [],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Separator",
+      "exportName": "Separator",
+      "path": "src/registry/kobalte/examples/docs/separator-demo.tsx",
+      "gaps": [],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Sheet",
+      "exportName": "Sheet",
+      "path": "src/registry/kobalte/examples/docs/sheet-demo.tsx",
+      "gaps": [],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Sidebar",
+      "exportName": "Sidebar",
+      "path": "src/registry/kobalte/examples/docs/sidebar-demo.tsx",
+      "gaps": [
+        "The official demo references external images without verified redistribution permission; sandbox restrictions may leave them unavailable. No replacement image is supplied."
+      ],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Skeleton",
+      "exportName": "Skeleton",
+      "path": "src/registry/kobalte/examples/docs/skeleton-demo.tsx",
+      "gaps": [],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Slider",
+      "exportName": "Slider",
+      "path": "src/registry/kobalte/examples/docs/slider-demo.tsx",
+      "gaps": [],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Spinner",
+      "exportName": "Spinner",
+      "path": "src/registry/kobalte/examples/docs/spinner-demo.tsx",
+      "gaps": [],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Switch",
+      "exportName": "Switch",
+      "path": "src/registry/kobalte/examples/docs/switch-demo.tsx",
+      "gaps": [],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Table",
+      "exportName": "Table",
+      "path": "src/registry/kobalte/examples/docs/table-demo.tsx",
+      "gaps": [],
+      "group": "batch-07",
+      "assets": []
+    },
+    {
+      "name": "Tabs",
+      "exportName": "Tabs",
+      "path": "src/registry/kobalte/examples/docs/tabs-demo.tsx",
+      "gaps": [],
+      "group": "batch-07",
+      "assets": []
+    },
+    {
+      "name": "Textarea",
+      "exportName": "Textarea",
+      "path": "src/registry/kobalte/examples/docs/textarea-demo.tsx",
+      "gaps": [],
+      "group": "batch-07",
+      "assets": []
+    },
+    {
+      "name": "Toast",
+      "exportName": "Toast",
+      "path": "src/registry/kobalte/examples/docs/toast-demo.tsx",
+      "gaps": [],
+      "group": "batch-07",
+      "assets": [],
+      "wrapper": "color-mode"
+    },
+    {
+      "name": "Toggle",
+      "exportName": "Toggle",
+      "path": "src/registry/kobalte/examples/docs/toggle-demo.tsx",
+      "gaps": [],
+      "group": "batch-07",
+      "assets": []
+    },
+    {
+      "name": "Toggle Group",
+      "exportName": "ToggleGroup",
+      "path": "src/registry/kobalte/examples/docs/toggle-group-demo.tsx",
+      "gaps": [],
+      "group": "batch-07",
+      "assets": []
+    },
+    {
+      "name": "Tooltip",
+      "exportName": "Tooltip",
+      "path": "src/registry/kobalte/examples/docs/tooltip-demo.tsx",
+      "gaps": [],
+      "group": "batch-07",
+      "assets": []
     }
   ],
   "styleSections": [
+    "Accordion",
+    "Alert Dialog",
+    "Alert",
+    "Avatar",
+    "Badge",
+    "Breadcrumb",
     "Button",
+    "Button Group",
+    "Calendar",
+    "Card",
+    "Carousel",
+    "Chart",
     "Checkbox",
+    "Combobox",
+    "Command",
+    "Context Menu",
     "Dialog",
+    "Drawer",
+    "Dropdown Menu",
+    "Empty",
     "Field",
+    "Hover Card",
     "Input",
+    "Input OTP",
+    "Item",
+    "Kbd",
     "Label",
-    "Separator"
+    "Menubar",
+    "Navigation Menu",
+    "Native Select",
+    "Pagination",
+    "Popover",
+    "Progress",
+    "Questionnaire",
+    "Radio Group",
+    "Resizable",
+    "Scroll Area",
+    "Select",
+    "Separator",
+    "Sheet",
+    "Sidebar",
+    "Skeleton",
+    "Slider",
+    "Toast",
+    "Switch",
+    "Table",
+    "Tabs",
+    "Textarea",
+    "Toggle",
+    "Toggle Group",
+    "Tooltip",
+    "Input Group",
+    "Menu Translucent",
+    "Bubble",
+    "Attachment",
+    "Marker",
+    "Message Scroller",
+    "Message"
   ],
   "candidateFiles": [
-    "src/registry/kobalte/ui/button.tsx",
-    "src/registry/kobalte/ui/checkbox.tsx",
-    "src/registry/kobalte/ui/dialog.tsx",
-    "src/registry/kobalte/ui/field.tsx",
-    "src/registry/kobalte/ui/input.tsx",
-    "src/registry/kobalte/ui/label.tsx",
-    "src/registry/kobalte/ui/separator.tsx",
+    "src/components/example.tsx",
+    "src/lib/utils.ts",
+    "src/registry/kobalte/components/color-mode.tsx",
+    "src/registry/kobalte/examples/docs/accordion-demo.tsx",
+    "src/registry/kobalte/examples/docs/alert-demo.tsx",
+    "src/registry/kobalte/examples/docs/alert-dialog-demo.tsx",
+    "src/registry/kobalte/examples/docs/aspect-ratio-demo.tsx",
+    "src/registry/kobalte/examples/docs/attachment-demo.tsx",
+    "src/registry/kobalte/examples/docs/avatar-demo.tsx",
+    "src/registry/kobalte/examples/docs/badge-demo.tsx",
+    "src/registry/kobalte/examples/docs/breadcrumb-demo.tsx",
+    "src/registry/kobalte/examples/docs/bubble-demo.tsx",
     "src/registry/kobalte/examples/docs/button-demo.tsx",
+    "src/registry/kobalte/examples/docs/button-group-demo.tsx",
+    "src/registry/kobalte/examples/docs/calendar-demo.tsx",
+    "src/registry/kobalte/examples/docs/card-demo.tsx",
+    "src/registry/kobalte/examples/docs/carousel-demo.tsx",
+    "src/registry/kobalte/examples/docs/chart-demo.tsx",
     "src/registry/kobalte/examples/docs/checkbox-demo.tsx",
-    "src/registry/kobalte/examples/docs/dialog-demo.tsx"
-  ]
+    "src/registry/kobalte/examples/docs/collapsible-demo.tsx",
+    "src/registry/kobalte/examples/docs/combobox-demo.tsx",
+    "src/registry/kobalte/examples/docs/command-demo.tsx",
+    "src/registry/kobalte/examples/docs/context-menu-demo.tsx",
+    "src/registry/kobalte/examples/docs/dialog-demo.tsx",
+    "src/registry/kobalte/examples/docs/drawer-demo.tsx",
+    "src/registry/kobalte/examples/docs/dropdown-menu-demo.tsx",
+    "src/registry/kobalte/examples/docs/empty-demo.tsx",
+    "src/registry/kobalte/examples/docs/field-demo.tsx",
+    "src/registry/kobalte/examples/docs/hover-card-demo.tsx",
+    "src/registry/kobalte/examples/docs/input-demo.tsx",
+    "src/registry/kobalte/examples/docs/input-group-demo.tsx",
+    "src/registry/kobalte/examples/docs/input-otp-demo.tsx",
+    "src/registry/kobalte/examples/docs/item-demo.tsx",
+    "src/registry/kobalte/examples/docs/kbd-demo.tsx",
+    "src/registry/kobalte/examples/docs/label-demo.tsx",
+    "src/registry/kobalte/examples/docs/marker-demo.tsx",
+    "src/registry/kobalte/examples/docs/menubar-demo.tsx",
+    "src/registry/kobalte/examples/docs/message-demo.tsx",
+    "src/registry/kobalte/examples/docs/native-select-demo.tsx",
+    "src/registry/kobalte/examples/docs/navigation-menu-demo.tsx",
+    "src/registry/kobalte/examples/docs/pagination-demo.tsx",
+    "src/registry/kobalte/examples/docs/popover-demo.tsx",
+    "src/registry/kobalte/examples/docs/progress-demo.tsx",
+    "src/registry/kobalte/examples/docs/radio-group-demo.tsx",
+    "src/registry/kobalte/examples/docs/resizable-demo.tsx",
+    "src/registry/kobalte/examples/docs/scroll-area-demo.tsx",
+    "src/registry/kobalte/examples/docs/select-demo.tsx",
+    "src/registry/kobalte/examples/docs/separator-demo.tsx",
+    "src/registry/kobalte/examples/docs/sheet-demo.tsx",
+    "src/registry/kobalte/examples/docs/sidebar-demo.tsx",
+    "src/registry/kobalte/examples/docs/skeleton-demo.tsx",
+    "src/registry/kobalte/examples/docs/slider-demo.tsx",
+    "src/registry/kobalte/examples/docs/spinner-demo.tsx",
+    "src/registry/kobalte/examples/docs/switch-demo.tsx",
+    "src/registry/kobalte/examples/docs/table-demo.tsx",
+    "src/registry/kobalte/examples/docs/tabs-demo.tsx",
+    "src/registry/kobalte/examples/docs/textarea-demo.tsx",
+    "src/registry/kobalte/examples/docs/toast-demo.tsx",
+    "src/registry/kobalte/examples/docs/toggle-demo.tsx",
+    "src/registry/kobalte/examples/docs/toggle-group-demo.tsx",
+    "src/registry/kobalte/examples/docs/tooltip-demo.tsx",
+    "src/registry/kobalte/hooks/use-mobile.ts",
+    "src/registry/kobalte/ui/accordion.tsx",
+    "src/registry/kobalte/ui/alert-dialog.tsx",
+    "src/registry/kobalte/ui/alert.tsx",
+    "src/registry/kobalte/ui/aspect-ratio.tsx",
+    "src/registry/kobalte/ui/attachment.tsx",
+    "src/registry/kobalte/ui/avatar.tsx",
+    "src/registry/kobalte/ui/badge.tsx",
+    "src/registry/kobalte/ui/breadcrumb.tsx",
+    "src/registry/kobalte/ui/bubble.tsx",
+    "src/registry/kobalte/ui/button-group.tsx",
+    "src/registry/kobalte/ui/button.tsx",
+    "src/registry/kobalte/ui/calendar.tsx",
+    "src/registry/kobalte/ui/card.tsx",
+    "src/registry/kobalte/ui/carousel.tsx",
+    "src/registry/kobalte/ui/chart.tsx",
+    "src/registry/kobalte/ui/checkbox.tsx",
+    "src/registry/kobalte/ui/collapsible.tsx",
+    "src/registry/kobalte/ui/combobox.tsx",
+    "src/registry/kobalte/ui/command.tsx",
+    "src/registry/kobalte/ui/context-menu.tsx",
+    "src/registry/kobalte/ui/dialog.tsx",
+    "src/registry/kobalte/ui/drawer.tsx",
+    "src/registry/kobalte/ui/dropdown-menu.tsx",
+    "src/registry/kobalte/ui/empty.tsx",
+    "src/registry/kobalte/ui/field.tsx",
+    "src/registry/kobalte/ui/hover-card.tsx",
+    "src/registry/kobalte/ui/input-group.tsx",
+    "src/registry/kobalte/ui/input-otp.tsx",
+    "src/registry/kobalte/ui/input.tsx",
+    "src/registry/kobalte/ui/item.tsx",
+    "src/registry/kobalte/ui/kbd.tsx",
+    "src/registry/kobalte/ui/label.tsx",
+    "src/registry/kobalte/ui/marker.tsx",
+    "src/registry/kobalte/ui/menubar.tsx",
+    "src/registry/kobalte/ui/message.tsx",
+    "src/registry/kobalte/ui/native-select.tsx",
+    "src/registry/kobalte/ui/navigation-menu.tsx",
+    "src/registry/kobalte/ui/pagination.tsx",
+    "src/registry/kobalte/ui/popover.tsx",
+    "src/registry/kobalte/ui/progress.tsx",
+    "src/registry/kobalte/ui/radio-group.tsx",
+    "src/registry/kobalte/ui/resizable.tsx",
+    "src/registry/kobalte/ui/scroll-area.tsx",
+    "src/registry/kobalte/ui/select.tsx",
+    "src/registry/kobalte/ui/separator.tsx",
+    "src/registry/kobalte/ui/sheet.tsx",
+    "src/registry/kobalte/ui/sidebar.tsx",
+    "src/registry/kobalte/ui/skeleton.tsx",
+    "src/registry/kobalte/ui/slider.tsx",
+    "src/registry/kobalte/ui/spinner.tsx",
+    "src/registry/kobalte/ui/switch.tsx",
+    "src/registry/kobalte/ui/table.tsx",
+    "src/registry/kobalte/ui/tabs.tsx",
+    "src/registry/kobalte/ui/textarea.tsx",
+    "src/registry/kobalte/ui/toast.tsx",
+    "src/registry/kobalte/ui/toggle-group.tsx",
+    "src/registry/kobalte/ui/toggle.tsx",
+    "src/registry/kobalte/ui/tooltip.tsx"
+  ],
+  "licenseFallbacks": {
+    "embla-carousel@8.6.0": {
+      "path": "licenses/embla-carousel/LICENSE",
+      "license": "MIT"
+    },
+    "embla-carousel-solid@8.6.0": {
+      "path": "licenses/embla-carousel/LICENSE",
+      "license": "MIT"
+    },
+    "embla-carousel-reactive-utils@8.6.0": {
+      "path": "licenses/embla-carousel/LICENSE",
+      "license": "MIT"
+    }
+  }
 }

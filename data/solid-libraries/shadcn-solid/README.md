@@ -9,6 +9,10 @@ node scripts/solid-libraries/shadcn-solid.mjs
 
 The pinned registry uses Tailwind 4 and Kobalte. The isolated Solid 1.9.17/Kobalte 0.13.14 graph satisfies its upstream dependency ranges. The wrapper maps Col's selected theme to the original `data-kb-theme` mechanism, including portal content, and restores the attribute on disposal.
 
-Coverage is Button, Dialog and Tabs with unchanged official demos. The account/password forms are local UI examples and do not save account data. The pinned Dialog implementation omits its default close icon unless the caller explicitly supplies `showCloseButton`; its original Escape and overlay dismissal remain intact. `coverage.json` records the wider documentation inventory without claiming exhaustive previews.
+Coverage follows all 48 documented component pages with their pinned official demos. The build writes the complete artifact to `shadcn-solid-packed.json` as Brotli-compressed, base64-encoded JSON; the original tracked `shadcn-solid.json` remains intact. The account/password forms are local UI examples and do not save account data. The pinned Dialog implementation omits its default close icon unless the caller explicitly supplies `showCloseButton`; its original Escape and overlay dismissal remain intact. Sidebar's original preference-cookie write is blocked by the opaque sandbox. `coverage.json` records each page and its preview status.
 
-Verification exercised every emitted module, dialog open/Escape/reopen/disposal, keyboard selection of Password, original theme/font payloads and source/package hashes. Browser checks should inspect the 36px Button height, 8px corners, 3px focus ring, 10px dialog corners, scrollable content and the Tabs indicator in both themes. DOM tests do not establish layout or pixel equality.
+Preview verification uses the public `render_component` HTML path in light and dark themes. Source, stylesheet, package and bundle hashes are recorded independently. Layout and pixel equality across every browser and host are not implied.
+
+`build-evidence.json` records each preview's source and group, plus each group's code, CSS, lock, input-graph and package-graph hashes. Group input indices and package keys point to deduplicated records in the same file; the package records match the committed lockfile.
+
+The Data Table documentation snapshot links to its complete pinned example because the source exceeds the inline snapshot limit.

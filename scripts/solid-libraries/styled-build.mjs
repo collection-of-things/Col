@@ -4,6 +4,7 @@ import { mkdir, readFile, writeFile, copyFile, access } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { dirname, isAbsolute, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { brotliCompressSync, constants as zlibConstants } from "node:zlib";
 import { buildSolidPreview } from "../solid-preview-build.mjs";
 import { authenticateRuntimeFile, restoreArchive, resolveNpmCli } from "../preview-package-archive.mjs";
 
@@ -70,7 +71,7 @@ export async function buildStyledLibrary(slug, styleImports) {
   const cssOutput = resolve(resolveDir, "preview.compiled.css");
   const imports = [require.resolve("tailwindcss/index.css"), ...styleImports.map(sourceFile)];
   const styleInputs = [...tailwind.inputs, ...await Promise.all(styleImports.map(async path => ({ path, sha256: hash(await readFile(sourceFile(path))) })))];
-  await writeFile(cssEntry, imports.map((path, index) => `@import ${JSON.stringify(posix(path))}${index === 0 ? " source(none)" : ""};`).join("\n") + `\n@source ${JSON.stringify(posix(resolve(sourceRoot, "upstream")))};\n@source ${JSON.stringify(posix(resolve(sourceRoot, "examples")))};\n`);
+  await writeFile(cssEntry, imports.map((path, index) => `@import ${JSON.stringify(posix(path))}${index === 0 ? " source(none)" : ""};`).join("\n") + `\n@source ${JSON.stringify(posix(resolve(sourceRoot, "upstream")))};\n@source ${JSON.stringify(posix(resolve(sourceRoot, "examples")))};\n` + (config.sourceIgnore ?? []).map(path => `@source not ${JSON.stringify(posix(sourceFile(path)))};`).join("\n"));
   const cli = resolve(dirname(require.resolve("@tailwindcss/cli/package.json")), "dist/index.mjs");
   execFileSync(process.execPath, [cli, "-i", cssEntry, "-o", cssOutput, "--minify"], { cwd: resolveDir, stdio: "inherit" });
   let css = await readFile(cssOutput, "utf8");
@@ -86,8 +87,17 @@ export async function buildStyledLibrary(slug, styleImports) {
   const banner = "/*!\n" + sourceNotices.map(notice => notice.text).join("\n\n").replaceAll("*/", "* /") + "\n*/\n";
   const entries = {};
   const notices = new Map(sourceNotices.map(notice => [notice.url, notice]));
-  const graphs = {};
-  for (const name of config.components) {
+  const baselineBytes = await readFile(resolve(sourceRoot, "baseline-build-manifest.json")).catch(error => { if (error.code !== "ENOENT") throw error; });
+  const graphs = baselineBytes ? JSON.parse(baselineBytes) : {};
+  if (baselineBytes) {
+    const baselineArtifact = JSON.parse(await readFile(resolve(root, "data/component-previews/solid", `${slug}.json`), "utf8"));
+    const baselineLock = config.baselineLock ? await readFile(sourceFile(config.baselineLock)) : requestedLock;
+    for (const name of config.components) {
+      const entry = baselineArtifact.entries[`${slug}/${name}`], graph = graphs[name];
+      if (!entry || !graph || hash(entry.code) !== graph.codeIntegrity || hash(entry.css) !== graph.cssIntegrity || hash(baselineLock) !== graph.lockIntegrity) throw new Error(`Changed baseline preview evidence: ${slug}/${name}`);
+    }
+  }
+  for (const name of baselineBytes ? [] : config.components) {
     const result = await buildSolidPreview({ entry: sourceFile(`examples/${name}.tsx`), resolveDir, sourceRoot, runtime: config.runtime, aliases, css });
     const code = banner + result.code;
     const upstream = config.sources.find(source => source.path === config.componentSources[name]);
@@ -96,9 +106,30 @@ export async function buildStyledLibrary(slug, styleImports) {
     for (const notice of result.notices) notices.set(notice.url, { url: notice.url, text: notice.text });
     graphs[name] = { codeIntegrity: hash(code), cssIntegrity: hash(result.css), lockIntegrity: result.lockIntegrity, styleInputs, inputs: result.inputs, packages: result.packages };
   }
+  const groups = {};
+  const styles = {};
+  for (const [group, definitions] of Object.entries(config.groups ?? {})) {
+    const result = await buildSolidPreview({ entry: sourceFile(`examples/${group}.tsx`), resolveDir, sourceRoot, runtime: config.runtime, aliases, css });
+    const code = banner + result.code;
+    const style = Object.keys(styles).find(key => styles[key] === result.css) ?? (Object.hasOwn(styles, "main") ? group : "main");
+    styles[style] = result.css;
+    groups[group] = { code, style };
+    (graphs.$groups ??= {})[group] = { styleInputs, inputs: result.inputs, packages: result.packages };
+    for (const [name, item] of Object.entries(definitions)) {
+      const upstream = config.sources.find(source => source.path === item.source);
+      if (!upstream) throw new Error(`Missing component source: ${slug}/${name}`);
+      entries[`${slug}/${name}`] = { group, package: config.package, version: config.version, runtimeVersion: config.runtimeVersion, exportName: item.exportName ?? name, source: { url: upstream.url, revision: item.revision ?? config.rev, integrity: upstream.integrity }, gaps: item.gaps ?? [] };
+      graphs[name] = { group, codeIntegrity: hash(code), cssIntegrity: hash(result.css), lockIntegrity: result.lockIntegrity };
+    }
+    for (const notice of result.notices) notices.set(notice.url, { url: notice.url, text: notice.text });
+  }
   await writeFile(resolve(sourceRoot, "build-manifest.json"), JSON.stringify(graphs, null, 2) + "\n");
-  const target = resolve(root, "data/component-previews/solid", `${slug}.json`);
+  const target = resolve(root, "data/component-previews/solid", `${slug}${baselineBytes ? "-expanded" : ""}${config.packedExpansion ? "-packed" : ""}.json`);
   await mkdir(dirname(target), { recursive: true });
-  await writeFile(target, JSON.stringify({ entries, sources: [...config.sources.map(({ url, integrity }) => ({ url, integrity })), ...(config.evidenceSources ?? [])], notices: [...notices.values()] }) + "\n");
+  const artifact = JSON.stringify({ entries, ...(Object.keys(groups).length ? { groups, styles } : {}), ...(config.unavailable ? { unavailable: config.unavailable } : {}), sources: [...config.sources.map(({ url, integrity }) => ({ url, integrity })), ...(config.evidenceSources ?? [])], notices: [...notices.values()] }) + "\n";
+  const output = config.packedExpansion
+    ? JSON.stringify({ encoding: "br", data: brotliCompressSync(Buffer.from(artifact), { params: { [zlibConstants.BROTLI_PARAM_QUALITY]: 11 } }).toString("base64") }) + "\n"
+    : artifact;
+  await writeFile(target, output);
   console.log(`${slug}: ${Object.keys(entries).length} authenticated previews`);
 }

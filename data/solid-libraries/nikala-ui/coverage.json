@@ -1,560 +1,888 @@
 {
-  "checkedAt": "2026-10-29T19:35:27Z",
+  "checkedAt": "2026-10-30T01:00:27.520Z",
   "source": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/src/config/docs.ts",
   "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
   "navigationIntegrity": "e4417c733a03a824c81ad91c302a1682f6cf11c97e395e8a8483fafa3cd0f518",
   "selectedComponents": [
+    "Accordion",
+    "Alert",
+    "API Table",
+    "Aspect Ratio",
+    "Avatar",
+    "Badge",
+    "Banner",
+    "Breadcrumb",
+    "Bubble",
     "Button",
+    "Button Group",
+    "Callout",
+    "Card",
+    "Checkbox",
+    "Code Block",
+    "Code Group",
+    "Collapsible",
+    "Combobox",
+    "Command",
+    "Component Viewer",
+    "Container",
+    "Context Menu",
+    "Dialog",
+    "Dropdown Menu",
+    "Dropzone",
+    "Empty",
+    "Field",
+    "File Tree",
+    "Footer",
+    "Form",
+    "Form Message",
+    "Hover Card",
+    "Icon Button",
+    "Input",
+    "Input Group",
+    "Kbd",
+    "Label",
+    "List",
+    "Marker",
+    "Marquee",
+    "Message",
+    "Navbar",
+    "Navigation Menu",
+    "Number Input",
+    "Package Manager Tabs",
+    "Pager",
+    "Pagination",
+    "Pin Input",
+    "Popover",
+    "Progress",
+    "Radio Group",
+    "Rating",
+    "Resizable",
+    "Review Card",
+    "Rich Text Editor",
+    "Scroll Area",
+    "Section Heading",
+    "Select",
+    "Separator",
+    "Sheet",
+    "Sidebar",
+    "Skeleton",
+    "Slider",
+    "Spinner",
+    "Stat",
+    "Status",
+    "Steps",
+    "Switch",
+    "Table",
+    "Table of Contents",
+    "Tabs",
+    "Textarea",
+    "Theme Manager",
+    "Timeline",
+    "Toast",
+    "Toggle",
     "Toggle Group",
-    "Timeline"
+    "Tooltip"
   ],
   "documentationInventory": [
     {
       "name": "Accordion",
       "url": "https://nikala.dev/docs/components/accordion",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Alert",
       "url": "https://nikala.dev/docs/components/alert",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "API Table",
       "url": "https://nikala.dev/docs/components/api-table",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Aspect Ratio",
       "url": "https://nikala.dev/docs/components/aspect-ratio",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Avatar",
       "url": "https://nikala.dev/docs/components/avatar",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Badge",
       "url": "https://nikala.dev/docs/components/badge",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Banner",
       "url": "https://nikala.dev/docs/components/banner",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Breadcrumb",
       "url": "https://nikala.dev/docs/components/breadcrumb",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Bubble",
       "url": "https://nikala.dev/docs/components/bubble",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Button",
       "url": "https://nikala.dev/docs/components/button",
       "preview": "supported",
       "documentation": "source-snapshot",
-      "urlVerification": "http-200"
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Browser UI examples only; native Tauri APIs and desktop integrations are outside this preview."
+      ]
     },
     {
       "name": "Button Group",
       "url": "https://nikala.dev/docs/components/button-group",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Callout",
       "url": "https://nikala.dev/docs/components/callout",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Card",
       "url": "https://nikala.dev/docs/components/card",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Checkbox",
       "url": "https://nikala.dev/docs/components/checkbox",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Code Block",
       "url": "https://nikala.dev/docs/components/code-block",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Code Group",
       "url": "https://nikala.dev/docs/components/code-group",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Collapsible",
       "url": "https://nikala.dev/docs/components/collapsible",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Combobox",
       "url": "https://nikala.dev/docs/components/combobox",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Command",
       "url": "https://nikala.dev/docs/components/command",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Component Viewer",
       "url": "https://nikala.dev/docs/components/component-viewer",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Container",
       "url": "https://nikala.dev/docs/components/container",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Context Menu",
       "url": "https://nikala.dev/docs/components/context-menu",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Dialog",
       "url": "https://nikala.dev/docs/components/dialog",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Dropdown Menu",
       "url": "https://nikala.dev/docs/components/dropdown-menu",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Dropzone",
       "url": "https://nikala.dev/docs/components/dropzone",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Empty",
       "url": "https://nikala.dev/docs/components/empty",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Field",
       "url": "https://nikala.dev/docs/components/field",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "File Tree",
       "url": "https://nikala.dev/docs/components/file-tree",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Footer",
       "url": "https://nikala.dev/docs/components/footer",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Form",
       "url": "https://nikala.dev/docs/components/form",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Form Message",
       "url": "https://nikala.dev/docs/components/form-message",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Hover Card",
       "url": "https://nikala.dev/docs/components/hover-card",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled. Original URL remains blocked: https://github.com/magradze.png"
+      ]
     },
     {
       "name": "Icon Button",
       "url": "https://nikala.dev/docs/components/icon-button",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Input",
       "url": "https://nikala.dev/docs/components/input",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Input Group",
       "url": "https://nikala.dev/docs/components/input-group",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Kbd",
       "url": "https://nikala.dev/docs/components/kbd",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Label",
       "url": "https://nikala.dev/docs/components/label",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "List",
       "url": "https://nikala.dev/docs/components/list",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Marker",
       "url": "https://nikala.dev/docs/components/marker",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Marquee",
       "url": "https://nikala.dev/docs/components/marquee",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Message",
       "url": "https://nikala.dev/docs/components/message",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Navbar",
       "url": "https://nikala.dev/docs/components/navbar",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Navigation Menu",
       "url": "https://nikala.dev/docs/components/navigation-menu",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Number Input",
       "url": "https://nikala.dev/docs/components/number-input",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Package Manager Tabs",
       "url": "https://nikala.dev/docs/components/package-manager-tabs",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Pager",
       "url": "https://nikala.dev/docs/components/pager",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Pagination",
       "url": "https://nikala.dev/docs/components/pagination",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Pin Input",
       "url": "https://nikala.dev/docs/components/pin-input",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Popover",
       "url": "https://nikala.dev/docs/components/popover",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Progress",
       "url": "https://nikala.dev/docs/components/progress",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Radio Group",
       "url": "https://nikala.dev/docs/components/radio-group",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Rating",
       "url": "https://nikala.dev/docs/components/rating",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Resizable",
       "url": "https://nikala.dev/docs/components/resizable",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Review Card",
       "url": "https://nikala.dev/docs/components/review-card",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Rich Text Editor",
       "url": "https://nikala.dev/docs/components/rich-text-editor",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Scroll Area",
       "url": "https://nikala.dev/docs/components/scroll-area",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Section Heading",
       "url": "https://nikala.dev/docs/components/section-heading",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Select",
       "url": "https://nikala.dev/docs/components/select",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Separator",
       "url": "https://nikala.dev/docs/components/separator",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Sheet",
       "url": "https://nikala.dev/docs/components/sheet",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Sidebar",
       "url": "https://nikala.dev/docs/components/sidebar",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The original sidebar renders and toggles, but its unconditional cookie write raises a sandbox SecurityError. Open state updates before that error; persistence is unavailable in the MCP iframe."
+      ]
     },
     {
       "name": "Skeleton",
       "url": "https://nikala.dev/docs/components/skeleton",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Slider",
       "url": "https://nikala.dev/docs/components/slider",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Spinner",
       "url": "https://nikala.dev/docs/components/spinner",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Stat",
       "url": "https://nikala.dev/docs/components/stat",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Status",
       "url": "https://nikala.dev/docs/components/status",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Steps",
       "url": "https://nikala.dev/docs/components/steps",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Switch",
       "url": "https://nikala.dev/docs/components/switch",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Table",
       "url": "https://nikala.dev/docs/components/table",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Table of Contents",
       "url": "https://nikala.dev/docs/components/table-of-contents",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Tabs",
       "url": "https://nikala.dev/docs/components/tabs",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Textarea",
       "url": "https://nikala.dev/docs/components/textarea",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Theme Manager",
       "url": "https://nikala.dev/docs/components/theme-manager",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The documented ThemeToggle is wrapped in the library's required original ThemeProvider, initialized from the selected preview theme."
+      ]
     },
     {
       "name": "Timeline",
       "url": "https://nikala.dev/docs/components/timeline",
       "preview": "supported",
       "documentation": "source-snapshot",
-      "urlVerification": "http-200"
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Browser UI examples only; native Tauri APIs and desktop integrations are outside this preview."
+      ]
     },
     {
       "name": "Toast",
       "url": "https://nikala.dev/docs/components/toast",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Toggle",
       "url": "https://nikala.dev/docs/components/toggle",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     },
     {
       "name": "Toggle Group",
       "url": "https://nikala.dev/docs/components/toggle-group",
       "preview": "supported",
       "documentation": "source-snapshot",
-      "urlVerification": "http-200"
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Browser UI examples only; native Tauri APIs and desktop integrations are outside this preview."
+      ]
     },
     {
       "name": "Tooltip",
       "url": "https://nikala.dev/docs/components/tooltip",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "ce75abc6a948d2d78b2b22d368c2997832d0909b",
+      "checkedAt": "2026-10-30T01:00:27.520Z",
+      "browserVerification": "light-and-dark-passed"
     }
   ],
-  "notes": "Only selected component URLs were fetched and source-verified individually; other entries are taken from the official navigation or its pinned source, not individually HTTP-checked."
+  "notes": "Every listed official component URL was individually HTTP-checked and matched to its pinned component/demo source. Preview status and browser evidence are separate from source coverage.",
+  "summary": "All 78 official component pages were checked individually. 78 authentic previews are emitted; browser-verification.json records both themes and disclosed upstream limitations."
 }

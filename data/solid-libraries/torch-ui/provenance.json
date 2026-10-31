@@ -111,6 +111,741 @@
       "path": "upstream/docs/fonts/LICENSE-inter.txt",
       "url": "https://raw.githubusercontent.com/google/fonts/6157dfaa640ca5738b4d1a7070fe389c3036d7fc/ofl/inter/OFL.txt",
       "integrity": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    {
+      "path": "upstream/src/components/charts/index.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/charts/index.tsx",
+      "integrity": "2f20d1bc6db277db63a3e06da4cdf668ebcf8b6cfd107aa54268a46e797eb8fb"
+    },
+    {
+      "path": "upstream/src/components/actions/useCopyToClipboard.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/actions/useCopyToClipboard.ts",
+      "integrity": "8c9ec27e9da99e59a1cd55f31a5dda39a593af6aa0820e48d5228330e41f501b"
+    },
+    {
+      "path": "upstream/src/components/actions/Copy.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/actions/Copy.tsx",
+      "integrity": "7cbf1c6d50534dc4688184df4fde0b75791f34d1fcc448c56fd93f9d6ab22e8e"
+    },
+    {
+      "path": "upstream/src/components/actions/index.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/actions/index.tsx",
+      "integrity": "13e4d7c217f5529d1df21b77fc756518d4ac17b8793022f3c50d63b43edf103f"
+    },
+    {
+      "path": "upstream/src/components/actions/Link.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/actions/Link.tsx",
+      "integrity": "87593567aced017ef55b2fd3c6bd35e850602eaa926d821281cd5e82e6bd6a3f"
+    },
+    {
+      "path": "upstream/src/components/actions/ButtonGroup.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/actions/ButtonGroup.tsx",
+      "integrity": "bed615f5d77cab6944007ccd2a31e9aeab513e240bf723e776c7e5fe2aa67f11"
+    },
+    {
+      "path": "upstream/src/components/actions/DarkModeToggle.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/actions/DarkModeToggle.tsx",
+      "integrity": "a97e148dde3c38f2b8554365a6cc58a10200ffab98390dfe57a7150d469977d5"
+    },
+    {
+      "path": "upstream/src/components/charts/Chart.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/charts/Chart.tsx",
+      "integrity": "b2a7576b70b1f172842b3278b84184bda8fbdbb41f38f005510ce656561776d6"
+    },
+    {
+      "path": "upstream/src/components/data-display/avatar-utils.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/avatar-utils.ts",
+      "integrity": "925796af989418202f12af5f9782eb271b91ec0c0bf101f41befa9e4de480617"
+    },
+    {
+      "path": "upstream/src/components/data-display/AvatarGroup.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/AvatarGroup.tsx",
+      "integrity": "e1e574b3add74b9d2f81853e5e1c275c6820bcb3fd2130cd8183006accc25cd2"
+    },
+    {
+      "path": "upstream/src/components/data-display/Avatar.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Avatar.tsx",
+      "integrity": "9c4d30e38adf8d7b85a91a8e9da2a39000456832ff7981c70f8a71a67380d1a4"
+    },
+    {
+      "path": "upstream/src/components/charts/Sparkline.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/charts/Sparkline.tsx",
+      "integrity": "decae4ad73ee0e7f6f5f8167d4b7bd13479298893833a132aead203ddf3e9978"
+    },
+    {
+      "path": "upstream/src/components/data-display/Badge.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Badge.tsx",
+      "integrity": "c78bfd8d3f94479a95625cd23b2f3f1d38fda3081ee4183cbb0ea826b3d02f86"
+    },
+    {
+      "path": "upstream/src/components/data-display/Board.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Board.tsx",
+      "integrity": "87427817a426a69d44d8bfa34a86168311abe3c2160e02d720168ebe1130cd8c"
+    },
+    {
+      "path": "upstream/src/components/data-display/ColorSwatch.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/ColorSwatch.tsx",
+      "integrity": "c249e7acf93e3a4f84bde52b1c9eb05862c96ee76c7e66d3db0fb4c6195fa040"
+    },
+    {
+      "path": "upstream/src/components/data-display/Carousel.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Carousel.tsx",
+      "integrity": "d0138c5386f1042d5e14c0d409f6616db596645de1afb35fad67d1a1aaf9d3ce"
+    },
+    {
+      "path": "upstream/src/components/data-display/Image.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Image.tsx",
+      "integrity": "9e8758730bfe446e8cff269b715072e78c238d9bf7c74a38989ef808628600df"
+    },
+    {
+      "path": "upstream/src/components/data-display/EmptyState.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/EmptyState.tsx",
+      "integrity": "323d450bdd514bf7f918152f1683c089001940029463672dd99d82ad698dd7b9"
+    },
+    {
+      "path": "upstream/src/components/data-display/DataTable.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/DataTable.tsx",
+      "integrity": "0ad9e3ae926eb3880d342a0a346c53d0800db48e457bd84b29047ee43cf80f87"
+    },
+    {
+      "path": "upstream/src/components/data-display/index.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/index.tsx",
+      "integrity": "a750daef1ad2322550d84fab8f27ad3655cfeaa92d39f46d8b64eaba443dc940"
+    },
+    {
+      "path": "upstream/src/components/data-display/Kbd.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Kbd.tsx",
+      "integrity": "fdfddc3c36ab757362bfa2e4f5521f359d215b75ac56c015feac783cc4717009"
+    },
+    {
+      "path": "upstream/src/components/data-display/Persona.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Persona.tsx",
+      "integrity": "e161b506879e6c7b074f66514090afb5de8309b49d644452220eadc0deb8c8d7"
+    },
+    {
+      "path": "upstream/src/components/data-display/StatCard.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/StatCard.tsx",
+      "integrity": "c880bea0a990a0962e9264e4cd913b0a46ee7022b4646722e57ef04bc77090fa"
+    },
+    {
+      "path": "upstream/src/components/data-display/Table.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Table.tsx",
+      "integrity": "efa5cdc6442b9f7cb8b08001bfd6f8f69f4571f9cb51574258fa8b867a11ab86"
+    },
+    {
+      "path": "upstream/src/components/data-display/Tag.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Tag.tsx",
+      "integrity": "e324fc30b60eddf991233129232db20cb94329f3578ab0cba658b7e511fb84a8"
+    },
+    {
+      "path": "upstream/src/components/data-display/Video.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Video.tsx",
+      "integrity": "a839d6ee6be179e1492e5b305ecb8709a6f813f290b5ab33f880f9001d3c73c0"
+    },
+    {
+      "path": "upstream/src/components/feedback/Banner.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/Banner.tsx",
+      "integrity": "fdb638c31777d9f913df61cbe0fa4f5f184ed8c3919ddc74ebaaf700000dd53a"
+    },
+    {
+      "path": "upstream/src/components/data-display/Timeline.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Timeline.tsx",
+      "integrity": "9db01864ccf1413187b9306bd33f79e348b8054438f29f7d89c2f1628763ce9f"
+    },
+    {
+      "path": "upstream/src/components/feedback/Alert.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/Alert.tsx",
+      "integrity": "ca91b9dfa020d5bcbebe723a5d7e983bedebad29395639b23e75c09a6dca9e1a"
+    },
+    {
+      "path": "upstream/src/components/feedback/AlertDialog.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/AlertDialog.tsx",
+      "integrity": "b9853a8d2fdc32935a150ee3b3dfc10d93dcdaf1078d6ea530092b34fb1027f2"
+    },
+    {
+      "path": "upstream/src/components/data-display/TreeView.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/TreeView.tsx",
+      "integrity": "467950a8e401018590d143a4850926a6537d6c69397064a082e2fbe776f14d58"
+    },
+    {
+      "path": "upstream/src/components/feedback/index.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/index.tsx",
+      "integrity": "418fad97faeb584ad0c2428c8772d90406d4c54c2766e1299d86f9ec49429e89"
+    },
+    {
+      "path": "upstream/src/components/feedback/Loading.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/Loading.tsx",
+      "integrity": "fcd057f45c897d4a6820c2e65162374c25812e5f77892ec2bf78c7f73acbb5e0"
+    },
+    {
+      "path": "upstream/src/components/feedback/password/PasswordStrengthIndicator.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/password/PasswordStrengthIndicator.tsx",
+      "integrity": "30887f02751dc477b81129364931827639a37992cead632f5f8fc7b493725a28"
+    },
+    {
+      "path": "upstream/src/components/feedback/Progress.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/Progress.tsx",
+      "integrity": "e53de2ebf59a4adabc3eff6249142c266a9a85c6111a010eb7eeaca5655887e6"
+    },
+    {
+      "path": "upstream/src/components/feedback/password/password-validation.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/password/password-validation.ts",
+      "integrity": "ed7da3325355ea39a2c5fc116474f9057e66347684bcf37697749a15d12625d8"
+    },
+    {
+      "path": "upstream/src/components/feedback/Skeleton.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/Skeleton.tsx",
+      "integrity": "7a9934e2433525bd1d207fa53c194385f2a4b8b73083a8a0a31ff20e8f544fae"
+    },
+    {
+      "path": "upstream/src/components/feedback/password/password-validation-data.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/password/password-validation-data.ts",
+      "integrity": "23eb083918ba3ec0d5d9d6ff471ea453c761ab1f540f3b5151c6e6de520f90cf"
+    },
+    {
+      "path": "upstream/src/components/feedback/password/password-strength.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/password/password-strength.ts",
+      "integrity": "03137c0094e3b3b5ac18f69e7c191210ae5321dfa7e53edb71a2064f5d662b22"
+    },
+    {
+      "path": "upstream/src/components/feedback/SkeletonBlocks.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/SkeletonBlocks.tsx",
+      "integrity": "42219f1be35b7e8561b22b52b0ec14e071b58616c61bcb35333a7e5c6c2cbc31"
+    },
+    {
+      "path": "upstream/src/components/forms/DatePicker.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/DatePicker.tsx",
+      "integrity": "f1d2330825080bd164f92b44c13e463122a77a562f6785b277c8722cdccf25d0"
+    },
+    {
+      "path": "upstream/src/components/forms/Autocomplete.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/Autocomplete.tsx",
+      "integrity": "c930acd148f64783d5a04d70e5191e55a0733012c99a8f68578b40386fd73640"
+    },
+    {
+      "path": "upstream/src/components/feedback/Toast.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/Toast.tsx",
+      "integrity": "17983aee7eed771827643e5e64ccc112fe288fec33d89b2371cdef0ded0ff6af"
+    },
+    {
+      "path": "upstream/src/components/forms/CodeInput.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/CodeInput.tsx",
+      "integrity": "6855aa22ee0063baca24e1498263864b33b227e819d35c347b16edbfbc7a13e5"
+    },
+    {
+      "path": "upstream/src/components/forms/Checkbox.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/Checkbox.tsx",
+      "integrity": "2085061e8447c6de940e29dcd34beb5eb307039eacd6c4aa7a85f98efa1893c4"
+    },
+    {
+      "path": "upstream/src/components/forms/ColorPicker/index.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/ColorPicker/index.ts",
+      "integrity": "5cddce787871dd255f504cd2596d13a81f26b54ebbb2694e477a7d7df74d192b"
+    },
+    {
+      "path": "upstream/src/components/forms/ColorPicker/ColorPicker.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/ColorPicker/ColorPicker.tsx",
+      "integrity": "a9563c6b2ced7a751f39b15bdcce49714fdef7401f277d411a442b8ca1c7599b"
+    },
+    {
+      "path": "upstream/src/components/forms/DateRangePicker.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/DateRangePicker.tsx",
+      "integrity": "1a7eda91db89a9d395c098aee60056ebc92d0e39f8f7888d1c4fe430483291c3"
+    },
+    {
+      "path": "upstream/src/components/forms/RadioGroup.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/RadioGroup.tsx",
+      "integrity": "844572b5b4b72e8d70ee7b012bb90cf6497441e5a0e12cfcd36c468d00ce6583"
+    },
+    {
+      "path": "upstream/src/components/forms/FileUpload.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/FileUpload.tsx",
+      "integrity": "af97f2696c49f3f34214b32ff4d11b160b2b73220def568930ce8838f542b05e"
+    },
+    {
+      "path": "upstream/src/components/forms/FieldPicker.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/FieldPicker.tsx",
+      "integrity": "abfa6ab461d00b8a5c985fcace9da8589ee1b3cfe7dc86302c5eedb7d2cf3123"
+    },
+    {
+      "path": "upstream/src/components/forms/index.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/index.tsx",
+      "integrity": "dbe9074791561efc47c68984ca46f06444e55b59e91f569586caca70c11280eb"
+    },
+    {
+      "path": "upstream/src/components/forms/Input.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/Input.tsx",
+      "integrity": "aec4e86f436728df1b3eb6022ddde7804516fe898974609b3da3b2966c1c66a8"
+    },
+    {
+      "path": "upstream/src/components/forms/NumberField.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/NumberField.tsx",
+      "integrity": "8152b3608dbbedd372bdb831e54b9eda1534c94faa7f80f1dee1854ea4cfd641"
+    },
+    {
+      "path": "upstream/src/components/forms/FilterBuilder.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/FilterBuilder.tsx",
+      "integrity": "d839c7521111cfc7b7024147794ceddd74e9f44f606fa2774acbfaa85bafdc1e"
+    },
+    {
+      "path": "upstream/src/components/forms/MultiSelect.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/MultiSelect.tsx",
+      "integrity": "5a60a5c92aa198c298bd3bf8c9d5eebed0c89e16524d03667ac6f2f3592e5081"
+    },
+    {
+      "path": "upstream/src/components/forms/RelativeDateDefaultInput.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/RelativeDateDefaultInput.tsx",
+      "integrity": "e81d4a0fcee0949000ca2fc0fd001e55288e4c6bc21b342419455e68cb4c3017"
+    },
+    {
+      "path": "upstream/src/components/forms/Slider.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/Slider.tsx",
+      "integrity": "b49ece404c95d3fab06e25e3858e17fda4c0d5a184be4eed75932f4f91036d47"
+    },
+    {
+      "path": "upstream/src/components/forms/Select.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/Select.tsx",
+      "integrity": "1718d5c3cdb13771703f8e5bd0a5ffb9411393b522da63e46caefd0e1365baaf"
+    },
+    {
+      "path": "upstream/src/components/forms/Switch.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/Switch.tsx",
+      "integrity": "5a09fabd2442dd558a4707302caf1f5e4647d31877c84c46c92c0207e6c2401b"
+    },
+    {
+      "path": "upstream/src/components/forms/relativeDateDefault.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/relativeDateDefault.ts",
+      "integrity": "19897e876f4067bc4199340814d0e667e26436afe0c27bb25510cfcd57829408"
+    },
+    {
+      "path": "upstream/src/components/forms/ReorderableList.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/ReorderableList.tsx",
+      "integrity": "07926c9a419345cc2359c8e16a918d145dd2f686c733ea93bd707fc03c7ebde6"
+    },
+    {
+      "path": "upstream/src/components/forms/TextArea.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/TextArea.tsx",
+      "integrity": "44ea22a33fdcd820fc1e4a63bd780950afe24ac8a9ed870011a7776ac834daff"
+    },
+    {
+      "path": "upstream/src/components/forms/TimePicker.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/TimePicker.tsx",
+      "integrity": "c1ccbb99529d63641e2c0e43852d5c550c1a052236d5c082cb70f48dd6f3eed5"
+    },
+    {
+      "path": "upstream/src/components/layout/BlockQuote.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/BlockQuote.tsx",
+      "integrity": "7ee3d55e32b74d1b8267eb245be5e794a17fb21701fe750ff79a5a7aa8a5890b"
+    },
+    {
+      "path": "upstream/src/components/layout/Card.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Card.tsx",
+      "integrity": "5a4408f5fc223edaa788f8543d5c4575669897acdddf04ec5cfe8c54938520a1"
+    },
+    {
+      "path": "upstream/src/components/layout/Collapsible.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Collapsible.tsx",
+      "integrity": "9d26cf4ec411ae05e68716ed9e7212108e5ac916c812f7026b37e8ac20900f79"
+    },
+    {
+      "path": "upstream/src/components/layout/CodeBlock.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/CodeBlock.tsx",
+      "integrity": "1ea7d6173990d7c886ef958dc96e1347936d3933a4af4d79dc56cbfa1cf126f0"
+    },
+    {
+      "path": "upstream/src/components/forms/TimeSelect.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/TimeSelect.tsx",
+      "integrity": "f8b4d993d62a2aa0c7ef2e2a7d4bffc67ce7ed34a1ba75a8012eb524f2346f04"
+    },
+    {
+      "path": "upstream/src/components/layout/Divider.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Divider.tsx",
+      "integrity": "fd64562330bc0cff55e4efdc71aa8f2d25ed1b1f5b64116b1760af42da32a495"
+    },
+    {
+      "path": "upstream/src/components/layout/Container.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Container.tsx",
+      "integrity": "58a707a4b330fb3a7f5842af3f9a30ae807c9aa0c8db91ae580e44791fe6a7bf"
+    },
+    {
+      "path": "upstream/src/components/layout/Grid.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Grid.tsx",
+      "integrity": "f1b5e65051b08c161b03f9d5922d2f85e18378dcafc694b0421b70b4c2729d0a"
+    },
+    {
+      "path": "upstream/src/components/layout/Form.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Form.tsx",
+      "integrity": "0a7991427bd0a83ed05b7144edc3cd9c148b75e83108ad82015fbbebee4817dd"
+    },
+    {
+      "path": "upstream/src/components/layout/Inline.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Inline.tsx",
+      "integrity": "42d4a6acee28e5ccf88ffb0b6ca507a6e45f629901845dfabaaac62d7894190d"
+    },
+    {
+      "path": "upstream/src/components/layout/PageHeading.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/PageHeading.tsx",
+      "integrity": "146451fca715377a0c836484ef1aefca1d224b9cbf7d7c5becc353cd58ea8f94"
+    },
+    {
+      "path": "upstream/src/components/layout/index.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/index.tsx",
+      "integrity": "f858876f0d51f4ef54f38bc32657efc301ab96d631f9a2ec73949e41e901fdb7"
+    },
+    {
+      "path": "upstream/src/components/layout/FormActions.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/FormActions.tsx",
+      "integrity": "07b774be9d7f809642859b21d53c3521f67beb191acbb219da2deb1296f6c460"
+    },
+    {
+      "path": "upstream/src/components/layout/TablePanel.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/TablePanel.tsx",
+      "integrity": "24829ce355e717163cda15020f74dc71084ddaa508aef6089802bd10c95b787a"
+    },
+    {
+      "path": "upstream/src/components/layout/PromptWithAction.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/PromptWithAction.tsx",
+      "integrity": "204f81b3b1fe1ebd0a335d2c8e7baff68facc84765fc6ed1d7c4cefb819ba2be"
+    },
+    {
+      "path": "upstream/src/components/layout/Section.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Section.tsx",
+      "integrity": "a9c5bfcd8fe03105ebbfd3b0bf9b436696246b6261263a6b61f136b42dfbadc4"
+    },
+    {
+      "path": "upstream/src/components/layout/WizardStep.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/WizardStep.tsx",
+      "integrity": "524200de451736525d35f736e7c4389ed9d8298100f6f04ccdaf9092389c90e0"
+    },
+    {
+      "path": "upstream/src/components/layout/VerticalWizard.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/VerticalWizard.tsx",
+      "integrity": "1a35bf8fe5e89de9a6369683ec4afa10725c5e5cbfb8be9bd12a91df74d72fcf"
+    },
+    {
+      "path": "upstream/src/components/layout/WizardStepper.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/WizardStepper.tsx",
+      "integrity": "1b9d2bc16c3c22a097b0cf046b70717ccf0b22562f47ef31de933f73baac7ba7"
+    },
+    {
+      "path": "upstream/src/components/navigation/Breadcrumbs.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/Breadcrumbs.tsx",
+      "integrity": "6b3be2971fe6531f994697965d9182ec89233f9fa7200488c226b93726f044a6"
+    },
+    {
+      "path": "upstream/src/components/navigation/NavigationMenu.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/NavigationMenu.tsx",
+      "integrity": "5753ce392c3f59b6f4e6c1cabe471f21e04496499a8917d7f491e12791231aa3"
+    },
+    {
+      "path": "upstream/src/components/navigation/index.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/index.tsx",
+      "integrity": "50b9507001e3061dbf9427f0712c6c330202322a020e47da01b7bf4db8de3d81"
+    },
+    {
+      "path": "upstream/src/components/navigation/DropdownMenu.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/DropdownMenu.tsx",
+      "integrity": "5c745f8801f19f6849b9d703fe0eaca5f156e1d8861c9d46acd1852d420ea488"
+    },
+    {
+      "path": "upstream/src/components/navigation/Pagination.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/Pagination.tsx",
+      "integrity": "639c9bafb72f2ca428d181f5b5114493a5b6c9c99a9351e345e8ca83209392e5"
+    },
+    {
+      "path": "upstream/src/components/navigation/MegaMenu.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/MegaMenu.tsx",
+      "integrity": "60b344033ad0849bc436849f108f8791841187ba1c6bfdde63023a2c58666acf"
+    },
+    {
+      "path": "upstream/src/components/navigation/Tabs.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/Tabs.tsx",
+      "integrity": "efb04fee598b6f8a648b9ee43499eb187882fc85b913103be1020002e190d916"
+    },
+    {
+      "path": "upstream/src/components/navigation/ViewCustomizer.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/ViewCustomizer.tsx",
+      "integrity": "81230f19a7617f71730418dff90e51664d6a69c44d608d2e1d2b5cc0eb080fde"
+    },
+    {
+      "path": "upstream/src/components/navigation/Sidebar.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/Sidebar.tsx",
+      "integrity": "dcff10e463fe423efdefad7a75a15628c6ca16f2ad4390007416ae4a296b49a6"
+    },
+    {
+      "path": "upstream/src/components/overlays/index.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/overlays/index.tsx",
+      "integrity": "571dc2b66c674edd561abb7e8695aa0becacb416ab497e9ecce729df040a743f"
+    },
+    {
+      "path": "upstream/src/components/overlays/Tooltip.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/overlays/Tooltip.tsx",
+      "integrity": "0b39f29db0d210870b46989b89327728453673dc8ec42c119e51d0f25e5215ad"
+    },
+    {
+      "path": "upstream/src/components/overlays/Popover.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/overlays/Popover.tsx",
+      "integrity": "3af697fa5cae1c6b140fc6d4d5ffecf21d480a43d77b6fe224f856a0a96fe0a0"
+    },
+    {
+      "path": "upstream/src/components/navigation/ViewSwitcher.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/ViewSwitcher.tsx",
+      "integrity": "3df638861f1f134baaacfc98bafd31f6ca1e9380966d3b07a966a05d06e69093"
+    },
+    {
+      "path": "upstream/src/components/overlays/Drawer.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/overlays/Drawer.tsx",
+      "integrity": "205000356cba65586ba87197b176f3f482094f4ed84d1639b45da7eebabbe3a3"
+    },
+    {
+      "path": "upstream/src/components/overlays/SearchPalette.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/overlays/SearchPalette.tsx",
+      "integrity": "6e55fc1b08ac912f118bb958c704d2ab2cadacb51a5297be7017309d9b658fba"
+    },
+    {
+      "path": "upstream/src/components/overlays/ContextMenu.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/overlays/ContextMenu.tsx",
+      "integrity": "6c9a43aef0a3288ea59510ec4ae7e5b4c36d2dd3d49dcb9cf913834725916b77"
+    },
+    {
+      "path": "upstream/src/components/overlays/HoverCard.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/overlays/HoverCard.tsx",
+      "integrity": "e8ddd6bb8d28d69af9874858b6bdb6e0aa9899797d38f182404dc297340512e2"
+    },
+    {
+      "path": "upstream/src/components/typography/Code.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/typography/Code.tsx",
+      "integrity": "08c8d27bc552130ed32267467da45d6b62263264d5d45c738c594bb8f333e92a"
+    },
+    {
+      "path": "upstream/src/components/typography/Icon.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/typography/Icon.tsx",
+      "integrity": "50df4cda7e78baededc03e901166281b61c940235e21bc45c02eb19a93313f57"
+    },
+    {
+      "path": "upstream/src/components/typography/index.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/typography/index.tsx",
+      "integrity": "01c56c1a4c1f51ee599692d9f2f375ee720b18676b20b68e96042949caefa858"
+    },
+    {
+      "path": "upstream/src/env.d.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/env.d.ts",
+      "integrity": "4ebf9a0a1d399f6f6b5b049c9f815969fe1fff75060ef147442c082b86b55d3e"
+    },
+    {
+      "path": "upstream/src/icons/svg/calendar.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/calendar.svg",
+      "integrity": "8f89047f43e2448b41cdb9331352993fe82ca7958954172c2a113821d48873a0"
+    },
+    {
+      "path": "upstream/src/icons/svg/check.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/check.svg",
+      "integrity": "805e11f404dd9f5955e3020c77db2a55663fee3518fb1934d91dba8dac2e6b9d"
+    },
+    {
+      "path": "upstream/src/icons/svg/chevron-left.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/chevron-left.svg",
+      "integrity": "b30683c85e5b8c9f71456d987942b20ad1404ebc2c464865d32fc1b61fa055fe"
+    },
+    {
+      "path": "upstream/src/icons/svg/chevron-down.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/chevron-down.svg",
+      "integrity": "1a270506b8e89eda78c4780d1132a33416c4603c14fce709588d4e918662405e"
+    },
+    {
+      "path": "upstream/src/icons/svg/chevron-right.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/chevron-right.svg",
+      "integrity": "02ce874dacd54895805a340fdd80486292254cfdc2cf347291f53c94ed91d762"
+    },
+    {
+      "path": "upstream/src/icons/svg/chevron-up.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/chevron-up.svg",
+      "integrity": "79c4a9b094afdec51882efbb94d896aafe46fe222cfbe21346994ed19e1c4dfc"
+    },
+    {
+      "path": "upstream/src/icons/svg/chevrons-left.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/chevrons-left.svg",
+      "integrity": "50d333091feffa9ff5a9e39f4feac40ae2c4537d05a739883f3e561dcaf68ce3"
+    },
+    {
+      "path": "upstream/src/icons/svg/chevrons-right.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/chevrons-right.svg",
+      "integrity": "9df33aa85bc393b815de89fb1b7e7d3c6daa36b74e1fdaca3d1058b7340582c7"
+    },
+    {
+      "path": "upstream/src/icons/svg/eye-closed.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/eye-closed.svg",
+      "integrity": "2300c7d5bd8b1a8cdfe082e80d8019bc790f5334087624dd9a56e15f1344f498"
+    },
+    {
+      "path": "upstream/src/icons/svg/copy.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/copy.svg",
+      "integrity": "6c153346e1c6fd37375a830638a522a8880ac7536843986bb08b29693cccb15a"
+    },
+    {
+      "path": "upstream/src/icons/svg/eye.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/eye.svg",
+      "integrity": "92e30899d81935146d0093928ce228de69094f0f55f514b3c17dac16ecf3a652"
+    },
+    {
+      "path": "upstream/src/icons/svg/file-code.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/file-code.svg",
+      "integrity": "7bd461dfaa0dbed57f009032ea316b73b6abeb4500f77e8c557dc53a7e247329"
+    },
+    {
+      "path": "upstream/src/icons/svg/file-spreadsheet.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/file-spreadsheet.svg",
+      "integrity": "d512abaad7bd671a5579ee01c2f4603bc73b22b118c6f1f38c3af01e3787f068"
+    },
+    {
+      "path": "upstream/src/icons/svg/file-text.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/file-text.svg",
+      "integrity": "5a9ebf8e13d8577ae8fad11905e5c67c3e19cd187b6eda40f6f89eaacb5db297"
+    },
+    {
+      "path": "upstream/src/icons/svg/file-play.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/file-play.svg",
+      "integrity": "33cbd285fd1b346abf931c721aaf3e24dbf4134614da5538459f60fd049f32fb"
+    },
+    {
+      "path": "upstream/src/icons/svg/file-image.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/file-image.svg",
+      "integrity": "f80345e8285f86dcb5be97171d8641b80de614f9ef5c47e7b5be8e70dad39021"
+    },
+    {
+      "path": "upstream/src/icons/svg/file.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/file.svg",
+      "integrity": "ef5d7d21c978934fdc07c3f2f560fb8afbfd41bb5bcb7e48264a493cbf4677dc"
+    },
+    {
+      "path": "upstream/src/icons/svg/file-up.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/file-up.svg",
+      "integrity": "4fd86afb47d0102a338ca0194e3d25b733d863900c3885b658458a2e0c59a6b0"
+    },
+    {
+      "path": "upstream/src/icons/svg/folder-archive.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/folder-archive.svg",
+      "integrity": "5b1d92d9a13e702b96372c23ef131c42962aa270ea66db565f124cc1236a1b71"
+    },
+    {
+      "path": "upstream/src/icons/svg/moon.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/moon.svg",
+      "integrity": "7db77f0a8d6f935f2d09fd195bd8222ede3d2bc2be71b4033719391434c91565"
+    },
+    {
+      "path": "upstream/src/icons/svg/grip-vertical.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/grip-vertical.svg",
+      "integrity": "932ea3737bd8e6a8abe9bb989c8e9285e1fb963a6876474b70a1c96ec617a9ba"
+    },
+    {
+      "path": "upstream/src/icons/svg/loader-circle.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/loader-circle.svg",
+      "integrity": "b27446865f96e0a8d6ed08ebd23a6b017b880d28dd6e4f77f51a1439d4193621"
+    },
+    {
+      "path": "upstream/src/icons/svg/minus.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/minus.svg",
+      "integrity": "f149a306efc953e3cbb3606d584f6633b2ea0ab2447a29ebac019572fc24a12d"
+    },
+    {
+      "path": "upstream/src/icons/svg/pin.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/pin.svg",
+      "integrity": "5b98f90b12f66c6468ff077605867045cdf6766be95d3378f9ce2c052a58afb5"
+    },
+    {
+      "path": "upstream/src/icons/svg/folder.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/folder.svg",
+      "integrity": "33ed4a9bd6960f2d640a4903d1812e87898e63f098141890aba047fc4a0d3422"
+    },
+    {
+      "path": "upstream/src/icons/svg/pipette.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/pipette.svg",
+      "integrity": "e0551ca07c5cfffd1b06eddf2111accbc699258d0e971c32aab5899b541908fd"
+    },
+    {
+      "path": "upstream/src/icons/svg/search.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/search.svg",
+      "integrity": "7dcd2ef5356206e1ad1ecbcba76e0d1649250e70a1065d1269a94d97ce774a0f"
+    },
+    {
+      "path": "upstream/src/icons/svg/refresh-cw.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/refresh-cw.svg",
+      "integrity": "d6c22bf088818b942af7ff1a61e4b1a834eaf6d157fcb2aac512181f950f7005"
+    },
+    {
+      "path": "upstream/src/icons/svg/x.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/x.svg",
+      "integrity": "78e0a86434dbe8fe94dba5862d1628fdb8888e89209d28636f7f718287fb6ac0"
+    },
+    {
+      "path": "upstream/src/icons/svg/sun.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/sun.svg",
+      "integrity": "aeb3b1eed4f41436a1a95ad5f7816570211c054e65865621bfdec2bcfb530850"
+    },
+    {
+      "path": "upstream/src/icons/svg/plus.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/plus.svg",
+      "integrity": "d56fbb36fa349a9ccb53db57372ea94021c01cd78894300f89ad5a12f7ad8dc0"
+    },
+    {
+      "path": "upstream/src/test/setup.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/test/setup.ts",
+      "integrity": "3ecfbcd74ac592e23bc62143c34925ee720ba116bfaecbdcb3dcd70f4de5a219"
+    },
+    {
+      "path": "upstream/src/icons/svg/trash-2.svg",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/icons/svg/trash-2.svg",
+      "integrity": "7ca6e94dfbbe5bebb55d0de5f893a440155894e79ee6fdc7f104ac556b3424e5"
+    },
+    {
+      "path": "upstream/src/index.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/index.tsx",
+      "integrity": "bee156f6308d46dc7d343d34337ac33fbf9e592445ce0b55f00fdee507f46449"
+    },
+    {
+      "path": "upstream/src/types/filter-types.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/types/filter-types.ts",
+      "integrity": "48cb7cda16dd2b853c2a0031e24628aaf123dab10b051885c0d2a9817459dda0"
+    },
+    {
+      "path": "upstream/src/utilities/createSortableDrag.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/utilities/createSortableDrag.ts",
+      "integrity": "62b52b2ecf25ce78e17663c5f6247f0d01cac0e7ccbf9e49a65c6a6ebead9fa2"
+    },
+    {
+      "path": "upstream/src/types/avatar-types.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/types/avatar-types.ts",
+      "integrity": "bd0f42a25f340bffcc9ddc6432ea8c804648e0415a6117205e5c8522a1b62e0d"
+    },
+    {
+      "path": "upstream/src/test/test-utils.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/test/test-utils.tsx",
+      "integrity": "4e61d81b0064ded6b1b2f5f65ba6fbf7bb9052c05ee90cb51daea2c450906b34"
+    },
+    {
+      "path": "upstream/src/utilities/colorUtils.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/utilities/colorUtils.ts",
+      "integrity": "4ccb56e57badcca8fe717ca46a0af86aa9b3ce81f905ab6baf25d839b77bfd0c"
+    },
+    {
+      "path": "upstream/src/utilities/formSizeContext.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/utilities/formSizeContext.ts",
+      "integrity": "3f6974ae8300d1d54d8ff162a1144c8357e046d57ae1d7f4bb9e046e7fbe1b17"
+    },
+    {
+      "path": "upstream/src/utilities/mergeRefs.ts",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/utilities/mergeRefs.ts",
+      "integrity": "36ebc1d4d2ee493b8f95935c2aecbd23ff407d9c489b7dca973ce6111ad8d5c8"
+    },
+    {
+      "path": "upstream/src/utilities/i18n.tsx",
+      "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/utilities/i18n.tsx",
+      "integrity": "baac9f98eb1fc4b2cfeac991a0196a8fe9ed1b89f9be2e1bb9fd912fa29bf239"
+    },
+    {
+      "path": "upstream/docs/torch-site.snapshot",
+      "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+      "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
     }
   ],
   "componentSources": {
@@ -133,5 +868,646 @@
     "Dialog": [
       "Live upstream comparison on 2026-10-30: the official Summon Familiar demo did not open a dialog in two browser checks. The light trigger styling matched; open-state and dark live styling remain unverified. The bundled pinned-source dialog passes local interaction tests."
     ]
-  }
+  },
+  "sourceIgnore": [
+    "upstream/docs/torch-site.snapshot"
+  ],
+  "groups": {
+    "TorchExpanded1": {
+      "Text": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Heading": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Code": {
+        "source": "upstream/src/components/typography/Code.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Block Quote": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Button Group": {
+        "source": "upstream/src/components/actions/ButtonGroup.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Copy": {
+        "source": "upstream/src/components/actions/Copy.tsx",
+        "gaps": [
+          "Clipboard writes depend on browser and iframe permission.",
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Link": {
+        "source": "upstream/src/components/actions/Link.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Dark Mode Toggle": {
+        "source": "upstream/src/components/actions/DarkModeToggle.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "Theme persistence is disabled because the sandboxed preview cannot use localStorage."
+        ]
+      },
+      "Input": {
+        "source": "upstream/src/components/forms/Input.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Number Field": {
+        "source": "upstream/src/components/forms/NumberField.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Code Input": {
+        "source": "upstream/src/components/forms/CodeInput.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Text Area": {
+        "source": "upstream/src/components/forms/TextArea.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Select": {
+        "source": "upstream/src/components/forms/Select.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Multi Select": {
+        "source": "upstream/src/components/forms/MultiSelect.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Autocomplete": {
+        "source": "upstream/src/components/forms/Autocomplete.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Checkbox": {
+        "source": "upstream/src/components/forms/Checkbox.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Radio Group": {
+        "source": "upstream/src/components/forms/RadioGroup.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Switch": {
+        "source": "upstream/src/components/forms/Switch.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Slider": {
+        "source": "upstream/src/components/forms/Slider.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Reorderable List": {
+        "source": "upstream/src/components/forms/ReorderableList.tsx",
+        "gaps": [
+          "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      }
+    },
+    "TorchExpanded2": {
+      "Date Picker": {
+        "source": "upstream/src/components/forms/DatePicker.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Date Range Picker": {
+        "source": "upstream/src/components/forms/DateRangePicker.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Time Picker": {
+        "source": "upstream/src/components/forms/TimePicker.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Color Picker": {
+        "source": "upstream/src/components/forms/ColorPicker/ColorPicker.tsx",
+        "gaps": [
+          "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "File Upload": {
+        "source": "upstream/src/components/forms/FileUpload.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Field Picker": {
+        "source": "upstream/src/components/forms/FieldPicker.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Relative Date": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Container": {
+        "source": "upstream/src/components/layout/Container.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Grid": {
+        "source": "upstream/src/components/layout/Grid.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Section": {
+        "source": "upstream/src/components/layout/Section.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Card": {
+        "source": "upstream/src/components/layout/Card.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Divider": {
+        "source": "upstream/src/components/layout/Divider.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Page Heading": {
+        "source": "upstream/src/components/layout/PageHeading.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Collapsible": {
+        "source": "upstream/src/components/layout/Collapsible.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Code Block": {
+        "source": "upstream/src/components/layout/CodeBlock.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Inline": {
+        "source": "upstream/src/components/layout/Inline.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Form": {
+        "source": "upstream/src/components/layout/Form.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Wizard": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Prompt With Action": {
+        "source": "upstream/src/components/layout/PromptWithAction.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Breadcrumbs": {
+        "source": "upstream/src/components/navigation/Breadcrumbs.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      }
+    },
+    "TorchExpanded3": {
+      "Navigation Menu": {
+        "source": "upstream/src/components/navigation/NavigationMenu.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Mega Menu": {
+        "source": "upstream/src/components/navigation/MegaMenu.tsx",
+        "gaps": [
+          "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Sidebar": {
+        "source": "upstream/src/components/navigation/Sidebar.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Dropdown Menu": {
+        "source": "upstream/src/components/navigation/DropdownMenu.tsx",
+        "gaps": [
+          "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Tabs": {
+        "source": "upstream/src/components/navigation/Tabs.tsx",
+        "gaps": [
+          "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Pagination": {
+        "source": "upstream/src/components/navigation/Pagination.tsx",
+        "gaps": [
+          "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "View Switcher": {
+        "source": "upstream/src/components/navigation/ViewSwitcher.tsx",
+        "gaps": [
+          "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Drawer": {
+        "source": "upstream/src/components/overlays/Drawer.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Context Menu": {
+        "source": "upstream/src/components/overlays/ContextMenu.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Popover": {
+        "source": "upstream/src/components/overlays/Popover.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Hover Card": {
+        "source": "upstream/src/components/overlays/HoverCard.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Tooltip": {
+        "source": "upstream/src/components/overlays/Tooltip.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Search Palette": {
+        "source": "upstream/src/components/overlays/SearchPalette.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Alert": {
+        "source": "upstream/src/components/feedback/Alert.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Alert Dialog": {
+        "source": "upstream/src/components/feedback/AlertDialog.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Banner": {
+        "source": "upstream/src/components/feedback/Banner.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Toast": {
+        "source": "upstream/src/components/feedback/Toast.tsx",
+        "gaps": [
+          "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Progress": {
+        "source": "upstream/src/components/feedback/Progress.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Loading": {
+        "source": "upstream/src/components/feedback/Loading.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Skeleton": {
+        "source": "upstream/src/components/feedback/Skeleton.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The documentation’s /avatar.jpg placeholder returns HTML rather than an image and is absent from the pinned upstream repository. The preview omits that URL and uses TorchUI Avatar’s built-in initials fallback after loading."
+        ]
+      }
+    },
+    "TorchExpanded4": {
+      "PasswordStrengthIndicator": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Image": {
+        "source": "upstream/src/components/data-display/Image.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The documented photograph is a lossy quality-85 WebP conversion; its original and delivered hashes are recorded with attribution."
+        ]
+      },
+      "Video": {
+        "source": "upstream/src/components/data-display/Video.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "A 640 × 268 WebP frame at five seconds from the licensed Spring excerpt replaces the documented poster to avoid the Blender and Spring logos excluded from the Spring website's CC BY license. Playback uses the first 10.083 seconds of the movie, a 640 × 268, 24 fps stereo excerpt (152,632 bytes) from the 1920 × 804, 24 fps, 90,190,341-byte original. The excerpt ends early. MCP Apps loads it through bounded resource reads; standalone HTML embeds the same verified bytes."
+        ]
+      },
+      "Avatar": {
+        "source": "upstream/src/components/data-display/Avatar.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Persona": {
+        "source": "upstream/src/components/data-display/Persona.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Stat": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Tag": {
+        "source": "upstream/src/components/data-display/Tag.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Badge": {
+        "source": "upstream/src/components/data-display/Badge.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Color Swatch": {
+        "source": "upstream/src/components/data-display/ColorSwatch.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Carousel": {
+        "source": "upstream/src/components/data-display/Carousel.tsx",
+        "gaps": [
+          "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Table": {
+        "source": "upstream/src/components/data-display/Table.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Table Panel": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Data Table": {
+        "source": "upstream/src/components/data-display/DataTable.tsx",
+        "gaps": [
+          "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Table View": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "exportName": "DataTable",
+        "gaps": [
+          "TorchUI's TableView wrapper is not yet available. This is the underlying DataTable example shown on its official Table View page."
+        ]
+      },
+      "Timeline": {
+        "source": "upstream/src/components/data-display/Timeline.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "TreeView": {
+        "source": "upstream/src/components/data-display/TreeView.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Empty State": {
+        "source": "upstream/src/components/data-display/EmptyState.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Kbd": {
+        "source": "upstream/src/components/data-display/Kbd.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Board": {
+        "source": "upstream/src/components/data-display/Board.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The original three-column example is wrapped to scroll horizontally on narrow screens."
+        ]
+      },
+      "Bar Chart": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Line Chart": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      }
+    },
+    "TorchExpanded5": {
+      "Pie Chart": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Sparkline": {
+        "source": "upstream/src/components/charts/Sparkline.tsx",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Other charts": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Login Form": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Register Form": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The published recipe passes a password prop unsupported by the pinned PasswordStrengthIndicator; this preview uses the analysis from TorchUI’s documented PasswordStrengthIndicator example to supply its required strength, score, and details."
+        ]
+      },
+      "Settings Form": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Form Dialog": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Form Drawer": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Wizard Flow": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Stat Grid": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "User Card": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The documentation’s Lyra portrait is hosted outside the pinned repository and no redistribution license could be verified. The preview omits that image and uses TorchUI Avatar’s built-in initials fallback."
+        ]
+      },
+      "Comment Thread": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Filter Builder": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "View Customizer": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      },
+      "Icons": {
+        "source": "upstream/docs/torch-site.snapshot",
+        "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+        "gaps": [
+          "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
+          "The sample is wrapped from the published TorchUI documentation example."
+        ]
+      }
+    }
+  },
+  "unavailable": {},
+  "baselineLock": "baseline-package-lock.json",
+  "packedExpansion": true
 }

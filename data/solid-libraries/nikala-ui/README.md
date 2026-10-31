@@ -1,20 +1,21 @@
-# Nikala UI source preview
+# Nikala UI source previews
 
-Verified 2026-10-30 against `nikala-ui/ui` revision `ce75abc6a948d2d78b2b22d368c2997832d0909b`.
+All **78 documented components** are indexed with individual HTTP-200 page verification and authentic runnable previews. Source: `nikala-ui/ui` revision `ce75abc6a948d2d78b2b22d368c2997832d0909b`, checked on 2026-10-30. `coverage.json` lists every exact name and official URL; `page-verification.json` retains the checked page hashes.
 
-- The Button, Toggle Group and Timeline are the upstream components. Each mount uses the literal `defaultCode` example in its official documentation source.
-- CSS comes from `apps/web/src/app.css`, compiled with Tailwind 4.3.3. The original yellow OKLCH tokens, dark theme, radii, type scale and system font stack are retained.
-- Solid 1.9.17 and `babel-preset-solid` 1.9.16 are isolated from Col's own runtime. MIT notices and locked dependency licenses are present in every module.
-- The examples use browser APIs. Native Tauri v2 windows, updater and operating-system integrations are not emulated.
+The original Button, Toggle Group and Timeline remain compatible direct entries. Other previews share closed modules for ordinary components, highlighting and rich editing. Each dispatcher selects the actual example through the renderer's lexical `PREVIEW_COMPONENT` constant. `demos/*.tsx` are authored extractions of each page's first live `ComponentPreview`, preserving original imports, state and JSX. They are not byte-identical full documentation files; those originals and hashes remain in `upstream.json`. Theme Manager receives the required original ThemeProvider.
 
-`catalog.json` is website metadata. `corpus.json` contains component-scoped, readable API/example evidence. `upstream.json` contains authenticated original inputs; `build.json` records emitted hashes, used packages and lock integrity. The copy of upstream source is inert JSON so Col's TypeScript configuration does not compile vendored files.
+The three original preview bytes remain unchanged. `baseline.json` authenticates that artifact and `baseline-package-lock.json`; its direct build records are retained in `build.json`. The additional 75 previews use a lossless Brotli-packed `expanded.json`, decoded by the merged index. Both packed-file and decoded-content hashes are recorded. Packing changes transport size, not browser code or CSS.
 
-To rebuild from the repository root in PowerShell:
+Tailwind 4.3.3 compiles the original `apps/web/src/app.css`, preserving yellow OKLCH tokens, dark colors, radii, typography and system fonts. Solid 1.9.17 and babel-preset-solid 1.9.16 are isolated from Col's runtime. Original MIT and authenticated dependency notices accompany the artifacts. Native Tauri integrations are not emulated; the documented examples use browser implementations.
 
-```powershell
-node scripts/solid-libraries/nikala-ui.mjs
-```
+Sidebar updates its open state before unconditionally writing a cookie. The sandbox blocks that write, so toggling works while persistence raises a disclosed SecurityError. Theme Manager's original provider already catches unavailable storage. The upstream Button remains 36px high with a 6px radius and light/dark primary colors `oklch(0.795 0.184 86.047)` / `oklch(0.852 0.199 91.936)`.
 
-The builder restores the committed source inputs and runs a clean `npm ci --ignore-scripts` against its isolated lock before compiling. `build.json` records that authentication boundary, CSS compiler versions and loaded-file hashes, source-package integrity and emitted CSS/code hashes.
+The original GitHub profile image has no verified redistribution permission, so its URL remains blocked and the upstream avatar fallback is preserved. Licensed Unsplash demo photos retain their source bytes and attribution.
 
-Browser verification covered both themes, Button focus/Enter, Toggle Group click and Space selection (`role=radio`, `aria-checked`), all four Timeline events, and Solid disposal. The upstream Button computes to 36px height and 6px radius; its primary colors are `oklch(0.795 0.184 86.047)` in light mode and `oklch(0.852 0.199 91.936)` in dark mode. No Col component styling is substituted.
+`catalog.json` is website metadata; `corpus.json` supplies bounded component props, readable examples and official setup links without executable installation commands. Long examples and demos displaying CLI commands point to their pinned source instead. `build.json` records compiler authentication, locked runtime inputs and emitted group/style hashes. `browser-verification.json` records both themes, controls, images, animations and disposal in an opaque sandbox iframe. Shared tests separately cover the actual MCP transport and widget paths.
+
+`dependencies.json` records component and demo-only requirements separately. Public MCP dependencies include their verified union so the selected examples are implementable; the corpus explicitly names extras such as `lucide-solid` for Toggle Group and Timeline. All 78 previews passed in both themes (156 cases).
+
+Rebuild: `npm exec -- node scripts/solid-libraries/nikala-ui.mjs`. A missing isolated environment uses the committed lock with `npm ci --ignore-scripts`. Existing CSS compiler files are checked against prior clean-install hashes; used browser package files are authenticated against locked npm archives. The recorded method distinguishes those routes. No root dependencies are installed.
+
+Opt-in browser sweep: `npm exec -- node scripts/solid-libraries/motion-browser-check.mjs nikala-ui`. Set `PLAYWRIGHT_MODULE` and `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` for another browser installation. The harness uses `allow-scripts allow-forms`, blocks external resources and runs sequentially.

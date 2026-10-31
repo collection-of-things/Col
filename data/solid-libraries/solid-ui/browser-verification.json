@@ -1,0 +1,1614 @@
+{
+  "checkedAt": "2026-10-30T07:11:16.167659Z",
+  "browser": "156.0.8078.79",
+  "renderer": "render_component HTML",
+  "sandbox": "allow-scripts allow-forms",
+  "viewport": {
+    "width": 1280,
+    "height": 960
+  },
+  "runs": [
+    {
+      "stage": "solid-ui",
+      "completedAt": "2026-10-30T05:55:38.778422Z",
+      "cases": 110,
+      "passed": 110
+    },
+    {
+      "stage": "solid-ui-interactions",
+      "completedAt": "2026-10-30T06:00:10.272002Z",
+      "cases": 10,
+      "passed": 10
+    },
+    {
+      "stage": "solid-ui-webp",
+      "completedAt": "2026-10-30T07:10:03.930886Z",
+      "cases": 8,
+      "passed": 8
+    },
+    {
+      "stage": "solid-ui-webp-image",
+      "completedAt": "2026-10-30T07:11:16.167659Z",
+      "cases": 2,
+      "passed": 2
+    }
+  ],
+  "rows": [
+    {
+      "id": "solid-ui/Accordion",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Is it accessible?",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Is it accessible?\nYes. It adheres to the WAI-ARIA design pattern.\nIs it styled?\nIs it animated?"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Alert",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Heads up!\nYou can add components to your app using the cli."
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Alert Dialog",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Show Dialog",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Show Dialog\nAlert Dialog\n\nAn Alert Dialog enables assistive technologies and browsers to distinguish alert dialogs from other dialogs so they have the"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Aspect Ratio",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "loadedImages": [
+        {
+          "sha256": "bfb9ef7cdf20b0e3d06e65d062d1a79daa0d92714094b6343b9e06ea8f5ed837",
+          "width": 1600,
+          "height": 1067
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Avatar",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Badge",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Badge\nSecondary\nOutline\nError\nRound"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Badge Delta",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "BadgeDelta with pre-defined status icons\n\ntext\ntext\ntext\ntext\ntext\n\nBadgeDelta without text"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Bar List",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Website Analytics\n\nSource\nViews\n\nTwitter\n456\nGoogle\n351\nGitHub\n271\nReddit\n191\nYoutube\n91"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Breadcrumb",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Home\n/\nMore\n/\nComponents\n/\nBreadcrumbs"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Button",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Primary",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Primary\nSecondary\nDestructive\nOutline\nGhost\nLink"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Callout",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Default\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora cupiditate sapiente officiis ullam, nulla nam sunt? Ipsa facilis ut aspernat"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Card",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Mark all as read",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Notifications\n\nYou have 3 unread messages.\n\nPush Notifications\n\nSend notifications to device.\n\nYour call has been confirmed.\n\n1 hour ago\n\nYou have a n"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Carousel",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Next slide",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "1\n2\n3\n4\n5\nPrevious slide\nNext slide"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Charts",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Newsletter revenue over time (USD)"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Checkbox",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "checkbox (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Accept terms and conditions\n\nYou agree to our Terms of Service and Privacy Policy."
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Collapsible",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "What is Kobalte ?",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "What is Kobalte ?\nKobalte is a UI toolkit for building accessible web apps and design systems with SolidJS. It provides a set of low-level UI componen"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Combobox",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Fruits\nApple\nBanana\nBlueberry\nGrapes\nPineapple\nMeat\nBeef\nChicken\nLamb\nPork"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Command",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "No results found."
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Context Menu",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "context menu (right click)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Right click here.\nCommit\n⌘+K\nPush\n⇧+⌘+K\nUpdate Project\n⌘+T\nGitHub\nShow Git Log\nShow History\nBranches\nmain\ndevelop"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Data Table",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Columns",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Columns\n\tStatus\tEmail\n\t\nAmount\n\t\n\n\t\nSuccess\n\t\nken99@yahoo.com\n\t\n$316.00\n\t\nOpen menu\n\n\n\t\nSuccess\n\t\nabe45@gmail.com\n\t\n$242.00\n\t\nOpen menu\n\n\n\t\nProcessing"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Date Picker",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "October 2026\nMon\nTue\nWed\nThu\nFri\nSat\nSun\n28\n29\n30\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n1"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Delta Bar",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "DeltaBar with default increase behavior\n\nDeltaBar with increase seen as negative"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Dialog",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Edit Profile",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Edit Profile\nEdit profile\n\nMake changes to your profile here. Click save when you're done.\n\nName\nUsername\nSave changes\nClose"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Drawer",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open Drawer",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open Drawer\nMove Goal\n\nSet your daily activity goal.\n\nDecrease\n250\nCALORIES/DAY\nIncrease\nSubmit\nCancel"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Dropdown Menu",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Git Settings",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Git Settings\n\nShow Git Log: no\n\nShow History: no\n\nSelected Branch: develop\n\nCommit\n⌘+K\nPush\n⇧+⌘+K\nUpdate Project\n⌘+T\nGitHub\nShow Git Log\nShow History\n"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Flex",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Tickets sold\n\n9,876\n\nAverage Selling Price\n\n$ 175.20"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Grid",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Title\nKPI 1\nTitle\nKPI 2\nTitle\nKPI 3\nTitle\nKPI 4\nTitle\nKPI 5"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Hover Card",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "hover content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "@solidjs\n@solidjs\n\nSimple and performant reactivity for building user interfaces.\n\nJoined April 2018"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Label",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "checkbox (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Accept terms and conditions\n\nYou agree to our Terms of Service and Privacy Policy."
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Menubar",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "File",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "File\nEdit\nView\nProfiles\nNew Tab\n⌘T\nNew Window\n⌘N\nNew Incognito Window\nShare\nPrint...\n⌘P"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Navigation Menu",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Getting started",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Getting started\nOverview\nGitHub\nSolidUI\nBeautifully designed components. Built with Kobalte & corvu. Styled with Tailwind CSS.\nIntroduction\nRe-usable "
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Number Field",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Hmm, I prefer 40."
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/OTP Field",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1288,
+        "width": 1264,
+        "visibleText": "1"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Pagination",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "1",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Previous\n1\n2\n3\n4\n5\nMore pages\n10\nNext"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Popover",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "trigger me",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "trigger me\nA UI toolkit for building accessible web apps and design systems with SolidJS."
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Progress",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Processing...\n3 of 10 tasks completed"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Progress Circle",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Without children\n\n$340/$450 (75%)\n\nSpend management control\n\nProgress value as children\n\n75%\n\n$340/$450 (75%)\n\nSpend management control\n\nAvatar as chi"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Radio Group",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "radio (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Apple\nOrange\nWatermelon"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Resizable",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "One\nTwo\nThree"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Select",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Select a fruit…",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Select a fruit…\n\nYour favorite fruit is:\n\nApple\nBanana\nBlueberry\nGrapes\nPineapple"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Separator",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Radix Primitives\n\nAn open-source UI component library.\n\nBlog\nDocs\nSource"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Sheet",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "top",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "top\nright\nbottom\nleft\nEdit profile\n\nMake changes to your profile here. Click save when you're done.\n\nName\nUsername\nSave changes\nClose"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Sidebar",
+      "theme": "light",
+      "errors": [
+        "Failed to set the 'cookie' property on 'Document': The document is sandboxed and lacks the 'allow-same-origin' flag."
+      ],
+      "failures": [],
+      "focused": true,
+      "clicked": "Toggle Sidebar",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Failed to set the 'cookie' property on 'Document': The document is sandboxed and lacks the 'allow-same-origin' flag.\n\nApplication\nHome\nInbox\nCalendar\n"
+      },
+      "expectedError": "The opaque sandbox blocks the original preference cookie write.",
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Skeleton",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Slider",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "slider (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Money\n$21 - $500"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Sonner",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Show Toast",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Show Toast\nEvent has been created\nSunday, December 03, 2023 at 9:00 AM\nUndo"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Switch",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "switch (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Airplane Mode"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Table",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "A list of your recent invoices.\nInvoice\tStatus\tMethod\tAmount\nINV001\tPaid\tCredit Card\t$250.00\nINV002\tPending\tPayPal\t$150.00\nINV003\tUnpaid\tBank Transfer"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Tabs",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Account",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Account\nPassword\nAccount\n\nMake changes to your account here. Click save when you're done.\n\nName\nUsername\nSave changes"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Text Field",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Email"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Timeline",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Event #1\n\nThis is the first event of the timeline.\n\nEvent #2\n\nThis is the second event of the timeline.\n\nEvent #3\n\nThis is the third event of the time"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Toast",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Add Event",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Add Event\nDelete Event\nSuccess\nWarning\nError\nEvent has been created\nMonday, January 3rd at 6:00pm"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Toggle",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Toggle Group",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Tooltip",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "hover content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Trigger\n\nTooltip content"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Accordion",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Is it accessible?",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Is it accessible?\nYes. It adheres to the WAI-ARIA design pattern.\nIs it styled?\nIs it animated?"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Alert",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Heads up!\nYou can add components to your app using the cli."
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Alert Dialog",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Show Dialog",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Show Dialog\nAlert Dialog\n\nAn Alert Dialog enables assistive technologies and browsers to distinguish alert dialogs from other dialogs so they have the"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Aspect Ratio",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "loadedImages": [
+        {
+          "sha256": "bfb9ef7cdf20b0e3d06e65d062d1a79daa0d92714094b6343b9e06ea8f5ed837",
+          "width": 1600,
+          "height": 1067
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Avatar",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Badge",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Badge\nSecondary\nOutline\nError\nRound"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Badge Delta",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "BadgeDelta with pre-defined status icons\n\ntext\ntext\ntext\ntext\ntext\n\nBadgeDelta without text"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Bar List",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Website Analytics\n\nSource\nViews\n\nTwitter\n456\nGoogle\n351\nGitHub\n271\nReddit\n191\nYoutube\n91"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Breadcrumb",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Home\n/\nMore\n/\nComponents\n/\nBreadcrumbs"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Button",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Primary",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Primary\nSecondary\nDestructive\nOutline\nGhost\nLink"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Callout",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Default\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora cupiditate sapiente officiis ullam, nulla nam sunt? Ipsa facilis ut aspernat"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Card",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Mark all as read",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Notifications\n\nYou have 3 unread messages.\n\nPush Notifications\n\nSend notifications to device.\n\nYour call has been confirmed.\n\n1 hour ago\n\nYou have a n"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Carousel",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Next slide",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "1\n2\n3\n4\n5\nPrevious slide\nNext slide"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Charts",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Newsletter revenue over time (USD)"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Checkbox",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "checkbox (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Accept terms and conditions\n\nYou agree to our Terms of Service and Privacy Policy."
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Collapsible",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "What is Kobalte ?",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "What is Kobalte ?\nKobalte is a UI toolkit for building accessible web apps and design systems with SolidJS. It provides a set of low-level UI componen"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Combobox",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Fruits\nApple\nBanana\nBlueberry\nGrapes\nPineapple\nMeat\nBeef\nChicken\nLamb\nPork"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Command",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "No results found."
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Context Menu",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "context menu (right click)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Right click here.\nCommit\n⌘+K\nPush\n⇧+⌘+K\nUpdate Project\n⌘+T\nGitHub\nShow Git Log\nShow History\nBranches\nmain\ndevelop"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Data Table",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Columns",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Columns\n\tStatus\tEmail\n\t\nAmount\n\t\n\n\t\nSuccess\n\t\nken99@yahoo.com\n\t\n$316.00\n\t\nOpen menu\n\n\n\t\nSuccess\n\t\nabe45@gmail.com\n\t\n$242.00\n\t\nOpen menu\n\n\n\t\nProcessing"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Date Picker",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "October 2026\nMon\nTue\nWed\nThu\nFri\nSat\nSun\n28\n29\n30\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n1"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Delta Bar",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "DeltaBar with default increase behavior\n\nDeltaBar with increase seen as negative"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Dialog",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Edit Profile",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Edit Profile\nEdit profile\n\nMake changes to your profile here. Click save when you're done.\n\nName\nUsername\nSave changes\nClose"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Drawer",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open Drawer",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open Drawer\nMove Goal\n\nSet your daily activity goal.\n\nDecrease\n250\nCALORIES/DAY\nIncrease\nSubmit\nCancel"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Dropdown Menu",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Git Settings",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Git Settings\n\nShow Git Log: no\n\nShow History: no\n\nSelected Branch: develop\n\nCommit\n⌘+K\nPush\n⇧+⌘+K\nUpdate Project\n⌘+T\nGitHub\nShow Git Log\nShow History\n"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Flex",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Tickets sold\n\n9,876\n\nAverage Selling Price\n\n$ 175.20"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Grid",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Title\nKPI 1\nTitle\nKPI 2\nTitle\nKPI 3\nTitle\nKPI 4\nTitle\nKPI 5"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Hover Card",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "hover content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "@solidjs\n@solidjs\n\nSimple and performant reactivity for building user interfaces.\n\nJoined April 2018"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Label",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "checkbox (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Accept terms and conditions\n\nYou agree to our Terms of Service and Privacy Policy."
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Menubar",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "File",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "File\nEdit\nView\nProfiles\nNew Tab\n⌘T\nNew Window\n⌘N\nNew Incognito Window\nShare\nPrint...\n⌘P"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Navigation Menu",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Getting started",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Getting started\nOverview\nGitHub\nSolidUI\nBeautifully designed components. Built with Kobalte & corvu. Styled with Tailwind CSS.\nIntroduction\nRe-usable "
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Number Field",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Hmm, I prefer 40."
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/OTP Field",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1288,
+        "width": 1264,
+        "visibleText": "1"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Pagination",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "1",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Previous\n1\n2\n3\n4\n5\nMore pages\n10\nNext"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Popover",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "trigger me",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "trigger me\nA UI toolkit for building accessible web apps and design systems with SolidJS."
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Progress",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Processing...\n3 of 10 tasks completed"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Progress Circle",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Without children\n\n$340/$450 (75%)\n\nSpend management control\n\nProgress value as children\n\n75%\n\n$340/$450 (75%)\n\nSpend management control\n\nAvatar as chi"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Radio Group",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "radio (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Apple\nOrange\nWatermelon"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Resizable",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "One\nTwo\nThree"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Select",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Select a fruit…",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Select a fruit…\n\nYour favorite fruit is:\n\nApple\nBanana\nBlueberry\nGrapes\nPineapple"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Separator",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Radix Primitives\n\nAn open-source UI component library.\n\nBlog\nDocs\nSource"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Sheet",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "top",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "top\nright\nbottom\nleft\nEdit profile\n\nMake changes to your profile here. Click save when you're done.\n\nName\nUsername\nSave changes\nClose"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Sidebar",
+      "theme": "dark",
+      "errors": [
+        "Failed to set the 'cookie' property on 'Document': The document is sandboxed and lacks the 'allow-same-origin' flag."
+      ],
+      "failures": [],
+      "focused": true,
+      "clicked": "Toggle Sidebar",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Failed to set the 'cookie' property on 'Document': The document is sandboxed and lacks the 'allow-same-origin' flag.\n\nApplication\nHome\nInbox\nCalendar\n"
+      },
+      "expectedError": "The opaque sandbox blocks the original preference cookie write.",
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Skeleton",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Slider",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "slider (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Money\n$21 - $500"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Sonner",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Show Toast",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Show Toast\nEvent has been created\nSunday, December 03, 2023 at 9:00 AM\nUndo"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Switch",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "switch (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Airplane Mode"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Table",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "A list of your recent invoices.\nInvoice\tStatus\tMethod\tAmount\nINV001\tPaid\tCredit Card\t$250.00\nINV002\tPending\tPayPal\t$150.00\nINV003\tUnpaid\tBank Transfer"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Tabs",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Account",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Account\nPassword\nAccount\n\nMake changes to your account here. Click save when you're done.\n\nName\nUsername\nSave changes"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Text Field",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Email"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Timeline",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Event #1\n\nThis is the first event of the timeline.\n\nEvent #2\n\nThis is the second event of the timeline.\n\nEvent #3\n\nThis is the third event of the time"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Toast",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Add Event",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Add Event\nDelete Event\nSuccess\nWarning\nError\nEvent has been created\nMonday, January 3rd at 6:00pm"
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Toggle",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Toggle Group",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "solid-ui/Tooltip",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "hover content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Trigger\n\nTooltip content"
+      },
+      "pass": true
+    }
+  ]
+}

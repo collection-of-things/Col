@@ -60,6 +60,332 @@
           "integrity": "6c2eefd1d72804820496be8cd0bf32786a0181c6534b203e07544ed4bb2b6c18"
         }
       ]
+    },
+    {
+      "componentId": "rocksolid/Accordion",
+      "title": "Accordion: official example and component source",
+      "url": "https://rocksolidjs.com/components/accordion/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Accordion/Accordion.tsx",
+          "integrity": "c2f9351e89cbb35d340a15c2b5331e8b3d15a22037d6ad9966126b8307a1f877"
+        }
+      ],
+      "content": "A vertically stacked set of interactive sections that can be expanded and collapsed.\n\nOriginal documentation example:\n```tsx\nimport Accordion from \"rocksolidjs/Accordion\";\nimport AccordionSummary from \"rocksolidjs/AccordionSummary\";\nimport AccordionDetails from \"rocksolidjs/AccordionDetails\";\n\nexport default function Example() {\n  return (\n    <div class=\"max-w-md\">\n      <Accordion>\n        <AccordionSummary>\n          What is gravity?\n        </AccordionSummary>\n        <AccordionDetails>\n          Gravity is a force that attracts objects with mass\n          toward one another. On Earth, it gives objects weight\n          and causes them to fall toward the ground.\n        </AccordionDetails>\n      </Accordion>\n      <Accordion>\n        <AccordionSummary>\n          What is photosynthesis?\n        </AccordionSummary>\n        <AccordionDetails>\n          Photosynthesis is the process by which plants use\n          sunlight, water, and carbon dioxide to produce\n          energy in the form of glucose.\n        </AccordionDetails>\n      </Accordion>\n      <Accordion>\n        <AccordionSummary>\n          What is an atom?\n        </AccordionSummary>\n        <AccordionDetails>\n          An atom is the smallest unit of an element that\n          retains the chemical properties of that element.\n          It consists of a nucleus surrounded by electrons.\n        </AccordionDetails>\n      </Accordion>\n    </div>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Alert",
+      "title": "Alert: official example and component source",
+      "url": "https://rocksolidjs.com/components/alert/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Alert/Alert.tsx",
+          "integrity": "e85eb686459c5c30d351f07a9ce75919272e229c9cfb822a20938e31bdfe90f5"
+        }
+      ],
+      "content": "Alert component displays important information, status updates, warnings, or errors to users.\n\nOriginal documentation example:\n```tsx\nimport Alert from \"rocksolidjs/Alert\";\n\nexport default function Example() {\n  return (\n    <Alert color=\"success\">\n      Your changes have been saved successfully.\n    </Alert>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Avatar",
+      "title": "Avatar: official example and component source",
+      "url": "https://rocksolidjs.com/components/avatar/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Avatar/Avatar.tsx",
+          "integrity": "8aa83c36a279218ea9a9951edf288e5b74e59909cc4af463f55135844bfebc09"
+        }
+      ],
+      "content": "Avatar component displays a user's profile image or entity with an image.\n\nOriginal documentation example:\n```tsx\nimport Avatar from \"rocksolidjs/Avatar\";\n\nexport default function Example() {\n  return (\n    <div class=\"flex gap-4\">\n      <Avatar>John Doe</Avatar>\n      <Avatar>D</Avatar>\n      <Avatar>MJ</Avatar>\n    </div>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Badge",
+      "title": "Badge: official example and component source",
+      "url": "https://rocksolidjs.com/components/badge/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Badge/Badge.tsx",
+          "integrity": "a3b5befccb0e87e378a4f0ad4f07dbccad8e8bb876275ad2febcb726703811a3"
+        }
+      ],
+      "content": "Badge component displays a small label or indicator attached to another element.\n\nOriginal documentation example:\n```tsx\nimport Badge from \"rocksolidjs/Badge\";\nimport IconButton from \"rocksolidjs/IconButton\";\n\nexport default function Example() {\n  return (\n    <Badge badgeContent={50}>\n      <IconButton>\n        <NotificationIcon />\n      </IconButton>\n    </Badge>\n  );\n};\n\nconst NotificationIcon = () => (\n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1em\" height=\"1em\" viewBox=\"0 0 24 24\">\n    <path d=\"M0 0h24v24H0z\" fill=\"none\" />\n    <g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\">\n      <path d=\"M12.721 5.003L11.255 5c-3.344-.008-6.247 2.709-6.27 6v3.79c0 .79-.1 1.561-.531 2.218l-.287.438C3.73 18.11 4.2 19 4.985 19h14.03c.785 0 1.254-.89.818-1.554l-.287-.438c-.43-.657-.531-1.429-.531-2.219v-3.788c-.04-3.292-2.95-5.99-6.294-5.998M15 19a3 3 0 1 1-6 0\" />\n      <path d=\"M12 2a2 2 0 0 1 2 2v1h-4V4a2 2 0 0 1 2-2\" />\n    </g>\n  </svg>\n);\n```"
+    },
+    {
+      "componentId": "rocksolid/Breadcrumbs",
+      "title": "Breadcrumbs: official example and component source",
+      "url": "https://rocksolidjs.com/components/breadcrumbs/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Breadcrumbs/Breadcrumbs.tsx",
+          "integrity": "ae48669a624a5dd90ae7892b5315a57c89871d4ea4d04a41c80a0138c7b8625f"
+        }
+      ],
+      "content": "Breadcrumbs displays a navigation hierarchy that helps users understand their current location within an application.\n\nOriginal documentation example:\n```tsx\nimport Breadcrumbs from \"rocksolidjs/Breadcrumbs\";\nimport Link from \"rocksolidjs/Link\";\nimport Typography from \"rocksolidjs/Typography\";\n\nexport default function Example() {\n  return (\n    <Breadcrumbs aria-label=\"Breadcrumb\">\n      <Link color=\"inherit\" href=\"/\">Home</Link>\n      <Link color=\"inherit\" href=\"/products\">Products</Link>\n      <Typography as=\"span\" color=\"textPrimary\">Details</Typography>\n    </Breadcrumbs>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/ButtonGroup",
+      "title": "ButtonGroup: official example and component source",
+      "url": "https://rocksolidjs.com/components/button-group/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/ButtonGroup/ButtonGroup.tsx",
+          "integrity": "4a57f9f964cb133ab3142377b1da72bd20faba9f7e24d5d23cf71db1b83ee4bb"
+        }
+      ],
+      "content": "Groups related buttons together into a single, connected control.\n\nOriginal documentation example:\n```tsx\nimport Button from \"rocksolidjs/Button\";\nimport ButtonGroup from \"rocksolidjs/ButtonGroup\";\n \nexport default function Example() {\n  return (\n    <ButtonGroup>\n      <Button>First</Button>\n      <Button>Second</Button>\n      <Button>Third</Button>\n    </ButtonGroup>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Card",
+      "title": "Card: official example and component source",
+      "url": "https://rocksolidjs.com/components/card/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Card/Card.tsx",
+          "integrity": "35f53475981b33e5d66b7a85638c349369d62a89159d1123bb6dec24ddc59b29"
+        }
+      ],
+      "content": "Card component displays related content and actions in a flexible, composable container.\n\nOriginal documentation example:\n```tsx\nimport Card from \"rocksolidjs/Card\";\nimport CardHeader from \"rocksolidjs/CardHeader\";\nimport CardTitle from \"rocksolidjs/CardTitle\";\nimport CardDescription from \"rocksolidjs/CardDescription\";\nimport CardContent from \"rocksolidjs/CardContent\";\nimport CardFooter from \"rocksolidjs/CardFooter\";\nimport Button from \"rocksolidjs/Button\";\n\nexport default function Example() {\n  return (\n    <Card class=\"max-w-sm\">\n      <CardHeader>\n        <CardTitle>Project overview</CardTitle>\n        <CardDescription>\n          Track your project progress.\n        </CardDescription>\n      </CardHeader>\n      <CardContent>\n        Your project is currently on track and all milestones are\n        progressing as expected.\n      </CardContent>\n      <CardFooter>\n        <Button>View project</Button>\n      </CardFooter>\n    </Card>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Checkbox",
+      "title": "Checkbox: official example and component source",
+      "url": "https://rocksolidjs.com/components/checkbox/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Checkbox/Checkbox.tsx",
+          "integrity": "fc131f5ba090b4ae2ebdbfce72414643218d5ee2087440e57a80eb564ac1be03"
+        }
+      ],
+      "content": "Checkbox component allows users to select or deselect an option.\n\nOriginal documentation example:\n```tsx\nimport Checkbox from \"rocksolidjs/Checkbox\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    <div class=\"flex items-center gap-1\">\n      <Checkbox id=\"notifications\" />\n      <Label for=\"notifications\">\n        Enable notifications\n      </Label>\n    </div>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Chip",
+      "title": "Chip: official example and component source",
+      "url": "https://rocksolidjs.com/components/chip/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Chip/Chip.tsx",
+          "integrity": "867173fe022fdffbf6df2181fc1a79233b4be1116bbfdbfa298204994de68536"
+        }
+      ],
+      "content": "Chip component displays a compact label with optional avatars, icons, delete actions, and disabled state.\n\nOriginal documentation example:\n```tsx\nimport Chip from \"rocksolidjs/Chip\";\n\nexport default function Example() {\n  const handleDelete = (event: MouseEvent) => {\n    console.log(\"Chip deleted\", event);\n  };\n  return (\n    <div class=\"flex gap-4\">\n      <Chip\n        label=\"Chip 1\"\n        variant=\"solid\"\n        onDelete={handleDelete}\n        onClick={(e) => {}}\n      />\n      <Chip\n        label=\"Chip 2\"\n        onDelete={handleDelete}\n      />\n    </div>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Divider",
+      "title": "Divider: official example and component source",
+      "url": "https://rocksolidjs.com/components/divider/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Divider/Divider.tsx",
+          "integrity": "35e0c3473b1ee390b2b33023b6a722d0c7343e333e8027e25602f43820a75021"
+        }
+      ],
+      "content": "Divider component separates content into distinct sections with a horizontal or vertical line.\n\nOriginal documentation example:\n```tsx\nimport Button from \"rocksolidjs/Button\";\nimport Card from \"rocksolidjs/Card\";\nimport CardContent from \"rocksolidjs/CardContent\";\nimport CardFooter from \"rocksolidjs/CardFooter\";\nimport Divider from \"rocksolidjs/Divider\";\nimport Typography from \"rocksolidjs/Typography\";\n\nexport default function Example() {\n  return (\n    <Card class=\"w-full max-w-sm\" variant=\"outlined\">\n      <CardContent>\n        <Typography variant=\"h5\">Upgrade your plan</Typography>\n        <Typography variant=\"body2\" class=\"text-muted-foreground mt-1\">\n          Get more storage and advanced features.\n        </Typography>\n      </CardContent>\n\n      <Divider aria-hidden />\n\n      <CardFooter class=\"justify-end\">\n        <Button variant=\"ghost\">Not now</Button>\n        <Button color=\"success\">Upgrade</Button>\n      </CardFooter>\n    </Card>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/IconButton",
+      "title": "IconButton: official example and component source",
+      "url": "https://rocksolidjs.com/components/icon-button/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/IconButton/IconButton.tsx",
+          "integrity": "58ace9a0fb48b9e14ccbf784f83cbda3842a07d2b341f63715ecd8cb659fa265"
+        },
+        {
+          "url": "https://rocksolidjs.com/components/icon-button/",
+          "integrity": "45426cfe5c4eaf835a7048dfec69e60286c840805d2994f7b0be1373e04a5af7"
+        }
+      ],
+      "content": "A compact button designed for actions represented by an icon.\n\nOriginal documentation example:\n```tsx\nimport IconButton from \"rocksolidjs/IconButton\";\nimport DownloadIcon from \"@/icons/download\";\n\nexport default function Example() {\n  return (\n    <IconButton aria-label=\"Download\">\n      <DownloadIcon />\n    </IconButton>\n  );\n}\n```\nThe docs-local DownloadIcon is reproduced from the exact live example SVG captured from the official page."
+    },
+    {
+      "componentId": "rocksolid/Input",
+      "title": "Input: official example and component source",
+      "url": "https://rocksolidjs.com/components/input/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Input/Input.tsx",
+          "integrity": "9660c8c81a252289e2818d97ee9769a846e23bb50b704d7a83f4da9315c5d5e4"
+        }
+      ],
+      "content": "A text input component for collecting and editing user-entered values.\n\nOriginal documentation example:\n```tsx\nimport Input from \"rocksolidjs/Input\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    <div class=\"flex flex-col gap-1\">\n      <Label for=\"name\">Name</Label>\n      <Input\n        id=\"name\"\n        placeholder=\"Enter your name\"\n      />\n    </div>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Label",
+      "title": "Label: official example and component source",
+      "url": "https://rocksolidjs.com/components/label/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Label/Label.tsx",
+          "integrity": "f4adb1799b0f5de8ceb986edae0dabc1385a93ba9bac1494daad35e4e62a7e5e"
+        }
+      ],
+      "content": "A text label that identifies and describes a form control.\n\nOriginal documentation example:\n```tsx\nimport Input from \"rocksolidjs/Input\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    <div class=\"flex flex-col gap-1\">\n      <Label for=\"name\">Name</Label>\n      <Input\n        id=\"name\"\n        placeholder=\"Enter your name\"\n      />\n    </div>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Link",
+      "title": "Link: official example and component source",
+      "url": "https://rocksolidjs.com/components/link/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Link/Link.tsx",
+          "integrity": "ca1a36713f491bdf8769b404a43f109319a285ac98968be400d6c9c3b0559a38"
+        }
+      ],
+      "content": "Link component displays a navigational link that can be styled with semantic colors, underlines, and truncation.\n\nOriginal documentation example:\n```tsx\nimport Link from \"rocksolidjs/Link\";\n\nexport default function Example() {\n  return <Link href=\"/introduction/\">Introduction</Link>;\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Progress",
+      "title": "Progress: official example and component source",
+      "url": "https://rocksolidjs.com/components/progress/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Progress/Progress.tsx",
+          "integrity": "36697a2290c8738d45341246b271545f9d6341c0f57fc265666847b1d4428481"
+        }
+      ],
+      "content": "A visual indicator that shows the completion or progress of a task.\n\nOriginal documentation example:\n```tsx\nimport Progress from \"rocksolidjs/Progress\";\n\nexport default function Example() {\n  return (\n    <div class=\"w-full max-w-md\">\n      <Progress value={40} />\n    </div>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Radio",
+      "title": "Radio: official example and component source",
+      "url": "https://rocksolidjs.com/components/radio/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Radio/Radio.tsx",
+          "integrity": "7cb8da2dccc6c7e1d39a4562e82f941d9364c1aedf0144e489ba89d001d2d620"
+        }
+      ],
+      "content": "A selectable control for choosing one option from a set of mutually exclusive choices.\n\nOriginal documentation example:\n```tsx\nimport Radio from \"rocksolidjs/Radio\";\nimport Label from \"rocksolidjs/Label\";\n\nexport default function Example() {\n  return (\n    <div class=\"flex items-center gap-1\">\n      <Radio\n        id=\"notifications\"\n        value=\"notifications\"\n      />\n      <Label for=\"notifications\">\n        Enable notifications\n      </Label>\n    </div>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Select",
+      "title": "Select: official example and component source",
+      "url": "https://rocksolidjs.com/components/select/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Select/Select.tsx",
+          "integrity": "df65a8c2600b8488e156e85c83aec4b82db9c950a69dfadf25bfc221bbec0db3"
+        }
+      ],
+      "content": "Select component allows users to choose one option from a list of available values.\n\nOriginal documentation example:\n```tsx\nimport Label from \"rocksolidjs/Label\";\nimport Select from \"rocksolidjs/Select\";\n\nexport default function Example() {\n  return (\n    <div class=\"flex flex-col gap-1\">\n      <Label for=\"role\">Role</Label>\n      <Select\n        id=\"role\"\n        value=\"admin\"\n        options={[\n          { label: \"Administrator\", value: \"admin\" },\n          { label: \"Editor\", value: \"editor\" },\n          { label: \"Viewer\", value: \"viewer\" },\n        ]}\n      />\n    </div>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Skeleton",
+      "title": "Skeleton: official example and component source",
+      "url": "https://rocksolidjs.com/components/skeleton/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Skeleton/Skeleton.tsx",
+          "integrity": "265d65ae8097867c9059d997b773edc1d0cdf7e097761846c66b888f793b24ba"
+        }
+      ],
+      "content": "Skeleton component displays a placeholder shape while content is loading.\n\nOriginal documentation example:\n```tsx\nimport Skeleton from \"rocksolidjs/Skeleton\";\n\nexport default function Example() {\n  return (\n    <div class=\"flex items-center gap-3\">\n      <Skeleton variant=\"circle\" class=\"size-10 shrink-0\" />\n      <div class=\"flex flex-col gap-2\">\n        <Skeleton class=\"h-4 w-32\" />\n        <Skeleton class=\"h-3 w-48\" />\n      </div>\n    </div>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Spinner",
+      "title": "Spinner: official example and component source",
+      "url": "https://rocksolidjs.com/components/spinner/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Spinner/Spinner.tsx",
+          "integrity": "bad9f6c299a6c09d142bda4a94856f5014f0ec364dbd632fa7004e5fc85af1c1"
+        }
+      ],
+      "content": "Spinner component displays a loading indicator while content or an action is in progress.\n\nOriginal documentation example:\n```tsx\nimport Spinner from \"rocksolidjs/Spinner\";\n\nexport default function Example() {\n  return <Spinner />;\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Switch",
+      "title": "Switch: official example and component source",
+      "url": "https://rocksolidjs.com/components/switch/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Switch/Switch.tsx",
+          "integrity": "6cf7f87790fa6983be9cdea21770c5fef2f3f53a8b69120669e88ef8324bb7d2"
+        }
+      ],
+      "content": "A control that allows users to toggle an option between on and off states.\n\nOriginal documentation example:\n```tsx\nimport Label from \"rocksolidjs/Label\";\nimport Switch from \"rocksolidjs/Switch\";\n\nexport default function Example() {\n  return (\n    <div class=\"flex items-center gap-2\">\n      <Switch id=\"notifications\" />\n      <Label for=\"notifications\">Enable notifications</Label>\n    </div>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Table",
+      "title": "Table: official example and component source",
+      "url": "https://rocksolidjs.com/components/table/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Table/Table.tsx",
+          "integrity": "e1e48645abb8292dd6d78ac0e69698bd0fd789bb178f0b7723599dae096c592e"
+        }
+      ],
+      "content": "Table component displays structured data in rows and columns.\n\nOriginal documentation example:\n```tsx\nimport Table from \"rocksolidjs/Table\";\nimport TableBody from \"rocksolidjs/TableBody\";\nimport TableCell from \"rocksolidjs/TableCell\";\nimport TableHead from \"rocksolidjs/TableHead\";\nimport TableRow from \"rocksolidjs/TableRow\";\n\nconst users = [\n  {\n    name: \"Olivia Martin\",\n    email: \"olivia@example.com\",\n    role: \"Admin\",\n    status: \"Active\",\n    joined: \"Jan 12, 2025\",\n  },\n  {\n    name: \"Jackson Lee\",\n    email: \"jackson@example.com\",\n    role: \"Member\",\n    status: \"Active\",\n    joined: \"Feb 08, 2025\",\n  },\n  {\n    name: \"Sophia Brown\",\n    email: \"sophia@example.com\",\n    role: \"Member\",\n    status: \"Inactive\",\n    joined: \"Mar 21, 2025\",\n  },\n];\n\nexport default function Example() {\n  return (\n    <div class=\"w-full overflow-x-auto\">\n      <Table class=\"min-w-200\">\n        <TableHead>\n          <TableRow>\n            <TableCell>Name</TableCell>\n            <TableCell>Email</TableCell>\n            <TableCell>Role</TableCell>\n            <TableCell>Status</TableCell>\n            <TableCell>Joined</TableCell>\n          </TableRow>\n        </TableHead>\n        <TableBody>\n          {users.map((user) => (\n            <TableRow>\n              <TableCell>{user.name}</TableCell>\n              <TableCell>{user.email}</TableCell>\n              <TableCell>{user.role}</TableCell>\n              <TableCell>{user.status}</TableCell>\n              <TableCell>{user.joined}</TableCell>\n            </TableRow>\n          ))}\n        </TableBody>\n      </Table>\n    </div>\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Textarea",
+      "title": "Textarea: official example and component source",
+      "url": "https://rocksolidjs.com/components/textarea/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Textarea/Textarea.tsx",
+          "integrity": "983d3fb65584d9bd5570ed99f2bebee5fc432e2139da08bf61607f45e7f4a667"
+        }
+      ],
+      "content": "Textarea component enables users to enter and edit multi-line text.\n\nOriginal documentation example:\n```tsx\nimport Textarea from \"rocksolidjs/Textarea\";\n\nexport default function Example() {\n  return (\n    <Textarea\n      placeholder=\"Tell us what you think...\"\n      aria-label=\"Feedback\"\n    />\n  );\n}\n```"
+    },
+    {
+      "componentId": "rocksolid/Typography",
+      "title": "Typography: official example and component source",
+      "url": "https://rocksolidjs.com/components/typography/",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "908ec4bf1534b36bf34bb9028ed8639cf773c205",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/darshan-rajadhyaksha/rocksolid/908ec4bf1534b36bf34bb9028ed8639cf773c205/src/components/Typography/Typography.tsx",
+          "integrity": "c8151ef5e83164eda8f992eeb76bcd89f61833a6e3b38ff2fb77b7528be52041"
+        }
+      ],
+      "content": "Typography component displays text with consistent styles, colors, alignment, and semantic elements.\n\nOriginal documentation example:\n```tsx\nimport Typography from \"rocksolidjs/Typography\";\n\nexport default function Example() {\n  return (\n    <div class=\"flex flex-col gap-1\">\n      <Typography variant=\"h4\">Welcome back</Typography>\n      <Typography color=\"textSecondary\">\n        Here’s a quick overview of your account.\n      </Typography>\n    </div>\n  );\n}\n```"
     }
   ]
 }

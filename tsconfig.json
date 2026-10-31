@@ -41,6 +41,7 @@
     "node_modules",
     "data/solid-libraries/*/node_modules",
     "data/solid-libraries/*/upstream",
-    "data/solid-libraries/*/examples"
+    "data/solid-libraries/*/examples",
+    "data/solid-libraries/*/demos"
   ]
 }

@@ -8,6 +8,7 @@
     "@fontsource-variable/inter": "5.2.8",
     "@kobalte/core": "0.13.14",
     "babel-preset-solid": "1.9.16",
+    "minisearch": "7.1.0",
     "solid-js": "1.9.17"
   }
 }

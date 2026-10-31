@@ -13,5 +13,13 @@
   "@hope-ui/primitives/utils": "upstream/packages/primitives/src/utils/index.ts",
   "@hope-ui/i18n": "upstream/packages/i18n/src/index.ts",
   "@hope-ui/theming": "upstream/packages/theming/src/index.ts",
-  "@hope-ui/presets/hope": "upstream/packages/presets/src/hope/index.ts"
+  "@hope-ui/presets/hope": "upstream/packages/presets/src/hope/index.ts",
+  "@hope-ui/components/alert": "upstream/packages/components/src/alert/index.ts",
+  "@hope-ui/components/badge": "upstream/packages/components/src/badge/index.ts",
+  "@hope-ui/components/calendar": "upstream/packages/components/src/calendar/index.ts",
+  "@hope-ui/components/combobox": "upstream/packages/components/src/combobox/index.ts",
+  "@hope-ui/components/listbox": "upstream/packages/components/src/listbox/index.ts",
+  "@hope-ui/components/popover": "upstream/packages/components/src/popover/index.ts",
+  "@hope-ui/primitives/calendar": "upstream/packages/primitives/src/calendar/index.ts",
+  "@hope-ui/primitives/popover": "upstream/packages/primitives/src/popover/index.ts"
 }

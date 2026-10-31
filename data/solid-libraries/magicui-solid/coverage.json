@@ -1,546 +1,1089 @@
 {
-  "checkedAt": "2026-10-29T19:35:27Z",
+  "checkedAt": "2026-10-30T01:04:54.305Z",
   "source": "https://axuj.github.io/magicui-solid/docs/components/ripple-button/",
   "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
   "navigationIntegrity": "7f7aab22e08cceb7b83e00ca48ac1b70be8a67a682969fc919c087532005cae2",
   "selectedComponents": [
+    "Android",
+    "Animated Beam",
+    "Animated Circular Progress Bar",
+    "Animated Gradient Text",
+    "Animated Grid Pattern",
+    "Animated List",
+    "Animated Shiny Text",
+    "Theme Toggler",
+    "Aurora Text",
+    "Avatar Circles",
+    "Backlight",
+    "Bento Grid",
+    "Blur Fade",
+    "Border Beam",
+    "Code Comparison",
+    "Comic Text",
+    "Confetti",
+    "Cool Mode",
+    "Dia Text Reveal",
+    "Dock",
+    "Dot Pattern",
+    "Dotted Map",
+    "File Tree",
+    "Flickering Grid",
+    "Glare Hover",
+    "Globe",
+    "Glyph Matrix",
+    "Grid Pattern",
+    "Hero Video Dialog",
+    "Hexagon Pattern",
+    "Text Highlighter",
+    "Hyper Text",
+    "Icon Cloud",
+    "Interactive Grid Pattern",
+    "Interactive Hover Button",
+    "iPhone",
+    "Kinetic Text",
+    "Lens",
+    "Light Rays",
+    "Line Shadow Text",
+    "Magic Card",
     "Marquee",
+    "Meteors",
+    "Morphing Text",
+    "Neon Gradient Card",
+    "Noise Texture",
+    "Number Ticker",
+    "Orbiting Circles",
+    "Particles",
+    "Pixel Image",
+    "Pointer",
+    "Progressive Blur",
+    "Pulsating Button",
+    "Rainbow Button",
+    "Retro Grid",
+    "Ripple",
     "Ripple Button",
-    "Shimmer Button"
+    "Safari",
+    "Scroll Based Velocity",
+    "Scroll Progress",
+    "Shimmer Button",
+    "Shine Border",
+    "Shiny Button",
+    "Smooth Cursor",
+    "Sparkles Text",
+    "Spinning Text",
+    "Striped Pattern",
+    "Terminal",
+    "Text 3D Flip",
+    "Text Animate",
+    "Text Reveal",
+    "Tweet Card",
+    "Typing Animation",
+    "Video Text",
+    "Warp Background",
+    "Word Rotate"
   ],
   "documentationInventory": [
     {
       "name": "Android",
       "url": "https://axuj.github.io/magicui-solid/docs/components/android/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Animated Beam",
       "url": "https://axuj.github.io/magicui-solid/docs/components/animated-beam/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Animated Circular Progress Bar",
       "url": "https://axuj.github.io/magicui-solid/docs/components/animated-circular-progress-bar/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Animated Gradient Text",
       "url": "https://axuj.github.io/magicui-solid/docs/components/animated-gradient-text/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Animated Grid Pattern",
       "url": "https://axuj.github.io/magicui-solid/docs/components/animated-grid-pattern/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Animated List",
       "url": "https://axuj.github.io/magicui-solid/docs/components/animated-list/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Animated Shiny Text",
       "url": "https://axuj.github.io/magicui-solid/docs/components/animated-shiny-text/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Theme Toggler",
       "url": "https://axuj.github.io/magicui-solid/docs/components/animated-theme-toggler/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Uses the original component's documented controlled theme/onThemeChange API with the official demo wrapper. The parent owns in-memory state, so unavailable localStorage persistence is not requested; original styling and view-transition behavior are retained.",
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Aurora Text",
       "url": "https://axuj.github.io/magicui-solid/docs/components/aurora-text/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Avatar Circles",
       "url": "https://axuj.github.io/magicui-solid/docs/components/avatar-circles/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent.",
+        "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled. Original URL remains blocked: https://avatars.githubusercontent.com/u/106103625",
+        "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled. Original URL remains blocked: https://avatars.githubusercontent.com/u/16860528",
+        "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled. Original URL remains blocked: https://avatars.githubusercontent.com/u/20110627",
+        "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled. Original URL remains blocked: https://avatars.githubusercontent.com/u/59228569",
+        "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled. Original URL remains blocked: https://avatars.githubusercontent.com/u/59442788",
+        "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled. Original URL remains blocked: https://avatars.githubusercontent.com/u/89768406"
+      ]
     },
     {
       "name": "Backlight",
       "url": "https://axuj.github.io/magicui-solid/docs/components/backlight/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Bento Grid",
       "url": "https://axuj.github.io/magicui-solid/docs/components/bento-grid/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Blur Fade",
       "url": "https://axuj.github.io/magicui-solid/docs/components/blur-fade/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Uses the official BlurFadeTextDemo shown on the same documentation page, preserving the original blur/fade animation without requesting live stock photographs.",
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Border Beam",
       "url": "https://axuj.github.io/magicui-solid/docs/components/border-beam/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Code Comparison",
       "url": "https://axuj.github.io/magicui-solid/docs/components/code-comparison/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Comic Text",
       "url": "https://axuj.github.io/magicui-solid/docs/components/comic-text/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Confetti",
       "url": "https://axuj.github.io/magicui-solid/docs/components/confetti/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Cool Mode",
       "url": "https://axuj.github.io/magicui-solid/docs/components/cool-mode/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Dia Text Reveal",
       "url": "https://axuj.github.io/magicui-solid/docs/components/dia-text-reveal/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Dock",
       "url": "https://axuj.github.io/magicui-solid/docs/components/dock/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Dot Pattern",
       "url": "https://axuj.github.io/magicui-solid/docs/components/dot-pattern/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Dotted Map",
       "url": "https://axuj.github.io/magicui-solid/docs/components/dotted-map/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "File Tree",
       "url": "https://axuj.github.io/magicui-solid/docs/components/file-tree/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Flickering Grid",
       "url": "https://axuj.github.io/magicui-solid/docs/components/flickering-grid/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Glare Hover",
       "url": "https://axuj.github.io/magicui-solid/docs/components/glare-hover/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Globe",
       "url": "https://axuj.github.io/magicui-solid/docs/components/globe/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Glyph Matrix",
       "url": "https://axuj.github.io/magicui-solid/docs/components/glyph-matrix/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Grid Pattern",
       "url": "https://axuj.github.io/magicui-solid/docs/components/grid-pattern/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Hero Video Dialog",
       "url": "https://axuj.github.io/magicui-solid/docs/components/hero-video-dialog/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent.",
+        "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled. Original URL remains blocked: https://startup-template-sage.vercel.app/hero-dark.png",
+        "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled. Original URL remains blocked: https://startup-template-sage.vercel.app/hero-light.png",
+        "The original dialog opens and closes, but its YouTube embed requires external network access and is blocked in the sandbox: https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
+      ]
     },
     {
       "name": "Hexagon Pattern",
       "url": "https://axuj.github.io/magicui-solid/docs/components/hexagon-pattern/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Text Highlighter",
       "url": "https://axuj.github.io/magicui-solid/docs/components/highlighter/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Hyper Text",
       "url": "https://axuj.github.io/magicui-solid/docs/components/hyper-text/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Icon Cloud",
       "url": "https://axuj.github.io/magicui-solid/docs/components/icon-cloud/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Interactive Grid Pattern",
       "url": "https://axuj.github.io/magicui-solid/docs/components/interactive-grid-pattern/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Interactive Hover Button",
       "url": "https://axuj.github.io/magicui-solid/docs/components/interactive-hover-button/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "iPhone",
       "url": "https://axuj.github.io/magicui-solid/docs/components/iphone/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Kinetic Text",
       "url": "https://axuj.github.io/magicui-solid/docs/components/kinetic-text/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Lens",
       "url": "https://axuj.github.io/magicui-solid/docs/components/lens/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Light Rays",
       "url": "https://axuj.github.io/magicui-solid/docs/components/light-rays/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Line Shadow Text",
       "url": "https://axuj.github.io/magicui-solid/docs/components/line-shadow-text/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Magic Card",
       "url": "https://axuj.github.io/magicui-solid/docs/components/magic-card/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Marquee",
       "url": "https://axuj.github.io/magicui-solid/docs/components/marquee/",
       "preview": "supported",
       "documentation": "source-snapshot",
-      "urlVerification": "http-200"
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Upstream declares MIT in README; its linked LICENSE file is absent at this revision."
+      ]
     },
     {
       "name": "Meteors",
       "url": "https://axuj.github.io/magicui-solid/docs/components/meteors/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Morphing Text",
       "url": "https://axuj.github.io/magicui-solid/docs/components/morphing-text/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Neon Gradient Card",
       "url": "https://axuj.github.io/magicui-solid/docs/components/neon-gradient-card/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Noise Texture",
       "url": "https://axuj.github.io/magicui-solid/docs/components/noise-texture/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Number Ticker",
       "url": "https://axuj.github.io/magicui-solid/docs/components/number-ticker/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Orbiting Circles",
       "url": "https://axuj.github.io/magicui-solid/docs/components/orbiting-circles/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Particles",
       "url": "https://axuj.github.io/magicui-solid/docs/components/particles/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Pixel Image",
       "url": "https://axuj.github.io/magicui-solid/docs/components/pixel-image/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Pointer",
       "url": "https://axuj.github.io/magicui-solid/docs/components/pointer/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Progressive Blur",
       "url": "https://axuj.github.io/magicui-solid/docs/components/progressive-blur/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Pulsating Button",
       "url": "https://axuj.github.io/magicui-solid/docs/components/pulsating-button/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Rainbow Button",
       "url": "https://axuj.github.io/magicui-solid/docs/components/rainbow-button/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Retro Grid",
       "url": "https://axuj.github.io/magicui-solid/docs/components/retro-grid/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Ripple",
       "url": "https://axuj.github.io/magicui-solid/docs/components/ripple/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Ripple Button",
       "url": "https://axuj.github.io/magicui-solid/docs/components/ripple-button/",
       "preview": "supported",
       "documentation": "source-snapshot",
-      "urlVerification": "http-200"
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Upstream declares MIT in README; its linked LICENSE file is absent at this revision."
+      ]
     },
     {
       "name": "Safari",
       "url": "https://axuj.github.io/magicui-solid/docs/components/safari/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Scroll Based Velocity",
       "url": "https://axuj.github.io/magicui-solid/docs/components/scroll-based-velocity/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Scroll Progress",
       "url": "https://axuj.github.io/magicui-solid/docs/components/scroll-progress/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Shimmer Button",
       "url": "https://axuj.github.io/magicui-solid/docs/components/shimmer-button/",
       "preview": "supported",
       "documentation": "source-snapshot",
-      "urlVerification": "http-200"
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Upstream declares MIT in README; its linked LICENSE file is absent at this revision."
+      ]
     },
     {
       "name": "Shine Border",
       "url": "https://axuj.github.io/magicui-solid/docs/components/shine-border/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Shiny Button",
       "url": "https://axuj.github.io/magicui-solid/docs/components/shiny-button/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Smooth Cursor",
       "url": "https://axuj.github.io/magicui-solid/docs/components/smooth-cursor/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Sparkles Text",
       "url": "https://axuj.github.io/magicui-solid/docs/components/sparkles-text/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Spinning Text",
       "url": "https://axuj.github.io/magicui-solid/docs/components/spinning-text/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Striped Pattern",
       "url": "https://axuj.github.io/magicui-solid/docs/components/striped-pattern/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Terminal",
       "url": "https://axuj.github.io/magicui-solid/docs/components/terminal/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Text 3D Flip",
       "url": "https://axuj.github.io/magicui-solid/docs/components/text-3d-flip/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Text Animate",
       "url": "https://axuj.github.io/magicui-solid/docs/components/text-animate/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Text Reveal",
       "url": "https://axuj.github.io/magicui-solid/docs/components/text-reveal/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Tweet Card",
       "url": "https://axuj.github.io/magicui-solid/docs/components/tweet-card/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Sample content, a generated avatar and a licensed video replace the live post and its media. The original MagicTweet export and documentation's centered preview layout are retained; the video reserves its 16:9 dimensions while loading. ClientTweetCard's loading and error states are not reproduced, and links cannot open inside the sandbox.",
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Typing Animation",
       "url": "https://axuj.github.io/magicui-solid/docs/components/typing-animation/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Video Text",
       "url": "https://axuj.github.io/magicui-solid/docs/components/video-text/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent.",
+        "The original video is reused unchanged. CodePen terms rely on the uploader’s warranty of rights; the filmmaker was not independently identified."
+      ]
     },
     {
       "name": "Warp Background",
       "url": "https://axuj.github.io/magicui-solid/docs/components/warp-background/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     },
     {
       "name": "Word Rotate",
       "url": "https://axuj.github.io/magicui-solid/docs/components/word-rotate/",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "3100c2f704620f96dc431dd86f86bbbf9bb05965",
+      "checkedAt": "2026-10-30T01:04:54.305Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."
+      ]
     }
   ],
-  "notes": "Only selected component URLs were fetched and source-verified individually; other entries are taken from the official navigation or its pinned source, not individually HTTP-checked."
+  "notes": "Every listed official component URL was individually HTTP-checked and matched to its pinned component/demo source. Preview status and browser evidence are separate from source coverage.",
+  "summary": "All 76 official component pages were checked individually. 76 authentic previews are emitted; browser-verification.json records both themes and disclosed upstream limitations."
 }

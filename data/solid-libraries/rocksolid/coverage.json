@@ -6,7 +6,30 @@
   "selectedComponents": [
     "Button",
     "Dialog",
-    "Tabs"
+    "Tabs",
+    "Accordion",
+    "Alert",
+    "Avatar",
+    "Badge",
+    "Breadcrumbs",
+    "ButtonGroup",
+    "Card",
+    "Checkbox",
+    "Chip",
+    "Divider",
+    "IconButton",
+    "Input",
+    "Label",
+    "Link",
+    "Progress",
+    "Radio",
+    "Select",
+    "Skeleton",
+    "Spinner",
+    "Switch",
+    "Table",
+    "Textarea",
+    "Typography"
   ],
   "scope": "Partial verified index. Navigation-only entries have not been fetched individually and are not offered as supported previews.",
   "documentationInventory": [
@@ -14,41 +37,46 @@
       "name": "Accordion",
       "url": "https://rocksolidjs.com/components/accordion/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "dc9f8e9917e028d8f965eb8fb9408d0d431318e1a3dfe440ab48427b74903168"
     },
     {
       "name": "Alert",
       "url": "https://rocksolidjs.com/components/alert/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "88878b32f9b520a0e58cb397bda1069c48e7c447eda0e9eb4c2dbfe309cf6672"
     },
     {
       "name": "Avatar",
       "url": "https://rocksolidjs.com/components/avatar/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "eda0e6b719c2977695b00bb35af4de90805ea7b405bcc89251a2e80fa78efd10"
     },
     {
       "name": "Badge",
       "url": "https://rocksolidjs.com/components/badge/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "5cdadb1c26d62794ca6ff3bbe7ea4e91a27199b9b8f64ab5aea332a3f50a409f"
     },
     {
       "name": "Breadcrumbs",
       "url": "https://rocksolidjs.com/components/breadcrumbs/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "bc74e1576d0770fa9a277d5e5ababaadcbbee33cb2c41d5893031c226ed1d436"
     },
     {
       "name": "Button",
@@ -62,33 +90,37 @@
       "name": "ButtonGroup",
       "url": "https://rocksolidjs.com/components/button-group/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "6a28cd301aef8b151faf9187ebbe88aa1b0ee0ebd764c61de59d9f44d285fec8"
     },
     {
       "name": "Card",
       "url": "https://rocksolidjs.com/components/card/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "07ffb7cae0f67fba89276c38f2678c71ca81b0d1af6c4f7843682c3b52122431"
     },
     {
       "name": "Checkbox",
       "url": "https://rocksolidjs.com/components/checkbox/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "ce68de83b3a6885fe5a7117175d611624e7c5537904d16f52772db54c0632aa6"
     },
     {
       "name": "Chip",
       "url": "https://rocksolidjs.com/components/chip/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "e0b19875e15f11b988a5fce1ed6f3ad58c32488de541a0304d9ccb9e14a33d8b"
     },
     {
       "name": "Dialog",
@@ -102,97 +134,109 @@
       "name": "Divider",
       "url": "https://rocksolidjs.com/components/divider/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "623e0a4b7ed5e1618feebf57b3f94104edb43aa62a1fbe49de9adb36a00043b4"
     },
     {
       "name": "IconButton",
       "url": "https://rocksolidjs.com/components/icon-button/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "87101eb5c658a3bf05c79969fb6c5c25465cb5ad559724a3d1ff000d41def555"
     },
     {
       "name": "Input",
       "url": "https://rocksolidjs.com/components/input/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "c01aecff95edc1538445dd256e90579e94d58b7d8a4805a0a31a6ba417c20d0f"
     },
     {
       "name": "Label",
       "url": "https://rocksolidjs.com/components/label/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "65268be26194ac2479febde6bfc572eb8811496075d33810aa190a93326780d3"
     },
     {
       "name": "Link",
       "url": "https://rocksolidjs.com/components/link/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "e01557dc17b247d68e5fb434e21276750a152cf60fd6b1e40c9b4391189ae885"
     },
     {
       "name": "Progress",
       "url": "https://rocksolidjs.com/components/progress/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "58e04c13061600b4c99e97dc994ae8432576c623b16635544b9441f54f81b12e"
     },
     {
       "name": "Radio",
       "url": "https://rocksolidjs.com/components/radio/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "c5aaeaee1847dc6a34f242a7f3c1bff85e5c5380ac98ec99690a9ca8f84ad285"
     },
     {
       "name": "Select",
       "url": "https://rocksolidjs.com/components/select/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "c62c06614a08e5a14cb4394b61dfbb0b80cb169bc4dc1fe1a0eac58c25fb5659"
     },
     {
       "name": "Skeleton",
       "url": "https://rocksolidjs.com/components/skeleton/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "2473c8dd5e16d18e9584907aed3f15a05f1f34f700ec49fd47e6ec0f03171243"
     },
     {
       "name": "Spinner",
       "url": "https://rocksolidjs.com/components/spinner/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "6b8494232430764468b098073ebf8dca881bee944de5bd33f65265fa2c3ea73d"
     },
     {
       "name": "Switch",
       "url": "https://rocksolidjs.com/components/switch/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "a71ba32c81622faf588f56668bc49e0d7445027fdb7f5060bbc0d911107fabb6"
     },
     {
       "name": "Table",
       "url": "https://rocksolidjs.com/components/table/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "addab4a526f7cafebbb2802acefa54785e9d9878e09d4e941bb028bd2f4c18d5"
     },
     {
       "name": "Tabs",
@@ -206,17 +250,19 @@
       "name": "Textarea",
       "url": "https://rocksolidjs.com/components/textarea/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "821ee33bbc1d937843d86c968b9aa7257ccfe6e9db829d8135c1a3d08360a559"
     },
     {
       "name": "Typography",
       "url": "https://rocksolidjs.com/components/typography/",
       "category": "Components",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence",
+      "sourceIntegrity": "d40bf27c701c5e117d7202fdd469ae3c85860e3092e87ef67c19833cd76818be"
     }
   ],
   "excludedNavigation": []

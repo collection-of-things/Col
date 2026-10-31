@@ -35,62 +35,440 @@
   },
   "components": [
     {
+      "name": "Android",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/android",
+      "summary": "A mockup of a standard Android device",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/android",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/android"
+      },
+      "dependencies": [
+        "solid-js"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Animated Beam",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-beam",
+      "summary": "An animated beam of light which travels along a path. Useful for showcasing the \"integration\" features of a website",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-beam",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/animated-beam"
+      },
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-icons",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Animated Shiny Text",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-shiny-text",
+      "summary": "A light glare effect which pans across text making it appear as if it is shimmering",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-shiny-text",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/animated-shiny-text"
+      },
+      "dependencies": [
+        "clsx",
+        "solid-icons",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Border Beam",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/border-beam",
+      "summary": "An animated beam of light which travels along the border of its container",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/border-beam",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/border-beam"
+      },
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Dock",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/dock",
+      "summary": "An implementation of the MacOS dock using solid and motionone",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/dock",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/dock"
+      },
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Dot Pattern",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/dot-pattern",
+      "summary": "A background dot pattern made with SVGs, fully customizable using CSS",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/dot-pattern",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/dot-pattern"
+      },
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Flip Text",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/flip-text",
+      "summary": "Text flipping character animation",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/flip-text",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/flip-text"
+      },
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Gradual Spacing",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/gradual-spacing",
+      "summary": "Word animation for gradual spacing between letters",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/gradual-spacing",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/gradual-spacing"
+      },
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Grid Pattern",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/grid-pattern",
+      "summary": "A background grid pattern made with SVGs, fully customizable using CSS",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/grid-pattern",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/grid-pattern"
+      },
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "iPhone 15",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/iphone-15",
+      "summary": "A mockup of the iPhone 15 Pro",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/iphone-15",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/iphone-15"
+      },
+      "dependencies": [
+        "solid-js"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Letter Pullup",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/letter-pullup",
+      "summary": "Staggered letter pull up text animation",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/letter-pullup",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/letter-pullup"
+      },
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
       "name": "Marquee",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/marquee",
       "dependencies": [
-        "solid-js",
         "clsx",
+        "solid-js",
         "tailwind-merge"
       ],
-      "registryDependencies": [
-        "utils"
-      ],
+      "registryDependencies": [],
       "kind": "visual-effect",
-      "summary": "Scrolling repeated content with duration, gap, direction and hover pause controls.",
+      "summary": "An infinite scrolling component that can be used to display text, images, or videos",
       "verifiedAt": "2026-10-30",
       "variants": {
-        "tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/marquee",
-        "panda": "https://mystic-ui.vercel.app/docs/panda/components/marquee"
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/marquee",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/marquee"
       }
+    },
+    {
+      "name": "Meteors",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/meteors",
+      "summary": "A meteor shower effect",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/meteors",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/meteors"
+      },
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "No Signal Screen",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/no-signal-screen",
+      "summary": "A retro no signal screen background",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/no-signal-screen",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/no-signal-screen"
+      },
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Number Ticker",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/number-ticker",
+      "summary": "Animate numbers to count up or down to a target number",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/number-ticker",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/number-ticker"
+      },
+      "dependencies": [
+        "motion",
+        "solid-js"
+      ],
+      "registryDependencies": []
     },
     {
       "name": "Orbiting Circles",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/orbiting-circles",
       "dependencies": [
-        "solid-js",
         "clsx",
-        "tailwind-merge",
-        "solid-icons"
+        "solid-icons",
+        "solid-js",
+        "tailwind-merge"
       ],
-      "registryDependencies": [
-        "utils"
-      ],
+      "registryDependencies": [],
       "kind": "visual-effect",
-      "summary": "Content follows circular paths with configurable radius, delay and direction.",
+      "summary": "A collection of circles which move in orbit along a circular path",
       "verifiedAt": "2026-10-30",
       "variants": {
-        "tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/orbiting-circles",
-        "panda": "https://mystic-ui.vercel.app/docs/panda/components/orbiting-circles"
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/orbiting-circles",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/orbiting-circles"
       }
+    },
+    {
+      "name": "Retro Grid",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/retro-grid",
+      "summary": "An animated scrolling retro grid effect",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/retro-grid",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/retro-grid"
+      },
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
     },
     {
       "name": "Ripple",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/ripple",
       "dependencies": [
-        "solid-js",
         "clsx",
+        "solid-js",
         "tailwind-merge"
       ],
-      "registryDependencies": [
-        "utils"
-      ],
+      "registryDependencies": [],
       "kind": "visual-effect",
-      "summary": "Concentric animated circles with size, opacity and count controls.",
+      "summary": "An animated ripple effect typically used behind elements to emphasize them",
       "verifiedAt": "2026-10-30",
       "variants": {
-        "tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/ripple",
-        "panda": "https://mystic-ui.vercel.app/docs/panda/components/ripple"
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/ripple",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/ripple"
       }
+    },
+    {
+      "name": "Safari",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/safari",
+      "summary": "A safari browser mockup to showcase your website",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/safari",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/safari"
+      },
+      "dependencies": [
+        "solid-js"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Shine Border",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/shine-border",
+      "summary": "Shine border is an animated background border effect",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/shine-border",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/shine-border"
+      },
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Sparkles Text",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/sparkles-text",
+      "summary": "A dynamic text that generates continuous sparkles with smooth transitions, perfect for highlighting text with animated stars.",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/sparkles-text",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/sparkles-text"
+      },
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Spotlight",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/spotlight",
+      "summary": "A spotlight effect with CSS, good for drawing attention to a particular element on the page",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/spotlight",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/spotlight"
+      },
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Text Reveal",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/text-reveal",
+      "summary": "Fade in text as you scroll down the page",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/text-reveal",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/text-reveal"
+      },
+      "dependencies": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Typing Animation",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/typing-animation",
+      "summary": "Characters appearing in typed animation",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/typing-animation",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/typing-animation"
+      },
+      "dependencies": [
+        "solid-js"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Word Fade In",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-fade-in",
+      "summary": "Text animation which fades in word by word",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/word-fade-in",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/word-fade-in"
+      },
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Word Pullup",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-pullup",
+      "summary": "Text animation for words to pull up",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/word-pullup",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/word-pullup"
+      },
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Word Rotate",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-rotate",
+      "summary": "A vertical rotation of words",
+      "verifiedAt": "2026-10-30",
+      "variants": {
+        "Tailwind": "https://mystic-ui.vercel.app/docs/tailwind/components/word-rotate",
+        "Panda": "https://mystic-ui.vercel.app/docs/panda/components/word-rotate"
+      },
+      "dependencies": [
+        "solid-js",
+        "solid-motionone"
+      ],
+      "registryDependencies": []
     }
   ],
   "compatibility": [

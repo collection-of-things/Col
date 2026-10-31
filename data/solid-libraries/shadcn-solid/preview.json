@@ -9,9 +9,147 @@
   ],
   "examples": [
     {
+      "name": "Accordion",
+      "exportName": "Accordion",
+      "path": "apps/docs/src/registry/examples/accordion-demo.tsx",
+      "gaps": [],
+      "group": "batch-01",
+      "assets": []
+    },
+    {
+      "name": "Alert",
+      "exportName": "Alert",
+      "path": "apps/docs/src/registry/examples/alert-demo.tsx",
+      "gaps": [],
+      "group": "batch-01",
+      "assets": []
+    },
+    {
+      "name": "Alert Dialog",
+      "exportName": "AlertDialog",
+      "path": "apps/docs/src/registry/examples/alert-dialog-demo.tsx",
+      "gaps": [],
+      "group": "batch-01",
+      "assets": []
+    },
+    {
+      "name": "Badge",
+      "exportName": "Badge",
+      "path": "apps/docs/src/registry/examples/badge-demo.tsx",
+      "gaps": [],
+      "group": "batch-01",
+      "assets": []
+    },
+    {
+      "name": "Breadcrumbs",
+      "exportName": "Breadcrumbs",
+      "path": "apps/docs/src/registry/examples/breadcrumbs-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
+    },
+    {
       "name": "Button",
       "exportName": "Button",
-      "path": "apps/docs/src/registry/examples/button-demo.tsx"
+      "path": "apps/docs/src/registry/examples/button-demo.tsx",
+      "gaps": [],
+      "assets": []
+    },
+    {
+      "name": "Button Group",
+      "exportName": "ButtonGroup",
+      "path": "apps/docs/src/registry/examples/button-group-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
+    },
+    {
+      "name": "Calendar",
+      "exportName": "Calendar",
+      "path": "apps/docs/src/registry/examples/calendar-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
+    },
+    {
+      "name": "Card",
+      "exportName": "Card",
+      "path": "apps/docs/src/registry/examples/card-demo.tsx",
+      "gaps": [],
+      "group": "batch-02",
+      "assets": []
+    },
+    {
+      "name": "Carousel",
+      "exportName": "Carousel",
+      "path": "apps/docs/src/registry/examples/carousel-demo.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
+    },
+    {
+      "name": "Chart",
+      "exportName": "Chart",
+      "path": "apps/docs/src/registry/charts/bar-chart-interactive.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
+    },
+    {
+      "name": "Checkbox",
+      "exportName": "Checkbox",
+      "path": "apps/docs/src/registry/examples/checkbox-demo.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
+    },
+    {
+      "name": "Collapsible",
+      "exportName": "Collapsible",
+      "path": "apps/docs/src/registry/examples/collapsible-demo.tsx",
+      "gaps": [],
+      "group": "batch-03",
+      "assets": []
+    },
+    {
+      "name": "Combobox",
+      "exportName": "Combobox",
+      "path": "apps/docs/src/registry/examples/combobox-demo.tsx",
+      "gaps": [],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Command",
+      "exportName": "Command",
+      "path": "apps/docs/src/registry/examples/command-demo.tsx",
+      "gaps": [],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Context Menu",
+      "exportName": "ContextMenu",
+      "path": "apps/docs/src/registry/examples/context-menu-demo.tsx",
+      "gaps": [],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Data Table",
+      "exportName": "DataTable",
+      "path": "apps/docs/src/registry/examples/data-table-demo.tsx",
+      "gaps": [],
+      "group": "batch-04",
+      "assets": []
+    },
+    {
+      "name": "Date Picker",
+      "exportName": "DatePicker",
+      "path": "apps/docs/src/registry/examples/date-picker-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
     },
     {
       "name": "Dialog",
@@ -19,12 +157,263 @@
       "path": "apps/docs/src/registry/examples/dialog-demo.tsx",
       "gaps": [
         "The pinned upstream registry index omits Dialog, and the official docs reported a missing dialog-demo on 2026-10-30. This preview uses the pinned official source and example; live upstream demo styling could not be compared."
-      ]
+      ],
+      "assets": []
+    },
+    {
+      "name": "Drawer",
+      "exportName": "Drawer",
+      "path": "apps/docs/src/registry/examples/drawer-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
+    },
+    {
+      "name": "Dropdown Menu",
+      "exportName": "DropdownMenu",
+      "path": "apps/docs/src/registry/examples/dropdown-menu-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
+    },
+    {
+      "name": "File Field",
+      "exportName": "FileField",
+      "path": "apps/docs/src/registry/examples/file-field-demo.tsx",
+      "gaps": [],
+      "group": "batch-05",
+      "assets": []
+    },
+    {
+      "name": "Hover Card",
+      "exportName": "HoverCard",
+      "path": "apps/docs/src/registry/examples/hover-card-demo.tsx",
+      "gaps": [],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Kbd",
+      "exportName": "Kbd",
+      "path": "apps/docs/src/registry/examples/kbd-demo.tsx",
+      "gaps": [],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Menubar",
+      "exportName": "Menubar",
+      "path": "apps/docs/src/registry/examples/menubar-demo.tsx",
+      "gaps": [],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Navigation Menu",
+      "exportName": "NavigationMenu",
+      "path": "apps/docs/src/registry/examples/navigation-menu-demo.tsx",
+      "gaps": [],
+      "group": "batch-06",
+      "assets": []
+    },
+    {
+      "name": "Number Field",
+      "exportName": "NumberField",
+      "path": "apps/docs/src/registry/examples/number-field-demo.tsx",
+      "gaps": [],
+      "group": "batch-07",
+      "assets": []
+    },
+    {
+      "name": "OTP Field",
+      "exportName": "OTPField",
+      "path": "apps/docs/src/registry/examples/otp-field-demo.tsx",
+      "gaps": [],
+      "group": "batch-07",
+      "assets": []
+    },
+    {
+      "name": "Pagination",
+      "exportName": "Pagination",
+      "path": "apps/docs/src/registry/examples/pagination-demo.tsx",
+      "gaps": [],
+      "group": "batch-07",
+      "assets": []
+    },
+    {
+      "name": "Popover",
+      "exportName": "Popover",
+      "path": "apps/docs/src/registry/examples/popover-demo.tsx",
+      "gaps": [],
+      "group": "batch-07",
+      "assets": []
+    },
+    {
+      "name": "Progress",
+      "exportName": "Progress",
+      "path": "apps/docs/src/registry/examples/progress-demo.tsx",
+      "gaps": [],
+      "group": "batch-08",
+      "assets": []
+    },
+    {
+      "name": "Radio Group",
+      "exportName": "RadioGroup",
+      "path": "apps/docs/src/registry/examples/radio-group-demo.tsx",
+      "gaps": [],
+      "group": "batch-08",
+      "assets": []
+    },
+    {
+      "name": "Resizable",
+      "exportName": "Resizable",
+      "path": "apps/docs/src/registry/examples/resizable-demo.tsx",
+      "gaps": [],
+      "group": "batch-08",
+      "assets": []
+    },
+    {
+      "name": "Search",
+      "exportName": "Search",
+      "path": "apps/docs/src/registry/examples/search-demo.tsx",
+      "gaps": [],
+      "group": "batch-08",
+      "assets": []
+    },
+    {
+      "name": "Segmented Control",
+      "exportName": "SegmentedControl",
+      "path": "apps/docs/src/registry/examples/segmented-control-demo.tsx",
+      "gaps": [],
+      "group": "batch-09",
+      "assets": []
+    },
+    {
+      "name": "Select",
+      "exportName": "Select",
+      "path": "apps/docs/src/registry/examples/select-demo.tsx",
+      "gaps": [],
+      "group": "batch-09",
+      "assets": []
+    },
+    {
+      "name": "Separator",
+      "exportName": "Separator",
+      "path": "apps/docs/src/registry/examples/separator-demo.tsx",
+      "gaps": [],
+      "group": "batch-09",
+      "assets": []
+    },
+    {
+      "name": "Sidebar",
+      "exportName": "Sidebar",
+      "path": "apps/docs/src/registry/examples/sidebar-demo.tsx",
+      "gaps": [
+        "The original sidebar writes a preference cookie on toggle. The opaque sandbox blocks that write, so the browser reports an error and the preference cannot persist."
+      ],
+      "group": "batch-09",
+      "assets": []
+    },
+    {
+      "name": "Skeleton",
+      "exportName": "Skeleton",
+      "path": "apps/docs/src/registry/examples/skeleton-demo.tsx",
+      "gaps": [],
+      "group": "batch-10",
+      "assets": []
+    },
+    {
+      "name": "Slider",
+      "exportName": "Slider",
+      "path": "apps/docs/src/registry/examples/slider-demo.tsx",
+      "gaps": [],
+      "group": "batch-10",
+      "assets": []
+    },
+    {
+      "name": "Sonner",
+      "exportName": "Sonner",
+      "path": "apps/docs/src/registry/examples/sonner-demo.tsx",
+      "gaps": [],
+      "group": "batch-10",
+      "assets": []
+    },
+    {
+      "name": "Switch",
+      "exportName": "Switch",
+      "path": "apps/docs/src/registry/examples/switch-demo.tsx",
+      "gaps": [],
+      "group": "batch-10",
+      "assets": []
+    },
+    {
+      "name": "Table",
+      "exportName": "Table",
+      "path": "apps/docs/src/registry/examples/table-demo.tsx",
+      "gaps": [],
+      "group": "batch-11",
+      "assets": []
     },
     {
       "name": "Tabs",
       "exportName": "Tabs",
-      "path": "apps/docs/src/registry/examples/tabs-demo.tsx"
+      "path": "apps/docs/src/registry/examples/tabs-demo.tsx",
+      "gaps": [],
+      "assets": []
+    },
+    {
+      "name": "Text Field",
+      "exportName": "TextField",
+      "path": "apps/docs/src/registry/examples/text-field-demo.tsx",
+      "gaps": [],
+      "group": "batch-11",
+      "assets": []
+    },
+    {
+      "name": "Toggle Button",
+      "exportName": "ToggleButton",
+      "path": "apps/docs/src/registry/examples/toggle-button-demo.tsx",
+      "gaps": [],
+      "group": "batch-11",
+      "assets": []
+    },
+    {
+      "name": "Toggle Group",
+      "exportName": "ToggleGroup",
+      "path": "apps/docs/src/registry/examples/toggle-group-demo.tsx",
+      "gaps": [],
+      "group": "batch-11",
+      "assets": []
+    },
+    {
+      "name": "Tooltip",
+      "exportName": "Tooltip",
+      "path": "apps/docs/src/registry/examples/tooltip-demo.tsx",
+      "gaps": [],
+      "group": "batch-12",
+      "assets": []
     }
-  ]
+  ],
+  "licenseFallbacks": {
+    "embla-carousel@8.6.0": {
+      "path": "licenses/embla-carousel/LICENSE",
+      "license": "MIT"
+    },
+    "embla-carousel-solid@8.6.0": {
+      "path": "licenses/embla-carousel/LICENSE",
+      "license": "MIT"
+    },
+    "embla-carousel-reactive-utils@8.6.0": {
+      "path": "licenses/embla-carousel/LICENSE",
+      "license": "MIT"
+    },
+    "somoto@0.0.2": {
+      "path": "licenses/somoto/LICENSE",
+      "license": "MIT"
+    },
+    "murmurhash-js@1.0.0": {
+      "path": "licenses/murmurhash-js/README.md",
+      "license": "MIT"
+    }
+  }
 }

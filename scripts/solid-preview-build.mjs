@@ -8,9 +8,18 @@ import { authenticateRuntimeFile, restoreArchive, resolveNpmCli } from "./previe
 
 const hash = bytes => createHash("sha256").update(bytes).digest("hex");
 
+/** Verify a pinned upstream notice when an authenticated npm archive omits one. */
+export function verifySolidLicenseFallback(packageName, version, declaredLicense, fallback) {
+  if (!fallback) throw new Error(`Missing license notice for ${packageName}@${version}`);
+  if (typeof declaredLicense !== "string" || !declaredLicense || fallback.license !== declaredLicense) throw new Error(`License declaration mismatch for ${packageName}@${version}`);
+  if (!/^https:\/\/raw\.githubusercontent\.com\/[^/]+\/[^/]+\/[a-f\d]{40}\//.test(fallback.url)) throw new Error(`Invalid license source for ${packageName}@${version}`);
+  if (typeof fallback.text !== "string" || !fallback.text.trim() || typeof fallback.integrity !== "string" || hash(fallback.text) !== fallback.integrity.replace(/^sha256:/, "")) throw new Error(`License integrity mismatch for ${packageName}@${version}`);
+  return { package: packageName, version, url: fallback.url, text: fallback.text };
+}
+
 /** Compile a reviewed mount entry against its isolated, locked Solid graph.
  * Source/demo extraction and upstream theme compilation stay with each library. */
-export async function buildSolidPreview({ entry, resolveDir, sourceRoot = dirname(entry), runtime = "solid1", compiler = "babel", aliases = {}, css = "" }) {
+export async function buildSolidPreview({ entry, resolveDir, sourceRoot = dirname(entry), runtime = "solid1", compiler = "babel", aliases = {}, css = "", licenseFallbacks = {}, unusedImports = [] }) {
   resolveDir = resolve(resolveDir);
   sourceRoot = resolve(sourceRoot);
   const require = createRequire(resolve(resolveDir, "package.json"));
@@ -32,6 +41,8 @@ export async function buildSolidPreview({ entry, resolveDir, sourceRoot = dirnam
     plugins: [{ name: "verified-solid", setup(builder) {
       builder.onResolve({ filter: /.*/ }, async args => {
         if (args.pluginData?.colResolve) return;
+        // A docs module may import dependencies used only by unselected demos.
+        if (unusedImports.includes(args.path)) return { path: args.path, external: true, sideEffects: false };
         const alias = Object.keys(aliases).sort((a, b) => b.length - a.length).find(key => args.path === key.replace(/\/$/, "") || args.path.startsWith(key.endsWith("/") ? key : key + "/"));
         if (alias) {
           const suffix = args.path.slice(alias.replace(/\/$/, "").length).replace(/^\//, "");
@@ -98,12 +109,28 @@ export async function buildSolidPreview({ entry, resolveDir, sourceRoot = dirnam
     }
     restoreArchive({ bytes, integrity: pkg.integrity, installRoot: resolveDir, packagePath: path, Parser, allowFile: () => true, verifiedFiles: new Set(), expectedHashes, restoreFile: () => false });
     await writeFile(cached, bytes);
-    const licensePaths = [...expectedHashes.keys()].filter(file => file.startsWith(path + "/") && /^licen[cs]e(?:\.[^/]*)?$/i.test(relative(path, file)));
-    if (!licensePaths.length) throw new Error(`Missing license notice for ${path}`);
+    const licensePaths = [...expectedHashes.keys()].filter(file => file.startsWith(path + "/") && /^licen[cs]e(?:[._-][^/]*)?$/i.test(relative(path, file)));
+    if (!licensePaths.length) {
+      const packagePath = `${path}/package.json`;
+      const packageBytes = await readFile(resolve(resolveDir, packagePath));
+      authenticateRuntimeFile(packageBytes, packagePath, expectedHashes);
+      const metadata = JSON.parse(packageBytes);
+      if (metadata.name !== path.slice(path.lastIndexOf("node_modules/") + "node_modules/".length) || metadata.version !== pkg.version) throw new Error(`Package identity mismatch for ${path}`);
+      const readmePath = [...expectedHashes.keys()].find(file => file.startsWith(path + "/") && /^readme(?:\.[^/]*)?$/i.test(relative(path, file)));
+      let notice;
+      if (readmePath && metadata.license === "MIT") {
+        const readmeBytes = await readFile(resolve(resolveDir, readmePath));
+        authenticateRuntimeFile(readmeBytes, readmePath, expectedHashes);
+        const readme = readmeBytes.toString("utf8");
+        const start = readme.indexOf("MIT License");
+        if (start >= 0 && readme.includes("Permission is hereby granted", start) && readme.includes("THE SOFTWARE IS PROVIDED", start)) notice = { package: metadata.name, version: pkg.version, url: pkg.resolved, text: readme.slice(start) };
+      }
+      notices.push(notice ?? verifySolidLicenseFallback(metadata.name, pkg.version, metadata.license, licenseFallbacks[`${metadata.name}@${pkg.version}`]));
+    }
     for (const license of licensePaths) {
       const content = await readFile(resolve(resolveDir, license));
       authenticateRuntimeFile(content, license, expectedHashes);
-      notices.push({ package: path.slice("node_modules/".length), version: pkg.version, url: pkg.resolved, text: content.toString("utf8") });
+      notices.push({ package: path.slice(path.lastIndexOf("node_modules/") + "node_modules/".length), version: pkg.version, url: pkg.resolved, text: content.toString("utf8") });
     }
   }
   for (const input of Object.keys(result.metafile.inputs)) {

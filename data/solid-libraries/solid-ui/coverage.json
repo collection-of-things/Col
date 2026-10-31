@@ -2,9 +2,61 @@
   "checkedAt": "2026-10-30T00:26:49+05:30",
   "source": "https://www.solid-ui.com/docs/components/button",
   "selectedComponents": [
-    "Button",
     "Accordion",
-    "Progress Circle"
+    "Alert",
+    "Alert Dialog",
+    "Aspect Ratio",
+    "Avatar",
+    "Badge",
+    "Badge Delta",
+    "Bar List",
+    "Breadcrumb",
+    "Button",
+    "Callout",
+    "Card",
+    "Carousel",
+    "Charts",
+    "Checkbox",
+    "Collapsible",
+    "Combobox",
+    "Command",
+    "Context Menu",
+    "Data Table",
+    "Date Picker",
+    "Delta Bar",
+    "Dialog",
+    "Drawer",
+    "Dropdown Menu",
+    "Flex",
+    "Grid",
+    "Hover Card",
+    "Label",
+    "Menubar",
+    "Navigation Menu",
+    "Number Field",
+    "OTP Field",
+    "Pagination",
+    "Popover",
+    "Progress",
+    "Progress Circle",
+    "Radio Group",
+    "Resizable",
+    "Select",
+    "Separator",
+    "Sheet",
+    "Sidebar",
+    "Skeleton",
+    "Slider",
+    "Sonner",
+    "Switch",
+    "Table",
+    "Tabs",
+    "Text Field",
+    "Timeline",
+    "Toast",
+    "Toggle",
+    "Toggle Group",
+    "Tooltip"
   ],
   "documentationInventory": [
     {
@@ -16,50 +68,58 @@
     {
       "name": "Alert",
       "url": "https://www.solid-ui.com/docs/components/alert",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Alert Dialog",
       "url": "https://www.solid-ui.com/docs/components/alert-dialog",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Aspect Ratio",
       "url": "https://www.solid-ui.com/docs/components/aspect-ratio",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Avatar",
       "url": "https://www.solid-ui.com/docs/components/avatar",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Badge",
       "url": "https://www.solid-ui.com/docs/components/badge",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Badge Delta",
       "url": "https://www.solid-ui.com/docs/components/badge-delta",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Bar List",
       "url": "https://www.solid-ui.com/docs/components/bar-list",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Breadcrumb",
       "url": "https://www.solid-ui.com/docs/components/breadcrumb",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Button",
@@ -70,158 +130,184 @@
     {
       "name": "Callout",
       "url": "https://www.solid-ui.com/docs/components/callout",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Card",
       "url": "https://www.solid-ui.com/docs/components/card",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Carousel",
       "url": "https://www.solid-ui.com/docs/components/carousel",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Charts",
       "url": "https://www.solid-ui.com/docs/components/charts",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Checkbox",
       "url": "https://www.solid-ui.com/docs/components/checkbox",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Collapsible",
       "url": "https://www.solid-ui.com/docs/components/collapsible",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Combobox",
       "url": "https://www.solid-ui.com/docs/components/combobox",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Command",
       "url": "https://www.solid-ui.com/docs/components/command",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Context Menu",
       "url": "https://www.solid-ui.com/docs/components/context-menu",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
-      "name": "Data Tablenew",
+      "name": "Data Table",
       "url": "https://www.solid-ui.com/docs/components/data-table",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
-      "name": "Date Pickernew",
+      "name": "Date Picker",
       "url": "https://www.solid-ui.com/docs/components/date-picker",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Delta Bar",
       "url": "https://www.solid-ui.com/docs/components/delta-bar",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Dialog",
       "url": "https://www.solid-ui.com/docs/components/dialog",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Drawer",
       "url": "https://www.solid-ui.com/docs/components/drawer",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Dropdown Menu",
       "url": "https://www.solid-ui.com/docs/components/dropdown-menu",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Flex",
       "url": "https://www.solid-ui.com/docs/components/flex",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Grid",
       "url": "https://www.solid-ui.com/docs/components/grid",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Hover Card",
       "url": "https://www.solid-ui.com/docs/components/hover-card",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Label",
       "url": "https://www.solid-ui.com/docs/components/label",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Menubar",
       "url": "https://www.solid-ui.com/docs/components/menubar",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Navigation Menu",
       "url": "https://www.solid-ui.com/docs/components/navigation-menu",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Number Field",
       "url": "https://www.solid-ui.com/docs/components/number-field",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "OTP Field",
       "url": "https://www.solid-ui.com/docs/components/otp-field",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Pagination",
       "url": "https://www.solid-ui.com/docs/components/pagination",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Popover",
       "url": "https://www.solid-ui.com/docs/components/popover",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Progress",
       "url": "https://www.solid-ui.com/docs/components/progress",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Progress Circle",
@@ -232,110 +318,128 @@
     {
       "name": "Radio Group",
       "url": "https://www.solid-ui.com/docs/components/radio-group",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Resizable",
       "url": "https://www.solid-ui.com/docs/components/resizable",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Select",
       "url": "https://www.solid-ui.com/docs/components/select",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Separator",
       "url": "https://www.solid-ui.com/docs/components/separator",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Sheet",
       "url": "https://www.solid-ui.com/docs/components/sheet",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
-      "name": "Sidebarnew",
+      "name": "Sidebar",
       "url": "https://www.solid-ui.com/docs/components/sidebar",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Skeleton",
       "url": "https://www.solid-ui.com/docs/components/skeleton",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Slider",
       "url": "https://www.solid-ui.com/docs/components/slider",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Sonner",
       "url": "https://www.solid-ui.com/docs/components/sonner",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Switch",
       "url": "https://www.solid-ui.com/docs/components/switch",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Table",
       "url": "https://www.solid-ui.com/docs/components/table",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Tabs",
       "url": "https://www.solid-ui.com/docs/components/tabs",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Text Field",
       "url": "https://www.solid-ui.com/docs/components/text-field",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Timeline",
       "url": "https://www.solid-ui.com/docs/components/timeline",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Toast",
       "url": "https://www.solid-ui.com/docs/components/toast",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Toggle",
       "url": "https://www.solid-ui.com/docs/components/toggle",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Toggle Group",
       "url": "https://www.solid-ui.com/docs/components/toggle-group",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     },
     {
       "name": "Tooltip",
       "url": "https://www.solid-ui.com/docs/components/tooltip",
-      "preview": "not-indexed",
-      "documentation": "official-link-only"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "httpStatus": 200
     }
   ],
   "pageChecks": [

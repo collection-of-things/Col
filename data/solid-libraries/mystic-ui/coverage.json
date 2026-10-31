@@ -1,203 +1,396 @@
 {
-  "checkedAt": "2026-10-29T19:35:27Z",
+  "checkedAt": "2026-10-30T01:01:15.790Z",
   "source": "https://mystic-ui.vercel.app/docs/tailwind",
   "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
   "navigationIntegrity": "c2d123aeaab75a0cd6c03c8cd4b231c84430ebd001ea8d2cabe103430d0227c0",
   "selectedComponents": [
+    "Android",
+    "Animated Beam",
+    "Animated Shiny Text",
+    "Border Beam",
+    "Dock",
+    "Dot Pattern",
+    "Flip Text",
+    "Gradual Spacing",
+    "Grid Pattern",
+    "iPhone 15",
+    "Letter Pullup",
     "Marquee",
+    "Meteors",
+    "No Signal Screen",
+    "Number Ticker",
     "Orbiting Circles",
-    "Ripple"
+    "Retro Grid",
+    "Ripple",
+    "Safari",
+    "Shine Border",
+    "Sparkles Text",
+    "Spotlight",
+    "Text Reveal",
+    "Typing Animation",
+    "Word Fade In",
+    "Word Pullup",
+    "Word Rotate"
   ],
   "documentationInventory": [
     {
       "name": "Android",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/android",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "The upstream Tailwind story imports Panda's generated styled-system. This preview mounts the genuine documented Android export with its original default SVG dimensions and styles; no Panda styles are substituted.",
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Animated Beam",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-beam",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Animated Shiny Text",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-shiny-text",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Border Beam",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/border-beam",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Dock",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/dock",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Dot Pattern",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/dot-pattern",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Flip Text",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/flip-text",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Gradual Spacing",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/gradual-spacing",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Grid Pattern",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/grid-pattern",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "iPhone 15",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/iphone-15",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Letter Pullup",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/letter-pullup",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Marquee",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/marquee",
       "preview": "supported",
       "documentation": "source-snapshot",
-      "urlVerification": "http-200"
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "This preview uses the upstream Tailwind 3 variant. Panda CSS is documented separately and is not substituted into this example.",
+        "The upstream Tailwind examples do not define a complete application theme or reduced-motion override.",
+        "The upstream Tailwind Marquee demo references dark:from-background without defining a background theme color; that original omission is retained."
+      ]
     },
     {
       "name": "Meteors",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/meteors",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "No Signal Screen",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/no-signal-screen",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Number Ticker",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/number-ticker",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Orbiting Circles",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/orbiting-circles",
       "preview": "supported",
       "documentation": "source-snapshot",
-      "urlVerification": "http-200"
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "This preview uses the upstream Tailwind 3 variant. Panda CSS is documented separately and is not substituted into this example.",
+        "The upstream Tailwind examples do not define a complete application theme or reduced-motion override."
+      ]
     },
     {
       "name": "Retro Grid",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/retro-grid",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Ripple",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/ripple",
       "preview": "supported",
       "documentation": "source-snapshot",
-      "urlVerification": "http-200"
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "This preview uses the upstream Tailwind 3 variant. Panda CSS is documented separately and is not substituted into this example.",
+        "The upstream Tailwind examples do not define a complete application theme or reduced-motion override.",
+        "The upstream Tailwind Ripple references --foreground without defining it; its original border-color fallback is retained."
+      ]
     },
     {
       "name": "Safari",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/safari",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Shine Border",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/shine-border",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Sparkles Text",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/sparkles-text",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Spotlight",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/spotlight",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Text Reveal",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/text-reveal",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Typing Animation",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/typing-animation",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Word Fade In",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-fade-in",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Word Pullup",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-pullup",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     },
     {
       "name": "Word Rotate",
       "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-rotate",
-      "preview": "not-indexed",
-      "documentation": "official-link-only",
-      "urlVerification": "navigation-derived"
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "browserVerification": "light-and-dark-passed",
+      "gaps": [
+        "Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."
+      ]
     }
   ],
-  "notes": "Only selected component URLs were fetched and source-verified individually; other entries are taken from the official navigation or its pinned source, not individually HTTP-checked. The website renders Panda stories on both styling-variant pages. These previews compile the separate original Tailwind stories."
+  "notes": "Every listed official component URL was individually HTTP-checked and matched to its pinned component/demo source. Preview status and browser evidence are separate from source coverage. The website renders Panda stories on both variant pages; these previews compile the separate original Tailwind implementation.",
+  "summary": "All 27 official component pages were checked individually. 27 authentic previews are emitted; browser-verification.json records both themes and disclosed upstream limitations."
 }

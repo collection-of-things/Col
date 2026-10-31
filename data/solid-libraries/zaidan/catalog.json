@@ -35,21 +35,254 @@
   },
   "components": [
     {
+      "name": "Accordion",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/accordion",
+      "kind": "full-pattern",
+      "summary": "A vertically stacked set of interactive headings that each reveal a section of content.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Alert",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/alert",
+      "kind": "full-pattern",
+      "summary": "Displays a callout for user attention.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Alert Dialog",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/alert-dialog",
+      "kind": "full-pattern",
+      "summary": "A modal dialog that interrupts the user with important content and expects a response.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Aspect Ratio",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/aspect-ratio",
+      "kind": "full-pattern",
+      "summary": "Displays content within a desired ratio.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Attachment",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/attachment",
+      "kind": "full-pattern",
+      "summary": "Displays a file or image attachment with media, metadata, upload state, and actions.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "spinner"
+      ]
+    },
+    {
+      "name": "Avatar",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/avatar",
+      "kind": "full-pattern",
+      "summary": "An image element with a fallback for representing the user.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Badge",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/badge",
+      "kind": "full-pattern",
+      "summary": "Displays a badge or a component that looks like a badge.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Breadcrumb",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/breadcrumb",
+      "kind": "full-pattern",
+      "summary": "Displays the path to the current resource using a hierarchy of links.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu"
+      ]
+    },
+    {
+      "name": "Bubble",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/bubble",
+      "kind": "full-pattern",
+      "summary": "Displays conversational content in a message bubble. Supports variants, alignment, grouping, reactions, and collapsible content.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
       "name": "Button",
       "url": "https://zaidan.carere.dev/docs/components/kobalte/button",
       "kind": "full-pattern",
       "summary": "A styled button with documented variants and keyboard behavior.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
-        "solid-js",
         "@kobalte/core",
         "class-variance-authority",
         "clsx",
-        "tailwind-merge",
-        "lucide-solid"
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
       ],
       "builtOn": "@kobalte/core",
       "registryDependencies": []
+    },
+    {
+      "name": "Button Group",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/button-group",
+      "kind": "full-pattern",
+      "summary": "A container that groups related buttons together with consistent styling.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu",
+        "separator"
+      ]
+    },
+    {
+      "name": "Calendar",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/calendar",
+      "kind": "full-pattern",
+      "summary": "A calendar component that allows users to select a date or a range of dates.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@corvu/calendar",
+        "@date-fns/tz",
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "date-fns",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Card",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/card",
+      "kind": "full-pattern",
+      "summary": "Displays a card with header, content, and footer.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "label"
+      ]
+    },
+    {
+      "name": "Carousel",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/carousel",
+      "kind": "full-pattern",
+      "summary": "A carousel with motion and swipe built using Embla.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "embla-carousel",
+        "embla-carousel-solid",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "card"
+      ]
+    },
+    {
+      "name": "Chart",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/chart",
+      "kind": "full-pattern",
+      "summary": "Beautiful charts. Built using Solid Recharts. Copy and paste into your apps.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "solid-recharts",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "card"
+      ]
     },
     {
       "name": "Checkbox",
@@ -58,12 +291,12 @@
       "summary": "Selectable form controls with checked and disabled states.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
-        "solid-js",
         "@kobalte/core",
         "class-variance-authority",
         "clsx",
-        "tailwind-merge",
-        "lucide-solid"
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
       ],
       "builtOn": "@kobalte/core",
       "registryDependencies": [
@@ -73,18 +306,94 @@
       ]
     },
     {
+      "name": "Collapsible",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/collapsible",
+      "kind": "full-pattern",
+      "summary": "An interactive component which expands/collapses a panel.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Combobox",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/combobox",
+      "kind": "full-pattern",
+      "summary": "Autocomplete input with a list of suggestions.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "input-group",
+        "textarea"
+      ]
+    },
+    {
+      "name": "Command",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/command",
+      "kind": "full-pattern",
+      "summary": "Command menu for search and quick actions.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "cmdk-solid",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "dialog",
+        "input",
+        "input-group",
+        "textarea"
+      ]
+    },
+    {
+      "name": "Context Menu",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/context-menu",
+      "kind": "full-pattern",
+      "summary": "Displays a menu of actions triggered by a right click.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
       "name": "Dialog",
       "url": "https://zaidan.carere.dev/docs/components/kobalte/dialog",
       "kind": "full-pattern",
       "summary": "A modal with accessible title, focus management and portal rendering.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
-        "solid-js",
         "@kobalte/core",
         "class-variance-authority",
         "clsx",
-        "tailwind-merge",
-        "lucide-solid"
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
       ],
       "builtOn": "@kobalte/core",
       "concept": "dialog",
@@ -97,6 +406,627 @@
         "input",
         "label",
         "separator"
+      ]
+    },
+    {
+      "name": "Drawer",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/drawer",
+      "kind": "full-pattern",
+      "summary": "A drawer component for SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@corvu/drawer",
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "field",
+        "label",
+        "radio-group",
+        "separator"
+      ]
+    },
+    {
+      "name": "Dropdown Menu",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/dropdown-menu",
+      "kind": "full-pattern",
+      "summary": "Displays a menu to the user — such as a set of actions or functions — triggered by a button.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Empty",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/empty",
+      "kind": "full-pattern",
+      "summary": "Use the Empty component to display an empty state.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Field",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/field",
+      "kind": "full-pattern",
+      "summary": "Combine labels, controls, and help text to compose accessible form fields and grouped inputs.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "checkbox",
+        "input",
+        "label",
+        "select",
+        "separator",
+        "textarea"
+      ]
+    },
+    {
+      "name": "Hover Card",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/hover-card",
+      "kind": "full-pattern",
+      "summary": "For sighted users to preview content available behind a link.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Input",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/input",
+      "kind": "full-pattern",
+      "summary": "A text input component for forms and user data entry with built-in styling and accessibility features.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "field",
+        "label",
+        "separator"
+      ]
+    },
+    {
+      "name": "Input Group",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/input-group",
+      "kind": "full-pattern",
+      "summary": "Add addons, buttons, and helper content to inputs.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "textarea"
+      ]
+    },
+    {
+      "name": "Input OTP",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/input-otp",
+      "kind": "full-pattern",
+      "summary": "Accessible one-time password component with copy-paste functionality.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@corvu/otp-field",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Item",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/item",
+      "kind": "full-pattern",
+      "summary": "A versatile component for displaying content with media, title, description, and actions.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "separator"
+      ]
+    },
+    {
+      "name": "Kbd",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/kbd",
+      "kind": "full-pattern",
+      "summary": "Used to display textual user input from keyboard.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Label",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/label",
+      "kind": "full-pattern",
+      "summary": "Renders an accessible label associated with controls.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "checkbox"
+      ]
+    },
+    {
+      "name": "Marker",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/marker",
+      "kind": "full-pattern",
+      "summary": "Displays an inline status, system note, bordered row, or labeled separator in a conversation.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "spinner"
+      ]
+    },
+    {
+      "name": "Menubar",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/menubar",
+      "kind": "full-pattern",
+      "summary": "A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Message",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/message",
+      "kind": "full-pattern",
+      "summary": "Displays a message in a conversation, with optional avatar, header, footer, and alignment.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "bubble",
+        "marker"
+      ]
+    },
+    {
+      "name": "Native Select",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/native-select",
+      "kind": "full-pattern",
+      "summary": "A styled native HTML select element with consistent design system integration.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Navigation Menu",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/navigation-menu",
+      "kind": "full-pattern",
+      "summary": "A collection of links for navigating websites.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Pagination",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/pagination",
+      "kind": "full-pattern",
+      "summary": "Pagination with page navigation, next and previous links.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Popover",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/popover",
+      "kind": "full-pattern",
+      "summary": "Displays rich content in a portal, triggered by a button.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "label"
+      ]
+    },
+    {
+      "name": "Progress",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/progress",
+      "kind": "full-pattern",
+      "summary": "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Radio Group",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/radio-group",
+      "kind": "full-pattern",
+      "summary": "A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "label"
+      ]
+    },
+    {
+      "name": "Resizable",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/resizable",
+      "kind": "full-pattern",
+      "summary": "Accessible resizable panel groups and layouts with keyboard support.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@corvu/resizable",
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Scroll Area",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/scroll-area",
+      "kind": "full-pattern",
+      "summary": "Augments native scroll functionality for custom, cross-browser styling.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "separator"
+      ]
+    },
+    {
+      "name": "Select",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/select",
+      "kind": "full-pattern",
+      "summary": "Displays a list of options for the user to pick from—triggered by a button.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Separator",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/separator",
+      "kind": "full-pattern",
+      "summary": "Visually or semantically separates content.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Sheet",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/sheet",
+      "kind": "full-pattern",
+      "summary": "Extends the Dialog component to display content that complements the main content of the screen.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "label"
+      ]
+    },
+    {
+      "name": "Sidebar",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/sidebar",
+      "kind": "full-pattern",
+      "summary": "A composable, themeable and customizable sidebar component.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "collapsible",
+        "dropdown-menu",
+        "input",
+        "separator",
+        "sheet",
+        "skeleton",
+        "tooltip"
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/skeleton",
+      "kind": "full-pattern",
+      "summary": "Use to show a placeholder while content is loading.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Slider",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/slider",
+      "kind": "full-pattern",
+      "summary": "An input where the user selects a value from within a given range.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Spinner",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/spinner",
+      "kind": "full-pattern",
+      "summary": "An indicator that can be used to show a loading state.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "item",
+        "separator"
+      ]
+    },
+    {
+      "name": "Switch",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/switch",
+      "kind": "full-pattern",
+      "summary": "A control that allows the user to toggle between checked and not checked.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "label"
+      ]
+    },
+    {
+      "name": "Table",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/table",
+      "kind": "full-pattern",
+      "summary": "A responsive table component.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Tabs",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/tabs",
+      "kind": "full-pattern",
+      "summary": "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "card"
+      ]
+    },
+    {
+      "name": "Textarea",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/textarea",
+      "kind": "full-pattern",
+      "summary": "Displays a form textarea or a component that looks like a textarea.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Toast",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/toast",
+      "kind": "full-pattern",
+      "summary": "An opinionated toast component.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "solid-sonner",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Toggle",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/toggle",
+      "kind": "full-pattern",
+      "summary": "A two-state button that can be either on or off.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Toggle Group",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/toggle-group",
+      "kind": "full-pattern",
+      "summary": "A set of two-state buttons that can be toggled on or off.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "toggle"
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "url": "https://zaidan.carere.dev/docs/components/kobalte/tooltip",
+      "kind": "full-pattern",
+      "summary": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
       ]
     }
   ],

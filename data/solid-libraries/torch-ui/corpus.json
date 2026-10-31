@@ -60,6 +60,1638 @@
           "integrity": "4d8292c8d91734f25ff632a2ba8f0205299d088182170a6550665b94fb0a2ae0"
         }
       ]
+    },
+    {
+      "componentId": "torch-ui/Text",
+      "title": "Text: documented example",
+      "url": "https://torch-ui.dev/typography/text",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Body text with size and style utilities.\n\nOriginal example from the pinned documentation script:\n```tsx\n<p class=\"text-xs\">Extra small (12px)</p>\n<p class=\"text-sm\">Small (14px)</p>\n<p class=\"text-base\">Base (16px)</p>\n<p class=\"text-lg\">Large (18px)</p>\n<p class=\"text-xl\">Extra large (20px)</p>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Heading",
+      "title": "Heading: documented example",
+      "url": "https://torch-ui.dev/typography/heading",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Semantic heading elements across all six levels.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { PageHeading } from '@torch-ui/solid/layout'\n\n<PageHeading title=\"Page title\" />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Code",
+      "title": "Code: documented example",
+      "url": "https://torch-ui.dev/typography/code",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/typography/Code.tsx",
+          "integrity": "08c8d27bc552130ed32267467da45d6b62263264d5d45c738c594bb8f333e92a"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Inline code with optional syntax highlighting and a copy button.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Code } from '@torch-ui/solid/typography'\n<p>Use the <Code>variableName</Code> prop to pass a value.</p>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Block Quote",
+      "title": "Block Quote: documented example",
+      "url": "https://torch-ui.dev/typography/block-quote",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A styled block for quoted text with an optional citation.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { BlockQuote } from '@torch-ui/solid/layout'\n\n<BlockQuote>\n  I didn't ask how big the orphanage was, I said I cast fireball.\n</BlockQuote>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Button Group",
+      "title": "Button Group: documented example",
+      "url": "https://torch-ui.dev/actions/button-group",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/actions/ButtonGroup.tsx",
+          "integrity": "bed615f5d77cab6944007ccd2a31e9aeab513e240bf723e776c7e5fe2aa67f11"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Groups related buttons together, including split button support.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Button, ButtonGroup } from '@torch-ui/solid/actions'\n\n<ButtonGroup variant=\"outlined\">\n  <Button variant=\"outlined\" disableElevation>One</Button>\n  <Button variant=\"outlined\" disableElevation>Two</Button>\n  <Button variant=\"outlined\" disableElevation>Three</Button>\n</ButtonGroup>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Copy",
+      "title": "Copy: documented example",
+      "url": "https://torch-ui.dev/actions/copy",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/actions/Copy.tsx",
+          "integrity": "7cbf1c6d50534dc4688184df4fde0b75791f34d1fcc448c56fd93f9d6ab22e8e"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A trigger that copies text to the clipboard and confirms with feedback.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Copy } from '@torch-ui/solid/actions'\n\n<Copy text=\"https://example.com/share-link\" />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Link",
+      "title": "Link: documented example",
+      "url": "https://torch-ui.dev/actions/link",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/actions/Link.tsx",
+          "integrity": "87593567aced017ef55b2fd3c6bd35e850602eaa926d821281cd5e82e6bd6a3f"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A styled anchor element with optional external link indicator.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Link } from '@torch-ui/solid/actions'\n\n<p class=\"text-ink-700\">\n  Consult the <Link href=\"/actions/button\">Tome of Buttons</Link> before venturing further.\n</p>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Dark Mode Toggle",
+      "title": "Dark Mode Toggle: documented example",
+      "url": "https://torch-ui.dev/actions/dark-mode-toggle",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/actions/DarkModeToggle.tsx",
+          "integrity": "a97e148dde3c38f2b8554365a6cc58a10200ffab98390dfe57a7150d469977d5"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A toggle switch for switching between light and dark theme.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { DarkModeToggle } from '@torch-ui/solid/actions'\n\n{/* Icon button (default) — persists to localStorage */}\n<DarkModeToggle />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained.\n\nTheme persistence is disabled in the preview because the sandbox cannot use localStorage."
+    },
+    {
+      "componentId": "torch-ui/Input",
+      "title": "Input: documented example",
+      "url": "https://torch-ui.dev/forms/input",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/Input.tsx",
+          "integrity": "aec4e86f436728df1b3eb6022ddde7804516fe898974609b3da3b2966c1c66a8"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A text field with support for labels, adornments, and compact mode.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { Input } from '@torch-ui/solid/forms'\n\nconst [value, setValue] = createSignal('')\n\n<div class=\"w-full max-w-xs\">\n  <Input\n    label=\"Character Name\"\n    placeholder=\"e.g. Arindel Moonshadow\"\n    value={value()}\n    onValueChange={setValue}\n  />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Number Field",
+      "title": "Number Field: documented example",
+      "url": "https://torch-ui.dev/forms/number-field",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/NumberField.tsx",
+          "integrity": "8152b3608dbbedd372bdb831e54b9eda1534c94faa7f80f1dee1854ea4cfd641"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A numeric input with step controls and min/max bounds.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { NumberField } from '@torch-ui/solid/forms'\n\nconst [value, setValue] = createSignal<number | undefined>(10)\n\n<div class=\"max-w-xs\">\n  <NumberField\n    label=\"Hit Points\"\n    value={value()}\n    onValueChange={setValue}\n    minValue={0}\n    maxValue={20}\n    showStepper\n  />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Code Input",
+      "title": "Code Input: documented example",
+      "url": "https://torch-ui.dev/forms/code-input",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/CodeInput.tsx",
+          "integrity": "6855aa22ee0063baca24e1498263864b33b227e819d35c347b16edbfbc7a13e5"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A segmented input field for OTP or short code entry.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { CodeInput } from '@torch-ui/solid/forms'\n\nconst [code, setCode] = createSignal('')\n\n<div class=\"w-full max-w-xs\">\n  <CodeInput\n    label=\"Arcane Seal\"\n    placeholder=\"000000\"\n    value={code()}\n    onValueChange={setCode}\n  />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Text Area",
+      "title": "Text Area: documented example",
+      "url": "https://torch-ui.dev/forms/text-area",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/TextArea.tsx",
+          "integrity": "44ea22a33fdcd820fc1e4a63bd780950afe24ac8a9ed870011a7776ac834daff"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A multi-line text input with resize and character limit support.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { TextArea } from '@torch-ui/solid/forms'\n\nconst [value, setValue] = createSignal('')\n\n<div class=\"w-full max-w-md\">\n  <TextArea\n    label=\"Quest Notes\"\n    placeholder=\"Describe your findings...\"\n    value={value()}\n    onValueChange={setValue}\n    rows={4}\n  />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Select",
+      "title": "Select: documented example",
+      "url": "https://torch-ui.dev/forms/select",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/Select.tsx",
+          "integrity": "1718d5c3cdb13771703f8e5bd0a5ffb9411393b522da63e46caefd0e1365baaf"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A dropdown for selecting a single option from a list.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { Select } from '@torch-ui/solid/forms'\n\nconst [value, setValue] = createSignal('')\nconst options = [\n  { value: 'fighter', label: 'Fighter' },\n  { value: 'wizard', label: 'Wizard' },\n  { value: 'rogue', label: 'Rogue' },\n  { value: 'cleric', label: 'Cleric' },\n]\n\n<div class=\"w-full max-w-xs\">\n  <Select\n    placeholder=\"Choose a class\"\n    options={options}\n    value={value()}\n    onValueChange={setValue}\n  />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Multi Select",
+      "title": "Multi Select: documented example",
+      "url": "https://torch-ui.dev/forms/multi-select",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/MultiSelect.tsx",
+          "integrity": "5a60a5c92aa198c298bd3bf8c9d5eebed0c89e16524d03667ac6f2f3592e5081"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A dropdown for selecting multiple options, displayed as tags.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { MultiSelect } from '@torch-ui/solid/forms'\n\nconst options = [\n  { value: 'goblin', label: 'Goblin' },\n  { value: 'dragon', label: 'Dragon' },\n  { value: 'orc', label: 'Orc' },\n  { value: 'troll', label: 'Troll' },\n]\n\nconst [value, setValue] = createSignal<string[]>([])\n\n<div class=\"w-full max-w-xs\">\n  <MultiSelect\n    label=\"Monsters\"\n    placeholder=\"Choose...\"\n    options={options}\n    value={value()}\n    onValueChange={setValue}\n  />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Autocomplete",
+      "title": "Autocomplete: documented example",
+      "url": "https://torch-ui.dev/forms/autocomplete",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/Autocomplete.tsx",
+          "integrity": "c930acd148f64783d5a04d70e5191e55a0733012c99a8f68578b40386fd73640"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A text input that suggests matching options as you type.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { Autocomplete } from '@torch-ui/solid/forms'\nimport type { AutocompleteOption } from '@torch-ui/solid/forms'\n\nconst options: AutocompleteOption[] = [\n  { value: 'warrior', label: 'Warrior' },\n  { value: 'mage', label: 'Mage' },\n  { value: 'rogue', label: 'Rogue' },\n  { value: 'cleric', label: 'Cleric' },\n  { value: 'ranger', label: 'Ranger' },\n]\n\nconst [value, setValue] = createSignal('')\n\n<div class=\"w-full max-w-xs\">\n  <Autocomplete\n    label=\"Class\"\n    options={options}\n    value={value()}\n    onValueChange={setValue}\n    placeholder=\"Search classes...\"\n  />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Checkbox",
+      "title": "Checkbox: documented example",
+      "url": "https://torch-ui.dev/forms/checkbox",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/Checkbox.tsx",
+          "integrity": "2085061e8447c6de940e29dcd34beb5eb307039eacd6c4aa7a85f98efa1893c4"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A binary input with support for indeterminate state.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { Checkbox } from '@torch-ui/solid/forms'\n\nconst [checked, setChecked] = createSignal(true)\n\n<div class=\"flex flex-wrap items-center gap-6\">\n  <Checkbox checked={checked()} onValueChange={setChecked} label=\"Checked\" />\n  <Checkbox label=\"Unchecked\" />\n  <Checkbox disabled label=\"Disabled\" />\n  <Checkbox checked disabled label=\"Disabled checked\" />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Radio Group",
+      "title": "Radio Group: documented example",
+      "url": "https://torch-ui.dev/forms/radio-group",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/RadioGroup.tsx",
+          "integrity": "844572b5b4b72e8d70ee7b012bb90cf6497441e5a0e12cfcd36c468d00ce6583"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A group of options where only one can be selected at a time.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { RadioGroup } from '@torch-ui/solid/forms'\n\nconst options = [\n  { value: 'apprentice', label: 'Apprentice' },\n  { value: 'veteran', label: 'Veteran' },\n  { value: 'legendary', label: 'Legendary' },\n]\n\nconst [value, setValue] = createSignal('veteran')\n\n<div class=\"max-w-sm\">\n  <RadioGroup\n    label=\"Difficulty\"\n    options={options}\n    value={value()}\n    onValueChange={setValue}\n  />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Switch",
+      "title": "Switch: documented example",
+      "url": "https://torch-ui.dev/forms/switch",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/Switch.tsx",
+          "integrity": "5a09fabd2442dd558a4707302caf1f5e4647d31877c84c46c92c0207e6c2401b"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A toggle for switching between on and off states.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Switch } from '@torch-ui/solid/forms'\n\n<div class=\"flex flex-wrap items-center gap-6\">\n  <Switch defaultChecked label=\"On\" />\n  <Switch label=\"Off\" />\n  <Switch disabled label=\"Disabled\" />\n  <Switch disabled defaultChecked label=\"Disabled on\" />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Slider",
+      "title": "Slider: documented example",
+      "url": "https://torch-ui.dev/forms/slider",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/Slider.tsx",
+          "integrity": "b49ece404c95d3fab06e25e3858e17fda4c0d5a184be4eed75932f4f91036d47"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A drag handle for selecting a single value or range.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Slider } from '@torch-ui/solid/forms'\n\n<Slider label=\"Spell Power\" defaultValue={[50]} />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Reorderable List",
+      "title": "Reorderable List: documented example",
+      "url": "https://torch-ui.dev/forms/reorderable-list",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/ReorderableList.tsx",
+          "integrity": "07926c9a419345cc2359c8e16a918d145dd2f686c733ea93bd707fc03c7ebde6"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A list where items can be reordered by drag or keyboard.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { ReorderableList } from '@torch-ui/solid/forms'\n\nconst [items, setItems] = createSignal<ReorderableListItem[]>([\n  { id: '1', label: 'Fireball' },\n  { id: '2', label: 'Ice Storm' },\n  { id: '3', label: 'Lightning Bolt' },\n])\n\n<ReorderableList items={items()} onReorder={(ids) => setItems(reorderById(ids))} />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained. The example requires state, fixture data or surrounding markup; the preview supplies that glue using the published live demo where available."
+    },
+    {
+      "componentId": "torch-ui/Date Picker",
+      "title": "Date Picker: documented example",
+      "url": "https://torch-ui.dev/forms/date-picker",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/DatePicker.tsx",
+          "integrity": "f1d2330825080bd164f92b44c13e463122a77a562f6785b277c8722cdccf25d0"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A date input with a calendar popover for selection.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { DatePicker } from '@torch-ui/solid/forms'\n\nconst [date, setDate] = createSignal('')\n\n<div class=\"w-full max-w-xs\">\n  <DatePicker\n    label=\"Quest start\"\n    placeholder=\"Select a date\"\n    value={date()}\n    onValueChange={setDate}\n  />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Date Range Picker",
+      "title": "Date Range Picker: documented example",
+      "url": "https://torch-ui.dev/forms/date-range-picker",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/DateRangePicker.tsx",
+          "integrity": "1a7eda91db89a9d395c098aee60056ebc92d0e39f8f7888d1c4fe430483291c3"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A dual calendar for selecting a start and end date range.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { DateRangePicker } from '@torch-ui/solid/forms'\n\nconst [start, setStart] = createSignal('')\nconst [end, setEnd] = createSignal('')\n\n<DateRangePicker\n  label=\"Campaign window\"\n  start={start()}\n  end={end()}\n  onValueChange={(s, e) => { setStart(s); setEnd(e) }}\n/>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Time Picker",
+      "title": "Time Picker: documented example",
+      "url": "https://torch-ui.dev/forms/time-picker",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/TimePicker.tsx",
+          "integrity": "c1ccbb99529d63641e2c0e43852d5c550c1a052236d5c082cb70f48dd6f3eed5"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A time input with a popover for selecting hours and minutes.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { TimePicker } from '@torch-ui/solid/forms'\n\nconst [time, setTime] = createSignal('')\n\n<div class=\"w-full max-w-xs\">\n  <TimePicker\n    label=\"Tavern curfew\"\n    placeholder=\"Set the hour...\"\n    value={time()}\n    onValueChange={setTime}\n  />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Color Picker",
+      "title": "Color Picker: documented example",
+      "url": "https://torch-ui.dev/forms/color-picker",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/ColorPicker/ColorPicker.tsx",
+          "integrity": "a9563c6b2ced7a751f39b15bdcce49714fdef7401f277d411a442b8ca1c7599b"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A color input with a swatch preview and optional popover.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { ColorPicker } from '@torch-ui/solid/forms'\n<div class=\"w-full max-w-md\">\n  <ColorPicker\n    label=\"Accent color\"\n    value={color()}\n    onValueChange={setColor}\n  />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained. The example requires state, fixture data or surrounding markup; the preview supplies that glue using the published live demo where available."
+    },
+    {
+      "componentId": "torch-ui/File Upload",
+      "title": "File Upload: documented example",
+      "url": "https://torch-ui.dev/forms/file-upload",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/FileUpload.tsx",
+          "integrity": "af97f2696c49f3f34214b32ff4d11b160b2b73220def568930ce8838f542b05e"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A file input that supports drag-and-drop and shows a preview.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { FileUpload, type FileUploadItem } from '@torch-ui/solid/forms'\n\nconst [files, setFiles] = createSignal<FileUploadItem[]>([])\n\nconst onAddFiles = (newFiles: File[]) => {\n  const items: FileUploadItem[] = newFiles.map((file) => ({\n    id: crypto.randomUUID(),\n    file,\n    status: 'done',\n  }))\n  setFiles((prev) => [...prev, ...items])\n}\n\n<FileUpload\n  label=\"Upload Files\"\n  description=\"Max 10 MB. Omit accept to allow any file type.\"\n  files={files()}\n  onAddFiles={onAddFiles}\n  onRemove={(id) => setFiles((prev) => prev.filter((f) => f.id !== id))}\n  maxFileSize={10 * 1024 * 1024}\n  variant=\"dropzone\"\n/>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Field Picker",
+      "title": "Field Picker: documented example",
+      "url": "https://torch-ui.dev/forms/field-picker",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/forms/FieldPicker.tsx",
+          "integrity": "abfa6ab461d00b8a5c985fcace9da8589ee1b3cfe7dc86302c5eedb7d2cf3123"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A picker for selecting fields or columns, used in filter builders.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { FieldPicker } from '@torch-ui/solid/forms'\n\nconst [value, setValue] = createSignal('')\nconst [columns, setColumns] = createSignal(['name', 'email'])\n\nconst options = [\n  { value: 'name', label: 'Name' },\n  { value: 'email', label: 'Email' },\n  { value: 'role', label: 'Role' },\n  { value: 'status', label: 'Status' },\n  { value: 'created_at', label: 'Created At' },\n]\n\n<FieldPicker\n  label=\"Add column\"\n  options={options}\n  value={value()}\n  onValueChange={setValue}\n  onAdd={() => {\n    if (value()) setColumns((c) => [...c, value()])\n    setValue('')\n  }}\n  addLabel=\"Add\"\n  addDisabled={!value()}\n/>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Relative Date",
+      "title": "Relative Date: documented example",
+      "url": "https://torch-ui.dev/forms/relative-date",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A picker for selecting relative date ranges like \"last 7 days\".\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { RelativeDateDefaultInput } from '@torch-ui/solid/forms'\n\nconst [value, setValue] = createSignal('today+0')\n\n<RelativeDateDefaultInput\n  value={value()}\n  onValueChange={setValue}\n/>\n<p>Stored: {value()}</p>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Container",
+      "title": "Container: documented example",
+      "url": "https://torch-ui.dev/layout/container",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Container.tsx",
+          "integrity": "58a707a4b330fb3a7f5842af3f9a30ae807c9aa0c8db91ae580e44791fe6a7bf"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A max-width wrapper for centering page content.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Container } from '@torch-ui/solid/layout'\n\n<Container>\n  <p>Page content is centered with max-width and horizontal padding.</p>\n</Container>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Grid",
+      "title": "Grid: documented example",
+      "url": "https://torch-ui.dev/layout/grid",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Grid.tsx",
+          "integrity": "f1b5e65051b08c161b03f9d5922d2f85e18378dcafc694b0421b70b4c2729d0a"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A responsive column grid for laying out content.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Grid } from '@torch-ui/solid/layout'\n\n<Grid cols={2} gap=\"md\">\n  <div>1</div>\n  <div>2</div>\n  <div>3</div>\n  <div>4</div>\n  <div>5</div>\n  <div>6</div>\n</Grid>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Section",
+      "title": "Section: documented example",
+      "url": "https://torch-ui.dev/layout/section",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Section.tsx",
+          "integrity": "a9c5bfcd8fe03105ebbfd3b0bf9b436696246b6261263a6b61f136b42dfbadc4"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A page section with an optional title and description.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { PageHeading } from '@torch-ui/solid/layout'\n\n<PageHeading title=\"Section\" level={2} />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Card",
+      "title": "Card: documented example",
+      "url": "https://torch-ui.dev/layout/card",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Card.tsx",
+          "integrity": "5a4408f5fc223edaa788f8543d5c4575669897acdddf04ec5cfe8c54938520a1"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A container for grouping related content with optional image and header.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Card } from '@torch-ui/solid/layout'\n\n<Card>\n  <Card.Body>\n    <h3 class=\"text-lg font-semibold text-ink-900\">The Northern Pass</h3>\n    <p class=\"mt-1 text-sm text-ink-600\">Due by next full moon</p>\n    <p class=\"mt-2 text-sm text-ink-500\">2 of 5 objectives complete</p>\n  </Card.Body>\n</Card>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Divider",
+      "title": "Divider: documented example",
+      "url": "https://torch-ui.dev/layout/divider",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Divider.tsx",
+          "integrity": "fd64562330bc0cff55e4efdc71aa8f2d25ed1b1f5b64116b1760af42da32a495"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A horizontal or vertical line for separating content.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Divider } from '@torch-ui/solid/layout'\n\n<p class=\"text-sm text-ink-600\">Content above.</p>\n<Divider />\n<p class=\"text-sm text-ink-600\">Content below.</p>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Page Heading",
+      "title": "Page Heading: documented example",
+      "url": "https://torch-ui.dev/layout/page-heading",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/PageHeading.tsx",
+          "integrity": "146451fca715377a0c836484ef1aefca1d224b9cbf7d7c5becc353cd58ea8f94"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A page-level title and description block used at the top of views.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { PageHeading } from '@torch-ui/solid/layout'\n\n<PageHeading\n  title=\"Dashboard\"\n  description=\"Overview of your workspace activity and metrics.\"\n/>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Collapsible",
+      "title": "Collapsible: documented example",
+      "url": "https://torch-ui.dev/layout/collapsible",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Collapsible.tsx",
+          "integrity": "9d26cf4ec411ae05e68716ed9e7212108e5ac916c812f7026b37e8ac20900f79"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A single section that can be expanded or collapsed.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Collapsible } from '@torch-ui/solid/layout'\n\n<Collapsible>\n  <Collapsible.Trigger>Toggle to show content</Collapsible.Trigger>\n  <Collapsible.Content>\n    <p class=\"p-4 text-sm text-ink-700\">Hidden content shown when expanded.</p>\n  </Collapsible.Content>\n</Collapsible>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Code Block",
+      "title": "Code Block: documented example",
+      "url": "https://torch-ui.dev/layout/code-block",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/CodeBlock.tsx",
+          "integrity": "1ea7d6173990d7c886ef958dc96e1347936d3933a4af4d79dc56cbfa1cf126f0"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A syntax-highlighted code block with a copy button.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { CodeBlock } from '@torch-ui/solid/layout'\n\nconst code = `function hello() {\n  return \"Hello, world!\"\n}`\n\n<div class=\"w-full\">\n  <CodeBlock content={code} language=\"javascript\" />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Inline",
+      "title": "Inline: documented example",
+      "url": "https://torch-ui.dev/layout/inline",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Inline.tsx",
+          "integrity": "42d4a6acee28e5ccf88ffb0b6ca507a6e45f629901845dfabaaac62d7894190d"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Inline is documented by TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Code } from '@torch-ui/solid/typography'\n\n<p>Use the <Code>variableName</Code> prop to pass a value.</p>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Form",
+      "title": "Form: documented example",
+      "url": "https://torch-ui.dev/layout/form",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/Form.tsx",
+          "integrity": "0a7991427bd0a83ed05b7144edc3cd9c148b75e83108ad82015fbbebee4817dd"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A form wrapper with legend and error summary support.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Form } from '@torch-ui/solid/layout'\nimport { Input } from '@torch-ui/solid/forms'\nimport { Button } from '@torch-ui/solid/actions'\n\n<Form onSubmit={(e: Event) => e.preventDefault()} class=\"max-w-sm\">\n\t<Input label=\"Name\" placeholder=\"Your name\" />\n\t<Input label=\"Email\" type=\"email\" placeholder=\"you@example.com\" />\n\t<Button type=\"submit\" variant=\"primary\" fullWidth class=\"rounded-lg py-2.5 font-semibold\">Submit</Button>\n</Form>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Wizard",
+      "title": "Wizard: documented example",
+      "url": "https://torch-ui.dev/layout/wizard",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A stepper component for guiding users through multi-step flows.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Wizard } from '@torch-ui/solid/layout'\n\nconst step = 2 // from your state (e.g. createSignal)\nconst labels = ['About you', 'Your company', 'Review']\n\n<Wizard.Stepper\n  step={step}\n  totalSteps={3}\n  stepLabels={labels}\n/>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Prompt With Action",
+      "title": "Prompt With Action: documented example",
+      "url": "https://torch-ui.dev/layout/prompt-with-action",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/layout/PromptWithAction.tsx",
+          "integrity": "204f81b3b1fe1ebd0a335d2c8e7baff68facc84765fc6ed1d7c4cefb819ba2be"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A card section with a headline and call-to-action button.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { PromptWithAction } from '@torch-ui/solid/layout'\n\n<PromptWithAction\n  prompt=\"Don't have an account?\"\n  actionLabel=\"Sign up\"\n  href=\"/register\"\n/>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Breadcrumbs",
+      "title": "Breadcrumbs: documented example",
+      "url": "https://torch-ui.dev/navigation/breadcrumbs",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/Breadcrumbs.tsx",
+          "integrity": "6b3be2971fe6531f994697965d9182ec89233f9fa7200488c226b93726f044a6"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A navigation trail showing the current page location.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Breadcrumbs } from '@torch-ui/solid/navigation'\n\n<Breadcrumbs\n  items={[\n    { label: 'Realm', href: '/' },\n    { label: 'Guild Hall', href: '/guild' },\n    { label: 'Adventurer' },\n  ]}\n/>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Navigation Menu",
+      "title": "Navigation Menu: documented example",
+      "url": "https://torch-ui.dev/navigation/navigation-menu",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/NavigationMenu.tsx",
+          "integrity": "5753ce392c3f59b6f4e6c1cabe471f21e04496499a8917d7f491e12791231aa3"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A horizontal nav bar with animated dropdown menus.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { MenuBar } from '@torch-ui/solid/navigation'\n\n<MenuBar>\n  <MenuBar.NavLink href=\"/keep\">Keep</MenuBar.NavLink>\n\n  <MenuBar.Menu>\n    <MenuBar.Trigger>Wares</MenuBar.Trigger>\n    <MenuBar.Content>\n      <MenuBar.Item>All Wares</MenuBar.Item>\n      <MenuBar.Item>Schools of Magic</MenuBar.Item>\n      <MenuBar.Item>Armory</MenuBar.Item>\n    </MenuBar.Content>\n  </MenuBar.Menu>\n\n  <MenuBar.Menu>\n    <MenuBar.Trigger>Scrolls</MenuBar.Trigger>\n    <MenuBar.Content>\n      <MenuBar.Item>Trade Routes</MenuBar.Item>\n      <MenuBar.Item>Divination</MenuBar.Item>\n    </MenuBar.Content>\n  </MenuBar.Menu>\n</MenuBar>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Mega Menu",
+      "title": "Mega Menu: documented example",
+      "url": "https://torch-ui.dev/navigation/mega-menu",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/MegaMenu.tsx",
+          "integrity": "60b344033ad0849bc436849f108f8791841187ba1c6bfdde63023a2c58666acf"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A wide multi-column dropdown navigation panel.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { MegaMenu } from '@torch-ui/solid/navigation'\n\n<MegaMenu class=\"flex-1 w-full\">\n  <MegaMenu.Menu>\n    <MegaMenu.Trigger>Wares</MegaMenu.Trigger>\n    <MegaMenu.Content>\n      <MegaMenu.Panel columns={3}>\n        <MegaMenu.Column>\n          <MegaMenu.Section title=\"Marketplace\">\n            <MegaMenu.Item href=\"/trading-post\" icon={<ShoppingCart />} description=\"Browse all wares\">\n              Trading Post\n            </MegaMenu.Item>\n            <MegaMenu.Item href=\"/tome\" icon={<Package />} description=\"Index of all items\">\n              Tome of Goods\n            </MegaMenu.Item>\n          </MegaMenu.Section>\n        </MegaMenu.Column>\n        <MegaMenu.Column>\n          <MegaMenu.Section title=\"Divination\">\n            <MegaMenu.Item href=\"/scrolls\" icon={<ChartBar />} description=\"Trade route performance\">\n              Scrolls\n            </MegaMenu.Item>\n          </MegaMenu.Section>\n        </MegaMenu.Column>\n      </MegaMenu.Panel>\n    </MegaMenu.Content>\n  </MegaMenu.Menu>\n</MegaMenu>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained. The example requires state, fixture data or surrounding markup; the preview supplies that glue using the published live demo where available."
+    },
+    {
+      "componentId": "torch-ui/Sidebar",
+      "title": "Sidebar: documented example",
+      "url": "https://torch-ui.dev/navigation/sidebar",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/Sidebar.tsx",
+          "integrity": "dcff10e463fe423efdefad7a75a15628c6ca16f2ad4390007416ae4a296b49a6"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A side navigation panel with groups and collapsible sections.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Sidebar } from '@torch-ui/solid/navigation'\nimport { LayoutDashboard, Users, Settings } from 'lucide-solid'\n\nconst items = [\n  { key: 'keep', label: 'Keep', icon: <LayoutDashboard class=\"h-5 w-5\" />, active: true, href: '/keep' },\n  { key: 'adventurers', label: 'Adventurers', icon: <Users class=\"h-5 w-5\" />, href: '/adventurers' },\n  { key: 'arcana', label: 'Arcana', icon: <Settings class=\"h-5 w-5\" />, href: '/arcana' },\n]\n\n<Sidebar items={items} title=\"The Keep\" />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Dropdown Menu",
+      "title": "Dropdown Menu: documented example",
+      "url": "https://torch-ui.dev/navigation/dropdown-menu",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/DropdownMenu.tsx",
+          "integrity": "5c745f8801f19f6849b9d703fe0eaca5f156e1d8861c9d46acd1852d420ea488"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A button that opens a menu of selectable items.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { DropdownMenu } from '@torch-ui/solid/navigation'\nimport { Button } from '@torch-ui/solid/actions'\n\n<DropdownMenu>\n  <DropdownMenu.Trigger class=\"...\">\n    <Button variant=\"ghost\" size=\"sm\">Actions</Button>\n  </DropdownMenu.Trigger>\n  <DropdownMenu.Content class=\"min-w-[140px]\">\n    <DropdownMenu.Item onSelect={() => {}}>Inspect</DropdownMenu.Item>\n    <DropdownMenu.Item onSelect={() => {}}>Copy Scroll</DropdownMenu.Item>\n    <DropdownMenu.Item onSelect={() => {}} class=\"text-red-600\">Discard</DropdownMenu.Item>\n  </DropdownMenu.Content>\n</DropdownMenu>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained. The example requires state, fixture data or surrounding markup; the preview supplies that glue using the published live demo where available."
+    },
+    {
+      "componentId": "torch-ui/Tabs",
+      "title": "Tabs: documented example",
+      "url": "https://torch-ui.dev/navigation/tabs",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/Tabs.tsx",
+          "integrity": "efb04fee598b6f8a648b9ee43499eb187882fc85b913103be1020002e190d916"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Tabbed navigation for switching between content panels.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Tabs } from '@torch-ui/solid/navigation'\n\nconst tabs = [\n  { id: 'quests', label: 'Quests' },\n  { id: 'party', label: 'Party' },\n  { id: 'spellbook', label: 'Spellbook' },\n]\n\n<Tabs\n  tabs={tabs}\n  defaultValue=\"quests\"\n  onValueChange={(id) => setActiveTab(id)}\n/>\n{/* Render content based on activeTab */}\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained. The example requires state, fixture data or surrounding markup; the preview supplies that glue using the published live demo where available."
+    },
+    {
+      "componentId": "torch-ui/Pagination",
+      "title": "Pagination: documented example",
+      "url": "https://torch-ui.dev/navigation/pagination",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/Pagination.tsx",
+          "integrity": "639c9bafb72f2ca428d181f5b5114493a5b6c9c99a9351e345e8ca83209392e5"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Controls for navigating between pages of content.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Pagination } from '@torch-ui/solid/navigation'\n\nconst [page, setPage] = createSignal(1)\n<Pagination page={page()} totalPages={10} onPageChange={setPage} />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained. The example requires state, fixture data or surrounding markup; the preview supplies that glue using the published live demo where available."
+    },
+    {
+      "componentId": "torch-ui/View Switcher",
+      "title": "View Switcher: documented example",
+      "url": "https://torch-ui.dev/navigation/view-switcher",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/navigation/ViewSwitcher.tsx",
+          "integrity": "3df638861f1f134baaacfc98bafd31f6ca1e9380966d3b07a966a05d06e69093"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A control for toggling between grid, list, and other view layouts.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { ViewSwitcher } from '@torch-ui/solid/navigation'\n\nconst views = [\n  { id: 'all', label: 'All Adventurers', count: 2451 },\n  { id: 'active', label: 'Active Quests', count: 89, pinned: true },\n  { id: 'recruits', label: 'My Recruits', count: 34 },\n]\n\n<ViewSwitcher\n  views={views}\n  activeId={activeView()}\n  onValueChange={(id) => setActiveView(id)}\n/>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained. The example requires state, fixture data or surrounding markup; the preview supplies that glue using the published live demo where available."
+    },
+    {
+      "componentId": "torch-ui/Drawer",
+      "title": "Drawer: documented example",
+      "url": "https://torch-ui.dev/overlays/drawer",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/overlays/Drawer.tsx",
+          "integrity": "205000356cba65586ba87197b176f3f482094f4ed84d1639b45da7eebabbe3a3"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A panel that slides in from the edge of the screen.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { Drawer } from '@torch-ui/solid/overlays'\nimport { Button } from '@torch-ui/solid/actions'\n\nconst [open, setOpen] = createSignal(false)\n\n<div>\n  <Button onClick={() => setOpen(true)}>Open drawer</Button>\n  <Drawer open={open()} onClose={() => setOpen(false)}>\n    <h3 class=\"text-lg font-semibold text-ink-900\">Drawer title</h3>\n    <p class=\"mt-2 text-sm text-ink-600\">Content slides in from the end (right).</p>\n  </Drawer>\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Context Menu",
+      "title": "Context Menu: documented example",
+      "url": "https://torch-ui.dev/overlays/context-menu",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/overlays/ContextMenu.tsx",
+          "integrity": "6c9a43aef0a3288ea59510ec4ae7e5b4c36d2dd3d49dcb9cf913834725916b77"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A menu that appears on right-click or long-press.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { ContextMenu } from '@torch-ui/solid/overlays'\n\n<ContextMenu>\n  <ContextMenu.Trigger class=\"rounded border border-ink-200 p-4\">\n    Right-click a dungeon tile\n  </ContextMenu.Trigger>\n  <ContextMenu.Content>\n    <ContextMenu.Item onSelect={() => {}}>Inspect Room</ContextMenu.Item>\n    <ContextMenu.Item onSelect={() => {}}>Mark as Cleared</ContextMenu.Item>\n    <ContextMenu.Item onSelect={() => {}}>Add Note</ContextMenu.Item>\n    <ContextMenu.Separator />\n    <ContextMenu.Item onSelect={() => {}}>Remove Tile</ContextMenu.Item>\n  </ContextMenu.Content>\n</ContextMenu>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Popover",
+      "title": "Popover: documented example",
+      "url": "https://torch-ui.dev/overlays/popover",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/overlays/Popover.tsx",
+          "integrity": "3af697fa5cae1c6b140fc6d4d5ffecf21d480a43d77b6fe224f856a0a96fe0a0"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A floating content panel anchored to a trigger element.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Popover } from '@torch-ui/solid/overlays'\nimport { Button } from '@torch-ui/solid/actions'\n\n<Popover>\n  <Popover.Trigger as=\"button\">\n    <Button variant=\"outlined\" size=\"sm\">?? Fireball</Button>\n  </Popover.Trigger>\n  <Popover.Content>\n    <div class=\"p-3 space-y-1\">\n      <p class=\"font-semibold text-sm text-ink-900\">Fireball</p>\n      <p class=\"text-xs text-ink-500\">3rd-level evocation � Range: 150 ft</p>\n      <p class=\"text-xs text-ink-600\">8d6 fire damage in a 20-ft radius. DEX save DC 15.</p>\n    </div>\n  </Popover.Content>\n</Popover>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Hover Card",
+      "title": "Hover Card: documented example",
+      "url": "https://torch-ui.dev/overlays/hover-card",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/overlays/HoverCard.tsx",
+          "integrity": "e8ddd6bb8d28d69af9874858b6bdb6e0aa9899797d38f182404dc297340512e2"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A card that appears on hover, useful for previews and rich tooltips.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { HoverCard } from '@torch-ui/solid/overlays'\nimport { Avatar } from '@torch-ui/solid/data-display'\nimport { Sword } from 'lucide-solid'\n\n<HoverCard openDelay={200} closeDelay={100}>\n  <HoverCard.Trigger as=\"a\" href=\"#\" class=\"font-medium text-primary-500 hover:text-primary-600 hover:underline underline-offset-2\">\n    @aldric\n  </HoverCard.Trigger>\n  <HoverCard.Content class=\"w-72\">\n    <HoverCard.Header>\n      <div class=\"flex items-start justify-between gap-3\">\n        <Avatar name=\"Aldric Stonehammer\" size=\"lg\" />\n        <button class=\"rounded-lg border border-surface-border px-3 py-1.5 text-xs font-medium text-ink-700 hover:bg-surface-overlay\">\n          Recruit\n        </button>\n      </div>\n      <div class=\"mt-3\">\n        <p class=\"font-semibold text-ink-900\">Aldric Stonehammer</p>\n        <p class=\"text-sm text-ink-500\">Paladin of the Oath of Devotion</p>\n      </div>\n    </HoverCard.Header>\n    <HoverCard.Body class=\"pt-0\">\n      <p class=\"text-sm text-ink-600\">Dwarven paladin from Ironspire. Sworn to protect the innocent. Wields a Flame Tongue longsword.</p>\n      <div class=\"mt-3 flex items-center gap-1.5 text-xs text-ink-500\">\n        <Sword class=\"h-4 w-4\" />\n        <span>Level 7 · AC 18 · HP 68</span>\n      </div>\n    </HoverCard.Body>\n    <HoverCard.Separator />\n    <HoverCard.Footer>\n      <div class=\"flex gap-4 text-xs\">\n        <div><span class=\"font-semibold text-ink-900\">12</span><span class=\"ml-1 text-ink-500\">Sessions</span></div>\n        <div><span class=\"font-semibold text-ink-900\">847</span><span class=\"ml-1 text-ink-500\">Kills</span></div>\n      </div>\n    </HoverCard.Footer>\n  </HoverCard.Content>\n</HoverCard>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Tooltip",
+      "title": "Tooltip: documented example",
+      "url": "https://torch-ui.dev/overlays/tooltip",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/overlays/Tooltip.tsx",
+          "integrity": "0b39f29db0d210870b46989b89327728453673dc8ec42c119e51d0f25e5215ad"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A short hint that appears on hover or focus.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Tooltip } from '@torch-ui/solid/overlays'\n\n<Tooltip>\n  <Tooltip.Trigger as=\"button\" class=\"rounded-lg border px-3 py-1.5 text-sm\">\n    🔥 Fireball\n  </Tooltip.Trigger>\n  <Tooltip.Content>8d6 fire damage in a 20-ft radius. DEX save DC 15.</Tooltip.Content>\n</Tooltip>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Search Palette",
+      "title": "Search Palette: documented example",
+      "url": "https://torch-ui.dev/overlays/search-palette",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/overlays/SearchPalette.tsx",
+          "integrity": "6e55fc1b08ac912f118bb958c704d2ab2cadacb51a5297be7017309d9b658fba"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A command palette for searching and navigating quickly.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { SearchPalette } from '@torch-ui/solid/overlays'\nimport { Button } from '@torch-ui/solid/actions'\n\nconst [open, setOpen] = createSignal(false)\nconst [query, setQuery] = createSignal('')\n\nconst ALL_ITEMS = [\n  { key: 'dashboard', label: 'Dashboard', category: 'pages' },\n  { key: 'users', label: 'Users', category: 'pages' },\n  { key: 'settings', label: 'Settings', category: 'pages' },\n]\n\nconst groups = () => {\n  const q = query().toLowerCase()\n  const filtered = ALL_ITEMS.filter((i) => i.label.toLowerCase().includes(q))\n  return [{ title: 'Pages', items: filtered }]\n}\n\n<Button onClick={() => setOpen(true)}>Open Search</Button>\n\n<SearchPalette\n  open={open()}\n  onOpenChange={setOpen}\n  query={query()}\n  onQueryChange={setQuery}\n  groups={groups()}\n  onSelect={(item) => {\n    console.log('selected', item.key)\n    setOpen(false)\n  }}\n/>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Alert",
+      "title": "Alert: documented example",
+      "url": "https://torch-ui.dev/feedback/alert",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/Alert.tsx",
+          "integrity": "ca91b9dfa020d5bcbebe723a5d7e983bedebad29395639b23e75c09a6dca9e1a"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "An inline message for communicating status or feedback.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Alert } from '@torch-ui/solid/feedback'\n\n<Alert status=\"error\">\n  Your lockpick shattered. The vault door remains sealed.\n</Alert>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Alert Dialog",
+      "title": "Alert Dialog: documented example",
+      "url": "https://torch-ui.dev/feedback/alert-dialog",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/AlertDialog.tsx",
+          "integrity": "b9853a8d2fdc32935a150ee3b3dfc10d93dcdaf1078d6ea530092b34fb1027f2"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A confirmation dialog that requires an explicit user action.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { AlertDialog } from '@torch-ui/solid/feedback'\nimport { Button } from '@torch-ui/solid/actions'\n\nconst [open, setOpen] = createSignal(false)\n\n<div>\n  <Button onClick={() => setOpen(true)}>Forge Alliance</Button>\n  <AlertDialog\n    open={open()}\n    onOpenChange={setOpen}\n    title=\"Forge Alliance with the Iron Throne?\"\n    description=\"This pact will bind your guild to the Iron Throne for one year.\"\n    confirmLabel=\"Seal the Pact\"\n    onConfirm={() => { /* forge alliance */ }}\n  />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Banner",
+      "title": "Banner: documented example",
+      "url": "https://torch-ui.dev/feedback/banner",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/Banner.tsx",
+          "integrity": "fdb638c31777d9f913df61cbe0fa4f5f184ed8c3919ddc74ebaaf700000dd53a"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Banner is documented by TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Banner } from '@torch-ui/solid/feedback'\n\n<Banner>\n  The Arcane Compendium v2.0 is live — expanded spellbooks, new races, and fully customizable character sheets.\n</Banner>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Toast",
+      "title": "Toast: documented example",
+      "url": "https://torch-ui.dev/feedback/toast",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/Toast.tsx",
+          "integrity": "17983aee7eed771827643e5e64ccc112fe288fec33d89b2371cdef0ded0ff6af"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A temporary notification that appears and dismisses automatically.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { ToastProvider, useToast } from '@torch-ui/solid/feedback'\n\n// Wrap your app once with ToastProvider\n<ToastProvider>\n  <App />\n</ToastProvider>\n\n// Inside any child component:\nconst toast = useToast()\n\ntoast.show('Quest completed', undefined, { variant: 'success' })\ntoast.show('Spell backfired', undefined, { variant: 'error' })\ntoast.show('Mana reserves critical', undefined, { variant: 'warning' })\ntoast.show('New contracts posted in Ashenveil', undefined, { variant: 'info' })\ntoast.show('The die has been cast') // default\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained. The example requires state, fixture data or surrounding markup; the preview supplies that glue using the published live demo where available."
+    },
+    {
+      "componentId": "torch-ui/Progress",
+      "title": "Progress: documented example",
+      "url": "https://torch-ui.dev/feedback/progress",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/Progress.tsx",
+          "integrity": "e53de2ebf59a4adabc3eff6249142c266a9a85c6111a010eb7eeaca5655887e6"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A bar showing the progress of a task or process.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Progress } from '@torch-ui/solid/feedback'\n\n<Progress value={0} aria-label=\"Progress\" />\n<Progress value={45} aria-label=\"Progress\" />\n<Progress value={100} aria-label=\"Progress\" />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Loading",
+      "title": "Loading: documented example",
+      "url": "https://torch-ui.dev/feedback/loading",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/Loading.tsx",
+          "integrity": "fcd057f45c897d4a6820c2e65162374c25812e5f77892ec2bf78c7f73acbb5e0"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A spinner or overlay for indicating loading state.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Button } from '@torch-ui/solid/actions'\n\n<Button loading>Loading...</Button>\n<Button variant=\"outlined\" loading>Loading...</Button>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Skeleton",
+      "title": "Skeleton: documented example",
+      "url": "https://torch-ui.dev/feedback/skeleton",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/feedback/Skeleton.tsx",
+          "integrity": "7a9934e2433525bd1d207fa53c194385f2a4b8b73083a8a0a31ff20e8f544fae"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A placeholder shape shown while content is loading.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { Skeleton } from '@torch-ui/solid/feedback'\nimport { Card } from '@torch-ui/solid/layout'\nimport { Button } from '@torch-ui/solid/actions'\n\nconst [loaded, setLoaded] = createSignal(false)\n\n<Card>\n  <Card.AvatarTitle\n    name=\"Grog Strongjaw\"\n    imageUrl=\"/avatar.jpg\"\n    loading={!loaded()}\n  />\n  <Card.Body>\n    <Skeleton loaded={loaded()} block>\n      <p class=\"text-sm text-ink-600\">Content...</p>\n    </Skeleton>\n  </Card.Body>\n</Card>\n<Button onClick={() => setLoaded(v => !v)}>\n  {loaded() ? 'Show skeleton' : 'Load it'}\n</Button>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained.\n\nThe documentation’s /avatar.jpg placeholder returns HTML rather than an image and is absent from the pinned upstream repository. The preview omits that URL and uses TorchUI Avatar’s built-in initials fallback after loading."
+    },
+    {
+      "componentId": "torch-ui/PasswordStrengthIndicator",
+      "title": "PasswordStrengthIndicator: documented example",
+      "url": "https://torch-ui.dev/feedback/password-strength",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A visual indicator of password complexity and strength.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal, createMemo } from 'solid-js'\nimport { PasswordStrengthIndicator, type PasswordStrength } from '@torch-ui/solid/feedback'\nimport { Input } from '@torch-ui/solid/forms'\n\nconst [password, setPassword] = createSignal('')\n\n// User implements their own analysis logic\nconst analysis = createMemo(() => {\n  const pwd = password()\n  if (!pwd) return { strength: 'empty' as PasswordStrength, score: 0, details: [] }\n  \n  const hasLength = pwd.length >= 8\n  const hasUpper = /[A-Z]/.test(pwd)\n  const hasLower = /[a-z]/.test(pwd)\n  const hasNumber = /\\d/.test(pwd)\n  const hasSymbol = /[!@#$%^&*]/.test(pwd)\n  \n  const met = [hasLength, hasUpper, hasLower, hasNumber, hasSymbol].filter(Boolean).length\n  const score = (met / 5) * 100\n  \n  let strength: PasswordStrength = 'poor'\n  if (met >= 4) strength = 'excellent'\n  else if (met >= 3) strength = 'good'\n  else if (met >= 2) strength = 'fair'\n  \n  return {\n    strength,\n    score,\n    details: [\n      { name: '8+ characters', passed: hasLength },\n      { name: 'Uppercase', passed: hasUpper },\n      { name: 'Lowercase', passed: hasLower },\n      { name: 'Number', passed: hasNumber },\n      { name: 'Symbol', passed: hasSymbol },\n    ]\n  }\n})\n\n<Input\n  type=\"password\"\n  label=\"Password\"\n  value={password()}\n  onValueChange={setPassword}\n/>\n<PasswordStrengthIndicator \n  strength={analysis().strength}\n  score={analysis().score}\n  details={analysis().details}\n/>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Image",
+      "title": "Image: documented example",
+      "url": "https://torch-ui.dev/data-display/image",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Image.tsx",
+          "integrity": "9e8758730bfe446e8cff269b715072e78c238d9bf7c74a38989ef808628600df"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "An image with loading skeleton, error fallback, and overlay support.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Image } from '@torch-ui/solid/data-display'\n\n<Image\n  src=\"https://picsum.photos/seed/torch/600/400\"\n  alt=\"Sample landscape\"\n/>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Video",
+      "title": "Video: documented example",
+      "url": "https://torch-ui.dev/data-display/video",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Video.tsx",
+          "integrity": "a839d6ee6be179e1492e5b305ecb8709a6f813f290b5ab33f880f9001d3c73c0"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A video player with aspect ratio, fallback, and autoplay support.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Video } from '@torch-ui/solid/data-display'\n\n<Video src=\"https://archive.org/download/springopenmovie/springopenmovie.mp4\" poster=\"https://video.blender.org/lazy-static/previews/3d95fb3d-c866-42c8-9db1-fe82f48ccb95.jpg\" />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Avatar",
+      "title": "Avatar: documented example",
+      "url": "https://torch-ui.dev/data-display/avatar",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Avatar.tsx",
+          "integrity": "9c4d30e38adf8d7b85a91a8e9da2a39000456832ff7981c70f8a71a67380d1a4"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A user image or initials with optional badge and ring.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Avatar } from '@torch-ui/solid/data-display'\n\n<Avatar name=\"Lyra Dawnseeker\" />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Persona",
+      "title": "Persona: documented example",
+      "url": "https://torch-ui.dev/data-display/persona",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Persona.tsx",
+          "integrity": "e161b506879e6c7b074f66514090afb5de8309b49d644452220eadc0deb8c8d7"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "An avatar paired with a name and optional metadata.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Persona } from '@torch-ui/solid/data-display'\n\n<Persona name=\"Caelan Torchward\" />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Stat",
+      "title": "Stat: documented example",
+      "url": "https://torch-ui.dev/data-display/stat",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A metric displayed with a label, value, and optional sparkline.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { StatCard } from '@torch-ui/solid/data-display'\n\n<StatCard\n  label=\"Party gold\"\n  value=\"2,450 gp\"\n/>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Tag",
+      "title": "Tag: documented example",
+      "url": "https://torch-ui.dev/data-display/tag",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Tag.tsx",
+          "integrity": "e324fc30b60eddf991233129232db20cb94329f3578ab0cba658b7e511fb84a8"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A small label or chip for categories and metadata.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Tag } from '@torch-ui/solid/data-display'\n\n<Tag>Concentrating</Tag>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Badge",
+      "title": "Badge: documented example",
+      "url": "https://torch-ui.dev/data-display/badge",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Badge.tsx",
+          "integrity": "c78bfd8d3f94479a95625cd23b2f3f1d38fda3081ee4183cbb0ea826b3d02f86"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A small count or status indicator attached to another element.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Avatar, Badge } from '@torch-ui/solid/data-display'\n\n<Avatar name=\"Lyra Dawnseeker\" badge={<Badge variant=\"success\" />} />\n<Avatar name=\"Theron\" badge={<Badge variant=\"warning\" />} />\n<Avatar name=\"Guild\" badge={<Badge variant=\"primary\">3</Badge>} badgeKind=\"content\" badgeSize=\"md\" />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Color Swatch",
+      "title": "Color Swatch: documented example",
+      "url": "https://torch-ui.dev/data-display/color-swatch",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/ColorSwatch.tsx",
+          "integrity": "c249e7acf93e3a4f84bde52b1c9eb05862c96ee76c7e66d3db0fb4c6195fa040"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A small color preview with optional selection state.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { ColorSwatch } from '@torch-ui/solid/data-display'\n\n<div class=\"flex flex-wrap items-center gap-3\">\n  <ColorSwatch value=\"#3b82f6\" class=\"h-10 w-10\" />\n  <ColorSwatch value=\"#22c55e\" class=\"h-10 w-10\" />\n  <ColorSwatch value=\"#ef4444\" class=\"h-10 w-10\" />\n</div>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Carousel",
+      "title": "Carousel: documented example",
+      "url": "https://torch-ui.dev/data-display/carousel",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Carousel.tsx",
+          "integrity": "d0138c5386f1042d5e14c0d409f6616db596645de1afb35fad67d1a1aaf9d3ce"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A horizontally scrolling content area with navigation controls.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Carousel } from '@torch-ui/solid/data-display'\n\nconst slides = [\n  { id: '1', content: <div class=\"...\">Slide 1</div> },\n  { id: '2', content: <div class=\"...\">Slide 2</div> },\n]\n\n<Carousel slides={slides} autoPlayInterval={0} />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained. The example requires state, fixture data or surrounding markup; the preview supplies that glue using the published live demo where available."
+    },
+    {
+      "componentId": "torch-ui/Table",
+      "title": "Table: documented example",
+      "url": "https://torch-ui.dev/data-display/table",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Table.tsx",
+          "integrity": "efa5cdc6442b9f7cb8b08001bfd6f8f69f4571f9cb51574258fa8b867a11ab86"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Semantic table components for structured data.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@torch-ui/solid/data-display'\n\n<Table>\n  <TableHeader>\n    <TableRow>\n      <TableHead>Name</TableHead>\n      <TableHead>Role</TableHead>\n      <TableHead>Status</TableHead>\n    </TableRow>\n  </TableHeader>\n  <TableBody>\n    <TableRow>\n      <TableCell>Caelan Torchward</TableCell>\n      <TableCell>Fighter</TableCell>\n      <TableCell>Ready</TableCell>\n    </TableRow>\n    ...\n  </TableBody>\n</Table>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Table Panel",
+      "title": "Table Panel: documented example",
+      "url": "https://torch-ui.dev/data-display/table-panel",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A table inside a panel with optional header actions.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { TablePanel } from '@torch-ui/solid/layout'\n\n<TablePanel header={<h2 class=\"text-lg font-semibold text-ink-900\">Panel title</h2>}>\n  <p class=\"text-sm text-ink-600\">Panel body. Put your table or other content here.</p>\n</TablePanel>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained.\n\nThe separate Table Panel recipe (https://torch-ui.dev/recipes/table-panel) composes DataTable with ViewSwitcher. The current preview shows the documented basic TablePanel component, not that recipe composition."
+    },
+    {
+      "componentId": "torch-ui/Data Table",
+      "title": "Data Table: documented example",
+      "url": "https://torch-ui.dev/data-display/data-table",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/DataTable.tsx",
+          "integrity": "0ad9e3ae926eb3880d342a0a346c53d0800db48e457bd84b29047ee43cf80f87"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Data Table is documented by TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { DataTable, type ColumnDef } from '@torch-ui/solid/data-display'\n\nconst columns: ColumnDef<Row>[] = [\n  { id: 'name', header: 'Name', cell: (row) => row.name },\n  { id: 'role', header: 'Role', cell: (row) => row.role },\n  { id: 'status', header: 'Status', cell: (row) => row.status },\n]\n\n<DataTable hideHeader items={items} columns={columns} emptyMessage=\"No rows\" />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained. The example requires state, fixture data or surrounding markup; the preview supplies that glue using the published live demo where available."
+    },
+    {
+      "componentId": "torch-ui/Timeline",
+      "title": "Timeline: documented example",
+      "url": "https://torch-ui.dev/data-display/timeline",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Timeline.tsx",
+          "integrity": "9db01864ccf1413187b9306bd33f79e348b8054438f29f7d89c2f1628763ce9f"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A vertical list of time-ordered events with icons and metadata.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Timeline } from '@torch-ui/solid/data-display'\n\n<Timeline\n  items={[\n    { title: 'Quest accepted', description: 'Took the goblin raid contract from the Thornwall notice board.', time: 'Dawn', status: 'completed' },\n    { title: 'Entered the Greywood', description: 'Tracked the goblin raiding party northward.', time: 'Morning', status: 'completed' },\n    { title: 'Combat — goblin camp', description: 'Engaging three goblins and a worg.', time: 'Midday', status: 'active' },\n    { title: 'Recover the stolen grain', description: \"Search the camp for the farmer's stores.\", status: 'pending' },\n    { title: 'Return to Thornwall', status: 'pending' },\n  ]}\n/>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/TreeView",
+      "title": "TreeView: documented example",
+      "url": "https://torch-ui.dev/data-display/tree-view",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/TreeView.tsx",
+          "integrity": "467950a8e401018590d143a4850926a6537d6c69397064a082e2fbe776f14d58"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A hierarchical list of expandable and selectable nodes.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { TreeView } from '@torch-ui/solid/data-display'\n\nconst nodes = [\n  {\n    id: 'dungeon',\n    label: 'The Ashwood Dungeon',\n    children: [\n      { id: 'floor1', label: 'Floor 1 — Entry Hall', children: [\n        { id: 'guard-room', label: 'Guard Room' },\n        { id: 'storage', label: 'Storage Chamber' },\n      ]},\n      { id: 'floor2', label: 'Floor 2 — The Catacombs' },\n    ],\n  },\n]\n\n<TreeView nodes={nodes} />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Empty State",
+      "title": "Empty State: documented example",
+      "url": "https://torch-ui.dev/data-display/empty-state",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/EmptyState.tsx",
+          "integrity": "323d450bdd514bf7f918152f1683c089001940029463672dd99d82ad698dd7b9"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A placeholder displayed when a list or view has no data.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { StatCard } from '@torch-ui/solid/data-display'\n\n<StatCard\n  label=\"Quests completed\"\n  value={null}\n  emptyText=\"No quests in progress\"\n/>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Kbd",
+      "title": "Kbd: documented example",
+      "url": "https://torch-ui.dev/data-display/kbd",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Kbd.tsx",
+          "integrity": "fdfddc3c36ab757362bfa2e4f5521f359d215b75ac56c015feac783cc4717009"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Keyboard key labels for documenting shortcuts and hotkeys.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Kbd } from '@torch-ui/solid/data-display'\n\n<Kbd>K</Kbd>\n<Kbd>Enter</Kbd>\n<Kbd>Esc</Kbd>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Board",
+      "title": "Board: documented example",
+      "url": "https://torch-ui.dev/data-display/board",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/Board.tsx",
+          "integrity": "87427817a426a69d44d8bfa34a86168311abe3c2160e02d720168ebe1130cd8c"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Board is documented by TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Board } from '@torch-ui/solid/data-display'\n\n<Board>\n  <Board.Column id=\"open\" title=\"Open\" count={2} color=\"#3b82f6\">\n    <Board.Card id=\"card-1\">\n      <p class=\"text-sm font-medium\">Slay the Goblin King</p>\n    </Board.Card>\n    <Board.Card id=\"card-2\">\n      <p class=\"text-sm font-medium\">Map the Greywood</p>\n    </Board.Card>\n  </Board.Column>\n  <Board.Column id=\"active\" title=\"In Progress\" count={1} color=\"#f59e0b\">\n    <Board.Card id=\"card-3\">\n      <p class=\"text-sm font-medium\">Recover the stolen grain</p>\n    </Board.Card>\n  </Board.Column>\n  <Board.Column id=\"done\" title=\"Completed\" count={0} color=\"#22c55e\" />\n</Board>\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Bar Chart",
+      "title": "Bar Chart: documented example",
+      "url": "https://torch-ui.dev/charts/bar",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A bar chart with stacked and horizontal variants.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Chart } from '@torch-ui/solid/charts'\n\nconst data = {\n  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],\n  datasets: [{ label: 'Monsters Slain', data: [12, 19, 7, 15, 11], backgroundColor: '#8b5cf6' }],\n}\n\n<Chart type=\"bar\" data={data} class=\"h-64\" />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Line Chart",
+      "title": "Line Chart: documented example",
+      "url": "https://torch-ui.dev/charts/line",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A line or area chart with fill and stepped line support.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Chart } from '@torch-ui/solid/charts'\n\nconst data = {\n  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],\n  datasets: [\n    { label: 'Gold Earned', data: [12, 19, 8, 15, 22, 18], borderColor: '#0ea5e9' },\n    { label: 'Gold Spent', data: [8, 14, 10, 12, 16, 14], borderColor: '#f43f5e' },\n  ],\n}\n\n<Chart type=\"line\" data={data} class=\"h-64\" />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Pie Chart",
+      "title": "Pie Chart: documented example",
+      "url": "https://torch-ui.dev/charts/pie",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A pie or doughnut chart with multi-series support.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Chart } from '@torch-ui/solid/charts'\n\nconst data = {\n  labels: ['Warriors', 'Mages', 'Rogues', 'Clerics'],\n  datasets: [{\n    label: 'Guild Roster',\n    data: [30, 25, 25, 20],\n    backgroundColor: ['#0ea5e9', '#22c55e', '#eab308', '#f43f5e'],\n  }],\n}\n\n<Chart type=\"doughnut\" data={data} class=\"h-64\" />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Sparkline",
+      "title": "Sparkline: documented example",
+      "url": "https://torch-ui.dev/charts/sparkline",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/charts/Sparkline.tsx",
+          "integrity": "decae4ad73ee0e7f6f5f8167d4b7bd13479298893833a132aead203ddf3e9978"
+        },
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "A small inline line chart for showing trends at a glance.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Sparkline } from '@torch-ui/solid/charts'\n\n<Sparkline data={[12, 14, 10, 16, 14, 18, 15]} />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Other charts",
+      "title": "Other charts: documented example",
+      "url": "https://torch-ui.dev/charts/other",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Radar, polar area, scatter, and bubble chart types.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { Chart } from '@torch-ui/solid/charts'\n\nconst data = {\n  labels: ['Speed', 'Strength', 'Defense', 'Stamina', 'Arcana'],\n  datasets: [\n    { label: 'Fighter', data: [85, 70, 90, 75, 80], borderColor: '#0ea5e9', backgroundColor: 'rgba(14,165,233,0.2)' },\n    { label: 'Wizard', data: [70, 85, 65, 90, 75], borderColor: '#22c55e', backgroundColor: 'rgba(34,197,94,0.2)' },\n  ],\n}\n\n<Chart type=\"radar\" data={data} class=\"h-80\" />\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Login Form",
+      "title": "Login Form: documented example",
+      "url": "https://torch-ui.dev/recipes/login-form",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Login Form is documented by TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { Card, Divider, Form } from '@torch-ui/solid/layout'\nimport { Input, Checkbox } from '@torch-ui/solid/forms'\nimport { Button } from '@torch-ui/solid/actions'\n\nexport function LoginForm() {\n  const [email, setEmail] = createSignal('')\n  const [password, setPassword] = createSignal('')\n  const [remember, setRemember] = createSignal(false)\n  const [loading, setLoading] = createSignal(false)\n\n  async function handleSubmit(e: SubmitEvent) {\n    e.preventDefault()\n    setLoading(true)\n    await new Promise((r) => setTimeout(r, 1500))\n    setLoading(false)\n  }\n\n  return (\n    <Card class=\"w-full max-w-sm mx-auto\">\n      <Card.Body>\n        <div class=\"mb-6\">\n          <h2 class=\"text-xl font-bold text-ink-900\">Sign in</h2>\n          <p class=\"mt-1 text-sm text-ink-600\">Welcome back. Enter your credentials to continue.</p>\n        </div>\n        <Form onSubmit={handleSubmit} class=\"gap-4\">\n          <Input\n            label=\"Email\"\n            type=\"email\"\n            placeholder=\"you@example.com\"\n            value={email()}\n            onValueChange={setEmail}\n            required\n          />\n          <Input\n            label=\"Password\"\n            type=\"password\"\n            placeholder=\"••••••••\"\n            value={password()}\n            onValueChange={setPassword}\n            required\n          />\n          <div class=\"flex items-center justify-between\">\n            <Checkbox\n              label=\"Remember me\"\n              checked={remember()}\n              onValueChange={setRemember}\n            />\n            <a href=\"#\" class=\"text-sm text-primary-600 hover:underline\">\n              Forgot password?\n            </a>\n          </div>\n          <Button type=\"submit\" variant=\"primary\" fullWidth loading={loading()}>\n            Sign in\n          </Button>\n        </Form>\n        <Divider label=\"or continue with\" class=\"my-4\" />\n        <Button variant=\"outlined\" fullWidth>\n          Continue with Google\n        </Button>\n      </Card.Body>\n    </Card>\n  )\n}\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Register Form",
+      "title": "Register Form: documented example",
+      "url": "https://torch-ui.dev/recipes/register-form",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Register Form is documented by TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { Card, Form } from '@torch-ui/solid/layout'\nimport { Input, Checkbox } from '@torch-ui/solid/forms'\nimport { Button } from '@torch-ui/solid/actions'\nimport { PasswordStrengthIndicator } from '@torch-ui/solid/feedback'\n\nexport function RegisterForm() {\n  const [name, setName] = createSignal('')\n  const [email, setEmail] = createSignal('')\n  const [password, setPassword] = createSignal('')\n  const [agreed, setAgreed] = createSignal(false)\n  const [loading, setLoading] = createSignal(false)\n\n  async function handleSubmit(e: SubmitEvent) {\n    e.preventDefault()\n    if (!agreed()) return\n    setLoading(true)\n    await new Promise((r) => setTimeout(r, 1500))\n    setLoading(false)\n  }\n\n  return (\n    <Card class=\"w-full max-w-sm mx-auto\">\n      <Card.Body>\n        <div class=\"mb-6\">\n          <h2 class=\"text-xl font-bold text-ink-900\">Create an account</h2>\n          <p class=\"mt-1 text-sm text-ink-600\">Get started for free. No credit card required.</p>\n        </div>\n        <Form onSubmit={handleSubmit} class=\"gap-4\">\n          <Input\n            label=\"Full name\"\n            placeholder=\"Caelan Torchward\"\n            value={name()}\n            onValueChange={setName}\n            required\n          />\n          <Input\n            label=\"Email\"\n            type=\"email\"\n            placeholder=\"you@example.com\"\n            value={email()}\n            onValueChange={setEmail}\n            required\n          />\n          <div class=\"flex flex-col gap-1.5\">\n            <Input\n              label=\"Password\"\n              type=\"password\"\n              placeholder=\"Choose a strong password\"\n              value={password()}\n              onValueChange={setPassword}\n              required\n            />\n            <PasswordStrengthIndicator password={password()} />\n          </div>\n          <Checkbox\n            label=\"I agree to the Terms of Service and Privacy Policy\"\n            checked={agreed()}\n            onValueChange={setAgreed}\n          />\n          <Button\n            type=\"submit\"\n            variant=\"primary\"\n            fullWidth\n            loading={loading()}\n            disabled={!agreed()}\n          >\n            Create account\n          </Button>\n        </Form>\n        <p class=\"mt-4 text-center text-sm text-ink-500\">\n          Already have an account?{' '}\n          <a href=\"#\" class=\"text-primary-600 hover:underline\">Sign in</a>\n        </p>\n      </Card.Body>\n    </Card>\n  )\n}\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained.\n\nThe published recipe passes a password prop unsupported by the pinned PasswordStrengthIndicator. The preview supplies the required strength, score, and details using the analysis from TorchUI’s own PasswordStrengthIndicator documentation example."
+    },
+    {
+      "componentId": "torch-ui/Settings Form",
+      "title": "Settings Form: documented example",
+      "url": "https://torch-ui.dev/recipes/settings-form",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Settings Form is documented by TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal, Show } from 'solid-js'\nimport { Card, Form, Section } from '@torch-ui/solid/layout'\nimport { Input, Switch, Select } from '@torch-ui/solid/forms'\nimport { Button } from '@torch-ui/solid/actions'\nimport { Tabs } from '@torch-ui/solid/navigation'\nimport { Alert } from '@torch-ui/solid/feedback'\n\nconst TABS = [\n  { id: 'profile', label: 'Profile' },\n  { id: 'security', label: 'Security' },\n  { id: 'notifications', label: 'Notifications' },\n]\n\nconst TIMEZONE_OPTIONS = [\n  { value: 'utc', label: 'UTC' },\n  { value: 'america-new-york', label: 'America/New York' },\n  { value: 'america-los-angeles', label: 'America/Los Angeles' },\n  { value: 'europe-london', label: 'Europe/London' },\n  { value: 'europe-paris', label: 'Europe/Paris' },\n  { value: 'asia-tokyo', label: 'Asia/Tokyo' },\n]\n\nexport function SettingsForm() {\n  const [tab, setTab] = createSignal('profile')\n  const [saved, setSaved] = createSignal(false)\n\n  const [name, setName] = createSignal('Caelan Torchward')\n  const [email, setEmail] = createSignal('caelan@torchui.dev')\n  const [timezone, setTimezone] = createSignal('america-new-york')\n\n  const [currentPassword, setCurrentPassword] = createSignal('')\n  const [newPassword, setNewPassword] = createSignal('')\n  const [confirmPassword, setConfirmPassword] = createSignal('')\n\n  const [emailNotifs, setEmailNotifs] = createSignal(true)\n  const [slackNotifs, setSlackNotifs] = createSignal(false)\n  const [weeklyDigest, setWeeklyDigest] = createSignal(true)\n  const [mentions, setMentions] = createSignal(true)\n\n  async function handleSave(e: SubmitEvent) {\n    e.preventDefault()\n    await new Promise((r) => setTimeout(r, 800))\n    setSaved(true)\n    setTimeout(() => setSaved(false), 3000)\n  }\n\n  return (\n    <div class=\"w-full max-w-2xl mx-auto\">\n      <Tabs tabs={TABS} value={tab()} onValueChange={setTab} />\n\n      <Show when={saved()}>\n        <Alert status=\"success\" class=\"mb-4\">Settings saved successfully.</Alert>\n      </Show>\n\n      <Show when={tab() === 'profile'}>\n        <Form onSubmit={handleSave}>\n          <Section title=\"Personal Information\" titleClass=\"text-base font-semibold text-ink-900\">\n            <div class=\"mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2\">\n              <Input label=\"Full name\" value={name()} onValueChange={setName} required />\n              <Input label=\"Email\" type=\"email\" value={email()} onValueChange={setEmail} required />\n            </div>\n            <div class=\"mt-4\">\n              <Select label=\"Timezone\" options={TIMEZONE_OPTIONS} value={timezone()} onValueChange={setTimezone} />\n            </div>\n          </Section>\n          <div class=\"flex justify-end\">\n            <Button type=\"submit\" variant=\"primary\">Save changes</Button>\n          </div>\n        </Form>\n      </Show>\n\n      <Show when={tab() === 'security'}>\n        <Form onSubmit={handleSave}>\n          <Section title=\"Change Password\" titleClass=\"text-base font-semibold text-ink-900\">\n            <div class=\"mt-4 flex flex-col gap-4\">\n              <Input label=\"Current password\" type=\"password\" placeholder=\"••••••••\" value={currentPassword()} onValueChange={setCurrentPassword} required />\n              <Input label=\"New password\" type=\"password\" placeholder=\"Choose a strong password\" value={newPassword()} onValueChange={setNewPassword} required />\n              <Input label=\"Confirm new password\" type=\"password\" placeholder=\"Repeat new password\" value={confirmPassword()} onValueChange={setConfirmPassword} required />\n            </div>\n          </Section>\n          <div class=\"flex justify-end\">\n            <Button type=\"submit\" variant=\"primary\">Update password</Button>\n          </div>\n        </Form>\n      </Show>\n\n      <Show when={tab() === 'notifications'}>\n        <Form onSubmit={handleSave}>\n          <Section title=\"Notification Preferences\" titleClass=\"text-base font-semibold text-ink-900\">\n            <Card variant=\"flat\" class=\"mt-4 divide-y divide-surface-border\">\n              <div class=\"flex items-center justify-between px-4 py-3\">\n                <div>\n                  <p class=\"text-sm font-medium text-ink-900\">Email notifications</p>\n                  <p class=\"text-xs text-ink-500\">Receive updates to your inbox</p>\n                </div>\n                <Switch checked={emailNotifs()} onValueChange={setEmailNotifs} />\n              </div>\n              <div class=\"flex items-center justify-between px-4 py-3\">\n                <div>\n                  <p class=\"text-sm font-medium text-ink-900\">Slack notifications</p>\n                  <p class=\"text-xs text-ink-500\">Get pinged in your Slack workspace</p>\n                </div>\n                <Switch checked={slackNotifs()} onValueChange={setSlackNotifs} />\n              </div>\n              <div class=\"flex items-center justify-between px-4 py-3\">\n                <div>\n                  <p class=\"text-sm font-medium text-ink-900\">Weekly digest</p>\n                  <p class=\"text-xs text-ink-500\">A summary of activity every Monday</p>\n                </div>\n                <Switch checked={weeklyDigest()} onValueChange={setWeeklyDigest} />\n              </div>\n              <div class=\"flex items-center justify-between px-4 py-3\">\n                <div>\n                  <p class=\"text-sm font-medium text-ink-900\">@mentions</p>\n                  <p class=\"text-xs text-ink-500\">Notify me when I am mentioned</p>\n                </div>\n                <Switch checked={mentions()} onValueChange={setMentions} />\n              </div>\n            </Card>\n          </Section>\n          <div class=\"flex justify-end\">\n            <Button type=\"submit\" variant=\"primary\">Save preferences</Button>\n          </div>\n        </Form>\n      </Show>\n    </div>\n  )\n}\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Form Dialog",
+      "title": "Form Dialog: documented example",
+      "url": "https://torch-ui.dev/recipes/form-dialog",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Form Dialog is documented by TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { Dialog, Form } from '@torch-ui/solid/layout'\nimport { Input, TextArea, Select } from '@torch-ui/solid/forms'\nimport { Button } from '@torch-ui/solid/actions'\n\nconst PRIORITY_OPTIONS = [\n  { value: 'low', label: 'Low' },\n  { value: 'medium', label: 'Medium' },\n  { value: 'high', label: 'High' },\n  { value: 'urgent', label: 'Urgent' },\n]\n\nexport function FormDialog() {\n  const [open, setOpen] = createSignal(false)\n  const [loading, setLoading] = createSignal(false)\n\n  const [title, setTitle] = createSignal('')\n  const [description, setDescription] = createSignal('')\n  const [priority, setPriority] = createSignal('medium')\n\n  function reset() {\n    setTitle('')\n    setDescription('')\n    setPriority('medium')\n  }\n\n  async function handleSubmit(e: SubmitEvent) {\n    e.preventDefault()\n    setLoading(true)\n    await new Promise((r) => setTimeout(r, 1000))\n    setLoading(false)\n    setOpen(false)\n    reset()\n  }\n\n  return (\n    <>\n      <Button variant=\"primary\" onClick={() => setOpen(true)}>\n        Create task\n      </Button>\n\n      <Dialog\n        open={open()}\n        onClose={() => setOpen(false)}\n        onCloseComplete={reset}\n        size=\"sm\"\n        showCloseButton\n        header={<span class=\"text-base font-semibold text-ink-900\">Create task</span>}\n        footer={\n          <div class=\"flex justify-end gap-2\">\n            <Button variant=\"outlined\" onClick={() => setOpen(false)}>Cancel</Button>\n            <Button\n              variant=\"primary\"\n              loading={loading()}\n              onClick={() => {\n                const form = document.querySelector('[data-task-form]') as HTMLFormElement\n                form?.requestSubmit()\n              }}\n            >\n              Create task\n            </Button>\n          </div>\n        }\n      >\n        <Form data-task-form onSubmit={handleSubmit} class=\"gap-4\">\n          <Input label=\"Title\" placeholder=\"Short, descriptive task name\" value={title()} onValueChange={setTitle} required />\n          <TextArea label=\"Description\" placeholder=\"What needs to be done?\" value={description()} onValueChange={setDescription} rows={3} />\n          <Select label=\"Priority\" options={PRIORITY_OPTIONS} value={priority()} onValueChange={setPriority} />\n        </Form>\n      </Dialog>\n    </>\n  )\n}\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Form Drawer",
+      "title": "Form Drawer: documented example",
+      "url": "https://torch-ui.dev/recipes/form-drawer",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Form Drawer is documented by TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { Drawer, Form } from '@torch-ui/solid/layout'\nimport { Input, TextArea, Select, MultiSelect } from '@torch-ui/solid/forms'\nimport { Button } from '@torch-ui/solid/actions'\n\nconst STATUS_OPTIONS = [\n  { value: 'active', label: 'Active' },\n  { value: 'inactive', label: 'Inactive' },\n  { value: 'pending', label: 'Pending review' },\n]\n\nconst TAG_OPTIONS = [\n  { value: 'frontend', label: 'Frontend' },\n  { value: 'backend', label: 'Backend' },\n  { value: 'design', label: 'Design' },\n  { value: 'devops', label: 'DevOps' },\n  { value: 'data', label: 'Data' },\n]\n\nexport function FormDrawer() {\n  const [open, setOpen] = createSignal(false)\n  const [loading, setLoading] = createSignal(false)\n\n  const [projectName, setProjectName] = createSignal('')\n  const [summary, setSummary] = createSignal('')\n  const [status, setStatus] = createSignal('active')\n  const [tags, setTags] = createSignal<string[]>([])\n\n  function reset() {\n    setProjectName('')\n    setSummary('')\n    setStatus('active')\n    setTags([])\n  }\n\n  async function handleSubmit(e: SubmitEvent) {\n    e.preventDefault()\n    setLoading(true)\n    await new Promise((r) => setTimeout(r, 1000))\n    setLoading(false)\n    setOpen(false)\n    reset()\n  }\n\n  return (\n    <>\n      <Button variant=\"primary\" onClick={() => setOpen(true)}>New project</Button>\n\n      <Drawer\n        open={open()}\n        onClose={() => setOpen(false)}\n        onCloseComplete={reset}\n        side=\"end\"\n        size=\"md\"\n        showCloseButton\n      >\n        <div class=\"flex h-full flex-col\">\n          <div class=\"border-b border-surface-border px-6 py-4\">\n            <h2 class=\"text-base font-semibold text-ink-900\">New project</h2>\n            <p class=\"mt-0.5 text-sm text-ink-500\">Fill in the details to create a new project.</p>\n          </div>\n          <div class=\"flex-1 overflow-y-auto px-6 py-6\">\n            <Form onSubmit={handleSubmit} id=\"project-form\">\n              <Input label=\"Project name\" placeholder=\"e.g. Website Redesign\" value={projectName()} onValueChange={setProjectName} required />\n              <TextArea label=\"Summary\" placeholder=\"Brief description of the project goals\" value={summary()} onValueChange={setSummary} rows={4} />\n              <Select label=\"Status\" options={STATUS_OPTIONS} value={status()} onValueChange={setStatus} />\n              <MultiSelect label=\"Tags\" options={TAG_OPTIONS} value={tags()} onValueChange={setTags} />\n            </Form>\n          </div>\n          <div class=\"border-t border-surface-border px-6 py-4\">\n            <div class=\"flex justify-end gap-2\">\n              <Button variant=\"outlined\" onClick={() => setOpen(false)}>Cancel</Button>\n              <Button variant=\"primary\" loading={loading()} type=\"submit\" form=\"project-form\">\n                Create project\n              </Button>\n            </div>\n          </div>\n        </div>\n      </Drawer>\n    </>\n  )\n}\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Wizard Flow",
+      "title": "Wizard Flow: documented example",
+      "url": "https://torch-ui.dev/recipes/wizard-flow",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Wizard Flow is documented by TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal, Show } from 'solid-js'\nimport { Card, Form, WizardStepper } from '@torch-ui/solid/layout'\nimport { Input, Select, Checkbox } from '@torch-ui/solid/forms'\nimport { Button } from '@torch-ui/solid/actions'\n\nconst STEP_LABELS = ['Account', 'Organization', 'Review']\n\nconst ROLE_OPTIONS = [\n  { value: 'developer', label: 'Developer' },\n  { value: 'designer', label: 'Designer' },\n  { value: 'manager', label: 'Manager' },\n  { value: 'executive', label: 'Executive' },\n  { value: 'other', label: 'Other' },\n]\n\nconst TEAM_SIZE_OPTIONS = [\n  { value: '1', label: 'Just me' },\n  { value: '2-10', label: '2–10 people' },\n  { value: '11-50', label: '11–50 people' },\n  { value: '51-200', label: '51–200 people' },\n  { value: '200+', label: '200+ people' },\n]\n\nexport function WizardFlow() {\n  const [step, setStep] = createSignal(1)\n  const [submitting, setSubmitting] = createSignal(false)\n  const [done, setDone] = createSignal(false)\n\n  const [name, setName] = createSignal('')\n  const [email, setEmail] = createSignal('')\n  const [role, setRole] = createSignal('developer')\n  const [orgName, setOrgName] = createSignal('')\n  const [teamSize, setTeamSize] = createSignal('2-10')\n  const [acceptUpdates, setAcceptUpdates] = createSignal(true)\n\n  async function handleFinish(e: SubmitEvent) {\n    e.preventDefault()\n    setSubmitting(true)\n    await new Promise((r) => setTimeout(r, 1200))\n    setSubmitting(false)\n    setDone(true)\n  }\n\n  if (done()) {\n    return (\n      <Card class=\"w-full max-w-lg mx-auto text-center\">\n        <Card.Body class=\"py-12\">\n          <div class=\"mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-900/30\">\n            <svg class=\"h-7 w-7 text-emerald-600 dark:text-emerald-400\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" viewBox=\"0 0 24 24\">\n              <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M5 13l4 4L19 7\" />\n            </svg>\n          </div>\n          <h2 class=\"text-xl font-bold text-ink-900\">You're all set!</h2>\n          <p class=\"mt-2 text-sm text-ink-600\">Welcome, {name()}. Your workspace <strong>{orgName()}</strong> is ready.</p>\n        </Card.Body>\n      </Card>\n    )\n  }\n\n  return (\n    <Card class=\"w-full max-w-lg mx-auto\">\n      <Card.Body>\n        <WizardStepper step={step()} totalSteps={STEP_LABELS.length} stepLabels={STEP_LABELS} variant=\"pills\" class=\"mb-6\" />\n\n        <Show when={step() === 1}>\n          <Form onSubmit={(e) => { e.preventDefault(); setStep(2) }} class=\"gap-4\">\n            <div>\n              <h2 class=\"text-lg font-semibold text-ink-900\">Your account</h2>\n              <p class=\"mt-1 text-sm text-ink-600\">Tell us a little about yourself.</p>\n            </div>\n            <Input label=\"Full name\" placeholder=\"Caelan Torchward\" value={name()} onValueChange={setName} required />\n            <Input label=\"Work email\" type=\"email\" placeholder=\"you@company.com\" value={email()} onValueChange={setEmail} required />\n            <Select label=\"Your role\" options={ROLE_OPTIONS} value={role()} onValueChange={setRole} />\n            <div class=\"flex justify-end\">\n              <Button type=\"submit\" variant=\"primary\">Next</Button>\n            </div>\n          </Form>\n        </Show>\n\n        <Show when={step() === 2}>\n          <Form onSubmit={(e) => { e.preventDefault(); setStep(3) }} class=\"gap-4\">\n            <div>\n              <h2 class=\"text-lg font-semibold text-ink-900\">Your organization</h2>\n              <p class=\"mt-1 text-sm text-ink-600\">Set up your team workspace.</p>\n            </div>\n            <Input label=\"Organization name\" placeholder=\"Acme Corp\" value={orgName()} onValueChange={setOrgName} required />\n            <Select label=\"Team size\" options={TEAM_SIZE_OPTIONS} value={teamSize()} onValueChange={setTeamSize} />\n            <Checkbox label=\"Send me product updates and tips\" checked={acceptUpdates()} onValueChange={setAcceptUpdates} />\n            <div class=\"flex justify-between\">\n              <Button variant=\"ghost\" onClick={() => setStep(1)}>Back</Button>\n              <Button type=\"submit\" variant=\"primary\">Next</Button>\n            </div>\n          </Form>\n        </Show>\n\n        <Show when={step() === 3}>\n          <Form onSubmit={handleFinish} class=\"gap-4\">\n            <div>\n              <h2 class=\"text-lg font-semibold text-ink-900\">Review &amp; confirm</h2>\n              <p class=\"mt-1 text-sm text-ink-600\">Everything look right?</p>\n            </div>\n            <Card variant=\"flat\" class=\"divide-y divide-surface-border\">\n              <div class=\"flex justify-between px-4 py-2.5 text-sm\">\n                <span class=\"text-ink-500\">Name</span>\n                <span class=\"font-medium text-ink-900\">{name()}</span>\n              </div>\n              <div class=\"flex justify-between px-4 py-2.5 text-sm\">\n                <span class=\"text-ink-500\">Email</span>\n                <span class=\"font-medium text-ink-900\">{email()}</span>\n              </div>\n              <div class=\"flex justify-between px-4 py-2.5 text-sm\">\n                <span class=\"text-ink-500\">Organization</span>\n                <span class=\"font-medium text-ink-900\">{orgName()}</span>\n              </div>\n            </Card>\n            <div class=\"flex justify-between\">\n              <Button variant=\"ghost\" onClick={() => setStep(2)}>Back</Button>\n              <Button type=\"submit\" variant=\"primary\" loading={submitting()}>Finish setup</Button>\n            </div>\n          </Form>\n        </Show>\n      </Card.Body>\n    </Card>\n  )\n}\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Stat Grid",
+      "title": "Stat Grid: documented example",
+      "url": "https://torch-ui.dev/recipes/stat-grid",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Stat Grid is documented by TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { TrendingUp, TrendingDown, Users, ShoppingCart, DollarSign, Activity } from 'lucide-solid'\nimport { StatCard } from '@torch-ui/solid/data-display'\nimport { Sparkline } from '@torch-ui/solid/data-display'\n\nconst revenueData = [4200, 3800, 5100, 4700, 6200, 5800, 7400, 6900, 8100, 7600, 9200, 8800]\nconst usersData   = [120, 145, 132, 160, 178, 165, 190, 210, 198, 225, 242, 238]\nconst ordersData  = [85, 92, 78, 95, 110, 98, 115, 125, 108, 132, 128, 140]\nconst churnData   = [3.2, 3.8, 4.1, 3.6, 3.1, 2.9, 3.4, 3.7, 4.2, 3.8, 3.5, 3.1]\n\nexport function StatGrid() {\n  return (\n    <div class=\"grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4\">\n      <StatCard\n        label=\"Monthly Revenue\"\n        value=\"$87,492\"\n        trendLabel=\"+14.2% from last month\"\n        trendVariant=\"positive\"\n        trendIcon={<TrendingUp class=\"h-3.5 w-3.5\" />}\n        icon={<DollarSign class=\"h-5 w-5 text-emerald-600\" />}\n        chart={<Sparkline data={revenueData} color=\"#10b981\" class=\"h-10\" />}\n        chartA11yLabel=\"Revenue trend over last 12 months\"\n      />\n      <StatCard\n        label=\"Active Users\"\n        value=\"2,381\"\n        trendLabel=\"+8.7% from last month\"\n        trendVariant=\"positive\"\n        trendIcon={<TrendingUp class=\"h-3.5 w-3.5\" />}\n        icon={<Users class=\"h-5 w-5 text-blue-600\" />}\n        chart={<Sparkline data={usersData} color=\"#3b82f6\" class=\"h-10\" />}\n        chartA11yLabel=\"Active users trend over last 12 months\"\n      />\n      <StatCard\n        label=\"Orders\"\n        value=\"1,402\"\n        trendLabel=\"+11.3% from last month\"\n        trendVariant=\"positive\"\n        trendIcon={<TrendingUp class=\"h-3.5 w-3.5\" />}\n        icon={<ShoppingCart class=\"h-5 w-5 text-violet-600\" />}\n        chart={<Sparkline data={ordersData} color=\"#7c3aed\" class=\"h-10\" />}\n        chartA11yLabel=\"Order count trend over last 12 months\"\n      />\n      <StatCard\n        label=\"Churn Rate\"\n        value=\"3.1%\"\n        trendLabel=\"-0.4% from last month\"\n        trendVariant=\"positive\"\n        trendIcon={<TrendingDown class=\"h-3.5 w-3.5\" />}\n        icon={<Activity class=\"h-5 w-5 text-amber-600\" />}\n        chart={<Sparkline data={churnData} color=\"#d97706\" class=\"h-10\" />}\n        chartA11yLabel=\"Churn rate trend over last 12 months\"\n      />\n    </div>\n  )\n}\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/User Card",
+      "title": "User Card: documented example",
+      "url": "https://torch-ui.dev/recipes/user-card",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "User Card is documented by TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal } from 'solid-js'\nimport { Card } from '@torch-ui/solid/layout'\nimport { Avatar, Tag } from '@torch-ui/solid/data-display'\nimport { Button } from '@torch-ui/solid/actions'\nimport { Mail, MapPin, Link as LinkIcon } from 'lucide-solid'\n\nexport function UserCard() {\n  const [following, setFollowing] = createSignal(false)\n\n  return (\n    <Card class=\"w-full max-w-sm mx-auto\">\n      <Card.Body>\n        <div class=\"flex items-start justify-between\">\n          <Avatar\n            name=\"Lyra Swiftfoot\"\n            imageUrl=\"/images/headshots/lyra_swiftfoot.jpg\"\n            size=\"lg\"\n            shape=\"circle\"\n          />\n          <Button\n            variant={following() ? 'outlined' : 'primary'}\n            size=\"sm\"\n            onClick={() => setFollowing((v) => !v)}\n          >\n            {following() ? 'Following' : 'Follow'}\n          </Button>\n        </div>\n\n        <div class=\"mt-4\">\n          <h2 class=\"text-base font-semibold text-ink-900\">Lyra Swiftfoot</h2>\n          <p class=\"text-sm text-ink-500\">Senior Rogue · Guild of Shadows</p>\n        </div>\n\n        <p class=\"mt-3 text-sm text-ink-600\">\n          Specialist in infiltration and intelligence gathering. Seven years on the front lines,\n          three successful heists on the Crimson Keep.\n        </p>\n\n        <div class=\"mt-3 flex flex-wrap gap-1.5\">\n          <Tag size=\"sm\" variant=\"neutral\">Stealth</Tag>\n          <Tag size=\"sm\" variant=\"neutral\">Lockpicking</Tag>\n          <Tag size=\"sm\" variant=\"neutral\">Deception</Tag>\n          <Tag size=\"sm\" color=\"#7c3aed\">Level 12</Tag>\n        </div>\n\n        <div class=\"mt-4 flex flex-col gap-1.5 text-sm text-ink-500\">\n          <span class=\"flex items-center gap-2\">\n            <MapPin class=\"h-3.5 w-3.5 shrink-0\" aria-hidden=\"true\" />\n            Shadowfen, Northern Reach\n          </span>\n          <span class=\"flex items-center gap-2\">\n            <Mail class=\"h-3.5 w-3.5 shrink-0\" aria-hidden=\"true\" />\n            lyra@guild-of-shadows.org\n          </span>\n          <span class=\"flex items-center gap-2\">\n            <LinkIcon class=\"h-3.5 w-3.5 shrink-0\" aria-hidden=\"true\" />\n            guild-of-shadows.org/~lyra\n          </span>\n        </div>\n\n        <div class=\"mt-4 grid grid-cols-3 divide-x divide-surface-border rounded-lg border border-surface-border text-center\">\n          <div class=\"py-3\">\n            <p class=\"text-sm font-semibold text-ink-900\">142</p>\n            <p class=\"text-xs text-ink-500\">Missions</p>\n          </div>\n          <div class=\"py-3\">\n            <p class=\"text-sm font-semibold text-ink-900\">98%</p>\n            <p class=\"text-xs text-ink-500\">Success</p>\n          </div>\n          <div class=\"py-3\">\n            <p class=\"text-sm font-semibold text-ink-900\">2.4k</p>\n            <p class=\"text-xs text-ink-500\">Followers</p>\n          </div>\n        </div>\n      </Card.Body>\n    </Card>\n  )\n}\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained.\n\nThe documentation’s Lyra portrait at /images/headshots/lyra_swiftfoot.jpg is hosted outside the pinned repository and no redistribution license could be verified. The preview omits that image and uses TorchUI Avatar’s built-in initials fallback."
+    },
+    {
+      "componentId": "torch-ui/Comment Thread",
+      "title": "Comment Thread: documented example",
+      "url": "https://torch-ui.dev/recipes/comment-thread",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Comment Thread is documented by TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { createSignal, For } from 'solid-js'\nimport { Avatar } from '@torch-ui/solid/data-display'\nimport { TextArea } from '@torch-ui/solid/forms'\nimport { Button } from '@torch-ui/solid/actions'\nimport { ThumbsUp, Reply } from 'lucide-solid'\n\ninterface Comment {\n  id: string\n  author: string\n  initials: string\n  avatarColor: 'primary' | 'success' | 'warning' | 'danger' | 'info' | 'neutral'\n  time: string\n  body: string\n  likes: number\n}\n\nconst INITIAL_COMMENTS: Comment[] = [\n  {\n    id: '1',\n    author: 'Caelan Torchward',\n    initials: 'CT',\n    avatarColor: 'primary',\n    time: '2 hours ago',\n    body: 'Just finished clearing the Thornwood dungeon. The southern passage has a hidden lever behind the second bookshelf — took us 40 minutes to find it. Mark it on the map.',\n    likes: 7,\n  },\n  {\n    id: '2',\n    author: 'Lyra Swiftfoot',\n    initials: 'LS',\n    avatarColor: 'info',\n    time: '1 hour ago',\n    body: 'Good to know! We were planning to run it this weekend. Any tips on the final boss? I heard the fire resistance potions are mandatory.',\n    likes: 3,\n  },\n]\n\nexport function CommentThread() {\n  const [comments, setComments] = createSignal<Comment[]>(INITIAL_COMMENTS)\n  const [draft, setDraft] = createSignal('')\n  const [submitting, setSubmitting] = createSignal(false)\n\n  async function handleSubmit(e: SubmitEvent) {\n    e.preventDefault()\n    if (!draft().trim()) return\n    setSubmitting(true)\n    await new Promise((r) => setTimeout(r, 600))\n    setComments((prev) => [\n      ...prev,\n      {\n        id: String(Date.now()),\n        author: 'You',\n        initials: 'YO',\n        avatarColor: 'success',\n        time: 'just now',\n        body: draft(),\n        likes: 0,\n      },\n    ])\n    setDraft('')\n    setSubmitting(false)\n  }\n\n  function handleLike(id: string) {\n    setComments((prev) =>\n      prev.map((c) => (c.id === id ? { ...c, likes: c.likes + 1 } : c))\n    )\n  }\n\n  return (\n    <div class=\"w-full max-w-2xl mx-auto flex flex-col gap-6\">\n      <For each={comments()}>\n        {(comment) => (\n          <div class=\"flex gap-3\">\n            <Avatar name={comment.author} color={comment.avatarColor} size=\"md\" shape=\"circle\" class=\"shrink-0\" />\n            <div class=\"min-w-0 flex-1\">\n              <div class=\"rounded-xl border border-surface-border bg-surface-raised px-4 py-3\">\n                <div class=\"flex items-center justify-between gap-2\">\n                  <span class=\"text-sm font-semibold text-ink-900\">{comment.author}</span>\n                  <span class=\"shrink-0 text-xs text-ink-500\">{comment.time}</span>\n                </div>\n                <p class=\"mt-1 text-sm text-ink-700\">{comment.body}</p>\n              </div>\n              <div class=\"mt-1.5 flex items-center gap-3 px-1\">\n                <button\n                  type=\"button\"\n                  class=\"flex items-center gap-1.5 text-xs text-ink-500 hover:text-primary-600 transition-colors\"\n                  onClick={() => handleLike(comment.id)}\n                >\n                  <ThumbsUp class=\"h-3.5 w-3.5\" aria-hidden=\"true\" />\n                  {comment.likes > 0 ? comment.likes : 'Like'}\n                </button>\n                <button\n                  type=\"button\"\n                  class=\"flex items-center gap-1.5 text-xs text-ink-500 hover:text-primary-600 transition-colors\"\n                >\n                  <Reply class=\"h-3.5 w-3.5\" aria-hidden=\"true\" />\n                  Reply\n                </button>\n              </div>\n            </div>\n          </div>\n        )}\n      </For>\n\n      <div class=\"flex gap-3\">\n        <Avatar name=\"You\" color=\"success\" size=\"md\" shape=\"circle\" class=\"shrink-0\" />\n        <form onSubmit={handleSubmit} class=\"min-w-0 flex-1 flex flex-col gap-2\">\n          <TextArea placeholder=\"Add a comment…\" value={draft()} onValueChange={setDraft} rows={3} />\n          <div class=\"flex justify-end\">\n            <Button type=\"submit\" variant=\"primary\" size=\"sm\" loading={submitting()} disabled={!draft().trim()}>\n              Post comment\n            </Button>\n          </div>\n        </form>\n      </div>\n    </div>\n  )\n}\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained."
+    },
+    {
+      "componentId": "torch-ui/Filter Builder",
+      "title": "Filter Builder: documented example",
+      "url": "https://torch-ui.dev/recipes/filter-builder",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Filter Builder is documented by TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\n// FilterBuilder.tsx — copy this file into your project.\n// This is a recipe, not a @torch-ui/solid export.\n// Requires: @torch-ui/solid (Select, Input, Button, useIcons, createSortableDrag), lucide-solid\n\nimport { For, Show, createSignal, createEffect, onCleanup } from 'solid-js'\nimport { Select, Input } from '@torch-ui/solid/forms'\nimport { Button } from '@torch-ui/solid/actions'\nimport { useIcons, createSortableDrag } from '@torch-ui/solid'\nimport { X, Plus, RefreshCw, Layers } from 'lucide-solid'\n\n// ── Types ──────────────────────────────────────────────────────────────────\n\nexport type FieldType = 'text' | 'select'\n\nexport interface FilterField {\n  id: string\n  label: string\n  type: FieldType\n  options?: { value: string; label: string }[]\n}\n\nexport interface FilterOperator {\n  value: string\n  label: string\n}\n\nexport type FilterLogic = 'and' | 'or'\n\nexport interface FilterRule {\n  type: 'rule'\n  id: string\n  fieldId: string\n  operator: string\n  value: string\n}\n\nexport interface FilterGroup {\n  type: 'group'\n  id: string\n  logic: FilterLogic\n  items: (FilterRule | FilterGroup)[]\n}\n\nexport interface FilterBuilderProps {\n  fields: FilterField[]\n  getOperators: (field: FilterField | undefined) => FilterOperator[]\n  value: FilterGroup\n  onValueChange: (group: FilterGroup) => void\n}\n\n// ── Helpers ────────────────────────────────────────────────────────────────\n\nlet _seq = 0\nconst uid = (prefix) => prefix + '-' + (++_seq)\n\nexport function newGroup(logic = 'and'): FilterGroup {\n  return { type: 'group', id: uid('g'), logic, items: [] }\n}\n\nexport function newRule(fields, getOperators): FilterRule {\n  const first = fields[0]\n  const ops = getOperators(first)\n  return { type: 'rule', id: uid('r'), fieldId: first?.id ?? '', operator: ops[0]?.value ?? 'equals', value: '' }\n}\n\n// Immutable tree helpers\nfunction updateGroupItems(root, groupId, updater) {\n  if (root.id === groupId) return { ...root, items: updater(root.items) }\n  return { ...root, items: root.items.map((item) => item.type === 'group' ? updateGroupItems(item, groupId, updater) : item) }\n}\n\nfunction patchRule(root, ruleId, patch) {\n  return { ...root, items: root.items.map((item) => {\n    if (item.type === 'rule' && item.id === ruleId) return { ...item, ...patch }\n    if (item.type === 'group') return patchRule(item, ruleId, patch)\n    return item\n  })}\n}\n\nfunction setGroupLogic(root, groupId, logic) {\n  if (root.id === groupId) return { ...root, logic }\n  return { ...root, items: root.items.map((item) => item.type === 'group' ? setGroupLogic(item, groupId, logic) : item) }\n}\n\n// ── RuleRow — one filter condition ─────────────────────────────────────────\n\nfunction RuleRow(props) {\n  const icons = useIcons()\n  const field = () => props.fields.find((f) => f.id === props.rule.fieldId)\n  const operators = () => props.getOperators(field())\n  const needsValue = () => !['is_empty', 'is_not_empty'].includes(props.rule.operator)\n\n  // Local text state avoids remounting on every keystroke — pushes on blur\n  const [localText, setLocalText] = createSignal(props.rule.value)\n  createEffect(() => setLocalText(props.rule.value))\n\n  return (\n    <div class=\"flex items-center gap-2 rounded-lg border border-surface-border bg-surface-raised p-3\">\n      <button type=\"button\" onPointerDown={props.onDragHandle}\n        class=\"inline-flex h-7 w-7 shrink-0 items-center justify-center rounded text-ink-400 hover:bg-surface-overlay touch-none cursor-grab\">\n        {icons.dragHandle({ class: 'h-4 w-4' })}\n      </button>\n      <div class=\"flex min-w-0 flex-1 flex-wrap items-end gap-2\">\n        <div class=\"min-w-[140px] flex-1\">\n          <Select label=\"Field\" size=\"sm\"\n            options={props.fields.map((f) => ({ value: f.id, label: f.label }))}\n            value={props.rule.fieldId}\n            onValueChange={(v) => {\n              const ops = props.getOperators(props.fields.find((f) => f.id === v))\n              props.onRuleChange({ fieldId: v, operator: ops[0]?.value ?? 'equals', value: '' })\n            }} />\n        </div>\n        <div class=\"min-w-[140px] flex-1\">\n          <Select label=\"Operator\" size=\"sm\" options={operators()} value={props.rule.operator}\n            onValueChange={(v) => props.onRuleChange({ operator: v })} />\n        </div>\n        <Show when={needsValue() && props.rule.fieldId}>\n          <div class=\"min-w-[140px] flex-1\">\n            <Show when={field()?.type === 'select'}\n              fallback={\n                <div onFocusOut={() => props.onRuleChange({ value: localText() })}>\n                  <Input label=\"Value\" size=\"sm\" value={localText()} onValueChange={setLocalText} placeholder=\"Enter value...\" />\n                </div>\n              }>\n              <Select label=\"Value\" size=\"sm\" options={field()?.options ?? []} value={props.rule.value}\n                onValueChange={(v) => props.onRuleChange({ value: v })} placeholder=\"Select value...\" />\n            </Show>\n          </div>\n        </Show>\n      </div>\n      <button type=\"button\" onClick={props.onRemove}\n        class=\"mb-0.5 inline-flex h-9 w-9 items-center justify-center rounded-lg text-ink-400 hover:bg-surface-overlay hover:text-ink-700\">\n        <X class=\"h-4 w-4\" />\n      </button>\n    </div>\n  )\n}\n\n// ── FilterGroupBlock — recursive group renderer ────────────────────────────\n\nfunction FilterGroupBlock(props) {\n  const icons = useIcons()\n  const hasItems = () => props.group.items.length > 0\n  const showLogic = () => props.group.items.length > 1\n\n  const drag = createSortableDrag({\n    items: () => props.group.items,\n    onReorder: (ids) => {\n      const map = new Map(props.group.items.map((i) => [i.id, i]))\n      props.onGroupChange({ ...props.group, items: ids.map((id) => map.get(id)).filter(Boolean) })\n    },\n  })\n\n  const addRule = () => props.onGroupChange(updateGroupItems(props.group, props.group.id, (items) => [...items, newRule(props.fields, props.getOperators)]))\n  const addSubGroup = () => props.onGroupChange(updateGroupItems(props.group, props.group.id, (items) => [...items, newGroup('and')]))\n  const removeItem = (id) => props.onGroupChange(updateGroupItems(props.group, props.group.id, (items) => items.filter((i) => i.id !== id)))\n  const toggleLogic = () => props.onGroupChange(setGroupLogic(props.group, props.group.id, props.group.logic === 'and' ? 'or' : 'and'))\n\n  const isNested = () => props.depth > 0\n\n  return (\n    <div class={isNested() ? 'rounded-lg border border-surface-border bg-surface-dim/30 p-3 space-y-2' : 'space-y-2'}>\n      <Show when={isNested()}>\n        <div class=\"flex items-center gap-1 mb-1\">\n          <button type=\"button\" onPointerDown={props.onDragHandle}\n            class=\"inline-flex h-6 w-6 items-center justify-center rounded text-ink-400 hover:bg-surface-overlay touch-none cursor-grab\">\n            {icons.dragHandle({ class: 'h-3.5 w-3.5' })}\n          </button>\n          <span class=\"flex-1 text-xs font-medium text-ink-500 uppercase tracking-wide\">Group</span>\n          <button type=\"button\" onClick={props.onRemoveSelf}\n            class=\"inline-flex h-6 w-6 items-center justify-center rounded text-ink-400 hover:bg-surface-overlay hover:text-ink-700\">\n            <X class=\"h-3.5 w-3.5\" />\n          </button>\n        </div>\n      </Show>\n\n      <Show when={showLogic()}>\n        <div class=\"flex items-center gap-2\">\n          <span class=\"text-sm text-ink-500\">Match</span>\n          <button type=\"button\" onClick={toggleLogic}\n            class=\"inline-flex items-center gap-1.5 rounded-lg border border-surface-border bg-surface-raised px-3 py-1.5 text-sm font-medium text-ink-700 hover:bg-surface-overlay\">\n            {props.group.logic === 'and' ? 'All' : 'Any'}\n            <RefreshCw class=\"h-3 w-3 text-ink-400\" />\n          </button>\n          <span class=\"text-sm text-ink-500\">of the following</span>\n        </div>\n      </Show>\n\n      <div data-sortable-container class=\"space-y-2\">\n        <For each={props.group.items}>\n          {(item) => {\n            const isActive = () => drag.activeId() === item.id\n            const startDrag = (e) => { drag.handlePointerDown(item.id, e) }\n            return (\n              <div data-sortable-id={item.id} style={{\n                transform: drag.getTransform(item.id) || undefined,\n                transition: drag.isDragging() && !isActive() ? 'transform 200ms ease' : undefined,\n                opacity: isActive() && drag.isDragging() ? '0.3' : undefined,\n              }}>\n                <Show when={item.type === 'rule'}\n                  fallback={\n                    <FilterGroupBlock group={item} fields={props.fields} getOperators={props.getOperators}\n                      depth={props.depth + 1}\n                      onGroupChange={(updated) => props.onGroupChange({ ...props.group, items: props.group.items.map((i) => i.id === updated.id ? updated : i) })}\n                      onRemoveSelf={() => removeItem(item.id)}\n                      onDragHandle={startDrag} />\n                  }>\n                  <RuleRow rule={item} fields={props.fields} getOperators={props.getOperators}\n                    onRuleChange={(patch) => props.onGroupChange(patchRule(props.group, item.id, patch))}\n                    onRemove={() => removeItem(item.id)}\n                    onDragHandle={startDrag}\n                    isDraggingActive={drag.isDragging()} />\n                </Show>\n              </div>\n            )\n          }}\n        </For>\n      </div>\n\n      <Show when={hasItems()}\n        fallback={\n          <div class=\"flex flex-col items-center gap-3 rounded-lg border border-dashed border-surface-border py-8 text-center\">\n            <p class=\"text-sm text-ink-500\">No filters applied. All records are shown.</p>\n            <div class=\"flex items-center gap-2\">\n              <Button variant=\"outlined\" size=\"sm\" startIcon={<Plus class=\"h-4 w-4\" />} onClick={addRule}>Add condition</Button>\n              <Button variant=\"outlined\" size=\"sm\" startIcon={<Layers class=\"h-4 w-4\" />} onClick={addSubGroup}>Add group</Button>\n            </div>\n          </div>\n        }>\n        <div class=\"flex items-center gap-2 pt-1\">\n          <Button variant=\"ghost\" size=\"sm\" startIcon={<Plus class=\"h-4 w-4\" />} onClick={addRule}>Add condition</Button>\n          <Button variant=\"ghost\" size=\"sm\" startIcon={<Layers class=\"h-4 w-4\" />} onClick={addSubGroup}>Add group</Button>\n        </div>\n      </Show>\n    </div>\n  )\n}\n\n// ── FilterBuilder — main export ────────────────────────────────────────────\n\nexport function FilterBuilder(props: FilterBuilderProps) {\n  return (\n    <FilterGroupBlock group={props.value} fields={props.fields} getOperators={props.getOperators}\n      depth={0} onGroupChange={props.onValueChange} />\n  )\n}\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained. The example requires state, fixture data or surrounding markup; the preview supplies that glue using the published live demo where available."
+    },
+    {
+      "componentId": "torch-ui/View Customizer",
+      "title": "View Customizer: documented example",
+      "url": "https://torch-ui.dev/recipes/view-customizer",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "View Customizer is documented by TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\n// ViewCustomizer.tsx — copy this file into your project.\n// This is a recipe, not a @torch-ui/solid export.\n// Requires: @torch-ui/solid (Input, Button, useIcons, createSortableDrag), lucide-solid (X)\n\nimport { createMemo, createSignal, createEffect, For, Show, onCleanup } from 'solid-js'\nimport { Portal } from 'solid-js/web'\nimport { Input } from '@torch-ui/solid/forms'\nimport { Button } from '@torch-ui/solid/actions'\nimport { useIcons, createSortableDrag } from '@torch-ui/solid'\nimport { X } from 'lucide-solid'\n\nexport interface ViewCustomizerColumn {\n  id: string\n  label: string\n  visible: boolean\n  required?: boolean\n}\n\nexport interface ViewCustomizerProps {\n  viewName: string\n  onViewNameChange: (name: string) => void\n  columns: ViewCustomizerColumn[]\n  onColumnsChange: (columns: ViewCustomizerColumn[]) => void\n  /** Provide allColumns to enable the \"Add column\" picker. */\n  allColumns?: ViewCustomizerColumn[]\n  onSave?: () => void\n  onCancel?: () => void\n  saveLabel?: string\n  cancelLabel?: string\n}\n\nexport function ViewCustomizer(props: ViewCustomizerProps) {\n  const icons = useIcons()\n  const [addOpen, setAddOpen] = createSignal(false)\n  const [dropdownPos, setDropdownPos] = createSignal(null)\n  let addButtonRef\n\n  // Track add-button position for the portal dropdown\n  createEffect(() => {\n    if (!addOpen()) { setDropdownPos(null); return }\n    let rafId\n    const track = () => {\n      if (addButtonRef) {\n        const r = addButtonRef.getBoundingClientRect()\n        setDropdownPos({ top: r.bottom + 4, left: r.left, width: r.width })\n      }\n      rafId = requestAnimationFrame(track)\n    }\n    rafId = requestAnimationFrame(track)\n    onCleanup(() => cancelAnimationFrame(rafId))\n  })\n\n  const availableToAdd = createMemo(() => {\n    if (!props.allColumns) return []\n    const activeIds = new Set(props.columns.map((c) => c.id))\n    return props.allColumns.filter((c) => !activeIds.has(c.id))\n  })\n\n  // Drag-to-reorder via torch-ui's createSortableDrag utility\n  const drag = createSortableDrag({\n    items: () => props.columns,\n    onReorder: (ids) => {\n      const map = new Map(props.columns.map((c) => [c.id, c]))\n      props.onColumnsChange(ids.map((id) => map.get(id)).filter(Boolean))\n    },\n  })\n\n  let pointerX = 0, pointerY = 0, overlayW = 0, overlayH = 0\n\n  const removeColumn = (id) =>\n    props.onColumnsChange(props.columns.filter((c) => c.id !== id))\n\n  const addColumn = (id) => {\n    const col = props.allColumns?.find((c) => c.id === id)\n    if (!col) return\n    props.onColumnsChange([...props.columns, { ...col, visible: true }])\n    setAddOpen(false)\n  }\n\n  return (\n    <div class=\"flex flex-col gap-6\">\n      <Input\n        label=\"View name\"\n        value={props.viewName}\n        onValueChange={props.onViewNameChange}\n        placeholder=\"e.g. My Custom View\"\n      />\n\n      <div>\n        <div class=\"mb-2 flex items-center justify-between\">\n          <p class=\"text-sm font-medium text-ink-900\">Columns</p>\n          <p class=\"text-xs text-ink-500\">\n            {props.columns.length} column{props.columns.length !== 1 ? 's' : ''}\n          </p>\n        </div>\n\n        {/* Sortable column list */}\n        <div data-sortable-container\n          class=\"divide-y divide-surface-border rounded-lg border border-surface-border overflow-hidden\">\n          <For each={props.columns}>\n            {(col) => {\n              const isActive = () => drag.activeId() === col.id\n              return (\n                <div\n                  data-sortable-id={col.id}\n                  class=\"flex items-center gap-2 px-3 py-2.5 bg-surface-base\"\n                  style={{\n                    transform: drag.getTransform(col.id) || undefined,\n                    transition: drag.isDragging() && !isActive() ? 'transform 150ms ease' : undefined,\n                    opacity: isActive() && drag.isDragging() ? '0' : undefined,\n                  }}\n                >\n                  {/* Drag handle */}\n                  <button type=\"button\"\n                    class=\"shrink-0 rounded p-1 text-ink-400 hover:bg-surface-overlay touch-none cursor-grab\"\n                    onPointerDown={(e) => {\n                      pointerX = e.clientX; pointerY = e.clientY\n                      const row = e.currentTarget.closest('[data-sortable-id]')\n                      if (row) { const r = row.getBoundingClientRect(); overlayW = r.width; overlayH = r.height }\n                      drag.handlePointerDown(col.id, e)\n                    }}\n                  >\n                    {icons.dragHandle({ class: 'h-3.5 w-3.5' })}\n                  </button>\n\n                  <span class=\"flex-1 text-sm font-medium text-ink-900\">{col.label}</span>\n\n                  <Show when={col.required}>\n                    <span class=\"shrink-0 text-xs text-ink-400\">Required</span>\n                  </Show>\n                  <Show when={!col.required}>\n                    <button type=\"button\" onClick={() => removeColumn(col.id)}\n                      class=\"shrink-0 rounded p-1 text-ink-400 hover:bg-surface-overlay hover:text-ink-700\">\n                      <X class=\"h-3.5 w-3.5\" />\n                    </button>\n                  </Show>\n                </div>\n              )\n            }}\n          </For>\n        </div>\n\n        {/* Drag overlay (ghost row that follows the pointer) */}\n        <Show when={drag.activeId()}>\n          {(activeId) => {\n            const col = () => props.columns.find((c) => c.id === activeId())\n            return (\n              <Show when={col()}>\n                {(resolved) => {\n                  let el\n                  const onMove = (e) => { if (el) el.style.transform = 'translate(' + (e.clientX - 16) + 'px,' + (e.clientY - 16) + 'px)' }\n                  const cleanup = () => document.removeEventListener('pointermove', onMove)\n                  document.addEventListener('pointermove', onMove)\n                  document.addEventListener('pointerup', cleanup, { once: true })\n                  onCleanup(cleanup)\n                  return (\n                    <div ref={el} class=\"fixed top-0 left-0 flex items-center gap-2 rounded-lg border\n                      border-surface-border bg-surface-raised px-3 py-2.5 text-sm shadow-lg select-none\"\n                      style={{ 'pointer-events': 'none', 'z-index': '50',\n                        transform: 'translate(' + (pointerX - 16) + 'px,' + (pointerY - 16) + 'px)',\n                        width: overlayW + 'px', height: overlayH + 'px' }}\n                    >\n                      {icons.dragHandle({ class: 'h-3.5 w-3.5 shrink-0 text-ink-400' })}\n                      <span class=\"flex-1 font-medium text-ink-900\">{resolved().label}</span>\n                    </div>\n                  )\n                }}\n              </Show>\n            )\n          }}\n        </Show>\n\n        {/* Add column picker */}\n        <Show when={props.allColumns && availableToAdd().length > 0}>\n          <div class=\"mt-2\">\n            <button ref={addButtonRef} type=\"button\" onClick={() => setAddOpen((v) => !v)}\n              class=\"flex w-full items-center gap-1.5 rounded-lg border border-dashed\n                border-surface-border px-3 py-2 text-sm text-ink-500\n                hover:border-primary-400 hover:text-primary-600\">\n              <span class=\"text-base leading-none\">+</span> Add column\n            </button>\n            <Show when={dropdownPos()}>\n              {(pos) => (\n                <Portal>\n                  <div class=\"overflow-hidden rounded-lg border border-surface-border bg-surface-raised shadow-lg\"\n                    style={{ position: 'fixed', top: pos().top + 'px', left: pos().left + 'px',\n                      width: pos().width + 'px', 'z-index': '9999' }}>\n                    <For each={availableToAdd()}>\n                      {(col) => (\n                        <button type=\"button\" onClick={() => addColumn(col.id)}\n                          class=\"flex w-full items-center px-3 py-2 text-sm text-ink-700 hover:bg-surface-overlay\">\n                          {col.label}\n                        </button>\n                      )}\n                    </For>\n                  </div>\n                </Portal>\n              )}\n            </Show>\n          </div>\n        </Show>\n      </div>\n\n      {/* Optional save/cancel footer */}\n      <Show when={props.onSave || props.onCancel}>\n        <div class=\"flex justify-end gap-2 border-t border-surface-border pt-4\">\n          <Show when={props.onCancel}>\n            <Button variant=\"outlined\" onClick={props.onCancel}>\n              {props.cancelLabel ?? 'Cancel'}\n            </Button>\n          </Show>\n          <Show when={props.onSave}>\n            <Button variant=\"primary\" onClick={props.onSave}>\n              {props.saveLabel ?? 'Save view'}\n            </Button>\n          </Show>\n        </div>\n      </Show>\n    </div>\n  )\n}\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained. The example requires state, fixture data or surrounding markup; the preview supplies that glue using the published live demo where available."
+    },
+    {
+      "componentId": "torch-ui/Icons",
+      "title": "Icons: documented example",
+      "url": "https://torch-ui.dev/typography/icons",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "2bd057316175457ff1e5103b961867cf388bf73f",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        }
+      ],
+      "content": "Lucide icons sized and styled for use within TorchUI.\n\nOriginal example from the pinned documentation script:\n```tsx\nimport { IconsProvider } from '@torch-ui/solid'\nimport { useIcons } from '@torch-ui/solid'\n\nfunction Example() {\n\tconst icons = useIcons()\n\n\treturn (\n\t\t\t{icons.check({ class: 'h-6 w-6 text-success-600', 'aria-hidden': 'true' })}\n\t\t\t{icons.close({ class: 'h-6 w-6 text-danger-600', 'aria-hidden': 'true' })}\n\t\t\t{icons.search({ class: 'h-6 w-6 text-ink-500', 'aria-hidden': 'true' })}\n\t\t\t{icons.calendar({ class: 'h-6 w-6 text-ink-500', 'aria-hidden': 'true' })}\n\t\t\t{icons.chevronRight({ class: 'h-6 w-6 text-ink-400', 'aria-hidden': 'true' })}\n\t)\n}\n```\n\nThe preview wraps this documented composition in a Solid mount function. Its library styles, runtime, and documented dependencies are retained. The example requires state, fixture data or surrounding markup; the preview supplies that glue using the published live demo where available."
+    },
+    {
+      "componentId": "torch-ui/Table View",
+      "title": "Table View: documentation and availability",
+      "url": "https://torch-ui.dev/data-display/table-view",
+      "fetchedAt": "2026-10-30",
+      "sourceRevision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
+      "sources": [
+        {
+          "url": "https://torch-ui.dev/assets/index-D5n5m-XK.js",
+          "integrity": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/sean-dowd-sr/torch-ui/2bd057316175457ff1e5103b961867cf388bf73f/src/components/data-display/DataTable.tsx",
+          "integrity": "0ad9e3ae926eb3880d342a0a346c53d0800db48e457bd84b29047ee43cf80f87"
+        }
+      ],
+      "content": "TorchUI's official Table View page states that the TableView wrapper is not yet available. The Col preview reproduces the page’s underlying DataTable example; it does not render a TableView wrapper.\n\nThe documentation's intended API example:\n```tsx\nimport { TableView, emptyFilterGroup } from '@torch-ui/solid/layout'\nimport type { TableViewConfig, ViewConfig } from '@torch-ui/solid/layout'\n\nconst config: TableViewConfig = {\n  systemDefaultViewId: 'all',\n  defaultViews: [\n    { id: 'all', label: 'All', fields: ['name', 'role'], groupBy: 'none', filters: emptyFilterGroup(), scope: 'tenant', pinned: true },\n    { id: 'active', label: 'Active', fields: ['name', 'role'], groupBy: 'none', filters: emptyFilterGroup(), scope: 'tenant' },\n  ],\n  allFields: [{ id: 'name', label: 'Name', structured: false }, { id: 'role', label: 'Role', structured: false }],\n  filterFields: [{ id: 'status', label: 'Status', type: 'select', options: [{ value: 'active', label: 'Active' }] }],\n  getOperatorsForType: (type) => (type === 'select' ? [{ value: 'eq', label: 'is' }, { value: 'in', label: 'is any of' }] : [{ value: 'contains', label: 'contains' }]),\n  initialFields: ['name', 'role'],\n  rowCount: 0,\n}\n\n<TableView config={config} toolbar={(api) => (\n  <Button variant=\"outlined\" size=\"sm\" leftIcon={<Filter />} onClick={api.openFilters}>Filters</Button>\n)}>\n  <DataTable items={filteredItems} columns={columns} emptyMessage=\"No rows\" />\n</TableView>\n```"
     }
   ]
 }

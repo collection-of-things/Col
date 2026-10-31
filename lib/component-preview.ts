@@ -1,7 +1,7 @@
 import * as z from "zod/v4";
 import { packageRecipes, type PackageRecipe } from "./component-preview-packages.ts";
 import { transformPreviewPackageImports } from "./component-preview-package-bundles.ts";
-import { componentPreviewAssets, componentPreviewMedia, transformPreviewAssets } from "./component-preview-assets.ts";
+import { canInlinePreviewMedia, componentPreviewAssets, componentPreviewMedia, transformPreviewAssets } from "./component-preview-assets.ts";
 import { webAwesomeSystemIconSetup } from "./component-preview-webawesome.ts";
 import { adaptPreviewSourceImports } from "./component-preview-source-adapters.ts";
 import extraSources from "../data/component-previews/extra.json" with { type: "json" };
@@ -9,14 +9,14 @@ import shadcnSources from "../data/component-previews/shadcn.json" with { type: 
 import packageStyles from "../data/component-previews/package-styles.json" with { type: "json" };
 import quoinBundles from "../data/component-previews/quoin.json" with { type: "json" };
 import quoinExamples from "../data/quoin/examples.json" with { type: "json" };
-import { solidPreviews, type SolidPreview } from "../data/component-previews/solid/index.ts";
+import { solidPreviews, solidUnavailable, type SolidPreview } from "../data/component-previews/solid/index.ts";
 
 /** The public renderer accepts presentation data, never replacement source. */
 export const componentPreviewArgs = z.strictObject({
   id: z.string().min(1).max(200).describe("Exact component id from get_component. Check its preview availability first."),
   styles: z.string().max(10_000).optional().describe("User CSS only, including CSS custom properties. Applied inside the component frame; cannot style the provenance or limitations. External assets remain subject to CSP."),
   theme: z.enum(["light", "dark"]).optional().describe("Preview color scheme. Defaults to light; app theme objects are not imported automatically. Use styles for the user's CSS variables."),
-  format: z.enum(["widget", "html"]).optional().describe("widget renders in MCP Apps; html returns an isolated HTML preview for other clients. Large original media requires MCP Apps server-resource access and is explicitly unavailable in standalone HTML."),
+  format: z.enum(["widget", "html"]).optional().describe("widget renders in MCP Apps; html returns an isolated HTML preview for other clients. Large media requires MCP Apps server-resource access and is explicitly unavailable in standalone HTML."),
 });
 
 type Recipe = {
@@ -78,6 +78,7 @@ const reproductionGaps: Readonly<Record<string, string[]>> = {
   "kibo-ui/Pill": ["One original profile image is unavailable (HTTP 404). Its fallback may render, but the missing portrait cannot be reproduced."],
   "magic-ui/Icon Cloud": ["Five original icon URLs return HTTP 404: java, css3, amazonaws, visualstudiocode and sonarqube. Their artwork cannot be reproduced; the remaining original icons are embedded without substitute logos."],
   "magic-ui/Hero Video Dialog": ["The original thumbnails are embedded, but YouTube playback requires an external iframe that this preview's CSP blocks. The dialog can open; its video cannot play here."],
+  "magic-ui/Lens": ["In Chromium, Escape can immediately reopen the original magnifier while the pointer remains over it. Moving the pointer away dismisses it."],
   "magic-ui/Tweet Card": ["The original example requests live tweet data. CSP blocks that network request, so its tweet content and media cannot be reproduced here."],
 };
 
@@ -134,13 +135,20 @@ export function componentPreviewSupport(id: string) {
     }
     const fontGap = solid.css.includes("data:font/") && !solid.assets?.some(asset => asset.mediaType.startsWith("font/"))
       ? ["Embedded font sources and licenses are recorded in the repository's library provenance, but not individually listed in this preview's asset disclosure."] : [];
+    const assets = [...(solid.assets ?? []), ...componentPreviewAssets(id)];
+    const mediaGap = Object.keys(componentPreviewMedia(id)).length
+      ? [canInlinePreviewMedia(id) ? "MCP Apps loads verified media through bounded resource reads; standalone HTML includes the same media bytes." : "Media playback requires bounded MCP Apps resource reads; the standalone HTML format cannot load it under the unchanged CSP."] : [];
     return { available: true as const, runtime: "solid" as const, package: solid.package,
       version: solid.version, runtimeVersion: solid.runtimeVersion, exportName: solid.exportName,
-      source: { ...solid.source, integrity: solid.source.integrity.startsWith("sha256:") ? solid.source.integrity : `sha256:${solid.source.integrity}` }, assets: solid.assets ?? [],
-      gaps: Object.hasOwn(solidPreviews, id) ? [...solid.gaps, ...fontGap,
+      source: { ...solid.source, integrity: solid.source.integrity.startsWith("sha256:") ? solid.source.integrity : `sha256:${solid.source.integrity}` }, assets,
+      gaps: Object.hasOwn(solidPreviews, id) ? [...solid.gaps, ...fontGap, ...mediaGap,
         "This is a pinned example; other component variants and the client's installed versions are not inspected.",
         "Application routing, backend actions, native APIs, and unrelated network services are not reproduced.",
         "Browser and client compatibility depends on the host and the documented verification scope."] : solid.gaps };
+  }
+  if (Object.hasOwn(solidUnavailable, id)) {
+    const unavailable = solidUnavailable[id];
+    return { available: false as const, source: unavailable.source, gaps: [...new Set([unavailable.reason, ...(unavailable.gaps ?? [])])] };
   }
   const source = Object.hasOwn(sources.entries, id) ? sources.entries[id] : undefined;
   const recipe = source ?? packageRecipe(id);
@@ -172,19 +180,20 @@ export function createComponentPreview(args: z.infer<typeof componentPreviewArgs
   const identity = { id: args.id, docsUrl, requestKey };
   if (!support.available) return { ...identity, ...support };
   const media = componentPreviewMedia(args.id);
-  if (args.format === "html" && Object.keys(media).length) return {
+  if (args.format === "html" && Object.keys(media).length && !canInlinePreviewMedia(args.id)) return {
     ...identity, ...support, available: false as const,
-    gaps: [...support.gaps, "This original media requires bounded MCP Apps resource reads. The standalone HTML format cannot load it under the unchanged CSP; no substitute media is used."],
+    gaps: [...support.gaps, "This media requires bounded MCP Apps resource reads. The standalone HTML format cannot load it under the unchanged CSP."],
   };
   const source = Object.hasOwn(sources.entries, args.id) ? sources.entries[args.id] : undefined;
   const recipe = packageRecipe(args.id);
   const theme = args.theme ?? "light";
   const solid = Object.hasOwn(allSolidPreviews, args.id) ? allSolidPreviews[args.id] : undefined;
   const css = solid ? solid.css : source ? sources.styles[source.styleKey] : recipe?.compileCss ? compiledStyles[recipe.compileCss]?.css : "";
-  const implementation = solid ? solid.code : transformPreviewAssets(args.id, source ? adaptPreviewSourceImports(args.id, source.code) : `${recipe!.imports}
+  const implementation = solid ? (componentPreviewAssets(args.id).length ? transformPreviewAssets(args.id, solid.code) : solid.code) : transformPreviewAssets(args.id, source ? adaptPreviewSourceImports(args.id, source.code) : `${recipe!.imports}
 ${(recipe!.stylesheets ?? []).map((sheet) => `import ${JSON.stringify(sheet)};`).join("\n")}
 export default function LibraryPreview() { ${recipe!.setup ?? ""} return (${recipe!.jsx}); }`);
   const code = `const PREVIEW_THEME = ${JSON.stringify(theme)};
+${solid ? `const PREVIEW_COMPONENT = ${JSON.stringify(args.id)};\n` : ""}
 document.documentElement.style.colorScheme = ${JSON.stringify(theme)};
 document.documentElement.classList.toggle("dark", ${theme === "dark"});
 const colLibraryStyles = document.createElement("style");
@@ -196,5 +205,5 @@ document.head.append(colUserStyles);
 ${recipe?.package === "@awesome.me/webawesome" ? webAwesomeSystemIconSetup : ""}
 ${implementation}
 `;
-  return { ...identity, ...support, code: solid ? code : transformPreviewPackageImports(code), theme, media, mediaKeys: Object.keys(media) };
+  return { ...identity, ...support, code: solid ? code : transformPreviewPackageImports(code, args.id), theme, media, mediaKeys: Object.keys(media) };
 }

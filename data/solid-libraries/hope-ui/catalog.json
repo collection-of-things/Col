@@ -82,6 +82,121 @@
         "@solidjs/signals",
         "tailwindcss"
       ]
+    },
+    {
+      "name": "Alert",
+      "url": "https://www.hope-ui.dev/components/alert",
+      "kind": "full-pattern",
+      "summary": "A styled status message with semantic colors and built-in status icons.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@hope-ui/components",
+        "@hope-ui/theming",
+        "@hope-ui/presets",
+        "solid-js",
+        "@solidjs/web",
+        "@solidjs/signals",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Badge",
+      "url": "https://www.hope-ui.dev/components/badge",
+      "kind": "full-pattern",
+      "summary": "A compact styled status label with semantic colors and variants.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@hope-ui/components",
+        "@hope-ui/theming",
+        "@hope-ui/presets",
+        "solid-js",
+        "@solidjs/web",
+        "@solidjs/signals",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Calendar",
+      "url": "https://www.hope-ui.dev/components/calendar",
+      "kind": "full-pattern",
+      "summary": "An accessible date-selection calendar with themed header and month grid.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@hope-ui/components",
+        "@hope-ui/theming",
+        "@hope-ui/presets",
+        "solid-js",
+        "@solidjs/web",
+        "@solidjs/signals",
+        "tailwindcss",
+        "@internationalized/date"
+      ]
+    },
+    {
+      "name": "CloseButton",
+      "url": "https://www.hope-ui.dev/components/close-button",
+      "kind": "full-pattern",
+      "summary": "A close button that adapts its icon and interaction states to its surface.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@hope-ui/components",
+        "@hope-ui/theming",
+        "@hope-ui/presets",
+        "solid-js",
+        "@solidjs/web",
+        "@solidjs/signals",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Combobox",
+      "url": "https://www.hope-ui.dev/components/combobox",
+      "kind": "full-pattern",
+      "summary": "A searchable, accessible list of selectable options.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@hope-ui/components",
+        "@hope-ui/theming",
+        "@hope-ui/presets",
+        "solid-js",
+        "@solidjs/web",
+        "@solidjs/signals",
+        "tailwindcss",
+        "@floating-ui/dom"
+      ]
+    },
+    {
+      "name": "Listbox",
+      "url": "https://www.hope-ui.dev/components/listbox",
+      "kind": "full-pattern",
+      "summary": "A styled listbox with keyboard navigation and single or multiple selection.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@hope-ui/components",
+        "@hope-ui/theming",
+        "@hope-ui/presets",
+        "solid-js",
+        "@solidjs/web",
+        "@solidjs/signals",
+        "tailwindcss"
+      ]
+    },
+    {
+      "name": "Popover",
+      "url": "https://www.hope-ui.dev/components/popover",
+      "kind": "full-pattern",
+      "summary": "A themed, anchored popup with trigger, arrow and accessible content.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@hope-ui/components",
+        "@hope-ui/theming",
+        "@hope-ui/presets",
+        "solid-js",
+        "@solidjs/web",
+        "@solidjs/signals",
+        "tailwindcss",
+        "@floating-ui/dom"
+      ]
     }
   ],
   "compatibility": [

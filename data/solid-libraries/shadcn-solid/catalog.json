@@ -34,19 +34,282 @@
   },
   "components": [
     {
+      "name": "Accordion",
+      "url": "https://shadcn-solid.netlify.app/docs/components/accordion",
+      "kind": "full-pattern",
+      "summary": "A vertically stacked set of interactive headings that each reveal a section of content.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Alert",
+      "url": "https://shadcn-solid.netlify.app/docs/components/alert",
+      "kind": "full-pattern",
+      "summary": "Displays a callout for user attention.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Alert Dialog",
+      "url": "https://shadcn-solid.netlify.app/docs/components/alert-dialog",
+      "kind": "full-pattern",
+      "summary": "A modal dialog that interrupts the user with important content and expects a response.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Badge",
+      "url": "https://shadcn-solid.netlify.app/docs/components/badge",
+      "kind": "full-pattern",
+      "summary": "Displays a badge or a component that looks like a badge.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Breadcrumbs",
+      "url": "https://shadcn-solid.netlify.app/docs/components/breadcrumbs",
+      "kind": "full-pattern",
+      "summary": "Displays the path to the current resource using a hierarchy of links.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "dropdown-menu"
+      ]
+    },
+    {
       "name": "Button",
       "url": "https://shadcn-solid.netlify.app/docs/components/button",
       "kind": "full-pattern",
       "summary": "A styled button with documented variants and keyboard behavior.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
-        "solid-js",
         "@kobalte/core",
         "cva",
+        "solid-js",
         "tailwind-merge"
       ],
       "builtOn": "@kobalte/core",
       "registryDependencies": []
+    },
+    {
+      "name": "Button Group",
+      "url": "https://shadcn-solid.netlify.app/docs/components/button-group",
+      "kind": "full-pattern",
+      "summary": "A container that groups related buttons together with consistent styling.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu",
+        "separator"
+      ]
+    },
+    {
+      "name": "Calendar",
+      "url": "https://shadcn-solid.netlify.app/docs/components/calendar",
+      "kind": "full-pattern",
+      "summary": "A date field component that allows users to enter and edit date.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@corvu/calendar",
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Card",
+      "url": "https://shadcn-solid.netlify.app/docs/components/card",
+      "kind": "full-pattern",
+      "summary": "Displays a card with header, content, and footer.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Carousel",
+      "url": "https://shadcn-solid.netlify.app/docs/components/carousel",
+      "kind": "full-pattern",
+      "summary": "A carousel with motion and swipe built using Embla.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "embla-carousel-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "card"
+      ]
+    },
+    {
+      "name": "Chart",
+      "url": "https://shadcn-solid.netlify.app/docs/components/chart",
+      "kind": "full-pattern",
+      "summary": "Beautiful charts. Built using Unovis. Copy and paste into your apps.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@unovis/solid",
+        "@unovis/ts",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "card"
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "url": "https://shadcn-solid.netlify.app/docs/components/checkbox",
+      "kind": "full-pattern",
+      "summary": "A control that allows the user to toggle between checked and not checked.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Collapsible",
+      "url": "https://shadcn-solid.netlify.app/docs/components/collapsible",
+      "kind": "full-pattern",
+      "summary": "An interactive component which expands/collapses a panel.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Combobox",
+      "url": "https://shadcn-solid.netlify.app/docs/components/combobox",
+      "kind": "full-pattern",
+      "summary": "Combines a text input with a listbox, allowing users to filter a list of options to items matching a query.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Command",
+      "url": "https://shadcn-solid.netlify.app/docs/components/command",
+      "kind": "full-pattern",
+      "summary": "Composable command menu.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "cmdk-solid",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Context Menu",
+      "url": "https://shadcn-solid.netlify.app/docs/components/context-menu",
+      "kind": "full-pattern",
+      "summary": "Displays a menu to the user — such as a set of actions or functions — triggered by a button.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Data Table",
+      "url": "https://shadcn-solid.netlify.app/docs/components/data-table",
+      "kind": "full-pattern",
+      "summary": "Powerful table and datagrids built using TanStack Table.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "@tanstack/solid-table",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "checkbox",
+        "dropdown-menu",
+        "select",
+        "table",
+        "text-field"
+      ]
+    },
+    {
+      "name": "Date Picker",
+      "url": "https://shadcn-solid.netlify.app/docs/components/date-picker",
+      "kind": "full-pattern",
+      "summary": "A date picker component with range and presets.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@corvu/calendar",
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "calendar",
+        "popover"
+      ]
     },
     {
       "name": "Dialog",
@@ -55,9 +318,9 @@
       "summary": "A modal with accessible title, focus management and portal rendering.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
-        "solid-js",
         "@kobalte/core",
         "cva",
+        "solid-js",
         "tailwind-merge"
       ],
       "builtOn": "@kobalte/core",
@@ -70,15 +333,358 @@
       ]
     },
     {
+      "name": "Drawer",
+      "url": "https://shadcn-solid.netlify.app/docs/components/drawer",
+      "kind": "full-pattern",
+      "summary": "A draggable dialog that is attached to any side of the viewport.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@corvu/drawer",
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Dropdown Menu",
+      "url": "https://shadcn-solid.netlify.app/docs/components/dropdown-menu",
+      "kind": "full-pattern",
+      "summary": "Displays a menu to the user — such as a set of actions or functions — triggered by a button.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "File Field",
+      "url": "https://shadcn-solid.netlify.app/docs/components/file-field",
+      "kind": "full-pattern",
+      "summary": "A file input to upload multiple files, with ability to drag and drop files.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Hover Card",
+      "url": "https://shadcn-solid.netlify.app/docs/components/hover-card",
+      "kind": "full-pattern",
+      "summary": "For sighted users to preview content available behind a link.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Kbd",
+      "url": "https://shadcn-solid.netlify.app/docs/components/kbd",
+      "kind": "full-pattern",
+      "summary": "Used to display textual user input from keyboard.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Menubar",
+      "url": "https://shadcn-solid.netlify.app/docs/components/menubar",
+      "kind": "full-pattern",
+      "summary": "A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Navigation Menu",
+      "url": "https://shadcn-solid.netlify.app/docs/components/navigation-menu",
+      "kind": "full-pattern",
+      "summary": "A collection of links for navigating websites.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Number Field",
+      "url": "https://shadcn-solid.netlify.app/docs/components/number-field",
+      "kind": "full-pattern",
+      "summary": "A number input that allow users to input custom number entries with a keyboard.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "OTP Field",
+      "url": "https://shadcn-solid.netlify.app/docs/components/otp-field",
+      "kind": "full-pattern",
+      "summary": "An accessible and customizable OTP Input component.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@corvu/otp-field",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Pagination",
+      "url": "https://shadcn-solid.netlify.app/docs/components/pagination",
+      "kind": "full-pattern",
+      "summary": "Pagination with page navigation, next and previous links.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Popover",
+      "url": "https://shadcn-solid.netlify.app/docs/components/popover",
+      "kind": "full-pattern",
+      "summary": "Displays rich content in a portal, triggered by a button.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "text-field"
+      ]
+    },
+    {
+      "name": "Progress",
+      "url": "https://shadcn-solid.netlify.app/docs/components/progress",
+      "kind": "full-pattern",
+      "summary": "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Radio Group",
+      "url": "https://shadcn-solid.netlify.app/docs/components/radio-group",
+      "kind": "full-pattern",
+      "summary": "A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Resizable",
+      "url": "https://shadcn-solid.netlify.app/docs/components/resizable",
+      "kind": "full-pattern",
+      "summary": "A component that divides your interface into resizable sections.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@corvu/resizable",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Search",
+      "url": "https://shadcn-solid.netlify.app/docs/components/search",
+      "kind": "full-pattern",
+      "summary": "Search a searchbox text input with a menu. Handle the case where dataset filtering needs to occur outside the combobox component.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "minisearch",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Segmented Control",
+      "url": "https://shadcn-solid.netlify.app/docs/components/segmented-control",
+      "kind": "full-pattern",
+      "summary": "A linear set of two or more segments, each of which functions as a radio input, and a default value is required.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Select",
+      "url": "https://shadcn-solid.netlify.app/docs/components/select",
+      "kind": "full-pattern",
+      "summary": "Displays a list of options for the user to pick from—triggered by a button.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Separator",
+      "url": "https://shadcn-solid.netlify.app/docs/components/separator",
+      "kind": "full-pattern",
+      "summary": "Visually or semantically separates content.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Sidebar",
+      "url": "https://shadcn-solid.netlify.app/docs/components/sidebar",
+      "kind": "full-pattern",
+      "summary": "A composable, themeable and customizable sidebar component.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@corvu/drawer",
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "drawer",
+        "separator",
+        "skeleton",
+        "tooltip"
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "url": "https://shadcn-solid.netlify.app/docs/components/skeleton",
+      "kind": "full-pattern",
+      "summary": "Visually indicates content loading.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Slider",
+      "url": "https://shadcn-solid.netlify.app/docs/components/slider",
+      "kind": "full-pattern",
+      "summary": "An input where the user selects a value from within a given range.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Sonner",
+      "url": "https://shadcn-solid.netlify.app/docs/components/sonner",
+      "kind": "full-pattern",
+      "summary": "An opinionated toast component for Solid.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "somoto",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Switch",
+      "url": "https://shadcn-solid.netlify.app/docs/components/switch",
+      "kind": "full-pattern",
+      "summary": "A control that allows the user to toggle between checked and not checked.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Table",
+      "url": "https://shadcn-solid.netlify.app/docs/components/table",
+      "kind": "full-pattern",
+      "summary": "A responsive table component.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
       "name": "Tabs",
       "url": "https://shadcn-solid.netlify.app/docs/components/tabs",
       "kind": "full-pattern",
       "summary": "Layered account and password panels with a selected-tab indicator.",
       "verifiedAt": "2026-10-30",
       "dependencies": [
-        "solid-js",
         "@kobalte/core",
         "cva",
+        "solid-js",
         "tailwind-merge"
       ],
       "builtOn": "@kobalte/core",
@@ -86,6 +692,64 @@
         "button",
         "card",
         "text-field"
+      ]
+    },
+    {
+      "name": "Text Field",
+      "url": "https://shadcn-solid.netlify.app/docs/components/text-field",
+      "kind": "full-pattern",
+      "summary": "A text input that allow users to input custom text entries with a keyboard.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Toggle Button",
+      "url": "https://shadcn-solid.netlify.app/docs/components/toggle-button",
+      "kind": "full-pattern",
+      "summary": "A two-state button that can be either on or off.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Toggle Group",
+      "url": "https://shadcn-solid.netlify.app/docs/components/toggle-group",
+      "kind": "full-pattern",
+      "summary": "A set of two-state buttons that can be toggled on (pressed) or off (not pressed).",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "toggle-button"
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "url": "https://shadcn-solid.netlify.app/docs/components/tooltip",
+      "kind": "full-pattern",
+      "summary": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "cva",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
       ]
     }
   ],
