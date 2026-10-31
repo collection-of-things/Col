@@ -1,5 +1,7 @@
 # MagicUI Solid source previews
 
+> During this review stack, rebuild scripts and preview artifacts arrive in the final integration stage.
+
 All **76 documented components** are individually verified and indexed from `axuj/magicui-solid` revision `3100c2f704620f96dc431dd86f86bbbf9bb05965`, checked on 2026-10-30. All **76 previews** have been checked in both themes. `coverage.json` lists exact names, official URLs and preview status. `page-verification.json` records every HTTP-200 page and hash.
 
 The real Solid port and official demo modules compile with Solid 1.9.17 and babel-preset-solid 1.9.16. Tailwind 4.3.3 compiles the original global CSS, utility classes and keyframes. Published demos inherit Starlight Black's theme and typography, including the exact Geist Sans font; those original inputs and notices are retained. The renderer's theme sets the original `data-theme` selector. Registry installation defaults are distinct from this published docs context.
