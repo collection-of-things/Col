@@ -11,7 +11,14 @@ import { render } from 'solid-js/web'
 
 function Example() {
   return (
-    <div class="overflow-visible rounded-xl border border-surface-border bg-surface-raised px-4 w-full">
+    <div data-mega-preview class="overflow-visible rounded-xl border border-surface-border bg-surface-raised px-4 w-full">
+      <style>{`@media (max-width: 768px) {
+        [data-mega-preview] > div { height: auto; flex-wrap: wrap; padding-block: 8px; }
+        [data-mega-preview] > div > div:first-of-type { order: 3; flex: 1 0 100%; height: 56px; }
+        [data-mega-preview] .torchui-mm-content { min-width: 0; width: min(320px, calc(100vw - 48px)); }
+        [data-mega-preview] .torchui-mm-content > div { grid-template-columns: 1fr; }
+        [data-mega-preview] .torchui-mm-viewport { max-height: calc(var(--kb-popper-content-available-height, 100vh) - 8px); overflow-y: auto; }
+      }`}</style>
       <div class="flex h-14 items-center gap-2">
         <a href="#" class="mr-2 flex shrink-0 items-center gap-2 text-sm font-bold text-ink-900">
           <div class="flex h-7 w-7 items-center justify-center rounded-lg bg-primary-500"><span class="text-xs font-bold text-white">T</span></div>
@@ -72,4 +79,4 @@ function Example() {
   )
 }
 
-export default function mount(target) { return render(() => <Example />, target) }
+export default function mount(target: HTMLElement) { return render(() => <Example />, target) }

@@ -4974,7 +4974,7 @@
         },
         {
           "path": "examples/items/Mega-Menu.tsx",
-          "sha256": "1e2a67af764ff7946956533c0cbf326f587145e9c7514b74156a963ebb98c43b"
+          "sha256": "0042411e72f7282f1435739bc029f3c663dc711512539db273e1ec86ea4b5eed"
         },
         {
           "path": "examples/items/Sidebar.tsx",
@@ -8873,121 +8873,121 @@
   },
   "Navigation Menu": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Mega Menu": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Sidebar": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Dropdown Menu": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Tabs": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Pagination": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "View Switcher": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Drawer": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Context Menu": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Popover": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Hover Card": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Tooltip": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Search Palette": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Alert": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Alert Dialog": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Banner": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Toast": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Progress": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Loading": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },
   "Skeleton": {
     "group": "TorchExpanded3",
-    "codeIntegrity": "6934635cf96da0d8103d43c6518aa6f53002a67323ba62e005f495451f38dc5f",
+    "codeIntegrity": "da0ec864ac543c3e9e3a73ef8475849c60ad04f6993812b1adbe097311168f6d",
     "cssIntegrity": "f3f72ff188bfb09083ace25f67dbf25962af571f4ecefa116e2d757528ba0db7",
     "lockIntegrity": "4ec0a0354141bac410c4566d039ba77108de3b7f0498b77de11db70983f5adc3"
   },

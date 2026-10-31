@@ -31,18 +31,61 @@ export async function verifyTorchReview(frame, id, expect) {
     await trigger.click();
     await expect(frame.getByRole("menuitem", { name: "Copy Scroll" })).toBeVisible();
   } else if (id === "torch-ui/Mega Menu") {
+    const mobile = await frame.locator("body").evaluate(() => innerWidth <= 800);
+    const checkMobileItems = async labels => {
+      if (!mobile) return;
+      for (const label of labels) {
+        const item = frame.getByText(label, { exact: true });
+        await item.scrollIntoViewIfNeeded();
+        const fits = await item.evaluate(element => {
+          const panel = element.closest(".torchui-mm-viewport");
+          if (!panel) return false;
+          const item = element.getBoundingClientRect(), bounds = panel.getBoundingClientRect();
+          return item.left >= Math.max(0, bounds.left) - 1 && item.right <= Math.min(innerWidth, bounds.right) + 1
+            && item.top >= Math.max(0, bounds.top) - 1 && item.bottom <= Math.min(innerHeight, bounds.bottom) + 1;
+        });
+        expect(fits, `${label} is reachable inside the mobile menu`).toBe(true);
+      }
+    };
     const wares = frame.getByRole("menuitem", { name: "Wares" });
+    const waresItems = ["Marketplace", "Trading Post", "Tome of Goods", "Divination", "Scrolls", "Territories", "Guild", "Party", "Arcana"];
+    if (mobile) {
+      for (const name of ["Wares", "Paths", "Sign in", "Get started"]) {
+        const item = frame.getByRole(name === "Wares" || name === "Paths" ? "menuitem" : "link", { name, exact: true });
+        const fits = await item.evaluate(element => {
+          const bounds = element.getBoundingClientRect();
+          return bounds.left >= 0 && bounds.right <= innerWidth && bounds.top >= 0 && bounds.bottom <= innerHeight;
+        });
+        expect(fits, `${name} is reachable in the mobile navigation`).toBe(true);
+      }
+    }
     await wares.click();
     if (await wares.getAttribute("aria-expanded") !== "true") await wares.click();
     await expect(wares).toHaveAttribute("aria-expanded", "true");
-    for (const label of ["Marketplace", "Trading Post", "Tome of Goods", "Divination", "Scrolls", "Territories", "Guild", "Party", "Arcana"]) {
+    for (const label of waresItems) {
       await expect(frame.getByText(label, { exact: true })).toBeVisible();
     }
+    await checkMobileItems(waresItems);
     const paths = frame.getByRole("menuitem", { name: "Paths" });
-    await paths.hover();
+    const pathsItems = ["By Role", "War Room", "Chronicles", "By Class", "Merchants", "Diviners"];
+    if (mobile) {
+      await paths.click();
+      if (await paths.getAttribute("aria-expanded") !== "true") await paths.click();
+    } else await paths.hover();
     await expect(paths).toHaveAttribute("aria-expanded", "true");
-    for (const label of ["By Role", "War Room", "Chronicles", "By Class", "Merchants", "Diviners"]) {
+    for (const label of pathsItems) {
       await expect(frame.getByText(label, { exact: true })).toBeVisible();
+    }
+    await checkMobileItems(pathsItems);
+    if (mobile) {
+      await paths.press("Escape");
+      await wares.focus();
+      await wares.press("Enter");
+      await expect(wares).toHaveAttribute("aria-expanded", "true");
+      const last = frame.getByRole("link", { name: /Arcana/ });
+      await last.focus();
+      await expect(last).toBeFocused();
+      await checkMobileItems(["Arcana"]);
     }
   } else if (id === "torch-ui/Popover") {
     await expect(frame.locator("button button")).toHaveCount(0);

@@ -107,7 +107,8 @@ await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
 const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_EXECUTABLE, headless: true });
 const results = [];
 try {
-  for (const [profile, width, theme] of [["desktop-light", 1280, "light"], ["desktop-dark", 1280, "dark"], ["mobile-light", 390, "light"], ["mobile-dark", 390, "dark"]]) {
+  const mobileWidth = Number(process.env.SOLID_MOBILE_WIDTH || 390);
+  for (const [profile, width, theme] of [["desktop-light", 1280, "light"], ["desktop-dark", 1280, "dark"], ["mobile-light", mobileWidth, "light"], ["mobile-dark", mobileWidth, "dark"]]) {
     if (process.env.SOLID_PROFILES && !process.env.SOLID_PROFILES.split(",").includes(profile)) continue;
     const context = await browser.newContext({ viewport: { width, height: 1000 }, colorScheme: theme, reducedMotion: process.env.SOLID_REDUCED_MOTION || "no-preference" });
     const ids = process.env.SOLID_NAMES?.split("|") || Object.keys(solidPreviews).filter(id => !process.env.SOLID_LIBRARY || id.startsWith(`${process.env.SOLID_LIBRARY}/`));

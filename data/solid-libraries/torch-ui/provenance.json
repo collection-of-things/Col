@@ -1142,7 +1142,7 @@
           "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
           "The sample is wrapped from the published TorchUI documentation example.",
           "The runnable example uses the labels, links, and layout from the live documentation demo.",
-          "The original wide navigation and menu panels extend beyond narrow preview viewports."
+          "On narrow screens the preview reflows the navigation, stacks the original menu columns, and lets the panel scroll within the frame."
         ]
       },
       "Sidebar": {
