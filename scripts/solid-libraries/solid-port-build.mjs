@@ -6,10 +6,16 @@ import { fileURLToPath } from "node:url";
 import { brotliCompressSync, constants } from "node:zlib";
 import { buildSolidPreview } from "../solid-preview-build.mjs";
 import { authenticateRuntimeFile, restoreArchive, resolveNpmCli } from "../preview-package-archive.mjs";
+import { guardSidebarCookieWrite } from "./preview-sandbox-adaptations.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const digest = bytes => createHash("sha256").update(bytes).digest("hex");
 const exampleIntroduction = "Original documented SolidJS example from the pinned source. Dependencies and registry helpers listed in this component record cover the selected example; consult the official page for other variants.";
+
+function replacePreviewMarker(content, marker, replacement, identity) {
+  if (content.split(marker).length !== 2) throw new Error(`Preview source changed: ${identity}`);
+  return content.replace(marker, replacement);
+}
 
 /** Replace oversized generated examples with links to their complete, pinned source. */
 export async function refreshPortCorpus(slug) {
@@ -68,6 +74,21 @@ export async function buildSolidPort(slug) {
     await mkdir(dirname(filename), { recursive: true });
     let content = item.base64 ? bytes : Object.entries(assets).reduce((text, [url, asset]) => text.replaceAll(url, asset.dataUrl), item.content);
     const example = config.examples.find(example => example.path === path);
+    const sidebarPath = slug === "zaidan" ? "src/registry/kobalte/ui/sidebar.tsx" : "apps/docs/src/registry/ui/sidebar.tsx";
+    if (path === sidebarPath) content = guardSidebarCookieWrite(content, `${slug}/${path}`);
+    if (slug === "shadcn-solid" && example?.name === "Sidebar") {
+      content = replacePreviewMarker(content, "<SidebarTrigger />", '<SidebarTrigger aria-label="Toggle Sidebar" />', `${slug}/Sidebar`);
+    }
+    if (slug === "zaidan" && example?.name === "Dialog") {
+      const form = "col-preview-profile";
+      for (const [marker, replacement] of [
+        ["<form onSubmit=", `<form id="${form}" onSubmit=`],
+        ['<Input id="name-1"', `<Input form="${form}" id="name-1"`],
+        ['<Input id="username-1"', `<Input form="${form}" id="username-1"`],
+        ['<DialogClose as={Button} variant="outline">', '<DialogClose as={Button} variant="outline" aria-label="Cancel">'],
+        ['<Button type="submit">', `<Button type="submit" form="${form}" onClick={(event) => { event.preventDefault(); event.currentTarget.form?.dispatchEvent(new SubmitEvent("submit", { bubbles: true, cancelable: true, submitter: event.currentTarget })); }}>`],
+      ]) content = replacePreviewMarker(content, marker, replacement, `${slug}/Dialog`);
+    }
     if (example && ["OTP Field", "Input OTP"].includes(example.name)) {
       const marker = slug === "zaidan" ? "<InputOTP maxLength={6}" : "<OTPField maxLength={6}";
       if (content.split(marker).length !== 2) throw new Error(`Original OTP example changed: ${slug}/${example.name}`);

@@ -8,6 +8,8 @@ import { brotliCompressSync, brotliDecompressSync, constants as zlibConstants } 
 import { buildSolidPreview } from "../solid-preview-build.mjs";
 import { authenticateRuntimeFile, restoreArchive, resolveNpmCli } from "../preview-package-archive.mjs";
 import { patchTorchPreview } from "./torch-preview-patches.mjs";
+import { hopePreviewFiles, patchHopePreview } from "./hope-review-patches.mjs";
+import { patchRockSolidPreview, rockSolidPreviewFiles } from "./rocksolid-review-patches.mjs";
 
 const root = fileURLToPath(new URL("../../", import.meta.url));
 const hash = bytes => createHash("sha256").update(bytes).digest("hex");
@@ -114,8 +116,22 @@ export async function buildStyledLibrary(slug, styleImports) {
   const torchFiles = new Map([
     ...["DatePicker.tsx", "DateRangePicker.tsx"].map(name => [sourceFile(`upstream/src/components/forms/${name}`), name]),
     ...["Chart.tsx", "Sparkline.tsx"].map(name => [sourceFile(`upstream/src/components/charts/${name}`), name]),
+    [sourceFile("upstream/src/components/navigation/DropdownMenu.tsx"), "DropdownMenu.tsx"],
   ]);
-  const transformSource = slug === "torch-ui" ? (path, source) => patchTorchPreview(torchFiles.get(path), source) : undefined;
+  const reviewPaths = slug === "hope-ui" ? hopePreviewFiles.map(path => [`upstream/${path}`, path]) :
+    slug === "rocksolid" ? rockSolidPreviewFiles.map(path => [path, path]) : [];
+  const authenticated = new Set(config.sources.map(source => source.path));
+  if (slug === "torch-ui") for (const path of torchFiles.keys()) {
+    const source = posix(relative(sourceRoot, path));
+    if (!authenticated.has(source)) throw new Error(`Missing authenticated preview input: ${slug}/${source}`);
+  }
+  const reviewFiles = new Map(reviewPaths.map(([path, key]) => {
+    if (!authenticated.has(path)) throw new Error(`Missing authenticated preview input: ${slug}/${path}`);
+    return [sourceFile(path), key];
+  }));
+  const transformSource = slug === "torch-ui" ? (path, source) => patchTorchPreview(torchFiles.get(path), source) :
+    slug === "hope-ui" ? (path, source) => patchHopePreview(reviewFiles.get(path), source) :
+    slug === "rocksolid" ? (path, source) => patchRockSolidPreview(reviewFiles.get(path), source) : undefined;
   for (const [group, definitions] of Object.entries(config.groups ?? {})) {
     const result = await buildSolidPreview({ entry: sourceFile(`examples/${group}.tsx`), resolveDir, sourceRoot, runtime: config.runtime, aliases, css, transformSource });
     const code = banner + result.code;

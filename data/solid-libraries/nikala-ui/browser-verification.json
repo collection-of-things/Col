@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-30T06:31:30.857Z",
+  "checkedAt": "2026-11-01T10:03:30.711Z",
   "sandbox": "allow-scripts allow-forms",
   "viewport": {
     "width": 900,
@@ -218,7 +218,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3c58483f8b845d8bb1d23fe72b3b4a3e8dc4ab2b5c862cb2371b3454c33e0b7a",
+      "codeIntegrity": "f5246f274fd016e680f9373a6015b0c986c821fed3d99c0af7ed9be8da0086bc",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Is Nikala UI free to use?Does it support Tailwind CSS v4?How does reactivity work?",
@@ -255,7 +255,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3c58483f8b845d8bb1d23fe72b3b4a3e8dc4ab2b5c862cb2371b3454c33e0b7a",
+      "codeIntegrity": "f5246f274fd016e680f9373a6015b0c986c821fed3d99c0af7ed9be8da0086bc",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Is Nikala UI free to use?Does it support Tailwind CSS v4?How does reactivity work?",
@@ -292,7 +292,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "12f32fdbb2fd2c61e6a5de3bddf509017e97758b90657897bec9f3bf171b4f62",
+      "codeIntegrity": "ebf883248214041dfefd116f3b90edbcf1f99d5d8855694570a2882467656c87",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Heads up!You can add components to your app using the nikala CLI tool.",
@@ -322,7 +322,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "12f32fdbb2fd2c61e6a5de3bddf509017e97758b90657897bec9f3bf171b4f62",
+      "codeIntegrity": "ebf883248214041dfefd116f3b90edbcf1f99d5d8855694570a2882467656c87",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Heads up!You can add components to your app using the nikala CLI tool.",
@@ -352,7 +352,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "48157c7b256504567fe8f90733bbf43c091e536c07866c176356c97851266cda",
+      "codeIntegrity": "5802ea28315a52a21065a75590fc4aa822ffb4bdadf862b930a2859ceff51722",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "ButtonPropsAll reactive properties and event bindings supported by the Button component.PropTypeDefaultDescriptionvariant\"default\" | \"primary\" | \"outline\" | \"ghost\" | \"destructive\"\"default\"Visual style variant applied to the button.size\"xs\"",
@@ -382,7 +382,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "48157c7b256504567fe8f90733bbf43c091e536c07866c176356c97851266cda",
+      "codeIntegrity": "5802ea28315a52a21065a75590fc4aa822ffb4bdadf862b930a2859ceff51722",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "ButtonPropsAll reactive properties and event bindings supported by the Button component.PropTypeDefaultDescriptionvariant\"default\" | \"primary\" | \"outline\" | \"ghost\" | \"destructive\"\"default\"Visual style variant applied to the button.size\"xs\"",
@@ -412,7 +412,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "4dfcf64360fc430e8aedab41c13aedf921388b93ce623783b35d3c8bc41bc77e",
+      "codeIntegrity": "bc5d21ffdeef82a73ac1dd6dde5a94ff50ff1a8f6c7ef06af67cc175a31fbb08",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -448,7 +448,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "4dfcf64360fc430e8aedab41c13aedf921388b93ce623783b35d3c8bc41bc77e",
+      "codeIntegrity": "bc5d21ffdeef82a73ac1dd6dde5a94ff50ff1a8f6c7ef06af67cc175a31fbb08",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -484,7 +484,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "62565b925000610529550152ea9e83de3230a059f637dd045442e237ea02185f",
+      "codeIntegrity": "32bd4732483d22409ec601d3c79d6d32669350a16b883ec777613f7d2c91dd47",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "NP",
@@ -520,7 +520,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "62565b925000610529550152ea9e83de3230a059f637dd045442e237ea02185f",
+      "codeIntegrity": "32bd4732483d22409ec601d3c79d6d32669350a16b883ec777613f7d2c91dd47",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "NP",
@@ -556,7 +556,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b95bbcb6f70427f5388f23b2994caeffd2c15f588e46dcf2c551674cb5b3adc0",
+      "codeIntegrity": "75ec90d6fd845c06d439c6ee137829ea3a5e2994e14948c23de34ade269a1d3a",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "v0.5.0",
@@ -586,7 +586,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b95bbcb6f70427f5388f23b2994caeffd2c15f588e46dcf2c551674cb5b3adc0",
+      "codeIntegrity": "75ec90d6fd845c06d439c6ee137829ea3a5e2994e14948c23de34ade269a1d3a",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "v0.5.0",
@@ -616,7 +616,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "cc779b57f56a16e10c3805fc242fd35f083be617f6daada8a94b5885c1e4bab8",
+      "codeIntegrity": "ccae4b602754b1f72bccb24a3f9f7478fd0e418d829d22293f7b991858f64769",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Website is under active construction. Some pages and components are in preview mode.GitHub",
@@ -652,7 +652,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "cc779b57f56a16e10c3805fc242fd35f083be617f6daada8a94b5885c1e4bab8",
+      "codeIntegrity": "ccae4b602754b1f72bccb24a3f9f7478fd0e418d829d22293f7b991858f64769",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Website is under active construction. Some pages and components are in preview mode.GitHub",
@@ -688,7 +688,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d62bf4a8c49d7e1b977be402834a33eb73b27d513491c4f565cd4ff591811a3b",
+      "codeIntegrity": "9a2357849880341f020aa9a4fc0afdf27dae5b2a673ed4c2b847650a90c0f361",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "HomeDocumentationBreadcrumb",
@@ -718,7 +718,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d62bf4a8c49d7e1b977be402834a33eb73b27d513491c4f565cd4ff591811a3b",
+      "codeIntegrity": "9a2357849880341f020aa9a4fc0afdf27dae5b2a673ed4c2b847650a90c0f361",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "HomeDocumentationBreadcrumb",
@@ -748,7 +748,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9a24cbfcd8ae826e507f280ce95d4dae7aa70d1ea0fcc0e9afceac8367df2f23",
+      "codeIntegrity": "0fd522c5352d3217489e4647989a19fdd4d3dd55f8114fa294fab14a60601631",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Have you benchmarked the new createChatScroll hook?Yes! Zero hydration overhead and buttery smooth 60fps scrolling.⚡4🔥2",
@@ -784,7 +784,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9a24cbfcd8ae826e507f280ce95d4dae7aa70d1ea0fcc0e9afceac8367df2f23",
+      "codeIntegrity": "0fd522c5352d3217489e4647989a19fdd4d3dd55f8114fa294fab14a60601631",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Have you benchmarked the new createChatScroll hook?Yes! Zero hydration overhead and buttery smooth 60fps scrolling.⚡4🔥2",
@@ -820,7 +820,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9aaa277b97aca7aea8a462c4817a9fb6313737bfc03781fbe64e129d6ed80c78",
+      "codeIntegrity": "8cce2e28564b2577384f1a4f300079e75aa4e623641dbc68d1132ae940be1ed7",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "CopyShareExport",
@@ -856,7 +856,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9aaa277b97aca7aea8a462c4817a9fb6313737bfc03781fbe64e129d6ed80c78",
+      "codeIntegrity": "8cce2e28564b2577384f1a4f300079e75aa4e623641dbc68d1132ae940be1ed7",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "CopyShareExport",
@@ -892,7 +892,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "76aca6362d58ac3636b66628fbc612928ab855875e95517823f868648e6e30c1",
+      "codeIntegrity": "321de62ce232fd2186da6cee5c5fb352c8dd21f64bbfa992df9878a5c6e45602",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Heads up!Nikala UI is a lightweight, copy-paste component system built natively for Tailwind CSS v4 and SolidJS.",
@@ -922,7 +922,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "76aca6362d58ac3636b66628fbc612928ab855875e95517823f868648e6e30c1",
+      "codeIntegrity": "321de62ce232fd2186da6cee5c5fb352c8dd21f64bbfa992df9878a5c6e45602",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Heads up!Nikala UI is a lightweight, copy-paste component system built natively for Tailwind CSS v4 and SolidJS.",
@@ -952,7 +952,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "ab3a60aefeed87caf4854a6b2022afd2f315cfed56f38df509559c9b9a7d05ac",
+      "codeIntegrity": "f39236a0b856cca6760cc3e025f27e61725e170ef635f2ebeffd4b5a4ba3445c",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Create projectDeploy your new project in one click.NameCancelDeploy",
@@ -987,7 +987,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "ab3a60aefeed87caf4854a6b2022afd2f315cfed56f38df509559c9b9a7d05ac",
+      "codeIntegrity": "f39236a0b856cca6760cc3e025f27e61725e170ef635f2ebeffd4b5a4ba3445c",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Create projectDeploy your new project in one click.NameCancelDeploy",
@@ -1022,7 +1022,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3cd0cf3a49108f69f450b4794e3baba70859e6e5efcad260d2cc8e0d33f1ddcc",
+      "codeIntegrity": "db108c51f61e257c226c341f0ba366077a9513901b9bb2ab0cfde4ae5d5fe91f",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Accept terms and conditions",
@@ -1058,7 +1058,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3cd0cf3a49108f69f450b4794e3baba70859e6e5efcad260d2cc8e0d33f1ddcc",
+      "codeIntegrity": "db108c51f61e257c226c341f0ba366077a9513901b9bb2ab0cfde4ae5d5fe91f",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Accept terms and conditions",
@@ -1094,7 +1094,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d2e81a9160e5f23d22a88bc430fe7a94595578a3ab1a69e70c534d02cb412be8",
+      "codeIntegrity": "52130df8b732ecadc5a19d40d0e987cb79caa350ef95a9d540c83c66decbe600",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "App.tsxstyles.csspackage.jsonimport { Button } from \"@/components/ui/button\";\n\nexport default function App() {\n  return <Button>Click me</Button>;\n}",
@@ -1129,7 +1129,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d2e81a9160e5f23d22a88bc430fe7a94595578a3ab1a69e70c534d02cb412be8",
+      "codeIntegrity": "52130df8b732ecadc5a19d40d0e987cb79caa350ef95a9d540c83c66decbe600",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "App.tsxstyles.csspackage.jsonimport { Button } from \"@/components/ui/button\";\n\nexport default function App() {\n  return <Button>Click me</Button>;\n}",
@@ -1164,7 +1164,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "2947e821ac9c75e62a1db63c3cbee189c31c563f3169cc8ee778450e591efb62",
+      "codeIntegrity": "33e033470ad6f269db6ee58e0adee0e511bb1ee7da44baad6edfc4e5c1d79435",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "@magradze starred 3 repositories@nikala-ui/ui",
@@ -1201,7 +1201,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "2947e821ac9c75e62a1db63c3cbee189c31c563f3169cc8ee778450e591efb62",
+      "codeIntegrity": "33e033470ad6f269db6ee58e0adee0e511bb1ee7da44baad6edfc4e5c1d79435",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "@magradze starred 3 repositories@nikala-ui/ui",
@@ -1238,7 +1238,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b8c5c7ea05f85898c8d4aca1a6b7ed4836131de943e70da8c02e97b4d9e4cc4f",
+      "codeIntegrity": "de3824d9ca31680fc1ae968a7e3757499f042c5f7b34a4283c125fdb053bf2b5",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -1273,7 +1273,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b8c5c7ea05f85898c8d4aca1a6b7ed4836131de943e70da8c02e97b4d9e4cc4f",
+      "codeIntegrity": "de3824d9ca31680fc1ae968a7e3757499f042c5f7b34a4283c125fdb053bf2b5",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -1308,7 +1308,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d39c0aff6ec4469df2d395644c6beb813a913e41139768cab563e547d24620b1",
+      "codeIntegrity": "2de2b3e0b667edad7bef0e0bb505419fc472f30dcc9371a34bdeb5d4ee54919a",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "SuggestionsCalendar⌘PSearch EmojiCalculatorSettingsProfileBillingSettings⌘SNavigateSelectEscClose",
@@ -1343,7 +1343,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d39c0aff6ec4469df2d395644c6beb813a913e41139768cab563e547d24620b1",
+      "codeIntegrity": "2de2b3e0b667edad7bef0e0bb505419fc472f30dcc9371a34bdeb5d4ee54919a",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "SuggestionsCalendar⌘PSearch EmojiCalculatorSettingsProfileBillingSettings⌘SNavigateSelectEscClose",
@@ -1378,7 +1378,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "a9fd1afd8e59e60d4ef339daf848959d31c64f492aada763c29806c4ea68b5e6",
+      "codeIntegrity": "0fc84397190a859e4d3fcc578994dbb97545f46dfc906005f5640a800e61793d",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Nikala Design SystemFluid Layout Primitives for SolidJSThe Container primitive aligns and bounds horizontal viewport widths across mobile, tablet, and widescreen monitors with responsive gutter tokens.Get StartedComponents",
@@ -1414,7 +1414,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "a9fd1afd8e59e60d4ef339daf848959d31c64f492aada763c29806c4ea68b5e6",
+      "codeIntegrity": "0fc84397190a859e4d3fcc578994dbb97545f46dfc906005f5640a800e61793d",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Nikala Design SystemFluid Layout Primitives for SolidJSThe Container primitive aligns and bounds horizontal viewport widths across mobile, tablet, and widescreen monitors with responsive gutter tokens.Get StartedComponents",
@@ -1450,7 +1450,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "78114222c57cc2b7c5e2be017a3044d98028d776d9939ca5a662a0d3a541f43c",
+      "codeIntegrity": "2a54ab7d85e71e94aa15bda1ad811377b9315ef2157705d611d2479efa861c5b",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Right-click inside this container",
@@ -1485,7 +1485,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "78114222c57cc2b7c5e2be017a3044d98028d776d9939ca5a662a0d3a541f43c",
+      "codeIntegrity": "2a54ab7d85e71e94aa15bda1ad811377b9315ef2157705d611d2479efa861c5b",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Right-click inside this container",
@@ -1520,7 +1520,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "628e7dfc9f42680dc5af5f48e15ad3482deeff6f1fe459f4a0c079526071f81d",
+      "codeIntegrity": "6c6259060dad3cc00e858ee452321b1e4a9ee02c754bdadd0fd9e53255050634",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Edit Profile",
@@ -1557,7 +1557,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "628e7dfc9f42680dc5af5f48e15ad3482deeff6f1fe459f4a0c079526071f81d",
+      "codeIntegrity": "6c6259060dad3cc00e858ee452321b1e4a9ee02c754bdadd0fd9e53255050634",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Edit Profile",
@@ -1594,7 +1594,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "4fd1073f29dd54d74d8b62122cb4657a70353fa4bf03d0f11cca655d7be46718",
+      "codeIntegrity": "9ca42bf2660996733c368eb8e06c440715cf5b3e09e913f995d75e4082f95c68",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Open Menu",
@@ -1631,7 +1631,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "4fd1073f29dd54d74d8b62122cb4657a70353fa4bf03d0f11cca655d7be46718",
+      "codeIntegrity": "9ca42bf2660996733c368eb8e06c440715cf5b3e09e913f995d75e4082f95c68",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Open Menu",
@@ -1668,7 +1668,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "0b23e7936d26b1b6200e199d08b1a71299a34c8eef050a1e8df85abdabb8d534",
+      "codeIntegrity": "ed62340114074237911f87abcd8b27c1264bb3f604f2830ec5812893d88fa232",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "No projects yetCreate your first project to get started.Create project",
@@ -1704,7 +1704,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "0b23e7936d26b1b6200e199d08b1a71299a34c8eef050a1e8df85abdabb8d534",
+      "codeIntegrity": "ed62340114074237911f87abcd8b27c1264bb3f604f2830ec5812893d88fa232",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "No projects yetCreate your first project to get started.Create project",
@@ -1740,7 +1740,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "77aba4870462027261f2fb462781eb2f78903c04fb87050ad5b7ffeec8fa7840",
+      "codeIntegrity": "328951ba47a119aebc0001cfafc7e0d9d79a1ef6057787b16a70786a12dbddd8",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Email addressWe will only use this for account notifications.",
@@ -1775,7 +1775,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "77aba4870462027261f2fb462781eb2f78903c04fb87050ad5b7ffeec8fa7840",
+      "codeIntegrity": "328951ba47a119aebc0001cfafc7e0d9d79a1ef6057787b16a70786a12dbddd8",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Email addressWe will only use this for account notifications.",
@@ -1810,7 +1810,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "064ffc1dd04516ec3b567e00e814daab626734581e362320b8a083bfc47e60e1",
+      "codeIntegrity": "6e90611b60d99ca0bf5bec54c6dd32162cb80c79428a34a4a4150c81a2a1432c",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "srccomponentsuibutton.tsxcard.tsxdialog.tsxnavbar.tsxroutesindex.tsxabout.tsxapp.tsxapp.csspackage.jsontsconfig.jsonREADME.md",
@@ -1847,7 +1847,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "064ffc1dd04516ec3b567e00e814daab626734581e362320b8a083bfc47e60e1",
+      "codeIntegrity": "6e90611b60d99ca0bf5bec54c6dd32162cb80c79428a34a4a4150c81a2a1432c",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "srccomponentsuibutton.tsxcard.tsxdialog.tsxnavbar.tsxroutesindex.tsxabout.tsxapp.tsxapp.csspackage.jsontsconfig.jsonREADME.md",
@@ -1884,7 +1884,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "960a21eefb3b4566fff0c8d23cd55d4deadac3d82d75965911fe322be3f47383",
+      "codeIntegrity": "29ff60f5d74b06563fdeef9695f3644b032ce44858a19b4d9f6241225f91d300",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "NNikala UIv0.11.0Fine-grained copy-paste component system built natively for SolidJS and Tailwind CSS v4.ProductsUI PrimitivesReactive HooksTailwind v4 ThemesAI MCP ServerResourcesDocumentationCLI ReferencePlaygroundRoadmapLegalPrivacy Poli",
@@ -1914,7 +1914,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "960a21eefb3b4566fff0c8d23cd55d4deadac3d82d75965911fe322be3f47383",
+      "codeIntegrity": "29ff60f5d74b06563fdeef9695f3644b032ce44858a19b4d9f6241225f91d300",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "NNikala UIv0.11.0Fine-grained copy-paste component system built natively for SolidJS and Tailwind CSS v4.ProductsUI PrimitivesReactive HooksTailwind v4 ThemesAI MCP ServerResourcesDocumentationCLI ReferencePlaygroundRoadmapLegalPrivacy Poli",
@@ -1948,7 +1948,7 @@
       "blockedRequests": [
         "https://github.com/magradze.png"
       ],
-      "codeIntegrity": "ebcce9216b48cbc8c2ab675a172bfb0b1a6ee72f4c2cbb193991b7f7eddc5910",
+      "codeIntegrity": "18c8b392359332c0cdb4d9fd0c40b98fdfb77f1487957091e4df36cfd0595f07",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "@magradze",
@@ -1989,7 +1989,7 @@
       "blockedRequests": [
         "https://github.com/magradze.png"
       ],
-      "codeIntegrity": "ebcce9216b48cbc8c2ab675a172bfb0b1a6ee72f4c2cbb193991b7f7eddc5910",
+      "codeIntegrity": "18c8b392359332c0cdb4d9fd0c40b98fdfb77f1487957091e4df36cfd0595f07",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "@magradze",
@@ -2026,7 +2026,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c1c1a215febe73b6b55ede54a224c3c724c0a670fffb827f5fdeedcf1df7e621",
+      "codeIntegrity": "4a4112f4d21088aa65bee65551f160d505f2c6913abd3ebea429c23d7af132a9",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -2062,7 +2062,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c1c1a215febe73b6b55ede54a224c3c724c0a670fffb827f5fdeedcf1df7e621",
+      "codeIntegrity": "4a4112f4d21088aa65bee65551f160d505f2c6913abd3ebea429c23d7af132a9",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -2098,7 +2098,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "02144b65ec3d53140e87446bde7cc84324a15da06b2841a91f62e5edd9f96ffa",
+      "codeIntegrity": "337a808c1fd42819c53a6ccbadb1bdd8ba669ccf412e3473b22942002cf6b40a",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -2133,7 +2133,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "02144b65ec3d53140e87446bde7cc84324a15da06b2841a91f62e5edd9f96ffa",
+      "codeIntegrity": "337a808c1fd42819c53a6ccbadb1bdd8ba669ccf412e3473b22942002cf6b40a",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -2168,7 +2168,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "1b27b2773e5a22c00341705dba1e5f80af9d7d942ca0be7609392ca967ddc6c9",
+      "codeIntegrity": "c7070606d078220031c43ba06daf1c184b1b7238f8602cd239a5c46a02a36feb",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "⌘K",
@@ -2203,7 +2203,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "1b27b2773e5a22c00341705dba1e5f80af9d7d942ca0be7609392ca967ddc6c9",
+      "codeIntegrity": "c7070606d078220031c43ba06daf1c184b1b7238f8602cd239a5c46a02a36feb",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "⌘K",
@@ -2238,7 +2238,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "91a969922f4151e4107ea1410c150dfa41e44fa7fc6c97c11e4fcc01573a915c",
+      "codeIntegrity": "068148f516eb8e62909f0943c2c9277fdbbc0ff86504107807f9b01d98c8a29a",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "⌘K",
@@ -2268,7 +2268,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "91a969922f4151e4107ea1410c150dfa41e44fa7fc6c97c11e4fcc01573a915c",
+      "codeIntegrity": "068148f516eb8e62909f0943c2c9277fdbbc0ff86504107807f9b01d98c8a29a",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "⌘K",
@@ -2298,7 +2298,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "00aae0c3296b45133f3573a13c524bb96fa60cb5309b0818951bde26a86b2149",
+      "codeIntegrity": "89fa69874c048bfd74a4467e75f4584e33568d4a4d8c41176199a2c27df35eee",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Accept terms and conditions",
@@ -2334,7 +2334,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "00aae0c3296b45133f3573a13c524bb96fa60cb5309b0818951bde26a86b2149",
+      "codeIntegrity": "89fa69874c048bfd74a4467e75f4584e33568d4a4d8c41176199a2c27df35eee",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Accept terms and conditions",
@@ -2370,7 +2370,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "e0b0077b346d00bccc609e4c32e723085edc29d1fed3057b79949b233015eabe",
+      "codeIntegrity": "40973bdfbe80f5bdced5b644f510364b72bff3350829bd7f0295d1dfeb2cb964",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "NavigationGetting StartedArchitecture philosophy and installation guideCLI ReferenceCommands guide for initializing and managing components",
@@ -2400,7 +2400,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "e0b0077b346d00bccc609e4c32e723085edc29d1fed3057b79949b233015eabe",
+      "codeIntegrity": "40973bdfbe80f5bdced5b644f510364b72bff3350829bd7f0295d1dfeb2cb964",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "NavigationGetting StartedArchitecture philosophy and installation guideCLI ReferenceCommands guide for initializing and managing components",
@@ -2430,7 +2430,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "36b7b3b384230caf139f701ffb3eef923eedb25e2bdbaed1737901bf2689a359",
+      "codeIntegrity": "d232ba391e9d696e242d17b029bc4eaf0406f4dd7a33ce3c5f39af6d9e4c7878",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Today, 3:45 PM🚀 Release v1.3.0 deployed to edge serversNikala Bot is typing",
@@ -2473,7 +2473,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "36b7b3b384230caf139f701ffb3eef923eedb25e2bdbaed1737901bf2689a359",
+      "codeIntegrity": "d232ba391e9d696e242d17b029bc4eaf0406f4dd7a33ce3c5f39af6d9e4c7878",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Today, 3:45 PM🚀 Release v1.3.0 deployed to edge serversNikala Bot is typing",
@@ -2516,7 +2516,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "fde9e7701d0ba7dccd162bb800851534bb021b6f1f532bf92081fdb2d1a2ccbc",
+      "codeIntegrity": "275133fbfc3125d50f244f20008f758d5772198025d1317f25d7d0895a012862",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "@keyframes nikala-marquee {\n          from {\n            transform: translateX(0);\n          }\n          to {\n            transform: translateX(calc(-100% - var(--marquee-gap, 1rem)));\n          }\n        }\n        @keyframes nikala-marquee",
@@ -2644,7 +2644,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "fde9e7701d0ba7dccd162bb800851534bb021b6f1f532bf92081fdb2d1a2ccbc",
+      "codeIntegrity": "275133fbfc3125d50f244f20008f758d5772198025d1317f25d7d0895a012862",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "@keyframes nikala-marquee {\n          from {\n            transform: translateX(0);\n          }\n          to {\n            transform: translateX(calc(-100% - var(--marquee-gap, 1rem)));\n          }\n        }\n        @keyframes nikala-marquee",
@@ -2772,7 +2772,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "139a0e9ac8dd8677d8a650f26c97535bc902a1525c0697f487e6d291686f82ce",
+      "codeIntegrity": "8550a3c76b19f49ba1ee9c672e1eb347e60b1bbea0185a64972c989e0f5e1989",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "GMJust upgraded our design tokens to Tailwind CSS v4.SMAwesome! Did you verify the dark theme contrast ratios?GMAll 27 components and primitives pass WCAG AA standards.DeliveredSMGreat work! Let's deploy the preview build to staging.I will ",
@@ -2821,7 +2821,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "139a0e9ac8dd8677d8a650f26c97535bc902a1525c0697f487e6d291686f82ce",
+      "codeIntegrity": "8550a3c76b19f49ba1ee9c672e1eb347e60b1bbea0185a64972c989e0f5e1989",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "GMJust upgraded our design tokens to Tailwind CSS v4.SMAwesome! Did you verify the dark theme contrast ratios?GMAll 27 components and primitives pass WCAG AA standards.DeliveredSMGreat work! Let's deploy the preview build to staging.I will ",
@@ -2870,7 +2870,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3c4276dfdec8de940ccc129a54cac7a9331883e34d2063e8e4c5c1ce8cde8f7e",
+      "codeIntegrity": "abebd85953051ebe735f2e5b0f9d91358cb04a154be57b38be7efd5241e4c858",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "NNikala UIHomeFeaturesPricingDocumentationSign InGet Started",
@@ -2906,7 +2906,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3c4276dfdec8de940ccc129a54cac7a9331883e34d2063e8e4c5c1ce8cde8f7e",
+      "codeIntegrity": "abebd85953051ebe735f2e5b0f9d91358cb04a154be57b38be7efd5241e4c858",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "NNikala UIHomeFeaturesPricingDocumentationSign InGet Started",
@@ -2942,7 +2942,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "76c58af76d4465d37e21394cfdd19ce39ab5acd259ab6cd7c364d7a23c6401ec",
+      "codeIntegrity": "0678509137abbff3bc39c9ec03dfefe22d6a5a4442774cd606d259e20ea893ae",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Getting StartedComponents40+ Hooks",
@@ -2979,7 +2979,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "76c58af76d4465d37e21394cfdd19ce39ab5acd259ab6cd7c364d7a23c6401ec",
+      "codeIntegrity": "0678509137abbff3bc39c9ec03dfefe22d6a5a4442774cd606d259e20ea893ae",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Getting StartedComponents40+ Hooks",
@@ -3016,7 +3016,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b954258e906bf8113b1b05c43e3cb06247ca7a859a3be6c6a3e10e8027f01a6c",
+      "codeIntegrity": "23c1207b419d3dd15d150e8050a657653e89107f257036753ee06255380f40df",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Quantity",
@@ -3051,7 +3051,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b954258e906bf8113b1b05c43e3cb06247ca7a859a3be6c6a3e10e8027f01a6c",
+      "codeIntegrity": "23c1207b419d3dd15d150e8050a657653e89107f257036753ee06255380f40df",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Quantity",
@@ -3086,7 +3086,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "a7a6aac4c23a5c42637aea6558612dbddcd0b0c1a33653accc8e96c637055ad1",
+      "codeIntegrity": "7cd1878f71d3417e11afc3712e334cd33c17ce5c91079dc8ce56b1082404e6fc",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "bunpnpmnpmyarn$ bun add @nikala-ui/core",
@@ -3121,7 +3121,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "a7a6aac4c23a5c42637aea6558612dbddcd0b0c1a33653accc8e96c637055ad1",
+      "codeIntegrity": "7cd1878f71d3417e11afc3712e334cd33c17ce5c91079dc8ce56b1082404e6fc",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "bunpnpmnpmyarn$ bun add @nikala-ui/core",
@@ -3156,7 +3156,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f7ba913383a752c4f20d128865bab28cfeec5aeaba247d85235ce4214deaa3eb",
+      "codeIntegrity": "94843c8f0b9c11d7d97bec532f3531989f4b1d1de2aeb90ca2691427a9b8f8c6",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "PreviousPaginationNextSeparator",
@@ -3186,7 +3186,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f7ba913383a752c4f20d128865bab28cfeec5aeaba247d85235ce4214deaa3eb",
+      "codeIntegrity": "94843c8f0b9c11d7d97bec532f3531989f4b1d1de2aeb90ca2691427a9b8f8c6",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "PreviousPaginationNextSeparator",
@@ -3216,7 +3216,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "42c379c41083f78d89ec6a172bb190b037d7a7c13cc136496d772238b9a4893d",
+      "codeIntegrity": "4b7bfc1b785d3e2d99421f4562d57edb7e8c4239ba868428bf703c6c5243fecc",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Page 2 of 10Previous123More pages10Next",
@@ -3252,7 +3252,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "42c379c41083f78d89ec6a172bb190b037d7a7c13cc136496d772238b9a4893d",
+      "codeIntegrity": "4b7bfc1b785d3e2d99421f4562d57edb7e8c4239ba868428bf703c6c5243fecc",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Page 2 of 10Previous123More pages10Next",
@@ -3288,7 +3288,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b3545451b9d091e8184b510fecb41f509f1da6783844c391dc66bc085094b80a",
+      "codeIntegrity": "4f88f17c29b808e3624a5c89437f83224a06fd988c9c1d906b94f17f668cc965",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Enter 4-Digit SMS CodeCurrent Code: ____",
@@ -3323,7 +3323,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b3545451b9d091e8184b510fecb41f509f1da6783844c391dc66bc085094b80a",
+      "codeIntegrity": "4f88f17c29b808e3624a5c89437f83224a06fd988c9c1d906b94f17f668cc965",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Enter 4-Digit SMS CodeCurrent Code: ____",
@@ -3358,7 +3358,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "97d6da99ee427dce11615addcc3a194ec3b99044a7de6316c555373319b52ec3",
+      "codeIntegrity": "b6302d523ac693d408b846c430e396177c3727e171ef80eeffd5677a467d9f3d",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Open Popover",
@@ -3395,7 +3395,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "97d6da99ee427dce11615addcc3a194ec3b99044a7de6316c555373319b52ec3",
+      "codeIntegrity": "b6302d523ac693d408b846c430e396177c3727e171ef80eeffd5677a467d9f3d",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Open Popover",
@@ -3432,7 +3432,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "73d4d2b104c3d172b0d078e7d94d5e896fe77acf6b10112c6e62518c9b819bcd",
+      "codeIntegrity": "b4c9e40ad9405b37c1e0acb1ae4b6b2de2b421deb7d6f21e93f4dd21b4a37604",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Task Progress45%-15%+15%",
@@ -3468,7 +3468,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "73d4d2b104c3d172b0d078e7d94d5e896fe77acf6b10112c6e62518c9b819bcd",
+      "codeIntegrity": "b4c9e40ad9405b37c1e0acb1ae4b6b2de2b421deb7d6f21e93f4dd21b4a37604",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Task Progress45%-15%+15%",
@@ -3504,7 +3504,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6357280bd7516c13804598fbba9294886760b5ea21b6fbb0d2e2f440c5a24a36",
+      "codeIntegrity": "f80839ad368b76c6a4ce7d549003a83f16be325cf2286a365c279b7a671fcb98",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "DefaultComfortableCompact",
@@ -3534,7 +3534,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6357280bd7516c13804598fbba9294886760b5ea21b6fbb0d2e2f440c5a24a36",
+      "codeIntegrity": "f80839ad368b76c6a4ce7d549003a83f16be325cf2286a365c279b7a671fcb98",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "DefaultComfortableCompact",
@@ -3564,7 +3564,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c4c327fb0555e3d968efdaea83a90e417c91c74c0f25aef4de3a4bf9f395dbf0",
+      "codeIntegrity": "88606f9ebd9920331aea2cc92158dc22f0daa0e1939b19f1c9162d8d11806a35",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "4 / 5 Stars(Click or use arrow keys to change)",
@@ -3600,7 +3600,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c4c327fb0555e3d968efdaea83a90e417c91c74c0f25aef4de3a4bf9f395dbf0",
+      "codeIntegrity": "88606f9ebd9920331aea2cc92158dc22f0daa0e1939b19f1c9162d8d11806a35",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "4 / 5 Stars(Click or use arrow keys to change)",
@@ -3636,7 +3636,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b5082e55b456517bc75df52b98142383815839b9ef88eb3ba922dc233a343368",
+      "codeIntegrity": "0e8eac0d914c1c0d4b4319e534134d287e408b5bcb550ecbba03acee47f0640e",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Sidebar (30%)Content (70%)",
@@ -3666,7 +3666,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b5082e55b456517bc75df52b98142383815839b9ef88eb3ba922dc233a343368",
+      "codeIntegrity": "0e8eac0d914c1c0d4b4319e534134d287e408b5bcb550ecbba03acee47f0640e",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Sidebar (30%)Content (70%)",
@@ -3696,7 +3696,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "fbe8582ffb2869da5cb9867e39633aaf73643c15b20451b1c7ec6a8602c23f55",
+      "codeIntegrity": "3d62db86625bac9f40190e8342734294b28956485dab8d0401706377f1e4817e",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "ALAlex RiverStaff Engineer at Vercel\"Nikala UI + SolidJS is the fastest developer experience I have ever had. Fine-grained reactivity just works out of the box.\"Verified User2 days agoSASarah ChenFrontend Lead\"Tailwind v4 integration is fla",
@@ -3742,7 +3742,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "fbe8582ffb2869da5cb9867e39633aaf73643c15b20451b1c7ec6a8602c23f55",
+      "codeIntegrity": "3d62db86625bac9f40190e8342734294b28956485dab8d0401706377f1e4817e",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "ALAlex RiverStaff Engineer at Vercel\"Nikala UI + SolidJS is the fastest developer experience I have ever had. Fine-grained reactivity just works out of the box.\"Verified User2 days agoSASarah ChenFrontend Lead\"Tailwind v4 integration is fla",
@@ -3788,7 +3788,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "81d182a4e452b8ec0e3da3f6f5b37bd46660f147ace29ae3344b6f0b312a222d",
+      "codeIntegrity": "c808b1b0ed6a115a5b8f15a132b6be08de2b9118c9a09649199594f5d2afcc1e",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "TagsList of generated tagsv1.0.0-beta.1v1.0.0-beta.2v1.0.0-beta.3v1.0.0-beta.4v1.0.0-beta.5v1.0.0-beta.6v1.0.0-beta.7v1.0.0-beta.8v1.0.0-beta.9v1.0.0-beta.10v1.0.0-beta.11v1.0.0-beta.12v1.0.0-beta.13v1.0.0-beta.14v1.0.0-beta.15v1.0.0-beta.1",
@@ -3829,7 +3829,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "81d182a4e452b8ec0e3da3f6f5b37bd46660f147ace29ae3344b6f0b312a222d",
+      "codeIntegrity": "c808b1b0ed6a115a5b8f15a132b6be08de2b9118c9a09649199594f5d2afcc1e",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "TagsList of generated tagsv1.0.0-beta.1v1.0.0-beta.2v1.0.0-beta.3v1.0.0-beta.4v1.0.0-beta.5v1.0.0-beta.6v1.0.0-beta.7v1.0.0-beta.8v1.0.0-beta.9v1.0.0-beta.10v1.0.0-beta.11v1.0.0-beta.12v1.0.0-beta.13v1.0.0-beta.14v1.0.0-beta.15v1.0.0-beta.1",
@@ -3870,7 +3870,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f95cc6e849817a49158920a1d154586d46f145bc5eae26baeabfbdc1964f8a25",
+      "codeIntegrity": "eb716e6ee01fd290d1fae83b58280ea0aa87df8942f9391e4a8d516780df302f",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "ButtonuiA versatile interactive button component with multiple variants and sizes.",
@@ -3900,7 +3900,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f95cc6e849817a49158920a1d154586d46f145bc5eae26baeabfbdc1964f8a25",
+      "codeIntegrity": "eb716e6ee01fd290d1fae83b58280ea0aa87df8942f9391e4a8d516780df302f",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "ButtonuiA versatile interactive button component with multiple variants and sizes.",
@@ -3930,7 +3930,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3b1956bdeb6eaf784d34165ee80ab6ddc30aa1efa9a8d1cb70fc4d633b2252bf",
+      "codeIntegrity": "a2a6511e0df2ddef910a3337960bb3384d828727d04d8403d1112910a3e0c069",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Select a framework...",
@@ -3967,7 +3967,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3b1956bdeb6eaf784d34165ee80ab6ddc30aa1efa9a8d1cb70fc4d633b2252bf",
+      "codeIntegrity": "a2a6511e0df2ddef910a3337960bb3384d828727d04d8403d1112910a3e0c069",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Select a framework...",
@@ -4004,7 +4004,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d799b7a3dce12f4fc7c288b383d8d37c47e69ae5559b0ab709a0eddd07136f58",
+      "codeIntegrity": "240f5bfffc5349744d3568f67b1c3a5175d8fc5d7b3d0fb4f92c4a0fd1f0ee70",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Nikala UISolidJS & Tailwind CSS v4 component system.DocsComponentsSource",
@@ -4034,7 +4034,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d799b7a3dce12f4fc7c288b383d8d37c47e69ae5559b0ab709a0eddd07136f58",
+      "codeIntegrity": "240f5bfffc5349744d3568f67b1c3a5175d8fc5d7b3d0fb4f92c4a0fd1f0ee70",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Nikala UISolidJS & Tailwind CSS v4 component system.DocsComponentsSource",
@@ -4064,7 +4064,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "002c681d949643d694f4949f534802184ea9dcd74f5a84a685f846be0f9a739c",
+      "codeIntegrity": "e3323511251fb0e0d1a1af4545509fdd919fbcb0f5a2dba437a59ac58229e0b3",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Open Right Sheet",
@@ -4101,7 +4101,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "002c681d949643d694f4949f534802184ea9dcd74f5a84a685f846be0f9a739c",
+      "codeIntegrity": "e3323511251fb0e0d1a1af4545509fdd919fbcb0f5a2dba437a59ac58229e0b3",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Open Right Sheet",
@@ -4138,7 +4138,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "41bd139e8a703bff4f2da85bbd04b2a16e5f65a2b9774b10e55c12bb773d452d",
+      "codeIntegrity": "6c9f693d32ebdf0f1a7923fe5a467e2217a8e2aae3afdbc785eaa5d38f5845a1",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Toggle SidebarToggle icon collapseNikala StudioPro WorkspacePlatformDashboardInbox12ProjectsTeam MembersSettingsPreferencesBilling & PlansGMGiorgi M.giorgi@nikala.dev",
@@ -4165,10 +4165,6 @@
         "htmlTheme": "light"
       },
       "expectedBlockedAssets": [],
-      "expectedLimitations": [
-        "Failed to set the 'cookie' property on 'Document': The document is sandboxed and lacks the 'allow-same-origin' flag.",
-        "Uncaught SecurityError: Failed to set the 'cookie' property on 'Document': The document is sandboxed and lacks the 'allow-same-origin' flag."
-      ],
       "sidebarState": 1
     },
     {
@@ -4179,7 +4175,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "41bd139e8a703bff4f2da85bbd04b2a16e5f65a2b9774b10e55c12bb773d452d",
+      "codeIntegrity": "6c9f693d32ebdf0f1a7923fe5a467e2217a8e2aae3afdbc785eaa5d38f5845a1",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Toggle SidebarToggle icon collapseNikala StudioPro WorkspacePlatformDashboardInbox12ProjectsTeam MembersSettingsPreferencesBilling & PlansGMGiorgi M.giorgi@nikala.dev",
@@ -4206,10 +4202,6 @@
         "htmlTheme": "dark"
       },
       "expectedBlockedAssets": [],
-      "expectedLimitations": [
-        "Failed to set the 'cookie' property on 'Document': The document is sandboxed and lacks the 'allow-same-origin' flag.",
-        "Uncaught SecurityError: Failed to set the 'cookie' property on 'Document': The document is sandboxed and lacks the 'allow-same-origin' flag."
-      ],
       "sidebarState": 1
     },
     {
@@ -4220,7 +4212,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "0f4737e624363cf0f35025c8181e82b0b6d6b9cf842daafbe861e9ecb4a02e0b",
+      "codeIntegrity": "e389c50134a4c2441cdb30051c25a05103e7deafe973c0bc1b8445082b1c4322",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -4263,7 +4255,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "0f4737e624363cf0f35025c8181e82b0b6d6b9cf842daafbe861e9ecb4a02e0b",
+      "codeIntegrity": "e389c50134a4c2441cdb30051c25a05103e7deafe973c0bc1b8445082b1c4322",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -4306,7 +4298,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "ee519f083dedc86bec405e9f82d78a2e23e25ce7ca13913f6c1aaaebaee58a2a",
+      "codeIntegrity": "b9f427db6e25dcc06caa93f77b56ddfccd91c318fedab7ac64db8563637adf72",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Volume40",
@@ -4342,7 +4334,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "ee519f083dedc86bec405e9f82d78a2e23e25ce7ca13913f6c1aaaebaee58a2a",
+      "codeIntegrity": "b9f427db6e25dcc06caa93f77b56ddfccd91c318fedab7ac64db8563637adf72",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Volume40",
@@ -4378,7 +4370,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "882dc3b960fd515bc577edd469a73ef6d6a5b577340bd340f5b430dbffc08e92",
+      "codeIntegrity": "5258d66d0759ace5e6114ceab257942ea08a4c2582fd48bedeb1f529ac2e1239",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -4413,7 +4405,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "882dc3b960fd515bc577edd469a73ef6d6a5b577340bd340f5b430dbffc08e92",
+      "codeIntegrity": "5258d66d0759ace5e6114ceab257942ea08a4c2582fd48bedeb1f529ac2e1239",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -4448,7 +4440,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "312248ffc456f33cc68c47e3650196357caed388179d1c3bd86f1cf0914ec3d2",
+      "codeIntegrity": "5dd35e33c121979984424bd94419e563d480f21df33bbc4bf9cc58fa15282089",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Total Revenue$45,231.89+20.1%vs last monthSubscriptions+2,350+180.1%vs last monthSales Count12,234+19%vs last monthActive Now+573-4.2%vs last hour",
@@ -4478,7 +4470,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "312248ffc456f33cc68c47e3650196357caed388179d1c3bd86f1cf0914ec3d2",
+      "codeIntegrity": "5dd35e33c121979984424bd94419e563d480f21df33bbc4bf9cc58fa15282089",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Total Revenue$45,231.89+20.1%vs last monthSubscriptions+2,350+180.1%vs last monthSales Count12,234+19%vs last monthActive Now+573-4.2%vs last hour",
@@ -4508,7 +4500,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "15b46271b6e81410c42028f40312633506f514c6bc15b8c92bfc3f669af84b5d",
+      "codeIntegrity": "c4343526b3187b9f6f25a41d3395b879ab7f6f8081d5a920c87694ba6a0d1e17",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Operational",
@@ -4538,7 +4530,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "15b46271b6e81410c42028f40312633506f514c6bc15b8c92bfc3f669af84b5d",
+      "codeIntegrity": "c4343526b3187b9f6f25a41d3395b879ab7f6f8081d5a920c87694ba6a0d1e17",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Operational",
@@ -4568,7 +4560,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "da55370ccac2a111766154f1af5c8be11184093fc0940d864fadf427257977a4",
+      "codeIntegrity": "f3e3379734379393f054bfc0cf77a8c909dd3519c406d1779c584a53c14ff0e0",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Initialize your projectRun the initialization wizard to configure Tailwind CSS v4 and path aliases.bunpnpmnpmyarn$ bunx nikala initAdd UI componentsChoose any component from the registry and install it into your project.bunpnpmnpmyarn$ bunx",
@@ -4603,7 +4595,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "da55370ccac2a111766154f1af5c8be11184093fc0940d864fadf427257977a4",
+      "codeIntegrity": "f3e3379734379393f054bfc0cf77a8c909dd3519c406d1779c584a53c14ff0e0",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Initialize your projectRun the initialization wizard to configure Tailwind CSS v4 and path aliases.bunpnpmnpmyarn$ bunx nikala initAdd UI componentsChoose any component from the registry and install it into your project.bunpnpmnpmyarn$ bunx",
@@ -4638,7 +4630,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "7e12290c23a687b92a8c8db298ca8f2baaee9e2f149b104da2cd2ad83e844810",
+      "codeIntegrity": "be85fbc4a162d5df5d68301aaf139a39e87f8fa733e41a719e33dbbab7f285af",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Airplane Mode",
@@ -4674,7 +4666,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "7e12290c23a687b92a8c8db298ca8f2baaee9e2f149b104da2cd2ad83e844810",
+      "codeIntegrity": "be85fbc4a162d5df5d68301aaf139a39e87f8fa733e41a719e33dbbab7f285af",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Airplane Mode",
@@ -4710,7 +4702,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "efcdf50f1da9bc8b947fc328a6bbdd15af7188e51e5a5be947c9f335d26e493d",
+      "codeIntegrity": "8578cf08efc3cf0a2b2f6fa599eca13d2292c2ab95b79d2318b8ff7abbc9949f",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "InvoiceStatusMethodAmountINV-001PaidCredit Card$250.00INV-002PendingPayPal$150.00INV-003UnpaidBank Transfer$350.00INV-004PaidCredit Card$450.00INV-005PaidApple Pay$550.00Total$1,750.00",
@@ -4740,7 +4732,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "efcdf50f1da9bc8b947fc328a6bbdd15af7188e51e5a5be947c9f335d26e493d",
+      "codeIntegrity": "8578cf08efc3cf0a2b2f6fa599eca13d2292c2ab95b79d2318b8ff7abbc9949f",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "InvoiceStatusMethodAmountINV-001PaidCredit Card$250.00INV-002PendingPayPal$150.00INV-003UnpaidBank Transfer$350.00INV-004PaidCredit Card$450.00INV-005PaidApple Pay$550.00Total$1,750.00",
@@ -4770,7 +4762,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "a04317f6431f0aba1cec9a51d3fbfb517f43e8eb417fa431718e69565589b0f1",
+      "codeIntegrity": "35e4d5e85351a16175145bad777b7321130db10aa008cbb756e88b2e3e4e9fed",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "On this pageOverviewInstallationPackage ManagersConfigurationTailwind SetupAPI Reference",
@@ -4800,7 +4792,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "a04317f6431f0aba1cec9a51d3fbfb517f43e8eb417fa431718e69565589b0f1",
+      "codeIntegrity": "35e4d5e85351a16175145bad777b7321130db10aa008cbb756e88b2e3e4e9fed",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "On this pageOverviewInstallationPackage ManagersConfigurationTailwind SetupAPI Reference",
@@ -4830,7 +4822,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d5b509431ed73900b237c63b253f3eeae465b8a414589655aab23f34c6840325",
+      "codeIntegrity": "01d4de6fc04e638d7957c7ac0c7b4e7e574ad080623b1e702de4b16917fbe4c5",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "AccountPasswordAccountMake changes to your account here. Click save when you're done.NameSave changes",
@@ -4869,7 +4861,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d5b509431ed73900b237c63b253f3eeae465b8a414589655aab23f34c6840325",
+      "codeIntegrity": "01d4de6fc04e638d7957c7ac0c7b4e7e574ad080623b1e702de4b16917fbe4c5",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "AccountPasswordAccountMake changes to your account here. Click save when you're done.NameSave changes",
@@ -4908,7 +4900,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "10aa11d5a0002029f27737314fb135d53e3430ef320e6d8d7832dddbbe4d30d6",
+      "codeIntegrity": "f60009f650576a1f901792dabca1b3fa3e74070e1d5168cb3f738f4cce3a4bf0",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -4943,7 +4935,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "10aa11d5a0002029f27737314fb135d53e3430ef320e6d8d7832dddbbe4d30d6",
+      "codeIntegrity": "f60009f650576a1f901792dabca1b3fa3e74070e1d5168cb3f738f4cce3a4bf0",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -4978,7 +4970,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c6a149ef95a4cba6197ab1bd7d68c32135f6cfb9eeb10262a742185ade381114",
+      "codeIntegrity": "68ebcd74ff1506d7e7f2b9a2628e922714bf1f5b22a23070eaf8ba5e979584f3",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Toggle theme",
@@ -5015,7 +5007,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c6a149ef95a4cba6197ab1bd7d68c32135f6cfb9eeb10262a742185ade381114",
+      "codeIntegrity": "68ebcd74ff1506d7e7f2b9a2628e922714bf1f5b22a23070eaf8ba5e979584f3",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Toggle theme",
@@ -5052,7 +5044,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "0bfbb6cf51223bb2f411832dcb18c457350e213191dd52a1731dc8d5946403df",
+      "codeIntegrity": "b14ec66c9e38c14441b40afab1edc46e68d92d4a721959867582faf0d905e6fe",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Show Default Toast",
@@ -5088,7 +5080,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "0bfbb6cf51223bb2f411832dcb18c457350e213191dd52a1731dc8d5946403df",
+      "codeIntegrity": "b14ec66c9e38c14441b40afab1edc46e68d92d4a721959867582faf0d905e6fe",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Show Default Toast",
@@ -5124,7 +5116,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "0c7aecb6bc0c42b960d347aae0e04c41ee4f4758ac71c572a1a31eea28f367f6",
+      "codeIntegrity": "e7c253b0d9fda993ac4e9594b6a339d92df0d9d18087808a1048ae6d6ee8dd50",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -5160,7 +5152,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "0c7aecb6bc0c42b960d347aae0e04c41ee4f4758ac71c572a1a31eea28f367f6",
+      "codeIntegrity": "e7c253b0d9fda993ac4e9594b6a339d92df0d9d18087808a1048ae6d6ee8dd50",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "",
@@ -5196,7 +5188,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "8f18c37914b14bda2c1c908b1ede552ea4b88868d801a7baece3824d18f3af5f",
+      "codeIntegrity": "8dafc76747c59cc655fa4afc035eb76d218c91c0d1040d67ef7199b4b4fa59ef",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Hover Me",
@@ -5231,7 +5223,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "8f18c37914b14bda2c1c908b1ede552ea4b88868d801a7baece3824d18f3af5f",
+      "codeIntegrity": "8dafc76747c59cc655fa4afc035eb76d218c91c0d1040d67ef7199b4b4fa59ef",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "before": {
         "text": "Hover Me",
@@ -5682,5 +5674,6 @@
       },
       "expectedBlockedAssets": []
     }
-  ]
+  ],
+  "unavailableEvidence": []
 }

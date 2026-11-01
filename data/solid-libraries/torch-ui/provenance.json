@@ -1156,7 +1156,7 @@
         "gaps": [
           "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
           "The sample is wrapped from the published TorchUI documentation example.",
-          "The preview uses the underlying Kobalte trigger with the same TorchUI Button styling to avoid nested buttons."
+          "The preview adapts the TorchUI trigger's polymorphic typing and renders the TorchUI Button through it to avoid nested buttons; the pinned upstream wrapper remains unchanged."
         ]
       },
       "Tabs": {

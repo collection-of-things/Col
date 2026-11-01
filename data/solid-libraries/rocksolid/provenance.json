@@ -959,11 +959,19 @@
     }
   ],
   "groups": {
+    "Dialog": {
+      "Dialog": {
+        "source": "upstream/src/components/Dialog/Dialog.tsx",
+        "gaps": [
+          "The preview preserves existing body scroll locks and releases its own lock when the dialog closes or is disposed."
+        ]
+      }
+    },
     "RockExpanded1": {
       "Accordion": {
         "source": "upstream/src/components/Accordion/Accordion.tsx",
         "gaps": [
-          "The preview makes collapsed panels inert and hidden from assistive technology; other upstream variants retain their original behavior."
+          "The preview makes collapsed panels inert and hidden from assistive technology while retaining the original styles."
         ]
       },
       "Alert": {
@@ -973,7 +981,7 @@
       "Avatar": {
         "source": "upstream/src/components/Avatar/Avatar.tsx",
         "gaps": [
-          "This preview uses text avatars. The upstream image variant derives alt text from initials and can throw on image failure when image slot props omit onError."
+          "This preview uses text avatars; the preview build also preserves image alternative text and safely handles optional image error callbacks."
         ]
       },
       "Badge": {
@@ -984,7 +992,9 @@
       },
       "Breadcrumbs": {
         "source": "upstream/src/components/Breadcrumbs/Breadcrumbs.tsx",
-        "gaps": []
+        "gaps": [
+          "The preview build updates breadcrumb items and separators when children change."
+        ]
       },
       "ButtonGroup": {
         "source": "upstream/src/components/ButtonGroup/ButtonGroup.tsx",
@@ -1039,14 +1049,16 @@
       "Tabs": {
         "source": "upstream/src/components/Tabs/Tabs.tsx",
         "gaps": [
-          "The vertical example adds orientation semantics and Up/Down keyboard focus and prevents horizontal arrow handling, retaining the original styling."
+          "The preview build adds orientation-aware and RTL-aware keyboard navigation and keeps an enabled tab keyboard-accessible when no value matches."
         ]
       }
     },
     "RockExpanded3": {
       "Select": {
         "source": "upstream/src/components/Select/Select.tsx",
-        "gaps": []
+        "gaps": [
+          "The preview build retains the browser's selection for uncontrolled selects."
+        ]
       },
       "Skeleton": {
         "source": "upstream/src/components/Skeleton/Skeleton.tsx",

@@ -11944,7 +11944,7 @@
       "lockIntegrity": "sha256:97cd147159193f96552e895a52ac65920d692f7aa00c08baa1a0c1033f84d8a2"
     },
     "direct:Dialog": {
-      "codeIntegrity": "sha256:25d864382ed7cf7fab3e63a00ab4b5cf33896aff004444e9b977dcde49387b55",
+      "codeIntegrity": "sha256:65e4e7fa50ddcb717a27f3b59577212327995ce26d220531710424101f74a35b",
       "cssIntegrity": "sha256:a888e357ab92678289dd7aa29af274340228523157856b1bdf9e5a95dbe9963c",
       "inputs": [
         0,
@@ -14039,7 +14039,7 @@
         "node_modules/solid-presence",
         "node_modules/lucide-solid"
       ],
-      "inputsIntegrity": "sha256:995fa35b22ba623f49ded7816fccdde3a9ea932023391bf5d60b16b18e75b45d",
+      "inputsIntegrity": "sha256:a7b63dd7f8b75d3cc40a947e66e44cf88af9be47abbdc843039ea253b550af1f",
       "packagesIntegrity": "sha256:c6dbbc9e95c400e2399d8c9435139e2a479179dfc98a346ecff5e8566f013b09",
       "lockIntegrity": "sha256:97cd147159193f96552e895a52ac65920d692f7aa00c08baa1a0c1033f84d8a2"
     },
@@ -18357,7 +18357,7 @@
       "lockIntegrity": "sha256:97cd147159193f96552e895a52ac65920d692f7aa00c08baa1a0c1033f84d8a2"
     },
     "batch-06": {
-      "codeIntegrity": "sha256:c98f64d4c6cce7c443a64131ac802cc9eea82260ea1b403c8d78cac9b35b835b",
+      "codeIntegrity": "sha256:7d5d40937e587e4aefa0e717965e755d8b99f34fb5980b29d1146ff04849fc84",
       "cssIntegrity": "sha256:a888e357ab92678289dd7aa29af274340228523157856b1bdf9e5a95dbe9963c",
       "inputs": [
         0,
@@ -20544,7 +20544,7 @@
         "node_modules/class-variance-authority",
         "node_modules/@solid-primitives/resize-observer"
       ],
-      "inputsIntegrity": "sha256:4373eabb6b067c61f455b4afced9207fd7a993ccf6446a5fd4ef670be35c61a9",
+      "inputsIntegrity": "sha256:fe5bb4435058d44b6bb2debb2332c26f72257c40da0e16102c6baeff2312409b",
       "packagesIntegrity": "sha256:cf55d67aece15e0823ef862ddbf377e93bbae69a5993fdb073d8f326d1b711c1",
       "lockIntegrity": "sha256:97cd147159193f96552e895a52ac65920d692f7aa00c08baa1a0c1033f84d8a2"
     },
@@ -34680,7 +34680,7 @@
     },
     {
       "path": "src/registry/kobalte/examples/docs/dialog-demo.tsx",
-      "sha256": "6856fff2ac8c5225bf4bf71130857bb2916bbdda4340801ad0fddb2251147731"
+      "sha256": "f97869c706bac77ca3d35e77932f815ab3aa9adf6cd591fce4e8e15e9c751395"
     },
     {
       "path": "col-direct-Dialog.tsx",
@@ -34872,7 +34872,7 @@
     },
     {
       "path": "src/registry/kobalte/ui/sidebar.tsx",
-      "sha256": "c8b4f6b41903dc5fcba3617a6b8b0aa8ff407e9b65a84294a752cca72267f6c1"
+      "sha256": "a94d93625eb064be971232e3ed5871831c3b00e05155a89e7b615bfd90d49e55"
     },
     {
       "path": "src/registry/kobalte/examples/docs/sidebar-demo.tsx",

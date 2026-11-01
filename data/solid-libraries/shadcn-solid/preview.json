@@ -312,7 +312,7 @@
       "exportName": "Sidebar",
       "path": "apps/docs/src/registry/examples/sidebar-demo.tsx",
       "gaps": [
-        "The original sidebar writes a preference cookie on toggle. The opaque sandbox blocks that write, so the browser reports an error and the preference cannot persist."
+        "The preview names the sidebar toggle and keeps its state in memory when the opaque sandbox blocks its preference cookie; the preference does not persist."
       ],
       "group": "batch-09",
       "assets": []
