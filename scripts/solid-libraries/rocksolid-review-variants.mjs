@@ -125,10 +125,16 @@ try {
   assert.equal(disabled.tabIndex, -1);
   assert.equal(first.tabIndex, 0);
   assert.equal(second.tabIndex, -1);
+  ariaDisabled.click();
+  await settle();
+  assert.equal(ariaDisabled.getAttribute("aria-selected"), "false");
   byId("toggle-aria-disabled").click();
   await settle();
   assert.equal(ariaDisabled.tabIndex, 0);
   assert.equal(first.tabIndex, -1);
+  ariaDisabled.click();
+  await settle();
+  assert.equal(ariaDisabled.getAttribute("aria-selected"), "true");
   byId("toggle-aria-disabled").click();
   await settle();
   assert.equal(ariaDisabled.tabIndex, -1);

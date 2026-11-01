@@ -95,6 +95,10 @@ export async function verifySolidReview(frame, id, expect, { chipKeyboard = fals
     await dialog.getByLabel("Username", { exact: true }).fill("col-tester");
     await save.click();
     await expect(form).toHaveAttribute("data-submitted", JSON.stringify({ name: "Col Tester", username: "col-tester" }));
+    await form.evaluate(element => { delete element.dataset.submitted; });
+    await dialog.getByLabel("Username", { exact: true }).fill("keyboard-user");
+    await dialog.getByLabel("Username", { exact: true }).press("Enter");
+    await expect(form).toHaveAttribute("data-submitted", JSON.stringify({ name: "Col Tester", username: "keyboard-user" }));
     await dialog.getByRole("button", { name: "Cancel", exact: true }).click();
     await expect(dialog).toHaveCount(0);
   }

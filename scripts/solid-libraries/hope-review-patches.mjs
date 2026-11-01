@@ -38,6 +38,22 @@ const replacements = {
       start: lastAvailableDateFrom(anchor, -1, isDateUnavailable, { days: backSpan }),
       end: lastAvailableDateFrom(anchor, 1, isDateUnavailable, { days: forwardSpan }),
     };`,
+  ], [
+    `    const isAnchoredRun = availableRange() !== null;
+    const target = isAnchoredRun ? constrainDate(date, min(), max()) : date;`,
+    `    const isAnchoredRun = availableRange() !== null;
+    let target = isAnchoredRun ? constrainDate(date, min(), max()) : date;
+    const anchor = anchorDate();
+    const isDateUnavailable = isDateDisabledFn();
+    if (isAnchoredRun && anchor !== null && isDateUnavailable !== undefined) {
+      // A programmatic endpoint may be beyond the visible month's cached search window.
+      const distance = target.compare(anchor);
+      const direction = distance < 0 ? -1 : 1;
+      const edge = lastAvailableDateFrom(anchor, direction, isDateUnavailable, { days: Math.abs(distance) });
+      if (edge !== undefined) {
+        target = constrainDate(target, direction < 0 ? edge : undefined, direction > 0 ? edge : undefined);
+      }
+    }`,
   ]],
   "packages/primitives/src/calendar/calendar-next.ts": [[
     "() => state.next()",

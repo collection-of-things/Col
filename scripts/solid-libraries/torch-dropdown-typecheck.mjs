@@ -18,16 +18,20 @@ if (!recorded || createHash("sha256").update(original).digest("hex") !== recorde
 const files = new Map([
   [source, patchTorchPreview("DropdownMenu.tsx", original)],
   [fixture, `import type { Component, JSX } from "solid-js";
+import { Trigger as KobalteTrigger } from "@kobalte/core/dropdown-menu";
 import { DropdownMenu, DropdownMenuTrigger } from "./DropdownMenu";
 import { Button as TorchButton } from "../actions/Button";
+import { Popover } from "../overlays/Popover";
 declare global { interface ImportMeta { readonly env: { readonly DEV: boolean } } }
 declare const Button: Component<{ variant?: "primary" | "secondary"; size?: "sm" | "md"; children?: JSX.Element }>;
 const direct = <DropdownMenuTrigger as={Button} variant="secondary" size="sm">Actions</DropdownMenuTrigger>;
 const compound = <DropdownMenu.Trigger as={Button} variant="secondary" size="sm">Actions</DropdownMenu.Trigger>;
 const realButton = <DropdownMenu.Trigger as={TorchButton} variant="secondary" size="sm">Actions</DropdownMenu.Trigger>;
+const upstreamPackage = <KobalteTrigger as={TorchButton} variant="ghost" size="sm">Actions</KobalteTrigger>;
+const popover = <Popover><Popover.Trigger as={TorchButton} variant="outlined" size="sm">Fireball</Popover.Trigger></Popover>;
 // @ts-expect-error Invalid custom component variants must be rejected.
 const invalid = <DropdownMenuTrigger as={Button} variant="invalid">Actions</DropdownMenuTrigger>;
-void [direct, compound, realButton, invalid];`],
+void [direct, compound, realButton, upstreamPackage, popover, invalid];`],
 ]);
 const options = {
   strict: true, noEmit: true, skipLibCheck: true, target: ts.ScriptTarget.ES2022,

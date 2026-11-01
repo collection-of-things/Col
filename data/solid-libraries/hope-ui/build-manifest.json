@@ -1399,7 +1399,7 @@
   },
   "Select": {
     "group": "HopeExpanded",
-    "codeIntegrity": "e3df2847f8ee22c4ec2ab8a5a6ff2bb9e6ac1ef526684c7cafac6424db4b9a4d",
+    "codeIntegrity": "da1d15a95e3fd16993ac009a29ec76cea7e398cabe6918000bd8b0277477530b",
     "cssIntegrity": "f315f7934e31c8c9d8097b2babd59212ab26e046be3ea4e4d4e308fa7a2bc787",
     "lockIntegrity": "e8141d77264a0290d1c69489abfe4a121e8abb5b11f0fa4c7f6fb15f018a20fc"
   },
@@ -2783,43 +2783,43 @@
   },
   "Alert": {
     "group": "HopeExpanded",
-    "codeIntegrity": "e3df2847f8ee22c4ec2ab8a5a6ff2bb9e6ac1ef526684c7cafac6424db4b9a4d",
+    "codeIntegrity": "da1d15a95e3fd16993ac009a29ec76cea7e398cabe6918000bd8b0277477530b",
     "cssIntegrity": "f315f7934e31c8c9d8097b2babd59212ab26e046be3ea4e4d4e308fa7a2bc787",
     "lockIntegrity": "e8141d77264a0290d1c69489abfe4a121e8abb5b11f0fa4c7f6fb15f018a20fc"
   },
   "Badge": {
     "group": "HopeExpanded",
-    "codeIntegrity": "e3df2847f8ee22c4ec2ab8a5a6ff2bb9e6ac1ef526684c7cafac6424db4b9a4d",
+    "codeIntegrity": "da1d15a95e3fd16993ac009a29ec76cea7e398cabe6918000bd8b0277477530b",
     "cssIntegrity": "f315f7934e31c8c9d8097b2babd59212ab26e046be3ea4e4d4e308fa7a2bc787",
     "lockIntegrity": "e8141d77264a0290d1c69489abfe4a121e8abb5b11f0fa4c7f6fb15f018a20fc"
   },
   "Calendar": {
     "group": "HopeExpanded",
-    "codeIntegrity": "e3df2847f8ee22c4ec2ab8a5a6ff2bb9e6ac1ef526684c7cafac6424db4b9a4d",
+    "codeIntegrity": "da1d15a95e3fd16993ac009a29ec76cea7e398cabe6918000bd8b0277477530b",
     "cssIntegrity": "f315f7934e31c8c9d8097b2babd59212ab26e046be3ea4e4d4e308fa7a2bc787",
     "lockIntegrity": "e8141d77264a0290d1c69489abfe4a121e8abb5b11f0fa4c7f6fb15f018a20fc"
   },
   "CloseButton": {
     "group": "HopeExpanded",
-    "codeIntegrity": "e3df2847f8ee22c4ec2ab8a5a6ff2bb9e6ac1ef526684c7cafac6424db4b9a4d",
+    "codeIntegrity": "da1d15a95e3fd16993ac009a29ec76cea7e398cabe6918000bd8b0277477530b",
     "cssIntegrity": "f315f7934e31c8c9d8097b2babd59212ab26e046be3ea4e4d4e308fa7a2bc787",
     "lockIntegrity": "e8141d77264a0290d1c69489abfe4a121e8abb5b11f0fa4c7f6fb15f018a20fc"
   },
   "Combobox": {
     "group": "HopeExpanded",
-    "codeIntegrity": "e3df2847f8ee22c4ec2ab8a5a6ff2bb9e6ac1ef526684c7cafac6424db4b9a4d",
+    "codeIntegrity": "da1d15a95e3fd16993ac009a29ec76cea7e398cabe6918000bd8b0277477530b",
     "cssIntegrity": "f315f7934e31c8c9d8097b2babd59212ab26e046be3ea4e4d4e308fa7a2bc787",
     "lockIntegrity": "e8141d77264a0290d1c69489abfe4a121e8abb5b11f0fa4c7f6fb15f018a20fc"
   },
   "Listbox": {
     "group": "HopeExpanded",
-    "codeIntegrity": "e3df2847f8ee22c4ec2ab8a5a6ff2bb9e6ac1ef526684c7cafac6424db4b9a4d",
+    "codeIntegrity": "da1d15a95e3fd16993ac009a29ec76cea7e398cabe6918000bd8b0277477530b",
     "cssIntegrity": "f315f7934e31c8c9d8097b2babd59212ab26e046be3ea4e4d4e308fa7a2bc787",
     "lockIntegrity": "e8141d77264a0290d1c69489abfe4a121e8abb5b11f0fa4c7f6fb15f018a20fc"
   },
   "Popover": {
     "group": "HopeExpanded",
-    "codeIntegrity": "e3df2847f8ee22c4ec2ab8a5a6ff2bb9e6ac1ef526684c7cafac6424db4b9a4d",
+    "codeIntegrity": "da1d15a95e3fd16993ac009a29ec76cea7e398cabe6918000bd8b0277477530b",
     "cssIntegrity": "f315f7934e31c8c9d8097b2babd59212ab26e046be3ea4e4d4e308fa7a2bc787",
     "lockIntegrity": "e8141d77264a0290d1c69489abfe4a121e8abb5b11f0fa4c7f6fb15f018a20fc"
   }

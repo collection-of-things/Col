@@ -72,10 +72,20 @@ const replacements = {
       `  const tabsContextValue = useTabsContext("Tab") as ReturnType<typeof useTabsContext> & {
     registerTab: (tab: { value: () => string; disabled: () => boolean }) => () => boolean;
   };
+  const isDisabled = () => Boolean(rest.disabled) || rest["aria-disabled"] === true || rest["aria-disabled"] === "true";
   const isTabbable = tabsContextValue.registerTab({
     value: () => local.value,
-    disabled: () => Boolean(rest.disabled) || rest["aria-disabled"] === true || rest["aria-disabled"] === "true",
+    disabled: isDisabled,
   });`,
+    ],
+    [
+      `  const handleTabClick = (event: Event) => {
+    tabsContextValue.handleChange(event, local.value);
+  };`,
+      `  const handleTabClick = (event: Event) => {
+    if (isDisabled()) { event.preventDefault(); return; }
+    tabsContextValue.handleChange(event, local.value);
+  };`,
     ],
     ["      tabIndex={isSelected() ? 0 : -1}", "      tabIndex={isTabbable() ? 0 : -1}"],
   ],

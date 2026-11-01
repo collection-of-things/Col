@@ -73,7 +73,58 @@ for (const direction of [1, -1]) {
     assert.ok(value?.start && value?.end, "range should be committed");
     assert.ok(value.end.compare(blocked) < 0 || value.start.compare(blocked) > 0, `${value.start} to ${value.end} crosses ${blocked}`);
   });
+
+  await check(`calendar direct endpoint cannot cross unavailable day ${direction > 0 ? "forward" : "backward"}`, async () => {
+    const anchor = direction > 0 ? day(2026, 1, 5) : day(2026, 5, 25);
+    const blocked = direction > 0 ? day(2026, 2, 20) : day(2026, 4, 10);
+    const attempted = direction > 0 ? day(2026, 3, 5) : day(2026, 3, 25);
+    const expected = direction > 0 ? "2026-02-19" : "2026-04-11";
+    const calendar = createRoot(() => createCalendar({ selectionMode: "range", defaultFocusedValue: anchor, isDateDisabled: date => date.compare(blocked) === 0 }));
+    calendar.activate(anchor);
+    await settle();
+    calendar.activate(attempted);
+    await settle();
+    const value = calendar.selectionValue();
+    assert.equal((direction > 0 ? value?.end : value?.start)?.toString(), expected);
+  });
+
+  await check(`calendar direct endpoint respects configured ${direction > 0 ? "maximum" : "minimum"}`, async () => {
+    const anchor = direction > 0 ? day(2026, 1, 5) : day(2026, 5, 25);
+    const blocked = direction > 0 ? day(2026, 2, 20) : day(2026, 4, 10);
+    const attempted = direction > 0 ? day(2026, 3, 5) : day(2026, 3, 25);
+    const bound = direction > 0 ? day(2026, 2, 15) : day(2026, 4, 12);
+    const calendar = createRoot(() => createCalendar({ selectionMode: "range", defaultFocusedValue: anchor, ...(direction > 0 ? { max: bound } : { min: bound }), isDateDisabled: date => date.compare(blocked) === 0 }));
+    calendar.activate(anchor);
+    await settle();
+    calendar.activate(attempted);
+    await settle();
+    const value = calendar.selectionValue();
+    assert.equal((direction > 0 ? value?.end : value?.start)?.toString(), bound.toString());
+  });
+
+  await check(`calendar direct non-contiguous endpoint ${direction > 0 ? "forward" : "backward"}`, async () => {
+    const anchor = direction > 0 ? day(2026, 1, 5) : day(2026, 5, 25);
+    const blocked = direction > 0 ? day(2026, 2, 20) : day(2026, 4, 10);
+    const attempted = direction > 0 ? day(2026, 3, 5) : day(2026, 3, 25);
+    const calendar = createRoot(() => createCalendar({ selectionMode: "range", defaultFocusedValue: anchor, allowsNonContiguousRanges: true, isDateDisabled: date => date.compare(blocked) === 0 }));
+    calendar.activate(anchor);
+    await settle();
+    calendar.activate(attempted);
+    await settle();
+    const value = calendar.selectionValue();
+    assert.equal((direction > 0 ? value?.end : value?.start)?.toString(), attempted.toString());
+  });
 }
+
+await check("calendar direct endpoint may span a long available range", async () => {
+  const anchor = day(2026, 1, 5), endpoint = day(2026, 3, 5);
+  const calendar = createRoot(() => createCalendar({ selectionMode: "range", defaultFocusedValue: anchor, isDateDisabled: () => false }));
+  calendar.activate(anchor);
+  await settle();
+  calendar.activate(endpoint);
+  await settle();
+  assert.equal(calendar.selectionValue()?.end?.toString(), endpoint.toString());
+});
 
 await check("calendar permits an explicitly non-contiguous range", async () => {
   const anchor = day(2026, 1, 5), blocked = day(2026, 2, 20), endpoint = day(2026, 2, 25);
