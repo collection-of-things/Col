@@ -100,6 +100,29 @@ export interface Integration {
 
 export const integrations: readonly Integration[] = [
   {
+    name: "BoardUI MCP server",
+    slug: "boardui-mcp",
+    description: "Browses BoardUI components and examples, with source installation and project setup through the local server.",
+    url: "https://www.boardui.com/mcp",
+    provider: { name: "BoardUI", url: "https://www.boardui.com" },
+    official: true,
+    library: "boardui",
+    notes: [
+      "The local stdio server can install source, initialize a project, and add BoardUI agent rules and skills.",
+      "The alternative HTTP endpoint at https://www.boardui.com/mcp is stateless and read-only, with catalog search, component references, examples, and theme tokens.",
+      "Pro source requires a BoardUI Pro license. Public examples remain available without one.",
+    ],
+    tags: ["components", "charts", "dashboard", "agentic ui", "react aria"],
+    setup: [
+      {
+        type: "MCP server",
+        key: "boardui",
+        server: { transport: "stdio", command: "npx", args: ["-y", "boardui@latest", "mcp"] },
+        clients: ["Claude Code", "Cursor", "VS Code", "Codex"],
+      },
+    ],
+  },
+  {
     name: "shadcn MCP server",
     slug: "shadcn-mcp",
     description: "Lets an agent browse, search, and install items from shadcn/ui and any registry configured in components.json.",

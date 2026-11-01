@@ -1,0 +1,4234 @@
+{
+  "checkedAt": "2026-11-01T22:21:31Z",
+  "repository": {
+    "url": "https://github.com/BoardUI/boardui",
+    "revision": "ec5c5eb3e29c2441be63b9422cd54f411ef23466"
+  },
+  "registries": [
+    {
+      "url": "https://www.boardui.com/r/registry.json",
+      "integrity": "sha256:f246d3a433b5dd60e713a552cfaf64fa73ac58462b5d5646995a0c7424936332"
+    },
+    {
+      "url": "https://www.boardui.com/r/registry-pro.json",
+      "integrity": "sha256:fb078ba9c3643d97789e0468b38455f06a046773d924aad4342b020193381bc1"
+    }
+  ],
+  "licenseNotice": "MIT License\n\nCopyright (c) 2026 Mertcan Dundar Esmergul (BoardUI)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+  "items": [
+    {
+      "name": "template-copy",
+      "title": "Template copy",
+      "tier": "free",
+      "group": "foundations",
+      "type": "registry:lib",
+      "indexed": false,
+      "reason": "Foundation, setup asset, or runtime helper; not a standalone UI component.",
+      "summary": "Optional application translations for template labels, sample content, and accessible names, preserving identifiers and input values.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/foundations/template-copy/template-copy.tsx",
+          "sha256": "1db60e15c1a5d6a710a08d249e05e3853521f604e8dcf5757c1ad4a75bad011f"
+        }
+      ],
+      "source": {
+        "url": "https://www.boardui.com/r/template-copy.json",
+        "integrity": "sha256:f5cdaffde20871106c9db2066a3bcf993f785014248b94502256b498346a77bf"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "direction",
+      "title": "Direction Provider",
+      "tier": "free",
+      "group": "foundations",
+      "type": "registry:lib",
+      "indexed": false,
+      "reason": "Foundation, setup asset, or runtime helper; not a standalone UI component.",
+      "summary": "Locale and layout direction for RTL and LTR regions, React Aria interactions, and portals.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "globals"
+      ],
+      "files": [
+        {
+          "path": "components/foundations/direction/direction.tsx",
+          "sha256": "7bfab075a6d5fe3a2b3f3b810ba2ab4e870f50029a41d8c4b0bee9bfd4a43756"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/rtl#direction-provider",
+        "integrity": "sha256:0bb44ff8d56b2b524d240e69dd53abd2138f40d6c947adb584a41bcc615926dd"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/direction.json",
+        "integrity": "sha256:94ff665ff5060ffbbbda89f395882c0236646db74f6b080ab987518fb5fa4592"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "scroll-direction",
+      "title": "Directional scrolling",
+      "tier": "free",
+      "group": "foundations",
+      "type": "registry:lib",
+      "indexed": false,
+      "reason": "Foundation, setup asset, or runtime helper; not a standalone UI component.",
+      "summary": "Logical horizontal scroll offsets and item alignment for RTL and LTR carousels and tab strips.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "utils/scroll-direction.ts",
+          "sha256": "652dbe7f3afc595505e82f79bb85517b59fe12e46c8215867c3fe452b1d6413d"
+        }
+      ],
+      "source": {
+        "url": "https://www.boardui.com/r/scroll-direction.json",
+        "integrity": "sha256:067ffce10a81feb112daccf198b5f7f290dcf9ef981c680d04a68bf28cc96f15"
+      },
+      "externalImports": []
+    },
+    {
+      "name": "directional-icon",
+      "title": "Directional icons",
+      "tier": "free",
+      "group": "foundations",
+      "type": "registry:lib",
+      "indexed": false,
+      "reason": "Foundation, setup asset, or runtime helper; not a standalone UI component.",
+      "summary": "Mirrors navigation arrows and sidebar glyphs in RTL while preserving non-directional icons.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "utils/directional-icon.ts",
+          "sha256": "02692ff42abfea0e3ddf0ca79cd1f816cdce65f923efb0d61d2f3663a9202c47"
+        }
+      ],
+      "source": {
+        "url": "https://www.boardui.com/r/directional-icon.json",
+        "integrity": "sha256:5292aea28aeb44617d105769d84d3fc3047573c471cac2a10ee38ee940c7fd13"
+      },
+      "externalImports": [
+        "@remixicon/react"
+      ]
+    },
+    {
+      "name": "theme",
+      "title": "Theme tokens",
+      "tier": "free",
+      "group": "foundations",
+      "type": "registry:lib",
+      "indexed": false,
+      "reason": "Foundation, setup asset, or runtime helper; not a standalone UI component.",
+      "summary": "Color primitives, semantic tokens (text/background/border/foreground/chart), radii, shadows, and button gradient utilities.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "styles/theme.css",
+          "sha256": "3c7fcc7710b0f44be0d86bc8e822e88f737d0269d207e9e2f4d2e73fd6da8f34"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/color",
+        "integrity": "sha256:8a6c7a47f03f51d18782e6278b41bb938c92a9373f8add4d838d1e09cb8de655"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/theme.json",
+        "integrity": "sha256:060b0fd6818f34dbc086007a4aae8477ac0780429ce0304ba020e6ce6ed9f75a"
+      },
+      "externalImports": []
+    },
+    {
+      "name": "typography",
+      "title": "Typography tokens",
+      "tier": "free",
+      "group": "foundations",
+      "type": "registry:lib",
+      "indexed": false,
+      "reason": "Foundation, setup asset, or runtime helper; not a standalone UI component.",
+      "summary": "The full Figma type scale as composite text-{family}-{weight} Tailwind utilities.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "styles/typography.css",
+          "sha256": "dfd4e9b446998d063efe96a47fc31fd2492639bf641d0da1b60645fe4dcc32a1"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/typography",
+        "integrity": "sha256:768e978f35fcfc38c03cb1c6c75b2aea4dbcc5ff422be091a3e27a08e62c2b96"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/typography.json",
+        "integrity": "sha256:5b7eca25350829755eb15cb474ab009fd1f8b929e62d54182f648b4f2e97bf8e"
+      },
+      "externalImports": []
+    },
+    {
+      "name": "globals",
+      "title": "Global styles",
+      "tier": "free",
+      "group": "foundations",
+      "type": "registry:lib",
+      "indexed": false,
+      "reason": "Foundation, setup asset, or runtime helper; not a standalone UI component.",
+      "summary": "Tailwind entry css: dark-mode variant, base resets, component animations, and table styling. Imports theme.css and typography.css.",
+      "dependencies": [],
+      "registryDependencies": [
+        "theme",
+        "typography"
+      ],
+      "files": [
+        {
+          "path": "styles/globals.css",
+          "sha256": "672abee06f77039727bd7d65e4a248c00d7cc693609103eff187a367d9347259"
+        }
+      ],
+      "source": {
+        "url": "https://www.boardui.com/r/globals.json",
+        "integrity": "sha256:d4d5dc3e0594865eea393644d7702783566c31461bf506af648baf29aa6b2964"
+      },
+      "externalImports": []
+    },
+    {
+      "name": "cx",
+      "title": "cx utility",
+      "tier": "free",
+      "group": "foundations",
+      "type": "registry:lib",
+      "indexed": false,
+      "reason": "Foundation, setup asset, or runtime helper; not a standalone UI component.",
+      "summary": "tailwind-merge wrapper aware of BoardUI's composite text styles, plus the sortCx helper.",
+      "dependencies": [
+        "tailwind-merge@^3.6.0"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "utils/cx.ts",
+          "sha256": "db35ea5afa8b2e0fd51319bc49288c4df7c98ec53440b43903636a32e3319d9d"
+        }
+      ],
+      "source": {
+        "url": "https://www.boardui.com/r/cx.json",
+        "integrity": "sha256:d118c2ace1454a92fbfb69ad0d03b2916fece06ef5102ae26dcedaa6da2e390c"
+      },
+      "externalImports": [
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "rules",
+      "title": "Agent rules",
+      "tier": "free",
+      "group": "foundations",
+      "type": "registry:lib",
+      "indexed": false,
+      "reason": "Foundation, setup asset, or runtime helper; not a standalone UI component.",
+      "summary": "Always-on design rules for AI agents (semantic tokens, type scale, conventions), installed as a Cursor rule file.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "docs/agent-rules.md",
+          "sha256": "5964c06f0833dfbd39100a5a88f7d4f62cfb64b817e190578cdb4150283d95a2"
+        }
+      ],
+      "source": {
+        "url": "https://www.boardui.com/r/rules.json",
+        "integrity": "sha256:bc7ceee178066482448129030ed4f17b37506deb9f6a9d5d08b0f8a86f7c3b87"
+      },
+      "externalImports": []
+    },
+    {
+      "name": "use-dismiss-on-outside-press",
+      "title": "useDismissOnOutsidePress hook",
+      "tier": "free",
+      "group": "foundations",
+      "type": "registry:lib",
+      "indexed": false,
+      "reason": "Foundation, setup asset, or runtime helper; not a standalone UI component.",
+      "summary": "Closes React Aria popovers on outside press without swallowing the outside click.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "utils/use-dismiss-on-outside-press.ts",
+          "sha256": "01c70c3b25018e9c8d1d6d84ca67facb9392b5d4baf1c7207bbcfe13d4b33699"
+        }
+      ],
+      "source": {
+        "url": "https://www.boardui.com/r/use-dismiss-on-outside-press.json",
+        "integrity": "sha256:854569e5d2188146c1ebb41ceccc9eaaddb3d4a31b623946e7dd72be650636b1"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "scroll-fade",
+      "title": "Scroll fade",
+      "tier": "free",
+      "group": "foundations",
+      "type": "registry:lib",
+      "indexed": false,
+      "reason": "Foundation, setup asset, or runtime helper; not a standalone UI component.",
+      "summary": "Progressive top blur and surface fade for internal scroll regions, easing in over the first 24px scrolled.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/foundations/scroll-fade/scroll-fade.tsx",
+          "sha256": "94a1d1032e59b40091ed546835b796d0776838aa82fa554be176f926d0b3b54d"
+        }
+      ],
+      "source": {
+        "url": "https://www.boardui.com/r/scroll-fade.json",
+        "integrity": "sha256:65a2ad2b5ff5030d2a4f178f2e7819416eac6af34466e448aad62d5a94fd3a1a"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "use-count-up",
+      "title": "useCountUp hook",
+      "tier": "free",
+      "group": "foundations",
+      "type": "registry:lib",
+      "indexed": false,
+      "reason": "Foundation, setup asset, or runtime helper; not a standalone UI component.",
+      "summary": "Animated rolling number hook used by chart headline figures.",
+      "dependencies": [],
+      "registryDependencies": [
+        "globals"
+      ],
+      "files": [
+        {
+          "path": "hooks/use-count-up.ts",
+          "sha256": "e1b12ca1460c4675ffa58086ce9d48bad2ada3fb5e7309ad1d5eaa67bea973b2"
+        }
+      ],
+      "source": {
+        "url": "https://www.boardui.com/r/use-count-up.json",
+        "integrity": "sha256:43cc7a61ec301bdb1e00fe3a8daad2b913f3f503667e43b724be8063f49d2da1"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "chevrons",
+      "title": "Chevron icons",
+      "tier": "free",
+      "group": "foundations",
+      "type": "registry:lib",
+      "indexed": false,
+      "reason": "Foundation, setup asset, or runtime helper; not a standalone UI component.",
+      "summary": "Custom chevron glyphs (select caret, sortable table headers) matching the Figma strokes.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/foundations/icons/chevrons.tsx",
+          "sha256": "00d6cc454b23560e56f8134a4d0e87e5a99affa6b8b60174165a19dc1e4435d5"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/dropdown",
+        "integrity": "sha256:354181349174d15dfb989703d95f6792fc0feabe6b8d02519dd9e84837602804"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/chevrons.json",
+        "integrity": "sha256:0938a2cd2638b0341ece450a33525a16c5b3a03d94fbd164e27a3463b8dd8f69"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "logo",
+      "title": "Logo",
+      "tier": "free",
+      "group": "foundations",
+      "type": "registry:lib",
+      "indexed": false,
+      "reason": "Foundation, setup asset, or runtime helper; not a standalone UI component.",
+      "summary": "BoardUI brand mark placeholder : swap with your own logo component.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx",
+        "globals"
+      ],
+      "files": [
+        {
+          "path": "components/foundations/brand/logo.tsx",
+          "sha256": "a0763b8af7907281b8a39b2815e5d0dce1943f34647bdf74ab587a95df798939"
+        }
+      ],
+      "source": {
+        "url": "https://www.boardui.com/r/logo.json",
+        "integrity": "sha256:5a758d77fcf495b3ee29ffe0a1e2eb28a63e2cbbea2dd57dafadea813e5e94ed"
+      },
+      "externalImports": [
+        "next/image"
+      ]
+    },
+    {
+      "name": "modal",
+      "title": "Modal",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Dialog over a dimmed page with a header, scrolling body and actions, plus an alert dialog for destructive confirms.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "button",
+        "close-button",
+        "cx",
+        "direction",
+        "scroll-fade",
+        "spinner"
+      ],
+      "files": [
+        {
+          "path": "components/base/modal/modal.tsx",
+          "sha256": "d654fc2c07dcba37e8b4d40a4d0c361cc998dfbefe1736d6746dae240ec4a4ba"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/modal",
+        "integrity": "sha256:9d7c628525b26b3be16fcec985e2f48ae460d8177ac539f2dea16f244cbc16c0"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/modal.json",
+        "integrity": "sha256:791fb45d89e4a639cb7ffdbfe797c9dbfd1d674c9d039b6c65a24c7f2ddd3261"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "drawer",
+      "title": "Drawer",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Panel that slides in from any edge over a dimmed page, for filters, details and bottom sheets, sharing Modal's header, body and actions.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "direction",
+        "modal"
+      ],
+      "files": [
+        {
+          "path": "components/base/drawer/drawer.tsx",
+          "sha256": "f44f18cfccb471b9cfb4074c60749ed8e82fb7a18b257d29b6fa1df408e4a76e"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/drawer",
+        "integrity": "sha256:874451a659671ce6c91796aeaa59e934c1fd7f6105c8f1594ed5b35eb1b9915f"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/drawer.json",
+        "integrity": "sha256:723bd8fe239d9cc653b6b353079b93be0d05b6b512423ac0d01a0636b769e480"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "popover",
+      "title": "Popover",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Free-form content anchored to a trigger, with an optional arrow, smart positioning and the menu family's motion, built on React Aria.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "direction",
+        "tooltip",
+        "use-dismiss-on-outside-press"
+      ],
+      "files": [
+        {
+          "path": "components/base/popover/popover.tsx",
+          "sha256": "b712f37a2153d42ee40ad7ec329f184ef0ab3186cd7c7f3fd111047a26ff178e"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/popover",
+        "integrity": "sha256:69d60bda281186664c7005b4c5c10c1790678ffcfbb4f31310ab5d5cfbfdbb40"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/popover.json",
+        "integrity": "sha256:11324e8a55f71c593c4684101bbccda44888a09cc1011eb1b5f0894c27702090"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "combobox",
+      "title": "Combobox",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Text field that filters a list as you type, with sections, custom values and Input's field states, built on React Aria.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "chevrons",
+        "cx",
+        "direction",
+        "input",
+        "scroll-fade"
+      ],
+      "files": [
+        {
+          "path": "components/base/combobox/combobox.tsx",
+          "sha256": "97f015b55f1d9bf933e160452494e2508a88bc7bd2e501eece95c68828069653"
+        },
+        {
+          "path": "components/base/dropdown/menu-styles.ts",
+          "sha256": "2d911a7d99caf800f1095f9db3c285ce11aa27c362e5dd2fd5919115a9d74b1b"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/combobox",
+        "integrity": "sha256:82861995dad57742c2ee71b16e638458473f908a6002c7657f0d4698ed6503ef"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/combobox.json",
+        "integrity": "sha256:76c0891e9dea852e370cc2a20624033a021c1e37e59585b2c12e6bc0cbd2f308"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "toast",
+      "title": "Toast",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "toast() calls from anywhere and a Toaster region that stacks them as Notification cards, with actions, updates, limits and pause on hover.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx",
+        "notification"
+      ],
+      "files": [
+        {
+          "path": "components/base/toast/toast.tsx",
+          "sha256": "64865af3077d047b562dab74ee2e071c5e75c11cfc2d0d5951c9ed7cd6093828"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/toast",
+        "integrity": "sha256:09847ba4e1d5f190869b9806d98086ce26b067f16f8c5e470cd052f290d79f69"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/toast.json",
+        "integrity": "sha256:d22f48a61e152751600e5e0383f3790bfcb9087ec3bc9b76f1e7b412a962c615"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "accordion",
+      "title": "Accordion",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Sections that expand in place in divided, contained and separated styles, with a smooth height and blur transition, built on React Aria.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/accordion/accordion.tsx",
+          "sha256": "762786dd6ba88e1df5311d2b80d9ea6ede93f2878dcda44357ef1b9905186312"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/accordion",
+        "integrity": "sha256:a18b9e5d9e4756934eac05537d3e0dd35762d638518cdddf6b2eb7eb91a88324"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/accordion.json",
+        "integrity": "sha256:0403352d05f58466b36ddb22b6e5c1a2d741540a523c854acc12efb529008121"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "spinner",
+      "title": "Spinner",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Orbiting light drawn in three layers (a crisp arc, a tight glow and a wide bloom) in five sizes and any text colour, announced as loading.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/spinner/spinner.tsx",
+          "sha256": "f40fdb7ff5142afa60dcd917ee06d01967a0a169d666fc64ee244f26830fdcdd"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/spinner",
+        "integrity": "sha256:5051d0a6c4502efae7c02451c4a191074ac58f08cc13ba1901c1ef1a684902b1"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/spinner.json",
+        "integrity": "sha256:54ff1a77a890b65897e14e61b37c7325761f965f2b5296416807ac5bee328694"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "progress",
+      "title": "Progress",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Progress bar and ring, determinate or indeterminate, with an eased fill and a layered light sweep, built on React Aria.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "direction",
+        "globals",
+        "input",
+        "spinner"
+      ],
+      "files": [
+        {
+          "path": "components/base/progress/progress.tsx",
+          "sha256": "ff4ade7942d51231568b750637f90a4e7230b92c5657346cc0673448e3c21c32"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/progress",
+        "integrity": "sha256:63015a5b16305afd7e919dee05a5b246dc24438d80b5c04a601ec6c21f745cc4"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/progress.json",
+        "integrity": "sha256:5e74c3211e7fcb67fd4c35ecda8f733d974e37eb901620941e3be8b25364de10"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "meter",
+      "title": "Meter",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "A level within a known range (storage, seats, quotas) with status tones, drawn on Progress's track and built on React Aria.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "input",
+        "progress"
+      ],
+      "files": [
+        {
+          "path": "components/base/meter/meter.tsx",
+          "sha256": "78bb980ff569577551b3d1e2c135cf3c767a2ce59e899c4c0427ef59291341ef"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/meter",
+        "integrity": "sha256:30a7673d2140fcaee0d7dad4f34842fb4ffbc70cea939a8fcd7e2c00275419e5"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/meter.json",
+        "integrity": "sha256:56ee68659436509dc47e32e033c34ab5fb967da45b2d9e181a266bee36782f78"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "skeleton",
+      "title": "Skeleton",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Content-shaped placeholders with a layered light sheen that size themselves to real content and blur it in once loaded.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx",
+        "globals"
+      ],
+      "files": [
+        {
+          "path": "components/base/skeleton/skeleton.tsx",
+          "sha256": "c36bdc82dc1e6e385bcc9fda0d4e11966cc1b05e9e961615e71b8ffc84752a1b"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/skeleton",
+        "integrity": "sha256:038d7d67335adc3a5f2083c76aa94ffc2eb093868e4fab47dc52ce2b6e5750c9"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/skeleton.json",
+        "integrity": "sha256:3920a6776d27c7898f7afe12360f3b918cec1ce6b7bea10a58f793b032b2586d"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "command-palette",
+      "title": "Command Palette",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "⌘K palette of searchable commands with sections, icons and shortcuts, built-in or custom filtering, on React Aria's Autocomplete and Menu.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "direction",
+        "kbd",
+        "scroll-fade",
+        "template-copy"
+      ],
+      "files": [
+        {
+          "path": "components/base/command-palette/command-palette.tsx",
+          "sha256": "d76957ad4c0324fa7a84fd0ca8c224e036ecc2fc70ae89621a2a2b660bc3f464"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/command-palette",
+        "integrity": "sha256:aece186d76e38e0946551447cda4c955c3453ad0cfa8e81b78f1c9b70e0b6768"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/command-palette.json",
+        "integrity": "sha256:4e41d5cce8aad64d40021c2378f693afac5cf432a3e1e76515cf76d6f39e10ae"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "context-menu",
+      "title": "Context Menu",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Right-click, long-press and Shift+F10 menu anchored to the pointer, with icons, shortcuts, submenus and checkable rows, on React Aria's Menu.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "direction",
+        "scroll-fade",
+        "template-copy"
+      ],
+      "files": [
+        {
+          "path": "components/base/context-menu/context-menu.tsx",
+          "sha256": "553ae7ee47f20a78b258e780d8f10d795047b6282bddca219fcbd7a9dcd69c67"
+        },
+        {
+          "path": "components/base/dropdown/menu-styles.ts",
+          "sha256": "2d911a7d99caf800f1095f9db3c285ce11aa27c362e5dd2fd5919115a9d74b1b"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/context-menu",
+        "integrity": "sha256:45e9dd738701246cb5b555902db790168125ede13d01f0c64e964c63daaaf7d0"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/context-menu.json",
+        "integrity": "sha256:d292deab5b39e666b98ef5685947472a2a1852f59c6ec7f6f3ebe36a330e469e"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react",
+        "react-aria-components",
+        "react-dom"
+      ]
+    },
+    {
+      "name": "search-field",
+      "title": "Search Field",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Pill or rounded search input with a clear button that fades in, Escape to clear, and a loading state, on React Aria's SearchField.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "close-button",
+        "cx",
+        "input",
+        "spinner",
+        "template-copy"
+      ],
+      "files": [
+        {
+          "path": "components/base/search-field/search-field.tsx",
+          "sha256": "0eab68a5bf81ee93bfdcb1f1a0e8561aa696989749b72c63ba45f62b96b6c670"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/search-field",
+        "integrity": "sha256:3633232db15776bb12fec2b73dcaad842372368091dd91b89493084f9c785a50"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/search-field.json",
+        "integrity": "sha256:faf5c52907098376ee520792b037f794fb863d2b2adb31ca8b89966bdbc8cc0c"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "number-field",
+      "title": "Number Field",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Number input with minus and plus steppers, locale-aware currency, percent and unit formatting, and limits, on React Aria's NumberField.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "components/base/number-field/number-field.tsx",
+          "sha256": "eeeaa33e2963741afafb379869c2aca97bc68ed3374966adbba95ea0157b7f13"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/number-field",
+        "integrity": "sha256:404a0e6d8be6a960a578c6222f39a3fc8cae18cffe80a2d74c62dccc5b577e3b"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/number-field.json",
+        "integrity": "sha256:2af31a55b7cc069341551979c2f5f91c44da1ef90b97972a33bb48817fff0844"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "time-field",
+      "title": "Time Field",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Time of day typed segment by segment in Input's field, with 12 and 24 hour cycles, seconds and limits, on React Aria's TimeField.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "components/base/time-field/time-field.tsx",
+          "sha256": "6f6a7f9f0edeaad403b09695cec56456694b7fab04a8402c46756d0ade9cc3fb"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/time-field",
+        "integrity": "sha256:b36c52e9c309297877ae4b5edfd90aef9d3e5b29e74092468ca3bd173a773368"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/time-field.json",
+        "integrity": "sha256:d46f0a4ed38ad926ecbcc1eea533abbf96c3add17576658970d6d61bf18d2f8a"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "tag-group",
+      "title": "Tag Group",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Selectable or removable tags in Chip's colours, with keyboard navigation and an empty state, on React Aria's TagGroup.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "chip",
+        "cx",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "components/base/tag-group/tag-group.tsx",
+          "sha256": "3b4eac983a74f811c7baa791ef250364891b48b52474d2670c72452ee2240943"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/tag-group",
+        "integrity": "sha256:f37eeb3edfddc3d838a83856fe1586a2439db22d498d02703cd089c0db42959c"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/tag-group.json",
+        "integrity": "sha256:d647aec32ca0fb3ea43316795fd0fb7cd88635b8e248c14bde3f269988af1e99"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "date-calendar",
+      "title": "Date Calendar",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Inline month calendar for a date or a range, on Date Picker's month panel, with today marked and unavailable days struck through, on React Aria's Calendar.",
+      "dependencies": [
+        "@internationalized/date@^3.12.1",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/date-picker/date-calendar.tsx",
+          "sha256": "4b26a3f4daf9ef0f6363b80326f046b9b3b638f9bf1e3ff7a0f3ea9d96b0596c"
+        },
+        {
+          "path": "components/base/date-picker/shared.tsx",
+          "sha256": "abd71e907ff879e9d520f5964308b8442b56b300073321d62c3878ae7e32b298"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/date-calendar",
+        "integrity": "sha256:d6a572771ea4ff0dddf6babd961360a12b178db24eba75a0be92dcaafa7b7bbb"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/date-calendar.json",
+        "integrity": "sha256:221616e754780a113ec21aff9ce2227b7cf22bed4845b3e199fef1dfd2166912"
+      },
+      "externalImports": [
+        "@internationalized/date",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "color-picker",
+      "title": "Color Picker",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Saturation field, hue and opacity rails, hex field and presets, inline or behind a swatch popover, on React Aria's color components.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "popover",
+        "template-copy"
+      ],
+      "files": [
+        {
+          "path": "components/base/color-picker/color-picker.tsx",
+          "sha256": "10736f2a7cc423349985c34d414509d03d26aad382cf5dd9245192ff7e80609b"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/color-picker",
+        "integrity": "sha256:60d4e1bd9db564504812a271718c6a60624fc6bb9338017ede0a047aceb51b0e"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/color-picker.json",
+        "integrity": "sha256:a444b3f7c28b2fb876234bc3efe8017447fdfb3fc3e715dda173583e39474eda"
+      },
+      "externalImports": [
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "tree-view",
+      "title": "Tree View",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Nested folders and structured content with expandable branches, selection, guide lines, and keyboard navigation.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "motion@^12.42.2",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "direction"
+      ],
+      "files": [
+        {
+          "path": "components/base/dropdown/menu-styles.ts",
+          "sha256": "2d911a7d99caf800f1095f9db3c285ce11aa27c362e5dd2fd5919115a9d74b1b"
+        },
+        {
+          "path": "components/base/tree-view/tree-view.tsx",
+          "sha256": "56de13008fe9543f9518a2a4bf9c78790098caa49e2c467f1da98c1ffe5c8989"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/tree-view",
+        "integrity": "sha256:6344d57fb8114fad143bf93b7864c5f2f66b555034d99a1d6e1f945768526fd4"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/tree-view.json",
+        "integrity": "sha256:18d9ede2016eb52387e827e21f04131cec16a7c1566202dbb15191db063b5525"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "motion/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "button",
+      "title": "Button",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Primary, secondary, ghost, and danger buttons in three sizes with icon support.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx",
+        "directional-icon",
+        "globals"
+      ],
+      "files": [
+        {
+          "path": "components/base/buttons/button.tsx",
+          "sha256": "b147c988c73dd8c226ab6ede3d7019eac9a7125191bbd646fcdd25bea803ca41"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/button",
+        "integrity": "sha256:3a9b235bdc33eab80df2500444b75916bf416b0cd74f8372d9a918368cba701f"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/button.json",
+        "integrity": "sha256:6b7e4dc3c7050a0028d56a4c5b314a611273860d92a58b502dcfcb33e582ab85"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "icon-button",
+      "title": "Icon Button",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Square icon-only button in two sizes.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx",
+        "directional-icon"
+      ],
+      "files": [
+        {
+          "path": "components/base/buttons/icon-button.tsx",
+          "sha256": "f418df039e41ab65368500c6bd05719fe196c7cc1057f2a30cda2b0411aae662"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/icon-button",
+        "integrity": "sha256:857bcd7448aa36eb80cb110eede8d24aa57617059e327285ed2bb10300470333"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/icon-button.json",
+        "integrity": "sha256:259c39e6914e3f3bf918ff0d6a76e20eb2cc7f1310a61de05409165718ea1c66"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "link-button",
+      "title": "Link Button",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Inline text action styled like a link : primary/secondary variants, three sizes, icon support, renders <a> or <button>.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx",
+        "directional-icon"
+      ],
+      "files": [
+        {
+          "path": "components/base/buttons/link-button.tsx",
+          "sha256": "a0ea455383b9fb834b086c92e37d553dac84455b9c471b754993da678f9bce3c"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/link-button",
+        "integrity": "sha256:ac02aaf312790e098b6259c51bb2f5d3a2f61c80ec498205b9d7c4e0c162adfb"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/link-button.json",
+        "integrity": "sha256:69409321580759c4a621d2b252bce8c3233e0359dde02ba97d8a64b2d7ad1313"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "button-group",
+      "title": "Button Group",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Row of secondary-style buttons fused into one bordered control with hairline dividers and selectable items.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx",
+        "directional-icon"
+      ],
+      "files": [
+        {
+          "path": "components/base/buttons/button-group.tsx",
+          "sha256": "65417bb324cb951a6cf203e0b2c6fdc15b8b1d4b4ab02b34a0c407e1bb726ae7"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/button-group",
+        "integrity": "sha256:9a29f1ac95ebd01adc7c28ff8cc0f72d334d7eca96675e201847d0ceee9fe36f"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/button-group.json",
+        "integrity": "sha256:445d1080cfad51dbf0cbfa78ca5cf7de6da4895f72fc10743cf4667cff8d75e7"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "close-button",
+      "title": "Close Button",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Compact dismiss button for banners, modals, and chips.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/buttons/close-button.tsx",
+          "sha256": "0cfe4372b4990726e0819095f690506d5d6b1ceabbc8319c7dab12e3ee524f06"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/close-button",
+        "integrity": "sha256:78af08fb6a9d9b82f0b72b56dc482faa70bbbf85e67af26d5e54776c4462ff08"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/close-button.json",
+        "integrity": "sha256:fe3ce18482e68a7a821a02e97a2d2bdfe848f5cb87af7de68f8b48dbc4fbda09"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "input",
+      "title": "Input",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Text input with label, hint text, error states, and leading icon support.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/input/hint-text.tsx",
+          "sha256": "b37d026d5f2bd78536b7e08259a086afdaf171defea7484ecd8ace9b1c254b06"
+        },
+        {
+          "path": "components/base/input/input.tsx",
+          "sha256": "c24efbd120081cb1e5fd928ce6f220f8134f26f2f93d32f267eb33017198dda3"
+        },
+        {
+          "path": "components/base/input/label.tsx",
+          "sha256": "a053bec8ad9f79f15ad8d7f031eac740588781d4e1b34d1cb1b3c5d44a4b2199"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/input",
+        "integrity": "sha256:334501ae5f6ae9e2dcea53e4fe591d0c30f9c33dbe08f198466d71cede5d34c4"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/input.json",
+        "integrity": "sha256:6c5dcf85978dc319551d0efad8d8282d5269f765e01d49c85efef3b3b8d1678a"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "textarea",
+      "title": "Textarea",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Multiline text field with auto-grow, character count, and Input's label, hint and states.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "components/base/textarea/textarea.tsx",
+          "sha256": "2fc9a92cbf372418a87d7230e6d6a3780504c7421158f9b33d71e4a10d56bb57"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/textarea",
+        "integrity": "sha256:7ad0c566cc865e35c1782c183eac582218e9c17585694e3e8cbece94a3a50108"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/textarea.json",
+        "integrity": "sha256:b370013f5257c38d05c5c3b7778e343ff5e42ea8e1fb0ba4db58d818b2730e16"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "checkbox",
+      "title": "Checkbox",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "React Aria checkbox with animated tick and indeterminate state.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "globals"
+      ],
+      "files": [
+        {
+          "path": "components/base/checkbox/checkbox-glyph.tsx",
+          "sha256": "e71bdc6f0dd28e792be233950df90f7f8ee68252a63e3f2da46d19f84bdf7584"
+        },
+        {
+          "path": "components/base/checkbox/checkbox.tsx",
+          "sha256": "592651a10aaf0e186a08862391fa99fa7d45ee75e8bfd0bc134408bb1c076f5e"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/checkbox",
+        "integrity": "sha256:da28da975754cdf580cd97c9bff639232292995afa671f8e726d5f314df2b38d"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/checkbox.json",
+        "integrity": "sha256:6210fdb4c54aab6dd89db3ae1bc387596a2dbacde62896aecaa2a7e15ece859c"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "checkbox-card",
+      "title": "Checkbox Card",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Bordered selectable card driven by a checkbox.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/checkbox/checkbox-card.tsx",
+          "sha256": "71b89328017d7b2b76cc69ac1409443af9271efa9935906dd3e3abf9b054c723"
+        },
+        {
+          "path": "components/base/checkbox/checkbox-glyph.tsx",
+          "sha256": "e71bdc6f0dd28e792be233950df90f7f8ee68252a63e3f2da46d19f84bdf7584"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/checkbox",
+        "integrity": "sha256:da28da975754cdf580cd97c9bff639232292995afa671f8e726d5f314df2b38d"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/checkbox-card.json",
+        "integrity": "sha256:aa758ca42fef03e166f3ac91c1e37e7798123c545607a05fda7915e3d1b225df"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "radio",
+      "title": "Radio",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "React Aria radio group with the gradient selected dot, two sizes, and the bare RadioDot glyph for menu rows.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/radio/radio.tsx",
+          "sha256": "2d0d68454e0dfb9a836fc5f76089ea602aeaf427517885ddff2b568ac2a691ec"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/radio",
+        "integrity": "sha256:92dbc0860c024e4802ec0c59af3e667f8cf1656baca5ba26515b4ff2c7d8c87d"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/radio.json",
+        "integrity": "sha256:e2b75fb0560c2dcceb66ca323680af83ff36f8b2238515712d22af176f48ddbb"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "radio-card",
+      "title": "Radio Card",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Bordered selectable card driven by a radio : the radio flavor of Checkbox Card.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "radio"
+      ],
+      "files": [
+        {
+          "path": "components/base/radio/radio-card.tsx",
+          "sha256": "ebb32d094fafa5a79e73d3a0d68f40763326f7995e26c75ed1464b85868580a3"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/radio",
+        "integrity": "sha256:92dbc0860c024e4802ec0c59af3e667f8cf1656baca5ba26515b4ff2c7d8c87d"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/radio-card.json",
+        "integrity": "sha256:7ac63768bce4d854890cb3138bf605764436e0f7361cadf82fc9198f309d3d5a"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "switch",
+      "title": "Switch",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Skeuomorphic toggle switch in two sizes.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/switch/switch.tsx",
+          "sha256": "21d65c0a1c307d05b37444d2e3d664f97841df69d6fd19c8cfcccc6e288d4953"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/switch",
+        "integrity": "sha256:70f59a534d98a316af7c6e2030f9387b79e38018350d9c79393a3df395a86f50"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/switch.json",
+        "integrity": "sha256:344b5efdaaf47034dcffb46eae378bee3ed27b3a02fe306fb8e5f9044b13a66a"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "switch-card",
+      "title": "Switch Card",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Bordered settings row driven by a switch.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "components/base/switch/switch-card.tsx",
+          "sha256": "37fb88054afa7320e8fcdfe8eca3094d9324964235aa3e2dbd1460203c807bed"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/switch",
+        "integrity": "sha256:70f59a534d98a316af7c6e2030f9387b79e38018350d9c79393a3df395a86f50"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/switch-card.json",
+        "integrity": "sha256:dc4ce8685d5ea0993732b4b6e2ef3e3e63e90423bbae048eb869dd909bb5ab48"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "theme-toggle",
+      "title": "Theme Toggle",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Manual light/dark control with a click-origin reveal, local persistence, and no system-theme dependency.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "globals",
+        "switch",
+        "template-copy"
+      ],
+      "files": [
+        {
+          "path": "components/application/theme/theme-toggle.tsx",
+          "sha256": "fe85835a174cbd1a74e5620d81b379e53544265baf32a45de4b2566ee167ee49"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/theme-toggle",
+        "integrity": "sha256:0794678346a115651b163ab92380bd71e17d0f1b780170c6f551b9b7389d7178"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/theme-toggle.json",
+        "integrity": "sha256:9946bdc5d1ed9a26899a7dc60194319460c81781c4159ae8b3115f1d6d4a9c4a"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react",
+        "react-aria-components",
+        "react-dom"
+      ]
+    },
+    {
+      "name": "select",
+      "title": "Select",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "React Aria select with styled trigger, non-modal popover, and free-form item content.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "chevrons",
+        "cx",
+        "input",
+        "use-dismiss-on-outside-press"
+      ],
+      "files": [
+        {
+          "path": "components/base/dropdown/menu-styles.ts",
+          "sha256": "2d911a7d99caf800f1095f9db3c285ce11aa27c362e5dd2fd5919115a9d74b1b"
+        },
+        {
+          "path": "components/base/select/select.tsx",
+          "sha256": "71c15d9a5c8202df270669cd60a33b0817e1e7e786ec375ec0804099308d6305"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/select",
+        "integrity": "sha256:794d6a657ebb42ea42e6e677dcac3c0a66713833ee2d7156ce6168f77aa04fad"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/select.json",
+        "integrity": "sha256:38e0265c84465f15c2a7418d30b555dd098cd8f4bc321568b019af90e2685574"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "slider",
+      "title": "Slider",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Single-value and min/max range sliders with exact-value bubbles and keyboard controls.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/slider/slider.tsx",
+          "sha256": "df422bd73cd043e0dbed496ec427cc04c9c454cbfc99c559271baa74b354ce6f"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/slider",
+        "integrity": "sha256:f0a902170bf378afbfdb8e8ac67e98198939fa124e2345d11187c63fb3093b51"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/slider.json",
+        "integrity": "sha256:43e3cff77c2471a6f544f297702151f4ae571e058716584f627a574ce4c09d39"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "social-button",
+      "title": "Social Button",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Sign-in buttons for 24 providers, with brand logos, three colour treatments and an icon-only form.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/social-button/social-button.tsx",
+          "sha256": "7fa65c53903b43e1dd714373cf6c68ccda0ac8432e0aced07d9481f0a3debba1"
+        },
+        {
+          "path": "components/base/social-button/social-color-logos.ts",
+          "sha256": "fc81a936bc89101655b9ea5cead14d1736bb06d79ceac46bcdcd19fd559cd422"
+        },
+        {
+          "path": "components/base/social-button/social-providers.ts",
+          "sha256": "c09ba9d75f0da6004ffd36bb39b6b4428ace5bc4e6b347bfef07d3ac893a63cd"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/social-button",
+        "integrity": "sha256:923ec3c82c670f6f453dedbeeeb0b5a0a2295b2979554089f6c429c938a15834"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/social-button.json",
+        "integrity": "sha256:af6b2f01bfd9c80d93e4d25a30c8d0f8e3c270e1f3bae4c7c90efa2fd195f091"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "dropdown",
+      "title": "Dropdown",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Composable popover menu (trigger, panel, groups, rows, dividers) built on React Aria : the recipe behind the sidebar team/account menus.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "use-dismiss-on-outside-press"
+      ],
+      "files": [
+        {
+          "path": "components/base/dropdown/dropdown.tsx",
+          "sha256": "8e93b25f00ab487f2b8590f4155845f09c935b2ec6232043af684364545ffe00"
+        },
+        {
+          "path": "components/base/dropdown/menu-styles.ts",
+          "sha256": "2d911a7d99caf800f1095f9db3c285ce11aa27c362e5dd2fd5919115a9d74b1b"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/dropdown",
+        "integrity": "sha256:354181349174d15dfb989703d95f6792fc0feabe6b8d02519dd9e84837602804"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/dropdown.json",
+        "integrity": "sha256:9055fbf2c0796b7800e90a8c97c7d36749cf606b63b3b63a5f56e545ef7f0a37"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "divider",
+      "title": "Divider",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Horizontal content divider with single-line, double-line, filled, and aligned variants.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/divider/divider.tsx",
+          "sha256": "ed2abe1e2e29e925c63c6d1ea0971e19f4549fe6fea0daca3373d47a87500338"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/divider",
+        "integrity": "sha256:d15d4e75df3865bb6c5b61bd0b79a34fc17c00fa52d9aa1b5272bf5140603065"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/divider.json",
+        "integrity": "sha256:1bd907a33033ca566e4000aa323a8cb954bfe07f04ca9dfaba51f95615a4eab9"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "file-upload",
+      "title": "File Upload",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Drag-and-drop file upload with validation, animated progress, and a completion callback.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "globals",
+        "template-copy"
+      ],
+      "files": [
+        {
+          "path": "components/base/file-upload/file-upload.tsx",
+          "sha256": "6179a624eae9ff79ad5e5bc07caa2901c242a07929c564ebec99cdc65b6b49c3"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/file-upload",
+        "integrity": "sha256:1bb02c136e2a9fd75fab145adf99bcb139dc08daecf05541a5001103ab156667"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/file-upload.json",
+        "integrity": "sha256:95b8fbbc2340b2f8afa2307179159ea534031e4ee4b4c53e453f1514a1142f66"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react"
+      ]
+    },
+    {
+      "name": "tabs",
+      "title": "Tabs",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Underline and pill tab variants built on React Aria.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "direction"
+      ],
+      "files": [
+        {
+          "path": "components/base/tabs/pill-tab.tsx",
+          "sha256": "0b35654d05f8daa7ea899c9e7a098f694a630842ec0e9b1a40b41dcc7a1e5f70"
+        },
+        {
+          "path": "components/base/tabs/tabs.tsx",
+          "sha256": "b456f9fafa5434b379b97958fc61e27d342ff475421d6bc0a52bb5236659245d"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/tabs",
+        "integrity": "sha256:8bc55c40f2a4d3216a8cc9fa64b9a0a467cceb1ba5bbe5bf6be35ce6e5840674"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/tabs.json",
+        "integrity": "sha256:7b89651220b86041aa0db74cf6be6b9b77de24045344bd7fc9627e62f1d98857"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "table",
+      "title": "Table",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Static table primitives matching the dashboard tables.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "globals"
+      ],
+      "files": [
+        {
+          "path": "components/base/table/table.tsx",
+          "sha256": "f960c50c679e3473328fb7e1c9c35f746a65c73011248c827274c1433a482419"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/table",
+        "integrity": "sha256:b61a11ffe61cf1c5d58d8095c2c9bc9f91f95abc93d774b0f9d02125830e5bb9"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/table.json",
+        "integrity": "sha256:fc12a8f2f4012d9e983e0b9bbb10f9fe3288d74046566d2623d60e7056c50d88"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "tooltip",
+      "title": "Tooltip",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Light-surface tooltip built on React Aria.",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "direction"
+      ],
+      "files": [
+        {
+          "path": "components/base/tooltip/tooltip.tsx",
+          "sha256": "6343aad02ef90bd33cae951f6b0321d79e4fa24c68e15e48c85b7c69ab059460"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/tooltip",
+        "integrity": "sha256:1ef6b5e5eab2eb1cc3e3b531639c97250fb64255417cb0bbb122fb3503cbb04f"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/tooltip.json",
+        "integrity": "sha256:adff9928cf92bddbbb9a7becd05234abf861e035130eb0d20f87820406fca385"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "badge",
+      "title": "Badge",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Counter pills and the Kbd shortcut hint.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/badges/badge.tsx",
+          "sha256": "0e347cff23823096035bc03b0fa3239d5cfb9a101cdc434b1c6c3bfbd503f7d1"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/badge",
+        "integrity": "sha256:f2e8348efb668c2d8adfdad87e0b6bce5ff1d701d8a19dc5dac330d06ee273bf"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/badge.json",
+        "integrity": "sha256:264755bb4a2fb6209a239c156dde8ab9dfb904136c567e97c9954d639f9eaec6"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "chip",
+      "title": "Chip",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Status/delta chips in bold and soft variants across the accent palette.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/badges/chip.tsx",
+          "sha256": "31d08c816ce85c3175800fecd40225c3e469c401ec6dcbc804ae93d3f0e39775"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/chip",
+        "integrity": "sha256:e2357e448c66c9b04332b1e2c0e66ddd09e85c3e9d610a85f0f20159a049fb19"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/chip.json",
+        "integrity": "sha256:4dd841a4b298b23f8e74c548d31a42df559c6ace151215378cdaff2a4d5a72ce"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "status-dot",
+      "title": "Status Dot",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Colored status indicator dot used inside selects and tables.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx",
+        "globals"
+      ],
+      "files": [
+        {
+          "path": "components/base/badges/status-dot.tsx",
+          "sha256": "b69fd06d17c2dcb522e906bdedadbd7d058f06d60242ee4e879de393b1ec7871"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/chip",
+        "integrity": "sha256:e2357e448c66c9b04332b1e2c0e66ddd09e85c3e9d610a85f0f20159a049fb19"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/status-dot.json",
+        "integrity": "sha256:f39a5df3e93d6e58884fa823c787bf9b94d048de9e2c5884d1e4a6346391fa54"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "avatar",
+      "title": "Avatar",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Image or initials avatar in multiple sizes and tints.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/avatar/avatar.tsx",
+          "sha256": "548bb7e2a5e80bf066b8cad70b8b40774fa80452e21afa89bc33e8e1bb251d4c"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/avatar",
+        "integrity": "sha256:627010532046060cd49272498efdcb4c1186a6a41089fe131fe29a1889547857"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/avatar.json",
+        "integrity": "sha256:614f2a384e2d44c0a15df8e3fc42c1648ccd7101f1c8be98911087641ab28aec"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "title": "Breadcrumb",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Icon-capable breadcrumb trail.",
+      "dependencies": [],
+      "registryDependencies": [
+        "chevrons",
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/breadcrumb/breadcrumb.tsx",
+          "sha256": "02e2050799b82c7cc63f4db25f095fdb2adae1c564084aadf3b1942eb8f9ce61"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/breadcrumb",
+        "integrity": "sha256:2369e7cccacab9d36ad0eea83c779b2ef9e044c6b56df6f674ac120314b00045"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/breadcrumb.json",
+        "integrity": "sha256:15ec77574bb50fd5e37bf6d157905ffe7eb03226585cc77983c0beea92abd811"
+      },
+      "externalImports": [
+        "next/link",
+        "react"
+      ]
+    },
+    {
+      "name": "pagination",
+      "title": "Pagination",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Numbered pagination with prev/next and ellipsis collapsing.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0"
+      ],
+      "registryDependencies": [
+        "button",
+        "cx",
+        "template-copy"
+      ],
+      "files": [
+        {
+          "path": "components/base/pagination/pagination.tsx",
+          "sha256": "944b90dbb2bd2b16c1438fc4382c8c0643b1cfb954c984b96a169407f3f52644"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/pagination",
+        "integrity": "sha256:41543ecab5bbf6633c70c5ca8c893f57c185e7968e6261ccdfdd0787a6fe24df"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/pagination.json",
+        "integrity": "sha256:5be028a8a84b8c5cd013690497b8da1d0f2a2e96297e26780bce177e9f36f614"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react"
+      ]
+    },
+    {
+      "name": "carousel",
+      "title": "Carousel",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Gallery carousel built on CSS scroll-snap: swipe, arrows and a position indicator.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "direction",
+        "icon-button",
+        "scroll-direction"
+      ],
+      "files": [
+        {
+          "path": "components/base/carousel/carousel.tsx",
+          "sha256": "d7d7547609cfbe9fb021863755296b4cd5523b4e9be28e7b256f1375d8fa5c9d"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/carousel",
+        "integrity": "sha256:c48b04b4baa2b45923ffa7775434034b07c1009dd62ecddba3d790dbf504fe6f"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/carousel.json",
+        "integrity": "sha256:5a8506c353b8ace96bf51171168cf1617ca775c45e22362de07dba990e79a1a9"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react"
+      ]
+    },
+    {
+      "name": "input-otp",
+      "title": "Input OTP",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "One-time-code field with a monospace box per digit, paste distribution and autofill support.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx",
+        "globals"
+      ],
+      "files": [
+        {
+          "path": "components/base/input-otp/input-otp.tsx",
+          "sha256": "479fb6528b17dd10512d19f13276cd5c3ec961af4f618d30fefe4d4d7f2381fe"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/input-otp",
+        "integrity": "sha256:7112222ee094886039512515760ec3615f5229ecf8a022dacaba2bfddcdd9e2f"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/input-otp.json",
+        "integrity": "sha256:603e7f45ab48ad678e24b5dd39d4aa9d2971cc4e5dada137dbd914a98151f5dd"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "segmented-control",
+      "title": "Segmented Control",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Pill-style segmented control (Weekly / Monthly / Yearly switchers).",
+      "dependencies": [
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "direction",
+        "globals"
+      ],
+      "files": [
+        {
+          "path": "components/base/segmented-control/segmented-control.tsx",
+          "sha256": "629b165aadfb42fcd2ed7a77e338f1b1aeb2e906533fcd78be5f11e729447878"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/segmented-control",
+        "integrity": "sha256:635003a4170d93eef0e887909a56c4b94cc5e2ba6cb405d5a22a446b9bd8987b"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/segmented-control.json",
+        "integrity": "sha256:6b783664a645c84aa92bdcb3b73abfe4d1ee57f39f97a6dedb5da1318a6e78c1"
+      },
+      "externalImports": [
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "announcement",
+      "title": "Announcement",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Dismissible announcement card used in the sidebar footer.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "motion@^12.42.2"
+      ],
+      "registryDependencies": [
+        "button",
+        "close-button",
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/announcement/announcement.tsx",
+          "sha256": "aaa1baf9638742e77b91556ce12b959deb8631cf58a96b6e34c207649d35962c"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/announcement",
+        "integrity": "sha256:91b1f748c37afa92247a66a932fe79967160704577326226e0d323c9fab78c61"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/announcement.json",
+        "integrity": "sha256:36e0caa0f364da193f71e6084c61390b71ad06b6e7d22be3eb2f2cf367129c39"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "motion/react",
+        "react"
+      ]
+    },
+    {
+      "name": "notification",
+      "title": "Notification",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Dismissible notification with status icons, avatars, action buttons, and timed countdown.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "motion@^12.42.2"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "close-button",
+        "cx",
+        "direction"
+      ],
+      "files": [
+        {
+          "path": "components/base/notification/notification.tsx",
+          "sha256": "bb79fc0a4b8ed3c17a6a7157c45b35b867c41bad2a5957546f2c730779824785"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/notification",
+        "integrity": "sha256:11b7589af230636ea58821c6e0f05ed2b47bff979eb3f75d88f9a390ed96bc71"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/notification.json",
+        "integrity": "sha256:489a5d231f34bf467b1b1f0769e562b41b82972ea311a29f54ed2c1677c3ced9"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "motion/react",
+        "react",
+        "react-dom"
+      ]
+    },
+    {
+      "name": "kbd",
+      "title": "Kbd",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Keyboard shortcut hint pill.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx"
+      ],
+      "files": [
+        {
+          "path": "components/base/kbd/kbd.tsx",
+          "sha256": "17cecce3fbadd59b497eefee65140cd7b831f2f3fd98b363b1db15576e0ca1a6"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/badge",
+        "integrity": "sha256:f2e8348efb668c2d8adfdad87e0b6bce5ff1d701d8a19dc5dac330d06ee273bf"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/kbd.json",
+        "integrity": "sha256:6a9e105249ff7e1e4abb38625b23d0195546158226b6a071a9965003651b188f"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "date-picker",
+      "title": "Date Picker",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Single-date picker with month navigation, built on React Aria.",
+      "dependencies": [
+        "@internationalized/date@^3.12.1",
+        "@remixicon/react@^4.9.0",
+        "motion@^12.42.2",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "button",
+        "cx",
+        "template-copy",
+        "use-dismiss-on-outside-press"
+      ],
+      "files": [
+        {
+          "path": "components/base/date-picker/date-picker.tsx",
+          "sha256": "08ba4676019f47f2fb06eb535b52519b53369ce650aa7f1eeec8d8ba36ff158f"
+        },
+        {
+          "path": "components/base/date-picker/shared.tsx",
+          "sha256": "abd71e907ff879e9d520f5964308b8442b56b300073321d62c3878ae7e32b298"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/date-picker",
+        "integrity": "sha256:85402d343e2ed1c59855c90b9a8758fe4adf6a8cb136ffc72583d71fc10bde86"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/date-picker.json",
+        "integrity": "sha256:36e77d0293daaead84fd939a1104e456904f4be49122185f41a738203cead3bf"
+      },
+      "externalImports": [
+        "@internationalized/date",
+        "@remixicon/react",
+        "motion/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "date-range-picker",
+      "title": "Date Range Picker",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Two-month range picker sharing the date-picker chrome.",
+      "dependencies": [
+        "@internationalized/date@^3.12.1",
+        "@remixicon/react@^4.9.0",
+        "motion@^12.42.2",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "button",
+        "cx",
+        "template-copy",
+        "use-dismiss-on-outside-press"
+      ],
+      "files": [
+        {
+          "path": "components/base/date-picker/date-range-picker.tsx",
+          "sha256": "23cc6f85b12458110ad4ec53005a3bf797ca6092e731324ae21e7d65db5b1a95"
+        },
+        {
+          "path": "components/base/date-picker/shared.tsx",
+          "sha256": "abd71e907ff879e9d520f5964308b8442b56b300073321d62c3878ae7e32b298"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/date-picker",
+        "integrity": "sha256:85402d343e2ed1c59855c90b9a8758fe4adf6a8cb136ffc72583d71fc10bde86"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/date-range-picker.json",
+        "integrity": "sha256:e6b6150953115d55bf34cda45d29f16660d8362abe0acfc25e1282f5e9098e7a"
+      },
+      "externalImports": [
+        "@internationalized/date",
+        "@remixicon/react",
+        "motion/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "meeting-scheduler",
+      "title": "Meeting Scheduler",
+      "tier": "free",
+      "group": "base",
+      "type": "registry:ui",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Date + time-slot scheduler popover.",
+      "dependencies": [
+        "@internationalized/date@^3.12.1",
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "chevrons",
+        "cx",
+        "use-dismiss-on-outside-press"
+      ],
+      "files": [
+        {
+          "path": "components/base/date-picker/meeting-scheduler.tsx",
+          "sha256": "35f16be3d3acddc808382a74f0dede027361326ef448e62b214ab8b335444784"
+        },
+        {
+          "path": "components/base/date-picker/shared.tsx",
+          "sha256": "abd71e907ff879e9d520f5964308b8442b56b300073321d62c3878ae7e32b298"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/date-picker",
+        "integrity": "sha256:85402d343e2ed1c59855c90b9a8758fe4adf6a8cb136ffc72583d71fc10bde86"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/meeting-scheduler.json",
+        "integrity": "sha256:daf3373cf4e6a417b5baf4ccf05e390ace6cb1a314b1e847ea109bf745ec1213"
+      },
+      "externalImports": [
+        "@internationalized/date",
+        "@remixicon/react",
+        "next/image",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "agent-runtime",
+      "title": "Agent runtime",
+      "tier": "free",
+      "group": "foundations",
+      "type": "registry:lib",
+      "indexed": false,
+      "reason": "Foundation, setup asset, or runtime helper; not a standalone UI component.",
+      "summary": "Streaming chat endpoint for agent templates: one AI_API_KEY from OpenAI, Anthropic, Google, OpenRouter, Groq, xAI or Vercel AI Gateway (or any OpenAI-compatible server by URL), a config probe for unconfigured deploys, and the message contract the BoardUI chat UI installs against.",
+      "dependencies": [
+        "@ai-sdk/anthropic@^4.0.47",
+        "@ai-sdk/google@^4.0.61",
+        "@ai-sdk/openai@^4.0.53",
+        "ai@^7.0.87",
+        "zod@^4.5.4"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "app/api/chat/route.ts",
+          "sha256": "4f8fcc42f3651eb4457517c1fb69495e800b8d7b616add680bcdd56bd6dc1ebd"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/chat-starter",
+        "integrity": "sha256:516a43aac77b2e2667d7c21d1d1c63ebbbd2a552045939e78bbdfc1769973b07"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/agent-runtime.json",
+        "integrity": "sha256:7391a30227909123ea759c0a09c0f31ce48a2564b7e4339d503091ec5d0f0008"
+      },
+      "externalImports": [
+        "@ai-sdk/anthropic",
+        "@ai-sdk/google",
+        "@ai-sdk/openai",
+        "ai"
+      ]
+    },
+    {
+      "name": "agent-chat",
+      "title": "Agent Chat",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "A working chat app: app sidebar, streaming replies, thinking indicator, a composer pill with stop control, a chat-history rail with local thread switching, and a setup notice when no provider key is set.",
+      "dependencies": [
+        "@ai-sdk/react@^4.0.90",
+        "@remixicon/react@^4.9.0",
+        "ai@^7.0.87",
+        "motion@^12.42.2"
+      ],
+      "registryDependencies": [
+        "agent-runtime",
+        "agent-thinking",
+        "app-shell",
+        "avatar",
+        "button",
+        "chevrons",
+        "close-button",
+        "composer-loader",
+        "cx",
+        "dropdown",
+        "globals",
+        "icon-button",
+        "sidebar",
+        "template-copy",
+        "theme-toggle"
+      ],
+      "files": [
+        {
+          "path": "components/application/agent-chat/agent-chat-actions.tsx",
+          "sha256": "39be5f53792a375bddab1248599542971a4d65935a78bddca3b3ed358f84a7d4"
+        },
+        {
+          "path": "components/application/agent-chat/agent-chat-history.tsx",
+          "sha256": "136ec9f82ca43daa3a78c876484a9f06a97cb1f7353bebb80175e442d3fad0d9"
+        },
+        {
+          "path": "components/application/agent-chat/agent-chat-message.tsx",
+          "sha256": "c8c6fca91f5b25bb5d704cbd3adbc7c87b472d9779a8bf2982b80797dd925c9a"
+        },
+        {
+          "path": "components/application/agent-chat/agent-chat.tsx",
+          "sha256": "18732c897e4d07e38d4b40be43faf7bc7f51f26abc4feaf529f53280b4e1dd8e"
+        },
+        {
+          "path": "components/application/agent-chat/agent-composer.tsx",
+          "sha256": "776f2ec6bc98eb234494397a0f754321013ce72f00c4b811446df1da67c20713"
+        },
+        {
+          "path": "components/application/agent-chat/demo-answers.ts",
+          "sha256": "f6294d6ca09b1236376619a42a8c9c6b641d5892cf36a19fc66e2d203308f353"
+        },
+        {
+          "path": "components/application/agent-chat/demo-transport.ts",
+          "sha256": "764ac19f0ec8beacaaa95eb56d79acf0f657e4dfb24fa866f41f4e2615fe61b0"
+        },
+        {
+          "path": "components/application/app-shell/pro-offer-card.tsx",
+          "sha256": "6e13a715e3019c3345083d6870c9099efa601e86013367610f24ed0f1e492462"
+        },
+        {
+          "path": "components/application/landing/hero-rays/hero-rays-config.ts",
+          "sha256": "89237fe5cdffd9396d2e5698d7e5ff496513381e72a887c8ef7ea87aadf89641"
+        },
+        {
+          "path": "components/application/landing/hero-rays/hero-rays-shader.ts",
+          "sha256": "e5b7a04255e01016b0c17d07a7f3de138392f5ff094f0f8fac3cb2298ed2b13e"
+        },
+        {
+          "path": "components/application/landing/hero-rays/hero-rays.tsx",
+          "sha256": "ed76d4cd1c5d1e8946d67e8d8fe15c5a7d4eec0590485d388f7f4f424598d1b5"
+        },
+        {
+          "path": "components/application/landing/pro-logo-mark.tsx",
+          "sha256": "b885e1748f9a3a45f1c67fba29682b11b10d0f1e0a987393dfd54a7b62507c30"
+        },
+        {
+          "path": "components/application/landing/tuning/tuning-types.ts",
+          "sha256": "d0cfc7e21fb35e0f90d317fb179a24dd30c9da83a99461d3906624c99c9a8105"
+        },
+        {
+          "path": "components/application/templates/pro-prompt-card.tsx",
+          "sha256": "ac6b825a1752a89677818022fe6dab2197238bf6915cb939c7b198da6f763351"
+        },
+        {
+          "path": "components/application/templates/pro-prompt-rays.ts",
+          "sha256": "261a47c690bfffa3dda55c33e8232ac6763323e2786fe0d1744e8e5f21116161"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/chat-starter",
+        "integrity": "sha256:516a43aac77b2e2667d7c21d1d1c63ebbbd2a552045939e78bbdfc1769973b07"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/agent-chat.json",
+        "integrity": "sha256:d6864ec1e03fb7f90b79be01cf9c43bf41c4a912456bbbd534fa48563be5bb1d"
+      },
+      "externalImports": [
+        "@ai-sdk/react",
+        "@remixicon/react",
+        "ai",
+        "motion/react",
+        "next/navigation",
+        "react"
+      ]
+    },
+    {
+      "name": "app-shell",
+      "title": "App Shell",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": false,
+      "reason": "Internal application dependency without a component documentation page.",
+      "summary": "Page frame for the chat starter: the sidebar, a phone drawer, and a titled content card, carrying the starter's own navigation so the sidebar only links to pages the app has.",
+      "dependencies": [
+        "@internationalized/date@^3.12.1",
+        "@remixicon/react@^4.9.0",
+        "motion@^12.42.2",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "accordion",
+        "agent-chat",
+        "agent-thinking",
+        "announcement",
+        "auth-card",
+        "avatar",
+        "breadcrumb",
+        "button",
+        "button-group",
+        "carousel",
+        "checkbox",
+        "chevrons",
+        "chip",
+        "close-button",
+        "color-picker",
+        "cx",
+        "data-grid",
+        "data-table",
+        "date-calendar",
+        "direction",
+        "divider",
+        "drawer",
+        "file-upload",
+        "globals",
+        "icon-button",
+        "input",
+        "input-otp",
+        "kbd",
+        "link-button",
+        "meter",
+        "modal",
+        "notification",
+        "notification-center",
+        "orders-chart-card",
+        "pagination",
+        "progress",
+        "radio",
+        "revenue-chart-card",
+        "segmented-control",
+        "select",
+        "sidebar",
+        "skeleton",
+        "slider",
+        "social-button",
+        "spinner",
+        "stat-cards",
+        "switch",
+        "table",
+        "tabs",
+        "template-copy",
+        "textarea",
+        "theme-toggle",
+        "tooltip",
+        "tree-view",
+        "use-dismiss-on-outside-press"
+      ],
+      "files": [
+        {
+          "path": "components/application/app-shell/app-shell.tsx",
+          "sha256": "1e0d7181184c1e3860ff6bb164c18cedb091321480837e572335fd338d715993"
+        },
+        {
+          "path": "components/application/app-shell/components-catalog.tsx",
+          "sha256": "7e0173c53b7af1bd6acd599fb1e98dc6c334d50ccaaf1ed653bf9435a099973c"
+        },
+        {
+          "path": "components/application/app-shell/notification-bell.tsx",
+          "sha256": "8eeefab6b4c35fa7153190bd078aed7857f0164290c763b38296f070af425945"
+        },
+        {
+          "path": "components/application/app-shell/pro-offer-card.tsx",
+          "sha256": "6e13a715e3019c3345083d6870c9099efa601e86013367610f24ed0f1e492462"
+        },
+        {
+          "path": "components/application/app-shell/starter-notifications.ts",
+          "sha256": "0d33adfd490e6df7d83e0ef85ed2da2ffe214197be36af99c37675d6335bc4e3"
+        },
+        {
+          "path": "components/application/dashboard/dashboard-user-menu.tsx",
+          "sha256": "dd38405b8584bb519076f38e23ba4b64ddb55336f83a1869b209eea43d19dbd7"
+        },
+        {
+          "path": "components/application/docs/accordion-preview.tsx",
+          "sha256": "e2a3f16ff49fe9a4b49861059c6cd704c6e020f96b625c18ce963a460a242487"
+        },
+        {
+          "path": "components/application/docs/color-picker-preview.tsx",
+          "sha256": "22649f07fe169de3c47a5138b35c91d277e7ced96cdbc9788fef4f0e6207f341"
+        },
+        {
+          "path": "components/application/docs/combobox-preview.tsx",
+          "sha256": "a65313e9bc8940cede2747178fec99bfec308dfaa84649804d06abc05e6e618c"
+        },
+        {
+          "path": "components/application/docs/command-palette-preview.tsx",
+          "sha256": "5069447497d51cae6cf6b3d93610e7d7f519518a2f59f9989c1a55253eba7ef2"
+        },
+        {
+          "path": "components/application/docs/component-preview-hrefs.ts",
+          "sha256": "40b5146ff5904daaef207441be1d2cc0b58b6a2187f8081b542ad3da7a6aab50"
+        },
+        {
+          "path": "components/application/docs/component-previews-free.tsx",
+          "sha256": "58af6ae2fdf57294544c096b45d6510ec68c9754d49dbc327860427eb79bb264"
+        },
+        {
+          "path": "components/application/docs/components-index.ts",
+          "sha256": "624d24045e70e453b19d856b6526a5ca9e4b92a75e27aa81c00cb74f8a76e23f"
+        },
+        {
+          "path": "components/application/docs/context-menu-preview.tsx",
+          "sha256": "24221ab427147b324ee3993e3f9225d7372da16bccbee967906663674e8d05d5"
+        },
+        {
+          "path": "components/application/docs/date-calendar-preview.tsx",
+          "sha256": "52d6bec46a53312614b44ff7fb7592a3f67b7c37fd606d766dd067ff842ed23f"
+        },
+        {
+          "path": "components/application/docs/drawer-preview.tsx",
+          "sha256": "4a35bc93f1502bf130906e444b461097ef6a6a13a96cb3c474f188a195a9a78a"
+        },
+        {
+          "path": "components/application/docs/examples/data-grid-example.tsx",
+          "sha256": "a0ab0b8fff7c709745eb0b2833a0f29dfe04a7b9d50bfbefe08794141f9a804a"
+        },
+        {
+          "path": "components/application/docs/free-landing-previews.tsx",
+          "sha256": "cf00c8f6e62f0677f777027f4a73408929d33fc732a888b0fad7db3fe03445ab"
+        },
+        {
+          "path": "components/application/docs/meter-preview.tsx",
+          "sha256": "67a0787420bac094ec3f8b062d2b58f6d51120f04f986548e0c69539af80f480"
+        },
+        {
+          "path": "components/application/docs/modal-preview.tsx",
+          "sha256": "4f323ae04b59a75d3665075d908feee69359bb5ad79b608ea6699203be740c9f"
+        },
+        {
+          "path": "components/application/docs/number-field-preview.tsx",
+          "sha256": "ffbda231eed076f20fcdd1080684f7825df7592082721c83eb2806e36cbc7377"
+        },
+        {
+          "path": "components/application/docs/popover-preview.tsx",
+          "sha256": "0599d83eb1bc9286c0de3710e5ff005cf141af99603c63941d8066978997d58a"
+        },
+        {
+          "path": "components/application/docs/preview-images.ts",
+          "sha256": "7db29ef333508ae3e38910400b1ae458461700632e1888dbfd89b0db7377d95c"
+        },
+        {
+          "path": "components/application/docs/progress-preview.tsx",
+          "sha256": "5c62bdf958db6a03d30adb5d88cc5625f8a0a49e43e1ca300414b8d7f1621fb6"
+        },
+        {
+          "path": "components/application/docs/search-field-preview.tsx",
+          "sha256": "24a9a75b1ae551e77961d895b749c80cb11a1852232582c2d01cfdd681a85f7d"
+        },
+        {
+          "path": "components/application/docs/showcase-card.tsx",
+          "sha256": "54699f3a3ce7e4274a7689f2485d7057b720f3c28fbe9334090e12ccec05ef17"
+        },
+        {
+          "path": "components/application/docs/skeleton-preview.tsx",
+          "sha256": "6bdff3a3e393ab4b7e75af599eea322ee0502bde54c859ec7ac8e4a017a4e2c0"
+        },
+        {
+          "path": "components/application/docs/spinner-preview.tsx",
+          "sha256": "6fec97a7dd25821da8f7455f5bf1292107540cf22c2c16a36cf19d573ac03406"
+        },
+        {
+          "path": "components/application/docs/tag-group-preview.tsx",
+          "sha256": "e878eef484100ea108c3e9f3403620ad0cba5551c2f81aa3e0147f94a9e784b2"
+        },
+        {
+          "path": "components/application/docs/time-field-preview.tsx",
+          "sha256": "f09dd0933bad5c43f8023932f39af9e8c1444f6e32c607e8d8dae56bcb3ddb1f"
+        },
+        {
+          "path": "components/application/docs/toast-preview.tsx",
+          "sha256": "e8bd7f8896147780129161bf70136257db86daf3912aabee2e0b112dac56037f"
+        },
+        {
+          "path": "components/application/docs/tree-view-preview.tsx",
+          "sha256": "78801c12eebe7ffd2f3100c8f4bfd2808f6dadd5328aa9aab7df8aa52f58924a"
+        },
+        {
+          "path": "components/application/landing/hero-rays/hero-rays-config.ts",
+          "sha256": "89237fe5cdffd9396d2e5698d7e5ff496513381e72a887c8ef7ea87aadf89641"
+        },
+        {
+          "path": "components/application/landing/hero-rays/hero-rays-shader.ts",
+          "sha256": "e5b7a04255e01016b0c17d07a7f3de138392f5ff094f0f8fac3cb2298ed2b13e"
+        },
+        {
+          "path": "components/application/landing/hero-rays/hero-rays.tsx",
+          "sha256": "ed76d4cd1c5d1e8946d67e8d8fe15c5a7d4eec0590485d388f7f4f424598d1b5"
+        },
+        {
+          "path": "components/application/landing/pro-logo-mark.tsx",
+          "sha256": "b885e1748f9a3a45f1c67fba29682b11b10d0f1e0a987393dfd54a7b62507c30"
+        },
+        {
+          "path": "components/application/landing/tuning/tuning-types.ts",
+          "sha256": "d0cfc7e21fb35e0f90d317fb179a24dd30c9da83a99461d3906624c99c9a8105"
+        },
+        {
+          "path": "components/application/notification-center/notification-center-demo.tsx",
+          "sha256": "fac65b5e8938e41ebb5c95efa68aae686f9b7ff7247a543af1f39ce843ea0160"
+        },
+        {
+          "path": "components/application/settings/plan-art-flame.tsx",
+          "sha256": "f0562d855ac76eddb0c113472c2c1b3681df8cf2d96d41270b90d65bc36ca880"
+        },
+        {
+          "path": "components/application/settings/settings-general.tsx",
+          "sha256": "d048db20fb2825516676c2d8a77fe1ffbf176744549220f7165e58aca16e11bd"
+        },
+        {
+          "path": "components/application/settings/settings-rows.tsx",
+          "sha256": "2236f135d51b7a024abaab2e757ca554e5528d8beaa20fced72397bbbfd5c1c8"
+        },
+        {
+          "path": "components/application/templates/pro-prompt-card.tsx",
+          "sha256": "ac6b825a1752a89677818022fe6dab2197238bf6915cb939c7b198da6f763351"
+        },
+        {
+          "path": "components/application/templates/pro-prompt-rays.ts",
+          "sha256": "261a47c690bfffa3dda55c33e8232ac6763323e2786fe0d1744e8e5f21116161"
+        },
+        {
+          "path": "components/base/date-picker/shared.tsx",
+          "sha256": "abd71e907ff879e9d520f5964308b8442b56b300073321d62c3878ae7e32b298"
+        },
+        {
+          "path": "components/base/dropdown/menu-styles.ts",
+          "sha256": "2d911a7d99caf800f1095f9db3c285ce11aa27c362e5dd2fd5919115a9d74b1b"
+        }
+      ],
+      "source": {
+        "url": "https://www.boardui.com/r/app-shell.json",
+        "integrity": "sha256:6ea2109cae2746f6cae12790d2b7b91ff7fe814dc6903a9f879a1c29063a6b53"
+      },
+      "externalImports": [
+        "@internationalized/date",
+        "@remixicon/react",
+        "motion/react",
+        "next/image",
+        "next/link",
+        "next/navigation",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "agent-thinking",
+      "title": "Agent Thinking",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Agent thinking indicator for chat composers : dot wave, dot spin, stars, and infinity variants with a shimmering label and elapsed timer.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx",
+        "globals",
+        "template-copy"
+      ],
+      "files": [
+        {
+          "path": "components/application/agent-thinking/agent-thinking.tsx",
+          "sha256": "3f5fd82e603d49a8d3f9862dacd12fda874aa43fb958f3784425aa52b62f7d90"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/agent-thinking",
+        "integrity": "sha256:5754876e958983fb07c724c3770967f61898874896d95482af9a2b2a56e2ff18"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/agent-thinking.json",
+        "integrity": "sha256:b75cb4fc1830b64afdd0198ad8a47efb4cb715e5b59096cacc42029d016d4991"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "agent-log",
+      "title": "Agent Log",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": false,
+      "reason": "Internal application dependency without a component documentation page.",
+      "summary": "Shared streaming-log machinery: the reveal ticker, the blur-in with its soft clipping edge, and the curved tree guide that draws itself. Behind Task List and Web Search.",
+      "dependencies": [
+        "motion@^12.42.2"
+      ],
+      "registryDependencies": [
+        "agent-thinking",
+        "cx",
+        "globals"
+      ],
+      "files": [
+        {
+          "path": "components/application/agent-log/agent-log.tsx",
+          "sha256": "abf2c940a377f09dc0c69438c4e163ff4bf40d38db5ac328c14b3dcc694dcea7"
+        }
+      ],
+      "source": {
+        "url": "https://www.boardui.com/r/agent-log.json",
+        "integrity": "sha256:be74e01e367f095d7ea4a479d8e4fc2e34513df5d2fbd8bbebea7b790a805de9"
+      },
+      "externalImports": [
+        "motion/react",
+        "react"
+      ]
+    },
+    {
+      "name": "composer-loader",
+      "title": "Composer Loader",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Loading state that wraps a chat composer : an iridescent light band orbiting the rim with a soft inward bloom, fading in while the agent works.",
+      "dependencies": [],
+      "registryDependencies": [
+        "cx",
+        "globals",
+        "template-copy"
+      ],
+      "files": [
+        {
+          "path": "components/application/composer-loader/composer-loader.tsx",
+          "sha256": "369857e20f5cf4c94a9311fdb32c8daa473d8c72339ac0b72b331598d52b6115"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/composer-loader",
+        "integrity": "sha256:86b014b41a16a6ba6d8c656e2714a5f478fae57452e2b278f0165c0c5cd196cb"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/composer-loader.json",
+        "integrity": "sha256:304c856a9b3fbeda0a74b55c71d5ff77fc1d47558be4f7c0519ba9babcd46e52"
+      },
+      "externalImports": [
+        "react"
+      ]
+    },
+    {
+      "name": "sidebar",
+      "title": "Sidebar",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "The floating dashboard sidebar with team menu, nav, announcement, and user menu.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "badge",
+        "button",
+        "chevrons",
+        "close-button",
+        "cx",
+        "direction",
+        "globals",
+        "kbd",
+        "settings-modal",
+        "template-copy",
+        "theme-toggle"
+      ],
+      "files": [
+        {
+          "path": "components/application/dashboard/dashboard-sidebar.tsx",
+          "sha256": "741b45d739386999efc8825d4ce02aa6ec6d560bdde8d390f03abc2e3b073581"
+        },
+        {
+          "path": "components/application/dashboard/dashboard-team-menu.tsx",
+          "sha256": "0131a0bf1e1971d0ebce7ba005ac02514162e29c943abc16ce956c529ef07696"
+        },
+        {
+          "path": "components/application/dashboard/dashboard-user-menu.tsx",
+          "sha256": "dd38405b8584bb519076f38e23ba4b64ddb55336f83a1869b209eea43d19dbd7"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/sidebar",
+        "integrity": "sha256:cccd800e7fe61021fbc992c069d679e4bfaa53cd5734daa13481051bf1667fa5"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/sidebar.json",
+        "integrity": "sha256:a73bbd8b6c082c4e6b7f0e2c610b7c73e5d45fae5e3d9ecca790d8a08ad8187b"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "settings-modal",
+      "title": "Settings Modal",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Controlled multi-page settings dialog with General, Profile, Tools, and Storage views.",
+      "dependencies": [
+        "@internationalized/date@^3.12.1",
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "button",
+        "checkbox",
+        "chevrons",
+        "chip",
+        "cx",
+        "date-picker",
+        "direction",
+        "dropdown",
+        "file-upload",
+        "globals",
+        "icon-button",
+        "input",
+        "pagination",
+        "select",
+        "switch",
+        "tabs",
+        "template-copy",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "components/application/settings/plan-art-flame.tsx",
+          "sha256": "f0562d855ac76eddb0c113472c2c1b3681df8cf2d96d41270b90d65bc36ca880"
+        },
+        {
+          "path": "components/application/settings/settings-general.tsx",
+          "sha256": "d048db20fb2825516676c2d8a77fe1ffbf176744549220f7165e58aca16e11bd"
+        },
+        {
+          "path": "components/application/settings/settings-modal.tsx",
+          "sha256": "cbb66140687f4f85872e555ad40c9692f23983fabc4f8585513ca21c8c1fc8c4"
+        },
+        {
+          "path": "components/application/settings/settings-profile.tsx",
+          "sha256": "8d3451d93f811db25f2c20c5525a9fb6fe0391f7de2899c48b1fc27a0e0025ee"
+        },
+        {
+          "path": "components/application/settings/settings-rows.tsx",
+          "sha256": "2236f135d51b7a024abaab2e757ca554e5528d8beaa20fced72397bbbfd5c1c8"
+        },
+        {
+          "path": "components/application/settings/settings-storage.tsx",
+          "sha256": "a27a81def1a3528cdeb1c5c7ff6de6829c78b756949c7f39c86c4f4ac2b5b2db"
+        },
+        {
+          "path": "components/application/settings/settings-tools.tsx",
+          "sha256": "b4797038eab5064a01c686790f9f7a296ef9d08e2d5cf07ad6b2a1da12a2235f"
+        },
+        {
+          "path": "public/ai-chat/plugin-documents-dark.svg",
+          "sha256": "7d8389c61330ebff3818e410caa1f1682b14b87d19be4b5b5ccb0c90cf2f62c4"
+        },
+        {
+          "path": "public/ai-chat/plugin-documents.svg",
+          "sha256": "af38c9ed66272ffb7f2bab5d5f9ab8a0cd135a2e121a65b692bfde54fca371bb"
+        },
+        {
+          "path": "public/ai-chat/plugin-spreadsheets.svg",
+          "sha256": "3463a7fe81fe7ca8b7e098f94b366f53e8d73c2e4bc93d7ccb3483a39cd1e62c"
+        },
+        {
+          "path": "public/ai-chat/plugin-videos.svg",
+          "sha256": "fb94553eefe2b3f8abbc41bd4cc65887ced3645041ff98af1566200ecbdf9d26"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/settings-modal",
+        "integrity": "sha256:dbd1e8a8ada6f9f0826381da0573a28a33863a74478aa7140edd25e91c5908c9"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/settings-modal.json",
+        "integrity": "sha256:620866f68751335b9cbd7f5812850ed8f5e3ede04f88c3acb3e8a5fb36e9ecfe"
+      },
+      "externalImports": [
+        "@internationalized/date",
+        "@remixicon/react",
+        "react",
+        "react-aria-components",
+        "react-dom"
+      ]
+    },
+    {
+      "name": "auth-card",
+      "title": "Auth Card",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Sign-in and sign-up cards with social providers stacked with labels or inline as icons, plus email fields and a CTA.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0"
+      ],
+      "registryDependencies": [
+        "button",
+        "checkbox",
+        "cx",
+        "direction",
+        "divider",
+        "input",
+        "input-otp",
+        "link-button",
+        "social-button",
+        "template-copy"
+      ],
+      "files": [
+        {
+          "path": "components/application/auth/auth-card.tsx",
+          "sha256": "986e3440e343801d1cad669175a4b39633f8c87a1f322bf71f9a101953d79f05"
+        },
+        {
+          "path": "components/application/auth/auth-media-carousel.tsx",
+          "sha256": "7b0d545791e3e533dc6656177bb2ea1c75fdbd13a7b622f80f33c92a4432f9bd"
+        },
+        {
+          "path": "components/base/social-button/social-providers.ts",
+          "sha256": "c09ba9d75f0da6004ffd36bb39b6b4428ace5bc4e6b347bfef07d3ac893a63cd"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/auth-card",
+        "integrity": "sha256:a8815b3d3bcbe6c57ea50acb79d7d1d114d1b5f886a1359d526a1fc0f53a0414"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/auth-card.json",
+        "integrity": "sha256:334f65d6dbd7be9ed9275239b58c607e101df586c5b9a0e78d9624bde1c0bc78"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react"
+      ]
+    },
+    {
+      "name": "notification-center",
+      "title": "Notification Center",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Tabbed activity inbox with grouped notifications, unread state, avatars, status icons, and inline actions.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "cx",
+        "globals",
+        "segmented-control",
+        "template-copy"
+      ],
+      "files": [
+        {
+          "path": "components/application/notification-center/notification-center.tsx",
+          "sha256": "484e14fb2e4c10d9f9bb83315817affd706c00013efd94e4eca6e97e073e78fe"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/notification-center",
+        "integrity": "sha256:fb116ce69118ca60a690f813d6465b9cf5aea1ab80e72cb58fc12f14ece0bac1"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/notification-center.json",
+        "integrity": "sha256:bcf1125ceda15772f1a8e9e313e7e52391e286d0655e04bf73bdd4477cb94f9e"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react"
+      ]
+    },
+    {
+      "name": "data-grid",
+      "title": "Data Grid",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Virtualized spreadsheet with editable cells, range selection, filters, resizable columns, undo and redo, summaries, and CSV export.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "motion@^12.42.2",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "button",
+        "checkbox",
+        "close-button",
+        "cx",
+        "direction",
+        "dropdown",
+        "globals",
+        "input",
+        "segmented-control",
+        "select",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "components/application/data-grid/data-grid-utils.ts",
+          "sha256": "dd8fe1f5af8e042ec2746a1cf7450289e1187fd26f35eaa43af319680f2f4f37"
+        },
+        {
+          "path": "components/application/data-grid/data-grid.tsx",
+          "sha256": "09ec4ae4978352ae203aa1e8f3753bd4318e28021a99530b74937d2ae3220912"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/data-grid",
+        "integrity": "sha256:fb8a1e27b48c578bde49bc7cd91ad39b9acca528687b5b843dd866ae750adf86"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/data-grid.json",
+        "integrity": "sha256:8f2f0d1e254de85cd9a0e2c2e5002e8849dca613882e6a3fa7b76f94513d611b"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "motion/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "data-table",
+      "title": "Data Table",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "TanStack-powered data table with sorting, selection, and pagination.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "@tanstack/react-table@^8.21.3",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "checkbox",
+        "chevrons",
+        "chip",
+        "cx",
+        "dropdown",
+        "icon-button",
+        "input",
+        "pagination",
+        "segmented-control",
+        "select",
+        "status-dot",
+        "table",
+        "template-copy",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "components/application/docs/examples/data-table-example.tsx",
+          "sha256": "c3aa01e583a449bee3de9cfca159a67dffdec94af6ea42c603ca095b5a8d1644"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/data-table",
+        "integrity": "sha256:3e9d1ebd0cffe448eb3d977838eda13d55a798923baef5ee72e61c528297f6c5"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/data-table.json",
+        "integrity": "sha256:52647650957b35bdf9939792aad3a8aa1c742c2f43fc5c24fdc7cb1a8bd2e35c"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "@tanstack/react-table",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "stat-cards",
+      "title": "Stat Cards",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "KPI stat card row with delta chips.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "chip",
+        "cx",
+        "template-copy",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "components/application/dashboard/stat-cards.tsx",
+          "sha256": "dae486b140863e7ea10978575cd51cadeab8ed1185835084b0248437e1072125"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/stat-cards",
+        "integrity": "sha256:6558b33139492de38806c86505fc1fe092ff73681afcb792ebe653521f7626cb"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/stat-cards.json",
+        "integrity": "sha256:0ad75d8d51eb5d12cda31b1f929ea872882d82959e87d97a6f0df3662bd0b099"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "revenue-chart-card",
+      "title": "Revenue Chart Card",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Free chart card: a year of monthly revenue as an area against the year before, with a count-up headline, delta chip and hover readout per month.",
+      "dependencies": [
+        "recharts@^3.9.2"
+      ],
+      "registryDependencies": [
+        "chip",
+        "cx",
+        "globals",
+        "use-count-up"
+      ],
+      "files": [
+        {
+          "path": "components/application/dashboard/revenue-chart-card.tsx",
+          "sha256": "060bee7d6484cfa36d07796c7aa62ffbe1fbb62850a6cc0f4094866f3592279e"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/revenue-chart-card",
+        "integrity": "sha256:a5a37580da22e9ca71dbc4c51d08d6c4a51f2f6c809cff098caec0d678598553"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/revenue-chart-card.json",
+        "integrity": "sha256:249f57f817ed61381a895b8470cfd69ac24fca7c5c791d0d4697ef8357b80e5a"
+      },
+      "externalImports": [
+        "react",
+        "recharts"
+      ]
+    },
+    {
+      "name": "orders-chart-card",
+      "title": "Orders Chart Card",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Free chart card: a year of monthly orders as bars, this year beside last year for every month, with a count-up headline, delta chip and hover readout.",
+      "dependencies": [
+        "recharts@^3.9.2"
+      ],
+      "registryDependencies": [
+        "chip",
+        "cx",
+        "globals",
+        "use-count-up"
+      ],
+      "files": [
+        {
+          "path": "components/application/dashboard/orders-chart-card.tsx",
+          "sha256": "38f48d0d5d02785210d1926659670a6d4d1ca94fe949126614677bf31225ddc4"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/orders-chart-card",
+        "integrity": "sha256:8d68974df1d585daded3c5413b575f6701ca9570bac965773e749889d0bc38a0"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/orders-chart-card.json",
+        "integrity": "sha256:24ffd0315accb8dd46cbd13422ba11357237ace958ba19d25a96043ef6e8be22"
+      },
+      "externalImports": [
+        "react",
+        "recharts"
+      ]
+    },
+    {
+      "name": "important-alerts-card",
+      "title": "Important Alerts Card",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Scrollable alert feed with tinted icon circles and date pills.",
+      "dependencies": [
+        "@internationalized/date@^3.12.1",
+        "@remixicon/react@^4.9.0",
+        "react-aria-components@^1.17.0"
+      ],
+      "registryDependencies": [
+        "cx",
+        "template-copy"
+      ],
+      "files": [
+        {
+          "path": "components/application/medical/important-alerts-card.tsx",
+          "sha256": "c86803501f7449cdb81afdab662c9e89a8e653c51c65ad9dd81058c306424a6b"
+        },
+        {
+          "path": "components/application/medical/week-range-pill.tsx",
+          "sha256": "b36a6a03b7f3e6d84730bf0147944e27b37071041f68176ac5755462f5a81e62"
+        },
+        {
+          "path": "components/base/date-picker/shared.tsx",
+          "sha256": "abd71e907ff879e9d520f5964308b8442b56b300073321d62c3878ae7e32b298"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/medical-profile",
+        "integrity": "sha256:6336508ecf8f4a38060be7416c139e5797f825f5c727b1c33309b18b281d3eae"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/important-alerts-card.json",
+        "integrity": "sha256:9de2924d69637d9dd682dd384758d3d3e9fa6001e036439798fecf70877a34a4"
+      },
+      "externalImports": [
+        "@internationalized/date",
+        "@remixicon/react",
+        "react",
+        "react-aria-components"
+      ]
+    },
+    {
+      "name": "patient-info-card",
+      "title": "Patient Info Card",
+      "tier": "free",
+      "group": "application",
+      "type": "registry:block",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Profile card with avatar and label/value detail rows.",
+      "dependencies": [
+        "@remixicon/react@^4.9.0"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "cx",
+        "template-copy"
+      ],
+      "files": [
+        {
+          "path": "components/application/medical/patient-info-card.tsx",
+          "sha256": "a26efa2ef8ec16d8924529b238aefa6d0fc31156bea5d17ab9359f2af6089cd0"
+        }
+      ],
+      "docs": {
+        "url": "https://www.boardui.com/components/medical-profile",
+        "integrity": "sha256:6336508ecf8f4a38060be7416c139e5797f825f5c727b1c33309b18b281d3eae"
+      },
+      "source": {
+        "url": "https://www.boardui.com/r/patient-info-card.json",
+        "integrity": "sha256:611841d02acac35ca8cc404f2f8d242290c748f33193bb419bc588befe35bab1"
+      },
+      "externalImports": [
+        "@remixicon/react",
+        "react"
+      ]
+    },
+    {
+      "name": "web-search",
+      "title": "Web Search",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Shows the queries and sources in an agent research session. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/web-search",
+        "integrity": "sha256:057646be262ef13e90e32fd32d4b3edcc023d32f75850d2e12a918ebe7ec7ced"
+      }
+    },
+    {
+      "name": "task-list",
+      "title": "Task List",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Displays tasks and their steps as an agent processes them. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/task-list",
+        "integrity": "sha256:20001226947ff92608232dd5a8c4d2b2df2fd3afc53e6cc88c6940d8587ae753"
+      }
+    },
+    {
+      "name": "composer",
+      "title": "Composer",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Chat input with attachments, model selection, voice, and send controls. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/composer",
+        "integrity": "sha256:a952ace8ae173ae7bd8036028d093fa0f07888aa77ff6a29b3c5605c57f2f1f5"
+      }
+    },
+    {
+      "name": "composer-panel",
+      "title": "Composer Panel",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Two-row prompt input with permission, model, and project context controls. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/composer-panel",
+        "integrity": "sha256:4d29bcfda71775b953eac6194a2850983dd67de6578948e614dbba19f4c97da9"
+      }
+    },
+    {
+      "name": "composer-attachments",
+      "title": "Composer Attachments",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Chat composer with image and document attachment tiles. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/composer-attachments",
+        "integrity": "sha256:bd4f0b5b00052091eb2498240e8dd17ce06607ea45c1e26962f74863a4c0f645"
+      }
+    },
+    {
+      "name": "agent-progress",
+      "title": "Agent Progress",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Collapsible status display for a task with multiple steps. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/agent-progress",
+        "integrity": "sha256:754062f0dad0578db985ab6f53d5080265a894ac20d6cbe28ba6fa57278f8258"
+      }
+    },
+    {
+      "name": "agent-limits-card",
+      "title": "Agent Limits Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Shows context usage, token breakdowns, and plan limits. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/agent-limits-card",
+        "integrity": "sha256:77d736d913b344794ec426b76623d07464865a73a8fd549e067eee3182ec0d64"
+      }
+    },
+    {
+      "name": "questionnaire",
+      "title": "Questionnaire",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Step-by-step questions with choices and optional written answers. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/questionnaire",
+        "integrity": "sha256:8b90a22542f09b36a84c4908b36fca84a1a67f5dd1eb3da56e05e109451d9dc7"
+      }
+    },
+    {
+      "name": "calendar",
+      "title": "Calendar",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Monthly event calendar with event details and an inbox. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/calendar",
+        "integrity": "sha256:077a3900e28e92c5fcb54613c3050c17ac0954fdd788fc16922e9336993ee51d"
+      }
+    },
+    {
+      "name": "earnings-chart-card",
+      "title": "Earnings Chart Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Earnings bar chart with period selection and hover details. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/earnings-chart-card",
+        "integrity": "sha256:7b44c3e3f927ced698dbb8a895e80ad2afc8de8515e8a7ee37fcb85140cf7b80"
+      }
+    },
+    {
+      "name": "line-chart-card",
+      "title": "Line Chart Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Line and area chart with selectable interpolation and hover values. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/line-chart-card",
+        "integrity": "sha256:414e988bf410345e39c978a37e479263e994b8b0a6934580a4345d12d25b0305"
+      }
+    },
+    {
+      "name": "contributions-card",
+      "title": "Contributions Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Contribution activity heatmap with configurable accent colors. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/contributions-card",
+        "integrity": "sha256:3890888f367c586c4a3de954f65383d4ee94a8fa0d2d476cf776c7054f087eb5"
+      }
+    },
+    {
+      "name": "radar-chart-card",
+      "title": "Radar Chart Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Radar chart with multiple series and selectable display styles. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/radar-chart-card",
+        "integrity": "sha256:06a8e0e8f852e8475aba478a7318c86cdf99b87c2c67b2677d5318c2722a49c3"
+      }
+    },
+    {
+      "name": "radial-chart-card",
+      "title": "Radial Chart Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Concentric bar chart and gauge layouts. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/radial-chart-card",
+        "integrity": "sha256:aba7c36cf5b582feee832a9a960453fb61303353e30bf9bca31a952c22ef36c9"
+      }
+    },
+    {
+      "name": "funnel-chart-card",
+      "title": "Funnel Chart Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Conversion funnel with stage values and conversion rates. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/funnel-chart-card",
+        "integrity": "sha256:ba08af81341bbcdef3386a3e6ddf445a21d35b7641a37c9ca4690be3d2e179c7"
+      }
+    },
+    {
+      "name": "sankey-chart-card",
+      "title": "Sankey Chart Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Flow diagram showing connections and their relative shares. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/sankey-chart-card",
+        "integrity": "sha256:b67488b04e15635edacfdd6df2903024e00124e8e41d743edb1ad5c299e1d970"
+      }
+    },
+    {
+      "name": "stage-bars-card",
+      "title": "Stage Bars Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Horizontal bars showing the value and share of each funnel stage. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/stage-bars-card",
+        "integrity": "sha256:f25d4f847fc9d12242739a5607390e69439e28cc1b74a95adb285ca5b6b6e274"
+      }
+    },
+    {
+      "name": "bar-list-card",
+      "title": "Bar List Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Ranked metric rows with share bars and expandable lists. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/bar-list-card",
+        "integrity": "sha256:7dc5a2a0767166a14bc205ace9475315ae74fec2f7ac481e98a96d4a6700cf1f"
+      }
+    },
+    {
+      "name": "area-chart-card",
+      "title": "Area Chart Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Multi-series area chart with stacked, overlapping, and percentage modes. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/area-chart-card",
+        "integrity": "sha256:534a6f288dadb5076c1bdb3a7f41ce5e942219a66f653b3e267f08107bd4a66d"
+      }
+    },
+    {
+      "name": "combo-chart-card",
+      "title": "Combo Chart Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Combined bar and line chart with separate value axes. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/combo-chart-card",
+        "integrity": "sha256:14b9c95777ddc22500837e67de6e4d7b326aa8e09a23f2a63af76602d99d64dd"
+      }
+    },
+    {
+      "name": "scatter-chart-card",
+      "title": "Scatter Chart Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Scatter and bubble plots with grouped series and hover details. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/scatter-chart-card",
+        "integrity": "sha256:fc000904f8cd949e8aac88c4d6a24280a0a923887fffbeaa5c86815e9c48a705"
+      }
+    },
+    {
+      "name": "heatmap-chart-card",
+      "title": "Heatmap Chart Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Matrix of values encoded by color, with a legend and hover readout. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/heatmap-chart-card",
+        "integrity": "sha256:27de76748e630f2c2bafbd0cbcc8278de66ad1dc39227d2b576afb61be5a4e88"
+      }
+    },
+    {
+      "name": "steps-card",
+      "title": "Steps Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Weekly step counts with week selection and hover values. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/steps-card",
+        "integrity": "sha256:d02cb3cad97bcb9b820b41efd507f0a74c61f78dc65197292d48d1af79ff1021"
+      }
+    },
+    {
+      "name": "sleep-score-card",
+      "title": "Sleep Score Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Sleep score ring with individual score categories and metrics. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/sleep-score-card",
+        "integrity": "sha256:549543089687a8410c3b51b5fbcd80f772596720a523499c9eed9ca5cea6d5cf"
+      }
+    },
+    {
+      "name": "activity-rings-card",
+      "title": "Activity Rings Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Concentric activity goals with supporting metrics. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/activity-rings-card",
+        "integrity": "sha256:5137806e895b4126e7319101a527796859960da49348805f311f1f81e3946bff"
+      }
+    },
+    {
+      "name": "most-active-days-card",
+      "title": "Most Active Days Card",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Monthly activity calendar with daily progress rings. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/most-active-days-card",
+        "integrity": "sha256:f2b819caf6a9427164378b163fb4742a97451b1413a499b5a5a892ff40d4311b"
+      }
+    },
+    {
+      "name": "project-board",
+      "title": "Project Board",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Kanban board with sortable tickets, editable properties, and detail panels. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/project-board",
+        "integrity": "sha256:54c146c1cff2c24cd4dab2d67e2b805d4ce3537aa8a16de724bd247ffcb5ae60"
+      }
+    },
+    {
+      "name": "agent-avatar",
+      "title": "Agent Avatar",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Animated agent avatars with customizable shapes and expressions. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/multi-agent-chat",
+        "integrity": "sha256:f7b6f002624e7f81f4232b85b141293aebaf5290c8158b9bf02b69473606070b"
+      }
+    },
+    {
+      "name": "agent-creator",
+      "title": "Agent Creator",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Editor for an agent avatar, profile, colors, and voice preferences. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/agent-creator",
+        "integrity": "sha256:881daa24f1a4612f65a479d39e0cdc34a115620b6963d4d585de3a0d2183d6e9"
+      }
+    },
+    {
+      "name": "multi-agent-chat",
+      "title": "Multi-agent Chat",
+      "tier": "pro",
+      "group": "application",
+      "type": "component",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Workspace for individual and group agent conversations. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/multi-agent-chat",
+        "integrity": "sha256:f7b6f002624e7f81f4232b85b141293aebaf5290c8158b9bf02b69473606070b"
+      }
+    },
+    {
+      "name": "template-multi-agent-chat",
+      "title": "Multi-agent Chat Template",
+      "tier": "pro",
+      "group": "application",
+      "type": "template",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Chat template with multiple agents, avatar editing, and a composer. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/multi-agent-chat",
+        "integrity": "sha256:f7b6f002624e7f81f4232b85b141293aebaf5290c8158b9bf02b69473606070b"
+      }
+    },
+    {
+      "name": "template-home-dashboard",
+      "title": "Home Dashboard Template",
+      "tier": "pro",
+      "group": "application",
+      "type": "template",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Dashboard template with KPIs, revenue, earnings, activity, and customer data. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/home-dashboard",
+        "integrity": "sha256:813c41fabb783a9d0008679b090bf7699d940feff0b34c4f4a3268f3a40b801e"
+      }
+    },
+    {
+      "name": "template-project-board",
+      "title": "Project Board Template",
+      "tier": "pro",
+      "group": "application",
+      "type": "template",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Kanban template with ticket creation, details, comments, and usage charts. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/project-board",
+        "integrity": "sha256:54c146c1cff2c24cd4dab2d67e2b805d4ce3537aa8a16de724bd247ffcb5ae60"
+      }
+    },
+    {
+      "name": "template-marketing",
+      "title": "Marketing Dashboard Template",
+      "tier": "pro",
+      "group": "application",
+      "type": "template",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Marketing dashboard template with campaign, channel, funnel, and advertising metrics. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/marketing-dashboard",
+        "integrity": "sha256:564d0cc731bc778000cd4120486e5ca97b48856dfc0b85604e59c440e184b004"
+      }
+    },
+    {
+      "name": "template-finance",
+      "title": "Finance Dashboard Template",
+      "tier": "pro",
+      "group": "application",
+      "type": "template",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Finance dashboard template with cash flow, spending, investments, and transactions. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/finance-dashboard",
+        "integrity": "sha256:b61e578113be94425bd1d0d5d8d734fd15b1cdaf01c69fdb9f8f15d8cfb75f99"
+      }
+    },
+    {
+      "name": "template-hr",
+      "title": "HR Management Template",
+      "tier": "pro",
+      "group": "application",
+      "type": "template",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "HR dashboard template with hiring, headcount, engagement, and employee data. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/hr-management",
+        "integrity": "sha256:eed6e34fe998c1204ebad2ce87f41a59b6afeae9adc11613f7ddd6cbd7809abb"
+      }
+    },
+    {
+      "name": "template-medical-profile",
+      "title": "Medical Report Template",
+      "tier": "pro",
+      "group": "application",
+      "type": "template",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Patient dashboard template with profile details and activity and sleep metrics. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/medical-profile",
+        "integrity": "sha256:6336508ecf8f4a38060be7416c139e5797f825f5c727b1c33309b18b281d3eae"
+      }
+    },
+    {
+      "name": "template-ai-chat",
+      "title": "AI Chat Template",
+      "tier": "pro",
+      "group": "application",
+      "type": "template",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "AI chat template with navigation, a code panel, and model controls. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/ai-chat",
+        "integrity": "sha256:cf6ff6bbc4ce7ae67e9bb9ed65a97dabbd3e8a0eeee208c2bfc9e805b7fd18f3"
+      }
+    },
+    {
+      "name": "template-ai-profile",
+      "title": "AI Profile Template",
+      "tier": "pro",
+      "group": "application",
+      "type": "template",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "AI activity profile template with contributions, agent activity, and token usage. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/ai-profile",
+        "integrity": "sha256:f294995d5b06846215d43f1783550172eb0cb7cccefb696d6eb9da7a53d89465"
+      }
+    },
+    {
+      "name": "template-ai-image-generation",
+      "title": "AI Image Generation Template",
+      "tier": "pro",
+      "group": "application",
+      "type": "template",
+      "indexed": true,
+      "reason": "Documented component or template.",
+      "summary": "Image generation template with prompt history, feedback, and an output gallery. Requires a BoardUI Pro license.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [],
+      "docs": {
+        "url": "https://www.boardui.com/components/ai-image-generation",
+        "integrity": "sha256:99897e8d9a62c07821ff143223fc8c2af2bdc2074bfe90590fbbf916cdb37ed6"
+      }
+    }
+  ],
+  "licenseEvidence": {
+    "url": "https://www.boardui.com/pricing",
+    "integrity": "sha256:ac3890706bfa1c537b3d1ead4d876ea06ee462d2412206761f019cec9cf91cdc",
+    "freeSourceTerms": "The official pricing documentation identifies the free components and blocks as MIT licensed."
+  }
+}

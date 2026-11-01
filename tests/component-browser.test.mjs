@@ -5,10 +5,11 @@ import { runInNewContext } from "node:vm";
 import ts from "typescript";
 import { createComponentSearch } from "../lib/component-directory.ts";
 
-test("selecting a component changes its embedded demo, and the column search filters the list", () => {
+test("selection distinguishes components sharing a docs page, and search filters the list", () => {
   const components = [
     { name: "Button", url: "https://example.com/button" },
     { name: "Dialog", url: "https://example.com/dialog" },
+    { name: "Alert Dialog", url: "https://example.com/dialog" },
   ];
   const state = [];
   let hook = 0;
@@ -49,6 +50,10 @@ test("selecting a component changes its embedded demo, and the column search fil
   assert.equal(frame(tree).props.src, components[1].url);
   assert.ok(frame(tree).props.title.includes("Dialog"));
   assert.equal(nodes(tree).find(({ type }) => type === "a").props.href, components[1].url);
+  nodes(tree).filter(({ props }) => "aria-pressed" in props)[2].props.onClick();
+  tree = render();
+  assert.ok(frame(tree).props.title.includes("Alert Dialog"));
+  assert.deepEqual(nodes(tree).filter(({ props }) => "aria-pressed" in props).map(({ props }) => props["aria-pressed"]), [false, false, true]);
   assert.equal(field(tree).props.placeholder, "Search components");
   field(tree).props.onChange("button");
   assert.equal(frame(render()).props.src, components[0].url);

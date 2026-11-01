@@ -80,6 +80,17 @@ export interface Library {
 
 export const libraries: Library[] = [
   {
+    name: "BoardUI",
+    slug: "boardui",
+    addedAt: "2026-11-01T22:21:31Z",
+    description: "React and Tailwind CSS components, charts, and templates for dashboards and AI interfaces, distributed as editable source files.",
+    url: "https://www.boardui.com",
+    category: "Component Library",
+    stacks: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    useCases: ["Dashboards", "Data Visualization", "Accessibility-first", "Rapid Prototyping"],
+    tags: ["react aria", "agentic ui", "ai chat", "figma", "rtl", "copy and paste", "design tokens"],
+  },
+  {
     name: "Quoin",
     slug: "quoin-ui",
     addedAt: "2026-10-28T15:12:49Z",
