@@ -1442,7 +1442,7 @@
         "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
         "gaps": [
           "The sample is wrapped from the published TorchUI documentation example.",
-          "The published recipe passes a password prop unsupported by the pinned PasswordStrengthIndicator; this preview uses the analysis from TorchUI’s documented PasswordStrengthIndicator example to supply its required strength, score, and details.",
+          "The published recipe passes a password prop unsupported by the pinned PasswordStrengthIndicator; this preview uses the analysis from TorchUI’s documented PasswordStrengthIndicator example to supply the required strength and optional score and details.",
           "The preview adds the new-password autocomplete hint to the password input."
         ]
       },
