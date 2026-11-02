@@ -1,0 +1,17 @@
+{
+  "name": "col-preview-rocksolid",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "solid-js": "1.9.15",
+    "babel-preset-solid": "1.9.15",
+    "@babel/core": "7.29.7",
+    "@babel/preset-typescript": "7.28.5",
+    "tailwindcss": "4.3.3",
+    "@tailwindcss/cli": "4.3.3",
+    "tailwind-variants": "3.3.1",
+    "tailwind-merge": "3.5.0",
+    "ts-deepmerge": "8.0.0",
+    "valibot": "1.4.2"
+  }
+}
