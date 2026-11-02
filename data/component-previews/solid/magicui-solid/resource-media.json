@@ -1,0 +1,39 @@
+{
+  "chunkSize": 1500000,
+  "assets": {
+    "https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4": {
+      "url": "https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4",
+      "bytes": 392139,
+      "mediaType": "video/mp4",
+      "downloadUrl": "https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4",
+      "resolvedUrl": "https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4",
+      "attribution": {
+        "name": "Pexels Backlight demo video (lossy 720p excerpt)",
+        "license": "Pexels License",
+        "url": "https://www.pexels.com/license/"
+      },
+      "original": {
+        "sha256": "786875befed7288925443d185ce6a328c507a0fb9699da5b523bb600dfb98f80",
+        "bytes": 43852026
+      },
+      "transformation": "Lossy 2-second excerpt from source seconds 3–5, converted to 720p H.264, 30 fps, no audio, CRF 30 to satisfy Col's media limits. The excerpt loops in the original component; it is not the complete original video.",
+      "sha256": "637d45b338d25f0c00e223822a735ce77de52c9cfc1aa9b615560349883d4b3c",
+      "file": "637d45b338d25f0c00e223822a735ce77de52c9cfc1aa9b615560349883d4b3c.mp4",
+      "chunks": [
+        "637d45b338d25f0c00e223822a735ce77de52c9cfc1aa9b615560349883d4b3c"
+      ]
+    }
+  },
+  "components": {
+    "magicui-solid/Backlight": {
+      "assets": [
+        "https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4"
+      ]
+    },
+    "magicui-solid/Tweet Card": {
+      "assets": [
+        "https://videos.pexels.com/video-files/27180348/12091515_2560_1440_50fps.mp4"
+      ]
+    }
+  }
+}
