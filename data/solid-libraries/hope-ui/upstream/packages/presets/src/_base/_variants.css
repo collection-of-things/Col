@@ -1,0 +1,141 @@
+/*
+ * @hope-ui/presets — shared structural layer (`_base/`), not a published preset subpath.
+ *
+ * Custom variants used across every preset. These are contract-level, not per-preset aesthetic, so they
+ * live here once and each preset's `tailwind.css` imports them.
+ *
+ * ── data-* state variants ─────────────────────────────────────────────────────────────────────────
+ * Style hooks for the state our `@hope-ui/primitives` emit, following the data-* attribute conventions
+ * of hope-ui's stated API inspirations — React Aria (boolean `data-<state>` attributes) and Base UI —
+ * with a Radix-style `data-state="<state>"` fallback so a dropped-in interop component styles the same
+ * way. This variant list is the **canonical source of truth for data-* names**; a primitive that
+ * emits a different spelling for the same concept is renamed to match it (e.g. `data-outside-month`).
+ *
+ * Our primitives emit a boolean as present-empty (`data-selected=""`) or absent — never `="false"` —
+ * via the `value() || null` convention; the `:not([data-x="false"])` guard only matters for an external
+ * library that writes `="false"` explicitly.
+ *
+ * Two deliberate choices:
+ *   - `:where(...)` (not `:is(...)`) keeps every variant at ZERO added specificity — like the `dark`
+ *     variant below — so variant order is pure source order and a later utility always wins the cascade.
+ *   - Declaring a variant costs nothing until a utility uses it: Tailwind emits CSS only for variants
+ *     actually applied, so the forward-looking entries here (for components still on the roadmap —
+ *     Menu/Select/Listbox/Switch/Tree/DnD/Resizable/…) add zero bytes until those components ship.
+ *
+ * `data-presence` — our overlay lifecycle enum (`entering|entered|exiting|exited`, see
+ * `@hope-ui/primitives` `createPresence`) — gets its OWN `data-presence-*` variants rather than being
+ * folded into the generic `data-open`/`data-entering` ones: each targets exactly the attribute its
+ * name says, so `data-open:` never silently fires on an element that only has `data-presence`.
+ */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Interaction */
+@custom-variant data-hovered (&:where([data-hovered]:not([data-hovered="false"]), [data-state="hovered"]));
+@custom-variant data-pressed (&:where([data-pressed]:not([data-pressed="false"]), [data-state="pressed"]));
+@custom-variant data-focused (&:where([data-focused]:not([data-focused="false"]), [data-state="focused"]));
+@custom-variant data-focus-visible (&:where([data-focus-visible]:not([data-focus-visible="false"]), [data-state="focus-visible"]));
+
+/* Common state */
+@custom-variant data-disabled (&:where([data-disabled]:not([data-disabled="false"]), [data-state="disabled"]));
+@custom-variant data-selected (&:where([data-selected]:not([data-selected="false"]), [data-state="selected"]));
+@custom-variant data-readonly (&:where([data-readonly]:not([data-readonly="false"]), [data-state="readonly"]));
+@custom-variant data-invalid (&:where([data-invalid]:not([data-invalid="false"]), [data-state="invalid"]));
+@custom-variant data-required (&:where([data-required]:not([data-required="false"]), [data-state="required"]));
+@custom-variant data-loading (&:where([data-loading]:not([data-loading="false"]), [data-state="loading"]));
+@custom-variant data-empty (&:where([data-empty]:not([data-empty="false"]), [data-state="empty"]));
+@custom-variant data-placeholder (&:where([data-placeholder]:not([data-placeholder="false"]), [data-state="placeholder"]));
+@custom-variant data-current (&:where([data-current]:not([data-current="false"]), [data-state="current"]));
+@custom-variant data-active (&:where([data-active]:not([data-active="false"]), [data-state="active"]));
+
+/* Disclosure / overlay */
+@custom-variant data-open (&:where([data-open]:not([data-open="false"]), [data-state="open"]));
+@custom-variant data-closed (&:where([data-closed]:not([data-closed="false"]), [data-state="closed"]));
+@custom-variant data-expanded (&:where([data-expanded]:not([data-expanded="false"]), [data-state="expanded"]));
+
+/* Overlay lifecycle — `data-presence` enum (createPresence). Each variant matches exactly one enum
+ * value, so nothing here silently fires on the generic `data-open`/`data-entering` variants above. */
+@custom-variant data-entering (&:where([data-presence="entering"]));
+@custom-variant data-entered (&:where([data-presence="entered"]));
+@custom-variant data-exiting (&:where([data-presence="exiting"]));
+@custom-variant data-exited (&:where([data-presence="exited"]));
+
+/* Floating layers (Popover/Tooltip/Select/Combobox/Menu/HoverCard) — `data-side` + `data-align`,
+   emitted by the positioner, the content and the arrow from `createFloating`'s RESOLVED output.
+   `data-side` is ALWAYS physical, even where the consumer asked for a logical `side: "inline-start"`:
+   it reports where the layer LANDED after `flip`, which is measured geometry, and the properties a
+   floating recipe drives — `translate`, `transform-origin`, `inset` — have no logical form to pair a
+   logical value with. Distinct from the authored `data-placement` further down.
+   There is deliberately NO `data-side-inline-*` pair: a recipe needing an inline-relative hook writes
+   `ltr:`/`rtl:`-scoped rules over `data-side-left`/`-right`, the sanctioned escape hatch that passes
+   both `check:rtl-safety` and `assertLogicalPropertyConformance`. `__internal__/theming.md`
+   § "Correctly physical". */
+@custom-variant data-side-top (&:where([data-side="top"]));
+@custom-variant data-side-bottom (&:where([data-side="bottom"]));
+@custom-variant data-side-left (&:where([data-side="left"]));
+@custom-variant data-side-right (&:where([data-side="right"]));
+
+@custom-variant data-align-start (&:where([data-align="start"]));
+@custom-variant data-align-center (&:where([data-align="center"]));
+@custom-variant data-align-end (&:where([data-align="end"]));
+
+/* The arrow had to be clamped away from the anchor's centre (`centerOffset !== 0`) — the anchor is too
+   narrow to point at honestly. Emitted rather than hidden in an inline style, so the RECIPE decides how
+   a clamped arrow disappears. */
+@custom-variant data-uncentered (&:where([data-uncentered]:not([data-uncentered="false"]), [data-state="uncentered"]));
+
+/* Form controls */
+@custom-variant data-checked (&:where([data-checked]:not([data-checked="false"]), [data-state="checked"]));
+@custom-variant data-unchecked (&:where([data-unchecked]:not([data-unchecked="false"]), [data-state="unchecked"]));
+@custom-variant data-indeterminate (&:where([data-indeterminate]:not([data-indeterminate="false"]), [data-state="indeterminate"]));
+
+/* Calendar (createCalendar) */
+@custom-variant data-today (&:where([data-today]:not([data-today="false"]), [data-state="today"]));
+@custom-variant data-outside-month (&:where([data-outside-month]:not([data-outside-month="false"]), [data-state="outside-month"]));
+@custom-variant data-unavailable (&:where([data-unavailable]:not([data-unavailable="false"]), [data-state="unavailable"]));
+@custom-variant data-selection-start (&:where([data-selection-start]:not([data-selection-start="false"]), [data-state="selection-start"]));
+@custom-variant data-selection-end (&:where([data-selection-end]:not([data-selection-end="false"]), [data-state="selection-end"]));
+/* The band's interior — the only one of the three that is DERIVED rather than emitted. React Aria has
+ * no middle attribute: the calendar paints ONE band (tentative while a range is anchored, committed
+ * when it is not), so the interior is exactly "selected, and neither endpoint". Deriving it here keeps
+ * every recipe from respelling that chain, at zero DOM cost. */
+@custom-variant data-selection-middle (&:where([data-selected]:not([data-selection-start]):not([data-selection-end])));
+
+/* Collection (createCollection / list + grid navigation) */
+@custom-variant data-first (&:where([data-first]:not([data-first="false"]), [data-state="first"]));
+@custom-variant data-last (&:where([data-last]:not([data-last="false"]), [data-state="last"]));
+@custom-variant data-odd (&:where([data-odd]:not([data-odd="false"]), [data-state="odd"]));
+@custom-variant data-even (&:where([data-even]:not([data-even="false"]), [data-state="even"]));
+
+/* Tree */
+@custom-variant data-parent (&:where([data-parent]:not([data-parent="false"]), [data-state="parent"]));
+@custom-variant data-has-child-items (&:where([data-has-child-items]:not([data-has-child-items="false"]), [data-state="has-child-items"]));
+
+/* Drag & drop */
+@custom-variant data-dragging (&:where([data-dragging]:not([data-dragging="false"]), [data-state="dragging"]));
+@custom-variant data-drop-target (&:where([data-drop-target]:not([data-drop-target="false"]), [data-state="drop-target"]));
+@custom-variant data-allows-dragging (&:where([data-allows-dragging]:not([data-allows-dragging="false"]), [data-state="allows-dragging"]));
+@custom-variant data-allows-dropping (&:where([data-allows-dropping]:not([data-allows-dropping="false"]), [data-state="allows-dropping"]));
+
+/* Resize */
+@custom-variant data-resizing (&:where([data-resizing]:not([data-resizing="false"]), [data-state="resizing"]));
+@custom-variant data-resizable (&:where([data-resizable]:not([data-resizable="false"]), [data-state="resizable"]));
+
+/* Value attributes (enumerated, not boolean — no `data-state` fallback) */
+@custom-variant data-horizontal (&:where([data-orientation="horizontal"]));
+@custom-variant data-vertical (&:where([data-orientation="vertical"]));
+
+@custom-variant data-single (&:where([data-selection-mode="single"]));
+@custom-variant data-multiple (&:where([data-selection-mode="multiple"]));
+
+/* `data-placement` is the AUTHORED placement of an absolutely-positioned overlay — Dialog, Sheet,
+   Drawer — which never flips and never shifts. Not to be confused with `data-side` above, which
+   reports a floating layer's measured, post-`flip` landing. Physical values, so these four are NOT an
+   RTL bug — `__internal__/theming.md` § "Correctly physical". */
+@custom-variant data-placement-top (&:where([data-placement="top"]));
+@custom-variant data-placement-bottom (&:where([data-placement="bottom"]));
+@custom-variant data-placement-left (&:where([data-placement="left"]));
+@custom-variant data-placement-right (&:where([data-placement="right"]));
+
+@custom-variant data-grid (&:where([data-layout="grid"]));
+@custom-variant data-stack (&:where([data-layout="stack"]));

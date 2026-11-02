@@ -1,0 +1,104 @@
+/**
+ * CodeBlock Prism token colors. Import in your app:
+ *   import '@torchui/solid/styles/code-block-tokens.css'
+ *
+ * Theme via CSS variables (e.g. in Tailwind @theme or :root / .dark):
+ *   --code-token-default   untokenized text + base token
+ *   --code-token-comment   comment, prolog, doctype
+ *   --code-token-punctuation
+ *   --code-token-keyword   keyword, boolean
+ *   --code-token-function  function, class-name
+ *   --code-token-string    string, char, attr-value
+ *   --code-token-number
+ *   --code-token-property  property, tag, symbol, selector, attr-name, builtin
+ *   --code-token-operator  operator, entity, url
+ *   --code-token-variable  regex, important, variable
+ *
+ * Set on :root (or @theme) for light; set on .dark for dark. For CodeBlock with dark prop
+ * to show dark tokens in light mode, set the same dark variables on .code-block-dark in your app:
+ *   .code-block-dark pre[data-torchui="code-block"] { ...dark vars... }
+ */
+
+/* Base rule with safe fallbacks */
+pre[data-torchui="code-block"] {
+	color: var(--code-token-default, currentColor);
+}
+pre[data-torchui="code-block"] :is(.token, .token *) {
+	color: var(--code-token-default, currentColor);
+}
+
+/* Token-specific colors with fallbacks to default */
+pre[data-torchui="code-block"] .token.comment,
+pre[data-torchui="code-block"] .token.prolog,
+pre[data-torchui="code-block"] .token.doctype { 
+	color: var(--code-token-comment, var(--code-token-default, currentColor)); 
+}
+
+pre[data-torchui="code-block"] .token.punctuation { 
+	color: var(--code-token-punctuation, var(--code-token-default, currentColor)); 
+}
+
+pre[data-torchui="code-block"] .token.keyword,
+pre[data-torchui="code-block"] .token.boolean { 
+	color: var(--code-token-keyword, var(--code-token-default, currentColor)); 
+}
+
+pre[data-torchui="code-block"] .token.function,
+pre[data-torchui="code-block"] .token.class-name { 
+	color: var(--code-token-function, var(--code-token-default, currentColor)); 
+}
+
+pre[data-torchui="code-block"] .token.string,
+pre[data-torchui="code-block"] .token.char,
+pre[data-torchui="code-block"] .token.attr-value { 
+	color: var(--code-token-string, var(--code-token-default, currentColor)); 
+}
+
+pre[data-torchui="code-block"] .token.number { 
+	color: var(--code-token-number, var(--code-token-default, currentColor)); 
+}
+
+pre[data-torchui="code-block"] .token.property,
+pre[data-torchui="code-block"] .token.tag,
+pre[data-torchui="code-block"] .token.symbol,
+pre[data-torchui="code-block"] .token.selector,
+pre[data-torchui="code-block"] .token.attr-name,
+pre[data-torchui="code-block"] .token.builtin { 
+	color: var(--code-token-property, var(--code-token-default, currentColor)); 
+}
+
+pre[data-torchui="code-block"] .token.operator,
+pre[data-torchui="code-block"] .token.entity,
+pre[data-torchui="code-block"] .token.url { 
+	color: var(--code-token-operator, var(--code-token-default, currentColor)); 
+}
+
+pre[data-torchui="code-block"] .token.regex,
+pre[data-torchui="code-block"] .token.important,
+pre[data-torchui="code-block"] .token.variable { 
+	color: var(--code-token-variable, var(--code-token-default, currentColor)); 
+}
+
+/* Additional common Prism token aliases */
+pre[data-torchui="code-block"] .token.parameter,
+pre[data-torchui="code-block"] .token.constant,
+pre[data-torchui="code-block"] .token.namespace { 
+	color: var(--code-token-variable, var(--code-token-default, currentColor)); 
+}
+
+pre[data-torchui="code-block"] .token.atrule { 
+	color: var(--code-token-keyword, var(--code-token-default, currentColor)); 
+}
+
+pre[data-torchui="code-block"] .token.interpolation,
+pre[data-torchui="code-block"] .token.interpolation-punctuation { 
+	color: var(--code-token-string, var(--code-token-default, currentColor)); 
+}
+
+pre[data-torchui="code-block"] .token.inserted { 
+	color: var(--code-token-string, var(--code-token-default, currentColor)); 
+}
+
+pre[data-torchui="code-block"] .token.deleted { 
+	color: var(--code-token-operator, var(--code-token-default, currentColor)); 
+}

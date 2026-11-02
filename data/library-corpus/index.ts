@@ -1,6 +1,7 @@
 import type { LibraryCorpusEntry } from "./types";
 import { quoinCorpus } from "./quoin-ui.ts";
 import { boarduiCorpus } from "./boardui.ts";
+import { solidCorpora } from "./solid-libraries.ts";
 
 /**
  * The deep-coverage documentation corpus, one entry per library.
@@ -20,6 +21,7 @@ import { boarduiCorpus } from "./boardui.ts";
  */
 export const libraryCorpus: LibraryCorpusEntry[] = [
   boarduiCorpus,
+  ...solidCorpora,
   quoinCorpus,
   {
     slug: "21st-dev",

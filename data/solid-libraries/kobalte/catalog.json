@@ -1,0 +1,559 @@
+{
+  "library": {
+    "name": "Kobalte",
+    "slug": "kobalte",
+    "addedAt": "2026-10-30T00:17:02+05:30",
+    "description": "Unstyled, accessible SolidJS primitives with composable APIs and data attributes for custom styling.",
+    "url": "https://kobalte.dev",
+    "category": "Component Library",
+    "stacks": [
+      "SolidJS",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "useCases": [
+      "Dashboards",
+      "Accessibility-first"
+    ],
+    "tags": [
+      "headless",
+      "unstyled",
+      "primitives"
+    ]
+  },
+  "details": {
+    "docsUrl": "https://kobalte.dev/docs/core/overview/introduction",
+    "repoUrl": "https://github.com/kobaltedev/kobalte",
+    "pricing": {
+      "model": "free",
+      "summary": "Kobalte is free and open source under the MIT license.",
+      "license": "MIT",
+      "source": "https://raw.githubusercontent.com/kobaltedev/kobalte/675b4a11f4f074007c98b47a573760a1b60849ff/LICENSE.md"
+    }
+  },
+  "components": [
+    {
+      "name": "Button",
+      "url": "https://kobalte.dev/docs/core/components/button",
+      "summary": "An accessible button with disabled-state behavior and native keyboard activation.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Dialog",
+      "url": "https://kobalte.dev/docs/core/components/dialog",
+      "summary": "A modal dialog with focus management, dismissal, and an original styled portal.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ],
+      "concept": "dialog"
+    },
+    {
+      "name": "Tabs",
+      "url": "https://kobalte.dev/docs/core/components/tabs",
+      "summary": "Keyboard-accessible tabs with a moving selection indicator and content panels.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Accordion",
+      "url": "https://kobalte.dev/docs/core/components/accordion",
+      "summary": "A vertically stacked set of interactive headings that each reveal an associated section of content.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Alert Dialog",
+      "url": "https://kobalte.dev/docs/core/components/alert-dialog",
+      "summary": "A modal dialog that interrupts the user's workflow to communicate an important message and acquire a response. Examples include action confirmation prompts and error message confirmations. The alertdialog role enables assistive technologies and browsers to distinguish alert dialogs from other dialogs so they have the option of giving alert dialogs special treatment, such as playing a system alert sound.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Alert",
+      "url": "https://kobalte.dev/docs/core/components/alert",
+      "summary": "Display a brief, important message in a way that attracts the user's attention without interrupting the user's task.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Badge",
+      "url": "https://kobalte.dev/docs/core/components/badge",
+      "summary": "A `Badge` component is used to display small pieces of information or status indicators.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Breadcrumbs",
+      "url": "https://kobalte.dev/docs/core/components/breadcrumbs",
+      "summary": "Show hierarchy and navigational context for a user’s location within an application.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "url": "https://kobalte.dev/docs/core/components/checkbox",
+      "summary": "A control that allows the user to toggle between checked and not checked.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Collapsible",
+      "url": "https://kobalte.dev/docs/core/components/collapsible",
+      "summary": "An interactive component which expands/collapses a content.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Color Area",
+      "url": "https://kobalte.dev/docs/core/components/color-area",
+      "summary": "Allows users to adjust two channels of an RGB, HSL, or HSB color value against a two-dimensional gradient background.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Color Channel Field",
+      "url": "https://kobalte.dev/docs/core/components/color-channel-field",
+      "summary": "A number input that allow users to edit individual color channel value.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Color Field",
+      "url": "https://kobalte.dev/docs/core/components/color-field",
+      "summary": "Allows users to enter and adjust a hex color value.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Color Slider",
+      "url": "https://kobalte.dev/docs/core/components/color-slider",
+      "summary": "Adjusts an individual channel of a color value.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Color Swatch",
+      "url": "https://kobalte.dev/docs/core/components/color-swatch",
+      "summary": "Displays a preview of a selected color.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Color Wheel",
+      "url": "https://kobalte.dev/docs/core/components/color-wheel",
+      "summary": "Allows users to adjust the hue of an HSL or HSB color value on a circular track.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Combobox",
+      "url": "https://kobalte.dev/docs/core/components/combobox",
+      "summary": "Combines a text input with a listbox, allowing users to filter a list of options to items matching a query.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Context Menu",
+      "url": "https://kobalte.dev/docs/core/components/context-menu",
+      "summary": "Displays a menu located at the pointer, triggered by a right-click or a long-press.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Dropdown Menu",
+      "url": "https://kobalte.dev/docs/core/components/dropdown-menu",
+      "summary": "Displays a menu to the user —such as a set of actions or functions— triggered by a button.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "File Field",
+      "url": "https://kobalte.dev/docs/core/components/file-field",
+      "summary": "A file input to upload multiple files, with ability to drag and drop files.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Hover Card",
+      "url": "https://kobalte.dev/docs/core/components/hover-card",
+      "summary": "Allows sighted users to preview content available behind a link.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Image",
+      "url": "https://kobalte.dev/docs/core/components/image",
+      "summary": "An image element with an optional fallback for loading and error status.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Link",
+      "url": "https://kobalte.dev/docs/core/components/link",
+      "summary": "Allows a user to navigate to another page or resource within a web page or application.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Menubar",
+      "url": "https://kobalte.dev/docs/core/components/menubar",
+      "summary": "A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Meter",
+      "url": "https://kobalte.dev/docs/core/components/meter",
+      "summary": "Displays numeric value that varies within a defined range",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Navigation Menu",
+      "url": "https://kobalte.dev/docs/core/components/navigation-menu",
+      "summary": "A collection of links for navigating websites.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Number Field",
+      "url": "https://kobalte.dev/docs/core/components/number-field",
+      "summary": "A number input that allow users to input custom number entries with a keyboard.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Pagination",
+      "url": "https://kobalte.dev/docs/core/components/pagination",
+      "summary": "Allows the user to select a specific page from a range of pages.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Popover",
+      "url": "https://kobalte.dev/docs/core/components/popover",
+      "summary": "A popover positioned relative to an anchor element.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Progress",
+      "url": "https://kobalte.dev/docs/core/components/progress",
+      "summary": "Show either determinate or indeterminate progress of an operation over time.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Radio Group",
+      "url": "https://kobalte.dev/docs/core/components/radio-group",
+      "summary": "A set of checkable buttons, known as radio buttons, where no more than one of the buttons can be checked at a time.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Rating",
+      "url": "https://kobalte.dev/docs/core/components/rating",
+      "summary": "Allows users to rate items using a set of icons.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Search",
+      "url": "https://kobalte.dev/docs/core/components/search",
+      "summary": "Search a searchbox text input with a menu. Handle the case where dataset filtering needs to occur outside the combobox component.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js",
+        "minisearch"
+      ]
+    },
+    {
+      "name": "Segmented Control",
+      "url": "https://kobalte.dev/docs/core/components/segmented-control",
+      "summary": "A linear set of two or more segments, each of which functions as a radio input, and a default value is required.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Select",
+      "url": "https://kobalte.dev/docs/core/components/select",
+      "summary": "Displays a list of options for the user to pick from — triggered by a button.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js",
+        "@tanstack/solid-virtual"
+      ]
+    },
+    {
+      "name": "Separator",
+      "url": "https://kobalte.dev/docs/core/components/separator",
+      "summary": "Visually or semantically separates content.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "url": "https://kobalte.dev/docs/core/components/skeleton",
+      "summary": "Visually indicates content loading",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Slider",
+      "url": "https://kobalte.dev/docs/core/components/slider",
+      "summary": "An input where the user selects a value from within a given range.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Switch",
+      "url": "https://kobalte.dev/docs/core/components/switch",
+      "summary": "A control that allows users to choose one of two values: on or off.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Text Field",
+      "url": "https://kobalte.dev/docs/core/components/text-field",
+      "summary": "A text input that allow users to input custom text entries with a keyboard.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Time Field",
+      "url": "https://kobalte.dev/docs/core/components/time-field",
+      "summary": "A time field allows users to enter and edit time values using a keyboard. Each part of a time value is displayed in an individually editable segment.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Toast",
+      "url": "https://kobalte.dev/docs/core/components/toast",
+      "summary": "A succinct message that is displayed temporarily.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Toggle Button",
+      "url": "https://kobalte.dev/docs/core/components/toggle-button",
+      "summary": "A two-state button that can be either on (pressed) or off (not pressed).",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Toggle Group",
+      "url": "https://kobalte.dev/docs/core/components/toggle-group",
+      "summary": "A set of two-state buttons that can be toggled on (pressed) or off (not pressed).",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "url": "https://kobalte.dev/docs/core/components/tooltip",
+      "summary": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    },
+    {
+      "name": "I18n Provider",
+      "url": "https://kobalte.dev/docs/core/components/i18n-provider",
+      "summary": "Provides the locale for the application to all child components.",
+      "kind": "primitive",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "solid-js"
+      ]
+    }
+  ],
+  "compatibility": [
+    {
+      "subject": "solid-js",
+      "constraint": "^1.9.8; preview pinned to 1.9.17",
+      "status": "supported",
+      "evidence": "https://registry.npmjs.org/@kobalte/core/0.13.14"
+    },
+    {
+      "subject": "tailwindcss",
+      "constraint": "v3 uses @kobalte/tailwindcss; v4 uses native data attributes",
+      "status": "supported",
+      "evidence": "https://kobalte.dev/docs/core/overview/styling"
+    }
+  ]
+}

@@ -1,0 +1,1274 @@
+{
+  "library": {
+    "name": "Nikala UI",
+    "slug": "nikala-ui",
+    "description": "Copy-paste SolidJS components and reactive primitives with Tailwind CSS v4 themes and a Tauri desktop suite.",
+    "url": "https://nikala.dev/",
+    "category": "Component Library",
+    "stacks": [
+      "SolidJS",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "useCases": [
+      "Dashboards",
+      "Rapid Prototyping"
+    ],
+    "tags": [
+      "copy-paste",
+      "design tokens",
+      "Tauri",
+      "reactive primitives"
+    ],
+    "addedAt": "2026-10-29T19:32:25Z"
+  },
+  "details": {
+    "docsUrl": "https://nikala.dev/docs",
+    "repoUrl": "https://github.com/nikala-ui/ui",
+    "pricing": {
+      "model": "free",
+      "summary": "Free source components under the project's MIT license.",
+      "license": "MIT",
+      "source": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/LICENSE"
+    }
+  },
+  "components": [
+    {
+      "name": "Accordion",
+      "url": "https://nikala.dev/docs/components/accordion",
+      "summary": "Vertically stacked collapsible content sections supporting single and multiple modes built on Kobalte primitives.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Alert",
+      "url": "https://nikala.dev/docs/components/alert",
+      "summary": "Callout banner for user feedback with status variants, dismiss button, and timer.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "API Table",
+      "url": "https://nikala.dev/docs/components/api-table",
+      "summary": "All reactive properties and event bindings supported by the Button component.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "badge",
+        "section-heading",
+        "table"
+      ]
+    },
+    {
+      "name": "Aspect Ratio",
+      "url": "https://nikala.dev/docs/components/aspect-ratio",
+      "summary": "Displays content within a specific aspect ratio using CSS aspect-ratio in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Avatar",
+      "url": "https://nikala.dev/docs/components/avatar",
+      "summary": "An image element with an automatic fallback mechanism for representing users.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Badge",
+      "url": "https://nikala.dev/docs/components/badge",
+      "summary": "Displays a status indicator or tag badge with multiple variants in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Banner",
+      "url": "https://nikala.dev/docs/components/banner",
+      "summary": "An announcement banner with sticky positioning, dismissal persistence, auto-hide timer, Lucide icons, and variant styles.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Breadcrumb",
+      "url": "https://nikala.dev/docs/components/breadcrumb",
+      "summary": "Displays the path to the current resource using a hierarchy of accessible links.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Bubble",
+      "url": "https://nikala.dev/docs/components/bubble",
+      "summary": "Chat message bubble container supporting variants, grouped consecutive bubbles, and emoji reactions for SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Button",
+      "url": "https://nikala.dev/docs/components/button",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "spinner"
+      ],
+      "kind": "primitive",
+      "summary": "Interactive button component with variant and size options for SolidJS and Tailwind CSS v4.",
+      "verifiedAt": "2026-10-30",
+      "concept": "button"
+    },
+    {
+      "name": "Button Group",
+      "url": "https://nikala.dev/docs/components/button-group",
+      "summary": "Groups related buttons into a connected horizontal or vertical control for SolidJS and Tailwind CSS v4.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Callout",
+      "url": "https://nikala.dev/docs/components/callout",
+      "summary": "Semantic callout and alert block with status color variants, automatic icons, and titles for documentation and notices.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Card",
+      "url": "https://nikala.dev/docs/components/card",
+      "summary": "Displays a card with header, title, description, content, and footer sections.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Checkbox",
+      "url": "https://nikala.dev/docs/components/checkbox",
+      "summary": "Checkable input box with custom checkmark indicator and reactive signal support in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Code Block",
+      "url": "https://nikala.dev/docs/components/code-block",
+      "summary": "A code block container with filename header, language badge, and interactive copy to clipboard button.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "@shikijs/langs",
+        "@shikijs/themes",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "shiki",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "spinner",
+        "tabs",
+        "tooltip"
+      ]
+    },
+    {
+      "name": "Code Group",
+      "url": "https://nikala.dev/docs/components/code-group",
+      "summary": "Tabbed multi-file code snippet container built directly on Nikala UI Tabs primitives.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "tabs"
+      ]
+    },
+    {
+      "name": "Collapsible",
+      "url": "https://nikala.dev/docs/components/collapsible",
+      "summary": "An interactive component that expands and collapses content panels with smooth height transitions.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Combobox",
+      "url": "https://nikala.dev/docs/components/combobox",
+      "summary": "Searchable dropdown component built on Kobalte with single/multi-select, tags, clear button, groups, and custom avatars.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "scroll-area"
+      ]
+    },
+    {
+      "name": "Command",
+      "url": "https://nikala.dev/docs/components/command",
+      "summary": "Fast, accessible command palette and search modal built on Kobalte Dialog primitives with auto-filtering in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "input-group",
+        "kbd",
+        "list",
+        "scroll-area"
+      ]
+    },
+    {
+      "name": "Component Viewer",
+      "url": "https://nikala.dev/docs/components/component-viewer",
+      "summary": "Advanced interactive component playground with responsive screen size emulation, background grid patterns, fullscreen expand, AI prompts, and syntax highlighting.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "@shikijs/langs",
+        "@shikijs/themes",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "shiki",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "code-block",
+        "spinner",
+        "tabs",
+        "tooltip"
+      ]
+    },
+    {
+      "name": "Container",
+      "url": "https://nikala.dev/docs/components/container",
+      "summary": "A responsive layout container constraining maximum width with semantic padding tokens.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Context Menu",
+      "url": "https://nikala.dev/docs/components/context-menu",
+      "summary": "Displays a custom menu located at the pointer status upon right click, built on Kobalte primitives in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "kbd",
+        "scroll-area",
+        "separator"
+      ]
+    },
+    {
+      "name": "Dialog",
+      "url": "https://nikala.dev/docs/components/dialog",
+      "summary": "Accessible modal window overlaying the main content built on Kobalte primitives with backdrop blur and outside-click controls.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "scroll-area"
+      ]
+    },
+    {
+      "name": "Dropdown Menu",
+      "url": "https://nikala.dev/docs/components/dropdown-menu",
+      "summary": "Full-featured context menu with submenus, checkboxes, radio items, shortcuts, and trigger buttons built on Kobalte.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "scroll-area"
+      ]
+    },
+    {
+      "name": "Dropzone",
+      "url": "https://nikala.dev/docs/components/dropzone",
+      "summary": "A lightweight, accessible drag-and-drop file upload zone built with SolidJS and Tailwind CSS v4.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@tiptap/core",
+        "@tiptap/extension-character-count",
+        "@tiptap/extension-highlight",
+        "@tiptap/extension-image",
+        "@tiptap/extension-link",
+        "@tiptap/extension-placeholder",
+        "@tiptap/extension-subscript",
+        "@tiptap/extension-superscript",
+        "@tiptap/extension-table",
+        "@tiptap/extension-task-item",
+        "@tiptap/extension-task-list",
+        "@tiptap/extension-text-align",
+        "@tiptap/extension-typography",
+        "@tiptap/extension-underline",
+        "@tiptap/starter-kit",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge",
+        "tiptap-markdown"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Empty",
+      "url": "https://nikala.dev/docs/components/empty",
+      "summary": "A compound empty-state layout for collections, search results, and initial application states.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Field",
+      "url": "https://nikala.dev/docs/components/field",
+      "summary": "A consistent form field layout for labels, controls, descriptions, and validation errors.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "label"
+      ]
+    },
+    {
+      "name": "File Tree",
+      "url": "https://nikala.dev/docs/components/file-tree",
+      "summary": "Hierarchical directory file tree with collapsible folders and file icons built on Collapsible primitives.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "collapsible"
+      ]
+    },
+    {
+      "name": "Footer",
+      "url": "https://nikala.dev/docs/components/footer",
+      "summary": "A responsive, accessible, and structured bottom navigation layout suite for websites, landing pages, and web applications in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Form",
+      "url": "https://nikala.dev/docs/components/form",
+      "summary": "A semantic form layout wrapper designed to work with the createForm SolidJS reactive primitive.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@tiptap/core",
+        "@tiptap/extension-character-count",
+        "@tiptap/extension-highlight",
+        "@tiptap/extension-image",
+        "@tiptap/extension-link",
+        "@tiptap/extension-placeholder",
+        "@tiptap/extension-subscript",
+        "@tiptap/extension-superscript",
+        "@tiptap/extension-table",
+        "@tiptap/extension-task-item",
+        "@tiptap/extension-task-list",
+        "@tiptap/extension-text-align",
+        "@tiptap/extension-typography",
+        "@tiptap/extension-underline",
+        "@tiptap/starter-kit",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge",
+        "tiptap-markdown"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Form Message",
+      "url": "https://nikala.dev/docs/components/form-message",
+      "summary": "Validation message helper connected to createForm errors and touched state.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@tiptap/core",
+        "@tiptap/extension-character-count",
+        "@tiptap/extension-highlight",
+        "@tiptap/extension-image",
+        "@tiptap/extension-link",
+        "@tiptap/extension-placeholder",
+        "@tiptap/extension-subscript",
+        "@tiptap/extension-superscript",
+        "@tiptap/extension-table",
+        "@tiptap/extension-task-item",
+        "@tiptap/extension-task-list",
+        "@tiptap/extension-text-align",
+        "@tiptap/extension-typography",
+        "@tiptap/extension-underline",
+        "@tiptap/starter-kit",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge",
+        "tiptap-markdown"
+      ],
+      "registryDependencies": [
+        "field",
+        "label"
+      ]
+    },
+    {
+      "name": "Hover Card",
+      "url": "https://nikala.dev/docs/components/hover-card",
+      "summary": "Twitter and GitHub style profile preview card triggered on hover, built on Kobalte primitives.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Icon Button",
+      "url": "https://nikala.dev/docs/components/icon-button",
+      "summary": "An accessible square button for icon-only actions in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "spinner"
+      ]
+    },
+    {
+      "name": "Input",
+      "url": "https://nikala.dev/docs/components/input",
+      "summary": "Reactive text input field with modern focus states built for SolidJS and Tailwind CSS v4.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Input Group",
+      "url": "https://nikala.dev/docs/components/input-group",
+      "summary": "Compound input wrapper for combining text inputs with prefix and suffix addons in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Kbd",
+      "url": "https://nikala.dev/docs/components/kbd",
+      "summary": "Keyboard key and shortcut group indicators for displaying hotkeys in SolidJS applications.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Label",
+      "url": "https://nikala.dev/docs/components/label",
+      "summary": "Accessible caption label for form controls and inputs built for SolidJS and Tailwind CSS v4.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "List",
+      "url": "https://nikala.dev/docs/components/list",
+      "summary": "Compound list components supporting titles, subtitles, icons, avatars, hotkey badges, chevron indicators, and interactive links.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Marker",
+      "url": "https://nikala.dev/docs/components/marker",
+      "summary": "System chat events, date dividers, and live typing indicator badges for SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Marquee",
+      "url": "https://nikala.dev/docs/components/marquee",
+      "summary": "A smooth, GPU-accelerated infinite scrolling ticker component for logo clouds, testimonials, and live ribbons in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Message",
+      "url": "https://nikala.dev/docs/components/message",
+      "summary": "A structured chat and conversation message layout with avatars, alignment, headers, footers, and actions for SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Navbar",
+      "url": "https://nikala.dev/docs/components/navbar",
+      "summary": "A responsive, accessible, and composable navigation header component with floating, bordered, sticky, and mobile drawer variants for SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Navigation Menu",
+      "url": "https://nikala.dev/docs/components/navigation-menu",
+      "summary": "A responsive and accessible top header navigation menu component supporting mega-menu dropdowns, link items, hover triggers, and animations for SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Number Input",
+      "url": "https://nikala.dev/docs/components/number-input",
+      "summary": "A numeric stepper input component supporting negative values, long-press auto-repeat, min/max bounds, and keyboard navigation.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "spinner"
+      ]
+    },
+    {
+      "name": "Package Manager Tabs",
+      "url": "https://nikala.dev/docs/components/package-manager-tabs",
+      "summary": "Interactive command tab bar supporting customizable package managers (bun, pnpm, npm, yarn, deno, bunx, npx) with copy functionality.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "spinner",
+        "tabs",
+        "tooltip"
+      ]
+    },
+    {
+      "name": "Pager",
+      "url": "https://nikala.dev/docs/components/pager",
+      "summary": "Previous and next article navigation links with card previews for documentation and blog layouts.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "card"
+      ]
+    },
+    {
+      "name": "Pagination",
+      "url": "https://nikala.dev/docs/components/pagination",
+      "summary": "An accessible multi-page navigation bar with previous, next, page numbers, and ellipsis controls for SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Pin Input",
+      "url": "https://nikala.dev/docs/components/pin-input",
+      "summary": "4 or 6-digit SMS/2FA verification PIN code input component supporting numeric and alphanumeric modes.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Popover",
+      "url": "https://nikala.dev/docs/components/popover",
+      "summary": "Displays rich content in a portal layer triggered by a button for SolidJS and Tailwind CSS v4.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Progress",
+      "url": "https://nikala.dev/docs/components/progress",
+      "summary": "Displays an indicator showing the completion progress of a task or media playback in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Radio Group",
+      "url": "https://nikala.dev/docs/components/radio-group",
+      "summary": "Accessible radio button group supporting vertical and horizontal orientations built on Kobalte primitives.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Rating",
+      "url": "https://nikala.dev/docs/components/rating",
+      "summary": "An accessible, interactive star rating input and read-only score display in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Resizable",
+      "url": "https://nikala.dev/docs/components/resizable",
+      "summary": "Accessible resizable panel groups with interactive drag handles, vertical and horizontal orientation, built for SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Review Card",
+      "url": "https://nikala.dev/docs/components/review-card",
+      "summary": "A versatile, structured card component for user testimonials, ratings, and social proof in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "rating"
+      ]
+    },
+    {
+      "name": "Rich Text Editor",
+      "url": "https://nikala.dev/docs/components/rich-text-editor",
+      "summary": "A full-featured WYSIWYG rich text editor with toolbar, floating bubble formatting, tables, checklists, and image support built on Tiptap for SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@tiptap/core",
+        "@tiptap/extension-character-count",
+        "@tiptap/extension-highlight",
+        "@tiptap/extension-image",
+        "@tiptap/extension-link",
+        "@tiptap/extension-placeholder",
+        "@tiptap/extension-subscript",
+        "@tiptap/extension-superscript",
+        "@tiptap/extension-table",
+        "@tiptap/extension-task-item",
+        "@tiptap/extension-task-list",
+        "@tiptap/extension-text-align",
+        "@tiptap/extension-typography",
+        "@tiptap/extension-underline",
+        "@tiptap/starter-kit",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge",
+        "tiptap-markdown"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Scroll Area",
+      "url": "https://nikala.dev/docs/components/scroll-area",
+      "summary": "Augments native scroll functionality with custom styled scrollbars, built using createScrollPosition and createElementSize hooks in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Section Heading",
+      "url": "https://nikala.dev/docs/components/section-heading",
+      "summary": "A versatile interactive button component with multiple variants and sizes.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "badge"
+      ]
+    },
+    {
+      "name": "Select",
+      "url": "https://nikala.dev/docs/components/select",
+      "summary": "Custom dropdown select menu component built on Kobalte primitives for SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "scroll-area"
+      ]
+    },
+    {
+      "name": "Separator",
+      "url": "https://nikala.dev/docs/components/separator",
+      "summary": "Visually or semantically separates content using horizontal or vertical line dividers in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Sheet",
+      "url": "https://nikala.dev/docs/components/sheet",
+      "summary": "Sliding panel component with 4-directional slide-in animations and backdrop blur built on Kobalte primitives.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "scroll-area"
+      ]
+    },
+    {
+      "name": "Sidebar",
+      "url": "https://nikala.dev/docs/components/sidebar",
+      "summary": "A composable, collapsible, and accessible application sidebar navigation suite for SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "separator",
+        "skeleton",
+        "tooltip"
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "url": "https://nikala.dev/docs/components/skeleton",
+      "summary": "Animated pulse loading placeholder for rendering content loading states in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Slider",
+      "url": "https://nikala.dev/docs/components/slider",
+      "summary": "Numeric range slider built on Kobalte primitives with single/dual thumbs, step intervals, vertical orientation, and custom value labels.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Spinner",
+      "url": "https://nikala.dev/docs/components/spinner",
+      "summary": "An accessible animated loading indicator for asynchronous UI states in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Stat",
+      "url": "https://nikala.dev/docs/components/stat",
+      "summary": "Display key performance indicators, statistics, financial data, and metrics with trends and icons in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Status",
+      "url": "https://nikala.dev/docs/components/status",
+      "summary": "A compact semantic status indicator with a color dot and label for SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Steps",
+      "url": "https://nikala.dev/docs/components/steps",
+      "summary": "A versatile vertical and horizontal multi-step stepper container with connecting lines, color variants, and rounded-lg badges.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "badge"
+      ]
+    },
+    {
+      "name": "Switch",
+      "url": "https://nikala.dev/docs/components/switch",
+      "summary": "Toggle switch control for boolean states built for SolidJS and Tailwind CSS v4.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Table",
+      "url": "https://nikala.dev/docs/components/table",
+      "summary": "A responsive and accessible table component for structured data presentation in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Table of Contents",
+      "url": "https://nikala.dev/docs/components/table-of-contents",
+      "summary": "An accessible heading navigation tree with ScrollSpy tracking and smooth scrolling, composed of ScrollArea and List.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "list",
+        "scroll-area"
+      ]
+    },
+    {
+      "name": "Tabs",
+      "url": "https://nikala.dev/docs/components/tabs",
+      "summary": "Layered content switcher supporting horizontal and vertical layout orientations built for SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Textarea",
+      "url": "https://nikala.dev/docs/components/textarea",
+      "summary": "Multi-line text area field with character limit counters and modern focus styling for SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Theme Manager",
+      "url": "https://nikala.dev/docs/components/theme-manager",
+      "summary": "Zero-dependency theme provider, anti-FOUC script, brand accent customizer, border-radius controls, and Web View Transition animations for SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu",
+        "scroll-area",
+        "spinner"
+      ]
+    },
+    {
+      "name": "Timeline",
+      "url": "https://nikala.dev/docs/components/timeline",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "kind": "layout",
+      "summary": "A responsive chronological event timeline supporting vertical, horizontal, and alternating layouts.",
+      "verifiedAt": "2026-10-30"
+    },
+    {
+      "name": "Toast",
+      "url": "https://nikala.dev/docs/components/toast",
+      "summary": "A succinct message displayed temporarily in a toast region for SolidJS and Tailwind CSS v4.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Toggle",
+      "url": "https://nikala.dev/docs/components/toggle",
+      "summary": "A two-state button component that can be toggled on or off, built on Kobalte primitives in SolidJS.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "Toggle Group",
+      "url": "https://nikala.dev/docs/components/toggle-group",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "lucide-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "kind": "primitive",
+      "summary": "A set of two-state buttons that can be toggled on or off with single or multiple selection support.",
+      "verifiedAt": "2026-10-30"
+    },
+    {
+      "name": "Tooltip",
+      "url": "https://nikala.dev/docs/components/tooltip",
+      "summary": "A popup that displays contextual information on element hover or focus for SolidJS and Tailwind CSS v4.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": []
+    }
+  ],
+  "compatibility": [
+    {
+      "subject": "solid-js",
+      "constraint": "^1.9.5; previews verified with 1.9.17",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/package.json"
+    },
+    {
+      "subject": "tailwindcss",
+      "constraint": "^4.0.7; previews compiled with 4.3.3",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/package.json"
+    },
+    {
+      "subject": "solid-js 2",
+      "constraint": "",
+      "status": "unknown",
+      "evidence": "https://raw.githubusercontent.com/nikala-ui/ui/ce75abc6a948d2d78b2b22d368c2997832d0909b/apps/web/package.json"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "col-preview-hope-ui",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "solid-js": "2.0.0-beta.32",
+    "@solidjs/web": "2.0.0-beta.32",
+    "@solidjs/signals": "2.0.0-beta.32",
+    "babel-preset-solid": "2.0.0-beta.32",
+    "@babel/core": "7.29.7",
+    "@babel/preset-typescript": "7.28.5",
+    "@floating-ui/dom": "1.8.0",
+    "@internationalized/date": "3.12.3",
+    "@solid-primitives/a11y": "1.0.0-next.2",
+    "@tanstack/virtual-core": "3.17.7",
+    "tailwindcss": "4.3.3",
+    "@tailwindcss/cli": "4.3.3",
+    "tailwind-merge": "3.5.0",
+    "tailwind-variants": "3.3.1"
+  }
+}

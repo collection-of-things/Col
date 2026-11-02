@@ -1,0 +1,102 @@
+{
+  "checkedAt": "2026-10-29T19:04:31Z",
+  "source": "https://www.hope-ui.dev/",
+  "sourceRevision": "1dc059fcb9045ea5f066fd6109347f0fdce5a03e",
+  "navigationIntegrity": "f97dae57e993951dcd404e614a5b2fae02032b6451e4604e470777e2f239c910",
+  "selectedComponents": [
+    "Button",
+    "Dialog",
+    "Select",
+    "Alert",
+    "Badge",
+    "Calendar",
+    "CloseButton",
+    "Combobox",
+    "Listbox",
+    "Popover"
+  ],
+  "scope": "Partial verified index. Navigation-only entries have not been fetched individually and are not offered as supported previews.",
+  "documentationInventory": [
+    {
+      "name": "Combobox",
+      "url": "https://www.hope-ui.dev/components/combobox",
+      "category": "Components",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence"
+    },
+    {
+      "name": "Select",
+      "url": "https://www.hope-ui.dev/components/select",
+      "category": "Components",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence"
+    },
+    {
+      "name": "Button",
+      "url": "https://www.hope-ui.dev/components/button",
+      "category": "Components",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence"
+    },
+    {
+      "name": "Badge",
+      "url": "https://www.hope-ui.dev/components/badge",
+      "category": "Components",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence"
+    },
+    {
+      "name": "Calendar",
+      "url": "https://www.hope-ui.dev/components/calendar",
+      "category": "Components",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence"
+    },
+    {
+      "name": "Listbox",
+      "url": "https://www.hope-ui.dev/components/listbox",
+      "category": "Components",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence"
+    },
+    {
+      "name": "Popover",
+      "url": "https://www.hope-ui.dev/components/popover",
+      "category": "Components",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence"
+    },
+    {
+      "name": "Dialog",
+      "url": "https://www.hope-ui.dev/components/dialog",
+      "category": "Components",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence"
+    },
+    {
+      "name": "CloseButton",
+      "url": "https://www.hope-ui.dev/components/close-button",
+      "category": "Components",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence"
+    },
+    {
+      "name": "Alert",
+      "url": "https://www.hope-ui.dev/components/alert",
+      "category": "Components",
+      "preview": "supported",
+      "documentation": "source-snapshot",
+      "urlVerification": "http-200-and-component-evidence"
+    }
+  ],
+  "excludedNavigation": []
+}

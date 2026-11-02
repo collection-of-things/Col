@@ -1,0 +1,61 @@
+{
+  "name": "hope-ui",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Elegant, themeable, accessible component library for SolidJS",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@11.10.0",
+  "scripts": {
+    "prepare": "git config core.hooksPath .githooks || true",
+    "dev:docs": "pnpm --filter=@hope-ui/docs dev",
+    "build": "turbo run build",
+    "test": "vitest run --project=unit",
+    "test:ssr": "vitest run --project=ssr",
+    "test:browser": "vitest run --project=browser",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "typecheck": "turbo run typecheck",
+    "check:class-forwarding": "node scripts/check-class-forwarding.mjs",
+    "check:coverage-parity": "node scripts/check-coverage-parity.mjs",
+    "check:recipe-purity": "node scripts/check-recipe-purity.mjs",
+    "check:rtl-safety": "node scripts/check-rtl-safety.mjs",
+    "storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter='./packages/*' && changeset publish"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.10.0",
+      "onFail": "download"
+    }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.7",
+    "@changesets/cli": "2.31.1",
+    "@floating-ui/dom": "catalog:",
+    "@playwright/test": "1.62.1",
+    "@solidjs/web": "catalog:",
+    "@storybook/addon-a11y": "^10.5.7",
+    "@storybook/addon-docs": "^10.5.7",
+    "@tailwindcss/vite": "^4.3.3",
+    "@tanstack/virtual-core": "catalog:",
+    "@vitest/browser": "4.1.10",
+    "@vitest/browser-playwright": "4.1.10",
+    "babel-preset-solid": "catalog:",
+    "playwright": "1.62.1",
+    "solid-js": "catalog:",
+    "storybook": "^10.5.7",
+    "storybook-solidjs-vite": "^10.6.0",
+    "tailwindcss": "^4.3.3",
+    "tsdown": "^0.22.14",
+    "turbo": "2.10.9",
+    "typescript": "6.0.3",
+    "vite": "8.2.1",
+    "vite-plugin-solid": "catalog:",
+    "vitest": "4.1.10"
+  }
+}
