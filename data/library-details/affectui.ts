@@ -8,7 +8,7 @@ export default {
   },
   pricing: {
     model: "freemium",
-    summary: "40 of the 129 items are free under MIT; the other 89 are affectUI Pro, a one-time $199 Individual or $499 Team license with lifetime updates.",
+    summary: "Some items are free under MIT; the rest are affectUI Pro, a one-time $199 Individual or $499 Team license with lifetime updates.",
     license: "MIT (free items); commercial license (Pro)",
     source: "https://www.affectui.com/pricing",
   },
