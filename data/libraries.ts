@@ -1142,7 +1142,7 @@ export const libraries: Library[] = [
   {
     name: "dithercn",
     slug: "dithercn",
-    addedAt: "2026-10-30T21:05:00-04:00",
+    addedAt: "2026-11-02T13:38:33-05:00",
     description:
       "A dither engine and agent skill for shadcn projects that lets a coding agent build dithered backgrounds, charts, and interface pieces in your theme, installed through the shadcn CLI.",
     url: "https://dithercn.dev",
