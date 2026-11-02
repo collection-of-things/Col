@@ -1006,14 +1006,14 @@
         "source": "upstream/src/components/forms/DatePicker.tsx",
         "gaps": [
           "The sample is wrapped from the published TorchUI documentation example.",
-          "Upstream compares minimum dates with calendar cells at different times of day, which can disable the minimum day."
+          "The preview compares calendar dates by day to keep minimum and maximum dates selectable; the pinned upstream source remains unchanged."
         ]
       },
       "Date Range Picker": {
         "source": "upstream/src/components/forms/DateRangePicker.tsx",
         "gaps": [
           "The sample is wrapped from the published TorchUI documentation example.",
-          "Upstream date comparisons can disable the minimum day and a same-day range."
+          "The preview compares calendar dates by day to keep minimum dates and same-day ranges selectable; the pinned upstream source remains unchanged."
         ]
       },
       "Time Picker": {
@@ -1142,7 +1142,7 @@
           "The preview supplies state, fixture data or surrounding markup needed to run the documented example.",
           "The sample is wrapped from the published TorchUI documentation example.",
           "The runnable example uses the labels, links, and layout from the live documentation demo.",
-          "The original wide navigation and menu panels extend beyond narrow preview viewports."
+          "On narrow screens the preview reflows the navigation, stacks the original menu columns, and lets the panel scroll within the frame."
         ]
       },
       "Sidebar": {
@@ -1394,7 +1394,7 @@
         "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
         "gaps": [
           "The sample is wrapped from the published TorchUI documentation example.",
-          "Upstream chart cleanup can be mismatched if its asynchronous chart load fails or finishes after unmount."
+          "The compiled preview guards asynchronous chart initialization and cleanup; the pinned upstream source remains unchanged."
         ]
       },
       "Line Chart": {
@@ -1402,7 +1402,7 @@
         "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
         "gaps": [
           "The sample is wrapped from the published TorchUI documentation example.",
-          "Upstream chart cleanup can be mismatched if its asynchronous chart load fails or finishes after unmount."
+          "The compiled preview guards asynchronous chart initialization and cleanup; the pinned upstream source remains unchanged."
         ]
       }
     },
@@ -1412,13 +1412,14 @@
         "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
         "gaps": [
           "The sample is wrapped from the published TorchUI documentation example.",
-          "Upstream chart cleanup can be mismatched if its asynchronous chart load fails or finishes after unmount."
+          "The compiled preview guards asynchronous chart initialization and cleanup; the pinned upstream source remains unchanged."
         ]
       },
       "Sparkline": {
         "source": "upstream/src/components/charts/Sparkline.tsx",
         "gaps": [
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The compiled preview guards asynchronous chart initialization after unmount; the pinned upstream source remains unchanged."
         ]
       },
       "Other charts": {
@@ -1426,7 +1427,7 @@
         "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
         "gaps": [
           "The sample is wrapped from the published TorchUI documentation example.",
-          "Upstream chart cleanup can be mismatched if its asynchronous chart load fails or finishes after unmount."
+          "The compiled preview guards asynchronous chart initialization and cleanup; the pinned upstream source remains unchanged."
         ]
       },
       "Login Form": {
@@ -1480,7 +1481,8 @@
         "source": "upstream/docs/torch-site.snapshot",
         "revision": "96b8e34acc9e4ada6759ff573b95a53463559869089b73930e5e01317dada1e5",
         "gaps": [
-          "The sample is wrapped from the published TorchUI documentation example."
+          "The sample is wrapped from the published TorchUI documentation example.",
+          "The compiled preview guards asynchronous chart initialization after unmount; the pinned upstream source remains unchanged."
         ]
       },
       "User Card": {

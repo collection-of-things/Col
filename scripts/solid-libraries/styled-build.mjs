@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 import { brotliCompressSync, brotliDecompressSync, constants as zlibConstants } from "node:zlib";
 import { buildSolidPreview } from "../solid-preview-build.mjs";
 import { authenticateRuntimeFile, restoreArchive, resolveNpmCli } from "../preview-package-archive.mjs";
+import { patchTorchPreview } from "./torch-preview-patches.mjs";
 
 const root = fileURLToPath(new URL("../../", import.meta.url));
 const hash = bytes => createHash("sha256").update(bytes).digest("hex");
@@ -110,8 +111,13 @@ export async function buildStyledLibrary(slug, styleImports) {
   }
   const groups = {};
   const styles = {};
+  const torchFiles = new Map([
+    ...["DatePicker.tsx", "DateRangePicker.tsx"].map(name => [sourceFile(`upstream/src/components/forms/${name}`), name]),
+    ...["Chart.tsx", "Sparkline.tsx"].map(name => [sourceFile(`upstream/src/components/charts/${name}`), name]),
+  ]);
+  const transformSource = slug === "torch-ui" ? (path, source) => patchTorchPreview(torchFiles.get(path), source) : undefined;
   for (const [group, definitions] of Object.entries(config.groups ?? {})) {
-    const result = await buildSolidPreview({ entry: sourceFile(`examples/${group}.tsx`), resolveDir, sourceRoot, runtime: config.runtime, aliases, css });
+    const result = await buildSolidPreview({ entry: sourceFile(`examples/${group}.tsx`), resolveDir, sourceRoot, runtime: config.runtime, aliases, css, transformSource });
     const code = banner + result.code;
     const style = Object.keys(styles).find(key => styles[key] === result.css) ?? (Object.hasOwn(styles, "main") ? group : "main");
     styles[style] = result.css;

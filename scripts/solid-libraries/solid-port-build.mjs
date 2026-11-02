@@ -66,7 +66,20 @@ export async function buildSolidPort(slug) {
     const child = relative(sourceRoot, filename).replaceAll("\\", "/");
     if (child === ".." || child.startsWith("../") || isAbsolute(child)) throw new Error("Source path escaped source root");
     await mkdir(dirname(filename), { recursive: true });
-    const content = item.base64 ? bytes : Object.entries(assets).reduce((text, [url, asset]) => text.replaceAll(url, asset.dataUrl), item.content);
+    let content = item.base64 ? bytes : Object.entries(assets).reduce((text, [url, asset]) => text.replaceAll(url, asset.dataUrl), item.content);
+    const example = config.examples.find(example => example.path === path);
+    if (example && ["OTP Field", "Input OTP"].includes(example.name)) {
+      const marker = slug === "zaidan" ? "<InputOTP maxLength={6}" : "<OTPField maxLength={6}";
+      if (content.split(marker).length !== 2) throw new Error(`Original OTP example changed: ${slug}/${example.name}`);
+      content = content.replace(marker, `${marker} shiftPWManagers={false}`);
+    }
+    const fallbackCounts = { "solid-ui/Avatar": 1, "solid-ui/Progress Circle": 1, "zaidan/Avatar": 5, "zaidan/Message": 4, "zaidan/Sidebar": 2 };
+    const fallbackCount = example && fallbackCounts[`${slug}/${example.name}`];
+    if (fallbackCount) {
+      const images = content.match(/<AvatarImage\b[^>]*\/>/g) ?? [];
+      if (images.length !== fallbackCount) throw new Error(`Original avatar example changed: ${slug}/${example.name}`);
+      content = content.replace(/<AvatarImage\b[^>]*\/>/g, "");
+    }
     await writeFile(filename, content);
     sources.push({ url: item.url, integrity: item.integrity });
   }

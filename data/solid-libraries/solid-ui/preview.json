@@ -6,7 +6,8 @@
     "Original docs stylesheet compiled with Tailwind CSS 4.3.3 and the original Kobalte Tailwind plugin.",
     "Original Geist font assets embedded as data URLs with the SIL Open Font License.",
     "Reviewed mount wrapper only: maps the selected preview theme to data-kb-theme and disposes the Solid root.",
-    "The Sidebar demo runs within a Solid MemoryRouter because its original links require route context."
+    "The Sidebar demo runs within a Solid MemoryRouter because its original links require route context.",
+    "OTP examples disable Corvu password-manager displacement; affected avatar examples use the original fallback in place of unverified external images."
   ],
   "examples": [
     {
@@ -47,7 +48,7 @@
       "exportName": "Avatar",
       "path": "apps/docs/src/registry/example/avatar-demo.tsx",
       "gaps": [
-        "The official demo references external images without verified redistribution permission; sandbox restrictions may leave them unavailable. No replacement image is supplied."
+        "The preview omits the unverified external profile images and displays the original component fallback."
       ],
       "group": "batch-01",
       "assets": []
@@ -273,7 +274,9 @@
       "name": "OTP Field",
       "exportName": "OTPField",
       "path": "apps/docs/src/registry/example/otp-field-demo.tsx",
-      "gaps": [],
+      "gaps": [
+        "The preview disables Corvu password-manager displacement to fit the sandbox frame; the original OTP slot styling is unchanged."
+      ],
       "group": "batch-08",
       "assets": []
     },
@@ -306,7 +309,7 @@
       "exportName": "ProgressCircle",
       "path": "apps/docs/src/registry/example/progress-circle-demo.tsx",
       "gaps": [
-        "The original demo references a remote GitHub avatar. Offline rendering retains the upstream EK fallback; the personal image is not redistributed."
+        "The preview omits the unverified external profile images and displays the original component fallback."
       ],
       "assets": []
     },

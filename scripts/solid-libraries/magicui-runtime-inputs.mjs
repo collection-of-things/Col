@@ -34,7 +34,7 @@ delete unavailable["magicui-solid/Tweet Card"];
 await writeFile(unavailableFile,JSON.stringify(unavailable,null,2)+"\n");
 const limitationsFile="data/solid-libraries/magicui-solid/runtime-limitations.json";
 const limitations=JSON.parse(await readFile(limitationsFile,"utf8"));
-limitations["magicui-solid/Hero Video Dialog"]=["The original dialog opens and closes, but its YouTube embed requires external network access and is blocked in the sandbox: https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"];
+delete limitations["magicui-solid/Hero Video Dialog"];
 await writeFile(limitationsFile,JSON.stringify(limitations,null,2)+"\n");
 console.log(JSON.stringify({pixelImage:{originalBytes:original.length,deliveredBytes:bytes.length,originalSha256:hash(original),deliveredSha256:hash(bytes)},flags:flags.length}));
 // Store the verified Lens/Pixel payloads once, preserving the final delivery layout.

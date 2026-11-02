@@ -467,7 +467,7 @@
   },
   "groups": {
     "batch-01": {
-      "codeIntegrity": "sha256:290d9811302228bf8daf2e5627b653502e042f8f26f7c38e34bef93fd8b788f1",
+      "codeIntegrity": "sha256:33d0bb89db1568822145720db02717c4fd5068539015699b59ece1af01f76c70",
       "cssIntegrity": "sha256:a888e357ab92678289dd7aa29af274340228523157856b1bdf9e5a95dbe9963c",
       "inputs": [
         0,
@@ -2606,7 +2606,7 @@
         "node_modules/@floating-ui/core",
         "node_modules/@floating-ui/dom"
       ],
-      "inputsIntegrity": "sha256:e38c2d5f7525c4076592d52d120418b78da316d9bc8d8f2517fd1d058085804d",
+      "inputsIntegrity": "sha256:a9695e44354c334bc2b98d283ede4be3761026ed65bda33116d6cc167e939b62",
       "packagesIntegrity": "sha256:fe5cf358bf04a3c27a9039f7e8065e2f7cd5cc9a6a0542760d3996a13a3aaaed",
       "lockIntegrity": "sha256:97cd147159193f96552e895a52ac65920d692f7aa00c08baa1a0c1033f84d8a2"
     },
@@ -14044,7 +14044,7 @@
       "lockIntegrity": "sha256:97cd147159193f96552e895a52ac65920d692f7aa00c08baa1a0c1033f84d8a2"
     },
     "batch-04": {
-      "codeIntegrity": "sha256:39cbdc28cd03661ee029f6da8cfa5c23982f78857b4c64fbe614e3aad475bac9",
+      "codeIntegrity": "sha256:74d8774c784aa61ce539bd3ed74622f4c2c1f21f92173ec47e9d64cf4985ae89",
       "cssIntegrity": "sha256:a888e357ab92678289dd7aa29af274340228523157856b1bdf9e5a95dbe9963c",
       "inputs": [
         0,
@@ -16197,7 +16197,7 @@
         "node_modules/@floating-ui/dom",
         "node_modules/solid-prevent-scroll"
       ],
-      "inputsIntegrity": "sha256:f7be4273e046128b252ea650ace3e1adc62530ad593f28ce75cfc33cb0dae76c",
+      "inputsIntegrity": "sha256:f1da9c291e7a9dae102ff0f121f8915071439d80ac8165831bf30a086cceff50",
       "packagesIntegrity": "sha256:2a40d1e73e3153f48357775dca5b97196eb172f7ec16db983189c6e730877ff6",
       "lockIntegrity": "sha256:97cd147159193f96552e895a52ac65920d692f7aa00c08baa1a0c1033f84d8a2"
     },
@@ -18357,7 +18357,7 @@
       "lockIntegrity": "sha256:97cd147159193f96552e895a52ac65920d692f7aa00c08baa1a0c1033f84d8a2"
     },
     "batch-06": {
-      "codeIntegrity": "sha256:1060dc063e4d1094f5a1be28f8539211c3e43fa3e447989bb9043c0a02221f55",
+      "codeIntegrity": "sha256:c98f64d4c6cce7c443a64131ac802cc9eea82260ea1b403c8d78cac9b35b835b",
       "cssIntegrity": "sha256:a888e357ab92678289dd7aa29af274340228523157856b1bdf9e5a95dbe9963c",
       "inputs": [
         0,
@@ -20544,7 +20544,7 @@
         "node_modules/class-variance-authority",
         "node_modules/@solid-primitives/resize-observer"
       ],
-      "inputsIntegrity": "sha256:9c46e01c7cf7b0054855fb5cf1c00b4595d67e8ad209c353877e7e255951351e",
+      "inputsIntegrity": "sha256:4373eabb6b067c61f455b4afced9207fd7a993ccf6446a5fd4ef670be35c61a9",
       "packagesIntegrity": "sha256:cf55d67aece15e0823ef862ddbf377e93bbae69a5993fdb073d8f326d1b711c1",
       "lockIntegrity": "sha256:97cd147159193f96552e895a52ac65920d692f7aa00c08baa1a0c1033f84d8a2"
     },
@@ -31032,7 +31032,7 @@
     },
     {
       "path": "src/registry/kobalte/examples/docs/avatar-demo.tsx",
-      "sha256": "a03ed6cd8103bf84f2a8f2fe217dc29c76c2260e13f20c08911fe586e97d2c50"
+      "sha256": "88481d2883eb21db56d075bfb601e8e634beae03cde3de5c2516424b7dacdbf9"
     },
     {
       "path": "../../@kobalte/core/dist/badge/index.js",
@@ -34700,7 +34700,7 @@
     },
     {
       "path": "src/registry/kobalte/examples/docs/input-otp-demo.tsx",
-      "sha256": "830e5b5470ccea88dfc0850e43a8e5f0767fceec83ab168f34553398415038b2"
+      "sha256": "efea8051505754e0024d3a9be76fbe7c448f74db73949ec350ccdb56483ae96a"
     },
     {
       "path": "src/registry/kobalte/ui/item.tsx",
@@ -34752,7 +34752,7 @@
     },
     {
       "path": "src/registry/kobalte/examples/docs/message-demo.tsx",
-      "sha256": "518f65cff557eb52c6dc530c1eb30e17c61a8fe222c88aa3a28e83da52b47f70"
+      "sha256": "46a3daaf163b1468b8931c229a80838cc600b674a4ebb180243d386de43e7ee4"
     },
     {
       "path": "col-batch-04.tsx",
@@ -34876,7 +34876,7 @@
     },
     {
       "path": "src/registry/kobalte/examples/docs/sidebar-demo.tsx",
-      "sha256": "7c1ec79c459ea05d06fe0b2277d8fb8c16d1c27cfbee61471eebd1d08c573a7a"
+      "sha256": "fa9ca509003fe193141a65a49f9df34f78ec452def19c99956f4daa3c218a5de"
     },
     {
       "path": "src/registry/kobalte/examples/docs/skeleton-demo.tsx",
@@ -35649,6 +35649,7 @@
     "The original [data-slot=\"docs\"] font rule from src/styles/typeset.css is retained on the mount target. Inline demos inherit Geist while portals retain the body Inter font; the target attribute is restored on disposal.",
     "All original Vega style sections and the selected documented demos are compiled for the expanded preview set.",
     "The original calendar keyframes are moved outside the nested style-vega selector so the CSS optimizer preserves them unchanged.",
-    "Toast uses the original Zaidan ColorModeProvider initialized to the selected preview theme."
+    "Toast uses the original Zaidan ColorModeProvider initialized to the selected preview theme.",
+    "OTP examples disable Corvu password-manager displacement; affected avatar examples use the original fallback in place of unverified external images."
   ]
 }

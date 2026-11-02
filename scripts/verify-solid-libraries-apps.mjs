@@ -17,6 +17,7 @@ import { verifyMagicuiTweet } from "./verify-magicui-tweet.mjs";
 import { verifyMagicuiConfetti } from "./verify-magicui-confetti.mjs";
 import { verifyTorchVideo } from "./verify-torch-video.mjs";
 import { verifyTorchReview } from "./verify-torch-review.mjs";
+import { offlineMediaPreviews, verifySolidReview } from "./verify-solid-review.mjs";
 
 // A small MCP Apps host exercises real transport, widget delivery, and frame replacement.
 const require = createRequire(import.meta.url);
@@ -74,10 +75,11 @@ const server = createServer(async (req, res) => {
 });
 await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
 const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_EXECUTABLE, headless: true });
-const page = await browser.newPage({ viewport: { width: 1280, height: 1200 } });
+const page = await browser.newPage({ viewport: { width: Number(process.env.SOLID_APPS_WIDTH || 1280), height: 1200 } });
 if (process.env.SOLID_BLOCK_CULT_RADIX) await blockCultRadixCdn(page);
-const errors = [];
+const errors = [], remoteRequests = [];
 page.on("pageerror", error => errors.push(error.message));
+page.on("request", request => { if (/^https?:\/\//.test(request.url()) && new URL(request.url()).hostname !== "127.0.0.1" && !["script", "stylesheet", "font"].includes(request.resourceType())) remoteRequests.push(request.url()); });
 const results = [];
 try {
   await page.goto(`http://127.0.0.1:${server.address().port}`);
@@ -88,6 +90,7 @@ try {
   for (const theme of themes) {
     for (const id of ids) {
       const before = errors.length;
+      const beforeRequests = remoteRequests.length;
       const row = { id, theme };
       try {
         const result = await page.evaluate(({ id, theme }) => window.loadExample(id, theme), { id, theme });
@@ -98,6 +101,11 @@ try {
         await frame.locator("#col-status").waitFor({ state: "hidden", timeout: 10000 });
         if (id === "magic-ui/Lens") await verifyReactLens(frame, expect);
         if (id === "rocksolid/Badge") await expect(frame.getByRole("button", { name: "Notifications", exact: true })).toBeVisible();
+        await verifySolidReview(frame, id, expect, { chipKeyboard: true });
+        if (["magicui-solid/Avatar Circles", "magicui-solid/Hero Video Dialog"].includes(id)) {
+          await expect(app.locator("[data-col-provenance]")).toContainText(/sample/i);
+          await expect(app.locator('iframe[title="Component preview"]')).toHaveAttribute("sandbox", "allow-scripts allow-forms");
+        }
         await verifyCultRecovery(frame, id, expect, theme);
         if (await verifyTorchReview(frame, id, expect)) await expect(app.locator('iframe[title="Component preview"]')).toHaveAttribute("sandbox", "allow-scripts allow-forms");
         if (id === "torch-ui/Table View") {
@@ -135,6 +143,7 @@ try {
         }
         row.errors = errors.slice(before);
         if (row.errors.length) throw new Error(row.errors.join("; "));
+        if (offlineMediaPreviews.has(id) && remoteRequests.length > beforeRequests) throw new Error(`Unexpected remote requests: ${remoteRequests.slice(beforeRequests).join(", ")}`);
         row.pass = true;
       } catch (error) {
         row.pass = false;
