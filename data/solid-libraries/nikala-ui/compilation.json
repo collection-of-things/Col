@@ -1,6 +1,36 @@
 {
-  "checkedAt": "2026-10-30T06:34:18.026Z",
+  "checkedAt": "2026-11-01T09:57:47.458Z",
   "attempts": [
+    {
+      "id": "nikala-ui/Code Block",
+      "group": "highlight",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Component Viewer",
+      "group": "highlight",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Dropzone",
+      "group": "editor",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Form",
+      "group": "editor",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Form Message",
+      "group": "editor",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Rich Text Editor",
+      "group": "editor",
+      "compiled": true
+    },
     {
       "id": "nikala-ui/Accordion",
       "group": "components",
@@ -344,36 +374,6 @@
     {
       "id": "nikala-ui/Tooltip",
       "group": "components",
-      "compiled": true
-    },
-    {
-      "id": "nikala-ui/Code Block",
-      "group": "highlight",
-      "compiled": true
-    },
-    {
-      "id": "nikala-ui/Component Viewer",
-      "group": "highlight",
-      "compiled": true
-    },
-    {
-      "id": "nikala-ui/Dropzone",
-      "group": "editor",
-      "compiled": true
-    },
-    {
-      "id": "nikala-ui/Form",
-      "group": "editor",
-      "compiled": true
-    },
-    {
-      "id": "nikala-ui/Form Message",
-      "group": "editor",
-      "compiled": true
-    },
-    {
-      "id": "nikala-ui/Rich Text Editor",
-      "group": "editor",
       "compiled": true
     }
   ]

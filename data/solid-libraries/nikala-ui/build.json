@@ -1211,7 +1211,7 @@
       },
       {
         "path": "source/packages/core/src/registry/components/ui/sidebar.tsx",
-        "integrity": "f904ef47f2de6f02d9f1ee451463155bf4309211b2d8b99dbcfbc4681e40156a"
+        "integrity": "08d1d04c136cfad936097559d88f9d581be0fb85c8f0125695eeca1805988a1d"
       },
       {
         "path": "source/packages/core/src/registry/components/ui/skeleton.tsx",
@@ -15731,7 +15731,7 @@
   },
   "groups": {
     "components": {
-      "codeIntegrity": "5f4fcc1e24b5fb0f08171fa3cf7c5b7d968c9c64a7ed6a7644a99ac614ee61d2",
+      "codeIntegrity": "3a4be8a3760719f2af6b0b9edd42cdceb497563d796c5c13a7790e545bb267db",
       "cssIntegrity": "bd101310736edcf818e06353e5ac74d5e86837957f4a6f2e21e5c46bd80de06e",
       "lockIntegrity": "8804ed413256fe087a5a12dbeedd0a9c3c08a29d9f557e997191b3b741d45913",
       "inputs": [
@@ -17137,7 +17137,7 @@
     "../node_modules/lucide-solid/dist/esm/icons/pin.mjs": "e297846aa260100f80ec6419a733ea7f91bf2482646b1723074bcca6709ce782",
     "../node_modules/lucide-solid/dist/esm/icons/circle-x.mjs": "f6a7a6a9370e69385926b0235745e9e894847828181ae75ed3590a7cdb17283b",
     "../node_modules/lucide-solid/dist/esm/icons/download.mjs": "63f59fcaaec5eeb4904af3e7b86a3706cf9830843bd58931857eb2d567651624",
-    "lucide-preview.ts": "cbd43a555915b6003ca9164f1e27a90942328b101049fd8543ab86b34d4e52d4",
+    "lucide-preview.ts": "0d0a2a1e042a7091339adca9d0b8a87aa24d52c1d0c009823944427f80037388",
     "demos/alert.tsx": "e53e03ba8e17befdbd7da7023161ec655ef3f739b1f746897bc5f2f89dd65c5f",
     "packages/core/src/registry/components/ui/badge.tsx": "974842eeec5a6ad906ef016ca8b01673b2cf739669f32fc359f39a0289da92cf",
     "packages/core/src/registry/components/ui/section-heading.tsx": "1c2eff511f11a607110c640943f124bef1e9038f44df0f9964f1c90e9b5b1266",
@@ -17312,7 +17312,7 @@
     "packages/core/src/registry/components/ui/sheet.tsx": "23d5bf563372dc8bc26a2cca964c07c85d6a5d320e3cd7e4f5a68318ce92cc5d",
     "demos/sheet.tsx": "3452c5bcf41d32317fe9f69fff80fa10c8d74d6df3fd2ee958238f9535ab196a",
     "packages/core/src/registry/components/ui/skeleton.tsx": "d5f0ab6bc1a3f03fe2e87020475994a7b8e38f8cc55412a916e84869f5f09d5d",
-    "packages/core/src/registry/components/ui/sidebar.tsx": "f904ef47f2de6f02d9f1ee451463155bf4309211b2d8b99dbcfbc4681e40156a",
+    "packages/core/src/registry/components/ui/sidebar.tsx": "08d1d04c136cfad936097559d88f9d581be0fb85c8f0125695eeca1805988a1d",
     "demos/sidebar.tsx": "29f54166ac6a7d3e153eae6df649c940e23845dd7358b2aae57ad6c6127413e5",
     "demos/skeleton.tsx": "fe32a70ab18566a98d9924088e9a380f2083e892be0a2b3ac5ba3a80702987bb",
     "../node_modules/@kobalte/core/dist/chunk/YSW4UOAR.js": "e4c9f4a9ef7cbf5858d95415e71ec2207b60319dbf0991871922d118857d9d9a",
@@ -18887,13 +18887,13 @@
       }
     }
   },
-  "output": {
-    "encoding": "br",
-    "contentIntegrity": "54580a51e334f2822600ec37851346dfa8700288031abdca4890ecc4a903e79e",
-    "fileIntegrity": "336c1951634685fd5bd80da377bbaf8dd8858ec1052e8351c377a66820e73b98"
-  },
   "assetTransport": {
     "adaptation": "Verified shared-image and video URL literals stay dynamic through window.String during compilation, preventing Solid/esbuild from folding URLs into static HTML templates. Col relocates those unchanged original URL literals at delivery; original JSX composition and styling remain intact.",
     "assets": []
+  },
+  "output": {
+    "encoding": "br",
+    "contentIntegrity": "49f2c7d8ee47f90ae085647283dc3e69c04431988fd8b7cd09242513b95ac359",
+    "fileIntegrity": "fcdf4d91a576fac96cbc98b0e9684676644d04ad0caff354c08a3d03f12c38da"
   }
 }

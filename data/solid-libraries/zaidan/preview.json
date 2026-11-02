@@ -185,7 +185,7 @@
       "exportName": "Dialog",
       "path": "src/registry/kobalte/examples/docs/dialog-demo.tsx",
       "gaps": [
-        "Upstream exposes the visible Cancel button with the accessible name Dismiss. Its portalled Save changes button has no owning form, so it does not submit."
+        "The preview names Cancel and connects the portalled fields and Save button to the example form. Save dispatches a local submit event because MCP Apps hosts may block native form submission."
       ],
       "assets": []
     },
@@ -398,7 +398,8 @@
       "exportName": "Sidebar",
       "path": "src/registry/kobalte/examples/docs/sidebar-demo.tsx",
       "gaps": [
-        "The preview omits the unverified external profile images and displays the original component fallback."
+        "The preview omits the unverified external profile images and displays the original component fallback.",
+        "The sidebar keeps its state in memory when the opaque sandbox blocks its preference cookie; the preference does not persist."
       ],
       "group": "batch-06",
       "assets": []

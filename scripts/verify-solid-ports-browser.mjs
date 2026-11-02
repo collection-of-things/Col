@@ -148,9 +148,7 @@ try {
             return { sha256: asset.sha256, width: match.width, height: match.height };
           });
         }
-        const cookieGap = id.endsWith("/Sidebar") && preview.gaps.some(gap => /cookie/i.test(gap)) && errors.every(error => /cookie.*sandboxed.*allow-same-origin/i.test(error));
-        if (errors.length && !cookieGap) throw new Error(errors.join("; "));
-        if (errors.length) row.expectedError = "The opaque sandbox blocks the original preference cookie write.";
+        if (errors.length) throw new Error(errors.join("; "));
         row.pass = true;
       } catch (error) {
         row.pass = false;

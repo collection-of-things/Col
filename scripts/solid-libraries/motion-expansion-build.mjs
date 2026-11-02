@@ -8,6 +8,7 @@ import { buildSolidPreview } from "../solid-preview-build.mjs";
 import { sha256, tailwind4, recordCssBuild } from "./source-build.mjs";
 import { resolveNpmCli } from "../preview-package-archive.mjs";
 import { containedPath, dynamicAssetUrls, motionAssetTransport } from "./motion-build-inputs.mjs";
+import { guardSidebarCookieWrite } from "./preview-sandbox-adaptations.mjs";
 
 const readJson = async path => {const value=JSON.parse(await readFile(path,"utf8"));return value.encoding==="br"?JSON.parse(brotliDecompressSync(Buffer.from(value.data,"base64"))):value;};
 async function writeArtifact(path, text) {
@@ -69,7 +70,19 @@ export async function openMotionBuild(slug) {
   for (const [path, file] of Object.entries(upstream.files)) {
     if (sha256(file.content) !== file.integrity) throw new Error(`Source integrity mismatch: ${path}`);
     const destination = containedPath(sourceRoot, path);
-    let content = inlineAssets(file.content,path);
+    let source = file.content;
+    if (slug === "nikala-ui" && path === "packages/core/src/registry/components/ui/sidebar.tsx") {
+      source = guardSidebarCookieWrite(source, `${slug}/${path}`);
+      const replacements = [
+        ["  const { toggleSidebar, side, isMobile, openMobile, setOpenMobile } = useSidebar();", "  const { toggleSidebar, side } = useSidebar();"],
+        ["        if (isMobile()) setOpenMobile(!openMobile());\n        else toggleSidebar();", "        toggleSidebar();"],
+      ];
+      for (const [original, replacement] of replacements) {
+        if (source.split(original).length !== 2) throw new Error(`Sidebar trigger changed: ${slug}/${path}`);
+        source = source.replace(original, replacement);
+      }
+    }
+    let content = inlineAssets(source,path);
     if (slug === "magicui-solid" && path === "src/demos/ConfettiDemo.tsx") {
       const marker = "<Confetti\n";
       if (content.split(marker).length !== 2) throw new Error("Original Confetti demo changed");
@@ -200,7 +213,7 @@ export async function expandMotionLibrary(slug) {
       for (const example of examples) {
         const source = build.upstream.files[example.componentSource];
         const assets = Object.entries(build.upstream.assets).filter(([url,asset]) => !asset.blocked&&!asset.resourceFile&&!asset.manifestFile&&(css.includes(asset.dataUrl) || example.remoteUrls.includes(url) || build.upstream.assetTemplates?.some(template=>template.module===example.module&&template.urls.includes(url))) && (code.includes(asset.dataUrl)||css.includes(asset.dataUrl))).map(([url,asset])=>({url,downloadUrl:asset.downloadUrl,resolvedUrl:asset.resolvedUrl,sha256:asset.integrity,mediaType:asset.mediaType,bytes:Buffer.from(asset.dataUrl.split(",")[1],"base64").length,attribution:asset.attribution,...(asset.original?{original:asset.original,transformation:asset.transformation}:{})}));
-        artifact.entries[example.id] = { group: key, package: slug, version: build.upstream.revision, runtimeVersion: "1.9.17", exportName: example.id === "magicui-solid/Tweet Card" ? "MagicTweet" : example.exportName, source: {url:source.url,revision:build.upstream.revision,integrity:source.integrity}, assets, gaps: [ ...(example.adaptation ? [example.adaptation] : []), ...(slug === "mystic-ui" ? ["Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."] : []), ...(slug === "magicui-solid" ? ["The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."] : []), ...assets.filter(asset=>asset.transformation).map(asset=>asset.transformation), ...(example.id==="nikala-ui/Sidebar"?["The original sidebar renders and toggles, but its unconditional cookie write raises a sandbox SecurityError. Open state updates before that error; persistence is unavailable in the MCP iframe."]:[]) ] };
+        artifact.entries[example.id] = { group: key, package: slug, version: build.upstream.revision, runtimeVersion: "1.9.17", exportName: example.id === "magicui-solid/Tweet Card" ? "MagicTweet" : example.exportName, source: {url:source.url,revision:build.upstream.revision,integrity:source.integrity}, assets, gaps: [ ...(example.adaptation ? [example.adaptation] : []), ...(slug === "mystic-ui" ? ["Original Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained."] : []), ...(slug === "magicui-solid" ? ["The pinned upstream README declares MIT licensing, but its linked LICENSE file is absent."] : []), ...assets.filter(asset=>asset.transformation).map(asset=>asset.transformation), ...(example.id==="nikala-ui/Sidebar"?["The preview uses the existing sidebar collapse state for the mobile trigger and catches a sandbox SecurityError from the original cookie write. The sidebar toggles in memory, but its state does not persist in the MCP iframe."]:[]) ] };
         attempts.push({ id: example.id, group: key, compiled: true });
         artifact.entries[example.id].gaps.push(...Object.entries(build.upstream.assets).filter(([url,asset])=>asset.blocked&&example.remoteUrls.includes(url)).map(([url,asset])=>`${asset.blocked} Original URL remains blocked: ${url}`));
         artifact.entries[example.id].gaps.push(...(runtimeLimitations[example.id]??[]));

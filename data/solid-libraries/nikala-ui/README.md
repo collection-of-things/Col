@@ -8,7 +8,7 @@ The three original previews remain byte-identical after lossless Brotli unpackin
 
 Tailwind 4.3.3 compiles the original `apps/web/src/app.css`, preserving yellow OKLCH tokens, dark colors, radii, typography and system fonts. Solid 1.9.17 and babel-preset-solid 1.9.16 are isolated from Col's runtime. Original MIT and authenticated dependency notices accompany the artifacts. Native Tauri integrations are not emulated; the documented examples use browser implementations.
 
-Sidebar updates its open state before unconditionally writing a cookie. The sandbox blocks that write, so toggling works while persistence raises a disclosed SecurityError. Theme Manager's original provider already catches unavailable storage. The upstream Button remains 36px high with a 6px radius and light/dark primary colors `oklch(0.795 0.184 86.047)` / `oklch(0.852 0.199 91.936)`.
+Sidebar's mobile trigger updates a separate state that its rendered sidebar does not use. The preview routes the trigger to the existing collapse state at every viewport size. Sidebar also writes a cookie after updating that state; the preview catches the sandbox's SecurityError, so toggling works in memory while persistence remains unavailable. The authenticated upstream source snapshot is unchanged. Theme Manager's original provider already catches unavailable storage. The upstream Button remains 36px high with a 6px radius and light/dark primary colors `oklch(0.795 0.184 86.047)` / `oklch(0.852 0.199 91.936)`.
 
 The original GitHub profile image has no verified redistribution permission, so its URL remains blocked and the upstream avatar fallback is preserved. Licensed Unsplash demo photos retain their source bytes and attribution.
 

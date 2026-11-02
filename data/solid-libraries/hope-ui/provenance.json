@@ -1537,6 +1537,12 @@
         "gaps": [
           "Source-only early preview: @hope-ui/components is not published to npm; pinned to the verified Solid 2 beta source revision."
         ]
+      },
+      "Select": {
+        "source": "upstream/packages/components/src/select/index.ts",
+        "gaps": [
+          "Source-only early preview: @hope-ui/components is not published to npm; pinned to the verified Solid 2 beta source revision."
+        ]
       }
     }
   }

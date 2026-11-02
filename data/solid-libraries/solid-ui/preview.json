@@ -359,7 +359,7 @@
       "path": "apps/docs/src/registry/block/demo-sidebar.tsx",
       "gaps": [
         "An isolated Solid MemoryRouter supplies the original demo routing context; links remain within the preview.",
-        "The original sidebar writes a preference cookie on toggle. The opaque sandbox blocks that write, so the browser reports an error and the preference cannot persist."
+        "The sidebar keeps its state in memory when the opaque sandbox blocks its preference cookie; the preference does not persist."
       ],
       "group": "batch-10",
       "assets": [],

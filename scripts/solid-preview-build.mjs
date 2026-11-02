@@ -72,6 +72,14 @@ export async function buildSolidPreview({ entry, resolveDir, sourceRoot = dirnam
         if (transformed.errors?.length) throw new Error(`${path}: ${JSON.stringify(transformed.errors)}`);
         return { contents: transformed.code, loader: "ts", resolveDir: dirname(path) };
       });
+      builder.onLoad({ filter: /\.ts$/ }, async ({ path }) => {
+        if (!transformSource || path.endsWith(".d.ts")) return;
+        const child = relative(sourceRoot, path).replaceAll("\\", "/");
+        if (child === ".." || child.startsWith("../") || isAbsolute(child) || child.split("/").includes("node_modules")) return;
+        const original = await readFile(path, "utf8");
+        const source = transformSource(path, original);
+        if (source !== original) return { contents: source, loader: "ts", resolveDir: dirname(path) };
+      });
     } }],
   });
   if (Object.values(result.metafile.outputs).some(output => output.imports.some(item => item.external))) throw new Error("Solid previews must bundle every runtime dependency");

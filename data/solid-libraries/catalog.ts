@@ -21,7 +21,7 @@ interface SolidCatalog {
 }
 
 /** Metadata is separate from source snapshots so the website only loads catalog data. */
-export const solidCatalogs = {
+const catalogs = {
   kobalte,
   "solid-ui": solidUi,
   "shadcn-solid": shadcnSolid,
@@ -32,4 +32,6 @@ export const solidCatalogs = {
   "torch-ui": torchUi,
   "magicui-solid": magicuiSolid,
   "mystic-ui": mysticUi,
-} as Record<string, SolidCatalog>;
+};
+
+export const solidCatalogs = catalogs as Record<keyof typeof catalogs, SolidCatalog>;

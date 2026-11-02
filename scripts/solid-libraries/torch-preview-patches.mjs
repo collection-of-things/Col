@@ -1,4 +1,35 @@
 const replacements = {
+  "DropdownMenu.tsx": [
+    ["import { type JSX, splitProps } from 'solid-js'", "import { type JSX, type ValidComponent, splitProps } from 'solid-js'\nimport type { PolymorphicProps } from '@kobalte/core/polymorphic'"],
+    [
+      `export interface DropdownMenuTriggerProps extends Omit<KobalteDropdownMenuTriggerProps, 'class' | 'children'> {
+\tclass?: string
+\tchildren: JSX.Element
+}
+
+export function DropdownMenuTrigger(props: DropdownMenuTriggerProps) {`,
+      `export type DropdownMenuTriggerProps<T extends ValidComponent = 'button'> = PolymorphicProps<T, Omit<KobalteDropdownMenuTriggerProps<T>, 'class' | 'children'> & {
+\tclass?: string
+\tchildren: JSX.Element
+}>
+
+export function DropdownMenuTrigger<T extends ValidComponent = 'button'>(props: DropdownMenuTriggerProps<T>) {`,
+    ],
+    [
+      `\tconst [local, others] = splitProps(props, ['class', 'children'])
+\treturn (
+\t\t<_KbTrigger
+\t\t\tclass={cn(local.class)}
+\t\t\t{...others}
+\t\t>
+\t\t\t{local.children}
+\t\t</_KbTrigger>
+\t)`,
+      `\treturn (
+\t\t<_KbTrigger<T> {...(props as PolymorphicProps<T, KobalteDropdownMenuTriggerProps<T>>)} class={cn(props.class)} />
+\t)`,
+    ],
+  ],
   "DatePicker.tsx": [
     ["const t = d.getTime()", "const t = toISODate(d)"],
     ["t < minDate()!.getTime()", "t < toISODate(minDate()!)"],

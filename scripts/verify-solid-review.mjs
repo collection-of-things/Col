@@ -61,6 +61,47 @@ export async function verifySolidReview(frame, id, expect, { chipKeyboard = fals
     const overflow = await frame.locator("html").evaluate(root => root.scrollWidth - root.clientWidth);
     expect(overflow).toBeLessThanOrEqual(1);
   }
+  if (["solid-ui/Sidebar", "shadcn-solid/Sidebar", "zaidan/Sidebar", "nikala-ui/Sidebar"].includes(id)) {
+    const trigger = id === "nikala-ui/Sidebar" ? frame.getByRole("button", { name: "Toggle Sidebar" }).first() : frame.locator('button[data-sidebar="trigger"]').first();
+    const sidebar = frame.locator('[data-state="expanded"], [data-state="collapsed"]').first();
+    await expect(trigger).toHaveAccessibleName("Toggle Sidebar");
+    if (await sidebar.count()) {
+      const before = await sidebar.getAttribute("data-state");
+      await trigger.click();
+      await expect(sidebar).not.toHaveAttribute("data-state", before);
+      await trigger.click();
+      await expect(sidebar).toHaveAttribute("data-state", before);
+    } else {
+      await trigger.click();
+      const dialog = frame.getByRole("dialog").first();
+      await expect(dialog).toBeVisible();
+      await dialog.press("Escape");
+      await expect(dialog).toHaveCount(0);
+    }
+  }
+  if (id === "zaidan/Dialog") {
+    await frame.getByRole("button", { name: "Open Dialog" }).click();
+    const dialog = frame.getByRole("dialog", { name: "Edit profile" });
+    const save = dialog.getByRole("button", { name: "Save changes" });
+    const formId = await save.evaluate(button => button.form?.id);
+    expect(formId, "the portalled Save button must submit the example form").toBeTruthy();
+    const form = frame.locator("form").first();
+    await expect(form).toHaveAttribute("id", formId);
+    await form.evaluate(element => element.addEventListener("submit", event => {
+      event.preventDefault();
+      element.dataset.submitted = JSON.stringify(Object.fromEntries(new FormData(element)));
+    }));
+    await dialog.getByLabel("Name", { exact: true }).fill("Col Tester");
+    await dialog.getByLabel("Username", { exact: true }).fill("col-tester");
+    await save.click();
+    await expect(form).toHaveAttribute("data-submitted", JSON.stringify({ name: "Col Tester", username: "col-tester" }));
+    await form.evaluate(element => { delete element.dataset.submitted; });
+    await dialog.getByLabel("Username", { exact: true }).fill("keyboard-user");
+    await dialog.getByLabel("Username", { exact: true }).press("Enter");
+    await expect(form).toHaveAttribute("data-submitted", JSON.stringify({ name: "Col Tester", username: "keyboard-user" }));
+    await dialog.getByRole("button", { name: "Cancel", exact: true }).click();
+    await expect(dialog).toHaveCount(0);
+  }
   if (["solid-ui/Avatar", "solid-ui/Progress Circle", "zaidan/Avatar", "zaidan/Message", "zaidan/Sidebar"].includes(id)) {
     await expect(frame.locator('img[src^="https://github.com/"]')).toHaveCount(0);
     const fallback = id.startsWith("solid-ui/") ? "EK" : id === "zaidan/Message" ? "ME" : "CN";

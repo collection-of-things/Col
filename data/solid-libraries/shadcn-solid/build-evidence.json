@@ -3230,7 +3230,7 @@
       "lockIntegrity": "sha256:40d1c0827743a58526d31a25421a853f6d27a9d155575ea730e873502968fd84"
     },
     "batch-09": {
-      "codeIntegrity": "sha256:84102ff767fd6c846a1361c35500f07e32ca6a8178170a625c4f03ba2b617173",
+      "codeIntegrity": "sha256:76baecf00af002980063ea93089d5f9763ea88f559243c94ca50a8cf81cd8c75",
       "cssIntegrity": "sha256:eb12ece480cdfafb610459530fc55af730b62b476c3ff406f609f743ba77605d",
       "inputs": [
         0,
@@ -3425,7 +3425,7 @@
         "node_modules/@solid-primitives/memo",
         "node_modules/@corvu/drawer"
       ],
-      "inputsIntegrity": "sha256:f126b41b2f16b63605f17a440c6cdc9f7921df35cb18f0b75b7a31e35693f07d",
+      "inputsIntegrity": "sha256:874a2e096b5d3caa4a7119a164b25025f3fb332953882f34e78dfa71e3e66904",
       "packagesIntegrity": "sha256:9dca14cb0f94c1360779fbad0852872ec47439b03816e4d3f88af1033a964488",
       "lockIntegrity": "sha256:40d1c0827743a58526d31a25421a853f6d27a9d155575ea730e873502968fd84"
     },
@@ -11064,11 +11064,11 @@
     },
     {
       "path": "apps/docs/src/registry/ui/sidebar.tsx",
-      "sha256": "71d031f001b00fcc11ecf588ca3f98397238a2845beddee0f892aa45e71bd605"
+      "sha256": "0a9f048ce7fcf66fd96bd37e77ffbbd7c139fc841c3e1f67e889df879d4fcc82"
     },
     {
       "path": "apps/docs/src/registry/examples/sidebar-demo.tsx",
-      "sha256": "f5b847554c2cd7a1f81895b1fb8467ce3c3d57bdd92b072def524ad95f3f8718"
+      "sha256": "08331bc5016dbd0f2e2bcffc3070a55b65380718e6f8e5836b499aa91f630678"
     },
     {
       "path": "col-batch-09.tsx",

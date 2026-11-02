@@ -98,10 +98,8 @@ try {
           result.expectedBlockedAssets=result.blockedRequests.filter(disclosed);
           if(result.media.images.some(image=>!image.loaded&&!disclosed(image.src)))throw new Error("An original visible image did not decode");
           if(id==="nikala-ui/Sidebar") {
-            result.expectedLimitations=result.errors.filter(error=>error.includes("cookie")&&error.includes("sandbox"));
-            result.errors=result.errors.filter(error=>!result.expectedLimitations.includes(error));
             result.sidebarState=await child.locator('[data-state="collapsed"]').count();
-            if(!result.sidebarState)throw new Error("Sidebar did not update its state before the expected cookie exception");
+            if(!result.sidebarState)throw new Error("Sidebar did not update its state");
           }
           if(result.errors.length)throw new Error("Original demo raised browser errors");
           if(result.consoleErrors.some(error=>!/(?:Failed to load resource|net::ERR_FAILED)/.test(error)))throw new Error("Original demo logged a browser error");

@@ -99,6 +99,7 @@ try {
         const frame = app.frameLocator('iframe[title="Component preview"]');
         await frame.locator("#col-root > *:visible").first().waitFor({ state: "visible", timeout: 25000 });
         await frame.locator("#col-status").waitFor({ state: "hidden", timeout: 10000 });
+        await app.locator('iframe[title="Component preview"]').scrollIntoViewIfNeeded();
         if (id === "magic-ui/Lens") await verifyReactLens(frame, expect);
         if (id === "rocksolid/Badge") await expect(frame.getByRole("button", { name: "Notifications", exact: true })).toBeVisible();
         await verifySolidReview(frame, id, expect, { chipKeyboard: true });

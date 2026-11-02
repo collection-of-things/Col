@@ -2069,7 +2069,7 @@
       "lockIntegrity": "sha256:3da6b21d4ff2d1abfdd6000ba9203e60d1ebf27e76fcf84e7b47f4372efb07e8"
     },
     "batch-10": {
-      "codeIntegrity": "sha256:0cdf3cbc082fb069d30a699d8d9f1d671892f03a9b87aad0d8e1ef3387097c33",
+      "codeIntegrity": "sha256:daa7fc7dfcf1486dbf03829ba75d77915b5095e2728c179310baa2b99d71481a",
       "cssIntegrity": "sha256:2c76adcad2eddbcd3eaea1f39bfbbd07e48a735b00f2731a6f865fb66f737633",
       "inputs": [
         0,
@@ -2250,7 +2250,7 @@
         "node_modules/@solidjs/router",
         "node_modules/@solid-primitives/resize-observer"
       ],
-      "inputsIntegrity": "sha256:26a00b5963ac71b99d8dba04141fe314b430c038cc4676aeb943c2b22f4bd718",
+      "inputsIntegrity": "sha256:2acd833ad2b4d5b5301a061f068edf7afbbd8425219765165918c46fa9e87822",
       "packagesIntegrity": "sha256:e00b867d8276d516d3af97d7f5d08e077ad5a3c246f66cfa098c5ca91d6d0c31",
       "lockIntegrity": "sha256:3da6b21d4ff2d1abfdd6000ba9203e60d1ebf27e76fcf84e7b47f4372efb07e8"
     },
@@ -4385,7 +4385,7 @@
     },
     {
       "path": "apps/docs/src/registry/ui/sidebar.tsx",
-      "sha256": "b0dd4b4c09e6c20a34f095f4c4fba1e2ce1a1d49ba9c51d53a34aacc6b60786c"
+      "sha256": "b5e719ec2a0eeb0e1f104e5b3156b6fee8aff7dd624333e386cd9bed94a8f18c"
     },
     {
       "path": "apps/docs/src/registry/block/demo-sidebar.tsx",
