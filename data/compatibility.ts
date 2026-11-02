@@ -50,6 +50,7 @@ export const compatibility: LibraryCompatibility[] = [
       { subject: "react", constraint: "19", status: "supported", evidence: "https://uiarc.dev/docs/installation#requirements" },
     ],
   },
+  { slug: "affectui", facts: [{ subject: "react", constraint: "19", status: "supported", evidence: "https://www.affectui.com/llms.txt" }] },
   {
     slug: "ant-design",
     facts: [

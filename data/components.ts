@@ -76,6 +76,14 @@ export const componentIndex: ComponentIndex = {
     dependencies: ["quoin-ui", "solid-js", "@solidjs/web", "@solidjs/signals"],
     ...(name === "Menu" ? { aliases: ["submenu"] } : {}),
   })),
+  "affectui": [
+    { name: "Tool Call Card", kind: "full-pattern", summary: "An agent's tool call in one line with a live timer and status, folding open to arguments and result, with retry on errors.", verifiedAt: "2026-11-02", url: "https://www.affectui.com/components/tool-call-card" },
+    { name: "Thinking Loader", kind: "full-pattern", summary: "A small working pill for AI replies whose label rolls through phases and settles on a check.", verifiedAt: "2026-11-02", url: "https://www.affectui.com/components/thinking-loader" },
+    { name: "Message Actions", kind: "full-pattern", summary: "The bar under an AI message with copy, regenerate with a version switcher, thumbs feedback, and read aloud.", verifiedAt: "2026-11-02", url: "https://www.affectui.com/components/message-actions" },
+    { name: "Decision Inbox", kind: "full-pattern", summary: "Open decisions with two quick answers each; answered ones confirm and fold away.", verifiedAt: "2026-11-02", url: "https://www.affectui.com/components/decision-inbox" },
+    { name: "Email Draft", kind: "full-pattern", summary: "An agent-written email for review: switch recipient and tone, edit inline, then send or discard with undo.", verifiedAt: "2026-11-02", url: "https://www.affectui.com/components/email-draft" },
+    { name: "Comment Thread", kind: "full-pattern", summary: "A comment with replies where an assistant reports what it did, folds open details, and answers @mentions.", verifiedAt: "2026-11-02", url: "https://www.affectui.com/components/comment-thread" },
+  ],
   "uiarc": [
     { name: "Button", kind: "full-pattern", summary: "A native button with animated press feedback, loading states, and labels that resize as their content changes.", verifiedAt: "2026-10-12", url: "https://uiarc.dev/components/button", dependencies: ["motion"] },
     { name: "Dialog", kind: "full-pattern", summary: "A modal surface for confirmations, decisions, and short forms.", builtOn: "@radix-ui/react-dialog", concept: "dialog", verifiedAt: "2026-10-12", url: "https://uiarc.dev/components/dialog", dependencies: ["@radix-ui/react-dialog", "motion", "lucide-react"] },

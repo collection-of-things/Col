@@ -83,6 +83,17 @@ export interface Library {
 export const libraries: Library[] = [
   ...Object.values(solidCatalogs).map(({ library }) => library),
   {
+    name: "affectUI",
+    slug: "affectui",
+    addedAt: "2026-11-02T12:06:28Z",
+    description: "React components, screens, blocks, illustrations, and motion effects for AI products and SaaS, each a single dependency-free .tsx file installed through the shadcn CLI.",
+    url: "https://www.affectui.com",
+    category: "Component Library",
+    stacks: ["React", "TypeScript"],
+    useCases: ["Dashboards", "Micro-interactions", "Rapid Prototyping"],
+    tags: ["agentic ui", "ai chat", "shadcn registry", "mcp", "no tailwind", "zero dependencies", "illustrations", "saas"],
+  },
+  {
     name: "Quoin",
     slug: "quoin-ui",
     addedAt: "2026-10-28T15:12:49Z",
