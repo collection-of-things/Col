@@ -1,0 +1,296 @@
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Surface */
+  --color-surface-base: var(--surface-base);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-overlay: var(--surface-overlay);
+  --color-surface-dim: var(--surface-dim);
+  --color-surface-border: var(--surface-border);
+  --color-surface-stripe: var(--surface-stripe);
+
+  /* Font weights */
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  /* Ink */
+  --color-ink-50: var(--ink-50);
+  --color-ink-100: var(--ink-100);
+  --color-ink-200: var(--ink-200);
+  --color-ink-300: var(--ink-300);
+  --color-ink-400: var(--ink-400);
+  --color-ink-500: var(--ink-500);
+  --color-ink-600: var(--ink-600);
+  --color-ink-700: var(--ink-700);
+  --color-ink-800: var(--ink-800);
+  --color-ink-850: var(--ink-850);
+  --color-ink-900: var(--ink-900);
+  --color-ink-950: var(--ink-950);
+
+  /* Primary */
+  --color-primary-50: var(--primary-50);
+  --color-primary-100: var(--primary-100);
+  --color-primary-200: var(--primary-200);
+  --color-primary-300: var(--primary-300);
+  --color-primary-400: var(--primary-400);
+  --color-primary-500: var(--primary-500);
+  --color-primary-600: var(--primary-600);
+  --color-primary-700: var(--primary-700);
+  --color-primary-800: var(--primary-800);
+  --color-primary-900: var(--primary-900);
+  --color-primary-950: var(--primary-950);
+
+  /* Success */
+  --color-success-50: var(--success-50);
+  --color-success-100: var(--success-100);
+  --color-success-200: var(--success-200);
+  --color-success-300: var(--success-300);
+  --color-success-400: var(--success-400);
+  --color-success-500: var(--success-500);
+  --color-success-600: var(--success-600);
+  --color-success-700: var(--success-700);
+  --color-success-800: var(--success-800);
+  --color-success-900: var(--success-900);
+  --color-success-950: var(--success-950);
+
+  /* Warning */
+  --color-warning-50: var(--warning-50);
+  --color-warning-100: var(--warning-100);
+  --color-warning-200: var(--warning-200);
+  --color-warning-300: var(--warning-300);
+  --color-warning-400: var(--warning-400);
+  --color-warning-500: var(--warning-500);
+  --color-warning-600: var(--warning-600);
+  --color-warning-700: var(--warning-700);
+  --color-warning-800: var(--warning-800);
+  --color-warning-900: var(--warning-900);
+  --color-warning-950: var(--warning-950);
+
+  /* Danger */
+  --color-danger-50: var(--danger-50);
+  --color-danger-100: var(--danger-100);
+  --color-danger-200: var(--danger-200);
+  --color-danger-300: var(--danger-300);
+  --color-danger-400: var(--danger-400);
+  --color-danger-500: var(--danger-500);
+  --color-danger-600: var(--danger-600);
+  --color-danger-700: var(--danger-700);
+  --color-danger-800: var(--danger-800);
+  --color-danger-900: var(--danger-900);
+  --color-danger-950: var(--danger-950);
+
+  /* Info */
+  --color-info-50: var(--info-50);
+  --color-info-100: var(--info-100);
+  --color-info-200: var(--info-200);
+  --color-info-300: var(--info-300);
+  --color-info-400: var(--info-400);
+  --color-info-500: var(--info-500);
+  --color-info-600: var(--info-600);
+  --color-info-700: var(--info-700);
+  --color-info-800: var(--info-800);
+  --color-info-900: var(--info-900);
+  --color-info-950: var(--info-950);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   USER CONFIGURATION
+   These are the only variables you need to change to retheme
+   the entire design system.
+───────────────────────────────────────────────────────────── */
+:root {
+  --ink-light:     #18181c;
+  --ink-dark:      #f0f0f2;
+  --surface-light: #fdfdfd;
+  --surface-dark:  #020b13;
+
+  --primary: #F74E28;
+  --success: #2CA748;
+  --warning: #DC9A16;
+  --danger:  #E83535;
+  --info:    #2195E8;
+
+  /* ── Component height scale ───────────────────────────────────
+     Override any of these to resize ALL interactive components
+     (buttons, inputs, selects, date pickers, etc.) at that size.
+     Values correspond to Tailwind h-7 … h-11 by default.      */
+  --torch-h-xs: 1.75rem;   /* 28px  h-7  */
+  --torch-h-sm: 2rem;      /* 32px  h-8  */
+  --torch-h-md: 2.25rem;   /* 36px  h-9  */
+  --torch-h-lg: 2.5rem;    /* 40px  h-10 */
+  --torch-h-xl: 2.75rem;   /* 44px  h-11 */
+}
+
+/* ─────────────────────────────────────────────────────────────
+   LIGHT MODE
+───────────────────────────────────────────────────────────── */
+:root {
+  color-scheme: light;
+
+  /* Surface — elevation ladder (raised=brightest → border=darkest)
+     raised:  cards/panels pop to pure white
+     base:    off-white page background
+     overlay: barely-visible zebra stripes
+     dim:     hover states & group headers
+     border:  visible separators
+     stripe:  subtle background texture */
+  --surface-raised:  color-mix(in oklch, white 25%, var(--surface-light));
+  --surface-base:    var(--surface-light);
+  --surface-overlay: color-mix(in oklch, black 3%, var(--surface-light));
+  --surface-dim:     color-mix(in oklch, black 5%, var(--surface-light));
+  --surface-border:  color-mix(in oklch, black 9%, var(--surface-light));
+  --surface-stripe:  color-mix(in oklch, black 1.5%, var(--surface-raised));
+
+  /* Ink — derived from --ink-light, anchored at ink-900 */
+  --ink-50:  color-mix(in oklch, white 99%, var(--ink-light));
+  --ink-100: color-mix(in oklch, white 97%, var(--ink-light));
+  --ink-200: color-mix(in oklch, white 92%, var(--ink-light));
+  --ink-300: color-mix(in oklch, white 80%, var(--ink-light));
+  --ink-400: color-mix(in oklch, white 60%, var(--ink-light));
+  --ink-500: color-mix(in oklch, white 35%, var(--ink-light));
+  --ink-600: color-mix(in oklch, white 25%, var(--ink-light));
+  --ink-700: color-mix(in oklch, white 12%, var(--ink-light));
+  --ink-800: color-mix(in oklch, white 7%,  var(--ink-light));
+  --ink-850: color-mix(in oklch, white 3%,  var(--ink-light));
+  --ink-900: var(--ink-light);
+  --ink-950: color-mix(in oklch, black 30%, var(--ink-light));
+
+  /* Primary — derived from --primary, anchored at 500
+     Light: 20% steps toward white
+     Dark:  8 / 18 / 30 / 44 / 52% toward black  */
+  --primary-50:  color-mix(in oklch, white 90%, var(--primary));
+  --primary-100: color-mix(in oklch, white 80%, var(--primary));
+  --primary-200: color-mix(in oklch, white 60%, var(--primary));
+  --primary-300: color-mix(in oklch, white 40%, var(--primary));
+  --primary-400: color-mix(in oklch, white 20%, var(--primary));
+  --primary-500: var(--primary);
+  --primary-600: color-mix(in oklch, black 8%,  var(--primary));
+  --primary-700: color-mix(in oklch, black 18%, var(--primary));
+  --primary-800: color-mix(in oklch, black 30%, var(--primary));
+  --primary-900: color-mix(in oklch, black 44%, var(--primary));
+  --primary-950: color-mix(in oklch, black 52%, var(--primary));
+
+  /* Success */
+  --success-50:  color-mix(in oklch, white 90%, var(--success));
+  --success-100: color-mix(in oklch, white 80%, var(--success));
+  --success-200: color-mix(in oklch, white 60%, var(--success));
+  --success-300: color-mix(in oklch, white 40%, var(--success));
+  --success-400: color-mix(in oklch, white 20%, var(--success));
+  --success-500: var(--success);
+  --success-600: color-mix(in oklch, black 8%,  var(--success));
+  --success-700: color-mix(in oklch, black 18%, var(--success));
+  --success-800: color-mix(in oklch, black 30%, var(--success));
+  --success-900: color-mix(in oklch, black 44%, var(--success));
+  --success-950: color-mix(in oklch, black 52%, var(--success));
+
+  /* Warning */
+  --warning-50:  color-mix(in oklch, white 90%, var(--warning));
+  --warning-100: color-mix(in oklch, white 80%, var(--warning));
+  --warning-200: color-mix(in oklch, white 60%, var(--warning));
+  --warning-300: color-mix(in oklch, white 40%, var(--warning));
+  --warning-400: color-mix(in oklch, white 20%, var(--warning));
+  --warning-500: var(--warning);
+  --warning-600: color-mix(in oklch, black 8%,  var(--warning));
+  --warning-700: color-mix(in oklch, black 18%, var(--warning));
+  --warning-800: color-mix(in oklch, black 30%, var(--warning));
+  --warning-900: color-mix(in oklch, black 44%, var(--warning));
+  --warning-950: color-mix(in oklch, black 52%, var(--warning));
+
+  /* Danger */
+  --danger-50:  color-mix(in oklch, white 90%, var(--danger));
+  --danger-100: color-mix(in oklch, white 80%, var(--danger));
+  --danger-200: color-mix(in oklch, white 60%, var(--danger));
+  --danger-300: color-mix(in oklch, white 40%, var(--danger));
+  --danger-400: color-mix(in oklch, white 20%, var(--danger));
+  --danger-500: var(--danger);
+  --danger-600: color-mix(in oklch, black 8%,  var(--danger));
+  --danger-700: color-mix(in oklch, black 18%, var(--danger));
+  --danger-800: color-mix(in oklch, black 30%, var(--danger));
+  --danger-900: color-mix(in oklch, black 44%, var(--danger));
+  --danger-950: color-mix(in oklch, black 52%, var(--danger));
+
+  /* Info */
+  --info-50:  color-mix(in oklch, white 90%, var(--info));
+  --info-100: color-mix(in oklch, white 80%, var(--info));
+  --info-200: color-mix(in oklch, white 60%, var(--info));
+  --info-300: color-mix(in oklch, white 40%, var(--info));
+  --info-400: color-mix(in oklch, white 20%, var(--info));
+  --info-500: var(--info);
+  --info-600: color-mix(in oklch, black 8%,  var(--info));
+  --info-700: color-mix(in oklch, black 18%, var(--info));
+  --info-800: color-mix(in oklch, black 30%, var(--info));
+  --info-900: color-mix(in oklch, black 44%, var(--info));
+  --info-950: color-mix(in oklch, black 52%, var(--info));
+}
+
+/* ─────────────────────────────────────────────────────────────
+   DARK MODE
+───────────────────────────────────────────────────────────── */
+.dark {
+  color-scheme: dark;
+}
+
+.dark,
+.code-block-dark {
+  /* Surface — elevation ladder (raised=lightest → border=darkest relative to dark base)
+     raised:  cards/panels
+     base:    dark page background
+     overlay: barely-visible zebra stripes
+     dim:     hover states & group headers
+     border:  visible separators  */
+  --surface-raised:  color-mix(in oklch, white 6%, var(--surface-dark));
+  --surface-base:    var(--surface-dark);
+  --surface-overlay: color-mix(in oklch, white 1%, var(--surface-dark));
+  --surface-dim:     color-mix(in oklch, white 12%, var(--surface-dark));
+  --surface-border:  color-mix(in oklch, white 20%, var(--surface-dark));
+  --surface-stripe:  color-mix(in oklch, var(--surface-dark) 35%, var(--surface-raised));
+
+  /* Ink — derived from --ink-dark, anchored at ink-900 (inverted: 900 = lightest) */
+  --ink-50:  color-mix(in oklch, black 99%, var(--ink-dark));
+  --ink-100: color-mix(in oklch, black 97%, var(--ink-dark));
+  --ink-200: color-mix(in oklch, black 92%, var(--ink-dark));
+  --ink-300: color-mix(in oklch, black 80%, var(--ink-dark));
+  --ink-400: color-mix(in oklch, black 60%, var(--ink-dark));
+  --ink-500: color-mix(in oklch, black 40%, var(--ink-dark));
+  --ink-600: color-mix(in oklch, black 25%, var(--ink-dark));
+  --ink-700: color-mix(in oklch, black 12%, var(--ink-dark));
+  --ink-800: color-mix(in oklch, black 7%,  var(--ink-dark));
+  --ink-850: color-mix(in oklch, black 3%,  var(--ink-dark));
+  --ink-900: var(--ink-dark);
+  --ink-950: color-mix(in oklch, white 30%, var(--ink-dark));
+
+  --color-ink-50: var(--ink-50);
+  --color-ink-100: var(--ink-100);
+  --color-ink-200: var(--ink-200);
+  --color-ink-300: var(--ink-300);
+  --color-ink-400: var(--ink-400);
+  --color-ink-500: var(--ink-500);
+  --color-ink-600: var(--ink-600);
+  --color-ink-700: var(--ink-700);
+  --color-ink-800: var(--ink-800);
+  --color-ink-850: var(--ink-850);
+  --color-ink-900: var(--ink-900);
+  --color-ink-950: var(--ink-950);
+}
+
+@keyframes banner-in {
+  from { transform: translateY(-100%); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
+}
+
+@keyframes banner-out {
+  from { transform: translateY(0);     opacity: 1; }
+  to   { transform: translateY(-100%); opacity: 0; }
+}
+
+@theme {
+  --animate-banner-in:  banner-in  0.22s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-banner-out: banner-out 0.18s cubic-bezier(0.7, 0, 0.84, 0) both;
+}
