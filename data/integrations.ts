@@ -109,7 +109,7 @@ export const integrations: readonly Integration[] = [
     library: "boardui",
     notes: [
       "The local stdio server can install source, initialize a project, and add BoardUI agent rules and skills.",
-      "The alternative HTTP endpoint at https://www.boardui.com/mcp is stateless and read-only, with catalog search, component references, examples, and theme tokens.",
+      "BoardUI's official agent guide at https://www.boardui.com/llms.txt documents https://www.boardui.com/mcp as a stateless, read-only Streamable HTTP endpoint.",
       "Pro source requires a BoardUI Pro license. Public examples remain available without one.",
     ],
     tags: ["components", "charts", "dashboard", "agentic ui", "react aria"],
