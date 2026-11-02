@@ -10,7 +10,7 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "build:quoin": "node scripts/build-quoin-documentation.mjs && node scripts/build-quoin-previews.mjs",
-    "test": "npm run build && node --test"
+    "test": "npm run build && node --test --test-concurrency=1 \"lib/**/*.test.mjs\" \"scripts/**/*.test.mjs\" \"tests/**/*.test.mjs\""
   },
   "dependencies": {
     "@modelcontextprotocol/server": "^2.3.0",

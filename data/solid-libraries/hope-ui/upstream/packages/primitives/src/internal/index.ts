@@ -1,0 +1,169 @@
+// Barrel for the `@hope-ui/primitives/internal` subpath. Only top-level `src/` folders get a barrel
+// and a subpath export, so nothing below this one has its own.
+
+export {
+  type CreateAutoFocusOptions,
+  createAutoFocus,
+} from "./create-auto-focus";
+export {
+  type ButtonBehaviorProps,
+  type ButtonType,
+  type CreateButtonOptions,
+  type CreateButtonReturn,
+  createButton,
+} from "./create-button";
+export {
+  type CollectionItem,
+  type CreateCollectionReturn,
+  createCollection,
+  createItemIds,
+  type IndexedItemSource,
+  type ItemSource,
+  type RegisterItemOptions,
+} from "./create-collection";
+export { createComponentContext } from "./create-component-context";
+export {
+  type CreateControllableStateOptions,
+  createControllableState,
+} from "./create-controllable-state";
+export {
+  type CreateDataCollectionOptions,
+  type CreateDataCollectionReturn,
+  createDataCollection,
+} from "./create-data-collection";
+export {
+  type CreateDismissableOptions,
+  createDismissable,
+  type DismissBubbles,
+} from "./create-dismissable";
+export {
+  type Boundary,
+  type CreateFloatingOptions,
+  type CreateFloatingReturn,
+  createFloating,
+  type FloatingAlign,
+  type FloatingArrowState,
+  type FloatingSizeState,
+  type LogicalSide,
+  type Middleware,
+  type MiddlewareData,
+  type Padding,
+  type Placement,
+  type ReferenceElement,
+  type Side,
+  type SideOrLogical,
+  type Strategy,
+  type VirtualElement,
+} from "./create-floating";
+export {
+  type CreateFocusRestoreOptions,
+  createFocusRestore,
+} from "./create-focus-restore";
+export {
+  type CreateFocusScopeOptions,
+  type CreateFocusScopeReturn,
+  createFocusScope,
+} from "./create-focus-scope";
+export {
+  type CreateFocusTrapOptions,
+  createFocusTrap,
+} from "./create-focus-trap";
+export {
+  type CreateGridNavigationOptions,
+  type CreateGridNavigationReturn,
+  createGridNavigation,
+  type GridCell,
+  type GridWrap,
+} from "./create-grid-navigation";
+export {
+  type CreateHideOutsideOptions,
+  type CreateKeepVisibleOptions,
+  createHideOutside,
+  createKeepVisible,
+  keepVisible,
+  TOP_LAYER_ATTRIBUTE,
+} from "./create-hide-outside";
+export {
+  type CreateListExpansionOptions,
+  type CreateListExpansionReturn,
+  createListExpansion,
+  type ExpansionMode,
+} from "./create-list-expansion";
+export {
+  type CreateListFocusOptions,
+  type CreateListFocusReturn,
+  createListFocus,
+  type FocusMode,
+  type FocusMoveOptions,
+} from "./create-list-focus";
+export {
+  type CreateListNavigationOptions,
+  type CreateListNavigationReturn,
+  createListNavigation,
+  type Orientation,
+} from "./create-list-navigation";
+export {
+  type CreateListSelectionOptions,
+  type CreateListSelectionReturn,
+  createListSelection,
+  type SelectionBehavior,
+  type SelectionMode,
+  selectionRange,
+} from "./create-list-selection";
+export {
+  type CreateListTypeaheadOptions,
+  type CreateListTypeaheadReturn,
+  createListTypeahead,
+} from "./create-list-typeahead";
+export {
+  type CreatePresenceItemOptions,
+  type CreatePresenceOptions,
+  createPresence,
+  createPresenceItem,
+  type PresenceItemState,
+  type PresenceState,
+  type PresenceStatus,
+} from "./create-presence";
+export {
+  type CreatePressOptions,
+  type CreatePressReturn,
+  createPress,
+  type PressEvent,
+  type PressHandlers,
+  type PressPointerType,
+} from "./create-press";
+export {
+  type CreateRegisteredElementOptions,
+  createRegisteredElement,
+} from "./create-registered-element";
+export {
+  type CreateRegisteredIdOptions,
+  createRegisteredId,
+} from "./create-registered-id";
+export {
+  type CreateScrollLockOptions,
+  createScrollLock,
+} from "./create-scroll-lock";
+export {
+  type CreateTextDirectionWarningOptions,
+  createTextDirectionWarning,
+  type TextDirection,
+} from "./create-text-direction-warning";
+export {
+  type CreateTextInputOptions,
+  type CreateTextInputReturn,
+  createTextInput,
+  type TextInputBehaviorProps,
+  type TextInputElement,
+  type TextInputSelection,
+} from "./create-text-input";
+export {
+  type CreateVirtualCollectionOptions,
+  type CreateVirtualCollectionReturn,
+  createVirtualCollection,
+  type VirtualItemData,
+} from "./create-virtual-collection";
+export {
+  type ScrollIntoViewAlignment,
+  scrollIntoView,
+} from "./scroll-into-view";

@@ -1,0 +1,27 @@
+import { createDialogDescription } from "@hope-ui/primitives/dialog";
+import { type RenderProp, renderElement } from "@hope-ui/primitives/render";
+import type { JSX } from "@solidjs/web";
+import { type Component, merge, omit } from "solid-js";
+import { useDialogContext } from "./dialog-context";
+
+export interface DialogDescriptionProps extends JSX.HTMLAttributes<HTMLParagraphElement> {
+  render?: RenderProp<JSX.HTMLAttributes<HTMLParagraphElement>>;
+}
+
+export const Description: Component<DialogDescriptionProps> = (props) => {
+  const ctx = useDialogContext();
+  const description = createDialogDescription(ctx.state, omit(props, "render", "class"));
+
+  const elementProps = merge(description.props, {
+    get class(): string {
+      return ctx.slots.description(props.class);
+    },
+    "data-slot": "dialog-description",
+  });
+
+  return renderElement<JSX.HTMLAttributes<HTMLParagraphElement>>({
+    as: "p",
+    render: props.render,
+    props: elementProps,
+  });
+};

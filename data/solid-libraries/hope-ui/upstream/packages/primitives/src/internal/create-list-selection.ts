@@ -1,0 +1,268 @@
+import { type Accessor, createEffect, createSignal, untrack } from "solid-js";
+import type { CollectionItem } from "./create-collection";
+import { createControllableState } from "./create-controllable-state";
+import type { CreateListFocusReturn } from "./create-list-focus";
+
+export type SelectionMode = "none" | "single" | "multiple";
+/**
+ * Whether selection tracks focus.
+ * - `"explicit"` (default): selection changes only on an explicit action (Space/Enter, click).
+ * - `"follow"`: the active item becomes selected as focus moves (single-select listbox, Tabs).
+ */
+export type SelectionBehavior = "explicit" | "follow";
+
+export interface CreateListSelectionOptions<V> {
+  /** The shared focus instance selection reads the active item and item order from. */
+  focus: CreateListFocusReturn<V>;
+  /** `"single"` (default), `"multiple"`, or `"none"`. Reactive. */
+  selectionMode?: Accessor<SelectionMode>;
+  /** Controlled selected values. Omit for uncontrolled use via `defaultValue`. */
+  value?: Accessor<V[] | undefined>;
+  /** Initial selection, uncontrolled. Default `[]`. */
+  defaultValue?: V[];
+  /** Called on every selection change with the new value array. */
+  onChange?: (value: V[]) => void;
+  /** Whether selection follows focus. Default `"explicit"`. Reactive. */
+  selectionBehavior?: Accessor<SelectionBehavior>;
+  /**
+   * Gate for the follow-focus effect, e.g. `() => !typeahead.isTyping()` so browsing by typeahead
+   * does not select. Default always-on. Only consulted when `selectionBehavior` is `"follow"`.
+   */
+  shouldFollowFocus?: Accessor<boolean>;
+  /**
+   * Maps a value to its **identity key**, borrowing the `itemToValue` model from Base UI (the
+   * headless React library). Two values are equal when their keys are `===` (see
+   * {@link isItemEqualToValue}), so object values need not be reference-stable: a fresh
+   * `{ id, name }` each render, or a controlled value straight from a server, still matches the
+   * registered item when it maps to the same key. Default: identity (`(value) => value`), i.e. plain
+   * `===`, which is fine for primitive values; with object values pass e.g. `(fruit) => fruit.id`.
+   */
+  itemToValue?: (value: V) => unknown;
+  /**
+   * Full override of the equality rule, for shapes `itemToValue` can't express. Defaults to
+   * `(a, b) => itemToValue(a) === itemToValue(b)`. When given, `itemToValue` is ignored.
+   */
+  isItemEqualToValue?: (a: V, b: V) => boolean;
+}
+
+export interface CreateListSelectionReturn<V> {
+  /** The current selection, in no particular order. */
+  value: Accessor<V[]>;
+  /**
+   * Replace the whole selection in **one** write. Every other mutation here is expressed in terms of
+   * an item and should stay that way; this exists for the one shape they cannot express, a *native*
+   * control handing back an arbitrary set in a single gesture (`HiddenSelect`'s `<select>` change
+   * from autofill, and its form-reset restore). It has to be one write: in Solid 2.0 a signal write
+   * is invisible to a plain read until the next flush, so `deselectAll()` followed by N × `select()`
+   * would each read the pre-write value.
+   */
+  setValue(value: V[]): void;
+  /** Whether `item` is selected. */
+  isSelected(item: CollectionItem<V>): boolean;
+  /**
+   * The lowest index in `focus.items()` that is selected, or `-1` when nothing is. This is the row a
+   * list should enter on — `createListbox` threads it into `createListFocus`'s `entryIndex` so Tab
+   * lands on the selected option, as the ARIA Authoring Practices Guide (APG) requires, and a future
+   * Select opens on it.
+   */
+  firstSelectedIndex(): number;
+  /** Add `item` to the selection (single mode replaces). Sets the range anchor. */
+  select(item: CollectionItem<V>): void;
+  /** Remove `item` from the selection. */
+  deselect(item: CollectionItem<V>): void;
+  /** Flip `item`'s selected state. Sets the range anchor. */
+  toggle(item: CollectionItem<V>): void;
+  /** Replace the whole selection with just `item`. Sets the range anchor. */
+  selectOne(item: CollectionItem<V>): void;
+  /**
+   * Select every focusable item from the range anchor to `toIndex` (defaults to the active item),
+   * replacing the current selection. Multiple mode only; no-op otherwise. This is Shift+Arrow /
+   * Shift+Click.
+   */
+  selectRange(toIndex?: number): void;
+  /** Select every focusable item. Multiple mode only. */
+  selectAll(): void;
+  /** Clear the selection. */
+  deselectAll(): void;
+  /** Toggle the active item (Space). */
+  toggleActive(): void;
+  /** Select the active item (Enter). */
+  selectActive(): void;
+  /** Set the range anchor explicitly (e.g. on pointer-down before a shift extension). */
+  setAnchor(index: number): void;
+}
+
+/** The inclusive integer range between two indices, in ascending order. */
+export function selectionRange(fromIndex: number, toIndex: number): number[] {
+  const low = Math.min(fromIndex, toIndex);
+  const high = Math.max(fromIndex, toIndex);
+  const range: number[] = [];
+  for (let index = low; index <= high; index++) {
+    range.push(index);
+  }
+  return range;
+}
+
+/**
+ * Selection state layered on a [`createListFocus`](create-list-focus.md) instance: single/multiple,
+ * explicit or follow-focus, with Shift range extension. Adapted from Angular Aria's
+ * `list-selection`, with the behavior checklist (select-on-focus, Ctrl+A, Shift-extend from an
+ * anchor) cross-checked against React Aria's `useSelectableCollection`/`useSelectableItem`.
+ *
+ * Object values need not be reference-stable: pass `itemToValue` to map each value to an identity
+ * key compared with `===`, or `isItemEqualToValue` to override equality outright.
+ */
+export function createListSelection<V>(
+  options: CreateListSelectionOptions<V>,
+): CreateListSelectionReturn<V> {
+  const { focus } = options;
+  const mode = () => options.selectionMode?.() ?? "single";
+  // An explicit `isItemEqualToValue` wins outright over `itemToValue`. Resolved once, because these
+  // are configuration rather than reactive inputs.
+  const itemToValue = options.itemToValue ?? ((value: V) => value);
+  const areEqual =
+    options.isItemEqualToValue ?? ((a: V, b: V) => itemToValue(a) === itemToValue(b));
+  const compare = (a: V, b: V) => areEqual(a, b);
+
+  const [value, setValue] = createControllableState<V[]>({
+    value: () => options.value?.(),
+    defaultValue: () => options.defaultValue ?? [],
+    onChange: (next) => options.onChange?.(next),
+  });
+
+  const [anchorIndex, setAnchorIndex] = createSignal(-1);
+
+  const contains = (values: V[], candidate: V) => values.some((entry) => compare(entry, candidate));
+  const isSelected = (item: CollectionItem<V>) => contains(value(), item.value());
+
+  const firstSelectedIndex = () => {
+    const current = value();
+    if (current.length === 0) {
+      return -1;
+    }
+    return focus.items().findIndex((item) => contains(current, item.value()));
+  };
+
+  const add = (values: V[], candidate: V) =>
+    contains(values, candidate) ? values : [...values, candidate];
+  const remove = (values: V[], candidate: V) =>
+    values.filter((entry) => !compare(entry, candidate));
+
+  const anchorTo = (item: CollectionItem<V>) => setAnchorIndex(focus.items().indexOf(item));
+
+  const select = (item: CollectionItem<V>) => {
+    if (mode() === "none") {
+      return;
+    }
+    anchorTo(item);
+    setValue(mode() === "single" ? [item.value()] : add(value(), item.value()));
+  };
+
+  const deselect = (item: CollectionItem<V>) => {
+    if (mode() === "none") {
+      return;
+    }
+    setValue(remove(value(), item.value()));
+  };
+
+  const toggle = (item: CollectionItem<V>) => {
+    if (mode() === "none") {
+      return;
+    }
+    anchorTo(item);
+    if (isSelected(item)) {
+      setValue(remove(value(), item.value()));
+    } else {
+      setValue(mode() === "single" ? [item.value()] : add(value(), item.value()));
+    }
+  };
+
+  const selectOne = (item: CollectionItem<V>) => {
+    if (mode() === "none") {
+      return;
+    }
+    anchorTo(item);
+    setValue([item.value()]);
+  };
+
+  const selectRange = (toIndex: number = focus.activeIndex()) => {
+    if (mode() !== "multiple" || toIndex < 0) {
+      return;
+    }
+    const anchor = anchorIndex() < 0 ? toIndex : anchorIndex();
+    const items = focus.items();
+    const values: V[] = [];
+    for (const index of selectionRange(anchor, toIndex)) {
+      const item = items[index];
+      if (item && focus.isFocusable(item)) {
+        values.push(item.value());
+      }
+    }
+    setValue(values);
+  };
+
+  const selectAll = () => {
+    if (mode() !== "multiple") {
+      return;
+    }
+    setValue(
+      focus
+        .items()
+        .filter((item) => focus.isFocusable(item))
+        .map((item) => item.value()),
+    );
+  };
+
+  const deselectAll = () => setValue([]);
+
+  const toggleActive = () => {
+    const item = focus.activeItem();
+    if (item) {
+      toggle(item);
+    }
+  };
+  const selectActive = () => {
+    const item = focus.activeItem();
+    if (item) {
+      select(item);
+    }
+  };
+
+  // Follow-focus: when enabled (and not gated off, e.g. during typeahead), the active item becomes
+  // the selection as focus moves. Single-select semantics — `selectOne` replaces.
+  createEffect(
+    () => {
+      if ((options.selectionBehavior?.() ?? "explicit") !== "follow") {
+        return undefined;
+      }
+      if (options.shouldFollowFocus && !options.shouldFollowFocus()) {
+        return undefined;
+      }
+      return focus.activeItem();
+    },
+    (item) => {
+      // `selectOne` reads `mode()`/`value()`/`items()`; those reads are deliberate current-value
+      // lookups here, not dependencies (the effect re-runs only when the active item changes).
+      if (item) {
+        untrack(() => selectOne(item));
+      }
+    },
+  );
+
+  return {
+    value,
+    setValue,
+    isSelected,
+    firstSelectedIndex,
+    select,
+    deselect,
+    toggle,
+    selectOne,
+    selectRange,
+    selectAll,
+    deselectAll,
+    toggleActive,
+    selectActive,
+    setAnchor: setAnchorIndex,
+  };
+}

@@ -1,0 +1,5 @@
+inheritance: true
+reviews:
+  auto_review:
+    base_branches:
+      - '^codex/issue-69-stack-[0-9]{2}$'
