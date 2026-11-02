@@ -1,0 +1,605 @@
+{
+  "slug": "mystic-ui",
+  "permission": {
+    "status": "granted",
+    "source": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/LICENSE.md",
+    "checkedAt": "2026-10-29T19:35:27Z"
+  },
+  "snapshots": [
+    {
+      "title": "Setup with Tailwind and Panda CSS",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/setup",
+      "content": "Official setup guides: https://mystic-ui.vercel.app/docs/tailwind/setup and https://mystic-ui.vercel.app/docs/panda/setup.\n\nStart with a SolidJS project using the chosen CSS framework and follow its official initialization steps. The Tailwind setup selects the Tailwind variant and requires a manually defined cn utility at the configured utils alias, using clsx and tailwind-merge. The Panda setup selects the Panda variant and includes @pandacss/preset-panda in the Panda configuration's presets.\n\nKeep each variant's component source and generated CSS together. Col's previews use the source-pinned Tailwind 3 components and corresponding registry animation configuration. The official website's embedded stories render the Panda variant, including on Tailwind documentation pages.",
+      "fetchedAt": "2026-10-29T20:15:48.592Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/pages/setup-tailwind.mdx",
+          "integrity": "1c065175340412e899b014cc15ac7768cab1ef8f1e78739ec6fbde3aa2dfc1eb"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/pages/setup-panda.mdx",
+          "integrity": "46b14dff495f4ba90abb61d1f292a3ab344ad8399025b79641a6b0d64f05aa8d"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Android",
+      "title": "Android",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/android",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "A mockup of a standard Android device\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/android. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/android.tsx.\n\nSource-pinned component props:\n```ts\ninterface AndroidProps extends JSX.SvgSVGAttributes<SVGSVGElement> {\n\twidth?: number;\n\theight?: number;\n\tsrc?: string;\n\tvideoSrc?: string;\n}\n```\n\nOriginal documented Solid example extracted from its live documentation preview:\n```tsx\nimport { Android } from \"@/ui/android\";\n\nexport default function AndroidDemo() { return <Android />; }\n```\n\nThe upstream Tailwind story imports Panda's generated styled-system. This preview mounts the genuine documented Android export with its original default SVG dimensions and styles; no Panda styles are substituted.\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nThe upstream Tailwind story imports Panda's generated styled-system. This preview mounts the genuine documented Android export with its original default SVG dimensions and styles; no Panda styles are substituted.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/android.tsx",
+          "integrity": "cfb06a08e53c23c21d587b4fb2e3e5cf5ea73321f7505981fff999f81a3c3fcc"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/android.mdx",
+          "integrity": "0ccee80bdfeacfd6524ffbbb0ad953fe4185c2015f083caa9c72d011529a6fac"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Animated Beam",
+      "title": "Animated Beam",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-beam",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "An animated beam of light which travels along a path. Useful for showcasing the \"integration\" features of a website\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/animated-beam. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/animated-beam.tsx.\n\nSource-pinned component props:\n```ts\ninterface AnimatedBeamProps {\n\tclass?: string;\n\tcontainerRef: HTMLElement;\n\tfromRef: HTMLElement;\n\ttoRef: HTMLElement;\n\tcurvature?: number;\n\treverse?: boolean;\n\tpathColor?: string;\n\tpathWidth?: number;\n\tpathOpacity?: number;\n\tgradientStartColor?: string;\n\tgradientStopColor?: string;\n\tdelay?: number;\n\tduration?: number;\n\tstartXOffset?: number;\n\tstartYOffset?: number;\n\tendXOffset?: number;\n\tendYOffset?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { cn } from \"@/lib/utils\";\n\nimport { AnimatedBeam } from \"@/ui/animated-beam\";\n\nimport { TbBrand4chan, TbBrandAbstract, TbBrandAdobe, TbBrandAmongUs, TbBrandApple, TbBrandAppstore, TbBrandGithubFilled } from \"solid-icons/tb\";\n\nimport type { ParentComponent } from \"solid-js\";\n\nconst Circle: ParentComponent<{ class?: string; ref?: HTMLDivElement }> = (\n\tprops,\n) => {\n\treturn (\n\t\t<div\n\t\t\tref={props.ref}\n\t\t\tclass={cn(\n\t\t\t\t\"z-10 flex size-12 items-center justify-center rounded-full border-2 bg-white p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]\",\n\t\t\t\tprops.class,\n\t\t\t)}\n\t\t>\n\t\t\t{props.children}\n\t\t</div>\n\t);\n};\n\nexport default function AnimatedBeamDemo() {\n\tlet containerRef!: HTMLDivElement;\n\tlet div1Ref!: HTMLDivElement;\n\tlet div2Ref!: HTMLDivElement;\n\tlet div3Ref!: HTMLDivElement;\n\tlet div4Ref!: HTMLDivElement;\n\tlet div5Ref!: HTMLDivElement;\n\tlet div6Ref!: HTMLDivElement;\n\tlet div7Ref!: HTMLDivElement;\n\n\treturn (\n\t\t<div class=\"relative w-full mx-auto max-w-sm my-6\" ref={containerRef}>\n\t\t\t<div class=\"flex size-full flex-col max-w-lg max-h-[200px] items-stretch justify-between gap-10\">\n\t\t\t\t<div class=\"flex flex-row items-center justify-between\">\n\t\t\t\t\t<Circle ref={div1Ref}>\n\t\t\t\t\t\t<TbBrandAdobe />\n\t\t\t\t\t</Circle>\n\t\t\t\t\t<Circle ref={div5Ref}>\n\t\t\t\t\t\t<TbBrandGithubFilled />\n\t\t\t\t\t</Circle>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"flex flex-row items-center justify-between\">\n\t\t\t\t\t<Circle ref={div2Ref}>\n\t\t\t\t\t\t<TbBrandApple />\n\t\t\t\t\t</Circle>\n\t\t\t\t\t<Circle ref={div4Ref}>\n\t\t\t\t\t\t<TbBrandAmongUs size=\"24\" />\n\t\t\t\t\t</Circle>\n\t\t\t\t\t<Circle ref={div6Ref}>\n\t\t\t\t\t\t<TbBrandAppstore />\n\t\t\t\t\t</Circle>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"flex flex-row items-center justify-between\">\n\t\t\t\t\t<Circle ref={div3Ref}>\n\t\t\t\t\t\t<TbBrand4chan />\n\t\t\t\t\t</Circle>\n\t\t\t\t\t<Circle ref={div7Ref}>\n\t\t\t\t\t\t<TbBrandAbstract />\n\t\t\t\t\t</Circle>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<AnimatedBeam\n\t\t\t\tcontainerRef={containerRef}\n\t\t\t\tfromRef={div1Ref}\n\t\t\t\ttoRef={div4Ref}\n\t\t\t\tcurvature={-75}\n\t\t\t\tendYOffset={-10}\n\t\t\t/>\n\t\t\t<AnimatedBeam\n\t\t\t\tcontainerRef={containerRef}\n\t\t\t\tfromRef={div2Ref}\n\t\t\t\ttoRef={div4Ref}\n\t\t\t/>\n\t\t\t<AnimatedBeam\n\t\t\t\tcontainerRef={containerRef}\n\t\t\t\tfromRef={div3Ref}\n\t\t\t\ttoRef={div4Ref}\n\t\t\t\tcurvature={75}\n\t\t\t\tendYOffset={10}\n\t\t\t/>\n\t\t\t<AnimatedBeam\n\t\t\t\tcontainerRef={containerRef}\n\t\t\t\tfromRef={div5Ref}\n\t\t\t\ttoRef={div4Ref}\n\t\t\t\tcurvature={-75}\n\t\t\t\tendYOffset={-10}\n\t\t\t\treverse\n\t\t\t/>\n\t\t\t<AnimatedBeam\n\t\t\t\tcontainerRef={containerRef}\n\t\t\t\tfromRef={div6Ref}\n\t\t\t\ttoRef={div4Ref}\n\t\t\t\treverse\n\t\t\t/>\n\t\t\t<AnimatedBeam\n\t\t\t\tcontainerRef={containerRef}\n\t\t\t\tfromRef={div7Ref}\n\t\t\t\ttoRef={div4Ref}\n\t\t\t\tcurvature={75}\n\t\t\t\tendYOffset={10}\n\t\t\t\treverse\n\t\t\t/>\n\t\t</div>\n\t);\n}\n```\n\nThe documented example additionally imports `solid-icons`; these are demo requirements, separate from the component dependency graph.\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/animated-beam.tsx",
+          "integrity": "686dd5d22bc6b87f287d2b8c02858e23dc482c4b2203b9e6f5f24def2eca9aa0"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/animated-beam/default.tsx",
+          "integrity": "311993a2296e34bca16ddc41f349135190ed42ff7e76d28ea19b5ba170b3659f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/animated-beam.mdx",
+          "integrity": "ae72d1e3950b1f8ff48db90f50e5d0690b6c6f2d253c365eeef17498dcefc7ac"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Animated Shiny Text",
+      "title": "Animated Shiny Text",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-shiny-text",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "A light glare effect which pans across text making it appear as if it is shimmering\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/animated-shiny-text. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/animated-shiny-text.tsx.\n\nSource-pinned component props:\n```ts\ninterface AnimatedShinyTextProps\n\textends JSX.HTMLAttributes<HTMLParagraphElement> {\n\tshimmerWidth?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { AnimatedShinyText } from \"@/ui/animated-shiny-text\";\n\nimport { TbChevronRight } from \"solid-icons/tb\";\n\nexport default function AnimatedShinyTextDemo() {\n\treturn (\n\t\t<div class=\"group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800\">\n\t\t\t<AnimatedShinyText class=\"inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400\">\n\t\t\t\t<span>✨ Introducing Mystic UI</span>\n\t\t\t\t<TbChevronRight class=\"ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5\" />\n\t\t\t</AnimatedShinyText>\n\t\t</div>\n\t);\n}\n```\n\nThe documented example additionally imports `solid-icons`; these are demo requirements, separate from the component dependency graph.\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/animated-shiny-text.tsx",
+          "integrity": "6f9562a64e986480d9ee6c759d173ab11742f854aa6588d8414515a455ab5b2b"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/animated-shiny-text/default.tsx",
+          "integrity": "0507c66a77ec5847cb4fe94fb1962d24cc62383cc53f3dd946dc6197d490385a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/animated-shiny-text.mdx",
+          "integrity": "702f441620285ce38b5ea221afc1ebe9deff1920005a367756d9b09e48454b1f"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Border Beam",
+      "title": "Border Beam",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/border-beam",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "An animated beam of light which travels along the border of its container\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/border-beam. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/border-beam.tsx.\n\nSource-pinned component props:\n```ts\ninterface BorderBeamProps {\n\tanchor?: number;\n\tborderWidth?: number;\n\tclass?: string;\n\tcolorFrom?: string;\n\tcolorTo?: string;\n\tdelay?: number;\n\tduration?: number;\n\tsize?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { BorderBeam } from \"@/ui/border-beam\";\n\nexport default function BorderBeamDemo() {\n\treturn (\n\t\t<div class=\"relative h-[300px] w-full flex items-center justify-center overflow-hidden rounded-lg shadow-lg\">\n\t\t\t<span class=\"text-4xl md:text-6xl font-bold\">Border Beam</span>\n\t\t\t<BorderBeam />\n\t\t</div>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/border-beam.tsx",
+          "integrity": "3900f3a8e64b51eb445301e52a9a50097e49264b741c669fb15465a5fc7008f8"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/border-beam/default.tsx",
+          "integrity": "7167750241b7858894a61842e08736e4972072b6ecff0b4396cef6a23a9dab16"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/border-beam.mdx",
+          "integrity": "cccad070f72088ec446b98940bc9ec93bc7cce114a3fd608a64c95f2c1e6a38d"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Dock",
+      "title": "Dock",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/dock",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "An implementation of the MacOS dock using solid and motionone\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/dock. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/dock.tsx.\n\nSource-pinned component props:\n```ts\ninterface DockProps extends JSX.HTMLAttributes<HTMLDivElement> {\n\tmagnification?: number;\n\tdistance?: number;\n}\n\ninterface DockIconProps extends JSX.HTMLAttributes<HTMLDivElement> {}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { Dock, DockIcon } from \"@/ui/dock\";\n\nimport { For } from \"solid-js\";\n\nexport default function DockDemo() {\n\treturn (\n\t\t<Dock class=\"my-2\">\n\t\t\t<For each={Array(2).fill(0)}>\n\t\t\t\t{() => (\n\t\t\t\t\t<DockIcon>\n\t\t\t\t\t\t<div class=\"size-full bg-black/10 dark:bg-white/40 rounded-full\" />\n\t\t\t\t\t</DockIcon>\n\t\t\t\t)}\n\t\t\t</For>\n\t\t\t<div class=\"h-full border-x mx-1\" />\n\t\t\t<For each={Array(4).fill(0)}>\n\t\t\t\t{() => (\n\t\t\t\t\t<DockIcon>\n\t\t\t\t\t\t<div class=\"size-full bg-black/10 dark:bg-white/40 rounded-full\" />\n\t\t\t\t\t</DockIcon>\n\t\t\t\t)}\n\t\t\t</For>\n\t\t</Dock>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/dock.tsx",
+          "integrity": "8dc47ed194c214c76d75beb0d3ba4e08abd58c305012d3e7b6c88a6abd628734"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/dock/default.tsx",
+          "integrity": "1c8cc3acf9e912dd202f5cd5b9544caf109350746f861a2fee2e8333416550b1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/dock.mdx",
+          "integrity": "f75d95b4e1e8f47ad393d72605fdd7bc07142998927e47865a41929eba3803b4"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Dot Pattern",
+      "title": "Dot Pattern",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/dot-pattern",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "A background dot pattern made with SVGs, fully customizable using CSS\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/dot-pattern. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/dot-pattern.tsx.\n\nSource-pinned component props:\n```ts\ninterface DotPatternProps extends JSX.SvgSVGAttributes<SVGSVGElement> {\n\twidth?: number;\n\theight?: number;\n\tx?: number;\n\ty?: number;\n\tcx?: number;\n\tcy?: number;\n\tcr?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { DotPattern } from \"@/ui/dot-pattern\";\n\nexport default function DotPatternDemo() {\n\treturn (\n\t\t<div class=\"relative flex items-center justify-center h-[500px] w-full\">\n\t\t\t<p class=\"z-10 text-5xl font-bold\">Dot Pattern</p>\n\t\t\t<DotPattern class=\"[mask-image:radial-gradient(350px_circle_at_center,white,transparent)]\" />\n\t\t</div>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/dot-pattern.tsx",
+          "integrity": "895811c534bfed995d33ca046c911330ba43396a22aeb74659e79046e0bfb265"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/dot-pattern/default.tsx",
+          "integrity": "465de5230d2fb4187c8feb065a54ad00e9ad49a4f32ec78efbfc403710595044"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/dot-pattern.mdx",
+          "integrity": "fcd65810c08964ad6aeab94c772e0974e897fb5963a55e8c45c299941382c690"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Flip Text",
+      "title": "Flip Text",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/flip-text",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "Text flipping character animation\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/flip-text. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/flip-text.tsx.\n\nSource-pinned component props:\n```ts\ninterface FlipTextProps {\n\ttext: string;\n\tduration?: number;\n\tdelayMultiple?: number;\n\tstates?: {\n\t\tinitial: VariantDefinition;\n\t\tanimate: VariantDefinition;\n\t};\n\tclass?: string;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { FlipText } from \"@/ui/flip-text\";\n\nexport default function FlipTextDemo() {\n\treturn (\n\t\t<FlipText\n\t\t\tclass=\"text-4xl md:text-6xl font-bold tracking-tight\"\n\t\t\ttext=\"Flip Text\"\n\t\t/>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/flip-text.tsx",
+          "integrity": "411ae7db719a6864a355ad8f484a00547f8b6f649735a5f4802765d936c5e8cb"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/flip-text/default.tsx",
+          "integrity": "e141066666a75174f1f25da7e2efeb4512e7862ef1a68d938e18e8a30b681869"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/flip-text.mdx",
+          "integrity": "a85524587ac11a55c908a606c61053690eff1c53a6b5ef763702f4819e5a7f2b"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Gradual Spacing",
+      "title": "Gradual Spacing",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/gradual-spacing",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "Word animation for gradual spacing between letters\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/gradual-spacing. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/gradual-spacing.tsx.\n\nSource-pinned component props:\n```ts\ninterface GradualSpacingProps {\n\ttext: string;\n\tduration?: number;\n\tdelayMultiple?: number;\n\tstates?: {\n\t\thidden: Options[\"exit\"];\n\t\tvisible: Options[\"inView\"];\n\t};\n\tclass?: string;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { GradualSpacing } from \"@/ui/gradual-spacing\";\n\nexport default function GradualSpacingDemo() {\n\treturn (\n\t\t<GradualSpacing\n\t\t\tclass=\"text-4xl md:text-6xl font-bold tracking-tight\"\n\t\t\ttext=\"Gradual Spacing\"\n\t\t/>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/gradual-spacing.tsx",
+          "integrity": "ac8e178bc9840844b355777211f039bcc52b0bb57566bfdaf94e391a8a0df48a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/gradual-spacing/default.tsx",
+          "integrity": "575491814764f3ede399a95db674c521c14535c4140d76cae0dd0925f2b5114f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/gradual-spacing.mdx",
+          "integrity": "ed2dd72b6aeeb4a2267d91e9c05d5fa76bc657ba9b4f6c6639bd04f0780485f6"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Grid Pattern",
+      "title": "Grid Pattern",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/grid-pattern",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "A background grid pattern made with SVGs, fully customizable using CSS\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/grid-pattern. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/grid-pattern.tsx.\n\nSource-pinned component props:\n```ts\ninterface GridPatternProps {\n\tclass?: string;\n\theight?: number;\n\tsquares?: Array<[x: number, y: number]>;\n\tstrokeDasharray?: string;\n\twidth?: number;\n\tx?: number;\n\ty?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { GridPattern } from \"@/ui/grid-pattern\";\n\nexport default function GridPatternDashed() {\n\treturn (\n\t\t<div class=\"relative flex items-center justify-center h-[500px] w-full\">\n\t\t\t<p class=\"z-10 text-5xl font-bold\">Grid Pattern</p>\n\t\t\t<GridPattern\n\t\t\t\twidth={30}\n\t\t\t\theight={30}\n\t\t\t\tx={-1}\n\t\t\t\ty={-1}\n\t\t\t\tclass=\"[mask-image:radial-gradient(350px_circle_at_center,white,transparent)]\"\n\t\t\t/>\n\t\t</div>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/grid-pattern.tsx",
+          "integrity": "d5bab1b3ea10c0527054bfc12d3b8360c50e9223dc23f0243a16693a27bc5b48"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/grid-pattern/default.tsx",
+          "integrity": "cc3cb815072e4dfcd8b0c9dee29ade49a6e51f0abb0ce5ce4146a0dd2cbe9cd8"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/grid-pattern.mdx",
+          "integrity": "129ccdf0f7c65d3bdf7f314fb6ebff24bf5236adb113bd85be2b122ff9f5bdc6"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/iPhone 15",
+      "title": "iPhone 15",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/iphone-15",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "A mockup of the iPhone 15 Pro\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/iphone-15. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/iphone-15.tsx.\n\nSource-pinned component props:\n```ts\ninterface IPhone15Props extends JSX.SvgSVGAttributes<SVGSVGElement> {\n\twidth?: number;\n\theight?: number;\n\tsrc?: string;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { IPhone15 } from \"@/ui/iphone-15\";\n\nexport default function IPhone15Demo() {\n\treturn (\n\t\t<div class=\"relative\">\n\t\t\t<IPhone15 class=\"size-full\" />\n\t\t</div>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/iphone-15.tsx",
+          "integrity": "0822d26cfde483b3339eb9b56fe6b3aa109a0ff6891d06794b03b9f294ceb82d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/iphone-15/default.tsx",
+          "integrity": "16460a78086055b39fe72841c79aaffff667fd47a422fc1b55df0e237db131b6"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/iphone-15.mdx",
+          "integrity": "2d23d00304d5a60df3a2f879d2bf578a28c978ae957c894343d9e7fc3251cc51"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Letter Pullup",
+      "title": "Letter Pullup",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/letter-pullup",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "Staggered letter pull up text animation\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/letter-pullup. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/letter-pullup.tsx.\n\nSource-pinned component props:\n```ts\ninterface LetterPullupProps {\n\ttext: string;\n\tclass?: string;\n\tdelay?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { LetterPullup } from \"@/ui/letter-pullup\";\n\nexport default function LetterPullupDemo() {\n\treturn (\n\t\t<LetterPullup\n\t\t\tclass=\"font-bold text-4xl tracking-tight my-20\"\n\t\t\ttext=\"Staggered Letter Pull Up\"\n\t\t/>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/letter-pullup.tsx",
+          "integrity": "dc88d51a3444b63e84775e444399d09ee1a06eb21e38156c425bcc2261f3cb48"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/letter-pullup/default.tsx",
+          "integrity": "c8d9029af4af0882b6cc6d7c701f1ce3fa1301f1b83d31b2c27a216c0adf14a0"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/letter-pullup.mdx",
+          "integrity": "224a6ff0932208534f8f4d48f0c91c825a2147ea56645f28b856c62fbcad60e8"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Marquee",
+      "title": "Marquee",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/marquee",
+      "fetchedAt": "2026-10-29T19:35:27Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "Tailwind Marquee accepts children and HTML div attributes plus pauseOnHover, repeat, reverse, vertical, duration and gap. Defaults are false, 4, false, false, 40 seconds and 1rem. The example uses 20 seconds for its first row and reverses the second row.\n\nDocumented SolidJS example:\n```tsx\nimport { cn } from \"@/lib/utils\";\nimport { Marquee } from \"@/ui/marquee\";\nimport { For } from \"solid-js\";\n\nconst reviews = [\n\t{\n\t\tname: \"Jack\",\n\t\tusername: \"@jack\",\n\t\tbody: \"I've never seen anything like this before. It's amazing. I love it.\",\n\t\timg: \"https://avatar.vercel.sh/jack\",\n\t},\n\t{\n\t\tname: \"Jill\",\n\t\tusername: \"@jill\",\n\t\tbody: \"I don't know what to say. I'm speechless. This is amazing.\",\n\t\timg: \"https://avatar.vercel.sh/jill\",\n\t},\n\t{\n\t\tname: \"John\",\n\t\tusername: \"@john\",\n\t\tbody: \"I'm at a loss for words. This is amazing. I love it.\",\n\t\timg: \"https://avatar.vercel.sh/john\",\n\t},\n];\n\nconst ReviewCard = ({\n\timg,\n\tname,\n\tusername,\n\tbody,\n}: {\n\timg: string;\n\tname: string;\n\tusername: string;\n\tbody: string;\n}) => {\n\treturn (\n\t\t<figure\n\t\t\tclass={cn(\n\t\t\t\t\"relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4\",\n\t\t\t\t// light styles\n\t\t\t\t\"border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]\",\n\t\t\t\t// dark styles\n\t\t\t\t\"dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]\",\n\t\t\t)}\n\t\t>\n\t\t\t<div class=\"flex flex-row items-center gap-2\">\n\t\t\t\t<img\n\t\t\t\t\tclass=\"rounded-full\"\n\t\t\t\t\twidth=\"32\"\n\t\t\t\t\theight=\"32\"\n\t\t\t\t\talt=\"avatar-img\"\n\t\t\t\t\tsrc={img}\n\t\t\t\t/>\n\t\t\t\t<div class=\"flex flex-col\">\n\t\t\t\t\t<span class=\"text-sm font-medium dark:text-white\">{name}</span>\n\t\t\t\t\t<p class=\"text-xs font-medium dark:text-white/40\">{username}</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<blockquote class=\"mt-2 text-sm\">{body}</blockquote>\n\t\t</figure>\n\t);\n};\n\nexport default function MarqueeDemo() {\n\treturn (\n\t\t<div class=\"relative overflow-hidden\">\n\t\t\t<Marquee pauseOnHover duration={20}>\n\t\t\t\t<For each={reviews}>{(review) => <ReviewCard {...review} />}</For>\n\t\t\t</Marquee>\n\t\t\t<Marquee reverse pauseOnHover>\n\t\t\t\t<For each={reviews}>{(review) => <ReviewCard {...review} />}</For>\n\t\t\t</Marquee>\n\t\t\t<div class=\"pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background\" />\n\t\t\t<div class=\"pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background\" />\n\t\t</div>\n\t);\n}\n\n```\n\nSource revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Preserve the source component classes and its matching theme/animation CSS. Preview compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16. This snapshot and preview use the Tailwind 3 variant; the official page also offers Panda CSS. Latest upstream commit checked on 2026-10-30 is dated 2024-12-24. The upstream alpha status is not a guarantee of current maintenance.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/marquee.tsx",
+          "integrity": "55d832ac6bf668e9ce545111ce7253eb0621c1e23a88051f173b433b016a370f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/marquee/default.tsx",
+          "integrity": "e250b94e24dd01fe2bee05f2434caac08d3a32733a3e61bb176fdd49cf9c09ed"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Meteors",
+      "title": "Meteors",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/meteors",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "A meteor shower effect\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/meteors. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/meteors.tsx.\n\nSource-pinned component props:\n```ts\ninterface MeteorsProps {\n\tnumber?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { Meteors } from \"@/ui/meteors\";\n\nexport default function MeteorDemo() {\n\treturn (\n\t\t<div class=\"relative h-[300px] w-full flex items-center justify-center overflow-hidden rounded-lg border shadow-lg\">\n\t\t\t<Meteors number={30} />\n\t\t\t<span class=\"text-4xl md:text-6xl font-bold\">Meteors</span>\n\t\t</div>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/meteors.tsx",
+          "integrity": "e0b129a164df2ee65add05275c47998af5f1b659222792f0ea1ef9bb9321f7ef"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/meteors/default.tsx",
+          "integrity": "945ce6bc843504fab3f01ae850b3cdc055ad7f4ddcdd450a29ae30a406c9b0b9"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/meteors.mdx",
+          "integrity": "82c13187a59a63106587a67a432718da7ec4af790635ecf3af44accd202d8e48"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/No Signal Screen",
+      "title": "No Signal Screen",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/no-signal-screen",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "A retro no signal screen background\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/no-signal-screen. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/no-signal-screen.tsx.\n\nSource-pinned component props:\n```ts\ninterface NoSignalScreenProps\n\textends JSX.CanvasHTMLAttributes<HTMLCanvasElement> {\n\tframeRate?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { NoSignalScreen } from \"@/ui/no-signal-screen\";\n\nexport default function DotPatternDemo() {\n\treturn (\n\t\t<div class=\"relative flex items-center justify-center h-[500px] w-full\">\n\t\t\t<p class=\"z-10 text-5xl font-bold mix-blend-overlay\">No Signal</p>\n\t\t\t<NoSignalScreen />\n\t\t</div>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/no-signal-screen.tsx",
+          "integrity": "0190596938122ed22e9b7efdf5bb80ed4275c93bd7ac20f8bb81735ca65e5f90"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/no-signal-screen/default.tsx",
+          "integrity": "6f35d274f531361086af7e0f81b496657aa6e5d01a548ba50dcf3583d9dd619a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/no-signal-screen.mdx",
+          "integrity": "de9465d27aea45a6a49dd9699b13f386d9169b2a9879cd8695adff1baecfec30"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Number Ticker",
+      "title": "Number Ticker",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/number-ticker",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "Animate numbers to count up or down to a target number\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/number-ticker. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/number-ticker.tsx.\n\nSource-pinned component props:\n```ts\ninterface NumberTickerProps extends JSX.HTMLAttributes<HTMLSpanElement> {\n\tvalue?: number;\n\tdirection?: \"up\" | \"down\";\n\tdelay?: number;\n\tdecimalPlaces?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { NumberTicker } from \"@/ui/number-ticker\";\n\nexport default function NumberTickerDemo() {\n\treturn (\n\t\t<p class=\"text-4xl md:text-6xl font-bold\">\n\t\t\t<NumberTicker value={100} />\n\t\t</p>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/number-ticker.tsx",
+          "integrity": "f614a5fe4007f1d2a8988d9e22cf90ff3e201d448ae4da7920a3beb392dbfece"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/number-ticker/default.tsx",
+          "integrity": "5ee3570cbfac9dae2f2c11ed0a1fe0b1c76e8b508cf7477feffbcab9cb836f24"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/number-ticker.mdx",
+          "integrity": "39c1bd6b642c848faf98d4d9284c0ce9866f502e1bcf4787fae964c61976ec48"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Orbiting Circles",
+      "title": "Orbiting Circles",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/orbiting-circles",
+      "fetchedAt": "2026-10-29T19:35:27Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "Tailwind OrbitingCircles accepts duration, delay, radius, path, reverse and class with children. Defaults are 20 seconds, 0 seconds, 50 pixels, true and false. The example uses 80 and 160 pixel radii, 10 second delays, and reverse motion on its outer pair.\n\nDocumented SolidJS example:\n```tsx\nimport { OrbitingCircles } from \"@/ui/orbiting-circles\";\nimport {\n\tTbBrand4chan,\n\tTbBrandBitbucket,\n\tTbBrandGithubFilled,\n\tTbBrandReddit,\n} from \"solid-icons/tb\";\n\nexport default function OrbitingCirclesDemo() {\n\treturn (\n\t\t<div class=\"relative flex items-center justify-center h-[500px] w-full overflow-hidden\">\n\t\t\t<span class=\"text-4xl md:text-6xl font-bold tracking-tight\">Circles</span>\n\t\t\t<OrbitingCircles radius={80}>\n\t\t\t\t<TbBrandGithubFilled size=\"28\" />\n\t\t\t</OrbitingCircles>\n\t\t\t<OrbitingCircles radius={80} delay={10}>\n\t\t\t\t<TbBrandBitbucket size=\"28\" />\n\t\t\t</OrbitingCircles>\n\n\t\t\t<OrbitingCircles reverse radius={160}>\n\t\t\t\t<TbBrandReddit size=\"28\" />\n\t\t\t</OrbitingCircles>\n\t\t\t<OrbitingCircles reverse radius={160} delay={10}>\n\t\t\t\t<TbBrand4chan size=\"28\" />\n\t\t\t</OrbitingCircles>\n\t\t</div>\n\t);\n}\n\n```\n\nSource revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Preserve the source component classes and its matching theme/animation CSS. Preview compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16. This snapshot and preview use the Tailwind 3 variant; the official page also offers Panda CSS. Latest upstream commit checked on 2026-10-30 is dated 2024-12-24. The upstream alpha status is not a guarantee of current maintenance.\n\nThe documented example additionally imports `solid-icons`; these are demo requirements, separate from the component dependency graph.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/orbiting-circles.tsx",
+          "integrity": "7c086bebabb0f37ec2377ae89381fbf058367782f762ac45903754ac81d23ed8"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/orbiting-circles/default.tsx",
+          "integrity": "5dceb025762512dd4adf3fdacdba73e8b493cff203b1bdf845d8c3e3a77331df"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Retro Grid",
+      "title": "Retro Grid",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/retro-grid",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "An animated scrolling retro grid effect\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/retro-grid. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/retro-grid.tsx.\n\nSource-pinned component props:\n```ts\ninterface RetroGridProps {\n\tangle?: number;\n\tclass?: string;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { RetroGrid } from \"@/ui/retro-grid\";\n\nexport default function DotPatternDemo() {\n\treturn (\n\t\t<div class=\"relative flex h-[500px] w-full items-center justify-center\">\n\t\t\t<span class=\"z-10 bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-5xl font-bold text-transparent\">\n\t\t\t\tRetro Grid\n\t\t\t</span>\n\n\t\t\t<RetroGrid />\n\t\t</div>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/retro-grid.tsx",
+          "integrity": "fb05c5d313d923f42e5b68ac3c0e9144ebe57b35998123f127a875e182fa5e47"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/retro-grid/default.tsx",
+          "integrity": "4d17754a4ca67c9d4ca506fe4dc510262eb669032b6cd8823fc23931c4fbbc65"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/retro-grid.mdx",
+          "integrity": "54ca26911c9bb08d53124dae9d3c1d14b8859c10b81a8b531c929648b24a9f9a"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Ripple",
+      "title": "Ripple",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/ripple",
+      "fetchedAt": "2026-10-29T19:35:27Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "Tailwind Ripple accepts mainCircleSize, mainCircleOpacity, numCircles and class. Defaults are 210 pixels, 0.24 and 8. Each successive circle grows by 70 pixels, fades by 0.03 and is delayed by 0.06 seconds. The last circle has a dashed border.\n\nDocumented SolidJS example:\n```tsx\nimport { Ripple } from \"@/ui/ripple\";\n\nexport default function RippleDemo() {\n\treturn (\n\t\t<div class=\"relative h-[800px] w-full flex items-center justify-center overflow-hidden\">\n\t\t\t<img\n\t\t\t\tsrc=\"https://raw.githubusercontent.com/solidjs/solid-site/refs/heads/main/src/assets/logo.svg\"\n\t\t\t\tclass=\"w-20 grayscale\"\n\t\t\t\talt=\"Solid JS\"\n\t\t\t/>\n\t\t\t<Ripple />\n\t\t</div>\n\t);\n}\n\n```\n\nSource revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Preserve the source component classes and its matching theme/animation CSS. Preview compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16. This snapshot and preview use the Tailwind 3 variant; the official page also offers Panda CSS. Latest upstream commit checked on 2026-10-30 is dated 2024-12-24. The upstream alpha status is not a guarantee of current maintenance.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/ripple.tsx",
+          "integrity": "7d823631b9b01792e62fbd35f3ea283167000da44e3e3cb8cd3ddcef5097a3f0"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/ripple/default.tsx",
+          "integrity": "e420ff5ffc43bebdf5e439c6a9a5a1e38131b8d677f528f0415cb458df852d64"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Safari",
+      "title": "Safari",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/safari",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "A safari browser mockup to showcase your website\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/safari. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/safari.tsx.\n\nSource-pinned component props:\n```ts\ninterface SafariProps extends JSX.SvgSVGAttributes<SVGSVGElement> {\n\turl?: string;\n\tsrc?: string;\n\twidth?: number;\n\theight?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { Safari } from \"@/ui/safari\";\n\nexport default function SafariDemo() {\n\treturn (\n\t\t<div class=\"relative\">\n\t\t\t<Safari url=\"start.solidjs.com\" class=\"h-full w-full\" />\n\t\t</div>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/safari.tsx",
+          "integrity": "45b68b3503e4c211c6425a731a025195808dd3fdcd0995d2e00a08a0865e9f3d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/safari/default.tsx",
+          "integrity": "43fc04badb79454fdddd6db8bddac7ac479e407a80af34bc41b0254ff05388fe"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/safari.mdx",
+          "integrity": "f094631a21fdf7f075359a84e77255793f1b6ee92997b46f3b11f42e2f555c28"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Shine Border",
+      "title": "Shine Border",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/shine-border",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "Shine border is an animated background border effect\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/shine-border. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/shine-border.tsx.\n\nSource-pinned component props:\n```ts\ninterface ShineBorderProps {\n\tborderRadius?: number;\n\tborderWidth?: number;\n\tclass?: string;\n\tcolor?: string | string[];\n\tduration?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { ShineBorder } from \"@/ui/shine-border\";\n\nexport default function ShineBorderDemo() {\n\treturn (\n\t\t<ShineBorder\n\t\t\tclass=\"relative flex h-[500px] w-full items-center justify-center overflow-hidden rounded-lg shadow-lg\"\n\t\t\tcolor={[\"#A07CFE\", \"#FE8FB5\", \"#FFBE7B\"]}\n\t\t>\n\t\t\t<span class=\"text-4xl md:text-6xl font-bold\">Shine Border</span>\n\t\t</ShineBorder>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/shine-border.tsx",
+          "integrity": "aab9fb1bba1d5c1394e27357d2abfe4194ef94b2c514c17bd593be52875dbbb6"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/shine-border/default.tsx",
+          "integrity": "e0125ce5f5969e6e2335cb2077f44daf0e47154c4c49965677542dd5bfe0df4f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/shine-border.mdx",
+          "integrity": "de147857cd375f3896ebcea0e43b4b1caef488c8fe21b98b51e4fc22b7c95629"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Sparkles Text",
+      "title": "Sparkles Text",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/sparkles-text",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "A dynamic text that generates continuous sparkles with smooth transitions, perfect for highlighting text with animated stars.\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/sparkles-text. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/sparkles-text.tsx.\n\nSource-pinned component props:\n```ts\ninterface SparklesTextProps extends JSX.HTMLAttributes<HTMLSpanElement> {\n\t/** The colors of the sparkles */\n\tcolors?: string[];\n\n\t/** The class of the text */\n\tclass?: string;\n\n\t/** The number of sparkles */\n\tsparklesCount?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { SparklesText } from \"@/ui/sparkles-text\";\n\nexport default function SparklesTextDemo() {\n\treturn (\n\t\t<p class=\"text-4xl md:text-6xl font-bold\">\n\t\t\t<SparklesText>Mystic</SparklesText> UI\n\t\t</p>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/sparkles-text.tsx",
+          "integrity": "1720c30e832f1ab1a04450218427ccafa5da9d798adb00fb882ef9c0d61b69bf"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/sparkles-text/default.tsx",
+          "integrity": "8fc6882434bb3d06c233b9febfdfd7da8e6b5b516da685a3e6ae86609e656168"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/sparkles-text.mdx",
+          "integrity": "3af452fee2af7bdbfbf6987d17f343e4ab9662b4a92318053aad4bee48036b08"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Spotlight",
+      "title": "Spotlight",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/spotlight",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "A spotlight effect with CSS, good for drawing attention to a particular element on the page\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/spotlight. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/spotlight.tsx.\n\nSource-pinned component props:\n```ts\ninterface SpotlightProps {\n\tclass?: string;\n\tfill?: string;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { Spotlight } from \"@/ui/spotlight\";\n\nexport default function SpotlightDemo() {\n\treturn (\n\t\t<div class=\"h-[500px] w-full rounded-md flex items-center justify-center relative overflow-hidden dark bg-black\">\n\t\t\t<Spotlight class=\"left-0 -top-20\" fill=\"white\" />\n\t\t\t<h1 class=\"bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-4xl md:text-8xl font-bold text-transparent dark:from-white dark:to-slate-900/10\">\n\t\t\t\tSpotlight\n\t\t\t</h1>\n\t\t</div>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/spotlight.tsx",
+          "integrity": "572cf6bcb2dd750735b6437bb8cdabce8e8c770440ca5bc3131516de676008c3"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/spotlight/default.tsx",
+          "integrity": "1840791feb898aad80b0bfced66c40881066a5d4394f0ab929fefcb3d05d042d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/spotlight.mdx",
+          "integrity": "b3c7fded6a3cf5a0127d5108abb742c79062fcff6be5a0799717d9f42031437f"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Text Reveal",
+      "title": "Text Reveal",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/text-reveal",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "Fade in text as you scroll down the page\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/text-reveal. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/text-reveal.tsx.\n\nSource-pinned component props:\n```ts\ninterface TextRevealByWordProps {\n\ttext: string;\n\tspace?: number;\n\tclass?: string;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { TextReveal } from \"@/ui/text-reveal\";\n\nexport default function TextRevealDemo() {\n\treturn (\n\t\t<TextReveal\n\t\t\tclass=\"text-3xl md:text-5xl font-bold\"\n\t\t\ttext=\"Imagine magical components for SolidJS\"\n\t\t/>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/text-reveal.tsx",
+          "integrity": "3130916ff0e879f658204bb5dace0148f4fd0a6712e91040b92403584a98e000"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/text-reveal/default.tsx",
+          "integrity": "887e75fcc51082143fc63863925aec2ccb8cd7c4294cba527ca28f6351cbb54c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/text-reveal.mdx",
+          "integrity": "bbdcf10cb158b549e432bda45e02e16659118e0b1e6cae9e873800963602db8d"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Typing Animation",
+      "title": "Typing Animation",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/typing-animation",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "Characters appearing in typed animation\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/typing-animation. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/typing-animation.tsx.\n\nSource-pinned component props:\n```ts\ninterface TypingAnimationProps {\n\ttext: string;\n\tduration?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { TypingAnimation } from \"@/ui/typing-animation\";\n\nexport default function TypingAnimationDemo() {\n\treturn (\n\t\t<h1 class=\"text-4xl md:text-6xl font-bold\">\n\t\t\t<TypingAnimation text=\"Typing Animation\" />\n\t\t</h1>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/typing-animation.tsx",
+          "integrity": "3b157a076c37bf7c17d42e1f1ea917ed2dfcfe56da6b102297463d9ff83c94ec"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/typing-animation/default.tsx",
+          "integrity": "91c1bdcaff85cd8ec92e496e9e606085b7b7c40ebe4bad08da5a2b93ca14cd67"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/typing-animation.mdx",
+          "integrity": "b1cfc64ad11fbff85196e214ef4ec9906dcf40c624248559de50ba9c1c168b5d"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Word Fade In",
+      "title": "Word Fade In",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-fade-in",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "Text animation which fades in word by word\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/word-fade-in. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/word-fade-in.tsx.\n\nSource-pinned component props:\n```ts\ninterface WordFadeInProps extends JSX.HTMLAttributes<HTMLDivElement> {\n\ttext: string;\n\tdelay?: number;\n\tduration?: number;\n\tblur?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { WordFadeIn } from \"@/ui/word-fade-in\";\n\nexport default function WordFadeInDemo() {\n\treturn (\n\t\t<WordFadeIn\n\t\t\tclass=\"text-4xl md:text-6xl tracking-tight font-bold\"\n\t\t\ttext=\"Word Fade In\"\n\t\t/>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/word-fade-in.tsx",
+          "integrity": "fccbbd02390b5374f204e54f68b7a7fe411d71ee0b3eb683d77ea54e770c835e"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/word-fade-in/default.tsx",
+          "integrity": "293c6050ea4e02ee3d024226dcb221491f75fd2087c6fa80d7aa910c0b386a74"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/word-fade-in.mdx",
+          "integrity": "45123cad3db362a6334d0d2b618fa8273dc40d41f50561db62d948ea435cfa3d"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Word Pullup",
+      "title": "Word Pullup",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-pullup",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "Text animation for words to pull up\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/word-pullup. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/word-pullup.tsx.\n\nSource-pinned component props:\n```ts\ninterface WordPullupProps {\n\ttext: string;\n\tclass?: string;\n\tdelay?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { WordPullup } from \"@/ui/word-pullup\";\n\nexport default function LetterPullupDemo() {\n\treturn (\n\t\t<WordPullup\n\t\t\tclass=\"font-bold text-4xl tracking-tight my-20\"\n\t\t\ttext=\"Staggered Word Pull Up\"\n\t\t/>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/word-pullup.tsx",
+          "integrity": "0b2e6a816c07f1006d42a8ec9ed0df06055a758dfff73658a14826d29272a257"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/word-pullup/default.tsx",
+          "integrity": "82b435472054ab4477c0afbc865f848eb37a788d9b6b26d6a472b9f40129f005"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/word-pullup.mdx",
+          "integrity": "26198e0d9c8fccd06dab9ed09c1e9c8e1ec17b06c08b7771c5416412c8e1a5f2"
+        }
+      ]
+    },
+    {
+      "componentId": "mystic-ui/Word Rotate",
+      "title": "Word Rotate",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-rotate",
+      "fetchedAt": "2026-10-30T01:01:15.790Z",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "content": "A vertical rotation of words\n\nOfficial component guide: https://mystic-ui.vercel.app/docs/tailwind/components/word-rotate. Component source: https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/word-rotate.tsx.\n\nSource-pinned component props:\n```ts\ninterface WordRotateProps\n\textends JSX.HTMLAttributes<HTMLDivElement>,\n\t\tOmit<MotionComponentProps, \"children\"> {\n\twords: string[];\n\tduration?: number;\n}\n```\n\nOriginal documented Solid example:\n```tsx\nimport { WordRotate } from \"@/ui/word-rotate\";\n\nexport default function WordRotateDemo() {\n\treturn (\n\t\t<div class=\"overflow-hidden py-2\">\n\t\t\t<WordRotate\n\t\t\t\tclass=\"text-4xl md:text-6xl font-bold\"\n\t\t\t\twords={[\"Word\", \"Rotate\"]}\n\t\t\t/>\n\t\t</div>\n\t);\n}\n```\n\nPinned revision: c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f. Browser compilation uses SolidJS 1.9.17 and babel-preset-solid 1.9.16.\n\nOriginal Tailwind 3 source; the documentation website embeds Panda stories. Original theme-token and reduced-motion omissions are retained.",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/ui/word-rotate.tsx",
+          "integrity": "32b7c54cf569f33b969caaae727a40b541e0cdc7a2caeddb8ce59169e452f2a4"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/components/tailwind/src/stories/word-rotate/default.tsx",
+          "integrity": "aeacbfa3d77aad9ba716a1af720cafbcaed920be0f77f406afeb0efeee4dcb89"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheComputerM/mystic-ui/c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f/website/src/content/docs/word-rotate.mdx",
+          "integrity": "d0ac889d322ec30d6b269a95f862bd8edf27d7dce832c25471e94b6c8f2a4432"
+        }
+      ]
+    }
+  ]
+}

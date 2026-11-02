@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-30T06:02:27.662Z",
+  "gaps": [
+    {
+      "url": "https://avatars.githubusercontent.com/u/106103625",
+      "reason": "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled.",
+      "source": "https://avatars.githubusercontent.com/u/106103625"
+    },
+    {
+      "url": "https://avatars.githubusercontent.com/u/16860528",
+      "reason": "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled.",
+      "source": "https://avatars.githubusercontent.com/u/16860528"
+    },
+    {
+      "url": "https://avatars.githubusercontent.com/u/20110627",
+      "reason": "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled.",
+      "source": "https://avatars.githubusercontent.com/u/20110627"
+    },
+    {
+      "url": "https://avatars.githubusercontent.com/u/59228569",
+      "reason": "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled.",
+      "source": "https://avatars.githubusercontent.com/u/59228569"
+    },
+    {
+      "url": "https://avatars.githubusercontent.com/u/59442788",
+      "reason": "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled.",
+      "source": "https://avatars.githubusercontent.com/u/59442788"
+    },
+    {
+      "url": "https://avatars.githubusercontent.com/u/89768406",
+      "reason": "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled.",
+      "source": "https://avatars.githubusercontent.com/u/89768406"
+    },
+    {
+      "url": "https://startup-template-sage.vercel.app/hero-dark.png",
+      "reason": "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled.",
+      "source": "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/example/hero-video-dialog-demo.tsx"
+    },
+    {
+      "url": "https://startup-template-sage.vercel.app/hero-light.png",
+      "reason": "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled.",
+      "source": "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/example/hero-video-dialog-demo.tsx"
+    },
+    {
+      "url": "https://cdn.magicui.design/ocean-small.webm",
+      "reason": "Redistribution permission for this original externally hosted demo media was not verified; its bytes are not bundled.",
+      "source": "https://github.com/magicuidesign/magicui/blob/efe76fc5755eca1142dd4f74c1d6f0ace2887e3c/apps/www/registry/example/video-text-demo.tsx"
+    }
+  ]
+}

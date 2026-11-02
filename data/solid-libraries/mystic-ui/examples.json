@@ -1,0 +1,654 @@
+{
+  "checkedAt": "2026-10-30T01:01:15.790Z",
+  "examples": [
+    {
+      "id": "mystic-ui/Android",
+      "name": "Android",
+      "slug": "android",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/android",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "adaptation": "The upstream Tailwind story imports Panda's generated styled-system. This preview mounts the genuine documented Android export with its original default SVG dimensions and styles; no Panda styles are substituted.",
+      "module": "demos/android.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/android.tsx",
+      "docsSource": "website/src/content/docs/android.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/ui/android.tsx"
+      ],
+      "packages": [
+        "solid-js"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A mockup of a standard Android device"
+    },
+    {
+      "id": "mystic-ui/Animated Beam",
+      "name": "Animated Beam",
+      "slug": "animated-beam",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-beam",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/animated-beam/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/animated-beam.tsx",
+      "docsSource": "website/src/content/docs/animated-beam.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/animated-beam.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-icons",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An animated beam of light which travels along a path. Useful for showcasing the "
+    },
+    {
+      "id": "mystic-ui/Animated Shiny Text",
+      "name": "Animated Shiny Text",
+      "slug": "animated-shiny-text",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/animated-shiny-text",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/animated-shiny-text/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/animated-shiny-text.tsx",
+      "docsSource": "website/src/content/docs/animated-shiny-text.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/animated-shiny-text.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-icons",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A light glare effect which pans across text making it appear as if it is shimmering"
+    },
+    {
+      "id": "mystic-ui/Border Beam",
+      "name": "Border Beam",
+      "slug": "border-beam",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/border-beam",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/border-beam/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/border-beam.tsx",
+      "docsSource": "website/src/content/docs/border-beam.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/border-beam.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An animated beam of light which travels along the border of its container"
+    },
+    {
+      "id": "mystic-ui/Dock",
+      "name": "Dock",
+      "slug": "dock",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/dock",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/dock/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/dock.tsx",
+      "docsSource": "website/src/content/docs/dock.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/dock.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An implementation of the MacOS dock using solid and motionone"
+    },
+    {
+      "id": "mystic-ui/Dot Pattern",
+      "name": "Dot Pattern",
+      "slug": "dot-pattern",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/dot-pattern",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/dot-pattern/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/dot-pattern.tsx",
+      "docsSource": "website/src/content/docs/dot-pattern.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/dot-pattern.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A background dot pattern made with SVGs, fully customizable using CSS"
+    },
+    {
+      "id": "mystic-ui/Flip Text",
+      "name": "Flip Text",
+      "slug": "flip-text",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/flip-text",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/flip-text/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/flip-text.tsx",
+      "docsSource": "website/src/content/docs/flip-text.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/flip-text.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Text flipping character animation"
+    },
+    {
+      "id": "mystic-ui/Gradual Spacing",
+      "name": "Gradual Spacing",
+      "slug": "gradual-spacing",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/gradual-spacing",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/gradual-spacing/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/gradual-spacing.tsx",
+      "docsSource": "website/src/content/docs/gradual-spacing.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/gradual-spacing.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Word animation for gradual spacing between letters"
+    },
+    {
+      "id": "mystic-ui/Grid Pattern",
+      "name": "Grid Pattern",
+      "slug": "grid-pattern",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/grid-pattern",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/grid-pattern/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/grid-pattern.tsx",
+      "docsSource": "website/src/content/docs/grid-pattern.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/grid-pattern.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A background grid pattern made with SVGs, fully customizable using CSS"
+    },
+    {
+      "id": "mystic-ui/iPhone 15",
+      "name": "iPhone 15",
+      "slug": "iphone-15",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/iphone-15",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/iphone-15/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/iphone-15.tsx",
+      "docsSource": "website/src/content/docs/iphone-15.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/ui/iphone-15.tsx"
+      ],
+      "packages": [
+        "solid-js"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A mockup of the iPhone 15 Pro"
+    },
+    {
+      "id": "mystic-ui/Letter Pullup",
+      "name": "Letter Pullup",
+      "slug": "letter-pullup",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/letter-pullup",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/letter-pullup/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/letter-pullup.tsx",
+      "docsSource": "website/src/content/docs/letter-pullup.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/letter-pullup.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Staggered letter pull up text animation"
+    },
+    {
+      "id": "mystic-ui/Marquee",
+      "name": "Marquee",
+      "slug": "marquee",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/marquee",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/marquee/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/marquee.tsx",
+      "docsSource": "website/src/content/docs/marquee.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/marquee.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [
+        "https://avatar.vercel.sh/jack",
+        "https://avatar.vercel.sh/jill",
+        "https://avatar.vercel.sh/john"
+      ],
+      "description": "An infinite scrolling component that can be used to display text, images, or videos"
+    },
+    {
+      "id": "mystic-ui/Meteors",
+      "name": "Meteors",
+      "slug": "meteors",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/meteors",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/meteors/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/meteors.tsx",
+      "docsSource": "website/src/content/docs/meteors.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/meteors.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A meteor shower effect"
+    },
+    {
+      "id": "mystic-ui/No Signal Screen",
+      "name": "No Signal Screen",
+      "slug": "no-signal-screen",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/no-signal-screen",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/no-signal-screen/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/no-signal-screen.tsx",
+      "docsSource": "website/src/content/docs/no-signal-screen.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/no-signal-screen.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A retro no signal screen background"
+    },
+    {
+      "id": "mystic-ui/Number Ticker",
+      "name": "Number Ticker",
+      "slug": "number-ticker",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/number-ticker",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/number-ticker/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/number-ticker.tsx",
+      "docsSource": "website/src/content/docs/number-ticker.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/ui/number-ticker.tsx"
+      ],
+      "packages": [
+        "motion",
+        "solid-js"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Animate numbers to count up or down to a target number"
+    },
+    {
+      "id": "mystic-ui/Orbiting Circles",
+      "name": "Orbiting Circles",
+      "slug": "orbiting-circles",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/orbiting-circles",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/orbiting-circles/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/orbiting-circles.tsx",
+      "docsSource": "website/src/content/docs/orbiting-circles.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/orbiting-circles.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-icons",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A collection of circles which move in orbit along a circular path"
+    },
+    {
+      "id": "mystic-ui/Retro Grid",
+      "name": "Retro Grid",
+      "slug": "retro-grid",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/retro-grid",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/retro-grid/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/retro-grid.tsx",
+      "docsSource": "website/src/content/docs/retro-grid.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/retro-grid.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "An animated scrolling retro grid effect"
+    },
+    {
+      "id": "mystic-ui/Ripple",
+      "name": "Ripple",
+      "slug": "ripple",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/ripple",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/ripple/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/ripple.tsx",
+      "docsSource": "website/src/content/docs/ripple.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/ripple.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [
+        "https://raw.githubusercontent.com/solidjs/solid-site/refs/heads/main/src/assets/logo.svg"
+      ],
+      "description": "An animated ripple effect typically used behind elements to emphasize them"
+    },
+    {
+      "id": "mystic-ui/Safari",
+      "name": "Safari",
+      "slug": "safari",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/safari",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/safari/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/safari.tsx",
+      "docsSource": "website/src/content/docs/safari.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/ui/safari.tsx"
+      ],
+      "packages": [
+        "solid-js"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A safari browser mockup to showcase your website"
+    },
+    {
+      "id": "mystic-ui/Shine Border",
+      "name": "Shine Border",
+      "slug": "shine-border",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/shine-border",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/shine-border/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/shine-border.tsx",
+      "docsSource": "website/src/content/docs/shine-border.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/shine-border.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Shine border is an animated background border effect"
+    },
+    {
+      "id": "mystic-ui/Sparkles Text",
+      "name": "Sparkles Text",
+      "slug": "sparkles-text",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/sparkles-text",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/sparkles-text/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/sparkles-text.tsx",
+      "docsSource": "website/src/content/docs/sparkles-text.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/sparkles-text.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A dynamic text that generates continuous sparkles with smooth transitions, perfect for highlighting text with animated stars."
+    },
+    {
+      "id": "mystic-ui/Spotlight",
+      "name": "Spotlight",
+      "slug": "spotlight",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/spotlight",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/spotlight/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/spotlight.tsx",
+      "docsSource": "website/src/content/docs/spotlight.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/spotlight.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A spotlight effect with CSS, good for drawing attention to a particular element on the page"
+    },
+    {
+      "id": "mystic-ui/Text Reveal",
+      "name": "Text Reveal",
+      "slug": "text-reveal",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/text-reveal",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/text-reveal/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/text-reveal.tsx",
+      "docsSource": "website/src/content/docs/text-reveal.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/text-reveal.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "motion",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Fade in text as you scroll down the page"
+    },
+    {
+      "id": "mystic-ui/Typing Animation",
+      "name": "Typing Animation",
+      "slug": "typing-animation",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/typing-animation",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/typing-animation/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/typing-animation.tsx",
+      "docsSource": "website/src/content/docs/typing-animation.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/ui/typing-animation.tsx"
+      ],
+      "packages": [
+        "solid-js"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Characters appearing in typed animation"
+    },
+    {
+      "id": "mystic-ui/Word Fade In",
+      "name": "Word Fade In",
+      "slug": "word-fade-in",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-fade-in",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/word-fade-in/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/word-fade-in.tsx",
+      "docsSource": "website/src/content/docs/word-fade-in.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/word-fade-in.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Text animation which fades in word by word"
+    },
+    {
+      "id": "mystic-ui/Word Pullup",
+      "name": "Word Pullup",
+      "slug": "word-pullup",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-pullup",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/word-pullup/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/word-pullup.tsx",
+      "docsSource": "website/src/content/docs/word-pullup.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/lib/utils.ts",
+        "components/tailwind/src/ui/word-pullup.tsx"
+      ],
+      "packages": [
+        "clsx",
+        "solid-js",
+        "solid-motionone",
+        "tailwind-merge"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "Text animation for words to pull up"
+    },
+    {
+      "id": "mystic-ui/Word Rotate",
+      "name": "Word Rotate",
+      "slug": "word-rotate",
+      "url": "https://mystic-ui.vercel.app/docs/tailwind/components/word-rotate",
+      "sourceRevision": "c7b3f1e9150c0474d8a5e62f807c8312e0e4b17f",
+      "checkedAt": "2026-10-30T01:01:15.790Z",
+      "module": "components/tailwind/src/stories/word-rotate/default.tsx",
+      "exportName": "default",
+      "componentSource": "components/tailwind/src/ui/word-rotate.tsx",
+      "docsSource": "website/src/content/docs/word-rotate.mdx",
+      "sourcePaths": [
+        "components/tailwind/src/ui/word-rotate.tsx"
+      ],
+      "packages": [
+        "solid-js",
+        "solid-motionone"
+      ],
+      "unresolved": [],
+      "remoteUrls": [],
+      "description": "A vertical rotation of words"
+    }
+  ]
+}

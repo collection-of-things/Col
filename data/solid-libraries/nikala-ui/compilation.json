@@ -1,0 +1,380 @@
+{
+  "checkedAt": "2026-10-30T06:34:18.026Z",
+  "attempts": [
+    {
+      "id": "nikala-ui/Accordion",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Alert",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/API Table",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Aspect Ratio",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Avatar",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Badge",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Banner",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Breadcrumb",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Bubble",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Button Group",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Callout",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Card",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Checkbox",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Code Group",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Collapsible",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Combobox",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Command",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Container",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Context Menu",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Dialog",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Dropdown Menu",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Empty",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Field",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/File Tree",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Footer",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Hover Card",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Icon Button",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Input",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Input Group",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Kbd",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Label",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/List",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Marker",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Marquee",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Message",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Navbar",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Navigation Menu",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Number Input",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Package Manager Tabs",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Pager",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Pagination",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Pin Input",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Popover",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Progress",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Radio Group",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Rating",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Resizable",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Review Card",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Scroll Area",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Section Heading",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Select",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Separator",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Sheet",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Sidebar",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Skeleton",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Slider",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Spinner",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Stat",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Status",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Steps",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Switch",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Table",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Table of Contents",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Tabs",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Textarea",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Theme Manager",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Toast",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Toggle",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Tooltip",
+      "group": "components",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Code Block",
+      "group": "highlight",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Component Viewer",
+      "group": "highlight",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Dropzone",
+      "group": "editor",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Form",
+      "group": "editor",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Form Message",
+      "group": "editor",
+      "compiled": true
+    },
+    {
+      "id": "nikala-ui/Rich Text Editor",
+      "group": "editor",
+      "compiled": true
+    }
+  ]
+}
