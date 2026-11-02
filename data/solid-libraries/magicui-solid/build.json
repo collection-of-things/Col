@@ -812,7 +812,7 @@
       },
       {
         "path": "source/src/demos/ConfettiDemo.tsx",
-        "integrity": "2e4f9d54468a3a52f7b670427b51fa266fd9f8181e03c7c9e02c6f033420e94f"
+        "integrity": "adff82748f8011861752aa9fb2102d2d1fe4ea36a2cf7e107cf016a8c9265b53"
       },
       {
         "path": "source/src/demos/ConfettiEmojiDemo.tsx",
@@ -1862,7 +1862,7 @@
   },
   "groups": {
     "components": {
-      "codeIntegrity": "e527f572310f6a16219b902b91c3b2407ae3e9f02f71ef678863e5c08d4d044c",
+      "codeIntegrity": "fc790459443c00e0ff3a73419941fba72bfe100faa75d03808f31b482c9130a5",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "lockIntegrity": "1838958bf4e0ca19d96e5b9d079c7cbd59ee2571464d0c2c7fe201f5fe6691ae",
       "inputs": [
@@ -2437,8 +2437,8 @@
       ],
       "output": {
         "encoding": "json",
-        "fileIntegrity": "783d182ddbc218b1e433ceb570d821237cd204f8efe80dfc94f13ac4a42100f7",
-        "contentIntegrity": "783d182ddbc218b1e433ceb570d821237cd204f8efe80dfc94f13ac4a42100f7"
+        "fileIntegrity": "1c4090c7bf4e292b9ca1af12300f0423150bc410cd5e28eebac875d008dbb432",
+        "contentIntegrity": "1c4090c7bf4e292b9ca1af12300f0423150bc410cd5e28eebac875d008dbb432"
       }
     },
     "media": {
@@ -3021,7 +3021,7 @@
     "src/demos/ComicTextDemo.tsx": "d66434dec6f0cd0a7650fc09800a1e958056efbf9e7b97f34a8cc1c692e7b880",
     "../node_modules/canvas-confetti/dist/confetti.module.mjs": "d29dc7b2dae5d04baf55666e4f677bbf7f8b0bf587e1ace6098823c4363e7589",
     "src/registry/magicui/confetti.tsx": "a331816c26d5b249af04447341254d99c48c58b1338235eb2930ad02cbd4a698",
-    "src/demos/ConfettiDemo.tsx": "2e4f9d54468a3a52f7b670427b51fa266fd9f8181e03c7c9e02c6f033420e94f",
+    "src/demos/ConfettiDemo.tsx": "adff82748f8011861752aa9fb2102d2d1fe4ea36a2cf7e107cf016a8c9265b53",
     "src/registry/magicui/cool-mode.tsx": "ce40ad91e0439ee87def251a10517dbad115117854d127b4d0c9a22aeea8d1cb",
     "src/demos/CoolModeDemo.tsx": "f99a6b1bb86e7fb83d133e1a8fdb9aa76cc159a483b6767bc3b8ecd47ef18eac",
     "src/lib/create-in-view.ts": "5257f3cdcc77438d2bc9d9485b4f5db75b1176a2a8d0f3c96df29b1b296b4963",
@@ -3886,7 +3886,7 @@
   },
   "output": {
     "encoding": "json",
-    "contentIntegrity": "8ae6f1df21f9983d2c820855ca47b8e2a99a8f475101bbb059b015e650e0f7ca",
-    "fileIntegrity": "8ae6f1df21f9983d2c820855ca47b8e2a99a8f475101bbb059b015e650e0f7ca"
+    "contentIntegrity": "8ed784e959c8ddb1cdd6ba75dce782ced987b3937e46a39cc9bdab6372657c4e",
+    "fileIntegrity": "8ed784e959c8ddb1cdd6ba75dce782ced987b3937e46a39cc9bdab6372657c4e"
   }
 }

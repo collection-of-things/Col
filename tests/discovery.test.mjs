@@ -1,11 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { test } from "node:test";
-import ts from "typescript";
-
-const source = readFileSync(new URL("../data/libraries.ts", import.meta.url), "utf8");
-const moduleSource = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext } }).outputText;
-const { libraries } = await import(`data:text/javascript,${encodeURIComponent(moduleSource)}`);
+import { libraries } from "../data/libraries.ts";
 const { integrations } = await import("../data/integrations.ts");
 
 const built = (name) => readFileSync(new URL(`../.next/server/app/${name}.body`, import.meta.url), "utf8");
@@ -36,6 +32,7 @@ test("build emits complete discovery files", () => {
   assert.ok(llms.includes("https://usecol.com/mcp/agents"));
   assert.ok(llms.includes("https://usecol.com/api/mcp"));
   assert.ok(llms.includes("component index is partial"));
+  assert.ok(llms.includes("get_component.preview.runtimeVersion"));
   const [librarySection, integrationSection] = llms.split("# Libraries\n")[1].split("\n# Integrations\n");
   const entries = librarySection.split("\n## ").slice(1);
   assert.equal(entries.length, libraries.length);

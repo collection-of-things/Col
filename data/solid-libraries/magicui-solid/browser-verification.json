@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-31T08:36:01.863Z",
+  "checkedAt": "2026-10-31T11:26:16.492Z",
   "sandbox": "allow-scripts allow-forms",
   "viewport": {
     "width": 900,
@@ -556,7 +556,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "18a7fa29cb862b13c336fe3f3a6dc392d9dc2c7053721480c7e820871735951a",
+      "codeIntegrity": "9771783193c708daf1c6841633184ef5700a542be9c3fd3a8cb77a09508cd1fd",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -588,7 +588,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "18a7fa29cb862b13c336fe3f3a6dc392d9dc2c7053721480c7e820871735951a",
+      "codeIntegrity": "9771783193c708daf1c6841633184ef5700a542be9c3fd3a8cb77a09508cd1fd",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -620,7 +620,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3292156550cf7e9a1e091c0668b06ce4f6d5897682cf7a423a2f3457c56bf59d",
+      "codeIntegrity": "9231d227b7b0e43f9f3e5480893be4fae4eb784a090203c5077f84cebd3d5f31",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -652,7 +652,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3292156550cf7e9a1e091c0668b06ce4f6d5897682cf7a423a2f3457c56bf59d",
+      "codeIntegrity": "9231d227b7b0e43f9f3e5480893be4fae4eb784a090203c5077f84cebd3d5f31",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -684,7 +684,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "488ab3d3066d9ef6aa9977bc010274bc473647d3a6e765b7e13517c63f3f1351",
+      "codeIntegrity": "e9dd315a05614061f49899b80a675ff3c852823628b8fb76112ac3b060451ff1",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "10",
@@ -725,7 +725,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "488ab3d3066d9ef6aa9977bc010274bc473647d3a6e765b7e13517c63f3f1351",
+      "codeIntegrity": "e9dd315a05614061f49899b80a675ff3c852823628b8fb76112ac3b060451ff1",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "10",
@@ -766,7 +766,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "55b4456e43069f538faffde3e202259c9d217b62a96e87b0b9e3b3643a9a8968",
+      "codeIntegrity": "a09792442ad21a5bd24de47dd4a294030baebc4ab66fa435a37070a051ccbe82",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "🎉 Introducing Magic UI",
@@ -807,7 +807,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "55b4456e43069f538faffde3e202259c9d217b62a96e87b0b9e3b3643a9a8968",
+      "codeIntegrity": "a09792442ad21a5bd24de47dd4a294030baebc4ab66fa435a37070a051ccbe82",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "🎉 Introducing Magic UI",
@@ -848,7 +848,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "0bdf47b54186eebbdb5ec70221a71472093930c228751be1d36d00bb04649de0",
+      "codeIntegrity": "213f0da3d20c8da927af71c28505866cf31e397d72b048504c48c60acb5baef5",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -880,7 +880,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "0bdf47b54186eebbdb5ec70221a71472093930c228751be1d36d00bb04649de0",
+      "codeIntegrity": "213f0da3d20c8da927af71c28505866cf31e397d72b048504c48c60acb5baef5",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -912,7 +912,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "634e1c3e340b28de07079bcb0f0c725d531bbe580bae775a7103e81f997b4cb7",
+      "codeIntegrity": "bf161fdd278ceba16c19258df1c411ccb8387a0d2defc61eefbc56632c64443c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "💸Payment received·15m agoMagic UI",
@@ -933,8 +933,8 @@
       },
       "actions": [],
       "after": {
-        "text": "💸Payment received·15m agoMagic UI👤User signed up·10m agoMagic UI",
-        "animations": 2,
+        "text": "💸Payment received·15m agoMagic UI",
+        "animations": 0,
         "videos": [],
         "htmlTheme": "light",
         "dataTheme": "light"
@@ -949,7 +949,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "634e1c3e340b28de07079bcb0f0c725d531bbe580bae775a7103e81f997b4cb7",
+      "codeIntegrity": "bf161fdd278ceba16c19258df1c411ccb8387a0d2defc61eefbc56632c64443c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "💸Payment received·15m agoMagic UI",
@@ -970,8 +970,8 @@
       },
       "actions": [],
       "after": {
-        "text": "💸Payment received·15m agoMagic UI👤User signed up·10m agoMagic UI",
-        "animations": 2,
+        "text": "💸Payment received·15m agoMagic UI",
+        "animations": 0,
         "videos": [],
         "htmlTheme": "dark",
         "dataTheme": "dark"
@@ -986,7 +986,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "96f19552883ffdaca079465fc90d8d1afaac6c8c2ff1f7f0b1253a4ddcf1ed80",
+      "codeIntegrity": "48caf65e4cb622fe48ed98ba98fc582f9619cb2a26e0d70932dbb845c2b5852c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "✨ Introducing Magic UI",
@@ -1023,7 +1023,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "96f19552883ffdaca079465fc90d8d1afaac6c8c2ff1f7f0b1253a4ddcf1ed80",
+      "codeIntegrity": "48caf65e4cb622fe48ed98ba98fc582f9619cb2a26e0d70932dbb845c2b5852c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "✨ Introducing Magic UI",
@@ -1060,7 +1060,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "99d6aed1298c893eae3a2dc931842d036bffedad905bb099f06336f1fe3b379e",
+      "codeIntegrity": "d887d6cae3b53b0823e4af1f179209e44b80bcb232e532c40d40ba840cc29a4f",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Toggle theme",
@@ -1098,7 +1098,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "99d6aed1298c893eae3a2dc931842d036bffedad905bb099f06336f1fe3b379e",
+      "codeIntegrity": "d887d6cae3b53b0823e4af1f179209e44b80bcb232e532c40d40ba840cc29a4f",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Toggle theme",
@@ -1136,7 +1136,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "ad92a9c14df44d0acdce530275fa481b9a310c0509549392c47ff1ceefad5c58",
+      "codeIntegrity": "d7866c90871c7ee54197d467471adf65b1a129ed72e36249d2750a1f676fdfbd",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Ship beautifulbeautiful",
@@ -1173,7 +1173,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "ad92a9c14df44d0acdce530275fa481b9a310c0509549392c47ff1ceefad5c58",
+      "codeIntegrity": "d7866c90871c7ee54197d467471adf65b1a129ed72e36249d2750a1f676fdfbd",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Ship beautifulbeautiful",
@@ -1224,7 +1224,7 @@
         "https://avatars.githubusercontent.com/u/59442788",
         "https://avatars.githubusercontent.com/u/89768406"
       ],
-      "codeIntegrity": "66ae8deb538e800f0605f6b0da308cafff12c6de023ae7c659b200d795421702",
+      "codeIntegrity": "7d6c26ad7d0f4a1d3052925844d90594b90303332b69aad8728b0b63715aca10",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "+99",
@@ -1308,7 +1308,7 @@
         "https://avatars.githubusercontent.com/u/59442788",
         "https://avatars.githubusercontent.com/u/89768406"
       ],
-      "codeIntegrity": "66ae8deb538e800f0605f6b0da308cafff12c6de023ae7c659b200d795421702",
+      "codeIntegrity": "7d6c26ad7d0f4a1d3052925844d90594b90303332b69aad8728b0b63715aca10",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "+99",
@@ -1378,7 +1378,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "da0515cb625a460316bcd49610f304aa91107bddb5501f727ee33270aded054b",
+      "codeIntegrity": "e6cca931908ba96c6963d2dbc3508e584b3e085cb3a29143d3837927c8d3f610",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "bitcoin.pdfBitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.finances.xlsxA spreadsheet or worksheet is a file made of rows and columns that help sort data, arrange data eas",
@@ -1431,7 +1431,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "da0515cb625a460316bcd49610f304aa91107bddb5501f727ee33270aded054b",
+      "codeIntegrity": "e6cca931908ba96c6963d2dbc3508e584b3e085cb3a29143d3837927c8d3f610",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "bitcoin.pdfBitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.finances.xlsxA spreadsheet or worksheet is a file made of rows and columns that help sort data, arrange data eas",
@@ -1484,13 +1484,21 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "671c314a89cdcccfde17b9a9f8f6b048f83872e68bebf2c65af62ae25592d636",
+      "codeIntegrity": "409fd3ff317c497b4a90c2668b24ea954c202bb00c2d181064526d195578f4db",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Hello World 👋Nice to meet you",
         "elements": 5,
         "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
         "animations": [
+          {
+            "name": "web-animation",
+            "duration": 400
+          },
+          {
+            "name": "web-animation",
+            "duration": 400
+          },
           {
             "name": "web-animation",
             "duration": 400
@@ -1525,7 +1533,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "671c314a89cdcccfde17b9a9f8f6b048f83872e68bebf2c65af62ae25592d636",
+      "codeIntegrity": "409fd3ff317c497b4a90c2668b24ea954c202bb00c2d181064526d195578f4db",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Hello World 👋Nice to meet you",
@@ -1551,7 +1559,7 @@
       "actions": [],
       "after": {
         "text": "Hello World 👋Nice to meet you",
-        "animations": 1,
+        "animations": 0,
         "videos": [],
         "htmlTheme": "dark",
         "dataTheme": "dark"
@@ -1566,7 +1574,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "abe4f992f6bdf29c6401f974c657f90f7b216ec849982fb508992f385d79fd87",
+      "codeIntegrity": "263518a0ab7b03b949308e063a2cbc77f197a0bde5aa9e0ca54cd7fe93849c23",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "LoginEnter your credentials to access your account.EmailPasswordRegisterLogin",
@@ -1603,7 +1611,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "abe4f992f6bdf29c6401f974c657f90f7b216ec849982fb508992f385d79fd87",
+      "codeIntegrity": "263518a0ab7b03b949308e063a2cbc77f197a0bde5aa9e0ca54cd7fe93849c23",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "LoginEnter your credentials to access your account.EmailPasswordRegisterLogin",
@@ -1640,7 +1648,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f102e22b217f49c3368f254c03cfd5582f66623bf6d5f563d5da14081d81e03c",
+      "codeIntegrity": "8e38a5883d3485057606c550894cd0c9b169a9b44ad6cbbdb2ec04b9e24a524f",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "BOOM!",
@@ -1677,7 +1685,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f102e22b217f49c3368f254c03cfd5582f66623bf6d5f563d5da14081d81e03c",
+      "codeIntegrity": "8e38a5883d3485057606c550894cd0c9b169a9b44ad6cbbdb2ec04b9e24a524f",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "BOOM!",
@@ -1714,7 +1722,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "e2a3dfa653ef02f35a41a0194a429387c1c07919f2c8d5e076d2c2898d903a65",
+      "codeIntegrity": "1b4d82344cfdb781bba989e29120172351f0691bab9347dac597cc91cd9028a6",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Confetti",
@@ -1746,7 +1754,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "e2a3dfa653ef02f35a41a0194a429387c1c07919f2c8d5e076d2c2898d903a65",
+      "codeIntegrity": "1b4d82344cfdb781bba989e29120172351f0691bab9347dac597cc91cd9028a6",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Confetti",
@@ -1778,7 +1786,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6614c095407813847aa10dc41186d1ebdd240d20fe7901b3a152fcdbf24866f7",
+      "codeIntegrity": "15c48ce19971b60c934fdb0f4c74ac128bca3a8cc273e4ba467982849ac9cd14",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Click Me!",
@@ -1816,7 +1824,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6614c095407813847aa10dc41186d1ebdd240d20fe7901b3a152fcdbf24866f7",
+      "codeIntegrity": "15c48ce19971b60c934fdb0f4c74ac128bca3a8cc273e4ba467982849ac9cd14",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Click Me!",
@@ -1854,7 +1862,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "bf9d8b6e993cc4f476b6f634332f874bab920e5eb760066b9cd2b5c6a3049f9e",
+      "codeIntegrity": "78ed8f1b76a7645de4d8e578324d12ad82b62347c83641ccbca77bf6da045b59",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Magic UI",
@@ -1886,7 +1894,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "bf9d8b6e993cc4f476b6f634332f874bab920e5eb760066b9cd2b5c6a3049f9e",
+      "codeIntegrity": "78ed8f1b76a7645de4d8e578324d12ad82b62347c83641ccbca77bf6da045b59",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Magic UI",
@@ -1918,7 +1926,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "14ac833cf59d58de55c79951f764383b77d9ff9d77d2fdfa6b347383d433690a",
+      "codeIntegrity": "22727082ea11e39a3343d978ecc531fdba6c0f05340fb64cf6509a1be0a268ff",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Dock",
@@ -1956,7 +1964,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "14ac833cf59d58de55c79951f764383b77d9ff9d77d2fdfa6b347383d433690a",
+      "codeIntegrity": "22727082ea11e39a3343d978ecc531fdba6c0f05340fb64cf6509a1be0a268ff",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Dock",
@@ -1994,7 +2002,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9226bf654d746ff395612ceeebeb37b730b54faf5b1881084694fdd1d4615c24",
+      "codeIntegrity": "bb59ae152246884b46677e9714fad28bda4f895a9afc6b5d1370edf6bd823e3a",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2026,7 +2034,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9226bf654d746ff395612ceeebeb37b730b54faf5b1881084694fdd1d4615c24",
+      "codeIntegrity": "bb59ae152246884b46677e9714fad28bda4f895a9afc6b5d1370edf6bd823e3a",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2058,7 +2066,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6f813540bd7b5167a400e5dc910ec00725bb6f5f95e19f56c8a2c6f69c52f9df",
+      "codeIntegrity": "05b356e1c8661b7142e7af235dd139cfec80f0230a4680c5d915c5f9caae68d5",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "SeoulNYC",
@@ -2101,7 +2109,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6f813540bd7b5167a400e5dc910ec00725bb6f5f95e19f56c8a2c6f69c52f9df",
+      "codeIntegrity": "05b356e1c8661b7142e7af235dd139cfec80f0230a4680c5d915c5f9caae68d5",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "SeoulNYC",
@@ -2144,7 +2152,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "8b4233e909756b0a3401c28e52f92a30fa0b2f6f53e4ab0475dc1135b8a68048",
+      "codeIntegrity": "f1e715df1dfcb481a1cdaae00022a5f1d289669f289c3e51c0dc7e12cbc3bd14",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "srcapplayout.tsxpage.tsxcomponentsuibutton.tsxfooter.tsxheader.tsxlibutils.ts",
@@ -2183,7 +2191,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "8b4233e909756b0a3401c28e52f92a30fa0b2f6f53e4ab0475dc1135b8a68048",
+      "codeIntegrity": "f1e715df1dfcb481a1cdaae00022a5f1d289669f289c3e51c0dc7e12cbc3bd14",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "srcapplayout.tsxpage.tsxcomponentsuibutton.tsxfooter.tsxheader.tsxlibutils.ts",
@@ -2222,7 +2230,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "8511b6265af2199b2761817ef1117dcb34de25e520a7cc3003b79d311423086d",
+      "codeIntegrity": "eb86880b38bf769a45211d78c28d167e8cc9f66f6e0c5dd30b9e08b733b4d4ba",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2254,7 +2262,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "8511b6265af2199b2761817ef1117dcb34de25e520a7cc3003b79d311423086d",
+      "codeIntegrity": "eb86880b38bf769a45211d78c28d167e8cc9f66f6e0c5dd30b9e08b733b4d4ba",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2286,7 +2294,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "2ff13c112f24cf3402acb686dfcc9951bbd7d80b2a9f82e7f8c6773416e46639",
+      "codeIntegrity": "2715cf1c7fa5c5049a8f5484af75bf3ec6565c2e92aceb17069b88bd5e7cc1cf",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "ProPopularFor teams that need more.$49/moUnlimited projectsTeam collaborationAdvanced analyticsSSO (coming soon)Get started",
@@ -2324,7 +2332,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "2ff13c112f24cf3402acb686dfcc9951bbd7d80b2a9f82e7f8c6773416e46639",
+      "codeIntegrity": "2715cf1c7fa5c5049a8f5484af75bf3ec6565c2e92aceb17069b88bd5e7cc1cf",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "ProPopularFor teams that need more.$49/moUnlimited projectsTeam collaborationAdvanced analyticsSSO (coming soon)Get started",
@@ -2362,7 +2370,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "4a3a4cecaeb02dffccfe85e58ba6a235e605922be5b99c8076374d15da4d0b0a",
+      "codeIntegrity": "06f2b44d1459210ff534ba4707779a5a827b956440d58a3c939fcc77fdd39404",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Globe",
@@ -2399,7 +2407,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "4a3a4cecaeb02dffccfe85e58ba6a235e605922be5b99c8076374d15da4d0b0a",
+      "codeIntegrity": "06f2b44d1459210ff534ba4707779a5a827b956440d58a3c939fcc77fdd39404",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Globe",
@@ -2436,7 +2444,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "ae40fdaf799cfdbb25ca9a8bd0ce82254a41636e32852d5f888cb210b1a309d2",
+      "codeIntegrity": "62245dd5db652a848cf44f70d18c7c1df5816da669b65c348da58af6f8d9ff70",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2468,7 +2476,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "ae40fdaf799cfdbb25ca9a8bd0ce82254a41636e32852d5f888cb210b1a309d2",
+      "codeIntegrity": "62245dd5db652a848cf44f70d18c7c1df5816da669b65c348da58af6f8d9ff70",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2500,7 +2508,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "07ae6412980bdfc2838132047754c34d192fc188c0c3b8868800372133c54257",
+      "codeIntegrity": "5a2c11f253a73bd0abc43f7b226e1d14669698e8df522d580eebdb57fceb6b6e",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2532,7 +2540,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "07ae6412980bdfc2838132047754c34d192fc188c0c3b8868800372133c54257",
+      "codeIntegrity": "5a2c11f253a73bd0abc43f7b226e1d14669698e8df522d580eebdb57fceb6b6e",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2571,7 +2579,7 @@
         "https://startup-template-sage.vercel.app/hero-dark.png",
         "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
       ],
-      "codeIntegrity": "d096b00f3726cfdc81d58b9ca443d41299845c1f52807ca96e6137c2f79ada9a",
+      "codeIntegrity": "c8bc9737bd0f3b39128bbfd0802193139e72bb35861ec5f47fdd74d4a1e83407",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2631,7 +2639,7 @@
         "https://startup-template-sage.vercel.app/hero-dark.png",
         "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
       ],
-      "codeIntegrity": "d096b00f3726cfdc81d58b9ca443d41299845c1f52807ca96e6137c2f79ada9a",
+      "codeIntegrity": "c8bc9737bd0f3b39128bbfd0802193139e72bb35861ec5f47fdd74d4a1e83407",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2684,7 +2692,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "1043b2a2dc41357176175330d2370741297c83cb1fb62f7a2fa8d566af6b2792",
+      "codeIntegrity": "7fb12390a33ccfd0756a170306d70fc14e7702321d76e00ab8791c99bc39d874",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2716,7 +2724,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "1043b2a2dc41357176175330d2370741297c83cb1fb62f7a2fa8d566af6b2792",
+      "codeIntegrity": "7fb12390a33ccfd0756a170306d70fc14e7702321d76e00ab8791c99bc39d874",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2748,7 +2756,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "58241731c2f4f1ddd0e8917508531e67c6958b54a6df353466ce6c2a9610e5d3",
+      "codeIntegrity": "2886693171fccd17f0969869e64a4b54434c825fc0521b4d52f804e0b35f74ae",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "The Magic UI Highlighter makes important text stand out effortlessly.",
@@ -2757,19 +2765,19 @@
         "animations": [
           {
             "name": "rough-notation-dash",
-            "duration": 296.3855710235276
+            "duration": 304.1303422073421
           },
           {
             "name": "rough-notation-dash",
-            "duration": 303.61442897647237
+            "duration": 295.8696577926579
           },
           {
             "name": "rough-notation-dash",
-            "duration": 292.7667924376901
+            "duration": 301.1894505615405
           },
           {
             "name": "rough-notation-dash",
-            "duration": 307.2332075623098
+            "duration": 298.8105494384595
           }
         ],
         "htmlTheme": "light",
@@ -2797,7 +2805,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "58241731c2f4f1ddd0e8917508531e67c6958b54a6df353466ce6c2a9610e5d3",
+      "codeIntegrity": "2886693171fccd17f0969869e64a4b54434c825fc0521b4d52f804e0b35f74ae",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "The Magic UI Highlighter makes important text stand out effortlessly.",
@@ -2806,19 +2814,19 @@
         "animations": [
           {
             "name": "rough-notation-dash",
-            "duration": 299.85453110496275
+            "duration": 305.67800825348587
           },
           {
             "name": "rough-notation-dash",
-            "duration": 300.14546889503725
+            "duration": 294.3219917465142
           },
           {
             "name": "rough-notation-dash",
-            "duration": 316.93441851674356
+            "duration": 282.4375433213713
           },
           {
             "name": "rough-notation-dash",
-            "duration": 283.06558148325644
+            "duration": 317.5624566786287
           }
         ],
         "htmlTheme": "dark",
@@ -2846,10 +2854,10 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "03196bc565f6f0fa6594ccf4441528f7d98f29006a5baae6aaa0b9776a7decb8",
+      "codeIntegrity": "c3f2d51d97878cdfaf0828f26bf977583cb510ebb891d6bcd456b7d622b3e50d",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
-        "text": "HOVER CWJ",
+        "text": "HOVER TBI",
         "elements": 10,
         "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
         "animations": [],
@@ -2878,10 +2886,10 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "03196bc565f6f0fa6594ccf4441528f7d98f29006a5baae6aaa0b9776a7decb8",
+      "codeIntegrity": "c3f2d51d97878cdfaf0828f26bf977583cb510ebb891d6bcd456b7d622b3e50d",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
-        "text": "HOVER BNF",
+        "text": "HOVER IGB",
         "elements": 10,
         "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
         "animations": [],
@@ -2910,7 +2918,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b6cd8a2de771b61b82d8d7b13080cf84b0d9a2bd921410b1f5917944511101b0",
+      "codeIntegrity": "3f9223523d028b8a2d5488aabee6d567836acadaa87228f2232a7c605299a0de",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2948,7 +2956,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b6cd8a2de771b61b82d8d7b13080cf84b0d9a2bd921410b1f5917944511101b0",
+      "codeIntegrity": "3f9223523d028b8a2d5488aabee6d567836acadaa87228f2232a7c605299a0de",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -2986,7 +2994,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9fcc234dff583c179ffd859dbc15fc57255b6fa424baa1380131f39f4a22a8d2",
+      "codeIntegrity": "fff92d16c9e8459a9a882fcad894d1ff0dfdcf194efacd7a71c7cea655e094af",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -3018,7 +3026,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "9fcc234dff583c179ffd859dbc15fc57255b6fa424baa1380131f39f4a22a8d2",
+      "codeIntegrity": "fff92d16c9e8459a9a882fcad894d1ff0dfdcf194efacd7a71c7cea655e094af",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -3050,7 +3058,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6a32bb5540c762b46cfdd739d61febfd251e3ea39deb7da4d22be694ac2698f4",
+      "codeIntegrity": "aa45343dc401d1703f9fa7f34918852bf5361697ab7b3303c1340f65f97c6014",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Hover MeHover Me",
@@ -3088,7 +3096,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6a32bb5540c762b46cfdd739d61febfd251e3ea39deb7da4d22be694ac2698f4",
+      "codeIntegrity": "aa45343dc401d1703f9fa7f34918852bf5361697ab7b3303c1340f65f97c6014",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Hover MeHover Me",
@@ -3126,7 +3134,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "de85e067ba731180cd96a30769f39451bc6f29c5a6e649d8f315d2b476deda85",
+      "codeIntegrity": "c7169a6541878e03df4c562d082ac8500c3b0c78b163240bb78b86228fd974bb",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -3158,7 +3166,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "de85e067ba731180cd96a30769f39451bc6f29c5a6e649d8f315d2b476deda85",
+      "codeIntegrity": "c7169a6541878e03df4c562d082ac8500c3b0c78b163240bb78b86228fd974bb",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -3190,7 +3198,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b4f0cef6dfec0c0ec9530fb0a0d022ffe08b5b431369fe7eb49f721dc0bdf6fe",
+      "codeIntegrity": "a835e2fcdbd837393b6c781b16e315cb28ed7bf2f515bb596180f382c8a30c61",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "NostalgiaNostalgia",
@@ -3222,7 +3230,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "b4f0cef6dfec0c0ec9530fb0a0d022ffe08b5b431369fe7eb49f721dc0bdf6fe",
+      "codeIntegrity": "a835e2fcdbd837393b6c781b16e315cb28ed7bf2f515bb596180f382c8a30c61",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "NostalgiaNostalgia",
@@ -3254,7 +3262,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "bf26a6b0987f81ba74eb3ae25a5f1828f03509f64294674c8a49a83416bd9d4e",
+      "codeIntegrity": "19edf17d9cb4ccc488875d5117fc56dd75829e4090c711c9d497e4e40c9d7109",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Your next campSee our latest and best camp destinations all across the five continents of the globe.Let's goAnother time",
@@ -3298,7 +3306,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "bf26a6b0987f81ba74eb3ae25a5f1828f03509f64294674c8a49a83416bd9d4e",
+      "codeIntegrity": "19edf17d9cb4ccc488875d5117fc56dd75829e4090c711c9d497e4e40c9d7109",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Your next campSee our latest and best camp destinations all across the five continents of the globe.Let's goAnother time",
@@ -3342,7 +3350,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "187981e4c7c164aaccfa4e3db8c99fc65fbe925d836ac2a084aa69b4020adb1c",
+      "codeIntegrity": "001412e2a8ec4a8bdd8787b06a5cd6737a171dc1fc40612b91ec6ea2c8bd0193",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Ambient glowLight RaysDrop this component into any container and it will fill the space with softly animated light rays shining from above.",
@@ -3374,7 +3382,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "187981e4c7c164aaccfa4e3db8c99fc65fbe925d836ac2a084aa69b4020adb1c",
+      "codeIntegrity": "001412e2a8ec4a8bdd8787b06a5cd6737a171dc1fc40612b91ec6ea2c8bd0193",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Ambient glowLight RaysDrop this component into any container and it will fill the space with softly animated light rays shining from above.",
@@ -3406,7 +3414,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "475463ce5bdd737a057b341ff97ac2aa58a3a6d4997747adac97dcafb4527527",
+      "codeIntegrity": "c90c9a40e2c541d5e0141800e569faba1c2e498d26e4bb2499e55fd8a1641382",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "ShipFast",
@@ -3443,7 +3451,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "475463ce5bdd737a057b341ff97ac2aa58a3a6d4997747adac97dcafb4527527",
+      "codeIntegrity": "c90c9a40e2c541d5e0141800e569faba1c2e498d26e4bb2499e55fd8a1641382",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "ShipFast",
@@ -3480,7 +3488,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d3e59899a51c1609de9932519272bb1966f3b2b67738ea89e3df9ff661633b98",
+      "codeIntegrity": "4f9f1f870ae078534ce675d91591879d26eef9db26507301db121ecceee1b119",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "LoginEnter your credentials to access your accountEmailPasswordSign In",
@@ -3517,7 +3525,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d3e59899a51c1609de9932519272bb1966f3b2b67738ea89e3df9ff661633b98",
+      "codeIntegrity": "4f9f1f870ae078534ce675d91591879d26eef9db26507301db121ecceee1b119",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "LoginEnter your credentials to access your accountEmailPasswordSign In",
@@ -3554,7 +3562,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d8df917a6c0a2bfcecfc53475c68379cd21c1d18ecbc84e320963d14e8678b7b",
+      "codeIntegrity": "34433a8813e7e1cbfaf60d18ca9c5d170dfe37592ec545b8765d11dd0afc4808",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Meteors",
@@ -3564,135 +3572,6 @@
           {
             "name": "meteor",
             "duration": 9000
-          },
-          {
-            "name": "meteor",
-            "duration": 3000
-          },
-          {
-            "name": "meteor",
-            "duration": 3000
-          },
-          {
-            "name": "meteor",
-            "duration": 6000
-          },
-          {
-            "name": "meteor",
-            "duration": 7000
-          },
-          {
-            "name": "meteor",
-            "duration": 3000
-          },
-          {
-            "name": "meteor",
-            "duration": 9000
-          },
-          {
-            "name": "meteor",
-            "duration": 9000
-          },
-          {
-            "name": "meteor",
-            "duration": 2000
-          },
-          {
-            "name": "meteor",
-            "duration": 4000
-          },
-          {
-            "name": "meteor",
-            "duration": 3000
-          },
-          {
-            "name": "meteor",
-            "duration": 2000
-          },
-          {
-            "name": "meteor",
-            "duration": 3000
-          },
-          {
-            "name": "meteor",
-            "duration": 3000
-          },
-          {
-            "name": "meteor",
-            "duration": 9000
-          }
-        ],
-        "htmlTheme": "light",
-        "dataTheme": "light"
-      },
-      "media": {
-        "images": [],
-        "videos": []
-      },
-      "actions": [],
-      "after": {
-        "text": "Meteors",
-        "animations": 30,
-        "videos": [],
-        "htmlTheme": "light",
-        "dataTheme": "light"
-      },
-      "expectedBlockedAssets": []
-    },
-    {
-      "id": "magicui-solid/Meteors",
-      "theme": "dark",
-      "url": "https://axuj.github.io/magicui-solid/docs/components/meteors/",
-      "passed": true,
-      "errors": [],
-      "consoleErrors": [],
-      "blockedRequests": [],
-      "codeIntegrity": "d8df917a6c0a2bfcecfc53475c68379cd21c1d18ecbc84e320963d14e8678b7b",
-      "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
-      "before": {
-        "text": "Meteors",
-        "elements": 62,
-        "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
-        "animations": [
-          {
-            "name": "meteor",
-            "duration": 8000
-          },
-          {
-            "name": "meteor",
-            "duration": 8000
-          },
-          {
-            "name": "meteor",
-            "duration": 4000
-          },
-          {
-            "name": "meteor",
-            "duration": 6000
-          },
-          {
-            "name": "meteor",
-            "duration": 3000
-          },
-          {
-            "name": "meteor",
-            "duration": 2000
-          },
-          {
-            "name": "meteor",
-            "duration": 3000
-          },
-          {
-            "name": "meteor",
-            "duration": 6000
-          },
-          {
-            "name": "meteor",
-            "duration": 2000
-          },
-          {
-            "name": "meteor",
-            "duration": 2000
           },
           {
             "name": "meteor",
@@ -3704,6 +3583,10 @@
           },
           {
             "name": "meteor",
+            "duration": 2000
+          },
+          {
+            "name": "meteor",
             "duration": 9000
           },
           {
@@ -3712,7 +3595,132 @@
           },
           {
             "name": "meteor",
+            "duration": 8000
+          },
+          {
+            "name": "meteor",
+            "duration": 5000
+          },
+          {
+            "name": "meteor",
             "duration": 7000
+          },
+          {
+            "name": "meteor",
+            "duration": 3000
+          },
+          {
+            "name": "meteor",
+            "duration": 2000
+          },
+          {
+            "name": "meteor",
+            "duration": 8000
+          },
+          {
+            "name": "meteor",
+            "duration": 3000
+          },
+          {
+            "name": "meteor",
+            "duration": 7000
+          },
+          {
+            "name": "meteor",
+            "duration": 3000
+          }
+        ],
+        "htmlTheme": "light",
+        "dataTheme": "light"
+      },
+      "media": {
+        "images": [],
+        "videos": []
+      },
+      "actions": [],
+      "after": {
+        "text": "Meteors",
+        "animations": 30,
+        "videos": [],
+        "htmlTheme": "light",
+        "dataTheme": "light"
+      },
+      "expectedBlockedAssets": []
+    },
+    {
+      "id": "magicui-solid/Meteors",
+      "theme": "dark",
+      "url": "https://axuj.github.io/magicui-solid/docs/components/meteors/",
+      "passed": true,
+      "errors": [],
+      "consoleErrors": [],
+      "blockedRequests": [],
+      "codeIntegrity": "34433a8813e7e1cbfaf60d18ca9c5d170dfe37592ec545b8765d11dd0afc4808",
+      "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
+      "before": {
+        "text": "Meteors",
+        "elements": 62,
+        "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "animations": [
+          {
+            "name": "meteor",
+            "duration": 5000
+          },
+          {
+            "name": "meteor",
+            "duration": 2000
+          },
+          {
+            "name": "meteor",
+            "duration": 9000
+          },
+          {
+            "name": "meteor",
+            "duration": 3000
+          },
+          {
+            "name": "meteor",
+            "duration": 3000
+          },
+          {
+            "name": "meteor",
+            "duration": 4000
+          },
+          {
+            "name": "meteor",
+            "duration": 8000
+          },
+          {
+            "name": "meteor",
+            "duration": 8000
+          },
+          {
+            "name": "meteor",
+            "duration": 5000
+          },
+          {
+            "name": "meteor",
+            "duration": 7000
+          },
+          {
+            "name": "meteor",
+            "duration": 9000
+          },
+          {
+            "name": "meteor",
+            "duration": 2000
+          },
+          {
+            "name": "meteor",
+            "duration": 5000
+          },
+          {
+            "name": "meteor",
+            "duration": 2000
+          },
+          {
+            "name": "meteor",
+            "duration": 3000
           }
         ],
         "htmlTheme": "dark",
@@ -3740,7 +3748,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "75e3e15a72d528be455c79eb9672f6ef94dea278eec67dd8c5be8f2a12b9d1e8",
+      "codeIntegrity": "4f51e495a599a2fcd8bf1c2f5941e5a79f35731520c6fdf838c4e30e44b57f5b",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "HelloMorphing",
@@ -3772,7 +3780,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "75e3e15a72d528be455c79eb9672f6ef94dea278eec67dd8c5be8f2a12b9d1e8",
+      "codeIntegrity": "4f51e495a599a2fcd8bf1c2f5941e5a79f35731520c6fdf838c4e30e44b57f5b",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "HelloMorphing",
@@ -3804,7 +3812,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f62ce2b215da3c89a9f2639f43713f6da304ad8d796fcc21066f79621f17bd26",
+      "codeIntegrity": "6235a6bef3dad147053d421ac465c953d98923390f27f18198aae575405c29fd",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Neon Gradient Card",
@@ -3845,7 +3853,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f62ce2b215da3c89a9f2639f43713f6da304ad8d796fcc21066f79621f17bd26",
+      "codeIntegrity": "6235a6bef3dad147053d421ac465c953d98923390f27f18198aae575405c29fd",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Neon Gradient Card",
@@ -3886,7 +3894,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "39c72ceedc44dbc44a0cca2d45d3e48d055f7dbfc137d6b01fec4c230480d188",
+      "codeIntegrity": "d4a365b9629dc70403a95901a7c2c6f69f418e998c53f7637f6c7cb81421fc7c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -3918,7 +3926,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "39c72ceedc44dbc44a0cca2d45d3e48d055f7dbfc137d6b01fec4c230480d188",
+      "codeIntegrity": "d4a365b9629dc70403a95901a7c2c6f69f418e998c53f7637f6c7cb81421fc7c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -3950,7 +3958,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "635784f13f081db9ae18da81abe3bf430e1d18c518e9238be976a55def57b553",
+      "codeIntegrity": "335f2435dc56a687a873229424cea8901c97eeda2c439662ef586e34b945efd4",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "47",
@@ -3966,7 +3974,7 @@
       },
       "actions": [],
       "after": {
-        "text": "78",
+        "text": "80",
         "animations": 0,
         "videos": [],
         "htmlTheme": "light",
@@ -3982,7 +3990,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "635784f13f081db9ae18da81abe3bf430e1d18c518e9238be976a55def57b553",
+      "codeIntegrity": "335f2435dc56a687a873229424cea8901c97eeda2c439662ef586e34b945efd4",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "47",
@@ -3998,7 +4006,7 @@
       },
       "actions": [],
       "after": {
-        "text": "78",
+        "text": "77",
         "animations": 0,
         "videos": [],
         "htmlTheme": "dark",
@@ -4014,7 +4022,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d389b2fd83eedfdd80a4951deda1feadb03c31a6cfd0a7363efb44a0271ecae5",
+      "codeIntegrity": "d6a67ce403219c05b40656f57d6398fe5cb6295091b93b0bc159b1eb9e7ed5ac",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -4083,7 +4091,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d389b2fd83eedfdd80a4951deda1feadb03c31a6cfd0a7363efb44a0271ecae5",
+      "codeIntegrity": "d6a67ce403219c05b40656f57d6398fe5cb6295091b93b0bc159b1eb9e7ed5ac",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -4152,7 +4160,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "70ff7a3562db56b5a6ddf76538793b0aa5f1ef522867e5a026fab30c256695d8",
+      "codeIntegrity": "844e4d31f4191a2dfee14ca88902addfadf6291e907f613bd4cc7194e2d1dbf1",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Particles",
@@ -4184,7 +4192,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "70ff7a3562db56b5a6ddf76538793b0aa5f1ef522867e5a026fab30c256695d8",
+      "codeIntegrity": "844e4d31f4191a2dfee14ca88902addfadf6291e907f613bd4cc7194e2d1dbf1",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Particles",
@@ -4216,7 +4224,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "5440b1d963fcb454bd8aebe44687d05283b507218074d945b2b1c1fdb192d625",
+      "codeIntegrity": "c208dbf557fc103287d364e14e0bd2896b718beaef4f5d7311b2a96532dd36c0",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -4430,7 +4438,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "5440b1d963fcb454bd8aebe44687d05283b507218074d945b2b1c1fdb192d625",
+      "codeIntegrity": "c208dbf557fc103287d364e14e0bd2896b718beaef4f5d7311b2a96532dd36c0",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -4644,7 +4652,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c36c9aaaf327c4c9f1e9303f8fc22c4bace18264976d187354d571fe30cc22ca",
+      "codeIntegrity": "241763b9660dcd0e83b2f16638809ce3373177c8a8fc6965cb322a061033990b",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Animated PointerAnimated pointerColored PointerA custom pointer with different colorCustom ShapeA pointer with a custom SVG shapeEmoji PointerUsing an emoji as a custom pointer👆",
@@ -4676,7 +4684,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c36c9aaaf327c4c9f1e9303f8fc22c4bace18264976d187354d571fe30cc22ca",
+      "codeIntegrity": "241763b9660dcd0e83b2f16638809ce3373177c8a8fc6965cb322a061033990b",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Animated PointerAnimated pointerColored PointerA custom pointer with different colorCustom ShapeA pointer with a custom SVG shapeEmoji PointerUsing an emoji as a custom pointer👆",
@@ -4708,7 +4716,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c4eba440059cff4209fe5edc0e13e5f95f9d5c9ab8c647a8cd99fa73ed36f2a7",
+      "codeIntegrity": "04e0088beb73d6f7473f8bac4b8d2ff16e65d0469012216c1784bebf81eb8822",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "012345678910111213141516171819",
@@ -4746,7 +4754,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "c4eba440059cff4209fe5edc0e13e5f95f9d5c9ab8c647a8cd99fa73ed36f2a7",
+      "codeIntegrity": "04e0088beb73d6f7473f8bac4b8d2ff16e65d0469012216c1784bebf81eb8822",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "012345678910111213141516171819",
@@ -4784,7 +4792,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3989622afac5f7e48390ce7200c9d1efc6bbf80f389fbcd1bc99a73a82abb18e",
+      "codeIntegrity": "a28501da86a3c895da45b41fed1c3ef2acca1c329a7287f9a50550fe7f720c2f",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Join Affiliate Program",
@@ -4827,7 +4835,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3989622afac5f7e48390ce7200c9d1efc6bbf80f389fbcd1bc99a73a82abb18e",
+      "codeIntegrity": "a28501da86a3c895da45b41fed1c3ef2acca1c329a7287f9a50550fe7f720c2f",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Join Affiliate Program",
@@ -4870,7 +4878,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "e98566a031fbc8271929a7a94fc40ab58e82c370d6894c88d63b393308e63745",
+      "codeIntegrity": "5bd2d522dd666ac29dc54d3cb913925167b1f2691fe4ba8e0917368084d26779",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Get Unlimited Access",
@@ -4917,7 +4925,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "e98566a031fbc8271929a7a94fc40ab58e82c370d6894c88d63b393308e63745",
+      "codeIntegrity": "5bd2d522dd666ac29dc54d3cb913925167b1f2691fe4ba8e0917368084d26779",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Get Unlimited Access",
@@ -4964,7 +4972,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6a007a94b366fbeb0595f81e0ee50347f87c996255af6428e30e3bbade62d2ac",
+      "codeIntegrity": "2b214bf1ad0279dc86000c62f936472e5d7996e61d3089da72796f249977c645",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Retro Grid\n@keyframes retro-grid-fallback-scroll {\n  from {\n    transform: translateY(-50%);\n  }\n\n  to {\n    transform: translateY(0);\n  }\n}\n\n@media (prefers-reduced-motion: reduce) {\n  [data-retro-grid-scroll=\"true\"] {\n    animation: none ",
@@ -4996,7 +5004,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6a007a94b366fbeb0595f81e0ee50347f87c996255af6428e30e3bbade62d2ac",
+      "codeIntegrity": "2b214bf1ad0279dc86000c62f936472e5d7996e61d3089da72796f249977c645",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Retro Grid\n@keyframes retro-grid-fallback-scroll {\n  from {\n    transform: translateY(-50%);\n  }\n\n  to {\n    transform: translateY(0);\n  }\n}\n\n@media (prefers-reduced-motion: reduce) {\n  [data-retro-grid-scroll=\"true\"] {\n    animation: none ",
@@ -5028,7 +5036,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "23ab8deb05887d4dacbcb8ef7cc0b558fcae1ad90f3aadf3501635f29815395d",
+      "codeIntegrity": "b9b64e1438ee228abe7f8931904bb18a013a0c366ad0d4be567ad47100edb7f3",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Ripple",
@@ -5093,7 +5101,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "23ab8deb05887d4dacbcb8ef7cc0b558fcae1ad90f3aadf3501635f29815395d",
+      "codeIntegrity": "b9b64e1438ee228abe7f8931904bb18a013a0c366ad0d4be567ad47100edb7f3",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Ripple",
@@ -5158,7 +5166,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "91f23e27c8cd4ba3cf923d210c2e2a0a060c7d1cab4b19a18764e299e414867a",
+      "codeIntegrity": "d4de1de67911d430e0496b3a6e3b148f927cf41da218547a099f6bd0404cbc66",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "magicui.design",
@@ -5190,7 +5198,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "91f23e27c8cd4ba3cf923d210c2e2a0a060c7d1cab4b19a18764e299e414867a",
+      "codeIntegrity": "d4de1de67911d430e0496b3a6e3b148f927cf41da218547a099f6bd0404cbc66",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "magicui.design",
@@ -5222,7 +5230,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3d2a7dc28a7133c2003e9f98a76a656c706715639efbc994d02c205437e9f4ce",
+      "codeIntegrity": "03f888c065f488c8d6c5a043595a9a6063c40cb495f658cb18b34e00ec717b4f",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Velocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity Scroll",
@@ -5254,7 +5262,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "3d2a7dc28a7133c2003e9f98a76a656c706715639efbc994d02c205437e9f4ce",
+      "codeIntegrity": "03f888c065f488c8d6c5a043595a9a6063c40cb495f658cb18b34e00ec717b4f",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Velocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity ScrollVelocity Scroll",
@@ -5286,7 +5294,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "042df75a5ef5654fcc3e3fc0c2e157c9d50484427d506fcc4954c6a3f38832fd",
+      "codeIntegrity": "dbed72caceee5d9a2eabb03d493bd122bd16ebc1e01dba7abed5897f5a858342",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Note: The scroll progress is shown below the navbar of the page.",
@@ -5318,7 +5326,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "042df75a5ef5654fcc3e3fc0c2e157c9d50484427d506fcc4954c6a3f38832fd",
+      "codeIntegrity": "dbed72caceee5d9a2eabb03d493bd122bd16ebc1e01dba7abed5897f5a858342",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Note: The scroll progress is shown below the navbar of the page.",
@@ -5350,7 +5358,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f6cf5c7ca95987f0cbe8a5efa579b586efbde8beba180fa2d88d58aa1588f685",
+      "codeIntegrity": "6d880950100dd9c4b06dc09e4942f50f0949bbb299b8d517a30072659a2018e2",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "LoginEnter your credentials to access your accountEmailPasswordSign In",
@@ -5392,7 +5400,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f6cf5c7ca95987f0cbe8a5efa579b586efbde8beba180fa2d88d58aa1588f685",
+      "codeIntegrity": "6d880950100dd9c4b06dc09e4942f50f0949bbb299b8d517a30072659a2018e2",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "LoginEnter your credentials to access your accountEmailPasswordSign In",
@@ -5434,7 +5442,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "706432b0671ef5783937c1146d57538a4f3d00da7124a0421ac53e1e7fc1eb02",
+      "codeIntegrity": "53845924461ff715e8e51fd63081bd4f97c084aefc44688d900d802b376978b2",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Shiny Button",
@@ -5472,7 +5480,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "706432b0671ef5783937c1146d57538a4f3d00da7124a0421ac53e1e7fc1eb02",
+      "codeIntegrity": "53845924461ff715e8e51fd63081bd4f97c084aefc44688d900d802b376978b2",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Shiny Button",
@@ -5510,7 +5518,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "53b6968c2a7f7bdbdb552023c296e90ce5431395499d820af95077136e284bf5",
+      "codeIntegrity": "3d812398b850fd2408db168c4c6bd6f623445cf99bb5bf23f942d94493972aeb",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Move your mouse aroundSmoothCursor is disabled on touch devices",
@@ -5542,7 +5550,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "53b6968c2a7f7bdbdb552023c296e90ce5431395499d820af95077136e284bf5",
+      "codeIntegrity": "3d812398b850fd2408db168c4c6bd6f623445cf99bb5bf23f942d94493972aeb",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Move your mouse aroundSmoothCursor is disabled on touch devices",
@@ -5574,7 +5582,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "37db502b916740c352ee96d6f12de0f21aeee3edb893c017559257ba49b87531",
+      "codeIntegrity": "0b8890eca74f0df1b49a74aac83de4c138a1e9899864bce95eb30ef375da7e1c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Magic UI",
@@ -5647,7 +5655,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "37db502b916740c352ee96d6f12de0f21aeee3edb893c017559257ba49b87531",
+      "codeIntegrity": "0b8890eca74f0df1b49a74aac83de4c138a1e9899864bce95eb30ef375da7e1c",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Magic UI",
@@ -5720,7 +5728,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "85c3dfa278605a27e6ccadfb29de1a50f56bc393d7956863ffd5af5f04878760",
+      "codeIntegrity": "1a06dfdaa95b6e0693cddc4e465b6510b7abf157fdf08d181169758e66f517ef",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "learn more • earn more • grow more • learn more • earn more • grow more •",
@@ -5752,7 +5760,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "85c3dfa278605a27e6ccadfb29de1a50f56bc393d7956863ffd5af5f04878760",
+      "codeIntegrity": "1a06dfdaa95b6e0693cddc4e465b6510b7abf157fdf08d181169758e66f517ef",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "learn more • earn more • grow more • learn more • earn more • grow more •",
@@ -5784,7 +5792,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "7fb3343b0a03ee458bf1786cad46168621084d6ca0e7c17acee0ec1fc5f9c231",
+      "codeIntegrity": "f768de2aba9556ce7a87df6e70e82359a44f31775dcfb6755d00f0f8b5f77bc7",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -5816,7 +5824,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "7fb3343b0a03ee458bf1786cad46168621084d6ca0e7c17acee0ec1fc5f9c231",
+      "codeIntegrity": "f768de2aba9556ce7a87df6e70e82359a44f31775dcfb6755d00f0f8b5f77bc7",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "",
@@ -5848,10 +5856,10 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "af3713cdbe40cf47ca31cf1548b357ee46a45f28e649f875f5e4fd22aaa5b093",
+      "codeIntegrity": "2285a701c2eeda69d09e82c72d2e569a13fc45cbd865d0e8f5db6c5a981a7479",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
-        "text": "> pnpm dlx shadcn@latest init> pnpm ✔ Preflight checks.✔ Verifying framework. Found Next.js.✔ Validating Tailwind CSS.✔ Validating import alias.✔ Writing components.json.✔ Checking registry.✔ Updating tailwind.config.ts✔ Updating app/global",
+        "text": "> pnpm dlx shadcn@latest init> pnpm✔ Preflight checks.✔ Verifying framework. Found Next.js.✔ Validating Tailwind CSS.✔ Validating import alias.✔ Writing components.json.✔ Checking registry.✔ Updating tailwind.config.ts✔ Updating app/globals",
         "elements": 29,
         "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
         "animations": [],
@@ -5864,7 +5872,7 @@
       },
       "actions": [],
       "after": {
-        "text": "> pnpm dlx shadcn@latest init> pnpm dlx shadcn@la✔ Preflight checks.✔ Verifying framework. Found Next.js.✔ Validating Tailwind CSS.✔ Validating import alias.✔ Writing components.json.✔ Checking registry.✔ Updating tailwind.config.ts✔ Updati",
+        "text": "> pnpm dlx shadcn@latest init> pnpm dlx sha✔ Preflight checks.✔ Verifying framework. Found Next.js.✔ Validating Tailwind CSS.✔ Validating import alias.✔ Writing components.json.✔ Checking registry.✔ Updating tailwind.config.ts✔ Updating app",
         "animations": 0,
         "videos": [],
         "htmlTheme": "light",
@@ -5880,10 +5888,10 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "af3713cdbe40cf47ca31cf1548b357ee46a45f28e649f875f5e4fd22aaa5b093",
+      "codeIntegrity": "2285a701c2eeda69d09e82c72d2e569a13fc45cbd865d0e8f5db6c5a981a7479",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
-        "text": "> pnpm dlx shadcn@latest init> pnpm ✔ Preflight checks.✔ Verifying framework. Found Next.js.✔ Validating Tailwind CSS.✔ Validating import alias.✔ Writing components.json.✔ Checking registry.✔ Updating tailwind.config.ts✔ Updating app/global",
+        "text": "> pnpm dlx shadcn@latest init> pnpm✔ Preflight checks.✔ Verifying framework. Found Next.js.✔ Validating Tailwind CSS.✔ Validating import alias.✔ Writing components.json.✔ Checking registry.✔ Updating tailwind.config.ts✔ Updating app/globals",
         "elements": 29,
         "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
         "animations": [],
@@ -5896,7 +5904,7 @@
       },
       "actions": [],
       "after": {
-        "text": "> pnpm dlx shadcn@latest init> pnpm dlx shadcn@✔ Preflight checks.✔ Verifying framework. Found Next.js.✔ Validating Tailwind CSS.✔ Validating import alias.✔ Writing components.json.✔ Checking registry.✔ Updating tailwind.config.ts✔ Updating",
+        "text": "> pnpm dlx shadcn@latest init> pnpm dlx sha✔ Preflight checks.✔ Verifying framework. Found Next.js.✔ Validating Tailwind CSS.✔ Validating import alias.✔ Writing components.json.✔ Checking registry.✔ Updating tailwind.config.ts✔ Updating app",
         "animations": 0,
         "videos": [],
         "htmlTheme": "dark",
@@ -5912,7 +5920,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f047c28456af0987e5b99e1c2327d5ebd506d3e96cf8ab985e537812fb01cd06",
+      "codeIntegrity": "abe43fb45942af73b5e1aa043db15839fc91e3167140d21d0daad6e5b1eb7dfc",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Stay hungry, stay foolishSSttaayy hhuunnggrryy,, ssttaayy ffoooolliisshh",
@@ -5944,7 +5952,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "f047c28456af0987e5b99e1c2327d5ebd506d3e96cf8ab985e537812fb01cd06",
+      "codeIntegrity": "abe43fb45942af73b5e1aa043db15839fc91e3167140d21d0daad6e5b1eb7dfc",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Stay hungry, stay foolishSSttaayy hhuunnggrryy,, ssttaayy ffoooolliisshh",
@@ -5976,7 +5984,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "097f5d0811eea4841e0bb4233665483f052a99b43d910dfc9bf16c6a98596abc",
+      "codeIntegrity": "9b005dd022e2f8d811e8f8655d40087f31ddfc565694b2e38d154b29284db82f",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Blur in by characterBlur in by character",
@@ -6069,7 +6077,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "097f5d0811eea4841e0bb4233665483f052a99b43d910dfc9bf16c6a98596abc",
+      "codeIntegrity": "9b005dd022e2f8d811e8f8655d40087f31ddfc565694b2e38d154b29284db82f",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Blur in by characterBlur in by character",
@@ -6162,7 +6170,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "598d39c35c6466a9935770fa73380021bc14354367ac01bf15e71cfd6cb07221",
+      "codeIntegrity": "65122e0f2916401d14ee9e087765aa6cbf4842fcd548b661c7768c14d9db253b",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "MagicMagicUIUIwillwillchangechangethethewaywayyouyoudesign.design.",
@@ -6194,7 +6202,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "598d39c35c6466a9935770fa73380021bc14354367ac01bf15e71cfd6cb07221",
+      "codeIntegrity": "65122e0f2916401d14ee9e087765aa6cbf4842fcd548b661c7768c14d9db253b",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "MagicMagicUIUIwillwillchangechangethethewaywayyouyoudesign.design.",
@@ -6226,10 +6234,10 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d83493840f5c459fc7e0779e8883a4fb4ffe066310c9431eecfd1484760dead8",
+      "codeIntegrity": "a7136c0bbab67c8c607287f2e71d20e9032a4231ce2e96a6ff18f31a26fc4be1",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
-        "text": "Hell|",
+        "text": "Hel|",
         "elements": 2,
         "font": "\"Geist Sans-1605d0bc6e3335b0\", \"Geist Sans-1605d0bc6e3335b0 fallback: Arial\", sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
         "animations": [
@@ -6247,7 +6255,7 @@
       },
       "actions": [],
       "after": {
-        "text": "Hello Wor|",
+        "text": "Hello Wo|",
         "animations": 1,
         "videos": [],
         "htmlTheme": "light",
@@ -6263,7 +6271,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "d83493840f5c459fc7e0779e8883a4fb4ffe066310c9431eecfd1484760dead8",
+      "codeIntegrity": "a7136c0bbab67c8c607287f2e71d20e9032a4231ce2e96a6ff18f31a26fc4be1",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Hel|",
@@ -6284,7 +6292,7 @@
       },
       "actions": [],
       "after": {
-        "text": "Hello Worl|",
+        "text": "Hello W|",
         "animations": 1,
         "videos": [],
         "htmlTheme": "dark",
@@ -6300,7 +6308,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "eb410eab3df43e7771d8a890f6c5c4b1223dad8bdc5fccb2b540b8cd3f43d612",
+      "codeIntegrity": "9b7d5cd96cc0c97887cf99a1a84bcdcdb4fed3595866e92e0f4479a7026697a7",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Congratulations on Your Promotion!Your hard work and dedication have paid off. We're thrilled to see you take this next step in your career. Keep up the fantastic work!",
@@ -6381,7 +6389,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "eb410eab3df43e7771d8a890f6c5c4b1223dad8bdc5fccb2b540b8cd3f43d612",
+      "codeIntegrity": "9b7d5cd96cc0c97887cf99a1a84bcdcdb4fed3595866e92e0f4479a7026697a7",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Congratulations on Your Promotion!Your hard work and dedication have paid off. We're thrilled to see you take this next step in your career. Keep up the fantastic work!",
@@ -6462,7 +6470,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6d65d85280881d926127c75dac54776b74fcf37b2f8d0374304d75abe950a737",
+      "codeIntegrity": "50165bfff433a00e306bdd89cb0e5697302cd733ce3bcfbb7eea7fce10016dab",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Word",
@@ -6494,7 +6502,7 @@
       "errors": [],
       "consoleErrors": [],
       "blockedRequests": [],
-      "codeIntegrity": "6d65d85280881d926127c75dac54776b74fcf37b2f8d0374304d75abe950a737",
+      "codeIntegrity": "50165bfff433a00e306bdd89cb0e5697302cd733ce3bcfbb7eea7fce10016dab",
       "cssIntegrity": "01364f7ca49d9b5978149ed30923a1b5106ba3d6615fa0cd08ba6786d7b05337",
       "before": {
         "text": "Word",
@@ -6541,7 +6549,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.2602,
+            "time": 0.283359,
             "paused": false,
             "source": "data:video/mp4;base64,AAAAIGZ0"
           }
@@ -6554,7 +6562,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.6671,
+            "time": 0.749165,
             "paused": false
           }
         ],
@@ -6593,7 +6601,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.4575,
+            "time": 0.426668,
             "paused": false,
             "source": "data:video/mp4;base64,AAAAIGZ0"
           }
@@ -6606,7 +6614,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.8996,
+            "time": 0.849588,
             "paused": false
           }
         ],
@@ -6709,7 +6717,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.204977,
+            "time": 0.224247,
             "paused": false,
             "source": "data:video/webm;base64,GkXfowE"
           }
@@ -6722,7 +6730,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.719241,
+            "time": 0.792916,
             "paused": false
           }
         ],
@@ -6761,7 +6769,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.334689,
+            "time": 0.322872,
             "paused": false,
             "source": "data:video/webm;base64,GkXfowE"
           }
@@ -6774,7 +6782,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.840478,
+            "time": 0.824787,
             "paused": false
           }
         ],
@@ -6819,7 +6827,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.395845,
+            "time": 0.380284,
             "paused": false,
             "source": "data:video/mp4;base64,AAAAIGZ0"
           }
@@ -6832,7 +6840,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.874713,
+            "time": 0.819033,
             "paused": false
           }
         ],
@@ -6877,7 +6885,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.402932,
+            "time": 0.362403,
             "paused": false,
             "source": "data:video/mp4;base64,AAAAIGZ0"
           }
@@ -6890,7 +6898,7 @@
         "videos": [
           {
             "readyState": 4,
-            "time": 0.914382,
+            "time": 0.8168,
             "paused": false
           }
         ],

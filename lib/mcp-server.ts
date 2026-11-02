@@ -28,6 +28,18 @@ export function createColMcpServer(data: CatalogueData): McpServer {
       },
       (args) => {
         const result = tools.invoke(definition.name, args);
+        if (definition.name === "render_component" && result.structuredContent?.status === "html" && Buffer.byteLength(JSON.stringify(result)) > 4_000_000) {
+          const preview = result.structuredContent.preview;
+          if (preview && typeof preview === "object" && "code" in preview) {
+            const { code: _code, ...identity } = preview;
+            const payload = { ...result.structuredContent, preview: identity };
+            const compact = { ...result, content: [{ type: "text" as const, text: JSON.stringify(payload) }] };
+            if (Buffer.byteLength(JSON.stringify(compact)) <= 4_000_000) return compact;
+            const note = "The complete selected implementation is embedded in the HTML; its redundant preview.code field is omitted to fit the transport limit.";
+            const smaller = { ...payload, transportNote: note };
+            return { ...result, content: [{ type: "text" as const, text: JSON.stringify(smaller) }], structuredContent: smaller };
+          }
+        }
         if (definition.name !== "render_component" || result.structuredContent?.status !== "sent-to-chat") return result;
         const preview = result.structuredContent.preview;
         if (!preview || typeof preview !== "object" || !("code" in preview) || !("media" in preview) || !("requestKey" in preview)) return result;
@@ -59,8 +71,8 @@ export function createColMcpServer(data: CatalogueData): McpServer {
     }),
   );
 
-  server.registerResource("Original demo media chunk", new ResourceTemplate("col://preview-media/{sha256}/{part}", { list: undefined }), {
-    description: "Hash-verified, bounded bytes of fixed original demo media. No arbitrary file or network access.",
+  server.registerResource("Demo media chunk", new ResourceTemplate("col://preview-media/{sha256}/{part}", { list: undefined }), {
+    description: "Hash-verified, bounded bytes of fixed demo media. No arbitrary file or network access.",
     mimeType: "application/octet-stream",
   }, async (uri, { sha256, part }) => {
     if (typeof sha256 !== "string" || typeof part !== "string") throw new Error("Invalid original media resource");

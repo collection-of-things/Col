@@ -1,6 +1,8 @@
 import { parse } from "@babel/parser";
 import packageBundles from "../data/component-previews/package-bundles.json" with { type: "json" };
 import supplementalBundles from "../data/component-previews/package-bundles-supplemental.json" with { type: "json" };
+import recoveryBundles from "../data/component-previews/package-bundles-react-recovery.json" with { type: "json" };
+import cultRadixBundles from "../data/component-previews/package-bundles-cult-radix.json" with { type: "json" };
 
 type PackageBundle = {
   code: string;
@@ -9,12 +11,14 @@ type PackageBundle = {
   importMappings?: Readonly<Record<string, Readonly<Record<string, string>>>>;
 };
 
-const bundles: Readonly<Record<string, PackageBundle>> = { ...packageBundles, ...supplementalBundles };
+const globalBundles: Readonly<Record<string, PackageBundle>> = { ...packageBundles, ...supplementalBundles, ...recoveryBundles };
 const webAwesomePrefix = "@awesome.me/webawesome@3.14.0/dist/react/";
 
 /** Replace only exact, audited package imports with their real npm bundle.
  * All packages continue to share the renderer's pinned React modules. */
-export function transformPreviewPackageImports(code: string): string {
+export function transformPreviewPackageImports(code: string, id?: string): string {
+  const bundles: Readonly<Record<string, PackageBundle>> = id && cultRadixBundles["radix-ui@1.4.3"].components.includes(id)
+    ? { ...cultRadixBundles, ...globalBundles } : globalBundles;
   const ast = parse(code, { sourceType: "module", plugins: ["jsx", "typescript"] });
   const replacements: { start: number; end: number; text: string }[] = [];
   const used = new Map<string, string>();

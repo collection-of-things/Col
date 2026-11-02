@@ -68,7 +68,7 @@ Cursor (`.cursor/mcp.json`):
 | `get_component` | Get a component's sources and whether it can be previewed. |
 | `render_component` | Show a live preview of a component in chat. |
 
-For SolidJS 2 projects, Col covers [Quoin](https://usecol.com/docs/agents#solid-2-and-quoin) components with API details, usage examples and the exact dependency versions they need. The [Quoin guide](docs/quoin-solid.md) covers sources and coverage.
+Col also indexes documented components from Kobalte, SolidUI, shadcn-solid, Zaidan, hope-ui, RockSolid, Nikala UI, TorchUI, MagicUI Solid, and Mystic UI. Check each component's preview and compatibility details: Solid 1 and Solid 2 examples use separate pinned runtimes, and any preview limitations are disclosed. The [Quoin guide](docs/quoin-solid.md) covers its Solid 2 RC requirements.
 
 Previews need a client that supports MCP Apps. See [component previews](docs/mcp-component-previews.md) for coverage, the [setup guide](https://usecol.com/mcp) for other clients, and the [agent guide](https://usecol.com/mcp/agents) for tool arguments. The [Col plugin](plugin/README.md) bundles the connection with a component search skill; use either the plugin or a direct connection, not both.
 

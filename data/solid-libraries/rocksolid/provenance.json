@@ -974,7 +974,9 @@
       },
       "Badge": {
         "source": "upstream/src/components/Badge/Badge.tsx",
-        "gaps": []
+        "gaps": [
+          "The documented icon-only button has an accessible Notifications label added; its component styling is unchanged."
+        ]
       },
       "Breadcrumbs": {
         "source": "upstream/src/components/Breadcrumbs/Breadcrumbs.tsx",
@@ -996,7 +998,9 @@
     "RockExpanded2": {
       "Chip": {
         "source": "upstream/src/components/Chip/Chip.tsx",
-        "gaps": []
+        "gaps": [
+          "The original documented delete handler logs the event; it does not remove the chip."
+        ]
       },
       "Divider": {
         "source": "upstream/src/components/Divider/Divider.tsx",

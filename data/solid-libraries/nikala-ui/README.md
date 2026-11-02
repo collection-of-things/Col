@@ -1,7 +1,5 @@
 # Nikala UI source previews
 
-> During this review stack, rebuild scripts and preview artifacts arrive in the final integration stage.
-
 All **78 documented components** are indexed with individual HTTP-200 page verification and authentic runnable previews. Source: `nikala-ui/ui` revision `ce75abc6a948d2d78b2b22d368c2997832d0909b`, checked on 2026-10-30. `coverage.json` lists every exact name and official URL; `page-verification.json` retains the checked page hashes.
 
 The original Button, Toggle Group and Timeline remain compatible direct entries. Other previews share closed modules for ordinary components, highlighting and rich editing. Each dispatcher selects the actual example through the renderer's lexical `PREVIEW_COMPONENT` constant. `demos/*.tsx` are authored extractions of each page's first live `ComponentPreview`, preserving original imports, state and JSX. They are not byte-identical full documentation files; those originals and hashes remain in `upstream.json`. Theme Manager receives the required original ThemeProvider.

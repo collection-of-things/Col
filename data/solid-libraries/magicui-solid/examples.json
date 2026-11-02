@@ -447,7 +447,8 @@
       ],
       "unresolved": [],
       "remoteUrls": [],
-      "description": "Confetti animations are best used to delight your users when something special happens"
+      "description": "Confetti animations are best used to delight your users when something special happens",
+      "adaptation": "The documented globalOptions disable the worker so the original animation runs within the preview's restricted CSP."
     },
     {
       "id": "magicui-solid/Cool Mode",
