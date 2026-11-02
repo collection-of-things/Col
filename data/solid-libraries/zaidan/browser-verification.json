@@ -1,0 +1,1736 @@
+{
+  "checkedAt": "2026-10-30T07:12:41.870532Z",
+  "browser": "156.0.8078.79",
+  "renderer": "render_component HTML",
+  "sandbox": "allow-scripts allow-forms",
+  "viewport": {
+    "width": 1280,
+    "height": 960
+  },
+  "runs": [
+    {
+      "stage": "zaidan",
+      "completedAt": "2026-10-30T05:52:04.344425Z",
+      "cases": 116,
+      "passed": 114
+    },
+    {
+      "stage": "zaidan-retry",
+      "completedAt": "2026-10-30T06:05:32.635968Z",
+      "cases": 22,
+      "passed": 20
+    },
+    {
+      "stage": "zaidan-toast",
+      "completedAt": "2026-10-30T06:05:52.081737Z",
+      "cases": 2,
+      "passed": 2
+    },
+    {
+      "stage": "zaidan-webp",
+      "completedAt": "2026-10-30T07:12:41.870532Z",
+      "cases": 16,
+      "passed": 16
+    }
+  ],
+  "rows": [
+    {
+      "id": "zaidan/Accordion",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "What are your shipping options?",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "What are your shipping options?\nWe offer standard (5-7 days), express (2-3 days), and overnight shipping. Free shipping on international orders.\nWhat "
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Alert",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Payment successful\nYour payment of $29.99 has been processed. A receipt has been sent to your email address.\nNew feature available\nWe've added dark mo"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Alert Dialog",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Show Dialog",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Show Dialog\nAre you absolutely sure?\n\nThis action cannot be undone. This will permanently delete your account from our servers.\n\nCancel\nContinue"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Aspect Ratio",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "loadedImages": [
+        {
+          "sha256": "749c4fcaab305bd56bf81599281296002ae1e323da3619167400cdd7ab1dd0b9",
+          "width": 120,
+          "height": 120
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "zaidan/Attachment",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "workspace.png\nPNG · 820 KB\ndesk-reference.jpg\nJPG · 1.1 MB\noffice-reference.jpg\nJPG · 940 KB\nsales-dashboard.pdf\nUploading · 64%\nmessage-renderer.tsx\n"
+      },
+      "loadedImages": [
+        {
+          "sha256": "610c69f2eb564d30943d605d5ae44c54f984f11a4c6ee8df6bcd464bea72e6bf",
+          "width": 900,
+          "height": 600
+        },
+        {
+          "sha256": "ce436e0d0bfa5ac68f7373cb9cea55b3c39afc26ee9ca982fd5c374893d1de45",
+          "width": 900,
+          "height": 601
+        },
+        {
+          "sha256": "29a47009d30348a44aa2abaa71337dc49f8e08691a6a81343bb8f77227481a12",
+          "width": 900,
+          "height": 601
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "zaidan/Avatar",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "+3"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Badge",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Badge\nSecondary\nDestructive\nOutline"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Breadcrumb",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "More\nToggle menu",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Home\nMore\nToggle menu\nComponents\nBreadcrumb\nDocumentation\nThemes\nGitHub"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Bubble",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Hey there! What's up?\nHey! Want to see chat bubbles?\nI can group messages, switch sides, and keep the whole thread easy to scan.\n👍\nSure. Hit me with "
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Button",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Button"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Button Group",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Archive\nReport\nSnooze"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Calendar",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec\nSep\n1926\n1927\n1928\n1929\n1930\n1931\n1932\n1933\n1934\n1935\n1936\n1937\n1938\n1939\n1940\n1941\n1942\n1943\n1944\n194"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Card",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Sign Up",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Login to your account\nEnter your email below to login to your account\nSign Up\nEmail\nPassword\nForgot your password?\nLogin\nLogin with Google"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Carousel",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Next slide",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "1\n2\n3\n4\n5\nPrevious slide\nNext slide"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Chart",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Desktop\n7,324",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Bar Chart - Interactive\nShowing total visitors for the last month\nDesktop\n7,324\nMobile\n7,250\nApr 1\nApr 3\nApr 5\nApr 7\nApr 9\nApr 12\nApr 15\nApr 18\nApr 21"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Checkbox",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "checkbox (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Accept terms and conditions\nAccept terms and conditions\n\nBy clicking this checkbox, you agree to the terms.\n\nEnable notifications\nEnable notifications"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Collapsible",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Order #4189\nStatus\nShipped\n\nShipping address\n\n100 Market St, San Francisco\n\nItems\n\n2x Studio Headphones"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Combobox",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Next.js\nSvelteKit\nNuxt.js\nRemix\nAstro"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Command",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "No results found."
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Context Menu",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "context menu (right click)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Right click here\nBack\n⌘[\nForward\n⌘]\nReload\n⌘R\nMore Tools\nShow Bookmarks\nShow Full URLs\nPeople\nPedro Duarte\nColm Tuite"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Dialog",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open Dialog",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open Dialog\nEdit profile\n\nMake changes to your profile here. Click save when you're done.\n\nName\nUsername\nCancel\nSave changes\nClose"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Drawer",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open Drawer",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open Drawer\nPick a delivery time\n\nWe'll prepare your order as soon as possible.\n\nStandard delivery\nFastest\n\n25–35 min · Driver assigned now\n\n5:00 PM –"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Dropdown Menu",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open\nMy Account\nProfile\n⇧⌘P\nBilling\n⌘B\nSettings\n⌘S\nTeam\nInvite users\nNew Team\n⌘+T\nGitHub\nSupport\nAPI\nLog out\n⇧⌘Q"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Empty",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Create Project",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "No Projects Yet\nYou haven't created any projects yet. Get started by creating your first project.\nCreate Project\nImport Project\nLearn More"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Field",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "MM",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Payment Method\n\nAll transactions are secure and encrypted\n\nName on Card\nCard Number\n\nEnter your 16-digit card number\n\nMonth\nMM\nYear\nYYYY\nCVV\nBilling A"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Hover Card",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "hover content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Hover Here\n@nextjs\nThe React Framework – created and maintained by @vercel.\nJoined December 2021"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Input",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "API Key\n\nYour API key is encrypted and stored securely."
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Input Group",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "12 results"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Input OTP",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1288,
+        "width": 1264,
+        "visibleText": "1"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Item",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Action",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Basic Item\n\nA simple item with title and description.\n\nAction\nYour profile has been verified."
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Kbd",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "⌘\n⇧\n⌥\n⌃\nCtrl\n+\nB"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Label",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "checkbox (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Accept terms and conditions"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Marker",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Default\nA default marker\nMarker with an icon\nCompacting conversation\nVariants\nSwitched to release-candidate\nWorked for 42s\nConversation compacted\nLink"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Menubar",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "File",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "File\nEdit\nView\nProfiles\nNew Tab\n⌘T\nNew Window\n⌘N\nNew Incognito Window\nShare\nPrint...\n⌘P"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Message",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Deploying to prod real quick.\nIt's 4:55 PM. On a Friday.\nIt's a one-line change.\nDelivered\nIt's always a one-line change 😭.\nAlright, let me take a lo"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Native Select",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Select status\nTodo\nIn Progress\nDone\nCancelled"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Navigation Menu",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Getting started",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Getting started\nComponents\nWith Icon\nDocs\nIntroduction\nRe-usable components built with Tailwind CSS.\nInstallation\nHow to install dependencies and stru"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Pagination",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Previous\n1\n2\n3\nMore pages\nNext"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Popover",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open popover",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open popover\nDimensions\n\nSet the dimensions for the layer.\n\nWidth\nMax. width\nHeight\nMax. height"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Progress",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Radio Group",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "radio (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Default\nComfortable\nCompact"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Resizable",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "One\nTwo\nThree"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Scroll Area",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Tags\nv1.2.0-beta.50\nv1.2.0-beta.49\nv1.2.0-beta.48\nv1.2.0-beta.47\nv1.2.0-beta.46\nv1.2.0-beta.45\nv1.2.0-beta.44\nv1.2.0-beta.43\nv1.2.0-beta.42\nv1.2.0-bet"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Select",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Select a fruit",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Select a fruit\nApple\nBanana\nBlueberry\nGrapes\nPineapple"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Separator",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "shadcn/ui\nThe Foundation for your Design System\nA set of beautifully designed components that you can customize, extend, and build on."
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Sheet",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open\nEdit profile\n\nMake changes to your profile here. Click save when you're done.\n\nName\nUsername\nSave changes\nClose\nClose"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Sidebar",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Acme Inc\nEnterprise",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Acme Inc\nEnterprise\nPlatform\nPlayground\nHistory\nStarred\nSettings\nModels\nDocumentation\nSettings\nProjects\nDesign Engineering\nMore\nSales & Marketing\nMore"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Skeleton",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Slider",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "slider (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Spinner",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Processing payment...\n$100.00"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Switch",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "switch (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Airplane Mode"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Table",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "A list of your recent invoices.\nInvoice\tStatus\tMethod\tAmount\nINV001\tPaid\tCredit Card\t$250.00\nINV002\tPending\tPayPal\t$150.00\nINV003\tUnpaid\tBank Transfer"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Tabs",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Overview",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Overview\nAnalytics\nReports\nSettings\nOverview\nView your key metrics and recent project activity. Track progress across all your active projects.\nYou ha"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Textarea",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Toast",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "show toast",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Event created\nSunday, December 3 at 9:00 AM\nUndo\nShow Toast"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Toggle",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Bookmark",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Bookmark"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Toggle Group",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Tooltip",
+      "theme": "light",
+      "errors": [],
+      "failures": [],
+      "clicked": "hover content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Hover\n\nAdd to library"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Accordion",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "What are your shipping options?",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "What are your shipping options?\nWe offer standard (5-7 days), express (2-3 days), and overnight shipping. Free shipping on international orders.\nWhat "
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Alert",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Payment successful\nYour payment of $29.99 has been processed. A receipt has been sent to your email address.\nNew feature available\nWe've added dark mo"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Alert Dialog",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Show Dialog",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Show Dialog\nAre you absolutely sure?\n\nThis action cannot be undone. This will permanently delete your account from our servers.\n\nCancel\nContinue"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Aspect Ratio",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "loadedImages": [
+        {
+          "sha256": "749c4fcaab305bd56bf81599281296002ae1e323da3619167400cdd7ab1dd0b9",
+          "width": 120,
+          "height": 120
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "zaidan/Attachment",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "workspace.png\nPNG · 820 KB\ndesk-reference.jpg\nJPG · 1.1 MB\noffice-reference.jpg\nJPG · 940 KB\nsales-dashboard.pdf\nUploading · 64%\nmessage-renderer.tsx\n"
+      },
+      "loadedImages": [
+        {
+          "sha256": "610c69f2eb564d30943d605d5ae44c54f984f11a4c6ee8df6bcd464bea72e6bf",
+          "width": 900,
+          "height": 600
+        },
+        {
+          "sha256": "ce436e0d0bfa5ac68f7373cb9cea55b3c39afc26ee9ca982fd5c374893d1de45",
+          "width": 900,
+          "height": 601
+        },
+        {
+          "sha256": "29a47009d30348a44aa2abaa71337dc49f8e08691a6a81343bb8f77227481a12",
+          "width": 900,
+          "height": 601
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "zaidan/Avatar",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "+3"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Badge",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Badge\nSecondary\nDestructive\nOutline"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Breadcrumb",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "More\nToggle menu",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Home\nMore\nToggle menu\nComponents\nBreadcrumb\nDocumentation\nThemes\nGitHub"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Bubble",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Hey there! What's up?\nHey! Want to see chat bubbles?\nI can group messages, switch sides, and keep the whole thread easy to scan.\n👍\nSure. Hit me with "
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Button",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Button"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Button Group",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Archive\nReport\nSnooze"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Calendar",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec\nSep\n1926\n1927\n1928\n1929\n1930\n1931\n1932\n1933\n1934\n1935\n1936\n1937\n1938\n1939\n1940\n1941\n1942\n1943\n1944\n194"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Card",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Sign Up",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Login to your account\nEnter your email below to login to your account\nSign Up\nEmail\nPassword\nForgot your password?\nLogin\nLogin with Google"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Carousel",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Next slide",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "1\n2\n3\n4\n5\nPrevious slide\nNext slide"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Chart",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Desktop\n7,324",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Bar Chart - Interactive\nShowing total visitors for the last month\nDesktop\n7,324\nMobile\n7,250\nApr 1\nApr 3\nApr 5\nApr 7\nApr 9\nApr 12\nApr 15\nApr 18\nApr 21"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Checkbox",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "checkbox (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Accept terms and conditions\nAccept terms and conditions\n\nBy clicking this checkbox, you agree to the terms.\n\nEnable notifications\nEnable notifications"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Collapsible",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Order #4189\nStatus\nShipped\n\nShipping address\n\n100 Market St, San Francisco\n\nItems\n\n2x Studio Headphones"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Combobox",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Next.js\nSvelteKit\nNuxt.js\nRemix\nAstro"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Command",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "No results found."
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Context Menu",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "context menu (right click)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Right click here\nBack\n⌘[\nForward\n⌘]\nReload\n⌘R\nMore Tools\nShow Bookmarks\nShow Full URLs\nPeople\nPedro Duarte\nColm Tuite"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Dialog",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open Dialog",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open Dialog\nEdit profile\n\nMake changes to your profile here. Click save when you're done.\n\nName\nUsername\nCancel\nSave changes\nClose"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Drawer",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open Drawer",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open Drawer\nPick a delivery time\n\nWe'll prepare your order as soon as possible.\n\nStandard delivery\nFastest\n\n25–35 min · Driver assigned now\n\n5:00 PM –"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Dropdown Menu",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open\nMy Account\nProfile\n⇧⌘P\nBilling\n⌘B\nSettings\n⌘S\nTeam\nInvite users\nNew Team\n⌘+T\nGitHub\nSupport\nAPI\nLog out\n⇧⌘Q"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Empty",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Create Project",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "No Projects Yet\nYou haven't created any projects yet. Get started by creating your first project.\nCreate Project\nImport Project\nLearn More"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Field",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "MM",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Payment Method\n\nAll transactions are secure and encrypted\n\nName on Card\nCard Number\n\nEnter your 16-digit card number\n\nMonth\nMM\nYear\nYYYY\nCVV\nBilling A"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Hover Card",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "hover content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Hover Here\n@nextjs\nThe React Framework – created and maintained by @vercel.\nJoined December 2021"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Input",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "API Key\n\nYour API key is encrypted and stored securely."
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Input Group",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "12 results"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Input OTP",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1288,
+        "width": 1264,
+        "visibleText": "1"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Item",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Action",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Basic Item\n\nA simple item with title and description.\n\nAction\nYour profile has been verified."
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Kbd",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "⌘\n⇧\n⌥\n⌃\nCtrl\n+\nB"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Label",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "checkbox (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Accept terms and conditions"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Marker",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Default\nA default marker\nMarker with an icon\nCompacting conversation\nVariants\nSwitched to release-candidate\nWorked for 42s\nConversation compacted\nLink"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Menubar",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "File",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "File\nEdit\nView\nProfiles\nNew Tab\n⌘T\nNew Window\n⌘N\nNew Incognito Window\nShare\nPrint...\n⌘P"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Message",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Deploying to prod real quick.\nIt's 4:55 PM. On a Friday.\nIt's a one-line change.\nDelivered\nIt's always a one-line change 😭.\nAlright, let me take a lo"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Native Select",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Select status\nTodo\nIn Progress\nDone\nCancelled"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Navigation Menu",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Getting started",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Getting started\nComponents\nWith Icon\nDocs\nIntroduction\nRe-usable components built with Tailwind CSS.\nInstallation\nHow to install dependencies and stru"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Pagination",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Previous\n1\n2\n3\nMore pages\nNext"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Popover",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open popover",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open popover\nDimensions\n\nSet the dimensions for the layer.\n\nWidth\nMax. width\nHeight\nMax. height"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Progress",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Radio Group",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "radio (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Default\nComfortable\nCompact"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Resizable",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "One\nTwo\nThree"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Scroll Area",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Tags\nv1.2.0-beta.50\nv1.2.0-beta.49\nv1.2.0-beta.48\nv1.2.0-beta.47\nv1.2.0-beta.46\nv1.2.0-beta.45\nv1.2.0-beta.44\nv1.2.0-beta.43\nv1.2.0-beta.42\nv1.2.0-bet"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Select",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Select a fruit",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Select a fruit\nApple\nBanana\nBlueberry\nGrapes\nPineapple"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Separator",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "shadcn/ui\nThe Foundation for your Design System\nA set of beautifully designed components that you can customize, extend, and build on."
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Sheet",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Open",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Open\nEdit profile\n\nMake changes to your profile here. Click save when you're done.\n\nName\nUsername\nSave changes\nClose\nClose"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Sidebar",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Acme Inc\nEnterprise",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Acme Inc\nEnterprise\nPlatform\nPlayground\nHistory\nStarred\nSettings\nModels\nDocumentation\nSettings\nProjects\nDesign Engineering\nMore\nSales & Marketing\nMore"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Skeleton",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Slider",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "slider (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Spinner",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Processing payment...\n$100.00"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Switch",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "switch (keyboard)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Airplane Mode"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Table",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "A list of your recent invoices.\nInvoice\tStatus\tMethod\tAmount\nINV001\tPaid\tCredit Card\t$250.00\nINV002\tPending\tPayPal\t$150.00\nINV003\tUnpaid\tBank Transfer"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Tabs",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Overview",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Overview\nAnalytics\nReports\nSettings\nOverview\nView your key metrics and recent project activity. Track progress across all your active projects.\nYou ha"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Textarea",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "input (text entry)",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Toast",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "show toast",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Event created\nSunday, December 3 at 9:00 AM\nUndo\nShow Toast"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Toggle",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "Bookmark",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Bookmark"
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Toggle Group",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "focused": true,
+      "clicked": "icon button",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": ""
+      },
+      "pass": true
+    },
+    {
+      "id": "zaidan/Tooltip",
+      "theme": "dark",
+      "errors": [],
+      "failures": [],
+      "clicked": "hover content",
+      "dom": {
+        "failedImages": [],
+        "scrollWidth": 1264,
+        "width": 1264,
+        "visibleText": "Hover\n\nAdd to library"
+      },
+      "pass": true
+    }
+  ]
+}

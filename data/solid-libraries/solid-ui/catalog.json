@@ -1,0 +1,915 @@
+{
+  "library": {
+    "name": "SolidUI",
+    "slug": "solid-ui",
+    "addedAt": "2026-10-30T00:26:49+05:30",
+    "description": "Copy-and-paste SolidJS components ported from shadcn/ui and Tremor, styled with Tailwind CSS.",
+    "url": "https://www.solid-ui.com",
+    "category": "Component Library",
+    "stacks": [
+      "SolidJS",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "useCases": [
+      "Dashboards",
+      "Data Visualization",
+      "Rapid Prototyping"
+    ],
+    "tags": [
+      "shadcn",
+      "tremor",
+      "copy paste"
+    ]
+  },
+  "details": {
+    "docsUrl": "https://www.solid-ui.com/docs/introduction",
+    "repoUrl": "https://github.com/stefan-karger/solid-ui",
+    "pricing": {
+      "model": "free",
+      "summary": "The component source is free under the MIT license.",
+      "license": "MIT",
+      "source": "https://raw.githubusercontent.com/stefan-karger/solid-ui/21ba4fa59b775a8bf9ee8249883de34aba1cf807/LICENSE"
+    }
+  },
+  "components": [
+    {
+      "name": "Accordion",
+      "url": "https://www.solid-ui.com/docs/components/accordion",
+      "kind": "full-pattern",
+      "summary": "Expandable sections with accessible headings and state-driven chevron styling.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "builtOn": "@kobalte/core",
+      "registryDependencies": []
+    },
+    {
+      "name": "Alert",
+      "url": "https://www.solid-ui.com/docs/components/alert",
+      "kind": "full-pattern",
+      "summary": "Displays a callout for user attention.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Alert Dialog",
+      "url": "https://www.solid-ui.com/docs/components/alert-dialog",
+      "kind": "full-pattern",
+      "summary": "A modal dialog that interrupts the user",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Aspect Ratio",
+      "url": "https://www.solid-ui.com/docs/components/aspect-ratio",
+      "kind": "full-pattern",
+      "summary": "Displays content within a desired ratio.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "solid-js"
+      ]
+    },
+    {
+      "name": "Avatar",
+      "url": "https://www.solid-ui.com/docs/components/avatar",
+      "kind": "full-pattern",
+      "summary": "An image element with a fallback for representing the user.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Badge",
+      "url": "https://www.solid-ui.com/docs/components/badge",
+      "kind": "full-pattern",
+      "summary": "Displays a badge or a component that looks like a badge.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Badge Delta",
+      "url": "https://www.solid-ui.com/docs/components/badge-delta",
+      "kind": "full-pattern",
+      "summary": "A Badge with trend indicator for five different statuses.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "badge"
+      ]
+    },
+    {
+      "name": "Bar List",
+      "url": "https://www.solid-ui.com/docs/components/bar-list",
+      "kind": "full-pattern",
+      "summary": "Horizontal bars with a customizable label inside.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "card"
+      ]
+    },
+    {
+      "name": "Breadcrumb",
+      "url": "https://www.solid-ui.com/docs/components/breadcrumb",
+      "kind": "full-pattern",
+      "summary": "Displays the path to the current resource using a hierarchy of links.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Button",
+      "url": "https://www.solid-ui.com/docs/components/button",
+      "kind": "full-pattern",
+      "summary": "A styled button with documented variants and keyboard behavior.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "builtOn": "@kobalte/core",
+      "registryDependencies": []
+    },
+    {
+      "name": "Callout",
+      "url": "https://www.solid-ui.com/docs/components/callout",
+      "kind": "full-pattern",
+      "summary": "Used for hints, disclaimers, tips, warnings, or documentation needs.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Card",
+      "url": "https://www.solid-ui.com/docs/components/card",
+      "kind": "full-pattern",
+      "summary": "Displays a card with header, content, and footer.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "switch"
+      ]
+    },
+    {
+      "name": "Carousel",
+      "url": "https://www.solid-ui.com/docs/components/carousel",
+      "kind": "full-pattern",
+      "summary": "A carousel with motion and swipe built using Embla.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "embla-carousel-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "card"
+      ]
+    },
+    {
+      "name": "Charts",
+      "url": "https://www.solid-ui.com/docs/components/charts",
+      "kind": "full-pattern",
+      "summary": "A collection of different chart components using chart.js",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@solid-primitives/refs",
+        "chart.js",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "card"
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "url": "https://www.solid-ui.com/docs/components/checkbox",
+      "kind": "full-pattern",
+      "summary": "A control that allows the user to toggle between checked and not checked.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "label"
+      ]
+    },
+    {
+      "name": "Collapsible",
+      "url": "https://www.solid-ui.com/docs/components/collapsible",
+      "kind": "full-pattern",
+      "summary": "An interactive component which expands/collapses a content.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Combobox",
+      "url": "https://www.solid-ui.com/docs/components/combobox",
+      "kind": "full-pattern",
+      "summary": "Combines a text input with a listbox, allowing users to filter a list of options to items matching a query.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Command",
+      "url": "https://www.solid-ui.com/docs/components/command",
+      "kind": "full-pattern",
+      "summary": "Fast, composable, unstyled command menu.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "cmdk-solid",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "dialog"
+      ]
+    },
+    {
+      "name": "Context Menu",
+      "url": "https://www.solid-ui.com/docs/components/context-menu",
+      "kind": "full-pattern",
+      "summary": "Displays a menu located at the pointer, triggered by a right-click or a long-press.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Data Table",
+      "url": "https://www.solid-ui.com/docs/components/data-table",
+      "kind": "full-pattern",
+      "summary": "Powerful table and datagrids built using TanStack Table.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "@tanstack/solid-table",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "checkbox",
+        "dropdown-menu",
+        "table",
+        "text-field"
+      ]
+    },
+    {
+      "name": "Date Picker",
+      "url": "https://www.solid-ui.com/docs/components/date-picker",
+      "kind": "full-pattern",
+      "summary": "A date picker component with range and presets.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@ark-ui/solid",
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Delta Bar",
+      "url": "https://www.solid-ui.com/docs/components/delta-bar",
+      "kind": "full-pattern",
+      "summary": "Bar to show negative or positive deviation from a particular threshold",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Dialog",
+      "url": "https://www.solid-ui.com/docs/components/dialog",
+      "kind": "full-pattern",
+      "summary": "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "text-field"
+      ]
+    },
+    {
+      "name": "Drawer",
+      "url": "https://www.solid-ui.com/docs/components/drawer",
+      "kind": "full-pattern",
+      "summary": "A drawer component for Solid.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@corvu/drawer",
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Dropdown Menu",
+      "url": "https://www.solid-ui.com/docs/components/dropdown-menu",
+      "kind": "full-pattern",
+      "summary": "Displays a menu to the user — such as a set of actions or functions — triggered by a button.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Flex",
+      "url": "https://www.solid-ui.com/docs/components/flex",
+      "kind": "full-pattern",
+      "summary": "Creates a flex container which enables flex context for all its direct children.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "card"
+      ]
+    },
+    {
+      "name": "Grid",
+      "url": "https://www.solid-ui.com/docs/components/grid",
+      "kind": "full-pattern",
+      "summary": "Creates a grid layout to align components as equally sized columns.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "card"
+      ]
+    },
+    {
+      "name": "Hover Card",
+      "url": "https://www.solid-ui.com/docs/components/hover-card",
+      "kind": "full-pattern",
+      "summary": "For sighted users to preview content available behind a link.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button"
+      ]
+    },
+    {
+      "name": "Label",
+      "url": "https://www.solid-ui.com/docs/components/label",
+      "kind": "full-pattern",
+      "summary": "Renders an accessible label associated with controls.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "checkbox"
+      ]
+    },
+    {
+      "name": "Menubar",
+      "url": "https://www.solid-ui.com/docs/components/menubar",
+      "kind": "full-pattern",
+      "summary": "A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Navigation Menu",
+      "url": "https://www.solid-ui.com/docs/components/navigation-menu",
+      "kind": "full-pattern",
+      "summary": "A collection of links for navigating websites.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "radio-group"
+      ]
+    },
+    {
+      "name": "Number Field",
+      "url": "https://www.solid-ui.com/docs/components/number-field",
+      "kind": "full-pattern",
+      "summary": "A number input that allow users to input custom number entries with a keyboard.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "OTP Field",
+      "url": "https://www.solid-ui.com/docs/components/otp-field",
+      "kind": "full-pattern",
+      "summary": "Accessible one-time password component with copy paste functionality.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@corvu/otp-field",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Pagination",
+      "url": "https://www.solid-ui.com/docs/components/pagination",
+      "kind": "full-pattern",
+      "summary": "Pagination with page navigation, next and previous links.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Popover",
+      "url": "https://www.solid-ui.com/docs/components/popover",
+      "kind": "full-pattern",
+      "summary": "Displays rich content in a portal, triggered by a button.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Progress",
+      "url": "https://www.solid-ui.com/docs/components/progress",
+      "kind": "full-pattern",
+      "summary": "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "label"
+      ]
+    },
+    {
+      "name": "Progress Circle",
+      "url": "https://www.solid-ui.com/docs/components/progress-circle",
+      "kind": "full-pattern",
+      "summary": "An SVG progress ring ported from Tremor with size, stroke and animation options.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "aliases": [
+        "progress ring",
+        "circular progress"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "card"
+      ]
+    },
+    {
+      "name": "Radio Group",
+      "url": "https://www.solid-ui.com/docs/components/radio-group",
+      "kind": "full-pattern",
+      "summary": "A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Resizable",
+      "url": "https://www.solid-ui.com/docs/components/resizable",
+      "kind": "full-pattern",
+      "summary": "SolidJS components for building resizable panels and splitters.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@corvu/resizable",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Select",
+      "url": "https://www.solid-ui.com/docs/components/select",
+      "kind": "full-pattern",
+      "summary": "Displays a list of options for the user to pick from—triggered by a button.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Separator",
+      "url": "https://www.solid-ui.com/docs/components/separator",
+      "kind": "full-pattern",
+      "summary": "Visually or semantically separates content.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Sheet",
+      "url": "https://www.solid-ui.com/docs/components/sheet",
+      "kind": "full-pattern",
+      "summary": "Extends the Dialog component to display content that complements the main content of the screen.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "text-field"
+      ]
+    },
+    {
+      "name": "Sidebar",
+      "url": "https://www.solid-ui.com/docs/components/sidebar",
+      "kind": "full-pattern",
+      "summary": "A composable, themeable and customizable sidebar component.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "@solidjs/router",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "separator",
+        "sheet",
+        "skeleton",
+        "text-field",
+        "tooltip"
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "url": "https://www.solid-ui.com/docs/components/skeleton",
+      "kind": "full-pattern",
+      "summary": "Use to show a placeholder while content is loading.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Slider",
+      "url": "https://www.solid-ui.com/docs/components/slider",
+      "kind": "full-pattern",
+      "summary": "An input where the user selects a value from within a given range.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "label"
+      ]
+    },
+    {
+      "name": "Sonner",
+      "url": "https://www.solid-ui.com/docs/components/sonner",
+      "kind": "full-pattern",
+      "summary": "An opinionated toast component for Solid.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "solid-sonner",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Switch",
+      "url": "https://www.solid-ui.com/docs/components/switch",
+      "kind": "full-pattern",
+      "summary": "A control that allows the user to toggle between checked and not checked.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Table",
+      "url": "https://www.solid-ui.com/docs/components/table",
+      "kind": "full-pattern",
+      "summary": "A responsive table component.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Tabs",
+      "url": "https://www.solid-ui.com/docs/components/tabs",
+      "kind": "full-pattern",
+      "summary": "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button",
+        "card",
+        "text-field"
+      ]
+    },
+    {
+      "name": "Text Field",
+      "url": "https://www.solid-ui.com/docs/components/text-field",
+      "kind": "full-pattern",
+      "summary": "A text input that allow users to input custom text entries with a keyboard.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Timeline",
+      "url": "https://www.solid-ui.com/docs/components/timeline",
+      "kind": "full-pattern",
+      "summary": "Used to display steps and progress",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Toast",
+      "url": "https://www.solid-ui.com/docs/components/toast",
+      "kind": "full-pattern",
+      "summary": "A succinct message that is displayed temporarily.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "Toggle",
+      "url": "https://www.solid-ui.com/docs/components/toggle",
+      "kind": "full-pattern",
+      "summary": "A two-state button that can be either on or off.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "Toggle Group",
+      "url": "https://www.solid-ui.com/docs/components/toggle-group",
+      "kind": "full-pattern",
+      "summary": "A set of two-state buttons that can be toggled on or off.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "toggle"
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "url": "https://www.solid-ui.com/docs/components/tooltip",
+      "kind": "full-pattern",
+      "summary": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "verifiedAt": "2026-10-30",
+      "dependencies": [
+        "@kobalte/core",
+        "class-variance-authority",
+        "clsx",
+        "solid-js",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    }
+  ],
+  "compatibility": [
+    {
+      "subject": "solid-js",
+      "constraint": "1.9.3 (verified preview runtime; Solid 1)",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/stefan-karger/solid-ui/21ba4fa59b775a8bf9ee8249883de34aba1cf807/apps/docs/package.json"
+    },
+    {
+      "subject": "Solid 2",
+      "constraint": "No verified Solid 2 port for this pinned source",
+      "status": "unknown",
+      "evidence": "https://raw.githubusercontent.com/stefan-karger/solid-ui/21ba4fa59b775a8bf9ee8249883de34aba1cf807/apps/docs/package.json"
+    },
+    {
+      "subject": "tailwindcss",
+      "constraint": "4.x (preview compiler pinned to 4.3.3)",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/stefan-karger/solid-ui/21ba4fa59b775a8bf9ee8249883de34aba1cf807/apps/docs/package.json"
+    },
+    {
+      "subject": "@kobalte/core",
+      "constraint": "0.13.7",
+      "status": "supported",
+      "evidence": "https://raw.githubusercontent.com/stefan-karger/solid-ui/21ba4fa59b775a8bf9ee8249883de34aba1cf807/apps/docs/package.json"
+    }
+  ]
+}
