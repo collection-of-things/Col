@@ -25,9 +25,9 @@ const PAGE_SIZE = 60;
 export function ComponentsExplorer({ initialQuery = "" }: { initialQuery?: string }) {
   const [query, setQuery] = useState(initialQuery);
   const [limit, setLimit] = useState(PAGE_SIZE);
-  const [selectedUrl, setSelectedUrl] = useState<string | null>(null);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
   const results = useMemo(() => searchComponents(query), [query]);
-  const selected = results.find(({ component }) => component.url === selectedUrl) ?? results[0];
+  const selected = results.find(({ library, component }) => `${library.slug}/${component.name}` === selectedId) ?? results[0];
 
   useEffect(() => { setQuery(initialQuery); }, [initialQuery]);
   useEffect(() => { setLimit(PAGE_SIZE); }, [query]);
@@ -56,8 +56,8 @@ export function ComponentsExplorer({ initialQuery = "" }: { initialQuery?: strin
                     <button
                       type="button"
                       className={styles.result}
-                      aria-pressed={selected?.component.url === component.url}
-                      onClick={() => setSelectedUrl(component.url)}
+                      aria-pressed={selected?.library.slug === library.slug && selected.component.name === component.name}
+                      onClick={() => setSelectedId(`${library.slug}/${component.name}`)}
                     >
                       <span className={styles.logo} aria-hidden><LibraryLogo url={library.url} name={library.name} size={20} /></span>
                       <span className={styles.copy}>

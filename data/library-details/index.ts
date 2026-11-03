@@ -1,4 +1,5 @@
 import type { LibraryDetails } from "./types.ts";
+import boardui from "./boardui.ts";
 import kobalte from "./kobalte.ts";
 import solid_ui from "./solid-ui.ts";
 import shadcn_solid from "./shadcn-solid.ts";
@@ -107,6 +108,7 @@ import loading_dev from "./loading-dev.ts";
 import hextaui from "./hextaui.ts";
 import gradients_sh from "./gradients-sh.ts";
 import dualkit from "./dualkit.ts";
+import dithercn from "./dithercn.ts";
 import affectui from "./affectui.ts";
 
 export type { LibraryDetails };
@@ -119,6 +121,7 @@ export type { LibraryDetails };
  * are identical.
  */
 export const libraryDetails: Record<string, LibraryDetails> = {
+  "boardui": boardui,
   "kobalte": kobalte,
   "solid-ui": solid_ui,
   "shadcn-solid": shadcn_solid,
@@ -227,5 +230,6 @@ export const libraryDetails: Record<string, LibraryDetails> = {
   "hextaui": hextaui,
   "gradients-sh": gradients_sh,
   "dualkit": dualkit,
+  "dithercn": dithercn,
   "affectui": affectui,
 };

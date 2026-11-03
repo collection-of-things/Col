@@ -63,7 +63,7 @@ export function LibraryCard({ library, layout, matches, saved, onToggleSaved }: 
           <p className="lib-card-desc">{library.description}</p>
           {matches.length > 0 && <div className="lib-card-meta">
             {matches.slice(0, 2).map((component) => (
-              <a key={component.url} href={component.url} target="_blank" rel="noopener noreferrer" className="lib-tag lib-tag-link">
+              <a key={component.name} href={component.url} target="_blank" rel="noopener noreferrer" className="lib-tag lib-tag-link">
                 <span className="cap">{component.name}</span>
                 <ArrowUpRight aria-hidden />
               </a>
@@ -90,7 +90,7 @@ export function LibraryCard({ library, layout, matches, saved, onToggleSaved }: 
         {matches.length > 0 ? (
           <>
             {matches.slice(0, 3).map((component) => (
-              <a key={component.url} href={component.url} target="_blank" rel="noopener noreferrer" className="lib-tag lib-tag-link">
+              <a key={component.name} href={component.url} target="_blank" rel="noopener noreferrer" className="lib-tag lib-tag-link">
                 <span className="cap">{component.name}</span>
                 <ArrowUpRight aria-hidden />
               </a>

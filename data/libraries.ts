@@ -94,6 +94,17 @@ export const libraries: Library[] = [
     tags: ["agentic ui", "ai chat", "shadcn registry", "mcp", "no tailwind", "zero dependencies", "illustrations", "saas"],
   },
   {
+    name: "BoardUI",
+    slug: "boardui",
+    addedAt: "2026-11-01T22:21:31Z",
+    description: "React and Tailwind CSS components, charts, and templates for dashboards and AI interfaces, distributed as editable source files.",
+    url: "https://www.boardui.com",
+    category: "Component Library",
+    stacks: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    useCases: ["Dashboards", "Data Visualization", "Accessibility-first", "Rapid Prototyping"],
+    tags: ["react aria", "agentic ui", "ai chat", "figma", "rtl", "copy and paste", "design tokens"],
+  },
+  {
     name: "Quoin",
     slug: "quoin-ui",
     addedAt: "2026-10-28T15:12:49Z",
@@ -1149,6 +1160,18 @@ export const libraries: Library[] = [
     stacks: ["React", "Tailwind CSS", "TypeScript"],
     useCases: ["Dashboards", "Rapid Prototyping"],
     tags: ["shadcn registry", "rtl", "arabic", "bilingual", "hijri", "gulf"],
+  },
+  {
+    name: "dithercn",
+    slug: "dithercn",
+    addedAt: "2026-11-02T13:38:33-05:00",
+    description:
+      "A dither engine and agent skill for shadcn projects that lets a coding agent build dithered backgrounds, charts, and interface pieces in your theme, installed through the shadcn CLI.",
+    url: "https://dithercn.dev",
+    category: "Animation & Motion",
+    stacks: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    useCases: ["Landing Pages", "Dashboards", "Data Visualization", "Creative & Experimental"],
+    tags: ["bayer", "halftone", "ordered dither", "glsl", "shader", "shadcn registry", "agent skill"],
   },
 ];
 

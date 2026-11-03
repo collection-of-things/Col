@@ -77,4 +77,5 @@ export const libraryPreviews: Record<string, LibraryPreview> = {
   "all-svg-icons": { src: "https://allsvgicons.com/og.png", width: 1200, height: 630 },
   "hugeicons": { src: "https://hugeicons.com/og_preview.png", width: 1200, height: 628 },
   "rune-icons": { src: "https://www.runeicons.com/og-image.png", width: 4800, height: 2520 },
+  "boardui": { src: "https://www.boardui.com/og_image.png", width: 3600, height: 1890 },
 };
