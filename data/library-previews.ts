@@ -102,4 +102,16 @@ export const libraryPreviews: Record<string, LibraryPreview> = {
   "gradients-sh": { src: "https://gradients.sh/og.jpg", width: 1200, height: 630 },
   "dithercn": { src: "https://dithercn.dev/og", width: 1200, height: 630 },
   "boardui": { src: "https://www.boardui.com/og_image.png", width: 3600, height: 1890 },
+  "nikala-ui": { src: "https://nikala.dev/og-image.png", width: 1962, height: 982 },
+  "rocksolid": { src: "https://rocksolidjs.com/assets/og.png", width: 1024, height: 768 },
+  "solid-ui": { src: "https://www.solid-ui.com/og.png", width: 2400, height: 1256 },
+  "zaidan": { src: "https://zaidan.carere.dev/zaidan-og.png", width: 2400, height: 1256 },
+  "hope-ui": { src: "https://repository-images.githubusercontent.com/1297290772/253b77c8-d592-45e1-bdc7-c414d4da5ffe", width: 1280, height: 640 },
+  "shadcn-solid": { src: "https://shadcn-solid.netlify.app/og.png", width: 1559, height: 733 },
+  // Libraries without a published og:image use images hosted from public/library-previews.
+  "kobalte": { src: "/library-previews/kobalte.webp", width: 1200, height: 630 },
+  "magicui-solid": { src: "/library-previews/magicui-solid.webp", width: 1200, height: 630 },
+  "mystic-ui": { src: "/library-previews/mystic-ui.webp", width: 1200, height: 630 },
+  "quoin-ui": { src: "/library-previews/quoin-ui.webp", width: 1200, height: 630 },
+  "torch-ui": { src: "/library-previews/torch-ui.webp", width: 1200, height: 630 },
 };
