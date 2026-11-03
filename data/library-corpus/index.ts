@@ -1,5 +1,6 @@
 import type { LibraryCorpusEntry } from "./types";
 import { quoinCorpus } from "./quoin-ui.ts";
+import { boarduiCorpus } from "./boardui.ts";
 import { solidCorpora } from "./solid-libraries.ts";
 
 /**
@@ -19,6 +20,7 @@ import { solidCorpora } from "./solid-libraries.ts";
  * sources; a page without such evidence earns no snapshot.
  */
 export const libraryCorpus: LibraryCorpusEntry[] = [
+  boarduiCorpus,
   ...solidCorpora,
   quoinCorpus,
   {

@@ -35,6 +35,14 @@ export interface LibraryCompatibility {
 export const compatibility: LibraryCompatibility[] = [
   ...Object.values(solidCatalogs).map(({ library, compatibility: facts }) => ({ slug: library.slug, facts })),
   {
+    slug: "boardui",
+    facts: [
+      { subject: "react", constraint: "19.2.4 in the published starter; no broader compatibility range verified", status: "supported", evidence: "https://github.com/BoardUI/boardui/blob/ec5c5eb3e29c2441be63b9422cd54f411ef23466/package.json" },
+      { subject: "react-dom", constraint: "19.2.4 in the published starter; no broader compatibility range verified", status: "supported", evidence: "https://github.com/BoardUI/boardui/blob/ec5c5eb3e29c2441be63b9422cd54f411ef23466/package.json" },
+      { subject: "tailwindcss", constraint: "4", status: "supported", evidence: "https://www.boardui.com/installation" },
+    ],
+  },
+  {
     slug: "quoin-ui",
     facts: [
       { subject: "quoin-ui", constraint: "0.6.0 (prerelease library)", status: "supported", evidence: "https://registry.npmjs.org/quoin-ui/0.6.0" },

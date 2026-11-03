@@ -1,4 +1,5 @@
 import type { LibraryDetails } from "./types.ts";
+import boardui from "./boardui.ts";
 import kobalte from "./kobalte.ts";
 import solid_ui from "./solid-ui.ts";
 import shadcn_solid from "./shadcn-solid.ts";
@@ -118,6 +119,7 @@ export type { LibraryDetails };
  * are identical.
  */
 export const libraryDetails: Record<string, LibraryDetails> = {
+  "boardui": boardui,
   "kobalte": kobalte,
   "solid-ui": solid_ui,
   "shadcn-solid": shadcn_solid,
