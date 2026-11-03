@@ -109,6 +109,7 @@ import hextaui from "./hextaui.ts";
 import gradients_sh from "./gradients-sh.ts";
 import dualkit from "./dualkit.ts";
 import dithercn from "./dithercn.ts";
+import affectui from "./affectui.ts";
 
 export type { LibraryDetails };
 
@@ -230,4 +231,5 @@ export const libraryDetails: Record<string, LibraryDetails> = {
   "gradients-sh": gradients_sh,
   "dualkit": dualkit,
   "dithercn": dithercn,
+  "affectui": affectui,
 };

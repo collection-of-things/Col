@@ -261,6 +261,28 @@ export const integrations: readonly Integration[] = [
       },
     ],
   },
+  {
+    name: "affectUI MCP server",
+    slug: "affectui-mcp",
+    description: "Lets an agent search affectUI items, read their docs, props, and install commands, and fetch component source.",
+    url: "https://www.affectui.com/docs/ai",
+    provider: { name: "affectUI", url: "https://www.affectui.com" },
+    official: true,
+    library: "affectui",
+    notes: [
+      "Docs for every item are open. Pro source needs the AFFECTUI_TOKEN access key from https://www.affectui.com/account/downloads, sent in the Authorization header.",
+      "Installs run through the shadcn CLI, which needs the same key for Pro items.",
+    ],
+    tags: ["components", "registry", "agents"],
+    setup: [
+      {
+        type: "MCP server",
+        key: "affectui",
+        server: { transport: "http", url: "https://www.affectui.com/api/mcp", auth: { kind: "none" } },
+        clients: ["Claude Code", "Cursor", "VS Code", "Codex"],
+      },
+    ],
+  },
 ];
 
 export const mcpServerPaths = (integration: Integration): McpServerPath[] =>

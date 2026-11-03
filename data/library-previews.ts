@@ -5,6 +5,7 @@ export interface LibraryPreview {
 }
 
 export const libraryPreviews: Record<string, LibraryPreview> = {
+  "affectui": { src: "https://www.affectui.com/og.jpg?v=2", width: 2400, height: 1260 },
   "uiarc": { src: "https://uiarc.dev/opengraph-image.png?e0ab1ba2db881709", width: 1200, height: 630 },
   "21st-dev": { src: "https://21st.dev/opengraph-image.png", width: 2400, height: 1260 },
   "react-bits": { src: "https://reactbits.dev/og.jpg", width: 1200, height: 630 },
