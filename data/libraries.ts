@@ -91,7 +91,7 @@ export const libraries: Library[] = [
     category: "Component Library",
     stacks: ["React", "TypeScript"],
     useCases: ["Dashboards", "Micro-interactions", "Rapid Prototyping"],
-    tags: ["agentic ui", "ai chat", "shadcn registry", "mcp", "no tailwind", "zero dependencies", "illustrations", "saas"],
+    tags: ["agentic ui", "ai chat", "shadcn registry", "mcp", "zero dependencies", "illustrations", "saas"],
   },
   {
     name: "BoardUI",
