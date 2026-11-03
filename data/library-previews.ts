@@ -100,4 +100,5 @@ export const libraryPreviews: Record<string, LibraryPreview> = {
   "hextaui": { src: "https://hextaui.com/og/index.png", width: 1200, height: 630 },
   "gradients-sh": { src: "https://gradients.sh/og.jpg", width: 1200, height: 630 },
   "dithercn": { src: "https://dithercn.dev/og", width: 1200, height: 630 },
+  "boardui": { src: "https://www.boardui.com/og_image.png", width: 3600, height: 1890 },
 };

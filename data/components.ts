@@ -21,10 +21,11 @@ import { solidCatalogs } from "./solid-libraries/catalog.ts";
  *
  * Every `url` below was taken from the library's own published component
  * index or documentation and checked to resolve. `lib/directory.test.mjs`
- * enforces that they stay on the library's domain and stay unique.
+ * enforces that they stay on the library's domain and have unique names.
  */
 
 import { quoinComponents, QUOIN_VERIFIED_AT } from "./quoin/catalog.ts";
+import { boarduiComponents } from "./boardui/catalog.ts";
 
 /** A single named component a library documents, used for component search. */
 export interface LibraryComponent {
@@ -68,6 +69,7 @@ export const componentConcepts: Record<string, string[]> = {
 export type ComponentIndex = Record<string, LibraryComponent[]>;
 
 export const componentIndex: ComponentIndex = {
+  "boardui": boarduiComponents,
   ...Object.fromEntries(Object.values(solidCatalogs).map(({ library, components }) => [library.slug, components])),
   "quoin-ui": quoinComponents.map(({ name, url, summary }) => ({
     name, url, summary,
