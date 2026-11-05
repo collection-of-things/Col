@@ -3,6 +3,7 @@ import { createHash } from "node:crypto";
 import { readFileSync, statSync } from "node:fs";
 import { open } from "node:fs/promises";
 import { join } from "node:path";
+import { fileURLToPath } from "node:url";
 import assetSnapshot from "../data/component-previews/assets.json" with { type: "json" };
 import mediaSnapshot from "../data/component-previews/media.json" with { type: "json" };
 import torchAssets from "../data/component-previews/solid/torch-ui/assets.json" with { type: "json" };
@@ -37,6 +38,8 @@ const mediaComponents: Readonly<Record<string, { assets: string[] }>> = { ...med
 if (torchMedia.chunkSize !== mediaSnapshot.chunkSize || magicMedia.chunkSize !== mediaSnapshot.chunkSize) throw new Error("Preview media snapshots must use the same chunk size");
 export type PreviewMediaDescriptor = { uri: string; bytes: number; mediaType: string; chunks: string[]; chunkSize: number };
 const INLINE_MEDIA_LIMIT = 2_000_000;
+/** Resolved from this module rather than `process.cwd()`, so the MCP service can start from any directory. */
+const MEDIA_DIR = fileURLToPath(new URL("../data/component-previews/media/", import.meta.url));
 
 /** Small verified media can also be carried by the standalone HTML fragment. */
 export function canInlinePreviewMedia(id: string): boolean {
@@ -51,7 +54,7 @@ export function inlinePreviewMedia(id: string): Record<string, string> {
     const asset = mediaAssets[url];
     const extension = asset.mediaType === "video/mp4" ? "mp4" : asset.mediaType === "audio/mpeg" ? "mp3" : undefined;
     if (!extension || !/^[a-f0-9]{64}$/.test(asset.sha256) || asset.file !== `${asset.sha256}.${extension}` || asset.bytes <= 0) throw new Error("Invalid verified media snapshot");
-    const path = join(process.cwd(), "data/component-previews/media", asset.file);
+    const path = join(MEDIA_DIR, asset.file);
     if (statSync(path).size !== asset.bytes) throw new Error("Media integrity mismatch");
     const bytes = readFileSync(path);
     if (createHash("sha256").update(bytes).digest("hex") !== asset.sha256) throw new Error("Media integrity mismatch");
@@ -89,7 +92,7 @@ export async function readPreviewMediaChunk(sha256: string, part: string): Promi
   if (!asset || !/^[a-f0-9]{64}$/.test(sha256) || !/^(0|[1-9][0-9]*)$/.test(part) || !Number.isSafeInteger(index) || index >= asset.chunks.length || size !== 1_500_000 || asset.bytes > 75_000_000) throw new Error("Unknown original media chunk");
   const extension = asset.mediaType === "video/mp4" ? "mp4" : asset.mediaType === "audio/mpeg" ? "mp3" : undefined;
   if (!extension || asset.file !== `${sha256}.${extension}`) throw new Error("Invalid verified media snapshot");
-  const file = await open(join(process.cwd(), "data/component-previews/media", asset.file), "r");
+  const file = await open(join(MEDIA_DIR, asset.file), "r");
   try {
     if ((await file.stat()).size !== asset.bytes) throw new Error("Media integrity mismatch");
     const bytes = Buffer.alloc(Math.min(size, asset.bytes - index * size));

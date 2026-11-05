@@ -74,7 +74,7 @@ Previews need a client that supports MCP Apps. See [component previews](docs/mcp
 
 ## Run it locally
 
-Requires Node.js 20.9+ and npm.
+Requires Node.js 24.22.1+ (below 25) and npm.
 
 ```sh
 git clone https://git.cafe/collection-of-devs/col Col
@@ -90,7 +90,11 @@ npm run typecheck
 npm test
 ```
 
-To let a browser client other than `https://usecol.com` call your MCP server, set `COL_MCP_ALLOWED_ORIGINS` to a comma-separated list of exact origins, for example `COL_MCP_ALLOWED_ORIGINS="http://localhost:3000"`.
+To accept additional exact `Origin` headers, set `COL_MCP_ALLOWED_ORIGINS` to a comma-separated list, for example `COL_MCP_ALLOWED_ORIGINS="http://localhost:3000"`. This setting validates origins; it does not provide CORS preflight handling or response headers for cross-origin browser clients.
+
+The MCP tools and component previews run as a standalone service in [`mcp-app/`](mcp-app) rather than inside the Next.js app: their verified preview payload is too large for the site's edge hosting. The site's `/api/mcp` route proxies to it. To exercise MCP locally, run `npm install` at the repository root, then `npm start` inside `mcp-app/` (it listens on port 8787). The service imports `lib/`, which resolves packages from the repository root, so installing inside `mcp-app/` alone is not enough. Then set `COL_MCP_ORIGIN=http://localhost:8787` for the Next.js app, or point your MCP client at `http://localhost:8787/api/mcp` directly.
+
+To host the service yourself, deploy `mcp-app/` anywhere Node 24 runs — [`mcp-app/Dockerfile`](mcp-app/Dockerfile) builds a self-contained image (Railway: set the Dockerfile path to `mcp-app/Dockerfile` with the repository root as the build context, and the healthcheck path to `/health`). Set `COL_MCP_ORIGIN` on the site to the service URL and configure `COL_MCP_ALLOWED_ORIGINS` as needed for requests with additional origins.
 
 ## Contribute
 
@@ -109,6 +113,7 @@ app/          Pages and API routes
 components/   UI components
 data/         Libraries, components, and integrations
 lib/          Search, MCP tools, and helpers
+mcp-app/      Standalone MCP server (catalogue tools and component previews)
 plugin/       Col agent plugin
 public/       Brand and sponsor images
 tests/        Tests

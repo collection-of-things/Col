@@ -1,8 +1,12 @@
 import type { NextConfig } from "next";
+// Wires Cloudflare bindings into `next dev`. Dev-only, so `next build` and
+// `next start` never load the dev dependency.
+if (process.env.NODE_ENV === "development") {
+  import("@opennextjs/cloudflare").then(m => m.initOpenNextCloudflareForDev());
+}
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  outputFileTracingIncludes: { "/api/mcp": ["./data/component-previews/media/*"] },
   images: {
     // Contributor avatars load through the server-side optimizer.
     remotePatterns: [
