@@ -14,5 +14,5 @@ export async function POST(request: Request) {
   const origin = process.env.COL_MCP_ORIGIN;
   if (!origin) return new Response("MCP service is not configured", { status: 503 });
   const body = await request.arrayBuffer();
-  return fetch(new URL("/api/mcp", origin), { method: "POST", headers: mcpProxyHeaders(request.headers), body });
+  return fetch(new URL("/api/mcp", origin), { method: "POST", headers: mcpProxyHeaders(request.headers), body, signal: request.signal });
 }

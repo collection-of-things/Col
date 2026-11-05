@@ -15,7 +15,8 @@ import { isMcpOriginAllowed } from "../lib/mcp-origin.ts";
  * serves is far larger than a Cloudflare Worker can hold.
  *
  * Stateless by construction — every request is answered by a fresh server
- * instance, so there is no session state and nothing to store.
+ * instance. The handler owns active subscription streams until cancellation
+ * or shutdown, even though there is no persistent session state.
  */
 const handler = createMcpHandler(() =>
   createColMcpServer({
@@ -28,6 +29,7 @@ const handler = createMcpHandler(() =>
 );
 
 export default {
+  close: () => handler.close(),
   async fetch(request: Request): Promise<Response> {
     if (!isMcpOriginAllowed(request.headers.get("origin"), process.env.COL_MCP_ALLOWED_ORIGINS)) {
       return new Response("Forbidden Origin", { status: 403 });

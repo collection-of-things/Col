@@ -1,5 +1,6 @@
 import { createServer, type IncomingHttpHeaders } from "node:http";
 import { Readable } from "node:stream";
+import { pipeline } from "node:stream/promises";
 import handler from "./handler.ts";
 
 /**
@@ -32,6 +33,13 @@ function toFetchHeaders(source: IncomingHttpHeaders): Headers {
 }
 
 const server = createServer(async (req, res) => {
+  const controller = new AbortController();
+  const abort = () => controller.abort();
+  const onClose = () => {
+    if (!res.writableFinished) abort();
+  };
+  req.once("aborted", abort);
+  res.once("close", onClose);
   try {
     const host = req.headers.host ?? "localhost";
     const url = new URL(req.url ?? "/", `http://${host}`);
@@ -43,32 +51,57 @@ const server = createServer(async (req, res) => {
     const request = new Request(url, {
       method: req.method,
       headers: toFetchHeaders(req.headers),
+      signal: controller.signal,
       body: req.method === "GET" || req.method === "HEAD" ? undefined : Readable.toWeb(req) as ReadableStream,
       // @ts-expect-error Node's Request requires duplex for streamed bodies.
       duplex: "half",
     });
     const response = await handler.fetch(request);
+    if (controller.signal.aborted) {
+      await response.body?.cancel();
+      return;
+    }
     res.writeHead(response.status, Object.fromEntries(response.headers.entries()));
     if (response.body) {
-      Readable.fromWeb(response.body as import("node:stream/web").ReadableStream).pipe(res);
+      await pipeline(Readable.fromWeb(response.body as import("node:stream/web").ReadableStream), res, { signal: controller.signal });
     } else {
       res.end();
     }
   } catch (error) {
+    if (controller.signal.aborted || res.destroyed) return;
+    if (res.headersSent) {
+      res.destroy(error instanceof Error ? error : new Error("MCP stream failed"));
+      return;
+    }
     res.writeHead(500, { "content-type": "text/plain" });
     res.end(error instanceof Error ? error.message : "Internal error");
+  } finally {
+    req.off("aborted", abort);
+    res.off("close", onClose);
   }
 });
 
 server.listen(port, () => {
-  console.log(`col-mcp listening on http://localhost:${port}`);
+  const address = server.address();
+  console.log(`col-mcp listening on http://localhost:${typeof address === "object" && address ? address.port : port}`);
 });
 
 // In a container Node runs as PID 1, which ignores SIGTERM unless handled, so
 // without this every redeploy waits for the host's kill timeout.
-for (const signal of ["SIGTERM", "SIGINT"] as const) {
-  process.once(signal, () => {
-    server.close(() => process.exit(0));
-    server.closeIdleConnections();
+let stopping = false;
+/** Finish subscriptions gracefully, with a deadline for unresponsive connections. */
+function shutdown() {
+  if (stopping) return;
+  stopping = true;
+  const deadline = setTimeout(() => {
+    server.closeAllConnections();
+    process.exit(1);
+  }, 5_000);
+  deadline.unref();
+  server.close(() => {
+    clearTimeout(deadline);
+    process.exit(0);
   });
+  void handler.close().catch(error => console.error("MCP shutdown failed", error));
 }
+for (const signal of ["SIGTERM", "SIGINT"] as const) process.once(signal, shutdown);
