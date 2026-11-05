@@ -5,6 +5,7 @@ import { ArrowRight, Star } from "lucide-react";
 import { libraryBySlug } from "@/data/libraries";
 import { sponsors } from "@/data/sponsors";
 import { repo } from "@/lib/repo";
+import { HeroSearch } from "./HeroSearch";
 import { RollText } from "./RollText";
 import styles from "./HomePage.module.css";
 
@@ -73,7 +74,7 @@ export function HeroBackdrop() {
   );
 }
 
-/** The hero's copy: headline (words blur in one by one), subtitle, the two calls to action, and the sponsors line. */
+/** The hero's copy: headline (words blur in one by one), subtitle, library search, the two calls to action, and the sponsors line. */
 export function HeroCopy() {
   return (
     <section className={styles.heroCopy} aria-labelledby="home-title">
@@ -91,6 +92,7 @@ export function HeroCopy() {
         ))}
       </h1>
       <p>Discover UI libraries, components, and tools by stack and use case.</p>
+      <HeroSearch />
       <div className={styles.actions}>
         <Link href="/libraries" className={styles.button}>
           <RollText>Browse libraries</RollText>
