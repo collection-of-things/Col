@@ -2948,3 +2948,16 @@ html .app-frame .directory-filter-trigger[data-active] { color: var(--lib-text);
 .directory-filter-sheet { -webkit-backdrop-filter: blur(24px); backdrop-filter: blur(24px); background: color-mix(in srgb, var(--lib-panel) 88%, transparent) !important; box-shadow: 24px 0 60px rgba(0,0,0,.4); border-right: 1px solid var(--lib-edge); }
 .directory-filter-sheet .facet-group { padding: 0 12px; }
 @media (max-width: 760px) { html .app-frame .directory-filter-trigger { margin: 16px 16px 0; } }
+
+/* Top bar search: the bar's centrepiece, in the hero search's glass, not a quiet field in the corner. */
+html .app-frame .topbar-search,
+html.light .app-frame .topbar-search {
+  width: clamp(220px, 24vw, 340px); height: 36px; min-height: 36px; padding: 0 6px 0 12px; border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.03)), rgba(10,10,12,.55);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.14), inset 0 0 0 1px rgba(255,255,255,.08), 0 6px 18px rgba(0,0,0,.35);
+  color: var(--lib-text-2);
+}
+html.light .app-frame .topbar-search { background: #fff; box-shadow: inset 0 0 0 1px rgba(0,0,0,.09), 0 4px 14px rgba(0,0,0,.08); }
+html .app-frame .topbar-search:focus-within { box-shadow: inset 0 1px 0 rgba(255,255,255,.16), 0 0 0 2px var(--lib-focus), 0 8px 24px rgba(0,0,0,.4); }
+html .app-frame .topbar-search input { font-size: 13.5px; }
+html .app-frame .topbar-search > svg { width: 16px; height: 16px; color: var(--lib-text); }
