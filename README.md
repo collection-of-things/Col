@@ -92,6 +92,8 @@ npm test
 
 To let a browser client other than `https://usecol.com` call your MCP server, set `COL_MCP_ALLOWED_ORIGINS` to a comma-separated list of exact origins, for example `COL_MCP_ALLOWED_ORIGINS="http://localhost:3000"`.
 
+The MCP tools and component previews run as a standalone service in [`mcp-app/`](mcp-app) rather than inside the Next.js app: their verified preview payload is too large for the site's edge hosting. The site's `/api/mcp` route proxies to it. To exercise MCP locally, run `npm start` inside `mcp-app/` (it listens on port 8787) and set `COL_MCP_ORIGIN=http://localhost:8787` for the Next.js app, or point your MCP client at `http://localhost:8787/api/mcp` directly.
+
 ## Contribute
 
 Code, issues, and pull requests live on [git.cafe](https://git.cafe/collection-of-devs/col). Read [CONTRIBUTING.md](CONTRIBUTING.md) before adding libraries, components, or code.
@@ -109,6 +111,7 @@ app/          Pages and API routes
 components/   UI components
 data/         Libraries, components, and integrations
 lib/          Search, MCP tools, and helpers
+mcp-app/      Standalone MCP server (catalogue tools and component previews)
 plugin/       Col agent plugin
 public/       Brand and sponsor images
 tests/        Tests

@@ -1,31 +1,24 @@
-import { createMcpHandler } from "@modelcontextprotocol/server";
-import { libraries } from "@/data/libraries";
-import { componentIndex } from "@/data/components";
-import { libraryDetails } from "@/data/library-details";
-import { libraryCorpus } from "@/data/library-corpus";
-import { compatibility } from "@/data/compatibility";
-import { createColMcpServer } from "@/lib/mcp-server";
 import { isMcpOriginAllowed } from "@/lib/mcp-origin";
 
 /**
- * Col's MCP endpoint: one read-only Streamable HTTP route over the same
- * catalogue data the website renders. Stateless by construction — every
- * request is answered by a fresh server instance, so there is no session
- * state and nothing to store (credentials included).
+ * Col's MCP endpoint is served by the standalone service in `mcp-app/`:
+ * its verified preview payload exceeds what a Cloudflare Worker can hold, so
+ * the site proxies here instead of bundling it. `COL_MCP_ORIGIN` points at
+ * that service (e.g. `http://localhost:8787` in development).
  */
-const handler = createMcpHandler(() =>
-  createColMcpServer({
-    libraries,
-    componentIndex,
-    details: libraryDetails,
-    corpus: libraryCorpus,
-    compatibility,
-  }),
-);
+const FORWARDED_HEADERS = ["content-type", "accept", "mcp-protocol-version", "mcp-session-id"] as const;
 
 export async function POST(request: Request) {
   if (!isMcpOriginAllowed(request.headers.get("origin"), process.env.COL_MCP_ALLOWED_ORIGINS)) {
     return new Response("Forbidden Origin", { status: 403 });
   }
-  return handler.fetch(request);
+  const origin = process.env.COL_MCP_ORIGIN;
+  if (!origin) return new Response("MCP service is not configured", { status: 503 });
+  const headers = new Headers();
+  for (const name of FORWARDED_HEADERS) {
+    const value = request.headers.get(name);
+    if (value !== null) headers.set(name, value);
+  }
+  const body = await request.arrayBuffer();
+  return fetch(new URL("/api/mcp", origin), { method: "POST", headers, body });
 }
