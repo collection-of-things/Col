@@ -4,6 +4,9 @@
 	"name": "col",
 	"compatibility_date": "2026-11-03",
 	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+	// COL_MCP_ORIGIN and COL_MCP_ALLOWED_ORIGINS are set in the dashboard;
+	// without this, every deploy deletes them and /api/mcp returns 503.
+	"keep_vars": true,
 	"assets": {
 		"directory": ".open-next/assets",
 		"binding": "ASSETS"

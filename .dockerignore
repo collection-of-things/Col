@@ -1,7 +1,8 @@
-node_modules
+**/node_modules
 .next
 .open-next
 .wrangler
 .git
 *.log
 .dev.vars*
+.env*
