@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useRef, useState, type CSSProperties, type FocusEvent, type ReactNode, type RefObject } from "react";
 import { LightRays } from "./LightRays";
 import styles from "./HomePage.module.css";

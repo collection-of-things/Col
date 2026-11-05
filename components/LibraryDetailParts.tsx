@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useId, useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { ChevronDown } from "lucide-react";
 import { CopyButton } from "./CopyButton";

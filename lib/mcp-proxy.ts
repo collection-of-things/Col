@@ -1,3 +1,5 @@
+import { isMcpOriginAllowed } from "./mcp-origin.ts";
+
 /**
  * Picks the request headers the site's `/api/mcp` proxy forwards to the
  * standalone MCP service: content negotiation plus every `Mcp-*` protocol
@@ -12,4 +14,26 @@ export function mcpProxyHeaders(source: Headers): Headers {
     if (name === "content-type" || name === "accept" || name.startsWith("mcp-")) headers.set(name, value);
   }
   return headers;
+}
+
+/** Runtime settings for the proxy, read from the Worker's dashboard variables. */
+export type McpProxyEnv = {
+  /** Base URL of the standalone service, e.g. `http://localhost:8787`. */
+  COL_MCP_ORIGIN?: string;
+  /** Comma-separated extra trusted browser origins. */
+  COL_MCP_ALLOWED_ORIGINS?: string;
+};
+
+/**
+ * Serves the site's `POST /api/mcp`: checks the browser origin, then streams the
+ * request to the standalone service and its response back. The client's abort
+ * signal is passed on, so a disconnect cancels the upstream stream.
+ */
+export async function proxyMcp(request: Request, env: McpProxyEnv, send: typeof fetch = fetch): Promise<Response> {
+  if (!isMcpOriginAllowed(request.headers.get("origin"), env.COL_MCP_ALLOWED_ORIGINS)) {
+    return new Response("Forbidden Origin", { status: 403 });
+  }
+  if (!env.COL_MCP_ORIGIN) return new Response("MCP service is not configured", { status: 503 });
+  const body = await request.arrayBuffer();
+  return send(new URL("/api/mcp", env.COL_MCP_ORIGIN), { method: "POST", headers: mcpProxyHeaders(request.headers), body, signal: request.signal });
 }

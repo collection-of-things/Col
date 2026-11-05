@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-For code or catalog changes, run `npm run typecheck` and `npm test` before submitting. `npm test` includes the production build. For documentation-only changes, check links and formatting; if the documentation is a site page, also run `npm run build`.
+For code or catalog changes, run `npm run typecheck` and `npm test` before submitting. `npm test` includes the production build and serves it locally through `wrangler dev`. For documentation-only changes, check links and formatting; if the documentation is a site page, also run `npm run build`.
 
 ## Add a library
 
@@ -111,11 +111,11 @@ The second command prints the bytes your pull request adds. Keep it under 10,000
 
 When adding or changing libraries, components, integrations, public pages, or features that agents can use, update all affected discovery outputs in the same pull request:
 
-- [`app/llms.txt/route.ts`](app/llms.txt/route.ts) generates `/llms.txt`. Library and integration entries come from catalog data automatically. Update the generator when new features, links, or agent instructions need to appear.
-- [`app/sitemap.ts`](app/sitemap.ts) generates `/sitemap.xml`. Library and integration pages are included automatically. Add new public pages to `staticRoutes` in [`lib/site.ts`](lib/site.ts).
-- [`app/robots.ts`](app/robots.ts) generates `/robots.txt`. Check that crawler rules and the sitemap URL still cover the change. Update them when crawl access changes.
+- [`app/routes/llms[.]txt.ts`](<app/routes/llms[.]txt.ts>) generates `/llms.txt`. Library and integration entries come from catalog data automatically. Update the generator when new features, links, or agent instructions need to appear.
+- [`app/routes/sitemap[.]xml.ts`](<app/routes/sitemap[.]xml.ts>) generates `/sitemap.xml`. Library and integration pages are included automatically. Add new public pages to `staticRoutes` in [`lib/site.ts`](lib/site.ts); pages that read the query string or live data also go in `requestRenderedRoutes`, and every other page is prerendered.
+- [`app/routes/robots[.]txt.ts`](<app/routes/robots[.]txt.ts>) generates `/robots.txt`. Check that crawler rules and the sitemap URL still cover the change. Update them when crawl access changes.
 - Update affected page titles, descriptions, canonical URLs, social metadata, and structured data.
-- Keep the [agent guide](app/docs/agents/page.tsx), MCP server guides, and MCP server tool descriptions and results consistent with any changes to agent capabilities.
+- Keep the [agent guide](app/routes/docs/agents.tsx), MCP server guides, and MCP server tool descriptions and results consistent with any changes to agent capabilities.
 
 Edit the source data or generators, then verify the generated output. Catalog additions do not require manual copies in each file. Keep [`tests/discovery.test.mjs`](tests/discovery.test.mjs) current when routes or discovery behavior change, and explain any discovery outputs that do not need changes in the PR description.
 

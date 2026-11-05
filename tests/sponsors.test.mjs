@@ -1,14 +1,12 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
 import test from "node:test";
 import { sponsors } from "../data/sponsors.ts";
-
-const page = (name) => readFileSync(new URL(`../.next/server/app/${name}.html`, import.meta.url), "utf8");
+import { page } from "./site.mjs";
 const text = (html) => html.replace(/<!--.*?-->/gs, "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
 
-test("every sponsor is credited with its mark and tier on the sponsors page and in the hero", () => {
-  const sponsorsPage = page("sponsors");
-  const hero = page("index");
+test("every sponsor is credited with its mark and tier on the sponsors page and in the hero", async () => {
+  const sponsorsPage = await page("/sponsors");
+  const hero = await page("/");
   assert.equal(text(sponsorsPage).includes("No sponsors yet"), sponsors.length === 0, "the empty state must only show while there are no sponsors");
   for (const { name, url, tier, logo } of sponsors) {
     assert.ok(sponsorsPage.includes(`href="${url}"`), `The sponsors page is missing ${name}`);

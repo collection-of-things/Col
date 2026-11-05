@@ -2,14 +2,13 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { test } from "node:test";
 import { libraries } from "../data/libraries.ts";
+import { page, request } from "./site.mjs";
 const { integrations } = await import("../data/integrations.ts");
 
-const built = (name) => readFileSync(new URL(`../.next/server/app/${name}.body`, import.meta.url), "utf8");
-
-test("build emits complete discovery files", () => {
-  const robots = built("robots.txt");
-  const sitemap = built("sitemap.xml");
-  const llms = built("llms.txt");
+test("build emits complete discovery files", async () => {
+  const robots = await page("/robots.txt");
+  const sitemap = await page("/sitemap.xml");
+  const llms = await page("/llms.txt");
 
   for (const crawler of ["*", "GPTBot", "ClaudeBot", "PerplexityBot", "Google-Extended"]) {
     assert.ok(robots.includes(`User-Agent: ${crawler}`));
@@ -52,10 +51,10 @@ test("build emits complete discovery files", () => {
   }
 });
 
-test("public pages emit their own canonical and social identity", () => {
+test("public pages emit their own canonical and social identity", async () => {
   const routes = ["/", "/mcp", "/mcp/agents", "/docs", "/docs/agents", "/docs/find-a-library", "/docs/request-a-library", "/docs/report-issues", "/docs/pull-requests", "/contributors", "/sponsors", ...libraries.map(({ slug }) => `/libraries/${slug}`), ...integrations.map(({ slug }) => `/integrations/${slug}`)];
   for (const route of routes) {
-    const html = readFileSync(new URL(`../.next/server/app/${route === "/" ? "index" : route.slice(1)}.html`, import.meta.url), "utf8");
+    const html = await page(route);
     const url = `https://usecol.com${route === "/" ? "" : route}`;
     assert.ok(html.includes(`<link rel="canonical" href="${url}"`), route);
     assert.ok(html.includes(`<meta property="og:url" content="${url}"`), route);
@@ -64,19 +63,19 @@ test("public pages emit their own canonical and social identity", () => {
     assert.ok(html.includes(`<meta property="og:title" content="${title}"`), route);
     assert.ok(html.includes(`<meta name="twitter:title" content="${title}"`), route);
   }
-  const homepage = readFileSync(new URL("../.next/server/app/index.html", import.meta.url), "utf8");
+  const homepage = await page("/");
   const preview = "/col-social-preview-v5.jpg";
   assert.ok(homepage.includes(`<meta name="twitter:image" content="https://usecol.com${preview}"`));
   assert.ok(readFileSync(new URL(`../public${preview}`, import.meta.url)).length > 0);
-  const { headers } = JSON.parse(readFileSync(new URL("../.next/routes-manifest.json", import.meta.url), "utf8"));
   for (const path of [preview, "/col-social-preview.jpg"]) {
-    const rule = headers.find(({ regex }) => new RegExp(regex).test(path));
-    assert.ok(rule?.headers.some(({ key, value }) => key === "Cache-Control" && value === "public, max-age=60, s-maxage=60"));
+    const response = await request(path);
+    await response.arrayBuffer();
+    assert.equal(response.headers.get("cache-control"), "public, max-age=60, s-maxage=60", path);
   }
   const schema = JSON.parse(homepage.match(/<script type="application\/ld\+json">(.*?)<\/script>/)?.[1] ?? "null");
   assert.equal(schema?.["@type"], "WebSite");
   assert.equal(schema.name, "Col");
   assert.equal(schema.url, "https://usecol.com/");
-  const placeholder = readFileSync(new URL("../.next/server/app/Alexandria.html", import.meta.url), "utf8");
+  const placeholder = await page("/Alexandria");
   assert.ok(placeholder.includes('<meta name="robots" content="noindex, follow"'));
 });

@@ -1,11 +1,10 @@
-import Link from "next/link";
+import { Link } from "@/components/Link";
 import type { CSSProperties } from "react";
 import { ArrowLeft, ArrowUpRight, GitBranch, KeyRound, UsersRound } from "lucide-react";
 import { connectorPaths, integrationClients, integrationTypes, mcpServerPaths, type Integration, type SecretEnv } from "@/data/integrations";
 import type { Library } from "@/data/libraries";
 import { publisherOf } from "@/lib/integration-directory";
 import { accessLabels, agentPrompt, clientSetups, transportLabel } from "@/lib/integration-setup";
-import { libraryPath } from "@/lib/site";
 import { hostname } from "@/lib/utils";
 import { AgentPrompt, InstallTabs } from "./LibraryDetailParts";
 import { LibraryLogo } from "./LibraryLogo";
@@ -37,7 +36,7 @@ export function IntegrationDetail({ integration, library }: IntegrationDetailPro
 
   return (
     <article className="ld">
-      <Link href="/integrations" className="ld-back ld-reveal" style={reveal(0)}>
+      <Link to="/integrations" className="ld-back ld-reveal" style={reveal(0)}>
         <ArrowLeft aria-hidden />
         <span className="cap">Integrations</span>
       </Link>
@@ -164,7 +163,7 @@ export function IntegrationDetail({ integration, library }: IntegrationDetailPro
                   <div>
                     <dt>Library</dt>
                     <dd>
-                      <Link href={libraryPath(library.slug)} className="ld-chip ld-chip-link"><span className="cap">{library.name}</span></Link>
+                      <Link to="/libraries/$slug" params={{ slug: library.slug }} className="ld-chip ld-chip-link"><span className="cap">{library.name}</span></Link>
                     </dd>
                   </div>
                 )}

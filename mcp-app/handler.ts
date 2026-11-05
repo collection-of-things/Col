@@ -8,10 +8,9 @@ import { createColMcpServer } from "../lib/mcp-server.ts";
 import { isMcpOriginAllowed } from "../lib/mcp-origin.ts";
 
 /**
- * Col's MCP endpoint as a standalone fetch handler. It mirrors what
- * `app/api/mcp/route.ts` used to serve in-process: one read-only Streamable
- * HTTP route over the same catalogue data the website renders. The website
- * proxies `/api/mcp` here because the verified preview payload this endpoint
+ * Col's MCP endpoint as a standalone fetch handler: one read-only Streamable
+ * HTTP route over the same catalogue data the website renders. The website's
+ * `app/routes/api/mcp.ts` proxies `/api/mcp` here because the verified preview payload this endpoint
  * serves is far larger than a Cloudflare Worker can hold.
  *
  * Stateless by construction — every request is answered by a fresh server

@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Check, Copy } from "lucide-react";
 

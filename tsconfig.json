@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "ES2022",
     "lib": [
       "dom",
       "dom.iterable",
@@ -10,7 +10,10 @@
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
-    "types": ["node"],
+    "types": [
+      "node",
+      "vite/client"
+    ],
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
@@ -18,12 +21,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
     "paths": {
       "@/*": [
         "./*"
@@ -31,17 +28,16 @@
     }
   },
   "include": [
-    "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts"
+    "**/*.tsx"
   ],
   "exclude": [
-    "node_modules",
     "data/solid-libraries/*/node_modules",
     "data/solid-libraries/*/upstream",
     "data/solid-libraries/*/examples",
-    "data/solid-libraries/*/demos"
+    "data/solid-libraries/*/demos",
+    "node_modules",
+    "dist",
+    ".wrangler"
   ]
 }

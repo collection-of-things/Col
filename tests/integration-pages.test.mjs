@@ -1,13 +1,8 @@
 import assert from "node:assert/strict";
-import { existsSync, readFileSync, statSync } from "node:fs";
 import { test } from "node:test";
 import { connectorPaths, integrations, integrationsForLibrary } from "../data/integrations.ts";
 import { agentPrompt, clientSetups } from "../lib/integration-setup.ts";
-
-const readBuilt = (relativePath) => {
-  const file = new URL(`../.next/server/app/${relativePath}`, import.meta.url);
-  return existsSync(file) && statSync(file).isFile() ? readFileSync(file, "utf8") : null;
-};
+import { page, request } from "./site.mjs";
 
 // React escapes text into HTML entities; decode them so assertions compare plain strings.
 const decodeHtml = (html) => html
@@ -18,11 +13,9 @@ const decodeHtml = (html) => html
   .replaceAll("&gt;", ">")
   .replaceAll("&amp;", "&");
 
-test("every integration has a built page with its setup guide, client setup, connectors, and agent prompt", () => {
+test("every integration has a built page with its setup guide, client setup, connectors, and agent prompt", async () => {
   for (const integration of integrations) {
-    const built = readBuilt(`integrations/${integration.slug}.html`);
-    assert.ok(built, `No built page for ${integration.slug}`);
-    const html = decodeHtml(built);
+    const html = decodeHtml(await page(`/integrations/${integration.slug}`));
 
     assert.ok(html.includes(integration.name), `${integration.slug}: missing name`);
     assert.ok(html.includes(integration.url), `${integration.slug}: missing setup guide link`);
@@ -39,17 +32,17 @@ test("every integration has a built page with its setup guide, client setup, con
   }
 });
 
-test("library pages link to the integrations that serve them", () => {
+test("library pages link to the integrations that serve them", async () => {
   for (const slug of new Set(integrations.map(({ library }) => library).filter(Boolean))) {
-    const html = readBuilt(`libraries/${slug}.html`) ?? "";
+    const html = await page(`/libraries/${slug}`);
     for (const integration of integrationsForLibrary(slug)) {
       assert.ok(html.includes(`href="/integrations/${integration.slug}"`), `${slug}: missing a link to ${integration.slug}`);
     }
   }
 });
 
-test("unknown integration slugs return 404", () => {
-  const manifest = JSON.parse(readFileSync(new URL("../.next/prerender-manifest.json", import.meta.url), "utf8"));
-  assert.equal(manifest.dynamicRoutes["/integrations/[slug]"]?.fallback, false);
-  assert.equal(manifest.routes["/integrations/definitely-not-an-integration"], undefined);
+test("unknown integration slugs return 404", async () => {
+  const response = await request("/integrations/definitely-not-an-integration");
+  assert.equal(response.status, 404);
+  assert.ok((await response.text()).includes("Page not found"));
 });

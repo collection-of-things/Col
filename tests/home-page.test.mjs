@@ -1,9 +1,10 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
+import { page } from "./site.mjs";
 
-test("homepage keeps its four sections, search shortcuts, and new-tab library links", () => {
-  const html = readFileSync(new URL("../.next/server/app/index.html", import.meta.url), "utf8");
+test("homepage keeps its four sections, search shortcuts, and new-tab library links", async () => {
+  const html = await page("/");
   const markup = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, "");
   const sections = ["home-title", "details-title", "roadmap-title", "<footer"];
   let previous = -1;
