@@ -2961,3 +2961,42 @@ html.light .app-frame .topbar-search { background: #fff; box-shadow: inset 0 0 0
 html .app-frame .topbar-search:focus-within { box-shadow: inset 0 1px 0 rgba(255,255,255,.16), 0 0 0 2px var(--lib-focus), 0 8px 24px rgba(0,0,0,.4); }
 html .app-frame .topbar-search input { font-size: 13.5px; }
 html .app-frame .topbar-search > svg { width: 16px; height: 16px; color: var(--lib-text); }
+
+/* Directory search: the hero's detached glass field, at the top of the directory, with Filters beside it. */
+html .app-frame .directory-search-row { display: flex; align-items: center; gap: 12px; padding: 28px 24px 4px; }
+html .app-frame .directory-search-row .directory-filter-trigger { margin: 0; height: 52px; min-height: 52px; padding: 0 18px; border-radius: 16px; font-size: 14px; }
+.directory-hero-search {
+  display: flex; align-items: center; gap: 14px; flex: 1 1 auto; min-width: 0; max-width: 760px; height: 52px; padding: 0 10px 0 20px; border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.035));
+  -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.18), inset 0 0 0 1px rgba(255,255,255,.08), 0 18px 44px rgba(0,0,0,.45);
+  transition: box-shadow .4s cubic-bezier(.16,1,.3,1);
+}
+html.light .directory-hero-search { background: linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.75)); box-shadow: inset 0 0 0 1px rgba(0,0,0,.08), 0 14px 36px rgba(0,0,0,.1); }
+.directory-hero-search:focus-within { box-shadow: inset 0 1px 0 rgba(255,255,255,.2), inset 0 0 0 1px var(--lib-focus), 0 18px 44px rgba(0,0,0,.45); }
+.directory-hero-search-icon { flex: none; width: 19px; height: 19px; opacity: .6; }
+.directory-hero-search input { flex: 1; min-width: 0; height: 100%; border: 0; outline: 0; background: none; color: var(--lib-text); font: inherit; font-size: 17px; font-weight: 700; }
+.directory-hero-search input::placeholder { color: var(--lib-text-3); font-weight: 600; }
+.directory-hero-search input::-webkit-search-cancel-button { display: none; }
+.directory-hero-search-key, .directory-hero-search-clear kbd { padding: 2px 7px; border-radius: 6px; background: var(--lib-field); color: var(--lib-text-3); font: 600 11px/1.4 var(--font-mono, ui-monospace, monospace); box-shadow: 0 0 0 1px var(--lib-edge); }
+.directory-hero-search-clear { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 8px; border: 0; border-radius: 10px; background: none; color: var(--lib-text-3); cursor: pointer; }
+.directory-hero-search-clear:hover { color: var(--lib-text); background: var(--lib-hover); }
+.directory-hero-search-clear svg { width: 16px; height: 16px; }
+@media (max-width: 760px) {
+  html .app-frame .directory-search-row { padding: 16px 16px 0; gap: 8px; }
+  .directory-hero-search { height: 48px; padding-left: 16px; }
+  .directory-hero-search input { font-size: 16px; }
+  html .app-frame .directory-search-row .directory-filter-trigger { height: 48px; min-height: 48px; padding: 0 14px; }
+  .directory-hero-search-key { display: none; }
+}
+html .app-frame .directory-search-row .directory-filter-trigger,
+html.light .app-frame .directory-search-row .directory-filter-trigger {
+  border: 0; background: linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.035));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.16), inset 0 0 0 1px rgba(255,255,255,.07), 0 18px 44px rgba(0,0,0,.4);
+}
+html.light .app-frame .directory-search-row .directory-filter-trigger { background: #fff; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08), 0 14px 36px rgba(0,0,0,.08); }
+html .app-frame .directory-search-row .directory-filter-trigger[data-active] { box-shadow: inset 0 1px 0 rgba(255,255,255,.16), inset 0 0 0 1px var(--lib-focus), 0 18px 44px rgba(0,0,0,.4); }
+@media (max-width: 760px) {
+  html .app-frame .directory-search-row .directory-filter-trigger { width: 48px; padding: 0; justify-content: center; }
+  .directory-filter-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+}

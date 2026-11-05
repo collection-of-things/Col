@@ -1,7 +1,10 @@
 "use client";
 
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type FocusEvent, type MouseEvent, type ReactNode } from "react";
-import { Check, ChevronDown, RotateCcw, SlidersHorizontal } from "lucide-react";
+import { Check, ChevronDown, RotateCcw, Search, SlidersHorizontal, X } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { IN_PLACE_SEARCH } from "./SiteChrome";
+import { directoryQuery, useDirectoryQuery } from "@/lib/directory-query";
 import { categoryIcons, Icons, type IconComponent } from "./MaskIcon";
 import { CATEGORIES, STACKS, USE_CASES, type Category, type Stack, type UseCase } from "@/data/libraries";
 import type { DirectoryFacetCounts } from "@/lib/directory";
@@ -324,19 +327,54 @@ export function FilterSidebar({ label, hasFilters, renderPanel }: FilterSidebarP
     }
   };
 
+  const pathname = usePathname();
+  const query = useDirectoryQuery();
+  const search = IN_PLACE_SEARCH[pathname];
+
   return (
     <>
+      <div className="directory-search-row">
+      {search && (
+        <form role="search" className="directory-hero-search" onSubmit={(event) => event.preventDefault()}>
+          <Search className="directory-hero-search-icon" aria-hidden />
+          <input
+            data-directory-search=""
+            type="search"
+            value={query}
+            onChange={(event) => directoryQuery.set(event.target.value)}
+            onKeyDown={(event) => {
+              if (event.key === "Escape") {
+                if (query) directoryQuery.set("");
+                else event.currentTarget.blur();
+              }
+            }}
+            placeholder={`${search.placeholder}…`}
+            aria-label={search.label}
+            aria-keyshortcuts="/"
+            autoComplete="off"
+            spellCheck={false}
+          />
+          {query ? (
+            <button type="button" className="directory-hero-search-clear" onClick={() => directoryQuery.set("")} aria-label="Clear search">
+              <X aria-hidden /><kbd>Esc</kbd>
+            </button>
+          ) : (
+            <kbd className="directory-hero-search-key" aria-hidden>/</kbd>
+          )}
+        </form>
+      )}
       <Button
         type="button"
         variant="outline"
-        className="directory-filter-trigger self-start"
+        className="directory-filter-trigger"
         ref={filterTriggerRef}
         data-active={hasFilters || undefined}
         onClick={() => setOpenMobile(true)}
         aria-label="Open filters"
       >
-        <SlidersHorizontal aria-hidden /> Filters{hasFilters ? " · Active" : ""}
+        <SlidersHorizontal aria-hidden /><span className="directory-filter-label">Filters{hasFilters ? " · Active" : ""}</span>
       </Button>
+      </div>
 
 
       <Sheet open={openMobile} onOpenChange={handleMobileOpenChange}>

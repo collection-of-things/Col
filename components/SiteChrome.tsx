@@ -21,7 +21,7 @@ const searchDirectory = createDirectorySearch(libraries, componentIndex);
 const searchIntegrations = createIntegrationSearch(integrations);
 
 /** Directories whose sidebar field filters the results in place instead of opening a dropdown. */
-const IN_PLACE_SEARCH: Partial<Record<string, { placeholder: string; label: string }>> = {
+export const IN_PLACE_SEARCH: Partial<Record<string, { placeholder: string; label: string }>> = {
   "/libraries": { placeholder: "Search libraries", label: "Search libraries or components" },
   "/integrations": { placeholder: "Search integrations", label: "Search MCP servers and connectors" },
 };

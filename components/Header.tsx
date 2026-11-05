@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import { BrandLink, RepoStars, SiteSearch, useRepoStars } from "./SiteChrome";
+import { BrandLink, IN_PLACE_SEARCH, RepoStars, SiteSearch, useRepoStars } from "./SiteChrome";
 import { Icons, type IconComponent } from "./MaskIcon";
 import { ThemeToggle } from "./ThemeToggle";
 import packageJson from "../package.json";
@@ -62,7 +62,8 @@ export function Header() {
         </nav>
 
         <div className="topbar-actions">
-          <SiteSearch className="site-header-search topbar-search" />
+          {/* Home and the directories carry their own large search; the bar's would only repeat it. */}
+          {pathname !== "/" && !IN_PLACE_SEARCH[pathname] && <SiteSearch className="site-header-search topbar-search" />}
           <RepoStars stars={stars} className="site-header-repo topbar-repo" />
           <ThemeToggle />
           <button
