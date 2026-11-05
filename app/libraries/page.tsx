@@ -7,8 +7,7 @@ export const metadata = pageMetadata(
   "Browse UI libraries by stack, category, and use case. Find documented components, save a shortlist locally, and open official documentation.",
 );
 
-export default async function LibrariesPage({ searchParams }: { searchParams: Promise<{ q?: string }> }) {
-  const { q = "" } = await searchParams;
-
-  return <DirectoryExplorer initialQuery={q} />;
+/** Static, so the hero search's handoff can prefetch it whole; the explorer reads ?q= itself. */
+export default function LibrariesPage() {
+  return <DirectoryExplorer />;
 }

@@ -53,7 +53,7 @@ export function DirectoryExplorer({ initialQuery = "" }: { initialQuery?: string
   );
 
   useEffect(() => {
-    directoryQuery.set(initialQuery);
+    directoryQuery.set(initialQuery || new URLSearchParams(window.location.search).get("q") || "");
     if (window.location.hash === "#library-search") focusDirectorySearch();
     return () => directoryQuery.set("");
   }, [initialQuery]);

@@ -3000,3 +3000,20 @@ html .app-frame .directory-search-row .directory-filter-trigger[data-active] { b
   html .app-frame .directory-search-row .directory-filter-trigger { width: 48px; padding: 0; justify-content: center; }
   .directory-filter-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 }
+
+/* Hero → directory handoff (see HeroSearch). Names exist only during the handoff so other navigations stay plain. */
+html[data-search-handoff] .directory-hero-search,
+html[data-search-handoff] [data-hero-field] { view-transition-name: col-search; }
+html[data-search-handoff] [data-hero-sheet][data-open],
+html[data-search-handoff] .directory-results-pane { view-transition-name: col-results; }
+html[data-search-handoff] .topbar-glass { view-transition-name: col-topbar; }
+html[data-search-handoff]::view-transition-group(col-search) { animation-duration: .8s; animation-timing-function: cubic-bezier(.16, 1, .3, 1); z-index: 3; }
+html[data-search-handoff]::view-transition-old(col-search), html[data-search-handoff]::view-transition-new(col-search) { animation-duration: .35s; height: 100%; object-fit: none; object-position: left center; }
+html[data-search-handoff]::view-transition-group(col-results) { animation-duration: .9s; animation-timing-function: cubic-bezier(.16, 1, .3, 1); }
+html[data-search-handoff]::view-transition-old(col-results) { animation: col-handoff-out .45s ease both; }
+html[data-search-handoff]::view-transition-new(col-results) { animation: col-handoff-in .7s cubic-bezier(.16, 1, .3, 1) .12s both; }
+html[data-search-handoff]::view-transition-group(col-topbar) { animation: none; }
+html[data-search-handoff]::view-transition-old(root) { animation: col-handoff-out .5s ease both; }
+html[data-search-handoff]::view-transition-new(root) { animation: col-handoff-in .6s cubic-bezier(.16, 1, .3, 1) .1s both; }
+@keyframes col-handoff-out { to { opacity: 0; filter: blur(8px); } }
+@keyframes col-handoff-in { from { opacity: 0; filter: blur(6px); transform: translateY(24px); } }

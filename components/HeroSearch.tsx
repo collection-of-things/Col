@@ -4,6 +4,8 @@ import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from
 import { createPortal } from "react-dom";
 import { Search, X } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { directoryQuery } from "@/lib/directory-query";
 import type { SearchResult } from "@/lib/directory";
 import { LibraryCard } from "./LibraryCard";
 import styles from "./HomePage.module.css";
@@ -12,6 +14,26 @@ const SAVED_LIBRARIES_KEY = "col:saved-libraries";
 /** Gap (px) between the top of the hero stage and the lifted search bar. */
 const LIFT_TOP = 56;
 const MAX_RESULTS = 24;
+/** How long the lift and the rising sheet play before the page hands off to the directory. */
+const HANDOFF_MS = 900;
+/** Longest the view transition waits for the directory before letting the page paint again. */
+const HANDOFF_WAIT_MS = 1200;
+
+type ViewTransitionDocument = Document & { startViewTransition?: (update: () => Promise<void>) => { finished: Promise<void> } };
+
+/** Resolves with the directory's search field once the directory has rendered (or null after 4s). */
+function waitForDirectoryField(): Promise<HTMLInputElement | null> {
+  const started = performance.now();
+  return new Promise((resolve) => {
+    const check = () => {
+      const field = window.location.pathname === "/libraries" ? document.querySelector<HTMLInputElement>(".directory-hero-search input") : null;
+      if (field) resolve(field);
+      else if (performance.now() - started > 4000) resolve(null);
+      else requestAnimationFrame(check);
+    };
+    check();
+  });
+}
 
 type Searcher = (query: string) => SearchResult[];
 
@@ -36,7 +58,10 @@ function loadSearcher(): Promise<Searcher> {
  * Hero library search. The first keystroke lifts the field to the top of the
  * stage, the hero copy and tiles blur away (see `html[data-hero-search]` in
  * HomePage.module.css), and a sheet of library cards rises from below the
- * fold. Clearing the field or pressing Escape puts the hero back.
+ * fold. Once that has played, a view transition hands off to /libraries: the
+ * field morphs into the directory's search and the sheet into its results,
+ * with the query and caret carried over. Escape or clearing the field before
+ * the handoff puts the hero back.
  */
 export function HeroSearch() {
   const field = useRef<HTMLDivElement>(null);
@@ -47,6 +72,9 @@ export function HeroSearch() {
   const [frame, setFrame] = useState<{ left: number; right: number; top: number } | null>(null);
   const [mounted, setMounted] = useState(false);
   const open = query.trim().length > 0;
+  const router = useRouter();
+  const latestQuery = useRef(query);
+  latestQuery.current = query;
 
   useEffect(() => setMounted(true), []);
 
@@ -61,7 +89,53 @@ export function HeroSearch() {
 
   const warm = () => {
     if (!searcher) void loadSearcher().then((search) => setSearcher(() => search));
+    router.prefetch("/libraries");
   };
+
+  // After the lift, hand off to the directory with the query (and anything typed since) carried over.
+  useEffect(() => {
+    if (!open) return;
+    const timer = window.setTimeout(() => {
+      const query = latestQuery.current;
+      if (!query.trim()) return;
+      const root = document.documentElement;
+      const navigate = async () => {
+        directoryQuery.set(query);
+        router.push(`/libraries?q=${encodeURIComponent(query.trim())}`, { scroll: false });
+        // Never hold the page frozen on a slow network: release the transition after HANDOFF_WAIT_MS, and finish the focus whenever the directory lands.
+        // Keys pressed while the hero field is gone and the directory's isn't focused yet still count.
+        const buffer = (event: KeyboardEvent) => {
+          if (event.target instanceof HTMLInputElement || event.metaKey || event.ctrlKey || event.altKey) return;
+          if (event.key.length === 1) latestQuery.current += event.key;
+          else if (event.key === "Backspace") latestQuery.current = latestQuery.current.slice(0, -1);
+          else return;
+          event.preventDefault();
+        };
+        window.addEventListener("keydown", buffer, true);
+        const ready = waitForDirectoryField();
+        void ready.then((field) => {
+          window.removeEventListener("keydown", buffer, true);
+          if (!field) return;
+          const typed = latestQuery.current;
+          if (typed !== query) {
+            directoryQuery.set(typed);
+            window.history.replaceState(window.history.state, "", `/libraries?q=${encodeURIComponent(typed.trim())}`);
+          }
+          field.focus({ preventScroll: true });
+          field.setSelectionRange(typed.length, typed.length);
+        });
+        await Promise.race([ready, new Promise((resolve) => window.setTimeout(resolve, HANDOFF_WAIT_MS))]);
+      };
+      const start = (document as ViewTransitionDocument).startViewTransition;
+      if (!start || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        void navigate();
+        return;
+      }
+      root.dataset.searchHandoff = "";
+      start.call(document, navigate).finished.finally(() => { delete root.dataset.searchHandoff; });
+    }, HANDOFF_MS);
+    return () => window.clearTimeout(timer);
+  }, [open, router]);
 
   // Lift the field by exactly the distance to the top of the stage, and line the sheet up with the stage's edges.
   useLayoutEffect(() => {
@@ -116,7 +190,7 @@ export function HeroSearch() {
 
   return (
     <>
-      <div ref={field} className={styles.search} data-open={open || undefined}>
+      <div ref={field} className={styles.search} data-open={open || undefined} data-hero-field="">
         <Search className={styles.searchIcon} aria-hidden />
         <input
           ref={input}
@@ -142,6 +216,7 @@ export function HeroSearch() {
         <section
           id="hero-search-results"
           className={styles.searchSheet}
+          data-hero-sheet=""
           data-open={open || undefined}
           aria-hidden={!open}
           aria-label="Library results"
