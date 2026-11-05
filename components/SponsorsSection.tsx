@@ -1,5 +1,5 @@
 import type { CSSProperties } from "react";
-import Image from "next/image";
+import { Image } from "@/components/Image";
 import { ArrowUpRight } from "lucide-react";
 import { sponsors } from "@/data/sponsors";
 import { repo } from "@/lib/repo";

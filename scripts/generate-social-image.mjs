@@ -1,12 +1,9 @@
 import assert from "node:assert/strict";
-import { createRequire } from "node:module";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
+import sharp from "sharp";
 
-// Run with `node scripts/generate-social-image.mjs`. Reuses Next's image tooling.
-const require = createRequire(import.meta.url);
-const nextRequire = createRequire(require.resolve("next/package.json"));
-const sharp = nextRequire("sharp");
+// Run with `node scripts/generate-social-image.mjs`.
 const root = fileURLToPath(new URL("../", import.meta.url));
 const width = 1200;
 const height = 630;

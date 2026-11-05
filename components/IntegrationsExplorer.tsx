@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useMemo, useState } from "react";
 import { SearchX } from "lucide-react";
 import { CLIENTS, INTEGRATION_TYPES, integrations, type Client, type IntegrationType } from "@/data/integrations";

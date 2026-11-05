@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import { isNewAddition, NEW_ADDITION_DURATION_MS } from "@/lib/new-additions";
 

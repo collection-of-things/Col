@@ -1,6 +1,6 @@
 import type { CSSProperties } from "react";
 import { ArrowUpRight, Check } from "lucide-react";
-import { getRoadmap, type Milestone } from "@/lib/roadmap";
+import type { Milestone, Roadmap } from "@/lib/roadmap";
 import { repo } from "@/lib/repo";
 import styles from "./HomePage.module.css";
 
@@ -17,10 +17,10 @@ const when = (milestone: Milestone) =>
  * Homepage roadmap: a timeline of major GitHub issues, refreshed every five
  * minutes. Shipped milestones sit on a solid line, then a "Now" marker, then
  * upcoming work on a dashed line. Issues labelled "roadmap" are used when any
- * exist; otherwise feature requests are (see lib/roadmap.ts).
+ * exist; otherwise feature requests are (see lib/roadmap.ts). `roadmap` is
+ * null when GitHub could not be read.
  */
-export async function RoadmapSection() {
-  const roadmap = await getRoadmap();
+export function RoadmapSection({ roadmap }: { roadmap: Roadmap | null }) {
   const milestones = roadmap ? [...roadmap.shipped, ...roadmap.upcoming] : [];
   const lastShipped = (roadmap?.shipped.length ?? 0) - 1;
   const hasUpcoming = (roadmap?.upcoming.length ?? 0) > 0;

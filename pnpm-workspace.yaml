@@ -1,1 +1,6 @@
 minimumReleaseAgeExclude: []
+# Native binaries for the Worker runtime, bundler and image tooling.
+allowBuilds:
+  esbuild: true
+  sharp: true
+  workerd: true

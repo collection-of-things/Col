@@ -2,12 +2,10 @@
 /node_modules
 /data/solid-libraries/*/node_modules/
 
-# next.js
-/.next/
-/out/
+# build output (vite build: dist/client assets, dist/server Worker)
+/dist/
 
-# cloudflare / opennext
-/.open-next/
+# cloudflare
 /.wrangler/
 .dev.vars*
 
@@ -34,4 +32,3 @@ dev-error.log
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts

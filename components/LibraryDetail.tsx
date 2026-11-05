@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/components/Link";
 import type { CSSProperties } from "react";
 import { ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, CircleDollarSign, GitBranch, UsersRound } from "lucide-react";
 import { integrationTypes, type Integration } from "@/data/integrations";
@@ -7,7 +7,6 @@ import type { LibraryDetails } from "@/data/library-details";
 import { libraryPreviews } from "@/data/library-previews";
 import { publisherOf } from "@/lib/integration-directory";
 import type { RelatedLibraries } from "@/lib/related-libraries";
-import { integrationPath, libraryPath } from "@/lib/site";
 import { hostname } from "@/lib/utils";
 import { libraryOutbound } from "@/lib/library-outbound";
 import { AgentPrompt } from "./LibraryDetailParts";
@@ -44,7 +43,7 @@ export function LibraryDetail({ library, details, related, integrations }: Libra
 
   return (
     <LibraryListing key={library.slug} slug={library.slug}>
-      <Link href="/libraries" className="ld-back ld-reveal" style={reveal(0)}>
+      <Link to="/libraries" className="ld-back ld-reveal" style={reveal(0)}>
         <ArrowLeft aria-hidden />
         <span className="cap">Libraries</span>
       </Link>
@@ -124,7 +123,7 @@ export function LibraryDetail({ library, details, related, integrations }: Libra
               <ul className="ld-related-list">
                 {integrations.map((integration) => (
                   <li key={integration.slug}>
-                    <Link href={integrationPath(integration.slug)} className="ld-related-row">
+                    <Link to="/integrations/$slug" params={{ slug: integration.slug }} className="ld-related-row">
                       <span className="ld-related-logo"><LibraryLogo url={integration.provider.url} name={integration.provider.name} size={20} /></span>
                       <span className="ld-related-copy">
                         <span className="ld-related-name">{integration.name}</span>
@@ -148,7 +147,7 @@ export function LibraryDetail({ library, details, related, integrations }: Libra
                     <ul className="ld-related-list">
                       {items.map((other) => (
                         <li key={other.slug}>
-                          <Link href={libraryPath(other.slug)} className="ld-related-row">
+                          <Link to="/libraries/$slug" params={{ slug: other.slug }} className="ld-related-row">
                             <span className="ld-related-logo"><LibraryLogo url={other.url} name={other.name} size={20} /></span>
                             <span className="ld-related-copy">
                               <span className="ld-related-name">{other.name}</span>
@@ -171,7 +170,6 @@ export function LibraryDetail({ library, details, related, integrations }: Libra
             <NewAdditionLabel addedAt={library.addedAt} />
             {preview && (
               <figure className="ld-side-media">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={preview.src} alt={previewAlt} width={preview.width} height={preview.height} />
               </figure>
             )}

@@ -1,0 +1,36 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { pageHead } from "@/lib/site";
+import { repo } from "@/lib/repo";
+import { DocsButton, DocsHeader, DocsList, DocsSection, DocsText } from "@/components/DocsUI";
+
+export const Route = createFileRoute("/docs/request-a-library")({
+  head: () => pageHead(
+    "/docs/request-a-library",
+    "Request a Library | Col",
+    "Request a missing UI library on GitHub with its official URL, supported stacks, category, and use cases.",
+  ),
+  component: RequestLibraryPage,
+});
+
+function RequestLibraryPage() {
+  return (
+    <article>
+      <DocsHeader section="Contribute" title="Request a library" lead="If a useful UI library is missing, send a request with enough detail for it to be reviewed." />
+
+      <DocsSection title="Before you request">
+        <DocsText>Search the directory, existing issues, and open pull requests to avoid duplicates.</DocsText>
+      </DocsSection>
+
+      <DocsSection title="What to include">
+        <DocsList
+          items={[
+            "The library’s name and official URL.",
+            "Supported stacks, category, and common use cases.",
+            "A short explanation of who it helps.",
+          ]}
+        />
+        <DocsButton href={repo.newIssue}>Open a library request</DocsButton>
+      </DocsSection>
+    </article>
+  );
+}

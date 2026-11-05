@@ -1,7 +1,5 @@
-"use client";
-
 import { useEffect, useRef, type ReactNode } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname } from "@/hooks/use-pathname";
 import { AppSidebar } from "./AppSidebar";
 import { Header } from "./Header";
 import { BrandLink, RepoStars, SiteSearch, useRepoStars } from "./SiteChrome";

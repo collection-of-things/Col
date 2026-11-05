@@ -2,12 +2,13 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
+import { page } from "./site.mjs";
 
-test("docs and MCP pages render adjacent navigation without the footer or sidebar library search", () => {
+test("docs and MCP pages render adjacent navigation without the footer or sidebar library search", async () => {
   const pages = ["/docs", "/docs/find-a-library", "/docs/agents", "/mcp", "/mcp/agents", "/docs/request-a-library", "/docs/report-issues", "/docs/pull-requests"];
 
   for (const [index, route] of pages.entries()) {
-    const html = readFileSync(join(process.cwd(), ".next/server/app", `${route.slice(1)}.html`), "utf8");
+    const html = await page(route);
     const navigation = html.match(/<nav aria-label="Documentation pagination"[\s\S]*?<\/nav>/)?.[0];
 
     assert.ok(navigation, `Missing navigation on ${route}`);
@@ -23,8 +24,8 @@ test("docs and MCP pages render adjacent navigation without the footer or sideba
   }
 });
 
-test("MCP setup snippets connect to the plugin endpoint and the sidebar selects MCP", () => {
-  const html = readFileSync(join(process.cwd(), ".next/server/app/mcp.html"), "utf8");
+test("MCP setup snippets connect to the plugin endpoint and the sidebar selects MCP", async () => {
+  const html = await page("/mcp");
   const { mcpServers: { col: { url } } } = JSON.parse(readFileSync(join(process.cwd(), "plugin/.mcp.json"), "utf8"));
   const blocks = [...html.matchAll(/<pre><code>([\s\S]*?)<\/code><\/pre>/g)].map(([, code]) =>
     code.replace(/&quot;/g, '"').replace(/&#x27;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&"),
@@ -42,7 +43,7 @@ test("MCP setup snippets connect to the plugin endpoint and the sidebar selects 
     .some(([tag]) => tag.includes('class="app-nav-link"') && tag.includes('aria-current="page"'));
   assert.ok(activeMcpSidebar(html), "The setup page must select MCP in the main sidebar");
 
-  const agents = readFileSync(join(process.cwd(), ".next/server/app/mcp/agents.html"), "utf8");
+  const agents = await page("/mcp/agents");
   assert.ok(activeMcpSidebar(agents), "The agent guide must select MCP in the main sidebar");
   for (const tool of ["search_libraries", "search_components", "get_library", "get_component", "render_component"]) {
     assert.ok(agents.includes(tool), `Agent guide is missing ${tool}`);

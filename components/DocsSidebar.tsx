@@ -1,13 +1,9 @@
-"use client";
-
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode, type RefObject } from "react";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { usePathname } from "@/hooks/use-pathname";
+import { Link } from "@/components/Link";
 import { ArrowLeft, ArrowRight, ChevronDown } from "lucide-react";
 
-type DocsPage = readonly [href: string, label: string];
-
-const sections: readonly { title: string; pages: readonly DocsPage[] }[] = [
+const sections = [
   {
     title: "Get started",
     pages: [
@@ -31,9 +27,11 @@ const sections: readonly { title: string; pages: readonly DocsPage[] }[] = [
       ["/docs/pull-requests", "Open a pull request"],
     ],
   },
-];
+] as const satisfies readonly { title: string; pages: readonly (readonly [href: string, label: string])[] }[];
 
-const pages: readonly DocsPage[] = sections.flatMap(({ pages: sectionPages }) => sectionPages);
+type DocsPage = (typeof sections)[number]["pages"][number];
+
+const pages: readonly DocsPage[] = sections.flatMap<DocsPage>(({ pages: sectionPages }) => sectionPages);
 
 /**
  * Keeps an absolutely positioned pill on the item matching `selector` inside
@@ -82,7 +80,7 @@ export function DocsSidebar() {
             <ul>
               {sectionPages.map(([href, label]) => (
                 <li key={href}>
-                  <Link href={href} aria-current={pathname === href ? "page" : undefined} className="docs-nav-link">
+                  <Link to={href} aria-current={pathname === href ? "page" : undefined} className="docs-nav-link">
                     <span className="cap">{label}</span>
                   </Link>
                 </li>
@@ -128,7 +126,7 @@ export function DocsPageNavigation() {
   return (
     <nav aria-label="Documentation pagination" className="docs-pager">
       {previous ? (
-        <Link href={previous[0]} aria-label={`Previous: ${previous[1]}`} className="docs-pager-link">
+        <Link to={previous[0]} aria-label={`Previous: ${previous[1]}`} className="docs-pager-link">
           <ArrowLeft className="docs-pager-arrow" aria-hidden />
           <span className="docs-pager-copy">
             <span className="docs-pager-label">Previous</span>
@@ -137,7 +135,7 @@ export function DocsPageNavigation() {
         </Link>
       ) : <span />}
       {next ? (
-        <Link href={next[0]} aria-label={`Next: ${next[1]}`} className="docs-pager-link docs-pager-next">
+        <Link to={next[0]} aria-label={`Next: ${next[1]}`} className="docs-pager-link docs-pager-next">
           <span className="docs-pager-copy">
             <span className="docs-pager-label">Next</span>
             <span className="docs-pager-title">{next[1]}</span>

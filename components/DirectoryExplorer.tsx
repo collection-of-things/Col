@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Heart, SearchX } from "lucide-react";
 import { Icons } from "./MaskIcon";
