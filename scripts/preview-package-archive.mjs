@@ -1,17 +1,17 @@
 import { createHash } from "node:crypto";
 import { existsSync, lstatSync, mkdirSync, readFileSync, realpathSync, writeFileSync } from "node:fs";
-import { dirname, isAbsolute, relative, resolve } from "node:path";
+import { basename, dirname, isAbsolute, relative, resolve } from "node:path";
 import { gunzipSync } from "node:zlib";
 
-// npm supplies its actual entry point under npm test; direct Node invocations
-// also support the standard Windows, global Unix, and distribution layouts.
+// Only npm supplies its CLI in npm_execpath; pnpm sets its own executable there.
+// Also support the standard Windows, global Unix, and distribution layouts.
 export function resolveNpmCli() {
   const executableDirectory = dirname(process.execPath);
   const candidates = [process.env.npm_execpath,
     resolve(executableDirectory, "node_modules/npm/bin/npm-cli.js"),
     resolve(executableDirectory, "../lib/node_modules/npm/bin/npm-cli.js"),
     resolve(executableDirectory, "../share/nodejs/npm/bin/npm-cli.js")];
-  const entry = candidates.find(path => path && existsSync(path));
+  const entry = candidates.find(path => path && basename(path) === "npm-cli.js" && existsSync(path));
   if (!entry) throw new Error("Cannot locate npm's CLI; run this command through npm");
   return realpathSync(entry);
 }

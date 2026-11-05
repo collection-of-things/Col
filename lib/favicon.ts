@@ -24,7 +24,7 @@ export function createFaviconHandler(request: typeof fetch = fetch, now: () => n
     try {
       const url = new URL("https://www.google.com/s2/favicons");
       url.search = new URLSearchParams({ domain, sz: "128" }).toString();
-      const response = await request(url, { redirect: "error", signal: AbortSignal.timeout(5000) });
+      const response = await request(url, { redirect: "follow", signal: AbortSignal.timeout(5000) });
       const type = response.headers.get("content-type")?.split(";", 1)[0].trim().toLowerCase() ?? "";
       if (!response.ok || !imageTypes.has(type) || Number(response.headers.get("content-length")) > MAX_BYTES || !response.body) return null;
       const reader = response.body.getReader();
