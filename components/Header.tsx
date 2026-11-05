@@ -1,24 +1,34 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { BrandLink, RepoStars, SiteSearch, useRepoStars } from "./SiteChrome";
+import { Icons, type IconComponent } from "./MaskIcon";
 import { ThemeToggle } from "./ThemeToggle";
+import packageJson from "../package.json";
 
-const links = [
-  ["Home", "/"],
-  ["Libraries", "/libraries"],
-  ["Components", "/components"],
-  ["Integrations", "/integrations"],
-  ["MCP", "/mcp"],
-  ["Docs", "/docs"],
-  ["Contributors", "/contributors"],
-  ["Sponsors", "/sponsors"],
-] as const;
+/** Every top-level route. This bar is the only site navigation, at every width. */
+export const siteLinks: readonly (readonly [string, string, IconComponent])[] = [
+  ["Home", "/", Icons.home],
+  ["Libraries", "/libraries", Icons.libraries],
+  ["Components", "/components", Icons.componentLibrary],
+  ["Integrations", "/integrations", Icons.integrations],
+  ["MCP", "/mcp", Icons.integrations],
+  ["Docs", "/docs", Icons.docs],
+  ["Contributors", "/contributors", Icons.contributors],
+  ["Sponsors", "/sponsors", Icons.sponsors],
+];
 
-/** Compact top bar for small screens. On desktop the sidebar carries all of this. */
+const isActive = (pathname: string, href: string) =>
+  href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
+
+/**
+ * The floating glass top bar every route shares: brand and version, the site
+ * links with an active pill, search (in place on the directories), repo stars,
+ * and the theme toggle. Narrower screens fold the links into a menu panel.
+ */
 export function Header() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,41 +38,57 @@ export function Header() {
     setMenuOpen(false);
   }, [pathname]);
 
-  const headerClass = "site-header site-header-solid site-header-app";
+  useEffect(() => {
+    if (!menuOpen) return;
+    const close = (event: KeyboardEvent) => { if (event.key === "Escape") setMenuOpen(false); };
+    window.addEventListener("keydown", close);
+    return () => window.removeEventListener("keydown", close);
+  }, [menuOpen]);
 
   return (
-    <header className={headerClass}>
-      <div className="site-header-inner">
-        <div className="site-header-left">
+    <header className="topbar" data-menu={menuOpen || undefined}>
+      <div className="topbar-glass">
+        <div className="topbar-brand">
           <BrandLink />
+          <span className="topbar-version cap" title={`Col v${packageJson.version}`}>v{packageJson.version}</span>
         </div>
 
-        <div className="site-header-actions">
-          <SiteSearch className="site-header-search" />
+        <nav aria-label="Site" className="topbar-links">
+          {siteLinks.map(([label, href]) => (
+            <Link key={href} href={href} className="topbar-link" aria-current={isActive(pathname, href) ? "page" : undefined}>
+              <span className="cap">{label}</span>
+            </Link>
+          ))}
+        </nav>
+
+        <div className="topbar-actions">
+          <SiteSearch className="site-header-search topbar-search" />
+          <RepoStars stars={stars} className="site-header-repo topbar-repo" />
           <ThemeToggle />
-          <RepoStars stars={stars} className="site-header-repo" />
-          <Button
+          <button
             type="button"
-            variant="ghost"
-            className="site-header-menu"
+            className="topbar-menu"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
-            aria-controls="site-header-mobile-menu"
+            aria-controls="topbar-menu-panel"
             onClick={() => setMenuOpen((open) => !open)}
           >
             {menuOpen ? <X size={17} aria-hidden="true" /> : <Menu size={17} aria-hidden="true" />}
-          </Button>
+          </button>
         </div>
-
-        {menuOpen && (
-          <nav id="site-header-mobile-menu" aria-label="Mobile primary" className="site-header-mobile-menu">
-            {links.map(([label, href]) => {
-              const active = href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
-              return <a key={href} href={href} onClick={() => setMenuOpen(false)} aria-current={active ? "page" : undefined}>{label}</a>;
-            })}
-          </nav>
-        )}
       </div>
+
+      {menuOpen && (
+        <nav id="topbar-menu-panel" aria-label="Site menu" className="topbar-panel">
+          {siteLinks.map(([label, href, Icon]) => (
+            <Link key={href} href={href} className="topbar-panel-link" aria-current={isActive(pathname, href) ? "page" : undefined}>
+              <Icon className="nav-icon" />
+              <span className="cap">{label}</span>
+            </Link>
+          ))}
+          <p className="topbar-panel-meta cap">Col v{packageJson.version}</p>
+        </nav>
+      )}
     </header>
   );
 }

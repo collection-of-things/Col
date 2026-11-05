@@ -5,7 +5,6 @@ import { Check, ChevronDown, RotateCcw, SlidersHorizontal } from "lucide-react";
 import { categoryIcons, Icons, type IconComponent } from "./MaskIcon";
 import { CATEGORIES, STACKS, USE_CASES, type Category, type Stack, type UseCase } from "@/data/libraries";
 import type { DirectoryFacetCounts } from "@/lib/directory";
-import { SidebarSlot } from "./SidebarSlot";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -306,13 +305,13 @@ interface FilterSidebarProps {
   /** Accessible name of the filter region, for example "Library filters". */
   label: string;
   hasFilters: boolean;
-  /** Renders the panel body. Called once for the desktop sidebar and once for the mobile sheet, with an id suffix that keeps their element ids apart. */
+  /** Renders the panel body inside the filter sheet. The id suffix keeps its element ids unique. */
   renderPanel: (idSuffix: string) => ReactNode;
 }
 
 /**
- * Places a directory's filter panel in the app frame's sidebar on desktop and
- * in a sheet behind a "Filters" button on small screens.
+ * Places a directory's filter panel in a sheet behind a "Filters" button, at
+ * every width. The frame has no sidebar, so the panel no longer lives in one.
  */
 export function FilterSidebar({ label, hasFilters, renderPanel }: FilterSidebarProps) {
   const { openMobile, setOpenMobile } = useSidebar();
@@ -320,7 +319,7 @@ export function FilterSidebar({ label, hasFilters, renderPanel }: FilterSidebarP
 
   const handleMobileOpenChange = (nextOpen: boolean) => {
     setOpenMobile(nextOpen);
-    if (!nextOpen && window.innerWidth < 1024) {
+    if (!nextOpen) {
       requestAnimationFrame(() => filterTriggerRef.current?.focus());
     }
   };
@@ -330,22 +329,18 @@ export function FilterSidebar({ label, hasFilters, renderPanel }: FilterSidebarP
       <Button
         type="button"
         variant="outline"
-        className="directory-filter-trigger mx-5 mt-4 min-h-11 self-start lg:hidden"
+        className="directory-filter-trigger self-start"
         ref={filterTriggerRef}
+        data-active={hasFilters || undefined}
         onClick={() => setOpenMobile(true)}
         aria-label="Open filters"
       >
         <SlidersHorizontal aria-hidden /> Filters{hasFilters ? " · Active" : ""}
       </Button>
 
-      <SidebarSlot mobile="hidden">
-        <div className="directory-sidebar directory-filter-panel" role="region" aria-label={label}>
-          {renderPanel("")}
-        </div>
-      </SidebarSlot>
 
       <Sheet open={openMobile} onOpenChange={handleMobileOpenChange}>
-        <SheetContent side="left" className="w-[16rem] gap-0 bg-sidebar p-0 lg:hidden">
+        <SheetContent side="left" className="directory-filter-sheet w-[18rem] gap-0 p-0">
           <SheetTitle className="sr-only">{label}</SheetTitle>
           <div className="directory-filter-panel flex h-full min-h-0 flex-col pt-14">
             {renderPanel("-mobile")}

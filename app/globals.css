@@ -2859,3 +2859,92 @@ a.pg-row:hover .pg-row-arrow { color: var(--lib-text); transform: translate(1px,
 .pg-foot a:hover { text-decoration-color: currentColor; }
 
 @media (max-width: 700px) { .pg { padding: 28px 16px 64px; } }
+
+/* =====================================================================
+   Top bar shell (no sidebar). One floating glass bar over the content
+   card on every route; it carries everything the sidebar used to.
+   ===================================================================== */
+html .app-frame.library-page-shell {
+  --topbar-h: 52px; --topbar-gap: 10px;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: calc(var(--topbar-h) + var(--topbar-gap) * 2) minmax(0, 1fr);
+}
+html .app-frame .app-frame-panel {
+  grid-column: 1; grid-row: 2; margin: 0 var(--topbar-gap); margin-top: 0;
+  border-radius: var(--frame-radius) var(--frame-radius) 0 0;
+  box-shadow: inset 0 1px 0 var(--lib-edge), inset 0 0 0 1px var(--lib-line);
+}
+.topbar { position: relative; z-index: 50; grid-column: 1; grid-row: 1; display: flex; align-items: center; padding: var(--topbar-gap); }
+.topbar-glass {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 16px;
+  width: 100%; height: var(--topbar-h); padding: 0 8px 0 16px; border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.025)), color-mix(in srgb, var(--lib-panel) 70%, transparent);
+  -webkit-backdrop-filter: blur(20px) saturate(1.2); backdrop-filter: blur(20px) saturate(1.2);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.12), inset 0 0 0 1px rgba(255,255,255,.06), 0 12px 32px rgba(0,0,0,.35);
+}
+html.light .topbar-glass {
+  background: linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.78));
+  box-shadow: inset 0 1px 0 #fff, inset 0 0 0 1px rgba(0,0,0,.06), 0 10px 28px rgba(0,0,0,.07);
+}
+.topbar-brand { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.topbar-version { padding: 2px 6px; border-radius: 6px; background: var(--lib-chip); color: var(--lib-text-3); font-size: 10.5px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.topbar-links { position: relative; display: flex; align-items: center; justify-content: center; gap: 2px; min-width: 0; }
+.topbar-link {
+  display: inline-flex; align-items: center; height: 32px; padding: 0 11px; border-radius: 10px;
+  color: var(--lib-text-2); font-size: 13px; font-weight: 600; text-decoration: none; white-space: nowrap;
+  transition: color 160ms ease, background-color 160ms ease, box-shadow 160ms ease, scale 160ms ease;
+}
+.topbar-link:hover { color: var(--lib-text); background: var(--lib-hover); text-decoration: none; }
+.topbar-link:active { scale: .96; }
+.topbar-link[aria-current="page"] {
+  color: var(--lib-text);
+  background: linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.05));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.14), inset 0 0 0 1px rgba(255,255,255,.06), 0 2px 8px rgba(0,0,0,.25);
+}
+html.light .topbar-link[aria-current="page"] { background: #fff; box-shadow: inset 0 0 0 1px rgba(0,0,0,.07), 0 2px 8px rgba(0,0,0,.08); }
+.topbar-link:focus-visible, .topbar-menu:focus-visible, .topbar-panel-link:focus-visible { outline: 2px solid var(--lib-focus); outline-offset: 2px; }
+.topbar-actions { display: flex; align-items: center; gap: 6px; }
+html .app-frame .topbar-search { width: clamp(180px, 18vw, 260px); }
+.topbar-actions > .site-repo { display: inline-flex; align-items: center; gap: 7px; height: 32px; padding: 0 10px; border-radius: 10px; background: var(--lib-field); color: var(--lib-text-2); box-shadow: var(--lib-depth-1); font-size: 12.5px; font-weight: 600; text-decoration: none; }
+.topbar-actions > .site-repo:hover { background: var(--lib-field-hover); color: var(--lib-text); }
+.topbar-actions > .site-repo .site-repo-count { display: inline-flex; align-items: center; gap: 4px; }
+.topbar-actions > .site-repo .site-repo-star { width: 12px; height: 12px; }
+.topbar-actions > button { display: grid; place-items: center; width: 32px; min-width: 32px; height: 32px; padding: 0; border: 0; border-radius: 10px; background: var(--lib-field); color: var(--lib-text-2); box-shadow: var(--lib-depth-1); cursor: pointer; }
+.topbar-actions > button:hover { background: var(--lib-field-hover); color: var(--lib-text); }
+.topbar-menu { display: none !important; }
+.topbar-panel {
+  position: absolute; top: calc(100% - 4px); right: var(--topbar-gap); z-index: 60; display: grid; gap: 2px; width: min(280px, calc(100vw - 20px)); padding: 6px;
+  border-radius: 14px; background: color-mix(in srgb, var(--lib-surface) 92%, transparent);
+  -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); box-shadow: var(--lib-depth-3);
+  animation: topbar-panel-in 260ms cubic-bezier(.16,1,.3,1) both;
+}
+.topbar-panel-link { display: flex; align-items: center; gap: 10px; min-height: 40px; padding: 0 10px; border-radius: 9px; color: var(--lib-text-2); font-size: 14px; font-weight: 600; text-decoration: none; }
+.topbar-panel-link:hover, .topbar-panel-link[aria-current="page"] { background: var(--lib-hover); color: var(--lib-text); text-decoration: none; }
+.topbar-panel-meta { padding: 8px 10px 4px; border-top: 1px solid var(--lib-line); margin-top: 4px; color: var(--lib-text-3); font-size: 11.5px; font-weight: 600; }
+@keyframes topbar-panel-in { from { opacity: 0; transform: translateY(-6px) scale(.98); } }
+/* Not enough room for eight links: fold them into the menu. */
+@media (max-width: 1239px) {
+  .topbar-glass { grid-template-columns: auto minmax(0, 1fr); }
+  .topbar-links { display: none; }
+  .topbar-actions { justify-self: end; }
+  .topbar-menu { display: grid !important; }
+}
+@media (max-width: 640px) {
+  html .app-frame.library-page-shell { --topbar-gap: 8px; --topbar-h: 48px; }
+  .topbar-version, .topbar-actions > .site-repo { display: none; }
+  html .app-frame .topbar-search { width: min(44vw, 200px); }
+  .topbar-search kbd { display: none; }
+  html .app-frame .app-frame-panel { margin: 0; border-radius: var(--frame-radius) var(--frame-radius) 0 0; }
+}
+@media (prefers-reduced-motion: reduce) { .topbar-panel { animation: none; } .topbar-link { transition: none; } }
+
+/* Directory filters: no sidebar to live in, so the panel opens as a glass sheet from the toolbar's Filters button at every width. */
+html .app-frame .directory-filter-trigger {
+  display: inline-flex; align-items: center; gap: 8px; height: 32px; min-height: 32px; margin: 20px 24px 0; padding: 0 12px;
+  border: 0; border-radius: 10px; background: var(--lib-field); color: var(--lib-text-2); box-shadow: var(--lib-depth-1); font-size: 13px; font-weight: 600;
+}
+html .app-frame .directory-filter-trigger:hover { background: var(--lib-field-hover); color: var(--lib-text); }
+html .app-frame .directory-filter-trigger[data-active] { color: var(--lib-text); box-shadow: var(--lib-depth-1), inset 0 0 0 1px var(--lib-focus); }
+.directory-filter-sheet { -webkit-backdrop-filter: blur(24px); backdrop-filter: blur(24px); background: color-mix(in srgb, var(--lib-panel) 88%, transparent) !important; box-shadow: 24px 0 60px rgba(0,0,0,.4); border-right: 1px solid var(--lib-edge); }
+.directory-filter-sheet .facet-group { padding: 0 12px; }
+@media (max-width: 760px) { html .app-frame .directory-filter-trigger { margin: 16px 16px 0; } }

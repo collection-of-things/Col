@@ -2,12 +2,7 @@
 
 import { useEffect, useRef, type ReactNode } from "react";
 import { usePathname } from "next/navigation";
-import { AppSidebar } from "./AppSidebar";
 import { Header } from "./Header";
-import { BrandLink, RepoStars, SiteSearch, useRepoStars } from "./SiteChrome";
-import { SIDEBAR_SLOT_ID } from "./SidebarSlot";
-import { ThemeToggle } from "./ThemeToggle";
-import packageJson from "../package.json";
 
 type SidebarMode = "narrow" | "wide";
 
@@ -19,15 +14,13 @@ function sidebarModeFor(pathname: string): SidebarMode {
 }
 
 /**
- * The one layout every route shares: a sidebar (brand, search, navigation,
- * page-specific content, repo links) and the content card. The sidebar is
- * narrow by default and widens on the directories to fit their filters. Small
- * screens get a compact top bar instead.
+ * The one layout every route shares: the floating glass top bar (brand,
+ * navigation, search, repo stars, theme) over the content card. There is no
+ * sidebar; directory filters open in a sheet from the directory's toolbar.
  */
 export function AppFrame({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const mode = sidebarModeFor(pathname);
-  const stars = useRepoStars();
   const panelRef = useRef<HTMLElement>(null);
 
   // The content card is the scroll container, so reset it on navigation the way
@@ -58,21 +51,8 @@ export function AppFrame({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <div className="app-frame library-page-shell" data-sidebar={mode}>
+    <div className="app-frame library-page-shell" data-directory={mode === "wide" || undefined}>
       <Header />
-      <aside className="app-frame-sidebar" aria-label="Sidebar">
-        <div className="app-frame-brand"><BrandLink /></div>
-        <div className="app-frame-search"><SiteSearch /></div>
-        <div className="app-frame-nav"><AppSidebar /></div>
-        <div id={SIDEBAR_SLOT_ID} className="app-frame-slot" />
-        <div className="app-frame-footer">
-          <div className="app-frame-footer-controls">
-            <RepoStars stars={stars} />
-            <ThemeToggle />
-          </div>
-          <span className="app-frame-version">v{packageJson.version}</span>
-        </div>
-      </aside>
       <main ref={panelRef} className="app-frame-panel">
         {children}
       </main>
