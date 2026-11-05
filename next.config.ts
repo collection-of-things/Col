@@ -1,5 +1,9 @@
 import type { NextConfig } from "next";
-import('@opennextjs/cloudflare').then(m => m.initOpenNextCloudflareForDev());
+// Wires Cloudflare bindings into `next dev`. Dev-only, so `next build` and
+// `next start` never load the dev dependency.
+if (process.env.NODE_ENV === "development") {
+  import("@opennextjs/cloudflare").then(m => m.initOpenNextCloudflareForDev());
+}
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,

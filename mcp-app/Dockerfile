@@ -23,5 +23,5 @@ ENV NODE_ENV=production
 EXPOSE 8787
 
 # Node 24 strips TypeScript types natively; server.ts adapts the fetch
-# handler to node:http. Run from /app so ../lib and ../data resolve.
+# handler to node:http.
 CMD ["node", "mcp-app/server.ts"]

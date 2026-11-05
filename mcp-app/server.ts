@@ -3,9 +3,11 @@ import { Readable } from "node:stream";
 import handler from "./handler.ts";
 
 /**
- * Plain Node adapter for the MCP fetch handler. Run from the repository root
- * (`npm start` inside mcp-app, or `node mcp-app/server.ts` from the root) so
- * the catalogue data and preview media resolve next to `lib/` and `data/`.
+ * Plain Node adapter for the MCP fetch handler. Start it with `npm start`
+ * inside mcp-app or `node mcp-app/server.ts` from the root; data and preview
+ * media resolve from the module paths, not the working directory. Its runtime
+ * packages must be installed in a directory above `lib/` (the repository root
+ * locally, `/app` in the image), because `lib/` resolves them from its parents.
  *
  * Routes:
  * - `GET /health` returns 200 once the catalogue has loaded (the server only

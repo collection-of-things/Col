@@ -74,7 +74,7 @@ Previews need a client that supports MCP Apps. See [component previews](docs/mcp
 
 ## Run it locally
 
-Requires Node.js 20.9+ and npm.
+Requires Node.js 24.22.1+ (below 25) and npm.
 
 ```sh
 git clone https://git.cafe/collection-of-devs/col Col
@@ -92,7 +92,7 @@ npm test
 
 To let a browser client other than `https://usecol.com` call your MCP server, set `COL_MCP_ALLOWED_ORIGINS` to a comma-separated list of exact origins, for example `COL_MCP_ALLOWED_ORIGINS="http://localhost:3000"`.
 
-The MCP tools and component previews run as a standalone service in [`mcp-app/`](mcp-app) rather than inside the Next.js app: their verified preview payload is too large for the site's edge hosting. The site's `/api/mcp` route proxies to it. To exercise MCP locally, run `npm start` inside `mcp-app/` (it listens on port 8787) and set `COL_MCP_ORIGIN=http://localhost:8787` for the Next.js app, or point your MCP client at `http://localhost:8787/api/mcp` directly.
+The MCP tools and component previews run as a standalone service in [`mcp-app/`](mcp-app) rather than inside the Next.js app: their verified preview payload is too large for the site's edge hosting. The site's `/api/mcp` route proxies to it. To exercise MCP locally, run `npm install` at the repository root, then `npm start` inside `mcp-app/` (it listens on port 8787). The service imports `lib/`, which resolves packages from the repository root, so installing inside `mcp-app/` alone is not enough. Then set `COL_MCP_ORIGIN=http://localhost:8787` for the Next.js app, or point your MCP client at `http://localhost:8787/api/mcp` directly.
 
 To host the service yourself, deploy `mcp-app/` anywhere Node 24 runs — [`mcp-app/Dockerfile`](mcp-app/Dockerfile) builds a self-contained image (Railway: set the Dockerfile path to `mcp-app/Dockerfile` with the repository root as the build context, and the healthcheck path to `/health`). Set `COL_MCP_ORIGIN` on the site to the service URL and, if browser clients other than the site's own origin should connect, `COL_MCP_ALLOWED_ORIGINS` as described above.
 
