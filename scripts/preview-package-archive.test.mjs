@@ -2,8 +2,8 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { createHash } from "node:crypto";
 import { createRequire } from "node:module";
-import { existsSync, mkdtempSync, mkdirSync, readFileSync, symlinkSync, writeFileSync } from "node:fs";
-import { basename, resolve } from "node:path";
+import { existsSync, mkdtempSync, mkdirSync, readFileSync, realpathSync, symlinkSync, writeFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { gzipSync } from "node:zlib";
 import { authenticateArchive, authenticateRuntimeFile, readVerifiedMetadata, restoreArchive, resolveNpmCli } from "./preview-package-archive.mjs";
 
@@ -20,16 +20,13 @@ const integrity = bytes => "sha512-" + createHash("sha512").update(bytes).digest
 const restore = (bytes, options = {}) => restoreArchive({ bytes, integrity: integrity(bytes), installRoot: mkdtempSync(resolve(cache, "case-")), packagePath: "node_modules/actual", Parser: tar.Parser, allowFile: () => true, verifiedFiles: new Set(), ...options });
 
 test("npm CLI discovery skips another package manager's executable", () => {
-  const previous = process.env.npm_execpath;
-  try {
-    process.env.npm_execpath = process.execPath;
-    const cli = resolveNpmCli();
-    assert.equal(basename(cli), "npm-cli.js");
-    assert.ok(createRequire(cli)("tar").Parser);
-  } finally {
-    if (previous === undefined) delete process.env.npm_execpath;
-    else process.env.npm_execpath = previous;
-  }
+  const root = mkdtempSync(resolve(cache, "npm-layout-"));
+  const cli = resolve(root, "node_modules/npm/bin/npm-cli.js");
+  const pnpm = resolve(root, "pnpm.cjs");
+  mkdirSync(resolve(root, "node_modules/npm/bin"), { recursive: true });
+  writeFileSync(cli, "// npm CLI fixture");
+  writeFileSync(pnpm, "// pnpm CLI fixture");
+  assert.equal(resolveNpmCli({ execPath: resolve(root, "node"), npmExecPath: pnpm }), realpathSync(cli));
 });
 
 test("authenticated archive restoration replaces altered bytes and excludes stale files", () => {

@@ -34,6 +34,8 @@ export async function proxyMcp(request: Request, env: McpProxyEnv, send: typeof 
     return new Response("Forbidden Origin", { status: 403 });
   }
   if (!env.COL_MCP_ORIGIN) return new Response("MCP service is not configured", { status: 503 });
-  const body = await request.arrayBuffer();
-  return send(new URL("/api/mcp", env.COL_MCP_ORIGIN), { method: "POST", headers: mcpProxyHeaders(request.headers), body, signal: request.signal });
+  // Forward uploads with backpressure instead of buffering them in the isolate.
+  // Node's fetch also requires duplex for streamed request bodies.
+  const upstream = { method: "POST", headers: mcpProxyHeaders(request.headers), body: request.body, signal: request.signal, duplex: "half" };
+  return send(new URL("/api/mcp", env.COL_MCP_ORIGIN), upstream);
 }

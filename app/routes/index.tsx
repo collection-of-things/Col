@@ -36,7 +36,7 @@ function Home() {
         name: "Col",
         url: `${siteUrl}/`,
         description: "A community-maintained directory for discovering UI libraries by category, stack, and use case.",
-      }).replace(/</g, "\u003c") }} />
+      }).replace(/</g, "\\u003c") }} />
       <HomeStory
         backdrop={<HeroBackdrop />}
         scenes={[

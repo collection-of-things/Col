@@ -43,6 +43,15 @@ function stop(child) {
 }
 
 export async function globalSetup() {
+  try {
+    await startSite();
+  } catch (error) {
+    await globalTeardown();
+    throw error;
+  }
+}
+
+async function startSite() {
   if (!existsSync(new URL("dist/server/wrangler.json", root))) throw new Error("Build the site first: npm run build");
 
   const mcp = spawn(process.execPath, ["mcp-app/server.ts"], { cwd: root, env: { ...process.env, PORT: "0" } });

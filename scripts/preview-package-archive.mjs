@@ -5,9 +5,9 @@ import { gunzipSync } from "node:zlib";
 
 // Only npm supplies its CLI in npm_execpath; pnpm sets its own executable there.
 // Also support the standard Windows, global Unix, and distribution layouts.
-export function resolveNpmCli() {
-  const executableDirectory = dirname(process.execPath);
-  const candidates = [process.env.npm_execpath,
+export function resolveNpmCli({ execPath = process.execPath, npmExecPath = process.env.npm_execpath } = {}) {
+  const executableDirectory = dirname(execPath);
+  const candidates = [npmExecPath,
     resolve(executableDirectory, "node_modules/npm/bin/npm-cli.js"),
     resolve(executableDirectory, "../lib/node_modules/npm/bin/npm-cli.js"),
     resolve(executableDirectory, "../share/nodejs/npm/bin/npm-cli.js")];

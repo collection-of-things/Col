@@ -44,12 +44,12 @@ export function validateQuerySearch(search: Record<string, unknown>): { q?: stri
 
 /** Reads a query string the way `URLSearchParams` does: every value stays text, and repeated keys become a list. */
 export function parseSearch(searchStr: string): Record<string, string | string[]> {
-  const search: Record<string, string | string[]> = {};
+  const search = new Map<string, string | string[]>();
   for (const [key, value] of new URLSearchParams(searchStr)) {
-    const previous = search[key];
-    search[key] = previous === undefined ? value : [...(Array.isArray(previous) ? previous : [previous]), value];
+    const previous = search.get(key);
+    search.set(key, previous === undefined ? value : [...(Array.isArray(previous) ? previous : [previous]), value]);
   }
-  return search;
+  return Object.fromEntries(search);
 }
 
 /** Writes search params back as a plain query string, skipping undefined values. */
