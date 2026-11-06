@@ -15,11 +15,11 @@ Thanks for helping make UI libraries easier to discover.
 ```bash
 git clone https://git.cafe/collection-of-devs/col Col
 cd Col
-npm install
-npm run dev
+bun install
+bun run dev
 ```
 
-For code or catalog changes, run `npm run typecheck` and `npm test` before submitting. `npm test` includes the production build. For documentation-only changes, check links and formatting; if the documentation is a site page, also run `npm run build`.
+For code or catalog changes, run `bun run typecheck` and `bun run test` before submitting. `bun run test` includes the production build. For documentation-only changes, check links and formatting; if the documentation is a site page, also run `bun run build`.
 
 ## Add a library
 

@@ -6,13 +6,16 @@
 # the repository root — the build context must include lib/ and data/.
 FROM node:24-slim
 
+# Bun installs the dependencies; Node still runs the service.
+COPY --from=oven/bun:1-slim /usr/local/bin/bun /usr/local/bin/bun
+
 WORKDIR /app
 
 # Runtime deps resolve from /app/node_modules: lib/ and data/ import zod,
 # @babel/parser and @modelcontextprotocol/server, and mcp-app/package.json
 # pins exactly that set (everything else is type-only or node: builtins).
-COPY mcp-app/package.json mcp-app/package-lock.json ./
-RUN npm ci --omit=dev --no-audit --no-fund
+COPY mcp-app/package.json mcp-app/bun.lock ./
+RUN bun install --production --frozen-lockfile
 
 COPY lib ./lib
 COPY data ./data

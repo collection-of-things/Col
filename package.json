@@ -4,6 +4,7 @@
   "private": true,
   "description": "A community-maintained directory for discovering UI libraries.",
   "license": "MIT",
+  "packageManager": "bun@1.4.4",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,7 +13,7 @@
     "build:quoin": "node scripts/build-quoin-documentation.mjs && node scripts/build-quoin-previews.mjs",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "test": "npm run build && node --test --test-concurrency=1 \"lib/**/*.test.mjs\" \"scripts/**/*.test.mjs\" \"tests/**/*.test.mjs\""
+    "test": "bun run build && node --test --test-concurrency=1 \"lib/**/*.test.mjs\" \"scripts/**/*.test.mjs\" \"tests/**/*.test.mjs\""
   },
   "dependencies": {
     "@modelcontextprotocol/server": "^2.3.0",

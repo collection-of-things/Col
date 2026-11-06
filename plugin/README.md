@@ -58,4 +58,4 @@ curl -s -X POST https://usecol.com/api/mcp \
 ```
 
 A JSON-RPC `result` with `serverInfo.name` of `col` means the endpoint is up.
-Against a local build, run `npm start` in `mcp-app/` and use `http://localhost:8787/api/mcp` instead (the site's `/api/mcp` route proxies there when `COL_MCP_ORIGIN` is set).
+Against a local build, run `bun run start` in `mcp-app/` and use `http://localhost:8787/api/mcp` instead (the site's `/api/mcp` route proxies there when `COL_MCP_ORIGIN` is set).

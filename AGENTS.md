@@ -111,7 +111,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## Tests
 
-`npm test` builds first, because page tests read `.next/`. `node --test` loads `lib/*.ts` through Node's type stripping, so a runtime import inside `lib/` or `data/` needs the `.ts` extension (`import { x } from "../data/integrations.ts"`); type-only imports can omit it.
+`bun run test` builds first, because page tests read `.next/`. Write `bun run test`, not `bun test`: the latter runs Bun's own test runner and ignores the script. `node --test` loads `lib/*.ts` through Node's type stripping, so a runtime import inside `lib/` or `data/` needs the `.ts` extension (`import { x } from "../data/integrations.ts"`); type-only imports can omit it.
 
 ## Windows shell
 
