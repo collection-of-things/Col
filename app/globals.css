@@ -3041,3 +3041,11 @@ html .app-frame[data-home] .app-frame-panel {
 }
 html:is([data-hero-search], [data-search-handoff]) .app-frame[data-home] .app-frame-panel { translate: 0 var(--home-drop); }
 @media (prefers-reduced-motion: reduce) { html .app-frame[data-home] .app-frame-panel { transition: none; } }
+
+/* Directory search row: no highlight ring. The caret shows focus, and the "Active" label shows filters are on. */
+html .directory-hero-search:focus-within { box-shadow: inset 0 1px 0 rgba(255,255,255,.18), inset 0 0 0 1px rgba(255,255,255,.08), 0 18px 44px rgba(0,0,0,.45); }
+html.light .directory-hero-search:focus-within { box-shadow: inset 0 0 0 1px rgba(0,0,0,.08), 0 14px 36px rgba(0,0,0,.1); }
+html .app-frame .directory-search-row .directory-filter-trigger[data-active] { box-shadow: inset 0 1px 0 rgba(255,255,255,.16), inset 0 0 0 1px rgba(255,255,255,.07), 0 18px 44px rgba(0,0,0,.4); }
+html.light .app-frame .directory-search-row .directory-filter-trigger[data-active] { box-shadow: inset 0 0 0 1px rgba(0,0,0,.08), 0 14px 36px rgba(0,0,0,.08); }
+html .directory-hero-search input:focus, html .directory-hero-search input:focus-visible { outline: none; box-shadow: none; }
+html .app-frame .directory-search-row .directory-filter-trigger:focus:not(:focus-visible) { outline: none; }
