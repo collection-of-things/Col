@@ -1,8 +1,9 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "col",
-	// TanStack Start's Worker entry; `vite build` bundles it into dist/server.
-	"main": "@tanstack/react-start/server-entry",
+	// The Worker entry: TanStack Start's handler behind the edge cache.
+	// `vite build` bundles it into dist/server.
+	"main": "./app/server.ts",
 	"compatibility_date": "2026-11-03",
 	// enable_request_signal aborts request.signal when a client disconnects,
 	// so /api/mcp cancels its upstream stream to the MCP service.
@@ -17,6 +18,11 @@
 	// Resizes local images and contributor avatars for /api/image.
 	"images": {
 		"binding": "IMAGES"
+	},
+	// The deployed version, which keys the edge cache so a deploy never serves
+	// pages that point at the previous build's assets.
+	"version_metadata": {
+		"binding": "CF_VERSION_METADATA"
 	},
 	"observability": {
 		"enabled": true
