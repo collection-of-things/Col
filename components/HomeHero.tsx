@@ -66,7 +66,7 @@ export function HeroBackdrop() {
         <Image key={tile.slug} src={`/hero-logos/background/${tile.slug}.png`} alt="" width={96} height={96} className={styles.distantTile} style={tileStyle(tile, index, tile.size * -2)} aria-hidden />
       ))}
       {orbitTiles.map(({ library, src, ...placement }, index) => (
-        <Link key={library.slug} href={`/libraries/${library.slug}`} target="_blank" rel="noopener noreferrer" aria-label={library.name} className={styles.tile} style={tileStyle(placement, index, placement.size * 2)}>
+        <Link key={library.slug} href={`/libraries/${library.slug}`} target="_blank" rel="noopener noreferrer" aria-label={library.name} className={styles.tile} data-hero-inert="" style={tileStyle(placement, index, placement.size * 2)}>
           <Image src={src} alt="" width={320} height={320} sizes="20vw" loading="eager" />
         </Link>
       ))}
@@ -93,7 +93,7 @@ export function HeroCopy() {
       </h1>
       <p>Discover UI libraries, components, and tools by stack and use case.</p>
       <HeroSearch />
-      <div className={styles.actions}>
+      <div className={styles.actions} data-hero-inert="">
         <Link href="/libraries" className={styles.button}>
           <RollText>Browse libraries</RollText>
           <span className={styles.arrowSwap} aria-hidden><ArrowRight /><ArrowRight /></span>
@@ -104,7 +104,7 @@ export function HeroCopy() {
         </a>
       </div>
       {sponsors.length > 0 && (
-        <p className={styles.sponsors}>
+        <p className={styles.sponsors} data-hero-inert="">
           <span>Sponsored by</span>
           {sponsors.map(({ name, url, tier, logo }) => (
             <a key={name} href={url} target="_blank" rel="noopener noreferrer">

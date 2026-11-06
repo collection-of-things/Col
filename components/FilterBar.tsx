@@ -33,6 +33,7 @@ interface FilterDropdownProps {
   className?: string;
 }
 
+/** A labelled select for one directory facet. */
 export function FilterDropdown({ label, value, items, onValueChange, className = "" }: FilterDropdownProps) {
   return (
     <DropdownMenu modal={false}>
@@ -285,6 +286,7 @@ interface FilterBarProps {
   onClearAll: () => void;
 }
 
+/** The directory search row (search field and Filters button) and the filter sheet it opens. */
 export function FilterBar({ showSaved, activeCategory, activeStacks, activeUseCases, query, onCategoryChange, onStackChange, onUseCaseChange, onClearAll, facetCounts }: FilterBarProps) {
   const hasFilters = showSaved || query.trim() !== "" || activeCategory !== null || activeStacks.length > 0 || activeUseCases.length > 0;
 
@@ -370,7 +372,7 @@ export function FilterSidebar({ label, hasFilters, renderPanel }: FilterSidebarP
         ref={filterTriggerRef}
         data-active={hasFilters || undefined}
         onClick={() => setOpenMobile(true)}
-        aria-label="Open filters"
+        aria-label={hasFilters ? "Open filters, filters active" : "Open filters"}
       >
         <SlidersHorizontal aria-hidden /><span className="directory-filter-label">Filters{hasFilters ? " · Active" : ""}</span>
       </Button>

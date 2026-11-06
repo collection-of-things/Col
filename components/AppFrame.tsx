@@ -9,6 +9,7 @@ type SidebarMode = "narrow" | "wide";
 /** Directories with a filter panel and an in-place search in the sidebar. */
 const DIRECTORY_PATHS = new Set(["/libraries", "/integrations"]);
 
+/** Directory routes get the wide content layout; every other route the narrow one. */
 function sidebarModeFor(pathname: string): SidebarMode {
   return DIRECTORY_PATHS.has(pathname) ? "wide" : "narrow";
 }
@@ -39,9 +40,11 @@ export function AppFrame({ children }: { children: ReactNode }) {
       if (!slash && !command) return;
       // Focus whichever search field is on screen, preferring a page's own
       // directory field over the global one.
-      const visible = [...document.querySelectorAll<HTMLInputElement>("[data-directory-search], [data-site-search]")]
+      const visible = [...document.querySelectorAll<HTMLInputElement>("[data-directory-search], [data-hero-search-input], [data-site-search]")]
         .filter((input) => input.offsetParent !== null);
-      const field = visible.find((input) => input.hasAttribute("data-directory-search")) ?? visible[0];
+      const field = visible.find((input) => input.hasAttribute("data-directory-search"))
+        ?? visible.find((input) => input.hasAttribute("data-hero-search-input"))
+        ?? visible[0];
       if (!field) return;
       event.preventDefault();
       field.focus();

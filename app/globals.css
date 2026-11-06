@@ -3026,10 +3026,11 @@ html[data-search-handoff]::view-transition-new(root) { animation: col-handoff-in
   html .app-frame .directory-search-row > :not(.directory-hero-search) { grid-column: 3; justify-self: start; }
 }
 
-/* Home: no top bar until the hero search lifts. It then drops in, and the brand is the way back to the hero. */
+/* Home: no top bar until the hero search lifts. It then drops in, and the brand is the way back to the hero.
+   Keyboard users tabbing into it get it back too (:focus-within), so its menu and theme control stay reachable. */
 .topbar[data-home] { position: absolute; inset: 0 0 auto; }
 .topbar[data-home] .topbar-glass { transition: translate .9s cubic-bezier(.16, 1, .3, 1) .18s, opacity .5s ease .18s; }
-html:not([data-hero-search]):not([data-search-handoff]) .topbar[data-home] .topbar-glass { translate: 0 calc(-100% - var(--topbar-gap, 12px) - 8px); opacity: 0; pointer-events: none; transition-delay: 0s; }
+html:not([data-hero-search]):not([data-search-handoff]) .topbar[data-home]:not(:focus-within) .topbar-glass { translate: 0 calc(-100% - var(--topbar-gap, 12px) - 8px); opacity: 0; pointer-events: none; transition-delay: 0s; }
 @media (prefers-reduced-motion: reduce) { .topbar[data-home] .topbar-glass { transition: none; } }
 
 /* Home: the card fills the whole screen. When the search opens it slides down by the bar's height
@@ -3049,3 +3050,4 @@ html .app-frame .directory-search-row .directory-filter-trigger[data-active] { b
 html.light .app-frame .directory-search-row .directory-filter-trigger[data-active] { box-shadow: inset 0 0 0 1px rgba(0,0,0,.08), 0 14px 36px rgba(0,0,0,.08); }
 html .directory-hero-search input:focus, html .directory-hero-search input:focus-visible { outline: none; box-shadow: none; }
 html .app-frame .directory-search-row .directory-filter-trigger:focus:not(:focus-visible) { outline: none; }
+html .app-frame[data-home]:has(.topbar:focus-within) .app-frame-panel { translate: 0 var(--home-drop); }

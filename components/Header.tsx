@@ -21,6 +21,7 @@ export const siteLinks: readonly (readonly [string, string, IconComponent])[] = 
   ["Sponsors", "/sponsors", Icons.sponsors],
 ];
 
+/** Whether a nav link's section contains the current route. */
 const isActive = (pathname: string, href: string) =>
   href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
 
@@ -82,7 +83,7 @@ export function Header() {
       {menuOpen && (
         <nav id="topbar-menu-panel" aria-label="Site menu" className="topbar-panel">
           {siteLinks.map(([label, href, Icon]) => (
-            <Link key={href} href={href} className="topbar-panel-link" aria-current={isActive(pathname, href) ? "page" : undefined}>
+            <Link key={href} href={href} className="topbar-panel-link" onClick={() => setMenuOpen(false)} aria-current={isActive(pathname, href) ? "page" : undefined}>
               <Icon className="nav-icon" />
               <span className="cap">{label}</span>
             </Link>

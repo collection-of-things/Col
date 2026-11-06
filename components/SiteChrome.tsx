@@ -43,6 +43,7 @@ export function useRepoStars() {
   return stars;
 }
 
+/** The Col mark and wordmark, linking home. */
 export function BrandLink({ className = "" }: { className?: string }) {
   return (
     <a href="/" aria-label="Col, Collection of Libraries" className={`site-brand ${className}`}>

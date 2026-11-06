@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { Suspense, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { Heart, SearchX } from "lucide-react";
 import { Icons } from "./MaskIcon";
 import {
@@ -21,6 +22,20 @@ const SAVED_LIBRARIES_KEY = "col:saved-libraries";
 
 const searchDirectory = createDirectorySearch(libraries, componentIndex);
 
+/**
+ * Follows ?q= into the shared directory query, so a link from /libraries?q=react to /libraries clears the
+ * filter. Text that differs only in trailing space (the hero handoff keeps what was typed; the URL is trimmed)
+ * is left alone. Its own Suspense boundary keeps the rest of the page statically rendered.
+ */
+function DirectoryQuerySync() {
+  const q = useSearchParams().get("q") ?? "";
+  useEffect(() => {
+    if (directoryQuery.get().trim() !== q.trim()) directoryQuery.set(q);
+  }, [q]);
+  return null;
+}
+
+/** The /libraries directory: search, filters, saved shortlist, and the results grid. */
 export function DirectoryExplorer({ initialQuery = "" }: { initialQuery?: string }) {
   // The search field lives in the sidebar (or the mobile top bar); both share this query.
   const query = useDirectoryQuery();
@@ -53,7 +68,8 @@ export function DirectoryExplorer({ initialQuery = "" }: { initialQuery?: string
   );
 
   useEffect(() => {
-    directoryQuery.set(initialQuery || new URLSearchParams(window.location.search).get("q") || "");
+    // ?q= is applied by DirectoryQuerySync, which also keeps the hero handoff's untrimmed text.
+    if (initialQuery) directoryQuery.set(initialQuery);
     if (window.location.hash === "#library-search") focusDirectorySearch();
     return () => directoryQuery.set("");
   }, [initialQuery]);
@@ -144,6 +160,7 @@ export function DirectoryExplorer({ initialQuery = "" }: { initialQuery?: string
 
   return (
     <section className="directory-section w-full px-0">
+      <Suspense fallback={null}><DirectoryQuerySync /></Suspense>
       <SidebarProvider className="directory-layout min-h-[calc(100dvh-var(--site-header-height))] flex-col lg:flex-row">
         <FilterBar
           showSaved={showSaved}

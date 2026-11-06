@@ -51,6 +51,10 @@ function loadSearcher(): Promise<Searcher> {
   ]).then(([{ createDirectorySearch }, { libraries }, { componentIndex }]) => {
     const search = createDirectorySearch(libraries, componentIndex);
     return (query: string) => search({ query, category: null, stacks: [], useCases: [], sort: "curated" });
+  }).catch((error: unknown) => {
+    // Forget the failed load so the next attempt fetches the chunks again.
+    searcherPromise = null;
+    throw error;
   });
   return searcherPromise;
 }
@@ -74,22 +78,36 @@ export function HeroSearch() {
   const [mounted, setMounted] = useState(false);
   const open = query.trim().length > 0;
   const router = useRouter();
+  const [loadFailed, setLoadFailed] = useState(false);
+  // The newest query, including keys buffered during the handoff. Synced from state only while no handoff is under way.
   const latestQuery = useRef(query);
-  latestQuery.current = query;
+  const handingOff = useRef(false);
+  useEffect(() => {
+    if (!handingOff.current) latestQuery.current = query;
+  }, [query]);
 
   useEffect(() => setMounted(true), []);
 
   useEffect(() => {
+    // Storage can be blocked outright, or hold malformed JSON; either way keep saved libraries in memory for this session.
+    let raw: string | null = null;
     try {
-      const stored: unknown = JSON.parse(localStorage.getItem(SAVED_LIBRARIES_KEY) ?? "[]");
+      raw = localStorage.getItem(SAVED_LIBRARIES_KEY);
+    } catch {
+      return;
+    }
+    try {
+      const stored: unknown = JSON.parse(raw ?? "[]");
       if (Array.isArray(stored)) setSaved(new Set(stored.filter((slug): slug is string => typeof slug === "string")));
     } catch {
-      localStorage.removeItem(SAVED_LIBRARIES_KEY);
+      // Malformed value: ignore it; the next save overwrites it.
     }
   }, []);
 
   const warm = () => {
-    if (!searcher) void loadSearcher().then((search) => setSearcher(() => search));
+    if (searcher) return void router.prefetch("/libraries");
+    setLoadFailed(false);
+    loadSearcher().then((search) => setSearcher(() => search), () => setLoadFailed(true));
     router.prefetch("/libraries");
   };
 
@@ -101,6 +119,7 @@ export function HeroSearch() {
       if (!query.trim()) return;
       const root = document.documentElement;
       const navigate = async () => {
+        handingOff.current = true;
         directoryQuery.set(query);
         router.push(`/libraries?q=${encodeURIComponent(query.trim())}`, { scroll: false });
         // Never hold the page frozen on a slow network: release the transition after HANDOFF_WAIT_MS, and finish the focus whenever the directory lands.
@@ -116,6 +135,7 @@ export function HeroSearch() {
         const ready = waitForDirectoryField();
         void ready.then((field) => {
           window.removeEventListener("keydown", buffer, true);
+          handingOff.current = false;
           if (!field) return;
           const typed = latestQuery.current;
           if (typed !== query) {
@@ -148,18 +168,29 @@ export function HeroSearch() {
       return;
     }
     const measure = () => {
+      // Read the field's resting position. Once it has lifted (a resize), turn its transition off for the read,
+      // or removing --lift starts a transition and the rect still reports the lifted spot.
+      const lifted = root.dataset.heroSearch === "open";
+      if (lifted) element.style.transition = "none";
       element.style.removeProperty("--lift");
       const stage = element.closest<HTMLElement>("[data-scene]") ?? document.body;
       const stageRect = stage.getBoundingClientRect();
       const rect = element.getBoundingClientRect();
       // The top bar is hidden on the hero and slides in with the lift; it keeps its layout box, so measure that.
       const bar = document.querySelector<HTMLElement>(".topbar")?.getBoundingClientRect();
-      const top = Math.max(bar?.bottom ?? stageRect.top, 0) + (window.innerWidth > 640 ? LIFT_GAP_WIDE : LIFT_GAP_NARROW);
+      // Same breakpoint as the directory search row's padding (760px in globals.css).
+      const top = Math.max(bar?.bottom ?? stageRect.top, 0) + (window.innerWidth > 760 ? LIFT_GAP_WIDE : LIFT_GAP_NARROW);
       // On the hero the card fills the screen; as the search opens it slides down to make room for the bar.
-      // That slide moves the field too, so take it off the lift (once it has played, the rect already includes it).
-      const panel = element.closest<HTMLElement>(".app-frame-panel");
-      const drop = panel && root.dataset.heroSearch !== "open" ? parseFloat(getComputedStyle(panel).getPropertyValue("--home-drop")) || 0 : 0;
+      // That slide moves the field too, so take off whatever of it is still to come: the card ends right under the
+      // top bar's box, and once it has slid the rect already includes it.
+      const panel = element.closest<HTMLElement>(".app-frame[data-home] .app-frame-panel");
+      const header = document.querySelector<HTMLElement>(".topbar");
+      const drop = panel && header ? Math.max(0, header.offsetHeight - panel.getBoundingClientRect().top) : 0;
       element.style.setProperty("--lift", `${Math.round(top - rect.top - drop)}px`);
+      if (lifted) {
+        void element.offsetHeight;
+        element.style.removeProperty("transition");
+      }
       setFrame({ left: stageRect.left, right: window.innerWidth - stageRect.right, top: top + rect.height + 28 });
     };
     if (root.dataset.heroSearch !== "open") measure();
@@ -169,6 +200,13 @@ export function HeroSearch() {
   }, [open]);
 
   useEffect(() => () => { delete document.documentElement.dataset.heroSearch; }, []);
+
+  // While results are up, the faded hero links and tiles behind them leave the tab order (pointer-events alone doesn't).
+  useEffect(() => {
+    const hidden = [...document.querySelectorAll<HTMLElement>("[data-hero-inert]")];
+    hidden.forEach((element) => { element.inert = open; });
+    return () => hidden.forEach((element) => { element.inert = false; });
+  }, [open]);
 
   useEffect(() => {
     if (!open) return;
@@ -208,6 +246,7 @@ export function HeroSearch() {
           onPointerEnter={warm}
           placeholder="Search 100+ libraries…"
           aria-label="Search libraries"
+          data-hero-search-input=""
           aria-controls="hero-search-results"
           autoComplete="off"
           spellCheck={false}
@@ -232,8 +271,13 @@ export function HeroSearch() {
           <header className={styles.searchSheetBar}>
             <h2>
               Libraries
-              <span aria-live="polite">{searcher ? `${results.length} ${results.length === 1 ? "result" : "results"} for “${query.trim()}”` : "Searching…"}</span>
+              <span aria-live="polite">
+                {searcher ? `${results.length} ${results.length === 1 ? "result" : "results"} for “${query.trim()}”` : loadFailed ? "Search didn’t load." : "Searching…"}
+              </span>
             </h2>
+            {loadFailed && !searcher && (
+              <button type="button" className={styles.searchSheetAll} onClick={warm}>Try again</button>
+            )}
             <Link href="/libraries" className={styles.searchSheetAll} tabIndex={open ? undefined : -1}>Open the directory</Link>
           </header>
           <div className={styles.searchSheetScroll}>
