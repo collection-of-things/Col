@@ -3017,3 +3017,17 @@ html[data-search-handoff]::view-transition-old(root) { animation: col-handoff-ou
 html[data-search-handoff]::view-transition-new(root) { animation: col-handoff-in .6s cubic-bezier(.16, 1, .3, 1) .1s both; }
 @keyframes col-handoff-out { to { opacity: 0; filter: blur(8px); } }
 @keyframes col-handoff-in { from { opacity: 0; filter: blur(6px); transform: translateY(24px); } }
+
+/* Keep the directory search centred like the hero's, so the handoff glides straight up instead of jumping left. Filters sit just right of it. */
+@media (min-width: 641px) {
+  html .app-frame .directory-search-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 620px) minmax(0, 1fr); }
+  html .app-frame .directory-search-row > .directory-hero-search { grid-column: 2; max-width: none; height: 60px; border-radius: 18px; }
+  html .app-frame .directory-search-row .directory-filter-trigger { height: 60px; min-height: 60px; }
+  html .app-frame .directory-search-row > :not(.directory-hero-search) { grid-column: 3; justify-self: start; }
+}
+
+/* Home: no top bar until the hero search lifts. It then drops in, and the brand is the way back to the hero. */
+.topbar[data-home] { position: absolute; inset: 0 0 auto; }
+.topbar[data-home] .topbar-glass { transition: translate .9s cubic-bezier(.16, 1, .3, 1) .18s, opacity .5s ease .18s; }
+html:not([data-hero-search]):not([data-search-handoff]) .topbar[data-home] .topbar-glass { translate: 0 calc(-100% - var(--topbar-gap, 12px) - 8px); opacity: 0; pointer-events: none; transition-delay: 0s; }
+@media (prefers-reduced-motion: reduce) { .topbar[data-home] .topbar-glass { transition: none; } }

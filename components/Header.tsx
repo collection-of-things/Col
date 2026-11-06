@@ -46,7 +46,7 @@ export function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="topbar" data-menu={menuOpen || undefined}>
+    <header className="topbar" data-menu={menuOpen || undefined} data-home={pathname === "/" || undefined}>
       <div className="topbar-glass">
         <div className="topbar-brand">
           <BrandLink />

@@ -11,8 +11,9 @@ import { LibraryCard } from "./LibraryCard";
 import styles from "./HomePage.module.css";
 
 const SAVED_LIBRARIES_KEY = "col:saved-libraries";
-/** Gap (px) between the top of the hero stage and the lifted search bar. */
-const LIFT_TOP = 56;
+/** Gap (px) between the top bar and the lifted search bar: the same gap the directory search row uses, so the handoff only has to fade. */
+const LIFT_GAP_WIDE = 28;
+const LIFT_GAP_NARROW = 16;
 const MAX_RESULTS = 24;
 /** How long the lift and the rising sheet play before the page hands off to the directory. */
 const HANDOFF_MS = 900;
@@ -151,7 +152,9 @@ export function HeroSearch() {
       const stage = element.closest<HTMLElement>("[data-scene]") ?? document.body;
       const stageRect = stage.getBoundingClientRect();
       const rect = element.getBoundingClientRect();
-      const top = Math.max(stageRect.top, 0) + LIFT_TOP;
+      // The top bar is hidden on the hero and slides in with the lift; it keeps its layout box, so measure that.
+      const bar = document.querySelector<HTMLElement>(".topbar")?.getBoundingClientRect();
+      const top = Math.max(bar?.bottom ?? stageRect.top, 0) + (window.innerWidth > 640 ? LIFT_GAP_WIDE : LIFT_GAP_NARROW);
       element.style.setProperty("--lift", `${Math.round(top - rect.top)}px`);
       setFrame({ left: stageRect.left, right: window.innerWidth - stageRect.right, top: top + rect.height + 28 });
     };
