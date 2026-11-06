@@ -1,17 +1,32 @@
 import { createHash } from "node:crypto";
 import { existsSync, lstatSync, mkdirSync, readFileSync, realpathSync, writeFileSync } from "node:fs";
-import { basename, dirname, isAbsolute, relative, resolve } from "node:path";
+import { basename, delimiter, dirname, isAbsolute, relative, resolve } from "node:path";
 import { gunzipSync } from "node:zlib";
 
-// Only npm supplies its CLI in npm_execpath; pnpm sets its own executable there.
-// Also support the standard Windows, global Unix, and distribution layouts.
-export function resolveNpmCli({ execPath = process.execPath, npmExecPath = process.env.npm_execpath } = {}) {
-  const executableDirectory = dirname(execPath);
-  const candidates = [npmExecPath,
-    resolve(executableDirectory, "node_modules/npm/bin/npm-cli.js"),
-    resolve(executableDirectory, "../lib/node_modules/npm/bin/npm-cli.js"),
-    resolve(executableDirectory, "../share/nodejs/npm/bin/npm-cli.js")];
-  const entry = candidates.find(path => path && basename(path) === "npm-cli.js" && existsSync(path));
+// npm supplies its actual entry point in npm_execpath; Bun and pnpm set their
+// own executables there, so a candidate only counts when it is npm's CLI
+// module, which bundles the tar dependency. Direct Node and Bun invocations
+// fall back to the standard Windows, global Unix, and distribution layouts
+// beside the running executable or any `node` on PATH.
+const isNpmCli = path => Boolean(path) && basename(path) === "npm-cli.js" && existsSync(path);
+
+function executableDirectories(execPath, pathEnv) {
+  const directories = [dirname(execPath)];
+  const node = process.platform === "win32" ? "node.exe" : "node";
+  for (const entry of (pathEnv ?? "").split(delimiter)) {
+    if (!entry) continue;
+    const directory = resolve(entry);
+    if (existsSync(resolve(directory, node))) directories.push(directory);
+  }
+  return directories;
+}
+
+export function resolveNpmCli({ execPath = process.execPath, npmExecPath = process.env.npm_execpath, pathEnv = process.env.PATH } = {}) {
+  const candidates = [npmExecPath, ...executableDirectories(execPath, pathEnv).flatMap(directory => [
+    resolve(directory, "node_modules/npm/bin/npm-cli.js"),
+    resolve(directory, "../lib/node_modules/npm/bin/npm-cli.js"),
+    resolve(directory, "../share/nodejs/npm/bin/npm-cli.js")])];
+  const entry = candidates.find(isNpmCli);
   if (!entry) throw new Error("Cannot locate npm's CLI; run this command through npm");
   return realpathSync(entry);
 }

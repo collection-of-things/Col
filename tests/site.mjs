@@ -1,10 +1,10 @@
 // HTTP access to the built site that tests/site-server.mjs serves.
 import assert from "node:assert/strict";
 
-/** Base URL of the local Worker; set by the global setup that `npm test` runs. */
+/** Base URL of the local Worker; set by the global setup that `bun run test` runs. */
 export function siteUrl() {
   const url = process.env.COL_SITE_URL;
-  if (!url) throw new Error("Run page tests with --test-global-setup=tests/site-server.mjs (npm test does)");
+  if (!url) throw new Error("Run page tests with --test-global-setup=tests/site-server.mjs (bun run test does)");
   return url;
 }
 

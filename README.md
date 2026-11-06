@@ -74,23 +74,24 @@ Previews need a client that supports MCP Apps. See [component previews](docs/mcp
 
 ## Run it locally
 
-Requires Node.js 24.22.1+ (below 25) and npm.
+Requires Node.js 24.22.1+ (below 25) and [Bun](https://bun.sh). The site builds
+with Bun and runs on Node.
 
 ```sh
 git clone https://git.cafe/collection-of-devs/col Col
 cd Col
-npm install
-npm run dev
+bun install
+bun run dev
 ```
 
 Before opening a pull request:
 
 ```sh
-npm run typecheck
-npm test
+bun run typecheck
+bun run test
 ```
 
-`npm run dev` serves the site at `http://localhost:3000` in Cloudflare's Workers runtime. `npm run build` writes the Worker to `dist/server` and the prerendered pages and static files to `dist/client`; `npm run preview` serves that build locally.
+`bun run dev` serves the site at `http://localhost:3000` in Cloudflare's Workers runtime. `bun run build` writes the Worker to `dist/server` and the prerendered pages and static files to `dist/client`; `bun run preview` serves that build locally.
 
 The site reads two runtime variables. Locally, put them in a `.dev.vars` file at the repository root (it is git-ignored):
 
@@ -101,7 +102,7 @@ COL_MCP_ALLOWED_ORIGINS=http://localhost:3000
 
 `COL_MCP_ALLOWED_ORIGINS` is a comma-separated list of additional exact `Origin` headers to accept. This setting validates origins; it does not provide CORS preflight handling or response headers for cross-origin browser clients.
 
-The MCP tools and component previews run as a standalone service in [`mcp-app/`](mcp-app) rather than inside the site's Worker: their verified preview payload is too large for a Cloudflare Worker. The site's `/api/mcp` route proxies to it. To exercise MCP locally, run `npm install` at the repository root, then `npm start` inside `mcp-app/` (it listens on port 8787). The service imports `lib/`, which resolves packages from the repository root, so installing inside `mcp-app/` alone is not enough. Then set `COL_MCP_ORIGIN=http://localhost:8787` for the site, or point your MCP client at `http://localhost:8787/api/mcp` directly.
+The MCP tools and component previews run as a standalone service in [`mcp-app/`](mcp-app) rather than inside the site's Worker: their verified preview payload is too large for a Cloudflare Worker. The site's `/api/mcp` route proxies to it. To exercise MCP locally, run `bun install` at the repository root, then `bun run start` inside `mcp-app/` (it listens on port 8787). The service imports `lib/`, which resolves packages from the repository root, so installing inside `mcp-app/` alone is not enough. Then set `COL_MCP_ORIGIN=http://localhost:8787` for the site, or point your MCP client at `http://localhost:8787/api/mcp` directly.
 
 To host the service yourself, deploy `mcp-app/` anywhere Node 24 runs — [`mcp-app/Dockerfile`](mcp-app/Dockerfile) builds a self-contained image (Railway: set the Dockerfile path to `mcp-app/Dockerfile` with the repository root as the build context, and the healthcheck path to `/health`). Set `COL_MCP_ORIGIN` on the site to the service URL and configure `COL_MCP_ALLOWED_ORIGINS` as needed for requests with additional origins.
 
@@ -109,9 +110,9 @@ To host the service yourself, deploy `mcp-app/` anywhere Node 24 runs — [`mcp-
 
 The site deploys to Cloudflare Workers as the `col` Worker ([`wrangler.jsonc`](wrangler.jsonc)). It uses the Workers static assets and Images bindings, which need no setup.
 
-1. Run `npx wrangler login` once.
+1. Run `bunx wrangler login` once.
 2. Set `COL_MCP_ORIGIN` (the MCP service URL) and, if needed, `COL_MCP_ALLOWED_ORIGINS` under the Worker's **Settings → Variables and Secrets** in the Cloudflare dashboard. `keep_vars` stops deploys from removing them.
-3. Run `npm run deploy` (build, then `wrangler deploy`). `npm run deploy:dry-run` builds and reports the upload size without deploying.
+3. Run `bun run deploy` (build, then `wrangler deploy`). `bun run deploy:dry-run` builds and reports the upload size without deploying.
 
 ## Contribute
 

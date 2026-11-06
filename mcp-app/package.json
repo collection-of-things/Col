@@ -4,6 +4,7 @@
   "private": true,
   "description": "Col's MCP server: the catalogue tools and component previews, hosted outside the site's Cloudflare Worker because its verified preview payload exceeds Cloudflare Workers limits.",
   "type": "module",
+  "packageManager": "bun@1.4.4",
   "scripts": {
     "start": "node server.ts"
   },

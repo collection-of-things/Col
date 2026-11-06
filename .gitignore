@@ -1,5 +1,6 @@
 # dependencies
 /node_modules
+/mcp-app/node_modules/
 /data/solid-libraries/*/node_modules/
 
 # build output (vite build: dist/client assets, dist/server Worker)

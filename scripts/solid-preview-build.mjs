@@ -23,7 +23,11 @@ export async function buildSolidPreview({ entry, resolveDir, sourceRoot = dirnam
   resolveDir = resolve(resolveDir);
   sourceRoot = resolve(sourceRoot);
   const require = createRequire(resolve(resolveDir, "package.json"));
-  const lock = JSON.parse(await readFile(resolve(resolveDir, "package-lock.json"), "utf8"));
+  // Library build directories carry their own npm lock; read it only once a
+  // bundled dependency needs authenticating, so stray inputs are rejected first.
+  let lockText;
+  const readLockText = async () => lockText ??= await readFile(resolve(resolveDir, "package-lock.json"), "utf8");
+  const lockedPackages = async () => JSON.parse(await readLockText()).packages;
   const babel = compiler === "babel" ? require("@babel/core") : undefined;
   const preset = babel ? require.resolve("babel-preset-solid") : undefined;
   const typescript = babel ? require.resolve("@babel/preset-typescript") : undefined;
@@ -90,6 +94,7 @@ export async function buildSolidPreview({ entry, resolveDir, sourceRoot = dirnam
     const path = relative(sourceRoot, absolute).replaceAll("\\", "/");
     return path !== ".." && !path.startsWith("../") && !isAbsolute(path) && !path.split("/").includes("node_modules");
   };
+  let locked;
   for (const input of Object.keys(result.metafile.inputs)) {
     const absolute = resolve(resolveDir, input);
     const path = relative(resolveDir, absolute).replaceAll("\\", "/");
@@ -97,10 +102,11 @@ export async function buildSolidPreview({ entry, resolveDir, sourceRoot = dirnam
     inputs.push({ path: relative(sourceRoot, absolute).replaceAll("\\", "/"), sha256: hash(bytes) });
     if (isSnapshot(absolute)) continue;
     if (!path.startsWith("node_modules/")) throw new Error(`Solid preview input is outside its source and locked dependencies: ${path}`);
+    locked ??= await lockedPackages();
     let owner = dirname(path).replaceAll("\\", "/");
-    while (!lock.packages[owner] && owner !== ".") owner = dirname(owner).replaceAll("\\", "/");
-    if (!lock.packages[owner]) throw new Error(`No locked package owns ${path}`);
-    packages.set(owner, lock.packages[owner]);
+    while (!locked[owner] && owner !== ".") owner = dirname(owner).replaceAll("\\", "/");
+    if (!locked[owner]) throw new Error(`No locked package owns ${path}`);
+    packages.set(owner, locked[owner]);
   }
 
   const cache = resolve(resolveDir, "node_modules/.cache/col-archives");
@@ -152,6 +158,6 @@ export async function buildSolidPreview({ entry, resolveDir, sourceRoot = dirnam
   return {
     code, css: [css, ...result.outputFiles.filter(file => file.path.endsWith(".css")).map(file => file.text)].filter(Boolean).join("\n"),
     integrity: hash(code), inputs, notices,
-    packages: Object.fromEntries(packages), lockIntegrity: hash(await readFile(resolve(resolveDir, "package-lock.json"))),
+    packages: Object.fromEntries(packages), lockIntegrity: hash(await readLockText()),
   };
 }

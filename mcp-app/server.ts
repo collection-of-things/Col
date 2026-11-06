@@ -4,7 +4,7 @@ import { pipeline } from "node:stream/promises";
 import handler from "./handler.ts";
 
 /**
- * Plain Node adapter for the MCP fetch handler. Start it with `npm start`
+ * Plain Node adapter for the MCP fetch handler. Start it with `bun start`
  * inside mcp-app or `node mcp-app/server.ts` from the root; data and preview
  * media resolve from the module paths, not the working directory. Its runtime
  * packages must be installed in a directory above `lib/` (the repository root

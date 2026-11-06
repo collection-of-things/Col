@@ -7,14 +7,15 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { dirname, resolve, relative } from "node:path";
 import { authenticateRuntimeFile, restoreArchive, resolveNpmCli } from "./preview-package-archive.mjs";
+import { readLockedPackages } from "./lockfile-packages.mjs";
 import { QUOIN_VERSION, SOLID_VERSION } from "../data/quoin/catalog.ts";
 
 const root = resolve(import.meta.dirname, "..");
 const hash = bytes => createHash("sha256").update(bytes).digest("hex");
 const examples = JSON.parse(await readFile(resolve(root, "data/quoin/examples.json"), "utf8"));
-const lock = JSON.parse(await readFile(resolve(root, "package-lock.json"), "utf8"));
+const locked = await readLockedPackages(resolve(root, "bun.lock"));
 for (const [name, version] of Object.entries({ "quoin-ui": QUOIN_VERSION, "solid-js": SOLID_VERSION, "@solidjs/web": SOLID_VERSION, "@solidjs/signals": SOLID_VERSION, "@solidjs/compiler": SOLID_VERSION })) {
-  if (lock.packages[`node_modules/${name}`]?.version !== version) throw new Error(`Expected ${name}@${version}`);
+  if (locked[`node_modules/${name}`]?.version !== version) throw new Error(`Expected ${name}@${version}`);
 }
 const entries = {};
 const inputs = new Set();
@@ -42,9 +43,9 @@ for (const [name, example] of Object.entries(examples)) {
 const packages = new Map();
 for (const input of inputs) {
   let path = dirname(input).replaceAll("\\", "/");
-  while (!lock.packages[path] && path !== ".") path = dirname(path).replaceAll("\\", "/");
-  if (!lock.packages[path]) throw new Error(`No locked package owns ${input}`);
-  packages.set(path, lock.packages[path]);
+  while (!locked[path] && path !== ".") path = dirname(path).replaceAll("\\", "/");
+  if (!locked[path]) throw new Error(`No locked package owns ${input}`);
+  packages.set(path, locked[path]);
 }
 const cache = resolve(root, "node_modules/.cache/col-quoin-archives");
 await mkdir(cache, { recursive: true });
