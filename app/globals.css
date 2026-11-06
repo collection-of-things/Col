@@ -3031,3 +3031,13 @@ html[data-search-handoff]::view-transition-new(root) { animation: col-handoff-in
 .topbar[data-home] .topbar-glass { transition: translate .9s cubic-bezier(.16, 1, .3, 1) .18s, opacity .5s ease .18s; }
 html:not([data-hero-search]):not([data-search-handoff]) .topbar[data-home] .topbar-glass { translate: 0 calc(-100% - var(--topbar-gap, 12px) - 8px); opacity: 0; pointer-events: none; transition-delay: 0s; }
 @media (prefers-reduced-motion: reduce) { .topbar[data-home] .topbar-glass { transition: none; } }
+
+/* Home: the card fills the whole screen. When the search opens it slides down by the bar's height
+   (the bar drops into the space it leaves), so the hero turns into the site's frame before it hands off. */
+html .app-frame.library-page-shell[data-home] { grid-template-rows: var(--topbar-gap) minmax(0, 1fr); }
+html .app-frame[data-home] .app-frame-panel {
+  --home-drop: calc(var(--topbar-h) + var(--topbar-gap));
+  transition: translate .9s cubic-bezier(.16, 1, .3, 1), border-radius .9s cubic-bezier(.16, 1, .3, 1);
+}
+html:is([data-hero-search], [data-search-handoff]) .app-frame[data-home] .app-frame-panel { translate: 0 var(--home-drop); }
+@media (prefers-reduced-motion: reduce) { html .app-frame[data-home] .app-frame-panel { transition: none; } }

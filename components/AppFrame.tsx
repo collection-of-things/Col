@@ -51,7 +51,7 @@ export function AppFrame({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <div className="app-frame library-page-shell" data-directory={mode === "wide" || undefined}>
+    <div className="app-frame library-page-shell" data-directory={mode === "wide" || undefined} data-home={pathname === "/" || undefined}>
       <Header />
       <main ref={panelRef} className="app-frame-panel">
         {children}

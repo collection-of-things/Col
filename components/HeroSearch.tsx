@@ -155,7 +155,11 @@ export function HeroSearch() {
       // The top bar is hidden on the hero and slides in with the lift; it keeps its layout box, so measure that.
       const bar = document.querySelector<HTMLElement>(".topbar")?.getBoundingClientRect();
       const top = Math.max(bar?.bottom ?? stageRect.top, 0) + (window.innerWidth > 640 ? LIFT_GAP_WIDE : LIFT_GAP_NARROW);
-      element.style.setProperty("--lift", `${Math.round(top - rect.top)}px`);
+      // On the hero the card fills the screen; as the search opens it slides down to make room for the bar.
+      // That slide moves the field too, so take it off the lift (once it has played, the rect already includes it).
+      const panel = element.closest<HTMLElement>(".app-frame-panel");
+      const drop = panel && root.dataset.heroSearch !== "open" ? parseFloat(getComputedStyle(panel).getPropertyValue("--home-drop")) || 0 : 0;
+      element.style.setProperty("--lift", `${Math.round(top - rect.top - drop)}px`);
       setFrame({ left: stageRect.left, right: window.innerWidth - stageRect.right, top: top + rect.height + 28 });
     };
     if (root.dataset.heroSearch !== "open") measure();
