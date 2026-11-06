@@ -1,7 +1,7 @@
-import Link from "next/link";
+import { Link } from "@/components/Link";
 import { ArrowRight, ArrowUpRight, Heart, Search } from "lucide-react";
 import { CATEGORIES, STACKS, libraries, libraryBySlug } from "@/data/libraries";
-import { libraryDetails } from "@/data/library-details";
+import reactBits from "@/data/library-details/react-bits";
 import { hostname } from "@/lib/utils";
 import { LibraryLogo } from "./LibraryLogo";
 import styles from "./HomePage.module.css";
@@ -17,7 +17,7 @@ const stats = [
 ] as const;
 
 /** The React Bits install guide, so the featured example points at real official docs. */
-const installGuidesDocs = libraryDetails["react-bits"].docsUrl;
+const installGuidesDocs = reactBits.docsUrl;
 
 const newTab = { target: "_blank", rel: "noopener noreferrer" } as const;
 
@@ -46,27 +46,29 @@ export function WhatsInsideSection() {
       </div>
       <div className={styles.bento}>
         <article className={`${styles.cell} ${styles.cellWide}`}>
-          <h3><Link href="/libraries" className={styles.cellTitle}>Libraries and components <ArrowRight aria-hidden /></Link></h3>
+          <h3><Link to="/libraries" className={styles.cellTitle}>Libraries and components <ArrowRight aria-hidden /></Link></h3>
           <p>Filter libraries by category, stack, or use case. Search components and select a match to view its official demo and docs.</p>
           <div className={styles.cellFoot}>
-            <Link href="/libraries" className={styles.searchField}>
+            <Link to="/libraries" className={styles.searchField}>
               <Search aria-hidden />
               <span>Search libraries</span>
             </Link>
-            <Link href="/components" className={styles.searchField}>
+            <Link to="/components" className={styles.searchField}>
               <Search aria-hidden />
               <span>Search components and view demos</span>
             </Link>
             <nav className={styles.chips} aria-label="Popular library searches">
               {popularSearches.map((query) => (
-                <Link key={query} href={query === "Components" ? "/components" : `/libraries?q=${encodeURIComponent(query)}`}>{query}</Link>
+                query === "Components"
+                  ? <Link key={query} to="/components">{query}</Link>
+                  : <Link key={query} to="/libraries" search={{ q: query }}>{query}</Link>
               ))}
             </nav>
           </div>
         </article>
 
         <article className={styles.cell}>
-          <h3><Link href="/libraries" className={styles.cellTitle}>The directory <ArrowRight aria-hidden /></Link></h3>
+          <h3><Link to="/libraries" className={styles.cellTitle}>The directory <ArrowRight aria-hidden /></Link></h3>
           <dl className={styles.stats}>
             {stats.map(({ value, label }) => (
               <div key={label}>
@@ -78,12 +80,12 @@ export function WhatsInsideSection() {
         </article>
 
         <article className={styles.cell}>
-          <h3><Link href="/libraries/shadcn-ui" {...newTab} className={styles.cellTitle}>Official sources <ArrowUpRight aria-hidden /></Link></h3>
+          <h3><Link to="/libraries/$slug" params={{ slug: "shadcn-ui" }} {...newTab} className={styles.cellTitle}>Official sources <ArrowUpRight aria-hidden /></Link></h3>
           <p>Go straight to each library&apos;s website, documentation, and repository.</p>
           <ul className={`${styles.cellFoot} ${styles.featured}`}>
             {featuredLibraries.map((library) => (
               <li key={library.slug}>
-                <Link href={`/libraries/${library.slug}`} {...newTab} className={styles.libraryLink}>
+                <Link to="/libraries/$slug" params={{ slug: library.slug }} {...newTab} className={styles.libraryLink}>
                   <LibraryLogo url={library.url} name={library.name} size={28} />
                   <span><strong>{library.name}</strong><span>{library.category}</span></span>
                   <ArrowUpRight aria-hidden />
@@ -94,13 +96,13 @@ export function WhatsInsideSection() {
         </article>
 
         <article className={styles.cell}>
-          <h3><Link href="/libraries/react-bits" {...newTab} className={styles.cellTitle}>Official install guides <ArrowUpRight aria-hidden /></Link></h3>
+          <h3><Link to="/libraries/$slug" params={{ slug: "react-bits" }} {...newTab} className={styles.cellTitle}>Official install guides <ArrowUpRight aria-hidden /></Link></h3>
           <p>Col keeps no install commands of its own. Every listing points at the library&apos;s current setup docs.</p>
           <a href={installGuidesDocs} {...newTab} className={`${styles.cellFoot} ${styles.command}`}>{hostname(installGuidesDocs)}</a>
         </article>
 
         <article className={styles.cell}>
-          <h3><Link href="/libraries" className={styles.cellTitle}>Save for later <ArrowRight aria-hidden /></Link></h3>
+          <h3><Link to="/libraries" className={styles.cellTitle}>Save for later <ArrowRight aria-hidden /></Link></h3>
           <p>Keep useful libraries saved in your browser while you compare options.</p>
           <span className={`${styles.cellFoot} ${styles.cellIcon}`} aria-hidden><Heart /></span>
         </article>
@@ -108,10 +110,10 @@ export function WhatsInsideSection() {
         <article className={`${styles.cell} ${styles.cellFull}`}>
           <div className={styles.mcpCopy}>
             <h3>
-              <Link href="/mcp" className={styles.cellTitle}>Col MCP <ArrowRight aria-hidden /></Link>
+              <Link to="/mcp" className={styles.cellTitle}>Col MCP <ArrowRight aria-hidden /></Link>
             </h3>
             <p>Search libraries and verified components with your coding agent, with previews where available.</p>
-            <Link href="/integrations" className={styles.cellTitle}>MCP servers and connectors <ArrowRight aria-hidden /></Link>
+            <Link to="/integrations" className={styles.cellTitle}>MCP servers and connectors <ArrowRight aria-hidden /></Link>
           </div>
           <ol className={styles.flow}>
             {mcpSteps.map(({ title, text }, index) => (

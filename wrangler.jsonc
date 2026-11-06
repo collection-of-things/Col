@@ -1,27 +1,21 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"main": ".open-next/worker.js",
 	"name": "col",
+	// TanStack Start's Worker entry; `vite build` bundles it into dist/server.
+	"main": "@tanstack/react-start/server-entry",
 	"compatibility_date": "2026-11-03",
-	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+	// enable_request_signal aborts request.signal when a client disconnects,
+	// so /api/mcp cancels its upstream stream to the MCP service.
+	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public", "enable_request_signal"],
 	// COL_MCP_ORIGIN and COL_MCP_ALLOWED_ORIGINS are set in the dashboard;
 	// without this, every deploy deletes them and /api/mcp returns 503.
 	"keep_vars": true,
+	// Prerendered pages and the client build. The Vite plugin sets the directory.
 	"assets": {
-		"directory": ".open-next/assets",
 		"binding": "ASSETS"
 	},
-	"services": [
-		{
-			// Self-reference service binding, the service name must match the worker name
-			// see https://opennext.js.org/cloudflare/caching
-			"binding": "WORKER_SELF_REFERENCE",
-			"service": "col"
-		}
-	],
+	// Resizes local images and contributor avatars for /api/image.
 	"images": {
-		// Enable image optimization
-		// see https://opennext.js.org/cloudflare/howtos/image
 		"binding": "IMAGES"
 	},
 	"observability": {

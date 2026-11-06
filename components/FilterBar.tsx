@@ -1,5 +1,3 @@
-"use client";
-
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type FocusEvent, type MouseEvent, type ReactNode } from "react";
 import { Check, ChevronDown, RotateCcw, SlidersHorizontal } from "lucide-react";
 import { categoryIcons, Icons, type IconComponent } from "./MaskIcon";

@@ -56,7 +56,7 @@ function keySegments(key) {
  * the URL follows npm's tarball layout and the path follows Bun's nesting. */
 export async function readLockedPackages(lockPath) {
   const lock = parseLockfile(await readFile(lockPath, "utf8"));
-  if (lock.lockfileVersion !== 2) throw new Error(`Unsupported Bun lockfile version: ${lock.lockfileVersion}`);
+  if (![2, 3].includes(lock.lockfileVersion)) throw new Error(`Unsupported Bun lockfile version: ${lock.lockfileVersion}`);
   const packages = {};
   for (const [key, entry] of Object.entries(lock.packages)) {
     if (!Array.isArray(entry)) continue;

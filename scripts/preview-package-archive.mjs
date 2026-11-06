@@ -3,16 +3,17 @@ import { existsSync, lstatSync, mkdirSync, readFileSync, realpathSync, writeFile
 import { basename, delimiter, dirname, isAbsolute, relative, resolve } from "node:path";
 import { gunzipSync } from "node:zlib";
 
-// npm supplies its actual entry point under npm test; direct Node and Bun
-// invocations also support the standard Windows, global Unix, and distribution
-// layouts. Bun exports its own executable as npm_execpath, so a candidate only
-// counts when it is npm's CLI module, which is what bundles the tar dependency.
+// npm supplies its actual entry point in npm_execpath; Bun and pnpm set their
+// own executables there, so a candidate only counts when it is npm's CLI
+// module, which bundles the tar dependency. Direct Node and Bun invocations
+// fall back to the standard Windows, global Unix, and distribution layouts
+// beside the running executable or any `node` on PATH.
 const isNpmCli = path => Boolean(path) && basename(path) === "npm-cli.js" && existsSync(path);
 
-function executableDirectories() {
-  const directories = [dirname(process.execPath)];
+function executableDirectories(execPath, pathEnv) {
+  const directories = [dirname(execPath)];
   const node = process.platform === "win32" ? "node.exe" : "node";
-  for (const entry of (process.env.PATH ?? "").split(delimiter)) {
+  for (const entry of (pathEnv ?? "").split(delimiter)) {
     if (!entry) continue;
     const directory = resolve(entry);
     if (existsSync(resolve(directory, node))) directories.push(directory);
@@ -20,8 +21,8 @@ function executableDirectories() {
   return directories;
 }
 
-export function resolveNpmCli() {
-  const candidates = [process.env.npm_execpath, ...executableDirectories().flatMap(directory => [
+export function resolveNpmCli({ execPath = process.execPath, npmExecPath = process.env.npm_execpath, pathEnv = process.env.PATH } = {}) {
+  const candidates = [npmExecPath, ...executableDirectories(execPath, pathEnv).flatMap(directory => [
     resolve(directory, "node_modules/npm/bin/npm-cli.js"),
     resolve(directory, "../lib/node_modules/npm/bin/npm-cli.js"),
     resolve(directory, "../share/nodejs/npm/bin/npm-cli.js")])];

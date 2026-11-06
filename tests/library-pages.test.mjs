@@ -1,15 +1,11 @@
 import assert from "node:assert/strict";
-import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { test } from "node:test";
 import ts from "typescript";
 import { libraryOutbound } from "../lib/library-outbound.ts";
+import { page, request } from "./site.mjs";
 
 import { libraries } from "../data/libraries.ts";
-
-const readBuilt = (relativePath) => {
-  const file = new URL(`../.next/server/app/${relativePath}`, import.meta.url);
-  return existsSync(file) && statSync(file).isFile() ? readFileSync(file, "utf8") : null;
-};
 
 const loadDetails = async (slug) => {
   const file = new URL(`../data/library-details/${slug}.ts`, import.meta.url);
@@ -59,9 +55,7 @@ test("registry slugs are unique", () => {
 
 test("every library has a built detail page with name, website link, docs link, and agent prompt", async () => {
   for (const library of libraries) {
-    const builtPage = readBuilt(`libraries/${library.slug}.html`);
-    assert.ok(builtPage, `No built detail page for ${library.slug}`);
-    const html = decodeHtml(builtPage);
+    const html = decodeHtml(await page(`/libraries/${library.slug}`));
     const details = await loadDetails(library.slug);
     assert.ok(details, `Missing data/library-details/${library.slug}.ts`);
 
@@ -82,7 +76,7 @@ test("every library has a built detail page with name, website link, docs link, 
 test("library pages point at the official docs and publish no install commands", async () => {
   for (const library of libraries) {
     const details = await loadDetails(library.slug);
-    const html = decodeHtml(readBuilt(`libraries/${library.slug}.html`));
+    const html = decodeHtml(await page(`/libraries/${library.slug}`));
     const main = html.split('<div class="ld-main">')[1].split('</header>')[0];
     assert.ok(main.includes('data-library-outbound="website"'), `${library.slug}: missing primary website action`);
     assert.ok(main.includes('data-library-outbound="docs"'), `${library.slug}: missing primary docs action`);
@@ -116,10 +110,10 @@ test("outbound-only libraries provide no public setup pointers", async () => {
 });
 
 // The discovery suite already asserts sitemap coverage for every slug.
-test("related libraries link to other real library pages", () => {
+test("related libraries link to other real library pages", async () => {
   const slugs = new Set(libraries.map(({ slug }) => slug));
   for (const library of libraries) {
-    const html = readBuilt(`libraries/${library.slug}.html`) ?? "";
+    const html = await page(`/libraries/${library.slug}`);
     const section = html.match(/<section[^>]*aria-labelledby="ld-related"[\s\S]*?<\/section>/)?.[0];
     if (!section) continue;
     const linked = [...section.matchAll(/href="\/libraries\/([^"]+)"/g)].map(([, slug]) => slug);
@@ -130,11 +124,10 @@ test("related libraries link to other real library pages", () => {
   }
 });
 
-test("unknown library slugs return 404", () => {
-  const manifest = JSON.parse(readFileSync(new URL("../.next/prerender-manifest.json", import.meta.url), "utf8"));
-  // Next serves only generated paths when the dynamic route has no fallback.
-  assert.equal(manifest.dynamicRoutes["/libraries/[slug]"]?.fallback, false);
-  assert.equal(manifest.routes["/libraries/definitely-not-a-library"], undefined);
+test("unknown library slugs return 404", async () => {
+  const response = await request("/libraries/definitely-not-a-library");
+  assert.equal(response.status, 404);
+  assert.ok((await response.text()).includes("Page not found"));
 });
 
 // A slug missing from data/library-details/index.ts would 404 at the detail

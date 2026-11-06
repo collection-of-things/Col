@@ -1,7 +1,5 @@
-"use client";
-
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname } from "@/hooks/use-pathname";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BrandLink, RepoStars, SiteSearch, useRepoStars } from "./SiteChrome";

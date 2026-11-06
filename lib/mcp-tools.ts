@@ -19,8 +19,8 @@ import { inlinePreviewMedia } from "./component-preview-assets.ts";
  * The MCP tool layer — the one seam the MCP endpoint serves.
  *
  * `createCatalogueTools` returns a pure request-to-result entry point over the
- * catalogue data; `lib/mcp-server.ts` adapts it to the MCP SDK and the HTTP
- * route adapts that to Next.js. Tests call `invoke` directly, so tool behavior
+ * catalogue data; `lib/mcp-server.ts` adapts it to the MCP SDK and
+ * `mcp-app/handler.ts` serves that over HTTP. Tests call `invoke` directly, so tool behavior
  * is verified without HTTP or transport machinery.
  *
  * The zod schemas below are the single source of truth for tool arguments:

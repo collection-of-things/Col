@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useMemo, useState } from "react";
 import { ArrowUpRight, SearchX } from "lucide-react";
 import { libraries } from "@/data/libraries";

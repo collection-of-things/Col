@@ -17,7 +17,18 @@ export function profileOf(actor: Actor): Profile {
 }
 
 const PAGE_SIZE = 100;
-const headers = { Accept: "application/vnd.github+json" };
+// GitHub rejects API requests without a User-Agent, which Workers do not add.
+const headers = { Accept: "application/vnd.github+json", "User-Agent": "col-site" };
+
+/**
+ * Request options that keep a GitHub response in Cloudflare's edge cache for
+ * `revalidate` seconds, the Worker counterpart of a timed fetch cache. Other
+ * runtimes ignore `cf`.
+ */
+export function cachedFor(revalidate: number): RequestInit {
+  const init: RequestInit & { cf: { cacheTtl: number; cacheEverything: boolean } } = { headers, cf: { cacheTtl: revalidate, cacheEverything: true } };
+  return init;
+}
 
 /** Reads GitHub list pages, validating every record and retaining the caller's cache policy. */
 export function listAll<A, I>(
@@ -31,7 +42,7 @@ export function listAll<A, I>(
     for (let page = 1; page <= maxPages; page += 1) {
       const query = new URLSearchParams({ state: "all", per_page: String(PAGE_SIZE), page: String(page) });
       const response = yield* Effect.tryPromise(() =>
-        request(`${repo.api}/${path}?${query}`, { headers, next: { revalidate } }),
+        request(`${repo.api}/${path}?${query}`, cachedFor(revalidate)),
       );
       if (!response.ok) return yield* Effect.fail(new Error(`GitHub ${path} returned ${response.status}`));
       const payload: unknown = yield* Effect.tryPromise(() => response.json());
@@ -47,7 +58,7 @@ const Star = Schema.Struct({ stargazers_count: Schema.Number });
 /** The repository's star count, cached for five minutes, or null when GitHub is unavailable. */
 export function getStarCount(request: typeof fetch = fetch): Promise<number | null> {
   const load = Effect.gen(function* () {
-    const response = yield* Effect.tryPromise(() => request(repo.api, { headers, next: { revalidate: 300 } }));
+    const response = yield* Effect.tryPromise(() => request(repo.api, cachedFor(300)));
     if (!response.ok) return yield* Effect.fail(new Error(`GitHub stars returned ${response.status}`));
     const payload: unknown = yield* Effect.tryPromise(() => response.json());
     return (yield* Schema.decodeUnknown(Star)(payload)).stargazers_count;

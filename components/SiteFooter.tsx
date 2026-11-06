@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import { Image } from "@/components/Image";
+import { Link } from "@/components/Link";
 import { ArrowUpRight } from "lucide-react";
 import { repo, repoFile } from "@/lib/repo";
 import styles from "./HomePage.module.css";
@@ -10,6 +10,9 @@ const links = [
   ["Docs", "/docs"],
   ["Contributors", "/contributors"],
   ["Sponsors", "/sponsors"],
+] as const;
+
+const externalLinks = [
   ["GitHub", repo.url],
   ["Contribute", repo.newIssue],
 ] as const;
@@ -18,18 +21,16 @@ const links = [
 export function SiteFooter() {
   return (
     <footer className={styles.footer}>
-      <Link href="/" className={styles.brand} aria-label="Col home">
+      <Link to="/" className={styles.brand} aria-label="Col home">
         <Image src="/brand/col-mark.svg" alt="" width={20} height={20} />Col
       </Link>
       <nav className={styles.footerNav} aria-label="Footer">
-        {links.map(([label, href]) => {
-          const external = href.startsWith("https://");
-          return (
-            <Link key={href} href={href} {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
-              {label}{external && <ArrowUpRight aria-hidden />}
-            </Link>
-          );
-        })}
+        {links.map(([label, href]) => <Link key={href} to={href}>{label}</Link>)}
+        {externalLinks.map(([label, href]) => (
+          <a key={href} href={href} target="_blank" rel="noopener noreferrer">
+            {label}<ArrowUpRight aria-hidden />
+          </a>
+        ))}
       </nav>
       <a href="https://www.dotstore.io/launches/2026-w41/col" target="_blank" rel="noopener noreferrer" className={styles.productBadge}>
         <Image src="/badges/dotstore-award-dark.svg" alt="Col on dotstore" width={250} height={56} className={styles.badgeDark} />

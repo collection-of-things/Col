@@ -1,8 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/components/Link";
 import { integrationTypes, type Integration } from "@/data/integrations";
 import { publisherOf } from "@/lib/integration-directory";
-import { integrationPath } from "@/lib/site";
 import { LibraryLogo } from "./LibraryLogo";
 
 /** One integration in the directory list, in the same row shape as the library list view. */
@@ -14,7 +13,7 @@ export function IntegrationRow({ integration }: { integration: Integration }) {
         <LibraryLogo url={integration.provider.url} name={integration.provider.name} size={20} />
       </span>
       <div className="lib-row-id">
-        <Link href={integrationPath(integration.slug)} className="lib-row-name">{integration.name}</Link>
+        <Link to="/integrations/$slug" params={{ slug: integration.slug }} className="lib-row-name">{integration.name}</Link>
         <span className="lib-row-host">{integration.provider.name}</span>
       </div>
       <p className="lib-row-desc">{integration.description}</p>

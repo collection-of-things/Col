@@ -11,7 +11,6 @@
  * default direction. `paused` is new too: it holds the current frame and stops
  * rendering, for when the rays are dimmed behind other content.
  */
-"use client";
 
 import { useEffect, useRef } from "react";
 

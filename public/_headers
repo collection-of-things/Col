@@ -1,3 +1,9 @@
-# Cloudflare Workers static assets: hashed build output is immutable.
-/_next/static/*
+# Cloudflare Workers static assets. Worker responses set their own headers.
+
+# Hashed client build output is immutable.
+/assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Social previews are replaced in place, so caches recheck them every minute.
+/col-social-preview*
+  Cache-Control: public, max-age=60, s-maxage=60

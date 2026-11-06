@@ -1,9 +1,7 @@
-"use client";
-
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Image } from "@/components/Image";
+import { Link } from "@/components/Link";
+import { usePathname } from "@/hooks/use-pathname";
 import { Search, Star } from "lucide-react";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { libraries } from "@/data/libraries";
@@ -11,7 +9,6 @@ import { componentIndex } from "@/data/components";
 import { integrations, integrationTypes } from "@/data/integrations";
 import { createDirectorySearch } from "@/lib/directory";
 import { createIntegrationSearch } from "@/lib/integration-directory";
-import { integrationPath, libraryPath } from "@/lib/site";
 import { repo } from "@/lib/repo";
 import { directoryQuery, useDirectoryQuery } from "@/lib/directory-query";
 import styles from "./SiteSearch.module.css";
@@ -142,7 +139,7 @@ export function SiteSearch({ className = "", collapsed = false }: { className?: 
 
   if (collapsed) {
     return (
-      <Link href="/libraries#library-search" className={`site-search-icon ${className}`} aria-label="Search libraries" title="Search libraries">
+      <Link to="/libraries" hash="library-search" className={`site-search-icon ${className}`} aria-label="Search libraries" title="Search libraries">
         <Search aria-hidden="true" />
       </Link>
     );
@@ -196,7 +193,7 @@ export function SiteSearch({ className = "", collapsed = false }: { className?: 
             <ul>
               {results.map(({ library, components }) => (
                 <li key={library.slug}>
-                  <Link href={libraryPath(library.slug)} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
+                  <Link to="/libraries/$slug" params={{ slug: library.slug }} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
                     <span>{library.name}</span>
                     <small>{components[0]?.name ?? library.category}</small>
                   </Link>
@@ -204,7 +201,7 @@ export function SiteSearch({ className = "", collapsed = false }: { className?: 
               ))}
               {integrationResults.map((integration) => (
                 <li key={integration.slug}>
-                  <Link href={integrationPath(integration.slug)} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
+                  <Link to="/integrations/$slug" params={{ slug: integration.slug }} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
                     <span>{integration.name}</span>
                     <small>{integrationTypes(integration).join(" · ")}</small>
                   </Link>

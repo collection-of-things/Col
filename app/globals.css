@@ -1,7 +1,15 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+/* Self-hosted variable fonts (latin and the other subsets load on demand). */
+@import "@fontsource-variable/nunito/wght.css";
+@import "@fontsource-variable/geist-mono/wght.css";
 
 @custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-nunito: "Nunito Variable";
+  --font-geist-mono: "Geist Mono Variable";
+}
 
 @theme {
   --font-sans: "SF Pro Rounded", ui-rounded, var(--font-nunito), ui-sans-serif, system-ui, sans-serif;

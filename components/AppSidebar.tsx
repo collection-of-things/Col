@@ -1,10 +1,8 @@
-"use client";
-
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link } from "@/components/Link";
+import { usePathname } from "@/hooks/use-pathname";
 import { Icons, type IconComponent } from "./MaskIcon";
 
-const items: readonly (readonly [string, string, IconComponent])[] = [
+const items = [
   ["Home", "/", Icons.home],
   ["Libraries", "/libraries", Icons.libraries],
   ["Components", "/components", Icons.componentLibrary],
@@ -13,7 +11,7 @@ const items: readonly (readonly [string, string, IconComponent])[] = [
   ["Docs", "/docs", Icons.docs],
   ["Contributors", "/contributors", Icons.contributors],
   ["Sponsors", "/sponsors", Icons.sponsors],
-];
+] as const satisfies readonly (readonly [string, string, IconComponent])[];
 
 export function AppSidebar({ collapsed = false }: { collapsed?: boolean }) {
   const pathname = usePathname();
@@ -24,7 +22,7 @@ export function AppSidebar({ collapsed = false }: { collapsed?: boolean }) {
         return (
           <Link
             key={href}
-            href={href}
+            to={href}
             aria-current={active ? "page" : undefined}
             aria-label={collapsed ? label : undefined}
             title={collapsed ? label : undefined}

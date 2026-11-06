@@ -32,3 +32,35 @@ export function focusDirectorySearch() {
   field?.focus();
   return Boolean(field);
 }
+
+/**
+ * Search params for pages that start from a `?q=` query. The router merges
+ * validated params over the raw ones, so `q` is always set, to undefined when
+ * it is not a non-empty string.
+ */
+export function validateQuerySearch(search: Record<string, unknown>): { q?: string } {
+  return { q: typeof search.q === "string" && search.q !== "" ? search.q : undefined };
+}
+
+/** Reads a query string the way `URLSearchParams` does: every value stays text, and repeated keys become a list. */
+export function parseSearch(searchStr: string): Record<string, string | string[]> {
+  const search = new Map<string, string | string[]>();
+  for (const [key, value] of new URLSearchParams(searchStr)) {
+    const previous = search.get(key);
+    search.set(key, previous === undefined ? value : [...(Array.isArray(previous) ? previous : [previous]), value]);
+  }
+  return Object.fromEntries(search);
+}
+
+/** Writes search params back as a plain query string, skipping undefined values. */
+export function stringifySearch(search: Record<string, unknown>): string {
+  const params = new URLSearchParams();
+  for (const [key, value] of Object.entries(search)) {
+    for (const item of Array.isArray(value) ? value : [value]) if (item !== undefined) params.append(key, String(item));
+  }
+  const query = params.toString();
+  return query ? `?${query}` : "";
+}
+
+/** Cache headers for pages rendered per request from the query string, as Next.js sent for dynamic pages. */
+export const uncachedPageHeaders = { "Cache-Control": "private, no-cache, no-store, max-age=0, must-revalidate" };
