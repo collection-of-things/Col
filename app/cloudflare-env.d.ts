@@ -25,7 +25,7 @@ declare module "cloudflare:workers" {
     output(options: { format: "image/webp"; quality: number }): Promise<{ image(): ReadableStream<Uint8Array>; contentType(): string }>;
   }
 
-  export const env: import("../lib/mcp-proxy.ts").McpProxyEnv & {
+  export const env: import("../lib/mcp-proxy.ts").McpProxyEnv & import("../lib/library-usage.ts").LibraryUsageEnv & {
     /** The static assets: prerendered pages, the client build and `public/`. */
     ASSETS: { fetch(input: URL | Request): Promise<Response> };
     IMAGES: ImagesBinding;

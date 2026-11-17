@@ -11,8 +11,10 @@ import { PREVIEW_WIDGET_CSP, PREVIEW_WIDGET_MIME, PREVIEW_WIDGET_URI, previewWid
  * It also registers the MCP Apps view that `render_component` links to through
  * `_meta.ui.resourceUri`, so hosts with the extension render the library's
  * component inline in the chat.
+ *
+ * `onToolCall` hears every successful tool call, e.g. to count library usage.
  */
-export function createColMcpServer(data: CatalogueData): McpServer {
+export function createColMcpServer(data: CatalogueData, options: { onToolCall?: (name: string, args: unknown) => void } = {}): McpServer {
   const tools = createCatalogueTools(data);
   const server = new McpServer({ name: "col", version: "0.1.0" });
 
@@ -28,6 +30,7 @@ export function createColMcpServer(data: CatalogueData): McpServer {
       },
       (args) => {
         const result = tools.invoke(definition.name, args);
+        if (!result.isError) options.onToolCall?.(definition.name, args);
         if (definition.name === "render_component" && result.structuredContent?.status === "html" && Buffer.byteLength(JSON.stringify(result)) > 4_000_000) {
           const preview = result.structuredContent.preview;
           if (preview && typeof preview === "object" && "code" in preview) {

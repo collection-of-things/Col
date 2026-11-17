@@ -13,6 +13,9 @@ test("listing CTR counts one view and one official-link conversion, including mi
     closest() { return { getAttribute: () => this.destination }; }
   }
   globalThis.Element = LinkTarget;
+  const beacons = [];
+  const originalNavigator = Object.getOwnPropertyDescriptor(globalThis, "navigator");
+  Object.defineProperty(globalThis, "navigator", { configurable: true, value: { sendBeacon: (url, body) => beacons.push([url, JSON.parse(body)]) } });
   globalThis.__libraryAnalyticsTest = {
     useRef: () => ref ??= { current: null },
     useEffect: (effect) => effects.push(effect),
@@ -38,6 +41,10 @@ test("listing CTR counts one view and one official-link conversion, including mi
       { name: "library_listing_view", slug: "wensity-ui" },
       { name: "library_outbound", slug: "wensity-ui", destination: "docs" },
     ]);
+    assert.deepEqual(beacons, [
+      ["/api/usage", { library: "wensity-ui", event: "view" }],
+      ["/api/usage", { library: "wensity-ui", event: "outbound" }],
+    ]);
     ref = undefined; // Returning to a listing creates a new page view.
     const revisit = LibraryListing({ slug: "wensity-ui", children: null });
     effects[1]();
@@ -45,6 +52,7 @@ test("listing CTR counts one view and one official-link conversion, including mi
     assert.equal(events.length, 4);
   } finally {
     globalThis.Element = originalElement;
+    if (originalNavigator) Object.defineProperty(globalThis, "navigator", originalNavigator);
     delete globalThis.__libraryAnalyticsTest;
   }
 });
