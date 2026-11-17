@@ -1,7 +1,5 @@
 import type { ReactNode } from "react";
 import { createRootRoute, HeadContent, Outlet, Scripts, ScriptOnce } from "@tanstack/react-router";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
 import geistMonoLatin from "@fontsource-variable/geist-mono/files/geist-mono-latin-wght-normal.woff2?url";
 import nunitoLatin from "@fontsource-variable/nunito/files/nunito-latin-wght-normal.woff2?url";
 import { siteHead } from "@/lib/site";
@@ -36,7 +34,7 @@ export const Route = createRootRoute({
   notFoundComponent: NotFound,
 });
 
-/** The document every page shares, including 404s: the app frame, the site notice, and analytics. */
+/** The document every page shares, including 404s: the app frame and the site notice. */
 function RootDocument({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
@@ -47,8 +45,6 @@ function RootDocument({ children }: { children: ReactNode }) {
       <body className="min-h-screen font-sans">
         <AppFrame>{children}</AppFrame>
         <SiteNotice />
-        <Analytics />
-        <SpeedInsights />
         <Scripts />
       </body>
     </html>
