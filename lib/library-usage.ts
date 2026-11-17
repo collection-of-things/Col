@@ -1,10 +1,11 @@
 import type { McpProxyEnv } from "./mcp-proxy.ts";
+import { isMcpOriginAllowed } from "./mcp-origin.ts";
 
 /** Directory events the website counts per library. Keep in step with `usageEvents.web` in `mcp-app/usage.ts`. */
 export const webUsageEvents = ["view", "outbound"] as const;
 export type WebUsageEvent = (typeof webUsageEvents)[number];
 
-export type LibraryUsageEnv = Pick<McpProxyEnv, "COL_MCP_ORIGIN"> & {
+export type LibraryUsageEnv = Pick<McpProxyEnv, "COL_MCP_ORIGIN" | "COL_MCP_ALLOWED_ORIGINS"> & {
   /** Shared secret for the MCP service's `/usage` route. */
   COL_USAGE_TOKEN?: string;
 };
@@ -13,9 +14,13 @@ export type LibraryUsageEnv = Pick<McpProxyEnv, "COL_MCP_ORIGIN"> & {
  * Serves the site's `POST /api/usage`: the browser beacons `{ library, event }`
  * and this forwards exactly those two fields to the MCP service, which keeps
  * the daily counts. Nothing else from the request (IP, cookies, user agent)
- * is passed on. Responds 204 whether or not counting is configured.
+ * is passed on. Only Col's own origin (or `COL_MCP_ALLOWED_ORIGINS`) may
+ * post. Responds 204 whether or not counting is configured.
  */
 export async function forwardLibraryUsage(request: Request, env: LibraryUsageEnv, send: typeof fetch = fetch): Promise<Response> {
+  // Browsers always send Origin on beacons; requiring Col's own stops other sites inflating counts.
+  const origin = request.headers.get("origin");
+  if (origin === null || !isMcpOriginAllowed(origin, env.COL_MCP_ALLOWED_ORIGINS)) return new Response(null, { status: 403 });
   const body: unknown = await request.json().catch(() => null);
   const { library, event } = (body && typeof body === "object" ? body : {}) as { library?: unknown; event?: unknown };
   if (typeof library !== "string" || !/^[a-z0-9-]{1,100}$/.test(library) || !webUsageEvents.includes(event as WebUsageEvent)) {

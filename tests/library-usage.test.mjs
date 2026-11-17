@@ -34,7 +34,12 @@ test("the site forwards only the library and event, with the service token", asy
   const sent = [];
   const send = async (url, init) => (sent.push([String(url), init]), new Response(null, { status: 204 }));
   const env = { COL_MCP_ORIGIN: "https://mcp.example", COL_USAGE_TOKEN: "secret" };
-  const beacon = (body) => new Request("https://usecol.com/api/usage", { method: "POST", body: JSON.stringify(body), headers: { cookie: "a=b" } });
+  const beacon = (body, origin = "https://usecol.com") => new Request("https://usecol.com/api/usage", { method: "POST", body: JSON.stringify(body), headers: { cookie: "a=b", ...(origin ? { origin } : {}) } });
+
+  // Other sites and origin-less requests cannot add counts.
+  assert.equal((await forwardLibraryUsage(beacon({ library: "shadcn-ui", event: "view" }, "https://evil.example"), env, send)).status, 403);
+  assert.equal((await forwardLibraryUsage(beacon({ library: "shadcn-ui", event: "view" }, null), env, send)).status, 403);
+  assert.equal(sent.length, 0);
 
   assert.equal((await forwardLibraryUsage(beacon({ library: "shadcn-ui", event: "view", extra: "x" }), env, send)).status, 204);
   assert.deepEqual(sent, [["https://mcp.example/usage", {
