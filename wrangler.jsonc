@@ -8,7 +8,7 @@
 	// enable_request_signal aborts request.signal when a client disconnects,
 	// so /api/mcp cancels its upstream stream to the MCP service.
 	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public", "enable_request_signal"],
-	// COL_MCP_ORIGIN and COL_MCP_ALLOWED_ORIGINS are set in the dashboard;
+	// COL_MCP_ORIGIN, COL_MCP_ALLOWED_ORIGINS and COL_USAGE_TOKEN are set in the dashboard;
 	// without this, every deploy deletes them and /api/mcp returns 503.
 	"keep_vars": true,
 	// Prerendered pages and the client build. The Vite plugin sets the directory.

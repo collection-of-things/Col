@@ -23,6 +23,7 @@ import { Route as ApiFaviconRouteImport } from './routes/api/favicon'
 import { Route as ApiImageRouteImport } from './routes/api/image'
 import { Route as ApiMcpRouteImport } from './routes/api/mcp'
 import { Route as ApiStarsRouteImport } from './routes/api/stars'
+import { Route as ApiUsageRouteImport } from './routes/api/usage'
 import { Route as DocsIndexRouteImport } from './routes/docs/index'
 import { Route as DocsAgentsRouteImport } from './routes/docs/agents'
 import { Route as DocsFindALibraryRouteImport } from './routes/docs/find-a-library'
@@ -106,6 +107,11 @@ const ApiStarsRoute = ApiStarsRouteImport.update({
   path: '/api/stars',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiUsageRoute = ApiUsageRouteImport.update({
+  id: '/api/usage',
+  path: '/api/usage',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DocsIndexRoute = DocsIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -182,6 +188,7 @@ export interface FileRoutesByFullPath {
   '/api/image': typeof ApiImageRoute
   '/api/mcp': typeof ApiMcpRoute
   '/api/stars': typeof ApiStarsRoute
+  '/api/usage': typeof ApiUsageRoute
   '/docs/agents': typeof DocsAgentsRoute
   '/docs/find-a-library': typeof DocsFindALibraryRoute
   '/docs/pull-requests': typeof DocsPullRequestsRoute
@@ -208,6 +215,7 @@ export interface FileRoutesByTo {
   '/api/image': typeof ApiImageRoute
   '/api/mcp': typeof ApiMcpRoute
   '/api/stars': typeof ApiStarsRoute
+  '/api/usage': typeof ApiUsageRoute
   '/docs/agents': typeof DocsAgentsRoute
   '/docs/find-a-library': typeof DocsFindALibraryRoute
   '/docs/pull-requests': typeof DocsPullRequestsRoute
@@ -237,6 +245,7 @@ export interface FileRoutesById {
   '/api/image': typeof ApiImageRoute
   '/api/mcp': typeof ApiMcpRoute
   '/api/stars': typeof ApiStarsRoute
+  '/api/usage': typeof ApiUsageRoute
   '/docs/agents': typeof DocsAgentsRoute
   '/docs/find-a-library': typeof DocsFindALibraryRoute
   '/docs/pull-requests': typeof DocsPullRequestsRoute
@@ -267,6 +276,7 @@ export interface FileRouteTypes {
     | '/api/image'
     | '/api/mcp'
     | '/api/stars'
+    | '/api/usage'
     | '/docs/agents'
     | '/docs/find-a-library'
     | '/docs/pull-requests'
@@ -293,6 +303,7 @@ export interface FileRouteTypes {
     | '/api/image'
     | '/api/mcp'
     | '/api/stars'
+    | '/api/usage'
     | '/docs/agents'
     | '/docs/find-a-library'
     | '/docs/pull-requests'
@@ -321,6 +332,7 @@ export interface FileRouteTypes {
     | '/api/image'
     | '/api/mcp'
     | '/api/stars'
+    | '/api/usage'
     | '/docs/agents'
     | '/docs/find-a-library'
     | '/docs/pull-requests'
@@ -350,6 +362,7 @@ export interface RootRouteChildren {
   ApiImageRoute: typeof ApiImageRoute
   ApiMcpRoute: typeof ApiMcpRoute
   ApiStarsRoute: typeof ApiStarsRoute
+  ApiUsageRoute: typeof ApiUsageRoute
   IntegrationsSlugRoute: typeof IntegrationsSlugRoute
   LibrariesSlugRoute: typeof LibrariesSlugRoute
   IntegrationsIndexRoute: typeof IntegrationsIndexRoute
@@ -454,6 +467,13 @@ declare module '@tanstack/react-router' {
       path: '/api/stars'
       fullPath: '/api/stars'
       preLoaderRoute: typeof ApiStarsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/usage': {
+      id: '/api/usage'
+      path: '/api/usage'
+      fullPath: '/api/usage'
+      preLoaderRoute: typeof ApiUsageRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/docs/': {
@@ -594,6 +614,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiImageRoute: ApiImageRoute,
   ApiMcpRoute: ApiMcpRoute,
   ApiStarsRoute: ApiStarsRoute,
+  ApiUsageRoute: ApiUsageRoute,
   IntegrationsSlugRoute: IntegrationsSlugRoute,
   LibrariesSlugRoute: LibrariesSlugRoute,
   IntegrationsIndexRoute: IntegrationsIndexRoute,

@@ -106,6 +106,16 @@ The MCP tools and component previews run as a standalone service in [`mcp-app/`]
 
 To host the service yourself, deploy `mcp-app/` anywhere Node 24 runs — [`mcp-app/Dockerfile`](mcp-app/Dockerfile) builds a self-contained image (Railway: set the Dockerfile path to `mcp-app/Dockerfile` with the repository root as the build context, and the healthcheck path to `/health`). Set `COL_MCP_ORIGIN` on the site to the service URL and configure `COL_MCP_ALLOWED_ORIGINS` as needed for requests with additional origins.
 
+### Library usage counts
+
+The MCP service can count how often each library is used: successful `get_library`, `get_component` and `render_component` calls (source `mcp`), plus library page views and official-link clicks that the site forwards through `/api/usage` (source `web`). It stores only daily totals per library, source and event. Nothing about the caller or their query is kept. To turn it on, set `COL_USAGE_DB` on the service to a SQLite file on a persistent volume (for example `/data/usage.db`), and set the same random `COL_USAGE_TOKEN` on both the service and the site. Read the ranking with:
+
+```bash
+curl -H "Authorization: Bearer $COL_USAGE_TOKEN" "$COL_MCP_ORIGIN/usage?days=7,30"
+```
+
+It returns libraries ranked by total uses for each window, with `mcp`, `web` and per-event counts.
+
 ## Deploy the site
 
 The site deploys to Cloudflare Workers as the `col` Worker ([`wrangler.jsonc`](wrangler.jsonc)). It uses the Workers static assets and Images bindings, which need no setup.
