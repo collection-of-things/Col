@@ -17,8 +17,10 @@
  * Tiles and the orbit are placed in % of the hero height and sized in cqi of the stage width.
  */
 .story { --hero-height: calc(100dvh - 8px); position: relative; }
-/* Its own rounded top-left clip keeps composited layers (rays canvas, tiles) inside the panel corner during theme switches. */
-.stage { position: relative; isolation: isolate; container-type: inline-size; clip-path: inset(0 round var(--frame-radius) 0 0 0); }
+/* Inside the app frame the home card floats on a --topbar-gap gutter above and below, so the hero's screen is the card's height. */
+:global(.app-frame[data-home]) .story { --hero-height: calc(100dvh - var(--topbar-gap) * 2); }
+/* Its own rounded top clip keeps composited layers (rays canvas, tiles) inside the panel corners during theme switches. */
+.stage { position: relative; isolation: isolate; container-type: inline-size; clip-path: inset(0 round var(--frame-radius) var(--frame-radius) 0 0); }
 /* Darker at the top so the rays read as light, easing back to the panel colour. */
 .stage::before { content: ""; position: absolute; top: 0; right: 0; left: 0; height: var(--hero-height); pointer-events: none; background: radial-gradient(50% 40% at 50% 48%, var(--hero-light), transparent 72%), linear-gradient(to bottom, var(--hero-shade), transparent 65%); }
 /* React Bits Light Rays (see LightRays.tsx), mounted by HomeStory on wide screens. In light mode the shader paints dark ink on white, so multiply drops the white. */
@@ -37,7 +39,7 @@
 .orbit { --sweep: 360deg; position: absolute; left: 50%; top: 50%; width: 104cqi; height: min(80%, 56cqi); border: 1px solid var(--hero-orbit); border-radius: 50%; transform: translate(-50%, -50%) rotate(9deg); mask-image: conic-gradient(from 210deg, #000 calc(var(--sweep) - 40deg), transparent var(--sweep)); pointer-events: none; animation: orbit-in 2.2s var(--ease-out) .2s both; }
 /* HomeStory sets --px/--py from the pointer; each tile follows by its own --depth. */
 .tile, .distantTile { position: absolute; left: var(--x); top: calc(50% + (var(--y) - 50%) * var(--spread, 1)); width: calc(var(--size) * var(--scale, 1)); height: auto; aspect-ratio: 1; translate: calc(-50% + var(--px, 0) * var(--depth)) calc(-50% + var(--py, 0) * var(--depth)); rotate: var(--tilt); transition: translate 1s var(--ease-out); }
-.tile { z-index: 2; filter: drop-shadow(0 24px 40px var(--hero-shadow)); will-change: transform, translate; transition: translate 1s var(--ease-out), scale .4s var(--ease-out); animation: tile-float calc(7s + var(--order) * 1.3s) ease-in-out calc(var(--order) * -1.9s) infinite alternate; }
+.tile { z-index: 2; filter: drop-shadow(0 24px 40px var(--hero-shadow)); transition: translate 1s var(--ease-out), scale .4s var(--ease-out); }
 .tile img { display: block; width: 100%; height: 100%; animation: tile-in 1.1s var(--ease-out) calc(.5s + var(--order) * 90ms) both; }
 .tile:hover { scale: 1.05; }
 .tile:active { scale: 1.02; }
@@ -51,8 +53,8 @@
 .heroCopy h1 { font-size: clamp(40px, 4.3cqi, 68px); font-weight: 800; line-height: 1.08; letter-spacing: -.03em; text-wrap: balance; }
 .heroCopy > p { max-width: 62ch; margin-top: 20px; font-size: clamp(16px, 1.35cqi, 20px); line-height: 1.6; }
 .actions { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 32px; margin-top: 40px; }
-/* The hero's one blue, matched to the reference design (a cleaner azure than the violet --col-brand), with a quiet shadow instead of a glow. */
-.button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 24px; border-radius: 10px; background: #082cfe; color: #fff !important; font-size: 15px; font-weight: 700; box-shadow: inset 0 1px 0 rgba(255,255,255,.16), 0 1px 2px rgba(0,0,0,.3); transition: scale .25s var(--ease-out); }
+/* The hero's primary action: neutral like every other primary button (ink on the page's own colour), no brand blue. */
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 24px; border-radius: 10px; background: var(--lib-text); color: var(--lib-panel) !important; font-size: 15px; font-weight: 700; box-shadow: 0 1px 2px rgba(0,0,0,.3); transition: scale .25s var(--ease-out); }
 .starLink { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; transition: scale .25s var(--ease-out); }
 .button:active, .starLink:active { scale: .97; }
 .actions a:hover { text-decoration: none; }
@@ -126,12 +128,12 @@
 /* Roadmap timeline: one column per milestone. Each item draws the line from its node to the next one: solid between shipped milestones, dashed towards upcoming work. */
 .timeline { display: grid; grid-auto-columns: minmax(0, 1fr); grid-auto-flow: column; margin: 8px 0 0; padding: 0; list-style: none; }
 .timeline li { position: relative; }
-.timeline li::before { content: ""; position: absolute; top: 11px; left: 12px; right: -12px; height: 2px; background: repeating-linear-gradient(to right, var(--lib-text-3) 0 6px, transparent 6px 12px); }
+.timeline li::before { content: ""; position: absolute; top: 11px; left: 12px; right: -12px; height: 2px; background: repeating-linear-gradient(to right, var(--lib-ink-faint) 0 6px, transparent 6px 12px); }
 .timeline li[data-status="shipped"]:has(+ li[data-status="shipped"])::before { background: var(--lib-text); }
 .timeline li:last-child::before { right: 0; mask-image: linear-gradient(to right, #000 40%, transparent); }
 .milestone { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding-right: 28px; }
 .page .milestone:hover { text-decoration: none; }
-.node { display: grid; place-items: center; width: 24px; height: 24px; margin-bottom: 10px; border-radius: 999px; background: var(--lib-panel); box-shadow: inset 0 0 0 2px var(--lib-text-3); transition: scale .3s var(--ease-out); }
+.node { display: grid; place-items: center; width: 24px; height: 24px; margin-bottom: 10px; border-radius: 999px; background: var(--lib-panel); box-shadow: inset 0 0 0 2px var(--lib-ink-faint); transition: scale .3s var(--ease-out); }
 .node svg { width: 14px; height: 14px; stroke-width: 3; }
 [data-status="shipped"] .node { background: var(--lib-text); box-shadow: none; color: var(--lib-panel); }
 [data-status="in-progress"] .node { background: radial-gradient(circle, var(--lib-text) 0 4px, var(--lib-panel) 4.5px); box-shadow: inset 0 0 0 2px var(--lib-text); }
@@ -139,7 +141,7 @@
 .when { color: var(--lib-text-2); font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; }
 [data-status="in-progress"] .when { color: var(--lib-text); }
 .milestoneTitle { font-size: 15px; font-weight: 700; line-height: 1.4; text-wrap: pretty; }
-.milestone:is(:hover, :focus-visible) .milestoneTitle { text-decoration: underline; text-decoration-color: var(--lib-text-3); text-underline-offset: 4px; }
+.milestone:is(:hover, :focus-visible) .milestoneTitle { text-decoration: underline; text-decoration-color: var(--lib-ink-faint); text-underline-offset: 4px; }
 .issue { display: inline-flex; align-items: center; justify-content: center; height: 24px; min-width: 38px; margin-top: 4px; padding: 0 8px; border-radius: 8px; background: var(--lib-chip); color: var(--lib-text-2); font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; }
 /* "Now" sits on the line halfway between the last shipped milestone and the first upcoming one. */
 .now { position: absolute; top: 0; left: calc(50% + 12px); translate: -50% 0; height: 24px; padding: 0 9px; border-radius: 8px; background: var(--lib-surface); box-shadow: 0 0 0 4px var(--lib-panel); font-size: 12px; font-weight: 700; line-height: 24px; }
@@ -173,9 +175,8 @@
 @keyframes blur-in { from { opacity: 0; filter: blur(4px); transform: translateY(.12em); } }
 @keyframes orbit-in { from { opacity: 0; --sweep: 0deg; } }
 @keyframes tile-in { from { opacity: 0; transform: translateY(20px) scale(.86); } }
-@keyframes tile-float { from { transform: translateY(-6px); } to { transform: translateY(8px); } }
 @media (prefers-reduced-motion: reduce) {
-  .orbit, .word, .tile, .tile img, .distantTile, .heroCopy > * { animation: none; }
+  .orbit, .word, .tile img, .distantTile, .heroCopy > * { animation: none; }
   .tile, .distantTile, .button, .starLink, .arrowSwap svg, .starLink > svg, .rollChar, .node, .cellTitle svg, .chips a { transition: none; }
 }
 /* Short viewports: tiles size by width but sit by height, so shrink them and push them toward the edges to keep the headline clear. */
@@ -190,13 +191,17 @@
   .story { --hero-height: calc(100dvh - var(--site-header-height)); }
   .stage { clip-path: none; }
 }
+/* Full-bleed home card: only the top gutter is left, so the hero's screen is the card's height again. */
+@media (max-width: 640px) {
+  :global(.app-frame.library-page-shell[data-home]) .story { --hero-height: calc(100dvh - var(--topbar-gap)); }
+}
 @media (max-width: 900px) {
   .scene[data-scene-index="0"] { padding-block: 64px; }
   .cellFull { grid-template-columns: minmax(0, 1fr); }
   /* The timeline turns vertical: nodes down the left, the line running between them. */
   .timeline { grid-auto-flow: row; gap: 0; }
   .timeline li { padding: 0 0 28px 40px; }
-  .timeline li::before { top: 12px; bottom: -12px; left: 11px; right: auto; width: 2px; height: auto; background: repeating-linear-gradient(to bottom, var(--lib-text-3) 0 6px, transparent 6px 12px); }
+  .timeline li::before { top: 12px; bottom: -12px; left: 11px; right: auto; width: 2px; height: auto; background: repeating-linear-gradient(to bottom, var(--lib-ink-faint) 0 6px, transparent 6px 12px); }
   .timeline li:last-child::before { display: none; }
   .node { position: absolute; top: 0; left: 0; margin: 0; }
   .milestone { gap: 6px; padding-right: 0; }
@@ -251,4 +256,75 @@
   .bento > :nth-child(4) { --i: 3; }
   .bento > :nth-child(5) { --i: 4; }
   .bento > :nth-child(6) { --i: 5; }
+}
+
+/* ===== Hero library search =====
+   The field sits under the subtitle. While it holds a query, html[data-hero-search]
+   lifts it to the top of the stage and fades the rest of the hero out, and a sheet
+   of library cards (portaled to <body>) rises from below. */
+.search {
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  position: relative; z-index: 6; display: flex; align-items: center; gap: 14px;
+  width: min(620px, 100%); height: 60px; margin-top: 36px; padding: 0 10px 0 22px; border-radius: 18px;
+  background: linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.035));
+  -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.18), inset 0 0 0 1px rgba(255,255,255,.08), 0 20px 50px var(--hero-shadow);
+  transition: translate .7s var(--ease-out), box-shadow .7s var(--ease-out);
+}
+:global(html.light) .search { background: linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.75)); box-shadow: inset 0 0 0 1px rgba(0,0,0,.08), 0 16px 40px var(--hero-shadow); }
+.search[data-open] { translate: 0 var(--lift, 0); box-shadow: inset 0 1px 0 rgba(255,255,255,.16), inset 0 0 0 1px rgba(255,255,255,.1), 0 18px 50px rgba(0,0,0,.6), 0 0 60px rgba(255,255,255,.04); }
+.searchIcon { flex: none; width: 20px; height: 20px; opacity: .6; }
+.search input { flex: 1; min-width: 0; height: 100%; border: 0; outline: 0; background: none; color: var(--home-text); font: inherit; font-size: 18px; font-weight: 700; }
+.search input::placeholder { color: var(--lib-text-2); font-weight: 600; }
+.search input::-webkit-search-cancel-button { display: none; }
+.searchClear { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 10px; border: 0; border-radius: 12px; background: none; color: var(--lib-text-2); cursor: pointer; }
+.searchClear:hover { color: var(--home-text); }
+.searchClear svg { width: 16px; height: 16px; }
+/* Same `/` and Esc keys as the directory fields. */
+.searchClear kbd, .searchKey { padding: 2px 7px; border-radius: 6px; background: var(--lib-field); color: var(--lib-text-2); box-shadow: 0 0 0 1px var(--lib-edge); font: 600 11px/1.4 var(--font-mono, ui-monospace, monospace); }
+.searchKey { flex: none; margin-right: 10px; }
+@media (max-width: 760px), (any-pointer: coarse) { .searchKey { display: none; } }
+
+/* The rest of the hero gets out of the way with a short fade — no blurs, no scattering. */
+.heroCopy > :not(.search), .orbit, .tile, .distantTile { transition: opacity .45s ease, translate .7s var(--ease-out), scale .5s var(--ease-out); }
+:global(html[data-hero-search]) .heroCopy > :not(.search) { opacity: 0; translate: 0 -16px; pointer-events: none; }
+:global(html[data-hero-search]) .tile, :global(html[data-hero-search]) .distantTile { opacity: 0; scale: .9; pointer-events: none; }
+:global(html[data-hero-search]) .orbit { opacity: 0; }
+:global(html[data-hero-search]) { overflow: hidden; }
+
+/* No panel: the entries float on the stage and fill in one after another. */
+.searchResults {
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  position: fixed; z-index: 5; top: var(--results-top, 180px); right: calc(var(--results-right, 0px) + 40px); bottom: 0; left: calc(var(--results-left, 0px) + 40px);
+  display: flex; flex-direction: column;
+  opacity: 0; visibility: hidden;
+  transition: opacity .3s ease, visibility 0s linear .3s;
+}
+.searchResults[data-open] { opacity: 1; visibility: visible; transition: opacity .3s ease, visibility 0s; }
+.searchResultsBar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 4px 14px; }
+.searchResultsBar h2 { margin: 0; color: var(--lib-text); font-size: 20px; font-weight: 800; letter-spacing: -.02em; }
+.searchResultsBar h2 span { margin-left: 8px; color: var(--lib-text-3); font-size: 15px; font-weight: 700; letter-spacing: 0; }
+.searchResultsAll { height: 32px; padding: 0 12px; border-radius: 9px; background: var(--lib-field); color: var(--lib-text-2); font-size: 13px; font-weight: 700; display: inline-flex; align-items: center; text-decoration: none; }
+.searchResultsAll:hover { background: var(--lib-field-hover); color: var(--lib-text); }
+.searchResultsScroll { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 0 4px 32px; }
+/* Same column tracks as the directory gallery (.directory-gallery in globals.css), so the
+   handoff's view transition carries same-size cards instead of rescaling compact ones. */
+.searchGrid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+@media (min-width: 640px) { .searchGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1280px) { .searchGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 1536px) { .searchGrid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.searchCell { min-width: 0; }
+/* Entries come up in single file; on close they ride out with the container's fade. */
+.searchResults[data-open] .searchCell { animation: result-in .55s var(--ease-out) calc(.1s + var(--i) * 40ms) both; }
+@keyframes result-in { from { opacity: 0; translate: 0 20px; } }
+.searchEmpty { padding: 48px 0; color: var(--lib-text-3); text-align: center; font-weight: 600; }
+@media (max-width: 560px) {
+  .search { height: 54px; padding-left: 16px; }
+  .search input { font-size: 16px; }
+  .searchResults { right: 0; left: 0; }
+  .searchResultsBar, .searchResultsScroll { padding-inline: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .search, .searchResults, .searchResults[data-open], .heroCopy > *, .orbit, .tile, .distantTile { transition-duration: 0s !important; transition-delay: 0s !important; }
+  .searchResults[data-open] .searchCell { animation: none; }
 }

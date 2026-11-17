@@ -1,15 +1,12 @@
+/* The `/` hint, drawn like the directory fields' key so every search shows the same hint. */
 .shortcut {
-  display: inline-flex;
-  align-items: center;
   flex: 0 0 auto;
-  gap: 4px;
-  white-space: nowrap;
-  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: var(--lib-field);
   color: var(--lib-text-2);
-}
-
-:global(.app-frame .site-search) .shortcut kbd {
-  color: inherit;
+  box-shadow: 0 0 0 1px var(--lib-edge);
+  font: 600 11px/1.4 var(--font-mono, ui-monospace, monospace);
 }
 
 :global(.site-search:focus-within) .shortcut {

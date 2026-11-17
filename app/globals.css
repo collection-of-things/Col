@@ -41,29 +41,6 @@ body {
   background: #69a9ff;
   color: #000;
 }
-
-.hero-cta {
-  display: inline-flex;
-  min-height: 3rem;
-  align-items: center;
-  justify-content: center;
-  gap: .625rem;
-  border: 1px solid transparent;
-  border-radius: .625rem;
-  padding: 0 1.25rem;
-  color: #fff;
-  font-size: .875rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background-color 160ms ease, border-color 160ms ease, transform 120ms ease;
-}
-
-.hero-cta:active { transform: translateY(1px); }
-.hero-cta:focus-visible { outline: 2px solid var(--col-blue); outline-offset: 3px; }
-.hero-cta-primary { border-color: var(--col-brand); background: var(--col-brand); }
-.hero-cta-primary:hover { border-color: #241eff; background: #241eff; }
-html.light .hero-cta-primary { border-color: var(--col-brand); background: var(--col-brand); color: #fff; }
-
 :root {
   --col-brand: #0800ff;
   --col-blue: #69a9ff;
@@ -215,9 +192,7 @@ html.light .bento-preview-chip-active { border-color: rgba(8,111,127,.35); backg
 .docs-rail-art { background: #0d5d6b; }
 .docs-rail-cta { background: #0e8395; color: #fff; }
 .docs-rail-cta:hover { background: #119caf; }
-.docs-rail-link, .docs-accent { color: #8be5ef; }
-.docs-rail-link:hover { color: #c9faff; }
-.docs-text-link, .docs-rail-link, .footer-link {
+.docs-text-link, .footer-link {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -225,9 +200,10 @@ html.light .bento-preview-chip-active { border-color: rgba(8,111,127,.35); backg
   text-decoration: none;
   transition: color 220ms ease, background-size 260ms ease;
 }
-.docs-text-link:hover, .docs-text-link:focus-visible,
-.docs-rail-link:hover, .docs-rail-link:focus-visible,
-.footer-link:hover, .footer-link:focus-visible { background-size: 100% 1px; }
+.docs-text-link:hover,
+.docs-text-link:focus-visible,
+.footer-link:hover,
+.footer-link:focus-visible { background-size: 100% 1px; }
 .docs-step + .docs-step { border-left: 1px solid rgba(136,213,223,.14); }
 html.light .docs-page-shell { background: #f7f7f5; }
 html.light .docs-rail-panel, html.light .docs-steps { border-color: rgba(17,17,17,.14); background: #fff; }
@@ -236,12 +212,10 @@ html.light .docs-sidebar-link { color: #444; }
 html.light .docs-sidebar-link:hover, html.light .docs-sidebar-link:focus-visible { color: #111; }
 html.light .docs-sidebar-link[aria-current="page"] { color: var(--sidebar-primary); }
 html.light .docs-sidebar-link-highlight { background: rgba(8,0,255,.1); }
-html.light .docs-rail-link, html.light .docs-accent { color: #086f7f; }
-html.light .docs-rail-link:hover { color: #074e5a; }
 html.light .docs-step + .docs-step { border-color: rgba(17,17,17,.14); }
 @media (max-width: 639px) { .docs-step + .docs-step { border-left: 0; border-top: 1px solid rgba(136,213,223,.14); } }
 @media (prefers-reduced-motion: reduce) {
-  .docs-sidebar-link, .docs-sidebar-link-highlight[data-ready="true"], .docs-text-link, .docs-rail-link, .footer-link { transition: none; }
+  .docs-sidebar-link, .docs-sidebar-link-highlight[data-ready="true"], .docs-text-link, .footer-link { transition: none; }
 }
 
 .docs-copy code {
@@ -1195,15 +1169,11 @@ html.light .app-nav-block { border-color: rgba(0,0,0,.06); }
   background: #343434; box-shadow: inset 0 0 0 1px #393939, 0 1px 0 rgba(0,0,0,.15);
   transition: transform 380ms cubic-bezier(.32,.72,0,1);
 }
-.dir-segment[data-value="line"] .dir-segment-pill { transform: translateX(32px); }
-
 .dir-saved span { min-width: .75rem; font-variant-numeric: tabular-nums; }
-.dir-saved[aria-pressed="true"] { background: #343434; box-shadow: inset 0 0 0 1px #393939, 0 1px 0 rgba(0,0,0,.15); color: #fff; }
 .dir-saved svg { transition: transform 300ms cubic-bezier(.34,1.56,.64,1); }
 .dir-saved:active svg { transform: scale(.8); }
 
 .library-page-shell .directory-results-pane { padding-top: 1rem; }
-.directory-filter-trigger { border: 0 !important; background: rgba(255,255,255,.05) !important; border-radius: 10px !important; }
 
 html.light .dir-toolbar-title h1 { color: #111; }
 html.light .dir-count { color: rgba(0,0,0,.4); }
@@ -1217,7 +1187,7 @@ html.light .dir-control { color: rgba(0,0,0,.6); }
 html.light .dir-control:hover, html.light .dir-control[data-state="open"] { background: rgba(0,0,0,.05); color: #111; }
 html.light .dir-segment button { color: rgba(0,0,0,.45); }
 html.light .dir-segment button[aria-checked="true"] { color: #111; }
-html.light .dir-segment-pill, html.light .dir-saved[aria-pressed="true"] { background: #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.08); color: #111; }
+html.light .dir-segment-pill { background: #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.08); color: #111; }
 @media (max-width: 760px) {
   .dir-search, .dir-search:focus-within { width: 100%; order: -1; }
   .dir-toolbar-controls { width: 100%; }
@@ -1279,8 +1249,10 @@ html.light .app-nav-block::after { background: rgba(0,0,0,.1); box-shadow: 0 1px
   --lib-pill-edge: #3b3b3b;
   --lib-media: #1a1a1a;
   --lib-text: #ededed;
-  --lib-text-2: rgba(255,255,255,.64);
-  --lib-text-3: rgba(255,255,255,.4);
+  --lib-text-2: rgba(255,255,255,.72);
+  --lib-text-3: rgba(255,255,255,.52);
+  /* Decorative ink (dashes, dots, checkbox rings, underline strokes) keeps the pre-AA mute. */
+  --lib-ink-faint: rgba(255,255,255,.4);
   --lib-line: rgba(255,255,255,.06);
   --lib-edge: rgba(255,255,255,.07);
   --lib-highlight: rgba(255,255,255,.045);
@@ -1303,8 +1275,9 @@ html.light {
   --lib-pill-edge: rgba(0,0,0,.07);
   --lib-media: #f3f3f2;
   --lib-text: #161616;
-  --lib-text-2: rgba(0,0,0,.6);
-  --lib-text-3: rgba(0,0,0,.42);
+  --lib-text-2: rgba(0,0,0,.68);
+  --lib-text-3: rgba(0,0,0,.58);
+  --lib-ink-faint: rgba(0,0,0,.45);
   --lib-line: rgba(0,0,0,.07);
   --lib-edge: rgba(0,0,0,.07);
   --lib-highlight: rgba(255,255,255,.9);
@@ -1374,12 +1347,15 @@ html.light .library-page-shell .facet-hover-pill { background: var(--lib-hover);
 html .library-page-shell .facet-option:disabled { color: var(--lib-text-3); opacity: .6; }
 html .library-page-shell .facet-option-count,
 html.light .library-page-shell .facet-option-count { color: var(--lib-text-3); }
+/* The active option's pill fill needs the stronger tier to stay AA. */
+html .library-page-shell .facet-option[data-active="true"] .facet-option-count,
+html.light .library-page-shell .facet-option[data-active="true"] .facet-option-count { color: var(--lib-text-2); }
 html .library-page-shell .facet-heading,
 html.light .library-page-shell .facet-heading { color: var(--lib-text-3); }
 html .library-page-shell .facet-heading:hover { color: var(--lib-text-2); }
 html .library-page-shell .facet-clear { color: var(--lib-text-3); }
 html .library-page-shell .facet-clear:hover { color: var(--lib-text); }
-html .library-page-shell .facet-check { box-shadow: inset 0 0 0 1.5px var(--lib-text-3); }
+html .library-page-shell .facet-check { box-shadow: inset 0 0 0 1.5px var(--lib-ink-faint); }
 html .library-page-shell .facet-option[data-active="true"] .facet-check { background: var(--lib-text); box-shadow: none; }
 html .library-page-shell .facet-check svg { color: var(--lib-panel); }
 html .library-page-shell .facet-reset { background: var(--lib-field); color: var(--lib-text-2); box-shadow: var(--lib-depth-1); }
@@ -1399,7 +1375,6 @@ html .library-page-shell .facet-heading { min-height: 20px; }
 html .library-page-shell .dir-toolbar { min-height: 32px; margin-bottom: 16px; padding: 0; }
 html .library-page-shell .dir-toolbar-title h1 { color: var(--lib-text); font-size: 18px; font-weight: 700; line-height: 32px; }
 html .library-page-shell .dir-count { color: var(--lib-text-3); font-size: 13px; }
-html .library-page-shell .dir-count span:not(.sr-only) { color: var(--lib-text-3); opacity: .7; }
 html .library-page-shell .dir-toolbar-controls { gap: 8px; }
 
 html .library-page-shell .dir-search,
@@ -1416,7 +1391,7 @@ html.light .library-page-shell .dir-search:focus-within {
 html .library-page-shell .dir-search input,
 html.light .library-page-shell .dir-search input { color: var(--lib-text); font-size: 13px; }
 html .library-page-shell .dir-search input::placeholder,
-html.light .library-page-shell .dir-search input::placeholder { color: var(--lib-text-3); }
+html.light .library-page-shell .dir-search input::placeholder { color: var(--lib-text-2); }
 html .library-page-shell .dir-search input::-webkit-search-cancel-button { display: none; }
 html .library-page-shell .dir-search kbd,
 html.light .library-page-shell .dir-search kbd {
@@ -1440,15 +1415,15 @@ html .library-page-shell .dir-control svg { width: 15px; height: 15px; }
 
 html .library-page-shell .dir-segment,
 html.light .library-page-shell .dir-segment { height: 32px; padding: 2px; border-radius: 10px; background: var(--lib-field); box-shadow: var(--lib-depth-1); }
-html .library-page-shell .dir-segment button { width: 30px; border-radius: 8px; color: var(--lib-text-3); }
-html .library-page-shell .dir-segment button:hover { color: var(--lib-text-2); }
+html .library-page-shell .dir-segment button { width: 30px; border-radius: 8px; color: var(--lib-text-2); }
+html .library-page-shell .dir-segment button:hover { color: var(--lib-text); }
 html .library-page-shell .dir-segment button[aria-checked="true"] { color: var(--lib-text); }
+/* The control keeps its button body; the choice inside it is an underline that slides between the cells, not a filled pill. */
 html .library-page-shell .dir-segment-pill,
-html.light .library-page-shell .dir-segment-pill { top: 2px; bottom: 2px; left: 2px; width: 30px; border-radius: 8px; background: var(--lib-pill); box-shadow: var(--lib-pill-depth); }
-html .library-page-shell .dir-segment[data-value="line"] .dir-segment-pill { transform: translateX(30px); }
-
+html.light .library-page-shell .dir-segment-pill { top: 2px; bottom: 2px; left: 2px; width: 30px; border-radius: 0; box-shadow: none; background: linear-gradient(var(--lib-text), var(--lib-text)) 50% 100% / calc(100% - 16px) 2px no-repeat; }
 html .library-page-shell .dir-saved[aria-pressed="true"],
-html.light .library-page-shell .dir-saved[aria-pressed="true"] { background: var(--lib-pill); color: var(--lib-text); box-shadow: var(--lib-pill-depth); }
+/* Pressed keeps the button's normal body; the filled red heart is the state, not a filled background. */
+html.light .library-page-shell .dir-saved[aria-pressed="true"] { background: var(--lib-field); box-shadow: var(--lib-depth-1); color: var(--lib-text); }
 html .library-page-shell .dir-saved[aria-pressed="true"] svg { color: #e5484d; }
 
 /* ---- Sort menu (portaled) ---- */
@@ -1491,7 +1466,7 @@ html .library-page-shell .library-grid-card .library-card-heading { padding: 0 6
 html .library-page-shell .library-grid-card [data-slot], html .library-page-shell .library-grid-card h3 { color: var(--lib-text); }
 html .library-page-shell .library-grid-card .library-card-category,
 html.light .library-page-shell .library-grid-card .library-card-category { color: var(--lib-text-3); font-size: 11px; }
-html .library-page-shell .library-grid-card .library-card-category-dot { background: var(--lib-text-3); }
+html .library-page-shell .library-grid-card .library-card-category-dot { background: var(--lib-ink-faint); }
 html .library-page-shell .library-grid-card .library-grid-description,
 html.light .library-page-shell .library-grid-card .library-grid-description { padding: 0 6px; color: var(--lib-text-2); }
 html .library-page-shell .library-chip,
@@ -1539,21 +1514,6 @@ html .library-page-shell .directory-results-pane > .border-dashed { border: 0; b
 html .library-page-shell, .lib-menu { --ring: var(--lib-focus); --sidebar-ring: var(--lib-focus); }
 html .library-page-shell :focus-visible { outline-color: var(--lib-focus) !important; }
 
-/* ---- Notice on the directory: neutral, lifted card ---- */
-body:has(.library-page-shell) .site-notice {
-  left: auto; right: 16px; bottom: 16px; max-width: 420px; padding: 14px 16px;
-  border: 0; border-radius: 14px; background: var(--lib-surface); color: var(--lib-text); box-shadow: var(--lib-depth-3);
-}
-body:has(.library-page-shell) .site-notice > div { flex-direction: column; align-items: flex-start; gap: 12px; }
-body:has(.library-page-shell) .site-notice h2 { font-size: 14px; }
-body:has(.library-page-shell) .site-notice p { color: var(--lib-text-2); font-size: 13px; line-height: 1.45; }
-body:has(.library-page-shell) .site-notice-cta {
-  min-height: 32px; height: 32px; padding: 0 12px; border-radius: 9px;
-  background: var(--lib-text) !important; color: var(--lib-bg) !important; font-size: 12.5px;
-}
-body:has(.library-page-shell) .site-notice-close { min-height: 32px; color: var(--lib-text-2); font-size: 12.5px; text-decoration: none; }
-body:has(.library-page-shell) .site-notice-close:hover { color: var(--lib-text); }
-
 @media (max-width: 760px) {
   .library-page-shell .directory-results-pane { padding: 16px 16px 120px; border-radius: 0; box-shadow: none; }
   .library-page-shell .dir-search, html .library-page-shell .dir-search:focus-within { width: 100%; }
@@ -1582,11 +1542,7 @@ html .library-page-shell .dir-segment[data-value="1"] .dir-segment-pill { transf
   column-gap: 16px;
   min-height: 64px;
   padding: 12px 12px 12px 14px;
-  border-radius: 14px;
-  background: var(--lib-surface);
   color: var(--lib-text);
-  box-shadow: var(--lib-depth-2);
-  transition: transform 260ms cubic-bezier(.32,.72,0,1), box-shadow 260ms ease;
 }
 .lib-row-logo { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 10px; background: var(--lib-field); box-shadow: var(--lib-depth-1); }
 :root { --lib-new-accent: #fffff0; --lib-new-ink: #202020; }
@@ -1613,17 +1569,16 @@ html.light .lib-card > .new-addition-label { --lib-new-accent: #fffff0; --lib-ne
 }
 .lib-row-actions > .new-addition-label { margin-right: 8px; }
 .ld-side-card > .new-addition-label { position: absolute; top: 12px; right: 12px; z-index: 1; pointer-events: none; }
-/* The label's expiry also removes the tint, including on pages left open. */
-html .app-frame :is(.lib-card, .lib-row, .ld-side-card):has(> .new-addition-label),
-html .app-frame .lib-row:has(.lib-row-actions > .new-addition-label) {
+/* The label's expiry also removes the tint, including on pages left open. Only grid cards are tinted: list rows and the
+   library page's side block are unframed, so their "New additions" label alone marks them. */
+html .app-frame .lib-card:has(> .new-addition-label) {
   background: color-mix(in srgb, var(--lib-new-accent) 9%, var(--lib-surface));
   box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--lib-new-accent) 28%, transparent), var(--lib-depth-2);
 }
 html .app-frame .lib-card:has(> .new-addition-label):hover {
   background: color-mix(in srgb, var(--lib-new-accent) 12%, var(--lib-surface-hover));
 }
-html .app-frame .lib-card:has(> .new-addition-label):has(.lib-card-name:focus-visible),
-html .app-frame .lib-row:has(.lib-row-actions > .new-addition-label):has(.lib-row-name:focus-visible) {
+html .app-frame .lib-card:has(> .new-addition-label):has(.lib-card-name:focus-visible) {
   outline: 2px solid var(--lib-focus); outline-offset: 2px;
 }
 .lib-row-id { display: grid; min-width: 0; line-height: 1.25; }
@@ -1635,15 +1590,16 @@ html .app-frame .lib-row:has(.lib-row-actions > .new-addition-label):has(.lib-ro
 .lib-row-tags { display: flex; align-items: center; justify-content: flex-end; gap: 4px; }
 .lib-tag { display: inline-flex; align-items: center; gap: 3px; height: 22px; padding: 0 8px; border-radius: 7px; background: var(--lib-field); color: var(--lib-text-2); font-size: 11.5px; font-weight: 600; white-space: nowrap; }
 .lib-tag-link { position: relative; z-index: 1; text-decoration: none; }
-.lib-tag-link:hover { color: var(--lib-text); background: var(--lib-field-hover); }
+.lib-tag-link:hover { color: var(--lib-text); }
 .lib-tag-link svg { width: 11px; height: 11px; }
 .lib-tag-more { color: var(--lib-text-3); }
 .lib-row-actions { position: relative; z-index: 1; display: flex; align-items: center; gap: 2px; }
 .lib-row-action { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 9px; color: var(--lib-text-3); transition: background-color 160ms ease, color 160ms ease; }
-.lib-row-action:hover { background: var(--lib-hover); color: var(--lib-text); }
+.lib-row-action:hover { color: var(--lib-text); }
 .lib-row-action svg { width: 16px; height: 16px; }
 .lib-row-action.library-save[aria-pressed="true"] { color: #e5484d; }
-html .library-page-shell .directory-gallery:has(.lib-row) { gap: 8px; }
+/* List rows are separated by hairlines (see .lib-row::before), so the list has no gap. */
+html .app-frame .directory-gallery:has(.lib-row) { gap: 0; }
 @media (max-width: 1023px) {
   .lib-row { grid-template-columns: 36px minmax(0, 1fr) auto; row-gap: 8px; }
   .lib-row-desc { grid-column: 2 / 4; white-space: normal; }
@@ -1654,7 +1610,6 @@ html .library-page-shell .directory-gallery:has(.lib-row) { gap: 8px; }
 /* ---- Hover: cards come toward you (scale), not up ---- */
 html .library-page-shell .library-grid-card:hover,
 html.light .library-page-shell .library-grid-card:hover { transform: scale(1.015); }
-.lib-row:hover { transform: scale(1.006); box-shadow: var(--lib-depth-3); }
 html .library-page-shell .library-grid-card { transform-origin: center; will-change: transform; }
 
 /* ---- No click artefacts: no press-shrink, no focus box on mouse click, no tap flash ---- */
@@ -1707,7 +1662,7 @@ html .library-page-shell .dir-toolbar { -webkit-user-select: none; user-select: 
 /* Crisp checkboxes: whole-pixel box, 1px ring. */
 html .library-page-shell .facet-check {
   width: 14px; height: 14px; border-radius: 4px;
-  background: transparent; box-shadow: inset 0 0 0 1px var(--lib-text-3);
+  background: transparent; box-shadow: inset 0 0 0 1px var(--lib-ink-faint);
   transition: background-color 160ms ease, box-shadow 160ms ease;
 }
 html .library-page-shell .facet-option:hover .facet-check { box-shadow: inset 0 0 0 1px var(--lib-text-2); }
@@ -1745,8 +1700,9 @@ html .library-page-shell .library-grid-card:hover::before { transform: scale(1.0
 html .library-page-shell .library-card-image img { transition: transform 460ms cubic-bezier(.32,.72,0,1); }
 html .library-page-shell .library-grid-card:hover .library-card-image img { transform: scale(1.04); }
 
+/* List rows are plain: no fill or frame, just a hairline underneath. */
 .lib-row, .lib-row:hover { isolation: isolate; background: transparent; box-shadow: none; transform: none; }
-.lib-row:hover::before { transform: scale(1.012, 1.04); background: var(--lib-surface-hover); }
+.lib-row::before, .lib-row:hover::before { background: transparent; box-shadow: inset 0 -1px 0 var(--lib-line); transform: none; }
 
 /* ---- Save heart: calm fade, no pop, no frosted glass ---- */
 html .library-page-shell .directory-section .library-grid-save,
@@ -1809,8 +1765,11 @@ html.light .app-frame .site-header-search {
   background: var(--lib-field); color: var(--lib-text-3); box-shadow: var(--lib-depth-1);
 }
 .app-frame .site-header-search input { height: auto; line-height: normal; color: var(--lib-text); font-size: 13px; }
-.app-frame .site-header-search input::placeholder { color: var(--lib-text-3); opacity: 1; }
-.app-frame .site-header-search kbd { min-width: 20px; height: 20px; border: 0; border-radius: 6px; background: var(--lib-bg); color: var(--lib-text-3); box-shadow: 0 0 0 1px var(--lib-edge); font-family: inherit; font-size: 11px; font-weight: 600; }
+.app-frame .site-header-search input::placeholder { color: var(--lib-text-2); opacity: 1; }
+/* Same `/` key as the directory fields. */
+html .app-frame .site-header-search kbd { width: auto; height: auto; padding: 2px 7px; border: 0; border-radius: 6px; background: var(--lib-field); color: var(--lib-text-2); box-shadow: 0 0 0 1px var(--lib-edge); font: 600 11px/1.4 var(--font-mono, ui-monospace, monospace); }
+/* No `/` key on phones and touch screens, matching the directory fields. */
+@media (max-width: 760px), (any-pointer: coarse) { html .app-frame .site-header-search kbd { display: none; } }
 .app-frame .site-header-search-results { border: 0; border-radius: 12px; background: var(--lib-surface); color: var(--lib-text); box-shadow: var(--lib-depth-3); }
 .site-header-directory .site-header-search { display: none; }
 
@@ -1946,10 +1905,9 @@ html .app-frame .lib-card .lib-card-media img { border-radius: 0; }
 .lib-card-save[aria-pressed="true"] { color: #ff6b70; }
 @media (hover: none) { .lib-card-save { opacity: 1; } }
 
-/* List rows: plain hover, no scaling. */
+/* List rows: hover changes text colour only. */
 .lib-row, .lib-row:hover { transform: none; }
-.lib-row::before { transition: background-color 180ms ease, box-shadow 180ms ease; }
-.lib-row:hover::before { transform: none; box-shadow: inset 0 1px 0 var(--lib-highlight), 0 0 0 1px var(--lib-pill-edge), 0 2px 6px rgba(0,0,0,.22); }
+.lib-row:hover :is(.lib-row-desc, .lib-row-host) { color: var(--lib-text); }
 
 /* ---- Docs inside the frame ---- */
 .app-frame .docs-sidebar { padding: 0; background: transparent; }
@@ -1964,7 +1922,7 @@ html .app-frame .lib-card .lib-card-media img { border-radius: 0; }
 /* Checkbox ring as a real border: borders snap to device pixels, inset shadows
    anti-alias at fractional display scales and leave stray corner pixels. */
 html .app-frame .facet-check {
-  box-sizing: border-box; width: 14px; height: 14px; border: 1px solid var(--lib-text-3); border-radius: 4px;
+  box-sizing: border-box; width: 14px; height: 14px; border: 1px solid var(--lib-ink-faint); border-radius: 4px;
   background: transparent; box-shadow: none;
 }
 html .app-frame .facet-option:hover .facet-check { border-color: var(--lib-text-2); box-shadow: none; }
@@ -2034,9 +1992,9 @@ html.light .site-brand-mark { filter: invert(1); }
 .site-search:focus-within { background: var(--lib-surface); box-shadow: 0 0 0 1px var(--lib-pill-edge); color: var(--lib-text-2); }
 .site-search > svg { width: 15px; height: 15px; flex: 0 0 auto; }
 .site-search input { min-width: 0; flex: 1 1 auto; height: auto; line-height: normal; background: transparent; color: var(--lib-text); font-size: 13px; outline: none; }
-.site-search input::placeholder { color: var(--lib-text-3); opacity: 1; }
+.site-search input::placeholder { color: var(--lib-text-2); opacity: 1; }
 .site-search input::-webkit-search-cancel-button { display: none; }
-.site-search kbd { display: grid; place-items: center; min-width: 20px; height: 20px; border-radius: 6px; background: var(--lib-bg); color: var(--lib-text-3); box-shadow: 0 0 0 1px var(--lib-edge); font-family: inherit; font-size: 11px; font-weight: 600; }
+.site-search kbd { padding: 2px 7px; border: 0; border-radius: 6px; background: var(--lib-field); color: var(--lib-text-2); box-shadow: 0 0 0 1px var(--lib-edge); font: 600 11px/1.4 var(--font-mono, ui-monospace, monospace); }
 .site-search:focus-within kbd { opacity: 0; }
 .site-search-results {
   position: absolute; top: calc(100% + 6px); left: 0; z-index: 60; width: 280px; padding: 4px;
@@ -2049,9 +2007,6 @@ html.light .site-brand-mark { filter: invert(1); }
 .site-search-results p { padding: 8px; color: var(--lib-text-3); font-size: 13px; }
 .site-search-results button { width: 100%; margin-top: 4px; padding: 8px; border-top: 1px solid var(--lib-line); color: var(--lib-text-2); font-size: 12.5px; font-weight: 600; text-align: left; }
 .site-search-results button:hover { color: var(--lib-text); }
-.site-search-icon { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px; background: var(--lib-field); color: var(--lib-text-3); box-shadow: var(--lib-depth-1); }
-.site-search-icon:hover { background: var(--lib-field-hover); color: var(--lib-text); }
-.site-search-icon svg { width: 15px; height: 15px; }
 
 /* Navigation: the column narrowing is what shrinks the pills; no width snapping. */
 html .app-frame .app-frame-nav { grid-area: nav; min-width: 0; padding: 0 12px 12px; }
@@ -2067,8 +2022,6 @@ html .app-frame[data-rail] .app-frame-slot {
 html.light .app-frame[data-rail] .app-frame-slot { box-shadow: inset 1px 0 0 rgba(0,0,0,.07), inset 2px 0 0 #fff; }
 /* Docs navigation keeps its final width while its column opens, so it is revealed, not squeezed. */
 html .app-frame[data-rail] .app-frame-slot > * { width: calc(var(--sb-docs) - 24px); }
-.app-frame-slot > * { animation: frame-slot-in 420ms var(--frame-ease) 80ms both; }
-@keyframes frame-slot-in { from { opacity: 0; transform: translateX(-6px); } }
 
 /* Repository controls and package version at the bottom of the sidebar. */
 .app-frame-footer { grid-area: footer; display: grid; gap: 8px; min-width: 0; padding: 10px 12px 12px; }
@@ -2107,7 +2060,6 @@ html .app-frame .app-frame-panel { grid-column: 2; grid-row: 1; margin-top: 8px;
 }
 @media (prefers-reduced-motion: reduce) {
   html .app-frame.library-page-shell[data-sidebar], html .app-frame .app-frame-sidebar { transition: none; }
-  .app-frame-slot > * { animation: none; }
 }
 
 /* ---- Cards: category chip beside the name, previews at their real 1.9:1 shape ---- */
@@ -2121,7 +2073,6 @@ html .app-frame .lib-card .lib-card-media { aspect-ratio: 1200 / 630; }
 .lib-card-desc { margin-top: 6px; }
 .lib-card-meta { margin-top: 10px; padding-top: 0; }
 .lib-tag, .lib-row-logo, .facet-selected-count { background: var(--lib-chip); }
-.lib-tag-link:hover { background: var(--lib-field-hover); }
 /* The slot spans rows in rail mode; its content must not size those rows. */
 html .app-frame .app-frame-slot { contain: size; }
 html .app-frame[data-sidebar] .app-frame-sidebar { grid-template-rows: var(--sb-brand-h) auto auto minmax(0, 1fr) auto; }
@@ -2129,47 +2080,8 @@ html .app-frame[data-sidebar] .app-frame-sidebar { grid-template-rows: var(--sb-
 @media (max-width: 760px) { .app-frame .site-header .site-repo { display: none; } }
 
 
-/* =====================================================================
-   Docs: navigation lives inside the content card as a sticky left column.
-   ===================================================================== */
-.docs-shell { display: grid; grid-template-columns: 216px minmax(0, 1fr); align-items: start; min-height: 100%; }
-.docs-shell-nav {
-  position: sticky; top: 0; align-self: start;
-  max-height: calc(100dvh - 8px); overflow-y: auto; scrollbar-width: none;
-  padding: 24px 12px;
-  box-shadow: inset -1px 0 0 var(--lib-line);
-}
-.docs-shell-nav::-webkit-scrollbar { display: none; }
-.docs-shell-content { width: 100%; max-width: calc(76ch + 64px); margin: 0 auto; padding: 40px 32px 64px; }
-.app-frame .docs-shell .docs-sidebar-heading { margin: 16px 0 4px; }
-.app-frame .docs-shell .docs-sidebar-content > div > div:first-of-type .docs-sidebar-heading { margin-top: 0; }
-@media (min-width: 1024px) { .docs-shell .docs-sidebar [class*="mobileBar"] { display: none; } }
-@media (max-width: 1023px) {
-  .docs-shell { grid-template-columns: minmax(0, 1fr); }
-  .docs-shell-nav { position: static; max-height: none; padding: 12px 16px 0; box-shadow: none; }
-  .docs-shell-content { padding: 24px 20px 64px; }
-}
-
 /* Directory toolbar without its own search field. */
 html .app-frame .dir-toolbar-controls { margin-left: auto; }
-
-/* =====================================================================
-   Docs navigation: a recessed panel cut into the content card.
-   ===================================================================== */
-.docs-shell { grid-template-columns: 232px minmax(0, 1fr); }
-.docs-shell-nav {
-  top: 12px; margin: 12px 0 12px 12px; padding: 14px 10px;
-  max-height: calc(100dvh - 8px - 24px);
-  border-radius: 14px;
-  background: var(--lib-bg);
-  box-shadow: inset 0 1px 3px rgba(0,0,0,.45), inset 0 0 0 1px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.035);
-}
-html.light .docs-shell-nav { box-shadow: inset 0 1px 3px rgba(0,0,0,.07), inset 0 0 0 1px rgba(0,0,0,.05), 0 1px 0 #fff; }
-.app-frame .docs-shell .docs-sidebar-heading { margin: 14px 0 4px; padding-left: 8px !important; }
-@media (max-width: 1023px) {
-  .docs-shell { grid-template-columns: minmax(0, 1fr); }
-  .docs-shell-nav { margin: 12px 12px 0; }
-}
 
 /* =====================================================================
    Library detail
@@ -2179,15 +2091,19 @@ html.light .docs-shell-nav { box-shadow: inset 0 1px 3px rgba(0,0,0,.07), inset 
   --ld-top: 24px; --ld-back-height: 28px; --ld-layout-gap: 20px;
   width: 100%; max-width: 1120px; margin: 0 auto; padding: var(--ld-top) 32px 80px; color: var(--lib-text);
 }
-.ld-reveal { animation: ld-rise 560ms var(--frame-ease) both; animation-delay: calc(var(--i, 0) * 60ms); }
-@keyframes ld-rise { from { opacity: 0; transform: translateY(12px); } }
+/* One shared content entrance: a short fade-up, opacity and transform only.
+   Used by .ld-reveal (library, integration, contributors, sponsors pages), the
+   docs nav and contents columns, and a docs article's first load. Elements
+   that pass --i keep a small stagger, capped so long lists do not trail on. */
+@keyframes page-in { from { opacity: 0; transform: translateY(8px); } }
+.ld-reveal { animation: page-in 320ms var(--frame-ease) both; animation-delay: calc(min(var(--i, 0), 10) * 40ms); }
 
 .ld-back {
   display: inline-flex; align-items: center; gap: 6px; height: var(--ld-back-height); padding: 0 10px 0 8px; margin-left: -8px;
   border-radius: 9px; color: var(--lib-text-3); font-size: 13px; font-weight: 600; text-decoration: none;
   transition: color 160ms ease, background-color 160ms ease;
 }
-.ld-back:hover { color: var(--lib-text); background: var(--lib-hover); }
+.ld-back:hover { color: var(--lib-text); }
 .ld-back svg { width: 15px; height: 15px; transition: transform 240ms var(--frame-ease); }
 .ld-back:hover svg { transform: translateX(-2px); }
 
@@ -2209,9 +2125,9 @@ html.light .docs-shell-nav { box-shadow: inset 0 1px 3px rgba(0,0,0,.07), inset 
 .ld-section { margin-top: 36px; }
 .ld-section h2 { margin-bottom: 12px; color: var(--lib-text); font-size: 15px; font-weight: 800; }
 .ld-section-note { margin: -6px 0 12px; color: var(--lib-text-3); font-size: 13px; }
-/* Pricing and community-collection notices under the description; only shown when something is paid or third-party. */
+/* Pricing, community-collection and API-key notices under the description: plain text with an icon, no box. */
 .ld-notices { display: grid; gap: 8px; max-width: 64ch; margin-top: 16px; }
-.ld-notice { display: flex; align-items: flex-start; gap: 10px; margin: 0; padding: 10px 12px; border-radius: 12px; background: var(--lib-chip); color: var(--lib-text-2); font-size: 13.5px; line-height: 1.55; }
+.ld-notice { display: flex; align-items: flex-start; gap: 10px; margin: 0; color: var(--lib-text-2); font-size: 13.5px; line-height: 1.55; }
 .ld-notice svg { flex-shrink: 0; width: 16px; height: 16px; margin-top: 2px; color: var(--lib-text); }
 .ld-notice strong { color: var(--lib-text); font-weight: 700; }
 .ld-notice a { color: var(--lib-text); font-weight: 600; text-underline-offset: 3px; }
@@ -2242,8 +2158,9 @@ html.light .docs-shell-nav { box-shadow: inset 0 1px 3px rgba(0,0,0,.07), inset 
 .ld-tabs button[aria-selected="true"] { color: var(--lib-text); }
 .ld-tabs button:focus-visible { outline: 2px solid var(--lib-focus); outline-offset: -2px; }
 .ld-tabs-pill {
-  position: absolute; top: 0; left: 0; height: 30px; border-radius: 9px;
-  background: var(--lib-chip);
+  /* An underline under the selected tab's text (inset by the tab's padding), not a filled chip. */
+  position: absolute; top: 0; left: 0; height: 30px;
+  background: linear-gradient(var(--lib-text), var(--lib-text)) 50% 100% / calc(100% - 22px) 2px no-repeat;
   transition: transform 380ms var(--frame-ease), width 380ms var(--frame-ease), opacity 200ms ease;
 }
 
@@ -2271,15 +2188,16 @@ html.light .docs-shell-nav { box-shadow: inset 0 1px 3px rgba(0,0,0,.07), inset 
   font-size: 11.5px; font-weight: 800; font-variant-numeric: tabular-nums;
 }
 .ld-timeline p { padding-top: 2px; color: var(--lib-text-2); font-size: 14px; line-height: 1.6; overflow-wrap: anywhere; }
-.ld-timeline a { color: var(--lib-text); text-decoration: underline; text-decoration-color: var(--lib-text-3); text-underline-offset: 3px; }
+.ld-timeline a { color: var(--lib-text); text-decoration: underline; text-decoration-color: var(--lib-ink-faint); text-underline-offset: 3px; }
 .ld-timeline a:hover { text-decoration-color: currentColor; }
 
 /* Agent prompt */
 .ld-prompt-body { position: relative; max-height: 188px; overflow: hidden; transition: max-height 520ms var(--frame-ease); }
 .ld-prompt-body pre { margin: 0; padding: 18px 20px 12px; color: var(--lib-text-2); font-family: var(--font-mono); font-size: 12.5px; line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; }
+/* The fade stops short of opaque so the last visible line stays at least 4.5:1 (16% of the surface colour over --lib-text-2, both themes). */
 .ld-prompt-body::after {
   content: ""; position: absolute; inset: auto 0 0; height: 72px; pointer-events: none;
-  background: linear-gradient(to bottom, transparent, var(--lib-media));
+  background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--lib-media) 16%, transparent));
   transition: opacity 300ms ease;
 }
 .ld-prompt[data-expanded="true"] .ld-prompt-body::after { opacity: 0; }
@@ -2287,30 +2205,30 @@ html.light .docs-shell-nav { box-shadow: inset 0 1px 3px rgba(0,0,0,.07), inset 
   display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 8px; border-radius: 9px;
   color: var(--lib-text-3); font-size: 12.5px; font-weight: 700; transition: color 160ms ease, background-color 160ms ease;
 }
-.ld-prompt-toggle:hover { color: var(--lib-text); background: var(--lib-hover); }
+.ld-prompt-toggle:hover { color: var(--lib-text); }
 .ld-prompt-toggle svg { width: 14px; height: 14px; transition: transform 320ms var(--frame-ease); }
 .ld-prompt[data-expanded="true"] .ld-prompt-toggle svg { transform: rotate(180deg); }
 
-/* Side card: same shape as the library cards. */
-/* Related libraries: one list card per group, side by side when there is room. */
-.ld-related { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+/* Related libraries, integrations and connectors: plain rows with a hairline between them, one list per group, side by side when there is room. */
+.ld-related { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px 32px; }
 .ld-related-title { margin: 0 0 10px; color: var(--lib-text-3); font-size: 13px; font-weight: 600; }
-.ld-related-list { overflow: hidden; margin: 0; padding: 0; list-style: none; border-radius: 16px; background: var(--lib-surface); box-shadow: var(--lib-depth-2); }
-.ld-related-list li + li { box-shadow: inset 0 1px 0 var(--lib-line); }
-.ld-related-row { display: flex; align-items: center; gap: 12px; padding: 12px 14px; color: var(--lib-text); text-decoration: none; }
+.ld-related-list { margin: 0; padding: 0; list-style: none; }
+.ld-related-list li { box-shadow: inset 0 -1px 0 var(--lib-line); }
+.ld-related-row { display: flex; align-items: center; gap: 12px; padding: 12px 0; color: var(--lib-text); text-decoration: none; }
 .ld-related-logo { display: grid; flex-shrink: 0; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--lib-chip); }
 .ld-related-copy { display: grid; flex: 1; gap: 2px; min-width: 0; }
 .ld-related-name { overflow: hidden; font-size: 14.5px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
 .ld-related-meta { color: var(--lib-text-3); font-size: 12.5px; }
 .ld-related-row svg { flex-shrink: 0; width: 16px; height: 16px; color: var(--lib-text-3); transition: transform 260ms var(--frame-ease); }
 .ld-related-row:is(:hover, :focus-visible) svg { transform: translateX(2px); }
-.ld-related-row:is(:hover, :focus-visible) .ld-related-name { text-decoration: underline; text-decoration-color: var(--lib-text-3); text-underline-offset: 4px; }
+.ld-related-row:is(:hover, :focus-visible) .ld-related-name { text-decoration: underline; text-decoration-color: var(--lib-ink-faint); text-underline-offset: 4px; }
 .ld-side { position: sticky; top: calc(var(--ld-top) + var(--ld-back-height) + var(--ld-layout-gap)); }
-.ld-side-card { position: relative; overflow: hidden; border-radius: 16px; background: var(--lib-surface); box-shadow: var(--lib-depth-2); }
-.ld-side-media { margin: 0; overflow: hidden; aspect-ratio: 1200 / 630; border-radius: 0 0 12px 12px; background: var(--lib-media); box-shadow: inset 0 -1px 0 var(--lib-edge); }
+/* Side block: no outer frame. The preview keeps its own edge; the facts sit under it on the page. */
+.ld-side-card { position: relative; display: grid; gap: 16px; }
+.ld-side-media { margin: 0; overflow: hidden; aspect-ratio: 1200 / 630; border-radius: 8px; background: var(--lib-media); box-shadow: inset 0 0 0 1px var(--lib-edge); }
 .ld-side-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 700ms var(--frame-ease); }
 .ld-side-card:hover .ld-side-media img { transform: scale(1.03); }
-.ld-side-body { padding: 14px; }
+.ld-side-body { min-width: 0; }
 .ld-actions { display: grid; gap: 8px; }
 .ld-actions-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 8px; }
 .ld-button {
@@ -2339,13 +2257,13 @@ html.light .docs-shell-nav { box-shadow: inset 0 1px 3px rgba(0,0,0,.07), inset 
   .ld-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
   .ld-side { position: static; order: -1; grid-row: 1; }
   .ld-main { grid-row: 2; }
-  .ld-side-card { display: grid; grid-template-columns: minmax(0, 320px) minmax(0, 1fr); }
-  .ld-side-media { border-radius: 0 12px 12px 0; aspect-ratio: auto; min-height: 100%; }
+  .ld-side-card { grid-template-columns: minmax(0, 320px) minmax(0, 1fr); gap: 24px; }
+  .ld-side-media { aspect-ratio: auto; min-height: 100%; }
 }
 @media (max-width: 700px) {
   .ld { padding: 20px 16px 64px; }
-  .ld-side-card { display: block; }
-  .ld-side-media { border-radius: 0 0 12px 12px; aspect-ratio: 1200 / 630; }
+  .ld-side-card { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .ld-side-media { aspect-ratio: 1200 / 630; min-height: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
   .ld-reveal, .ld-screen-command:not([hidden]), .ld-copy[data-status="copied"] svg { animation: none; }
@@ -2354,8 +2272,6 @@ html.light .docs-shell-nav { box-shadow: inset 0 1px 3px rgba(0,0,0,.07), inset 
 }
 /* Long commands wrap instead of scrolling sideways. */
 .ld-screen-command pre { overflow-x: visible; white-space: pre-wrap; overflow-wrap: anywhere; padding-left: 40px; text-indent: -20px; }
-.docs-shell .docs-sidebar-content > div { gap: 6px; }
-
 /* ---- Install command: blur wave from the start of the command to the end ---- */
 .ld-screen-command pre { display: flex; gap: 10px; padding: 22px 20px; text-indent: 0; white-space: normal; }
 .ld-screen-command .ld-prompt-sign { margin: 0; flex: 0 0 auto; }
@@ -2369,18 +2285,17 @@ html.light .docs-shell-nav { box-shadow: inset 0 1px 3px rgba(0,0,0,.07), inset 
 .ld-screen-command:not([hidden]) { animation: none; }
 @media (prefers-reduced-motion: reduce) { .ld-wave-in, .ld-wave-out { animation: none; } .ld-wave-out { opacity: 0; } }
 
-/* ---- Getting started: boxed numbers centred on the first line ---- */
+/* ---- Getting started: plain numerals centred on the first line ---- */
 .ld-timeline { gap: 0; }
 .ld-timeline li { grid-template-columns: 26px minmax(0, 1fr); gap: 14px; align-items: start; padding-bottom: 18px; }
 .ld-timeline li:last-child { padding-bottom: 0; }
 .ld-timeline li:not(:last-child)::before { top: 32px; bottom: 6px; left: 12.5px; }
 .ld-timeline-dot {
-  width: 26px; height: 26px; border-radius: 8px;
-  background: var(--lib-surface); color: var(--lib-text-2);
-  box-shadow: var(--lib-depth-1), inset 0 0 0 1px var(--lib-pill-edge);
+  width: 26px; height: 26px;
+  background: none; color: var(--lib-text-2); box-shadow: none;
   font-size: 12px; line-height: 1;
 }
-/* Measured: 2.5px of padding puts the first line's centre on the 26px box's centre. */
+/* Measured: 2.5px of padding puts the first line's centre on the 26px numeral cell's centre. */
 .ld-timeline p { padding-top: 2.5px; }
 
 /* ---- Custom scrollbars ---- */
@@ -2398,14 +2313,14 @@ html.light { --scroll-thumb: rgba(0,0,0,.16); --scroll-thumb-hover: rgba(0,0,0,.
 /* Firefox has no scrollbar pseudo-elements; use the standard properties there only,
    because setting them in Chrome disables the pseudo-element styling above. */
 @supports not selector(::-webkit-scrollbar) {
-  .app-frame-panel, .ld-screen, .docs-shell-nav { scrollbar-width: thin; scrollbar-color: var(--scroll-thumb) transparent; }
+  .app-frame-panel, .ld-screen { scrollbar-width: thin; scrollbar-color: var(--scroll-thumb) transparent; }
 }
 
 /* =====================================================================
    Stability: text inside animated blocks stays on its own layer for good,
    so it never re-renders (and visibly shifts) when an animation ends.
    ===================================================================== */
-.ld-reveal, .ld-cmd, .dx-reveal, .copy-swap > * { will-change: transform; }
+.ld-reveal, .ld-cmd, .copy-swap > * { will-change: transform; }
 .ld-wave-char { will-change: auto; }
 .ld-wave-in, .ld-wave-out { will-change: opacity, filter, transform; }
 
@@ -2422,7 +2337,13 @@ html.light { --scroll-thumb: rgba(0,0,0,.16); --scroll-thumb-hover: rgba(0,0,0,.
 html.light .ld-tabs { box-shadow: inset 0 0 0 1px var(--lib-edge), inset 0 1px 2px rgba(0,0,0,.04); }
 .ld-tabs button { height: 28px; color: var(--lib-text-2); }
 .ld-tabs button:hover { color: var(--lib-text); }
-.ld-tabs-pill { top: 3px; left: 0; height: 28px; background: var(--lib-pill); box-shadow: var(--lib-pill-depth); }
+.ld-tabs-pill { top: 3px; left: 0; height: 28px; }
+
+/* On library and integration pages the prompt and setup cards drop their outer frame: the code surface keeps its own background and edge, and the controls sit under it on the page. Scoped to .ld-main so the docs code blocks, which reuse these classes, are unchanged. */
+.ld-main .ld-card { overflow: visible; border-radius: 0; background: none; box-shadow: none; }
+.ld-main .ld-screen { border-radius: 10px; box-shadow: inset 0 0 0 1px var(--lib-edge); }
+.ld-main .ld-card-caption { padding: 12px 0 0; }
+.ld-main .ld-card-foot { padding: 8px 0 0; }
 
 /* Copy button: icons and labels cross-fade in place, in both directions. */
 .ld-copy { height: 32px; padding: 0 12px; gap: 7px; }
@@ -2446,23 +2367,6 @@ html.light .ld-tabs { box-shadow: inset 0 0 0 1px var(--lib-edge), inset 0 1px 2
 /* =====================================================================
    Docs
    ===================================================================== */
-.docs-shell { max-width: 1040px; margin: 0 auto; grid-template-columns: 220px minmax(0, 1fr); column-gap: 24px; padding: 0 24px; }
-.docs-shell-nav { margin: 24px 0; top: 24px; max-height: calc(100dvh - 8px - 48px); }
-.docs-shell-content { max-width: none; margin: 0; padding: 48px 8px 72px; }
-.docs-shell-content > article { max-width: 720px; }
-
-/* Entrance: nav fades in, then each block of the page rises in turn. */
-@keyframes dx-in { from { opacity: 0; transform: translateY(10px); filter: blur(4px); } }
-.docs-shell-nav { animation: dx-in 700ms var(--frame-ease) both; }
-.docs-shell-content > article > *, .docs-shell-content > .dx-pager { animation: dx-in 700ms var(--frame-ease) both; will-change: transform; }
-.docs-shell-content > article > :nth-child(1) { animation-delay: 60ms; }
-.docs-shell-content > article > :nth-child(2) { animation-delay: 120ms; }
-.docs-shell-content > article > :nth-child(3) { animation-delay: 180ms; }
-.docs-shell-content > article > :nth-child(4) { animation-delay: 240ms; }
-.docs-shell-content > article > :nth-child(5) { animation-delay: 300ms; }
-.docs-shell-content > article > :nth-child(n + 6) { animation-delay: 360ms; }
-.docs-shell-content > .dx-pager { animation-delay: 420ms; }
-
 .dx-header h1 { color: var(--lib-text); font-size: 36px; font-weight: 800; letter-spacing: -.025em; line-height: 1.1; }
 .dx-lead { margin-top: 14px; color: var(--lib-text); font-size: 17px; line-height: 1.6; }
 .dx-sub { margin-top: 10px; color: var(--lib-text-2); font-size: 15px; line-height: 1.7; }
@@ -2474,7 +2378,7 @@ html.light .ld-tabs { box-shadow: inset 0 0 0 1px var(--lib-edge), inset 0 1px 2
 
 .dx-list { display: grid; gap: 8px; }
 .dx-list li { position: relative; padding-left: 20px; color: var(--lib-text-2); font-size: 15px; line-height: 1.7; }
-.dx-list li::before { content: ""; position: absolute; left: 2px; top: .72em; width: 7px; height: 7px; border-radius: 2px; background: var(--lib-text-3); }
+.dx-list li::before { content: ""; position: absolute; left: 2px; top: .72em; width: 7px; height: 7px; border-radius: 2px; background: var(--lib-ink-faint); }
 
 .dx-note {
   padding: 14px 16px; border-radius: 14px; background: var(--lib-surface); box-shadow: var(--lib-depth-2);
@@ -2521,44 +2425,14 @@ html.light .ld-tabs { box-shadow: inset 0 0 0 1px var(--lib-edge), inset 0 1px 2
 .dx-pager-link:hover .dx-pager-kicker svg { transform: translateX(-2px); }
 .dx-pager-next:hover .dx-pager-kicker svg { transform: translateX(2px); }
 .dx-pager-title { color: var(--lib-text); font-size: 14.5px; font-weight: 800; }
-
-@media (max-width: 1023px) {
-  .docs-shell { padding: 0; }
-  .docs-shell-nav { margin: 12px 12px 0; }
-  .docs-shell-content { padding: 28px 20px 64px; }
-}
 @media (max-width: 700px) {
   .dx-cards, .dx-pager { grid-template-columns: minmax(0, 1fr); }
   .dx-header h1 { font-size: 30px; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .docs-shell-nav, .docs-shell-content > article > *, .docs-shell-content > .dx-pager { animation: none; }
-}
 
-/* ---- Docs layout v3: nav pinned to the card's left edge, vertically centred;
-        content centred in the card at the library page's width. ---- */
-.docs-shell {
-  max-width: none; margin: 0; padding: 0; column-gap: 0;
-  grid-template-columns: minmax(256px, 1fr) minmax(0, 880px) minmax(24px, 1fr);
-}
-.docs-shell-rail {
-  position: sticky; top: 0; align-self: start;
-  display: flex; align-items: center;
-  height: calc(100dvh - 8px); padding-left: 12px;
-}
-.docs-shell-nav { position: static; width: 232px; margin: 0; max-height: calc(100dvh - 8px - 24px); }
-.docs-shell-content { grid-column: 2; padding: 48px 24px 72px; }
-.docs-shell-content > article { max-width: none; }
+/* ---- Docs text measure ---- */
 .dx-header p, .dx-text, .dx-list, .dx-note { max-width: 70ch; }
 .dx-pager { max-width: none; }
-@media (max-width: 1023px) {
-  .docs-shell { grid-template-columns: minmax(0, 1fr); }
-  .docs-shell-rail { position: static; height: auto; padding: 12px 12px 0; }
-  .docs-shell-nav { width: 100%; }
-  .docs-shell-content { grid-column: 1; padding: 28px 20px 64px; }
-}
-.docs-shell-rail > .docs-shell-nav { align-self: center; }
-
 /* ---- Install command: the outgoing text sits out of layout; the box height animates ---- */
 .ld-cmd { position: relative; transition: height 380ms var(--frame-ease); }
 .ld-cmd-leaving { position: absolute; inset: 0 0 auto 0; pointer-events: none; }
@@ -2583,15 +2457,24 @@ html.light .ld-tabs { box-shadow: inset 0 0 0 1px var(--lib-edge), inset 0 1px 2
 .docs-layout-nav, .docs-layout-toc { position: sticky; top: 0; align-self: start; max-height: calc(100dvh - 8px); overflow-y: auto; padding: 56px 0 32px; scrollbar-width: none; }
 .docs-layout-nav::-webkit-scrollbar, .docs-layout-toc::-webkit-scrollbar { display: none; }
 .docs-layout-main { min-width: 0; padding: 56px 0 96px; }
+/* Docs search: a compact field in the library search's glass, spanning the layout's top so the
+   reading columns drop a little below it. The top bar hides its search on these pages (see Header). */
+.docs-search { grid-column: 1 / -1; display: flex; justify-content: center; padding: 20px 0 0; }
+html .app-frame .docs-search-field,
+html.light .app-frame .docs-search-field {
+  width: min(100%, 440px); height: 38px; min-height: 38px; padding: 0 8px 0 14px; border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.035));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.16), inset 0 0 0 1px rgba(255,255,255,.08), 0 8px 22px rgba(0,0,0,.35);
+  color: var(--lib-text-2);
+}
+html.light .app-frame .docs-search-field { background: #fff; box-shadow: inset 0 0 0 1px rgba(0,0,0,.09), 0 4px 14px rgba(0,0,0,.08); }
+html .app-frame .docs-search-field:focus-within { box-shadow: inset 0 1px 0 rgba(255,255,255,.16), 0 0 0 2px var(--lib-focus), 0 8px 24px rgba(0,0,0,.4); }
+html .app-frame .docs-search-field input { font-size: 14px; }
+html .app-frame .docs-search-field > svg { width: 16px; height: 16px; color: var(--lib-text); }
 
-/* Entrance: a short, quiet fade-up for the page body only. */
-@keyframes docs-in { from { opacity: 0; transform: translateY(8px); } }
-.docs-layout-main > article > *, .docs-layout-main > .docs-pager { animation: docs-in 560ms var(--frame-ease) both; will-change: transform; }
-.docs-layout-main > article > :nth-child(2) { animation-delay: 50ms; }
-.docs-layout-main > article > :nth-child(3) { animation-delay: 100ms; }
-.docs-layout-main > article > :nth-child(n + 4) { animation-delay: 150ms; }
-.docs-layout-main > .docs-pager { animation-delay: 200ms; }
-.docs-layout-nav, .docs-layout-toc { animation: docs-in 560ms var(--frame-ease) both; will-change: transform; }
+/* The nav and contents columns share the site-wide page-in entrance; the page
+   body itself is animated directionally by .docs-page below. */
+.docs-layout-nav, .docs-layout-toc { animation: page-in 320ms var(--frame-ease) both; }
 
 /* Navigation: plain list on a thin track; the current page is marked on the track. */
 .docs-nav-toggle { display: none; }
@@ -2615,7 +2498,6 @@ html.light .ld-tabs { box-shadow: inset 0 0 0 1px var(--lib-edge), inset 0 1px 2
 
 /* Content */
 .dx-header { padding-bottom: 8px; }
-.dx-eyebrow { color: var(--lib-text-3); font-size: 13px; font-weight: 600; }
 .dx-header h1 { margin-top: 8px; color: var(--lib-text); font-size: 34px; font-weight: 800; letter-spacing: -.025em; line-height: 1.12; }
 .dx-lead { margin-top: 14px; color: var(--lib-text); font-size: 17px; line-height: 1.6; }
 .dx-header .dx-text { margin-top: 10px; }
@@ -2634,7 +2516,7 @@ html.light .ld-tabs { box-shadow: inset 0 0 0 1px var(--lib-edge), inset 0 1px 2
 
 .dx-list { display: grid; gap: 6px; max-width: 65ch; }
 .dx-list li { position: relative; padding-left: 18px; color: var(--lib-text-2); font-size: 15px; line-height: 1.75; }
-.dx-list li::before { content: ""; position: absolute; left: 3px; top: .8em; width: 5px; height: 5px; border-radius: 999px; background: var(--lib-text-3); }
+.dx-list li::before { content: ""; position: absolute; left: 3px; top: .8em; width: 5px; height: 5px; border-radius: 999px; background: var(--lib-ink-faint); }
 
 .dx-note { max-width: 65ch; padding: 2px 0 2px 16px; box-shadow: inset 2px 0 0 var(--lib-pill-edge); color: var(--lib-text-3); font-size: 14px; line-height: 1.7; }
 
@@ -2646,7 +2528,7 @@ html.light .ld-tabs { box-shadow: inset 0 0 0 1px var(--lib-edge), inset 0 1px 2
 .dx-link-text { color: var(--lib-text-3); font-size: 14px; }
 .dx-link-row svg { width: 16px; height: 16px; flex: 0 0 auto; color: var(--lib-text-3); transition: transform 260ms var(--frame-ease), color 160ms ease; }
 .dx-link-row:hover svg { color: var(--lib-text); transform: translateX(3px); }
-.dx-link-row:hover .dx-link-title { text-decoration: underline; text-decoration-color: var(--lib-text-3); text-underline-offset: 4px; }
+.dx-link-row:hover .dx-link-title { text-decoration: underline; text-decoration-color: var(--lib-ink-faint); text-underline-offset: 4px; }
 
 .dx-code { margin: 0; overflow: hidden; border-radius: 12px; background: var(--lib-media); box-shadow: inset 0 0 0 1px var(--lib-edge); }
 .dx-code pre { margin: 0; padding: 16px 18px; border: 0; background: transparent; color: var(--lib-text); font-family: var(--font-mono); font-size: 13px; line-height: 1.8; }
@@ -2689,7 +2571,7 @@ html.light .ld-tabs { box-shadow: inset 0 0 0 1px var(--lib-edge), inset 0 1px 2
   .docs-nav-groups[data-open="true"] { display: grid; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .docs-layout-main > article > *, .docs-layout-main > .docs-pager, .docs-layout-nav, .docs-layout-toc { animation: none; }
+  .docs-layout-nav, .docs-layout-toc { animation: none; }
 }
 .dx-note { background: none; border-radius: 0; }
 
@@ -2715,9 +2597,10 @@ html.light .ld-tabs { box-shadow: inset 0 0 0 1px var(--lib-edge), inset 0 1px 2
    ===================================================================== */
 .docs-layout { column-gap: 48px; }
 
-/* Navigation pills, same as the main sidebar, with a pill that slides between pages. */
+/* Docs navigation: the current page and section are marked by a short bar on the leading edge that slides
+   between links (the same idea as the top bar's underline), never a filled background. */
 .docs-nav-groups { position: relative; gap: 20px; }
-.docs-nav-heading { margin-bottom: 6px; padding-left: 10px; color: var(--lib-text-3); font-size: 12px; font-weight: 500; }
+.docs-nav-heading { margin-bottom: 6px; padding-left: 10px; color: var(--lib-text-3); font-size: 12px; font-weight: 700; }
 .docs-nav ul, .docs-toc ul { position: relative; display: grid; gap: 2px; box-shadow: none; }
 .docs-nav-link, .docs-toc-link {
   position: relative; z-index: 1; display: flex; align-items: center; min-height: 30px; padding: 0 10px;
@@ -2727,32 +2610,23 @@ html.light .ld-tabs { box-shadow: inset 0 0 0 1px var(--lib-edge), inset 0 1px 2
 .docs-nav-link:hover, .docs-toc-link:hover { color: var(--lib-text); }
 .docs-nav-link[aria-current="page"], .docs-toc-link[aria-current="location"] { color: var(--lib-text); font-weight: 600; }
 .docs-nav-pill, .docs-toc-pill {
-  position: absolute; top: 0; left: 0; right: 0; z-index: 0; list-style: none;
-  border-radius: 10px; background: var(--lib-pill); box-shadow: var(--lib-pill-depth); pointer-events: none;
+  position: absolute; top: 0; left: 0; z-index: 0; width: 2px; list-style: none; pointer-events: none;
+  background: linear-gradient(var(--lib-text), var(--lib-text)) 0 50% / 2px calc(100% - 14px) no-repeat;
 }
-.docs-toc-pill { background: var(--lib-chip); box-shadow: none; }
 .docs-nav-pill[data-ready="true"], .docs-toc-pill[data-ready="true"] {
   transition: transform 460ms var(--frame-ease), height 460ms var(--frame-ease), opacity 200ms ease;
 }
 .docs-toc-link { min-height: 28px; font-size: 12.5px; }
 
 /* Page body: slides in from the direction you are moving. */
-.docs-layout-main > article > *, .docs-layout-main > .docs-pager { animation: none; will-change: auto; }
 .docs-page { will-change: transform; animation: docs-page-forward 520ms var(--frame-ease) both; }
 .docs-page[data-direction="back"] { animation-name: docs-page-back; }
-.docs-page[data-direction="initial"] { animation-name: docs-page-initial; animation-duration: 640ms; }
+.docs-page[data-direction="initial"] { animation-name: page-in; animation-duration: 320ms; }
 @keyframes docs-page-forward { from { opacity: 0; transform: translateX(32px); } }
 @keyframes docs-page-back { from { opacity: 0; transform: translateX(-32px); } }
-@keyframes docs-page-initial { from { opacity: 0; transform: translateY(12px); } }
 @media (prefers-reduced-motion: reduce) { .docs-page { animation: none; } .docs-nav-pill, .docs-toc-pill { transition: none !important; } }
 
-/* Content blocks in the site's card language. */
-.dx-links { overflow: hidden; border-radius: 16px; background: var(--lib-surface); box-shadow: var(--lib-depth-2); }
-.dx-links li + li { box-shadow: inset 0 1px 0 var(--lib-line); }
-.dx-link-row { padding: 14px 16px; transition: background-color 160ms ease; }
-.dx-link-row:hover { background: var(--lib-surface-hover); }
-.dx-link-row:hover .dx-link-title { text-decoration: none; }
-.dx-link-row svg { display: grid; box-sizing: content-box; padding: 7px; border-radius: 9px; background: var(--lib-chip); }
+/* Link rows (.dx-links) stay plain: hairline-separated, no fill, plain arrow icons; hover only recolours the arrow and underlines the title (rules above). */
 
 .dx-note {
   display: flex; gap: 10px; align-items: flex-start; max-width: 65ch; padding: 12px 14px;
@@ -2766,14 +2640,9 @@ html.light .ld-tabs { box-shadow: inset 0 0 0 1px var(--lib-edge), inset 0 1px 2
 
 .dx-button { height: 36px; padding: 0 14px; border-radius: 11px; background: var(--lib-chip); }
 
-/* Pager: two cards, arrow on the outside edge. */
-.docs-pager { gap: 12px; margin-top: 64px; padding-top: 0; box-shadow: none; }
-.docs-pager-link {
-  display: flex; align-items: center; gap: 12px; width: 100%; padding: 14px 16px;
-  border-radius: 14px; background: var(--lib-surface); box-shadow: var(--lib-depth-2);
-  transition: background-color 160ms ease;
-}
-.docs-pager-link:hover { background: var(--lib-surface-hover); }
+/* Pager: previous and next under a hairline, arrow on the outside edge; no cards. */
+.docs-pager { gap: 12px; margin-top: 64px; padding-top: 8px; box-shadow: inset 0 1px 0 var(--lib-line); }
+.docs-pager-link { display: flex; align-items: center; gap: 12px; width: 100%; padding: 14px 0; }
 .docs-pager-next { justify-content: flex-end; text-align: right; }
 .docs-pager-copy { display: grid; gap: 3px; }
 .docs-pager-title { display: block; }
@@ -2784,11 +2653,7 @@ html.light .ld-tabs { box-shadow: inset 0 0 0 1px var(--lib-edge), inset 0 1px 2
 /* =====================================================================
    Contributors
    ===================================================================== */
-.cb { width: 100%; max-width: 1120px; margin: 0 auto; padding: 48px 32px 72px; color: var(--lib-text); }
-.cb-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 32px; }
-.cb-eyebrow { color: var(--lib-text-3); font-size: 13px; font-weight: 600; }
-.cb-head h1 { margin-top: 8px; color: var(--lib-text); font-size: 34px; font-weight: 800; letter-spacing: -.025em; line-height: 1.1; }
-.cb-lead { margin-top: 12px; color: var(--lib-text-2); font-size: 16px; line-height: 1.6; }
+.cb { width: 100%; max-width: 1120px; margin: 0 auto; padding: 56px 32px 72px; color: var(--lib-text); }
 .cb-head-side { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
 .cb-contributor-count { color: var(--lib-text-3); font-size: 13px; }
 .cb-contributor-count strong { color: var(--lib-text); font-weight: 700; font-variant-numeric: tabular-nums; }
@@ -2837,6 +2702,9 @@ html.light .cb-card:hover { box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 8px rgba
 .pg-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 24px; }
 .pg-head h1 { color: var(--lib-text); font-size: 32px; font-weight: 800; letter-spacing: -.025em; line-height: 1.1; }
 .pg-lead { margin-top: 10px; color: var(--lib-text-2); font-size: 15px; line-height: 1.6; }
+/* The 404 centres the shared header pattern in the card. */
+.pg-404 { display: grid; justify-items: center; gap: 28px; min-height: 50vh; margin-inline: auto; padding-block: 12px; place-content: center; text-align: center; }
+.pg-404 .pg-head { justify-content: center; }
 .pg-section { margin-top: 40px; }
 .pg-section h2 { margin-bottom: 12px; color: var(--lib-text); font-size: 15px; font-weight: 800; }
 
@@ -2866,4 +2734,214 @@ a.pg-row:hover .pg-row-arrow { color: var(--lib-text); transform: translate(1px,
 .pg-foot a { color: var(--lib-text); text-decoration: underline; text-decoration-color: var(--lib-text-3); text-underline-offset: 3px; }
 .pg-foot a:hover { text-decoration-color: currentColor; }
 
+/* Fills the content card so the footer can pin to the bottom on short pages. */
+.pg-fill { display: flex; flex-direction: column; min-height: 100%; }
+.pg-fill > .pg { flex: 1 0 auto; display: grid; }
+
 @media (max-width: 700px) { .pg { padding: 28px 16px 64px; } }
+
+/* =====================================================================
+   Top bar shell (no sidebar). One flat bar over the content card on
+   every route; it carries everything the sidebar used to.
+   ===================================================================== */
+html .app-frame.library-page-shell {
+  --topbar-h: 52px; --topbar-gap: 10px;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: calc(var(--topbar-h) + var(--topbar-gap) * 2) minmax(0, 1fr);
+}
+html .app-frame .app-frame-panel {
+  grid-column: 1; grid-row: 2; margin: 0 var(--topbar-gap); margin-top: 0;
+  border-radius: var(--frame-radius) var(--frame-radius) 0 0;
+  box-shadow: inset 0 1px 0 var(--lib-edge), inset 0 0 0 1px var(--lib-line);
+}
+/* Reserve the scrollbar's width whether or not a page scrolls, so centred content (the directory search rows)
+   sits in the same place on every route instead of shifting by half a scrollbar. */
+html .app-frame:not([data-home]) .app-frame-panel { scrollbar-gutter: stable; }
+.topbar { position: relative; z-index: 50; grid-column: 1; grid-row: 1; display: flex; align-items: center; padding: var(--topbar-gap); }
+.topbar-glass {
+  /* Equal side tracks, so the link row sits dead centre of the bar whatever the sides hold. */
+  display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 16px;
+  /* The bar sits straight on the frame: no slab of its own, so the content card below is the only shape
+     with edges and corners. Side padding lines the brand up with the card's content. */
+  width: 100%; height: var(--topbar-h); padding: 0 2px 0 12px;
+  background: transparent;
+}
+.topbar-brand { display: flex; align-items: center; gap: 8px; min-width: 0; justify-self: start; }
+.topbar-version { color: var(--lib-text-3); font-size: 10.5px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.topbar-links { position: relative; display: flex; align-items: center; justify-content: center; gap: 2px; min-width: 0; }
+.topbar-link {
+  position: relative; display: inline-flex; align-items: center; height: 32px; padding: 0 11px; border-radius: 10px;
+  color: var(--lib-text-2); font-size: 13px; font-weight: 600; text-decoration: none; white-space: nowrap;
+  transition: color 160ms ease, scale 160ms ease;
+}
+.topbar-link:hover { color: var(--lib-text); }
+.topbar-link:active { scale: .96; }
+.topbar-link[aria-current="page"] { color: var(--lib-text); }
+/* SSR/first-paint fallback for the shared bar: the pseudo-element sits at the
+   same bottom edge as .topbar-indicator (the 32px link fills the nav's height)
+   and hands off to it once Header's measurement lands (data-indicator). */
+.topbar-link[aria-current="page"]::after {
+  content: ""; position: absolute; left: 11px; right: 11px; bottom: 0; height: 2px;
+  background: currentColor;
+}
+.topbar-links[data-indicator] .topbar-link[aria-current="page"]::after { display: none; }
+/* One shared bar for the active link: a 1px element stretched by scaleX so
+   only the compositor moves it. --x/--w come from Header's measurement; the
+   transition arms on data-ready so first paint never slides in from 0. */
+.topbar-indicator {
+  position: absolute; bottom: 0; left: 0; width: 1px; height: 2px;
+  color: var(--lib-text); background: currentColor; opacity: 0;
+  transform: translateX(var(--x, 0px)) scaleX(var(--w, 0)); transform-origin: left;
+}
+.topbar-indicator[data-active] { opacity: 1; }
+.topbar-indicator[data-ready] { transition: transform 240ms cubic-bezier(.16, 1, .3, 1), opacity 160ms ease; }
+.topbar-link:focus-visible, .topbar-menu:focus-visible, .topbar-panel-link:focus-visible { outline: 2px solid var(--lib-focus); outline-offset: 2px; }
+.topbar-actions { display: flex; align-items: center; gap: 6px; justify-self: end; }
+.topbar-actions > .site-repo { display: inline-flex; align-items: center; gap: 7px; height: 32px; padding: 0 10px; border-radius: 10px; background: var(--lib-field); color: var(--lib-text-2); box-shadow: var(--lib-depth-1); font-size: 12.5px; font-weight: 600; text-decoration: none; }
+.topbar-actions > .site-repo:hover { background: var(--lib-field-hover); color: var(--lib-text); }
+.topbar-actions > .site-repo .site-repo-count { display: inline-flex; align-items: center; gap: 4px; }
+.topbar-actions > .site-repo .site-repo-star { width: 12px; height: 12px; }
+.topbar-actions > button { display: grid; place-items: center; width: 32px; min-width: 32px; height: 32px; padding: 0; border: 0; border-radius: 10px; background: var(--lib-field); color: var(--lib-text-2); box-shadow: var(--lib-depth-1); cursor: pointer; }
+.topbar-actions > button:hover { background: var(--lib-field-hover); color: var(--lib-text); }
+.topbar-menu { display: none !important; }
+.topbar-panel {
+  position: absolute; top: calc(100% - 4px); right: var(--topbar-gap); z-index: 60; display: grid; gap: 2px; width: min(280px, calc(100vw - 20px)); padding: 6px;
+  border-radius: 14px; background: color-mix(in srgb, var(--lib-surface) 92%, transparent);
+  -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); box-shadow: var(--lib-depth-3);
+  animation: topbar-panel-in 260ms cubic-bezier(.16,1,.3,1) both;
+}
+.topbar-panel-link { display: flex; align-items: center; gap: 10px; min-height: 40px; padding: 0 10px; border-radius: 9px; color: var(--lib-text-2); font-size: 14px; font-weight: 600; text-decoration: none; }
+.topbar-panel-link:hover { color: var(--lib-text); }
+.topbar-panel-link[aria-current="page"] { color: var(--lib-text); box-shadow: inset 2px 0 0 currentColor; }
+.topbar-panel-meta { padding: 8px 10px 4px; border-top: 1px solid var(--lib-line); margin-top: 4px; color: var(--lib-text-3); font-size: 11.5px; font-weight: 600; }
+@keyframes topbar-panel-in { from { opacity: 0; transform: translateY(-6px) scale(.98); } }
+/* Not enough room for eight links: fold them into the menu. */
+@media (max-width: 1239px) {
+  .topbar-glass { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .topbar-links { display: none; }
+  .topbar-menu { display: grid !important; }
+}
+@media (max-width: 640px) {
+  html .app-frame.library-page-shell { --topbar-gap: 8px; --topbar-h: 48px; }
+  .topbar-version, .topbar-actions > .site-repo { display: none; }
+  /* Phones: the card runs edge to edge, so it has no corners; rounded corners touching the screen edge read as cropped.
+     Its top hairline still separates it from the bar. */
+  html .app-frame .app-frame-panel { margin: 0; border-radius: 0; }
+  html .app-frame.library-page-shell[data-home] .app-frame-panel { margin-bottom: 0; border-radius: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .topbar-panel { animation: none; } .topbar-link, .topbar-indicator { transition: none; } }
+
+/* Directory filters: no sidebar to live in, so the panel opens as a rounded glass dropdown
+   under the search row's Filters button at every width. */
+html .app-frame .directory-filter-trigger {
+  display: inline-flex; align-items: center; gap: 8px; height: 32px; min-height: 32px; margin: 20px 24px 0; padding: 0 12px;
+  border: 0; border-radius: 10px; background: var(--lib-field); color: var(--lib-text-2); box-shadow: var(--lib-depth-1); font-size: 13px; font-weight: 600;
+}
+html .app-frame .directory-filter-trigger:hover { background: var(--lib-field-hover); color: var(--lib-text); }
+html .app-frame .directory-filter-trigger[data-active] { color: var(--lib-text); box-shadow: var(--lib-depth-1), inset 0 0 0 1px var(--lib-focus); }
+/* The dropdown floats below the button, rounded like the search field it sits beside. */
+.directory-filter-popover {
+  display: flex; flex-direction: column; width: min(18rem, calc(100vw - 32px));
+  max-height: min(30rem, var(--radix-popover-content-available-height, 30rem));
+  padding: 6px; border: 0; border-radius: 18px; overflow: hidden;
+  background: color-mix(in srgb, var(--lib-panel) 88%, transparent);
+  -webkit-backdrop-filter: blur(24px); backdrop-filter: blur(24px);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.1), inset 0 0 0 1px rgba(255,255,255,.07), 0 24px 60px rgba(0,0,0,.45);
+}
+html.light .directory-filter-popover { background: rgba(255,255,255,.96); box-shadow: inset 0 0 0 1px rgba(0,0,0,.07), 0 16px 44px rgba(0,0,0,.12); }
+.directory-filter-popover .facet-group { padding: 0 8px; }
+.directory-filter-popover [data-slot="sidebar-content"] { padding: 4px 0; scrollbar-width: thin; overscroll-behavior: contain; }
+@media (max-width: 760px) { html .app-frame .directory-filter-trigger { margin: 16px 16px 0; } }
+
+/* Directory search: the hero's detached glass field, at the top of the directory, with Filters beside it. */
+html .app-frame .directory-search-row { display: flex; align-items: center; gap: 12px; padding: 28px 24px 4px; }
+html .app-frame .directory-search-row .directory-filter-trigger { margin: 0; height: 52px; min-height: 52px; padding: 0 18px; border-radius: 16px; font-size: 14px; }
+.directory-hero-search {
+  display: flex; align-items: center; gap: 14px; flex: 1 1 auto; min-width: 0; max-width: 760px; height: 52px; padding: 0 10px 0 20px; border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.035));
+  -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.18), inset 0 0 0 1px rgba(255,255,255,.08), 0 18px 44px rgba(0,0,0,.45);
+  transition: box-shadow .4s cubic-bezier(.16,1,.3,1);
+}
+html.light .directory-hero-search { background: linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.75)); box-shadow: inset 0 0 0 1px rgba(0,0,0,.08), 0 14px 36px rgba(0,0,0,.1); }
+.directory-hero-search:focus-within { box-shadow: inset 0 1px 0 rgba(255,255,255,.2), inset 0 0 0 1px var(--lib-focus), 0 18px 44px rgba(0,0,0,.45); }
+.directory-hero-search-icon { flex: none; width: 19px; height: 19px; opacity: .6; }
+.directory-hero-search input { flex: 1; min-width: 0; height: 100%; border: 0; outline: 0; background: none; color: var(--lib-text); font: inherit; font-size: 17px; font-weight: 700; }
+.directory-hero-search input::placeholder { color: var(--lib-text-2); font-weight: 600; }
+.directory-hero-search input::-webkit-search-cancel-button { display: none; }
+.directory-hero-search-key, .directory-hero-search-clear kbd { padding: 2px 7px; border-radius: 6px; background: var(--lib-field); color: var(--lib-text-2); font: 600 11px/1.4 var(--font-mono, ui-monospace, monospace); box-shadow: 0 0 0 1px var(--lib-edge); }
+.directory-hero-search-clear { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 8px; border: 0; border-radius: 10px; background: none; color: var(--lib-text-2); cursor: pointer; }
+.directory-hero-search-clear:hover { color: var(--lib-text); }
+.directory-hero-search-clear svg { width: 16px; height: 16px; }
+@media (any-pointer: coarse) { .directory-hero-search-key { display: none; } }
+@media (max-width: 760px) {
+  html .app-frame .directory-search-row { padding: 16px 16px 0; gap: 8px; }
+  .directory-hero-search { height: 48px; padding-left: 16px; }
+  .directory-hero-search input { font-size: 16px; }
+  html .app-frame .directory-search-row .directory-filter-trigger { height: 48px; min-height: 48px; padding: 0 14px; }
+  .directory-hero-search-key { display: none; }
+}
+html .app-frame .directory-search-row .directory-filter-trigger,
+html.light .app-frame .directory-search-row .directory-filter-trigger {
+  border: 0; background: linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.035));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.16), inset 0 0 0 1px rgba(255,255,255,.07), 0 18px 44px rgba(0,0,0,.4);
+}
+html.light .app-frame .directory-search-row .directory-filter-trigger { background: #fff; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08), 0 14px 36px rgba(0,0,0,.08); }
+html .app-frame .directory-search-row .directory-filter-trigger[data-active] { box-shadow: inset 0 1px 0 rgba(255,255,255,.16), inset 0 0 0 1px var(--lib-focus), 0 18px 44px rgba(0,0,0,.4); }
+@media (max-width: 760px) {
+  html .app-frame .directory-search-row .directory-filter-trigger { width: 48px; padding: 0; justify-content: center; }
+  .directory-filter-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+}
+
+/* Hero → directory handoff (see HeroSearch). Names exist only during the handoff so other navigations
+   stay plain. Two moves: the field glides into the directory's search row and the hero results into its
+   pane, each over the default crossfade. The root swap stays instant — no page-wide dissolve. */
+html[data-search-handoff] .directory-hero-search,
+html[data-search-handoff] [data-hero-field] { view-transition-name: col-search; }
+html[data-search-handoff] [data-hero-results][data-open],
+html[data-search-handoff] .directory-results-pane { view-transition-name: col-results; }
+html[data-search-handoff]::view-transition-group(col-search),
+html[data-search-handoff]::view-transition-group(col-results) { animation-duration: .55s; animation-timing-function: cubic-bezier(.16, 1, .3, 1); }
+html[data-search-handoff]::view-transition-group(col-search) { z-index: 3; }
+
+/* Keep the directory search centred like the hero's, so the handoff glides straight up instead of jumping left. Filters sit just right of it. */
+@media (min-width: 641px) {
+  html .app-frame .directory-search-row > .directory-hero-search { max-width: none; height: 60px; border-radius: 18px; }
+  html .app-frame .directory-search-row .directory-filter-trigger { height: 60px; min-height: 60px; border-radius: 18px; }
+}
+/* The centred three-column grid needs the width; below 960px the row stays a flex line so Filters is never starved. */
+@media (min-width: 960px) {
+  html .app-frame .directory-search-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 620px) minmax(0, 1fr); }
+  html .app-frame .directory-search-row > .directory-hero-search { grid-column: 2; }
+  html .app-frame .directory-search-row > :not(.directory-hero-search) { grid-column: 3; justify-self: start; }
+}
+
+/* Home: no top bar until the hero search lifts. It then drops in, and the brand is the way back to the hero.
+   Keyboard users tabbing into it get it back too (:focus-within), and hovering the top strip reveals it for
+   pointer and touch (:hover), so its menu and theme control stay reachable. */
+.topbar[data-home] { position: absolute; inset: 0 0 auto; }
+.topbar[data-home] .topbar-glass { transition: translate .9s cubic-bezier(.16, 1, .3, 1) .18s, opacity .5s ease .18s; }
+html:not([data-hero-search]):not([data-search-handoff]) .topbar[data-home]:not(:focus-within):not(:hover) .topbar-glass { translate: 0 calc(-100% - var(--topbar-gap, 12px) - 8px); opacity: 0; pointer-events: none; transition-delay: 0s; }
+@media (prefers-reduced-motion: reduce) { .topbar[data-home] .topbar-glass { transition: none; } }
+
+/* Home: the card fills the whole screen, floating on the same gutter on every side so all four
+   corners read the same. When the search opens it slides down by the bar's height
+   (the bar drops into the space it leaves), so the hero turns into the site's frame before it hands off. */
+html .app-frame.library-page-shell[data-home] { grid-template-rows: var(--topbar-gap) minmax(0, 1fr); }
+html .app-frame[data-home] .app-frame-panel {
+  --home-drop: calc(var(--topbar-h) + var(--topbar-gap));
+  margin-bottom: var(--topbar-gap); border-radius: var(--frame-radius);
+  transition: translate .9s cubic-bezier(.16, 1, .3, 1), border-radius .9s cubic-bezier(.16, 1, .3, 1);
+}
+html:is([data-hero-search], [data-search-handoff]) .app-frame[data-home] .app-frame-panel { translate: 0 var(--home-drop); }
+@media (prefers-reduced-motion: reduce) { html .app-frame[data-home] .app-frame-panel { transition: none; } }
+
+/* Directory search row: no highlight ring. The caret shows focus, and the "Active" label shows filters are on. */
+html .directory-hero-search:focus-within { box-shadow: inset 0 1px 0 rgba(255,255,255,.18), inset 0 0 0 1px rgba(255,255,255,.08), 0 18px 44px rgba(0,0,0,.45); }
+html.light .directory-hero-search:focus-within { box-shadow: inset 0 0 0 1px rgba(0,0,0,.08), 0 14px 36px rgba(0,0,0,.1); }
+html .app-frame .directory-search-row .directory-filter-trigger[data-active] { box-shadow: inset 0 1px 0 rgba(255,255,255,.16), inset 0 0 0 1px rgba(255,255,255,.07), 0 18px 44px rgba(0,0,0,.4); }
+html.light .app-frame .directory-search-row .directory-filter-trigger[data-active] { box-shadow: inset 0 0 0 1px rgba(0,0,0,.08), 0 14px 36px rgba(0,0,0,.08); }
+html .directory-hero-search input:focus, html .directory-hero-search input:focus-visible { outline: none; box-shadow: none; }
+html .app-frame .directory-search-row .directory-filter-trigger:focus:not(:focus-visible) { outline: none; }
+html .app-frame[data-home]:has(.topbar:focus-within) .app-frame-panel { translate: 0 var(--home-drop); }
+html .app-frame[data-home]:has(.topbar:hover) .app-frame-panel { translate: 0 var(--home-drop); }

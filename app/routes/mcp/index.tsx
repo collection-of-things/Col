@@ -19,7 +19,7 @@ function McpPage() {
     <article>
       <DocsHeader title="Set up Col MCP" lead="Search Col’s libraries and verified components from your coding agent." />
 
-      <DocsSection title="Connect your client">
+      <DocsSection title="Choose your client">
         <DocsText>Col hosts a read-only MCP server over Streamable HTTP. You need an MCP client with remote HTTP support; no Col account, API key, or local server is required.</DocsText>
         <DocsCode code={endpoint} label="Server URL" />
         <DocsText>Choose your client below. Keep any servers already in its configuration.</DocsText>
@@ -27,7 +27,7 @@ function McpPage() {
           { href: "#claude-code", title: "Claude Code", text: "Add Col from the terminal." },
           { href: "#codex", title: "Codex", text: "Use the CLI or your config file." },
           { href: "#cursor", title: "Cursor", text: "Add Col to your MCP configuration." },
-          { href: "#vs-code", title: "VS Code", text: "Connect Col from the Command Palette." },
+          { href: "#vs-code", title: "VS Code", text: "Add Col from the Command Palette." },
           { href: "/mcp/agents#set-up-the-connection", title: "Let your agent set it up", text: "Copy the setup prompt." },
         ]} />
       </DocsSection>
@@ -115,7 +115,7 @@ function McpPage() {
         ]} />
         <DocsLinks items={[
           { href: "/mcp/agents", title: "Agent guide", text: "Tool arguments, setup prompt, and the component workflow." },
-          { href: "/integrations", title: "Other MCP servers", text: "Connect to individual UI libraries and design tools." },
+          { href: "/integrations", title: "Other MCP servers", text: "Servers for individual UI libraries and design tools." },
         ]} />
       </DocsSection>
 

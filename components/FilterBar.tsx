@@ -1,9 +1,11 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type FocusEvent, type MouseEvent, type ReactNode } from "react";
 import { Check, ChevronDown, RotateCcw, SlidersHorizontal } from "lucide-react";
+import { usePathname } from "@/hooks/use-pathname";
+import { IN_PLACE_SEARCH, SearchField } from "./SiteChrome";
+import { directoryQuery, useDirectoryQuery } from "@/lib/directory-query";
 import { categoryIcons, Icons, type IconComponent } from "./MaskIcon";
 import { CATEGORIES, STACKS, USE_CASES, type Category, type Stack, type UseCase } from "@/data/libraries";
 import type { DirectoryFacetCounts } from "@/lib/directory";
-import { SidebarSlot } from "./SidebarSlot";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -12,13 +14,12 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import {
   SidebarContent,
   SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
-  useSidebar,
 } from "@/components/ui/sidebar";
 
 interface FilterDropdownProps {
@@ -29,6 +30,7 @@ interface FilterDropdownProps {
   className?: string;
 }
 
+/** A labelled select for one directory facet. */
 export function FilterDropdown({ label, value, items, onValueChange, className = "" }: FilterDropdownProps) {
   return (
     <DropdownMenu modal={false}>
@@ -281,6 +283,7 @@ interface FilterBarProps {
   onClearAll: () => void;
 }
 
+/** The directory search row (search field and Filters button) and the filter dropdown it opens. */
 export function FilterBar({ showSaved, activeCategory, activeStacks, activeUseCases, query, onCategoryChange, onStackChange, onUseCaseChange, onClearAll, facetCounts }: FilterBarProps) {
   const hasFilters = showSaved || query.trim() !== "" || activeCategory !== null || activeStacks.length > 0 || activeUseCases.length > 0;
 
@@ -304,52 +307,46 @@ interface FilterSidebarProps {
   /** Accessible name of the filter region, for example "Library filters". */
   label: string;
   hasFilters: boolean;
-  /** Renders the panel body. Called once for the desktop sidebar and once for the mobile sheet, with an id suffix that keeps their element ids apart. */
+  /** Renders the panel body inside the filter dropdown. The id suffix keeps its element ids unique. */
   renderPanel: (idSuffix: string) => ReactNode;
 }
 
 /**
- * Places a directory's filter panel in the app frame's sidebar on desktop and
- * in a sheet behind a "Filters" button on small screens.
+ * Places a directory's filter panel in a dropdown behind a "Filters" button, at
+ * every width. The frame has no sidebar, so the panel no longer lives in one.
  */
 export function FilterSidebar({ label, hasFilters, renderPanel }: FilterSidebarProps) {
-  const { openMobile, setOpenMobile } = useSidebar();
-  const filterTriggerRef = useRef<HTMLButtonElement>(null);
+  const [open, setOpen] = useState(false);
 
-  const handleMobileOpenChange = (nextOpen: boolean) => {
-    setOpenMobile(nextOpen);
-    if (!nextOpen && window.innerWidth < 1024) {
-      requestAnimationFrame(() => filterTriggerRef.current?.focus());
-    }
-  };
+  const pathname = usePathname();
+  const query = useDirectoryQuery();
+  const search = IN_PLACE_SEARCH[pathname];
 
   return (
     <>
-      <Button
-        type="button"
-        variant="outline"
-        className="directory-filter-trigger mx-5 mt-4 min-h-11 self-start lg:hidden"
-        ref={filterTriggerRef}
-        onClick={() => setOpenMobile(true)}
-        aria-label="Open filters"
-      >
-        <SlidersHorizontal aria-hidden /> Filters{hasFilters ? " · Active" : ""}
-      </Button>
-
-      <SidebarSlot mobile="hidden">
-        <div className="directory-sidebar directory-filter-panel" role="region" aria-label={label}>
-          {renderPanel("")}
-        </div>
-      </SidebarSlot>
-
-      <Sheet open={openMobile} onOpenChange={handleMobileOpenChange}>
-        <SheetContent side="left" className="w-[16rem] gap-0 bg-sidebar p-0 lg:hidden">
-          <SheetTitle className="sr-only">{label}</SheetTitle>
-          <div className="directory-filter-panel flex h-full min-h-0 flex-col pt-14">
-            {renderPanel("-mobile")}
-          </div>
-        </SheetContent>
-      </Sheet>
+      <div className="directory-search-row">
+        {search && (
+          <SearchField value={query} onChange={directoryQuery.set} placeholder={search.placeholder} label={search.label} />
+        )}
+        <Popover open={open} onOpenChange={setOpen}>
+          <PopoverTrigger asChild>
+            <Button
+              type="button"
+              variant="outline"
+              className="directory-filter-trigger"
+              data-active={hasFilters || undefined}
+              aria-label={hasFilters ? "Open filters, filters active" : "Open filters"}
+            >
+              <SlidersHorizontal aria-hidden /><span className="directory-filter-label">Filters{hasFilters ? " · Active" : ""}</span>
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent align="end" sideOffset={10} collisionPadding={16} className="directory-filter-popover" aria-label={label}>
+            <div className="directory-filter-panel flex min-h-0 flex-1 flex-col">
+              {renderPanel("-popover")}
+            </div>
+          </PopoverContent>
+        </Popover>
+      </div>
     </>
   );
 }

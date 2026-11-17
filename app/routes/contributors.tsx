@@ -32,10 +32,10 @@ function ContributorsPage() {
 
   return (
     <div className="cb">
-      <header className="cb-head ld-reveal" style={reveal(0)}>
+      <header className="pg-head ld-reveal" style={reveal(0)}>
         <div>
           <h1>Contributors</h1>
-          <p className="cb-lead">The people keeping Col useful, accurate, and open.</p>
+          <p className="pg-lead">Everyone with a merged pull request.</p>
         </div>
         <div className="cb-head-side">
           {contributors.length > 0 && (

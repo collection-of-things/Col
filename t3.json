@@ -1,0 +1,46 @@
+{
+  "$schema": "https://t3.codes/schema/t3.json",
+  "scripts": [
+    {
+      "name": "Install dependencies",
+      "command": "bun install --frozen-lockfile",
+      "icon": "configure",
+      "runOnWorktreeCreate": true
+    },
+    {
+      "name": "Run site dev server",
+      "command": "bun run dev",
+      "icon": "play"
+    },
+    {
+      "name": "Build site",
+      "command": "bun run build",
+      "icon": "build"
+    },
+    {
+      "name": "Preview built site",
+      "command": "bun run preview",
+      "icon": "play"
+    },
+    {
+      "name": "Typecheck",
+      "command": "bun run typecheck",
+      "icon": "test"
+    },
+    {
+      "name": "Run tests",
+      "command": "bun run test",
+      "icon": "test"
+    },
+    {
+      "name": "Check Worker deploy (dry run)",
+      "command": "bun run deploy:dry-run",
+      "icon": "build"
+    },
+    {
+      "name": "Rebuild Quoin docs and previews",
+      "command": "bun run build:quoin",
+      "icon": "configure"
+    }
+  ]
+}

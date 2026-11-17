@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Image } from "@/components/Image";
 import { Link } from "@/components/Link";
 import { usePathname } from "@/hooks/use-pathname";
-import { Search, Star } from "lucide-react";
+import { Search, Star, X } from "lucide-react";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { libraries } from "@/data/libraries";
 import { componentIndex } from "@/data/components";
@@ -10,15 +10,14 @@ import { integrations, integrationTypes } from "@/data/integrations";
 import { createDirectorySearch } from "@/lib/directory";
 import { createIntegrationSearch } from "@/lib/integration-directory";
 import { repo } from "@/lib/repo";
-import { directoryQuery, useDirectoryQuery } from "@/lib/directory-query";
 import styles from "./SiteSearch.module.css";
 
 const compactNumber = new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 });
 const searchDirectory = createDirectorySearch(libraries, componentIndex);
 const searchIntegrations = createIntegrationSearch(integrations);
 
-/** Directories whose sidebar field filters the results in place instead of opening a dropdown. */
-const IN_PLACE_SEARCH: Partial<Record<string, { placeholder: string; label: string }>> = {
+/** Directories whose search row field (FilterBar) filters the results in place, with its placeholder and label. */
+export const IN_PLACE_SEARCH: Partial<Record<string, { placeholder: string; label: string }>> = {
   "/libraries": { placeholder: "Search libraries", label: "Search libraries or components" },
   "/integrations": { placeholder: "Search integrations", label: "Search MCP servers and connectors" },
 };
@@ -40,6 +39,7 @@ export function useRepoStars() {
   return stars;
 }
 
+/** The Col mark and wordmark, linking home. */
 export function BrandLink({ className = "" }: { className?: string }) {
   return (
     <a href="/" aria-label="Col, Collection of Libraries" className={`site-brand ${className}`}>
@@ -61,18 +61,21 @@ export function RepoStars({ stars, className = "" }: { stars: number | null; cla
       title="Col on GitHub"
     >
       <GitHubLogoIcon width={15} height={15} aria-hidden="true" />
-      <span className="site-repo-count">
-        <Star className="site-repo-star" aria-hidden="true" />
-        <span className="cap">{stars === null ? "–" : compactNumber.format(stars)}</span>
-      </span>
+      {/* No placeholder dash while the count loads (or if it fails): the logo alone stands for the link. */}
+      {stars !== null && (
+        <span className="site-repo-count">
+          <Star className="site-repo-star" aria-hidden="true" />
+          <span className="cap">{compactNumber.format(stars)}</span>
+        </span>
+      )}
     </a>
   );
 }
 
 /**
- * A filtering search field in the site search's own shape, bound to whatever
- * query its caller owns. The frame's in-place directory fields render it, and a
- * page can render its own field with it without sharing the global query.
+ * The large glass filtering field every directory shares (Libraries,
+ * Integrations, Components), bound to whatever query its caller owns. Empty, it
+ * shows the `/` shortcut; with a query, a clear button that Esc also triggers.
  */
 export function SearchField({ value, onChange, placeholder, label, className = "" }: {
   value: string;
@@ -82,8 +85,8 @@ export function SearchField({ value, onChange, placeholder, label, className = "
   className?: string;
 }) {
   return (
-    <form role="search" className={`site-search ${className}`} onSubmit={(event) => event.preventDefault()}>
-      <Search aria-hidden="true" />
+    <form role="search" className={`directory-hero-search ${className}`} onSubmit={(event) => event.preventDefault()}>
+      <Search className="directory-hero-search-icon" aria-hidden />
       <input
         data-directory-search=""
         type="search"
@@ -95,23 +98,30 @@ export function SearchField({ value, onChange, placeholder, label, className = "
             else event.currentTarget.blur();
           }
         }}
-        placeholder={placeholder}
+        placeholder={`${placeholder}…`}
         aria-label={label}
         aria-description="Press slash to focus search"
         aria-keyshortcuts="/"
+        autoComplete="off"
+        spellCheck={false}
       />
-      <span className={styles.shortcut} title="Press / to search" aria-hidden="true">Press <kbd>/</kbd></span>
+      {value ? (
+        <button type="button" className="directory-hero-search-clear" onClick={() => onChange("")} aria-label="Clear search">
+          <X aria-hidden /><kbd>Esc</kbd>
+        </button>
+      ) : (
+        <kbd className="directory-hero-search-key" aria-hidden>/</kbd>
+      )}
     </form>
   );
 }
 
 /**
  * Site search with a quick-results dropdown covering libraries and
- * integrations. On a directory it filters that directory in place instead.
- * `collapsed` renders only an icon that opens the library directory with its
- * search focused (used by the docs rail).
+ * integrations. The docs pages render it; directories have their own
+ * in-place SearchField instead.
  */
-export function SiteSearch({ className = "", collapsed = false }: { className?: string; collapsed?: boolean }) {
+export function SiteSearch({ className = "" }: { className?: string }) {
   const pathname = usePathname();
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
@@ -121,29 +131,6 @@ export function SiteSearch({ className = "", collapsed = false }: { className?: 
     setOpen(false);
     setQuery("");
   }, [pathname]);
-
-  const directoryValue = useDirectoryQuery();
-  const inPlace = collapsed ? undefined : IN_PLACE_SEARCH[pathname];
-
-  if (inPlace) {
-    return (
-      <SearchField
-        value={directoryValue}
-        onChange={directoryQuery.set}
-        placeholder={inPlace.placeholder}
-        label={inPlace.label}
-        className={className}
-      />
-    );
-  }
-
-  if (collapsed) {
-    return (
-      <Link to="/libraries" hash="library-search" className={`site-search-icon ${className}`} aria-label="Search libraries" title="Search libraries">
-        <Search aria-hidden="true" />
-      </Link>
-    );
-  }
 
   const trimmed = query.trim();
   const results = trimmed
@@ -186,7 +173,7 @@ export function SiteSearch({ className = "", collapsed = false }: { className?: 
         aria-description="Press slash to focus search"
         aria-keyshortcuts="/"
       />
-      <span className={styles.shortcut} title="Press / to search" aria-hidden="true">Press <kbd>/</kbd></span>
+      <kbd className={styles.shortcut} aria-hidden="true">/</kbd>
       {open && trimmed && (
         <div className="site-search-results" aria-label="Search results">
           {results.length || integrationResults.length ? (

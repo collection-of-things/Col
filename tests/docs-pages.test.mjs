@@ -24,7 +24,7 @@ test("docs and MCP pages render adjacent navigation without the footer or sideba
   }
 });
 
-test("MCP setup snippets connect to the plugin endpoint and the sidebar selects MCP", async () => {
+test("MCP setup snippets connect to the plugin endpoint and the navigation selects MCP", async () => {
   const html = await page("/mcp");
   const { mcpServers: { col: { url } } } = JSON.parse(readFileSync(join(process.cwd(), "plugin/.mcp.json"), "utf8"));
   const blocks = [...html.matchAll(/<pre><code>([\s\S]*?)<\/code><\/pre>/g)].map(([, code]) =>
@@ -39,12 +39,12 @@ test("MCP setup snippets connect to the plugin endpoint and the sidebar selects 
   for (const config of configs) assert.equal(config.mcpServers.col.url, url);
   assert.ok(blocks.includes(`codex mcp add col --url ${url}\ncodex mcp list`));
   assert.ok(blocks.includes(`claude mcp add --transport http --scope user col ${url}`));
-  const activeMcpSidebar = (page) => [...page.matchAll(/<a\b[^>]*href="\/mcp"[^>]*>/g)]
-    .some(([tag]) => tag.includes('class="app-nav-link"') && tag.includes('aria-current="page"'));
-  assert.ok(activeMcpSidebar(html), "The setup page must select MCP in the main sidebar");
+  const activeMcpNav = (page) => [...page.matchAll(/<a\b[^>]*href="\/mcp"[^>]*>/g)]
+    .some(([tag]) => tag.includes('class="topbar-link"') && tag.includes('aria-current="page"'));
+  assert.ok(activeMcpNav(html), "The setup page must select MCP in the site navigation");
 
   const agents = await page("/mcp/agents");
-  assert.ok(activeMcpSidebar(agents), "The agent guide must select MCP in the main sidebar");
+  assert.ok(activeMcpNav(agents), "The agent guide must select MCP in the site navigation");
   for (const tool of ["search_libraries", "search_components", "get_library", "get_component", "render_component"]) {
     assert.ok(agents.includes(tool), `Agent guide is missing ${tool}`);
   }

@@ -17,8 +17,8 @@ const PAGE_SIZE = 60;
  *
  * The column owns its search, so typing here never drives the frame's global
  * search; the column opens with the shared toolbar heading, rows carry the
- * library's logo next to its name, and the selected row uses the same pill
- * treatment as the site's active navigation.
+ * library's logo next to its name, and the selected row is marked by a short
+ * bar on its leading edge, like the docs navigation.
  */
 export function ComponentsExplorer({ initialQuery = "" }: { initialQuery?: string }) {
   const [query, setQuery] = useState(initialQuery);

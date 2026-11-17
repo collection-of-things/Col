@@ -15,7 +15,7 @@ export const Route = createFileRoute("/docs/pull-requests")({
 function PullRequestsPage() {
   return (
     <article>
-      <DocsHeader section="Contribute" title="Open a pull request" lead="Contributions to the directory are reviewed on GitHub." />
+      <DocsHeader title="Open a pull request" lead="Contributions to the directory are reviewed on GitHub." />
 
       <DocsSection title="Prepare your change">
         <DocsText>

@@ -149,27 +149,48 @@ export function DocsPageNavigation() {
 
 /** "On this page": the page's section headings, with a pill that follows the one being read. */
 export function DocsToc() {
-  const pathname = usePathname();
   const listRef = useRef<HTMLUListElement>(null);
   const [items, setItems] = useState<{ id: string; title: string }[]>([]);
   const [active, setActive] = useState<string | null>(null);
   const pill = useSlidingPill(listRef, '[aria-current="location"]', [active, items]);
 
+  // The router can keep the previous article mounted while the next page loads, so keying the
+  // scan on the pathname races the content swap. Watch the DOM instead: rescan whenever the
+  // article's headings actually change (batched per frame), and rebuild the scroll spy with them.
   useEffect(() => {
-    const headings = [...document.querySelectorAll<HTMLElement>(".docs-layout-main h2[id]")];
-    setItems(headings.map((heading) => ({ id: heading.id, title: heading.dataset.title ?? heading.textContent ?? "" })));
-    setActive(headings[0]?.id ?? null);
+    const main = document.querySelector<HTMLElement>(".docs-layout-main");
+    if (!main) return;
     const root = document.querySelector(".app-frame-panel");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-        if (visible[0]) setActive(visible[0].target.id);
-      },
-      { root, rootMargin: "0px 0px -65% 0px" },
-    );
-    headings.forEach((heading) => observer.observe(heading));
-    return () => observer.disconnect();
-  }, [pathname]);
+    let spy: IntersectionObserver | null = null;
+    let signature = "";
+    let frame = 0;
+    const scan = () => {
+      const headings = [...main.querySelectorAll<HTMLElement>("h2[id]")];
+      const next = headings.map((heading) => heading.id).join("\0");
+      if (next === signature) return;
+      signature = next;
+      spy?.disconnect();
+      setItems(headings.map((heading) => ({ id: heading.id, title: heading.dataset.title ?? heading.textContent ?? "" })));
+      setActive(headings[0]?.id ?? null);
+      spy = new IntersectionObserver(
+        (entries) => {
+          const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+          if (visible[0]) setActive(visible[0].target.id);
+        },
+        { root, rootMargin: "0px 0px -65% 0px" },
+      );
+      const current = spy;
+      headings.forEach((heading) => current.observe(heading));
+    };
+    const schedule = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(scan);
+    };
+    schedule();
+    const mutations = new MutationObserver(schedule);
+    mutations.observe(main, { childList: true, subtree: true });
+    return () => { mutations.disconnect(); spy?.disconnect(); cancelAnimationFrame(frame); };
+  }, []);
 
   if (items.length < 2) return null;
 

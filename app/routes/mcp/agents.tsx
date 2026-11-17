@@ -14,10 +14,10 @@ export const Route = createFileRoute("/mcp/agents")({
 function McpAgentsPage() {
   return (
     <article>
-      <DocsHeader title="Col MCP for agents" lead="Connect once, find a component, then implement from its official documentation." />
+      <DocsHeader title="Col MCP for agents" lead="Add Col once, find a component, then implement from its official docs." />
 
       <DocsSection title="Set up the connection">
-        <DocsText>Give this prompt to an agent that can configure your coding client. Setup is complete when the client connects and lists all five Col tools.</DocsText>
+        <DocsText>Give this prompt to an agent that can configure your coding client. Setup is complete when the client lists all five Col tools.</DocsText>
         <DocsCode code={`Set up Col MCP for the coding client I use.\nRead ${siteUrl}/mcp for client-specific instructions.\nAsk which client and configuration scope I want if they are unclear.\nAdd a server named col using Streamable HTTP at ${siteUrl}/api/mcp.\nInspect the current configuration first. Preserve all existing servers and settings.\nIf Col is already configured directly or through its plugin, reuse that connection.\nNo credentials or authentication headers are needed.\nTell me if I need to restart the client or enable the server myself.\nConfirm the connection lists search_libraries, search_components, get_library, get_component, and render_component.\nIf you cannot access the client’s tools, explain how I can verify them; do not claim the connection was tested.`} label="Agent setup prompt" />
       </DocsSection>
 

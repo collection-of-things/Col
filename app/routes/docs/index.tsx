@@ -15,7 +15,6 @@ function DocsPage() {
   return (
     <article>
       <DocsHeader
-        section="Get started"
         title="Introduction"
         lead="Col is an open-source directory for discovering UI libraries by category, stack, and use case."
       >
@@ -28,7 +27,7 @@ function DocsPage() {
             { href: "/libraries", title: "Browse the directory", text: "Search by name, keyword, category, or use case." },
             { href: "/docs/find-a-library", title: "Find a library", text: "Filter by stack and compare the options that fit." },
             { href: "/integrations", title: "Integrations", text: "MCP servers and connectors for UI libraries and design tools." },
-            { href: "/mcp", title: "Col MCP", text: "Connect your coding agent to Col’s library and component catalogue." },
+            { href: "/mcp", title: "Col MCP", text: "Search libraries and components from your coding agent." },
             { href: "/docs/agents", title: "Agents and LLMs", text: "Use the catalog with your agent and verify recommendations." },
             { href: "/docs/agents#solid-2-and-quoin", title: "Solid 2 and Quoin", text: "Retrieve component APIs, examples, and compatible version requirements through Col MCP." },
             { href: "/docs/request-a-library", title: "Request a library", text: "Missing something useful? Ask for it on GitHub." },

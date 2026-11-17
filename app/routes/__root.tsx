@@ -7,7 +7,6 @@ import nunitoLatin from "@fontsource-variable/nunito/files/nunito-latin-wght-nor
 import { siteHead } from "@/lib/site";
 import { AppFrame } from "@/components/AppFrame";
 import { NotFound } from "@/components/NotFound";
-import { SiteNotice } from "@/components/SiteNotice";
 import appCss from "../globals.css?url";
 
 /** Applies the saved or system theme before first paint. */
@@ -46,7 +45,6 @@ function RootDocument({ children }: { children: ReactNode }) {
       </head>
       <body className="min-h-screen font-sans">
         <AppFrame>{children}</AppFrame>
-        <SiteNotice />
         <Analytics />
         <SpeedInsights />
         <Scripts />

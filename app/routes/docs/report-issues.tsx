@@ -16,7 +16,6 @@ function ReportIssuesPage() {
   return (
     <article>
       <DocsHeader
-        section="Contribute"
         title="Report issues"
         lead="Found something broken or have an idea for Col? Open a focused issue so it can be reproduced and discussed."
       >

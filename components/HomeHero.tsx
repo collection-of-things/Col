@@ -5,6 +5,7 @@ import { ArrowRight, Star } from "lucide-react";
 import { libraryBySlug } from "@/data/libraries";
 import { sponsors } from "@/data/sponsors";
 import { repo } from "@/lib/repo";
+import { HeroSearch } from "./HeroSearch";
 import { RollText } from "./RollText";
 import styles from "./HomePage.module.css";
 
@@ -65,7 +66,7 @@ export function HeroBackdrop() {
         <Image key={tile.slug} src={`/hero-logos/background/${tile.slug}.png`} alt="" width={96} height={96} className={styles.distantTile} style={tileStyle(tile, index, tile.size * -2)} aria-hidden />
       ))}
       {orbitTiles.map(({ library, src, ...placement }, index) => (
-        <Link key={library.slug} to="/libraries/$slug" params={{ slug: library.slug }} target="_blank" rel="noopener noreferrer" aria-label={library.name} className={styles.tile} style={tileStyle(placement, index, placement.size * 2)}>
+        <Link key={library.slug} to="/libraries/$slug" params={{ slug: library.slug }} target="_blank" rel="noopener noreferrer" aria-label={library.name} className={styles.tile} data-hero-inert="" style={tileStyle(placement, index, placement.size * 2)}>
           <Image src={src} alt="" width={320} height={320} sizes="20vw" loading="eager" />
         </Link>
       ))}
@@ -73,7 +74,7 @@ export function HeroBackdrop() {
   );
 }
 
-/** The hero's copy: headline (words blur in one by one), subtitle, the two calls to action, and the sponsors line. */
+/** The hero's copy: headline (words blur in one by one), subtitle, library search, the two calls to action, and the sponsors line. */
 export function HeroCopy() {
   return (
     <section className={styles.heroCopy} aria-labelledby="home-title">
@@ -91,7 +92,8 @@ export function HeroCopy() {
         ))}
       </h1>
       <p>Discover UI libraries, components, and tools by stack and use case.</p>
-      <div className={styles.actions}>
+      <HeroSearch />
+      <div className={styles.actions} data-hero-inert="">
         <Link to="/libraries" className={styles.button}>
           <RollText>Browse libraries</RollText>
           <span className={styles.arrowSwap} aria-hidden><ArrowRight /><ArrowRight /></span>
@@ -102,7 +104,7 @@ export function HeroCopy() {
         </a>
       </div>
       {sponsors.length > 0 && (
-        <p className={styles.sponsors}>
+        <p className={styles.sponsors} data-hero-inert="">
           <span>Sponsored by</span>
           {sponsors.map(({ name, url, tier, logo }) => (
             <a key={name} href={url} target="_blank" rel="noopener noreferrer">

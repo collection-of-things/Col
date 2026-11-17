@@ -1,31 +1,25 @@
 import { useEffect, useRef, type ReactNode } from "react";
 import { usePathname } from "@/hooks/use-pathname";
-import { AppSidebar } from "./AppSidebar";
 import { Header } from "./Header";
-import { BrandLink, RepoStars, SiteSearch, useRepoStars } from "./SiteChrome";
-import { SIDEBAR_SLOT_ID } from "./SidebarSlot";
-import { ThemeToggle } from "./ThemeToggle";
-import packageJson from "../package.json";
 
 type SidebarMode = "narrow" | "wide";
 
 /** Directories with a filter panel and an in-place search in the sidebar. */
 const DIRECTORY_PATHS = new Set(["/libraries", "/integrations"]);
 
+/** Directory routes get the wide content layout; every other route the narrow one. */
 function sidebarModeFor(pathname: string): SidebarMode {
   return DIRECTORY_PATHS.has(pathname) ? "wide" : "narrow";
 }
 
 /**
- * The one layout every route shares: a sidebar (brand, search, navigation,
- * page-specific content, repo links) and the content card. The sidebar is
- * narrow by default and widens on the directories to fit their filters. Small
- * screens get a compact top bar instead.
+ * The one layout every route shares: the flat top bar (brand, navigation,
+ * repo stars, theme) over the content card. There is no sidebar; directory
+ * filters open in a sheet from the directory's toolbar.
  */
 export function AppFrame({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const mode = sidebarModeFor(pathname);
-  const stars = useRepoStars();
   const panelRef = useRef<HTMLElement>(null);
 
   // The content card is the scroll container, so reset it on navigation the way
@@ -44,9 +38,11 @@ export function AppFrame({ children }: { children: ReactNode }) {
       if (!slash && !command) return;
       // Focus whichever search field is on screen, preferring a page's own
       // directory field over the global one.
-      const visible = [...document.querySelectorAll<HTMLInputElement>("[data-directory-search], [data-site-search]")]
+      const visible = [...document.querySelectorAll<HTMLInputElement>("[data-directory-search], [data-hero-search-input], [data-site-search]")]
         .filter((input) => input.offsetParent !== null);
-      const field = visible.find((input) => input.hasAttribute("data-directory-search")) ?? visible[0];
+      const field = visible.find((input) => input.hasAttribute("data-directory-search"))
+        ?? visible.find((input) => input.hasAttribute("data-hero-search-input"))
+        ?? visible[0];
       if (!field) return;
       event.preventDefault();
       field.focus();
@@ -56,21 +52,8 @@ export function AppFrame({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <div className="app-frame library-page-shell" data-sidebar={mode}>
+    <div className="app-frame library-page-shell" data-directory={mode === "wide" || undefined} data-home={pathname === "/" || undefined}>
       <Header />
-      <aside className="app-frame-sidebar" aria-label="Sidebar">
-        <div className="app-frame-brand"><BrandLink /></div>
-        <div className="app-frame-search"><SiteSearch /></div>
-        <div className="app-frame-nav"><AppSidebar /></div>
-        <div id={SIDEBAR_SLOT_ID} className="app-frame-slot" />
-        <div className="app-frame-footer">
-          <div className="app-frame-footer-controls">
-            <RepoStars stars={stars} />
-            <ThemeToggle />
-          </div>
-          <span className="app-frame-version">v{packageJson.version}</span>
-        </div>
-      </aside>
       <main ref={panelRef} className="app-frame-panel">
         {children}
       </main>

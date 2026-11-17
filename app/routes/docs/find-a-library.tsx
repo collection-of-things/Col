@@ -14,7 +14,7 @@ export const Route = createFileRoute("/docs/find-a-library")({
 function FindLibraryPage() {
   return (
     <article>
-      <DocsHeader section="Get started" title="Find a library" lead="Use the directory to move from a broad idea to a short list of relevant UI libraries." />
+      <DocsHeader title="Find a library" lead="Use the directory to move from a broad idea to a short list of relevant UI libraries." />
 
       <DocsSection title="Search">
         <DocsText>Search by name, keyword, category, stack, or use case. A homepage search opens the directory with your query already applied.</DocsText>

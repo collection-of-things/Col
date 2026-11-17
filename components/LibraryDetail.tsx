@@ -104,7 +104,6 @@ export function LibraryDetail({ library, details, related, integrations }: Libra
           {setup.links.length > 0 && (
             <section className="ld-section ld-reveal" style={reveal(3)} aria-labelledby="ld-setup">
               <h2 id="ld-setup">Setup</h2>
-              <p className="ld-section-note">{library.name} publishes the current install commands and prerequisites in its own docs, so this page only points at them.</p>
               {setup.links.map(({ url, text }) => (
                 <p key={url + text} className="ld-section-note"><a href={url} target="_blank" rel="noopener" data-library-outbound={url === details.docsUrl ? "docs" : "website"}>{text}</a></p>
               ))}

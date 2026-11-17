@@ -14,7 +14,7 @@ export const Route = createFileRoute("/libraries/")({
   component: LibrariesPage,
 });
 
+/** Static shell, so the hero search's handoff can prefetch it whole; the explorer reads ?q= itself. */
 function LibrariesPage() {
-  const { q = "" } = Route.useSearch();
-  return <DirectoryExplorer initialQuery={q} />;
+  return <DirectoryExplorer />;
 }

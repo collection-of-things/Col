@@ -15,7 +15,7 @@ export const Route = createFileRoute("/docs/request-a-library")({
 function RequestLibraryPage() {
   return (
     <article>
-      <DocsHeader section="Contribute" title="Request a library" lead="If a useful UI library is missing, send a request with enough detail for it to be reviewed." />
+      <DocsHeader title="Request a library" lead="If a useful UI library is missing, send a request with enough detail for it to be reviewed." />
 
       <DocsSection title="Before you request">
         <DocsText>Search the directory, existing issues, and open pull requests to avoid duplicates.</DocsText>
