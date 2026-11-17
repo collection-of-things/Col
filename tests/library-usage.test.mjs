@@ -21,6 +21,7 @@ test("ranking sums sources and events within each window", () => {
   store.record("magicui", "web", "view", now);
   store.record("magicui", "mcp", "render_component", daysAgo(10));
   store.record("magicui", "web", "outbound", daysAgo(20));
+  store.record("magicui", "web", "view", daysAgo(-1)); // After the window's end day.
 
   assert.deepEqual(store.ranking(7, now), [
     { library: "shadcn-ui", total: 3, mcp: 2, web: 1, events: { get_component: 2, view: 1 } },

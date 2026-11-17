@@ -49,7 +49,7 @@ export function createUsageStore(path: string) {
   const increment = db.prepare(`INSERT INTO library_usage VALUES (?, ?, ?, ?, 1)
     ON CONFLICT (day, library, source, event) DO UPDATE SET count = count + 1`);
   const since = db.prepare(`SELECT library, source, event, SUM(count) AS count FROM library_usage
-    WHERE day >= ? GROUP BY library, source, event`);
+    WHERE day >= ? AND day <= ? GROUP BY library, source, event`);
 
   return {
     record(library: string, source: UsageSource, event: UsageEvent, now = new Date()) {
@@ -60,7 +60,7 @@ export function createUsageStore(path: string) {
     ranking(days: number, now = new Date()): LibraryRank[] {
       const start = new Date(now.getTime() - (days - 1) * 86_400_000);
       const ranks = new Map<string, LibraryRank>();
-      for (const row of since.all(day(start)) as { library: string; source: UsageSource; event: UsageEvent; count: number }[]) {
+      for (const row of since.all(day(start), day(now)) as { library: string; source: UsageSource; event: UsageEvent; count: number }[]) {
         const rank = ranks.get(row.library) ?? { library: row.library, total: 0, mcp: 0, web: 0, events: {} };
         rank.total += row.count;
         rank[row.source] += row.count;
