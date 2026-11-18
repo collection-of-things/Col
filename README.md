@@ -110,7 +110,7 @@ To host the service yourself, deploy `mcp-app/` anywhere Node 24 runs — [`mcp-
 
 The MCP service can count how often each library is used: successful `get_library`, `get_component` and `render_component` calls (source `mcp`), plus library page views and official-link clicks that the site forwards through `/api/usage` (source `web`). It stores only daily totals per library, source and event. Nothing about the caller or their query is kept. To turn it on, set `COL_USAGE_DB` on the service to a SQLite file on a persistent volume (for example `/data/usage.db`), and set the same random `COL_USAGE_TOKEN` on both the service and the site.
 
-To see the counts, open `$COL_MCP_ORIGIN/dashboard` (for Col, https://col-production.up.railway.app/dashboard) and sign in with `COL_USAGE_TOKEN`. It shows totals, uses per day and the per-library ranking for the last 7, 30 or 90 days. Signing in sets an HttpOnly cookie for 30 days; changing the token signs every browser out. Scripts can read the same ranking as JSON:
+To see the counts, open `$COL_MCP_ORIGIN/dashboard` (for Col, https://col-production.up.railway.app/dashboard) and sign in with `COL_USAGE_TOKEN`. It shows totals, uses per day and the per-library ranking for the last 7, 30 or 90 days. Serve it over HTTPS (Railway does): the session cookie is `Secure`, so browsers drop it over plain HTTP except on `localhost`. Signing in lasts 30 days; changing the token signs every browser out. Scripts can read the same ranking as JSON:
 
 ```bash
 curl -H "Authorization: Bearer $COL_USAGE_TOKEN" "$COL_MCP_ORIGIN/usage?days=7,30"
