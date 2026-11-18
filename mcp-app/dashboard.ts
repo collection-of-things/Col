@@ -107,9 +107,10 @@ const styles = `
 const page = (title: string, body: string) =>
   `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>${escapeHtml(title)}</title><style>${styles}</style></head><body><main>${body}</main></body></html>`;
 
-export function renderSignIn(error?: string): string {
+export function renderSignIn(days: DashboardWindow, error?: string): string {
   return page("Col usage", `<h1>Col usage</h1>
     <form method="post" action="${dashboardPath}">
+      <input type="hidden" name="days" value="${days}">
       <label for="token">Usage token</label>
       <input id="token" name="token" type="password" autocomplete="current-password" required autofocus>
       ${error ? `<p class="muted" role="alert">${escapeHtml(error)}</p>` : ""}
@@ -206,18 +207,22 @@ export async function serveDashboard(request: Request, { store, token, libraryNa
   }
   if (url.pathname !== dashboardPath) return new Response("Not found", { status: 404 });
 
+  const windowFrom = (value: string | null): DashboardWindow =>
+    dashboardWindows.find((window) => window === Number(value ?? 7)) ?? 7;
+  const dashboardUrl = (days: DashboardWindow) => (days === 7 ? dashboardPath : `${dashboardPath}?days=${days}`);
+
   if (request.method === "POST") {
     const body = await readSmallBody(request, maxSignInBytes);
     if (body === null) return new Response("Request body too large", { status: 413 });
     const form = new URLSearchParams(body);
     const submitted = form.get("token");
-    if (typeof submitted !== "string" || !sameSecret(submitted, token)) return html(renderSignIn("That token is not right."), 401);
-    return redirect(dashboardPath, sessionCookie(createSession(token, now), sessionDays * 86_400));
+    const days = windowFrom(form.get("days"));
+    if (submitted === null || !sameSecret(submitted, token)) return html(renderSignIn(days, "That token is not right."), 401);
+    return redirect(dashboardUrl(days), sessionCookie(createSession(token, now), sessionDays * 86_400));
   }
   if (request.method !== "GET" && request.method !== "HEAD") return new Response(null, { status: 405, headers: { Allow: "GET, POST" } });
 
-  if (!hasSession(request, token, now)) return html(renderSignIn());
-  const requested = Number(url.searchParams.get("days") ?? 7);
-  const days = dashboardWindows.find((window) => window === requested) ?? 7;
+  const days = windowFrom(url.searchParams.get("days"));
+  if (!hasSession(request, token, now)) return html(renderSignIn(days));
   return html(renderDashboard(store, days, libraryNames, now));
 }
