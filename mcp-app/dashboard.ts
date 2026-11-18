@@ -220,7 +220,7 @@ export async function serveDashboard(request: Request, { store, token, libraryNa
     if (submitted === null || !sameSecret(submitted, token)) return html(renderSignIn(days, "That token is not right."), 401);
     return redirect(dashboardUrl(days), sessionCookie(createSession(token, now), sessionDays * 86_400));
   }
-  if (request.method !== "GET" && request.method !== "HEAD") return new Response(null, { status: 405, headers: { Allow: "GET, POST" } });
+  if (request.method !== "GET" && request.method !== "HEAD") return new Response(null, { status: 405, headers: { Allow: "GET, HEAD, POST" } });
 
   const days = windowFrom(url.searchParams.get("days"));
   if (!hasSession(request, token, now)) return html(renderSignIn(days));
