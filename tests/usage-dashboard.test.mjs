@@ -13,8 +13,8 @@ function setup() {
   store.record("shadcn-ui", "mcp", "get_component", now);
   store.record("magicui", "web", "outbound", now);
   store.record("magicui", "web", "view", new Date(now.getTime() - 20 * 86_400_000));
-  const serve = (path, init) => serveDashboard(new Request(`${origin}${path}`, init), { store, token: "secret", libraryNames, now });
-  const signIn = (token) => serve("/dashboard", { method: "POST", body: new URLSearchParams({ token }) });
+  const serve = (path, init, at = now) => serveDashboard(new Request(`${origin}${path}`, init), { store, token: "secret", libraryNames, now: at });
+  const signIn = (token, fields = {}) => serve("/dashboard", { method: "POST", body: new URLSearchParams({ token, ...fields }) });
   return { store, serve, signIn };
 }
 
@@ -32,6 +32,7 @@ test("the dashboard shows nothing until signed in with the usage token", async (
 
   const forged = await serve("/dashboard", { headers: { cookie: "col_usage_session=secret" } });
   assert.doesNotMatch(await forged.text(), /shadcn/);
+  assert.equal((await signIn("x".repeat(5000))).status, 413);
   assert.equal((await serveDashboard(new Request(`${origin}/dashboard`), { store: null, token: "secret", libraryNames })).status, 404);
   store.close();
 });
@@ -42,6 +43,7 @@ test("signing in sets a session cookie that opens the ranking", async () => {
   assert.equal(signedIn.status, 303);
   const setCookie = signedIn.headers.get("set-cookie");
   assert.match(setCookie, /HttpOnly; Secure; SameSite=Strict/);
+  assert.equal((await signIn("secret", { days: "30" })).headers.get("location"), "/dashboard?days=30");
   assert.doesNotMatch(setCookie, /=secret;/);
   const cookie = setCookie.split(";")[0];
 
@@ -55,7 +57,11 @@ test("signing in sets a session cookie that opens the ranking", async () => {
   const month = await (await serve("/dashboard?days=30", { headers: { cookie } })).text();
   assert.match(month, /<dt>Total uses<\/dt><dd>4<\/dd>/);
 
-  const signedOut = await serve("/dashboard/sign-out");
+  const expired = await serve("/dashboard", { headers: { cookie } }, new Date(now.getTime() + 31 * 86_400_000));
+  assert.doesNotMatch(await expired.text(), /shadcn/);
+
+  assert.equal((await serve("/dashboard/sign-out", { method: "POST" })).headers.get("set-cookie"), null);
+  const signedOut = await serve("/dashboard/sign-out", { method: "POST", headers: { cookie } });
   assert.match(signedOut.headers.get("set-cookie"), /col_usage_session=; .*Max-Age=0/);
   store.close();
 });
