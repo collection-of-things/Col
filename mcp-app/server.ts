@@ -13,6 +13,7 @@ import handler from "./handler.ts";
  * Routes:
  * - `GET /health` returns 200 once the catalogue has loaded (the server only
  *   listens after the data imports finish). Point a host's healthcheck here.
+ * - `/usage` and `/dashboard` serve library usage counts (see handler.ts).
  * - Everything else goes to the MCP handler (clients use `POST /api/mcp`).
  *
  * Environment:

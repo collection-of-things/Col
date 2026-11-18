@@ -20,6 +20,9 @@ export type UsageEvent = (typeof usageEvents)[UsageSource][number];
 
 export type LibraryRank = { library: string; total: number; mcp: number; web: number; events: Partial<Record<UsageEvent, number>> };
 
+/** One day's uses across every library, split by source. */
+export type DailyUsage = { day: string; mcp: number; web: number };
+
 export function isUsageEvent<S extends UsageSource>(source: S, event: unknown): event is (typeof usageEvents)[S][number] {
   return (usageEvents[source] as readonly unknown[]).includes(event);
 }
@@ -50,6 +53,9 @@ export function createUsageStore(path: string) {
     ON CONFLICT (day, library, source, event) DO UPDATE SET count = count + 1`);
   const since = db.prepare(`SELECT library, source, event, SUM(count) AS count FROM library_usage
     WHERE day >= ? AND day <= ? GROUP BY library, source, event`);
+  const perDay = db.prepare(`SELECT day, source, SUM(count) AS count FROM library_usage
+    WHERE day >= ? AND day <= ? GROUP BY day, source`);
+  const windowStart = (days: number, now: Date) => new Date(now.getTime() - (days - 1) * 86_400_000);
 
   return {
     record(library: string, source: UsageSource, event: UsageEvent, now = new Date()) {
@@ -58,9 +64,8 @@ export function createUsageStore(path: string) {
 
     /** Libraries ranked by total uses over the last `days` days, today included. */
     ranking(days: number, now = new Date()): LibraryRank[] {
-      const start = new Date(now.getTime() - (days - 1) * 86_400_000);
       const ranks = new Map<string, LibraryRank>();
-      for (const row of since.all(day(start), day(now)) as { library: string; source: UsageSource; event: UsageEvent; count: number }[]) {
+      for (const row of since.all(day(windowStart(days, now)), day(now)) as { library: string; source: UsageSource; event: UsageEvent; count: number }[]) {
         const rank = ranks.get(row.library) ?? { library: row.library, total: 0, mcp: 0, web: 0, events: {} };
         rank.total += row.count;
         rank[row.source] += row.count;
@@ -68,6 +73,20 @@ export function createUsageStore(path: string) {
         ranks.set(row.library, rank);
       }
       return [...ranks.values()].sort((a, b) => b.total - a.total || a.library.localeCompare(b.library));
+    },
+
+    /** Totals for each of the last `days` days, oldest first, with empty days as zeros. */
+    daily(days: number, now = new Date()): DailyUsage[] {
+      const start = windowStart(days, now);
+      const totals = Array.from({ length: days }, (_, offset): DailyUsage => ({
+        day: day(new Date(start.getTime() + offset * 86_400_000)), mcp: 0, web: 0,
+      }));
+      const byDay = new Map(totals.map((total) => [total.day, total]));
+      for (const row of perDay.all(day(start), day(now)) as { day: string; source: UsageSource; count: number }[]) {
+        const total = byDay.get(row.day);
+        if (total) total[row.source] += row.count;
+      }
+      return totals;
     },
 
     close: () => db.close(),

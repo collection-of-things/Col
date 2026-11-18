@@ -6,6 +6,7 @@ import { libraryCorpus } from "../data/library-corpus/index.ts";
 import { compatibility } from "../data/compatibility.ts";
 import { createColMcpServer } from "../lib/mcp-server.ts";
 import { isMcpOriginAllowed } from "../lib/mcp-origin.ts";
+import { dashboardPath, serveDashboard } from "./dashboard.ts";
 import { createUsageStore, isUsageEvent, libraryFromToolCall, type UsageEvent, type UsageSource, type UsageStore } from "./usage.ts";
 
 /**
@@ -20,10 +21,12 @@ import { createUsageStore, isUsageEvent, libraryFromToolCall, type UsageEvent, t
  *
  * Library usage counting is on when `COL_USAGE_DB` names a SQLite file (on a
  * persistent volume in production). `/usage` then accepts directory events
- * from the website and serves the ranking, both behind `COL_USAGE_TOKEN`.
+ * from the website and serves the ranking, both behind `COL_USAGE_TOKEN`, and
+ * `/dashboard` shows the same counts in a browser after signing in with it.
  */
 const usage = process.env.COL_USAGE_DB ? createUsageStore(process.env.COL_USAGE_DB) : null;
 const librarySlugs = new Set(libraries.map((library) => library.slug));
+const libraryNames = new Map(libraries.map((library) => [library.slug, library.name]));
 
 /** Counts one use of a catalogue library; never lets counting fail a request. */
 function recordUse(store: UsageStore | null, library: string, source: UsageSource, event: UsageEvent) {
@@ -86,7 +89,11 @@ export default {
     usage?.close();
   },
   async fetch(request: Request): Promise<Response> {
-    if (new URL(request.url).pathname === "/usage") return serveUsage(request, usage);
+    const { pathname } = new URL(request.url);
+    if (pathname === "/usage") return serveUsage(request, usage);
+    if (pathname === dashboardPath || pathname.startsWith(`${dashboardPath}/`)) {
+      return serveDashboard(request, { store: usage, token: process.env.COL_USAGE_TOKEN, libraryNames });
+    }
     if (!isMcpOriginAllowed(request.headers.get("origin"), process.env.COL_MCP_ALLOWED_ORIGINS)) {
       return new Response("Forbidden Origin", { status: 403 });
     }

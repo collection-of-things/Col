@@ -28,6 +28,11 @@ test("ranking sums sources and events within each window", () => {
     { library: "magicui", total: 1, mcp: 0, web: 1, events: { view: 1 } },
   ]);
   assert.deepEqual(store.ranking(30, now).map(({ library, total }) => [library, total]), [["magicui", 3], ["shadcn-ui", 3]]);
+  assert.deepEqual(store.daily(3, now), [
+    { day: "2026-11-15", mcp: 0, web: 0 },
+    { day: "2026-11-16", mcp: 0, web: 0 },
+    { day: "2026-11-17", mcp: 2, web: 1 },
+  ]);
   store.close();
 });
 
