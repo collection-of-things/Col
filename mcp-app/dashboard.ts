@@ -190,7 +190,7 @@ const sessionCookie = (value: string, maxAge: number) =>
 
 /**
  * Serves `/dashboard` (page or sign-in form), `POST /dashboard` (sign in with
- * the token as form field `token`) and `POST /dashboard/sign-out`. Returns 404 when
+ * the token as URL-encoded form field `token`) and `POST /dashboard/sign-out`. Returns 404 when
  * usage tracking is not configured, like `/usage`.
  */
 export async function serveDashboard(request: Request, { store, token, libraryNames, now = new Date() }: DashboardOptions): Promise<Response> {
