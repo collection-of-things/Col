@@ -157,6 +157,28 @@ export function renderDashboard(store: UsageStore, days: DashboardWindow, names:
     <footer>Updated ${now.toISOString().slice(0, 16).replace("T", " ")} UTC · days in UTC · <form class="inline" method="post" action="${dashboardPath}/sign-out"><button type="submit">Sign out</button></form></footer>`);
 }
 
+const maxSignInBytes = 4096;
+
+/** Reads at most `limit` bytes of the body, or null when it is longer. */
+async function readSmallBody(request: Request, limit: number): Promise<string | null> {
+  if (Number(request.headers.get("content-length") ?? 0) > limit) return null;
+  const reader = request.body?.getReader();
+  if (!reader) return "";
+  const chunks: Uint8Array[] = [];
+  let size = 0;
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    size += value.byteLength;
+    if (size > limit) {
+      await reader.cancel();
+      return null;
+    }
+    chunks.push(value);
+  }
+  return Buffer.concat(chunks).toString("utf8");
+}
+
 const html = (body: string, status = 200, headers: Record<string, string> = {}) =>
   new Response(body, { status, headers: { ...pageHeaders, ...headers } });
 
@@ -183,8 +205,10 @@ export async function serveDashboard(request: Request, { store, token, libraryNa
   if (url.pathname !== dashboardPath) return new Response("Not found", { status: 404 });
 
   if (request.method === "POST") {
-    const form = await request.formData().catch(() => null);
-    const submitted = form?.get("token");
+    const body = await readSmallBody(request, maxSignInBytes);
+    if (body === null) return new Response("Request body too large", { status: 413 });
+    const form = new URLSearchParams(body);
+    const submitted = form.get("token");
     if (typeof submitted !== "string" || !sameSecret(submitted, token)) return html(renderSignIn("That token is not right."), 401);
     return redirect(dashboardPath, sessionCookie(createSession(token, now), sessionDays * 86_400));
   }
