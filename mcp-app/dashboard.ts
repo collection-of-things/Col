@@ -4,8 +4,9 @@ import type { DailyUsage, LibraryRank, UsageStore } from "./usage.ts";
 /**
  * The private usage dashboard at `GET /dashboard`: the same counts as
  * `GET /usage`, rendered as a page. Signing in with `COL_USAGE_TOKEN` sets an
- * HttpOnly cookie holding an HMAC of the token (never the token itself), so
- * rotating the token signs every browser out.
+ * HttpOnly cookie holding its issue time and an HMAC of that time keyed by
+ * the token (never the token itself). Sessions expire after 30 days on the
+ * server too, and rotating the token signs every browser out.
  */
 export type DashboardOptions = {
   store: UsageStore | null;
@@ -22,12 +23,26 @@ type DashboardWindow = (typeof dashboardWindows)[number];
 const cookieName = "col_usage_session";
 const libraryUrl = (slug: string) => `https://usecol.com/libraries/${encodeURIComponent(slug)}`;
 
-const sessionFor = (token: string) => createHmac("sha256", token).update("col-usage-dashboard").digest("hex");
+const sessionDays = 30;
+const signature = (token: string, issuedAt: number) =>
+  createHmac("sha256", token).update(`col-usage-dashboard:${issuedAt}`).digest("hex");
+
+/** A session cookie value: `<issued at, ms>.<signature>`. */
+const createSession = (token: string, now: Date) => `${now.getTime()}.${signature(token, now.getTime())}`;
 
 function sameSecret(a: string, b: string) {
   const left = Buffer.from(a);
   const right = Buffer.from(b);
   return left.length === right.length && timingSafeEqual(left, right);
+}
+
+/** True when the request carries an unexpired session signed with `token`. */
+function hasSession(request: Request, token: string, now: Date): boolean {
+  const [issued, signed] = cookie(request, cookieName)?.split(".") ?? [];
+  const issuedAt = Number(issued);
+  if (!signed || !Number.isSafeInteger(issuedAt)) return false;
+  const age = now.getTime() - issuedAt;
+  return age >= 0 && age < sessionDays * 86_400_000 && sameSecret(signed, signature(token, issuedAt));
 }
 
 function cookie(request: Request, name: string): string | null {
@@ -85,6 +100,8 @@ const styles = `
   input { font: inherit; padding: 8px 10px; color: var(--text); background: var(--bg); border: 1px solid var(--muted); border-radius: 4px; }
   button { font: inherit; padding: 8px 14px; color: var(--bg); background: var(--text); border: 0; border-radius: 4px; cursor: pointer; align-self: flex-start; }
   footer { margin-top: 32px; color: var(--muted); font-size: 13px; }
+  form.inline { display: inline; margin: 0; }
+  form.inline button { padding: 0; color: inherit; background: none; font-size: inherit; text-decoration: underline; }
 `;
 
 const page = (title: string, body: string) =>
@@ -137,7 +154,7 @@ export function renderDashboard(store: UsageStore, days: DashboardWindow, names:
     </dl>
     <h2>Per day</h2>${renderChart(store.daily(days, now))}
     <h2>Libraries</h2>${renderTable(ranking, names)}
-    <footer>Updated ${now.toISOString().slice(0, 16).replace("T", " ")} UTC · days in UTC · <a href="${dashboardPath}/sign-out">Sign out</a></footer>`);
+    <footer>Updated ${now.toISOString().slice(0, 16).replace("T", " ")} UTC · days in UTC · <form class="inline" method="post" action="${dashboardPath}/sign-out"><button type="submit">Sign out</button></form></footer>`);
 }
 
 const html = (body: string, status = 200, headers: Record<string, string> = {}) =>
@@ -148,28 +165,32 @@ const sessionCookie = (value: string, maxAge: number) =>
 
 /**
  * Serves `/dashboard` (page or sign-in form), `POST /dashboard` (sign in with
- * the token as form field `token`) and `/dashboard/sign-out`. Returns 404 when
+ * the token as form field `token`) and `POST /dashboard/sign-out`. Returns 404 when
  * usage tracking is not configured, like `/usage`.
  */
-export async function serveDashboard(request: Request, { store, token, libraryNames, now }: DashboardOptions): Promise<Response> {
+export async function serveDashboard(request: Request, { store, token, libraryNames, now = new Date() }: DashboardOptions): Promise<Response> {
   if (!store || !token) return new Response("Usage tracking is not configured", { status: 404 });
   const url = new URL(request.url);
-  const redirect = (location: string, setCookie: string) =>
-    new Response(null, { status: 303, headers: { location, "set-cookie": setCookie, "cache-control": "no-store" } });
+  const redirect = (location: string, setCookie?: string) =>
+    new Response(null, { status: 303, headers: { location, "cache-control": "no-store", ...(setCookie ? { "set-cookie": setCookie } : {}) } });
 
-  if (url.pathname === `${dashboardPath}/sign-out`) return redirect(dashboardPath, sessionCookie("", 0));
+  // Only a same-site POST carries the SameSite=Strict cookie, so other sites cannot sign anyone out.
+  if (url.pathname === `${dashboardPath}/sign-out`) {
+    if (request.method !== "POST") return new Response(null, { status: 405, headers: { Allow: "POST" } });
+    if (!hasSession(request, token, now)) return redirect(dashboardPath);
+    return redirect(dashboardPath, sessionCookie("", 0));
+  }
   if (url.pathname !== dashboardPath) return new Response("Not found", { status: 404 });
 
   if (request.method === "POST") {
     const form = await request.formData().catch(() => null);
     const submitted = form?.get("token");
     if (typeof submitted !== "string" || !sameSecret(submitted, token)) return html(renderSignIn("That token is not right."), 401);
-    return redirect(dashboardPath, sessionCookie(sessionFor(token), 30 * 86_400));
+    return redirect(dashboardPath, sessionCookie(createSession(token, now), sessionDays * 86_400));
   }
   if (request.method !== "GET" && request.method !== "HEAD") return new Response(null, { status: 405, headers: { Allow: "GET, POST" } });
 
-  const session = cookie(request, cookieName);
-  if (!session || !sameSecret(session, sessionFor(token))) return html(renderSignIn());
+  if (!hasSession(request, token, now)) return html(renderSignIn());
   const requested = Number(url.searchParams.get("days") ?? 7);
   const days = dashboardWindows.find((window) => window === requested) ?? 7;
   return html(renderDashboard(store, days, libraryNames, now));
