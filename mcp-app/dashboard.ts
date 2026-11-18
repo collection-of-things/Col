@@ -174,7 +174,7 @@ async function readSmallBody(request: Request, limit: number): Promise<string | 
     if (done) break;
     size += value.byteLength;
     if (size > limit) {
-      await reader.cancel();
+      reader.releaseLock();
       return null;
     }
     chunks.push(value);
