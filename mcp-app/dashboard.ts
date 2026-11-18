@@ -118,11 +118,13 @@ export function renderSignIn(error?: string): string {
 }
 
 function renderChart(daily: DailyUsage[]): string {
-  const peak = Math.max(1, ...daily.map((total) => total.web + total.mcp));
+  const peak = Math.max(0, ...daily.map((total) => total.web + total.mcp));
   const bar = (value: number, kind: "web" | "mcp") => value ? `<span class="${kind}" style="height:${(value / peak) * 100}%"></span>` : "";
-  const days = daily.map((total) =>
-    `<div class="day" title="${total.day}: ${count(total.web)} site, ${count(total.mcp)} MCP">${bar(total.web, "web")}${bar(total.mcp, "mcp")}</div>`).join("");
-  return `<div class="chart" role="img" aria-label="Uses per day">${days}</div>
+  const days = daily.map((total) => {
+    const label = `${total.day}: ${count(total.web)} site, ${count(total.mcp)} MCP`;
+    return `<div class="day" role="listitem" aria-label="${label}" title="${label}">${bar(total.web, "web")}${bar(total.mcp, "mcp")}</div>`;
+  }).join("");
+  return `<div class="chart" role="list" aria-label="Uses per day">${days}</div>
     <div class="axis"><span>${daily[0]?.day ?? ""}</span><span>Peak ${count(peak)} a day</span><span>${daily.at(-1)?.day ?? ""}</span></div>
     <div class="legend"><span><i class="web"></i>Site</span><span><i class="mcp"></i>MCP</span></div>`;
 }
