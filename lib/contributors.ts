@@ -41,7 +41,7 @@ function toContributors(pulls: readonly PullRequest[]): Contributor[] {
 export function getContributors(request: typeof fetch = fetch): Promise<Contributor[]> {
   const load = listAll(request, "pulls", PullRequest, { maxPages: MAX_PAGES, revalidate: 3600 }).pipe(Effect.map(toContributors));
 
-  return Effect.runPromise(load.pipe(Effect.catchAll((error) => Effect.sync(() => {
+  return Effect.runPromise(load.pipe(Effect.catch((error) => Effect.sync(() => {
     console.warn("Unable to load GitHub contributors", error);
     return [...HISTORIC_CONTRIBUTORS];
   }))));
