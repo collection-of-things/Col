@@ -5,9 +5,9 @@ import { repo } from "./repo.ts";
 const Issue = Schema.Struct({
   number: Schema.Number,
   title: Schema.String,
-  state: Schema.Literal("open", "closed"),
+  state: Schema.Literals(["open", "closed"]),
   state_reason: Schema.optional(Schema.NullOr(Schema.String)),
-  labels: Schema.Array(Schema.Union(Schema.String, Schema.Struct({ name: Schema.String }))),
+  labels: Schema.Array(Schema.Union([Schema.String, Schema.Struct({ name: Schema.String })])),
   closed_at: Schema.NullOr(Schema.String),
   // GitHub's issues endpoint also returns pull requests.
   pull_request: Schema.optional(Schema.Unknown),
@@ -81,7 +81,7 @@ function toRoadmap(issues: readonly Issue[]): Roadmap {
 export function getRoadmap(request: typeof fetch = fetch): Promise<Roadmap | null> {
   const load = listAll(request, "issues", Issue, { maxPages: MAX_PAGES, revalidate: 300 }).pipe(Effect.map(toRoadmap));
 
-  return Effect.runPromise(load.pipe(Effect.catchAll((error) => Effect.sync(() => {
+  return Effect.runPromise(load.pipe(Effect.catch((error) => Effect.sync(() => {
     console.warn("Unable to load the GitHub roadmap", error);
     return null;
   }))));

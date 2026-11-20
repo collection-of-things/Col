@@ -34,7 +34,7 @@ export function cachedFor(revalidate: number): RequestInit {
 export function listAll<A, I>(
   request: typeof fetch,
   path: string,
-  item: Schema.Schema<A, I>,
+  item: Schema.Codec<A, I>,
   { maxPages, revalidate }: { maxPages: number; revalidate: number },
 ) {
   return Effect.gen(function* () {
@@ -46,7 +46,7 @@ export function listAll<A, I>(
       );
       if (!response.ok) return yield* Effect.fail(new Error(`GitHub ${path} returned ${response.status}`));
       const payload: unknown = yield* Effect.tryPromise(() => response.json());
-      items.push(...(yield* Schema.decodeUnknown(Schema.Array(item))(payload)));
+      items.push(...(yield* Schema.decodeUnknownEffect(Schema.Array(item))(payload)));
       if (!response.headers.get("link")?.includes('rel="next"')) break;
     }
     return items;
@@ -61,9 +61,9 @@ export function getStarCount(request: typeof fetch = fetch): Promise<number | nu
     const response = yield* Effect.tryPromise(() => request(repo.api, cachedFor(300)));
     if (!response.ok) return yield* Effect.fail(new Error(`GitHub stars returned ${response.status}`));
     const payload: unknown = yield* Effect.tryPromise(() => response.json());
-    return (yield* Schema.decodeUnknown(Star)(payload)).stargazers_count;
+    return (yield* Schema.decodeUnknownEffect(Star)(payload)).stargazers_count;
   });
-  return Effect.runPromise(load.pipe(Effect.catchAll((error) => Effect.sync(() => {
+  return Effect.runPromise(load.pipe(Effect.catch((error) => Effect.sync(() => {
     console.warn("Unable to load the GitHub star count", error);
     return null;
   }))));
