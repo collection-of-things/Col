@@ -23,7 +23,7 @@ try {
     page.on("pageerror", error => row.errors.push(error.message));
     await page.route("**/*", async route => {
       const url = route.request().url();
-      if (/^https:\/\/esm\.sh\/(?:@babel\/parser@7\.28\.5|es-module-lexer@3\.0\.5)(?:\/|$)/.test(url)) {
+      if (/^https:\/\/esm\.sh\/(?:@babel\/parser@8\.1\.2|es-module-lexer@3\.0\.5)(?:\/|$)/.test(url)) {
         row.compilerRequests.push(url); await route.continue();
       } else { row.externalRequests.push(url); await route.abort(); }
     });

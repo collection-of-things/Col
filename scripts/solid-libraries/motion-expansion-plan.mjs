@@ -106,7 +106,7 @@ for (const slug of ["nikala-ui", "magicui-solid", "mystic-ui"]) {
           const imports = [];
           walk(ast, node => {
             if ((node.type === "ImportDeclaration" && node.importKind !== "type") || (node.type === "ExportNamedDeclaration" && node.source) || node.type === "ExportAllDeclaration") imports.push(node.source.value);
-            if (node.type === "CallExpression" && node.callee.type === "Import" && node.arguments[0]?.type === "StringLiteral") imports.push(node.arguments[0].value);
+            if (node.type === "ImportExpression" && node.source.type === "StringLiteral") imports.push(node.source.value);
             if (node.type === "StringLiteral" && /^https?:/.test(node.value) && !/github\.com.*(?:LICENSE|issues)|www\.w3\.org/.test(node.value)) remote.add(node.value);
           });
           for (const name of imports) {

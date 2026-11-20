@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { copyFile, mkdir, mkdtemp, readFile, readdir, rm, stat } from "node:fs/promises";
+import { copyFile, mkdir, mkdtemp, readFile, readdir, rm, stat, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
 import { tmpdir } from "node:os";
@@ -29,11 +29,17 @@ test("regenerating the MagicUI Solid plan retains preview adaptations", async t 
       for (const name of ["tweet-card", "avatar-circles", "hero-video-dialog"]) await copyFile(join(source, `demos/${name}.tsx`), join(target, `demos/${name}.tsx`));
     }
   }
+  const upstreamPath = join(fixture, "data/solid-libraries/magicui-solid/upstream.json");
+  const upstream = await readJson(upstreamPath);
+  const committed = await readJson("data/solid-libraries/magicui-solid/examples.json");
+  const componentSource = committed.examples.find(item => item.id === "magicui-solid/Confetti").componentSource;
+  upstream.files[componentSource].content += '\nimport("dynamic-preview-dependency");\n';
+  await writeFile(upstreamPath, JSON.stringify(upstream));
   execFileSync(process.execPath, [resolve("scripts/solid-libraries/motion-expansion-plan.mjs")], { cwd: fixture, stdio: "pipe" });
   const generated = await readJson(join(fixture, "data/solid-libraries/magicui-solid/examples.json"));
-  const committed = await readJson("data/solid-libraries/magicui-solid/examples.json");
   const confetti = generated.examples.find(item => item.id === "magicui-solid/Confetti");
   assert.equal(confetti?.module, "src/demos/ConfettiDemo.tsx");
+  assert.ok(confetti.packages.includes("dynamic-preview-dependency"));
   assert.equal(confetti.adaptation, committed.examples.find(item => item.id === "magicui-solid/Confetti")?.adaptation);
   for (const id of ["magicui-solid/Avatar Circles", "magicui-solid/Hero Video Dialog"]) {
     assert.deepEqual(generated.examples.find(item => item.id === id), committed.examples.find(item => item.id === id));
