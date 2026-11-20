@@ -9,7 +9,7 @@
     "start": "node server.ts"
   },
   "dependencies": {
-    "@babel/parser": "7.28.5",
+    "@babel/parser": "8.1.2",
     "@modelcontextprotocol/server": "2.4.0",
     "zod": "4.6.7"
   },

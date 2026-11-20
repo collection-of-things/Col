@@ -36,7 +36,7 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
-    "@babel/parser": "7.28.5",
+    "@babel/parser": "8.1.2",
     "@cloudflare/vite-plugin": "^1.70.0",
     "@solidjs/compiler": "2.0.0-rc.18",
     "@solidjs/signals": "2.0.0-rc.18",

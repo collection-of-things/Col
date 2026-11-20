@@ -4,7 +4,7 @@ Follow-up to [PR #37](https://github.com/screen-devs/col/pull/37), tested on 24 
 
 ## Fix and tradeoff
 
-Sucrase compiled `<main>Broken</div>` instead of rejecting it. The shared preview runtime now parses the original module with pinned `@babel/parser@7.28.5`, with JSX and TypeScript enabled and error recovery disabled, before Sucrase transforms it or any user module executes. Both MCP Apps and the HTML fallback use this path.
+Sucrase compiled `<main>Broken</div>` instead of rejecting it. The shared preview runtime now parses the original module with pinned `@babel/parser@8.1.2`, with JSX and TypeScript enabled and error recovery disabled, before Sucrase transforms it or any user module executes. Both MCP Apps and the HTML fallback use this path.
 
 Failures show a concise `Invalid TSX` message with one-based line and column, without echoing submitted source. This is syntax validation, not TypeScript type checking. Existing import handling and component validation still run after parsing.
 
