@@ -50,7 +50,7 @@ const RUNTIME = {
   reactDomClient: `https://esm.sh/react-dom@${REACT_VERSION}/client?deps=react@${REACT_VERSION}`,
   sucrase: "https://esm.sh/sucrase@3.35.1",
   syntax: "https://esm.sh/@babel/parser@7.28.5",
-  lexer: "https://esm.sh/es-module-lexer@3.0.2/js",
+  lexer: "https://esm.sh/es-module-lexer@3.0.5/js",
   tailwind: "https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.3",
   appsZod: `https://esm.sh/zod@${APPS_ZOD_VERSION}/v4`,
   apps: `https://esm.sh/@modelcontextprotocol/ext-apps@2.0.3?deps=@modelcontextprotocol/client@2.0.0,@modelcontextprotocol/core@2.0.0,zod@${APPS_ZOD_VERSION}`,
