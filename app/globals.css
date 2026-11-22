@@ -3,6 +3,9 @@
 /* Self-hosted variable fonts (latin and the other subsets load on demand). */
 @import "@fontsource-variable/nunito/wght.css";
 @import "@fontsource-variable/geist-mono/wght.css";
+/* The homepage's display serif (see HomePage.module.css). */
+@import "@fontsource-variable/eb-garamond/wght.css";
+@import "@fontsource-variable/eb-garamond/wght-italic.css";
 
 @custom-variant dark (&:is(.dark *));
 

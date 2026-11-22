@@ -1,9 +1,9 @@
 import { Link } from "@/components/Link";
 import { ArrowRight, ArrowUpRight, Heart, Search } from "lucide-react";
+import type { ReactNode } from "react";
 import { CATEGORIES, STACKS, libraries, libraryBySlug } from "@/data/libraries";
 import reactBits from "@/data/library-details/react-bits";
 import { hostname } from "@/lib/utils";
-import { LibraryLogo } from "./LibraryLogo";
 import styles from "./HomePage.module.css";
 
 const popularSearches = ["React", "Animation", "Tailwind", "Components", "Icons", "3D"] as const;
@@ -28,9 +28,20 @@ const mcpSteps = [
   { title: "Implement it", text: "Your agent adds it to the project from the sources." },
 ] as const;
 
+/** One catalogue entry: a Roman numeral, then the entry's own content. `className` sets its span. */
+function Entry({ numeral, className, children }: { numeral: string; className?: string; children: ReactNode }) {
+  return (
+    <article className={`${styles.cell} ${className ?? ""}`}>
+      <span className={styles.numeral} aria-hidden>{numeral}</span>
+      {children}
+    </article>
+  );
+}
+
 /**
- * Homepage "Details" bento: six tiles in a responsive grid. Search and Col MCP
- * span columns on wider screens. Each pairs
+ * Homepage "Details": six entries laid out like a library catalogue, each under
+ * a hairline rule and a Roman numeral. Search and Col MCP span columns on wider
+ * screens. Each pairs
  * a short description with a real way in: search shortcuts, directory counts,
  * featured libraries, an official install guide, the saved list, and MCP setup.
  * Components and integrations have their own entry points within those tiles.
@@ -45,7 +56,7 @@ export function WhatsInsideSection() {
         </div>
       </div>
       <div className={styles.bento}>
-        <article className={`${styles.cell} ${styles.cellWide}`}>
+        <Entry numeral="I" className={styles.cellWide}>
           <h3><Link to="/libraries" className={styles.cellTitle}>Libraries and components <ArrowRight aria-hidden /></Link></h3>
           <p>Filter libraries by category, stack, or use case. Search components and select a match to view its official demo and docs.</p>
           <div className={styles.cellFoot}>
@@ -65,9 +76,9 @@ export function WhatsInsideSection() {
               ))}
             </nav>
           </div>
-        </article>
+        </Entry>
 
-        <article className={styles.cell}>
+        <Entry numeral="II">
           <h3><Link to="/libraries" className={styles.cellTitle}>The directory <ArrowRight aria-hidden /></Link></h3>
           <dl className={styles.stats}>
             {stats.map(({ value, label }) => (
@@ -77,37 +88,36 @@ export function WhatsInsideSection() {
               </div>
             ))}
           </dl>
-        </article>
+        </Entry>
 
-        <article className={styles.cell}>
+        <Entry numeral="III">
           <h3><Link to="/libraries/$slug" params={{ slug: "shadcn-ui" }} {...newTab} className={styles.cellTitle}>Official sources <ArrowUpRight aria-hidden /></Link></h3>
           <p>Go straight to each library&apos;s website, documentation, and repository.</p>
           <ul className={`${styles.cellFoot} ${styles.featured}`}>
             {featuredLibraries.map((library) => (
               <li key={library.slug}>
                 <Link to="/libraries/$slug" params={{ slug: library.slug }} {...newTab} className={styles.libraryLink}>
-                  <LibraryLogo url={library.url} name={library.name} size={28} />
                   <span><strong>{library.name}</strong><span>{library.category}</span></span>
                   <ArrowUpRight aria-hidden />
                 </Link>
               </li>
             ))}
           </ul>
-        </article>
+        </Entry>
 
-        <article className={styles.cell}>
+        <Entry numeral="IV">
           <h3><Link to="/libraries/$slug" params={{ slug: "react-bits" }} {...newTab} className={styles.cellTitle}>Official install guides <ArrowUpRight aria-hidden /></Link></h3>
           <p>Col keeps no install commands of its own. Every listing points at the library&apos;s current setup docs.</p>
           <a href={installGuidesDocs} {...newTab} className={`${styles.cellFoot} ${styles.command}`}>{hostname(installGuidesDocs)}</a>
-        </article>
+        </Entry>
 
-        <article className={styles.cell}>
+        <Entry numeral="V">
           <h3><Link to="/libraries" className={styles.cellTitle}>Save for later <ArrowRight aria-hidden /></Link></h3>
           <p>Keep useful libraries saved in your browser while you compare options.</p>
           <span className={`${styles.cellFoot} ${styles.cellIcon}`} aria-hidden><Heart /></span>
-        </article>
+        </Entry>
 
-        <article className={`${styles.cell} ${styles.cellFull}`}>
+        <Entry numeral="VI" className={styles.cellFull}>
           <div className={styles.mcpCopy}>
             <h3>
               <Link to="/mcp" className={styles.cellTitle}>Col MCP <ArrowRight aria-hidden /></Link>
@@ -118,13 +128,13 @@ export function WhatsInsideSection() {
           <ol className={styles.flow}>
             {mcpSteps.map(({ title, text }, index) => (
               <li key={title}>
-                <span className={styles.flowIndex}>{index + 1}</span>
+                <span className={styles.flowIndex}>{String(index + 1).padStart(2, "0")}</span>
                 <strong>{title}</strong>
                 <span>{text}</span>
               </li>
             ))}
           </ol>
-        </article>
+        </Entry>
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { createServerFn } from "@tanstack/react-start";
+import ebGaramondLatin from "@fontsource-variable/eb-garamond/files/eb-garamond-latin-wght-normal.woff2?url";
 import { getRoadmap } from "@/lib/roadmap";
 import { pageHead, siteUrl } from "@/lib/site";
 import { HeroBackdrop, HeroCopy } from "@/components/HomeHero";
@@ -16,11 +17,15 @@ export const Route = createFileRoute("/")({
   loader: () => loadRoadmap(),
   // The roadmap refreshes every five minutes, so shared caches may keep the page that long.
   headers: () => ({ "Cache-Control": "public, s-maxage=300, stale-while-revalidate=31535700" }),
-  head: () => pageHead(
-    "/",
-    "Col | UI Library Directory",
-    "Discover UI libraries by framework, category, and use case. Search documented components, compare setup options, and visit official project sources.",
-  ),
+  head: () => {
+    const head = pageHead(
+      "/",
+      "Col | UI Library Directory",
+      "Discover UI libraries by framework, category, and use case. Search documented components, compare setup options, and visit official project sources.",
+    );
+    // The hero headline is set in EB Garamond, so its first paint does not wait on the stylesheet.
+    return { ...head, links: [...head.links, { rel: "preload", href: ebGaramondLatin, as: "font", type: "font/woff2", crossOrigin: "anonymous" as const }] };
+  },
   component: Home,
 });
 
