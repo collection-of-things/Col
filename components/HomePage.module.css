@@ -223,8 +223,9 @@
   .heroCopy > p { font-size: 16px; }
   .actions { gap: 18px; }
   .section { padding: 44px 0; }
-  .section::before { margin-bottom: 28px; }
-  .sectionHeading { margin-bottom: 28px; }
+  .section::before { margin-bottom: 20px; }
+  .sectionHeading { margin-bottom: 24px; }
+  .sectionHeading h2 { font-size: 40px; }
   .bento { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .cellWide { grid-column: auto; }
   .flow { grid-template-columns: minmax(0, 1fr); gap: 16px; }
@@ -246,13 +247,22 @@
   .scene:not([data-position="current"]) > * { pointer-events: none; }
   .scene > .section { width: 100%; margin-block: auto; padding: 0; }
   .scene > .footer { width: 100%; }
-  .section::before { margin-bottom: 28px; }
-  .sectionHeading { margin-bottom: 28px; }
+  .section::before { margin-bottom: 20px; }
+  .sectionHeading { margin-bottom: 24px; }
+  .sectionHeading h2 { font-size: 40px; }
   /* Past the hero the hall recedes: it dims and drifts forward, and the rays (paused by HomeStory) fade. */
   .stage:not([data-scene="0"]) .backdrop { opacity: .12; scale: 1.06; pointer-events: none; }
   .stage:not([data-scene="0"]) .rays { opacity: calc(var(--hero-rays) * .35); }
   /* Details fits one screen as a four-column catalogue: search, directory and sources on top; install, saved and Col MCP below. */
-  .bento { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px 32px; }
+  .bento { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px 32px; }
+  /* Tighter type keeps both rows inside an 800px stage, which clips anything taller. */
+  .cell { gap: 8px; padding-top: 14px; }
+  .numeral { font-size: 20px; }
+  .cellTitle { font-size: 21px; }
+  .cell > p { margin-bottom: 4px; line-height: 1.5; }
+  .stats { gap: 8px; padding-top: 4px; }
+  .stats dd { font-size: 32px; }
+  .libraryLink { padding: 8px 0; }
   .cellFull { grid-column: span 2; grid-template-columns: minmax(0, 1fr); gap: 14px; }
   .flow { gap: 16px; }
   /* Content rises in each time its scene becomes current. */
