@@ -32,8 +32,8 @@ export function RoadmapSection({ roadmap }: { roadmap: Roadmap | null }) {
           <h2 id="roadmap-title">Roadmap</h2>
           <p>Major milestones, straight from GitHub issues.</p>
         </div>
-        <a href={repo.issues} target="_blank" rel="noopener noreferrer" className="ld-button">
-          <span className="cap">View all issues</span>
+        <a href={repo.issues} target="_blank" rel="noopener noreferrer" className={styles.textLink}>
+          View all issues
           <ArrowUpRight aria-hidden />
         </a>
       </div>

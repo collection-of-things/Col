@@ -53,7 +53,7 @@ function useDesktopTheme(): Theme | null {
 
 /**
  * Publishes the pointer position on `target` as `--px`/`--py` (-0.5 to 0.5) so
- * the tiles can drift with a little parallax. Fine pointers only, and not under
+ * the engraving can drift with a little parallax. Fine pointers only, and not under
  * reduced motion; writes at most once per frame.
  */
 function usePointerParallax(target: RefObject<HTMLElement | null>) {
@@ -139,12 +139,12 @@ export function HomeStory({ backdrop, scenes }: { backdrop: ReactNode; scenes: r
             className={styles.rays}
             raysOrigin="top-left"
             raysAngle={-38}
-            raysColor="#ffffff"
+            raysColor="#ff5a1f"
             raysSpeed={0.8}
             lightSpread={0.7}
             rayLength={1.4}
             fadeDistance={1}
-            saturation={0}
+            saturation={1}
             followMouse
             mouseInfluence={0.08}
             noiseAmount={0.08}

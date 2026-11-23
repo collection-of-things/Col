@@ -17,6 +17,7 @@
     "test": "bun run build && node --test --test-concurrency=1 --test-global-setup=tests/site-server.mjs \"lib/**/*.test.mjs\" \"scripts/**/*.test.mjs\" \"tests/**/*.test.mjs\""
   },
   "dependencies": {
+    "@fontsource-variable/eb-garamond": "5.3.0",
     "@fontsource-variable/geist-mono": "^5.3.0",
     "@fontsource-variable/nunito": "^5.3.0",
     "@modelcontextprotocol/server": "^2.4.0",
